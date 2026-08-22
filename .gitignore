@@ -1,0 +1,10 @@
+source_pdfs/
+workspace/
+tmp/
+node_modules/
+source_audio/
+transcripts/
+content/readings/*/raw.txt
+*.log
+.DS_Store
+Thumbs.db

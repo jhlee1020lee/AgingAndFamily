@@ -1,0 +1,133 @@
+# Stereotype Embodiment: A Psychosocial Approach to Aging
+
+> Becca Levy · Social and Behavioral Sciences Program, School of Public Health, Yale University · Current Directions in Psychological Science, 18(6), 332-336 (2009)
+
+## Abstract
+
+Researchers have increasingly turned their attention from younger individuals who hold age stereotypes to older individuals who are targeted by these stereotypes. The refocused research has shown that positive and negative age stereotypes held by older individuals can have beneficial and detrimental effects, respectively, on a variety of cognitive and physical outcomes. Drawing on these experimental and longitudinal studies, a theory of stereotype embodiment is presented here. It proposes that stereotypes are embodied when their assimilation from the surrounding culture leads to self-definitions that, in turn, influence functioning and health. The theory has four components: The stereotypes (a) become internalized across the life span, (b) can operate unconsciously, (c) gain salience from self-relevance, and (d) utilize multiple pathways. The central message of the theory, and the research supporting it, is that the aging process is, in part, a social construct.
+
+## A Psychosocial Approach to Aging
+
+It is widely assumed that the aging process can be explained entirely as a physiological process of inevitable decline. To illustrate, “When biological gerontologists and laypersons use the term aging, they are most often referring to . . . the progressive deterioration during the adult period of life” (Masoro, 2006, p. 44). But this assumed inevitability does not explain, for instance, the considerable cultural variability found in older individuals’ health. There exists, then, the need for a psychosocial approach to aging. The particular approach taken in the following article is based on age stereotypes (i.e., beliefs about older people in general).
+
+Traditionally, age-stereotype research focused on the targeters (i.e., younger adults), rather than the targets (i.e., older adults). More recently, however, the research has shifted to the targets. This refocused research includes a series of laboratory studies with older individuals demonstrating that both positive and negative age stereotypes can have beneficial and detrimental effects, respectively, on an array of cognitive- and physical-functioning outcomes. When these outcomes are adverse, they represent several aspects of what is often referred to as the aging process—among them, memory performance, balance, gait speed, and hearing (e.g., Levy, 1996; Levy, Slade, & Gill, 2006; Levy & Leifheit-Limson, 2009).
+
+At the point that age stereotypes are directed at oneself in old age, they can be classified as self-perceptions of aging. The long-term effects of these self-perceptions were demonstrated by a pair of studies based on data from the Ohio Longitudinal Study of Aging and Retirement, with participants age 50 or older at baseline who were followed for over 2 decades (Levy, Slade, & Kasl, 2002; Levy, Slade, Kunkel, & Kasl, 2002). Participants with more positive self-perceptions of aging at baseline had better functional health over the course of the study and lived an average of 7.5 years longer than those with more negative self-perceptions of aging; these health advantages remained after adjusting for baseline functional health and other relevant variables (Levy, Slade, & Kasl, 2002; Levy, Slade, Kunkel, & Kasl, 2002). Similar relationships between age beliefs and long-term health have subsequently been found in Europe and Asia; one of these studies, with older Germans followed over a 6-year period, demonstrated that age stereotypes were a significantly better predictor of health than vice versa (Wurm, Tesch-Römer, & Tomasik, 2007).
+
+In order to explain the process by which this pattern of findings occurs, stereotype embodiment theory is presented here. It proposes that stereotypes are embodied when their assimilation from the surrounding culture leads to self-definitions that, in turn, influence functioning and health. This theory has four components. The stereotypes (a) become internalized across the life span, (b) can operate unconsciously, (c) gain salience from self-relevance, and (d) utilize multiple pathways. Accordingly, these components constitute a process that occurs in two directions: top-down (from society to the individual) and over time (from childhood to old age).
+
+## Research Supporting Age-Stereotype Embodiment
+
+### Internalization of Stereotypes Across the Life Span
+
+Older individuals fit the criteria of people most likely to be stereotyped by children (e.g., they are subjected to de facto segregation; Bigler & Liben, 2007). Moreover, children are frequently exposed to age stereotypes by their environment, including outlets intended expressly for them. As an example, the opening of a novel by a best-selling children’s author describes a central character as “That grizzly old grunion of a grandma. . . . She had pale brown teeth and a small puckered-up mouth like a dog’s bottom” (Dahl, 1981, pp. 1-2).
+
+The process of internalizing the age stereotypes that permeate society continues beyond childhood (e.g., Levy & Banaji, 2002). When negative age stereotypes are encountered by individuals before they are directed at themselves, there is unlikely to be a felt need to mount defenses against them; hence, susceptibility is maximized. Further, young adults may have an incentive for holding negative age stereotypes, insofar as such stereotypes provide them with a short-term benefit. Specifically, the discrimination that follows from, and is justified by, the stereotypes can lead to the young adults receiving priority from the allocators of limited resources (e.g., municipal programs). These short-term benefits may be more perceptible to those receiving them than the concurrent disadvantages of negative age stereotypes to young adults (e.g., impaired relationships with elders).
+
+On a long-term basis, however, these individuals may be harmed by the negative age stereotypes that they carry into old age. A recent study found that negative age stereotypes held earlier in life predict worse health among older individuals (Levy, Zonderman, Slade, & Ferrucci, 2009). In a cohort of 440 participants, aged 18 to 49, those who held more negative age stereotypes at baseline were significantly more likely to experience a cardiovascular event over the next 38 years, after adjusting for relevant covariates such as family history of cardiovascular disease (see Fig. 1). Further, in a younger subset of 229 individuals, aged 18 to 39 years, those with more negative age stereotypes at baseline were twice as likely to have a cardiovascular event after age 60 than those with more positive age stereotypes at baseline, after adjusting for the relevant covariates (Levy et al., 2009).
+
+Although the exposure to, and the internalization of, age stereotypes extends into old age, there is considerable variability in the ratio of positive to negative age stereotypes held by older individuals (Levy & Langer, 1994; Levy et al., 2006). This can be explained, in part, by the extent of immersion in mainstream American culture—both before and after reaching old age. A dominating example of this culture is television, which frequently presents the old in a demeaning manner. It follows that older individuals with greater lifetime television viewing tend to hold more negative age stereotypes (Donlon, Ashman, & Levy, 2005).
+
+![Figure 1. Age stereotypes and cardiovascular events](figures/figure-1.png)
+
+Figure 1. Association of negative (blue) versus positive (red) age stereotypes held in younger adulthood to risk of cardiovascular events (e.g., congestive heart failures, heart attacks, and strokes) over the next 38 years. This analysis was based on data from the Baltimore Longitudinal Study of Aging. Adapted from Levy, Zonderman, Slade, and Ferrucci (2009), p. 297.
+
+### Unconscious Operation of Age Stereotypes
+
+Experimental studies have demonstrated that both positive and negative age stereotypes can be activated and influence functioning in the predicted direction on an unconscious level (e.g., Levy, 2003). These effects resulted from flashing age-stereotype words, such as learned and confused, on a computer screen at subliminal speeds—fast enough to prevent conscious perception (i.e., 55 milliseconds for most people), but slow enough to allow encoding (for a full description of the priming procedure, see Levy, 1996).
+
+One of these subliminal age-stereotype studies examined handwriting, which is not ordinarily under conscious control (Levy, 2000). Individuals exposed to the negative-age-stereotype primes produced handwriting that was rated, compared to samples produced before exposure, as older and as showing a significant increase in deteriorating, senile, and shaky, whereas those exposed to the positive-age-stereotypes primes had handwriting that was rated as younger and as showing a significant increase in accomplished, confident, and wise (Levy, 2000).
+
+Another experimental study considered whether age stereotypes can operate on an unconscious level to influence a state of mind—will to live (Levy, Ashman, & Dror, 2000). Older participants were subliminally exposed to the primes and, after being presented with scenarios describing a potentially fatal illness, were asked if they would choose a life-prolonging medical intervention, even when it resulted in two types of costs: losing their savings and extensive care by family members. Those in the positive-age-stereotype group tended to accept the life-prolonging intervention, while those in the negative-age-stereotype group tended to reject it (Levy, Ashman, & Dror, 2000).
+
+Experiments with subliminal primes have the advantage of assuring authenticity of the participants’ responses, because social desirability would be unlikely when the process occurs without awareness. But it would be disadvantageous if older individuals lacked awareness of negative-age-stereotype stimuli in everyday life, so that it resulted in them attributing their deteriorating cognitive or physical health to aging rather than to environmental forces—thereby reinforcing the negative age stereotypes.
+
+### Salience Gain From Self-relevance
+
+The onset of old age, by objective standards, occurs when individuals reach a threshold that is formally defined by a variety of arbitrary and inconsistent dates, such as “senior” admission to movie theaters or enrollment in Social Security. These artificial demarcations are distinct from, but may contribute to, the subjective onset of old age that occurs when individuals recognize that they have undergone a passage from old age as a remote state to old age as an existing state.
+
+This passage invests age stereotypes with self-relevance, or personal resonance, because it brings an identification with others who are old (Levy, 2003). The effectiveness of age-stereotype primes leading to age-stereotype-congruent effects with older participants in laboratory studies can be partially explained as arising from the activation of these participants’ identities as old people. In contrast, when younger participants were included in these experiments and followed the same protocol as the older participants, they tended to show either no effects or much weaker effects (e.g., Hess, Hinson, & Statham, 2004; Levy, 1996; Levy, Ashman, & Dror, 2000).
+
+The process of age stereotypes becoming self-relevant for individuals is facilitated by their encounters with a plethora of societal cues, usually pejorative, that indicate they are old. These cues are prevalent because, as distinct from other forms of prejudice and discrimination (e.g., racism and sexism), ageism does not tend to be proscribed by political correctness. Initially, these cues may be thwarted by a state of denial, but their prevalence tends to overcome resistance (Levy & Banaji, 2002). Unlike those who have been stigmatized since birth and consequently may acquire coping strategies from their subgroup, individuals tend to enter old age unprepared to resist negative age stereotypes.
+
+Old-age cues that prompt the transition of age stereotypes to self-relevance may be encountered on an interpersonal level, as in patronizing forms of speech directed at the old by the young. And cues may be presented on an institutional level when older individuals are denied employment or appropriate medical treatment. Alternatively, the two levels of cues may merge when interpersonal cues are encountered in an institutional setting, as described by an older physician at a teaching hospital: “The young [physicians] worry us that we are out of date or incompetent or, more than rarely, that we are keeping them from taking over” (Spiro, 2008, p. 563).
+
+In order to test the assumption of earlier research that internalized age stereotypes tend to acquire self-relevance over time (Levy, 1996), a 5-year longitudinal study was undertaken (Rothermund, 2005). It was found that “Attributes associated with the ‘typical old person’ tend to become incorporated into the elderly person’s current and future self-views” (Rothermund, 2005, p. 232).
+
+### Utilization of Multiple Pathways
+
+Age stereotypes appear to exert their influence along three tracks: psychological, behavioral, and physiological. The psychological pathway is exemplified by expectations. A recent experiment found that age stereotypes appear to generate expectations that act as self-fulfilling prophecies (Levy & Leifheit-Limson, 2009). In this study, after older individuals were randomly assigned to subliminal-age-stereotype priming groups that were either positive-cognitive (e.g., wise), negative-cognitive (e.g., senile), positive-physical (e.g., spry), or negative-physical (e.g., frail), they performed both a cognitive and a physical task. Support was found for a “stereotype-matching effect” (Levy & Leifheit-Limson, 2009, p. 232). That is, the impact of positive and negative age stereotypes on cognitive and physical functioning was greatest when the content of the stereotypes corresponded to the domains of the outcomes. This correspondence seemed to increase the strength of stereotype-generated expectations because they were directed at pertinent outcomes. In addition, those exposed to the positive age stereotypes outperformed those exposed to the negative age stereotypes on both the cognitive and physical tasks (Levy & Leifheit-Limson, 2009).
+
+The behavioral pathway of age stereotypes is illustrated by healthy practices. Because negative age stereotypes are often based on the assumption that health problems are an inevitable consequence of growing old, they tend to result in regarding healthy practices as futile (Levy & Myers, 2004). Also, negative age stereotypes can hinder self-efficacy (Levy, Hausdorff, Hencke, & Wei, 2000). However, older individuals with more positive self-perceptions of aging were significantly more likely to engage in healthy practices (e.g., taking prescribed medications) over the next 18 years than were those with more negative self-perceptions of aging (Levy & Myers, 2004).
+
+The physiological pathway for the influence of age stereotypes likely involves the autonomic nervous system, a branch of the central nervous system that responds to environmental stress. Older individuals who were subliminally exposed to negative age stereotypes demonstrated heightened cardiovascular response to stress (induced by mathematical and verbal challenges), whereas those who were subliminally exposed to positive age stereotypes demonstrated reduced cardiovascular response to stress (see Fig. 2; Levy, Hausdorff, Hencke, & Wei, 2000). Repeated elevations of cardiovascular response to stress heighten susceptibility to heart problems, which perhaps explains why carrying negative age stereotypes from earlier in life to old age significantly increased the risk of cardiovascular events (Levy et al., 2009). And negative age stereotypes may adversely influence recovery from acute cardiovascular events (Levy, Slade, May, & Caracciolo, 2006).
+
+![Figure 2. Subliminally primed age stereotypes and stress responses](figures/figure-2.png)
+
+Figure 2. Influence of subliminally primed age stereotypes on (A) systolic blood pressure, (B) diastolic blood pressure, and (C) skin conductance. Positive and negative age stereotypes generated decreased and increased cardiovascular response to stress, respectively. Reproduced from “Reducing Cardiovascular Stress With Positive Self-Stereotypes of Aging,” by B.R. Levy, J.M. Hausdorff, R. Hencke, & J.W. Wei, 2000, Journals of Gerontology, Series B: Psychological Sciences and Social Sciences, 55, p. P211. Copyright 2000, Gerontological Society of America. Reproduced with permission.
+
+## Future Directions
+
+As shown, a highly impersonal way of identifying individuals, through age stereotypes, can influence them in a highly personal way: through their functioning and health. But the full reach of age stereotypes’ influence can only be identified through further explorations. Additionally, it would be helpful to have a broader and deeper understanding of which age stereotypes are most influential, as well as which domains, individuals, and groups, are most susceptible to them.
+
+The adverse effects of negative age stereotypes point to the need to develop interventions that will maximize the influence of older individuals’ positive age stereotypes in their everyday life. The potential for such interventions was demonstrated by the laboratory experiments that used subliminal priming to activate positive, as well as negative, age stereotypes. The remaining challenge is to achieve the activation of positive age stereotypes on a sustained basis.
+
+No attempt was made in this paper to claim stereotype embodiment is a phenomenon that extends to all groups that are stigmatized by stereotypes. Indeed, there are respects in which age stereotypes differ from other stereotypes. For instance, all younger individuals who target the old with stereotypes will eventually join that cohort if they live long enough. And these stereotypes in their negative form may be infused with the prospect of death—the ultimate outcome of the debilitation to which they often refer. Yet, there are indications that at least some of the premises apply to at least some other targeted groups and that at least some functioning is affected. It remains for future research to assess the transferability of stereotype embodiment.
+
+## Recommended Reading
+
+Butler, R. (2008). Ageism: Another form of bigotry. In The longevity revolution: The benefits and challenges of living a long life (pp. 40-59). New York: Public Affairs. This chapter presents the broad spectrum of ways that older individuals are stigmatized by society.
+
+Mead, G.H. (1934). Mind, self, and society (C.W. Morris, Ed.). Chicago: University of Chicago Press. A classic description of the process by which attitudes of the community influence individuals’ self-perceptions.
+
+O’Brien, L.T., & Hummert, M.L. (2006). Memory performance of late middle-aged adults: Contrasting self-stereotyping and stereotype threat accounts of assimilation to age stereotypes. Social Cognition, 24, 338-358. This experiment tested two divergent approaches, one based on an assumption of internalized age stereotypes (derived from research reported in the present Current Directions article) and the other based on stereotype threat theory; the authors found that the former, rather than the latter, explained memory-performance deficits.
+
+## Acknowledgments
+
+This work was supported by a Patrick and Catherine Weldon Donaghue Medical Research Foundation Investigator Award, a National Heart, Lung, and Blood Institute grant (R01HL089314) and National Institute on Aging grants (K01AG001051, R01AG032284).
+
+## References
+
+Bigler, R.S., & Liben, L.S. (2007). Developmental intergroup theory: Explaining and reducing children’s social stereotyping and prejudice. Current Directions in Psychological Science, 16, 162-166.
+
+Dahl, R. (1981). George’s Marvelous Medicine. New York: Puffin Books.
+
+Donlon, M., Ashman, O., & Levy, B.R. (2005). Re-vision of older television characters: A stereotype-awareness intervention. Journal of Social Issues, 61, 307-319.
+
+Hess, T.M., Hinson, J.T., & Statham, J.A. (2004). Explicit and implicit stereotype activation effects on memory: Do age and awareness moderate the impact of priming? Psychology and Aging, 19, 495-505.
+
+Levy, B. (1996). Improving memory in old age through implicit self-stereotyping. Journal of Personality & Social Psychology, 71, 1092-1107.
+
+Levy, B., & Langer, E. (1994). Aging free from negative stereotypes: Successful memory in China and among the American deaf. Journal of Personality and Social Psychology, 66, 989-997.
+
+Levy, B.R. (2000). Handwriting as a reflection of aging self-stereotypes. Journal of Geriatric Psychiatry, 33, 81-94.
+
+Levy, B.R. (2003). Mind matters: Cognitive and physical effects of aging self-stereotypes. Journals of Gerontology, Series B: Psychological Sciences and Social Sciences, 58, P203-P211.
+
+Levy, B.R., Ashman, O., & Dror, I. (2000). To be or not to be: The effects of aging stereotypes on the will to live. Omega, 40, 409-420.
+
+Levy, B.R., & Banaji, M.R. (2002). Implicit ageism. In T. Nelson (Ed.), Ageism: Stereotyping and prejudice against older persons. Cambridge, MA: MIT Press.
+
+Levy, B.R., Hausdorff, J.M., Hencke, R., & Wei, J.Y. (2000). Reducing cardiovascular stress with positive self-stereotypes of aging. Journals of Gerontology, Series B: Psychological Sciences and Social Sciences, 55, P205-P213.
+
+Levy, B.R., & Leifheit-Limson, E. (2009). The stereotype-matching effect: Greater influence on functioning when age stereotypes correspond to outcomes. Psychology and Aging, 24, 230-233.
+
+Levy, B.R., & Myers, L.M. (2004). Preventive health behaviors influenced by self-perceptions of aging. Preventive Medicine, 39, 625-629.
+
+Levy, B.R., Slade, M.D., & Gill, T.M. (2006). Hearing decline predicted by elders’ stereotypes. Journals of Gerontology, Series B: Psychological Sciences and Social Sciences, 61, P82-P87.
+
+Levy, B.R., Slade, M.D., & Kasl, S.V. (2002). Longitudinal benefit of positive self-perceptions of aging on functional health. Journals of Gerontology, Series B: Psychological Sciences and Social Sciences, 57, P409-P417.
+
+Levy, B.R., Slade, M.D., Kunkel, S.R., & Kasl, S.V. (2002). Longevity increased by positive self-perceptions of aging. Journal of Personality and Social Psychology, 83, 261-270.
+
+Levy, B.R., Slade, M.D., May, J., & Caracciolo, E.A. (2006). Physical recovery after acute myocardial infarction: Positive age self-stereotypes as a resource. International Journal of Aging and Human Development, 62, 285-301.
+
+Levy, B.R., Zonderman, A., Slade, M.D., & Ferrucci, L. (2009). Negative age stereotypes held earlier in life predict cardiovascular events in later life. Psychological Science, 20, 296-298.
+
+Masoro, E.J. (2006). Are age-associated diseases an integral part of aging? In E.J. Masoro & S.N. Austad (Eds.), Handbook of the biology of aging. (6th ed., pp. 43-62) New York: Academic Press.
+
+Rothermund, K. (2005). Effects of age stereotypes on self-views and adaptation. In W. Greve, K. Rothermund, & D. Wentura (Eds.), The adaptive self. (pp. ??-??) Cambridge, MA: Hogrefe & Huber.
+
+Spiro, H. (2008). The aptitude of aging. Connecticut Medicine, 72, 563-564.
+
+Wurm, S., Tesch-Römer, C., & Tomasik, M.J. (2007). Longitudinal findings on aging-related cognitions, control beliefs and health in later life. Journals of Gerontology Series B: Psychological Sciences and Social Sciences, 62, P156-P164.

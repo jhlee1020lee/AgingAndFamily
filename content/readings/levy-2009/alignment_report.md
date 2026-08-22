@@ -1,0 +1,22 @@
+# Alignment Report
+
+- Reading: `levy-2009`
+- Generated at: 2026-08-22T01:18:58.394Z
+- Final status: **PASS**
+- Source segments: 16
+- Translation segments: 16
+
+## Missing translation segment_id
+  - none
+
+## Extra translation segment_id
+  - none
+
+## Order mismatches
+  - none
+
+## Errors
+  - none
+
+## Warnings
+  - none

@@ -1,0 +1,1308 @@
+const crypto = require("crypto");
+const fs = require("fs");
+const path = require("path");
+const { normalizeTranslationOriginalRevealConfig, parseMarkdownDocument, resolveTranslationAlignment } = require("./translation_original_reveal");
+
+const ROOT_DIR = path.resolve(__dirname, "..");
+
+const PAGE_STATUS = Object.freeze({
+  MISSING: "missing",
+  SCHEMA_FAIL: "schema_fail",
+  SCHEMA_PASS: "schema_pass",
+  APPROVED: "approved",
+  NOT_APPLICABLE: "not_applicable",
+});
+
+const READING_STATUS = Object.freeze({
+  BLOCKED: "blocked",
+  PARTIAL: "partial",
+  MANUAL_REVIEW_REQUIRED: "manual_review_required",
+  APPROVED: "approved",
+});
+
+const ARTICLE_PAGE_KEYS = new Set(["full", "translation", "summary", "concepts", "pitfalls", "review-sheet"]);
+const QUIZ_PAGE_KEYS = new Set(["quiz-ox", "quiz-short", "quiz-mcq"]);
+const NOTEBOOKLM_VIDEO_CANDIDATES = ["notebooklm.mp4", "notebooklm.webm", "notebooklm.mov", "notebooklm.m4v"];
+const STAGE1_PAGE_KEYS = ["full"];
+const STAGE2_PAGE_KEYS = ["translation"];
+const STAGE3_PAGE_KEYS = ["summary", "concepts", "pitfalls", "review-sheet", "professor-prep", "quiz-ox", "quiz-short", "quiz-mcq"];
+const ALL_PAGE_KEYS = ["full", "translation", "summary", "concepts", "pitfalls", "review-sheet", "professor-prep", "quiz-ox", "quiz-short", "quiz-mcq"];
+const SHORT_ANSWER_TYPES = new Set(["term", "person", "number", "short_phrase"]);
+
+const SUMMARY_BANNED_PATTERNS = [
+  /이 읽기에서 .*어떻게 연결되는지 보여 주는 핵심 축이다/,
+  /발표에서는 .*한 문장으로 정의한 뒤 바로 근거와 함의를 붙이는 방식이 안전하다/,
+  /읽을 때는 .*같은 말인지, 다른 수준의 개념인지 구분해서 따라가면 구조가 잡힌다/,
+];
+
+const CONCEPTS_BANNED_PATTERNS = [
+  /반복적으로 확인해야 하는 핵심 개념 또는 쟁점이다/,
+  /정의, 근거, 함의 순서로 연결해 말하면 수업 답변이 흔들리지 않는다/,
+  /원문 용어 확인 필요/,
+  /헷갈리는 포인트 확인 필요/,
+  /왜 중요한지 설명 보강 필요/,
+];
+
+const PITFALLS_BANNED_PATTERNS = [
+  /자주 틀리는 말만 반복하고 구체 구분이 없다/,
+];
+
+const REVIEW_SHEET_BANNED_PATTERNS = [
+  /이 부분을 한 문장으로 다시 말할 수 있어야 한다/,
+  /이 용어가 왜 중요한지 바로 설명할 수 있어야 한다/,
+  /한 문장으로 다시 말할 수 있어야 한다/,
+];
+
+const PITFALLS_GENERIC_PATTERNS = [
+  /교수님 스타일에서는 한국 맥락 연결이 중요하다/,
+  /AI처럼 들리기 쉽다/,
+  /영문 읽기/,
+  /번역만 보고 가면/,
+];
+
+const QUIZ_TRIVIAL_EXPLANATION_PATTERNS = [
+  /이 읽기(?:의)? 핵심 용어다\.?$/,
+  /보여 주는 핵심 축이다\.?$/,
+  /읽기 구조를 잡는 핵심 축이다\.?$/,
+];
+
+const UNRESOLVED_PARTICLE_PATTERN = /은\(는\)|는\(은\)|와\(과\)|과\(와\)|이\(가\)|가\(이\)|을\(를\)|를\(을\)|로\(으로\)|으로\(로\)/;
+const INCOMPLETE_FULL_PATTERNS = [
+  /stage\s*1\s*pass/i,
+  /현재\s*원문/,
+  /현재\s*추출/,
+  /다음\s*패스/,
+  /끝단\s*qa/i,
+  /이어서\s*진행/,
+];
+const INCOMPLETE_TRANSLATION_PATTERNS = [
+  /stage\s*2\s*pass/i,
+  /현재\s*번역/,
+  /다음\s*패스/,
+  /끝단\s*qa/i,
+  /이어서\s*진행/,
+  /번역본이다/,
+  /부록.?참고문헌.*다음\s*패스/,
+];
+
+function readText(filePath) {
+  return fs.readFileSync(filePath, "utf8").replace(/^\uFEFF/, "");
+}
+
+function writeText(filePath, text) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+  fs.writeFileSync(filePath, text, "utf8");
+}
+
+function loadJson(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+  return JSON.parse(readText(filePath));
+}
+
+function toText(value) {
+  return typeof value === "string" ? value.trim() : "";
+}
+
+function wordCount(value) {
+  return toText(value).split(/\s+/).filter(Boolean).length;
+}
+
+function countMatches(value, pattern) {
+  return [...toText(value).matchAll(pattern)].length;
+}
+
+function normalizedText(value) {
+  return toText(value).toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+function findDuplicateNormalizedTexts(values) {
+  const seen = new Set();
+  const duplicates = new Set();
+  values.forEach((value) => {
+    const key = normalizedText(value);
+    if (!key) {
+      return;
+    }
+    if (seen.has(key)) {
+      duplicates.add(key);
+      return;
+    }
+    seen.add(key);
+  });
+  return [...duplicates];
+}
+
+function containsUnresolvedParticleTemplate(value) {
+  return UNRESOLVED_PARTICLE_PATTERN.test(toText(value));
+}
+
+function splitLevelTwoSections(markdown) {
+  const text = toText(markdown);
+  const matches = [...text.matchAll(/^##\s+(.+)$/gm)];
+  if (!matches.length) {
+    return [];
+  }
+  return matches.map((match, index) => {
+    const bodyStart = match.index + match[0].length;
+    const bodyEnd = index + 1 < matches.length ? matches[index + 1].index : text.length;
+    return {
+      title: toText(match[1]),
+      body: text.slice(bodyStart, bodyEnd).trim(),
+    };
+  });
+}
+
+function findReferenceSection(sections = []) {
+  return sections.find((section) => /^(references?|참고문헌)$/i.test(toText(section?.title).trim()));
+}
+
+function statusKeyForPage(pageKey) {
+  return pageKey.replace(/-/g, "_");
+}
+function normalizeEnabledPageKeys(rawKeys, language) {
+  const fallback = ALL_PAGE_KEYS.filter((key) => language === "en" || key !== "translation");
+  if (!Array.isArray(rawKeys)) {
+    return fallback;
+  }
+  const allowed = new Set(fallback);
+  const selected = rawKeys.map((item) => toText(item)).filter((item) => allowed.has(item));
+  return selected.length ? fallback.filter((key) => selected.includes(key)) : fallback;
+}
+function enabledPageKeys(reading, existingMeta = {}) {
+  return normalizeEnabledPageKeys(reading.enabled_page_keys || existingMeta.enabled_page_keys, reading.language);
+}
+function isPageEnabledForReading(reading, pageKey, existingMeta = {}) {
+  return enabledPageKeys(reading, existingMeta).includes(pageKey);
+}
+
+function isEnglishLike(value) {
+  return /^[A-Za-z][A-Za-z0-9+ /().,:&'-]*$/.test(toText(value));
+}
+
+function isExternalUrl(value) {
+  return /^https?:\/\//i.test(toText(value));
+}
+
+function detectLocalNotebooklmVideo(rootDir, reading) {
+  const contentDir = path.join(rootDir, reading.content_dir);
+  for (const filename of NOTEBOOKLM_VIDEO_CANDIDATES) {
+    const candidate = path.join(contentDir, filename);
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+  return "";
+}
+
+function publicNotebooklmVideoPath(reading, sourcePath) {
+  if (!sourcePath) {
+    return "";
+  }
+  return path.posix.join("assets", "videos", reading.slug, path.basename(sourcePath));
+}
+
+function pdfVisibility(reading, existingMeta = {}) {
+  return toText(reading.pdf_visibility || existingMeta.pdf_visibility) || (toText(reading.public_pdf) ? "public" : "none");
+}
+
+function landingVideoPolicy(reading, existingMeta = {}) {
+  return toText(reading.landing_video_policy || existingMeta.landing_video_policy) || "optional";
+}
+
+function resolveNotebooklmVideo(rootDir, reading, existingMeta = {}) {
+  const localPath = detectLocalNotebooklmVideo(rootDir, reading);
+  const explicitUrl = toText(reading.notebooklm_video_url);
+  const fallbackUrl = toText(existingMeta.notebooklm_video_url);
+  const videoUrl = explicitUrl || publicNotebooklmVideoPath(reading, localPath) || fallbackUrl;
+  return {
+    localPath,
+    videoUrl,
+    isExternal: isExternalUrl(videoUrl),
+  };
+}
+
+function translationOriginalRevealPath(rootDir, reading, existingMeta = {}) {
+  const config = normalizeTranslationOriginalRevealConfig(existingMeta.translation_original_reveal || reading.translation_original_reveal);
+  if (!config.enabled) {
+    return "";
+  }
+  const translationSourcePath = contentPathForPage(rootDir, reading, "translation");
+  return path.join(path.dirname(translationSourcePath), config.alignment_file);
+}
+
+function shouldRequireTranslationOriginalRevealBuild(reading, existingMeta = {}, pageResults = {}) {
+  const config = normalizeTranslationOriginalRevealConfig(existingMeta.translation_original_reveal || reading.translation_original_reveal);
+  if (!config.enabled || reading.language !== "en") {
+    return false;
+  }
+  return pageResults.full?.status === PAGE_STATUS.APPROVED
+    && pageResults.translation?.status === PAGE_STATUS.APPROVED;
+}
+
+function countHtmlClass(html, className) {
+  const classAttrs = [...String(html || "").matchAll(/class="([^"]+)"/g)].map((match) => match[1]);
+  return classAttrs.filter((value) => value.split(/\s+/).includes(className)).length;
+}
+
+function builtPageFilename(pageKey) {
+  return `${pageKey}.html`;
+}
+
+function hasBuiltPlaceholderContent(html) {
+  const value = String(html || "");
+  return value.includes("<h2>업로드 예정입니다.</h2>")
+    || value.includes("<h2>임시 안내 페이지</h2>")
+    || countHtmlClass(value, "upload-placeholder") > 0
+    || countHtmlClass(value, "article-placeholder") > 0;
+}
+
+function applyArtifactErrorsToPageResult(result, artifactErrors = []) {
+  if (!artifactErrors.length) {
+    return result;
+  }
+  const mergedErrors = Array.from(new Set([...(Array.isArray(result.errors) ? result.errors : []), ...artifactErrors]));
+  return {
+    ...result,
+    status: PAGE_STATUS.SCHEMA_FAIL,
+    errors: mergedErrors,
+  };
+}
+
+function validateTranslationOriginalReveal(rootDir, reading, existingMeta, translationText, fullText) {
+  const config = normalizeTranslationOriginalRevealConfig(existingMeta.translation_original_reveal || reading.translation_original_reveal);
+  const errors = [];
+  const warnings = [];
+  const metrics = {
+    original_reveal_enabled: config.enabled,
+    reveal_entry_count: 0,
+  };
+  if (!config.enabled) {
+    return { errors, warnings, metrics };
+  }
+  if (reading.language !== "en") {
+    errors.push("translation original reveal is only allowed on English readings");
+    return { errors, warnings, metrics };
+  }
+  const alignmentPath = translationOriginalRevealPath(rootDir, reading, existingMeta);
+  if (!alignmentPath || !fs.existsSync(alignmentPath)) {
+    errors.push("translation original reveal alignment file is missing");
+    return { errors, warnings, metrics };
+  }
+  const payload = loadJson(alignmentPath);
+  if (!payload || typeof payload !== "object") {
+    errors.push("translation original reveal alignment payload is invalid");
+    return { errors, warnings, metrics };
+  }
+  if (toText(payload.reading_slug) && toText(payload.reading_slug) !== reading.slug) {
+    errors.push("translation original reveal reading_slug does not match the reading");
+  }
+  const translationDocument = parseMarkdownDocument(translationText, { skipFirstTitleHeading: true, collectFrontmatter: true });
+  const originalDocument = parseMarkdownDocument(fullText, { skipFirstTitleHeading: true, collectFrontmatter: true });
+  const resolved = resolveTranslationAlignment(payload, translationDocument, originalDocument, { allowedStatuses: ["verified"] });
+  metrics.reveal_entry_count = resolved.entries.length;
+  errors.push(...resolved.errors);
+  if (!metrics.reveal_entry_count) {
+    errors.push("translation original reveal is enabled but no verified entries were published");
+  }
+  return { errors, warnings, metrics };
+}
+
+function sharedPageKeys(reading) {
+  return (Array.isArray(reading.shared_page_keys) ? reading.shared_page_keys : [])
+    .map((item) => toText(item))
+    .filter(Boolean);
+}
+
+function pageSourceFilename(pageKey) {
+  if (pageKey === "full") {
+    return "full.md";
+  }
+  if (pageKey === "translation") {
+    return "translation.md";
+  }
+  if (pageKey === "review-sheet") {
+    return "review-sheet.md";
+  }
+  if (pageKey === "professor-prep") {
+    return "professor_prep.json";
+  }
+  if (pageKey === "quiz-short") {
+    return "quiz_short.json";
+  }
+  if (ARTICLE_PAGE_KEYS.has(pageKey)) {
+    return `${pageKey}.md`;
+  }
+  return `${pageKey}.json`;
+}
+
+function sharedPageSourcePath(rootDir, reading, pageKey) {
+  const bundle = toText(reading.shared_page_bundle);
+  if (!bundle || !sharedPageKeys(reading).includes(pageKey)) {
+    return "";
+  }
+  return path.join(rootDir, "content", "shared-study", bundle, pageSourceFilename(pageKey));
+}
+
+function normalizeManualReview(value) {
+  const manual = value && typeof value === "object" ? value : {};
+  const approvedPageHashes = manual.approved_page_hashes && typeof manual.approved_page_hashes === "object"
+    ? Object.fromEntries(
+      Object.entries(manual.approved_page_hashes)
+        .map(([pageKey, hash]) => [toText(pageKey), toText(hash)])
+        .filter(([pageKey, hash]) => pageKey && hash)
+    )
+    : {};
+  return {
+    approved_pages: Array.isArray(manual.approved_pages)
+      ? manual.approved_pages.map((item) => toText(item)).filter(Boolean)
+      : [],
+    approved_page_hashes: approvedPageHashes,
+    reviewer: toText(manual.reviewer),
+    reviewed_at: toText(manual.reviewed_at) || null,
+    notes: Array.isArray(manual.notes) ? manual.notes.map((item) => toText(item)).filter(Boolean) : [],
+    blocked_reason: toText(manual.blocked_reason),
+  };
+}
+
+function withApproval(pageKey, baseResult, manualReview) {
+  const baseStatus = baseResult?.status;
+  const sourceHash = toText(baseResult?.source_hash);
+  const storedHash = toText(manualReview?.approved_page_hashes?.[pageKey]);
+  if (
+    baseStatus === PAGE_STATUS.SCHEMA_PASS
+    && manualReview.approved_pages.includes(pageKey)
+    && (!storedHash || !sourceHash || storedHash === sourceHash)
+  ) {
+    return PAGE_STATUS.APPROVED;
+  }
+  return baseStatus;
+}
+
+function makeResult(status, errors = [], warnings = [], metrics = {}) {
+  return { status, errors, warnings, metrics };
+}
+
+function missingResult() {
+  return makeResult(PAGE_STATUS.MISSING, ["source file is missing"], []);
+}
+
+function baseMarkdownChecks(text, minWords) {
+  const errors = [];
+  const warnings = [];
+  const metrics = {
+    word_count: wordCount(text),
+    section_count: countMatches(text, /^##\s+/gm),
+    sub_section_count: countMatches(text, /^###\s+/gm),
+    bullet_count: countMatches(text, /^\s*-\s+/gm),
+  };
+  if (metrics.word_count < minWords) {
+    errors.push(`content is too short (<${minWords} words)`);
+  }
+  return { errors, warnings, metrics };
+}
+
+function parseLongFormStructure(text) {
+  const document = parseMarkdownDocument(text, {
+    skipFirstTitleHeading: true,
+    collectFrontmatter: true,
+  });
+  const blocks = Array.isArray(document?.blocks) ? document.blocks : [];
+  const levelCounts = { 2: 0, 3: 0, 4: 0 };
+  const sections = [];
+  let currentLevelTwoSection = null;
+
+  blocks.forEach((block) => {
+    if (block.type === "heading") {
+      if (levelCounts[block.level] !== undefined) {
+        levelCounts[block.level] += 1;
+      }
+      if (block.level === 2) {
+        currentLevelTwoSection = {
+          title: toText(block.text),
+          content_block_count: 0,
+          prose_block_count: 0,
+          figure_count: 0,
+        };
+        sections.push(currentLevelTwoSection);
+      }
+      return;
+    }
+    if (!currentLevelTwoSection) {
+      return;
+    }
+    currentLevelTwoSection.content_block_count += 1;
+    if (block.type === "figure") {
+      currentLevelTwoSection.figure_count += 1;
+    }
+    if (block.type === "paragraph" || block.type === "list" || block.type === "quote" || block.type === "code") {
+      currentLevelTwoSection.prose_block_count += 1;
+    }
+  });
+
+  const emptySections = sections.filter((section) => section.content_block_count === 0);
+  return {
+    level2_heading_count: levelCounts[2],
+    level3_heading_count: levelCounts[3],
+    level4_heading_count: levelCounts[4],
+    figure_count: blocks.filter((block) => block.type === "figure").length,
+    paragraph_count: blocks.filter((block) => block.type === "paragraph").length,
+    level2_section_count: sections.length,
+    empty_level2_sections: emptySections.map((section) => section.title || "untitled"),
+    last_level2_title: sections.length ? sections[sections.length - 1].title : "",
+  };
+}
+
+function countStandaloneFigureLabelLines(text) {
+  return toText(text)
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .filter((line) => !line.startsWith("!["))
+    .filter((line) => {
+      const match = line.match(/(figure|table|그림|표)\s*[-–—:]?\s*\d+/iu);
+      if (!match) {
+        return false;
+      }
+      return match.index <= 12;
+    }).length;
+}
+
+function addIncompleteProgressErrors(errors, text, patterns, label) {
+  patterns.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`${label} contains incomplete pass or progress-note text: ${pattern}`);
+    }
+  });
+}
+
+function applyLongFormCoverageChecks(errors, targetMetrics, sourceMetrics, label) {
+  if (!sourceMetrics || !targetMetrics) {
+    return;
+  }
+  if (sourceMetrics.level2_heading_count > 0 && targetMetrics.level2_heading_count < sourceMetrics.level2_heading_count) {
+    errors.push(`${label} is missing second-level sections relative to the original text`);
+  }
+  const minimumLevelThreeCount = Math.ceil(sourceMetrics.level3_heading_count * 0.75);
+  if (sourceMetrics.level3_heading_count > 0 && targetMetrics.level3_heading_count < minimumLevelThreeCount) {
+    errors.push(`${label} is missing third-level sections relative to the original text`);
+  }
+  const minimumLevelFourCount = Math.ceil(sourceMetrics.level4_heading_count * 0.75);
+  if (sourceMetrics.level4_heading_count > 0 && targetMetrics.level4_heading_count < minimumLevelFourCount) {
+    errors.push(`${label} is missing fourth-level sections relative to the original text`);
+  }
+  if (targetMetrics.figure_count !== sourceMetrics.figure_count) {
+    errors.push(`${label} is missing figure/table assets relative to the original text`);
+  }
+  if (targetMetrics.empty_level2_sections.length) {
+    errors.push(`${label} contains empty second-level sections: ${targetMetrics.empty_level2_sections.join(", ")}`);
+  }
+}
+
+function validateSummaryMarkdown(text) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 120);
+  if (metrics.section_count < 3) {
+    errors.push("summary needs at least 3 second-level sections");
+  }
+  if (metrics.bullet_count < 6) {
+    errors.push("summary needs at least 6 bullet points");
+  }
+  if (!/^##\s+(한 줄 핵심|핵심 주장|한눈에 보기)$/m.test(text)) {
+    errors.push("summary is missing a lead section such as '한 줄 핵심' or '핵심 주장'");
+  }
+  if (!/^##\s+(결론 정리|왜 중요한지|논증 흐름|수업에서 잡힐 가능성이 큰 포인트|수업에서 바로 잡힐 포인트)$/m.test(text)) {
+    warnings.push("summary should include a dedicated implication, conclusion, or class-facing section");
+  }
+  SUMMARY_BANNED_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`summary contains banned template phrase: ${pattern}`);
+    }
+  });
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateConceptsMarkdown(text) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 180);
+  const sections = splitLevelTwoSections(text);
+  metrics.concept_count = sections.length;
+  if (sections.length < 5) {
+    errors.push("concepts page needs at least 5 concept sections");
+  }
+  sections.forEach((section, index) => {
+    const prefix = `section ${index + 1} (${section.title || "untitled"})`;
+    if (!/^- 한국어 개념명:/m.test(section.body)) {
+      errors.push(`${prefix}: missing '한국어 개념명'`);
+    }
+    if (!/^- Original English term:/m.test(section.body)) {
+      errors.push(`${prefix}: missing 'Original English term'`);
+    }
+    if (!/^- 정확한 한 줄 정의:/m.test(section.body)) {
+      errors.push(`${prefix}: missing '정확한 한 줄 정의'`);
+    }
+    if (!/^- 학생 말투로 풀어쓴 설명:/m.test(section.body)) {
+      errors.push(`${prefix}: missing '학생 말투로 풀어쓴 설명'`);
+    }
+    if (!/^- 왜 이 (논문|읽기|장|글)에서 중요한지:/m.test(section.body)) {
+      errors.push(`${prefix}: missing '왜 이 ...에서 중요한지'`);
+    }
+    if (!/^- 자주 헷갈리는 포인트:/m.test(section.body)) {
+      errors.push(`${prefix}: missing '자주 헷갈리는 포인트'`);
+    }
+  });
+  CONCEPTS_BANNED_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`concepts page contains banned placeholder or template phrase: ${pattern}`);
+    }
+  });
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validatePitfallsMarkdown(text) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 80);
+  if (countMatches(text, /^##\s+/gm) < 3) {
+    errors.push("pitfalls page needs at least 3 contrast sections");
+  }
+  const contrastLines = countMatches(text, /^\s*-\s+(오해|바로잡기|왜 중요한가|A vs B|짧은 구분|왜 헷갈리는지|이 글에서 어떻게 읽어야 하는지):/gm);
+  if (contrastLines < 9) {
+    errors.push("pitfalls page should include explicit contrast labels such as A vs B, 짧은 구분, 오해, 바로잡기, or 왜 중요한가");
+  }
+  PITFALLS_BANNED_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`pitfalls page contains banned template phrase: ${pattern}`);
+    }
+  });
+  PITFALLS_GENERIC_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`pitfalls page contains generic coaching phrase instead of reading-specific confusion: ${pattern}`);
+    }
+  });
+  if (containsUnresolvedParticleTemplate(text)) {
+    errors.push("pitfalls page contains unresolved particle template such as '은(는)' or '와(과)'");
+  }
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateReviewSheetMarkdown(text) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 80);
+  if (countMatches(text, /^##\s+/gm) < 3) {
+    warnings.push("review sheet should usually have at least 3 second-level sections");
+  }
+  REVIEW_SHEET_BANNED_PATTERNS.forEach((pattern) => {
+    if (pattern.test(text)) {
+      errors.push(`review sheet contains placeholder study instruction instead of actual content: ${pattern}`);
+    }
+  });
+  if (containsUnresolvedParticleTemplate(text)) {
+    errors.push("review sheet contains unresolved particle template such as '은(는)' or '와(과)'");
+  }
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateFullMarkdown(text) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 400);
+  const structure = parseLongFormStructure(text);
+  Object.assign(metrics, structure);
+  metrics.figure_label_line_count = countStandaloneFigureLabelLines(text);
+  addIncompleteProgressErrors(errors, text, INCOMPLETE_FULL_PATTERNS, "full text");
+  if (structure.level2_heading_count > 0 && structure.empty_level2_sections.length) {
+    errors.push(`full text contains empty second-level sections: ${structure.empty_level2_sections.join(", ")}`);
+  }
+  if (metrics.figure_label_line_count > structure.figure_count) {
+    warnings.push("full text appears to contain standalone figure/table labels without matching direct image inserts");
+  }
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateTranslationMarkdown(rootDir, reading, existingMeta, text, fullText) {
+  if (!text) {
+    return missingResult();
+  }
+  const { errors, warnings, metrics } = baseMarkdownChecks(text, 200);
+  if (!fullText) {
+    errors.push("translation cannot be validated because full text is missing or empty");
+  }
+  const fullWords = wordCount(fullText);
+  if (fullWords) {
+    metrics.full_word_count = fullWords;
+    metrics.translation_ratio = Number((metrics.word_count / fullWords).toFixed(3));
+    if (metrics.translation_ratio < 0.5) {
+      errors.push("translation is suspiciously short relative to full text (minimum ratio: 0.5)");
+    }
+  }
+  const translationStructure = parseLongFormStructure(text);
+  Object.assign(metrics, translationStructure);
+  metrics.figure_label_line_count = countStandaloneFigureLabelLines(text);
+  addIncompleteProgressErrors(errors, text, INCOMPLETE_TRANSLATION_PATTERNS, "translation");
+  if (fullText) {
+    const fullStructure = parseLongFormStructure(fullText);
+    const translationSections = splitLevelTwoSections(text);
+    const fullSections = splitLevelTwoSections(fullText);
+    metrics.full_level2_heading_count = fullStructure.level2_heading_count;
+    metrics.full_level3_heading_count = fullStructure.level3_heading_count;
+    metrics.full_level4_heading_count = fullStructure.level4_heading_count;
+    metrics.full_figure_count = fullStructure.figure_count;
+    applyLongFormCoverageChecks(errors, translationStructure, fullStructure, "translation");
+    const fullReferenceSection = findReferenceSection(fullSections);
+    const translationReferenceSection = findReferenceSection(translationSections);
+    if (fullReferenceSection) {
+      const fullReferenceWords = wordCount(fullReferenceSection.body);
+      metrics.full_reference_word_count = fullReferenceWords;
+      if (!translationReferenceSection) {
+        errors.push("translation is missing the references section");
+      } else {
+        const translationReferenceWords = wordCount(translationReferenceSection.body);
+        metrics.translation_reference_word_count = translationReferenceWords;
+        if (fullReferenceWords >= 200) {
+          metrics.translation_reference_ratio = Number((translationReferenceWords / fullReferenceWords).toFixed(3));
+          if (metrics.translation_reference_ratio < 0.8) {
+            errors.push("translation references section is suspiciously short relative to the original references");
+          }
+        }
+      }
+    }
+  } else if (translationStructure.empty_level2_sections.length) {
+    errors.push(`translation contains empty second-level sections: ${translationStructure.empty_level2_sections.join(", ")}`);
+  }
+  if (metrics.figure_label_line_count > translationStructure.figure_count) {
+    warnings.push("translation appears to contain standalone figure/table labels without matching direct image inserts");
+  }
+  const revealValidation = validateTranslationOriginalReveal(rootDir, reading, existingMeta, text, fullText);
+  errors.push(...revealValidation.errors);
+  warnings.push(...revealValidation.warnings);
+  Object.assign(metrics, revealValidation.metrics);
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateProfessorPrepJson(payload) {
+  if (!payload) {
+    return missingResult();
+  }
+  const cards = Array.isArray(payload.cards) ? payload.cards : [];
+  const errors = [];
+  const warnings = [];
+  const metrics = { card_count: cards.length };
+  if (cards.length < 15) {
+    errors.push("professor-prep needs at least 15 cards");
+  }
+  cards.forEach((card, index) => {
+    if (!card || typeof card !== "object") {
+      errors.push(`card ${index + 1} is not an object`);
+      return;
+    }
+    if (!toText(card.title)) {
+      errors.push(`card ${index + 1} is missing title`);
+    }
+    const answer30s = toText(card.answer_30s);
+    const legacyAnswer = toText(card.answer || card.model_answer);
+    if (!answer30s) {
+      if (legacyAnswer) {
+        errors.push(`card ${index + 1} must use answer_30s; legacy answer/model_answer is not valid for approval`);
+      } else {
+        errors.push(`card ${index + 1} is missing answer_30s`);
+      }
+    }
+  });
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateQuizPayload(pageKey, payload) {
+  if (!payload) {
+    return missingResult();
+  }
+  const items = Array.isArray(payload.items) ? payload.items : [];
+  const errors = [];
+  const warnings = [];
+  const metrics = { item_count: items.length, evidence_segment_count: 0 };
+  if (items.length !== 15) {
+    errors.push(`${pageKey} must contain exactly 15 items`);
+  }
+  if (pageKey === "quiz-short") {
+    const questions = [];
+    items.forEach((item, index) => {
+      const question = toText(item.question);
+      const explanation = toText(item.explanation);
+      const evidenceSegmentId = toText(item.evidence_segment_id);
+      const acceptedAnswers = Array.isArray(item.accepted_answers)
+        ? item.accepted_answers.map((answer) => toText(answer)).filter(Boolean)
+        : [];
+      if (evidenceSegmentId) {
+        metrics.evidence_segment_count += 1;
+      } else {
+        warnings.push(`quiz-short item ${index + 1} is missing evidence_segment_id; legacy source is tolerated but not approval-ready for new segment-aligned work`);
+      }
+      questions.push(question);
+      if (!question) {
+        errors.push(`quiz-short item ${index + 1} is missing question`);
+      }
+      if (!acceptedAnswers.length) {
+        errors.push(`quiz-short item ${index + 1} is missing accepted_answers`);
+      }
+      if (!SHORT_ANSWER_TYPES.has(toText(item.answer_type))) {
+        errors.push(`quiz-short item ${index + 1} has invalid answer_type`);
+      }
+      if (!explanation) {
+        errors.push(`quiz-short item ${index + 1} is missing explanation`);
+      } else {
+        QUIZ_TRIVIAL_EXPLANATION_PATTERNS.forEach((pattern) => {
+          if (pattern.test(explanation)) {
+            errors.push(`quiz-short item ${index + 1} explanation is too generic: ${pattern}`);
+          }
+        });
+      }
+      if (containsUnresolvedParticleTemplate(question) || containsUnresolvedParticleTemplate(explanation)) {
+        errors.push(`quiz-short item ${index + 1} contains unresolved particle template`);
+      }
+      acceptedAnswers.forEach((answer, answerIndex) => {
+        if (wordCount(answer) > 7) {
+          errors.push(`quiz-short item ${index + 1} answer ${answerIndex + 1} exceeds 7 words`);
+        }
+        if (answer.length >= 2 && normalizedText(question).includes(normalizedText(answer))) {
+          errors.push(`quiz-short item ${index + 1} leaks the accepted answer in the question`);
+        }
+      });
+    });
+    const duplicateQuestions = findDuplicateNormalizedTexts(questions);
+    if (duplicateQuestions.length) {
+      errors.push(`quiz-short contains duplicate or near-duplicate questions (${duplicateQuestions.length})`);
+    }
+  } else {
+    const prompts = [];
+    const mcqAnswerPositions = [];
+    items.forEach((item, index) => {
+      const prompt = toText(item.prompt);
+      const answer = toText(item.answer);
+      const explanation = toText(item.explanation);
+      const evidenceSegmentId = toText(item.evidence_segment_id);
+      prompts.push(prompt);
+      if (evidenceSegmentId) {
+        metrics.evidence_segment_count += 1;
+      } else {
+        warnings.push(`${pageKey} item ${index + 1} is missing evidence_segment_id; legacy source is tolerated but not approval-ready for new segment-aligned work`);
+      }
+      if (!prompt) {
+        errors.push(`${pageKey} item ${index + 1} is missing prompt`);
+      }
+      if (!answer) {
+        errors.push(`${pageKey} item ${index + 1} is missing answer`);
+      }
+      if (!explanation) {
+        errors.push(`${pageKey} item ${index + 1} is missing explanation`);
+      } else {
+        QUIZ_TRIVIAL_EXPLANATION_PATTERNS.forEach((pattern) => {
+          if (pattern.test(explanation)) {
+            errors.push(`${pageKey} item ${index + 1} explanation is too generic: ${pattern}`);
+          }
+        });
+      }
+      if (containsUnresolvedParticleTemplate(prompt) || containsUnresolvedParticleTemplate(explanation)) {
+        errors.push(`${pageKey} item ${index + 1} contains unresolved particle template`);
+      }
+      if (pageKey === "quiz-ox" && !/^(O|X|true|false)$/i.test(answer)) {
+        errors.push(`quiz-ox item ${index + 1} answer must be O/X or true/false`);
+      }
+      if (pageKey === "quiz-mcq") {
+        const options = Array.isArray(item.options)
+          ? item.options.map((option) => toText(option)).filter(Boolean)
+          : [];
+        if (options.length < 3) {
+          errors.push(`quiz-mcq item ${index + 1} needs at least 3 options`);
+        }
+        if (options.length && !options.includes(answer)) {
+          errors.push(`quiz-mcq item ${index + 1} answer must appear in options`);
+        }
+        mcqAnswerPositions.push(options.indexOf(answer));
+      }
+    });
+    const duplicatePrompts = findDuplicateNormalizedTexts(prompts);
+    if (duplicatePrompts.length) {
+      errors.push(`${pageKey} contains duplicate or near-duplicate prompts (${duplicatePrompts.length})`);
+    }
+    if (pageKey === "quiz-mcq") {
+      const uniquePositions = [...new Set(mcqAnswerPositions.filter((position) => position >= 0))];
+      if (mcqAnswerPositions.length >= 6 && uniquePositions.length === 1) {
+        errors.push("quiz-mcq uses the same answer position for every item");
+      }
+    }
+  }
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateLandingVideo(rootDir, reading, existingMeta = {}, options = {}) {
+  const { localPath, videoUrl, isExternal } = resolveNotebooklmVideo(rootDir, reading, existingMeta);
+  const policy = landingVideoPolicy(reading, existingMeta);
+  const errors = [];
+  const warnings = [];
+  const metrics = {
+    has_video: Boolean(videoUrl),
+    policy,
+    source: localPath ? "local" : (isExternal ? "external" : "missing"),
+  };
+  if (!videoUrl) {
+    if (policy === "required") {
+      errors.push("missing notebooklm video");
+    } else {
+      warnings.push("missing optional notebooklm video");
+    }
+  }
+  if (options.requireBuiltArtifacts && videoUrl && !isExternal) {
+    const builtVideoPath = path.join(rootDir, "docs", ...videoUrl.split("/"));
+    if (!fs.existsSync(builtVideoPath)) {
+      errors.push(`missing built notebooklm video: ${videoUrl}`);
+    }
+  }
+  const status = errors.length ? PAGE_STATUS.SCHEMA_FAIL : (videoUrl ? PAGE_STATUS.APPROVED : PAGE_STATUS.SCHEMA_PASS);
+  return makeResult(status, errors, warnings, metrics);
+}
+
+function sourceHashForPath(filePath) {
+  if (!filePath || !fs.existsSync(filePath)) {
+    return "";
+  }
+  const normalized = readText(filePath).replace(/\r\n?/g, "\n");
+  return crypto.createHash("sha1").update(normalized, "utf8").digest("hex");
+}
+
+function contentPathForPage(rootDir, reading, pageKey) {
+  const sharedPath = sharedPageSourcePath(rootDir, reading, pageKey);
+  if (sharedPath) {
+    return sharedPath;
+  }
+  const contentDir = path.join(rootDir, reading.content_dir);
+  if (pageKey === "full") {
+    const preferred = path.join(contentDir, "full.md");
+    const fallback = path.join(contentDir, "cleaned.md");
+    return fs.existsSync(preferred) ? preferred : fallback;
+  }
+  if (pageKey === "translation") {
+    return path.join(contentDir, "translation.md");
+  }
+  if (pageKey === "summary") {
+    return path.join(contentDir, "summary.md");
+  }
+  if (pageKey === "concepts") {
+    return path.join(contentDir, "concepts.md");
+  }
+  if (pageKey === "pitfalls") {
+    return path.join(contentDir, "pitfalls.md");
+  }
+  if (pageKey === "review-sheet") {
+    return path.join(contentDir, "review-sheet.md");
+  }
+  if (pageKey === "professor-prep") {
+    return path.join(contentDir, "professor_prep.json");
+  }
+  if (pageKey === "quiz-short") {
+    return path.join(contentDir, "quiz_short.json");
+  }
+  return path.join(contentDir, `${pageKey}.json`);
+}
+
+function validatePage(rootDir, reading, pageKey, existingMeta = {}) {
+  if (!isPageEnabledForReading(reading, pageKey, existingMeta)) {
+    return makeResult(PAGE_STATUS.NOT_APPLICABLE, [], [], {});
+  }
+  if (pageKey === "translation" && reading.language !== "en") {
+    return makeResult(PAGE_STATUS.NOT_APPLICABLE, [], [], {});
+  }
+  const sourcePath = contentPathForPage(rootDir, reading, pageKey);
+  if (!fs.existsSync(sourcePath)) {
+    return missingResult();
+  }
+  const sourceHash = sourceHashForPath(sourcePath);
+  if (ARTICLE_PAGE_KEYS.has(pageKey)) {
+    const text = readText(sourcePath);
+    let result;
+    if (pageKey === "summary") {
+      result = validateSummaryMarkdown(text);
+    } else if (pageKey === "concepts") {
+      result = validateConceptsMarkdown(text);
+    } else if (pageKey === "pitfalls") {
+      result = validatePitfallsMarkdown(text);
+    } else if (pageKey === "review-sheet") {
+      result = validateReviewSheetMarkdown(text);
+    } else if (pageKey === "translation") {
+      const fullPath = contentPathForPage(rootDir, reading, "full");
+      const fullText = fs.existsSync(fullPath) ? readText(fullPath) : "";
+      result = validateTranslationMarkdown(rootDir, reading, existingMeta, text, fullText);
+    } else {
+      result = validateFullMarkdown(text);
+    }
+    return { ...result, source_hash: sourceHash };
+  }
+  if (pageKey === "professor-prep") {
+    const payload = loadJson(sourcePath);
+    const result = validateProfessorPrepJson(payload);
+    return { ...result, source_hash: sourceHash };
+  }
+  if (QUIZ_PAGE_KEYS.has(pageKey)) {
+    const payload = loadJson(sourcePath);
+    const result = validateQuizPayload(pageKey, payload);
+    return { ...result, source_hash: sourceHash };
+  }
+  return missingResult();
+}
+
+function sanitizeManualReviewApprovals(manualReview, basePageResults) {
+  const approvedPages = [];
+  const approvedPageHashes = { ...manualReview.approved_page_hashes };
+
+  manualReview.approved_pages.forEach((pageKey) => {
+    const result = basePageResults[pageKey];
+    if (!result || result.status !== PAGE_STATUS.SCHEMA_PASS) {
+      delete approvedPageHashes[pageKey];
+      return;
+    }
+    const sourceHash = toText(result.source_hash);
+    const storedHash = toText(approvedPageHashes[pageKey]);
+    if (storedHash && sourceHash && storedHash !== sourceHash) {
+      delete approvedPageHashes[pageKey];
+      return;
+    }
+    approvedPages.push(pageKey);
+    if (sourceHash) {
+      approvedPageHashes[pageKey] = sourceHash;
+    }
+  });
+
+  return {
+    ...manualReview,
+    approved_pages: approvedPages,
+    approved_page_hashes: approvedPageHashes,
+  };
+}
+
+function applyManualApproval(pageKey, result, manualReview) {
+  return {
+    ...result,
+    status: withApproval(pageKey, result, manualReview),
+  };
+}
+
+function isPassingStatus(status) {
+  return status === PAGE_STATUS.SCHEMA_PASS || status === PAGE_STATUS.APPROVED;
+}
+
+function stageStatusFromPages(pageResults, requiredKeys, options = {}) {
+  const notes = [];
+  let hasFailure = false;
+  requiredKeys.forEach((key) => {
+    const page = pageResults[key];
+    if (!page || page.status === PAGE_STATUS.MISSING || page.status === PAGE_STATUS.SCHEMA_FAIL) {
+      hasFailure = true;
+      const problems = page ? page.errors : ["missing validator result"];
+      notes.push(`${key}: ${problems.join("; ")}`);
+    }
+  });
+  if (options.extraNotes && options.extraNotes.length) {
+    hasFailure = true;
+    notes.push(...options.extraNotes);
+  }
+  const uniqueNotes = Array.from(new Set(notes));
+  if (hasFailure) {
+    return { status: READING_STATUS.PARTIAL, notes: uniqueNotes };
+  }
+  const allApproved = requiredKeys.every((key) => pageResults[key] && pageResults[key].status === PAGE_STATUS.APPROVED);
+  if (allApproved) {
+    return { status: READING_STATUS.APPROVED, notes: [] };
+  }
+  return { status: READING_STATUS.MANUAL_REVIEW_REQUIRED, notes: [] };
+}
+
+function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults = {}) {
+  const errors = [];
+  const translationErrors = [];
+  const readingDir = path.join(rootDir, "docs", "readings", reading.slug);
+  const requiredPages = ["index.html", ...enabledPageKeys(reading, existingMeta).map((pageKey) => builtPageFilename(pageKey))];
+  requiredPages.forEach((file) => {
+    if (!fs.existsSync(path.join(readingDir, file))) {
+      const message = `missing built page: docs/readings/${reading.slug}/${file}`;
+      errors.push(message);
+      if (file === "translation.html") {
+        translationErrors.push(message);
+      }
+    }
+  });
+  if (pdfVisibility(reading, existingMeta) === "public" && toText(reading.public_pdf)) {
+    const publicPdfPath = path.join(rootDir, "docs", ...reading.public_pdf.split("/"));
+    if (!fs.existsSync(publicPdfPath)) {
+      errors.push(`missing built public pdf: ${reading.public_pdf}`);
+    }
+  }
+  if (shouldRequireTranslationOriginalRevealBuild(reading, existingMeta, pageResults)) {
+    const translationHtmlPath = path.join(readingDir, "translation.html");
+    if (fs.existsSync(translationHtmlPath)) {
+      const html = readText(translationHtmlPath);
+      const segmentCount = countHtmlClass(html, "translation-segment");
+      const revealCount = countHtmlClass(html, "source-reveal");
+      const expectedCount = Number(pageResults.translation?.metrics?.reveal_entry_count || 0);
+      if (!html.includes('data-original-reveal="enabled"')) {
+        translationErrors.push(`missing built translation original reveal marker: docs/readings/${reading.slug}/translation.html`);
+      }
+      if (segmentCount !== expectedCount) {
+        translationErrors.push(`built translation original reveal segment count mismatch: expected ${expectedCount}, found ${segmentCount} in docs/readings/${reading.slug}/translation.html`);
+      }
+      if (revealCount !== expectedCount) {
+        translationErrors.push(`built translation original reveal body count mismatch: expected ${expectedCount}, found ${revealCount} in docs/readings/${reading.slug}/translation.html`);
+      }
+      if (countHtmlClass(html, "source-reveal-summary") !== expectedCount) {
+        translationErrors.push(`built translation original reveal summary count mismatch: expected ${expectedCount} in docs/readings/${reading.slug}/translation.html`);
+      }
+    } else {
+      translationErrors.push(`missing built page: docs/readings/${reading.slug}/translation.html`);
+    }
+  }
+  Object.entries(pageResults).forEach(([pageKey, result]) => {
+    if (result?.status !== PAGE_STATUS.APPROVED) {
+      return;
+    }
+    if (pageKey === "translation" && reading.language !== "en") {
+      return;
+    }
+    const htmlPath = path.join(readingDir, builtPageFilename(pageKey));
+    if (!fs.existsSync(htmlPath)) {
+      return;
+    }
+    const html = readText(htmlPath);
+    if (hasBuiltPlaceholderContent(html)) {
+      const message = `approved page still renders placeholder content: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`;
+      errors.push(message);
+      if (pageKey === "translation") {
+        translationErrors.push(message);
+      }
+    }
+  });
+  return { errors: [...errors, ...translationErrors], translationErrors, page_count: requiredPages.length };
+}
+
+function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = {}) {
+  const rawManualReview = normalizeManualReview(existingMeta.manual_review);
+  const landing = validateLandingVideo(rootDir, reading, existingMeta, options);
+  const basePageResults = {
+    full: validatePage(rootDir, reading, "full", existingMeta),
+    translation: validatePage(rootDir, reading, "translation", existingMeta),
+    summary: validatePage(rootDir, reading, "summary", existingMeta),
+    concepts: validatePage(rootDir, reading, "concepts", existingMeta),
+    pitfalls: validatePage(rootDir, reading, "pitfalls", existingMeta),
+    "review-sheet": validatePage(rootDir, reading, "review-sheet", existingMeta),
+    "professor-prep": validatePage(rootDir, reading, "professor-prep", existingMeta),
+    "quiz-ox": validatePage(rootDir, reading, "quiz-ox", existingMeta),
+    "quiz-short": validatePage(rootDir, reading, "quiz-short", existingMeta),
+    "quiz-mcq": validatePage(rootDir, reading, "quiz-mcq", existingMeta),
+  };
+  const manualReview = sanitizeManualReviewApprovals(rawManualReview, basePageResults);
+  const sourcePageResults = Object.fromEntries(
+    Object.entries(basePageResults).map(([pageKey, result]) => [
+      pageKey,
+      applyManualApproval(pageKey, result, manualReview),
+    ])
+  );
+  const pageResults = Object.fromEntries(
+    Object.entries(sourcePageResults).map(([pageKey, result]) => [
+      pageKey,
+      {
+        ...result,
+        errors: [...result.errors],
+        warnings: [...result.warnings],
+        metrics: { ...result.metrics },
+      },
+    ])
+  );
+
+  const stage1Extra = [];
+  const requireBuiltArtifacts = Boolean(
+    options.requireBuiltArtifacts
+    || shouldRequireTranslationOriginalRevealBuild(reading, existingMeta, pageResults)
+  );
+  if (requireBuiltArtifacts) {
+    const artifactResult = validateBuildArtifacts(rootDir, reading, existingMeta, pageResults);
+    if (artifactResult.errors.length) {
+      stage1Extra.push(...artifactResult.errors.filter((message) => message.includes("public pdf")));
+    }
+    if (artifactResult.translationErrors.length) {
+      pageResults.translation = applyArtifactErrorsToPageResult(pageResults.translation, artifactResult.translationErrors);
+    }
+  }
+  const enabledKeys = enabledPageKeys(reading, existingMeta);
+  const stage1Required = STAGE1_PAGE_KEYS.filter((key) => enabledKeys.includes(key));
+  const stage1 = stageStatusFromPages(pageResults, stage1Required, { extraNotes: stage1Extra });
+  const stage2Required = reading.language === "en" ? STAGE2_PAGE_KEYS.filter((key) => enabledKeys.includes(key)) : [];
+  const stage2 = stageStatusFromPages(pageResults, stage2Required);
+  const stage3 = stageStatusFromPages(pageResults, STAGE3_PAGE_KEYS.filter((key) => enabledKeys.includes(key)));
+
+  let readingStatus = READING_STATUS.PARTIAL;
+  const readingNotes = [];
+  if (manualReview.blocked_reason) {
+    readingStatus = READING_STATUS.BLOCKED;
+    readingNotes.push(manualReview.blocked_reason);
+  } else if (
+    stage1.status === READING_STATUS.PARTIAL
+    || stage2.status === READING_STATUS.PARTIAL
+    || stage3.status === READING_STATUS.PARTIAL
+  ) {
+    readingStatus = READING_STATUS.PARTIAL;
+    readingNotes.push(...stage1.notes, ...stage2.notes, ...stage3.notes);
+  } else if (
+    stage1.status === READING_STATUS.APPROVED
+    && stage2.status === READING_STATUS.APPROVED
+    && stage3.status === READING_STATUS.APPROVED
+  ) {
+    readingStatus = READING_STATUS.APPROVED;
+  } else {
+    readingStatus = READING_STATUS.MANUAL_REVIEW_REQUIRED;
+  }
+
+  const contentStatus = Object.fromEntries(
+    Object.entries(pageResults).map(([pageKey, result]) => [statusKeyForPage(pageKey), result.status])
+  );
+  contentStatus.index = landing.status;
+
+  const dedupedReadingNotes = Array.from(new Set(readingNotes));
+  const validationStatus = {
+    updated_at: new Date().toISOString(),
+    require_built_artifacts: requireBuiltArtifacts,
+    landing: {
+      status: landing.status,
+      errors: landing.errors,
+      warnings: landing.warnings,
+      metrics: landing.metrics,
+    },
+    page_results: Object.fromEntries(
+      Object.entries(pageResults).map(([pageKey, result]) => [
+        statusKeyForPage(pageKey),
+        {
+          status: result.status,
+          errors: result.errors,
+          warnings: result.warnings,
+          metrics: result.metrics,
+        },
+      ])
+    ),
+    source_page_results: Object.fromEntries(
+      Object.entries(sourcePageResults).map(([pageKey, result]) => [
+        statusKeyForPage(pageKey),
+        {
+          status: result.status,
+          errors: result.errors,
+          warnings: result.warnings,
+          metrics: result.metrics,
+        },
+      ])
+    ),
+    stage1,
+    stage2,
+    stage3,
+    reading: {
+      status: readingStatus,
+      notes: dedupedReadingNotes,
+    },
+  };
+
+  return {
+    manual_review: manualReview,
+    content_status: contentStatus,
+    validation_status: validationStatus,
+    workflow_status: readingStatus,
+    workflow_notes: dedupedReadingNotes,
+  };
+}
+
+function mergeValidationFields(basePayload, snapshot) {
+  return {
+    ...basePayload,
+    manual_review: snapshot.manual_review,
+    content_status: snapshot.content_status,
+    validation_status: snapshot.validation_status,
+    workflow_status: snapshot.workflow_status,
+    workflow_notes: snapshot.workflow_notes,
+  };
+}
+
+function loadManifest(rootDir = ROOT_DIR) {
+  return loadJson(path.join(rootDir, "manifest", "readings.json"));
+}
+
+function validateManifestReadings(rootDir = ROOT_DIR, slugFilter = null, options = {}) {
+  const manifest = loadManifest(rootDir);
+  const readings = Array.isArray(manifest?.readings) ? manifest.readings : [];
+  return readings
+    .filter((reading) => !slugFilter || reading.slug === slugFilter)
+    .map((reading) => {
+      const metaPath = path.join(rootDir, reading.content_dir, "meta.json");
+      const existingMeta = loadJson(metaPath) || {};
+      return {
+        slug: reading.slug,
+        snapshot: buildValidationSnapshot(rootDir, reading, existingMeta, options),
+      };
+    });
+}
+
+function renderCliReport(results) {
+  const lines = [];
+  results.forEach(({ slug, snapshot }) => {
+    lines.push(`- ${slug}: ${snapshot.workflow_status}`);
+    lines.push(`  - stage1: ${snapshot.validation_status.stage1.status}`);
+    lines.push(`  - stage2: ${snapshot.validation_status.stage2.status}`);
+    lines.push(`  - stage3: ${snapshot.validation_status.stage3.status}`);
+  });
+  return lines.join("\n");
+}
+
+function parseArgs(argv) {
+  const args = { slug: null, json: false, requireBuiltArtifacts: true, publishGate: false };
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index];
+    if (token === "--slug") {
+      args.slug = argv[index + 1] || null;
+      index += 1;
+    } else if (token === "--json") {
+      args.json = true;
+    } else if (token === "--require-built-artifacts") {
+      args.requireBuiltArtifacts = true;
+    } else if (token === "--source-only") {
+      args.requireBuiltArtifacts = false;
+    } else if (token === "--publish-gate") {
+      args.publishGate = true;
+    }
+  }
+  return args;
+}
+
+module.exports = {
+  PAGE_STATUS,
+  READING_STATUS,
+  buildValidationSnapshot,
+  mergeValidationFields,
+  validateBuildArtifacts,
+  validateManifestReadings,
+};
+
+if (require.main === module) {
+  const options = parseArgs(process.argv.slice(2));
+  const results = validateManifestReadings(ROOT_DIR, options.slug, {
+    requireBuiltArtifacts: options.requireBuiltArtifacts,
+  });
+  if (options.json) {
+    console.log(JSON.stringify(results, null, 2));
+  } else {
+    console.log(renderCliReport(results));
+  }
+  if (options.publishGate && results.some(({ snapshot }) => snapshot.workflow_status !== READING_STATUS.APPROVED)) {
+    process.exitCode = 1;
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "title": "Settersten & Godlewski (2016) 단답형 퀴즈",
+  "instructions": "논문의 정확한 개념 또는 짧은 표현으로 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "출생 이후 달력으로 센 절대시간의 지표를 무엇이라 하는가?",
+      "accepted_answers": ["생활연령", "chronological age"],
+      "answer_type": "term",
+      "explanation": "쉽고 객관적인 이 지표는 연구와 행정에 편리하지만 그 자체가 변화의 원인은 아니다.",
+      "evidence_segment_id": "RELATIVE-TIME-001",
+      "source": "상대적인 개인 시간",
+      "difficulty": "기본"
+    },
+    {
+      "question": "측정하지 않은 발달과정을 나이 숫자가 대신 나타내는 변수 역할은?",
+      "accepted_answers": ["대리변수", "proxy"],
+      "answer_type": "term",
+      "explanation": "연령은 심리적 성숙·사회적 역할·생물학적 위치·기능능력 등을 대신 가리킬 수 있다.",
+      "evidence_segment_id": "INDIVIDUAL-001",
+      "source": "대리변수로서의 연령",
+      "difficulty": "기본"
+    },
+    {
+      "question": "남은 시간에 대한 지각이 목표·행동·정서를 형성한다는 연구 전통은?",
+      "accepted_answers": ["미래시간조망", "future time perspective"],
+      "answer_type": "term",
+      "explanation": "중년 이후 출생 뒤 지난 연수보다 죽음 전 남은 시간을 더 의식하는 경험과 연결된다.",
+      "evidence_segment_id": "RELATIVE-TIME-001",
+      "source": "미래시간조망",
+      "difficulty": "기본"
+    },
+    {
+      "question": "변화를 의식하고 그것을 자신의 나이 증가에 귀속하는 개념의 약어는?",
+      "accepted_answers": ["AARC"],
+      "answer_type": "term",
+      "explanation": "행동·수행·경험의 변화를 다른 조건이 아닌 연령 증가 때문이라고 지각하는 과정이다.",
+      "evidence_segment_id": "SUBJECTIVE-AGE-001",
+      "source": "연령 관련 변화에 대한 자각",
+      "difficulty": "기본"
+    },
+    {
+      "question": "가족구조에서 자신이 어느 세대에 위치하는지를 나타내는 시간은?",
+      "accepted_answers": ["가족시간", "family time"],
+      "answer_type": "term",
+      "explanation": "세대 교체는 가족 안의 위치와 정체성·역할·책임을 바꾸고 사건의 세대 간 파급을 만든다.",
+      "evidence_segment_id": "MULTIPLE-TIMES-001",
+      "source": "복수의 시간",
+      "difficulty": "기본"
+    },
+    {
+      "question": "성숙이 아니라 역사적 사건과 사회변동에 관한 설명 단위는?",
+      "accepted_answers": ["코호트", "cohort"],
+      "answer_type": "term",
+      "explanation": "연령은 생애시간의 단순 지표이고 이 단위는 역사시간의 단순 지표이므로 두 효과를 구별해야 한다.",
+      "evidence_segment_id": "MULTIPLE-TIMES-001",
+      "source": "역사시간",
+      "difficulty": "기본"
+    },
+    {
+      "question": "행정적 계산과 통제를 통해 체계를 효율화하는 역사적 과정을 Weber의 용어로 무엇이라 하는가?",
+      "accepted_answers": ["합리화", "rationalization"],
+      "answer_type": "term",
+      "explanation": "생활연령의 객관성과 보편성은 사람을 분류하고 관리하는 이 과정에서 유용하게 쓰였다.",
+      "evidence_segment_id": "SOCIAL-ORG-001",
+      "source": "사회조직과 연령",
+      "difficulty": "응용"
+    },
+    {
+      "question": "Neugarten의 원래 구분에서 건강하고 부유하며 활동적인 노인 집단의 명칭은?",
+      "accepted_answers": ["젊은 노인", "young-old"],
+      "answer_type": "term",
+      "explanation": "이 명칭의 원뜻은 65–74세라는 연령경계가 아니라 기능과 자원의 상대적 우위를 가리켰다.",
+      "evidence_segment_id": "LIFE-PHASES-001",
+      "source": "생애단계",
+      "difficulty": "응용"
+    },
+    {
+      "question": "연령 고정관념이 생애에 걸쳐 내면화된다는 이론의 약어는?",
+      "accepted_answers": ["SET"],
+      "answer_type": "term",
+      "explanation": "이 이론은 고정관념이 비의식적으로 존재하고 경험과 맞을 때 심리·행동·생리적으로 발현될 수 있다고 본다.",
+      "evidence_segment_id": "AGEISM-001",
+      "source": "고정관념 체화 이론",
+      "difficulty": "기본"
+    },
+    {
+      "question": "특정 연령에 역할이나 전환을 해야 하거나 하지 말아야 한다는 사회적 기대는?",
+      "accepted_answers": ["연령규범", "age norms"],
+      "answer_type": "term",
+      "explanation": "이 기대는 정상적 생애의 시간표를 제공하고 이탈을 보상 또는 처벌하는 제재와 연결된다.",
+      "evidence_segment_id": "ROLE-TIMING-001",
+      "source": "역할의 시기와 배분",
+      "difficulty": "기본"
+    },
+    {
+      "question": "서로 다른 연령대가 사회적 공간과 활동을 공유하는 상태는?",
+      "accepted_answers": ["연령통합", "age integration"],
+      "answer_type": "term",
+      "explanation": "세대 간 관계를 늘릴 수 있지만 그 자체가 일관되게 긍정적 효과나 협력을 보장하지는 않는다.",
+      "evidence_segment_id": "AGE-INTEGRATION-001",
+      "source": "연령통합과 분리",
+      "difficulty": "기본"
+    },
+    {
+      "question": "미국에서 생애 초·말기에 정부 프로그램을 집중시키는 공통 가정은 무엇인가?",
+      "accepted_answers": ["위험과 의존", "risk and dependence"],
+      "answer_type": "short_phrase",
+      "explanation": "아동기에는 투자와 보호, 노년기에는 건강·경제적 안전과 은퇴 가능성을 지원하는 근거가 된다.",
+      "evidence_segment_id": "AGE-RIGHTS-001",
+      "source": "권리와 혜택",
+      "difficulty": "응용"
+    },
+    {
+      "question": "연령과 젠더를 사회조직의 쌍둥이 지위라고 표현한 학자는?",
+      "accepted_answers": ["Ralph Linton", "Linton"],
+      "answer_type": "person",
+      "explanation": "저자들은 이 표현을 통해 일반적인 노인이 아니라 노인 남성과 노인 여성이 존재함을 강조한다.",
+      "evidence_segment_id": "GENDER-CULTURE-001",
+      "source": "연령과 젠더",
+      "difficulty": "기본"
+    },
+    {
+      "question": "Project AGE가 비교한 서로 다른 문화 맥락의 수는?",
+      "accepted_answers": ["7", "7개"],
+      "answer_type": "number",
+      "explanation": "이 비교는 인지적·평가적·사회참여 의미와 연령 경계가 문화마다 달라짐을 보여 주었다.",
+      "evidence_segment_id": "GENDER-CULTURE-002",
+      "source": "Project AGE",
+      "difficulty": "기본"
+    },
+    {
+      "question": "저자들이 연령 관련 과정을 실어 나른다고 부른 변수 유형은?",
+      "accepted_answers": ["운반자 변수", "carrier variable"],
+      "answer_type": "term",
+      "explanation": "생활연령은 인지·행동·정서·동기의 변화를 직접 일으키기보다 관련 과정들을 대신 나타낸다.",
+      "evidence_segment_id": "CONCLUSION-001",
+      "source": "결론의 방법론적 제안",
+      "difficulty": "응용"
+    }
+  ]
+}

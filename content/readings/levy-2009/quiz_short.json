@@ -1,0 +1,127 @@
+{
+  "title": "Levy (2009) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 허용 정답 범위 안에서 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "문화에서 동화한 믿음이 자기정의를 거쳐 기능과 건강에 영향을 주는 이론의 이름은?",
+      "accepted_answers": ["고정관념 체화 이론", "stereotype embodiment theory"],
+      "answer_type": "term",
+      "explanation": "Levy는 여러 실험과 종단결과를 네 구성요소로 묶어 이 이론을 제시한다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "초록"
+    },
+    {
+      "question": "노년기에 일반적 믿음이 자기 자신을 향할 때 형성되는 인식은?",
+      "accepted_answers": ["노화에 대한 자기지각", "self-perceptions of aging"],
+      "answer_type": "term",
+      "explanation": "연령 고정관념이 자기 자신을 향하면 자신의 노화에 관한 믿음으로 분류된다.",
+      "evidence_segment_id": "INTRO-002",
+      "source": "자기지각"
+    },
+    {
+      "question": "더 긍정적인 자기지각 집단과 더 부정적인 집단의 평균 생존 차이는?",
+      "accepted_answers": ["7.5년", "평균 7.5년"],
+      "answer_type": "number",
+      "explanation": "Ohio 종단자료에서 관련 변수를 조정한 뒤에도 평균 생존 차이가 관찰되었다.",
+      "evidence_segment_id": "INTRO-002",
+      "source": "종단연구 근거"
+    },
+    {
+      "question": "연령 고정관념이 사회에서 개인으로 흐르는 방향을 무엇이라 부르는가?",
+      "accepted_answers": ["하향식", "top-down"],
+      "answer_type": "term",
+      "explanation": "이론은 사회에서 개인으로 가는 하향식 방향과 아동기에서 노년기로 가는 시간적 방향을 함께 제시한다.",
+      "evidence_segment_id": "INTRO-002",
+      "source": "이론의 방향"
+    },
+    {
+      "question": "18-49세 참여자 440명을 추적한 연구의 최대 추적기간은?",
+      "accepted_answers": ["38년", "최대 38년"],
+      "answer_type": "number",
+      "explanation": "초기의 부정적 연령 고정관념은 이후 38년 동안 심혈관 사건 위험과 관련되었다.",
+      "evidence_segment_id": "LIFE-002",
+      "source": "심혈관 종단근거"
+    },
+    {
+      "question": "대부분의 사람이 의식하지 못하도록 점화단어를 제시한 시간은?",
+      "accepted_answers": ["55밀리초", "55 ms"],
+      "answer_type": "number",
+      "explanation": "55밀리초는 의식적 지각을 막을 만큼 빠르면서도 부호화할 수 있는 속도로 설명된다.",
+      "evidence_segment_id": "UNCONSC-001",
+      "source": "역하 점화"
+    },
+    {
+      "question": "필적과 의료개입 선택 연구가 보여 준 작동 수준은?",
+      "accepted_answers": ["무의식 수준", "무의식적 작동"],
+      "answer_type": "short_phrase",
+      "explanation": "참여자가 점화 자극을 의식하지 못한 상태에서도 고정관념 방향과 일치하는 결과가 나타났다.",
+      "evidence_segment_id": "UNCONSC-001",
+      "source": "무의식적 작동"
+    },
+    {
+      "question": "일반적 연령 믿음에 개인적 울림을 부여하는 성질은?",
+      "accepted_answers": ["자기관련성", "self-relevance"],
+      "answer_type": "term",
+      "explanation": "노년기를 자신의 현재 상태로 인식하면 고정관념이 자기 정체성과 연결된다.",
+      "evidence_segment_id": "SELFREL-001",
+      "source": "자기관련성"
+    },
+    {
+      "question": "5년 종단연구에서 전형적 노인의 속성이 통합된다고 한 두 가지 자기관은?",
+      "accepted_answers": ["현재 및 미래 자기관", "현재와 미래 자기관"],
+      "answer_type": "short_phrase",
+      "explanation": "Rothermund 연구는 내면화된 속성이 노인의 current and future self-views에 들어간다고 보고했다.",
+      "evidence_segment_id": "SELFREL-002",
+      "source": "자기관련성의 종단근거"
+    },
+    {
+      "question": "내용 영역과 결과 영역이 맞을 때 영향이 커지는 현상은?",
+      "accepted_answers": ["고정관념 일치 효과", "stereotype-matching effect"],
+      "answer_type": "term",
+      "explanation": "인지 내용은 인지과제, 신체 내용은 신체과제와 맞을 때 효과가 가장 컸다.",
+      "evidence_segment_id": "PATH-PSYCH-001",
+      "source": "심리적 경로"
+    },
+    {
+      "question": "건강행동을 할 수 있다는 믿음과 관련되어 부정적 믿음이 저해할 수 있는 것은?",
+      "accepted_answers": ["자기효능감", "self-efficacy"],
+      "answer_type": "term",
+      "explanation": "건강문제를 필연적으로 보면 건강행동을 쓸모없게 느끼고 자기효능감도 낮아질 수 있다.",
+      "evidence_segment_id": "PATH-BEHAV-001",
+      "source": "행동적 경로"
+    },
+    {
+      "question": "환경 스트레스에 반응하며 생리적 경로에 관여할 가능성이 있는 체계는?",
+      "accepted_answers": ["자율신경계", "autonomic nervous system"],
+      "answer_type": "term",
+      "explanation": "점화 조건에 따라 혈압과 피부전도도 같은 스트레스 반응이 달라진 근거와 연결된다.",
+      "evidence_segment_id": "PATH-PHYS-001",
+      "source": "생리적 경로"
+    },
+    {
+      "question": "그림 2에서 혈압과 함께 측정한 전기생리 지표는?",
+      "accepted_answers": ["피부전도도", "skin conductance"],
+      "answer_type": "term",
+      "explanation": "그림 2는 수축기 혈압, 이완기 혈압, 피부전도도의 변화를 제시한다.",
+      "evidence_segment_id": "PATH-PHYS-001",
+      "source": "그림 2"
+    },
+    {
+      "question": "긍정적 활성화를 잠깐이 아니라 계속 유지해야 한다는 개입 과제의 핵심 표현은?",
+      "accepted_answers": ["지속적 활성화", "지속적인 활성화"],
+      "answer_type": "short_phrase",
+      "explanation": "실험실에서 긍정적 점화는 가능했지만 일상에서 그 상태를 유지하는 것이 남은 과제다.",
+      "evidence_segment_id": "FUTURE-001",
+      "source": "향후 연구 방향"
+    },
+    {
+      "question": "저자가 다른 낙인집단에 대해 향후 평가해야 한다고 남긴 이론적 쟁점은?",
+      "accepted_answers": ["전이 가능성", "transferability"],
+      "answer_type": "term",
+      "explanation": "저자는 연령 고정관념의 독특성 때문에 다른 집단에 같은 전제가 적용되는지 추가 연구가 필요하다고 했다.",
+      "evidence_segment_id": "FUTURE-001",
+      "source": "이론의 적용 한계"
+    }
+  ]
+}

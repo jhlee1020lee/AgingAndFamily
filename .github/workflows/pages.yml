@@ -1,0 +1,52 @@
+name: Build and deploy Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate aligned translations
+        run: |
+          node scripts/check-alignment.js --slug levy-2009 --strict --write-report
+          node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report
+      - name: Build the pilot week
+        run: |
+          node scripts/build_site.js --slug levy-2009
+          node scripts/build_site.js --slug settersten-godlewski-2016
+      - name: Verify rendered original reveal pairs
+        run: npm run check:reveals
+      - name: Enforce publish gates
+        run: |
+          node scripts/validate_content.js --slug levy-2009 --publish-gate
+          node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

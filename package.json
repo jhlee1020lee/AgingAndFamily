@@ -1,0 +1,16 @@
+{
+  "name": "aging-and-family-reading-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "2026 Fall Aging and Family reading and translation site",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build:pilot": "node scripts/build_site.js --slug levy-2009 && node scripts/build_site.js --slug settersten-godlewski-2016",
+    "check:alignment": "node scripts/check-alignment.js --slug levy-2009 --strict --write-report && node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report",
+    "check:reveals": "node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016",
+    "validate:pilot": "node scripts/validate_content.js --slug levy-2009 --publish-gate && node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate",
+    "serve": "python -m http.server 8765 --directory docs"
+  }
+}
