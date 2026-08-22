@@ -4,6 +4,7 @@ const path=require("path");
 const {PAGE_STATUS,READING_STATUS,buildValidationSnapshot,mergeValidationFields}=require("./validate_content");
 const {writeApprovalStatusReport}=require("./approval_status");
 const {normalizeTranslationOriginalRevealConfig,parseMarkdownDocument,resolveTranslationAlignment}=require("./translation_original_reveal");
+const {validateSentencePairs}=require("./sentence_alignment");
 
 const rootDir=path.resolve(__dirname,"..");
 const manifestPath=path.join(rootDir,"manifest","readings.json");
@@ -123,9 +124,9 @@ function shouldUseTranslationOriginalReveal(reading,page){
     &&hasApprovedPageSourceStatus(reading,"translation");
 }
 function revealSummaryLabel(reveal){
-  if(reveal?.unit==="sentence_group")return "이 부분에 대응하는 원문 보기";
-  if(reveal?.unit==="context_block")return "이 부분 전체에 대응하는 원문 보기";
-  return "이 부분에 대응하는 원문 보기";
+  if(reveal?.unit==="sentence_group")return "이 문단의 전체 원문 보기";
+  if(reveal?.unit==="context_block")return "이 문단의 전체 원문 보기";
+  return "이 문단의 전체 원문 보기";
 }
 function normalizeEnabledPageKeys(rawKeys,language){
   const fallback=ALL_PAGE_KEYS.filter((key)=>language==="en"||key!=="translation");
@@ -459,6 +460,13 @@ function renderArticleBlock(block,options={}){
 function renderRevealSourceHtml(text){
   return String(text||"").split(/\n{2,}/).map((paragraph)=>paragraph.trim()).filter(Boolean).map((paragraph)=>`<p>${renderInline(paragraph)}</p>`).join("");
 }
+function renderTranslationSentencePairs(reveal){
+  return reveal.sentencePairs.map((pair)=>{
+    const pairId=toText(pair.id);
+    const popoverId=`${pairId}-source`;
+    return `<span class="translation-sentence-pair" data-sentence-pair><button class="translation-sentence" type="button" aria-expanded="false" aria-controls="${escapeHtml(popoverId)}" aria-describedby="${escapeHtml(popoverId)}" data-source-sentence data-pair-id="${escapeHtml(pairId)}" data-translation-text="${escapeHtml(pair.ko_text)}" data-source-text="${escapeHtml(pair.source_text)}">${renderInline(pair.ko_text)}</button><span class="sentence-source-popover" id="${escapeHtml(popoverId)}" role="tooltip" lang="en" data-source-popover hidden>${renderInline(pair.source_text)}</span></span>`;
+  }).join(" ");
+}
 function renderParsedArticleDocument(document,options={}){
   const frontmatterBlocks=Array.isArray(document?.frontmatterBlocks)?document.frontmatterBlocks:[];
   const contentBlocks=Array.isArray(document?.blocks)?document.blocks:[];
@@ -469,9 +477,11 @@ function renderParsedArticleDocument(document,options={}){
     if(!blockHtml)return"";
     const reveal=revealByFlatIndex.get(flatIndex);
     if(!reveal||block.type!=="paragraph")return blockHtml;
-    return `<section class="translation-segment original-translation-pair source-segment-anchor" id="${escapeHtml(reveal.id)}" data-segment-id="${escapeHtml(reveal.id)}" data-reveal-unit="${escapeHtml(reveal.unit||"paragraph")}">${blockHtml}<details class="source-reveal original-toggle"><summary class="source-reveal-summary">${escapeHtml(revealSummaryLabel(reveal))}</summary><div class="source-reveal-body" lang="en">${renderRevealSourceHtml(reveal.sourceText)}</div></details></section>`;
+    const sentenceHtml=Array.isArray(reveal.sentencePairs)&&reveal.sentencePairs.length?`<p class="translation-sentence-paragraph">${renderTranslationSentencePairs(reveal)}</p>`:blockHtml;
+    return `<section class="translation-segment original-translation-pair source-segment-anchor" id="${escapeHtml(reveal.id)}" data-segment-id="${escapeHtml(reveal.id)}" data-reveal-unit="${escapeHtml(reveal.unit||"paragraph")}">${sentenceHtml}<details class="source-reveal original-toggle"><summary class="source-reveal-summary">${escapeHtml(revealSummaryLabel(reveal))}</summary><div class="source-reveal-body" lang="en">${renderRevealSourceHtml(reveal.sourceText)}</div></details></section>`;
   }).join("\n");
-  return[frontmatterHtml,contentHtml].filter(Boolean).join("\n");
+  const sentenceHint=revealByFlatIndex.size?`<aside class="translation-sentence-hint" aria-label="문장별 원문 사용법"><strong>문장별 원문</strong><span>한국어 문장에 마우스를 올리거나 키보드로 선택하세요. 모바일에서는 문장을 누르면 영어 원문이 열립니다.</span></aside>`:"";
+  return[sentenceHint,frontmatterHtml,contentHtml].filter(Boolean).join("\n");
 }
 function buildTranslationOriginalRevealHtml(reading,page,outputPath,text){
   const alignmentPath=translationOriginalRevealPath(reading);
@@ -484,7 +494,21 @@ function buildTranslationOriginalRevealHtml(reading,page,outputPath,text){
   const originalDocument=parseMarkdownDocument(fullText,{skipFirstTitleHeading:true,collectFrontmatter:true});
   const resolved=resolveTranslationAlignment(alignmentPayload,translationDocument,originalDocument,{allowedStatuses:["verified"]});
   if(resolved.errors.length)throw new Error(`[invalid] ${reading.slug}: translation original reveal alignment failed\n${resolved.errors.join("\n")}`);
-  const revealByFlatIndex=new Map(resolved.entries.map((entry)=>[entry.translationBlock.flatIndex,entry]));
+  const rawEntryById=new Map((Array.isArray(alignmentPayload.entries)?alignmentPayload.entries:[]).map((entry)=>[entry.id,entry]));
+  const sentenceErrors=[];
+  const resolvedWithSentences=resolved.entries.map((entry)=>{
+    const rawEntry=rawEntryById.get(entry.id);
+    const sentencePairs=Array.isArray(rawEntry?.sentence_pairs)?rawEntry.sentence_pairs:[];
+    sentenceErrors.push(...validateSentencePairs({
+      id:entry.id,
+      translationText:entry.translationBlock?.text||entry.translationBlock?.plainText||"",
+      sourceText:entry.sourceText,
+      pairs:sentencePairs
+    },{allowedStatuses:["verified"]}));
+    return{...entry,sentencePairs};
+  });
+  if(sentenceErrors.length)throw new Error(`[invalid] ${reading.slug}: sentence-level original reveal failed\n${sentenceErrors.join("\n")}`);
+  const revealByFlatIndex=new Map(resolvedWithSentences.map((entry)=>[entry.translationBlock.flatIndex,entry]));
   return renderParsedArticleDocument(translationDocument,{outputPath,reading,sourcePath:page.sourcePath,suppressFigureCaptions:true,revealByFlatIndex});
 }
 
@@ -534,7 +558,40 @@ function loadQuiz(page,filePath){
   });
   return{...payload,items:normalizedItems};
 }
-function loadProfessorPrep(filePath){const payload=loadJson(filePath);if(!payload)return null;const cards=Array.isArray(payload.cards)?payload.cards:[];if(!cards.length)return null;const normalizedCards=cards.map((card,index)=>{if(!card||typeof card!=="object")throw new Error(`[invalid] ${fileLabel(filePath)}: cards[${index}] must be an object`);const fallbackTitle=cleanQuestionLabel(card.question);const title=requireText(card.title||fallbackTitle,`cards[${index}].title`,filePath);if(usesLegacyProfessorPrepAnswer(card))console.warn(`[legacy] ${fileLabel(filePath)}: cards[${index}] should rename answer/model_answer to answer_30s`);const answer_30s=requireText(professorPrepAnswerText(card),`cards[${index}].answer_30s`,filePath);return{title,answer_30s};});return{title:toText(payload.title)||"읽기 답변 준비",instructions:toText(payload.instructions)||"모든 답변은 '이 글을 어떻게 읽었는지'에 초점을 맞춘 30초 모델 답변입니다.",cards:normalizedCards};}
+function normalizeProfessorPrepCards(cards,filePath,label){
+  return(Array.isArray(cards)?cards:[]).map((card,index)=>{
+    if(!card||typeof card!=="object")throw new Error(`[invalid] ${fileLabel(filePath)}: ${label}[${index}] must be an object`);
+    const fallbackTitle=cleanQuestionLabel(card.question);
+    const title=requireText(card.title||fallbackTitle,`${label}[${index}].title`,filePath);
+    if(usesLegacyProfessorPrepAnswer(card))console.warn(`[legacy] ${fileLabel(filePath)}: ${label}[${index}] should rename answer/model_answer to answer_30s`);
+    const answer_30s=requireText(professorPrepAnswerText(card),`${label}[${index}].answer_30s`,filePath);
+    return{
+      ...card,
+      card_id:toText(card.card_id),
+      title,
+      answer_30s,
+      evidence_segment_id:toText(card.evidence_segment_id)
+    };
+  });
+}
+function loadProfessorPrep(filePath){
+  const payload=loadJson(filePath);
+  if(!payload)return null;
+  const cards=normalizeProfessorPrepCards(payload.cards,filePath,"cards");
+  if(!cards.length)return null;
+  const responsePayload=payload.reading_response&&typeof payload.reading_response==="object"?payload.reading_response:{};
+  const responseCards=normalizeProfessorPrepCards(responsePayload.cards,filePath,"reading_response.cards");
+  return{
+    title:toText(payload.title)||"읽기 답변 준비",
+    instructions:toText(payload.instructions)||"교수님이 바로 이어 물을 수 있는 질문에 30초 안으로 답하는 연습입니다.",
+    cards,
+    reading_response:{
+      title:toText(responsePayload.title)||"“어떻게 읽었어요?” 답변 준비",
+      instructions:toText(responsePayload.instructions)||"읽기 전 생각, 달라진 관점, 구체적 근거와 한계를 자기 말로 연결합니다.",
+      cards:responseCards
+    }
+  };
+}
 function translateCommonText(text){return COMMON_TEXT_MAP[text]||text;}
 function loadReadingMeta(contentDir){const metaPath=path.join(rootDir,contentDir,"meta.json");const payload=loadJson(metaPath);return payload&&typeof payload==="object"?payload:{};}
 function detectNotebooklmVideoSource(contentDir){const baseDir=path.join(rootDir,contentDir);for(const filename of NOTEBOOKLM_VIDEO_CANDIDATES){const candidate=path.join(baseDir,filename);if(fs.existsSync(candidate))return candidate;}return"";}
@@ -821,7 +878,21 @@ function pageTabs(outputPath,reading,activeKey){
 function renderBreadcrumbs(outputPath,reading,currentLabel=""){const homeHref=relHref(outputPath,path.join(siteDir,"index.html"));const overviewHref=relHref(outputPath,path.join(siteDir,"readings",reading.slug,"index.html"));const crumbs=[`<a href="${escapeHtml(homeHref)}">홈</a>`];if(currentLabel){crumbs.push(`<a href="${escapeHtml(overviewHref)}">${escapeHtml(reading.title)}</a>`);crumbs.push(`<span aria-current="page">${escapeHtml(currentLabel)}</span>`);}else{crumbs.push(`<span aria-current="page">${escapeHtml(reading.title)}</span>`);}return `<nav class="breadcrumbs" aria-label="breadcrumb">${crumbs.map((item,index)=>`${index?'<span class="crumb-sep">/</span>':""}${item}`).join("")}</nav>`;}
 function renderArticleMeta(reading,options={}){const bits=[options.pageLabel||"",reading.display_date,reading.type_label,options.includeLanguage?reading.language_label:"",reading.authors_label].filter(Boolean);return `<div class="article-meta-row">${bits.map((bit)=>`<span>${escapeHtml(bit)}</span>`).join("")}</div>`;}
 function renderArticleHeader(outputPath,reading,options){const currentLabel=options.breadcrumbLabel===undefined?(options.activeKey==="index"?"":options.label):options.breadcrumbLabel;return `<header class="article-header"><div class="article-header-top"><div class="article-header-copy">${renderBreadcrumbs(outputPath,reading,currentLabel)}<p class="section-kicker">${escapeHtml(readingSequenceLabel(reading.sequence))}</p><h1>${escapeHtml(reading.title)}</h1>${renderArticleMeta(reading,{pageLabel:options.metaPageLabel||"",includeLanguage:Boolean(options.includeLanguage)})}</div></div>${options.includePdf===false?"":renderPdfActions(outputPath,reading,"pdf-actions header-pdf-actions")}${pageTabs(outputPath,reading,options.activeKey)}</header>`;}
-function renderHomeRailItem(outputPath,reading){const target=readingOverviewTarget(reading);const content=target?`<a class="rail-reading ${escapeHtml(reading.state)}" href="${escapeHtml(readingPageHref(outputPath,reading,target))}">${escapeHtml(reading.title)}</a>`:`<button class="rail-reading ${escapeHtml(reading.state)}" type="button" data-gated-link data-gated-message="${escapeHtml(readingGateMessage(reading))}">${escapeHtml(reading.title)}</button>`;return `<li class="rail-item${reading.current_candidate?" is-current":""}${reading.state==="ready"?" is-done":""}" data-home-rail-item data-reading-slug="${escapeHtml(reading.slug)}" data-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}"><span class="week-n">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><div class="rail-body"><div class="rail-date">${escapeHtml([reading.class_date||"",reading.type_label].filter(Boolean).join(" · "))}</div>${content}</div></li>`;}
+function renderHomeRailItem(outputPath,reading){
+  const target=readingOverviewTarget(reading);
+  const displayLabel=reading.display_date_label||displayDateLabel(reading);
+  const labelParts=displayLabel.split("·").map((part)=>part.trim()).filter(Boolean);
+  const weekLabel=labelParts[0]||`${reading.week||reading.sequence}주차`;
+  const dateLabel=labelParts[1]||displayLabel;
+  const metaId=`rail-meta-${reading.slug}`;
+  const titleMarkup=`<span class="rail-title" lang="${reading.language==="en"?"en":"ko"}">${escapeHtml(reading.title)}</span>`;
+  const currentAttr=reading.current_candidate?' aria-current="date"':"";
+  const content=target
+    ?`<a class="rail-reading ${escapeHtml(reading.state)}" href="${escapeHtml(readingPageHref(outputPath,reading,target))}" aria-describedby="${escapeHtml(metaId)}"${currentAttr} title="${escapeHtml(reading.title)}">${titleMarkup}</a>`
+    :`<button class="rail-reading ${escapeHtml(reading.state)}" type="button" aria-describedby="${escapeHtml(metaId)}" aria-disabled="true" data-gated-link data-gated-message="${escapeHtml(readingGateMessage(reading))}" title="${escapeHtml(reading.title)}">${titleMarkup}</button>`;
+  const meta=`<div class="rail-meta" id="${escapeHtml(metaId)}"><span>${escapeHtml(weekLabel)}</span><span aria-hidden="true">·</span><time datetime="${escapeHtml(reading.class_date||"")}">${escapeHtml(dateLabel)}</time><span aria-hidden="true">·</span><span>${escapeHtml(reading.type_label)}</span></div>`;
+  return `<li class="rail-item${reading.current_candidate?" is-current":""}${reading.state==="ready"?" is-done":""}" data-home-rail-item data-reading-slug="${escapeHtml(reading.slug)}" data-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}"><div class="rail-body">${meta}${content}</div></li>`;
+}
 function renderHeroWorkspaceMockup(reading){
   if(!reading)return "";
   const tasks=progressSummaryItems(reading).map((item,index)=>{
@@ -928,17 +999,38 @@ function prepKeyword(card){return card.must_include_keywords[0]||"핵심 포인�
 function prepKeywordText(card){return card.must_include_keywords.slice(0,2).join(", ")||prepKeyword(card);}
 function prepEvidenceText(card){return truncateWords(firstValue(sentenceList(card.evidence_from_reading[0])[0],card.evidence_from_reading[0],card.answer_10s),18);}
 function prepFollowupAnswer(card,tokens){return card.followup_answers.find((entry)=>tokens.some((token)=>entry.question.includes(token)||entry.answer.includes(token)))||null;}
-function buildProfessorPrepDeck(prep){return prep.cards.map((card,index)=>({...card,card_id:`prep-card-${String(index+1).padStart(2,"0")}`}));}
-function renderProfessorPrepDeckSection(prep,deck,options={}){const draft=options.draft===true;const draftBadge=draft?'<p><span class="status warning">평가용 초안</span></p>':"";const draftNote=draft?'<p class="meta">이 페이지는 아직 최종 승인본이 아닙니다. 현재는 3~5개 드래프트를 먼저 검토하는 단계라서 직접 링크로만 확인하는 평가용 프리뷰입니다.</p>':"";return `
-<section class="panel prep-intro">
-  ${draftBadge}
-  <p class="section-kicker">이 글을 어떻게 읽었는지</p>
-  <h2>${deck.length}개 모델 답변${draft?" 초안":""}</h2>
-  <p class="meta">${escapeHtml(prep.instructions||"")}</p>
-  ${draftNote}
+function buildProfessorPrepDeck(cards,prefix){return cards.map((card,index)=>({...card,card_id:toText(card.card_id)||`${prefix}-${String(index+1).padStart(2,"0")}`}));}
+function renderProfessorPrepPanel(config){const hidden=config.active?"":' hidden';return `
+<section class="prep-mode-panel" id="${escapeHtml(config.panelId)}" role="tabpanel" aria-labelledby="${escapeHtml(config.tabId)}" data-prep-panel="${escapeHtml(config.key)}"${hidden}>
+  <section class="panel prep-intro">
+    ${config.draftBadge}
+    <p class="section-kicker">${escapeHtml(config.kicker)}</p>
+    <h2>${escapeHtml(config.title)}</h2>
+    <p class="meta">${escapeHtml(config.instructions)}</p>
+    ${config.draftNote}
+  </section>
+  <section class="prep-card-list">
+    ${config.deck.map((card,index)=>renderProfessorPrepCard(card,index,{label:config.cardLabel})).join("")}
+  </section>
 </section>
-<section class="prep-card-list">
-${deck.map((card,index)=>renderProfessorPrepCard(card,index)).join("")}
+`;}
+function renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,options={}){
+  const draft=options.draft===true;
+  const draftBadge=draft?'<p><span class="status warning">평가용 초안</span></p>':"";
+  const draftNote=draft?'<p class="meta">이 페이지는 아직 최종 승인본이 아닙니다. 직접 링크로만 확인하는 평가용 프리뷰입니다.</p>':"";
+  const hasReadingResponses=readingResponseDeck.length>0;
+  const coldTabId="prep-tab-cold-call";
+  const coldPanelId="prep-panel-cold-call";
+  const responseTabId="prep-tab-reading-response";
+  const responsePanelId="prep-panel-reading-response";
+  return `
+<section class="prep-workspace" data-prep-root>
+  <div class="prep-mode-tabs" role="tablist" aria-label="교수님 답변 대비 방식">
+    <button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>즉석 질문</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>
+    ${hasReadingResponses?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>어떻게 읽었나요?</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
+  </div>
+  ${renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,kicker:"교수님이 바로 이어 물을 때",title:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:"즉석 답변"})}
+  ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:false,draftBadge,draftNote,kicker:"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:"읽기 답변"}):""}
 </section>
 `;}
 function writePlaceholderSvg(reading,svgPath){const slug=escapeHtml(reading.slug);const title=escapeHtml(reading.title||reading.slug);const subtitle=escapeHtml(reading.subtitle||"파일명 기준으로 만든 임시 메타데이터입니다.");const dateLabel=escapeHtml(displayDateLabel(reading));const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
@@ -954,7 +1046,7 @@ function writePlaceholderSvg(reading,svgPath){const slug=escapeHtml(reading.slug
 </svg>
 `;writeText(svgPath,svg);}
 function buildThumbnails(manifest,slugFilter=null){const thumbnailDir=path.join(siteDir,"assets","thumbnails");fs.mkdirSync(thumbnailDir,{recursive:true});const results={};for(const reading of manifest.readings){const sourceThumbnail=detectReadingThumbnailSource(reading.content_dir);if(sourceThumbnail){const extension=path.extname(sourceThumbnail).toLowerCase();const targetPath=path.join(thumbnailDir,`${reading.slug}${extension}`);fs.copyFileSync(sourceThumbnail,targetPath);results[reading.slug]=path.posix.join("assets","thumbnails",path.basename(targetPath));continue;}const svgPath=path.join(thumbnailDir,`${reading.slug}.svg`);if(!slugFilter||reading.slug===slugFilter||!fs.existsSync(svgPath))writePlaceholderSvg(reading,svgPath);results[reading.slug]=path.posix.join("assets","thumbnails",`${reading.slug}.svg`);}return results;}
-function buildIndex(siteMeta,readings,thumbnails){const outputPath=path.join(siteDir,"index.html");const sortedReadings=[...readings].sort((a,b)=>compareReadings(a,b,"chronological"));const currentReading=sortedReadings.find((reading)=>reading.current_candidate)||null;const cards=sortedReadings.map((reading)=>renderHomeCard(outputPath,reading,thumbnails?.[reading.slug]||"")).join("");const railItems=sortedReadings.map((reading)=>renderHomeRailItem(outputPath,reading)).join("");const railToggleMeta=currentReading?`${currentReading.display_date_label||displayDateLabel(currentReading)} · ${currentReading.title}`:`총 ${sortedReadings.length}개`;const body=`
+function buildIndex(siteMeta,readings,thumbnails){const outputPath=path.join(siteDir,"index.html");const sortedReadings=[...readings].sort((a,b)=>compareReadings(a,b,"chronological"));const currentReading=sortedReadings.find((reading)=>reading.current_candidate)||null;const cards=sortedReadings.map((reading)=>renderHomeCard(outputPath,reading,thumbnails?.[reading.slug]||"")).join("");const railItems=sortedReadings.map((reading)=>renderHomeRailItem(outputPath,reading)).join("");const railToggleMeta=currentReading?`${currentReading.display_date_label||displayDateLabel(currentReading)} · ${currentReading.type_label}`:`총 ${sortedReadings.length}개`;const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="home-shell home-dashboard" data-page-kind="home">
   <details class="rail" id="schedule" aria-label="읽기 일정" open>
@@ -1033,31 +1125,37 @@ ${siteHeader(siteMeta,outputPath)}
 }
 function writePublicPdf(reading){if(reading.pdf_visibility!=="public"||!reading.public_pdf)return false;const sourcePath=path.join(rootDir,reading.source_pdf);if(!fs.existsSync(sourcePath))return false;const targetPath=publicPdfTargetPath(reading);fs.mkdirSync(path.dirname(targetPath),{recursive:true});fs.copyFileSync(sourcePath,targetPath);return true;}
 function renderQuizEvidence(item){const evidence=item.evidence_segment_id?`<span class="quiz-evidence-segment">${escapeHtml(item.evidence_segment_id)}</span>`:"";const source=item.source?`<span>${renderInline(item.source)}</span>`:"";const difficulty=item.difficulty?`<span>${escapeHtml(item.difficulty)}</span>`:"";const misconception=item.misconception_targeted?`<span>${renderInline(item.misconception_targeted)}</span>`:"";const bits=[evidence,source,difficulty,misconception].filter(Boolean);return bits.length?`<p class="quiz-evidence"><strong>근거:</strong> ${bits.join(" · ")}</p>`:"";}
-function renderStandardQuizCard(item,index){const optionsHtml=item.options&&item.options.length?`<ol class="choices">${item.options.map((option)=>`<li>${renderInline(option)}</li>`).join("")}</ol>`:"";const evidenceHtml=renderQuizEvidence(item);return `
-<article class="quiz-card quiz-entry-card">
-  <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3>${renderInline(item.prompt)}</h3></div>
+function renderQuizFeedback(item,answerLabel){const evidenceHtml=renderQuizEvidence(item);return `<section class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"><p class="quiz-result" data-quiz-result></p><p><strong>${escapeHtml(answerLabel)}:</strong> ${renderInline(item.answer||item.accepted_answers.join(" / "))}</p><p><strong>해설:</strong> ${renderInline(item.explanation)}</p>${evidenceHtml}</section>`;}
+function renderStandardQuizCard(item,index,pageKey){
+  const isOx=pageKey==="quiz-ox";
+  const options=isOx?["O","X"]:item.options;
+  const inputName=`${pageKey}-q${String(index+1).padStart(2,"0")}`;
+  const optionsHtml=`<fieldset class="quiz-options" aria-labelledby="${escapeHtml(inputName)}-prompt"><legend class="sr-only">답 선택</legend>${options.map((option,optionIndex)=>`<label class="quiz-choice"><input type="radio" name="${escapeHtml(inputName)}" value="${escapeHtml(option)}" data-quiz-input /><span class="quiz-choice-marker" aria-hidden="true">${isOx?escapeHtml(option):String.fromCharCode(65+optionIndex)}</span><span>${isOx?escapeHtml(option==="O"?"맞다":"틀리다"):renderInline(option)}</span></label>`).join("")}</fieldset>`;
+  return `
+<article class="quiz-card quiz-entry-card" data-quiz-item data-quiz-kind="${isOx?"ox":"mcq"}" data-correct-answer="${escapeHtml(item.answer)}">
+  <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3 id="${escapeHtml(inputName)}-prompt">${renderInline(item.prompt)}</h3></div>
   ${optionsHtml}
-  <details class="answer">
-    <summary>정답 보기</summary>
-    <p><strong>정답:</strong> ${renderInline(item.answer)}</p>
-    <p><strong>해설:</strong> ${renderInline(item.explanation)}</p>
-    ${evidenceHtml}
-  </details>
+  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>이 문제 채점</button></div>
+  ${renderQuizFeedback(item,"정답")}
 </article>
 `;}
-function renderShortAnswerQuizCard(item,index){const answers=item.accepted_answers.map((answer)=>renderInline(answer)).join(" / ");const evidenceHtml=renderQuizEvidence(item);return `
-<article class="quiz-card quiz-entry-card short-answer-card">
-  <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3>${renderInline(item.question)}</h3></div>
-  <details class="answer">
-    <summary>정답 보기</summary>
-    <p><strong>허용 정답:</strong> ${answers}</p>
-    <p><strong>답 유형:</strong> ${escapeHtml(SHORT_ANSWER_TYPE_LABELS[item.answer_type]||item.answer_type)}</p>
-    <p><strong>해설:</strong> ${renderInline(item.explanation)}</p>
-    ${evidenceHtml}
-  </details>
+function renderShortAnswerQuizCard(item,index,pageKey){
+  const inputId=`${pageKey}-q${String(index+1).padStart(2,"0")}`;
+  const acceptedJson=JSON.stringify(item.accepted_answers);
+  return `
+<article class="quiz-card quiz-entry-card short-answer-card" data-quiz-item data-quiz-kind="short" data-accepted-answers="${escapeHtml(acceptedJson)}">
+  <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3 id="${escapeHtml(inputId)}-prompt">${renderInline(item.question)}</h3></div>
+  <label class="short-answer-input-wrap" for="${escapeHtml(inputId)}"><span>${escapeHtml(SHORT_ANSWER_TYPE_LABELS[item.answer_type]||item.answer_type)}로 답하기</span><input class="short-answer-input" id="${escapeHtml(inputId)}" type="text" data-quiz-input autocomplete="off" spellcheck="false" aria-describedby="${escapeHtml(inputId)}-hint" /><small id="${escapeHtml(inputId)}-hint">띄어쓰기와 영문 대소문자는 채점에 영향을 주지 않습니다.</small></label>
+  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>이 문제 채점</button></div>
+  ${renderQuizFeedback(item,"허용 정답")}
 </article>
 `;}
-function buildQuiz(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const quiz=loadQuiz(page,page.sourcePath);let content="";if(isBlockedReading(reading)){content=pendingReadingHtml(reading,page.label);}else if(isReleaseLockedReading(reading)){content=pendingReleaseHtml(reading,page.label);}else if(!canRenderPageContent(reading,page)){content=pendingUploadHtml(reading,page.label);}else if(!quiz){content=placeholderQuizHtml(page,page.sourcePath);}else{const intro=`<section class="quiz-intro">${quiz.title?`<h2>${renderInline(quiz.title)}</h2>`:""}${quiz.instructions?`<p>${renderInline(quiz.instructions)}</p>`:""}</section>`;const cards=quiz.items.map((item,index)=>page.key==="quiz-short"?renderShortAnswerQuizCard(item,index):renderStandardQuizCard(item,index)).join("");content=`${intro}<section class="quiz-list">${cards}</section>`;}const body=`
+function renderInteractiveQuiz(quiz,page){
+  const intro=`<section class="quiz-intro">${quiz.title?`<h2>${renderInline(quiz.title)}</h2>`:""}${quiz.instructions?`<p>${renderInline(quiz.instructions)}</p>`:""}<p class="quiz-instruction-note">답을 고른 뒤 문항별로 확인하거나, 맨 아래에서 한꺼번에 채점할 수 있습니다.</p></section>`;
+  const cards=quiz.items.map((item,index)=>page.key==="quiz-short"?renderShortAnswerQuizCard(item,index,page.key):renderStandardQuizCard(item,index,page.key)).join("");
+  return `${intro}<form class="interactive-quiz" data-quiz-root data-quiz-type="${escapeHtml(page.key)}" novalidate><section class="quiz-list">${cards}</section><div class="quiz-toolbar"><p class="quiz-score" data-quiz-score role="status" aria-live="polite" tabindex="-1">아직 채점하지 않았습니다.</p><div class="quiz-toolbar-actions"><button class="btn-primary" type="submit" data-quiz-submit>전체 채점</button><button class="btn-ghost" type="reset" data-quiz-reset>다시 풀기</button></div></div></form>`;
+}
+function buildQuiz(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const quiz=loadQuiz(page,page.sourcePath);let content="";if(isBlockedReading(reading)){content=pendingReadingHtml(reading,page.label);}else if(isReleaseLockedReading(reading)){content=pendingReleaseHtml(reading,page.label);}else if(!canRenderPageContent(reading,page)){content=pendingUploadHtml(reading,page.label);}else if(!quiz){content=placeholderQuizHtml(page,page.sourcePath);}else{content=renderInteractiveQuiz(quiz,page);}const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:page.label})}
@@ -1071,21 +1169,23 @@ ${siteHeader(siteMeta,outputPath)}
   </div>
 </main>
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="quiz" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function renderProfessorPrepCard(card,index){return `
+function renderProfessorPrepCard(card,index,options={}){const label=toText(options.label)||"모델 답변";const evidence=toText(card.evidence_segment_id);return `
 <article class="panel prep-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}">
   <div class="prep-card-head">
     <div>
-      <p class="section-kicker">모델 답변 ${String(index+1).padStart(2,"0")}</p>
+      <p class="section-kicker">${escapeHtml(label)} ${String(index+1).padStart(2,"0")}</p>
       <h3 data-prep-title>${renderInline(card.title)}</h3>
     </div>
+    <button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>표시</button>
   </div>
   <section class="prep-block prep-answer-block">
     <h4>30초 모델 답변</h4>
     <p class="prep-answer-copy">${renderInline(card.answer_30s)}</p>
+    ${evidence?`<p class="prep-evidence"><strong>논문 근거</strong> <span class="quiz-evidence-segment">${escapeHtml(evidence)}</span></p>`:""}
   </section>
 </article>
 `;}
-function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const deck=prep?buildProfessorPrepDeck(prep):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):prep?(canRenderPageContent(reading,page)?renderProfessorPrepDeckSection(prep,deck):renderProfessorPrepDeckSection(prep,deck,{draft:true})):canRenderPageContent(reading,page)?placeholderProfessorPrepHtml(page,page.sourcePath):pendingUploadHtml(reading,page.label);const body=`
+function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):prep?(canRenderPageContent(reading,page)?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck):renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{draft:true})):canRenderPageContent(reading,page)?placeholderProfessorPrepHtml(page,page.sourcePath):pendingUploadHtml(reading,page.label);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:"교수님 답변 대비"})}

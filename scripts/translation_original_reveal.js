@@ -1121,5 +1121,6 @@ module.exports = {
   parseMarkdownDocument,
   collectLocatableBlocks,
   resolveTranslationAlignment,
+  sentenceSplitSourceText,
   sourceTextForEntry,
 };

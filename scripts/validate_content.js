@@ -2,6 +2,7 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const { normalizeTranslationOriginalRevealConfig, parseMarkdownDocument, resolveTranslationAlignment } = require("./translation_original_reveal");
+const { validateSentencePairs } = require("./sentence_alignment");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 
@@ -277,6 +278,7 @@ function validateTranslationOriginalReveal(rootDir, reading, existingMeta, trans
   const metrics = {
     original_reveal_enabled: config.enabled,
     reveal_entry_count: 0,
+    sentence_reveal_pair_count: 0,
   };
   if (!config.enabled) {
     return { errors, warnings, metrics };
@@ -303,6 +305,17 @@ function validateTranslationOriginalReveal(rootDir, reading, existingMeta, trans
   const resolved = resolveTranslationAlignment(payload, translationDocument, originalDocument, { allowedStatuses: ["verified"] });
   metrics.reveal_entry_count = resolved.entries.length;
   errors.push(...resolved.errors);
+  const rawById = new Map((Array.isArray(payload.entries) ? payload.entries : []).map((entry) => [entry.id, entry]));
+  resolved.entries.forEach((entry) => {
+    const pairs = Array.isArray(rawById.get(entry.id)?.sentence_pairs) ? rawById.get(entry.id).sentence_pairs : [];
+    metrics.sentence_reveal_pair_count += pairs.length;
+    errors.push(...validateSentencePairs({
+      id: entry.id,
+      translationText: entry.translationBlock?.text || entry.translationBlock?.plainText || "",
+      sourceText: entry.sourceText,
+      pairs,
+    }, { allowedStatuses: ["verified"] }));
+  });
   if (!metrics.reveal_entry_count) {
     errors.push("translation original reveal is enabled but no verified entries were published");
   }
@@ -694,30 +707,66 @@ function validateProfessorPrepJson(payload) {
     return missingResult();
   }
   const cards = Array.isArray(payload.cards) ? payload.cards : [];
+  const readingResponse = payload.reading_response && typeof payload.reading_response === "object"
+    ? payload.reading_response
+    : null;
+  const readingResponseCards = Array.isArray(readingResponse?.cards) ? readingResponse.cards : [];
   const errors = [];
   const warnings = [];
-  const metrics = { card_count: cards.length };
+  const metrics = {
+    card_count: cards.length,
+    reading_response_card_count: readingResponseCards.length,
+  };
   if (cards.length < 15) {
     errors.push("professor-prep needs at least 15 cards");
   }
-  cards.forEach((card, index) => {
-    if (!card || typeof card !== "object") {
-      errors.push(`card ${index + 1} is not an object`);
-      return;
+  if (!readingResponse) {
+    errors.push("professor-prep needs a reading_response section");
+  } else {
+    if (!toText(readingResponse.title)) {
+      errors.push("reading_response is missing title");
     }
-    if (!toText(card.title)) {
-      errors.push(`card ${index + 1} is missing title`);
+    if (!toText(readingResponse.instructions)) {
+      errors.push("reading_response is missing instructions");
     }
-    const answer30s = toText(card.answer_30s);
-    const legacyAnswer = toText(card.answer || card.model_answer);
-    if (!answer30s) {
-      if (legacyAnswer) {
-        errors.push(`card ${index + 1} must use answer_30s; legacy answer/model_answer is not valid for approval`);
-      } else {
-        errors.push(`card ${index + 1} is missing answer_30s`);
+    if (readingResponseCards.length < 5) {
+      errors.push("reading_response needs at least 5 cards");
+    }
+  }
+  const ids = new Set();
+  const validateCards = (items, label, requireEvidence = false) => {
+    items.forEach((card, index) => {
+      if (!card || typeof card !== "object") {
+        errors.push(`${label} ${index + 1} is not an object`);
+        return;
       }
-    }
-  });
+      const cardId = toText(card.card_id);
+      if (!cardId) {
+        errors.push(`${label} ${index + 1} is missing card_id`);
+      } else if (ids.has(cardId)) {
+        errors.push(`${label} ${index + 1} has duplicate card_id ${cardId}`);
+      } else {
+        ids.add(cardId);
+      }
+      if (!toText(card.title)) {
+        errors.push(`${label} ${index + 1} is missing title`);
+      }
+      const answer30s = toText(card.answer_30s);
+      const legacyAnswer = toText(card.answer || card.model_answer);
+      if (!answer30s) {
+        if (legacyAnswer) {
+          errors.push(`${label} ${index + 1} must use answer_30s; legacy answer/model_answer is not valid for approval`);
+        } else {
+          errors.push(`${label} ${index + 1} is missing answer_30s`);
+        }
+      }
+      if (requireEvidence && !toText(card.evidence_segment_id)) {
+        errors.push(`${label} ${index + 1} is missing evidence_segment_id`);
+      }
+    });
+  };
+  validateCards(cards, "card", true);
+  validateCards(readingResponseCards, "reading_response card", true);
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
 }
 

@@ -138,5 +138,59 @@
       "style_basis": "prior-course-pattern",
       "question_scope": "evidence"
     }
-  ]
+  ],
+  "reading_response": {
+    "title": "“어떻게 읽었어요?” 답변 준비",
+    "instructions": "성발노 수업에서 반복된 ‘무엇이 새로웠는지 → 왜 그렇게 느꼈는지 → 논문 근거가 무엇인지 → 한계나 적용은 무엇인지’ 흐름에 맞춘 답변 각도입니다. 외운 문장처럼 읽기보다 자기 경험에 맞는 한 가지 각도를 골라 말하세요.",
+    "cards": [
+      {
+        "card_id": "settersten-reading-01",
+        "title": "30초 기본 답변",
+        "answer_30s": "저는 이 글을 연령에는 두 얼굴이 있다는 주장으로 읽었습니다. 개인의 변화에서 생활연령은 실제 원인을 대신하는 빈 대리변수일 수 있지만, 사회에서는 학교·노동·은퇴·권리와 가족역할을 조직하는 강한 기준입니다. 그래서 연령을 무조건 통제하거나 설명으로 쓰지 말고, 어느 수준에서 어떤 과정 때문에 중요하거나 무관한지를 밝혀야 한다는 것이 핵심이었습니다.",
+        "evidence_segment_id": "INTRO-001",
+        "response_angle": "overall",
+        "style_basis": "prior-course-stt-pattern"
+      },
+      {
+        "card_id": "settersten-reading-02",
+        "title": "무엇이 가장 새로웠냐고 이어 물으면",
+        "answer_30s": "연령이 출생 뒤 지난 햇수만이 아니라 사건까지 남은 시간, 어떤 역할을 수행한 기간, 가족 구성원과 함께한 시간처럼 관계적으로 경험된다는 점이 새로웠습니다. 같은 생활연령이라도 부모의 돌봄기간이나 자녀의 독립시점에 따라 시간의 의미가 달라질 수 있어, 숫자 하나만으로 개인의 위치를 충분히 설명하기 어렵다고 이해했습니다.",
+        "evidence_segment_id": "RELATIVE-TIME-001",
+        "response_angle": "surprise",
+        "style_basis": "prior-course-stt-pattern"
+      },
+      {
+        "card_id": "settersten-reading-03",
+        "title": "기존 생각과 무엇이 달라졌냐고 물으면",
+        "answer_30s": "전에는 연령을 연구대상을 나누는 비교적 중립적인 숫자로 생각했습니다. 이 글을 읽고서는 법과 제도, 조직이 특정 나이에 권리와 의무를 배분하면서 연령의 의미 자체를 만든다는 점을 보게 됐습니다. 연령은 개인 변화의 직접 원인이 아닐 수 있지만 사회적 삶에서는 실제 기회와 관계를 구조화한다는 역설이 가장 크게 관점을 바꿨습니다.",
+        "evidence_segment_id": "AGE-RIGHTS-001",
+        "response_angle": "changed-view",
+        "style_basis": "prior-course-stt-pattern"
+      },
+      {
+        "card_id": "settersten-reading-04",
+        "title": "구체적인 예를 하나 대라고 하면",
+        "answer_30s": "가족에서는 한 사람의 전환이 다른 사람의 시간표와 연결되는 ‘연결된 삶’이 좋은 예라고 봤습니다. 자녀의 독립이 늦어지면 부모의 은퇴·주거·돌봄 계획도 달라질 수 있고, 부모의 건강악화는 성인자녀의 취업과 가족형성 시점에 영향을 줄 수 있습니다. 이때 중요한 것은 각자의 나이만이 아니라 사건의 순서와 관계 속 타이밍입니다.",
+        "evidence_segment_id": "RELATIVE-TIME-001",
+        "response_angle": "example",
+        "style_basis": "prior-course-stt-pattern"
+      },
+      {
+        "card_id": "settersten-reading-05",
+        "title": "의문이나 한계가 무엇이었냐고 물으면",
+        "answer_30s": "이 장은 넓은 개념과 이론을 통합해 연구 질문을 바꾸게 하지만 하나의 통합모형을 직접 검증한 실증연구는 아닙니다. 또 연령단계와 규범의 의미가 문화마다 다르므로 특정 사회의 제도와 생애시간표를 보편적인 노화모형으로 일반화하면 안 됩니다. 다음 연구는 개인·가족·제도 수준을 함께 측정해 경로를 검증해야 한다고 읽었습니다.",
+        "evidence_segment_id": "CONCLUSION-002",
+        "response_angle": "limitation",
+        "style_basis": "prior-course-stt-pattern"
+      },
+      {
+        "card_id": "settersten-reading-06",
+        "title": "가족이나 한국 사회에 연결해 보라고 하면",
+        "answer_30s": "한국 가족에서는 취업·결혼·출산·부모부양의 ‘적정 나이’가 개인 선택처럼 보여도 가족 기대와 주거·노동·복지제도에 의해 함께 만들어진다고 연결했습니다. 같은 연령의 사람도 부모의 건강, 자녀 유무, 경제자원에 따라 역할과 시간압박이 다릅니다. 따라서 연령만으로 정상·지연을 판단하기보다 관계와 제도 속 타이밍을 봐야 합니다.",
+        "evidence_segment_id": "ROLE-TIMING-001",
+        "response_angle": "family-application",
+        "style_basis": "prior-course-stt-pattern"
+      }
+    ]
+  }
 }

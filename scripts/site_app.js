@@ -66,6 +66,9 @@ function ensureGateToast(){
   toast.className="gate-toast";
   toast.hidden=true;
   toast.setAttribute("data-gate-toast","");
+  toast.setAttribute("role","status");
+  toast.setAttribute("aria-live","polite");
+  toast.setAttribute("aria-atomic","true");
   document.body.appendChild(toast);
   return toast;
 }
@@ -189,6 +192,8 @@ function syncHomeRailState(item,state,isScheduleCurrent=false){
   if(reading){
     reading.classList.remove("ready","current","locked");
     reading.classList.add(state);
+    if(isScheduleCurrent)reading.setAttribute("aria-current","date");
+    else reading.removeAttribute("aria-current");
   }
 }
 
@@ -212,7 +217,7 @@ function initDynamicHomeCurrentReading(){
   });
 
   const railMeta=document.querySelector(".home-dashboard .rail-toggle-meta");
-  if(railMeta&&current)railMeta.textContent=`${current.displayDateLabel||current.classDate} · ${current.title}`;
+  if(railMeta&&current)railMeta.textContent=`${current.displayDateLabel||current.classDate} · ${current.typeLabel||"읽기"}`;
 }
 
 function initGatedLinks(){
@@ -474,6 +479,156 @@ function initReader(){
   window.addEventListener("beforeunload",saveScroll);
 }
 
+function initTranslationSentenceReveals(){
+  const buttons=Array.from(document.querySelectorAll("[data-source-sentence]"));
+  if(!buttons.length)return;
+  const finePointer=window.matchMedia("(hover: hover) and (pointer: fine)");
+  let activeButton=null;
+
+  const close=(button=activeButton)=>{
+    if(!button)return;
+    const pair=button.closest("[data-sentence-pair]");
+    const popover=pair?.querySelector("[data-source-popover]");
+    button.setAttribute("aria-expanded","false");
+    pair?.classList.remove("is-source-open");
+    if(popover)popover.hidden=true;
+    if(activeButton===button)activeButton=null;
+  };
+
+  const open=(button)=>{
+    if(activeButton&&activeButton!==button)close(activeButton);
+    const pair=button.closest("[data-sentence-pair]");
+    const popover=pair?.querySelector("[data-source-popover]");
+    if(!pair||!popover)return;
+    activeButton=button;
+    button.setAttribute("aria-expanded","true");
+    pair.classList.add("is-source-open");
+    popover.hidden=false;
+  };
+
+  buttons.forEach((button)=>{
+    const pair=button.closest("[data-sentence-pair]");
+    button.addEventListener("pointerenter",()=>{if(finePointer.matches)open(button);});
+    pair?.addEventListener("pointerleave",()=>{
+      if(finePointer.matches&&!pair.contains(document.activeElement))close(button);
+    });
+    button.addEventListener("focus",()=>{if(finePointer.matches)open(button);});
+    button.addEventListener("blur",()=>{
+      window.setTimeout(()=>{
+        if(!pair?.contains(document.activeElement))close(button);
+      },0);
+    });
+    button.addEventListener("click",(event)=>{
+      if(finePointer.matches&&event.detail!==0)return;
+      if(activeButton===button)close(button);
+      else open(button);
+    });
+    button.addEventListener("keydown",(event)=>{
+      if(event.key!=="Escape")return;
+      event.preventDefault();
+      close(button);
+      button.focus();
+    });
+  });
+
+  document.addEventListener("click",(event)=>{
+    if(activeButton&&!event.target.closest("[data-sentence-pair]"))close(activeButton);
+  });
+}
+
+function normalizeQuizAnswer(value){
+  return String(value??"")
+    .normalize("NFKC")
+    .toLocaleLowerCase("ko-KR")
+    .trim()
+    .replace(/\s+/g," ")
+    .replace(/[.!?。！？]+$/g,"")
+    .trim();
+}
+
+function quizItemValue(item){
+  if(item.dataset.quizKind==="short")return item.querySelector("[data-quiz-input]")?.value||"";
+  return item.querySelector("[data-quiz-input]:checked")?.value||"";
+}
+
+function gradeQuizItem(item){
+  const value=quizItemValue(item);
+  const normalizedValue=normalizeQuizAnswer(value);
+  const answered=Boolean(normalizedValue);
+  let acceptedAnswers=[];
+  if(item.dataset.quizKind==="short"){
+    try{acceptedAnswers=JSON.parse(item.dataset.acceptedAnswers||"[]");}catch(error){acceptedAnswers=[];}
+  }else{
+    acceptedAnswers=[item.dataset.correctAnswer||""];
+  }
+  const correct=answered&&acceptedAnswers.some((answer)=>normalizeQuizAnswer(answer)===normalizedValue);
+  item.dataset.quizGraded="true";
+  item.classList.toggle("is-correct",correct);
+  item.classList.toggle("is-incorrect",answered&&!correct);
+  item.classList.toggle("is-unanswered",!answered);
+  item.querySelectorAll(".quiz-choice").forEach((choice)=>{
+    const input=choice.querySelector("[data-quiz-input]");
+    const isAnswer=acceptedAnswers.some((answer)=>normalizeQuizAnswer(answer)===normalizeQuizAnswer(input?.value));
+    choice.classList.toggle("is-answer",isAnswer);
+    choice.classList.toggle("is-selected",Boolean(input?.checked));
+  });
+  const feedback=item.querySelector("[data-quiz-feedback]");
+  const result=item.querySelector("[data-quiz-result]");
+  if(feedback)feedback.hidden=false;
+  if(result){
+    result.textContent=!answered?"미응답입니다. 정답과 해설을 확인하세요.":correct?"정답입니다.":"오답입니다. 정답과 해설을 확인하세요.";
+  }
+  return{answered,correct};
+}
+
+function initInteractiveQuizzes(){
+  document.querySelectorAll("[data-quiz-root]").forEach((root)=>{
+    const items=Array.from(root.querySelectorAll("[data-quiz-item]"));
+    const score=root.querySelector("[data-quiz-score]");
+    const updateScore=()=>{
+      const graded=items.filter((item)=>item.dataset.quizGraded==="true");
+      const correct=graded.filter((item)=>item.classList.contains("is-correct")).length;
+      const answered=graded.filter((item)=>!item.classList.contains("is-unanswered")).length;
+      if(score)score.textContent=graded.length?`정답 ${correct} / ${items.length} · 응답 ${answered}문제 · 채점 ${graded.length}문제`:"아직 채점하지 않았습니다.";
+    };
+
+    items.forEach((item)=>{
+      item.querySelector("[data-quiz-check]")?.addEventListener("click",()=>{
+        gradeQuizItem(item);
+        updateScore();
+      });
+      const shortInput=item.dataset.quizKind==="short"?item.querySelector("[data-quiz-input]"):null;
+      shortInput?.addEventListener("keydown",(event)=>{
+        if(event.key!=="Enter")return;
+        event.preventDefault();
+        gradeQuizItem(item);
+        updateScore();
+      });
+    });
+
+    root.addEventListener("submit",(event)=>{
+      event.preventDefault();
+      items.forEach(gradeQuizItem);
+      updateScore();
+      score?.focus?.();
+    });
+    root.addEventListener("reset",()=>{
+      window.setTimeout(()=>{
+        items.forEach((item)=>{
+          delete item.dataset.quizGraded;
+          item.classList.remove("is-correct","is-incorrect","is-unanswered");
+          item.querySelectorAll(".quiz-choice").forEach((choice)=>choice.classList.remove("is-answer","is-selected"));
+          const feedback=item.querySelector("[data-quiz-feedback]");
+          if(feedback)feedback.hidden=true;
+          const result=item.querySelector("[data-quiz-result]");
+          if(result)result.textContent="";
+        });
+        updateScore();
+      },0);
+    });
+  });
+}
+
 function initProfessorPrep(){
   const root=document.querySelector("[data-prep-root]");
   if(!root)return;
@@ -481,7 +636,14 @@ function initProfessorPrep(){
   const pagePath=readerRoot?.dataset.pagePath||window.location.pathname;
   const stateKey=`${STORAGE_PREFIX}-prep:${pagePath}`;
   const saved=storage.get(stateKey,{});
-  const state={difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])};
+  const tabs=Array.from(root.querySelectorAll("[data-prep-tab]"));
+  const panels=Array.from(root.querySelectorAll("[data-prep-panel]"));
+  const availableTabKeys=tabs.map((tab)=>tab.dataset.prepTab).filter(Boolean);
+  const initialTab=availableTabKeys.includes(saved.activeTab)?saved.activeTab:(availableTabKeys[0]||"");
+  const state={
+    activeTab:initialTab,
+    difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])
+  };
   const difficultList=document.querySelector("[data-prep-difficult-list]");
 
   const cards=Array.from(root.querySelectorAll("[data-prep-card]")).map((card)=>{
@@ -496,7 +658,50 @@ function initProfessorPrep(){
   });
 
   const persist=()=>{
-    storage.set(stateKey,{difficultIds:Array.from(state.difficultIds)});
+    storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds)});
+  };
+
+  const activateTab=(key,options={})=>{
+    if(!availableTabKeys.includes(key))return;
+    state.activeTab=key;
+    tabs.forEach((tab)=>{
+      const active=tab.dataset.prepTab===key;
+      tab.classList.toggle("is-active",active);
+      tab.setAttribute("aria-selected",String(active));
+      tab.tabIndex=active?0:-1;
+      if(active&&options.focus)tab.focus();
+    });
+    panels.forEach((panel)=>{
+      panel.hidden=panel.dataset.prepPanel!==key;
+    });
+    if(options.persist!==false)persist();
+  };
+
+  tabs.forEach((tab,index)=>{
+    tab.addEventListener("click",()=>activateTab(tab.dataset.prepTab));
+    tab.addEventListener("keydown",(event)=>{
+      const keys=["ArrowLeft","ArrowRight","Home","End"];
+      if(!keys.includes(event.key))return;
+      event.preventDefault();
+      let nextIndex=index;
+      if(event.key==="ArrowLeft")nextIndex=(index-1+tabs.length)%tabs.length;
+      if(event.key==="ArrowRight")nextIndex=(index+1)%tabs.length;
+      if(event.key==="Home")nextIndex=0;
+      if(event.key==="End")nextIndex=tabs.length-1;
+      activateTab(tabs[nextIndex].dataset.prepTab,{focus:true});
+    });
+  });
+
+  const revealHashedCard=()=>{
+    const rawId=window.location.hash.slice(1);
+    if(!rawId)return false;
+    let id=rawId;
+    try{id=decodeURIComponent(rawId);}catch(error){}
+    const target=document.getElementById(id);
+    const panel=target?.closest("[data-prep-panel]");
+    if(!panel)return false;
+    activateTab(panel.dataset.prepPanel,{persist:false});
+    return true;
   };
 
   const renderDifficult=()=>{
@@ -506,6 +711,7 @@ function initProfessorPrep(){
       if(card.difficultButton){
         card.difficultButton.textContent=active?UI_TEXT.prepDifficultActive:UI_TEXT.prepDifficult;
         card.difficultButton.classList.toggle("is-active",active);
+        card.difficultButton.setAttribute("aria-pressed",String(active));
       }
     });
 
@@ -528,6 +734,8 @@ function initProfessorPrep(){
     }
   });
 
+  if(!revealHashedCard())activateTab(state.activeTab,{persist:false});
+  window.addEventListener("hashchange",revealHashedCard);
   renderDifficult();
 }
 
@@ -594,6 +802,8 @@ document.addEventListener("DOMContentLoaded",()=>{
   initHomeFilters();
   initTabMenus();
   initReader();
+  initTranslationSentenceReveals();
+  initInteractiveQuizzes();
   initProfessorPrep();
   initReadingProgressAndToc();
 });

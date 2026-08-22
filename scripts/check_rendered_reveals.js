@@ -6,6 +6,7 @@ const {
   resolveTranslationAlignment,
   sourceTextForEntry,
 } = require("./translation_original_reveal");
+const { validateSentencePairs } = require("./sentence_alignment");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 
@@ -49,6 +50,27 @@ function renderedRevealText(html, id) {
     /<div class="[^"]*\bsource-reveal-body\b[^"]*"[^>]*>\s*<p>([\s\S]*?)<\/p>\s*<\/div>/
   );
   return bodyMatch ? normalize(decodeHtmlText(bodyMatch[1])) : "";
+}
+
+function renderedSentencePairs(html, id) {
+  const sectionPattern = new RegExp(
+    `<section\\b[^>]*\\bid="${escapeRegExp(id)}"[^>]*>([\\s\\S]*?)<\\/section>`
+  );
+  const sectionMatch = html.match(sectionPattern);
+  if (!sectionMatch) return [];
+  return [...sectionMatch[1].matchAll(/<button\b([^>]*)\bdata-source-sentence(?:="")?([^>]*)>/g)].map((match) => {
+    const attrs = `${match[1]} ${match[2]}`;
+    const value = (name) => {
+      const attrMatch = attrs.match(new RegExp(`\\b${escapeRegExp(name)}="([^"]*)"`));
+      return attrMatch ? normalize(decodeHtmlText(attrMatch[1])) : "";
+    };
+    return {
+      id: value("data-pair-id"),
+      status: "verified",
+      ko_text: value("data-translation-text"),
+      source_text: value("data-source-text"),
+    };
+  });
 }
 
 function checkSlug(slug) {
@@ -105,6 +127,30 @@ function checkSlug(slug) {
     } else if (rendered !== normalize(entry.sourceText)) {
       errors.push(`${entry.id}: rendered reveal text does not match resolved source text`);
     }
+    const rawPairs = Array.isArray(rawEntry.sentence_pairs) ? rawEntry.sentence_pairs : [];
+    errors.push(...validateSentencePairs({
+      id: entry.id,
+      translationText: entry.translationBlock?.text || entry.translationBlock?.plainText || "",
+      sourceText: entry.sourceText,
+      pairs: rawPairs,
+    }, { allowedStatuses: ["verified"] }));
+    const renderedPairs = renderedSentencePairs(html, entry.id);
+    if (renderedPairs.length !== rawPairs.length) {
+      errors.push(`${entry.id}: rendered sentence pair count mismatch (expected ${rawPairs.length}, found ${renderedPairs.length})`);
+    } else {
+      rawPairs.forEach((pair, index) => {
+        const actual = renderedPairs[index];
+        if (normalize(actual.id) !== normalize(pair.id)) errors.push(`${entry.id}: rendered pair ${index + 1} id mismatch`);
+        if (normalize(actual.ko_text) !== normalize(pair.ko_text)) errors.push(`${entry.id}: rendered pair ${index + 1} Korean text mismatch`);
+        if (normalize(actual.source_text) !== normalize(pair.source_text)) errors.push(`${entry.id}: rendered pair ${index + 1} source text mismatch`);
+      });
+      errors.push(...validateSentencePairs({
+        id: `${entry.id} rendered`,
+        translationText: entry.translationBlock?.text || entry.translationBlock?.plainText || "",
+        sourceText: entry.sourceText,
+        pairs: renderedPairs,
+      }, { allowedStatuses: ["verified"] }));
+    }
   });
 
   if (resolved.entries.length !== verifiedEntries.length) {
@@ -113,7 +159,8 @@ function checkSlug(slug) {
   if (errors.length) {
     throw new Error(`${slug}\n  ${errors.join("\n  ")}`);
   }
-  console.log(`PASS ${slug} (${resolved.entries.length}/${verifiedEntries.length} rendered reveals)`);
+  const sentencePairCount = verifiedEntries.reduce((sum, entry) => sum + (Array.isArray(entry.sentence_pairs) ? entry.sentence_pairs.length : 0), 0);
+  console.log(`PASS ${slug} (${resolved.entries.length}/${verifiedEntries.length} block reveals, ${sentencePairCount} sentence reveals)`);
 }
 
 function parseSlugs(argv) {
