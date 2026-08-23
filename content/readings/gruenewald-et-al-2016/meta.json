@@ -66,10 +66,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "7a4fc407486dc4f472f97ef574cc61d9cc1ff272",
@@ -78,23 +78,25 @@
       "concepts": "f045a9c4df019baf0722ff429c6bb05e273edefb",
       "pitfalls": "77a512245ed6d8edba44f3cdf2d115473b08d7a8",
       "review-sheet": "7fd0e8d7b95e9284add330a05bea3e3a63857ac1",
-      "professor-prep": "1e4501faefeb591bc63502e71d5fb3e043b00730",
       "quiz-short": "545d39b6c0ef8ff92f7cee6885c07d42f47bfa28",
       "quiz-mcq": "585b8154891949ac696196b00cb73e670afef958",
-      "quiz-ox": "493479d9e472cf77bb061f140a69ad38c6d99097"
+      "quiz-ox": "493479d9e472cf77bb061f140a69ad38c6d99097",
+      "professor-prep": "458ccf4e8a0eca3fc9aebc685ea30dc1ff4be4e5"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:45.399Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:52.433Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independently audited after removing OX lexical cues, replacing implausible distractors, fixing ITT/CACE rendering, and restoring single-segment evidence scope; final Critical 0 / Major 0 / Minor 0, isolated checks passed, chatbot excluded.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:12.108Z",
+    "updated_at": "2026-08-23T11:48:52.469Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

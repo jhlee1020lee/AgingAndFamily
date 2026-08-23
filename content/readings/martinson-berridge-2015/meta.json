@@ -70,10 +70,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "008d75ab4f654ed46f90404ef7ca387bf747302c",
@@ -82,23 +82,25 @@
       "concepts": "5b144d93251335262a3e74987a5ba90551a9a074",
       "pitfalls": "fbcfb305c041e03fee43cb1e3938eff503d6b41f",
       "review-sheet": "952b8d4205f602bb4521a43e4daa4b2732d271ee",
-      "professor-prep": "2f029953ee6221f91d86df0713a05750d231edd9",
       "quiz-ox": "d6fe5dfb4700f385130281c317037e732c2ea87a",
       "quiz-short": "e80b9d469409e9a1e59fd546e1f67dd1d709292c",
-      "quiz-mcq": "3687cdaffbce7d3ef9702565c2b766c0d0ae1e58"
+      "quiz-mcq": "3687cdaffbce7d3ef9702565c2b766c0d0ae1e58",
+      "professor-prep": "8bf05b34d8004bd9ff456b4f5aeaba1fbbd5659a"
     },
-    "reviewer": "codex-independent-stage3-audit",
-    "reviewed_at": "2026-08-22T23:15:53.930Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:53.783Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 2 correction re-audit PASS: Critical 0, Major 0, Minor 0; 28/28 segments, 127/127 blocks, 284 sentence pairs, deterministic hashes, links, privacy and no-chatbot verified.",
-      "Independent Stage 3 semantic and quiz-pattern audit C0/M0/m0; 66/66 evidence records, strict 28/28 alignment, isolated full-preview links/reveals, and privacy/chatbot exclusion verified."
+      "Independent Stage 3 semantic and quiz-pattern audit C0/M0/m0; 66/66 evidence records, strict 28/28 alignment, isolated full-preview links/reveals, and privacy/chatbot exclusion verified.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:12.223Z",
-    "require_built_artifacts": false,
+    "updated_at": "2026-08-23T11:48:53.829Z",
+    "require_built_artifacts": true,
     "landing": {
       "status": "approved",
       "errors": [],

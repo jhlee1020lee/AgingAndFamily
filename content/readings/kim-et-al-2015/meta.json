@@ -67,10 +67,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "f6953ee09ec4fcee41e2d5e4be211616877bf1b2",
@@ -79,23 +79,25 @@
       "concepts": "44df0d00463df0eda3d0892847859bc88c84e3f5",
       "pitfalls": "54b1bade7eea9be1d7dea92e2dfbbf40862b7795",
       "review-sheet": "5744c87d9741ab79e7940179cbbb3b45af561916",
-      "professor-prep": "6ac9f05ca6ee95de8fc1b64d693aa6ef6cf248ad",
       "quiz-short": "661d98c788e0bf5160a2c5d4b7df65fba627b2e1",
       "quiz-mcq": "ac9aa584e44a1e5f6723abd7f9d60e5142d5d0da",
-      "quiz-ox": "c7b32af8b8f1f77b6c4bd766764df5fbea8fd022"
+      "quiz-ox": "c7b32af8b8f1f77b6c4bd766764df5fbea8fd022",
+      "professor-prep": "d52fa6df6bd80f6f88db5513bae6c79ba4b3cc55"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:44.915Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:45.752Z",
     "notes": [
       "Stage 1 independently audited across all 22 PDF pages; 177 source blocks in 17 segments, 132 references, metadata, numerical/policy anchors, no-figure status, and reproducible reconstruction verified. One wrapped RAND URL was corrected and re-audited.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.680Z",
+    "updated_at": "2026-08-23T11:48:45.804Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

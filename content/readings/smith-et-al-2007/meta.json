@@ -67,10 +67,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "1e7ad329c364a5ba5e196163ce499116e7597d83",
@@ -79,23 +79,25 @@
       "concepts": "14d7302245ef90446de12abf77a4e92664607b8e",
       "pitfalls": "874aac1e8e8adcaa4a25fae084c5e4d17233260c",
       "review-sheet": "c6395997ec6903274350fe481f8997d593ea1989",
-      "professor-prep": "b3728742d53659e6627f4f666ce2fafd0283bf66",
       "quiz-ox": "4801d48fa8bbd4899c4386a6bed12a6bc9d28ad2",
       "quiz-short": "d21dcca8401fe53b8bd1d34d05e38363e963c617",
-      "quiz-mcq": "ed877f44c79de4eb673fa639655d81249835756d"
+      "quiz-mcq": "ed877f44c79de4eb673fa639655d81249835756d",
+      "professor-prep": "f9b9cc734206974b2fd5cbbeece08922c801f915"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:46.025Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:51.101Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent final audit PASS after correcting one minor overstatement in Sam's spouse/help wording; Critical 0, Major 0, Minor 0; all 66 evidence-linked records, isolated full-preview links/reveals/privacy/chatbot checks passed.",
       "문항·정답·해설·근거를 유지한 채 선택지 위치만 균형 있게 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 선택지 위치 재배치를 승인함."
+      "렌더 산출물까지 확인하고 선택지 위치 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:12.037Z",
+    "updated_at": "2026-08-23T11:48:51.138Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

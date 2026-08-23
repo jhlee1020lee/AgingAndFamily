@@ -65,11 +65,11 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "translation",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "04c101a07c05d1919cc5e807225f43dbc2b162cf",
@@ -77,24 +77,26 @@
       "concepts": "416d9a10b4a3f5f01ef49face984ec53e8e4829b",
       "pitfalls": "63414dcf9a09fd84fea9023152418d8d8e6b45f9",
       "review-sheet": "8f93d033edcd45047ad1124fe1c9fbd4889a3960",
-      "professor-prep": "a07c512a87f43da5e5676f60572900c9ccb8cfad",
       "quiz-short": "79bf46231ba970652dc3ebcea2e231583302fd4a",
       "translation": "5c9f772f4d3335b0a1093910d6670f5652970e25",
       "quiz-mcq": "6983f7829d8a64c048de0fc193836d0110ba0708",
-      "quiz-ox": "6f5b0bab76179e0855d0619de97444ac39151911"
+      "quiz-ox": "6f5b0bab76179e0855d0619de97444ac39151911",
+      "professor-prep": "1688c6d3924f555e65c7f42c13499fcebffe2ef3"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:44.617Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:32.323Z",
     "notes": [
       "생성된 문장별 원문, 채점 퀴즈, 교수 대비 탭과 근거를 재검수함.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.090Z",
+    "updated_at": "2026-08-23T11:48:32.350Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

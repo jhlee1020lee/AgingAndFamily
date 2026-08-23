@@ -67,10 +67,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "7dd4bd9bd5a608e1394303986c7b1e9dfa729daa",
@@ -79,24 +79,26 @@
       "concepts": "96310d363298210f9c8babd3adc5b03fd07904da",
       "pitfalls": "b9fb306a23e1262470e7e2188c6b783a14efd482",
       "review-sheet": "c16fd6117359aee149912449bdd67081056a45bb",
-      "professor-prep": "7dfa8f730ff864b0235d4b1f16a9464af94502ec",
       "quiz-short": "13f35f5bb122a23cb94833975e222abb16f47e63",
       "quiz-mcq": "02f8ab972297943cb6d7d4067d2649e8c6601ba1",
-      "quiz-ox": "347d81e106912e77f0a542b52f4c047db2dbe432"
+      "quiz-ox": "347d81e106912e77f0a542b52f4c047db2dbe432",
+      "professor-prep": "369d91479ce45443cceb646b47182bf1df2c5310"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:45.885Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:56.459Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 2 independent final audit PASS after correcting one major numeric-attribution issue and two minor scope expressions; Critical 0, Major 0, Minor 0; PDF figures/tables, 18 segments, 111 reveals, 229 sentence pairs, references, links, privacy and chatbot exclusion rechecked.",
       "Stage 3 final independent audit PASS Critical 0 Major 0 Minor 0 after complete quiz redesign: 66/66 single-segment evidence complete, cross-format duplicates and answer-pattern/style clues removed. Fresh isolated full preview passed 243 HTML/5,928 links and 111/111 block plus 229 sentence reveals; no chatbot or recording material.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:12.400Z",
+    "updated_at": "2026-08-23T11:48:56.496Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

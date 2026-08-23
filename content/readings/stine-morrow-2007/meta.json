@@ -56,10 +56,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "2bd03bc7e0566484ea0c8ebbbf5b913ea61ddf5b",
@@ -68,19 +68,21 @@
       "concepts": "778857a86456556e60a2d8e91065e4fbca462c3b",
       "pitfalls": "122ab2a01426d2e0f971a34945d5c6f0133d11b9",
       "review-sheet": "b6c84637df162630f232fcbefb1fa139fdac667e",
-      "professor-prep": "b0e5848c77faf5c4412c60e6ed5278933774bfa5",
       "quiz-ox": "e456d73fd2e9c70308f9fab547c7e1502be71727",
       "quiz-short": "7a1ce1e0a2b680a62c427c2ce10fcf95df7ef28c",
-      "quiz-mcq": "c422a3411c3bd83fd5278d21e0e8d7e4037d1590"
+      "quiz-mcq": "c422a3411c3bd83fd5278d21e0e8d7e4037d1590",
+      "professor-prep": "38d5ca9d77d35923a9384c0bae92bd0a154bdd96"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-22T06:54:46.072Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:37.691Z",
     "notes": [
       "Stage 1 source reconstruction is schema-ready; independent PDF comparison and manual approval remain pending.",
       "Stage 1: five rendered pages, two-column reading order, both figure assets and captions, Box 1, numeric anchors, acknowledgments, and 18 references independently checked.",
       "Stage 2: independent audit verified 10 segments, 57 content blocks, 44 paragraph mappings, 123 sentence pairs, Figures 1-2, Box 1, and 18 references; terminology and low-risk wording corrections applied and revalidated.",
       "Stage 3 learning assets independently audited; wording, selection/common-cause distinction, adaptive reading allocation, and expertise-specificity corrections applied; 66/66 evidence links verified.",
-      "Source, alignment, learning assets, and rendered artifacts reviewed."
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
@@ -98,8 +100,8 @@
     "index": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.318Z",
-    "require_built_artifacts": false,
+    "updated_at": "2026-08-23T11:48:37.718Z",
+    "require_built_artifacts": true,
     "landing": {
       "status": "approved",
       "errors": [],

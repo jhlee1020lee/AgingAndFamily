@@ -69,10 +69,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "111abcb4879aaf0b0a164d57f971da008fc2c9b9",
@@ -81,26 +81,28 @@
       "concepts": "b7fb92d6110dc4de3cf6d573892e9d8754645568",
       "pitfalls": "339dbd68a909db877af56b830d012de2635484bd",
       "review-sheet": "d1f5d75d0427df0f9423ad21b814cb7db1a06561",
-      "professor-prep": "11f2ce4d8533ccc444c6d25735d6c27cb55f9631",
       "quiz-ox": "64f2269d4a01c569136e4da37f10c01b0c3844f9",
       "quiz-short": "7ef00f011f662daeaa7179d08d84fc5fcbfb6da7",
-      "quiz-mcq": "f8241c88b2e31f4d4daf16676db44c818215eecd"
+      "quiz-mcq": "f8241c88b2e31f4d4daf16676db44c818215eecd",
+      "professor-prep": "d85c607ea5a1680ca57f1a7c08f55f88b7cdac8e"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-22T07:05:10.238Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:39.023Z",
     "notes": [
       "Stage 1: 4-page source, columns, quantitative anchors, captions, and sidebar checked against rendered PDF.",
       "Stage 1: all four pages, reading order, quantitative anchors, captions, sidebar studies, and source-block coverage independently checked after heading normalization.",
       "Stage 2: full four-page translation independently audited; relative dates, 160,000 referent, 50% claim strength, sidebar duration, locations, and neuroscience terminology corrected; 8/8 segments, 39 blocks, and 133 sentence pairs verified.",
       "Stage 2 source approval retained while future-week public rendering remains intentionally release-locked.",
       "Stage 3 independently audited: 45 answer keys, 21 response cards, evidence scope, sample/MRI counts, causal strength, and corrected rendered copy reviewed; chatbot excluded.",
-      "Source, alignment, learning assets, and rendered artifacts reviewed."
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.348Z",
-    "require_built_artifacts": false,
+    "updated_at": "2026-08-23T11:48:39.048Z",
+    "require_built_artifacts": true,
     "landing": {
       "status": "approved",
       "errors": [],

@@ -57,10 +57,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "87f89ab54e911ea1701bf3c3b69a6caf6fffec9a",
@@ -69,18 +69,20 @@
       "concepts": "5eb172827a59a9bc418334edc601b787977304ad",
       "pitfalls": "2fd471d51e6b027e505aa0e1daa08194fb78b616",
       "review-sheet": "286dbce9c7af30a9d2681c1233a4e106b6c62c06",
-      "professor-prep": "2a05d401aee229d6f79b1899bd91c414234492ba",
       "quiz-ox": "e9f15fc9853687ded0167136cb91ae9823e37555",
       "quiz-short": "cf861365ea6d02249b5a5b897cf5d5a5834512ea",
-      "quiz-mcq": "2daf45c42115d7b2fa0f7913a42c9349b81552a6"
+      "quiz-mcq": "2daf45c42115d7b2fa0f7913a42c9349b81552a6",
+      "professor-prep": "c346ec1231ed138ca5ed3db6cf658ba16532f463"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-22T06:54:45.942Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:35.023Z",
     "notes": [
       "Stage 1: nine rendered pages, multicolumn order, headings, key dates and quotations, 41 references, and all 108 public substantive blocks independently cross-checked after restoring Keywords to ABS-001.",
       "Stage 2: independent audit and repair verified 22 segments, 107 blocks, 483 sentence pairs, 41 references, names, quotations, legal wording, and explicit suicide framing; strict alignment and custom invariants pass.",
       "Stage 3: independent audit verified all 45 quiz keys/explanations, 21 response cards, and 66 evidence links; direct-evidence wording and non-predictable answer-order refinements were applied and revalidated.",
-      "Source, alignment, learning assets, and rendered artifacts reviewed."
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
@@ -98,8 +100,8 @@
     "index": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.222Z",
-    "require_built_artifacts": false,
+    "updated_at": "2026-08-23T11:48:35.066Z",
+    "require_built_artifacts": true,
     "landing": {
       "status": "approved",
       "errors": [],

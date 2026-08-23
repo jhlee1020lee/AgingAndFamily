@@ -72,10 +72,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "6ed528b2c389af3cc54b21c26701d8aecd0ea962",
@@ -84,24 +84,26 @@
       "concepts": "454e1f8572377331834626baab35fb249890eb1f",
       "pitfalls": "50195c42138057802fd394f2822ea4120d9ee826",
       "review-sheet": "a9c07a75db0bb9f7e0af625d51588de5a8ec8e7f",
-      "professor-prep": "ada8e2c64188281f9c6912e52e28f773fd2b414c",
       "quiz-short": "b8b8469279060774e1477ae036a015b7662af9f9",
       "quiz-mcq": "9982c424818f5d9ce7e4b2a35d2c589be059dcb0",
-      "quiz-ox": "3c7506d14ba5bbeba47b31db828ecf6aa346efb6"
+      "quiz-ox": "3c7506d14ba5bbeba47b31db828ecf6aa346efb6",
+      "professor-prep": "76740465f98e32971b2174d1c367f29a0c2b6340"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:45.571Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:55.122Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 2 independent final audit PASS: Critical 0, Major 0, Minor 0; PDF tables/figures, 20 segments, 117 reveals, 357 sentence pairs, references, determinism, links, privacy and chatbot exclusion verified.",
       "Independent Stage 3 content audit C0/M0/m0; strict alignment, isolated full-preview links/reveals, and privacy/chatbot exclusion verified.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:12.293Z",
+    "updated_at": "2026-08-23T11:48:55.169Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

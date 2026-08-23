@@ -67,10 +67,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "c0db45166d17314b8a281b177b96a26c4abed253",
@@ -79,24 +79,26 @@
       "concepts": "1affff898512cf42ae17740ede202e133067d77c",
       "pitfalls": "f142687a8cb788383967e964f515b0dfd44777d8",
       "review-sheet": "e9d912b06aeda61dbd548be1151ec0ad8bf335f1",
-      "professor-prep": "92499194bbaeeec4a2e01a1dd2a1c9dd5626223b",
       "quiz-short": "f7d6967a8f566018c8300cd955bb982533d4dd5d",
       "quiz-mcq": "dab9568cf32df1d254b95fd56a817520468088d2",
-      "quiz-ox": "49fa4f0e262d9bd6beae8e9462260e8a4b552de9"
+      "quiz-ox": "49fa4f0e262d9bd6beae8e9462260e8a4b552de9",
+      "professor-prep": "f1a562b5832ac8c58e9b71e5bdccd13ef7c563ec"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:45.259Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:47.086Z",
     "notes": [
       "Stage 1 source reconstruction independently re-audited against the PDF; 7,954 words, 36 references, 94 blocks, exact captions and figure/table crops verified.",
       "Stage 2 independently audited against all 22 approved source segments and original-resolution Figure 1 and Tables 1-2; two minor scope/wording issues corrected, deterministic regeneration and isolated rendered reveal/link checks passed, chatbot excluded.",
       "Stage 3 final independent audit PASS Critical 0 Major 0 Minor 0: 66/66 single-segment evidence complete, published sample arithmetic inconsistency explicitly disclosed, quiz formats distinct and balanced. Fresh isolated full preview passed 243 HTML/5,928 links and 89/89 block plus 332 sentence reveals; no chatbot or recording material.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.763Z",
+    "updated_at": "2026-08-23T11:48:47.126Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

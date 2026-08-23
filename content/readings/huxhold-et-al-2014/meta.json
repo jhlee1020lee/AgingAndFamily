@@ -66,10 +66,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "e7601df4ed49624535b9ffdd3e8237d4f7dbc24c",
@@ -78,23 +78,25 @@
       "concepts": "a5fdcd2da83e3ecb412a3b76e8a5238b84628a7e",
       "pitfalls": "5178bf5aee988214cf8412a0269c45ef28b1779a",
       "review-sheet": "9df047512c3f1dbc8f17e5f7c3b6b64388ce928d",
-      "professor-prep": "1c0e9159b950f038e0ee1d9a7ea6874bc70062a4",
       "quiz-ox": "e2c075ec310bf2410e924088cc9fe3996d8d8f22",
       "quiz-short": "177f84d1c8d36a5e6f56cc0412214e082e57ae8e",
-      "quiz-mcq": "6fd375c0844f1bfbe5c17d275324e8beebbcaa85"
+      "quiz-mcq": "6fd375c0844f1bfbe5c17d275324e8beebbcaa85",
+      "professor-prep": "b6d0421a9039f7fc3a52b8f50a109c68b49a00da"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-22T06:11:15.494Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:43.071Z",
     "notes": [
       "Stage 1 independently audited against all 10 PDF pages: 111 source blocks, 22 segments, 53 references, Figures 1-2 and Table 1, statistics, metadata, and reproducible crops verified; audit corrections applied.",
       "Stage 2 translation independently reviewed against the approved reconstruction; all 22 segments, 111 content blocks, 100 reveal mappings, 264 sentence pairs, model/statistical results, figures/tables, uncertainty language, and 53 references verified.",
-      "Source, alignment, learning assets, and rendered artifacts reviewed."
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.524Z",
-    "require_built_artifacts": false,
+    "updated_at": "2026-08-23T11:48:43.109Z",
+    "require_built_artifacts": true,
     "landing": {
       "status": "approved",
       "errors": [],

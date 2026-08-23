@@ -72,10 +72,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-short",
       "quiz-mcq",
-      "quiz-ox"
+      "quiz-ox",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "full": "b1d41fbaaad2506eb7bf79f961518b7bcd487b4a",
@@ -84,23 +84,25 @@
       "concepts": "a3b7c721a6288bce52b2f28a0ad9eaba9681dd47",
       "pitfalls": "0849474ddf38bc848899a954ab880a84f058d382",
       "review-sheet": "294501c2c2f8209088ede8c25f4efd2475093b8d",
-      "professor-prep": "a41d1515c1f94d71fa10bf32ead9128ff5afb619",
       "quiz-short": "bc249d7c20ecd74f95d9082acc2536d8a61f7a87",
       "quiz-mcq": "afdea81de53efd861fdbfdd5abb8831381abc4ce",
-      "quiz-ox": "70c52e9693c1a370e2e14250fa66a72d60f02dfb"
+      "quiz-ox": "70c52e9693c1a370e2e14250fa66a72d60f02dfb",
+      "professor-prep": "45387d3ec1a03e9381b12da9d6b0d5a80d4cd8f3"
     },
-    "reviewer": "codex",
-    "reviewed_at": "2026-08-23T04:19:45.728Z",
+    "reviewer": "codex-reading-response-audit",
+    "reviewed_at": "2026-08-23T11:48:49.752Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent correction audit PASS: Critical 0, Major 0, Minor 0; 66/66 single-segment evidence, quiz separation, schema, strict alignment, isolated render, links, reveals, privacy and no-chatbot verified.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
-      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
+      "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:51:11.964Z",
+    "updated_at": "2026-08-23T11:48:49.792Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",
