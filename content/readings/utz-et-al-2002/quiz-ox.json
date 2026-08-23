@@ -1,0 +1,127 @@
+{
+  "title": "Utz et al. (2002) OX 퀴즈",
+  "instructions": "문장의 범위·방향·시점이 논문과 일치하는지 판단하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "prompt": "이 연구에서 사회참여는 배우자가 아닌 사람과의 사회적 상호작용으로 정의되었다.",
+      "answer": "O",
+      "explanation": "연구는 배우자 밖의 상호작용을 공식적·비공식적 사회역할로 나누어 사회참여를 구성했다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "사회참여의 정의",
+      "difficulty": "하"
+    },
+    {
+      "prompt": "활동이론은 배우자 관련 역할을 잃은 뒤에도 사별 전 참여수준을 보존하는 것이 핵심 적응이라고 본다.",
+      "answer": "X",
+      "explanation": "활동이론은 연령 관련 결손 속에서 상실한 사회역할을 새롭고 보상적인 활동으로 대체하여 자기정체성을 보존한다고 본다.",
+      "evidence_segment_id": "THEORY-001",
+      "source": "활동이론의 가설",
+      "difficulty": "하"
+    },
+    {
+      "prompt": "선행 사별연구에 여성만 포함한 표본이 많았다는 점은 성별에 따른 적응 차이를 평가하기 어렵게 했다.",
+      "answer": "O",
+      "explanation": "저자들은 여성만의 표본을 엇갈린 선행결과의 네 가지 방법론적 원인 가운데 하나로 지적했다.",
+      "evidence_segment_id": "PRIOR-001",
+      "source": "선행연구의 표본 한계",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "1차 조사의 시점은 각 응답자의 기초면접 날짜를 기준으로 정해졌다.",
+      "answer": "X",
+      "explanation": "1차 조사는 기초면접 6개월 뒤가 아니라 각 배우자의 사망 6개월 뒤였으므로 면접간격이 달랐고, 연구진은 그 개월 수를 통제했다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "면접시점의 차이",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "우울은 다른 교란변수와 마찬가지로 기초면접에서 측정되었다.",
+      "answer": "X",
+      "explanation": "우울은 1차 조사 시점에 측정했고, 우울을 제외한 다른 교란변수들이 기초시점 측정치였다.",
+      "evidence_segment_id": "METHOD-CONFOUNDERS-001",
+      "source": "교란변수의 측정시점",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "CLOC의 참여 자격은 시설에 거주하지 않는 영어사용 기혼부부이면서 남편이 65세 이상인 경우로 제한되었다.",
+      "answer": "O",
+      "explanation": "표집틀의 세 조건은 시설 비거주, 영어사용 기혼부부, 남편의 연령 65세 이상이었다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "CLOC 참여 자격",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "비공식적 참여 척도의 신뢰도는 α = .52였고 공식적 참여 척도의 신뢰도는 α = .71이었다.",
+      "answer": "O",
+      "explanation": "만남·전화의 2문항 비공식 지수는 .52, 자원봉사·모임·종교의식의 3문항 공식 지수는 .71이었다.",
+      "evidence_segment_id": "METHOD-MEASURES-001",
+      "source": "두 참여척도의 신뢰도",
+      "difficulty": "하"
+    },
+    {
+      "prompt": "기초시점 회귀에서 장차 사별할 사람은 혼인을 유지한 사람보다 비공식적 참여가 더 높았다.",
+      "answer": "X",
+      "explanation": "장차 사별할 사람의 기초 비공식 참여는 오히려 더 낮았으며 계수는 β = −.29, p ≤ .01이었다.",
+      "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
+      "source": "상실 전 비공식 참여",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "사별과 성별의 상호작용은 유의하여 여성과 남성의 평균적인 사별 효과가 달랐다.",
+      "answer": "X",
+      "explanation": "사별 × 성별 상호작용은 어떤 모형에서도 유의하지 않아 평균적인 사별 효과가 여성과 남성에게 비슷함을 시사했다.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "성별 상호작용",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "배우자의 기초시점 건강이 나쁨 또는 보통인 경우 낮은 비공식 참여와 관련되었다.",
+      "answer": "O",
+      "explanation": "기초 비공식 참여 회귀에서 배우자의 나쁜·보통 건강은 β = −.31, p ≤ .001의 부적 예측요인이었다.",
+      "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
+      "source": "배우자 건강과 상실 전 참여",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "그림 2에서는 여성 사별자가 남성 사별자보다 친구·친척의 접촉 관심 증가를 더 많이 보고했다.",
+      "answer": "X",
+      "explanation": "이 분석에서는 뚜렷한 성별 차이가 없었고 여성과 남성이 친구·친척에게서 늘어난 지원을 비슷하게 받았다.",
+      "evidence_segment_id": "RESULTS-MOTIVES-001",
+      "source": "접촉 지원의 성별 양상",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "사별 18개월 뒤 분석에서도 6개월 결과와 비슷한 계수가 나타나 비공식 참여 변화의 지속성을 시사했다.",
+      "answer": "O",
+      "explanation": "논문에 표로 제시되지는 않았지만 동일한 18개월 모형의 계수가 비슷해 첫 6개월의 변화가 더 오래 지속된다고 해석했다.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "18개월 추가 분석",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "사별자의 71%는 배우자 생존 때와 같은 정도로 친척·친구와 접촉하기를 원했다.",
+      "answer": "O",
+      "explanation": "본인의 접촉 관심은 증가 17%, 동일 71%, 감소 12%로 지속성을 원하는 응답이 다수였다.",
+      "evidence_segment_id": "RESULTS-MOTIVES-001",
+      "source": "사별자의 접촉 선호",
+      "difficulty": "하"
+    },
+    {
+      "prompt": "저자들은 세 고전이론을 결합하면 사별 반응의 다양성과 과정적 성격을 적절히 설명할 수 있다고 평가했다.",
+      "answer": "X",
+      "explanation": "저자들은 고전이론이 반응의 다양성과 생애과정의 전개를 충분히 포착하지 못해 발달적·중범위 관점이 더 유망할 수 있다고 보았다.",
+      "evidence_segment_id": "DISCUSSION-THEORY-001",
+      "source": "고전이론의 최종 평가",
+      "difficulty": "중"
+    },
+    {
+      "prompt": "지원활동은 최근 사별자뿐 아니라 병든 배우자를 둔 사람과 사별이 임박한 부부에게도 향할 수 있다.",
+      "answer": "O",
+      "explanation": "사회적 철수가 사망 전부터 나타날 수 있으므로 저자들은 배우자의 생애 마지막 단계를 겪는 부부도 지원대상으로 제안했다.",
+      "evidence_segment_id": "DISCUSSION-PRACTICE-001",
+      "source": "지원의 시간적 범위",
+      "difficulty": "중"
+    }
+  ]
+}

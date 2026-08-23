@@ -1,0 +1,142 @@
+{
+  "title": "Lee & Yeung (2021) OX 퀴즈",
+  "instructions": "진술이 논문과 일치하면 O, 아니면 X를 고르세요. 전환방향·젠더·분모·유의성을 함께 확인하세요.",
+  "question_set_type": "OX 퀴즈",
+  "items": [
+    {
+      "prompt": "낮은 직업수준의 경력은 충분한 은퇴자원을 축적하지 못하게 해 법정 연금수급연령 뒤에도 계속 일하도록 만들 수 있다.",
+      "answer": "O",
+      "explanation": "저자들은 낮은 직업수준과 불안정 경력 때문에 자산·연금기여가 부족하면 완전은퇴를 선택하지 못하고 노동시장에 남을 수 있다고 설명한다.",
+      "evidence_segment_id": "WORK-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "easy",
+      "misconception_targeted": "장기 노동을 충분한 노후자원의 결과로만 해석"
+    },
+    {
+      "prompt": "기초노령연금은 노동시장 참여를 억제하기 위해 수급자격을 판단할 때 임금을 직접 포함했다.",
+      "answer": "X",
+      "explanation": "전일제 취업 시 급여가 줄 수는 있지만, BOAP는 노년층의 노동시장 참여를 장려하기 위해 수급자격 평가에서 임금을 고려하지 않았다.",
+      "evidence_segment_id": "CONTEXT-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "급여 감액과 수급자격 산정의 혼동"
+    },
+    {
+      "prompt": "자기보고상 은퇴자라도 유급일자리에서 소득을 받는다고 보고하면 노동시장 재진입으로 분류했다.",
+      "answer": "O",
+      "explanation": "노동시장 상태는 자기보고를 바탕으로 했지만 유급일자리 소득이 있는 은퇴자는 재진입자로 분류했다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "easy",
+      "misconception_targeted": "은퇴 자기보고를 흡수상태로 간주"
+    },
+    {
+      "prompt": "젠더와 예측변수의 상호작용이 유의했기 때문에 최종 모형은 여성과 남성으로 층화했다.",
+      "answer": "O",
+      "explanation": "저자들은 상호작용항으로 젠더 차이를 먼저 검정했고, 유의한 결과에 근거해 최종 층화모형을 추정했다.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "사전 검정 없이 임의로 젠더를 분리했다고 이해"
+    },
+    {
+      "prompt": "최종 분석표본 2,600명에서는 여성 수가 남성 수보다 많았다.",
+      "answer": "X",
+      "explanation": "최종 표본은 남성 1,579명과 여성 1,021명으로, 남성이 더 많았다.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "easy",
+      "misconception_targeted": "젠더별 표본 수 역전"
+    },
+    {
+      "prompt": "여성의 취업 관측치 중 이탈은 약 16%였고 비취업 관측치 중 재진입은 약 25%였다.",
+      "answer": "O",
+      "explanation": "표 1의 두 비율은 각각 취업 인년과 비취업 인년을 분모로 한 상태별 변화율이므로 분모를 구분해야 한다.",
+      "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "여성 전체 개인을 공통 분모로 간주"
+    },
+    {
+      "prompt": "여성 층화모형에서 연금수급 자격은 재진입 오즈를 높이고 이탈 오즈를 낮추는 유의한 예측요인이었다.",
+      "answer": "X",
+      "explanation": "여성에게 연금수급 자격은 재진입과 이탈 오즈 모두에 유의한 영향을 보이지 않았다.",
+      "evidence_segment_id": "RESULTS-WOMEN-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "연금 변수의 비유의를 유의한 양방향 결과로 변형"
+    },
+    {
+      "prompt": "상향 재정이전액은 각 조사연도의 같은 해에 자녀에게 받은 금액만으로 측정했다.",
+      "answer": "X",
+      "explanation": "각 시점의 상향이전은 같은 해 금액이 아니라 전년도 모든 자녀에게서 받은 총금액을 바탕으로 한 시간가변 변수였다.",
+      "evidence_segment_id": "EXPLANATORY-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "이전액의 기준시점 혼동"
+    },
+    {
+      "prompt": "배우자가 경제활동을 하면 개인이 근로역할을 유지하려고 은퇴를 늦출 수 있으며, 저자들은 이 가능성이 남편에게 특히 해당할 수 있다고 보았다.",
+      "answer": "O",
+      "explanation": "가족 상황 논의는 취업 배우자와 은퇴자 정체성의 부조화, 남편의 주부양자 지위 위협을 가능한 경로로 제시한다.",
+      "evidence_segment_id": "FAMILY-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "배우자 취업상태를 순수한 가구소득 변수로만 이해"
+    },
+    {
+      "prompt": "고용불안은 부족한 자산 때문에 근로생애를 늘리게 하는 동시에 인적자본 손실로 노동시장 밖으로 밀어낼 수도 있다.",
+      "answer": "O",
+      "explanation": "저자들은 중년기 실직·소득변동이 노동 연장의 필요와 재취업 장벽이라는 상반된 기제를 함께 만들 수 있다고 설명한다.",
+      "evidence_segment_id": "WORK-002",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "hard",
+      "misconception_targeted": "불리한 직업력이 한 방향으로만 작동한다고 단순화"
+    },
+    {
+      "prompt": "혼인 해체와 재진입의 젠더 상호작용은 남성이 여성보다 노동시장 복귀 가능성이 더 높음을 보여 주었다.",
+      "answer": "X",
+      "explanation": "상호작용계수는 `−0.38, p<.01`이었고, 혼인 해체를 경험했을 때 남성은 여성보다 복귀 가능성이 더 낮았다.",
+      "evidence_segment_id": "RESULTS-INTERACTIONS-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "hard",
+      "misconception_targeted": "혼인 해체 상호작용 방향 역전"
+    },
+    {
+      "prompt": "남성 층화모형에서는 전문직과 비숙련 육체노동직 모두 노동시장 전환과 유의한 관계를 보였다.",
+      "answer": "X",
+      "explanation": "두 직업범주 모두 일–은퇴 과정과 통계적으로 유의한 관계가 발견되지 않았다.",
+      "evidence_segment_id": "RESULTS-MEN-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "이론에서 제시한 직업계층 기제를 유의한 결과로 오인"
+    },
+    {
+      "prompt": "가설 1b는 건강·자산·공적연금을 추가하면 이전 직업 경험과 노동시장 잔류의 관계가 약해질 것이라고 예상했다.",
+      "answer": "O",
+      "explanation": "H1b는 은퇴의 근접 관련요인을 모형에 추가할 때 H1a의 직업경력 관계가 약화될 것이라는 사전 가설이다.",
+      "evidence_segment_id": "CONTEXT-002",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "medium",
+      "misconception_targeted": "가설과 관찰결과의 혼동"
+    },
+    {
+      "prompt": "저자들은 연금정책과 젠더규범의 변화를 반영한 코호트효과를 직접 검정해 세대 차이를 확인했다.",
+      "answer": "X",
+      "explanation": "코호트효과를 검정할 수 없었다는 것이 저자들이 직접 밝힌 한계이며, 거시적 변화의 영향을 후속연구 과제로 남겼다.",
+      "evidence_segment_id": "LIMITATIONS-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "easy",
+      "misconception_targeted": "후속연구 제안을 수행된 분석으로 오인"
+    },
+    {
+      "prompt": "초록에 따르면 연구는 2006–2016년 패널자료에 개인수준 무작위효과를 포함한 다층 이산시간 모형을 적용했다.",
+      "answer": "O",
+      "explanation": "초록의 방법은 고령 근로자와 은퇴자를 추적한 패널자료로 시간에 따른 전환을 예측하는 해당 모형을 추정했다고 밝힌다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "Lee & Yeung (2021)",
+      "difficulty": "easy",
+      "misconception_targeted": "횡단면 단일시점 분석으로 오인"
+    }
+  ]
+}

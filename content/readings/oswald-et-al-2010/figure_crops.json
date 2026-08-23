@@ -1,0 +1,38 @@
+[
+  {
+    "source": "page-05.png",
+    "output": "table-1-part-1.png",
+    "x": 78,
+    "y": 72,
+    "width": 1008,
+    "height": 1392,
+    "rotate": 90
+  },
+  {
+    "source": "page-06.png",
+    "output": "table-1-part-2.png",
+    "x": 118,
+    "y": 72,
+    "width": 478,
+    "height": 1392,
+    "rotate": 90
+  },
+  {
+    "source": "page-07.png",
+    "output": "table-2.png",
+    "x": 610,
+    "y": 72,
+    "width": 470,
+    "height": 1392,
+    "rotate": 90
+  },
+  {
+    "source": "page-09.png",
+    "output": "table-3.png",
+    "x": 220,
+    "y": 72,
+    "width": 880,
+    "height": 1392,
+    "rotate": 90
+  }
+]

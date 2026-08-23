@@ -1,0 +1,3212 @@
+{
+  "version": 2,
+  "reading_slug": "smith-et-al-2007",
+  "page": "translation",
+  "entries": [
+    {
+      "id": "smith-et-al-2007-tr-001",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-001-s01",
+          "status": "verified",
+          "ko_text": "이 논문은 노년 남성 36명을 대상으로 실시한 반구조화 면담을 바탕으로, 노년 남성이 독립성을 이해하는 방식이 도움 요청 행동 및 보건의료서비스 이용과 어떻게 관련되는지를 살펴본다.",
+          "source_text": "This paper draws on semi-structured interviews conducted with 36 older men to examine how older men's understandings of independence relate to their help seeking behaviours and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-001-s02",
+          "status": "verified",
+          "ko_text": "우리는 남성성 담론과 성공적 노화 담론이 모두 남성들이 독립성에 관해 말하는 방식에 나타난다고 주장한다.",
+          "source_text": "We argue that discourses of masculinity and successful aging are both represented in men's talk about independence."
+        },
+        {
+          "id": "smith-et-al-2007-tr-001-s03",
+          "status": "verified",
+          "ko_text": "두 담론이 서로 얽혀 있음을 인식하는 것은 노년 남성이 도움을 요청하고 보건의료서비스를 이용하는 방식을 이해하는 데 중요하다.",
+          "source_text": "Recognising that these discourses are intertwined is important for understanding how older men seek help and use health services."
+        },
+        {
+          "id": "smith-et-al-2007-tr-001-s04",
+          "status": "verified",
+          "ko_text": "이러한 관점에서 노년 남성의 도움 요청 행동을 바라볼 때의 실천적·정책적 함의와, 이 관점이 노년 남성의 건강 증진에 유용할 가능성이 있는지도 제시한다.",
+          "source_text": "We outline the practice and policy implications of viewing older men's help seeking behaviours in this way, and how it might be useful for promoting older men's health."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-002",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-002-s01",
+          "status": "verified",
+          "ko_text": "남성성; 성공적 노화; 독립성; 도움 요청",
+          "source_text": "Masculinity; Successful aging; Independence; Help-seeking"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-003",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 5,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 5,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-003-s01",
+          "status": "verified",
+          "ko_text": "이 논문은 노년 남성이 성공적 노화 담론의 일부로서 독립적이어야 한다고 권장되는 동시에, 도움 요청과 보건의료서비스 이용의 맥락에서는 독립성을 고수한다는 이유로 비판받는 방식을 살펴본다.",
+          "source_text": "This paper examines the ways in which older men are encouraged to be independent as part of a discourse on successful aging while, at the same time, are criticized for maintaining their independence in the context of help seeking and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-003-s02",
+          "status": "verified",
+          "ko_text": "사회와 문화에는 남성이 독립적으로 행동해야 한다고 기대하는 고정관념적 남성성 구성이 존재하며, 특히 건강과 보건의료와 관련하여 그러하다(Hodgetts & Chamberlain, 2002; Lantz, Fullerton, Harshburger, & Sadler, 2001; O'hehir, 1996; Reevy & Maslach, 2001; While, 2002).",
+          "source_text": "There are stereotypical societal and cultural constructions of masculinity that expect men to behave independently, particularly in relation to health and health care (Hodgetts & Chamberlain, 2002; Lantz, Fullerton, Harshburger, & Sadler, 2001; O'hehir, 1996; Reevy & Maslach, 2001; While, 2002)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-003-s03",
+          "status": "verified",
+          "ko_text": "독립성을 남성적 특성으로 볼 때, 이는 남성이 위험한 건강행동을 하고, 보건의료서비스를 회피하며, 자신의 건강을 등한시하는 것과 연관되어 왔다. “이 정도는 나 혼자 감당할 수 있어야 해”와 같은 말이 이를 전형적으로 보여 준다(Aoun, Donovan, Johnson, & Egger, 2002; Calasanti, 2003; Connell, 1997; Mansfield, Addis, & Mahalik, 2003; Reisberg, 2000; Taylor, Stewart, & Parker, 1998; While, 2002).",
+          "source_text": "When independence is viewed as a masculine trait it has been associated with men's engagement in risky health behaviors, health service avoidance and ignorance about their health, typified by comments such as “I should be able to handle this on my own” (Aoun, Donovan, Johnson, & Egger, 2002; Calasanti, 2003; Connell, 1997; Mansfield, Addis, & Mahalik, 2003; Reisberg, 2000; Taylor, Stewart, & Parker, 1998; While, 2002)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-003-s04",
+          "status": "verified",
+          "ko_text": "이 관점에서 독립성은 건강을 해치는 개념으로 인식된다.",
+          "source_text": "According to this view, independence is perceived as a health-damaging concept."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-004",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 6,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 6,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-004-s01",
+          "status": "verified",
+          "ko_text": "이 논문에서 우리는 독립성이 여러 의미를 지닐 수 있다고 주장한다.",
+          "source_text": "In this paper, we argue that independence can have multiple meanings."
+        },
+        {
+          "id": "smith-et-al-2007-tr-004-s02",
+          "status": "verified",
+          "ko_text": "독립성을 건강 증진적인 것으로 보는 대안적 담론은 노화와 관련된다.",
+          "source_text": "An alternative discourse, where independence is perceived to be health-enhancing, is that which relates to aging."
+        },
+        {
+          "id": "smith-et-al-2007-tr-004-s03",
+          "status": "verified",
+          "ko_text": "여기에서는 자신의 독립성을 유지하는 능력이 성공적 노화의 지표로 받아들여진다(Secker, Hill, Villeneau, & Parkman, 2003; Stephenson, Wolfe, Coughlan, & Koehn, 1999).",
+          "source_text": "Here, the ability to maintain one's independence is embraced as a marker of aging successfully (Secker, Hill, Villeneau, & Parkman, 2003; Stephenson, Wolfe, Coughlan, & Koehn, 1999)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-004-s04",
+          "status": "verified",
+          "ko_text": "우리는 애들레이드 북서부에 거주하는 노년 남성 집단에서 이 두 독립성 담론이 어떻게 상호작용하는지 탐색한다.",
+          "source_text": "We explore how these two discourses of independence interact for a group of older men living in North-West Adelaide."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-005",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-005-s01",
+          "status": "verified",
+          "ko_text": "서구 사회에서 헤게모니적 남성성은 남성과 남성의 행동에 관한 전통적·가부장적 관점으로서, 가장 영향력 있고 문화적으로 수용되는 ‘남자다움’의 개념을 가리킨다(Courtenay, 2000a,b; Lee & Owens, 2002).",
+          "source_text": "Hegemonic masculinity in Western society refers to the traditional, patriarchal view of men and men's behavior as the most influential and culturally accepted notion of ‘manliness’ (Courtenay, 2000a,b; Lee & Owens, 2002)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-005-s02",
+          "status": "verified",
+          "ko_text": "헤게모니적 남성성이 사회적으로 구성되는 방식은 남성에게 독립적이고, 강인하며, 자기주장이 뚜렷하고, 감정을 억제하며, 경쟁적이고, 굳세고, 공격적이며, 신체적으로 유능해야 한다는 기대를 부과한다(Gerschick & Miller, 1995; Lee & Owens, 2002; Moynihan, 1998; Riska, 2002; Taylor et al., 1998).",
+          "source_text": "The way in which hegemonic masculinity is socially constructed places an expectation on men to be independent, tough, assertive, emotionally restrictive, competitive, hardy, aggressive and physically competent (Gerschick & Miller, 1995; Lee & Owens, 2002; Moynihan, 1998; Riska, 2002; Taylor et al., 1998)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-005-s03",
+          "status": "verified",
+          "ko_text": "헤게모니적 남성성이 말하는 독립성은 자기의존(self-reliance)과 자율성(autonomy)을 우선시한다(Gerschick & Miller, 1995).",
+          "source_text": "Hegemonic masculinity's definition of independence privileges self-reliance and autonomy (Gerschick & Miller, 1995)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-005-s04",
+          "status": "verified",
+          "ko_text": "그러나 최근 연구는 남성성이 문화와 환경에 따라 달라진다고 지적하며 헤게모니적 남성성 구성을 비판해 왔다(Berg & Longhurst, 2003; Connell & Messerschmidt, 2005; Longhurst, 2000, 2001; Schofield, Connell, Walker, Wood, & Butland, 2000).",
+          "source_text": "Recent research, however, has criticized hegemonic constructions of masculinity, suggesting that masculinity differs between cultures and environments (Berg & Longhurst, 2003; Connell & Messerschmidt, 2005; Longhurst, 2000, 2001; Schofield, Connell, Walker, Wood, & Butland, 2000)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-005-s05",
+          "status": "verified",
+          "ko_text": "학자들은 헤게모니적 남성성을 사람마다 의미가 다른 ‘혼성 용어’라고 묘사해 왔다(Speer, 2001).",
+          "source_text": "Scholars have described hegemonic masculinity as a ‘hybrid term’, which has different meanings for different people (Speer, 2001)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-005-s06",
+          "status": "verified",
+          "ko_text": "그럼에도 헤게모니적 남성성 구성은 남성이 독립성과 같은 특성을 어떻게 개념화하는지 이해하는 데 여전히 중요하다.",
+          "source_text": "Yet, hegemonic constructions of masculinity remain important to understand how men conceptualise traits such as independence."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-006",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 10,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 10,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-006-s01",
+          "status": "verified",
+          "ko_text": "노화는 독립성 상실과 연관된다(Arber & Ginn, 1991; Bland, 1999; Secker et al., 2003).",
+          "source_text": "Aging is associated with loss of independence (Arber & Ginn, 1991; Bland, 1999; Secker et al., 2003)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-006-s02",
+          "status": "verified",
+          "ko_text": "독립성 상실에 관한 문헌은 일상생활활동(Covinsky et al., 2003; Greiner, Snowdon, & Schmitt, 1996; Hebert, 1997), 식사와 건강한 섭식(McKie, 1999; Drummond & Smith, 2006), 부상에서 회복할 능력(McColl, Stirling, Walker, Corey, & Wilkins, 1999), 신체활동에 참여할 능력(Fiatarone, 1996; Galloway & Jokl, 2000; Shepard, 1993), 치매(Woods, 1999)에 초점을 맞추어 왔다.",
+          "source_text": "Literature relating to the loss of independence has focused on activities of daily living (Covinsky et al., 2003; Greiner, Snowdon, & Schmitt, 1996; Hebert, 1997); diet and healthy eating (McKie, 1999; Drummond & Smith, 2006); the capacity to recover from injuries (McColl, Stirling, Walker, Corey, & Wilkins, 1999); the capacity to engage in physical activity (Fiatarone, 1996; Galloway & Jokl, 2000; Shepard, 1993); and dementia (Woods, 1999)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-006-s03",
+          "status": "verified",
+          "ko_text": "독립성 상실은 노인이 시설돌봄을 고려하기 꺼리는 이유를 설명하는 데에도 사용되어 왔다(Bland, 1999).",
+          "source_text": "Loss of independence has also been used to explain older people's reluctance to consider residential care (Bland, 1999)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-006-s04",
+          "status": "verified",
+          "ko_text": "성공적 노화의 정의는 다양하지만(Bowling & Dieppe, 2005; Steverink, Lindenberg, & Ormel, 1998; Torres, 1999), 독립성 유지가 노인에게 중요하며 성공적 노화에는 독립성을 유지할 수 있는 능력이 포함된다는 점은 일관된 주제다(Arber & Ginn, 1991; Stephenson et al., 1999).",
+          "source_text": "Although definitions of successful ageing are diverse (Bowling & Dieppe, 2005; Steverink, Lindenberg, & Ormel, 1998; Torres, 1999), a consistent theme is that maintaining independence is important to older people and that successful aging includes the capacity to maintain independence (Arber & Ginn, 1991; Stephenson et al., 1999)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-007",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-007-s01",
+          "status": "verified",
+          "ko_text": "생의학 이론은 신체적·정신적 쇠퇴와 장애를 최소화하면서 기대수명을 최적화하는 것으로 성공적 노화를 정의한다. 반면 심리사회적 접근은 삶의 만족도, 사회참여와 기능, 그리고 개인적 성장을 포함한 심리적 자원을 강조하는 경향이 있다(Bowling & Dieppe, 2005).",
+          "source_text": "Biomedical theories define successful ageing in terms of the optimisation of life expectancy while minimising physical and mental deterioration and disability, whereas psychosocial approaches tend to emphasise life satisfaction, social participation and functioning, and psychological resources, including personal growth (Bowling & Dieppe, 2005)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-007-s02",
+          "status": "verified",
+          "ko_text": "두 관점 모두 노인 스스로가 일반인의 관점에서 성공적 노화를 정의하는 방식과는 다소 거리가 있었다(Bowling & Dieppe, 2005).",
+          "source_text": "Both of these viewpoints have been somewhat distanced from how older people define successful aging from a lay perspective (Bowling & Dieppe, 2005)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-008",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-008-s01",
+          "status": "verified",
+          "ko_text": "선행연구와 마찬가지로, 우리 연구의 노년 남성들이 지닌 성공적 노화에 대한 일반인 관점은 독립성을 유지할 수 있는 능력과 밀접하게 연결되어 있었다.",
+          "source_text": "As with previous studies, we found that lay perspectives of successful aging among the older men in our study were closely tied to being able to maintain their independence."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s02",
+          "status": "verified",
+          "ko_text": "이는 지속적인 개인 자율성을 성공적 노화의 척도로 인식하는 것과 일치했다(Arber, Davidson, & Ginn, 2003; Arber & Ginn, 1991; Davies, Laker, & Ellis, 1997; Ford et al., 2000).",
+          "source_text": "This was consistent with sustained personal autonomy being perceived as a measure of successful aging (Arber, Davidson, & Ginn, 2003; Arber & Ginn, 1991; Davies, Laker, & Ellis, 1997; Ford et al., 2000)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s03",
+          "status": "verified",
+          "ko_text": "그러나 우리는 성공적 노화가 여전히 유동적인 개념이며 최근 노년학 연구에서 도전을 받아 왔음을 인정한다.",
+          "source_text": "We recognise, however, that successful aging remains a fluid concept, and one which has been challenged, in recent gerontological scholarship."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s04",
+          "status": "verified",
+          "ko_text": "첫째, 성공적 노화가 구성되는 방식은 문화마다 다르다(Torres, 1999).",
+          "source_text": "Firstly, there are variations in the way in that successful aging is constructed across cultures (Torres, 1999)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s05",
+          "status": "verified",
+          "ko_text": "둘째, 성공적 노화가 실제로 무엇을 의미하는지 정의할 때에는 여러 유형의 의존과 서로 다른 수준의 독립성을 고려해야 한다(Scheidt, Humphreys, & Yorgason, 1999).",
+          "source_text": "Secondly, there are various kinds of dependency, and different levels of independence that ought to be considered within definitions of what successful aging might actually constitute (Scheidt, Humphreys, & Yorgason, 1999)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s06",
+          "status": "verified",
+          "ko_text": "다시 말해 타인에게 의존하는 것이 반드시 ‘성공하지 못한 노화’로 인식되는 것은 아니다.",
+          "source_text": "That is, reliance on others is not necessarily perceived as ‘unsuccessful aging’."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s07",
+          "status": "verified",
+          "ko_text": "오히려 이는 성공이나 실패라는 단순한 규범적 평가를 반드시 따르지는 않는 성취의 연속선 위에 놓인다(Bowling & Dieppe, 2005).",
+          "source_text": "Rather, it is placed on a continuum of achievements that are not necessarily subject to simplistic normative assessments of success or failure (Bowling & Dieppe, 2005)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-008-s08",
+          "status": "verified",
+          "ko_text": "따라서 우리는 노인에게 독립성이 자기의존, 자존감, 자기결정, 삶의 목적, 개인적 성장, 자기의 연속성을 포괄하는 넓은 개념임을 인정한다(Secker et al., 2003).",
+          "source_text": "As such, we recognise that independence is a broad concept that encompasses self-reliance, self-esteem, self-determination, purpose in life, personal growth and continuity of the self, among older people (Secker et al., 2003)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-009",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-009-s01",
+          "status": "verified",
+          "ko_text": "젠더와 노화의 접점은 노년학 연구에서 관심이 커지고 있는 영역이다(Arber et al., 2003).",
+          "source_text": "The nexus between gender and ageing is a growing area of interest in gerontological research (Arber et al., 2003)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-009-s02",
+          "status": "verified",
+          "ko_text": "젠더 역할과 그에 수반되는 고정관념은 남성이 나이 들면서 변한다(Wilson, 1995).",
+          "source_text": "Gender roles and the stereotypes associated with them change as men get older (Wilson, 1995)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-009-s03",
+          "status": "verified",
+          "ko_text": "그러나 노년학 연구에는 남성성과 노화, 특히 독립성과 관련된 이론적 논의가 여전히 부족하다(Arber et al., 2003; Calasanti, 2003, 2005; Spector-Mersel, 2006).",
+          "source_text": "However, there remains a paucity of theoretical discussion in gerontological scholarship relating to masculinities and aging, particularly that which relates to independence (Arber et al., 2003; Calasanti, 2003, 2005; Spector-Mersel, 2006)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-009-s04",
+          "status": "verified",
+          "ko_text": "실제로 남성성 이론은 주로 젊은 남성의 시각을 통해 구성되어 왔고 노년 남성의 관점을 누락하는 경향이 있었다(Arber et al., 2003; Calasanti, 2003).",
+          "source_text": "Indeed, theories of masculinities have primarily been constructed through the eyes of younger men, and have tended to omit the views of older men (Arber et al., 2003; Calasanti, 2003)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-009-s05",
+          "status": "verified",
+          "ko_text": "노년 남성의 사회세계가 젠더 및 구별되는 남성성과 밀접하게 연결된다는 점은 인정되어 왔지만, 노년 남성이 남성으로 존재하는 것을 어떻게 이해하고 실천하는지에 대해서는 알려진 바가 비교적 적다(Thompson & Whearty, 2004).",
+          "source_text": "While it has been recognized that older men's social worlds are intimately tied to gender and distinct masculinities, relatively little is known about how older men understand and enact being male (Thompson & Whearty, 2004)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-010",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 15,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 15,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-010-s01",
+          "status": "verified",
+          "ko_text": "남성성과 노화의 교차를 검토하려 한 연구는 주로 남성 신체의 노화에 초점을 맞추어 왔다.",
+          "source_text": "Scholarship which has attempted to examine the intersection between masculinity and aging has predominantly focused on the aging of male bodies."
+        },
+        {
+          "id": "smith-et-al-2007-tr-010-s02",
+          "status": "verified",
+          "ko_text": "예를 들어 발기부전 치료제의 등장으로 노년 남성 신체의 성적 능력이 향상된 현상은 이 연구분야에 기여했다(Calasanti, 2005; Marshall, 2006).",
+          "source_text": "For example, the increased sexual capacity of aging men's bodies through the advent of medications for erectile dysfunction has contributed to this field of inquiry (Calasanti, 2005; Marshall, 2006)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-010-s03",
+          "status": "verified",
+          "ko_text": "진행성 전립선암으로 안드로겐 차단요법을 받는 남성의 맥락에서도 노년 남성이 자신의 신체를 어떻게 인식하는지 연구되었다(Oliffe, 2006).",
+          "source_text": "Older men's perceptions of their bodies have also been examined in the context of men undergoing androgen deprivation therapy for advanced prostate cancer (Oliffe, 2006)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-010-s04",
+          "status": "verified",
+          "ko_text": "여기에는 노년 남성이 헤게모니적 남성성의 이상을 지속시키는 동시에 재구성한다는 역설적 성격이 있다(Oliffe, 2006).",
+          "source_text": "This involves the paradoxical nature of older men both perpetuating, and reformulating, ideals of hegemonic masculinity (Oliffe, 2006)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-010-s05",
+          "status": "verified",
+          "ko_text": "그럼에도 노년 남성이 여러 형태의 남성성을 체현하는 방식은 남성건강·남성성 연구에서 최근에야 검토되기 시작했다.",
+          "source_text": "Nevertheless, the embodiment of multiple forms of masculinity among older men has only recently started to be examined in men's health and masculinities research."
+        },
+        {
+          "id": "smith-et-al-2007-tr-010-s06",
+          "status": "verified",
+          "ko_text": "이 논문에서는 남성의 도움 요청과 보건의료서비스 이용 맥락에서 독립성, 남성성, 노화의 교차로 논의를 한정한다.",
+          "source_text": "In this paper we limit our discussion to the intersection between independence, masculinity and aging, in the context of men's help seeking and health service use."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-011",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 18,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 18,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-011-s01",
+          "status": "verified",
+          "ko_text": "우리 연구는 애들레이드대학교의 Florey Adelaide Male Ageing Study(FAMAS)의 일부다.",
+          "source_text": "Our research forms part of the Florey Adelaide Male Ageing Study (FAMAS) at the University of Adelaide."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s02",
+          "status": "verified",
+          "ko_text": "이 종단 남성건강 연구는 여러 학문분야의 협력으로 이루어지며 노화에 대한 생의학적 관점과 사회과학적 관점을 모두 포함한다.",
+          "source_text": "This longitudinal men's health study is a collaborative effort between multiple disciplines and includes both biomedical and social scientific perspectives on aging."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s03",
+          "status": "verified",
+          "ko_text": "코호트는 전화번호부를 이용해 남호주 애들레이드 북서부 지역에서 무작위로 추출한 35~80세 참여자 1,195명으로 구성된다.",
+          "source_text": "The cohort consists of 1195 participants aged between 35 and 80 years of age randomly drawn from the North-West Adelaide region in South Australia using the white pages telephone directory."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s04",
+          "status": "verified",
+          "ko_text": "FAMAS 코호트에 관한 자세한 정보는 Martin et al. (2007)에 제시되어 있다.",
+          "source_text": "Further information on the FAMAS cohort can be found in Martin et al. (2007)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s05",
+          "status": "verified",
+          "ko_text": "이 큰 표본에서 연령과 혼인상태에 따른 층을 이용하여, 남성의 도움 요청 행동과 보건의료서비스 이용을 탐색하는 질적 연구에 남성 36명을 초대했다.",
+          "source_text": "From this larger sample, and using strata relating to age and marital status, we invited 36 men to participate in a qualitative study exploring men's help seeking behaviors and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s06",
+          "status": "verified",
+          "ko_text": "표 1은 FAMAS와 남성의 도움 요청 및 보건의료서비스 이용을 탐색한 하위연구에 참여한 남성 수를 연령범주별로 보여 준다.",
+          "source_text": "Table 1 shows the number of men, sorted by age category, participating in both the FAMAS and our sub-study exploring men's help seeking and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s07",
+          "status": "verified",
+          "ko_text": "우리 연구의 남성 36명 가운데 22명은 55세를 넘었고, 이들 중 12명은 65세 이상이었다.",
+          "source_text": "Of the 36 men in our study, 22 men were over 55 years of age and 12 of these men were aged 65 or older."
+        },
+        {
+          "id": "smith-et-al-2007-tr-011-s08",
+          "status": "verified",
+          "ko_text": "이 논문 전체에서는 주로 이들의 이해를 활용했다.",
+          "source_text": "It is their understandings we have primarily drawn upon throughout this paper."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-012",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 20,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 20,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-012-s01",
+          "status": "verified",
+          "ko_text": "표 1.",
+          "source_text": "Table 1."
+        },
+        {
+          "id": "smith-et-al-2007-tr-012-s02",
+          "status": "verified",
+          "ko_text": "연령범주별로 제시한, FAMAS와 남성의 도움 요청 및 보건의료서비스 이용을 탐색한 FAMAS 하위연구에 참여한 남성의 비율.",
+          "source_text": "Percentage of men, as represented by age categories, participating in both the FAMAS and the FAMAS sub-study exploring men's help seeking and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-012-s03",
+          "status": "verified",
+          "ko_text": "접근성 설명: 전체 FAMAS 코호트에는 남성 1,195명이, 질적 하위연구에는 36명이 포함된다. 35~44세, 45~54세, 55~64세, 65세 이상 범주의 코호트 인원은 각각 271명(22.7%), 326명(27.3%), 305명(인쇄된 표의 25.5), 293명(24.5%)이고, 하위연구 인원은 각각 6명(16.6%), 8명(22.2%), 10명(27.7%), 12명(33.3%)이다.",
+          "source_text": "Accessibility description: The full FAMAS cohort contains 1,195 men and the qualitative sub-study contains 36. For ages 35–44, 45–54, 55–64, and 65+, the respective cohort counts are 271 (22.7%), 326 (27.3%), 305 (25.5 in the printed table), and 293 (24.5%); sub-study counts are 6 (16.6%), 8 (22.2%), 10 (27.7%), and 12 (33.3%)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-013",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-013-s01",
+          "status": "verified",
+          "ko_text": "65세 이상 남성 가운데 8명은 혼인 또는 사실혼 관계였고, 4명은 이혼·별거·사별했거나 혼인한 적이 없었다.",
+          "source_text": "Of the men aged 65 or older, eight were married or in a de facto relationship; and four were divorced, separated, widowed or had never married."
+        },
+        {
+          "id": "smith-et-al-2007-tr-013-s02",
+          "status": "verified",
+          "ko_text": "표 2는 하위연구에 참여하고 파트너가 있거나 독신이라고 보고한 남성 수를 연령범주별로 보여 준다.",
+          "source_text": "Table 2 shows the number of men, as represented by age categories, who participated in our sub-study and who reported being either partnered or single."
+        },
+        {
+          "id": "smith-et-al-2007-tr-013-s03",
+          "status": "verified",
+          "ko_text": "혼인, 사실혼 또는 장기 관계에 있다고 밝힌 모든 남성은 파트너와 동거한다고 보고했다.",
+          "source_text": "All men who indicated that they were married, in a de facto relationship or in a long-term relationship, reported that they were co-habiting with their partner."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-014",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-014-s01",
+          "status": "verified",
+          "ko_text": "표 2.",
+          "source_text": "Table 2."
+        },
+        {
+          "id": "smith-et-al-2007-tr-014-s02",
+          "status": "verified",
+          "ko_text": "남성의 도움 요청 행동과 보건의료서비스 이용을 탐색한 FAMAS 하위연구에 참여하면서 파트너가 있거나 독신이라고 보고한 남성의 수를 연령범주별로 제시함.",
+          "source_text": "The number of men, as represented by age categories, participating in the FAMAS sub-study exploring men's help seeking behaviour and health service use who reported being either partnered or single."
+        },
+        {
+          "id": "smith-et-al-2007-tr-014-s03",
+          "status": "verified",
+          "ko_text": "접근성 설명: 파트너 있음/독신 인원은 35~44세에서 2/4명, 45~54세에서 5/3명, 55~64세에서 4/6명, 65세 이상에서 8/4명이다.",
+          "source_text": "Accessibility description: Partnered/single counts are 2/4 at ages 35–44, 5/3 at 45–54, 4/6 at 55–64, and 8/4 at 65+."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-015",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-015-s01",
+          "status": "verified",
+          "ko_text": "이 연구는 애들레이드대학교 인간연구윤리위원회의 승인을 받았고 각 참여자에게 사전동의를 받았다.",
+          "source_text": "The study was approved by the University of Adelaide Human Research Ethics Committee, and informed consent was obtained from each participant."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s02",
+          "status": "verified",
+          "ko_text": "면담은 1시간에서 1시간 45분 동안 진행되었다.",
+          "source_text": "Interviews lasted between one and one and three quarter hours."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s03",
+          "status": "verified",
+          "ko_text": "제1저자(JS)가 모든 심층면담을 실시했다.",
+          "source_text": "The primary author (JS) conducted all in-depth interviews."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s04",
+          "status": "verified",
+          "ko_text": "우리는 참여자의 남성적 정체성을 보존하려는 노력으로 전통적으로 여성화된 환경을 피해 면담을 진행했다(Borbasi, Chapman, Gassner, Dunn, & Read, 2002; Oliffe & Mroz, 2005).",
+          "source_text": "We carried out our interviews away from traditionally feminised environments in an effort to preserve our participants' masculine identities (Borbasi, Chapman, Gassner, Dunn, & Read, 2002; Oliffe & Mroz, 2005)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s05",
+          "status": "verified",
+          "ko_text": "여기에는 남성이 위협받거나 소외되었다고 느낄 가능성이 있는 보건의료서비스 장소를 피하는 것도 포함되었으며(Britten, 1995), 그 결과 대부분의 면담은 참여자의 자택에서 이루어졌다.",
+          "source_text": "This included avoiding health services where men were likely to feel threatened or alienated (Britten, 1995), resulting in the majority of interviews being conducted at the homes of our participants."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s06",
+          "status": "verified",
+          "ko_text": "가장 흔한 장소는 식당, 거실, 또는 파티오처럼 집 바로 바깥의 공간이었다.",
+          "source_text": "The most common locations were dining rooms, lounge rooms or spaces immediately outside of the house, such as a patio area."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s07",
+          "status": "verified",
+          "ko_text": "대학 면담실이나 참여자의 직장을 대체 장소로 사용한 경우가 네 번 있었지만, 모두 참여자의 요청에 따른 것이었다.",
+          "source_text": "There were four occasions where a university interview room or a participant's workplace was used as an alternate venue, but only at the request of participants."
+        },
+        {
+          "id": "smith-et-al-2007-tr-015-s08",
+          "status": "verified",
+          "ko_text": "대부분의 면담은 역시 참여자의 요청에 따라 오후나 저녁에 이루어졌다.",
+          "source_text": "The majority of interviews were carried out in the afternoon or an evening, again, at the request of participants."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-016",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-016-s01",
+          "status": "verified",
+          "ko_text": "표 3.",
+          "source_text": "Table 3."
+        },
+        {
+          "id": "smith-et-al-2007-tr-016-s02",
+          "status": "verified",
+          "ko_text": "Florey Adelaide Male Ageing Study(FAMAS)의 보건의료서비스 이용 면담 지침.",
+          "source_text": "Florey Adelaide Male Ageing Study (FAMAS) health service use interview schedule."
+        },
+        {
+          "id": "smith-et-al-2007-tr-016-s03",
+          "status": "verified",
+          "ko_text": "접근성 설명: 반구조화 지침은 개인적 배경, 건강의 의미, 도움 요청의 계기와 장벽, 가장 최근의 보건의료 방문과 제공자, 최근 질병, 이상적인 서비스와 제공자, 불만족, 추가 의견을 묻는다.",
+          "source_text": "Accessibility description: The semi-structured guide asks about personal background, meanings of health, triggers and barriers to help seeking, the latest health-care visit and provider, the latest illness, ideal services and providers, dissatisfaction, and any additional comments."
+        },
+        {
+          "id": "smith-et-al-2007-tr-016-s04",
+          "status": "verified",
+          "ko_text": "탐침질문은 민족·인종·종교적 배경, 가족·일·여가, 이환상태, 질병 중증도, 아내, 친구, 지원체계, 자기 도움, 직장 건강, 지각된 나약함과 두려움, 서비스의 여성화와 환경, 제공자 상호작용과 젠더, 의료인의 역할, 질병의 원인과 그에 따른 감정, 참여자의 더 넓은 서사를 다룬다.",
+          "source_text": "Probes cover ethnic, racial, and religious background; family, work, leisure, morbidity, illness severity, wives, friends, support structures, self-help, workplace health, perceived weakness and fear, feminisation and environment of services, provider interaction and gender, practitioner roles, causes and feelings associated with illness, and participants' broader narratives."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-017",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-017-s01",
+          "status": "verified",
+          "ko_text": "참여자의 개방형 논의를 장려하기 위해 반구조화 면담 형식을 사용했다.",
+          "source_text": "We used a semi-structured interview format to encourage open-ended discussion among our participants."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s02",
+          "status": "verified",
+          "ko_text": "면담 전반에서 제기한 구체적 질문과 탐색영역은 표 3에 수록되어 있다.",
+          "source_text": "Specific questions raised and areas explored throughout the interview are included in Table 3."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s03",
+          "status": "verified",
+          "ko_text": "표 3의 면담 지침을 구성하기 위해 네 차례의 예비면담을 실시했고, 그 결과 각 면담에서 탐색할 요인의 체크리스트와 연결된 핵심 질문 묶음을 개발했다.",
+          "source_text": "We used four pilot interviews to construct the interview schedule in Table 3, which resulted in the development of a core set of questions which were aligned to a checklist of factors to be probed in each interview."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s04",
+          "status": "verified",
+          "ko_text": "이 방식은 참여자의 논의가 면담을 이끌 수 있도록 하는 유연한 틀을 제공했다.",
+          "source_text": "We found that this provided a flexible framework for interviews to be guided by the discussion of participants."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s05",
+          "status": "verified",
+          "ko_text": "대부분의 면담은 참여자에게 자신에 관해 간단히 말해 달라고 요청하면서 시작했고, 이는 흔히 가족과 일에 관한 응답을 이끌어 냈다.",
+          "source_text": "We began most interviews by asking participants a little bit about themselves, often eliciting responses relating to family and work."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s06",
+          "status": "verified",
+          "ko_text": "이는 참여자와 라포를 형성하고 가족관계와 직장관계가 건강에 어떤 영향을 주는지 추가로 질문할 여지를 마련하는 데 유용했다.",
+          "source_text": "This was useful for developing rapport with participants and providing scope for further questioning about how family and work relationships influenced their health."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s07",
+          "status": "verified",
+          "ko_text": "이어서 참여자에게 자신의 건강에서 무엇이 가장 중요하다고 생각하는지 물었다.",
+          "source_text": "We then proceeded to ask participants what they perceived was most important to them about their health."
+        },
+        {
+          "id": "smith-et-al-2007-tr-017-s08",
+          "status": "verified",
+          "ko_text": "이는 도움 요청 행동과 보건의료서비스 이용을 더 자세히 탐색할 의미 있는 맥락을 제공했다.",
+          "source_text": "This provided a meaningful context for a more detailed exploration of their help seeking behaviours and health service use."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-018",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-018-s01",
+          "status": "verified",
+          "ko_text": "남성이 자신의 건강에 관해 말하기를 꺼린다는 학술연구의 주장에도 불구하고(Mahalik, Good, & Englar-Carlson, 2003; Mansfield et al., 2003), 적절한 환경이 주어지자 우리 연구의 남성들은 자신의 건강에 관해 솔직하게 이야기할 의향이 있었다.",
+          "source_text": "Despite academic scholarship suggesting that men are reluctant to speak about their health (Mahalik, Good, & Englar-Carlson, 2003; Mansfield et al., 2003), we found that the men in our study were willing to speak about their health in an open manner when provided with an appropriate environment in which to do so."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s02",
+          "status": "verified",
+          "ko_text": "라포 형성은 이 결과를 얻는 데 핵심적이었다.",
+          "source_text": "Rapport building was central to achieving this outcome."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s03",
+          "status": "verified",
+          "ko_text": "JS에게 이는 전통적인 방식과 비전통적인 방식 모두로 라포를 형성한다는 뜻이었다.",
+          "source_text": "For JS this often meant building rapport in both traditional and non-traditional ways."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s04",
+          "status": "verified",
+          "ko_text": "전통적 방식에는 공통 경험을 나누고, 취미·여가활동·친구 및 가족과의 관계처럼 연구 목적과 무관해 보이는 주제의 논의에도 관심을 보이는 일이 포함되었다.",
+          "source_text": "Traditional ways included sharing mutual experiences and showing and interest in discussion about topics that appear to be unrelated to the research intent such as hobbies, leisure pursuits and relationships with friends and family."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s05",
+          "status": "verified",
+          "ko_text": "동료애(mateship) 개념을 반영한 비전통적 라포 형성은 참여자와 맥주를 함께 마시고, 개인·가족 영상을 함께 보고, 위험 감수 행동이나 성적 활력처럼 고정관념적으로 남성적인 활동에 관한 이야기를 나누는 데까지 확장되었다.",
+          "source_text": "Non-traditional rapport building, reflective of the concept of mateship, extended to sharing a beer with participants, watching personal/family videos and sharing stories of stereotypical masculine endeavours such as engaging in risk-taking behaviours and sexual virility."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s06",
+          "status": "verified",
+          "ko_text": "이러한 방식으로 참여자를 참여시킨 결과, 참여자들은 남성답지 않다고 인식되거나 대다수 남성집단에서 전통적으로 낙인찍힌 것으로 여겨지는 문제를 포함해 다양한 건강 우려를 이야기할 수 있었다.",
+          "source_text": "Engaging our participants in this way meant that they were able to speak about a range of health concerns, including those perceived to be non-masculine or traditionally considered to be stigmatising among most groups of men."
+        },
+        {
+          "id": "smith-et-al-2007-tr-018-s07",
+          "status": "verified",
+          "ko_text": "예를 들어 JS가 전통적·비전통적 방식 모두로 라포를 형성하려 노력한 뒤에는 우울 같은 정신건강 문제, 발기부전 같은 성건강 문제, 울음 같은 정서적 반응에 관한 논의도 모두 흔하게 이루어졌다.",
+          "source_text": "For example, discussion relating to mental health concerns such as depression, sexual health issues such as erectile dysfunction and emotional responses such as crying were all commonplace once JS had made an effort to establish rapport in both traditional and non-traditional ways."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-019",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 30,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 30,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-019-s01",
+          "status": "verified",
+          "ko_text": "면담에서 정보를 주고받는 데 연령도 중요한 역할을 했다는 점은 주목할 만하다.",
+          "source_text": "It is noteworthy that age also played an important role in the exchange of information throughout the interviews."
+        },
+        {
+          "id": "smith-et-al-2007-tr-019-s02",
+          "status": "verified",
+          "ko_text": "JS는 25세였고 참여자의 대다수는 55세 이상이었다.",
+          "source_text": "JS was 25 years of age, and the majority of participants were aged 55 years or over."
+        },
+        {
+          "id": "smith-et-al-2007-tr-019-s03",
+          "status": "verified",
+          "ko_text": "따라서 서로의 생애경험은 매우 달랐다.",
+          "source_text": "Their life experiences were subsequently very different to each other."
+        },
+        {
+          "id": "smith-et-al-2007-tr-019-s04",
+          "status": "verified",
+          "ko_text": "JS와 참여자가 논의 중인 정보를 함께 이해하기 위해, 참여자들은 이야기를 하면서 “내가 자네 나이였을 때…” 또는 “내가 젊은이였을 때…” 같은 표현을 사용해 자신의 젊은 시절을 자주 되돌아보았다.",
+          "source_text": "In order for JS and the participants to develop a shared understanding of the information being discussed, participants often reflected back on their younger years when telling their stories — using phrases such as “when I was your age…” or “back when I was a lad…”."
+        },
+        {
+          "id": "smith-et-al-2007-tr-019-s05",
+          "status": "verified",
+          "ko_text": "이 이야기들은 생애과정 전반의 비교경험을 반영했고, 평생 배운 교훈을 JS와 나누고 싶어 하는 마음을 보여 주었다.",
+          "source_text": "These stories were reflective of comparative experiences drawn from across their life course and were indicative of yearning to share, with JS, the lessons they had learned throughout their life time."
+        },
+        {
+          "id": "smith-et-al-2007-tr-019-s06",
+          "status": "verified",
+          "ko_text": "이는 JS가 참여자의 생애 전반에서 건강과 남성성에 관련된 서로 다른 경험을 탐색할 기회를 제공했다.",
+          "source_text": "This provided an opportunity for JS to probe differing experiences relating to health and masculinity across our participants' lifespan."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-020",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-020-s01",
+          "status": "verified",
+          "ko_text": "JS는 각 면담을 축어로 전사하고 필요한 경우 현장노트를 포함했다.",
+          "source_text": "JS transcribed each of the interviews verbatim, and included field notes where necessary."
+        },
+        {
+          "id": "smith-et-al-2007-tr-020-s02",
+          "status": "verified",
+          "ko_text": "이어서 귀납적 접근으로 주제분석을 수행하면서 NVIVO 소프트웨어로 면담자료를 코딩했다.",
+          "source_text": "JS then coded the interview data using NVIVO software, with an inductive approach used during the thematic analysis."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-021",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 33,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 33,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-021-s01",
+          "status": "verified",
+          "ko_text": "서론에서 우리는 독립성이 노화와 남성성이라는 서로 다른 두 영역에서 중요한 역할을 한다고 지적했다.",
+          "source_text": "In our introduction we noted that independence has an important role to play in two distinct spheres — aging and masculinity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-021-s02",
+          "status": "verified",
+          "ko_text": "아래에서는 연구 참여자들이 독립성에 관한 이 두 담론을 자신의 말 속에서 어떻게 결합했는지 살펴본다.",
+          "source_text": "Below, we explore how the participants in our study combined these two discourses of independence in their talk."
+        },
+        {
+          "id": "smith-et-al-2007-tr-021-s03",
+          "status": "verified",
+          "ko_text": "연구 참여 남성들은 이 담론들을 서로 분리하지 않았다.",
+          "source_text": "The men in our study did not isolate these discourses from each other."
+        },
+        {
+          "id": "smith-et-al-2007-tr-021-s04",
+          "status": "verified",
+          "ko_text": "오히려 그들의 말은 헤게모니적 남성성 담론과 성공적 노화 담론이 서로 얽혀 있음을 보여 주었다.",
+          "source_text": "Rather, their talk suggested that discourses on hegemonic masculinity and successful aging were intertwined."
+        },
+        {
+          "id": "smith-et-al-2007-tr-021-s05",
+          "status": "verified",
+          "ko_text": "참여자에게 독립성은 남성적 정체성의 지표로서 스스로 해낼 수 있는 능력과, 나이 들면서 좋은 삶의 질을 유지할 수 있는 역량을 모두 뜻했다.",
+          "source_text": "Independence, for our participants, meant both the ability to be self-sufficient as a marker of their masculine identity and the capacity to maintain a good quality of life as they age."
+        },
+        {
+          "id": "smith-et-al-2007-tr-021-s06",
+          "status": "verified",
+          "ko_text": "이어지는 절에서는 도움 요청과 보건의료서비스 이용에서 독립적으로 행동하는 것이 연구의 노년 남성에게 어떻게, 왜 중요했는지를 보여 준다.",
+          "source_text": "In the sections that follow we demonstrate how and why acting independently with respect to help-seeking and health service use was important to the aging men in our study."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-022",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 35,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 35,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-022-s01",
+          "status": "verified",
+          "ko_text": "우리 연구에 참여한 남성들의 발언 상당수는 헤게모니적 남성성의 구성과 일치한다고 해석할 수 있었다.",
+          "source_text": "Much of the talk of the men in our study could be construed as consistent with hegemonic constructions of masculinity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-022-s02",
+          "status": "verified",
+          "ko_text": "강인하고 굳세며 통제력을 지니는 것과 같은 남성적 특성이 참여자들이 독립성을 정의하는 방식에 포함되었다.",
+          "source_text": "Masculine traits such as being tough, strong and in control were included within the ways our participants defined independence."
+        },
+        {
+          "id": "smith-et-al-2007-tr-022-s03",
+          "status": "verified",
+          "ko_text": "예를 들어 Conrad는 자신의 당뇨병을 통제하는 것에 관해 말하면서 다음과 같이 진술했다.",
+          "source_text": "For example, when speaking about having control over his diabetes, Conrad stated:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-023",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 37,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 37,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-023-s01",
+          "status": "verified",
+          "ko_text": "자신의 건강을 통제하는 것이 Conrad에게 중요했다면, 다른 남성들은 강인함을 중요하게 여겼다.",
+          "source_text": "While having control over his health was important to Conrad, being strong was deemed important by other men."
+        },
+        {
+          "id": "smith-et-al-2007-tr-023-s02",
+          "status": "verified",
+          "ko_text": "예를 들어 Harry는 최근 건강이 나빴던 때를 이야기하며 다음과 같이 말했다.",
+          "source_text": "For example, when discussing a recent bout of ill health, Harry commented:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-024",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 39,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 39,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-024-s01",
+          "status": "verified",
+          "ko_text": "이 논문에서 관심을 두는 것은 Conrad와 Harry가 위에서 설명한 방식으로 독립적으로 행동하는 것이 노년 남성의 도움 요청 행동과 보건의료서비스 이용에 어떤 영향을 주는가이다.",
+          "source_text": "Of interest to this paper is how acting independently, in the ways Conrad and Harry have explained above, influences older men's help seeking behaviour and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-024-s02",
+          "status": "verified",
+          "ko_text": "우리의 분석에서는 강인함과 통제력을 통해 자신의 독립성을 유지하는 것이 노년 남성이 도움 요청에 접근하는 방식을 이해하는 데 핵심적인 요소로 나타났다.",
+          "source_text": "Our analysis found that maintaining one's independence, through being strong and in control, is an integral component for understanding how older men approach help seeking."
+        },
+        {
+          "id": "smith-et-al-2007-tr-024-s03",
+          "status": "verified",
+          "ko_text": "Sam에게 도움을 적극적으로 요청하는지 물었을 때 그는 다음과 같이 말했다.",
+          "source_text": "When asked whether he was proactive in seeking help Sam said:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-025",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 41,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 41,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-025-s01",
+          "status": "verified",
+          "ko_text": "마찬가지로 Ben에게 자신의 도움 요청 행동에 관해 같은 질문을 하자 다음과 같이 말했다.",
+          "source_text": "Likewise, when asked the same question about his help seeking behaviour, Ben stated:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-026",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 43,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 43,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-026-s01",
+          "status": "verified",
+          "ko_text": "이 사례에서 Ben은 아내가 자신의 늦은 도움 요청을 고집스러움으로 본다고 말하면서도, 자신은 독립적으로 행동하기를 좋아한다고 주장하며 자신의 행동을 동시에 옹호했다.",
+          "source_text": "In this instance, Ben suggested that his wife perceives his delayed help seeking as stubbornness but simultaneously defended his behaviours by asserting that he likes to act independently."
+        },
+        {
+          "id": "smith-et-al-2007-tr-026-s02",
+          "status": "verified",
+          "ko_text": "이런 상황은 흔했고, 연구 참여 남성들이 자신의 삶에서 중요한 타인과 다른 관점을 지니는 경우가 많다는 점이 분명했다.",
+          "source_text": "Scenarios such as this were commonplace, and it was clear that the men in our study often held different viewpoints from those of significant others in their lives."
+        },
+        {
+          "id": "smith-et-al-2007-tr-026-s03",
+          "status": "verified",
+          "ko_text": "이 사례에서 Ben은 아내가 자신의 행동을 고집스러움과 일종의 비순응으로 오해한다고 여겼다.",
+          "source_text": "In this case, Ben perceived that his wife misunderstood his actions as stubbornness and as a form of non-compliance."
+        },
+        {
+          "id": "smith-et-al-2007-tr-026-s04",
+          "status": "verified",
+          "ko_text": "이어 Ben은 다른 사람에게 의지하고 싶지 않아서 도움을 요청하기를 꺼렸다고 설명했다.",
+          "source_text": "Ben then went on to explain that he was reluctant to seek help because he didn't want to rely on others."
+        },
+        {
+          "id": "smith-et-al-2007-tr-026-s05",
+          "status": "verified",
+          "ko_text": "타인에게 의지하기를 원하지 않는다는 점은 연구 참여 남성들에게 일관되게 나타난 주제였고, 이 절의 도입부에서 언급한 남성적 특성을 실천하는 능력에 영향을 주었다.",
+          "source_text": "Not wanting to rely on others was a consistent theme to arise among the men in our study, and one which influenced their ability to enact the masculine traits mentioned in the introduction of this section."
+        },
+        {
+          "id": "smith-et-al-2007-tr-026-s06",
+          "status": "verified",
+          "ko_text": "예를 들어 Arnold는 욕실에서 넘어졌을 때 함께 사는 하숙인에게 도움을 요청하지 않기로 한 일을 이야기했다.",
+          "source_text": "For example, Arnold spoke about an episode where he opted not to seek help from his boarder/lodger when falling in his bathroom:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-027",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 45,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 45,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-027-s01",
+          "status": "verified",
+          "ko_text": "Arnold의 경험은 그가 도움 요청을 타인에게 부담을 주는 건강행동으로 내면화한 방식을 보여 준다.",
+          "source_text": "Arnold's experiences show how he internalized help seeking as health behavior that places a burden on others."
+        },
+        {
+          "id": "smith-et-al-2007-tr-027-s02",
+          "status": "verified",
+          "ko_text": "그는 도움을 요청할 수 있었다는 것을 알았지만 그렇게 하지 않았다.",
+          "source_text": "He recognized that he could have asked for help but did not."
+        },
+        {
+          "id": "smith-et-al-2007-tr-027-s03",
+          "status": "verified",
+          "ko_text": "이는 독립성을 건강을 해치는 개념으로 보는 남성의 도움 요청과 남성성에 관한 연구와 나란히 놓인다(Galdas, Cheater, & Marshall, 2005; Lloyd, 2001; Taylor et al., 1998).",
+          "source_text": "This parallels scholarship relating to men's help seeking and masculinity, whereby independence is perceived as a health damaging concept (Galdas, Cheater, & Marshall, 2005; Lloyd, 2001; Taylor et al., 1998)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-027-s04",
+          "status": "verified",
+          "ko_text": "마찬가지로 Max는 지역사회 돌봄 간호사가 일주일에 두 번 방문하겠다는 제안에 관해 말하면서 다음과 같이 말했다.",
+          "source_text": "Similarly, when Max was speaking about the proposition of twice weekly visits from a community care nurse he commented:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-028",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 51,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 51,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-028-s01",
+          "status": "verified",
+          "ko_text": "Max의 발췌문은 독립적인 생활방식을 유지할 수 있는 것이 이 남성들에게 중요하다는 점을 강조한다.",
+          "source_text": "Max's excerpt highlights that being able to maintain an independent way of life is important to these men."
+        },
+        {
+          "id": "smith-et-al-2007-tr-028-s02",
+          "status": "verified",
+          "ko_text": "그러나 Max의 사례는 독립적으로 행동하는 능력이 남성으로서의 정체성과 나이 듦의 영향에 관한 우려 모두의 특성임을 시사한다.",
+          "source_text": "Max's example, however, suggests that the ability to act independently is a characteristic of both his identity as a male and his concerns about the impact of getting older."
+        },
+        {
+          "id": "smith-et-al-2007-tr-028-s03",
+          "status": "verified",
+          "ko_text": "Max는 처음에 자신이 “막무가내”이고 “고집스럽다”고 단언하며 자신의 도움 요청 행동을 지배적인 남성성 담론에 맞추었다.",
+          "source_text": "Max initially asserted that he was “pigheaded” and “stubborn”, aligning his help seeking behaviours to a dominant discourse on masculinity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-028-s04",
+          "status": "verified",
+          "ko_text": "그러고 나서 그는 자신이 얼마나 오랫동안 독립적으로 살아왔는지에 초점을 옮겼다.",
+          "source_text": "He then shifted his discussion to focus on the length of time he has been independent."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-029",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 52,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 52,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-029-s01",
+          "status": "verified",
+          "ko_text": "Max의 사례는 남성이 건강문제에 대한 도움 요청을 미룰 때 고집스럽고 비협조적이라고 규정해 온 전통적인 고정관념적 구성을 문제 삼는다(Tudiver & Talbot, 1999; Courtenay, 2000a; Seymour-Smith, Wetherell, & Phoenix, 2002).",
+          "source_text": "Max's example challenges the stereotypical constructions that have traditionally characterized men as stubborn and uncooperative when they delay seeking help for health concerns (Tudiver & Talbot, 1999; Courtenay, 2000a; Seymour-Smith, Wetherell, & Phoenix, 2002)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-029-s02",
+          "status": "verified",
+          "ko_text": "이 사례는 노년 남성의 독립성 담론에 이들이 노인으로 위치 지어지는 방식에 대한 이해도 동시에 포함되어야 함을 시사한다.",
+          "source_text": "It suggests that discourses of independence amongst older men need to incorporate, at the same time, an understanding of their positioning as older people."
+        },
+        {
+          "id": "smith-et-al-2007-tr-029-s03",
+          "status": "verified",
+          "ko_text": "다음 절에서는 연구의 노년 남성들이 독립적으로 행동하는 것을 어떻게 설명하고 의미를 부여했는지 보여 준다.",
+          "source_text": "In the next section, we show how the aging men in our study described, and gave meaning to, acting independently."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-030",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 54,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 54,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-030-s01",
+          "status": "verified",
+          "ko_text": "참여자들은 일상기능을 유지함으로써 독립적으로 행동할 수 있고, 이것이 나이 들면서 적정한 삶의 질을 누리는 데 도움이 된다고 말했다.",
+          "source_text": "Our participants suggested that acting independently was achieved through maintaining daily functions and this assisted them to achieve a reasonable quality of life as they age."
+        },
+        {
+          "id": "smith-et-al-2007-tr-030-s02",
+          "status": "verified",
+          "ko_text": "연구의 중년 남성들은 삶의 질과 관련하여 일상기능 유지를 논의했다.",
+          "source_text": "The middle-aged men in our study discussed maintaining daily functions in relation to quality of life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-030-s03",
+          "status": "verified",
+          "ko_text": "예를 들어 David는 다음과 같이 말했다.",
+          "source_text": "For example, David commented:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-031",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 56,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 56,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-031-s01",
+          "status": "verified",
+          "ko_text": "52세인 David는 이미 장수보다 삶의 질을 중시하며 자신의 건강을 정당한 관심사로 삼고 우선시하기 시작한 생애의 한 ‘단계’를 이야기하고 있었다.",
+          "source_text": "At age 52, David was already speaking of a ‘stage’ in his life where he has commenced legitimizing and prioritizing his own health in relation to quality of life over longevity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-031-s02",
+          "status": "verified",
+          "ko_text": "David는 독립성 저하가 삶의 질 저하와 어떻게 맞닿는지를 문제 삼기 시작했다.",
+          "source_text": "David has begun to question how diminished independence equates to a decrease in quality of life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-031-s03",
+          "status": "verified",
+          "ko_text": "David가 ‘긴 삶’과 대비되는 ‘충만한 삶’의 중요성을 강조한 것은 연구 참여 남성들이 건강하고 생산적인 삶을 살고자 했으며 그 이점을 인식했음을 보여 준다.",
+          "source_text": "David's emphasis on the importance of living a ‘full life’ in contrast to a ‘long life’ shows how the men in our study had a desire for, and recognized the benefits of, living a healthy and productive life."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-032",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 57,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 57,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-032-s01",
+          "status": "verified",
+          "ko_text": "우리는 참여자들에게 “당신의 건강에서 무엇이 중요합니까?”라고 물어 건강한 삶에 대한 이해를 탐색했다. Bob은 간결하게 다음과 같이 답했다.",
+          "source_text": "We explored our participants' understandings of a healthy life by asking “what is important to you about your health?” Bob succinctly replied:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-033",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 59,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 59,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-033-s01",
+          "status": "verified",
+          "ko_text": "Bob의 견해에서 독립성 유지는 신체적·인지적 능력을 통해 표현된다.",
+          "source_text": "In Bob's opinion maintaining independence is expressed through physical and cognitive capabilities."
+        },
+        {
+          "id": "smith-et-al-2007-tr-033-s02",
+          "status": "verified",
+          "ko_text": "따라서 독립적으로 기능할 수 있는 것은 삶의 질을 반영한다고 여겨졌다.",
+          "source_text": "Being able to function independently was therefore considered to reflect his quality of life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-033-s03",
+          "status": "verified",
+          "ko_text": "더 나이 든 참여자들도 비슷하게 답했다.",
+          "source_text": "Older participants gave similar responses."
+        },
+        {
+          "id": "smith-et-al-2007-tr-033-s04",
+          "status": "verified",
+          "ko_text": "다만 이들은 시력 저하처럼 특정 건강문제가 초래하는 결과에 초점을 맞추는 경향이 있었다.",
+          "source_text": "These, however, tended to focus on the consequences of specific health concerns, such as the deterioration of eyesight."
+        },
+        {
+          "id": "smith-et-al-2007-tr-033-s05",
+          "status": "verified",
+          "ko_text": "예를 들어 Wayne은 다음과 같이 말했다.",
+          "source_text": "For example, Wayne commented:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-034",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 63,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 63,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-034-s01",
+          "status": "verified",
+          "ko_text": "Wayne은 ‘그걸로 끝’이라고 말함으로써 시력을 잃으면 자신의 삶의 질이 심각하게 낮아질 것이라고 단언했다.",
+          "source_text": "By stating ‘that's it’, Wayne asserted that his quality of life would be severely diminished if he lost his eyesight."
+        },
+        {
+          "id": "smith-et-al-2007-tr-034-s02",
+          "status": "verified",
+          "ko_text": "이어 그는 책을 읽고 차를 운전하는 것과 같은 일상기능을 유지할 능력에 이것이 직접 영향을 줄 것이라고 설명했다.",
+          "source_text": "He went on to explain that this would directly impact upon his capacity to maintain daily functions such as being able to read and drive his car."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-035",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 64,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 64,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-035-s01",
+          "status": "verified",
+          "ko_text": "연구의 노년 남성들은 삶의 질을 죽음에 대한 우려와 자주 연결했다.",
+          "source_text": "The older men in our study often related quality of life to concern about dying."
+        },
+        {
+          "id": "smith-et-al-2007-tr-035-s02",
+          "status": "verified",
+          "ko_text": "죽음에 관한 말은 대체로 두 가지 방식, 즉 죽음에 가까웠던 경험 또는 죽고 싶은 욕망으로 제시되었다.",
+          "source_text": "Talk about dying was generally presented in two ways—near death experiences or the desire to die."
+        },
+        {
+          "id": "smith-et-al-2007-tr-035-s03",
+          "status": "verified",
+          "ko_text": "예를 들어 Roger는 심장마비 경험을 되돌아보며 다음과 같이 말했다.",
+          "source_text": "For example, when reflecting back on his experiences of having a heart attack, Roger stated:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-036",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 66,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 66,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-036-s01",
+          "status": "verified",
+          "ko_text": "Roger에게 다른 사람이 먹여 주고 씻겨 주어야 하는 상태는 누구에게도 지우고 싶지 않은 부담이었다. ‘총구를 들여다보는’ 것으로 표현한 죽음에 가까웠던 경험인 심장마비를 겪고 나서야 그는 그 일이 일상생활에 미치는 영향을 걱정했다.",
+          "source_text": "For Roger, to be fed and cleaned by someone else was a burden he did not wish to place on anyone, and it took a near death experience (heart attack), exemplified by ‘when you look down the barrel’, for him to worry about the effect it had on his daily life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-036-s02",
+          "status": "verified",
+          "ko_text": "따라서 죽음에 가까웠던 경험은 수명을 위협하지만, 동시에 자신이 살아가는 삶의 질에 주의를 집중하게 하는 것으로 보인다.",
+          "source_text": "So, while a near death experience is a threat to one's longevity, it appears that it also serves to focus attention towards the quality of life one leads."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-037",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 67,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 67,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-037-s01",
+          "status": "verified",
+          "ko_text": "다른 남성들에게 죽음에 대한 숙고나 죽을 가능성은 다른 의미를 지녔다.",
+          "source_text": "For other men, contemplation of dying or the prospect of death carried a different meaning."
+        },
+        {
+          "id": "smith-et-al-2007-tr-037-s02",
+          "status": "verified",
+          "ko_text": "예를 들어 Michael은 운전면허를 잃고 뒤이어 독립성을 상실한 과정을 다음과 같이 설명했다.",
+          "source_text": "For example, Michael described the process of losing his driver's licence, and his subsequent loss of independence by commenting:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-038",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 75,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 75,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-038-s01",
+          "status": "verified",
+          "ko_text": "Michael은 운전면허 상실에 따른 독립성 상실을 삶의 질이 ‘망가진’ 것과 같다고 보았고, 명시적으로 말하지는 않았지만 남성적 정체성의 상실과도 연결했다.",
+          "source_text": "Michael equated the loss of independence associated with losing his driver's license with ‘ruining’ his quality of life and, although not explicitly stated, a loss of his masculine identity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-038-s02",
+          "status": "verified",
+          "ko_text": "더 나아가 Michael은 생애과정의 그 특정 단계에서 죽을 가능성이 자신을 걱정시키지 않았다고 솔직하게 인정했다.",
+          "source_text": "Moreover, Michael openly admitted that the prospect of death, at that particular stage in his life course, did not concern him."
+        },
+        {
+          "id": "smith-et-al-2007-tr-038-s03",
+          "status": "verified",
+          "ko_text": "이에 따라 ‘정말로 살아가는 것’이라는 개념이 선명하게 부각되었다.",
+          "source_text": "The concept of ‘really living’ was therefore brought into sharp focus."
+        },
+        {
+          "id": "smith-et-al-2007-tr-038-s04",
+          "status": "verified",
+          "ko_text": "그는 단순한 생존과 달리 즐거움이 독립적이고 생산적인 삶의 핵심이어야 한다고 주장했다.",
+          "source_text": "He maintained that enjoyment, in contrast to survival, should be a key focus of living an independent and productive life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-038-s05",
+          "status": "verified",
+          "ko_text": "이는 Arnold의 이야기처럼 더 긍정적인 사례에도 반영되었다. 그의 의사는 전동 스쿠터 구매를 권하여 그가 일상활동에서 독립성을 유지하도록 지원했다.",
+          "source_text": "This was also reflected in more positive stories, such as Arnold's, whose doctor had supported him in maintaining his independence in daily activities by encouraging him to purchase an electric scooter:"
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-039",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 79,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 79,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-039-s01",
+          "status": "verified",
+          "ko_text": "전동 스쿠터 덕분에 Arnold는 삶의 여러 측면에서 독립적인 상태를 유지할 수 있었다.",
+          "source_text": "With an electric scooter, Arnold was able to maintain an independent state in many facets of his life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-039-s02",
+          "status": "verified",
+          "ko_text": "이는 이상화된 남성성을 재구성한 사례였다(Gerschick & Miller, 1995). 독립성은 여전히 중요했지만, 이제 걷지 못하게 된 Arnold에게는 다른 의미를 지니게 되었다.",
+          "source_text": "This was reflective of a reformulation of idealized masculinity (Gerschick & Miller, 1995), in that independence was still important, but had taken on a different meaning for Arnold now that he was unable to walk."
+        },
+        {
+          "id": "smith-et-al-2007-tr-039-s03",
+          "status": "verified",
+          "ko_text": "분명 Arnold에게 독립성은 좋은 삶의 질을 지속할 수 있게 하는 수단이었다.",
+          "source_text": "Clearly, for Arnold, independence was the means through which he was able to sustain a good quality of life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-039-s04",
+          "status": "verified",
+          "ko_text": "선행연구는 좋지 않은 건강과 장애가 노인의 자아상과 자존감에 심대한 영향을 미칠 수 있다고 지적했다(Arber & Ginn, 1991).",
+          "source_text": "Noteworthy is that previous research has indicated that poor health and disability can have profound implications for an elderly person's self-image and self-esteem (Arber & Ginn, 1991)."
+        },
+        {
+          "id": "smith-et-al-2007-tr-039-s05",
+          "status": "verified",
+          "ko_text": "Arnold에게는 그렇지 않은 것으로 보였다. 오히려 그는 독립성이 실제로 자신에게 무엇을 의미하는지 재구성함으로써, “나는 혼자 그곳에 갑니다”라는 말이 보여 주듯 좋은 삶의 질을 유지할 수 있었다.",
+          "source_text": "This did not appear to be the case for Arnold, rather he was able to maintain a good quality of life, exemplified by “and I go up there on my own”, by reformulating what independence actually meant to him."
+        },
+        {
+          "id": "smith-et-al-2007-tr-039-s06",
+          "status": "verified",
+          "ko_text": "실제로 Arnold는 스쿠터를 구매함으로써 동네 가게와 의사를 방문하는 것 같은 일상기능을 통해 독립성을 유지할 수 있었다.",
+          "source_text": "Indeed, for Arnold, the purchase of his scooter meant that he was able to maintain his independence through his daily functions, such as visiting his local shops and doctor."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-040",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 80,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 80,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-040-s01",
+          "status": "verified",
+          "ko_text": "이 연구의 일부 남성에게는 도움을 요청할지 결정할 때 생존 자체가 반드시 동기가 되지는 않았다.",
+          "source_text": "For some of the men in this study survival was not necessarily a motivating factor when deciding whether to seek help."
+        },
+        {
+          "id": "smith-et-al-2007-tr-040-s02",
+          "status": "verified",
+          "ko_text": "그러나 삶의 질은 동기가 되었다.",
+          "source_text": "However, quality of life was."
+        },
+        {
+          "id": "smith-et-al-2007-tr-040-s03",
+          "status": "verified",
+          "ko_text": "남성적 독립성 구성을 강조하는 동시에 이를 긍정적 노화의 지표인 독립성과 연결하면, 노년 남성의 도움 요청 행동을 바라보는 대안적 관점을 얻을 수 있다.",
+          "source_text": "Focusing on masculine constructions of independence, whilst simultaneously relating them to independence as a marker of positive aging, provides an alternative way in which to view older men's help seeking behaviours."
+        },
+        {
+          "id": "smith-et-al-2007-tr-040-s04",
+          "status": "verified",
+          "ko_text": "이 관점은 일상적인 신체·인지 기능을 유지하는 것이 나이 드는 남성의 독립적 존재 상태를 뒷받침하는 데 중요하며, 동시에 이들이 자신을 남성으로 위치시키는 방식도 반영한다는 점을 인정한다.",
+          "source_text": "This alternate viewpoint acknowledges that maintaining daily physical and cognitive functioning is important for supporting aging men's independent state of being and also reflects the way they position themselves as men."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-041",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 82,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 82,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-041-s01",
+          "status": "verified",
+          "ko_text": "이 논문에서 우리는 노년 남성이 자신의 건강에 관한 결정을 내릴 때 독립적으로 행동할 수 있는 것을 중요하게 여긴다는 점을 보여 주었다.",
+          "source_text": "In this paper we have shown that older men appreciate being able to act independently in relation to making decisions about their health."
+        },
+        {
+          "id": "smith-et-al-2007-tr-041-s02",
+          "status": "verified",
+          "ko_text": "독립성을 유지하려는 관심은 남성으로서의 정체성과 노인으로서의 정체성을 모두 반영한다.",
+          "source_text": "Their concern to maintain independence reflects both their identity as men and as older people."
+        },
+        {
+          "id": "smith-et-al-2007-tr-041-s03",
+          "status": "verified",
+          "ko_text": "그러나 노화와 관련된 독립성의 의미는 헤게모니적 남성성이 규정하는 것과 다르다.",
+          "source_text": "The meaning of independence as it relates to aging, however, is different to that prescribed by hegemonic masculinity."
+        },
+        {
+          "id": "smith-et-al-2007-tr-041-s04",
+          "status": "verified",
+          "ko_text": "그럼에도 우리 참여자에게 이 두 담론은 복잡하게 서로 얽혀 있었다.",
+          "source_text": "Yet, for our participants these two discourses were intricately intertwined."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-042",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 83,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 83,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-042-s01",
+          "status": "verified",
+          "ko_text": "남성이 보건의료서비스 이용을 꺼리는 듯한 현상을 설명하는 데 헤게모니적 남성성 구성이 사용되어 왔지만, 이러한 초점에는 한계가 있다.",
+          "source_text": "While a focus on hegemonic constructions of masculinity has previously been used to explain men's apparent reluctance to use health services, this focus has its limitations."
+        },
+        {
+          "id": "smith-et-al-2007-tr-042-s02",
+          "status": "verified",
+          "ko_text": "우리의 분석은 노년 남성의 독립성을 남성성만으로 틀 짓는 것이 생산적이지 않음을 시사한다.",
+          "source_text": "Our analysis suggests that it is unproductive to frame older men's independence in relation to masculinity alone."
+        },
+        {
+          "id": "smith-et-al-2007-tr-042-s03",
+          "status": "verified",
+          "ko_text": "실제로 성공적 노화와 관련된 설명처럼 독립성이 노년 남성에게 중요한 이유를 설명하는 다른 방식도 있다.",
+          "source_text": "Indeed, there are other ways of describing why independence is important to older men, such as those that relate to successful aging."
+        },
+        {
+          "id": "smith-et-al-2007-tr-042-s04",
+          "status": "verified",
+          "ko_text": "따라서 노년 남성의 독립성은 남성적 정체성의 특성이면서 성공적 노화의 지표인 것으로 보아야 한다.",
+          "source_text": "Independence among older men must therefore be viewed as both a characteristic of masculine identity and as a marker of successful aging."
+        },
+        {
+          "id": "smith-et-al-2007-tr-042-s05",
+          "status": "verified",
+          "ko_text": "이는 노년 남성이 도움 요청과 보건의료서비스 이용을 조정해 가는 방식을 정확하게 반영하려면 특히 중요하다.",
+          "source_text": "This is particularly important if we are to accurately reflect the ways in which older men negotiate help seeking and health service use."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-043",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 84,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 84,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-043-s01",
+          "status": "verified",
+          "ko_text": "보건의료서비스 제공자는 연령과 젠더가 도움 요청 및 보건의료서비스 이용에 미치는 영향을 고려해야 한다.",
+          "source_text": "Health service providers need to consider the effects of age and gender on help seeking and health service use."
+        },
+        {
+          "id": "smith-et-al-2007-tr-043-s02",
+          "status": "verified",
+          "ko_text": "이를 위해 보건의료 전문가는 노년 남성의 독립적 행동이 건강을 해칠 수도, 건강을 증진할 수도 있으므로 이를 인식하는 방식을 재고해야 한다.",
+          "source_text": "This requires health professionals to reconsider how they perceive older men's independent actions, as they can be both health-damaging and health-enhancing concepts."
+        },
+        {
+          "id": "smith-et-al-2007-tr-043-s03",
+          "status": "verified",
+          "ko_text": "노년 남성에게 독립성을 건강 증진적 특성으로 장려하는 것은 진료 과정에서 이들과 건강에 관해 논의하도록 참여시키는 데 아직 활용되지 않은 도구다.",
+          "source_text": "Promoting independence as a health-enhancing trait among older men is an untapped tool for engaging older men in discussion about their health during health encounters."
+        },
+        {
+          "id": "smith-et-al-2007-tr-043-s04",
+          "status": "verified",
+          "ko_text": "또한 이는 잠재적 치료 선택지를 논의하고, 복약 순응에 접근하며, 노년 남성이 자신의 건강을 더 많이 통제하고 더 큰 책임을 지도록 장려할 수 있는 대안적 틀을 제공한다.",
+          "source_text": "It also provides an alternative framework through which to discuss potential treatment options, to approach medication compliance, and a way to encourage older men to have greater control over, and take greater responsibility for, their own health."
+        },
+        {
+          "id": "smith-et-al-2007-tr-043-s05",
+          "status": "verified",
+          "ko_text": "예방적 건강활동에 관여하는 보건의료서비스 제공자는 노년 남성이 독립적으로 행동할 때 얻는 건강 증진적 이점에 초점을 맞춘 건강증진 전략을 채택하는 방안을 더 탐색할 필요가 있다.",
+          "source_text": "For health service providers involved in preventive health activities, the adoption of health promotion strategies that focus on the health-enhancing benefits of older men acting independently, warrants further exploration."
+        },
+        {
+          "id": "smith-et-al-2007-tr-043-s06",
+          "status": "verified",
+          "ko_text": "그러한 전략은 과거에 간과했던 방식으로 노년 남성과 연결될 가능성이 크다.",
+          "source_text": "Such strategies are likely to connect with older men in ways that have been overlooked in the past."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-044",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 85,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 85,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-044-s01",
+          "status": "verified",
+          "ko_text": "우리의 분석은 정책개발, 특히 남성건강 관련 정책에도 중요한 함의를 지닌다.",
+          "source_text": "Our analysis also has significant implications for policy development, particularly that relating to men's health."
+        },
+        {
+          "id": "smith-et-al-2007-tr-044-s02",
+          "status": "verified",
+          "ko_text": "현재 남성건강 정책 논의는 독립성과 관련된 특성을 포함하여 헤게모니적 남성성 특성이 건강을 해치는 효과에 초점을 맞추어 왔다.",
+          "source_text": "Current men's health policy debates have focused on the health-damaging effects of hegemonic masculine traits, such as those relating to independence."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-045",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 86,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 86,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-045-s01",
+          "status": "verified",
+          "ko_text": "이 논문은 남성이 나이 들면서 독립성의 핵심 측면이 달라진다는 점을 보여 주었다.",
+          "source_text": "This paper has demonstrated that key aspects of independence change for men as they age."
+        },
+        {
+          "id": "smith-et-al-2007-tr-045-s02",
+          "status": "verified",
+          "ko_text": "실천과 정책 맥락 모두에서 고려해야 하는 것은 바로 이러한 변화다.",
+          "source_text": "It is these changes that need to be taken into account in both practice and policy contexts."
+        },
+        {
+          "id": "smith-et-al-2007-tr-045-s03",
+          "status": "verified",
+          "ko_text": "덜 보편주의적인 남성건강 정책개발 접근은 유용한 출발점이 될 수 있다.",
+          "source_text": "An approach to men's health policy development that is less universal may be a useful starting point."
+        },
+        {
+          "id": "smith-et-al-2007-tr-045-s04",
+          "status": "verified",
+          "ko_text": "이 접근은 노년 남성이 겪는 문제를 포함해 남성의 특정 하위집단이 직면하는 고유한 문제를 고려해야 한다.",
+          "source_text": "This approach should account for the unique concerns faced by specific sub-groups of men, including those affecting older men."
+        },
+        {
+          "id": "smith-et-al-2007-tr-045-s05",
+          "status": "verified",
+          "ko_text": "이 논문이 보여 주듯이 이러한 결과를 달성하려면 여러 관점이 필요하다.",
+          "source_text": "As shown in this paper, multiple perspectives are required to achieve this outcome."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-046",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 87,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 87,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-046-s01",
+          "status": "verified",
+          "ko_text": "우리는 독립성, 남성성, 노화 사이 연결의 공중보건적 함의를 검토하기 시작했다.",
+          "source_text": "We have begun to examine the public health implications of the links between independence, masculinity and aging."
+        },
+        {
+          "id": "smith-et-al-2007-tr-046-s02",
+          "status": "verified",
+          "ko_text": "그러나 더 면밀한 검토가 필요하다.",
+          "source_text": "However, closer scrutiny is warranted."
+        },
+        {
+          "id": "smith-et-al-2007-tr-046-s03",
+          "status": "verified",
+          "ko_text": "특히 보건의료인과 정책입안자가 노년 남성이 건강을 증진하고 삶의 질을 높이는 방식으로 독립성을 유지하도록 지원할 역량이 있는지가 중요한 문제다.",
+          "source_text": "Of particular concern is whether health practitioners and policy makers have the capacity to support older men to maintain their independence in ways that enhance their health and increase their quality of life."
+        },
+        {
+          "id": "smith-et-al-2007-tr-046-s04",
+          "status": "verified",
+          "ko_text": "이를 위해서는 노년 남성이 건강을 정의하는 방식에 대한 더 철저한 검토, 노년 남성이 자신의 건강과 관련하여 어떻게 행동해야 한다고 기대되는지에 대한 더 폭넓은 탐색, 노년 남성의 건강 관련 결정에 영향을 미치는 개인적·사회적 관계에 대한 더 깊은 이해, 기존 서비스가 노년 남성의 건강욕구를 충족하는지에 대한 신중한 고려, 그리고 노년 남성이 건강에 관한 논의에 참여하도록 하는 혁신적 전략의 개발이 필요하다.",
+          "source_text": "This requires a more thorough examination of how older men define health; a broader exploration of how older men are expected to behave in relation to their health; a deeper understanding of the personal and social relationships that influence older men's decisions about their health; careful consideration of whether existing services meet the health needs of older men; and the development of innovative strategies to engage older men in discussion about their health."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-047",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 89,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 89,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-047-s01",
+          "status": "verified",
+          "ko_text": "Florey Adelaide Male Aging Study 연구팀의 지원에 감사드린다.",
+          "source_text": "We would like to acknowledge the support of the Florey Adelaide Male Aging Study Team."
+        },
+        {
+          "id": "smith-et-al-2007-tr-047-s02",
+          "status": "verified",
+          "ko_text": "또한 이 연구를 수행하도록 지원한 Florey Medical Research Foundation, 애들레이드대학교 보건과학부, King and Amy O'Malley Trust에 감사드린다.",
+          "source_text": "We would also like to acknowledge the Florey Medical Research Foundation, the Faculty of Health Sciences at the University of Adelaide and the King and Amy O'Malley Trust for providing support to carry out this research."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-048",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 91,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 91,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-048-s01",
+          "status": "verified",
+          "ko_text": "Aoun, S., Donovan, R., Johnson, L., & Egger, G. (2002). Preventive care in the context of men's health. Journal of Health Psychology, 7(3), 243−252.",
+          "source_text": "Aoun, S., Donovan, R., Johnson, L., & Egger, G. (2002). Preventive care in the context of men's health. Journal of Health Psychology, 7(3), 243−252."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-049",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 92,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 92,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-049-s01",
+          "status": "verified",
+          "ko_text": "Arber, S., Davidson, K., & Ginn, J. (2003). Changing approaches to gender and later life. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships Maidenhead: Open University Press.",
+          "source_text": "Arber, S., Davidson, K., & Ginn, J. (2003). Changing approaches to gender and later life. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships Maidenhead: Open University Press."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-050",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 93,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 93,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-050-s01",
+          "status": "verified",
+          "ko_text": "Arber, S., & Ginn, J. (1991). Gender and later life: A sociological analysis of resources and constraints. London: Sage Publications.",
+          "source_text": "Arber, S., & Ginn, J. (1991). Gender and later life: A sociological analysis of resources and constraints. London: Sage Publications."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-051",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 94,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 94,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-051-s01",
+          "status": "verified",
+          "ko_text": "Berg, L., & Longhurst, R. (2003). Placing masculinities and geography. Gender, Place and Culture, 10, 351−360.",
+          "source_text": "Berg, L., & Longhurst, R. (2003). Placing masculinities and geography. Gender, Place and Culture, 10, 351−360."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-052",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 95,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 95,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-052-s01",
+          "status": "verified",
+          "ko_text": "Bland, R. (1999). Independence, privacy and risk: Two contrasting approaches to residential care for older people. Ageing & Society, 19, 539−560.",
+          "source_text": "Bland, R. (1999). Independence, privacy and risk: Two contrasting approaches to residential care for older people. Ageing & Society, 19, 539−560."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-053",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 96,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 96,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-053-s01",
+          "status": "verified",
+          "ko_text": "Borbasi, S., Chapman, Y., Gassner, L., Dunn, S., & Read, K. (2002). Perceptions of the researcher: In-depth interviewing in the home. Contemporary Nurse, 14, 24−37.",
+          "source_text": "Borbasi, S., Chapman, Y., Gassner, L., Dunn, S., & Read, K. (2002). Perceptions of the researcher: In-depth interviewing in the home. Contemporary Nurse, 14, 24−37."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-054",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 97,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 97,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-054-s01",
+          "status": "verified",
+          "ko_text": "Bowling, A., & Dieppe, P. (2005). What is successful ageing and who should define it? British Medical Journal, 331, 1548−1551.",
+          "source_text": "Bowling, A., & Dieppe, P. (2005). What is successful ageing and who should define it? British Medical Journal, 331, 1548−1551."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-055",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 98,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 98,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-055-s01",
+          "status": "verified",
+          "ko_text": "Britten, N. (1995). Qualitative research: Qualitative interviews in medical research. British Medical Journal, 311(6999), 251−253.",
+          "source_text": "Britten, N. (1995). Qualitative research: Qualitative interviews in medical research. British Medical Journal, 311(6999), 251−253."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-056",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 99,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 99,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-056-s01",
+          "status": "verified",
+          "ko_text": "Calasanti, T. (2003). Masculinities and care work in old age. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships (pp. 15−30). Maidenhead: Open University Press.",
+          "source_text": "Calasanti, T. (2003). Masculinities and care work in old age. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships (pp. 15−30). Maidenhead: Open University Press."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-057",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 100,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 100,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-057-s01",
+          "status": "verified",
+          "ko_text": "Calasanti, T. (2005). Firming the floppy penis: Age, class and gender relations in the lives of old men. Men & Masculinities, 8, 3−23.",
+          "source_text": "Calasanti, T. (2005). Firming the floppy penis: Age, class and gender relations in the lives of old men. Men & Masculinities, 8, 3−23."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-058",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 101,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 101,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-058-s01",
+          "status": "verified",
+          "ko_text": "Connell, R. (1997). Men, masculinities and feminism. Social Alternatives, 16(3), 7−10.",
+          "source_text": "Connell, R. (1997). Men, masculinities and feminism. Social Alternatives, 16(3), 7−10."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-059",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 102,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 102,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-059-s01",
+          "status": "verified",
+          "ko_text": "Connell, R., & Messerschmidt, J. (2005). Hegemonic masculinity: Rethinking the concept. Gender & Society, 19, 829−859.",
+          "source_text": "Connell, R., & Messerschmidt, J. (2005). Hegemonic masculinity: Rethinking the concept. Gender & Society, 19, 829−859."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-060",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 103,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 103,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-060-s01",
+          "status": "verified",
+          "ko_text": "Courtenay, W. (2000a). Constructions of masculinity and their influence on men's well-being: A theory of gender and health. Social Science & Medicine, 50, 1385−1401.",
+          "source_text": "Courtenay, W. (2000a). Constructions of masculinity and their influence on men's well-being: A theory of gender and health. Social Science & Medicine, 50, 1385−1401."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-061",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 104,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 104,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-061-s01",
+          "status": "verified",
+          "ko_text": "Courtenay, W. (2000b). Engendering health: A social constructionist examination of men's health beliefs and behaviours. Psychology of Men & Masculinity, 1, 4−15.",
+          "source_text": "Courtenay, W. (2000b). Engendering health: A social constructionist examination of men's health beliefs and behaviours. Psychology of Men & Masculinity, 1, 4−15."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-062",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 105,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 105,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-062-s01",
+          "status": "verified",
+          "ko_text": "Covinsky, K., Palmer, R., Fortinsky, R., Counsell, S., Stewart, A., Kresevic, D., et al. (2003). Loss of independence in activities of daily living in older adults hospitalized with medical illnesses: Increased vulnerability with age. Journal of the American Geriatric Society, 51, 451−458.",
+          "source_text": "Covinsky, K., Palmer, R., Fortinsky, R., Counsell, S., Stewart, A., Kresevic, D., et al. (2003). Loss of independence in activities of daily living in older adults hospitalized with medical illnesses: Increased vulnerability with age. Journal of the American Geriatric Society, 51, 451−458."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-063",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 106,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 106,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-063-s01",
+          "status": "verified",
+          "ko_text": "Davies, S., Laker, S., & Ellis, L. (1997). Promoting autonomy and independence for older people within nursing practice: A literature review. Journal of Advanced Nursing, 26, 408−417.",
+          "source_text": "Davies, S., Laker, S., & Ellis, L. (1997). Promoting autonomy and independence for older people within nursing practice: A literature review. Journal of Advanced Nursing, 26, 408−417."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-064",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 107,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 107,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-064-s01",
+          "status": "verified",
+          "ko_text": "Drummond, M., & Smith, J. (2006). Ageing men's understanding of nutrition: Implications for health. Journal of Men's Health and Gender, 3, 56−60.",
+          "source_text": "Drummond, M., & Smith, J. (2006). Ageing men's understanding of nutrition: Implications for health. Journal of Men's Health and Gender, 3, 56−60."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-065",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 108,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 108,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-065-s01",
+          "status": "verified",
+          "ko_text": "Fiatarone, M. (1996). Physical activity and functional independence in aging. Research Quarterly for Exercise & Sport, 67, S70.",
+          "source_text": "Fiatarone, M. (1996). Physical activity and functional independence in aging. Research Quarterly for Exercise & Sport, 67, S70."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-066",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 109,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 109,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-066-s01",
+          "status": "verified",
+          "ko_text": "Ford, A., Haug, M., Stange, K., Gaines, A., Noelker, L., & Jones, P. (2000). Sustained personal autonomy: A measure of successful aging. Journal of Aging & Health, 12, 470−489.",
+          "source_text": "Ford, A., Haug, M., Stange, K., Gaines, A., Noelker, L., & Jones, P. (2000). Sustained personal autonomy: A measure of successful aging. Journal of Aging & Health, 12, 470−489."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-067",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 110,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 110,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-067-s01",
+          "status": "verified",
+          "ko_text": "Galdas, P., Cheater, F., & Marshall, P. (2005). Men and health help-seeking behaviour: Literature review. Journal of Advanced Nursing, 49, 616−623.",
+          "source_text": "Galdas, P., Cheater, F., & Marshall, P. (2005). Men and health help-seeking behaviour: Literature review. Journal of Advanced Nursing, 49, 616−623."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-068",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 111,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 111,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-068-s01",
+          "status": "verified",
+          "ko_text": "Galloway, M., & Jokl, P. (2000). Aging successfully: The importance of physical activity in maintaining health and function. Journal of the American Academy of Orthopaedic Surgeons, 8, 37−44.",
+          "source_text": "Galloway, M., & Jokl, P. (2000). Aging successfully: The importance of physical activity in maintaining health and function. Journal of the American Academy of Orthopaedic Surgeons, 8, 37−44."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-069",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 112,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 112,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-069-s01",
+          "status": "verified",
+          "ko_text": "Gerschick, T., & Miller, A. (1995). Coming to terms: Masculinity and physical disability. In D. Sabo & D. Gordon (Eds.), Men's health and illness: Gender, power and the body (pp. 183−204). Thousand Oaks: Sage Publications.",
+          "source_text": "Gerschick, T., & Miller, A. (1995). Coming to terms: Masculinity and physical disability. In D. Sabo & D. Gordon (Eds.), Men's health and illness: Gender, power and the body (pp. 183−204). Thousand Oaks: Sage Publications."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-070",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 113,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 113,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-070-s01",
+          "status": "verified",
+          "ko_text": "Greiner, P., Snowdon, D., & Schmitt, F. (1996). The loss of independence in activities of daily living: The role of low normal cognitive function in elderly nuns. American Journal of Public Health, 86, 62−66.",
+          "source_text": "Greiner, P., Snowdon, D., & Schmitt, F. (1996). The loss of independence in activities of daily living: The role of low normal cognitive function in elderly nuns. American Journal of Public Health, 86, 62−66."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-071",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 114,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 114,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-071-s01",
+          "status": "verified",
+          "ko_text": "Hebert, R. (1997). Functional decline in old age. Canadian Medical Association Journal, 157, 1037−1045.",
+          "source_text": "Hebert, R. (1997). Functional decline in old age. Canadian Medical Association Journal, 157, 1037−1045."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-072",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 115,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 115,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-072-s01",
+          "status": "verified",
+          "ko_text": "Hodgetts, D., & Chamberlain, K. (2002). The problem with men': Working-class men making sense of men's health on television. Journal of Health Psychology, 7(3), 269−283.",
+          "source_text": "Hodgetts, D., & Chamberlain, K. (2002). The problem with men': Working-class men making sense of men's health on television. Journal of Health Psychology, 7(3), 269−283."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-073",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 116,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 116,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-073-s01",
+          "status": "verified",
+          "ko_text": "Lantz, J., Fullerton, J., Harshburger, R., & Sadler, G. (2001). Promoting screening and early detection of cancer in men. Nursing and Health Sciences, 3, 189−196.",
+          "source_text": "Lantz, J., Fullerton, J., Harshburger, R., & Sadler, G. (2001). Promoting screening and early detection of cancer in men. Nursing and Health Sciences, 3, 189−196."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-074",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 117,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 117,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-074-s01",
+          "status": "verified",
+          "ko_text": "Lee, C., & Owens, G. (2002). The psychology of men's health. Buckingham: Open University Press.",
+          "source_text": "Lee, C., & Owens, G. (2002). The psychology of men's health. Buckingham: Open University Press."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-075",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 118,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 118,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-075-s01",
+          "status": "verified",
+          "ko_text": "Lloyd, T. (2001). Men and health: The context for practice. In N. Davidson & T. Lloyd (Eds.), Promoting men's health: A guide for practitioners (pp. 3−43). Edinburgh: Bailliere Tindall.",
+          "source_text": "Lloyd, T. (2001). Men and health: The context for practice. In N. Davidson & T. Lloyd (Eds.), Promoting men's health: A guide for practitioners (pp. 3−43). Edinburgh: Bailliere Tindall."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-076",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 119,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 119,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-076-s01",
+          "status": "verified",
+          "ko_text": "Longhurst, R. (2000). Geography and gender: Masculinities, male identity and men. Progress in Human Geography, 24, 439−444.",
+          "source_text": "Longhurst, R. (2000). Geography and gender: Masculinities, male identity and men. Progress in Human Geography, 24, 439−444."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-077",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 120,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 120,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-077-s01",
+          "status": "verified",
+          "ko_text": "Longhurst, R. (2001). Geography and gender: Looking back, looking forward. Progress in Human Geography, 25, 641−648.",
+          "source_text": "Longhurst, R. (2001). Geography and gender: Looking back, looking forward. Progress in Human Geography, 25, 641−648."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-078",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 121,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 121,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-078-s01",
+          "status": "verified",
+          "ko_text": "Mahalik, J., Good, R., & Englar-Carlson, G. (2003). Masculinity scripts, presenting concerns, and help seeking: Implications for practice and training. Professional Psychology, Research and Practice, 34, 123−131.",
+          "source_text": "Mahalik, J., Good, R., & Englar-Carlson, G. (2003). Masculinity scripts, presenting concerns, and help seeking: Implications for practice and training. Professional Psychology, Research and Practice, 34, 123−131."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-079",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 122,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 122,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-079-s01",
+          "status": "verified",
+          "ko_text": "Mansfield, A., Addis, M., & Mahalik, J. (2003). Why won't he go to the doctor?: The psychology of men's help seeking. International Journal of Men's Health, 2(2), 93−109.",
+          "source_text": "Mansfield, A., Addis, M., & Mahalik, J. (2003). Why won't he go to the doctor?: The psychology of men's help seeking. International Journal of Men's Health, 2(2), 93−109."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-080",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 123,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 123,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-080-s01",
+          "status": "verified",
+          "ko_text": "Marshall, B. (2006). The new virility: Viagra, male aging and sexual function. Sexualities, 9, 345−362.",
+          "source_text": "Marshall, B. (2006). The new virility: Viagra, male aging and sexual function. Sexualities, 9, 345−362."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-081",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 124,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 124,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-081-s01",
+          "status": "verified",
+          "ko_text": "Martin, S., Haren, M., Taylor, A., Middleton, S., & Wittert, G. & Members of the Florey Adelaide Male Ageing Study FAMAS 2007. Cohort profile: The Florey Adelaide Male Ageing Study FAMAS. International Journal of Epidemiology, 1−5 (Advanced access published January 12, 2007).",
+          "source_text": "Martin, S., Haren, M., Taylor, A., Middleton, S., & Wittert, G. & Members of the Florey Adelaide Male Ageing Study FAMAS 2007. Cohort profile: The Florey Adelaide Male Ageing Study FAMAS. International Journal of Epidemiology, 1−5 (Advanced access published January 12, 2007)."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-082",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 125,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 125,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-082-s01",
+          "status": "verified",
+          "ko_text": "McColl, M., Stirling, P., Walker, J., Corey, P., & Wilkins, R. (1999). Expectations of independence and life satisfaction among ageing spinal cord injured adults. Disability and Rehabilitation, 21, 231−240.",
+          "source_text": "McColl, M., Stirling, P., Walker, J., Corey, P., & Wilkins, R. (1999). Expectations of independence and life satisfaction among ageing spinal cord injured adults. Disability and Rehabilitation, 21, 231−240."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-083",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 126,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 126,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-083-s01",
+          "status": "verified",
+          "ko_text": "McKie, L. (1999). Older people and food: Independence, locality and diet. British Food Journal, 101, 528−536.",
+          "source_text": "McKie, L. (1999). Older people and food: Independence, locality and diet. British Food Journal, 101, 528−536."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-084",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 127,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 127,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-084-s01",
+          "status": "verified",
+          "ko_text": "Moynihan, C. (1998). Theories in health care and research: Theories of masculinity. British Medical Journal, 317, 1072−1075.",
+          "source_text": "Moynihan, C. (1998). Theories in health care and research: Theories of masculinity. British Medical Journal, 317, 1072−1075."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-085",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 128,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 128,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-085-s01",
+          "status": "verified",
+          "ko_text": "O'hehir, B. (1996). Men's health: Uncovering the mystery. Mount Gambier: Kingston Publisher.",
+          "source_text": "O'hehir, B. (1996). Men's health: Uncovering the mystery. Mount Gambier: Kingston Publisher."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-086",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 129,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 129,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-086-s01",
+          "status": "verified",
+          "ko_text": "Oliffe, J. (2006). Embodied masculinity and androgen deprivation therapy. Sociology of Health and Illness, 28, 410−432.",
+          "source_text": "Oliffe, J. (2006). Embodied masculinity and androgen deprivation therapy. Sociology of Health and Illness, 28, 410−432."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-087",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 130,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 130,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-087-s01",
+          "status": "verified",
+          "ko_text": "Oliffe, J., & Mroz, L. (2005). Men interviewing men about health and illness: Ten lessons learned. Journal of Men's Health & Gender, 2, 257−260.",
+          "source_text": "Oliffe, J., & Mroz, L. (2005). Men interviewing men about health and illness: Ten lessons learned. Journal of Men's Health & Gender, 2, 257−260."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-088",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 131,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 131,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-088-s01",
+          "status": "verified",
+          "ko_text": "Reevy, G., & Maslach, C. (2001). Use of social support: Gender and personality differences. Sex Roles, 44, 437−459.",
+          "source_text": "Reevy, G., & Maslach, C. (2001). Use of social support: Gender and personality differences. Sex Roles, 44, 437−459."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-089",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 132,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 132,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-089-s01",
+          "status": "verified",
+          "ko_text": "Reisberg, L. (2000). Colleges start clinics for doctor-averse men. Chronicle of Higher Education, 46, 39.",
+          "source_text": "Reisberg, L. (2000). Colleges start clinics for doctor-averse men. Chronicle of Higher Education, 46, 39."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-090",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 133,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 133,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-090-s01",
+          "status": "verified",
+          "ko_text": "Riska, E. (2002). From type A man to the hardy man: Masculinity and health. Sociology of Health & Illness, 24, 347−358.",
+          "source_text": "Riska, E. (2002). From type A man to the hardy man: Masculinity and health. Sociology of Health & Illness, 24, 347−358."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-091",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 134,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 134,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-091-s01",
+          "status": "verified",
+          "ko_text": "Scheidt, R., Humphreys, D., & Yorgason, J. (1999). Successful aging: What's not to like. Journal of Applied Gerontology, 18, 277−282.",
+          "source_text": "Scheidt, R., Humphreys, D., & Yorgason, J. (1999). Successful aging: What's not to like. Journal of Applied Gerontology, 18, 277−282."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-092",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 135,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 135,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-092-s01",
+          "status": "verified",
+          "ko_text": "Schofield, T., Connell, R., Walker, L., Wood, J., & Butland, D. (2000). Understanding men's health and illness: A gender-relations approach to policy, research, and practice. Journal of American College Health, 48(6), 247−256.",
+          "source_text": "Schofield, T., Connell, R., Walker, L., Wood, J., & Butland, D. (2000). Understanding men's health and illness: A gender-relations approach to policy, research, and practice. Journal of American College Health, 48(6), 247−256."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-093",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 136,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 136,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-093-s01",
+          "status": "verified",
+          "ko_text": "Secker, J., Hill, R., Villeneau, L., & Parkman, S. (2003). Promoting independence: But promoting what and how. Ageing & Society, 23, 375−391.",
+          "source_text": "Secker, J., Hill, R., Villeneau, L., & Parkman, S. (2003). Promoting independence: But promoting what and how. Ageing & Society, 23, 375−391."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-094",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 137,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 137,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-094-s01",
+          "status": "verified",
+          "ko_text": "Seymour-Smith, S., Wetherell, M., & Phoenix, A. (2002). My wife ordered me to come!: A discursive analysis of doctors' and nurses' accounts of men's use of general practitioners. Journal of Health Psychology, 7(3), 253−267.",
+          "source_text": "Seymour-Smith, S., Wetherell, M., & Phoenix, A. (2002). My wife ordered me to come!: A discursive analysis of doctors' and nurses' accounts of men's use of general practitioners. Journal of Health Psychology, 7(3), 253−267."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-095",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 138,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 138,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-095-s01",
+          "status": "verified",
+          "ko_text": "Shepard, R. (1993). Exercise and aging: Extending independence in older adults. Geriatrics, 48, 61−65.",
+          "source_text": "Shepard, R. (1993). Exercise and aging: Extending independence in older adults. Geriatrics, 48, 61−65."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-096",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 139,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 139,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-096-s01",
+          "status": "verified",
+          "ko_text": "Spector-Mersel, G. (2006). Never-aging stories: Western hegemonic masculinity scripts. Journal of Gender Studies, 15, 67−82.",
+          "source_text": "Spector-Mersel, G. (2006). Never-aging stories: Western hegemonic masculinity scripts. Journal of Gender Studies, 15, 67−82."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-097",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 140,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 140,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-097-s01",
+          "status": "verified",
+          "ko_text": "Speer, S. (2001). Reconsidering the concept of hegemonic masculinity: Discursive psychology, conversation analysis and participants' orientations. Feminism & Psychology, 11, 107−135.",
+          "source_text": "Speer, S. (2001). Reconsidering the concept of hegemonic masculinity: Discursive psychology, conversation analysis and participants' orientations. Feminism & Psychology, 11, 107−135."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-098",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 141,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 141,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-098-s01",
+          "status": "verified",
+          "ko_text": "Stephenson, P., Wolfe, N., Coughlan, R., & Koehn, S. (1999). A methodological discourse on gender, independence, and frailty: Applied dimensions of identity construction in old age. Journal of Aging Studies, 13, 391−401.",
+          "source_text": "Stephenson, P., Wolfe, N., Coughlan, R., & Koehn, S. (1999). A methodological discourse on gender, independence, and frailty: Applied dimensions of identity construction in old age. Journal of Aging Studies, 13, 391−401."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-099",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 142,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 142,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-099-s01",
+          "status": "verified",
+          "ko_text": "Steverink, N., Lindenberg, S., & Ormel, J. (1998). Towards understanding successful ageing: Patterned change in resources and goals. Ageing & Society, 18, 441−467.",
+          "source_text": "Steverink, N., Lindenberg, S., & Ormel, J. (1998). Towards understanding successful ageing: Patterned change in resources and goals. Ageing & Society, 18, 441−467."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-100",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 143,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 143,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-100-s01",
+          "status": "verified",
+          "ko_text": "Taylor, C., Stewart, A., & Parker, R. (1998). Machismo' as a barrier to health promotion in Australian males. In T. Laws (Ed.), Promoting men's health: An essential book for nurses (pp. 15−29). Melbourne: Ausmed Publications.",
+          "source_text": "Taylor, C., Stewart, A., & Parker, R. (1998). Machismo' as a barrier to health promotion in Australian males. In T. Laws (Ed.), Promoting men's health: An essential book for nurses (pp. 15−29). Melbourne: Ausmed Publications."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-101",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 144,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 144,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-101-s01",
+          "status": "verified",
+          "ko_text": "Thompson, E., & Whearty, P. (2004). Older men's social participation: The importance of masculinity ideology. The Journal of Men's Studies, 13, 5−24.",
+          "source_text": "Thompson, E., & Whearty, P. (2004). Older men's social participation: The importance of masculinity ideology. The Journal of Men's Studies, 13, 5−24."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-102",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 145,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 145,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-102-s01",
+          "status": "verified",
+          "ko_text": "Torres, S. (1999). A culturally-relevant theoretical framework for the study of successful ageing. Ageing & Society, 19, 33−51.",
+          "source_text": "Torres, S. (1999). A culturally-relevant theoretical framework for the study of successful ageing. Ageing & Society, 19, 33−51."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-103",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 146,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 146,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-103-s01",
+          "status": "verified",
+          "ko_text": "Tudiver, F., & Talbot, Y. (1999). Why don't men seek help? Family physicians' perspectives on help-seeking behaviour in men. Journal of Family Practice, 48(1), 47−52.",
+          "source_text": "Tudiver, F., & Talbot, Y. (1999). Why don't men seek help? Family physicians' perspectives on help-seeking behaviour in men. Journal of Family Practice, 48(1), 47−52."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-104",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 147,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 147,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-104-s01",
+          "status": "verified",
+          "ko_text": "While, A. (2002). Failing to make contact: Young men's health. British Journal of Community Nursing, 7(1), 52.",
+          "source_text": "While, A. (2002). Failing to make contact: Young men's health. British Journal of Community Nursing, 7(1), 52."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-105",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 148,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 148,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-105-s01",
+          "status": "verified",
+          "ko_text": "Wilson, G. (1995). “I'm the eyes and she's the arms”: Changes in gender roles in advanced old age. In S. Arber & J. Ginn (Eds.), Connecting gender & ageing: A sociological approach (pp. 98−113). Buckingham: Open University Press.",
+          "source_text": "Wilson, G. (1995). “I'm the eyes and she's the arms”: Changes in gender roles in advanced old age. In S. Arber & J. Ginn (Eds.), Connecting gender & ageing: A sociological approach (pp. 98−113). Buckingham: Open University Press."
+        }
+      ]
+    },
+    {
+      "id": "smith-et-al-2007-tr-106",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 149,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 149,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "smith-et-al-2007-tr-106-s01",
+          "status": "verified",
+          "ko_text": "Woods, B. (1999). Promoting well-being and independence for people with dementia. International Journal of Geriatric Psychiatry, 14, 97−109.",
+          "source_text": "Woods, B. (1999). Promoting well-being and independence for people with dementia. International Journal of Geriatric Psychiatry, 14, 97−109."
+        }
+      ]
+    }
+  ],
+  "sentence_alignment_version": 1,
+  "sentence_alignment_status": "verified",
+  "sentence_alignment_note": "All 251 sentence pairs were checked against the complete bilingual paragraph blocks for meaning, order, omissions, citations, numbers, qualification language, masculinity/independence/help-seeking distinctions, and source fidelity. Sentence-boundary mismatch blocks were regrouped manually; all 59 references remain verbatim."
+}

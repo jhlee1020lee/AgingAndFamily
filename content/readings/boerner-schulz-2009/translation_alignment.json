@@ -1,0 +1,928 @@
+{
+  "version": 2,
+  "reading_slug": "boerner-schulz-2009",
+  "page": "translation",
+  "entries": [
+    {
+      "id": "boerner-schulz-2009-tr-001",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-001-s01",
+          "status": "verified",
+          "ko_text": "대부분의 죽음에는 만성질환과 장애가 선행하며 가족돌봄제공자가 지원을 제공한다.",
+          "source_text": "Most deaths are preceded by chronic illness and disability and the provision of support by family caregivers."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-001-s02",
+          "status": "verified",
+          "ko_text": "이 글의 목적은 돌봄 경험이 사별에 어떤 영향을 미치는지 설명하는 데 있으며, 특히 힘겨운 돌봄 상황과 어려운 애도 과정—흔히 ‘복합성 애도’라고 부르는 것—사이의 관계를 강조한다.",
+          "source_text": "The purpose of this article is to describe how the caregiving experience affects bereavement, with an emphasis on the relationship between challenging caregiving situations and difficult grieving processes − often referred to as ‘complicated grief’."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-001-s03",
+          "status": "verified",
+          "ko_text": "먼저 돌봄과 사별에 관한 일반 문헌을 간략히 요약한다.",
+          "source_text": "The article starts with a brief summary of the general literature on caregiving and bereavement."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-001-s04",
+          "status": "verified",
+          "ko_text": "이어서 복합성 애도를 정의하고, 일부 돌봄제공자가 사랑하는 사람의 죽음으로 인해 어려움을 겪을 가능성이 있는 이유를 논의한다.",
+          "source_text": "It then defines complicated grief and discusses why some caregivers may struggle with the death of their loved one."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-001-s05",
+          "status": "verified",
+          "ko_text": "마지막으로 전문가가 죽음 전후에 돌봄제공자를 돕기 위해 무엇을 할 수 있는지 실질적인 제안을 제시한다.",
+          "source_text": "Finally, it offers practical suggestions for what professionals can do to help caregivers both before and after the death has occurred."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-002",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-002-s01",
+          "status": "verified",
+          "ko_text": "돌봄, 사별, 복합성 애도, 전문가 지원",
+          "source_text": "Caregiving, bereavement, complicated grief, professional support"
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-003",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 5,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 5,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-003-s01",
+          "status": "verified",
+          "ko_text": "서구 세계에서 대부분의 죽음에는 심장질환, 암, 뇌졸중, 호흡기질환 같은 만성질환이 선행한다.",
+          "source_text": "Most deaths in the western world are preceded by chronic illnesses such as heart disease, cancer, stroke and respiratory diseases."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-003-s02",
+          "status": "verified",
+          "ko_text": "이러한 장애성 질환은 독립적으로 기능할 수 있는 개인의 능력을 점차 저하시키는 경향이 있다. 따라서 죽음에 앞서 한 명 이상의 가족 구성원이 장애가 있는 친족에게 보건의료와 지원을 제공하는 긴 기간이 이어지는 것이 일반적이다.",
+          "source_text": "These disabling conditions tend increasingly to compromise a person’s ability to function independently, which means that death is typically preceded by an extended period during which one or more family members provide health care and support to their disabled relative."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-003-s03",
+          "status": "verified",
+          "ko_text": "대부분의 사람에게 돌봄과 사별의 경험은 서로 긴밀히 얽혀 있는 것이 현실이다.",
+          "source_text": "The reality for most people is that the experiences of caregiving and bereavement are closely intertwined."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-003-s04",
+          "status": "verified",
+          "ko_text": "그렇다면 돌봄 경험이 사별에 미치는 영향에 관해 우리는 무엇을 알고 있는가?",
+          "source_text": "But what do we know about the effects of the caregiving experience on bereavement?"
+        },
+        {
+          "id": "boerner-schulz-2009-tr-003-s05",
+          "status": "verified",
+          "ko_text": "이 글의 목적은 사별 과정에서 돌봄이 하는 역할을 검토하고, 이 맥락에서 어려운 돌봄 상황이 흔히 ‘복합성 애도’라고 불리는 어려운 애도 과정으로 이어질 가능성이 있음을 강조하는 데 있다.",
+          "source_text": "The purpose of this article is to examine the role of caregiving in the bereavement process and, in this context, to highlight how difficult caregiving situations can lead to difficult grieving processes, often referred to as ‘complicated grief’."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-003-s06",
+          "status": "verified",
+          "ko_text": "이어 일부 돌봄제공자가 다른 사람보다 상실로 더 큰 어려움을 겪는 이유를 논의하고, 사별한 사람과 함께 일하는 전문가가 무엇을 하면 도움이 될 수 있는지 권고한다.",
+          "source_text": "The article goes on to discuss why some caregivers may struggle more than others with their loss and to make recommendations for what professionals who work with the bereaved can do to help."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-004",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 7,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 7,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-004-s01",
+          "status": "verified",
+          "ko_text": "돌봄의 맥락에서 일어나는 사별에 관해 문헌에서는 세 가지 주요 관점이 등장했다(개관은 Schulz, Boerner & Hebert, 2008 참조).",
+          "source_text": "Three major lines of thought have emerged in the literature (see Schulz, Boerner & Hebert, 2008 for a review) regarding bereavement in the context of caregiving."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-004-s02",
+          "status": "verified",
+          "ko_text": "누적 스트레스 관점, 즉 ‘마모’ 가설은 돌봄 스트레스와 죽음이 결합해 사람들의 대처 자원을 고갈시키고 상실 후 더 큰 적응 어려움을 초래한다고 주장한다.",
+          "source_text": "The cumulative stress perspective, or ‘wear and tear’ hypothesis, argues that the combined effects of the stress of caregiving and the death deplete people’s coping resources and result in greater adjustment difficulties following the loss."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-004-s03",
+          "status": "verified",
+          "ko_text": "스트레스 감소 관점은 정반대로 예측한다. 죽음은 돌봄 스트레스 요인과 죽어 가는 사람의 고통을 끝내므로 안도감을 가져오며, 따라서 돌봄제공자가 아닌 사람에게서 나타나는 것보다 더 긍정적인 사별 결과를 낳는다는 것이다.",
+          "source_text": "The stress reduction perspective makes the opposite prediction, arguing that the death brings relief because it puts an end to caregiving stressors and the suffering of the person who is dying, and so results in more positive bereavement outcomes than found among non-caregivers."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-004-s04",
+          "status": "verified",
+          "ko_text": "마지막으로, 돌봄제공자는 어느 정도 사별을 예상하기 때문에 적어도 일정 수준의 예기적 처리와 준비가 가능하고, 이것이 죽음 이후 당사자에게 도움이 될 수 있다는 견해가 제시되었다.",
+          "source_text": "Finally, it has been suggested that caregivers more or less expect to be bereaved, which in turn allows at least some degree of anticipatory processing and preparation that may benefit the person after the death."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-005",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-005-s01",
+          "status": "verified",
+          "ko_text": "세 관점을 모두 고려하면 소진, 안도, 예기의 효과가 결합된 모습이 나타나는 듯하다.",
+          "source_text": "When all three perspectives are considered, the emerging picture seems to be a combination of depletion, relief and anticipation effects."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-005-s02",
+          "status": "verified",
+          "ko_text": "예를 들어 죽음이 일어난 뒤 돌봄제공자는 극도로 지쳐 있을 수 있다. 동시에 사랑하는 사람이 더는 고통받지 않아도 되고 돌봄 역할이 주던 막대한 부담이 끝났다는 점에서 안도할 수도 있다. 또한 임박한 죽음과 그 뒤 자신의 삶을 생각해 볼 기회, 가능하다면 사랑하는 사람과 이러한 주제에 관해 대화할 기회, 그리고 죽음과 관련된 몇 가지 현실적 필요 사항(예: 재정 계획, 장례 준비)을 처리할 기회를 가졌을 수도 있다.",
+          "source_text": "For example, once the death occurs the caregiver may feel extremely exhausted, but at the same time relieved that his or her loved one no longer has to suffer and that the immense strain of the caregiving role has ended, and also may have had a chance to think about the impending death and their life afterwards, possibly have a conversation with the loved one about these topics, and take care of some pragmatic necessities related to the death (eg. financial planning, funeral arrangements)."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-006",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 9,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 9,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-006-s01",
+          "status": "verified",
+          "ko_text": "현재까지 나온 연구의 대부분은 돌봄제공자 대다수가 자원 고갈보다는 어느 정도의 스트레스 완화 및/또는 예기의 이점을 경험하거나, 적어도 전자가 후자보다 더 크다는 점을 보여 준다.",
+          "source_text": "The bulk of research studies to date indicate that most caregivers experience some sort of stress relief and/or benefit of anticipation rather than a depletion of their resources, or at least that the first outweighs the latter."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-006-s02",
+          "status": "verified",
+          "ko_text": "실제로 많은 사람의 우울 및 애도 증상은 죽음 이후 빠르게 감소하여 사망 후 1년 이내에 거의 정상 수준으로 돌아온다(Schulz et al, 2003).",
+          "source_text": "In fact, for many the symptoms of depression and grief decline rapidly after the death and return to near normal levels within a year of the death (Schulz et al, 2003)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-006-s03",
+          "status": "verified",
+          "ko_text": "그러나 사별한 돌봄제공자 대부분의 예후가 대체로 긍정적임에도, 약 10−20%에 이르는 적지 않은 소수는 죽음 이후에도 높은 수준의 스트레스와 정신과적 문제를 계속 경험한다(Hensley, 2006).",
+          "source_text": "However, despite the generally positive prognosis for most bereaved caregivers, a sizable minority, approximately 10−20%, continues to experience high levels of stress and psychiatric problems after death (Hensley, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-006-s04",
+          "status": "verified",
+          "ko_text": "치매 환자를 돌보는 사람을 대상으로 한 우리 연구에서는 돌봄제공자의 30%가 사망 1년 뒤 임상적 우울 위험에 있었고, 20%는 복합성 애도를 경험했다(Schulz et al, 2006).",
+          "source_text": "In our own work with caregivers of people with dementia, we found that 30% of caregivers were at risk for clinical depression one year post-death, and 20% experienced complicated grief (Schulz et al, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-006-s05",
+          "status": "verified",
+          "ko_text": "따라서 위 세 관점은 각각 특정 돌봄제공자 하위집단에 대해서는 사실일 수 있다.",
+          "source_text": "Therefore, each of the three perspectives above may be true for specific subsets of caregivers."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-006-s06",
+          "status": "verified",
+          "ko_text": "중요한 과제는 특정 돌봄제공자가 어느 하위집단에 속하는지 식별하는 것이다.",
+          "source_text": "The key is to identify which subset a particular caregiver is in."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-007",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-007-s01",
+          "status": "verified",
+          "ko_text": "지속성 애도장애라고도 불리는 복합성 애도(Prigerson, Vanderwerker & Maciejewski, 2008)는 사망한 사람을 강렬하게 그리워하고 갈망하는 상태, 고인의 부재에 관한 침투적이고 고통스러운 생각이 반복되어 집중하거나 급성 애도 상태를 벗어나기 어려운 상태, 다른 대인관계를 형성하고 잠재적으로 보람 있는 활동에 참여하지 못하는 상태를 특징으로 하는 애도의 한 형태이다.",
+          "source_text": "Complicated grief, also referred to as prolonged grief disorder (Prigerson, Vanderwerker & Maciejewski, 2008), is a form of grief characterised by an intense longing and yearning for the person who has died, recurrent intrusive and distressing thoughts about their absence that make it difficult to concentrate and to move beyond an acute state of mourning, and inability to form other interpersonal relationships and engage in potentially rewarding activities."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-007-s02",
+          "status": "verified",
+          "ko_text": "복합성 애도장애(또는 지속성 애도장애)의 공식 진단기준은 *정신질환 진단 및 통계 편람*(DSM-V)에 포함할 수 있도록 제안되었다(Prigerson et al, 1997; Prigerson, Vanderwerker & Maciejewski, 2008).",
+          "source_text": "Formal diagnostic criteria for complicated grief disorder (or prolonged grief disorder) have been proposed for inclusion in the Diagnostic and Statistical Manual of Mental Disorders (DSM-V) (Prigerson et al, 1997; Prigerson, Vanderwerker & Maciejewski, 2008)."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-008",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-008-s01",
+          "status": "verified",
+          "ko_text": "이 기준에 따르면 복합성 애도장애로 진단하려면 사별한 사람이 고인을 향한 지속적이고 일상생활을 방해하는 애타는 그리움과 갈망을 겪어야 하며, 다음 여덟 증상 가운데 네 가지를 적어도 하루에 여러 번 및/또는 심각한 고통을 느낄 정도로 경험해야 한다.",
+          "source_text": "Under these criteria, a diagnosis of complicated grief disorder requires that the bereaved person must have persistent and disruptive yearning, pining and longing for the deceased, and must experience four of the following eight symptoms at least several times a day and/or to a severely distressing degree:"
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-009",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 13,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 13,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-009-s01",
+          "status": "verified",
+          "ko_text": "1. 죽음을 받아들이기 어려움 2. 죽음 이후 다른 사람을 신뢰하지 못함 3. 죽음과 관련된 지나친 원망 4. 앞으로 나아가는 것에 불편함을 느낌 5. 이전에 가까웠던 사람들과 정서적으로 단절됨 6. 고인 없이 사는 삶이 무의미하다고 느낌 7. 고인 없이는 미래에 충족감을 얻을 가능성이 없다고 느낌 8. 죽음 이후 초조함을 느낌",
+          "source_text": "1. trouble accepting the death 2. inability to trust others since the death 3. excessive bitterness related to the death 4. feeling uneasy about moving on 5. detachment from formerly close others 6. feeling that life is meaningless without the deceased 7. feeling that the future holds no prospect for fulfillment without the deceased, and 8. feeling agitated since the death."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-010",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-010-s01",
+          "status": "verified",
+          "ko_text": "마지막으로 고통 증상이 적어도 6개월 동안 지속되고, 중요한 삶의 영역에서 개인의 기능을 현저하게 손상해야 한다.",
+          "source_text": "Finally, symptoms of distress must endure for at least six months and significantly impair a person’s functioning in important life domains."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-010-s02",
+          "status": "verified",
+          "ko_text": "복합성 애도는 흔히 주요우울장애, 외상후스트레스장애(PTSD) 같은 다른 장애와 함께 나타나며 자살성 및 자기파괴적 행동과 관련된다(Zhang, El-Jawahri & Prigerson, 2006). 그러나 다른 정신건강 문제에 사용하는 것과는 다른 치료전략이 필요한 별개의 장애로 여겨진다(아래 참조).",
+          "source_text": "Complicated grief often co-occurs with other disorders such as major depression and post-traumatic stress disorder (PTSD) and is associated with suicidality and self-destructive behaviours (Zhang, El-Jawahri & Prigerson, 2006), but is regarded as a distinct disorder requiring different treatment strategies from those used with other mental health problems (see below)."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-011",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 16,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 16,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-011-s01",
+          "status": "verified",
+          "ko_text": "사별 연구에서는 일반적으로 죽음 전에 우울과 불안 같은 정신적 고통을 겪은 사람이 상실이 일어난 뒤에도 적응 곤란을 겪을 위험이 있음을 발견한다.",
+          "source_text": "Bereavement studies typically find that those who experience mental distress such as depression and anxiety before the death are also at risk of adjustment difficulties once this loss occurs."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-011-s02",
+          "status": "verified",
+          "ko_text": "이와 관련하여 높은 수준의 돌봄 부담, 탈진과 과부하를 느끼는 것, 지원 부족이 부정적인 사별 결과와 관련된다는 발견도 있다(Gross, 2007; Hebert, Dang & Schulz, 2006).",
+          "source_text": "A related finding is that high levels of caregiving burden, feeling exhausted and overloaded, and lack of support, are associated with negative bereavement outcomes (Gross, 2007; Hebert, Dang & Schulz, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-011-s03",
+          "status": "verified",
+          "ko_text": "사회계층 같은 다른 개인 특성도 역할을 한다. 소득이 낮고 학력이 낮은 사람은 죽음 뒤 복합성 애도를 보일 가능성이 더 높다(Schulz et al, 2006).",
+          "source_text": "Other personal characteristics such as social class also play a role: people with lower income and few educational qualifications are more likely to exhibit complicated grief after a death (Schulz et al, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-011-s04",
+          "status": "verified",
+          "ko_text": "이는 아마 이 집단이 대체로 자원이 부족한 상태에서 돌봄의 어려움까지 이미 부담이 큰 삶의 상황에 더해지기 때문일 것이다.",
+          "source_text": "This probably reflects a more general lack of resources in this group, with the challenges of caregiving adding to an already strained life situation."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-012",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 17,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 17,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-012-s01",
+          "status": "verified",
+          "ko_text": "그러나 치매 환자의 돌봄제공자를 대상으로 한 우리 연구에서는 임상적 수준의 복합성 애도를 겪는 돌봄제공자에 어려운 돌봄 상황에 있던 사람(예: 인지손상이 더 심한 사람을 돌본 경우)뿐 아니라 돌봄 경험의 매우 긍정적인 특징을 보고한 일부 사람도 포함되어 있었다(Schulz et al, 2006).",
+          "source_text": "However, in our own work with caregivers of people with dementia, we found that the caregivers with clinical levels of complicated grief included not only those who were in difficult caregiving situations (eg. caring for a more cognitively impaired person), but also some who reported very positive features of the caregiving experience (Schulz et al, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-012-s02",
+          "status": "verified",
+          "ko_text": "이 흥미로운 발견은 우선 돌봄의 긍정적 측면과 부정적 측면이 공존할 수 있으며, 일부 긍정적인 돌봄 경험 역시 사별 곤란의 위험에 사람을 놓이게 할 수 있음을 시사한다.",
+          "source_text": "This intriguing finding suggests first of all that positive and negative aspects of caregiving can co-exist, and that some positive caregiving experiences can also put a person at risk of bereavement difficulties."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-012-s03",
+          "status": "verified",
+          "ko_text": "이는 서로 관련된 두 요인에서 비롯될 수 있다. 사랑하는 사람을 잃으면서 이들이 의미 있고 중요한 역할을 상실하기 때문일 수 있다. 또한 돌봄에 대한 긍정적 관점이 돌봄제공자와 돌봄을 받은 사람 사이 관계의 성격을 반영할 수도 있다. 돌봄을 받은 사람이 돌봄제공자 삶의 중심이었을 수 있어, 그만큼 더 깊이 애도했을 수도 있다는 것이다.",
+          "source_text": "This may be the result of two related factors: it could be that losing their loved one deprives these individuals of a meaningful and important role; it could also be that the positive view of caregiving may be a reflection of the nature of the relationship between the caregiver and the person they cared for, who might have been the centre of the caregiver’s life and so all the more deeply mourned."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-013",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 18,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 18,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-013-s01",
+          "status": "verified",
+          "ko_text": "사람이 상실에 대처하는 방식에 영향을 주는 돌봄 상황의 또 다른 측면은 죽음에 대한 준비도이다.",
+          "source_text": "Another aspect of the caregiving situation that affects how people cope with loss is preparedness for the death."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-013-s02",
+          "status": "verified",
+          "ko_text": "이 문제에 관한 연구는 아직 초기 단계에 있지만, 많은 사별 돌봄제공자가 흔히 수년간 고강도 돌봄을 제공했음에도 죽음에 준비되지 않았다고 말한다는 점은 분명해 보인다(Hebert, Dang & Schulz, 2006).",
+          "source_text": "Although the research on this issue is only in the early stages, it seems clear that, despite providing high intensity care, often for years, many bereaved caregivers say they feel unprepared for the death (Hebert, Dang & Schulz, 2006)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-013-s03",
+          "status": "verified",
+          "ko_text": "또한 이들은 일반적으로 우울, 불안, 복합성 애도 증상을 더 많이 보고한다는 근거도 있다.",
+          "source_text": "There is also evidence that they typically report more depression, anxiety and complicated grief symptoms."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-014",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 19,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 19,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-014-s01",
+          "status": "verified",
+          "ko_text": "그러나 준비되었다는 것이 무엇을 뜻하는지 더 잘 이해할 필요가 있다.",
+          "source_text": "However, we need a better understanding of what it means to be prepared."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-014-s02",
+          "status": "verified",
+          "ko_text": "Hebert와 동료들은 돌봄제공자들과 수행한 일련의 초점집단에 근거하여 준비도에 정서적 요소(예: 죽음의 가능성을 평온하게 받아들이는 것), 현실적 요소(예: 장례 절차를 계획해 두는 것), 정보적 요소(예: 생애말기의 의학적 측면)가 있다고 제안했다(Hebert et al, 2009).",
+          "source_text": "Based on a series of focus groups with caregivers, Hebert and colleagues proposed that preparedness has emotional (eg. being at peace with the prospect of death), pragmatic (eg. having funeral arrangements planned), and informational (eg. medical aspects of end-of-life) components (Hebert et al, 2009)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-014-s03",
+          "status": "verified",
+          "ko_text": "이 연구는 또한 예를 들어 한 사람이 정보적·현실적 요소에는 준비되었다고 느끼면서도 정서적으로는 전혀 준비되지 않았다고 느낄 수 있음을 보여 주었다.",
+          "source_text": "This study also showed that, for example, a person could feel prepared about the informational and pragmatic components, but yet feel entirely unprepared emotionally."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-014-s04",
+          "status": "verified",
+          "ko_text": "이 연구를 종합하면 죽음이 비교적 확실하더라도 죽음과 그 뒤에 이어질 일을 반드시 준비하게 되는 것은 아니며, 전문가가 상실 전후에 돌봄제공자를 만날 때 이를 다루는 것이 중요할 수 있음을 시사한다.",
+          "source_text": "Overall, this work suggests that even the relative certainty of death does not necessarily translate into being prepared for it and what lies ahead, and that this might be an important area for professionals to address in their encounters with caregivers, before and after the loss."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-015",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-015-s01",
+          "status": "verified",
+          "ko_text": "사별한 사람과 함께 일하는 이들은 위에서 논의한 연구로부터 무엇을 배울 수 있는가?",
+          "source_text": "What can those who work with the bereaved learn from the research discussed above?"
+        },
+        {
+          "id": "boerner-schulz-2009-tr-015-s02",
+          "status": "verified",
+          "ko_text": "무엇보다도 돌봄 경험이 사랑하는 사람의 죽음에 돌봄제공자가 적응하는 방식에서 중요한 역할을 한다는 점을 인식하고, 돌봄제공자가 자신의 경험을 말할 수 있게 하는 것이 도움이 될 가능성이 크다는 점을 이해해야 한다.",
+          "source_text": "First and foremost, it is important to recognise that the experience of caregiving plays a significant role in how caregivers adjust to the death of their loved one, and that enabling caregivers to talk about their experience is likely to be helpful."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-015-s03",
+          "status": "verified",
+          "ko_text": "이 문제를 다루는 것은 죽음 전후 모두에 유익할 수 있다.",
+          "source_text": "Addressing this can be beneficial both before and after the death."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-015-s04",
+          "status": "verified",
+          "ko_text": "사랑하는 사람의 생애말기에 돌봄제공자와 관계를 맺는 전문가는 상실 전에 돌봄제공자의 부담과 고통을 줄이려는 노력이 이후에도 유익할 수 있음을 알아야 한다.",
+          "source_text": "Professionals who are involved with caregivers towards the end of their loved one’s life need to be aware that efforts to help reduce caregiver burden and distress prior to the loss may prove beneficial later."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-015-s05",
+          "status": "verified",
+          "ko_text": "치매 돌봄제공자의 부담과 고통을 줄이도록 설계한 심리사회적·행동적 중재의 무작위배정 시험은 사랑하는 사람의 사망 뒤 복합성 애도를 예방하는 추가 이점도 보였다(Schulz et al, 2006).",
+          "source_text": "Our randomized trial of psychosocial−behavioural interventions designed to decrease burden and distress in dementia caregivers had the added benefit of preventing complicated grief after the death of their loved one (Schulz et al, 2006)."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-016",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 22,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 22,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-016-s01",
+          "status": "verified",
+          "ko_text": "상실 전후에 부정적인 사별 결과의 위험이 있는 사람을 식별하는 것도 중요하다.",
+          "source_text": "Identifying individuals at risk of negative bereavement outcomes, either before or after the loss, is also important."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-016-s02",
+          "status": "verified",
+          "ko_text": "이때 돌봄의 스트레스 측면만 위험요인이 아니며, 자신의 경험을 긍정적으로 설명하는 일부 돌봄제공자도 이후 어려움에 처할 위험이 있음을 유념해야 한다.",
+          "source_text": "Here it is necessary to keep in mind that the stressful aspects of caregiving are not the only risk factors and that some caregivers who describe their experiences in a positive way can also be at risk of subsequent difficulties."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-016-s03",
+          "status": "verified",
+          "ko_text": "돌봄 역할이 그 사람의 정체성을 규정하는 삶의 목적이거나 주요 의미 원천이었을 때, 그리고 고인과의 관계가 그 사람 삶의 중심이었을 때 그럴 가능성이 가장 크다.",
+          "source_text": "This is most likely to be the case when the caregiving role was their defining purpose or main source of meaning in life, and when their relationship with the deceased was central to their life."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-016-s04",
+          "status": "verified",
+          "ko_text": "이러한 상황에서 전문가는 당사자가 이 문제를 알아차리도록 돕고, 새로운 목표와 의미의 원천을 정립하거나 발전시키는 일을 함께할 수 있다.",
+          "source_text": "In this scenario, the professional could help the person identify this issue and possibly work with them on defining or developing new goals and sources of meaning."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-017",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-017-s01",
+          "status": "verified",
+          "ko_text": "다루어야 할 또 다른 영역은 돌봄제공자가 죽음과 그 뒤 자신의 삶을 준비하는 일이다.",
+          "source_text": "Another area to address is the caregiver’s preparation for the death and their own life afterwards."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-017-s02",
+          "status": "verified",
+          "ko_text": "이 맥락에서는 사람이 상실의 일부 측면에는 준비되었다고 느끼지만 모든 측면에 준비된 것은 아닐 수 있음(예: 정서적으로는 준비되었지만 현실적으로는 준비되지 않은 경우와 그 반대)을 인식하고, 적절한 경우 당사자가 문제를 정리하도록 돕는 것이 중요하다.",
+          "source_text": "In this context, it is important to be aware that people can feel prepared for some aspects of the loss but not all of them (eg. feeling prepared emotionally but not practically, and vice versa), and to help the person sort out any problems, as appropriate."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-018",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 24,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 24,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-018-s01",
+          "status": "verified",
+          "ko_text": "돌봄과 생애말기 단계의 경험에 관해 도움이 되는 대화는 상실 전후 모두에 이루어질 수 있다.",
+          "source_text": "Helpful conversations about the caregiving and end-of-life phase experience can occur both before and after the loss."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-018-s02",
+          "status": "verified",
+          "ko_text": "대화를 시작하기 좋은 질문에는 돌봄이 얼마나 스트레스가 큰지 또는 컸는지, 가족과 친구에게서 얼마나 많은 지원을 받을 수 있는지 또는 있었는지, 당사자가 얼마나 우울하고 불안하다고 느끼는지 또는 느꼈는지, 돌봄 상황에 긍정적인 측면도 있었는지, 그리고 돌봄이 당사자의 삶 전체에 어떤 영향을 미치는지 묻는 것이 포함된다.",
+          "source_text": "Good openers include questions about how stressful the caregiving is/was, how much support is/was available from family and friends, how depressed and anxious does/did the person feel, were there some positive aspects of the caregiving situation, and generally asking about the impact of caregiving on the person’s life."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-019",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-019-s01",
+          "status": "verified",
+          "ko_text": "이러한 질문에 대한 답에 근거하여 전문가는 돌봄제공자의 부담을 줄이기 위한 호스피스 돌봄, 우울과 불안에 대한 행동적·약물적 치료, 돌봄과 사별 경험에 관련된 삶의 목적 및 정서적 문제를 다루기 위한 성직자나 다른 상담가에게의 의뢰와 같은 다른 지원 또는 치료 선택지를 권할 수 있다.",
+          "source_text": "Based on responses to these questions, professionals may consider recommending other support or treatment options such as hospice care to reduce caregiver burden, behavioural and pharmacological treatment of depression and anxiety, and referral to clergy or other counsellors to address life purpose and emotional issues related to the person’s caregiving and bereavement experiences."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-019-s02",
+          "status": "verified",
+          "ko_text": "더 심각한 고통을 겪는 것으로 보이는 사별자에게는 복합성 애도를 진단할 수 있는 임상가에게 의뢰하는 것이 적절할 수 있다.",
+          "source_text": "For bereaved individuals who seem more severely distressed, referral to a clinician who can diagnose complicated grief may be indicated."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-019-s03",
+          "status": "verified",
+          "ko_text": "복합성 애도를 치료하도록 특별히 설계한 치료전략이 가장 효과적인 것으로 나타났다(Shear et al, 2005).",
+          "source_text": "Treatment strategies specifically designed to treat complicated grief have been shown to be most effective (Shear et al, 2005)."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-019-s04",
+          "status": "verified",
+          "ko_text": "효과적인 치료의 구성요소에는 죽음에 관한 이야기를 반복해서 다시 말하기, 고인과 상상 속 대화를 나누기, 회피해 온 상황에 맞서는 작업이 포함된다.",
+          "source_text": "Components of effective treatment include repeated retelling of the story of the death, having an imaginary conversation with the deceased, and work on confronting avoided situations."
+        },
+        {
+          "id": "boerner-schulz-2009-tr-019-s05",
+          "status": "verified",
+          "ko_text": "Shear와 동료들은 우울 치료에 사용하는 표준 대인관계치료 접근보다 이러한 상실 초점 인지행동치료 기법을 사용했을 때 복합성 애도 환자의 호전 비율이 더 높고 호전 속도도 더 빠르다는 사실을 발견했다.",
+          "source_text": "Shear and colleagues found higher and faster rates of improvement among people with complicated grief using these loss-focused, cognitive-behaviour therapy techniques compared with a standard interpersonal therapy approach used to treat depression."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-020",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-020-s01",
+          "status": "verified",
+          "ko_text": "Gross J (2007). Study finds higher outlays for caregivers of older relatives. New York Times, 19 November, A18.",
+          "source_text": "Gross J (2007). Study finds higher outlays for caregivers of older relatives. New York Times, 19 November, A18."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-021",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-021-s01",
+          "status": "verified",
+          "ko_text": "Hebert RS, Dang Q, Schulz R (2006). Preparedness for the death of a loved one and mental health in bereaved caregivers of patients with dementia: findings from the REACH study. Journal of Palliative Medicine 9(3) 683−693.",
+          "source_text": "Hebert RS, Dang Q, Schulz R (2006). Preparedness for the death of a loved one and mental health in bereaved caregivers of patients with dementia: findings from the REACH study. Journal of Palliative Medicine 9(3) 683−693."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-022",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-022-s01",
+          "status": "verified",
+          "ko_text": "Hebert RS, Schulz R, Copeland VC, Arnold RM. (2009). Preparing family caregivers for death and bereavement: insights from caregivers of terminally ill patients. Journal of Pain Symptom Management 37(1) 3−12.",
+          "source_text": "Hebert RS, Schulz R, Copeland VC, Arnold RM. (2009). Preparing family caregivers for death and bereavement: insights from caregivers of terminally ill patients. Journal of Pain Symptom Management 37(1) 3−12."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-023",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 30,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 30,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-023-s01",
+          "status": "verified",
+          "ko_text": "Hensley PL (2006). Treatment of bereavement-related depression and traumatic grief. Journal of Affective Disorder 92(1) 117−124.",
+          "source_text": "Hensley PL (2006). Treatment of bereavement-related depression and traumatic grief. Journal of Affective Disorder 92(1) 117−124."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-024",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-024-s01",
+          "status": "verified",
+          "ko_text": "Prigerson HG, Bierhals AJ, Kasl SV, Reynolds CF 3rd, Shear MK, Day N, Beery LC, Newsom JT, Jacobs S (1997). Traumatic grief as a risk factor for mental and physical morbidity. American Journal of Psychiatry 154(5) 616−623.",
+          "source_text": "Prigerson HG, Bierhals AJ, Kasl SV, Reynolds CF 3rd, Shear MK, Day N, Beery LC, Newsom JT, Jacobs S (1997). Traumatic grief as a risk factor for mental and physical morbidity. American Journal of Psychiatry 154(5) 616−623."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-025",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 32,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 32,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-025-s01",
+          "status": "verified",
+          "ko_text": "Prigerson HG, Vanderwerker LC, Maciejewski PK (2008). A case for including Prolonged Grief Disorder in DSM-V. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: advances in theory and intervention. Washington, DC: American Psychological Association, 165−186.",
+          "source_text": "Prigerson HG, Vanderwerker LC, Maciejewski PK (2008). A case for including Prolonged Grief Disorder in DSM-V. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: advances in theory and intervention. Washington, DC: American Psychological Association, 165−186."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-026",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 33,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 33,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-026-s01",
+          "status": "verified",
+          "ko_text": "Schulz R, Boerner K, Hebert RS (2008). Caregiving and bereavement. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: 21st century perspectives. Washington, DC: American Psychological Association Press, 265−285.",
+          "source_text": "Schulz R, Boerner K, Hebert RS (2008). Caregiving and bereavement. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: 21st century perspectives. Washington, DC: American Psychological Association Press, 265−285."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-027",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 34,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 34,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-027-s01",
+          "status": "verified",
+          "ko_text": "Schulz R, Boerner K, Shear K, Zhang S, Gitlin LN (2006). Predictors of complicated grief among dementia caregivers: a prospective study of bereavement. American Journal of Geriatric Psychiatry 14(8) 650−658.",
+          "source_text": "Schulz R, Boerner K, Shear K, Zhang S, Gitlin LN (2006). Predictors of complicated grief among dementia caregivers: a prospective study of bereavement. American Journal of Geriatric Psychiatry 14(8) 650−658."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-028",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 35,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 35,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-028-s01",
+          "status": "verified",
+          "ko_text": "Schulz R, Mendelsohn AB, Haley WE, Mahoney D, Allen RS, Zhang S, Thompson L, Belle SH (2003). Resources for enhancing Alzheimer's caregiver health investigators: end-of-life care and the effects of bereavement on family caregivers of persons with dementia. New England Journal of Medicine 349(20) 1936−1942.",
+          "source_text": "Schulz R, Mendelsohn AB, Haley WE, Mahoney D, Allen RS, Zhang S, Thompson L, Belle SH (2003). Resources for enhancing Alzheimer's caregiver health investigators: end-of-life care and the effects of bereavement on family caregivers of persons with dementia. New England Journal of Medicine 349(20) 1936−1942."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-029",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 36,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 36,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-029-s01",
+          "status": "verified",
+          "ko_text": "Shear K, Frank E, Houck PR, Reynolds CF 3rd (2005). Treatment of complicated grief: a randomized controlled trial. Journal of the American Medical Association 293 2601−2608.",
+          "source_text": "Shear K, Frank E, Houck PR, Reynolds CF 3rd (2005). Treatment of complicated grief: a randomized controlled trial. Journal of the American Medical Association 293 2601−2608."
+        }
+      ]
+    },
+    {
+      "id": "boerner-schulz-2009-tr-030",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 37,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 37,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "boerner-schulz-2009-tr-030-s01",
+          "status": "verified",
+          "ko_text": "Zhang B, El-Jawahri A, Prigerson HG (2006). Update on bereavement research: evidence-based guidelines for the diagnosis and treatment of complicated bereavement. Palliative Medicine 9(5) 1188−1203.",
+          "source_text": "Zhang B, El-Jawahri A, Prigerson HG (2006). Update on bereavement research: evidence-based guidelines for the diagnosis and treatment of complicated bereavement. Palliative Medicine 9(5) 1188−1203."
+        }
+      ]
+    }
+  ],
+  "sentence_alignment_version": 1,
+  "sentence_alignment_status": "verified",
+  "sentence_alignment_note": "All 73 sentence pairs were checked against the complete bilingual blocks for meaning, order, omissions, citations, numbers, diagnostic thresholds, risk qualifications, treatment claims, and source fidelity. Sentence-boundary mismatch blocks were regrouped manually; all 11 references remain verbatim."
+}

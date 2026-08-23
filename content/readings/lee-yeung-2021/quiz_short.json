@@ -1,0 +1,127 @@
+{
+  "title": "Lee & Yeung (2021) 단답형 퀴즈",
+  "instructions": "정확한 수치나 용어를 짧게 쓰세요. 허용정답은 모두 7단어 이하입니다.",
+  "question_set_type": "단답형 퀴즈",
+  "items": [
+    {
+      "question": "한국의 국민연금제도가 처음 시작된 연도는?",
+      "accepted_answers": ["1988년", "1988"],
+      "answer_type": "number",
+      "explanation": "국민연금은 1988년에 근로자 10명 초과 사업체의 근로자를 포괄하며 시작됐다.",
+      "evidence_segment_id": "CONTEXT-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "논문이 인용한 당시 65세 이상 인구의 국민연금 수급 비율은?",
+      "accepted_answers": ["약 37.6%", "37.6%"],
+      "answer_type": "number",
+      "explanation": "수급자 비율은 약 37.6%였고 연금액은 최저생계비의 약 51%였다.",
+      "evidence_segment_id": "CONTEXT-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "한국 노년층 소득에서 근로소득이 차지한 비중은?",
+      "accepted_answers": ["60% 초과"],
+      "answer_type": "short_phrase",
+      "explanation": "근로소득은 60% 초과였고 저축 21%, 공적연금·사회보장 16%와 대비됐다.",
+      "evidence_segment_id": "CONTEXT-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "생애 유급노동 경험이 없어 분석에서 제외된 사람 수는?",
+      "accepted_answers": ["1,295명", "1295명", "1,295"],
+      "answer_type": "number",
+      "explanation": "이 제외는 분석표본이 특히 여성 중 일 지향성이 강한 사람을 과대대표할 가능성을 남긴다.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "노동시장 상태 결측 기준으로 제외된 응답자의 비율은?",
+      "accepted_answers": ["14.3%"],
+      "answer_type": "number",
+      "explanation": "여섯 차수 중 최소 세 차수의 노동시장 상태 정보가 없는 응답자 14.3%를 제외했다.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "최종 표본이 제공한 총 관측량을 인년으로 쓰면?",
+      "accepted_answers": ["26,520인년", "26520인년", "26,520"],
+      "answer_type": "number",
+      "explanation": "최종 분석표본의 반복 관측을 합하면 총 26,520인년이었다.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "상태변화 위험집단 중 여러 차례 전환한 비율은?",
+      "accepted_answers": ["약 27%", "27%"],
+      "answer_type": "number",
+      "explanation": "이 값은 상태변화 위험에 놓인 개인을 분모로 하며 전체 표본의 계속 취업 비율과 다르다.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "모형에서 반복 이동이 가능한 노동시장 상태는 모두 몇 개인가요?",
+      "accepted_answers": ["2개", "두 개", "2"],
+      "answer_type": "number",
+      "explanation": "비흡수상태는 노동시장 참여와 비취업·은퇴의 두 상태다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "생애 대부분의 고용부문은 몇 범주로 나뉘었나요?",
+      "accepted_answers": ["5개", "다섯 개", "5"],
+      "answer_type": "number",
+      "explanation": "전문직, 비육체노동직, 숙련 육체노동직, 농업직, 비숙련 육체노동직으로 범주화했다.",
+      "evidence_segment_id": "EXPLANATORY-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "배우자가 없는 응답자 중 사별한 사람의 비율은?",
+      "accepted_answers": ["83.9%", "약 83.9%"],
+      "answer_type": "number",
+      "explanation": "배우자 없는 범주에서 이혼은 약 12%, 사별은 83.9%였다.",
+      "evidence_segment_id": "EXPLANATORY-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "편포된 상향이전액에 적용한 변환은?",
+      "accepted_answers": ["로그변환", "로그 변환"],
+      "answer_type": "term",
+      "explanation": "로그값을 포함한 모형의 적합도가 더 좋아 여성과 남성 모두 같은 변환을 적용했다.",
+      "evidence_segment_id": "EXPLANATORY-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "여성 진입식과 이탈식 무작위효과 사이의 상관계수는?",
+      "accepted_answers": ["0.49", ".49"],
+      "answer_type": "number",
+      "explanation": "세 여성 모형 모두 무작위효과 상관은 `ρ=.49`였으며 관측 전환율을 뜻하지 않는다.",
+      "evidence_segment_id": "RESULTS-WOMEN-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "무배우 여성의 이탈 오즈는 준거집단보다 얼마나 낮았나요?",
+      "accepted_answers": ["약 39%", "39%"],
+      "answer_type": "number",
+      "explanation": "배우자가 없는 여성은 은퇴한 배우자가 있는 여성보다 노동시장 이탈 오즈가 약 39% 낮았다.",
+      "evidence_segment_id": "RESULTS-WOMEN-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "남성 농업직의 이탈 오즈비를 비육체노동직과 비교한 값은?",
+      "accepted_answers": ["0.68", ".68"],
+      "answer_type": "number",
+      "explanation": "농업직 남성의 지수화 계수는 `e^(−0.39)=0.68`로 이탈이 덜 흔했다.",
+      "evidence_segment_id": "RESULTS-MEN-001",
+      "source": "Lee & Yeung (2021)"
+    },
+    {
+      "question": "취업 배우자가 있는 기혼 남성의 이탈 오즈 감소폭은?",
+      "accepted_answers": ["약 22%", "22%"],
+      "answer_type": "number",
+      "explanation": "비취업 배우자가 있는 기혼 남성과 비교할 때 이탈 오즈가 약 22% 낮았다.",
+      "evidence_segment_id": "RESULTS-MEN-001",
+      "source": "Lee & Yeung (2021)"
+    }
+  ]
+}

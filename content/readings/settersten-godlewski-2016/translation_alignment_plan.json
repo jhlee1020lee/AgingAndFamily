@@ -1,0 +1,12 @@
+{
+  "entry_id_prefix": "settersten",
+  "source_splits": [
+    {
+      "source_flat_index": 29,
+      "source_text_starts": [
+        "We have described two major strands of concepts and theories of age.",
+        "In these cases, there is more theoretical treatment as to why and how age matters"
+      ]
+    }
+  ]
+}

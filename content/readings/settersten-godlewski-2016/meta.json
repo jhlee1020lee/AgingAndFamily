@@ -46,10 +46,6 @@
     "review-sheet",
     "professor-prep"
   ],
-  "landing_video_policy": "optional",
-  "notebooklm_video_url": null,
-  "notebooklm_video_note": null,
-  "notebooklm_video_poster": null,
   "content_status": {
     "full": "approved",
     "translation": "approved",
@@ -61,53 +57,54 @@
     "quiz_ox": "approved",
     "quiz_short": "approved",
     "quiz_mcq": "approved",
-    "index": "schema_pass"
+    "index": "approved"
   },
   "manual_review": {
     "approved_pages": [
       "full",
-      "translation",
       "summary",
       "concepts",
       "pitfalls",
       "review-sheet",
       "professor-prep",
-      "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "translation",
+      "quiz-mcq",
+      "quiz-ox"
     ],
     "approved_page_hashes": {
       "full": "0f18510c7dbf74cbd8765ab6c9d866e246bccf30",
-      "translation": "962cbde08e005ac1261a1d60669b01d51543c7be",
       "summary": "4f0eef69845ddb1821631f080531883e2ff10506",
       "concepts": "aabded170ec012e9166e25b94d42f7dccea2a493",
       "pitfalls": "a6039ee7c5b77757d06d28afbfd9744e2971a87b",
       "review-sheet": "83c0ebe9a083b44c8cb30769271f22deb3307235",
       "professor-prep": "d45f7f075a1c792839ab70c186152f77157619d8",
-      "quiz-ox": "733f42d5cd4df7fe14fde5391327c03118254a06",
       "quiz-short": "fcc93eaf4e0ad31c844c21f01ddf9224786cccfd",
-      "quiz-mcq": "731c8748d594825ebd2f2102c0f777053abea7f8"
+      "translation": "592237a4accf70223dd9451b67d8baaf9e3516a9",
+      "quiz-mcq": "3f8109b1edf075c467abaad410d5e219b88b7c29",
+      "quiz-ox": "75e056ed6b35a55b42dd42381eac051f7161285d"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-08-22T02:08:30.663Z",
+    "reviewed_at": "2026-08-23T04:19:44.759Z",
     "notes": [
-      "생성된 문장별 원문, 채점 퀴즈, 교수 대비 탭과 근거를 재검수함."
+      "생성된 문장별 원문, 채점 퀴즈, 교수 대비 탭과 근거를 재검수함.",
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-22T02:08:41.392Z",
+    "updated_at": "2026-08-23T05:25:29.387Z",
     "require_built_artifacts": true,
     "landing": {
-      "status": "schema_pass",
+      "status": "approved",
       "errors": [],
-      "warnings": [
-        "missing optional notebooklm video"
-      ],
+      "warnings": [],
       "metrics": {
-        "has_video": false,
-        "policy": "optional",
-        "source": "missing"
+        "overview_hook_length": 61,
+        "classroom_point_raw_count": 5,
+        "classroom_point_count": 5
       }
     },
     "page_results": {
@@ -241,7 +238,19 @@
         "warnings": [],
         "metrics": {
           "item_count": 15,
-          "evidence_segment_count": 15
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 3,
+            "2": 3,
+            "3": 4,
+            "4": 5
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
         }
       }
     },
@@ -376,7 +385,19 @@
         "warnings": [],
         "metrics": {
           "item_count": 15,
-          "evidence_segment_count": 15
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 3,
+            "2": 3,
+            "3": 4,
+            "4": 5
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
         }
       }
     },

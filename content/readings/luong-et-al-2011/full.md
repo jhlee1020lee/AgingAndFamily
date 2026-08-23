@@ -1,0 +1,267 @@
+# Better with age: Social relationships across adulthood
+
+> Gloria Luong · Susan T. Charles · Karen L. Fingerman
+
+> *Journal of Social and Personal Relationships*, 28(1), 9–23 (2011). DOI: 10.1177/0265407510391362.
+
+> Affiliations: University of California, USA; Purdue University, USA.
+
+> Corresponding author: Gloria Luong, Department of Psychology and Social Behavior, 4201 Social & Behavioral Sciences Gateway, University of California–Irvine, Irvine, CA 92697-7085, USA. Email: Luongg@uci.edu.
+
+> © The Author(s) 2011. Reprints and permissions: sagepub.co.uk/journalsPermissions.nav.
+
+## Abstract
+
+Older adults typically report higher levels of satisfaction with their social relationships than younger adults. The present paper integrates current developmental research to explain why social relationships are generally more positive with age. We discuss actions by older adults that contribute to more positive social experiences. We also include social role changes that may provide advantages for older adults when navigating their relationships. Next, we turn to interactional processes between older adults with their social partners. We review literature indicating that: (a) older adults engage in strategies that optimize positive social experiences and minimize negative ones by avoiding conflicts, and (b) social partners often reciprocate by treating older adults more positively and with greater forgiveness than they do younger adults.
+
+## Keywords
+
+age differences, aging, elderly, social relationships
+
+Early studies of age differences in social processes found that successively older adults reported smaller social networks (Cumming & Henry, 1961). The reason for this decline seemed fairly obvious: in late life, people were likely to be widowed, to have friends who had died, and to live alone (e.g., Hobbs & Stoops, 2002; Macunovich, Easterlin, Schaeffer, & Crimmins, 1995). Scholars initially thought these reductions in social network size placed older adults at risk for loneliness and dissatisfaction with their social lives (van Tilburg, 1995).
+
+When researchers further studied social networks across the adult lifespan, however, results told a different story from one of decline (e.g., Carstensen, 1992). Social network size decreases with age, but the interactions older adults have with people in their remaining network are rated as more satisfying with age (Lansford, Sherman, & Antonucci, 1998). Older adults also report experiencing more positive emotions when interacting with their social partners than do younger adults (e.g., Charles & Piazza, 2007). Although losses of close network members occur, for many older adults the number of close confidants and amount of social support remains the same throughout later adulthood (see the review by Ertel, Glymour, & Berkman, 2009; Schnittker, 2007).
+
+In this paper, we first present evidence that older adults have better, rather than diminished, social relationships. We then discuss several pathways contributing to age-related benefits in social interactions. These pathways include actions by older adults as well as interactional processes between older adults and their social partners. We explain why, even when negative social exchanges occur, older adults and their social partners behave in ways to minimize the consequences of these exchanges on the quality of their relationship with one another. Finally, we point to the implications of these findings and future research directions in this field of study.
+
+## Social relationships get better with age
+
+Older adults report greater satisfaction and fewer negative experiences in their social interactions than do younger adults (e.g., Birditt & Fingerman, 2003). For example, older adults recall experiencing a greater intensity of positive emotions and less intense negative emotions with their close social partners than do younger adults (Charles & Piazza, 2007). Moreover, perceptions of social support grow more positive with age; as they grow older, adults report that they derive greater support from their close social ties (Field & Minkler, 1988; Schnittker, 2007). Age differences in reports of happiness and satisfaction with social relationships are consistent with these longitudinal findings (e.g., Charles & Piazza, 2007). Older adults report better-quality ties with their children, more positive marriages, closer friendships, and an overall greater proportion of positive versus problem-ridden relationships than do middle-aged or young adults (Fingerman, Hay, & Birditt, 2004; Rook, 1984, 2003).
+
+Similarly, reports of interpersonal conflicts decline with age. Older adults report fewer problematic and ambivalent relationships (i.e., relationships comprised of both positive and negative emotions and experiences) than do younger adults (Fingerman et al., 2004). In their daily life, older adults also report fewer interpersonal stressors, such as arguments and disagreements, than do younger adults (Almeida & Horn, 2004). Researchers suggest that even when potential conflicts arise, older adults tend to view their own and their partner’s emotions and behaviors favorably (Blanchard-Fields & Coats, 2008). For example, older adults report less negative emotions, such as anger, associated with the conflict (Blanchard-Fields & Coats, 2008). During negative exchanges with marital partners, older adults are more likely than middle-aged adults to express positive emotions and affection (Levenson, Carstensen, & Gottman, 1994; but see Henry, Berg, Smith, & Florsheim, 2007). When recalling these conflict discussions, older adults rate the behavior of their spouses more positively than objective coders do. By contrast, middle-aged spouses rate their spouse’s behavior similarly to the ratings of the objective viewers (Story et al., 2007). In sum, older adults report greater satisfaction and more positive experiences with members of their social networks than do younger adults in general and when negative interactions occur.
+
+## Why are social relationships better in later life?
+
+The greater positivity and decreased negativity in late-life relationships is well documented, but a cohesive framework for understanding why relationships improve is not well articulated in the personal relationships literature. Rather, much research has focused on intrapsychic reasons regarding the changes adults experience with age. These processes clearly contribute to the increase in satisfaction with social relationships with age. Yet, individuals also act more kindly toward older social partners. Indeed, the relationships literature has documented that qualities of relationships reflect a dynamic interplay between social partners. We discuss both intrapsychic and interpersonal processes, first mentioning how motivational efforts to derive satisfaction from social relationships (e.g., Lang & Carstensen, 1994), as well as efforts to successfully ignore or navigate problems that arise in personal relationships, increase with age (e.g., Blanchard-Fields, 2007). We then discuss age-related differences in the ways that social partners treat older adults which contribute to more positive social experiences. These differences include both structural changes of the social environment (e.g., changes in social networks with age) as well as reciprocal responses that lead to preferential treatment of older adults by others (Fingerman & Pitzer, 2007).
+
+### Optimizing positive relationships
+
+With age, adults actively seek relationships that are most rewarding and disband ties that are less so. According to Socioemotional Selectivity Theory (SST), individuals seek social partners consistent with their broader goals, and the goals of older adults are focused on optimizing emotional well-being (Carstensen, Isaacowitz, & Charles, 1999). SST posits that for people of all ages, temporal horizons (i.e., how people perceive time left in their life) determine motivational goals for all aspects of behavior, including social partner selection. For individuals who perceive a vast temporal horizon – a normative outlook for healthy younger adults in the United States – goals are focused on gaining information and knowledge for the future. Activities directed towards expanding one’s knowledge base and building contacts for the future, such as interacting with unpleasant but informative colleagues, are valued to a greater extent than other goals. With age, individuals’ temporal horizons slowly diminish. When perceived time grows shorter, individuals place a greater priority on present-oriented goals, such as regulating social experiences to maximize relationship satisfaction.
+
+Thus according to SST, older adults restructure their social networks to reduce contact with peripheral or less close social partners who are potentially problematic, and instead focus on maintaining or increasing rewarding social interactions with close friends and family members who are most meaningful to them (Carstensen, Fung, & Charles, 2003; Lang & Carstensen, 1994). For older adults, family members are especially important for life satisfaction, due to the emotional support derived from these relationships (Charles & Piazza, 2007; Yeung & Fung, 2007). A large number of studies show that older adults’ social networks are smaller than those of younger adults, but include a larger proportion of close partners (see the reviews by Lang, 2001, 2004). Typically, individuals who comprise the most intimate social ties, such as romantic partners, close friends, and siblings, remain fairly constant across adulthood, serving as an inner circle of the social convoys that travel with adults as they grow older (Kahn & Antonucci, 1980).
+
+Age differences in social networks, then, are primarily due to older adults’ proactive efforts to reduce contact with less close ties and maintain ties with close partners, rather than attrition of social partners by death (see the review by Lang, 2004). Collectively, these findings suggest that older adults change the configuration of their social networks to include only those relationships that are most rewarding.
+
+### Age differences in appraisals and judgments of social relationships
+
+Even in the best of relationships, problems and potential conflicts arise (e.g., Newsom, Mahan, Rook, & Krause, 2008; Rook, 2003). In addition, not all bothersome relationships are expendable, and some close relationships are also difficult. For example, family members often elicit ambivalent (defined as emotionally close but also problematic) emotional feelings for people of all ages (Fingerman et al., 2004). Research suggests that even in the context of unpleasant social experiences, older adults report more positive experiences and appraise their partners less negatively than younger adults (e.g., Story et al., 2007).
+
+Older adults have a cognitive bias where they attend to positive and avoid negative experiences, a phenomenon referred to as the positivity bias (Charles, Mather, & Carstensen, 2003). This same bias is not observed in younger adults (Charles et al., 2003). Research findings attest to the greater focus on positive experiences, and the active disengagement from negative experiences, with age. For example, as previously discussed, older spouses reported more positive social interactions than objective coders observed, but this bias was not true of middle-aged spouses (Story et al., 2007). Another study examined the extent to which people would focus on negative comments made about them by hypothetical social partners to test whether older adults are more likely to disattend from this negative social information (Charles & Carstensen, 2008). Younger and older adults listened to audiotapes of two actors making negative comments about another person. They were instructed to imagine that they were the target of the comments. Younger adults were more likely to focus on the motivations of the social partners and their negative comments, whereas older adults were less interested in understanding the factors that elicited these negative comments. Older adults’ more positive evaluations of their relationships and diminished focus on negative social exchanges may also explain why older adults are more likely to forgive their social partners or overlook their transgressions (Allemand, 2008).
+
+Negative social exchanges are related to lower positive mood and life satisfaction for younger and middle-aged adults, but the potency of these exchanges is often attenuated among older adults (Walen & Lachman, 2000). When older adults are upset with their partners, they typically report experiencing fewer negative emotions, such as anger, than younger adults (Birditt & Fingerman, 2003; Blanchard-Fields & Coats, 2008). Negative social exchanges may also, ironically, lead to more positive experiences in the future for older adults. For example, one study found that older adults reported that the same social partners who were sources of negative exchanges at one point in time were also the same social partners who increased in emotional closeness over time (Fung, Yeung, Li, & Lang, 2009). Older adults may be able to ignore problems with their close social partners because these relationships are also a source of emotional closeness and intimacy over time. These findings suggest that older adults appraise their social relationships more positively, even in the face of negative social exchanges.
+
+### Social expertise
+
+Research by Hess and colleagues suggests that older age is associated with greater social expertise (Hess, 2005; Hess & Auman, 2001; Hess, Bolstad, Woodburn, & Auman, 1999). According to them, older adults make judgments about potential social partners that allow them to successfully avoid confrontations. For example, their studies have shown that older adults are more adept at avoiding people who have traits that are harmful to relationships, such as dishonesty. In one study, younger and older adults read vignettes about characters with positive or negative attributes in their intellect or level of honesty (Hess et al., 1999). Later, participants were given additional information about these hypothetical characters that contradicted the previously read information (e.g., trustworthy man steals from his boss to pay off his debt to his sister). Younger adults changed their impressions of the target characters in light of any new information (e.g., the fact that the man stole from his boss). Yet older adults only changed their impression when they were given information about the person’s stable trait characteristics, particularly with regard to traits that may be harmful to relationships such as dishonesty (e.g., that the man consistently stole money). Hess and his colleagues (Hess et al., 1999) have interpreted these findings as evidence that older adults exhibit greater social expertise than do younger adults because they learn to avoid social partners who may have trait-like tendencies to engage in acts of dishonesty.
+
+Older adults may also make these judgments in more sophisticated ways than younger adults do (Hess, 2006). In another study, younger adults who had high levels of social activity made trait diagnostic judgments similar to those of older adults (Hess, Osowski, & LeClerc, 2005), indicating that social experiences contribute to these types of judgments. In sum, with age, people gain more experiences with problematic partners and may learn how to identify and avoid such partners to regulate their social and emotional experiences (Blanchard-Fields, 2007; Hess et al., 2005).
+
+### Behaviors that facilitate positive relationships
+
+Older adults not only appear to make better judgments about prospective social partners, but they behave in ways that avoid conflicts more often than younger adults (Blanchard-Fields, 2007). When social partners do something offensive, older adults engage in what social scientists called “disengagement strategies” to a greater extent than younger adults do (e.g., Birditt & Fingerman, 2005). For example, older adults prefer disengagement strategies that regulate their own emotions, such as ignoring the situation or avoiding the topic of conflict rather than confronting their social partners (Birditt, Fingerman, & Almeida, 2005). Older adults often recommend passive disengagement strategies to others and believe these are the best strategies to use in various situations, especially difficult interpersonal situations (Charles, Carstensen, & McFall, 2001).
+
+Some researchers have found that disengagement and avoidant strategies are not as effective as other types of coping strategies (e.g., problem-focused coping) because they may leave issues unresolved over time (Folkman, Lazarus, Pimley, & Novacek, 1987). In response to interpersonal conflict, however, older adults use these strategies effectively to reduce emotional distress (see the review by Blanchard-Fields, 2007). In addition, older adults benefit more from avoiding conflict than younger adults do (Charles, Piazza, Luong, & Almeida, 2009). When younger and older people choose to engage in arguments (as opposed to avoiding them), they are equally emotionally reactive (as assessed by increases in distress) to the situation (Charles et al., 2009). However, when both younger and older adults use the same strategy to avoid an argument, only older adults report less emotional reactivity in response to the interaction.
+
+In addition, older adults may be adept at selecting avoidant strategies when such an approach is most beneficial in smoothing over a potential conflict. When younger and older adults indicated how they would respond to hypothetical interpersonal situations, older adults were more likely to select passive strategies compared to their younger counterparts (Blanchard-Fields, Seay, & Mienaltowski, 2007; Sorkin & Rook, 2006). A panel of researchers judged a range of strategies and came up with the same conclusion: these more passive strategies were the most effective means to handle interpersonal problems (Blanchard-Fields et al., 2007). Thus, older adults are not only motivated, but also adept at avoiding conflict to preserve harmony in their social relationships.
+
+## Beyond the person: Age differences in social environments
+
+Structural positions and roles vary throughout the life course, and some age-related changes may benefit social functioning. Older adults may report fewer interpersonal stressors because they have a reduction of social roles that generate stress (e.g., Elder, 1994). With retirement, older adults report greater freedom to select their social partners and their leisure activities (Ginn & Fast, 2006; Rosenkoetter, Garris, & Engdahl, 2001). The work environment is a principal source of interpersonal problems that are difficult to avoid (Romanov, Appelberg, Honkasalo, & Koskenvuo, 1996). Interpersonal conflicts, such as work bullying, are associated with psychological distress and poor health outcomes (see the review by Salin, 2003). These age differences in work demands may partially explain why, when asked about their activities in their daily life, younger adults more often report preferring to do something else rather than their current activities compared to older adults (Riediger & Freund, 2008).
+
+Likewise, American older adults may report fewer interpersonal stressors because they are less likely to live with family members who evoke stress. In early midlife, many adults have children or adolescents living in the household, and the presence of such children is a source of stress as well as reward (Nomaguchi & Milkie, 2003). In late life in the United States, generations typically reside in separate households. Cross-cultural studies illustrate these effects. A study that included nationally representative samples of Japanese and Americans, ranging in age from 13 to 96 years old, revealed age-related decreases in problematic ties (Akiyama, Antonucci, Takahashi, & Langfahl, 2003). Japanese older adults, however, reported problems in relationships where Americans did not (i.e., with grown children), and this difference was explained by co-residency with these family members. Freedom from full-time employment and freedom from full-time childcare (a product of the empty nest) may also translate to fewer and less demanding social ties for older adults in many cultures.
+
+Aging, however, is also associated with negative social changes that are related to greater distress. For example, caregiving for a spouse or grieving the loss of a loved one are negative events that increase in prevalence with age. Each of these situations creates distress, and older adults who face severe stressors often report high levels of distress. Within these contexts, however, people report lower levels of distress over time (Lucas, 2007). For the majority of older adults not currently living with these difficult situations, social experiences are reported more positively.
+
+## The role of social partners in older adults’ positive social ties
+
+Positive social ties in late life reflect interactions involving both older adults and their social partners. Social relationships exist between multiple partners, with multiple directions of influence acting upon one another. According to the Social Input Model (SIM), older adults typically act in ways that enhance positive qualities of their relationships and their social partners reciprocate these behaviors as well (Fingerman & Charles, 2010; Fingerman & Pitzer, 2007). That is, social partners treat older adults more kindly than younger adults, thereby creating a more benign social environment with age.
+
+Even when older adults behave poorly, commit social transgressions, or offend others, social partners may give older adults the benefit of the doubt or make efforts to avoid conflict with them. SIM predicts that social partners respond to older adults with behaviors that decrease tensions, thereby enhancing their relationships with one another.
+
+Thus, according to SIM, social partners may exert their influence on older adults’ positive social experiences in three ways: (a) by treating older adults more kindly, (b) by forgiving older adults and blaming them less for social missteps, and (c) via preconceptions about aging that include biases and stereotypes, but promote preferential treatment of older adults. The dynamic, reciprocal and interactional processes between dyads reinforce these experiences and lead to an upward spiral of positive and satisfying social experiences for older adults.
+
+### Social partners provide older adults with preferential treatment
+
+A growing body of literature has documented that social partners treat older adults more kindly than younger adults. For example, one study demonstrated that people respond differently to younger and older social partners when they commit a social transgression or faux pas. Younger and older adults were instructed to imagine that their closest older and younger non-romantic social partners said hurtful things to them (Fingerman, Miller, & Charles, 2008). Then, they were asked how they would respond to the situation. Participants in both age groups endorsed constructive communication to find a way to compromise. If the target was their closest young adult partner, however, respondents reported a greater likelihood of using confrontational and direct behavior. By contrast, respondents were more likely to endorse using disengagement strategies to avoid arguments with their closest older adult partner. These findings held even when controlling for key characteristics of the respondent’s relationship with the younger social partners, such as relationship quality or how long they had known them. Thus, not only are older adults more likely to use disengagement strategies to avoid arguments, but social partners are also more likely to avoid conflicts with older adults.
+
+Moreover, people respond differently to the same social faux pas when it is committed by an older versus a younger adult. For example, in one study, respondents read several vignettes describing individuals engaging in different social transgressions (Miller, Charles, & Fingerman, 2009). The study used the same vignette but altered the age of the protagonist committing the faux pas across different respondents. That is, some respondents read the vignette with an older social transgressor and others read the same vignette with a younger social transgressor. Respondents reported what they thought the offended character would do in response to the social transgression. When the social transgressor was portrayed as an older adult, respondents were more likely to report the offended character would disengage and avoid conflicts. Alternately, when the social transgressor was a younger adult, respondents endorsed more direct strategies for the offended character, such as communicating with or confronting the transgressor.
+
+Social partners not only avoid interpersonal tensions with older adults, they also express more sentimental and positive messages to them. For example, in one naturalistic study, adults between 20 and 87 years of age submitted their holiday cards to researchers for analysis (Fingerman & Griffiths, 1999). Older adults received cards that expressed more personal and sentimental messages than did younger adults. These findings are consistent with other studies on how social partners choose birthday cards for younger and older adults (Fingerman et al., 2008). When the target social partner was an older adult, participants were more likely to endorse a sentimental card with a personal message. For younger adults, participants were more likely to choose a funny card. Cards for both younger and older adults included positive messages, but social partners selected cards for older adults that included more personalized or sentimental messages. Thus, social partners contribute to older adults’ positive social experiences, and reinforce older adults’ perceptions that their social relationships are satisfying and meaningful.
+
+### Forgiveness and blame when time is limited
+
+Social partners also may be cognizant of limited time remaining with older adults, and seek to maximize enjoyment of time remaining (as would be predicted by SST; Carstensen et al., 1999). In addition to perceiving time remaining in their own lives, individuals perceive the time left within any given relationship. As the time left to spend with a social partner narrows, people may recognize this diminished horizon and focus increasingly on emotional harmony as opposed to other non-emotional goals (e.g., seeking information) in the relationship. We propose that feeling limited time in a relationship leads to more positive experiences when people interact with older adults. That is, people realize that time remaining with the older social partner is limited, and do not wish to spend that remaining time engaging in conflict with them.
+
+A study tested the influence of social partners’ time perspectives by having participants imagine the amount of time remaining with their closest younger and older social partners would be shortened (Fingerman et al., 2008). For example, they imagined a young adult going abroad for a long duration in a cultural immersion program (precluding contact with friends in the United States) or an older adult retiring to a distant island where it would be difficult to maintain contact. Participants reported how they would react to social transgressions initiated by these social partners. When the amount of time the participant would be able to spend with the social partner was limited, they opted to avoid arguments. Participants reported they would use more direct confrontation strategies with younger adult partners who were not moving away. These findings suggest that when there is limited time to resolve the problem, social partners may believe it is simply not worth the effort. If much time remains in the relationship, however, social partners may take more direct approaches to deal with conflict, to set boundaries, or to establish their expectations in the relationship.
+
+Foreshortened time perspective in relationships with older adults may also lead to greater forgiveness for social grievances. This conclusion is supported by a study in which people who viewed their own time or their time with their partner as limited were more likely to forgive social partners who violated their social expectations (Allemand, 2008). In the previously mentioned study by Miller and colleagues (2009), participants also endorsed being more forgiving toward older adults than towards younger adults who committed the same social transgressions. Likewise, an experimental study conducted in Hong Kong revealed that forgiveness varied as a function of time remaining in a relationship (Cheng & Yim, 2008). Forgiveness is an important component of social relationships and can, in some ways, balance the disengagement behaviors that social partners use to avoid arguments with older adults. Avoiding confrontation with older adults may lead to harboring resentment for the individual if issues remain unresolved. By forgiving older social partners, however, individuals may counteract feelings of ill will toward that social partner. Indeed, forgiveness has been linked to trust, which is an important component of relationship satisfaction (Wieselquist, 2009).
+
+These findings suggest social partners may enhance older adults’ views of the relationship even when the older adults themselves are disagreeable or offensive due to the perceived amount of time remaining in the relationship. Their social partners may forgive them and act with kindness, thus reinforcing the older adults’ views that all is well in the relationship.
+
+### Stereotypes about aging
+
+Stereotypes about aging can also promote better treatment of older adults. Adults of all ages hold stereotypes about older adults, many of which are negative (Hummert, Garstka, Shaner, & Strahm, 1994). Ironically, negative stereotypes may lead to individuals treating older adults more kindly. This finding is illustrated by a study in which respondents read scenarios describing either a younger or an older woman who leaves a store without paying for a hat (Erber, Szuchman, & Prager, 2001). When the reasons why the woman leaves the store without paying for the hat were ambiguous and she was a young woman, respondents were more likely to believe that the target’s intentions were to steal the hat. By contrast, when the target was an older woman, respondents were more likely to attribute her behaviors to forgetfulness. Respondents also endorsed fewer repercussions and less punishment for the older woman than the younger woman for the error. Thus, the negative stereotype of forgetfulness led to abdication of blame and better treatment for the older adult.
+
+Likewise, stereotypes of aging may evoke compassion. In another study, respondents read vignettes about younger and older adults who were portrayed as slow workers in an employment setting (Erber & Long, 2006). Participants rated older workers with more sympathy and less anger than younger workers. Participants may have relied on their stereotypes of slower processing speed and physical declines in later life to guide their judgments (e.g., Hummert, 1990), and these evaluations led to less blaming of older adults in this setting. Moreover, the increased sympathy was associated with greater likelihood of recommending a raise for the older worker than the younger worker. Thus, these findings suggest negative stereotypes of aging can also enhance positive treatment of older adults.
+
+Positive stereotypes of aging may also play a role in the mechanisms posited by SIM. Some cultural groups, such as East Asians, value filial piety and respect for elders (Cheng & Chan, 2006; Sung, 2001). Thus, older adults may be treated with more deference and respect within these cultural groups, which may also explain older adults’ positive psychological well-being (Cheng & Chan, 2006). Studies in the United States examining respect for older adults have shown less consistent results, with respect for the older offending partner not related to treating older adults more favorably (Miller et al., 2009). Nonetheless, stereotypes may evoke respectful treatment in many settings.
+
+## Future research directions
+
+Cohort effects cannot be ruled out as explanations for some of the findings in this review. For example, older adults may receive more sentimental cards from their social partners because it was the norm for earlier generations to send more thoughtful cards to others. Future studies should delineate whether cohort effects explain these and other findings that support SIM. Furthermore, although smaller social networks are not associated with lower levels of emotional well-being in old age (Lang & Carstensen, 2002), problems arise if social networks become too small to fulfill a person’s social needs (see review by Rook, 2009). Researchers have found that when older adults report fewer than three close social partners, they report feeling less socially embedded, with high levels of loneliness and low levels of social satisfaction (Lang & Carstensen, 1994). Loneliness also is a risk factor for depression in late life (Cacioppo, Hughes, Waite, Hawkley, & Thisted, 2006). Thus, future studies should examine not only when social relationships improve with age, but also when they may become problematic in later life.
+
+Similarly, future studies will also need to understand the context of aging in more detail, to understand how circumstances may facilitate (e.g., greater freedom and control over one’s schedule) or undermine (e.g., an illness which enhances the social control provided by a spouse) the quality of social relationships.
+
+## Conclusions
+
+Earlier researchers believed that social relationships become impaired and less satisfying with age (Cumming & Henry, 1961). Recent research, however, has found that older adults generally experience more satisfying and positive social relationships than younger adults. These improved relationships are a product of both actions on the part of older adults, as well as their social partners. Older adults perceive their time horizons shortening and become more motivated to regulate their social experiences to become more meaningful. They restructure their social networks, and over a lifetime of experience, gain the social expertise necessary to execute strategies to successfully avoid conflict with others. The number of social roles and demands are often reduced in later life as many older adults are retired and free to choose how they want to spend their leisure time with their social partners. In addition, older adults and their social partners avoid conflicts with one another, and social partners treat older adults more kindly, reinforcing an upward spiral of positive social experiences that especially benefit older adults. This review integrates explanations for more positive social and emotional experiences with the goal of generating testable questions for scientists to explore how social relationships become more positive across the adult lifespan.
+
+## Conflict of interest statement
+
+The author(s) declared no conflicts of interest with respect to the authorship and/or publication of this article.
+
+## Funding
+
+This work was supported by the National Institutes of Health (grant number NIA AG023845).
+
+## References
+
+Akiyama, H., Antonucci, T., Takahashi, K., & Langfahl, E. S. (2003). Negative interactions in close relationships across the lifespan. Journal of Gerontology: Psychological Sciences, 58B, 70–9.
+
+Allemand, M. (2008). Age differences in forgivingness: The role of future time perspective. Journal of Research in Personality, 42, 1137–1147.
+
+Almeida, D. M., & Horn, M. C. (2004). Is daily life more stressful during middle adulthood? In O. G. Brim, & C. D. Ryff (Eds.), How healthy are we?: A national study of well-being at midlife. (pp. 425–451). Chicago: University of Chicago Press.
+
+Birditt, K. S., & Fingerman, K. L. (2003). Age and gender differences in adults’ emotional reactions to interpersonal tensions. Journals of Gerontology: Psychological Sciences, 58B, 237–245.
+
+Birditt, K. S., & Fingerman, K. L. (2005). Do we get better at picking our battles? Age differences in descriptions of behavioral reactions to interpersonal tensions. Journals of Gerontology: Psychological Sciences, 60, P121–P128.
+
+Birditt, K. S., Fingerman, K. L., & Almeida, D. M. (2005). Age differences in exposure and reactions to interpersonal tensions: A daily diary study. Psychology and Aging, 20, 330–340.
+
+Blanchard-Fields, F. (2007). Everyday problem solving and emotion: An adult developmental perspective. Current Directions in Psychological Science, 16, 26–31.
+
+Blanchard-Fields, F., & Coats, A. H. (2008). The experience of anger and sadness in everyday problems impacts age differences in emotion regulation. Developmental Psychology, 44, 1547–1556.
+
+Blanchard-Fields, F., Seay, R. B., & Mienaltowski, A. (2007). Age differences in everyday problem-solving effectiveness: Older adults select more effective strategies for interpersonal problems. Journals of Gerontology: Psychological Sciences, 62, 61–64.
+
+Cacioppo, J. T., Hughes, M. E., Waite, L. J., Hawkley, L. C., & Thisted, R. A. (2006). Loneliness as a specific risk factor for depressive symptoms: Cross sectional and longitudinal analyses. Psychology and Aging, 21, 140–151.
+
+Carstensen, L. L. (1992). Social and emotional patterns in adulthood: Support for socioemotional selectivity theory. Psychology and Aging, 7, 331–338.
+
+Carstensen, L. L., Fung, H. H., Charles, S. T. (2003). Socioemotional selectivity theory and the regulation of emotion in the second half of life. Motivation and Emotion, 27, 103–123.
+
+Carstensen, L. L., Isaacowitz, D. M., & Charles, S. T. (1999). Taking time seriously: A theory of socioemotional selectivity. American Psychologist, 54, 165–181.
+
+Charles, S. T., & Carstensen, L. L. (2008). Unpleasant situations elicit different emotional responses in younger and older adults. Psychology and Aging, 23, 495–504.
+
+Charles, S. T., Carstensen, L. L., & McFall, R. M. (2001). Problem-solving in the nursing home environment: Age and experience differences in emotional reactions and responses. Journal of Clinical Geropsychology, 7, 319–330.
+
+Charles, S. T., Mather, M., & Carstensen, L. L. (2003). Aging and emotional memory: The forgettable nature of negative images for older adults. Journal of Experimental Psychology: General, 132, 310–324.
+
+Charles, S. T., & Piazza, J. R. (2007). Memories of social interactions: Age differences in emotional intensity. Psychology and Aging, 22, 300–309.
+
+Charles, S. T., Piazza, J., Luong, G., & Almeida, D. M. (2009). Now you see it, now you don’t: Age differences in affective reactivity to social tensions. Psychology & Aging, 24, 645–653.
+
+Cheng, S., & Chan, A. C. M. (2006). Filial piety and psychological well-being in well older Chinese. Journals of Gerontology: Psychological Sciences, 61, 262–269.
+
+Cheng, S. T., & Yim, Y. K. (2008). Age differences in forgiveness: The role of future time perspective. Psychology and Aging, 23, 676–680.
+
+Cumming, E., & Henry, W. E. (1961). Growing old: The process of disengagement. New York: Basic Books.
+
+Elder, G. H., Jr. (1994). Time, human agency, and social change: Perspectives on the life course. Social Psychology Quarterly, 57, 4–15.
+
+Erber, J. T., & Long, B. A. (2006). Perceptions of forgetful and slow employees: Does age matter? Journals of Gerontology: Psychological Sciences, 61, 333–339.
+
+Erber, J. T., Szuchman, L. T., & Prager, I. G. (2001). Ain’t misbehavin’: The effects of age and intentionality on judgments about misconduct. Psychology and Aging, 16, 85–95.
+
+Ertel, K. A., Glymour, M. M., & Berkman, L. F. (2009). Social networks and health: A life course perspective integrating observational and experimental evidence. Journal of Social and Personal Relationships, 26, 73–92.
+
+Field, D., & Minkler, M. (1988). Continuity and change in social support between young-old and old-old or very-old age. Journal of Gerontology, 43, 100–106.
+
+Fingerman, K. L., & Charles, S. T. (2010). It takes two to tango: Why old people have the best relationships. Current Directions in Psychological Science, 19, 172–176.
+
+Fingerman, K. L., & Griffiths, P. C. (1999). Season’s greetings: Adults’ social contacts at the holiday season. Psychology and Aging, 14, 192–205.
+
+Fingerman, K. L., Hay, E. L., & Birditt, K. S. (2004). The best of ties, the worst of ties: Close, problematic, and ambivalent relationships across the lifespan. Journal of Marriage and Family, 66, 792–808.
+
+Fingerman, K. L., Miller, L., & Charles, S. T. (2008). Saving the best for last: How adults treat social partners of different ages. Psychology and Aging, 23, 399–409.
+
+Fingerman, K. L., & Pitzer, L. M. (2007). Socialization in old age. In P. D. Hastings & J. E. Grusec (Eds.), Handbook of Socialization (pp. 232–255). New York: Guilford Press.
+
+Folkman, S., Lazarus, R. S., Pimley, S., & Novacek, J. (1987). Age differences in stress and coping processes. Psychology and Aging, 2, 171–184.
+
+Fung, H. H., Yeung, D. Y., Li, K., & Lang, F. R. (2009). Benefits of negative social exchanges for emotional closeness. Journals of Gerontology: Psychological Sciences, 64B, 612–621.
+
+Ginn, J., & Fast, J. (2006). Employment and social integration in midlife: Preferred and actual time use across welfare regime types. Research on Aging, 28, 669–690.
+
+Henry, N. J. M., Berg, C. A., Smith, T. W., & Florsheim, P. (2007). Positive and negative characteristics of marital interaction and their association with marital satisfaction in middle-aged and older couples. Psychology and Aging, 22, 428–441.
+
+Hess, T. M. (2005). Memory and aging in context. Psychological Bulletin, 131, 383–406.
+
+Hess, T. M. (2006). Adaptive aspects of social cognitive functioning in adulthood: Age-related goal and knowledge influences. Social Cognition, 24, 279–309.
+
+Hess, T. M., & Auman, C. (2001). Aging and social expertise: The impact of trait-diagnostic information on impressions of others. Psychology and Aging, 16, 497–510.
+
+Hess, T. M., Bolstad, C. A., Woodburn, S. M., & Auman, C. (1999). Trait diagnosticity versus behavior consistency as determinants of impression change in adulthood. Psychology and Aging, 14, 77–89.
+
+Hess, T. M., Osowski, N. L., Leclerc, C. M. (2005). Age and experience influences on the complexity of social inferences. Psychology and Aging, 20, 447–459.
+
+Hobbs, F., & Stoops, N. (2002). Demographic trends in the 20th century. U.S. Census Bureau, Census 2000 Special Reports, Series CENSR-4. U.S. Government Printing Office: Washington, D.C.
+
+Hummert, M. L. (1990). Multiple stereotypes of elderly and young adults: A comparison of structure and evaluations. Psychology and Aging, 5, 182–193.
+
+Hummert, M. L., Garstka, T. A., Shaner, J. L., & Strahm, S. (1994). Stereotypes of the elderly held by young, middle-aged, and elderly adults. Journals of Gerontology: Psychological Sciences, 49, 240–249.
+
+Kahn, R. L., & Antonucci, T. C. (1980). Convoys over the life course: Attachment, roles, and social support. In P. B. Baltes, & O. Brim (Eds.), Life-span development and behavior (Vol. 3). New York: Academic Press.
+
+Lang, F. R. (2001). Regulation of social relationships in later adulthood. Journals of Gerontology: Psychological Sciences, 56, P321–P326.
+
+Lang, F. R. (2004). Social motivation across the life span. In F. R. Lang & K. L. Fingerman (Eds.), Growing together: Personal relationships across the life span (pp. 341–367). New York: Cambridge University Press.
+
+Lang, F. R., & Carstensen, L. L. (1994). Close emotional relationships in late life: Further support for proactive aging in the social domain. Psychology and Aging, 9, 315–324.
+
+Lang, F. R. & Carstensen, L. L. (2002). Time counts: Future time perspective, goals and social relationships. Psychology and Aging, 17, 125–139.
+
+Lansford, J. E., Sherman, A. M., & Antonucci, T. C. (1998). Satisfaction with social networks: An examination of socioemotional selectivity theory across cohorts. Psychology and Aging, 13, 544–552.
+
+Levenson, R. W., Carstensen, L. L., & Gottman, J. M. (1994). The influence of age and gender on affect, physiology, and their interrelations: A study of long-term marriages. Journal of Personality and Social Psychology, 67, 56–68.
+
+Lucas, R. E. (2007). Adaptation and the set-point model of subjective well-being: Does happiness change after major life events? Current Directions in Psychological Science, 16, 75–79.
+
+Macunovich, D. J., Easterlin, R. A., Schaeffer, C. M., & Crimmins, E. M. (1995). Echoes of the baby boom and bust: Recent and prospective changes in living alone among elderly widows in the United States. Demography, 32, 17–28.
+
+Miller, L. M., Charles, S. T., & Fingerman, K. L. (2009). Perceptions of social transgressions in adulthood. Journals of Gerontology: Psychological Sciences, 64B, 551–559.
+
+Newsom, J. T., Mahan, T. L., Rook, K. S., & Krause, N. (2008). Stable negative social exchanges and health. Health Psychology, 27, 78–86.
+
+Nomaguchi, K. M., & Milkie, M. A. (2003). Costs and rewards of children: The effects of becoming a parent on adults’ lives. Journal of Marriage and Family, 65, 356–374.
+
+Riediger, M. & Freund, A. M. (2008). Me against myself: Motivational conflict and emotional development in adulthood. Psychology and Aging, 23, 479–494.
+
+Romanov, K., Appelberg, K., Honkasalo, M., & Koskenvuo, M. (1996). Recent interpersonal conflict at work and psychiatric morbidity: A prospective study of 15,530 employees aged 24–64. Journal of Psychosomatic Research, 40, 169–176.
+
+Rook, K. S. (1984). The negative side of social interaction: Impact on psychological well-being. Journal of Personality and Social Psychology, 46, 1097–1108.
+
+Rook, K. S. (2003). Exposure and reactivity to negative social exchanges: A preliminary investigation using daily diary data. Journals of Gerontology: Psychological Sciences & Social Sciences, 58B, 100–111.
+
+Rook, K. S. (2009). Gaps in social support resources in later life: An adaptational challenge in need of further research. Journal of Social and Personal Relationships, 26, 103–112.
+
+Rosenkoetter, M. M., Garris, J. M., & Engdahl, R. A. (2001). Postretirement use of time: Implications for preretirement planning and postretirement management. Activities, Adaptation & Aging, 25, 1–18.
+
+Salin, D. (2003). Ways of explaining workplace bullying: A review of enabling, motivating, and precipitating structures and processes in the work environment. Human Relations, 56, 1213–1232.
+
+Schnittker, J. (2007). Look (closely) at all the lonely people: Age and the social psychology of social support. Journal of Aging and Health, 19, 659–682.
+
+Sorkin, D. H., & Rook, K. S. (2006). Dealing with negative social exchanges in later life: Coping responses, goals, and effectiveness. Psychology and Aging, 21, 715–715.
+
+Story, T. N., Berg, C. A., Smith, T. W., Beveridge, R., Henry, N. J. M., & Pearce, G. (2007). Age, marital satisfaction, and optimism as predictors of positive sentiment override in middle-aged and older married couples. Psychology and Aging, 24, 719–727.
+
+Sung, K. (2001). Elder respect: Exploration of ideals and forms in East Asia. Journal of Aging Studies, 15, 13–26.
+
+van Tilburg, T. (1995). Delineation of the social network and differences in network size. In C. P. M. Knipscheer, J. de Jong Gierveld, T. G. van Tilberg, & P. A. Dykstra (Eds.), Living arrangements and social networks for older adults (pp. 83–96). Amsterdam: VU University Press.
+
+Walen, H. R., & Lachman, M. E. (2000). Social support and strain from partner, family, and friends: Costs and benefits for men and women in adulthood. Journal of Social and Personal Relationships, 17, 5–30.
+
+Wieselquist, J. (2009). Interpersonal forgiveness, trust, and the investment model of commitment. Journal of Social and Personal Relationships, 26, 531–548.
+
+Yeung, G. T. Y., & Fung, H. H. (2007). Social support and life satisfaction among Hong Kong Chinese older adults: Family first? European Journal of Aging, 4, 219–227.

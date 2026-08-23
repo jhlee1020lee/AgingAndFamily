@@ -5,6 +5,12 @@ node_modules/
 source_audio/
 transcripts/
 content/readings/*/raw.txt
+.playwright-cli/
+output/
+/i.getBoundingClientRect*
+/window.innerWidth
+__pycache__/
+*.py[cod]
 *.log
 .DS_Store
 Thumbs.db

@@ -1,0 +1,421 @@
+{
+  "slug": "underwood-2014",
+  "source_filename": "4 Underwood, 2014.pdf",
+  "source_pdf": "source_pdfs/4 Underwood, 2014.pdf",
+  "content_dir": "content/readings/underwood-2014",
+  "title": "Starting Young",
+  "subtitle": "11세 인지검사와 노년기 재검사·뇌영상을 연결해 생애과정 인지노화와 선택효과를 소개하는 Science 기사.",
+  "authors": [
+    "Emily Underwood"
+  ],
+  "year": 2014,
+  "language": "en",
+  "type": "article",
+  "kind": "article pdf",
+  "class_date": "2026-09-28",
+  "reading_date": null,
+  "sort_date": "2026-09-28",
+  "display_date_label": "4주차 · 9/28",
+  "description": "아동기 인지능력, 노년기 인지변화와 뇌영상 자료를 연결하는 로디언 출생 코호트를 다룹니다.",
+  "metadata_status": "complete",
+  "metadata_notes": [],
+  "pdf_visibility": "none",
+  "public_pdf": null,
+  "overview_hook": "11세 때의 인지검사와 노년기 재검사·뇌영상을 연결해 초기 능력과 이후 경험이 인지노화를 함께 만드는 방식을 살핍니다.",
+  "classroom_points": [
+    "Lothian Birth Cohorts는 같은 사람의 11세 인지능력과 노년기 인지·건강·뇌 자료를 잇는 드문 종단자료입니다.",
+    "11세 점수는 77세 지능 개인차의 약 절반과 관련됐지만 개인의 능력이 절반 결정됐다는 뜻은 아닙니다.",
+    "아동기 인지능력을 고려하자 일부 생활방식과 노년기 인지의 상관이 사라져 선택효과의 중요성이 드러났습니다.",
+    "나머지 개인차에는 교육, 건강, 환경과 노년기의 서로 다른 인지 변화가 계속 관여할 수 있습니다.",
+    "뇌 연결성과 인지예비력도 초기 수준과 이후 변화를 구분해야 하며 노년기 학습 가능성을 배제하지 않습니다."
+  ],
+  "shared_page_bundle": null,
+  "shared_page_keys": [],
+  "enabled_page_keys": [
+    "summary",
+    "full",
+    "translation",
+    "concepts",
+    "pitfalls",
+    "quiz-ox",
+    "quiz-short",
+    "quiz-mcq",
+    "review-sheet",
+    "professor-prep"
+  ],
+  "translation_original_reveal": {
+    "enabled": true,
+    "alignment_file": "translation_alignment.json",
+    "mode": "details"
+  },
+  "content_status": {
+    "full": "approved",
+    "translation": "approved",
+    "summary": "approved",
+    "concepts": "approved",
+    "pitfalls": "approved",
+    "review_sheet": "approved",
+    "professor_prep": "approved",
+    "quiz_ox": "approved",
+    "quiz_short": "approved",
+    "quiz_mcq": "approved",
+    "index": "approved"
+  },
+  "manual_review": {
+    "approved_pages": [
+      "full",
+      "translation",
+      "summary",
+      "concepts",
+      "pitfalls",
+      "review-sheet",
+      "professor-prep",
+      "quiz-ox",
+      "quiz-short",
+      "quiz-mcq"
+    ],
+    "approved_page_hashes": {
+      "full": "111abcb4879aaf0b0a164d57f971da008fc2c9b9",
+      "translation": "70bacbe7979af4627a477258327b92ac829178b6",
+      "summary": "1e419af1a75968d0668c6c725ee7ca0bd7219f9d",
+      "concepts": "b7fb92d6110dc4de3cf6d573892e9d8754645568",
+      "pitfalls": "339dbd68a909db877af56b830d012de2635484bd",
+      "review-sheet": "d1f5d75d0427df0f9423ad21b814cb7db1a06561",
+      "professor-prep": "11f2ce4d8533ccc444c6d25735d6c27cb55f9631",
+      "quiz-ox": "64f2269d4a01c569136e4da37f10c01b0c3844f9",
+      "quiz-short": "7ef00f011f662daeaa7179d08d84fc5fcbfb6da7",
+      "quiz-mcq": "f8241c88b2e31f4d4daf16676db44c818215eecd"
+    },
+    "reviewer": "codex",
+    "reviewed_at": "2026-08-22T07:05:10.238Z",
+    "notes": [
+      "Stage 1: 4-page source, columns, quantitative anchors, captions, and sidebar checked against rendered PDF.",
+      "Stage 1: all four pages, reading order, quantitative anchors, captions, sidebar studies, and source-block coverage independently checked after heading normalization.",
+      "Stage 2: full four-page translation independently audited; relative dates, 160,000 referent, 50% claim strength, sidebar duration, locations, and neuroscience terminology corrected; 8/8 segments, 39 blocks, and 133 sentence pairs verified.",
+      "Stage 2 source approval retained while future-week public rendering remains intentionally release-locked.",
+      "Stage 3 independently audited: 45 answer keys, 21 response cards, evidence scope, sample/MRI counts, causal strength, and corrected rendered copy reviewed; chatbot excluded.",
+      "Source, alignment, learning assets, and rendered artifacts reviewed."
+    ],
+    "blocked_reason": ""
+  },
+  "validation_status": {
+    "updated_at": "2026-08-23T05:25:29.590Z",
+    "require_built_artifacts": false,
+    "landing": {
+      "status": "approved",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "overview_hook_length": 66,
+        "classroom_point_raw_count": 5,
+        "classroom_point_count": 5
+      }
+    },
+    "page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 3278,
+          "section_count": 4,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "level2_heading_count": 4,
+          "level3_heading_count": 5,
+          "level4_heading_count": 0,
+          "figure_count": 2,
+          "paragraph_count": 39,
+          "level2_section_count": 4,
+          "empty_level2_sections": [],
+          "last_level2_title": "This Spring, When Deary Spoke",
+          "figure_label_line_count": 0
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 2287,
+          "section_count": 4,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "full_word_count": 3278,
+          "translation_ratio": 0.698,
+          "level2_heading_count": 4,
+          "level3_heading_count": 5,
+          "level4_heading_count": 0,
+          "figure_count": 2,
+          "paragraph_count": 39,
+          "level2_section_count": 4,
+          "empty_level2_sections": [],
+          "last_level2_title": "2014년 봄, Deary가 연설했을 때",
+          "figure_label_line_count": 0,
+          "full_level2_heading_count": 4,
+          "full_level3_heading_count": 5,
+          "full_level4_heading_count": 0,
+          "full_figure_count": 2,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 39,
+          "sentence_reveal_pair_count": 133
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 331,
+          "section_count": 5,
+          "sub_section_count": 0,
+          "bullet_count": 11
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 943,
+          "section_count": 10,
+          "sub_section_count": 0,
+          "bullet_count": 60,
+          "concept_count": 10
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 417,
+          "section_count": 8,
+          "sub_section_count": 0,
+          "bullet_count": 24
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 383,
+          "section_count": 7,
+          "sub_section_count": 0,
+          "bullet_count": 18
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 5,
+            "2": 3,
+            "3": 3,
+            "4": 4
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "source_page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 3278,
+          "section_count": 4,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "level2_heading_count": 4,
+          "level3_heading_count": 5,
+          "level4_heading_count": 0,
+          "figure_count": 2,
+          "paragraph_count": 39,
+          "level2_section_count": 4,
+          "empty_level2_sections": [],
+          "last_level2_title": "This Spring, When Deary Spoke",
+          "figure_label_line_count": 0
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 2287,
+          "section_count": 4,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "full_word_count": 3278,
+          "translation_ratio": 0.698,
+          "level2_heading_count": 4,
+          "level3_heading_count": 5,
+          "level4_heading_count": 0,
+          "figure_count": 2,
+          "paragraph_count": 39,
+          "level2_section_count": 4,
+          "empty_level2_sections": [],
+          "last_level2_title": "2014년 봄, Deary가 연설했을 때",
+          "figure_label_line_count": 0,
+          "full_level2_heading_count": 4,
+          "full_level3_heading_count": 5,
+          "full_level4_heading_count": 0,
+          "full_figure_count": 2,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 39,
+          "sentence_reveal_pair_count": 133
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 331,
+          "section_count": 5,
+          "sub_section_count": 0,
+          "bullet_count": 11
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 943,
+          "section_count": 10,
+          "sub_section_count": 0,
+          "bullet_count": 60,
+          "concept_count": 10
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 417,
+          "section_count": 8,
+          "sub_section_count": 0,
+          "bullet_count": 24
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 383,
+          "section_count": 7,
+          "sub_section_count": 0,
+          "bullet_count": 18
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 5,
+            "2": 3,
+            "3": 3,
+            "4": 4
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "stage1": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage2": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage3": {
+      "status": "approved",
+      "notes": []
+    },
+    "reading": {
+      "status": "approved",
+      "notes": []
+    }
+  },
+  "workflow_status": "approved",
+  "workflow_notes": []
+}

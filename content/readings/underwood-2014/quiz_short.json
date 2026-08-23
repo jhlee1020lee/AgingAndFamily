@@ -1,0 +1,127 @@
+{
+  "title": "Underwood (2014) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 허용 정답 범위 안에서 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "1932년과 1947년 스코틀랜드 11세 아동에게 실시한 전국 검사의 이름은?",
+      "accepted_answers": ["Scottish Mental Surveys", "스코틀랜드 정신능력 조사"],
+      "answer_type": "term",
+      "explanation": "보관된 전국 조사 기록이 수십 년 뒤 노화 연구의 아동기 기준점이 되었다.",
+      "evidence_segment_id": "OPEN-001",
+      "source": "조사명"
+    },
+    {
+      "question": "Scottish Mental Surveys 참여자를 노년기에 재추적한 연구집단의 이름은?",
+      "accepted_answers": ["Lothian Birth Cohorts", "로디언 출생 코호트"],
+      "answer_type": "term",
+      "explanation": "두 출생 코호트는 아동기 검사와 노년기 반복측정을 연결한다.",
+      "evidence_segment_id": "COHORT-001",
+      "source": "코호트명"
+    },
+    {
+      "question": "노년기 인지능력의 가장 강한 단일 예측변수로 제시된 측정 연령은?",
+      "accepted_answers": ["11세", "만 11세"],
+      "answer_type": "number",
+      "explanation": "운동이나 교육보다 11세 때의 지능 수준이 더 강한 단일 예측변수로 나타났다.",
+      "evidence_segment_id": "COHORT-001",
+      "source": "초기 인지"
+    },
+    {
+      "question": "두 Lothian 코호트의 최종 노년기 후속연구 참여자는 몇 명인가?",
+      "accepted_answers": ["1,641명", "1641명"],
+      "answer_type": "number",
+      "explanation": "로디언 지역 약 5,000명에게 연락한 뒤 두 코호트에서 최종 1,641명이 참여했다.",
+      "evidence_segment_id": "DESIGN-001",
+      "source": "표본"
+    },
+    {
+      "question": "11세 점수가 예측한 77세 IQ 분산은 약 몇 퍼센트인가?",
+      "accepted_answers": ["약 50%", "50%"],
+      "answer_type": "number",
+      "explanation": "집단의 개인차를 설명하는 분산 비율이며 개인 운명의 비율이 아니다.",
+      "evidence_segment_id": "DESIGN-001",
+      "source": "핵심 수치"
+    },
+    {
+      "question": "원래 인지능력이 생활방식 선택과 노년기 인지 모두에 관련되는 문제는?",
+      "accepted_answers": ["선택효과", "교란", "selection effect", "confounding"],
+      "answer_type": "term",
+      "explanation": "아동기 IQ를 통제하자 음주의 겉보기 이익이 사라진 결과가 대표 사례다.",
+      "evidence_segment_id": "FINDINGS-001",
+      "source": "음주 분석"
+    },
+    {
+      "question": "아동기 IQ가 설명하지 못해 다른 요인이 설명해야 할 변이는 약 얼마인가?",
+      "accepted_answers": ["나머지 50%", "약 50%"],
+      "answer_type": "number",
+      "explanation": "강한 초기 예측에도 절반가량의 개인차가 남아 결정론을 제한한다.",
+      "evidence_segment_id": "FINDINGS-001",
+      "source": "남은 변이"
+    },
+    {
+      "question": "나이가 들수록 개인의 인지변화 경로가 서로 벌어지는 현상은?",
+      "accepted_answers": ["개인별 분화", "individual divergence"],
+      "answer_type": "term",
+      "explanation": "평균만으로는 유지와 저하의 서로 다른 개인 경로를 설명할 수 없다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "개인차"
+    },
+    {
+      "question": "백질 신경로에서 물분자 이동을 추적한 뇌영상 기법은?",
+      "accepted_answers": ["확산텐서영상", "diffusion tensor imaging", "DTI"],
+      "answer_type": "term",
+      "explanation": "이 기법으로 백질 연결의 온전성과 일반 인지기능의 관련성을 살폈다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "뇌영상 기법"
+    },
+    {
+      "question": "신경 연결의 온전성과 관련된 일반 인지기능 차이는 약 얼마인가?",
+      "accepted_answers": ["약 10%", "10%"],
+      "answer_type": "number",
+      "explanation": "기사에 제시된 Lothian 참여자 집단의 통계적 관련 수치다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "백질 연결"
+    },
+    {
+      "question": "뇌영상에서 밝게 보이는 비정상 백질 영역을 무엇이라 하는가?",
+      "accepted_answers": ["백질 고신호강도 병변", "white matter hyperintensities", "WMH"],
+      "answer_type": "term",
+      "explanation": "나이와 함께 늘지만 개인차가 크고 원인은 아직 충분히 밝혀지지 않았다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "백질 병변"
+    },
+    {
+      "question": "백질 고신호강도 병변과 밀접한 관련이 제시된 스트레스 호르몬은?",
+      "accepted_answers": ["코르티솔", "cortisol"],
+      "answer_type": "term",
+      "explanation": "관련성이 제시되었지만 단일 인과원인으로 확정된 것은 아니다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "스트레스 호르몬"
+    },
+    {
+      "question": "신경퇴행으로 기능이 손상될 때까지 버틸 수 있는 인지 자원은?",
+      "accepted_answers": ["인지예비력", "cognitive reserve"],
+      "answer_type": "term",
+      "explanation": "초기 뇌와 환경의 이점이 손실을 견디는 여유와 연결된다는 가설이다.",
+      "evidence_segment_id": "RESERVE-001",
+      "source": "인지예비력"
+    },
+    {
+      "question": "인지예비력을 탱크의 시작량과 소진시간에 비유한 가설은?",
+      "accepted_answers": ["물탱크 가설", "water tank hypothesis"],
+      "answer_type": "term",
+      "explanation": "더 많이 담긴 채 출발하면 바닥날 때까지 더 오래 걸린다는 비유다.",
+      "evidence_segment_id": "RESERVE-001",
+      "source": "비유"
+    },
+    {
+      "question": "뇌영상과 DNA를 국제적으로 결합하는 컨소시엄 이름은?",
+      "accepted_answers": ["ENIGMA", "ENIGMA 컨소시엄"],
+      "answer_type": "term",
+      "explanation": "기사 당시 33개국 70개 기관이 참여해 대규모 뇌영상·DNA 자료로 유전적 영향을 연구했다.",
+      "evidence_segment_id": "RESERVE-001",
+      "source": "국제협력"
+    }
+  ]
+}

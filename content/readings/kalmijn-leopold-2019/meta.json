@@ -1,0 +1,420 @@
+{
+  "slug": "kalmijn-leopold-2019",
+  "source_filename": "9 Kalmijn and Leopold, 2019.pdf",
+  "source_pdf": "source_pdfs/9 Kalmijn and Leopold, 2019.pdf",
+  "content_dir": "content/readings/kalmijn-leopold-2019",
+  "title": "Changing Sibling Relationships After Parents’ Death",
+  "subtitle": "부모 사망 후 형제자매 관계의 변화와 결속·친족유지 역할을 패널자료로 분석한 연구.",
+  "authors": [
+    "Matthijs Kalmijn",
+    "Thomas Leopold"
+  ],
+  "year": 2019,
+  "language": "en",
+  "type": "paper",
+  "kind": "paper pdf",
+  "class_date": "2026-11-02",
+  "reading_date": null,
+  "sort_date": "2026-11-02",
+  "display_date_label": "9주차 · 11/2",
+  "description": "부모 사망이 형제자매 접촉과 갈등에 미치는 변화를 살핍니다.",
+  "metadata_status": "complete",
+  "metadata_notes": [],
+  "pdf_visibility": "none",
+  "public_pdf": null,
+  "overview_hook": "부모의 첫 사망과 마지막 사망을 나누어 형제자매 접촉과 갈등이 위기 직후와 장기적으로 어떻게 달라지는지 추적합니다.",
+  "classroom_points": [
+    "형제자매 관계는 두 사람만의 유대가 아니라 생존 부모와 친족관계 유지자를 포함한 가족망 속에서 변합니다.",
+    "첫째 부모 사망 뒤 형제자매 대면접촉은 약 17% 늘었고 생존 부모와의 접촉·지원이 그 증가를 부분적으로 설명했습니다.",
+    "둘째 부모 사망 직후에도 접촉은 늘었지만 시간이 지나면 사망 전 수준보다 낮아지는 장기 감소가 나타났습니다.",
+    "유의한 단기 갈등 증가는 없었고 둘째 부모 사망 뒤 갈등도 줄어 접촉과 갈등의 동반 소멸에 가까웠습니다.",
+    "고정효과 관찰자료는 친족관계 유지 기제를 증명하지 않으며 접촉 빈도가 관계의 따뜻함을 뜻하지도 않습니다."
+  ],
+  "shared_page_bundle": null,
+  "shared_page_keys": [],
+  "enabled_page_keys": [
+    "summary",
+    "full",
+    "translation",
+    "concepts",
+    "pitfalls",
+    "quiz-ox",
+    "quiz-short",
+    "quiz-mcq",
+    "review-sheet",
+    "professor-prep"
+  ],
+  "content_status": {
+    "full": "approved",
+    "translation": "approved",
+    "summary": "approved",
+    "concepts": "approved",
+    "pitfalls": "approved",
+    "review_sheet": "approved",
+    "professor_prep": "approved",
+    "quiz_ox": "approved",
+    "quiz_short": "approved",
+    "quiz_mcq": "approved",
+    "index": "approved"
+  },
+  "manual_review": {
+    "approved_pages": [
+      "full",
+      "translation",
+      "summary",
+      "concepts",
+      "pitfalls",
+      "review-sheet",
+      "professor-prep",
+      "quiz-short",
+      "quiz-mcq",
+      "quiz-ox"
+    ],
+    "approved_page_hashes": {
+      "full": "8200f310a7952a59c73f0bd4a8a1b960263ec217",
+      "translation": "4f90123f8ccb67bfbc985eceae9fc0eed7db1002",
+      "summary": "0fc7a1535e63e7abb9cab5ac1f4d3cc9487add2f",
+      "concepts": "98900bc184a7e0b367badff5579ada3d078d6f92",
+      "pitfalls": "c9f07160ef74ae9eb8953d7c910762f8e1824ca9",
+      "review-sheet": "abeb715dbdab79d19cfb06bc7acb36efcb5db505",
+      "professor-prep": "008f9bd6f5d8c1403d9ad682342027fdd8b4dda5",
+      "quiz-short": "2002828947460c699670c5e5688980c4654d38d7",
+      "quiz-mcq": "4d156a14745a007f09b1484f13e3da045613a28d",
+      "quiz-ox": "c6dcba25fb2f23367cd0bac636dede35fe2cdf8e"
+    },
+    "reviewer": "codex",
+    "reviewed_at": "2026-08-23T04:19:45.087Z",
+    "notes": [
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
+      "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함."
+    ],
+    "blocked_reason": ""
+  },
+  "validation_status": {
+    "updated_at": "2026-08-23T05:25:30.119Z",
+    "require_built_artifacts": true,
+    "landing": {
+      "status": "approved",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "overview_hook_length": 64,
+        "classroom_point_raw_count": 5,
+        "classroom_point_count": 5
+      }
+    },
+    "page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 8799,
+          "section_count": 8,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "level2_heading_count": 8,
+          "level3_heading_count": 5,
+          "level4_heading_count": 4,
+          "figure_count": 6,
+          "paragraph_count": 117,
+          "level2_section_count": 8,
+          "empty_level2_sections": [],
+          "last_level2_title": "References",
+          "figure_label_line_count": 6
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 6436,
+          "section_count": 8,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "full_word_count": 8799,
+          "translation_ratio": 0.731,
+          "level2_heading_count": 8,
+          "level3_heading_count": 5,
+          "level4_heading_count": 4,
+          "figure_count": 6,
+          "paragraph_count": 117,
+          "level2_section_count": 8,
+          "empty_level2_sections": [],
+          "last_level2_title": "참고문헌",
+          "figure_label_line_count": 6,
+          "full_level2_heading_count": 8,
+          "full_level3_heading_count": 5,
+          "full_level4_heading_count": 4,
+          "full_figure_count": 6,
+          "full_reference_word_count": 1284,
+          "translation_reference_word_count": 1284,
+          "translation_reference_ratio": 1,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 117,
+          "sentence_reveal_pair_count": 379
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1508,
+          "section_count": 14,
+          "sub_section_count": 0,
+          "bullet_count": 48
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1602,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 90,
+          "concept_count": 15
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 900,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 45
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1214,
+          "section_count": 11,
+          "sub_section_count": 7,
+          "bullet_count": 38
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "source_page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 8799,
+          "section_count": 8,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "level2_heading_count": 8,
+          "level3_heading_count": 5,
+          "level4_heading_count": 4,
+          "figure_count": 6,
+          "paragraph_count": 117,
+          "level2_section_count": 8,
+          "empty_level2_sections": [],
+          "last_level2_title": "References",
+          "figure_label_line_count": 6
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 6436,
+          "section_count": 8,
+          "sub_section_count": 5,
+          "bullet_count": 0,
+          "full_word_count": 8799,
+          "translation_ratio": 0.731,
+          "level2_heading_count": 8,
+          "level3_heading_count": 5,
+          "level4_heading_count": 4,
+          "figure_count": 6,
+          "paragraph_count": 117,
+          "level2_section_count": 8,
+          "empty_level2_sections": [],
+          "last_level2_title": "참고문헌",
+          "figure_label_line_count": 6,
+          "full_level2_heading_count": 8,
+          "full_level3_heading_count": 5,
+          "full_level4_heading_count": 4,
+          "full_figure_count": 6,
+          "full_reference_word_count": 1284,
+          "translation_reference_word_count": 1284,
+          "translation_reference_ratio": 1,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 117,
+          "sentence_reveal_pair_count": 379
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1508,
+          "section_count": 14,
+          "sub_section_count": 0,
+          "bullet_count": 48
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1602,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 90,
+          "concept_count": 15
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 900,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 45
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1214,
+          "section_count": 11,
+          "sub_section_count": 7,
+          "bullet_count": 38
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          },
+          "correct_option_length_rank_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "stage1": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage2": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage3": {
+      "status": "approved",
+      "notes": []
+    },
+    "reading": {
+      "status": "approved",
+      "notes": []
+    }
+  },
+  "workflow_status": "approved",
+  "workflow_notes": []
+}

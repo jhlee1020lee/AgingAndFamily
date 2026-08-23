@@ -1,0 +1,187 @@
+{
+  "title": "Utz et al. (2002) 단답형 퀴즈",
+  "instructions": "설계·결과·논의의 핵심을 일곱 단어 이내로 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "기초면접 완료자 수와 응답률을 함께 쓰면?",
+      "accepted_answers": [
+        "1,532명·68%",
+        "1532명·68%",
+        "1,532명, 68%"
+      ],
+      "answer_type": "number",
+      "explanation": "1987–1988년 기초면접은 1,532명이 완료했으며 보고된 응답률은 68%였다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "기초면접 표본과 응답률"
+    },
+    {
+      "question": "모형 3의 사별자-대조군 비공식 참여 차이는?",
+      "accepted_answers": [
+        "0.44 표준편차",
+        ".44 표준편차",
+        "0.44 SD",
+        ".44 SD"
+      ],
+      "answer_type": "number",
+      "explanation": "기초참여와 공변량을 반영한 뒤 사별자의 비공식 참여가 대조군보다 0.44 표준편차 높았다.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "조정된 비공식 참여 집단차이"
+    },
+    {
+      "question": "배우자 사망 뒤 가장 늦은 재면접 시점은?",
+      "accepted_answers": [
+        "48개월",
+        "사망 48개월 뒤",
+        "48 months"
+      ],
+      "answer_type": "number",
+      "explanation": "사별자는 배우자 사망 6개월, 18개월, 48개월 뒤에 재면접했다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "최장 추적시점"
+    },
+    {
+      "question": "전환기에도 엄선된 관계망이 지원을 제공한다는 모형은?",
+      "accepted_answers": [
+        "사회적 호송모형",
+        "사회적 호송",
+        "social convoy model"
+      ],
+      "answer_type": "term",
+      "explanation": "사회적 호송모형은 생애전환의 스트레스 속에서 엄선된 사람들에게 자기정체성과 정서적·도구적 지원을 얻는다고 본다.",
+      "evidence_segment_id": "DISCUSSION-THEORY-001",
+      "source": "발달적 대안 이론"
+    },
+    {
+      "question": "가중·비가중 분석표본의 전체 인원을 순서대로 쓰면?",
+      "accepted_answers": [
+        "297명·333명",
+        "297명, 333명",
+        "297·333명"
+      ],
+      "answer_type": "number",
+      "explanation": "가중 분석표본은 297명이고, 가중치 적용 전 표본은 333명이었다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "가중·비가중 표본"
+    },
+    {
+      "question": "두 종속변수의 비교와 해석을 위해 적용한 처리는?",
+      "accepted_answers": [
+        "표준화",
+        "척도 표준화",
+        "standardization"
+      ],
+      "answer_type": "term",
+      "explanation": "비표준화 척도에서도 결과는 비슷했지만, 연구진은 해석과 비교가 쉽도록 두 종속변수를 표준화했다.",
+      "evidence_segment_id": "METHOD-MEASURES-001",
+      "source": "종속변수의 표준화"
+    },
+    {
+      "question": "바쁘게 지내거나 활동에 참여하려 했던 사별자 비율은?",
+      "accepted_answers": [
+        "87%",
+        "87퍼센트"
+      ],
+      "answer_type": "number",
+      "explanation": "사별자의 87%가 슬픔과 외로움에 대처하려고 바쁘게 지내거나 활동에 참여하려 했다고 답했다.",
+      "evidence_segment_id": "RESULTS-MOTIVES-001",
+      "source": "활동적 대처 시도"
+    },
+    {
+      "question": "모든 배우자 사망을 확인할 때 사용한 국가자료는?",
+      "accepted_answers": [
+        "National Death Index",
+        "국가사망지수",
+        "NDI"
+      ],
+      "answer_type": "term",
+      "explanation": "월별 미시간 사망기록으로 생존상태를 추적한 뒤 National Death Index로 사망을 확인했다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "사망 확인 절차"
+    },
+    {
+      "question": "공식적 참여의 안정성을 설명할 수 있는 지원 차이는?",
+      "accepted_answers": [
+        "정서적·도구적 지원이 적음",
+        "정서적·도구적 지원 부족",
+        "less emotional and instrumental support"
+      ],
+      "answer_type": "term",
+      "explanation": "저자들은 공식 참여가 비공식 참여만큼 정서적·도구적 지원을 제공하지 않을 수 있어 사별 뒤에도 비교적 안정적이라고 해석했다.",
+      "evidence_segment_id": "DISCUSSION-SUMMARY-001",
+      "source": "공식 참여 안정성의 해석"
+    },
+    {
+      "question": "연구진이 여성을 과대표집한 목적은?",
+      "accepted_answers": [
+        "사별 응답자 수 최대화",
+        "사별자 수 최대화",
+        "bereaved respondents 수 최대화"
+      ],
+      "answer_type": "term",
+      "explanation": "5년 연구기간에 충분한 사별 응답자를 확보하려고 여성을 과대표집했다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "여성 과대표집 이유"
+    },
+    {
+      "question": "기초참여의 공식·비공식 회귀계수를 순서대로 쓰면?",
+      "accepted_answers": [
+        ".58·.31",
+        "0.58·0.31",
+        ".58, .31"
+      ],
+      "answer_type": "number",
+      "explanation": "모형 3에서 기초참여 계수는 공식 .58, 비공식 .31이었고 둘 다 p ≤ .001이었다.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "지속성의 회귀계수"
+    },
+    {
+      "question": "행동변화와 함께 향후 측정하자고 한 심리요인은?",
+      "accepted_answers": [
+        "지각된 스트레스",
+        "행동변화의 지각된 스트레스",
+        "perceived stress"
+      ],
+      "answer_type": "term",
+      "explanation": "저자들은 특정 행동변화와 관련된 지각된 스트레스를 측정하면 사별 뒤 심리적 고통의 기제를 더 잘 이해할 수 있다고 보았다.",
+      "evidence_segment_id": "DISCUSSION-LIMITS-001",
+      "source": "향후 심리 측정"
+    },
+    {
+      "question": "선택확률과 무응답을 조정해 모든 분석에 적용한 것은?",
+      "accepted_answers": [
+        "최종 중심화 가중치",
+        "중심화 가중치",
+        "final centered weight"
+      ],
+      "answer_type": "term",
+      "explanation": "연구진은 불균등한 선택확률과 무응답을 보정한 최종 중심화 가중치를 분석 전에 적용했다.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "분석 가중치"
+    },
+    {
+      "question": "기초시점 배우자 돌봄제공자의 최소 돌봄 기준은?",
+      "accepted_answers": [
+        "주당 1시간 이상",
+        "1시간 이상",
+        "at least 1 hour weekly"
+      ],
+      "answer_type": "number",
+      "explanation": "배우자에게 주당 1시간 이상의 가정 내 돌봄을 제공한 사람을 기초시점 돌봄제공자로 식별했다.",
+      "evidence_segment_id": "METHOD-CONFOUNDERS-001",
+      "source": "배우자 돌봄 측정"
+    },
+    {
+      "question": "부부의 사회참여 역동을 연구할 때 필요한 자료수준은?",
+      "accepted_answers": [
+        "부부수준 자료",
+        "부부 자료",
+        "couple-level data"
+      ],
+      "answer_type": "term",
+      "explanation": "저자들은 남편과 아내를 함께 고려하는 부부수준 자료로 혼인전환과 두 배우자의 건강을 살필 것을 제안했다.",
+      "evidence_segment_id": "DISCUSSION-LIMITS-001",
+      "source": "부부수준 후속연구"
+    }
+  ]
+}

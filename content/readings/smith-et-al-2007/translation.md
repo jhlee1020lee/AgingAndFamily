@@ -1,0 +1,311 @@
+# “나는 지독할 만큼 오랫동안 독립적으로 살아왔어요!”: 도움 요청 맥락에서의 독립성, 남성성, 노화
+
+> James A. Smith a,b,⁎ · Annette Braunack-Mayer a,¹ · Gary Wittert b,² · Megan Warin c,³
+
+> a 애들레이드대학교 인구보건·임상실무대학 공중보건분과, Level 9 — Tower Building (MDP 207), 10 Pulteney St., Adelaide SA 5005, Australia; b 애들레이드대학교 의과대학 의학분과, Level 6 — Eleanor Harrald Building, Frome Road, Royal Adelaide Hospital, Adelaide SA 5005, Australia; c 더럼대학교 인류학과, 43 Old Elvet, Durham DH1 3HN, United Kingdom.
+
+> *Journal of Aging Studies*, 21 (2007), 325–335. DOI: 10.1016/j.jaging.2007.05.004.
+
+> 2007년 2월 16일 접수; 2007년 4월 26일 수정본 접수; 2007년 5월 30일 게재 승인.
+
+> ⁎ 교신저자. 전화: +61 8 8226 0799, +61 8 8342 5567. 이메일 주소: james.smith@adelaide.edu.au (J.A. Smith), annette.braunackmayer@adelaide.edu.au (A. Braunack-Mayer), gary.wittert@adelaide.edu.au (G. Wittert), megan.warin@durham.ac.uk (M. Warin). ¹ 전화: +61 8 8226 0799 또는 +61 8 8303 3569. ² 전화: +61 8 82225502. ³ 전화: 44 101 3346177.
+
+## 초록
+
+이 논문은 노년 남성 36명을 대상으로 실시한 반구조화 면담을 바탕으로, 노년 남성이 독립성을 이해하는 방식이 도움 요청 행동 및 보건의료서비스 이용과 어떻게 관련되는지를 살펴본다. 우리는 남성성 담론과 성공적 노화 담론이 모두 남성들이 독립성에 관해 말하는 방식에 나타난다고 주장한다. 두 담론이 서로 얽혀 있음을 인식하는 것은 노년 남성이 도움을 요청하고 보건의료서비스를 이용하는 방식을 이해하는 데 중요하다. 이러한 관점에서 노년 남성의 도움 요청 행동을 바라볼 때의 실천적·정책적 함의와, 이 관점이 노년 남성의 건강 증진에 유용할 가능성이 있는지도 제시한다.
+
+## 핵심어
+
+남성성; 성공적 노화; 독립성; 도움 요청
+
+## 서론
+
+이 논문은 노년 남성이 성공적 노화 담론의 일부로서 독립적이어야 한다고 권장되는 동시에, 도움 요청과 보건의료서비스 이용의 맥락에서는 독립성을 고수한다는 이유로 비판받는 방식을 살펴본다. 사회와 문화에는 남성이 독립적으로 행동해야 한다고 기대하는 고정관념적 남성성 구성이 존재하며, 특히 건강과 보건의료와 관련하여 그러하다(Hodgetts & Chamberlain, 2002; Lantz, Fullerton, Harshburger, & Sadler, 2001; O'hehir, 1996; Reevy & Maslach, 2001; While, 2002). 독립성을 남성적 특성으로 볼 때, 이는 남성이 위험한 건강행동을 하고, 보건의료서비스를 회피하며, 자신의 건강을 등한시하는 것과 연관되어 왔다. “이 정도는 나 혼자 감당할 수 있어야 해”와 같은 말이 이를 전형적으로 보여 준다(Aoun, Donovan, Johnson, & Egger, 2002; Calasanti, 2003; Connell, 1997; Mansfield, Addis, & Mahalik, 2003; Reisberg, 2000; Taylor, Stewart, & Parker, 1998; While, 2002). 이 관점에서 독립성은 건강을 해치는 개념으로 인식된다.
+
+이 논문에서 우리는 독립성이 여러 의미를 지닐 수 있다고 주장한다. 독립성을 건강 증진적인 것으로 보는 대안적 담론은 노화와 관련된다. 여기에서는 자신의 독립성을 유지하는 능력이 성공적 노화의 지표로 받아들여진다(Secker, Hill, Villeneau, & Parkman, 2003; Stephenson, Wolfe, Coughlan, & Koehn, 1999). 우리는 애들레이드 북서부에 거주하는 노년 남성 집단에서 이 두 독립성 담론이 어떻게 상호작용하는지 탐색한다.
+
+### 헤게모니적 남성성과 독립성
+
+서구 사회에서 헤게모니적 남성성은 남성과 남성의 행동에 관한 전통적·가부장적 관점으로서, 가장 영향력 있고 문화적으로 수용되는 ‘남자다움’의 개념을 가리킨다(Courtenay, 2000a,b; Lee & Owens, 2002). 헤게모니적 남성성이 사회적으로 구성되는 방식은 남성에게 독립적이고, 강인하며, 자기주장이 뚜렷하고, 감정을 억제하며, 경쟁적이고, 굳세고, 공격적이며, 신체적으로 유능해야 한다는 기대를 부과한다(Gerschick & Miller, 1995; Lee & Owens, 2002; Moynihan, 1998; Riska, 2002; Taylor et al., 1998). 헤게모니적 남성성이 말하는 독립성은 자기의존(self-reliance)과 자율성(autonomy)을 우선시한다(Gerschick & Miller, 1995). 그러나 최근 연구는 남성성이 문화와 환경에 따라 달라진다고 지적하며 헤게모니적 남성성 구성을 비판해 왔다(Berg & Longhurst, 2003; Connell & Messerschmidt, 2005; Longhurst, 2000, 2001; Schofield, Connell, Walker, Wood, & Butland, 2000). 학자들은 헤게모니적 남성성을 사람마다 의미가 다른 ‘혼성 용어’라고 묘사해 왔다(Speer, 2001). 그럼에도 헤게모니적 남성성 구성은 남성이 독립성과 같은 특성을 어떻게 개념화하는지 이해하는 데 여전히 중요하다.
+
+### 노화와 독립성
+
+노화는 독립성 상실과 연관된다(Arber & Ginn, 1991; Bland, 1999; Secker et al., 2003). 독립성 상실에 관한 문헌은 일상생활활동(Covinsky et al., 2003; Greiner, Snowdon, & Schmitt, 1996; Hebert, 1997), 식사와 건강한 섭식(McKie, 1999; Drummond & Smith, 2006), 부상에서 회복할 능력(McColl, Stirling, Walker, Corey, & Wilkins, 1999), 신체활동에 참여할 능력(Fiatarone, 1996; Galloway & Jokl, 2000; Shepard, 1993), 치매(Woods, 1999)에 초점을 맞추어 왔다. 독립성 상실은 노인이 시설돌봄을 고려하기 꺼리는 이유를 설명하는 데에도 사용되어 왔다(Bland, 1999). 성공적 노화의 정의는 다양하지만(Bowling & Dieppe, 2005; Steverink, Lindenberg, & Ormel, 1998; Torres, 1999), 독립성 유지가 노인에게 중요하며 성공적 노화에는 독립성을 유지할 수 있는 능력이 포함된다는 점은 일관된 주제다(Arber & Ginn, 1991; Stephenson et al., 1999).
+
+생의학 이론은 신체적·정신적 쇠퇴와 장애를 최소화하면서 기대수명을 최적화하는 것으로 성공적 노화를 정의한다. 반면 심리사회적 접근은 삶의 만족도, 사회참여와 기능, 그리고 개인적 성장을 포함한 심리적 자원을 강조하는 경향이 있다(Bowling & Dieppe, 2005). 두 관점 모두 노인 스스로가 일반인의 관점에서 성공적 노화를 정의하는 방식과는 다소 거리가 있었다(Bowling & Dieppe, 2005).
+
+선행연구와 마찬가지로, 우리 연구의 노년 남성들이 지닌 성공적 노화에 대한 일반인 관점은 독립성을 유지할 수 있는 능력과 밀접하게 연결되어 있었다. 이는 지속적인 개인 자율성을 성공적 노화의 척도로 인식하는 것과 일치했다(Arber, Davidson, & Ginn, 2003; Arber & Ginn, 1991; Davies, Laker, & Ellis, 1997; Ford et al., 2000). 그러나 우리는 성공적 노화가 여전히 유동적인 개념이며 최근 노년학 연구에서 도전을 받아 왔음을 인정한다. 첫째, 성공적 노화가 구성되는 방식은 문화마다 다르다(Torres, 1999). 둘째, 성공적 노화가 실제로 무엇을 의미하는지 정의할 때에는 여러 유형의 의존과 서로 다른 수준의 독립성을 고려해야 한다(Scheidt, Humphreys, & Yorgason, 1999). 다시 말해 타인에게 의존하는 것이 반드시 ‘성공하지 못한 노화’로 인식되는 것은 아니다. 오히려 이는 성공이나 실패라는 단순한 규범적 평가를 반드시 따르지는 않는 성취의 연속선 위에 놓인다(Bowling & Dieppe, 2005). 따라서 우리는 노인에게 독립성이 자기의존, 자존감, 자기결정, 삶의 목적, 개인적 성장, 자기의 연속성을 포괄하는 넓은 개념임을 인정한다(Secker et al., 2003).
+
+### 헤게모니적 남성성과 노화
+
+젠더와 노화의 접점은 노년학 연구에서 관심이 커지고 있는 영역이다(Arber et al., 2003). 젠더 역할과 그에 수반되는 고정관념은 남성이 나이 들면서 변한다(Wilson, 1995). 그러나 노년학 연구에는 남성성과 노화, 특히 독립성과 관련된 이론적 논의가 여전히 부족하다(Arber et al., 2003; Calasanti, 2003, 2005; Spector-Mersel, 2006). 실제로 남성성 이론은 주로 젊은 남성의 시각을 통해 구성되어 왔고 노년 남성의 관점을 누락하는 경향이 있었다(Arber et al., 2003; Calasanti, 2003). 노년 남성의 사회세계가 젠더 및 구별되는 남성성과 밀접하게 연결된다는 점은 인정되어 왔지만, 노년 남성이 남성으로 존재하는 것을 어떻게 이해하고 실천하는지에 대해서는 알려진 바가 비교적 적다(Thompson & Whearty, 2004).
+
+남성성과 노화의 교차를 검토하려 한 연구는 주로 남성 신체의 노화에 초점을 맞추어 왔다. 예를 들어 발기부전 치료제의 등장으로 노년 남성 신체의 성적 능력이 향상된 현상은 이 연구분야에 기여했다(Calasanti, 2005; Marshall, 2006). 진행성 전립선암으로 안드로겐 차단요법을 받는 남성의 맥락에서도 노년 남성이 자신의 신체를 어떻게 인식하는지 연구되었다(Oliffe, 2006). 여기에는 노년 남성이 헤게모니적 남성성의 이상을 지속시키는 동시에 재구성한다는 역설적 성격이 있다(Oliffe, 2006). 그럼에도 노년 남성이 여러 형태의 남성성을 체현하는 방식은 남성건강·남성성 연구에서 최근에야 검토되기 시작했다. 이 논문에서는 남성의 도움 요청과 보건의료서비스 이용 맥락에서 독립성, 남성성, 노화의 교차로 논의를 한정한다.
+
+## 방법론(원문 표기: Methology)
+
+### 연구 맥락
+
+우리 연구는 애들레이드대학교의 Florey Adelaide Male Ageing Study(FAMAS)의 일부다. 이 종단 남성건강 연구는 여러 학문분야의 협력으로 이루어지며 노화에 대한 생의학적 관점과 사회과학적 관점을 모두 포함한다. 코호트는 전화번호부를 이용해 남호주 애들레이드 북서부 지역에서 무작위로 추출한 35~80세 참여자 1,195명으로 구성된다. FAMAS 코호트에 관한 자세한 정보는 Martin et al. (2007)에 제시되어 있다. 이 큰 표본에서 연령과 혼인상태에 따른 층을 이용하여, 남성의 도움 요청 행동과 보건의료서비스 이용을 탐색하는 질적 연구에 남성 36명을 초대했다. 표 1은 FAMAS와 남성의 도움 요청 및 보건의료서비스 이용을 탐색한 하위연구에 참여한 남성 수를 연령범주별로 보여 준다. 우리 연구의 남성 36명 가운데 22명은 55세를 넘었고, 이들 중 12명은 65세 이상이었다. 이 논문 전체에서는 주로 이들의 이해를 활용했다.
+
+![표 1. FAMAS와 질적 도움 요청 하위연구의 연령 분포](figures/table-1.png)
+
+표 1. 연령범주별로 제시한, FAMAS와 남성의 도움 요청 및 보건의료서비스 이용을 탐색한 FAMAS 하위연구에 참여한 남성의 비율. 접근성 설명: 전체 FAMAS 코호트에는 남성 1,195명이, 질적 하위연구에는 36명이 포함된다. 35~44세, 45~54세, 55~64세, 65세 이상 범주의 코호트 인원은 각각 271명(22.7%), 326명(27.3%), 305명(인쇄된 표의 25.5), 293명(24.5%)이고, 하위연구 인원은 각각 6명(16.6%), 8명(22.2%), 10명(27.7%), 12명(33.3%)이다.
+
+65세 이상 남성 가운데 8명은 혼인 또는 사실혼 관계였고, 4명은 이혼·별거·사별했거나 혼인한 적이 없었다. 표 2는 하위연구에 참여하고 파트너가 있거나 독신이라고 보고한 남성 수를 연령범주별로 보여 준다. 혼인, 사실혼 또는 장기 관계에 있다고 밝힌 모든 남성은 파트너와 동거한다고 보고했다.
+
+![표 2. 질적 FAMAS 하위연구의 파트너 관계 상태](figures/table-2.png)
+
+표 2. 남성의 도움 요청 행동과 보건의료서비스 이용을 탐색한 FAMAS 하위연구에 참여하면서 파트너가 있거나 독신이라고 보고한 남성의 수를 연령범주별로 제시함. 접근성 설명: 파트너 있음/독신 인원은 35~44세에서 2/4명, 45~54세에서 5/3명, 55~64세에서 4/6명, 65세 이상에서 8/4명이다.
+
+### 면담 수행
+
+이 연구는 애들레이드대학교 인간연구윤리위원회의 승인을 받았고 각 참여자에게 사전동의를 받았다. 면담은 1시간에서 1시간 45분 동안 진행되었다. 제1저자(JS)가 모든 심층면담을 실시했다. 우리는 참여자의 남성적 정체성을 보존하려는 노력으로 전통적으로 여성화된 환경을 피해 면담을 진행했다(Borbasi, Chapman, Gassner, Dunn, & Read, 2002; Oliffe & Mroz, 2005). 여기에는 남성이 위협받거나 소외되었다고 느낄 가능성이 있는 보건의료서비스 장소를 피하는 것도 포함되었으며(Britten, 1995), 그 결과 대부분의 면담은 참여자의 자택에서 이루어졌다. 가장 흔한 장소는 식당, 거실, 또는 파티오처럼 집 바로 바깥의 공간이었다. 대학 면담실이나 참여자의 직장을 대체 장소로 사용한 경우가 네 번 있었지만, 모두 참여자의 요청에 따른 것이었다. 대부분의 면담은 역시 참여자의 요청에 따라 오후나 저녁에 이루어졌다.
+
+![표 3. FAMAS 보건의료서비스 이용 면담 지침](figures/table-3.png)
+
+표 3. Florey Adelaide Male Ageing Study(FAMAS)의 보건의료서비스 이용 면담 지침. 접근성 설명: 반구조화 지침은 개인적 배경, 건강의 의미, 도움 요청의 계기와 장벽, 가장 최근의 보건의료 방문과 제공자, 최근 질병, 이상적인 서비스와 제공자, 불만족, 추가 의견을 묻는다. 탐침질문은 민족·인종·종교적 배경, 가족·일·여가, 이환상태, 질병 중증도, 아내, 친구, 지원체계, 자기 도움, 직장 건강, 지각된 나약함과 두려움, 서비스의 여성화와 환경, 제공자 상호작용과 젠더, 의료인의 역할, 질병의 원인과 그에 따른 감정, 참여자의 더 넓은 서사를 다룬다.
+
+참여자의 개방형 논의를 장려하기 위해 반구조화 면담 형식을 사용했다. 면담 전반에서 제기한 구체적 질문과 탐색영역은 표 3에 수록되어 있다. 표 3의 면담 지침을 구성하기 위해 네 차례의 예비면담을 실시했고, 그 결과 각 면담에서 탐색할 요인의 체크리스트와 연결된 핵심 질문 묶음을 개발했다. 이 방식은 참여자의 논의가 면담을 이끌 수 있도록 하는 유연한 틀을 제공했다. 대부분의 면담은 참여자에게 자신에 관해 간단히 말해 달라고 요청하면서 시작했고, 이는 흔히 가족과 일에 관한 응답을 이끌어 냈다. 이는 참여자와 라포를 형성하고 가족관계와 직장관계가 건강에 어떤 영향을 주는지 추가로 질문할 여지를 마련하는 데 유용했다. 이어서 참여자에게 자신의 건강에서 무엇이 가장 중요하다고 생각하는지 물었다. 이는 도움 요청 행동과 보건의료서비스 이용을 더 자세히 탐색할 의미 있는 맥락을 제공했다.
+
+남성이 자신의 건강에 관해 말하기를 꺼린다는 학술연구의 주장에도 불구하고(Mahalik, Good, & Englar-Carlson, 2003; Mansfield et al., 2003), 적절한 환경이 주어지자 우리 연구의 남성들은 자신의 건강에 관해 솔직하게 이야기할 의향이 있었다. 라포 형성은 이 결과를 얻는 데 핵심적이었다. JS에게 이는 전통적인 방식과 비전통적인 방식 모두로 라포를 형성한다는 뜻이었다. 전통적 방식에는 공통 경험을 나누고, 취미·여가활동·친구 및 가족과의 관계처럼 연구 목적과 무관해 보이는 주제의 논의에도 관심을 보이는 일이 포함되었다. 동료애(mateship) 개념을 반영한 비전통적 라포 형성은 참여자와 맥주를 함께 마시고, 개인·가족 영상을 함께 보고, 위험 감수 행동이나 성적 활력처럼 고정관념적으로 남성적인 활동에 관한 이야기를 나누는 데까지 확장되었다. 이러한 방식으로 참여자를 참여시킨 결과, 참여자들은 남성답지 않다고 인식되거나 대다수 남성집단에서 전통적으로 낙인찍힌 것으로 여겨지는 문제를 포함해 다양한 건강 우려를 이야기할 수 있었다. 예를 들어 JS가 전통적·비전통적 방식 모두로 라포를 형성하려 노력한 뒤에는 우울 같은 정신건강 문제, 발기부전 같은 성건강 문제, 울음 같은 정서적 반응에 관한 논의도 모두 흔하게 이루어졌다.
+
+면담에서 정보를 주고받는 데 연령도 중요한 역할을 했다는 점은 주목할 만하다. JS는 25세였고 참여자의 대다수는 55세 이상이었다. 따라서 서로의 생애경험은 매우 달랐다. JS와 참여자가 논의 중인 정보를 함께 이해하기 위해, 참여자들은 이야기를 하면서 “내가 자네 나이였을 때…” 또는 “내가 젊은이였을 때…” 같은 표현을 사용해 자신의 젊은 시절을 자주 되돌아보았다. 이 이야기들은 생애과정 전반의 비교경험을 반영했고, 평생 배운 교훈을 JS와 나누고 싶어 하는 마음을 보여 주었다. 이는 JS가 참여자의 생애 전반에서 건강과 남성성에 관련된 서로 다른 경험을 탐색할 기회를 제공했다.
+
+JS는 각 면담을 축어로 전사하고 필요한 경우 현장노트를 포함했다. 이어서 귀납적 접근으로 주제분석을 수행하면서 NVIVO 소프트웨어로 면담자료를 코딩했다.
+
+## 연구 결과
+
+서론에서 우리는 독립성이 노화와 남성성이라는 서로 다른 두 영역에서 중요한 역할을 한다고 지적했다. 아래에서는 연구 참여자들이 독립성에 관한 이 두 담론을 자신의 말 속에서 어떻게 결합했는지 살펴본다. 연구 참여 남성들은 이 담론들을 서로 분리하지 않았다. 오히려 그들의 말은 헤게모니적 남성성 담론과 성공적 노화 담론이 서로 얽혀 있음을 보여 주었다. 참여자에게 독립성은 남성적 정체성의 지표로서 스스로 해낼 수 있는 능력과, 나이 들면서 좋은 삶의 질을 유지할 수 있는 역량을 모두 뜻했다. 이어지는 절에서는 도움 요청과 보건의료서비스 이용에서 독립적으로 행동하는 것이 연구의 노년 남성에게 어떻게, 왜 중요했는지를 보여 준다.
+
+### 남성성 담론의 일부로서 독립적으로 행동하기
+
+우리 연구에 참여한 남성들의 발언 상당수는 헤게모니적 남성성의 구성과 일치한다고 해석할 수 있었다. 강인하고 굳세며 통제력을 지니는 것과 같은 남성적 특성이 참여자들이 독립성을 정의하는 방식에 포함되었다. 예를 들어 Conrad는 자신의 당뇨병을 통제하는 것에 관해 말하면서 다음과 같이 진술했다.
+
+> 내가 아는 당뇨병 환자 몇 명과 이야기해 봤어요. 그 사람들은 다리가 떨어져 나가고 눈이 멀고 그런 일이 생길 거라고 생각하죠. 자기 인생이 끝났다고 생각하는 거예요. 나는 늘 ‘당뇨병을 통제하고, 당뇨병이 당신을 통제하게 두지 마라’고 말했어요. (Conrad, 63세)
+
+자신의 건강을 통제하는 것이 Conrad에게 중요했다면, 다른 남성들은 강인함을 중요하게 여겼다. 예를 들어 Harry는 최근 건강이 나빴던 때를 이야기하며 다음과 같이 말했다.
+
+> 무슨 말인지 아시겠지만, 그 상황을 견뎌 내기 위해 가능한 한 강해지려고 노력해야 해요. 그냥 자기 삶을 계속 살아가는 거죠. 언제나 도움을 요청할 필요는 없어요. (Harry, 68세)
+
+이 논문에서 관심을 두는 것은 Conrad와 Harry가 위에서 설명한 방식으로 독립적으로 행동하는 것이 노년 남성의 도움 요청 행동과 보건의료서비스 이용에 어떤 영향을 주는가이다. 우리의 분석에서는 강인함과 통제력을 통해 자신의 독립성을 유지하는 것이 노년 남성이 도움 요청에 접근하는 방식을 이해하는 데 핵심적인 요소로 나타났다. Sam에게 도움을 적극적으로 요청하는지 물었을 때 그는 다음과 같이 말했다.
+
+> 나는 곧바로 도움을 요청하는 사람이 아니에요. 내 힘으로 해결해 보는 걸 좋아하죠. 하지만 아내가 내가 제대로 하고 있지 않다고 생각하면, 분명 나한테 말해 줄 겁니다! (Sam, 74세)
+
+마찬가지로 Ben에게 자신의 도움 요청 행동에 관해 같은 질문을 하자 다음과 같이 말했다.
+
+> 내 아내가 어떻게 생각하는지는 말해 줄 수 있어요. 아내는 내가 막무가내고 고집스럽다고 생각하죠…나는 꽤 독립적이라는 걸 인정해요. 다른 사람에게 의지하는 걸 좋아하지 않아요. 하지만 가끔은 그래야 하죠. (Ben, 74세)
+
+이 사례에서 Ben은 아내가 자신의 늦은 도움 요청을 고집스러움으로 본다고 말하면서도, 자신은 독립적으로 행동하기를 좋아한다고 주장하며 자신의 행동을 동시에 옹호했다. 이런 상황은 흔했고, 연구 참여 남성들이 자신의 삶에서 중요한 타인과 다른 관점을 지니는 경우가 많다는 점이 분명했다. 이 사례에서 Ben은 아내가 자신의 행동을 고집스러움과 일종의 비순응으로 오해한다고 여겼다. 이어 Ben은 다른 사람에게 의지하고 싶지 않아서 도움을 요청하기를 꺼렸다고 설명했다. 타인에게 의지하기를 원하지 않는다는 점은 연구 참여 남성들에게 일관되게 나타난 주제였고, 이 절의 도입부에서 언급한 남성적 특성을 실천하는 능력에 영향을 주었다. 예를 들어 Arnold는 욕실에서 넘어졌을 때 함께 사는 하숙인에게 도움을 요청하지 않기로 한 일을 이야기했다.
+
+> 욕실에서, 화장실에서 넘어졌어요. Olivia가 집에 있었죠. 침대에 있었고, 내가 부를 수도 있었어요. 알잖아요. 하지만 부르지 않았어요. 아마 다른 사람에게 짐이 된다고 생각하게 되는 것 같아요. (Arnold, 76세)
+
+Arnold의 경험은 그가 도움 요청을 타인에게 부담을 주는 건강행동으로 내면화한 방식을 보여 준다. 그는 도움을 요청할 수 있었다는 것을 알았지만 그렇게 하지 않았다. 이는 독립성을 건강을 해치는 개념으로 보는 남성의 도움 요청과 남성성에 관한 연구와 나란히 놓인다(Galdas, Cheater, & Marshall, 2005; Lloyd, 2001; Taylor et al., 1998). 마찬가지로 Max는 지역사회 돌봄 간호사가 일주일에 두 번 방문하겠다는 제안에 관해 말하면서 다음과 같이 말했다.
+
+> 오지 말라고 했어요. 내가 어리석고 완고하고 막무가내라서요.
+
+> 왜 그런가요?
+
+> 그냥 내 방식이에요. 내가 바닥에 완전히 쓰러지기 전까지는 도움을 요청하지 않을 겁니다.
+
+> 왜 그렇다고 생각하세요?
+
+> 너무 오랫동안 독립적으로 살아왔기 때문이죠. 아마 전에 우리가 이야기하던 문제로 돌아가는 것 같아요. 그러니까 나는 너무 오랫동안 나 자신을 돌봐야 했고, 내가 그럴 수 없는 단계가 되기 시작하면… (멈춤)…그때는 아예 포기할지도 몰라요. 하지만 내가 할 수 있는 동안에는, 비록 대충 해내는 정도라도 계속 그렇게 할 겁니다. 나는 지독할 만큼 오랫동안 독립적으로 살아왔어요! (Max, 70세)
+
+Max의 발췌문은 독립적인 생활방식을 유지할 수 있는 것이 이 남성들에게 중요하다는 점을 강조한다. 그러나 Max의 사례는 독립적으로 행동하는 능력이 남성으로서의 정체성과 나이 듦의 영향에 관한 우려 모두의 특성임을 시사한다. Max는 처음에 자신이 “막무가내”이고 “고집스럽다”고 단언하며 자신의 도움 요청 행동을 지배적인 남성성 담론에 맞추었다. 그러고 나서 그는 자신이 얼마나 오랫동안 독립적으로 살아왔는지에 초점을 옮겼다.
+
+Max의 사례는 남성이 건강문제에 대한 도움 요청을 미룰 때 고집스럽고 비협조적이라고 규정해 온 전통적인 고정관념적 구성을 문제 삼는다(Tudiver & Talbot, 1999; Courtenay, 2000a; Seymour-Smith, Wetherell, & Phoenix, 2002). 이 사례는 노년 남성의 독립성 담론에 이들이 노인으로 위치 지어지는 방식에 대한 이해도 동시에 포함되어야 함을 시사한다. 다음 절에서는 연구의 노년 남성들이 독립적으로 행동하는 것을 어떻게 설명하고 의미를 부여했는지 보여 준다.
+
+### 성공적 노화 담론의 일부로서 독립적으로 행동하기
+
+참여자들은 일상기능을 유지함으로써 독립적으로 행동할 수 있고, 이것이 나이 들면서 적정한 삶의 질을 누리는 데 도움이 된다고 말했다. 연구의 중년 남성들은 삶의 질과 관련하여 일상기능 유지를 논의했다. 예를 들어 David는 다음과 같이 말했다.
+
+> 이제는 가능한 한 충만한 삶을 살려면 건강을 유지해야 한다는 점을 생각해야 할 단계에 이르고 있어요. 삶의 질도 그렇고요. 단순히 얼마나 오래 사느냐가 아니라, 얼마나 오래 자신을 돌보고 내가 하고 싶은 일을 할 수 있느냐는 거죠. (David, 52세)
+
+52세인 David는 이미 장수보다 삶의 질을 중시하며 자신의 건강을 정당한 관심사로 삼고 우선시하기 시작한 생애의 한 ‘단계’를 이야기하고 있었다. David는 독립성 저하가 삶의 질 저하와 어떻게 맞닿는지를 문제 삼기 시작했다. David가 ‘긴 삶’과 대비되는 ‘충만한 삶’의 중요성을 강조한 것은 연구 참여 남성들이 건강하고 생산적인 삶을 살고자 했으며 그 이점을 인식했음을 보여 준다.
+
+우리는 참여자들에게 “당신의 건강에서 무엇이 중요합니까?”라고 물어 건강한 삶에 대한 이해를 탐색했다. Bob은 간결하게 다음과 같이 답했다.
+
+> 음, 글쎄요, 건강을 잘 유지하는 거죠. 아마 독립적으로 기능할 수 있는 것 같아요. 신체적으로, 인지적으로, 그런 모든 면에서요. (Bob, 51세)
+
+Bob의 견해에서 독립성 유지는 신체적·인지적 능력을 통해 표현된다. 따라서 독립적으로 기능할 수 있는 것은 삶의 질을 반영한다고 여겨졌다. 더 나이 든 참여자들도 비슷하게 답했다. 다만 이들은 시력 저하처럼 특정 건강문제가 초래하는 결과에 초점을 맞추는 경향이 있었다. 예를 들어 Wayne은 다음과 같이 말했다.
+
+> 내 시력이요. 그게 내가 걱정하는 한 가지예요. 그걸 잃으면, 그걸로 끝이니까요.
+
+> 그걸로 끝이라고 하셨는데, 무슨 뜻인가요?
+
+> 그러니까, 나는 책 읽는 걸 좋아하고 차 운전하는 것도 좋아해요. 무슨 말인지 알죠. 하지만 읽을 수 없으면 그걸로 끝이에요. (Wayne, 79세)
+
+Wayne은 ‘그걸로 끝’이라고 말함으로써 시력을 잃으면 자신의 삶의 질이 심각하게 낮아질 것이라고 단언했다. 이어 그는 책을 읽고 차를 운전하는 것과 같은 일상기능을 유지할 능력에 이것이 직접 영향을 줄 것이라고 설명했다.
+
+연구의 노년 남성들은 삶의 질을 죽음에 대한 우려와 자주 연결했다. 죽음에 관한 말은 대체로 두 가지 방식, 즉 죽음에 가까웠던 경험 또는 죽고 싶은 욕망으로 제시되었다. 예를 들어 Roger는 심장마비 경험을 되돌아보며 다음과 같이 말했다.
+
+> 총구를 들여다보고 있는데 누군가 방아쇠에 손가락을 대고 있으면 걱정하기 시작하죠. 나는 뇌졸중에 걸려 다른 사람이 나에게 밥을 먹여 주고 용변과 몸 씻는 일을 도와주며, 내가 식물인간처럼 앉아 모두에게 성가신 존재가 되는 건 정말 원하지 않아요. 특히 [인공호흡기를] 꺼 달라고 말할 능력조차 없다면요. (Roger, 70세)
+
+Roger에게 다른 사람이 먹여 주고 씻겨 주어야 하는 상태는 누구에게도 지우고 싶지 않은 부담이었다. ‘총구를 들여다보는’ 것으로 표현한 죽음에 가까웠던 경험인 심장마비를 겪고 나서야 그는 그 일이 일상생활에 미치는 영향을 걱정했다. 따라서 죽음에 가까웠던 경험은 수명을 위협하지만, 동시에 자신이 살아가는 삶의 질에 주의를 집중하게 하는 것으로 보인다.
+
+다른 남성들에게 죽음에 대한 숙고나 죽을 가능성은 다른 의미를 지녔다. 예를 들어 Michael은 운전면허를 잃고 뒤이어 독립성을 상실한 과정을 다음과 같이 설명했다.
+
+> 이제 거의 12개월 전인데, 운전면허를 잃었어요. 의사가 든 이유는 인지능력이 감퇴하고 있다는 것이었죠.
+
+> 네.
+
+> 내가 이해하기로는 눈과 뇌 사이의 회로가 부분적으로 끊어진 것 같다는 뜻이에요. 그게 정말 그런 의미인지는 모르겠지만, 나는 그렇게 이해해요.
+
+> 그 결정을 내려야 했던 사람이 의사였나요?
+
+> 네.
+
+> 음, 그 일을 어떻게 받아들이셨나요?
+
+> 아, 끔찍했어요. 내 인생을 망쳐 놓았죠! 두어 달 동안은 살든 죽든 상관하지 않았어요. 아주 고립된 기분이 들어요. 기차와 버스를 타는 곳은 집에서 꽤 멀어요. 전동 이동 스쿠터(gopher)는 버스에 실을 수 없고요. 하지만 운전면허를 잃은 건 내 삶에 엄청난 차이를 만들었어요. 나를 몹시 낙담하게 했죠. 지금도 어느 정도 그래요…살아 있는 것, 정말로 살아가는 것이 아니라면 살아 있어 봐야 큰 의미가 없어요. 그저 생존하거나 존재할 뿐 삶을 즐기지 못하는 사람은 삶에서 아무것도 얻지 못한다고 생각해요. 25년 동안 누군가가 먹여 주고 목의 구멍으로 숨을 쉬며 살아온 여성을 알아요. 내가 보기에는 터무니없는 일이죠. 내가 그런 단계에 이른다면 차라리 고통 없이 [총알]을 받아 문제를 끝내고 싶어요. 운전면허를 잃은 뒤로 그런 생각을 많이 하게 되었어요…이제는 내가 나 자신을 돌볼 수 없다면 요양원에 들어가기보다 안락사되기를 원한다고 생각해요. 내 자녀나 손주들의 관점에서는 내가 그렇게 하는 것을 원치 않겠죠. 하지만 내 이기적인 관점에서는 그렇게 떠나는 편을 택할 것 같아요. (Michael, 73세)
+
+Michael은 운전면허 상실에 따른 독립성 상실을 삶의 질이 ‘망가진’ 것과 같다고 보았고, 명시적으로 말하지는 않았지만 남성적 정체성의 상실과도 연결했다. 더 나아가 Michael은 생애과정의 그 특정 단계에서 죽을 가능성이 자신을 걱정시키지 않았다고 솔직하게 인정했다. 이에 따라 ‘정말로 살아가는 것’이라는 개념이 선명하게 부각되었다. 그는 단순한 생존과 달리 즐거움이 독립적이고 생산적인 삶의 핵심이어야 한다고 주장했다. 이는 Arnold의 이야기처럼 더 긍정적인 사례에도 반영되었다. 그의 의사는 전동 스쿠터 구매를 권하여 그가 일상활동에서 독립성을 유지하도록 지원했다.
+
+> 이제는 걸을 수 없어요. 여기 [식탁]에서 뒷문까지 갔다가 돌아오는 정도는 걸을 수 있고, 그게 전부예요. 그런데 저번에, 지난달이었던 것 같은데, 타고 다닐 수 있는 전동 스쿠터를 하나 샀어요. 그걸 타고 모퉁이 가게, 약국, 우체국, 호텔 같은 곳에 갈 수 있죠. 멀리 가지는 않아요. 거기까지 약 5분이면 가요. 정말 좋아요.
+
+> 그러면 독립성이 조금 더 생기는군요?
+
+> 그렇죠. 이걸로 약 40 km를 갈 수 있지만 그렇게 하지는 않아요. 그냥, 글쎄요, 의사에게 가는 데 쓰죠. 의사 진료실은 [동네] 호텔 옆에 있어요. 버스로 약 3정거장 떨어진 곳이죠. 나는 혼자 그곳에 갑니다. (Arnold, 76세)
+
+전동 스쿠터 덕분에 Arnold는 삶의 여러 측면에서 독립적인 상태를 유지할 수 있었다. 이는 이상화된 남성성을 재구성한 사례였다(Gerschick & Miller, 1995). 독립성은 여전히 중요했지만, 이제 걷지 못하게 된 Arnold에게는 다른 의미를 지니게 되었다. 분명 Arnold에게 독립성은 좋은 삶의 질을 지속할 수 있게 하는 수단이었다. 선행연구는 좋지 않은 건강과 장애가 노인의 자아상과 자존감에 심대한 영향을 미칠 수 있다고 지적했다(Arber & Ginn, 1991). Arnold에게는 그렇지 않은 것으로 보였다. 오히려 그는 독립성이 실제로 자신에게 무엇을 의미하는지 재구성함으로써, “나는 혼자 그곳에 갑니다”라는 말이 보여 주듯 좋은 삶의 질을 유지할 수 있었다. 실제로 Arnold는 스쿠터를 구매함으로써 동네 가게와 의사를 방문하는 것 같은 일상기능을 통해 독립성을 유지할 수 있었다.
+
+이 연구의 일부 남성에게는 도움을 요청할지 결정할 때 생존 자체가 반드시 동기가 되지는 않았다. 그러나 삶의 질은 동기가 되었다. 남성적 독립성 구성을 강조하는 동시에 이를 긍정적 노화의 지표인 독립성과 연결하면, 노년 남성의 도움 요청 행동을 바라보는 대안적 관점을 얻을 수 있다. 이 관점은 일상적인 신체·인지 기능을 유지하는 것이 나이 드는 남성의 독립적 존재 상태를 뒷받침하는 데 중요하며, 동시에 이들이 자신을 남성으로 위치시키는 방식도 반영한다는 점을 인정한다.
+
+## 결론
+
+이 논문에서 우리는 노년 남성이 자신의 건강에 관한 결정을 내릴 때 독립적으로 행동할 수 있는 것을 중요하게 여긴다는 점을 보여 주었다. 독립성을 유지하려는 관심은 남성으로서의 정체성과 노인으로서의 정체성을 모두 반영한다. 그러나 노화와 관련된 독립성의 의미는 헤게모니적 남성성이 규정하는 것과 다르다. 그럼에도 우리 참여자에게 이 두 담론은 복잡하게 서로 얽혀 있었다.
+
+남성이 보건의료서비스 이용을 꺼리는 듯한 현상을 설명하는 데 헤게모니적 남성성 구성이 사용되어 왔지만, 이러한 초점에는 한계가 있다. 우리의 분석은 노년 남성의 독립성을 남성성만으로 틀 짓는 것이 생산적이지 않음을 시사한다. 실제로 성공적 노화와 관련된 설명처럼 독립성이 노년 남성에게 중요한 이유를 설명하는 다른 방식도 있다. 따라서 노년 남성의 독립성은 남성적 정체성의 특성이면서 성공적 노화의 지표인 것으로 보아야 한다. 이는 노년 남성이 도움 요청과 보건의료서비스 이용을 조정해 가는 방식을 정확하게 반영하려면 특히 중요하다.
+
+보건의료서비스 제공자는 연령과 젠더가 도움 요청 및 보건의료서비스 이용에 미치는 영향을 고려해야 한다. 이를 위해 보건의료 전문가는 노년 남성의 독립적 행동이 건강을 해칠 수도, 건강을 증진할 수도 있으므로 이를 인식하는 방식을 재고해야 한다. 노년 남성에게 독립성을 건강 증진적 특성으로 장려하는 것은 진료 과정에서 이들과 건강에 관해 논의하도록 참여시키는 데 아직 활용되지 않은 도구다. 또한 이는 잠재적 치료 선택지를 논의하고, 복약 순응에 접근하며, 노년 남성이 자신의 건강을 더 많이 통제하고 더 큰 책임을 지도록 장려할 수 있는 대안적 틀을 제공한다. 예방적 건강활동에 관여하는 보건의료서비스 제공자는 노년 남성이 독립적으로 행동할 때 얻는 건강 증진적 이점에 초점을 맞춘 건강증진 전략을 채택하는 방안을 더 탐색할 필요가 있다. 그러한 전략은 과거에 간과했던 방식으로 노년 남성과 연결될 가능성이 크다.
+
+우리의 분석은 정책개발, 특히 남성건강 관련 정책에도 중요한 함의를 지닌다. 현재 남성건강 정책 논의는 독립성과 관련된 특성을 포함하여 헤게모니적 남성성 특성이 건강을 해치는 효과에 초점을 맞추어 왔다.
+
+이 논문은 남성이 나이 들면서 독립성의 핵심 측면이 달라진다는 점을 보여 주었다. 실천과 정책 맥락 모두에서 고려해야 하는 것은 바로 이러한 변화다. 덜 보편주의적인 남성건강 정책개발 접근은 유용한 출발점이 될 수 있다. 이 접근은 노년 남성이 겪는 문제를 포함해 남성의 특정 하위집단이 직면하는 고유한 문제를 고려해야 한다. 이 논문이 보여 주듯이 이러한 결과를 달성하려면 여러 관점이 필요하다.
+
+우리는 독립성, 남성성, 노화 사이 연결의 공중보건적 함의를 검토하기 시작했다. 그러나 더 면밀한 검토가 필요하다. 특히 보건의료인과 정책입안자가 노년 남성이 건강을 증진하고 삶의 질을 높이는 방식으로 독립성을 유지하도록 지원할 역량이 있는지가 중요한 문제다. 이를 위해서는 노년 남성이 건강을 정의하는 방식에 대한 더 철저한 검토, 노년 남성이 자신의 건강과 관련하여 어떻게 행동해야 한다고 기대되는지에 대한 더 폭넓은 탐색, 노년 남성의 건강 관련 결정에 영향을 미치는 개인적·사회적 관계에 대한 더 깊은 이해, 기존 서비스가 노년 남성의 건강욕구를 충족하는지에 대한 신중한 고려, 그리고 노년 남성이 건강에 관한 논의에 참여하도록 하는 혁신적 전략의 개발이 필요하다.
+
+## 감사의 글
+
+Florey Adelaide Male Aging Study 연구팀의 지원에 감사드린다. 또한 이 연구를 수행하도록 지원한 Florey Medical Research Foundation, 애들레이드대학교 보건과학부, King and Amy O'Malley Trust에 감사드린다.
+
+## 참고문헌
+
+Aoun, S., Donovan, R., Johnson, L., & Egger, G. (2002). Preventive care in the context of men's health. Journal of Health Psychology, 7(3), 243−252.
+
+Arber, S., Davidson, K., & Ginn, J. (2003). Changing approaches to gender and later life. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships Maidenhead: Open University Press.
+
+Arber, S., & Ginn, J. (1991). Gender and later life: A sociological analysis of resources and constraints. London: Sage Publications.
+
+Berg, L., & Longhurst, R. (2003). Placing masculinities and geography. Gender, Place and Culture, 10, 351−360.
+
+Bland, R. (1999). Independence, privacy and risk: Two contrasting approaches to residential care for older people. Ageing & Society, 19, 539−560.
+
+Borbasi, S., Chapman, Y., Gassner, L., Dunn, S., & Read, K. (2002). Perceptions of the researcher: In-depth interviewing in the home. Contemporary Nurse, 14, 24−37.
+
+Bowling, A., & Dieppe, P. (2005). What is successful ageing and who should define it? British Medical Journal, 331, 1548−1551.
+
+Britten, N. (1995). Qualitative research: Qualitative interviews in medical research. British Medical Journal, 311(6999), 251−253.
+
+Calasanti, T. (2003). Masculinities and care work in old age. In S. Arber, K. Davidson, & J. Ginn (Eds.), Gender & ageing: Changing roles and relationships (pp. 15−30). Maidenhead: Open University Press.
+
+Calasanti, T. (2005). Firming the floppy penis: Age, class and gender relations in the lives of old men. Men & Masculinities, 8, 3−23.
+
+Connell, R. (1997). Men, masculinities and feminism. Social Alternatives, 16(3), 7−10.
+
+Connell, R., & Messerschmidt, J. (2005). Hegemonic masculinity: Rethinking the concept. Gender & Society, 19, 829−859.
+
+Courtenay, W. (2000a). Constructions of masculinity and their influence on men's well-being: A theory of gender and health. Social Science & Medicine, 50, 1385−1401.
+
+Courtenay, W. (2000b). Engendering health: A social constructionist examination of men's health beliefs and behaviours. Psychology of Men & Masculinity, 1, 4−15.
+
+Covinsky, K., Palmer, R., Fortinsky, R., Counsell, S., Stewart, A., Kresevic, D., et al. (2003). Loss of independence in activities of daily living in older adults hospitalized with medical illnesses: Increased vulnerability with age. Journal of the American Geriatric Society, 51, 451−458.
+
+Davies, S., Laker, S., & Ellis, L. (1997). Promoting autonomy and independence for older people within nursing practice: A literature review. Journal of Advanced Nursing, 26, 408−417.
+
+Drummond, M., & Smith, J. (2006). Ageing men's understanding of nutrition: Implications for health. Journal of Men's Health and Gender, 3, 56−60.
+
+Fiatarone, M. (1996). Physical activity and functional independence in aging. Research Quarterly for Exercise & Sport, 67, S70.
+
+Ford, A., Haug, M., Stange, K., Gaines, A., Noelker, L., & Jones, P. (2000). Sustained personal autonomy: A measure of successful aging. Journal of Aging & Health, 12, 470−489.
+
+Galdas, P., Cheater, F., & Marshall, P. (2005). Men and health help-seeking behaviour: Literature review. Journal of Advanced Nursing, 49, 616−623.
+
+Galloway, M., & Jokl, P. (2000). Aging successfully: The importance of physical activity in maintaining health and function. Journal of the American Academy of Orthopaedic Surgeons, 8, 37−44.
+
+Gerschick, T., & Miller, A. (1995). Coming to terms: Masculinity and physical disability. In D. Sabo & D. Gordon (Eds.), Men's health and illness: Gender, power and the body (pp. 183−204). Thousand Oaks: Sage Publications.
+
+Greiner, P., Snowdon, D., & Schmitt, F. (1996). The loss of independence in activities of daily living: The role of low normal cognitive function in elderly nuns. American Journal of Public Health, 86, 62−66.
+
+Hebert, R. (1997). Functional decline in old age. Canadian Medical Association Journal, 157, 1037−1045.
+
+Hodgetts, D., & Chamberlain, K. (2002). The problem with men': Working-class men making sense of men's health on television. Journal of Health Psychology, 7(3), 269−283.
+
+Lantz, J., Fullerton, J., Harshburger, R., & Sadler, G. (2001). Promoting screening and early detection of cancer in men. Nursing and Health Sciences, 3, 189−196.
+
+Lee, C., & Owens, G. (2002). The psychology of men's health. Buckingham: Open University Press.
+
+Lloyd, T. (2001). Men and health: The context for practice. In N. Davidson & T. Lloyd (Eds.), Promoting men's health: A guide for practitioners (pp. 3−43). Edinburgh: Bailliere Tindall.
+
+Longhurst, R. (2000). Geography and gender: Masculinities, male identity and men. Progress in Human Geography, 24, 439−444.
+
+Longhurst, R. (2001). Geography and gender: Looking back, looking forward. Progress in Human Geography, 25, 641−648.
+
+Mahalik, J., Good, R., & Englar-Carlson, G. (2003). Masculinity scripts, presenting concerns, and help seeking: Implications for practice and training. Professional Psychology, Research and Practice, 34, 123−131.
+
+Mansfield, A., Addis, M., & Mahalik, J. (2003). Why won't he go to the doctor?: The psychology of men's help seeking. International Journal of Men's Health, 2(2), 93−109.
+
+Marshall, B. (2006). The new virility: Viagra, male aging and sexual function. Sexualities, 9, 345−362.
+
+Martin, S., Haren, M., Taylor, A., Middleton, S., & Wittert, G. & Members of the Florey Adelaide Male Ageing Study FAMAS 2007. Cohort profile: The Florey Adelaide Male Ageing Study FAMAS. International Journal of Epidemiology, 1−5 (Advanced access published January 12, 2007).
+
+McColl, M., Stirling, P., Walker, J., Corey, P., & Wilkins, R. (1999). Expectations of independence and life satisfaction among ageing spinal cord injured adults. Disability and Rehabilitation, 21, 231−240.
+
+McKie, L. (1999). Older people and food: Independence, locality and diet. British Food Journal, 101, 528−536.
+
+Moynihan, C. (1998). Theories in health care and research: Theories of masculinity. British Medical Journal, 317, 1072−1075.
+
+O'hehir, B. (1996). Men's health: Uncovering the mystery. Mount Gambier: Kingston Publisher.
+
+Oliffe, J. (2006). Embodied masculinity and androgen deprivation therapy. Sociology of Health and Illness, 28, 410−432.
+
+Oliffe, J., & Mroz, L. (2005). Men interviewing men about health and illness: Ten lessons learned. Journal of Men's Health & Gender, 2, 257−260.
+
+Reevy, G., & Maslach, C. (2001). Use of social support: Gender and personality differences. Sex Roles, 44, 437−459.
+
+Reisberg, L. (2000). Colleges start clinics for doctor-averse men. Chronicle of Higher Education, 46, 39.
+
+Riska, E. (2002). From type A man to the hardy man: Masculinity and health. Sociology of Health & Illness, 24, 347−358.
+
+Scheidt, R., Humphreys, D., & Yorgason, J. (1999). Successful aging: What's not to like. Journal of Applied Gerontology, 18, 277−282.
+
+Schofield, T., Connell, R., Walker, L., Wood, J., & Butland, D. (2000). Understanding men's health and illness: A gender-relations approach to policy, research, and practice. Journal of American College Health, 48(6), 247−256.
+
+Secker, J., Hill, R., Villeneau, L., & Parkman, S. (2003). Promoting independence: But promoting what and how. Ageing & Society, 23, 375−391.
+
+Seymour-Smith, S., Wetherell, M., & Phoenix, A. (2002). My wife ordered me to come!: A discursive analysis of doctors' and nurses' accounts of men's use of general practitioners. Journal of Health Psychology, 7(3), 253−267.
+
+Shepard, R. (1993). Exercise and aging: Extending independence in older adults. Geriatrics, 48, 61−65.
+
+Spector-Mersel, G. (2006). Never-aging stories: Western hegemonic masculinity scripts. Journal of Gender Studies, 15, 67−82.
+
+Speer, S. (2001). Reconsidering the concept of hegemonic masculinity: Discursive psychology, conversation analysis and participants' orientations. Feminism & Psychology, 11, 107−135.
+
+Stephenson, P., Wolfe, N., Coughlan, R., & Koehn, S. (1999). A methodological discourse on gender, independence, and frailty: Applied dimensions of identity construction in old age. Journal of Aging Studies, 13, 391−401.
+
+Steverink, N., Lindenberg, S., & Ormel, J. (1998). Towards understanding successful ageing: Patterned change in resources and goals. Ageing & Society, 18, 441−467.
+
+Taylor, C., Stewart, A., & Parker, R. (1998). Machismo' as a barrier to health promotion in Australian males. In T. Laws (Ed.), Promoting men's health: An essential book for nurses (pp. 15−29). Melbourne: Ausmed Publications.
+
+Thompson, E., & Whearty, P. (2004). Older men's social participation: The importance of masculinity ideology. The Journal of Men's Studies, 13, 5−24.
+
+Torres, S. (1999). A culturally-relevant theoretical framework for the study of successful ageing. Ageing & Society, 19, 33−51.
+
+Tudiver, F., & Talbot, Y. (1999). Why don't men seek help? Family physicians' perspectives on help-seeking behaviour in men. Journal of Family Practice, 48(1), 47−52.
+
+While, A. (2002). Failing to make contact: Young men's health. British Journal of Community Nursing, 7(1), 52.
+
+Wilson, G. (1995). “I'm the eyes and she's the arms”: Changes in gender roles in advanced old age. In S. Arber & J. Ginn (Eds.), Connecting gender & ageing: A sociological approach (pp. 98−113). Buckingham: Open University Press.
+
+Woods, B. (1999). Promoting well-being and independence for people with dementia. International Journal of Geriatric Psychiatry, 14, 97−109.

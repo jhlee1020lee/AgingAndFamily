@@ -1844,6 +1844,6 @@
   ],
   "sentence_alignment_version": 1,
   "sentence_alignment_note": "Sentence pairs were generated monotonically and all mismatch blocks were reviewed against the bilingual text before promotion.",
-  "sentence_alignment_reviewed_at": "2026-08-22T02:07:48.111Z",
+  "sentence_alignment_reviewed_at": "2026-08-22T06:06:14.623Z",
   "sentence_alignment_status": "verified"
 }

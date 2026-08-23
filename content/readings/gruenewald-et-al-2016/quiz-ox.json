@@ -1,0 +1,127 @@
+{
+  "title": "Gruenewald et al. (2016) OX 퀴즈",
+  "instructions": "문장을 읽고 O 또는 X를 고르세요. 해설은 지정된 원문 세그먼트 한 곳만으로 확인할 수 있습니다.",
+  "question_set_type": "OX 퀴즈",
+  "items": [
+    {
+      "prompt": "이 논문에서 생성감은 부모역할에만 한정되지 않으며 타인, 대개 젊은 사람을 돌보고 다음 세대의 발전에 기여하려는 관심과 행동을 뜻한다.",
+      "answer": "O",
+      "explanation": "서론은 생성감의 중심을 다음 세대의 발전을 돕는 헌신에 두고 부모역할, 멘토링, 돌봄, 시민참여 등을 기제로 제시한다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "생성감의 기제로 부모역할과 멘토링·돌봄은 제시되지만, 시민참여는 별개의 활동으로 구분된다.",
+      "answer": "X",
+      "explanation": "시민참여도 부모역할, 멘토링, 돌봄, 젊은 세대를 위한 자원과 도구의 창출과 함께 생성감의 기제로 제시된다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "EC는 초등학생의 발달을 돕는 동시에 노인에게 의미 있는 기여와 사회적·인지적·신체적 활동의 기회를 제공하도록 설계됐다.",
+      "answer": "O",
+      "explanation": "EC는 아동의 학업·사회행동적 안녕과 노인의 생성감 기회 및 건강 관련 활동을 함께 겨냥한 세대 간 상생 프로그램이다.",
+      "evidence_segment_id": "EC-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "처음 선별한 2,675명 가운데 799명이 최종적으로 중재군 또는 대조군에 무작위배정되었다.",
+      "answer": "X",
+      "explanation": "2,675명을 처음 선별한 뒤 최종 무작위배정된 인원은 799명이 아니라 702명이었고, EC군 352명과 대조군 350명으로 나뉘었다.",
+      "evidence_segment_id": "PARTICIPANTS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "EC군 352명 가운데 68명이 실제 중재를 받았고 284명은 학교 자원봉사 직책에 진입하지 않았다.",
+      "answer": "X",
+      "explanation": "두 수치의 역할이 반대다. EC군 352명 중 284명이 중재를 받았고 68명은 자기선택, 프로그램 선택 또는 기타 사유로 직책에 진입하지 않았다.",
+      "evidence_segment_id": "PARTICIPANTS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "생성감 욕구와 생성감 성취는 서로 구별되지만 상호 강화할 수 있는 구성요소로 개념화됐다.",
+      "answer": "O",
+      "explanation": "저자들은 욕구가 생성감 활동을 촉진하고 성취지각이 다시 활동을 계속하려는 욕구를 북돋울 수 있다고 설명한다.",
+      "evidence_segment_id": "ENHANCING-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "생성감 욕구와 성취는 기초선과 4·8·12·24개월에 측정됐다.",
+      "answer": "X",
+      "explanation": "8개월은 생성감 측정시점이 아니다. 전체 평가는 더 자주 있었지만 생성감 욕구와 성취는 기초선과 4·12·24개월에 측정됐다.",
+      "evidence_segment_id": "MATERIALS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "대조군은 무처치군이 아니며 EC를 제외한 통상적인 자원봉사 기회를 CARE를 통해 안내받았다.",
+      "answer": "O",
+      "explanation": "대조조건은 무처치가 아니라 CARE가 제공하는 다양한 자원봉사 기회였고, 시험기간에는 EC만 제외됐다.",
+      "evidence_segment_id": "PARTICIPANTS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "생성감 척도는 욕구 7문항과 성취 6문항으로 구성됐고 각 문항은 1점부터 6점까지 평정했다.",
+      "answer": "O",
+      "explanation": "BECT용 척도는 두 하위척도로 구성되며 1은 전혀 동의하지 않음, 6은 매우 동의함을 뜻한다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "ITT 분석은 최초 배정보다 실제 EC 참여 여부를 기준으로 순응자와 비순응자를 재분류해 비교한다.",
+      "answer": "X",
+      "explanation": "ITT는 실제 치료 노출을 기준으로 재분류하지 않고 최초 무작위배정 집단의 순응자와 비순응자를 함께 포함한다.",
+      "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "가산성 가정이 충족되지 않은 네 CACE 모형은 생성감 욕구 3개와 생성감 성취 1개였다.",
+      "answer": "X",
+      "explanation": "개수가 뒤바뀌었다. 가산성 가정이 충족되지 않은 모형은 생성감 욕구 1개와 생성감 성취 3개였다.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "hard"
+    },
+    {
+      "prompt": "요인분석에서 욕구와 성취는 구별된 두 요인으로 나타났고 두 요인은 r = .54로 중간 정도 상관됐다.",
+      "answer": "O",
+      "explanation": "두 문항군은 서로 분리되어 강하게 적재됐으며 두 요인의 상관은 .54였고 별도 하위척도 점수를 산출했다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "연구진은 하나의 고정 기준만 사용하지 않고 누적 봉사시간 분포의 20·40·60·80백분위수로 서로 다른 순응기준의 CACE 모형을 추정했다.",
+      "answer": "O",
+      "explanation": "노출이 많은 사람이 더 큰 혜택을 얻는지 보기 위해 시점별 실제 노출분포의 네 분위수 절단점을 사용했다.",
+      "evidence_segment_id": "ANALYTIC-EXPOSURE-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "BECT는 생성감 변화가 정신건강·인지기능·신체기능과 생존을 매개하는 경로를 현재 논문의 2차 결과로 검정했다.",
+      "answer": "X",
+      "explanation": "해당 건강·안녕 혜택은 생성감과 관련된 종단 관찰연구의 결과이며 BECT 안에서 그 연결을 탐색하는 일은 향후 분석 목표로 남았다.",
+      "evidence_segment_id": "DISCUSSION-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "hard"
+    },
+    {
+      "prompt": "여성 85%이고 주로 아프리카계 미국인인 표본 구성은 일반화의 한계이지만, 소수인종 노인을 모집한 성과 자체가 연구 실패를 뜻하지는 않는다.",
+      "answer": "O",
+      "explanation": "저자들은 표본구성이 일반화를 제한할 수 있다고 명시하면서도 중재연구에서 덜 포함되는 소수인종 노인을 모집한 점을 함께 평가한다.",
+      "evidence_segment_id": "LIMITATIONS-001",
+      "source": "Gruenewald et al. (2016)",
+      "difficulty": "medium"
+    }
+  ]
+}

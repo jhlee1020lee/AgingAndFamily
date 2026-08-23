@@ -1,0 +1,26 @@
+[
+  {
+    "source": "page-03.png",
+    "output": "table-1.png",
+    "x": 62,
+    "y": 136,
+    "width": 960,
+    "height": 242
+  },
+  {
+    "source": "page-03.png",
+    "output": "table-2.png",
+    "x": 62,
+    "y": 1192,
+    "width": 960,
+    "height": 202
+  },
+  {
+    "source": "page-04.png",
+    "output": "table-3.png",
+    "x": 72,
+    "y": 655,
+    "width": 948,
+    "height": 738
+  }
+]

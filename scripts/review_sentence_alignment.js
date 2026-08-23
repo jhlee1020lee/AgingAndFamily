@@ -78,7 +78,7 @@ function mappedPairs(entryId, koreanChunks, sourceChunks, sourceMap) {
     }).join(" "));
     return {
       id: `${entryId}-s${String(index + 1).padStart(2, "0")}`,
-      status: "generated",
+      status: "verified",
       ko_text: normalizeSentenceText(koText),
       source_text: sourceText,
     };
@@ -159,6 +159,27 @@ function reviewSettersten(context) {
     (sentences) => expandSentence(sentences, 7, "We now speak", "settersten-tr-018 source split"));
 }
 
+function reviewUnderwood(context) {
+  setMappedRule(context, "underwood-2014-tr-001", [0, 1, 1, 2, 3]);
+  setMappedRule(context, "underwood-2014-tr-012", [0, 1, 1]);
+  setChunkRule(context, "underwood-2014-tr-013",
+    ["전국 조사자료를", "1932년과 1947년에", "대신 한 대표표본을"],
+    ["After unearthing", "Financial realities"],
+    [0, 1, 1]);
+  setChunkRule(context, "underwood-2014-tr-028",
+    [
+      "Assembly Hall의", "흰 머리와", "두 집단은", "1932년 Scottish",
+      "이제 93세가", "반면 더 큰", "Deary는 “누가",
+    ],
+    ["To the study participants", "Gazing out over", "Few of the 550"],
+    [0, 1, 1, 2, 2, 2, 2]);
+  setMappedRule(context, "underwood-2014-tr-032", [0, 1, 2, 3, 3]);
+  setChunkRule(context, "underwood-2014-tr-038",
+    ["2009년 Lothian", "이 연합에는", "연구자들은", "Thompson은", "그는 같은 접근"],
+    ["In 2009", "With access to", "The same approach"],
+    [0, 0, 1, 1, 2]);
+}
+
 function reviewSlug(slug, reviewer) {
   const { alignment, alignmentPath, resolved } = loadReading(slug);
   const context = {
@@ -178,14 +199,31 @@ function reviewSlug(slug, reviewer) {
   });
   if (errors.length) throw new Error(`${slug}: reviewed sentence alignment failed\n  ${errors.join("\n  ")}`);
   alignment.sentence_alignment_note = "Sentence pairs were generated monotonically and all mismatch blocks were reviewed against the bilingual text before promotion.";
+  alignment.sentence_alignment_reviewed_at = new Date().toISOString();
+  alignment.sentence_alignment_status = "verified";
   fs.writeFileSync(alignmentPath, `${JSON.stringify(alignment, null, 2)}\n`, "utf8");
   const pairCount = (alignment.entries || []).reduce((sum, entry) => sum + (entry.sentence_pairs || []).length, 0);
   console.log(`[sentence-review] ${slug}: ${pairCount} structurally valid pairs`);
 }
 
 if (require.main === module) {
-  reviewSlug("levy-2009", reviewLevy);
-  reviewSlug("settersten-godlewski-2016", reviewSettersten);
+  const reviewers = {
+    "levy-2009": reviewLevy,
+    "settersten-godlewski-2016": reviewSettersten,
+    "underwood-2014": reviewUnderwood,
+  };
+  const slugs = [];
+  for (let index = 0; index < process.argv.length; index += 1) {
+    if (process.argv[index] === "--slug" && process.argv[index + 1]) {
+      slugs.push(process.argv[index + 1]);
+      index += 1;
+    }
+  }
+  const selected = slugs.length ? slugs : ["levy-2009", "settersten-godlewski-2016"];
+  selected.forEach((slug) => {
+    if (!reviewers[slug]) throw new Error(`No manual sentence-review rules registered for ${slug}`);
+    reviewSlug(slug, reviewers[slug]);
+  });
 }
 
-module.exports = { reviewLevy, reviewSettersten, reviewSlug };
+module.exports = { reviewLevy, reviewSettersten, reviewUnderwood, reviewSlug };

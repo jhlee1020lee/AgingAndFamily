@@ -1,0 +1,92 @@
+# Caregiving, bereavement and complicated grief
+
+> Kathrin Boerner, PhD · Richard Schulz, PhD
+
+> Kathrin Boerner: Senior Research Scientist, Jewish Home Lifecare, New York. Richard Schulz: Professor of Psychiatry, Epidemiology, Sociology, Psychology, Community Health and Health and Rehabilitation Sciences, University of Pittsburgh.
+
+> *Bereavement Care*, 28(3), 10–13 (2009). DOI: 10.1080/02682620903355382. © 2009 Cruse Bereavement Care.
+
+> Funding note: Preparation of this manuscript was in part supported by grants from NINR (NR08272, NR09573), NIA (AG15321, AG026010), NIMH (MH071944), NCMHD (MD000207), NHLBI (HL076852, HL076858), and the NSF (EEEC-0540856).
+
+## Abstract
+
+Most deaths are preceded by chronic illness and disability and the provision of support by family caregivers. The purpose of this article is to describe how the caregiving experience affects bereavement, with an emphasis on the relationship between challenging caregiving situations and difficult grieving processes − often referred to as ‘complicated grief’. The article starts with a brief summary of the general literature on caregiving and bereavement. It then defines complicated grief and discusses why some caregivers may struggle with the death of their loved one. Finally, it offers practical suggestions for what professionals can do to help caregivers both before and after the death has occurred.
+
+## Keywords
+
+Caregiving, bereavement, complicated grief, professional support
+
+## Introduction
+
+Most deaths in the western world are preceded by chronic illnesses such as heart disease, cancer, stroke and respiratory diseases. These disabling conditions tend increasingly to compromise a person’s ability to function independently, which means that death is typically preceded by an extended period during which one or more family members provide health care and support to their disabled relative. The reality for most people is that the experiences of caregiving and bereavement are closely intertwined. But what do we know about the effects of the caregiving experience on bereavement? The purpose of this article is to examine the role of caregiving in the bereavement process and, in this context, to highlight how difficult caregiving situations can lead to difficult grieving processes, often referred to as ‘complicated grief’. The article goes on to discuss why some caregivers may struggle more than others with their loss and to make recommendations for what professionals who work with the bereaved can do to help.
+
+## Caregiving and bereavement
+
+Three major lines of thought have emerged in the literature (see Schulz, Boerner & Hebert, 2008 for a review) regarding bereavement in the context of caregiving. The cumulative stress perspective, or ‘wear and tear’ hypothesis, argues that the combined effects of the stress of caregiving and the death deplete people’s coping resources and result in greater adjustment difficulties following the loss. The stress reduction perspective makes the opposite prediction, arguing that the death brings relief because it puts an end to caregiving stressors and the suffering of the person who is dying, and so results in more positive bereavement outcomes than found among non-caregivers. Finally, it has been suggested that caregivers more or less expect to be bereaved, which in turn allows at least some degree of anticipatory processing and preparation that may benefit the person after the death.
+
+When all three perspectives are considered, the emerging picture seems to be a combination of depletion, relief and anticipation effects. For example, once the death occurs the caregiver may feel extremely exhausted, but at the same time relieved that his or her loved one no longer has to suffer and that the immense strain of the caregiving role has ended, and also may have had a chance to think about the impending death and their life afterwards, possibly have a conversation with the loved one about these topics, and take care of some pragmatic necessities related to the death (eg. financial planning, funeral arrangements).
+
+The bulk of research studies to date indicate that most caregivers experience some sort of stress relief and/or benefit of anticipation rather than a depletion of their resources, or at least that the first outweighs the latter. In fact, for many the symptoms of depression and grief decline rapidly after the death and return to near normal levels within a year of the death (Schulz et al, 2003). However, despite the generally positive prognosis for most bereaved caregivers, a sizable minority, approximately 10−20%, continues to experience high levels of stress and psychiatric problems after death (Hensley, 2006). In our own work with caregivers of people with dementia, we found that 30% of caregivers were at risk for clinical depression one year post-death, and 20% experienced complicated grief (Schulz et al, 2006). Therefore, each of the three perspectives above may be true for specific subsets of caregivers. The key is to identify which subset a particular caregiver is in.
+
+## Complicated grief
+
+Complicated grief, also referred to as prolonged grief disorder (Prigerson, Vanderwerker & Maciejewski, 2008), is a form of grief characterised by an intense longing and yearning for the person who has died, recurrent intrusive and distressing thoughts about their absence that make it difficult to concentrate and to move beyond an acute state of mourning, and inability to form other interpersonal relationships and engage in potentially rewarding activities. Formal diagnostic criteria for complicated grief disorder (or prolonged grief disorder) have been proposed for inclusion in the Diagnostic and Statistical Manual of Mental Disorders (DSM-V) (Prigerson et al, 1997; Prigerson, Vanderwerker & Maciejewski, 2008).
+
+Under these criteria, a diagnosis of complicated grief disorder requires that the bereaved person must have persistent and disruptive yearning, pining and longing for the deceased, and must experience four of the following eight symptoms at least several times a day and/or to a severely distressing degree:
+
+1. trouble accepting the death
+2. inability to trust others since the death
+3. excessive bitterness related to the death
+4. feeling uneasy about moving on
+5. detachment from formerly close others
+6. feeling that life is meaningless without the deceased
+7. feeling that the future holds no prospect for fulfillment without the deceased, and
+8. feeling agitated since the death.
+
+Finally, symptoms of distress must endure for at least six months and significantly impair a person’s functioning in important life domains. Complicated grief often co-occurs with other disorders such as major depression and post-traumatic stress disorder (PTSD) and is associated with suicidality and self-destructive behaviours (Zhang, El-Jawahri & Prigerson, 2006), but is regarded as a distinct disorder requiring different treatment strategies from those used with other mental health problems (see below).
+
+## Who is at risk for complicated grief?
+
+Bereavement studies typically find that those who experience mental distress such as depression and anxiety before the death are also at risk of adjustment difficulties once this loss occurs. A related finding is that high levels of caregiving burden, feeling exhausted and overloaded, and lack of support, are associated with negative bereavement outcomes (Gross, 2007; Hebert, Dang & Schulz, 2006). Other personal characteristics such as social class also play a role: people with lower income and few educational qualifications are more likely to exhibit complicated grief after a death (Schulz et al, 2006). This probably reflects a more general lack of resources in this group, with the challenges of caregiving adding to an already strained life situation.
+
+However, in our own work with caregivers of people with dementia, we found that the caregivers with clinical levels of complicated grief included not only those who were in difficult caregiving situations (eg. caring for a more cognitively impaired person), but also some who reported very positive features of the caregiving experience (Schulz et al, 2006). This intriguing finding suggests first of all that positive and negative aspects of caregiving can co-exist, and that some positive caregiving experiences can also put a person at risk of bereavement difficulties. This may be the result of two related factors: it could be that losing their loved one deprives these individuals of a meaningful and important role; it could also be that the positive view of caregiving may be a reflection of the nature of the relationship between the caregiver and the person they cared for, who might have been the centre of the caregiver’s life and so all the more deeply mourned.
+
+Another aspect of the caregiving situation that affects how people cope with loss is preparedness for the death. Although the research on this issue is only in the early stages, it seems clear that, despite providing high intensity care, often for years, many bereaved caregivers say they feel unprepared for the death (Hebert, Dang & Schulz, 2006). There is also evidence that they typically report more depression, anxiety and complicated grief symptoms.
+
+However, we need a better understanding of what it means to be prepared. Based on a series of focus groups with caregivers, Hebert and colleagues proposed that preparedness has emotional (eg. being at peace with the prospect of death), pragmatic (eg. having funeral arrangements planned), and informational (eg. medical aspects of end-of-life) components (Hebert et al, 2009). This study also showed that, for example, a person could feel prepared about the informational and pragmatic components, but yet feel entirely unprepared emotionally. Overall, this work suggests that even the relative certainty of death does not necessarily translate into being prepared for it and what lies ahead, and that this might be an important area for professionals to address in their encounters with caregivers, before and after the loss.
+
+## What can be done?
+
+What can those who work with the bereaved learn from the research discussed above? First and foremost, it is important to recognise that the experience of caregiving plays a significant role in how caregivers adjust to the death of their loved one, and that enabling caregivers to talk about their experience is likely to be helpful. Addressing this can be beneficial both before and after the death. Professionals who are involved with caregivers towards the end of their loved one’s life need to be aware that efforts to help reduce caregiver burden and distress prior to the loss may prove beneficial later. Our randomized trial of psychosocial−behavioural interventions designed to decrease burden and distress in dementia caregivers had the added benefit of preventing complicated grief after the death of their loved one (Schulz et al, 2006).
+
+Identifying individuals at risk of negative bereavement outcomes, either before or after the loss, is also important. Here it is necessary to keep in mind that the stressful aspects of caregiving are not the only risk factors and that some caregivers who describe their experiences in a positive way can also be at risk of subsequent difficulties. This is most likely to be the case when the caregiving role was their defining purpose or main source of meaning in life, and when their relationship with the deceased was central to their life. In this scenario, the professional could help the person identify this issue and possibly work with them on defining or developing new goals and sources of meaning.
+
+Another area to address is the caregiver’s preparation for the death and their own life afterwards. In this context, it is important to be aware that people can feel prepared for some aspects of the loss but not all of them (eg. feeling prepared emotionally but not practically, and vice versa), and to help the person sort out any problems, as appropriate.
+
+Helpful conversations about the caregiving and end-of-life phase experience can occur both before and after the loss. Good openers include questions about how stressful the caregiving is/was, how much support is/was available from family and friends, how depressed and anxious does/did the person feel, were there some positive aspects of the caregiving situation, and generally asking about the impact of caregiving on the person’s life.
+
+Based on responses to these questions, professionals may consider recommending other support or treatment options such as hospice care to reduce caregiver burden, behavioural and pharmacological treatment of depression and anxiety, and referral to clergy or other counsellors to address life purpose and emotional issues related to the person’s caregiving and bereavement experiences. For bereaved individuals who seem more severely distressed, referral to a clinician who can diagnose complicated grief may be indicated. Treatment strategies specifically designed to treat complicated grief have been shown to be most effective (Shear et al, 2005). Components of effective treatment include repeated retelling of the story of the death, having an imaginary conversation with the deceased, and work on confronting avoided situations. Shear and colleagues found higher and faster rates of improvement among people with complicated grief using these loss-focused, cognitive-behaviour therapy techniques compared with a standard interpersonal therapy approach used to treat depression.
+
+## References
+
+Gross J (2007). Study finds higher outlays for caregivers of older relatives. New York Times, 19 November, A18.
+
+Hebert RS, Dang Q, Schulz R (2006). Preparedness for the death of a loved one and mental health in bereaved caregivers of patients with dementia: findings from the REACH study. Journal of Palliative Medicine 9(3) 683−693.
+
+Hebert RS, Schulz R, Copeland VC, Arnold RM. (2009). Preparing family caregivers for death and bereavement: insights from caregivers of terminally ill patients. Journal of Pain Symptom Management 37(1) 3−12.
+
+Hensley PL (2006). Treatment of bereavement-related depression and traumatic grief. Journal of Affective Disorder 92(1) 117−124.
+
+Prigerson HG, Bierhals AJ, Kasl SV, Reynolds CF 3rd, Shear MK, Day N, Beery LC, Newsom JT, Jacobs S (1997). Traumatic grief as a risk factor for mental and physical morbidity. American Journal of Psychiatry 154(5) 616−623.
+
+Prigerson HG, Vanderwerker LC, Maciejewski PK (2008). A case for including Prolonged Grief Disorder in DSM-V. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: advances in theory and intervention. Washington, DC: American Psychological Association, 165−186.
+
+Schulz R, Boerner K, Hebert RS (2008). Caregiving and bereavement. In: M Stroebe, R Hansson, H Schut, W Stroebe (eds). Handbook of bereavement research and practice: 21st century perspectives. Washington, DC: American Psychological Association Press, 265−285.
+
+Schulz R, Boerner K, Shear K, Zhang S, Gitlin LN (2006). Predictors of complicated grief among dementia caregivers: a prospective study of bereavement. American Journal of Geriatric Psychiatry 14(8) 650−658.
+
+Schulz R, Mendelsohn AB, Haley WE, Mahoney D, Allen RS, Zhang S, Thompson L, Belle SH (2003). Resources for enhancing Alzheimer's caregiver health investigators: end-of-life care and the effects of bereavement on family caregivers of persons with dementia. New England Journal of Medicine 349(20) 1936−1942.
+
+Shear K, Frank E, Houck PR, Reynolds CF 3rd (2005). Treatment of complicated grief: a randomized controlled trial. Journal of the American Medical Association 293 2601−2608.
+
+Zhang B, El-Jawahri A, Prigerson HG (2006). Update on bereavement research: evidence-based guidelines for the diagnosis and treatment of complicated bereavement. Palliative Medicine 9(5) 1188−1203.

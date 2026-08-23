@@ -5,8 +5,8 @@
 ## 현재 범위
 
 - 강의계획서에 명시된 읽기자료 22편을 `manifest/readings.json`에 등록했습니다.
-- 첫 읽기 주차인 2주차의 Levy (2009), Settersten & Godlewski (2016)를 시범 콘텐츠로 제공합니다.
-- 이후 주차 카드는 보이지만 검수 전까지 잠깁니다.
+- 22편 모두 원문, 전체 번역, 핵심 개념, 복습자료, 구술대비와 퀴즈까지 승인·공개 상태입니다.
+- 주차별 공개 제한은 사용하지 않으며 홈에서 모든 읽기를 바로 열 수 있습니다.
 - 원본 PDF, 강의 녹음, STT와 개인정보는 배포 대상에 포함하지 않습니다.
 
 ## 구조
@@ -21,16 +21,17 @@
 ## 빌드와 검증
 
 ```powershell
-node scripts/check-alignment.js --slug levy-2009 --strict --write-report
-node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report
-node scripts/build_site.js --slug levy-2009
-node scripts/build_site.js --slug settersten-godlewski-2016
-node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016
-node scripts/validate_content.js --slug levy-2009 --publish-gate
-node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate
+node scripts/check_alignment.js --strict
+node scripts/build_site.js
+$manifest = Get-Content manifest/readings.json -Raw | ConvertFrom-Json
+foreach ($reading in $manifest.readings) {
+  node scripts/check_rendered_reveals.js --slug $reading.slug --site-dir docs
+}
+node scripts/validate_content.js --publish-gate
+node scripts/check_site_links.js --site-dir docs
 ```
 
-`node scripts/build_site.js` 전체 빌드는 22편의 안내 페이지까지 생성합니다. 시범 단계에서는 위처럼 공개할 slug만 차례로 빌드합니다.
+`node scripts/build_site.js`는 승인된 22편 전체 정적 사이트를 `docs/`에 생성합니다.
 
 ## 로컬 미리보기
 

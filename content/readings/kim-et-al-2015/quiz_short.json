@@ -1,0 +1,127 @@
+{
+  "title": "Kim et al. (2015) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 핵심 개념과 수치를 짧게 답하고, 신념·행동·거주·정서의 분석수준을 구분하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "부모 부양뿐 아니라 순종·존경·희생·체면 유지를 포괄하는 동아시아의 도덕규범은?",
+      "accepted_answers": ["효", "효도", "filial piety"],
+      "answer_type": "term",
+      "explanation": "이 개념은 지원행동만이 아니라 부모를 대하는 태도와 관계위계까지 포함한다.",
+      "evidence_segment_id": "FILIAL-001",
+      "source": "아시아 가족규범"
+    },
+    {
+      "question": "부모를 도와야 한다는 신념 차원을 세대연대 이론에서는 무엇이라 부르는가?",
+      "accepted_answers": ["규범적 연대", "normative solidarity"],
+      "answer_type": "term",
+      "explanation": "실제 금전·돌봄 교환과 구분되는 믿음과 기대의 차원이다.",
+      "evidence_segment_id": "MEASURE-001",
+      "source": "효 의무의 측정"
+    },
+    {
+      "question": "돈·시간·돌봄을 실제로 주고받는 세대연대 차원은?",
+      "accepted_answers": ["기능적 연대", "functional solidarity"],
+      "answer_type": "term",
+      "explanation": "도와야 한다는 신념과 실제 교환행동은 개념적으로 별도 차원이다.",
+      "evidence_segment_id": "MEASURE-001",
+      "source": "효 신념과 행동"
+    },
+    {
+      "question": "효를 호혜적 차원과 권위주의적 차원으로 나눈 모형의 약어는?",
+      "accepted_answers": ["DFPM", "이중 효 모형", "이중 효도 모형", "Dual Filial Piety Model"],
+      "answer_type": "term",
+      "explanation": "Yeh와 Bedford가 일차원 효 척도의 한계를 보완하기 위해 제안했다.",
+      "evidence_segment_id": "DFPM-001",
+      "source": "다차원 효 모형"
+    },
+    {
+      "question": "사랑·감사와 부모의 투자에 대한 보답에서 나오는 효 차원은?",
+      "accepted_answers": ["호혜적 효", "상호적 효", "reciprocal filial piety"],
+      "answer_type": "term",
+      "explanation": "자녀 역할에 따른 강제적 복종보다 자발적인 사랑과 돌봄의 동기를 강조한다.",
+      "evidence_segment_id": "DFPM-001",
+      "source": "효의 호혜적 차원"
+    },
+    {
+      "question": "부모의 절대적 권위와 위계에 따라 자기욕구를 억제하고 복종하는 효 차원은?",
+      "accepted_answers": ["권위주의적 효", "authoritarian filial piety"],
+      "answer_type": "term",
+      "explanation": "동거·복종·부모 체면 유지 같은 역할의무를 포함한다.",
+      "evidence_segment_id": "DFPM-001",
+      "source": "효의 권위주의적 차원"
+    },
+    {
+      "question": "산업화·도시화가 확대가족 의무를 약화한다고 보는 설명은?",
+      "accepted_answers": ["근대화 가설", "modernization hypothesis"],
+      "answer_type": "term",
+      "explanation": "장은 이 설명을 출발점으로 삼지만 정부정책과 국가별 변이를 함께 검토한다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "효 가치의 변화"
+    },
+    {
+      "question": "중국에서 자녀의 금전·실질 지원을 확보하려고 부모가 체결하는 법적 집행 가능 협약의 약어는?",
+      "accepted_answers": ["FSA", "가족부양협약", "Family Support Agreement"],
+      "answer_type": "term",
+      "explanation": "2005년까지 약 1,300만 농촌가구가 체결했다고 장은 보고한다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "중국의 가족지원 정책"
+    },
+    {
+      "question": "일본이 2000년 도입하고 한국이 2008년 유사 제도를 도입한 공적 돌봄보험의 약어는?",
+      "accepted_answers": ["LTCI", "장기요양보험", "long-term care insurance"],
+      "answer_type": "term",
+      "explanation": "가족규모 감소와 여성고용 증가 속에서 정부가 노인돌봄 안전망의 공백을 보완한 사례다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "장기요양 정책"
+    },
+    {
+      "question": "결혼 직후 잠시 부계가구에서 살며 전통규범을 상징적으로 충족하는 중국 농촌의 관행은?",
+      "accepted_answers": ["의례적 동거", "ritualistic co-residence", "ritualistic coresidence"],
+      "answer_type": "term",
+      "explanation": "계속 함께 살 의도 없이 짧게 동거해 효를 표현하는 재해석 사례다.",
+      "evidence_segment_id": "CHANGE-002",
+      "source": "상징적 효 실천"
+    },
+    {
+      "question": "별도 가구를 유지하면서 부모와 자녀가 일상지원 가능한 가까운 거리에 사는 형태는?",
+      "accepted_answers": ["준동거", "quasi-coresidence"],
+      "answer_type": "term",
+      "explanation": "독립 욕구와 세대 간 근접지원 규범을 절충하지만 좋은 안녕을 자동 보장하지 않는다.",
+      "evidence_segment_id": "LIVING-002",
+      "source": "근거리 별거 형태"
+    },
+    {
+      "question": "혼자 또는 배우자와만 사는 중국 노부모 중 자녀가 같은 마을·공동체에 있는 비율은?",
+      "accepted_answers": ["59%", "59퍼센트"],
+      "answer_type": "number",
+      "explanation": "같은 현에 자녀가 있는 비율은 79%였다. 두 비율의 지리적 범위를 구분해야 한다.",
+      "evidence_segment_id": "LIVING-002",
+      "source": "중국 노부모의 자녀 근접성"
+    },
+    {
+      "question": "한국 노부모 중 성인자녀와 전화나 이메일로 접촉한다고 보고된 비율은?",
+      "accepted_answers": ["89%", "89퍼센트"],
+      "answer_type": "number",
+      "explanation": "월 1회 이상 대면접촉 비율인 57%와 구분해야 한다.",
+      "evidence_segment_id": "SUPPORT-001",
+      "source": "한국의 비동거 접촉"
+    },
+    {
+      "question": "부모가 성인자녀보다 같은 관계를 더 긍정적으로 평가하는 경향을 설명하는 가설은?",
+      "accepted_answers": ["세대 간 이해관계 가설", "intergenerational stake hypothesis"],
+      "answer_type": "term",
+      "explanation": "여러 문화에서 어머니가 성인딸보다 관계를 더 긍정적으로 평가한 결과를 해석한다.",
+      "evidence_segment_id": "EMOTION-001",
+      "source": "부모·자녀 관계평가 차이"
+    },
+    {
+      "question": "같은 세대관계에서 사랑과 부담 같은 긍정·부정 감정을 동시에 경험하는 현상은?",
+      "accepted_answers": ["세대 간 양가감정", "양가감정", "intergenerational ambivalence"],
+      "answer_type": "term",
+      "explanation": "사회구조의 모순된 역할요구와 개인의 주관적 복합감정이라는 두 수준에서 분석된다.",
+      "evidence_segment_id": "AMBIVALENCE-001",
+      "source": "세대관계의 복합감정"
+    }
+  ]
+}

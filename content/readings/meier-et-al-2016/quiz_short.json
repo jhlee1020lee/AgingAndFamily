@@ -1,0 +1,178 @@
+{
+  "title": "Meier et al. (2016) 단답형 퀴즈",
+  "instructions": "질문마다 핵심 용어·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "question_set_type": "단답형 퀴즈",
+  "items": [
+    {
+      "question": "문헌검색에 사용한 두 서지 데이터베이스는?",
+      "accepted_answers": [
+        "PubMed와 PsycINFO",
+        "PubMed, PsycINFO"
+      ],
+      "answer_type": "term",
+      "explanation": "저자들은 PubMed와 PsycINFO를 개설 시점부터 정해진 종료시점까지 검색했다.",
+      "evidence_segment_id": "METHOD-DATA-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "제목·초록 선별 뒤 전문검토 대상으로 남은 논문 수는?",
+      "accepted_answers": [
+        "392편",
+        "392"
+      ],
+      "answer_type": "number",
+      "explanation": "최초 검색결과에서 주제와 무관한 문헌 등을 제외한 뒤 392편의 전문을 검토했다.",
+      "evidence_segment_id": "METHOD-SELECTION-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "합의 절차가 시작될 때 마련된 초기 주제 수는?",
+      "accepted_answers": [
+        "38개",
+        "38"
+      ],
+      "answer_type": "number",
+      "explanation": "코더들은 처음 38개 주제에서 출발해 세 저자의 합의로 11개 핵심주제로 좁혔다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "최종 코딩틀을 만들기 전에 두 코더가 연 합의회의 횟수는?",
+      "accepted_answers": [
+        "4회",
+        "네 차례",
+        "4차례"
+      ],
+      "answer_type": "number",
+      "explanation": "두 코더는 불일치를 해결하며 네 차례 합의회의를 거쳐 최종 코딩틀을 만들었다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "독립 평정자 간 신뢰도로 보고된 카파 계수는?",
+      "accepted_answers": [
+        "0.896"
+      ],
+      "answer_type": "number",
+      "explanation": "두 독립 코더의 일치도는 kappa = 0.896으로 보고됐다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "PRISMA 전문검토에서 중복 논문으로 제외된 건수는?",
+      "accepted_answers": [
+        "51편",
+        "51건",
+        "51"
+      ],
+      "answer_type": "number",
+      "explanation": "전문검토 제외 사유 중 duplicate articles는 51건으로 인쇄돼 있다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "환자·가족·HCP 관점에 기여한 논문 수를 순서대로 쓰면?",
+      "accepted_answers": [
+        "20·10·18편",
+        "20, 10, 18",
+        "20편, 10편, 18편"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "관점별 분모는 환자 20편, 사별 전후 가족 10편, HCP 18편이며 한 논문이 여러 관점에 기여할 수 있다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "둘 이상의 관점집단에 기여한 고유 논문은 몇 편인가?",
+      "accepted_answers": [
+        "7편",
+        "7"
+      ],
+      "answer_type": "number",
+      "explanation": "두 관점에 기여한 2편과 세 관점 모두에 기여한 5편을 합친 고유 논문 수다.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "질적·양적·혼합방법 연구 수를 순서대로 쓰면?",
+      "accepted_answers": [
+        "27·5·4편",
+        "27, 5, 4",
+        "27편, 5편, 4편"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "최종 36편은 질적 27편, 양적 5편, 혼합방법 4편으로 구성됐다.",
+      "evidence_segment_id": "METHOD-SELECTION-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "양적·혼합방법 연구에서 표준도구와 자체도구를 쓴 논문 수는 각각?",
+      "accepted_answers": [
+        "3편과 6편",
+        "3·6편",
+        "3, 6"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "해당 9편 중 3편은 표준화 도구를, 6편은 자체 개발 도구를 사용했다.",
+      "evidence_segment_id": "METHOD-SELECTION-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "최종 포함 연구가 출판된 연도 범위는?",
+      "accepted_answers": [
+        "1996–2015년",
+        "1996-2015년",
+        "1996년부터 2015년"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "포함된 36편의 출판연도는 1996년부터 2015년까지였다.",
+      "evidence_segment_id": "RESULTS-SAMPLE-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "각 핵심주제를 구성한 하위주제 수의 범위는?",
+      "accepted_answers": [
+        "2–4개",
+        "2-4개",
+        "2개에서 4개"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "11개 핵심주제는 각각 2개에서 4개의 하위주제로 구성됐다.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "환자 관점 논문 중 60세 초과자를 포함한 논문의 비율은?",
+      "accepted_answers": [
+        "50%",
+        "절반"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "이 값은 전체 개인 중 고령자 비율이 아니라 환자 관점 논문 20편을 분모로 한 논문 수준 비율이다.",
+      "evidence_segment_id": "RESULTS-SAMPLE-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "가족 관점에서 지지율 70% 이상이었던 핵심주제는 몇 개인가?",
+      "accepted_answers": [
+        "8개",
+        "8"
+      ],
+      "answer_type": "number",
+      "explanation": "가족 관점 논문에서는 11개 핵심주제 중 8개가 70% 이상이었다.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Meier et al. (2016)"
+    },
+    {
+      "question": "각 논문의 구체적 정보를 저장한 프로그램은?",
+      "accepted_answers": [
+        "Excel",
+        "엑셀"
+      ],
+      "answer_type": "term",
+      "explanation": "선정된 각 논문의 구체적 정보는 Excel 데이터베이스에 저장했다.",
+      "evidence_segment_id": "METHOD-SELECTION-001",
+      "source": "Meier et al. (2016)"
+    }
+  ]
+}

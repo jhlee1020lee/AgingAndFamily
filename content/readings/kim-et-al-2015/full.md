@@ -1,0 +1,377 @@
+# Relationships Between Adults and Parents in Asia
+
+> Kyungmin Kim · Yen-Pi Cheng · Steven H. Zarit · Karen L. Fingerman
+
+> Chapter 7 in S.-T. Cheng, I. Chi, H. H. Fung, L. W. Li, and J. Woo (Eds.), *Successful Aging: Asian Perspectives*, pp. 101–122. Springer Science+Business Media Dordrecht, 2015. DOI: 10.1007/978-94-017-9331-5_7.
+
+> Recommended citation: Kim, K., Cheng, Y.-P., Zarit, S. H., & Fingerman, K. L. (2015). Relationships between adults and parents in Asia (Chapter 7). In S.-T. Cheng, I. Chi, H. H. Fung, L. W. Li, & J. Woo (Eds.), *Successful aging: Asian perspectives* (pp. 101–122). New York: Springer. doi:10.1007/978-94-017-9331-5_7
+
+> Correspondence: Kyungmin Kim, Yen-Pi Cheng, and Karen L. Fingerman, Department of Human Development and Family Sciences, The University of Texas at Austin, 108 E Dean Keeton St, Stop A2702, Austin, TX 78712-1248, USA; kkim@utexas.edu; ypcheng@austin.utexas.edu; kfingerman@austin.utexas.edu. Steven H. Zarit, Department of Human Development and Family Studies, The Pennsylvania State University, 305 Health and Human Development East Building, University Park, PA 16802, USA; z67@psu.edu.
+
+A paradox exists in many Asian nations between traditional expectations for assisting parents versus actual assistance when it comes to aging parent-adult child relationships. As described elsewhere in the chapter, adults in Asian nations typically harbor strong beliefs regarding respect and obligation to assist parents. Indeed, a study of undergraduate students at Beijing Normal University revealed that supporting parents is part of the basic feature of entry into adulthood (Nelson, Badger, & Wu, 2004). When asked to indicate the criteria that are “necessary for adulthood,” 89 % of students endorsed a statement regarding providing financial support to parents. Support of parents was endorsed by a slightly greater number of students than being able to support one’s own children (86 %). In other words, in order to truly view oneself as an adult, an individual must support his or her parents. By contrast, in Western countries, the predominant expectation is that parents will support their children at least through the young adult years. This expectation is demonstrated in empirical findings that show that support typically flows from parents to children, until the very final years of life (Albertini, Kohli, & Vogel, 2007; Fingerman et al., 2011).
+
+Yet it would be an over-simplification to assume that commitment to parents is the sole value dictating parent-child relationships in Asia. For example, in that same study in Beijing, 80 % of college students endorsed the statement, “not deeply tied to parents emotionally” also was indicative of entry to adulthood. Moreover, actual behaviors may not be consistent with beliefs; the People’s Republic of China recently amended a law mandating that individuals visit their parents (The Associated Press, 2012). The motivation for this law stems from frequent reports about elderly parents being abandoned or ignored by their adult children. A recent survey found 33 % of Chinese adults reported they only saw their parents once a year and another 12 % had not been to visit their parents in many years (Tatlow, 2012). Although 16 % of Chinese adults see their parents every week, these reports are lower than expected and lower than rates of contact between adults and parents in most Western countries, including the United States (Fingerman & Birditt, 2011; Fingerman, Cheng, Tighe, Birditt, & Zarit, 2012). Of course, grown children may maintain other forms of contact through telephone calls, videoconferencing, or other communication technologies. Nonetheless, the amended law in China brings to light the paradox of parent-child relationships in Asia today. The belief that adults should be attentive, respectful and supportive of parents are still widely endorsed and viewed as core concepts in being an adult. The behaviors that would accompany those beliefs, however, are in flux.
+
+This chapter discusses relationships between adults and parents as an important element of successful aging in Asia. First, we discuss filial piety and beliefs about family that lay the foundation of parent-child relationships, including differences between Asian and Western cultures and recent changes in these beliefs. Second, regarding actual behaviors in parent-child relationships, we consider living arrangements and provision of support, and review how these patterns of intergenerational exchanges impact the well-being of the elderly parents. Lastly, our discussion includes emotional aspects of parent-child relationships.
+
+## Filial Piety and Beliefs on Family in Asia
+
+Filial piety is often regarded as the essence of “Asian” values, characterized as “close, interdependent family ties, responsibility and sacrifice, harmony, and viewing individuals in relation to the family” (Bengtson & Putney, 2000). Western scholars have contrasted the values pertaining to filial piety with Western individualism and its emphasis on independence, self-reliance, and self-fulfillment (Dai & Dimond, 1998). Although some variations in the expressions of filial piety can be found among Asian nations, Confucian ethics of filial piety have been the cultural ideal of parent-child relationships and the dominating social norms in Japan, Korea, China, Hong Kong, Taiwan, and Singapore for over 2,000 years (Ikels, 2004). For example, in Japan, despite its advanced industrialization and aging population, family patterns are more similar to those of Korea and China than to Western industrialized societies. Eldest sons in Japan feel obligated to care for aged parents, and intergenerational coresidence remains the norm, as it does in Korea and China (Maeda & Ishikawa, 2000). Filial piety still plays an important role as a cultural principle underlying intergenerational relations in Asia societies.
+
+In Asia, the term “filial piety” refers to guidelines for offspring’s behaviors towards parents, including a range of beliefs and behavioral prescriptions. In addition to supporting parents when they are in need, offspring are required to be obedient, show respect to parents and elders, sacrifice for parents, honor or promote the public prestige of parents and ancestors, live with parents or remain close if coresidence is not possible, take care of parents whether healthy or sick, and avoid injury to self because their body comes from their parents (Sung, 1995). That is, filial piety not only means the obligatory behaviors to help parents but even the behaviors and attitudes to make parents happy and free from worry. In addition, beyond a virtue, filial piety is a system of moral precepts that define an appropriate hierarchy of relationships in Asian societies (Ikels, 2004). Offspring who do not behave in ways consistent with precepts of filial piety will be sanctioned by other family members, neighbors, and even the government (Chou, 2011). Older parents whose children do not behave in appropriate filial ways are at greater risk of depression and even suicide (e.g., Choe, 2013; Cong & Silverstein, 2008; Traphagan, 2010).
+
+### Differences from Filial Norms in the West
+
+In Europe and the United States, researchers have also examined filial norms regarding responsibility for older parents (Lowenstein & Daatland, 2006; Rossi & Rossi, 1990; Seelbach & Sauer, 1977). According to Seelbach and Sauer, the Western norm of filial responsibility is operationalized as living close to parents, caring for elderly parents when they are sick, providing financial help to parents when necessary, visiting or corresponding with parents regularly, and retaining a feeling of responsibility for parents. Although some attributes of these norms overlap with filial piety in the Asian sense, there are several differences in these concepts (Dai & Dimond, 1998).
+
+First, although both filial responsibility and filial piety cover the idea that children should provide support to their parents, filial piety further emphasizes the manner in which adult children provide assistance. For example, Chow (2001) discusses the three levels of filial piety. The first level is providing support to meet the material and physical needs of parents, and the second level includes paying attention to parents’ wishes and obeying their preferences. The third level includes pleasing parents and bringing them honor in the community, which emphasizes the expression of respect, being grateful, and saving face for parents. Individuals who provide assistance but do not respect or are not grateful for parents may score high in filial responsibility but low in filial piety. In contrast, in Western societies, children are expected to pursue their own individual interests, even when that takes their time and attention away from parents (Lang & Schütze, 2002).
+
+Second, another difference between filial piety in the East and filial responsibility in the West can be found in parental attitudes toward receiving support. In the individualistic societies of the West, receiving support may imply loss of autonomy and may endanger self-esteem (Brown, Nesse, Vinokur, & Smith, 2003; Taylor, Welch, Kim, & Sherman, 2007). On the other hand, filial piety has played a role as the intergenerational contract in East Asia (Croll, 2006), under which older generations are willing to receive support and even consider assistance and care from younger generations as the return and gratitude for previous sacrifices. Therefore, it may not undermine a parent’s sense of independence to receive assistance. Supporting this point, Cheng and Chan (2006) looked at the discrepancy between Chinese parents’ filial expectations toward their children and what the children do for their parents. They found that a child’s overdoing of his or her filial role by giving more than expected was not detrimental to the parents’ well-being among the Chinese older parents. Results from a US study, however, found a U-shaped curve, with well-being compromised when parents received too little or too much help (Silverstein, Chen, & Heller, 1996).
+
+Finally, parental need is also a key factor that differentiates filial responsibility and filial piety. Although researchers have examined different types of support, the common understanding of filial responsibility in the West is that children should help older parents “at times of need” (Gans & Silverstein, 2006). In other words, healthy parents are not included in the social norms of support. Most older adults in Western societies wish to remain independent in every aspect for as long as possible, and are reluctant to receive help from their children while they are still capable of managing by themselves. However, one goal of filial piety as a “life-long responsibility” is to allow parents to be free from worry. Children should therefore live close to parents and take care of and respect them whether parents are healthy or sick. Regardless of parents’ needs, the offering of support to parents is appreciated, and it is regarded as a way to express children’s gratitude and love to parents.
+
+### Measurement of Filial Piety
+
+Filial obligation in the Western literature refers to the beliefs or expectations about children’s duty to provide assistance to their aging parents, differentiating from actual support behaviors themselves (Lee, Netzer, & Coward, 1994). In the conceptual framework of intergenerational solidarity, normative solidarity reflecting filial obligation is classified as a distinct dimension from actual social exchanges (i.e., functional solidarity; Bengtson & Roberts, 1991). However, there is no consensus on how to conceptualize and measure filial piety among researchers. Although many studies of Asian families assess filial piety, different researchers measure different aspects of the concept of filial piety. Some studies refer to beliefs or attitudes about filial piety, while other studies focus on behaviors and practices of filial piety. Typically, intergenerational coresidence and care provision by adult children have been used as a proxy for behavioral elements of filial piety. Due to concerns that social desirability may affect how Asians respond to questions about filial piety, researchers have tended to measure actual behaviors pertaining to filial piety in recent empirical studies (Chen, Bond, & Tang, 2007; Cheung & Kwan, 2009). Nevertheless, the lack of consensus makes it difficult to compare findings from studies using different definitions and measurements of filial piety.
+
+When researchers first attempted to measure filial piety in Asian cultures, they began with one-dimensional scales listing behaviors reflecting the prescriptions of filial piety (Chen et al., 2007; Chow, 2001; Gallois et al., 1999; Ng, 2002) or filial beliefs (Ho, 1996; Ho & Lee, 1974). For example, Gallois et al. assessed filial piety by asking the “actual” frequency of filial behaviors such as maintaining contact, giving practical assistance with daily routines, providing financial assistance, being obedient on important matters, being accommodating on mundane matters, showing respect before others, taking the parent to the doctor when he or she is ill, providing personal care, and listening to problems. Similarly, to measure filial piety, Ng (2002) asked how often individuals have engaged in filial practices, such as caring, providing financial support, respecting, greeting, pleasing, and obeying.
+
+Other researchers have attempted to assess attitude or beliefs about filial piety. A widely used Filial Piety Scale (FPS; Ho, 1996; Ho & Lee, 1974) assessed filial piety by asking how much one would agree or disagree with statements related to filial values and behaviors (e.g., “the ultimate crime is being disrespectful to one’s parents and failing to care for them,” “children should not travel to faraway places when their parents are still living,” and “as a son or daughter, one must obey one’s parents no matter what”). Sometimes statements regarding gender-based filial beliefs (e.g., “sons are more obligated to take care of parents in the parents’ old age than daughter”) were also included in filial piety scales (Ishii-Kuntz, 1997).
+
+However, these one-dimensional scales of filial behaviors and beliefs have failed to provide consistent correlations with outcomes for individuals or for family relationships. For example, some one-dimensional measures of filial piety were correlated with lower parent-child conflict and greater support from adult offspring to older parents (Ishii-Kuntz, 1997; Yeh & Bedford, 2004). However, other studies found that offspring with higher levels of filial piety are likely to report negative outcomes, such as feelings of indebtedness to parents, parental overprotection, harshness, inhibition of children’s self-expression, and psychological or behavioral problems (Ho, 1994, 1996). The mixed findings suggest that one-dimensional scales of filial piety may not be appropriate for examining associations between filial piety and family outcomes, such as positive and negative relationship qualities for parents and offspring.
+
+In attempting to capture multiple dimensions of filial piety, Sung (1990, 1992) collected reasons for providing care to older parents from 817 Korean filial piety prize winners. The filial piety prize is awarded by the Ministry of Health and Social Affairs of the Korean government annually to 150–380 people who performed exemplified filial behaviors, such as treating the parent with unusual deference and delaying marriage or education or withdrawing from social activities to be fully devoted to parent care. And then, Korean high school and college students rated the importance of each reason these prize winners reported (Sung, 1995). Two factors emerged among the reasons underlying these filial piety practices – emotional and behavioral factors. The emotionally-oriented factor refers to offspring’s intention to keep family harmony and love/affection and respect for parents as the motivation to practice filial piety. The behaviorally-oriented factor includes motivations of sacrifice, responsibility, and repayment to parents. However, because the factors are based on items provided by filial piety prize winners who may have the ideal parent-offspring relationships in the society, the negative facets of filial piety were not identified.
+
+Yeh and Bedford (2003) proposed two dimensions of filial piety in a Dual Filial Piety Model (DFPM) – reciprocal and authoritarian dimensions. Reciprocal filial piety refers to children’s willingness to support parents with expressions of love and care. Behaviors and beliefs about reciprocal filial piety are motivated by gratitude for parental sacrifice as well as parents’ long-term investment in the “support bank” (Antonucci & Jackson, 1990). An example item in this dimension asks participants how important it is to “be grateful to parents for raising you.” Because reciprocal filial piety emphasizes offspring’s repayment of parental investment, adults in Taiwan with higher reciprocal filial piety did provide more support to parents (Yeh, 2009). It is consistent with findings from the United States and Europe that more parental support and better relationship quality are associated with greater support from offspring (Grundy, 2005; Silverstein, Conroy, Wang, Giarrusso, & Bengtson, 2002). In contrast, authoritarian filial piety entails suppressing one’s own wishes, complying with parents’ wishes, and accentuates hierarchy and submission. These behaviors related to authoritarian filial piety originate from social norms involving the absolute authority role of parents. Thus, filial behaviors included in this category require individual’s obedience due to their offspring role. Example items ask participants how important it is to “live with parents even after marriage” and “compliment your parents when needed to save their face.” Such items of authoritarian filial piety may be more characteristic of Confucian cultures, whereas reciprocal filial piety may be relatively consistent across cultures (Yeh, 2003). For example, coresidence with parents after marriage, obedience, and saving parents’ face are not found in measures of filial obligation in Western societies (Gans & Silverstein, 2006; Lowenstein & Daatland, 2006).
+
+The inclusion of multiple dimensions may better represent the complexity of filial piety and stability/changes of beliefs expressed in traditional norms of filial piety. For example, studies indicate that younger generations in Asia are increasingly reluctant to seek the opinions of their parents and to value their parents’ wishes, even in such important matters as choosing a job or considering marriage, while they still show high levels of agreement with statements about their duties to support their parents (Chow, 2001).
+
+### Changes in Filial Piety
+
+One of the fundamental questions that Confucian countries are facing today is whether filial piety values will remain a key force in parent-child relationships in the future. Beliefs and behaviors pertaining to filial piety may change with industrialization and urbanization of societies. According to the modernization hypothesis, as a society becomes modernized, obligations to extended families weaken and nuclear family becomes an independent kinship unit (Goode, 1963).
+
+Indeed, several studies support this trend in Asian countries (Hsu, Lew-Ting, & Wu, 2001). Survey data in Japan from 1960 to 1990, for example, showed that with economic development and changes of life style, the norm of caring for older parents and expectations of support from children steadily declined (Ogawa, Retherford, & Matsukura, 2006). Cheung and Kwan (2009) examined changes in filial piety by assessing behaviors pertaining to filial piety in various Chinese cities. Although this study had unequal sample sizes in different cities so that larger cities may be weighted more, there was a trend that people living in cities with higher economic development had lower filial piety behaviors.
+
+However, it is noteworthy that not all cultures in Asia have changed in the same way as a result of industrialization and urbanization. Governmental policies also play an important role in changes in filial obligation. For example, Whyte (2004) compared filial beliefs and behaviors between cities in the People’s Republic of China and Taiwan using data collected in 1990s. The results showed that some filial beliefs were similar between the two countries, but Taiwanese were more traditional than Chinese adults by endorsing the importance of coresidence with older parents after marriage and the importance of daughters-in-law as the main providers of support to their parents-in-law. Although Taiwan had better economic development at that time than the People’s Republic of China, the Taiwanese government deliberately defended the traditional values of Confucianism and the main engine of economic growth was family-based companies. On the other hand, leaders in the People’s Republic of China denounced traditional values, Confucianism in particular (Whyte, 2003). Moreover, many older adults in the People’s Republic of China receive pensions from the government, so they can support themselves financially and be more independent (Xie & Zhu, 2009).
+
+Policies regarding caregiving for older adults may also influence changes in filial behaviors. Although different Confucian societies historically shared similar beliefs regarding filial piety, with urbanization and different governmental policies, filial beliefs and behaviors show distinct patterns across different nations. In the People’s Republic of China, due to the trend of diminishing filial involvement among adult offspring, parents have started to sign a contract called the Family Support Agreement (FSA) to ensure financial and practical support from adult offspring. About 13 million rural families have signed FSAs by 2005, and FSAs can now be found in some cities as well (Chou, 2011). The FSA is based on social norms, but violations of the FSA are subject to penalties by law. In Japan, the principle of private initiatives had required families to be the first resource for support of parents. Nonetheless, due to smaller family sizes with fewer children, more women working, and changing attitudes toward family responsibilities, Japan has instituted a program of national long-term care insurance (LTCI) since 2000 (Ishikawa & Maeda, 2000; Tokoro, 2009). A similar program has been instituted in South Korea since 2008 (Kwon, 2010). Thus, governments appear to be stepping in to fill gaps in the safety network for older adults, recognizing that shifts in filial behaviors have diminished familial support. Over time, these government policies may have the unintended consequence of further erosion in filial support (Kohli, 1999). For example, Chou (2011) indicated that the FSA as legal sanctions may limit the spontaneity and flexibility originally embedded in filial piety, and may erode the affection and mutual trust in intergenerational relations.
+
+Despite the steady declines in behaviors and attitudes pertaining to filial piety over time, however, the culture of filial piety still remains in Asia. In particular, it appears that gendered filial expectations of older parents have not changed much (Feldman, Tuljapurkar, Li, Jin, & Li, 2007). Under the patrilineal tradition of the Asian cultures, sons and daughters-in-law should be the major providers for parents in their old age, while daughters are regarded as belonging to other families after getting married and thus having no obligations toward their own parents. There is evidence of daughters’ increasing financial and instrumental contributions to their parents with changing demographic contexts (e.g., Zhang, 2009), but Asian older adults sill stick to traditional gendered filial expectations, revealing much higher preferences for living with their married sons than with married daughters (Park, Kim, & Kojima, 1999; Yan & Chi, 2001). For example, Cong and Silverstein (2012) examined 802 older parents in rural China, using a vignette design where a widowed parent is in need of care and has a son and a daughter. When they asked these Chinese older adults who should take care of the elder in the vignette, 62 % of the respondents indicated that the vignette son should take all or the majority of the responsibilities regardless of migration status and competing demands that the son and daughter have, and only 16 % believed that the vignette daughter should take all or a majority of the responsibilities.
+
+Studies have indicated that the meanings and practices of filial piety are being modified and reinterpreted by elderly parents and adult children (Phua & Loh, 2008). Thus, the concept of filial piety in the context of changing societies must be understood in various ways. As mentioned previously, support behaviors, such as intergenerational coresidence and care for older parents, are often used as a proxy for filial piety in empirical studies, but these extreme long-term behaviors may not capture the dynamics and changes of filial piety, including behaviors, attitudes, and even motivations enacted in shorter-term or symbolic ways (Mehta & Ko, 2004). For example, the conflict between traditional norms regarding intergenerational coresidence and contemporary filial practices has led to the invention of a new custom of short-term intergenerational co-residence, so called “ritualistic co-residence” in rural China (Wang, 2004). Right after the wedding, Chinese couples briefly live in the paternal household to demonstrate their filial piety, even if they have no intention to continue the shared households. As another example, Phua and Loh (2008) indicated that among Chinese Singaporean parents, filial piety is experienced in the form of an “open” invitation by children to coreside, not in the form of “actual” coresidence. Thus, having non-coresident children who invited the parent to coreside can be as good as living together for some elderly parents, at least in terms of fulfillment of the traditional ideal.
+
+Caregiving in response to parental needs is also undergoing transformations. Although the traditional norms of care have been providing care for aging parents at home, Zhan, Feng, and Luo (2008) pointed out that the meaning of institutional care for older parents in China has shifted from a stigma to a reinterpretation of filial piety. If adult children are not available to provide direct physical care for the elderly parent due to busy schedules or geographic distance, they substitute their filial duties by paying for high quality and costly professional care institutions. Although these new filial practices may be class-specific, the modification and reinterpretation of filial piety suggests the need to look beyond mere traditional modes to understand intergenerational relationships and filial support in the changing contexts of Asian countries (Croll, 2006). In addition, as these studies show, research often has confounded filial beliefs and behaviors inferred as reflecting filial piety. Clearer distinctions are needed, particularly as beliefs and behaviors are both changing rapidly.
+
+## Living Arrangements and Support Exchanges
+
+To understand older adults’ experiences, it is also important to consider actual patterns of intergenerational relationships: living arrangements and support exchanges. As described previously, in Asia, the normative and traditional living arrangement in old age has been coresidence of parents with the eldest son and his family. Intergenerational coresidence facilitates the regular intergenerational contact that contributes to frequent material and emotional exchanges between generations (Yan & Chi, 2001). In particular, intergenerational coresidence in Asian countries has taken on special importance for the well-being of the elderly, given reliance on the family instead of the state to care for older persons. Indeed, studies have found that Asian older adults living together with family members have better psychological well-being and mental health than those living alone (Chen & Short, 2008; Chen & Silverstein, 2000; Do & Malhotra, 2012). According to a study in rural China (Silverstein, Cong, & Li, 2006), older parents who are living in a three-generation household reported better psychological well-being, which is explained by support from adult children. However, even after controlling for support exchanges, the positive effect of intergenerational coresidence remained. Thus, beyond its functional benefits, intergenerational coresidence can be important to older adults in the Asian contexts, as the fulfillment of a cultural ideal.
+
+With changing socio-economic environments and family structures, studies have documented a steady decline of traditional coresidence in Asian counties (Ogawa et al., 2006). Nevertheless, the most common form of living arrangement for Asian elderly adults is still living with at least one adult child. Compared to Western countries (e.g., 14 % in United States; Ruggles, 2007), Asian countries maintain higher levels of coresidence of older adults (aged 65+) with their adult children, ranging from 43 % in Japan (Takagi & Silverstein, 2011) to 68.7 % in China (Zeng & Wang, 2003). If we look instead at living arrangements of adult children, the proportion of married children who coreside with any parent (husband or wife’s parents) was 46.5 % in Taiwan and 38 % in China (Chu, Xie, & Yu, 2011). Despite an increasing preference of parents and children for independent living arrangements, the limited social welfare system and public services for the elderly and the shortage of housing in the Asian nations are contributing to the high rates of coresidence between adult children and parents (Logan, Bian, & Bian, 1998).
+
+Sometimes such high rates of coresidence in Asian counties are interpreted as evidence that adult children are adequately providing filial care for their older parents in comparison with Western countries (e.g., Karasawa et al., 2011). However, intergenerational coresidence in Asian families should be viewed as a far more complex phenomenon (Chan, 2005). Living apart from children does not necessarily preclude exchanges of support between generations, and coresidence does not automatically guarantee quality care for the older adults or better family relationships (Antonucci, Akiyama, & Birditt, 2004). For example, conflict between parents-in-law and daughter-in-law is a main reason for family conflicts in Asian multigenerational families (Keith & Lee, 1995; Ko, 2012; Lee, 2011).
+
+### Variations in Living Arrangements
+
+According to another study in China (Lei, Strauss, Tian, & Zhao, 2011), 59 % of older parents (aged 60+) who have children but live alone or with only a spouse have at least one adult child living in the same village or community, and 79 % have at least one child living in the same county. Thus, it appears that the decreasing trend in coresidence between parents and adult children is accompanied by a rising trend in living in geographic proximity to each other. In this regard, studies have documented the various forms of “quasi-coresidence” – not living with family but having them nearby, which is growing as a popular living arrangement in Asian societies (Chan, 2005). In Japan, the younger generations choose to live in a separate house next door to older parents to reduce such conflicts, as daughter-in-law and mother-in-law each reside in and manage a separate household (Brown, 2003; Koyano, 1997). It is often observed in Asian countries that older parents who live close to their adult children take care of their grandchildren during the day and return these grandchildren to their parents in the evenings (Chen, Liu, & Mair, 2011). Such variations in living arrangements can be viewed as an attempt to balance the traditional norms of intergenerational coresidence and increasing desire for independence in the changing contexts of Asian countries. However, according to a study in Korea (Oh, Kim, & Hong, 2009), elderly parents who are living in the same area as adult children but in a separate household showed a higher probability of having depressive symptoms than those coresiding with adult children. In this situation, even though the elderly parents are living close to their adult children, they may feel neglected or lonely without closer daily interactions. These findings suggest that the implications of “quasi-coresidence” for elders’ well-being need to be more carefully examined.
+
+### Determinants of Living Arrangements
+
+In Asian countries, family members’ expectations and practices surrounding intergenerational coresidence tend to be determined by resources and needs of both parents and children, not just by the traditional ideology. Poor health and loss of a spouse are key conditions under which elderly parents live with their adult children (Kim, 2012; Li, Zhang, & Liang, 2009). Using longitudinal data, Korinek, Zimmer, and Gu (2011) showed that shifts to coresidence with adult children followed transitions to widowhood and deteriorating functional health among older adults in China. Thus, even though parents and adult children live apart, adult children coreside with parents when parental needs arise. However, the relationship between parental socioeconomic status and coresidence with children is mixed. On the one hand, studies have found that older people with higher socioeconomic status and greater family resources (e.g., more children and a living spouse) are more likely to prefer living independently (Hermalin & Yang, 2004; Kim & Rhee, 1997; Park et al., 1999). On the other hand, economic resources may confer power in negotiating living arrangements so that older parents with higher economic status are more likely to live with adult children (Han & Yoon, 2000; Takagi & Silverstein, 2011).
+
+In Asian countries, intergenerational coresidence is also driven by the younger generations’ needs for help from their parents, including needs for child care and housing (Zhang, 2004). For married adults in Taiwan and China, having a young grandchild increased the likelihood of coresidence with their elderly parents (Chu et al., 2011). It is common for older parents who are healthy to assume the role of caring for their grandchildren within the same household, thereby providing emotional and social security to the younger generation (Chen et al., 2011). Sometimes, older parents in rural areas live with their grandchildren in a skipped-generation household and receive remittances from their adult children (parents of the grandchildren who reside in cities) as compensation for the custodial care of grandchildren (Silverstein et al., 2006). In addition, due to high housing costs in urban areas, coresidence with parents enables adult children to marry when they cannot afford to live independently in a separate household. Chinese parents in urban areas provide housing or other services for their adult children and receive financial support from them in return (Lee & Xiao, 1998). When Chinese couples decide to coreside with the wife’s parents, as a non-normative pattern of coresidence, it is mainly out of practical considerations, such as availability of living space (Pimentel & Liu, 2004). Thus, intergenerational coresidence in Asian families can be characterized by mutual aid and interdependence across generations, responding to the needs of both parents and children (Logan & Bian, 2004; Zhang, 2004). This is different from patterns in the United States, where coresidence between parents and adult children is mainly driven by child’s needs, even after initial nest-leaving, and even for aging parents (e.g., Aquilino, 1990; Schoeni & Ross, 2005).
+
+### Support Exchanges with Non-coresident Children
+
+Although coresidence continues to be the core of support relationships between older parents and adult offspring in much of Asia, studies suggest that older parents also exchange high levels of support with their non-coresident children (Li, Feldman, & Jin, 2004). According to a study in two major Chinese cities (Bian, Logan, & Bian, 1998), non-coresident children live close to parents, maintain high levels of face-to-face contact with parents, and provide help on a regular basis to parents. A recent study in Korea reported that 57 % of elderly parents have in-person contacts with adult children at least once a month and 89 % have contact with children via phone or emails (Park, 2012). Living away from children does constrain receiving help with daily activities, but it does not affect exchanges of financial support. Rather, when adult children migrated to urban areas for employment opportunities, they tended to provide more money to their parents as compensation for the absence of hands-on care, compared to non-migrant children (Guo, Aranda, & Silverstein, 2009). It appears that the financial support from non-coresident adult children plays a substantial role in reducing poverty among older Korean (Kim & Cook, 2011).
+
+Asian countries have traditionally emphasized strong filial obligation of sons and their families. These patrilineal expectations for filial obligation have exerted a strong effect on the nature and structure of intergenerational exchanges (Feldman et al., 2007; Lin et al., 2003; Park et al., 1999). However, with demographic and economic changes, exchange patterns between older parents and adult children reveal a mixed form of patrilineal traditions and strategic responses to social/economic changes (Han & Yoon, 2004; Kim, Zarit, Fingerman, & Han, in press). In Korea, for example, adult children receive support from both sides of parents at similar levels, but the obligatory expectation to provide more support to husbands’ parents appears to remain (Lee, 2011). Also, adult children are more likely to receive financial support from a husband’s parents, but are more likely to receive emotional and practical help from the wife’s parents (Lee, 2005). Thus, these exchanges cannot be accounted for by the patrilineal tradition or bilateral change. Rather, these changes may represent a strategic advance in response to economic challenges, which make it advantageous for parents and parents-in-law to give support to children, even after marriage, so they can achieve higher educational and economic status (Kim et al., in press).
+
+The effects of support from children on elderly parents’ well-being have shown inconsistent results across studies. Some studies show that receiving support from adult children compromises the psychological well-being of older adults (Krause, Liang, & Gu, 1998; Takagi & Saito, 2013), while other studies reveal that receiving support is beneficial for older parents (Chi & Chou, 2001; Silverstein et al., 2006). These conflicting findings may be related to the fact that many studies were based on cross-sectional designs, which often confound the parental needs for care and assistance and parental well-being outcomes. In other words, because older parents with health problems are more likely to draw help from children, support from children can be negatively related to parental well-being.
+
+Another possible reason for inconsistency in the findings from Asian countries would be that the effects of support from children on elderly parents’ well-being are often conditioned by cultural beliefs. Cong and Silverstein (2008) found that receiving instrumental support, for example, helps to reduce depression in older parents if it comes from the culturally appropriate sources, such as daughters-in-law. Another study shows that instrumental support contributes more to life satisfaction for older adults who have higher familism (Yeung & Fung, 2007). Studies examining adult children also support this, showing that effects of providing care/support to older parents can differ by their beliefs about filial piety. Lai (2010) found that adult children who reported higher levels of filial piety tend to perceive providing care to their parents as more positive, which leads to a lower level of caregiving burden. Thus, it is important for future research to consider changing normative contexts in Asia in examining consequences of intergenerational support on older parents and adult offspring.
+
+## Emotional Ties
+
+While many studies have focused on the structural and normative aspects of Asian families, there is relatively little research from Asia on the emotional quality of parent-child ties, including affection and conflict between generations. Studies conducted in the West have consistently shown that relationship quality is the strongest predictor for well-being for both generations. Also, affectionate and intimate ties increase the likelihood of support exchanges between older parents and adult children (Fingerman et al., 2011; Merz, Consedine, Schulze, & Schuengel, 2009), whereas the extent of instrumental help has no effect on the perceived quality of the intergenerational relations across cultures (Nauck & Suckow, 2006). Indeed, studies in Asian countries confirm that emotional support from children (as one indicator of strong parent-child emotional ties) is beneficial to psychological well-being of older adults (Lin, Chang, & Huang, 2011; Yeung, & Fung, 2007).
+
+Emotional closeness between parents and children has been implicitly expressed in the traditional norms of filial piety, such as showing consideration to parents’ daily life and taking care of parental needs with respect and love (Sung, 1998). However, the Confucian tradition of Asian societies, including individual submission to family, age/generation-based hierarchy, and strict gender division within family systems, also may be a factor hindering development of intimate and affectionate relationships and expressive communications among family members. Comparing social networks of Canadian and Japanese adults, Otani (1999) found that 65 % of Canadian adults named their kinship members as close and intimate, but only 45 % of Japanese adults did. Jeong (2007) also found that Korean adults are likely to anticipate more instrumental support and less emotional support from their kinship members, compared to adults in Western countries. However, these findings may not necessarily mean that parent-child relationships are less important for Asian adults or indicate poor relationship qualities of intergenerational relationships among them. Nauck and Suckow (2006) did not find any cultural differences in aging mothers’ and adult daughters’ perceptions of relationship quality in Japan, Korea, China, Indonesia, Israel, Germany, and Turkey. In all cultures, mothers tend to perceive relationships with their adult daughters as more positive than the daughters do, supporting the intergenerational stake hypothesis. Also, for Chinese older adults, positive relationships with vertical family members, including parents and children, are most important in explaining their well-being, while relationships with non-family members did not show significant effects (Cheng, Li, Leung, & Chan, 2011).
+
+Kim, Sherman, Ko, and Taylor (2006) indicated that Asians are more reluctant to explicitly ask for emotional support from close others when they experience some problems. This is because Asian adults are concerned about the potentially negative relational consequences of such behaviors, such as worrying others, disrupting the harmony of the group, losing face, and making the problem worse. Thus, there is need to explore how emotional qualities of ties in Asian families can be captured in a culturally sensitive way.
+
+Some studies about emotional qualities among Asian families have focused on conflicts between mother-in-law and daughter-in-law resulting from patriarchal characteristics of Asian families (Antonucci et al., 2004; Keith & Lee, 1995). In terms of ties between parent and children, a study in rural China (Guo, Chi, & Silverstein, 2012) showed that about 30 % of all parent-child dyads nested within 1,174 older parents were characterized by weak emotional cohesion and strong conflict. Despite differences in the measurement of intergenerational relations across studies, this rate far exceeds the prevalence rates of “disharmonious” ties in Western studies, which ranged from 4 % in Dutch families (Van Gaalen & Dykstra, 2006) to 15–20 % in American families (Fingerman, 2001; Silverstein, Gans, Lowenstein, Giarrusso, & Bengtson, 2010). Future research should explore how emotional qualities of ties in Asian families are changing and what factors contribute to the changes.
+
+In addition, although the concept of ambivalence, which has been introduced into Western studies (Fingerman, Pitzer, Lefkowitz, Birditt, & Mroczek, 2008; Lowenstein, 2007; Lüescher & Pillemer, 1998; Pillemer et al., 2007), has potential value for studying Asian families, it has not yet been the focus of research. Ambivalence refers to the simultaneous experience of positive and negative sentiments about the same relationships, which can provide a useful framework for understanding the complexity of the parent-child relationship.
+
+Ambivalence can be defined at two levels: structural/sociological and subjective/psychological levels. Regarding ambivalence at the structural level, arising from competing role expectations or demands embedded in social structures (Connidis & McMullin, 2002), Asian families can be an interesting setting for study. Changes in socioeconomic environments and normative expectations regarding the family are creating contradictory circumstances for intergenerational relations among Asian adults (Teo, Graham, Yeoh, & Levy, 2003). A few qualitative studies support this. Traphagan (2010) connected rising suicide rates of the elderly in contemporary Japan to the concept of intergenerational ambivalence. Specifically, he suggested that the high rates of suicide are associated with contradictions between expectations and experiences in the changing contexts of multigenerational family relationships. From the perspective of adult children, Lee (2010) indicated that Japanese women are likely to experience ambivalence in negotiating elder care decisions than men. Despite increasing egalitarianism and acceptance of women working, normative expectations regarding gendered filial caregiving persist in contemporary Japanese families. Also, it appears that conflicting demands between providing care to aging parents and parents-in-law are becoming another source of ambivalence toward aging parents among Japanese women.
+
+Little is known about psychological ambivalence experienced toward aging parents or adult offspring among Asian adults (Lüescher & Pillemer, 1998). Compared to European Americans, however, adults in Asia typically are more tolerant of contradictions (Peng & Nisbett, 1999). This cultural difference in emotion and motivation may lead to distinct patterns of intergenerational ambivalence among Asian countries (Pillemer & Suitor, 2004). As Asian societies adopt more individualistic mores, people may be willing to talk about emotional ambivalence of parents toward children and vice versa.
+
+## Conclusions
+
+In Asia, rapid changes of demographic, social and cultural environments are challenging the dynamics of intergenerational relationships. Research on parent-child relationships in Asian families has focused on the question, “is support for older parents declining?” This review of the literature reveals mixed evidence, including variations in the mode of support and filial beliefs. It is clear that Asian families are adjusting to changing social economic environment and renegotiating traditional notions of filial piety. To capture the changing modes of intergenerational support between generations and the underlying norms in culturally sensitive ways, we need to consider various aspects of parent-child relationships from both perspective of parents and children.
+
+## References
+
+Albertini, M., Kohli, M., & Vogel, C. (2007). Intergenerational transfers of time and money in European families: Common patterns, different regimes? Journal of European Social Policy, 17, 319–334.
+
+Antonucci, T. C., Akiyama, H., & Birditt, K. S. (2004). Intergenerational exchange in the United States and Japan. Annual Review of Gerontology and Geriatrics, 24, 224–248.
+
+Antonucci, T. C., & Jackson, J. S. (1990). The role of reciprocity in social support. In B. R. Sarason, I. G. Sarason, & G. R. Pierce (Eds.), Social support: An interactional view (pp. 173–198). Oxford, UK: Wiley.
+
+Aquilino, W. (1990). The likelihood of parent-adult child coresidence: Effects of family structure and parental characteristics. Journal of Marriage and the Family, 52, 405–419.
+
+Bengtson, V. L., & Putney, N. M. (2000). Who will care for tomorrow’s elderly? Consequences of population aging East and West. In V. L. Bengtson, K.-D. Kim, G. C. Myers, & K.-S. Eun (Eds.), Aging in East and West: Families, states, and the elderly (pp. 263–285). New York: Springer.
+
+Bengtson, V. L., & Roberts, R. E. L. (1991). Intergenerational solidarity in aging families: An example of formal theory construction. Journal of Marriage and the Family, 53, 856–870.
+
+Bian, F., Logan, J. R., & Bian, Y. (1998). Intergenerational relations in urban China: Proximity, contact, and help to parents. Demography, 35, 115–124.
+
+Brown, N. (2003). Under one roof: The evolving story of three generation housing in Japan. In J. W. Traphagan & J. Knight (Eds.), Demographic change and the family in Japan’s aging society (pp. 53–72). Albany, NY: State University of New York Press.
+
+Brown, S. L., Nesse, R. M., Vinokur, A. D., & Smith, D. M. (2003). Providing social support may be more beneficial than receiving it: Results from a prospective study of mortality. Psychological Science, 14, 320–327.
+
+Chan, A. (2005). Aging in Southeast and East Asia: Issues and policy directions. Journal of Cross-Cultural Gerontology, 20, 269–284.
+
+Chen, F., Liu, G., & Mair, C. A. (2011). Intergenerational ties in context: Grandparents caring for grandchildren in China. Social Forces, 90, 571–594.
+
+Chen, F., & Short, S. E. (2008). Household context and subjective well-being among the oldest old in China. Journal of Family Issues, 29, 1379–1403.
+
+Chen, S. X., Bond, M. H., & Tang, D. (2007). Decomposing filial piety into filial attitudes and filial enactments. Asian Journal of Social Psychology, 10, 213–223.
+
+Chen, X., & Silverstein, M. (2000). Intergenerational social support and the psychological well-being of older parents in China. Research on Aging, 22, 43–65.
+
+Cheng, S. T., & Chan, A. C. (2006). Filial piety and psychological well-being in well older Chinese. Journal of Gerontology: Psychological Sciences, 61B, P262–P269.
+
+Cheng, S.-T., Li, K.-K., Leung, E. M. F., & Chan, A. C. M. (2011). Social exchanges and subjective well-being: Do sources of positive and negative exchanges matter? The Journals of Gerontology. Series B, Psychological Sciences and Social Sciences, 66, 708–718.
+
+Cheung, C., & Kwan, A. Y. (2009). The erosion of filial piety by modernization in Chinese cities. Ageing and Society, 29, 179–198.
+
+Chi, I., & Chou, K.-L. (2001). Social support and depression among elderly Chinese people in Hong Kong. International Journal of Aging and Human Development, 52, 231–252.
+
+Choe, S.-H. (2013). As families change, Korea’s elderly are turning to suicide. The Associated Press on the Web. Retrieved February 15, 2013, from http://bigstory.ap.org/article/china-requiring-people-visit-their-aged-parents
+
+Chou, R. J.-A. (2011). Filial piety by contract? The emergence, implementation, and implications of the “family support agreement” in China. The Gerontologist, 51, 3–16.
+
+Chow, N. W. S. (2001). The practice of filial piety among the Chinese in Hong Kong. In I. Chi, N. L. Chappell, & J. Lubben (Eds.), Elderly Chinese in Pacific Rim countries: Social support and integration (pp. 125–136). Hong Kong, China: Hong Kong Universities Press.
+
+Chu, C. Y. C., Xie, Y., & Yu, R. R. (2011). Coresidence with elderly parents: A comparative study of southeast China and Taiwan. Journal of Marriage and Family, 73, 120–135.
+
+Cong, Z., & Silverstein, M. (2008). Intergenerational support and depression among elders in rural China: Do daughters-in-law Matter? Journal of Marriage and Family, 70, 599–612.
+
+Cong, Z., & Silverstein, M. (2012). A vignette study on gendered filial expectations of elders in rural China. Journal of Marriage and Family, 74, 510–525.
+
+Connidis, I. A., & McMullin, J. A. (2002). Sociological ambivalence and family ties: A critical perspective. Journal of Marriage and Family, 64, 558–567.
+
+Croll, E. J. (2006). The intergenerational contract in the changing Asian family. Oxford Development Studies, 34, 473–491.
+
+Dai, Y., & Dimond, M. F. (1998). Filial piety: A cross-cultural comparison and its implications for the well-being of older parents. Journal of Gerontological Nursing, 24, 13–18.
+
+Do, Y. K., & Malhotra, C. (2012). The effect of coresidence with an adult child on depressive symptoms among older widowed women in South Korea: An instrumental variables estimation. The Journals of Gerontology. Series B, Psychological Sciences and Social Sciences, 67, 384–391.
+
+Feldman, M. W., Tuljapurkar, S., Li, S., Jin, X., & Li, N. (2007). Son preference, marriage, and intergenerational transfer in rural China. In A. H. Gauthier, C. Y. C. Chu, & S. Tuljapurkar (Eds.), Allocating public and private resources across generations riding the age waves (Vol. 2, pp. 139–162). London: Springer.
+
+Fingerman, K. L. (2001). Aging mothers and their adult daughters: A study in mixed emotions. New York: Springer.
+
+Fingerman, K. L., & Birditt, K. S. (2011). Adult children and aging parents. In K. W. Schaie & S. L. Willis (Eds.), Handbook of the psychology of aging (7th ed., pp. 219–232). New York: Elsevier.
+
+Fingerman, K. L., Cheng, Y.-P., Tighe, L. A., Birditt, K. S., & Zarit, S. H. (2012). Relationships between young adults and their parents. In A. Booth, S. L. Brown, N. S. Landale, W. D. Manning, & S. M. McHale (Eds.), Early adulthood in a family context: National symposium on family issues (Vol. 2, pp. 58–85). New York: Springer.
+
+Fingerman, K. L., Pitzer, L. M., Chan, W., Birditt, K. S., Franks, M. M., & Zarit, S. H. (2011). Who gets what and why: Help middle-aged adults provide to parents and grown children. The Journals of Gerontology. Series B, Psychological Sciences and Social Sciences, 66, 87–98.
+
+Fingerman, K. L., Pitzer, L. M., Lefkowitz, E. S., Birditt, K. S., & Mroczek, D. (2008). Ambivalent relationship qualities between adults and their parents: Implications for both parties’ well-being. Journal of Gerontology: Psychological Sciences, 63B, P362–P371.
+
+Gallois, C., Giles, H., Ota, H., Pierson, H. D., Ng, S. H., Lim, T. S., et al. (1999). Intergenerational communication across the Pacific Rim: The impact of filial piety. In J.-C. Lasry, J. Adair, & K. Dion (Eds.), Latest contributions to cross-cultural psychology (pp. 192–211). Lisse, The Netherlands: Swets & Zeitlinger.
+
+Gans, D., & Silverstein, M. (2006). Norms of filial responsibility for aging parents across time and generations. Journal of Marriage and Family, 68, 961–976.
+
+Goode, W. (1963). World revolution and family patterns. New York: Free Press.
+
+Grundy, E. (2005). Reciprocity in relationships: Socio-economic and health influences on intergenerational exchanges between Third Age parents and their adult children in Great Britain. The British Journal of Sociology, 56, 233–255.
+
+Guo, M., Aranda, M. P., & Silverstein, M. (2009). The impact of out-migration on the intergenerational support and psychological wellbeing of older adults in rural China. Ageing and Society, 29, 1085–1104.
+
+Guo, M., Chi, I., & Silverstein, M. (2012). The structure of intergenerational relations in rural China: A latent class analysis. Journal of Marriage and Family, 74, 1114–1128.
+
+Han, G., & Yoon, S.-D. (2000). Failed parental strategy? Determinants of the living arrangements among the rural elderly in Korea. Korean Journal of Sociology, 34, 649–797. (in Korean)
+
+Han, G., & Yoon, S. E. (2004). The bilateralization of the kinship relations in Korean Families: Focused on the intergenerational exchange. Korea Journal of Population Studies, 27, 177–203. (in Korean)
+
+Hermalin, A. I., & Yang, L.-S. (2004). Levels of support from children in Taiwan: Expectations versus reality, 1965–99. Population and Development Review, 30, 417–448.
+
+Ho, D. Y. F. (1994). Filial piety, authoritarian moralism, and cognitive conservatism in Chinese societies. Genetic, Social, and General Psychology Monographs, 120, 347–365.
+
+Ho, D. Y. F. (1996). Filial piety and its psychological consequences. In M. H. Bond (Ed.), The handbook of Chinese psychology (pp. 155–165). Hong Kong, China: Oxford University Press.
+
+Ho, D. Y. F., & Lee, L. Y. (1974). Authoritarianism and attitude toward filial piety in Chinese teachers. The Journal of Social Psychology, 92, 305–306.
+
+Hsu, H.-C., Lew-Ting, C.-Y., & Wu, S.-C. (2001). Age, period, and cohort effects on the attitude toward supporting parents in Taiwan. The Gerontologist, 41, 742–750.
+
+Ikels, C. (2004). Filial piety: Practice and discourse in contemporary East Asia. Stanford, CA: Stanford University Press.
+
+Ishii-Kuntz, M. (1997). Intergenerational relationships among Chinese, Japanese, and Korean Americans. Family Relations, 46, 23–32.
+
+Ishikawa, H., & Maeda, D. (2000). Development of long-term care for elderly people in Japan. In D. R. Phillips (Ed.), Aging in the Asia-Pacific region: Issues, policies, and future trends (pp. 133–157). New York: Routledge.
+
+Jeong, J.-K. (2007). Contact frequency and social supports among Korean kin: From the comparative perspective. Korean Journal of Population Studies, 30, 157–178. (in Korean)
+
+Karasawa, M., Curhan, K. B., Markus, H. R., Kitayama, S. S., Love, G. D., Ralder, B. T., et al. (2011). Cultural perspectives on aging and well-being: A comparison of Japan and the United States. International Journal of Aging and Human Development, 73, 73–98.
+
+Keith, P. M., & Lee, S.-H. C. (1995). In-law relationships, coresidence, and well-being of adult children in Korea. Sociological Spectrum, 15, 397–418.
+
+Kim, C.-S. (2012). Intergenerational living arrangements of young married women in Korea, Japan and China. Korean Journal of Sociology, 46, 59–72.
+
+Kim, C.-S., & Rhee, K. O. (1997). Variations in preferred living arrangements among Korean elderly parents. Journal of Cross-Cultural Gerontology, 12, 189–202.
+
+Kim, E. H.-W., & Cook, P. J. (2011). The continuing importance of children in relieving elder poverty: Evidence from Korea. Ageing and Society, 31, 953–976.
+
+Kim, H. S., Sherman, D. K., Ko, D., & Taylor, S. E. (2006). Pursuit of comfort and pursuit of harmony: Culture, relationships, and social support seeking. Personality and Social Psychology Bulletin, 32, 1595–1607.
+
+Kim, K., Zarit, S. H., Fingerman, K. L., & Han, G. (in press). Intergenerational exchanges of middle-aged adults with their parents and parents-in-law in Korea. Journal of Marriage and Family.
+
+Ko, L. S. F. (2012). Solidarity, ambivalence and multigenerational co-residence in Hong Kong. In S. Arber (Ed.), Contemporary grandparenting: Changing family relationships in global contexts (pp. 91–112). Chicago: Policy Press.
+
+Kohli, M. (1999). Private and public transfers between generations: Linking the family and the state. European Societies, 1, 81–104.
+
+Korinek, K., Zimmer, Z., & Gu, D. (2011). Transitions in marital status and functional health and patterns of intergenerational coresidence among china’s elderly population. Journal of Gerontology: Social Sciences, 66B, 260–270.
+
+Koyano, W. (1997). Filial piety and intergenerational solidarity in Japan. Australian Journal on Ageing, 15, 51–56.
+
+Krause, N., Liang, J., & Gu, S. (1998). Financial strain, received support, anticipated support, and depressive symptoms in the People’s Republic of China. Psychology and Aging, 13, 58–68.
+
+Kwon, S. (2010). Population aging and the introduction of long-term care insurance in South Korea. In K. Eggleston & S. Tuljapurkar (Eds.), Aging Asia: The economic and social implications of rapid demographic change in China, Japan and South Korea (pp. 109–117). Washington, DC: Brookings Institution Press.
+
+Lai, D. W. L. (2010). Filial piety, caregiving appraisal, and caregiving burden. Research on Aging, 32, 200–223.
+
+Lang, F. R., & Schütze, Y. (2002). Adult children’s supportive behaviors and older parents’ subjective well-being: A developmental perspective on intergenerational relationships. Journal of Social Issues, 58, 661–680.
+
+Lee, G., Netzer, J. K., & Coward, R. T. (1994). Filial responsibility expectations and patterns of intergenerational assistance. Journal of Marriage and the Family, 56, 559–565.
+
+Lee, J. K. (2005). Neo-familism and women: The modern transformation of the Korean family. In P. Chang & E.-S. Kim (Eds.), Women’s experiences and feminist practices in South Korea (pp. 155–176). Seoul, South Korea: Ewha Womens University Press.
+
+Lee, K. S. (2010). Gender, care work, and the complexity of family membership in Japan. Gender and Society, 24, 647–671.
+
+Lee, Y.-B. (2011). Intergenerational caregiving and conflict between daughters/daughters-in-law and their elderly parents/parents-in-law. Family and Culture, 23, 41–76. (in Korean)
+
+Lee, Y. J., & Xiao, Z. (1998). Children’s support for elderly parents in urban and rural China: Results from a national survey. Journal of Cross-Cultural Gerontology, 13, 39–62.
+
+Lei, X., Strauss, J., Tian, M., & Zhao, Y. (2011). Living arrangements of the elderly in China: Evidence from CHARLS (RAND Working Paper Series WR-866). Santa Monica, CA: Rand Corporation. Retrieved July 4, 2014, from http://www.rand.org/pubs/working_papers/WR866.html.
+
+Li, L., Zhang, J., & Liang, J. (2009). Health among the oldest-old in China: Which living arrangements make a difference? Social Science and Medicine, 68, 220–227.
+
+Li, S., Feldman, M. W., & Jin, X. (2004). Children, marriage form, and family support for the elderly in contemporary rural China: The case of Songzi. Research on Aging, 26, 352–384.
+
+Lin, I. F., Goldman, N., Weinstein, M., Lin, Y. H., Gorrindo, T., & Seeman, T. (2003). Gender differences in adult children’s support of their parents in Taiwan. Journal of Marriage and Family, 65, 184–200.
+
+Lin, J.-P., Chang, T.-F., & Huang, C.-H. (2011). Intergenerational relations and life satisfaction among older women in Taiwan. International Journal of Social Welfare, 20, S47–S58.
+
+Logan, J. R., & Bian, F. (2004). Intergenerational family relations in the United States and China. Annual Review of Gerontology and Geriatrics, 24, 249–265.
+
+Logan, J. R., Bian, F., & Bian, Y. (1998). Tradition and change in the urban Chinese family: The case of living arrangements. Social Forces, 76, 851–882.
+
+Lowenstein, A. (2007). Solidarity-conflict and ambivalence: Testing two conceptual frameworks and their impact on quality of life for older family members. The Journals of Gerontology. Series B: Psychological Sciences and Social Sciences, 62B, S100–S107.
+
+Lowenstein, A., & Daatland, S. O. (2006). Filial norms and family support in a comparative cross-national context: Evidence from the OASIS study. Ageing and Society, 26, 203–223.
+
+Lüescher, K., & Pillemer, K. (1998). Intergenerational ambivalence: A new approach to the study of parent-child relations in later life. Journal of Marriage and the Family, 60, 413–445.
+
+Maeda, D., & Ishikawa, H. (2000). Ageing in Japan: Retirement, daily lives, pensions and social security. In D. R. Phillips (Ed.), Aging in the Asia-Pacific region: Issues, policies, and future trends (pp. 113–132). New York: Routledge.
+
+Mehta, K. K., & Ko, H. (2004). Filial piety revisited in the context of modernizing Asian societies. Geriatrics and Gerontology International, 4, S77–S78.
+
+Merz, E.-M., Consedine, N. S., Schulze, H.-J., & Schuengel, C. (2009). Wellbeing of adult children and ageing parents: Associations with intergenerational support and relationship quality. Ageing and Society, 29, 783–801.
+
+Nauck, B., & Suckow, J. (2006). Intergenerational relationships in cross-cultural comparison: How social networks frame intergenerational relations between mothers and grandmothers in Japan, Korea, China, Indonesia, Israel, Germany, and Turkey. Journal of Family Issues, 27, 1159–1185.
+
+Nelson, L. J., Badger, S., & Wu, B. (2004). The influence of culture in emerging adulthood: Perspectives of Chinese college students. International Journal of Behavioral Development, 28, 26–36.
+
+Ng, S. H. (2002). Will families support their elders? Answers from across cultures. In T. D. Nelson (Ed.), Stereotyping and prejudice against older persons (pp. 295–310). Cambridge, MA: MIT Press.
+
+Ogawa, N., Retherford, R. D., & Matsukura, R. (2006). Demographics of the Japanese family: Entering uncharted territory. In M. Rebick & A. Takenaka (Eds.), The changing Japanese family (pp. 19–38). New York: Routledge.
+
+Oh, E.-H., Kim, M.-D., & Hong, S.-C. (2009). The effect of the traditional living arrangement, Anpakkori, on depressive symptoms in elderly people residing on Jeju Island. Psychiatry Investigation, 6, 131–140.
+
+Otani, S. (1999). Personal community networks in contemporary Japan. In B. Wellman (Ed.), Networks in the global village: Life in contemporary communities (pp. 279–297). Boulder, CO: Westview Press.
+
+Park, K.-S., Kim, I. K., & Kojima, H. (1999). Intergenerational coresidence and nearness in Korea and Japan: Unbalanced aspects of family changes. International Journal of Japanese Sociology, 8, 93–115.
+
+Park, S.-M. (2012). Intergenerational solidarity and life satisfaction of older people in contemporary South Korea. In E. Kapferer, A. Koch, & C. Sedmak (Eds.), The logics of change: Poverty, place, identity and social transformation mechanisms (pp. 199–233). New Castle upon Tyne, UK: Cambridge Scholars.
+
+Peng, K. P., & Nisbett, R. E. (1999). Culture, dialectics, and reasoning about contradiction. American Psychologist, 54, 741–754.
+
+Phua, V. C., & Loh, J. (2008). Filial piety and intergenerational co-residence: The case of Chinese Singaporean. Asian Journal of Social Science, 36, 659–679.
+
+Pillemer, K., & Suitor, J. J. (2004). Ambivalence and the study of intergenerational relations. In M. Silverstein & K. W. Schaie (Eds.), Intergenerational relations across time and place: Annual review of gerontology and geriatrics (Vol. 24, pp. 3–28). New York: Springer.
+
+Pillemer, K., Suitor, J. J., Mock, S. E., Sabir, M., Pardo, T. B., & Sechrist, J. (2007). Capturing the complexity of intergenerational relations: Exploring ambivalence within later-life families. Journal of Social Issues, 63, 775–791.
+
+Pimentel, E. E., & Liu, J. (2004). Exploring nonnormative coresidence in urban China: Living with wives’ parents. Journal of Marriage and Family, 66, 821–836.
+
+Rossi, A. S., & Rossi, P. H. (1990). Of human bonding: Parent-child relations across the life course. New York: Aldine de Gruyter.
+
+Ruggles, S. (2007). The decline of intergenerational coresidence in the United States, 1850 to 2000. American Sociological Review, 72, 964–989.
+
+Schoeni, R. F., & Ross, K. E. (2005). Material assistance from families during the transition to adulthood. In R. A. Settersten, F. F. Furstenberg, & R. G. Rumbaut (Eds.), On the frontier of adulthood: Theory, research, and public policy (pp. 396–417). Chicago: The University of Chicago Press.
+
+Seelbach, W. C., & Sauer, W. J. (1977). Filial responsibility expectations and morale among aged parents. The Gerontologist, 17, 492–499.
+
+Silverstein, M., Chen, X., & Heller, K. (1996). Too much of a good thing? Intergenerational social support and the psychological well-being of older parents. Journal of Marriage and the Family, 58, 970–982.
+
+Silverstein, M., Cong, Z., & Li, S. (2006). Intergenerational transfers and living arrangements of older people in rural China: Consequences for psychological well-being. The Journals of Gerontology. Series B: Psychological Sciences and Social Sciences, 61B, S256–S266.
+
+Silverstein, M., Conroy, S. J., Wang, H., Giarrusso, R., & Bengtson, V. L. (2002). Reciprocity in parent-child relations over the adult life course. The Journals of Gerontology. Series B: Psychological Sciences and Social Sciences, 57B, S3–S13.
+
+Silverstein, M., Gans, D., Lowenstein, A., Giarrusso, R., & Bengtson, V. L. (2010). Older parent-child relationships in six developed nations: Comparisons at the intersection of affection and conflict. Journal of Marriage and Family, 72, 1006–1021.
+
+Sung, K.-T. (1990). A new look at filial piety: Ideals and practices of family-centered parent care in Korea. The Gerontologist, 30, 610–617.
+
+Sung, K.-T. (1992). Motivations for parent care: The case of filial children in Korea. International Journal of Aging and Human Development, 34, 179–194.
+
+Sung, K.-T. (1995). Measures and dimensions of filial piety in Korea. The Gerontologist, 35, 240–247.
+
+Sung, K.-T. (1998). Exploration of actions of filial piety. Journal of Aging Studies, 12, 369–386.
+
+Takagi, E., & Saito, Y. (2013). A longitudinal analysis of the impact of family support on the morale of older parents in Japan: Does the parent’s normative belief in filial responsibilities make a difference? Ageing and Society, 33, 1053–1076.
+
+Takagi, E., & Silverstein, M. (2011). Purchasing piety? Coresidence of married children with their older parents in Japan. Demography, 48, 1559–1579.
+
+Tatlow, D. K. (2012, June 29). Visit your parents: In China, it could soon be the law. The New York Times on the Web. Retrieved July 4, 2012, from http://rendezvous.blogs.nytimes.com/2012/06/29/visit-your-parents-\T1\textemdash-in-china-it-could-soon-be-the-law/?src=rechp
+
+Taylor, S. E., Welch, W. T., Kim, H. S., & Sherman, D. K. (2007). Cultural differences in the impact of social support on psychological and physiological stress reactivity. Psychological Science, 18, 831–837.
+
+Teo, P., Graham, E., Yeoh, B. S. A., & Levy, S. (2003). Values, change and inter-generational ties between two generations of women in Singapore. Ageing and Society, 23, 327–347.
+
+The Associated Press. (2012, December 28). China requiring people to visit their aged parents. The Associated Press on the Web. Retrieved February 15, 2013, from http://bigstory.ap.org/article/china-requiring-people-visit-their-aged-parents
+
+Tokoro, M. (2009). Ageing in Japan: Family changes and policy developments. In T.-H. Fu & R. Hughes (Eds.), Ageing in East Asia: challenges and policies for the twenty-first century (pp. 54–71). New York: Routledge.
+
+Traphagan, J. W. (2010). Intergenerational ambivalence, power, and perceptions of elder suicide in rural Japan. Journal of Intergenerational Relationships, 8, 21–37.
+
+Van Gaalen, R. I., & Dykstra, P. A. (2006). Solidarity and conflict between adult children and parents: A latent class analysis. Journal of Marriage and Family, 68, 947–960.
+
+Wang, D. (2004). Ritualistic coresidence and the weakening of filial practice in rural China. In C. Ikels (Ed.), Filial piety: Practice and discourse in contemporary East Asia (pp. 16–33). Stanford, CA: Stanford University Press.
+
+Whyte, M. K. (2003). China’s revolutions and intergenerational relations. In M. K. Whyte (Ed.), China’s revolutions and intergenerational relations (pp. 3–23). Ann Arbor, MI: Center for Chinese Studies, University of Michigan.
+
+Whyte, M. K. (2004). Filial obligations in Chinese families: Paradoxes of modernization. In C. Ikels (Ed.), Filial piety: Practice and discourse in contemporary East Asia (pp. 106–127). Stanford, CA: Stanford University Press.
+
+Xie, Y., & Zhu, H. (2009). Do sons or daughters give more money to parents in urban China? Journal of Marriage and Family, 71, 174–186.
+
+Yan, S., & Chi, I. (2001). Living arrangements and adult children’s support for the elderly in the new urban areas of mainland China. In I. Chi, N. L. Chappell, & J. Lubben (Eds.), Elderly Chinese in Pacific Rim countries: Social support and integration (pp. 201–219). Hong Kong, China: Hong Kong Universities Press.
+
+Yeh, K. (2003). The beneficial and harmful effects of filial piety: An integrative analysis. In K. S. Yang, K. K. Hwang, P. B. Pederson, & I. Daibo (Eds.), Progress in Asian social psychology: Conceptual and empirical contributions (pp. 67–82). Westport, CT: Greenwood.
+
+Yeh, K. (2009). Intergenerational exchange behaviors in Taiwan: The filial piety perspective. Indigenous Psychological Research in Chinese Societies, 31, 97–141.
+
+Yeh, K., & Bedford, O. (2003). A test of the dual filial piety model. Asian Journal of Social Psychology, 6, 215–228.
+
+Yeh, K., & Bedford, O. (2004). Filial belief and parent-child conflict. International Journal of Psychology, 39, 132–144.
+
+Yeung, G. T. Y., & Fung, H. H. (2007). Social support and life satisfaction among Hong Kong Chinese older adults: Family first? European Journal of Ageing, 4, 219–227.
+
+Zeng, Y., & Wang, Z. (2003). Dynamics of family and elderly living arrangements in China: New lessons learned from the 2000 census. The China Review, 3, 95–119.
+
+Zhan, H. J., Feng, X., & Luo, B. (2008). Placing elderly parents in institutions in urban China: A reinterpretation of filial piety. Research on Aging, 30, 543–571.
+
+Zhang, Q. F. (2004). Economic transition and new patterns of parent-adult child coresidence in urban China. Journal of Marriage and Family, 66, 1231–1245.
+
+Zhang, W. (2009). “A married out daughter is like spilt water?” Women’s increasing contacts and enhanced ties with their natal families in post-reform rural North China. Modern China, 35, 256–283.

@@ -23,7 +23,6 @@ const READING_STATUS = Object.freeze({
 
 const ARTICLE_PAGE_KEYS = new Set(["full", "translation", "summary", "concepts", "pitfalls", "review-sheet"]);
 const QUIZ_PAGE_KEYS = new Set(["quiz-ox", "quiz-short", "quiz-mcq"]);
-const NOTEBOOKLM_VIDEO_CANDIDATES = ["notebooklm.mp4", "notebooklm.webm", "notebooklm.mov", "notebooklm.m4v"];
 const STAGE1_PAGE_KEYS = ["full"];
 const STAGE2_PAGE_KEYS = ["translation"];
 const STAGE3_PAGE_KEYS = ["summary", "concepts", "pitfalls", "review-sheet", "professor-prep", "quiz-ox", "quiz-short", "quiz-mcq"];
@@ -182,46 +181,8 @@ function isEnglishLike(value) {
   return /^[A-Za-z][A-Za-z0-9+ /().,:&'-]*$/.test(toText(value));
 }
 
-function isExternalUrl(value) {
-  return /^https?:\/\//i.test(toText(value));
-}
-
-function detectLocalNotebooklmVideo(rootDir, reading) {
-  const contentDir = path.join(rootDir, reading.content_dir);
-  for (const filename of NOTEBOOKLM_VIDEO_CANDIDATES) {
-    const candidate = path.join(contentDir, filename);
-    if (fs.existsSync(candidate)) {
-      return candidate;
-    }
-  }
-  return "";
-}
-
-function publicNotebooklmVideoPath(reading, sourcePath) {
-  if (!sourcePath) {
-    return "";
-  }
-  return path.posix.join("assets", "videos", reading.slug, path.basename(sourcePath));
-}
-
 function pdfVisibility(reading, existingMeta = {}) {
   return toText(reading.pdf_visibility || existingMeta.pdf_visibility) || (toText(reading.public_pdf) ? "public" : "none");
-}
-
-function landingVideoPolicy(reading, existingMeta = {}) {
-  return toText(reading.landing_video_policy || existingMeta.landing_video_policy) || "optional";
-}
-
-function resolveNotebooklmVideo(rootDir, reading, existingMeta = {}) {
-  const localPath = detectLocalNotebooklmVideo(rootDir, reading);
-  const explicitUrl = toText(reading.notebooklm_video_url);
-  const fallbackUrl = toText(existingMeta.notebooklm_video_url);
-  const videoUrl = explicitUrl || publicNotebooklmVideoPath(reading, localPath) || fallbackUrl;
-  return {
-    localPath,
-    videoUrl,
-    isExternal: isExternalUrl(videoUrl),
-  };
 }
 
 function translationOriginalRevealPath(rootDir, reading, existingMeta = {}) {
@@ -473,13 +434,8 @@ function countStandaloneFigureLabelLines(text) {
     .map((line) => line.trim())
     .filter(Boolean)
     .filter((line) => !line.startsWith("!["))
-    .filter((line) => {
-      const match = line.match(/(figure|table|그림|표)\s*[-–—:]?\s*\d+/iu);
-      if (!match) {
-        return false;
-      }
-      return match.index <= 12;
-    }).length;
+    .filter((line) => /^(?:figure|table|그림|표)\s*[-–—:]?\s*\d+\s*(?:[.:\-–—]|$)/iu.test(line))
+    .length;
 }
 
 function addIncompleteProgressErrors(errors, text, patterns, label) {
@@ -833,6 +789,7 @@ function validateQuizPayload(pageKey, payload) {
   } else {
     const prompts = [];
     const mcqAnswerPositions = [];
+    const mcqAnswerLengthRanks = [];
     items.forEach((item, index) => {
       const prompt = toText(item.prompt);
       const answer = toText(item.answer);
@@ -869,13 +826,23 @@ function validateQuizPayload(pageKey, payload) {
         const options = Array.isArray(item.options)
           ? item.options.map((option) => toText(option)).filter(Boolean)
           : [];
-        if (options.length < 3) {
-          errors.push(`quiz-mcq item ${index + 1} needs at least 3 options`);
+        if (options.length !== 4) {
+          errors.push(`quiz-mcq item ${index + 1} must contain exactly 4 options`);
         }
         if (options.length && !options.includes(answer)) {
           errors.push(`quiz-mcq item ${index + 1} answer must appear in options`);
         }
-        mcqAnswerPositions.push(options.indexOf(answer));
+        const answerOccurrences = options.filter((option) => option === answer).length;
+        if (answerOccurrences > 1) {
+          errors.push(`quiz-mcq item ${index + 1} answer must appear exactly once in options`);
+        }
+        const answerPosition = options.indexOf(answer);
+        mcqAnswerPositions.push(answerPosition);
+        if (answerPosition >= 0) {
+          const optionLengths = options.map((option) => Array.from(option).length);
+          const sortedLengths = [...optionLengths].sort((left, right) => right - left);
+          mcqAnswerLengthRanks.push(sortedLengths.indexOf(optionLengths[answerPosition]) + 1);
+        }
       }
     });
     const duplicatePrompts = findDuplicateNormalizedTexts(prompts);
@@ -887,36 +854,66 @@ function validateQuizPayload(pageKey, payload) {
       if (mcqAnswerPositions.length >= 6 && uniquePositions.length === 1) {
         errors.push("quiz-mcq uses the same answer position for every item");
       }
+      const positionCounts = mcqAnswerPositions.reduce((counts, position) => {
+        if (position >= 0) counts[position + 1] = (counts[position + 1] || 0) + 1;
+        return counts;
+      }, {});
+      const lengthRankCounts = mcqAnswerLengthRanks.reduce((counts, rank) => {
+        counts[rank] = (counts[rank] || 0) + 1;
+        return counts;
+      }, {});
+      metrics.answer_position_counts = positionCounts;
+      metrics.correct_option_length_rank_counts = lengthRankCounts;
+      if (items.length === 15) {
+        const sparsePositions = [1, 2, 3, 4].filter((position) => (positionCounts[position] || 0) < 2);
+        if (sparsePositions.length) {
+          errors.push(
+            `quiz-mcq answer positions are too concentrated; each of A-D must be used at least twice ` +
+            `(sparse positions: ${sparsePositions.join(", ")})`
+          );
+        }
+      }
+      if (mcqAnswerLengthRanks.length >= 10) {
+        const [dominantRank, dominantCount] = Object.entries(lengthRankCounts)
+          .sort((left, right) => right[1] - left[1])[0] || ["", 0];
+        if (dominantCount / mcqAnswerLengthRanks.length >= 0.8) {
+          errors.push(
+            `quiz-mcq correct-option length rank is overly concentrated ` +
+            `(${dominantCount}/${mcqAnswerLengthRanks.length} at rank ${dominantRank})`
+          );
+        }
+      }
     }
   }
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
 }
 
-function validateLandingVideo(rootDir, reading, existingMeta = {}, options = {}) {
-  const { localPath, videoUrl, isExternal } = resolveNotebooklmVideo(rootDir, reading, existingMeta);
-  const policy = landingVideoPolicy(reading, existingMeta);
+function validateLandingOverview(reading, existingMeta = {}) {
+  const overviewHook = toText(reading.overview_hook || existingMeta.overview_hook);
+  const rawClassroomPoints = Array.isArray(reading.classroom_points)
+    ? reading.classroom_points
+    : (Array.isArray(existingMeta.classroom_points) ? existingMeta.classroom_points : []);
+  const classroomPoints = rawClassroomPoints.map((point) => toText(point)).filter(Boolean);
   const errors = [];
-  const warnings = [];
   const metrics = {
-    has_video: Boolean(videoUrl),
-    policy,
-    source: localPath ? "local" : (isExternal ? "external" : "missing"),
+    overview_hook_length: overviewHook.length,
+    classroom_point_raw_count: rawClassroomPoints.length,
+    classroom_point_count: classroomPoints.length,
   };
-  if (!videoUrl) {
-    if (policy === "required") {
-      errors.push("missing notebooklm video");
-    } else {
-      warnings.push("missing optional notebooklm video");
-    }
+  if (!overviewHook) {
+    errors.push("missing overview_hook");
   }
-  if (options.requireBuiltArtifacts && videoUrl && !isExternal) {
-    const builtVideoPath = path.join(rootDir, "docs", ...videoUrl.split("/"));
-    if (!fs.existsSync(builtVideoPath)) {
-      errors.push(`missing built notebooklm video: ${videoUrl}`);
-    }
+  if (rawClassroomPoints.length !== 5 || classroomPoints.length !== 5) {
+    errors.push(
+      `classroom_points must contain exactly 5 non-empty items ` +
+      `(array length ${rawClassroomPoints.length}, non-empty ${classroomPoints.length})`
+    );
   }
-  const status = errors.length ? PAGE_STATUS.SCHEMA_FAIL : (videoUrl ? PAGE_STATUS.APPROVED : PAGE_STATUS.SCHEMA_PASS);
-  return makeResult(status, errors, warnings, metrics);
+  const duplicatePoints = findDuplicateNormalizedTexts(classroomPoints);
+  if (duplicatePoints.length) {
+    errors.push(`classroom_points contains duplicate items: ${duplicatePoints.join(" | ")}`);
+  }
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.APPROVED, errors, [], metrics);
 }
 
 function sourceHashForPath(filePath) {
@@ -1141,7 +1138,7 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
 
 function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = {}) {
   const rawManualReview = normalizeManualReview(existingMeta.manual_review);
-  const landing = validateLandingVideo(rootDir, reading, existingMeta, options);
+  const landing = validateLandingOverview(reading, existingMeta);
   const basePageResults = {
     full: validatePage(rootDir, reading, "full", existingMeta),
     translation: validatePage(rootDir, reading, "translation", existingMeta),
@@ -1174,10 +1171,12 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
   );
 
   const stage1Extra = [];
-  const requireBuiltArtifacts = Boolean(
-    options.requireBuiltArtifacts
-    || shouldRequireTranslationOriginalRevealBuild(reading, existingMeta, pageResults)
-  );
+  const requireBuiltArtifacts = options.requireBuiltArtifacts === false
+    ? false
+    : Boolean(
+      options.requireBuiltArtifacts
+      || shouldRequireTranslationOriginalRevealBuild(reading, existingMeta, pageResults)
+    );
   if (requireBuiltArtifacts) {
     const artifactResult = validateBuildArtifacts(rootDir, reading, existingMeta, pageResults);
     if (artifactResult.errors.length) {
@@ -1200,12 +1199,13 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
     readingStatus = READING_STATUS.BLOCKED;
     readingNotes.push(manualReview.blocked_reason);
   } else if (
-    stage1.status === READING_STATUS.PARTIAL
+    landing.status !== PAGE_STATUS.APPROVED
+    || stage1.status === READING_STATUS.PARTIAL
     || stage2.status === READING_STATUS.PARTIAL
     || stage3.status === READING_STATUS.PARTIAL
   ) {
     readingStatus = READING_STATUS.PARTIAL;
-    readingNotes.push(...stage1.notes, ...stage2.notes, ...stage3.notes);
+    readingNotes.push(...landing.errors, ...landing.warnings, ...stage1.notes, ...stage2.notes, ...stage3.notes);
   } else if (
     stage1.status === READING_STATUS.APPROVED
     && stage2.status === READING_STATUS.APPROVED

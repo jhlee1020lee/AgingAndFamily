@@ -1,0 +1,421 @@
+{
+  "slug": "carstensen-et-al-1999",
+  "source_filename": "6 Carstensen et al., 1999.pdf",
+  "source_pdf": "source_pdfs/6 Carstensen et al., 1999.pdf",
+  "content_dir": "content/readings/carstensen-et-al-1999",
+  "title": "Taking Time Seriously: A Theory of Socioemotional Selectivity",
+  "subtitle": "남은 시간에 대한 지각이 사회적 목표와 관계 선택을 바꾼다는 사회정서선택이론 원전.",
+  "authors": [
+    "Laura L. Carstensen",
+    "Derek M. Isaacowitz",
+    "Susan T. Charles"
+  ],
+  "year": 1999,
+  "language": "en",
+  "type": "paper",
+  "kind": "paper pdf",
+  "class_date": "2026-10-12",
+  "reading_date": null,
+  "sort_date": "2026-10-12",
+  "display_date_label": "6주차 · 10/12",
+  "description": "시간지평과 사회적 목표 선택의 관계를 이론과 연구 증거로 설명합니다.",
+  "metadata_status": "complete",
+  "metadata_notes": [],
+  "pdf_visibility": "none",
+  "public_pdf": null,
+  "overview_hook": "나이 자체보다 남은 시간을 어떻게 지각하느냐가 사회적 목표와 관계 선택을 바꾼다는 사회정서선택이론을 설명합니다.",
+  "classroom_points": [
+    "미래가 넓게 열려 있다고 느끼면 지식과 장기적 보상을, 시간이 제한되면 현재의 정서적 의미와 친밀감을 더 우선합니다.",
+    "지식 목표와 정서 목표는 절대적이거나 상호배타적인 범주가 아니라 상황에 따라 우세가 달라지는 동기입니다.",
+    "시간 제한이나 수명 연장을 상상하면 젊은 사람과 노인의 상대 선호도 달라질 수 있습니다.",
+    "노년기의 작은 관계망은 상실만이 아니라 의미 있는 관계에 집중하는 선제적 가지치기의 결과일 수도 있습니다.",
+    "실험, 관찰과 역사적 비교의 근거 수준을 구분하고 문화와 생애 맥락에 따른 조건성을 함께 봐야 합니다."
+  ],
+  "shared_page_bundle": null,
+  "shared_page_keys": [],
+  "enabled_page_keys": [
+    "summary",
+    "full",
+    "translation",
+    "concepts",
+    "pitfalls",
+    "quiz-ox",
+    "quiz-short",
+    "quiz-mcq",
+    "review-sheet",
+    "professor-prep"
+  ],
+  "content_status": {
+    "full": "approved",
+    "translation": "approved",
+    "summary": "approved",
+    "concepts": "approved",
+    "pitfalls": "approved",
+    "review_sheet": "approved",
+    "professor_prep": "approved",
+    "quiz_ox": "approved",
+    "quiz_short": "approved",
+    "quiz_mcq": "approved",
+    "index": "approved"
+  },
+  "manual_review": {
+    "approved_pages": [
+      "full",
+      "translation",
+      "summary",
+      "concepts",
+      "pitfalls",
+      "review-sheet",
+      "professor-prep",
+      "quiz-ox",
+      "quiz-short",
+      "quiz-mcq"
+    ],
+    "approved_page_hashes": {
+      "full": "7d3e52f574145d252e86e2184db1b5448c951048",
+      "translation": "b01774aab9a18f0a49dddcc0752098a97f14fec9",
+      "summary": "c3bd4c6cd4132f21ab18260d1a2dc25ea9fed311",
+      "concepts": "255f31fec6f77bbf5c9e9a50a00517e0accdcc2c",
+      "pitfalls": "23061571c54bc593d1ca71d9bf2b522e9608148c",
+      "review-sheet": "9433bf3bdbc3ca4db19652862d159572c21580e3",
+      "professor-prep": "52dbe1a5dc3e1bf43432164b9750dc7d5761437f",
+      "quiz-ox": "7dc6f7acd976a67a97560e7e73a82dd8e2f389d4",
+      "quiz-short": "ff5c61ce132f95235b3755b59476a6768dce0762",
+      "quiz-mcq": "b8af64b6a3e7ace9e0c3a09a1c751f389e073587"
+    },
+    "reviewer": "codex-root",
+    "reviewed_at": "2026-08-22T10:36:00.429Z",
+    "notes": [
+      "Stage 1 independently audited against all 17 rendered PDF pages; reading order, 2 figures, 3 footnotes, numeric anchors, 116 references, 216 source blocks, and reproducible crops corrected and verified; chatbot excluded.",
+      "Source, alignment, learning assets, and rendered artifacts reviewed.",
+      "Stage 3 independently audited after correcting the very-old-age negative-emotion qualification, OX sequencing, MCQ cueing, and work-log provenance; final Critical 0 / Major 0 / Minor 0, isolated link/reveal checks passed, chatbot excluded."
+    ],
+    "blocked_reason": ""
+  },
+  "validation_status": {
+    "updated_at": "2026-08-23T05:25:29.644Z",
+    "require_built_artifacts": false,
+    "landing": {
+      "status": "approved",
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "overview_hook_length": 62,
+        "classroom_point_raw_count": 5,
+        "classroom_point_count": 5
+      }
+    },
+    "page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 15015,
+          "section_count": 6,
+          "sub_section_count": 11,
+          "bullet_count": 0,
+          "level2_heading_count": 6,
+          "level3_heading_count": 11,
+          "level4_heading_count": 2,
+          "figure_count": 2,
+          "paragraph_count": 207,
+          "level2_section_count": 6,
+          "empty_level2_sections": [],
+          "last_level2_title": "References",
+          "figure_label_line_count": 2
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 11376,
+          "section_count": 6,
+          "sub_section_count": 11,
+          "bullet_count": 0,
+          "full_word_count": 15015,
+          "translation_ratio": 0.758,
+          "level2_heading_count": 6,
+          "level3_heading_count": 11,
+          "level4_heading_count": 2,
+          "figure_count": 2,
+          "paragraph_count": 207,
+          "level2_section_count": 6,
+          "empty_level2_sections": [],
+          "last_level2_title": "참고문헌",
+          "figure_label_line_count": 2,
+          "full_level2_heading_count": 6,
+          "full_level3_heading_count": 11,
+          "full_level4_heading_count": 2,
+          "full_figure_count": 2,
+          "full_reference_word_count": 2788,
+          "translation_reference_word_count": 2788,
+          "translation_reference_ratio": 1,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 207,
+          "sentence_reveal_pair_count": 605
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1247,
+          "section_count": 10,
+          "sub_section_count": 0,
+          "bullet_count": 43
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1597,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 90,
+          "concept_count": 15
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1092,
+          "section_count": 20,
+          "sub_section_count": 0,
+          "bullet_count": 60
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 876,
+          "section_count": 11,
+          "sub_section_count": 0,
+          "bullet_count": 42
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          },
+          "correct_option_length_rank_counts": {
+            "1": 3,
+            "2": 5,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "source_page_results": {
+      "full": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 15015,
+          "section_count": 6,
+          "sub_section_count": 11,
+          "bullet_count": 0,
+          "level2_heading_count": 6,
+          "level3_heading_count": 11,
+          "level4_heading_count": 2,
+          "figure_count": 2,
+          "paragraph_count": 207,
+          "level2_section_count": 6,
+          "empty_level2_sections": [],
+          "last_level2_title": "References",
+          "figure_label_line_count": 2
+        }
+      },
+      "translation": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 11376,
+          "section_count": 6,
+          "sub_section_count": 11,
+          "bullet_count": 0,
+          "full_word_count": 15015,
+          "translation_ratio": 0.758,
+          "level2_heading_count": 6,
+          "level3_heading_count": 11,
+          "level4_heading_count": 2,
+          "figure_count": 2,
+          "paragraph_count": 207,
+          "level2_section_count": 6,
+          "empty_level2_sections": [],
+          "last_level2_title": "참고문헌",
+          "figure_label_line_count": 2,
+          "full_level2_heading_count": 6,
+          "full_level3_heading_count": 11,
+          "full_level4_heading_count": 2,
+          "full_figure_count": 2,
+          "full_reference_word_count": 2788,
+          "translation_reference_word_count": 2788,
+          "translation_reference_ratio": 1,
+          "original_reveal_enabled": true,
+          "reveal_entry_count": 207,
+          "sentence_reveal_pair_count": 605
+        }
+      },
+      "summary": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1247,
+          "section_count": 10,
+          "sub_section_count": 0,
+          "bullet_count": 43
+        }
+      },
+      "concepts": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1597,
+          "section_count": 15,
+          "sub_section_count": 0,
+          "bullet_count": 90,
+          "concept_count": 15
+        }
+      },
+      "pitfalls": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 1092,
+          "section_count": 20,
+          "sub_section_count": 0,
+          "bullet_count": 60
+        }
+      },
+      "review_sheet": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "word_count": 876,
+          "section_count": 11,
+          "sub_section_count": 0,
+          "bullet_count": 42
+        }
+      },
+      "professor_prep": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "card_count": 15,
+          "reading_response_card_count": 6
+        }
+      },
+      "quiz_ox": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_short": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15
+        }
+      },
+      "quiz_mcq": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "item_count": 15,
+          "evidence_segment_count": 15,
+          "answer_position_counts": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          },
+          "correct_option_length_rank_counts": {
+            "1": 3,
+            "2": 5,
+            "3": 4,
+            "4": 3
+          }
+        }
+      }
+    },
+    "stage1": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage2": {
+      "status": "approved",
+      "notes": []
+    },
+    "stage3": {
+      "status": "approved",
+      "notes": []
+    },
+    "reading": {
+      "status": "approved",
+      "notes": []
+    }
+  },
+  "workflow_status": "approved",
+  "workflow_notes": []
+}

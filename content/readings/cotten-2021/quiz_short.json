@@ -1,0 +1,127 @@
+{
+  "title": "Cotten (2021) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 핵심 개념과 구분을 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "정보를 수집·교환하고 타인과 소통하는 기기와 응용프로그램을 묶는 약어는?",
+      "accepted_answers": ["ICT", "ICTs", "정보통신기술"],
+      "answer_type": "term",
+      "explanation": "휴대전화, 컴퓨터, 인터넷, 태블릿, 소셜 네트워크 사이트와 앱이 포함된다.",
+      "evidence_segment_id": "DEFINE-001",
+      "source": "핵심 기술 범주"
+    },
+    {
+      "question": "최근 개발되어 대중 보급 초기 단계에 있고 사용과 영향이 덜 알려진 기술 범주는?",
+      "accepted_answers": ["신흥기술", "emerging technologies"],
+      "answer_type": "term",
+      "explanation": "로봇, 가상현실, 음성비서, 스마트홈과 원격보건이 예로 제시된다.",
+      "evidence_segment_id": "DEFINE-001",
+      "source": "새 기술의 범주"
+    },
+    {
+      "question": "비슷한 역사적 시기에 주요 생애사건을 경험한 인구집단을 가리키는 말은?",
+      "accepted_answers": ["코호트", "cohort", "출생코호트"],
+      "answer_type": "term",
+      "explanation": "이 개념은 출생 후 흐른 시간인 나이와 다르며 단면자료로 두 효과를 분리하기 어렵다.",
+      "evidence_segment_id": "VARIATION-001",
+      "source": "생애과정의 집단 구분"
+    },
+    {
+      "question": "기술에 접속하거나 사용하는 집단 사이에 지속되는 간극을 무엇이라 하는가?",
+      "accepted_answers": ["디지털 격차", "digital divide"],
+      "answer_type": "term",
+      "explanation": "농촌 거주, 낮은 소득과 높은 연령은 기술 접근과 사용 가능성이 낮은 것과 관련된다.",
+      "evidence_segment_id": "DIVIDE-001",
+      "source": "기술 접근의 층화"
+    },
+    {
+      "question": "초기의 작은 자원 차이가 후속 이익의 차이를 낳아 생애에 걸쳐 확대되는 과정을 무엇이라 하는가?",
+      "accepted_answers": ["누적불이익", "cumulative disadvantage"],
+      "answer_type": "term",
+      "explanation": "이른 컴퓨터·인터넷 접근은 교육, 구직, 고급 기술과 정보·관계 자원의 후속 이점으로 이어질 수 있다.",
+      "evidence_segment_id": "DIVIDE-001",
+      "source": "생애과정의 격차 확대"
+    },
+    {
+      "question": "온라인 상태만으로는 편익이 충분하지 않을 때, 여러 기능을 실제로 다룰 수 있는 능력을 무엇이라 하는가?",
+      "accepted_answers": ["디지털 역량", "digital skills", "기술 역량"],
+      "answer_type": "term",
+      "explanation": "인터넷 접속 뒤에도 정보탐색과 다양한 기능 사용을 위한 능력이 편익 획득에 중요하다.",
+      "evidence_segment_id": "VARIATION-001",
+      "source": "접근 이후의 능력"
+    },
+    {
+      "question": "기술 사용이나 사회조건이 유대·정보 접근과 건강 결과를 변화시킨다고 보는 방향의 설명은?",
+      "accepted_answers": ["사회적 원인", "social causation", "사회적 인과"],
+      "answer_type": "term",
+      "explanation": "기술은 연결과 안녕을 높일 수도 있고 괴로운 정보 노출이나 대면접촉 대체로 해를 줄 수도 있다.",
+      "evidence_segment_id": "IMPACTS-001",
+      "source": "영향의 인과 방향"
+    },
+    {
+      "question": "기존의 외로움·관계상태·성격 같은 개인요인이 기술 이용과 결과의 상관을 만든다고 보는 설명은?",
+      "accepted_answers": ["사회적 선택", "social selection", "선택효과"],
+      "answer_type": "term",
+      "explanation": "외롭거나 관계가 약한 사람이 인터넷과 다른 기기를 더 자주 찾는 경로가 예다.",
+      "evidence_segment_id": "IMPACTS-001",
+      "source": "선행 특성과 기술 이용"
+    },
+    {
+      "question": "자신이 다른 사람에게 중요하고 인정받으며 의지되는 사람이라고 지각하는 상태는?",
+      "accepted_answers": ["mattering", "중요성 지각", "중요한 존재감"],
+      "answer_type": "term",
+      "explanation": "생활시설 연구에서는 이 상태가 정보통신기술 사용과 우울의 관계를 매개했다.",
+      "evidence_segment_id": "PSYCH-001",
+      "source": "사회적 가치의 매개경로"
+    },
+    {
+      "question": "대면 상황에서 곁에 있는 사람보다 스마트폰과 상호작용하는 행동은?",
+      "accepted_answers": ["퍼빙", "phubbing"],
+      "answer_type": "term",
+      "explanation": "이 행동은 공동현존을 깨뜨려 노년층이 무시되거나 단절됐다고 느끼게 할 수 있다.",
+      "evidence_segment_id": "UNANTICIPATED-001",
+      "source": "대면 장면의 휴대전화 사용"
+    },
+    {
+      "question": "기술에 몰입한 세대와 대면 장면에서 배제감을 느끼는 노년층 사이의 간극을 저자들이 부른 말은?",
+      "accepted_answers": ["물리–디지털 격차", "물리-디지털 격차", "physical–digital divide"],
+      "answer_type": "term",
+      "explanation": "이 개념은 타인의 기기 사용이 노년층의 공동현존과 연결감에 미치는 간극을 포착한다.",
+      "evidence_segment_id": "UNANTICIPATED-001",
+      "source": "대면과 디지털 세계의 간극"
+    },
+    {
+      "question": "인터페이스·비밀번호·보안처럼 변화하는 기술의 인지적·사회적 요구에서 생기는 스트레스는?",
+      "accepted_answers": ["테크노스트레스", "technostress"],
+      "answer_type": "term",
+      "explanation": "높은 수준의 이 스트레스는 높은 연령과 관련되며 기술 사용 지속을 어렵게 할 수 있다.",
+      "evidence_segment_id": "UNANTICIPATED-001",
+      "source": "변화하는 기술 요구"
+    },
+    {
+      "question": "저자가 ‘중독’ 대신 일상생활 활동을 방해하는 수준의 이용을 가리키는 데 쓴 말은?",
+      "accepted_answers": ["기술 과잉사용", "technology overuse", "과잉사용"],
+      "answer_type": "term",
+      "explanation": "집안일, 일, 심부름과 사회적 만남을 제쳐 두고 계속 소셜미디어를 확인하는 경우가 예다.",
+      "evidence_segment_id": "UNANTICIPATED-001",
+      "source": "문제가 되는 이용의 정의"
+    },
+    {
+      "question": "스마트 기기와 앱이 Wi-Fi를 통해 서로 연결되어 통신하는 체계를 가리키는 약어는?",
+      "accepted_answers": ["IoT", "사물인터넷", "Internet of Things"],
+      "answer_type": "term",
+      "explanation": "조명·온도·문·카메라부터 낙상과 건강지표 감지까지 연결된 기능이 포함된다.",
+      "evidence_segment_id": "IOT-001",
+      "source": "연결된 기기 체계"
+    },
+    {
+      "question": "통신기술로 의료·공중보건·건강교육의 전달과 지원을 수행하는 서비스 범주는?",
+      "accepted_answers": ["원격보건", "telehealth", "텔레헬스"],
+      "answer_type": "term",
+      "explanation": "전화, 이메일, 보안 메시지, 무선 모니터링, 앱과 영상도구가 사용될 수 있다.",
+      "evidence_segment_id": "TELEHEALTH-001",
+      "source": "원격 건강서비스"
+    }
+  ]
+}

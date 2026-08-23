@@ -26,3 +26,9 @@
 ## Manual review status
 
 - Stage 3 is schema-ready for review but has not been manually approved in `meta.json`.
+
+## 객관식 길이·위치 단서 제거
+
+- 기존 객관식에서 정답이 A·B에 몰리고 가장 긴 선택지가 정답인 패턴을 전 문항에서 제거했다.
+- 정답 위치와 정답 길이 순위를 모두 1·2·3·4번에 각각 4·4·4·3회로 분산했다.
+- 네 이론 구성요소, 7.5년의 집단 평균, 종단자료의 관찰적 범위, 심리·행동·생리 경로는 그대로 보존했으며, 수정본은 독립 내용 감사 뒤에만 승인한다.

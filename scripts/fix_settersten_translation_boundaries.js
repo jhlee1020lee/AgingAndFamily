@@ -12,6 +12,16 @@ function replaceBoundary(text, name, oldSeparator, newSeparator) {
 
 let text = fs.readFileSync(targetPath, "utf8").replace(/^\uFEFF/, "").replace(/\r\n/g, "\n");
 
+const proxyHeading = "### 지위와 경험의 대리변수로서의 연령";
+const declineParagraph = "그러나 대개 연령은 여러 영역(예: 인지건강 또는 신체건강)의 쇠퇴나 위험을 가져오는 것으로 설정된다. 얼마 전 수석저자는 몇 가지 건강 증상을 의사에게 말했을 때 의사가 “글쎄요, 그 나이에는 무엇을 기대하십니까?”라고 답했던 일을 통해 이를 다시 떠올렸다.";
+const proxyParagraphStart = "생활연령은 오래전부터 ‘내용이 빈’ 독립변수로 인식되어 왔다.";
+text = replaceBoundary(
+  text,
+  "age-as-proxy heading placement",
+  `${proxyHeading}\n\n${declineParagraph}\n\n${proxyParagraphStart}`,
+  `${declineParagraph}\n\n${proxyHeading}\n\n${proxyParagraphStart}`
+);
+
 const stereotypePrevious = "여기서 연령은 부정적 고정관념에 노출된 경험의 축적을 뜻하고, 그 결과 내면화 가능성이 커진다.";
 const stereotypeMovedStart = "노화에 관한 개인적 고정관념은 후기 성인기의 신체건강·인지건강·정신건강 결과와 관련된다.";
 const stereotypeMovedEnd = "오랜 세월 노화에 대해 부정적인 개인 신념을 지녀 왔거나 그러한 고정관념을 강화하는 환경에 사는 사람은 기억기능이 더 나쁘고 불안, 심장사건, 자살사고, 외상후스트레스장애 같은 건강문제를 경험할 가능성이 더 크다(Horton, Baker, Pearce, & Deakin, 2008; Levy, Pilver, & Pietrzak, 2014).";

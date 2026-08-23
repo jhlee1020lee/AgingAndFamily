@@ -8,12 +8,12 @@ const {validateSentencePairs}=require("./sentence_alignment");
 
 const rootDir=path.resolve(__dirname,"..");
 const manifestPath=path.join(rootDir,"manifest","readings.json");
-const siteDir=path.join(rootDir,"docs");
+let siteDir=path.join(rootDir,"docs");
+let allowDraftPreview=false;
 const styleSource=path.join(__dirname,"site_styles.css");
 const appSource=path.join(__dirname,"site_app.js");
 const brandLogoSource=path.join(__dirname,"assets","branding","snu.png");
 const LANDING_TAB_LABEL="개요";
-const NOTEBOOKLM_VIDEO_CANDIDATES=["notebooklm.mp4","notebooklm.webm","notebooklm.mov","notebooklm.m4v"];
 const THUMBNAIL_SOURCE_CANDIDATES=["thumbnail.png","thumbnail.jpg","thumbnail.jpeg","thumbnail.webp","thumbnail.svg"];
 const READING_LAYOUT_PAGE_KEYS=new Set(["full","translation"]);
 const PRESERVED_DOC_MARKDOWN_DIRS=["guides","references"];
@@ -88,7 +88,7 @@ function restorePreservedDocMarkdown(snapshot){(Array.isArray(snapshot)?snapshot
 function loadManifest(){return JSON.parse(readText(manifestPath));}
 function relHref(fromPath,toPath){return path.relative(path.dirname(fromPath),toPath).split(path.sep).join("/");}
 function escapeHtml(value){return String(value).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");}
-function renderInline(text){return escapeHtml(text).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/\*([^*]+)\*/g,"<em>$1</em>");}
+function renderInline(text){return escapeHtml(text).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(?<!\*)\*([^*]+)\*(?!\*)/g,"<em>$1</em>");}
 function slugifyHeading(value){return String(value||"").toLowerCase().trim().replace(/[^a-z0-9\uac00-\ud7a3\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||"section";}
 function stripHtml(value){return String(value||"").replace(/<[^>]+>/g," ").replace(/\s+/g," ").trim();}
 function isSupplementFigureLabel(value){return /^(table|figure)\s+\d+(?:[\s.:_-].*)?$|^(표|그림)\s*\d+(?:[\s.:_-].*)?$/i.test(toText(value));}
@@ -113,7 +113,8 @@ function hasApprovedStageStatus(reading,stageKey){
 function hasApprovedPageSourceStatus(reading,pageKey){
   const sourceStatus=toText(reading.validation_status?.source_page_results?.[pageKey]?.status);
   const fallbackStatus=toText(reading.validation_status?.page_results?.[pageKey]?.status);
-  return (sourceStatus||fallbackStatus)===PAGE_STATUS.APPROVED;
+  const status=sourceStatus||fallbackStatus;
+  return status===PAGE_STATUS.APPROVED||(allowDraftPreview&&status===PAGE_STATUS.SCHEMA_PASS);
 }
 function shouldUseTranslationOriginalReveal(reading,page){
   const config=normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal);
@@ -333,6 +334,8 @@ function markdownToHtml(text,options={}){
   const frontmatterParts=[];
   let paragraph=[];
   let listItems=[];
+  let listKind="ul";
+  let orderedListStart=1;
   let quoteLines=[];
   let codeLines=null;
   const outputPath=options.outputPath||"";
@@ -353,9 +356,25 @@ function markdownToHtml(text,options={}){
     parts.push(html);
   };
   const flushParagraph=()=>{if(paragraph.length){pushBlock(`<p>${renderInline(paragraph.join(" ").trim())}</p>`,true);paragraph=[];}};
-  const flushList=()=>{if(listItems.length){pushBlock(`<ul>${listItems.map((item)=>`<li>${renderInline(item)}</li>`).join("")}</ul>`,true);listItems=[];}};
+  const flushList=()=>{if(listItems.length){const start=listKind==="ol"&&orderedListStart!==1?` start="${orderedListStart}"`:"";pushBlock(`<${listKind}${start}>${listItems.map((item)=>`<li>${renderInline(item)}</li>`).join("")}</${listKind}>`,true);listItems=[];listKind="ul";orderedListStart=1;}};
+  const appendListItem=(kind,item,start=1)=>{if(listItems.length&&listKind!==kind)flushList();if(!listItems.length){listKind=kind;orderedListStart=start;}listItems.push(item);};
   const flushQuote=()=>{if(quoteLines.length){pushBlock(`<blockquote>${renderInline(quoteLines.join(" ").trim())}</blockquote>`,true);quoteLines=[];}};
   const flushCode=()=>{if(codeLines){pushBlock(`<pre><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`,true);codeLines=null;}};
+  const parseTableRow=(value)=>{
+    const trimmed=toText(value);
+    if(!trimmed.includes("|"))return[];
+    const body=trimmed.replace(/^\|/,"").replace(/\|$/,"");
+    return body.split("|").map((cell)=>cell.trim());
+  };
+  const tableDividerCells=(value)=>{
+    const cells=parseTableRow(value);
+    return cells.length>=2&&cells.every((cell)=>/^:?-{3,}:?$/.test(cell))?cells:[];
+  };
+  const tableAlignmentClass=(divider)=>divider.startsWith(":")&&divider.endsWith(":")?" is-center":divider.endsWith(":")?" is-right":"";
+  const renderTable=(headers,dividers,rows)=>{
+    const renderCells=(cells,tag)=>headers.map((_,index)=>`<${tag}${tag==="th"?' scope="col"':""} class="${tableAlignmentClass(dividers[index]||"").trim()}">${renderInline(cells[index]||"")}</${tag}>`).join("");
+    return `<div class="article-table-wrap" role="region" aria-label="표" tabindex="0"><table><thead><tr>${renderCells(headers,"th")}</tr></thead><tbody>${rows.map((row)=>`<tr>${renderCells(row,"td")}</tr>`).join("")}</tbody></table></div>`;
+  };
   const headingAttrs=(textLabel)=>{
     const attrs=[];
     const classes=[];
@@ -396,7 +415,8 @@ function markdownToHtml(text,options={}){
     parts.push(`<h${level}${headingAttrs(textLabel)}>${renderInline(textLabel)}</h${level}>`);
   };
 
-  for(const rawLine of lines){
+  for(let lineIndex=0;lineIndex<lines.length;lineIndex+=1){
+    const rawLine=lines[lineIndex];
     if(codeLines){
       if(rawLine.trim().startsWith("```")){flushCode();continue;}
       codeLines.push(rawLine);
@@ -408,6 +428,24 @@ function markdownToHtml(text,options={}){
     if(line===">"){flushParagraph();flushList();flushQuote();continue;}
     if(collectFrontmatter&&!encounteredContentHeading&&isHiddenReaderFrontmatterLine(line)){flushParagraph();flushList();flushQuote();continue;}
     if(line.startsWith("```")){flushParagraph();flushList();flushQuote();codeLines=[];continue;}
+    const dividerCells=tableDividerCells(lines[lineIndex+1]||"");
+    const headerCells=parseTableRow(line);
+    if(headerCells.length>=2&&headerCells.length===dividerCells.length){
+      flushParagraph();flushList();flushQuote();
+      const rows=[];
+      let nextIndex=lineIndex+2;
+      while(nextIndex<lines.length){
+        const rowLine=lines[nextIndex].trim();
+        if(!rowLine)break;
+        const rowCells=parseTableRow(rowLine);
+        if(rowCells.length!==headerCells.length)break;
+        rows.push(rowCells);
+        nextIndex+=1;
+      }
+      pushBlock(renderTable(headerCells,dividerCells,rows));
+      lineIndex=nextIndex-1;
+      continue;
+    }
     const figureHtml=renderFigure(line);
     if(figureHtml){flushParagraph();flushList();flushQuote();pushBlock(figureHtml,true);continue;}
     if(line.startsWith("#### ")){flushParagraph();flushList();flushQuote();pushHeading(4,line.slice(5));continue;}
@@ -421,7 +459,9 @@ function markdownToHtml(text,options={}){
       pushHeading(1,line.slice(2));
       continue;
     }
-    if(line.startsWith("- ")){flushParagraph();flushQuote();listItems.push(line.slice(2).trim());continue;}
+    if(line.startsWith("- ")){flushParagraph();flushQuote();appendListItem("ul",line.slice(2).trim());continue;}
+    const orderedListMatch=line.match(/^(\d+)\.\s+(.+)$/);
+    if(orderedListMatch){flushParagraph();flushQuote();appendListItem("ol",orderedListMatch[2].trim(),Number(orderedListMatch[1]));continue;}
     if(line.startsWith("> ")){flushParagraph();flushList();quoteLines.push(line.slice(2).trim());continue;}
     flushList();flushQuote();paragraph.push(line);
   }
@@ -594,11 +634,8 @@ function loadProfessorPrep(filePath){
 }
 function translateCommonText(text){return COMMON_TEXT_MAP[text]||text;}
 function loadReadingMeta(contentDir){const metaPath=path.join(rootDir,contentDir,"meta.json");const payload=loadJson(metaPath);return payload&&typeof payload==="object"?payload:{};}
-function detectNotebooklmVideoSource(contentDir){const baseDir=path.join(rootDir,contentDir);for(const filename of NOTEBOOKLM_VIDEO_CANDIDATES){const candidate=path.join(baseDir,filename);if(fs.existsSync(candidate))return candidate;}return"";}
 function detectReadingThumbnailSource(contentDir){const baseDir=path.join(rootDir,contentDir);for(const filename of THUMBNAIL_SOURCE_CANDIDATES){const candidate=path.join(baseDir,filename);if(fs.existsSync(candidate))return candidate;}return"";}
-function publicNotebooklmVideoPath(reading,sourcePath){if(!sourcePath)return"";return path.posix.join("assets","videos",reading.slug,path.basename(sourcePath));}
 function readingPdfVisibility(reading,supplemental={}){return toText(reading.pdf_visibility||supplemental.pdf_visibility)||(toText(reading.public_pdf)?"public":"none");}
-function landingVideoPolicy(reading,supplemental={}){return toText(reading.landing_video_policy||supplemental.landing_video_policy)||"optional";}
 function detectType(reading){if(reading.type)return reading.type;const kind=String(reading.kind||"").toLowerCase();if(kind.includes("chapter"))return"chapter";if(kind.includes("paper"))return"paper";if(kind.includes("article"))return"article";return"reading";}
 function typeLabel(type){return({article:"기사",paper:"논문",chapter:"교재",reading:"읽기 자료"})[type]||"읽기 자료";}
 function yearLabel(year){return year?`${year}년`:"연도 미확인";}
@@ -641,7 +678,7 @@ function isPublishedReading(reading){return reading.workflow_status===READING_ST
 function isReleaseLockedReading(reading){return reading.release_locked===true;}
 function hasApprovedReadingPage(reading){return Array.isArray(reading.pages)&&reading.pages.some((page)=>page.review_passed);}
 function isBlockedReading(reading){return reading.workflow_status===READING_STATUS.BLOCKED;}
-function isSourceApprovedPage(page){return page?.source_review_passed===true||page?.source_validation_status===PAGE_STATUS.APPROVED;}
+function isSourceApprovedPage(page){return page?.source_review_passed===true||page?.source_validation_status===PAGE_STATUS.APPROVED||(allowDraftPreview&&page?.source_validation_status===PAGE_STATUS.SCHEMA_PASS);}
 function hasApprovedSourceReadingPage(reading){return Array.isArray(reading.pages)&&reading.pages.some((page)=>isSourceApprovedPage(page));}
 function isAccessibleReading(reading){
   if(isBlockedReading(reading)||isReleaseLockedReading(reading))return false;
@@ -693,9 +730,9 @@ function readingPageLabel(reading,page){
   if(page.key==="translation")return "번역본 읽기";
   return page.label;
 }
-function normalizeReading(reading,sequence,siteMeta={}){const supplemental=loadReadingMeta(reading.content_dir);const localNotebooklmVideo=detectNotebooklmVideoSource(reading.content_dir);const language=reading.language||"unknown";const type=detectType(reading);const rawTags=Array.isArray(reading.tags)&&reading.tags.length?reading.tags:["Metadata incomplete"];const source_filename=reading.source_filename||path.basename(reading.source_pdf);const sortDate=effectiveSortDate(reading);const classroom_points=(Array.isArray(reading.classroom_points)?reading.classroom_points:[]).map((item)=>translateCommonText(item)).filter(Boolean);const shared_page_keys=(Array.isArray(reading.shared_page_keys)?reading.shared_page_keys:Array.isArray(supplemental.shared_page_keys)?supplemental.shared_page_keys:[]).map((item)=>toText(item)).filter(Boolean);const enabled_page_keys=normalizeEnabledPageKeys(reading.enabled_page_keys||supplemental.enabled_page_keys,language);const pdf_visibility=readingPdfVisibility(reading,supplemental);const landing_video_policy=landingVideoPolicy(reading,supplemental);const translation_original_reveal=normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal||supplemental.translation_original_reveal);const cutoffDate=publishCutoffDate(siteMeta);const cutoffNote=publishCutoffNote(siteMeta);return{...reading,sequence,subtitle:translateCommonText(reading.subtitle||"Filename-derived placeholder metadata."),authors:reading.authors||[],authors_label:authorsLabel(reading.authors||[]),year_label:yearLabel(reading.year),language,language_label:languageLabel(language),kind:reading.kind||`${type} pdf`,kind_label:kindLabel(reading.kind||`${type} pdf`,type),type,type_label:typeLabel(type),source_filename,tags:rawTags.map(translateTag),description:translateCommonText(reading.description||"Placeholder record created from the source filename only."),metadata_status:reading.metadata_status||"incomplete",metadata_notes:(reading.metadata_notes||[]).map(translateCommonText),class_date:reading.class_date??null,reading_date:reading.reading_date??null,sort_date:reading.sort_date??null,display_date_label:reading.display_date_label??null,effective_sort_date:sortDate,display_date:displayDateLabel(reading),translation_required:language==="en"&&enabled_page_keys.includes("translation"),home_order_index:syllabusOrderIndex({source_filename}),pdf_visibility,public_pdf:toText(reading.public_pdf)||"",overview_hook:translateCommonText(reading.overview_hook||""),classroom_points,shared_page_bundle:toText(reading.shared_page_bundle||supplemental.shared_page_bundle||""),shared_page_keys,enabled_page_keys,landing_video_policy,notebooklm_video_source:localNotebooklmVideo,notebooklm_video_url:toText(reading.notebooklm_video_url||publicNotebooklmVideoPath(reading,localNotebooklmVideo)||supplemental.notebooklm_video_url||""),notebooklm_video_note:toText(reading.notebooklm_video_note||supplemental.notebooklm_video_note||""),notebooklm_video_poster:toText(reading.notebooklm_video_poster||supplemental.notebooklm_video_poster||""),translation_original_reveal,publish_cutoff_date:cutoffDate,publish_cutoff_note:cutoffNote,release_locked:isReleaseLockedByCutoff(sortDate,cutoffDate)};}
+function normalizeReading(reading,sequence,siteMeta={}){const supplemental=loadReadingMeta(reading.content_dir);const language=reading.language||"unknown";const type=detectType(reading);const rawTags=Array.isArray(reading.tags)&&reading.tags.length?reading.tags:["Metadata incomplete"];const source_filename=reading.source_filename||path.basename(reading.source_pdf);const sortDate=effectiveSortDate(reading);const classroom_points=(Array.isArray(reading.classroom_points)?reading.classroom_points:[]).map((item)=>translateCommonText(item)).filter(Boolean);const shared_page_keys=(Array.isArray(reading.shared_page_keys)?reading.shared_page_keys:Array.isArray(supplemental.shared_page_keys)?supplemental.shared_page_keys:[]).map((item)=>toText(item)).filter(Boolean);const enabled_page_keys=normalizeEnabledPageKeys(reading.enabled_page_keys||supplemental.enabled_page_keys,language);const pdf_visibility=readingPdfVisibility(reading,supplemental);const translation_original_reveal=normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal||supplemental.translation_original_reveal);const cutoffDate=publishCutoffDate(siteMeta);const cutoffNote=publishCutoffNote(siteMeta);return{...reading,sequence,subtitle:translateCommonText(reading.subtitle||"Filename-derived placeholder metadata."),authors:reading.authors||[],authors_label:authorsLabel(reading.authors||[]),year_label:yearLabel(reading.year),language,language_label:languageLabel(language),kind:reading.kind||`${type} pdf`,kind_label:kindLabel(reading.kind||`${type} pdf`,type),type,type_label:typeLabel(type),source_filename,tags:rawTags.map(translateTag),description:translateCommonText(reading.description||"Placeholder record created from the source filename only."),metadata_status:reading.metadata_status||"incomplete",metadata_notes:(reading.metadata_notes||[]).map(translateCommonText),class_date:reading.class_date??null,reading_date:reading.reading_date??null,sort_date:reading.sort_date??null,display_date_label:reading.display_date_label??null,effective_sort_date:sortDate,display_date:displayDateLabel(reading),translation_required:language==="en"&&enabled_page_keys.includes("translation"),home_order_index:syllabusOrderIndex({source_filename}),pdf_visibility,public_pdf:toText(reading.public_pdf)||"",overview_hook:translateCommonText(reading.overview_hook||""),classroom_points,shared_page_bundle:toText(reading.shared_page_bundle||supplemental.shared_page_bundle||""),shared_page_keys,enabled_page_keys,translation_original_reveal,publish_cutoff_date:cutoffDate,publish_cutoff_note:cutoffNote,release_locked:isReleaseLockedByCutoff(sortDate,cutoffDate)};}
 function buildContentStatus(reading,existingMeta={},options={}){return buildValidationSnapshot(rootDir,reading,existingMeta,options).content_status;}
-function ensureContentPlaceholders(manifest,siteMeta={},slugFilter=null){manifest.readings.forEach((rawReading,index)=>{const reading=normalizeReading(rawReading,index+1,siteMeta);if(slugFilter&&reading.slug!==slugFilter)return;const contentDir=path.join(rootDir,reading.content_dir);fs.mkdirSync(contentDir,{recursive:true});const metaPath=path.join(contentDir,"meta.json");let existing={};if(fs.existsSync(metaPath)){try{existing=JSON.parse(readText(metaPath));}catch(error){existing={};}}const validationOptions={requireBuiltArtifacts:Boolean(existing.validation_status?.require_built_artifacts)};const snapshot=buildValidationSnapshot(rootDir,reading,existing,validationOptions);const payload=mergeValidationFields({...existing,slug:reading.slug,source_filename:reading.source_filename,source_pdf:reading.source_pdf,content_dir:reading.content_dir,title:reading.title,subtitle:reading.subtitle,authors:reading.authors,year:reading.year??null,language:reading.language,type:reading.type,kind:reading.kind,class_date:reading.class_date,reading_date:reading.reading_date,sort_date:reading.sort_date,display_date_label:reading.display_date_label,description:reading.description,metadata_status:reading.metadata_status,metadata_notes:reading.metadata_notes,pdf_visibility:reading.pdf_visibility||"none",public_pdf:reading.public_pdf||null,overview_hook:reading.overview_hook||null,classroom_points:reading.classroom_points||[],shared_page_bundle:reading.shared_page_bundle||null,shared_page_keys:reading.shared_page_keys||[],enabled_page_keys:reading.enabled_page_keys||null,landing_video_policy:reading.landing_video_policy||"optional",notebooklm_video_url:reading.notebooklm_video_url||null,notebooklm_video_note:reading.notebooklm_video_note||null,notebooklm_video_poster:reading.notebooklm_video_poster||null,content_status:buildContentStatus(reading,existing,validationOptions)},snapshot);writeText(metaPath,`${JSON.stringify(payload,null,2)}\n`);});}
+function ensureContentPlaceholders(manifest,siteMeta={},slugFilter=null){manifest.readings.forEach((rawReading,index)=>{const reading=normalizeReading(rawReading,index+1,siteMeta);if(slugFilter&&reading.slug!==slugFilter)return;const contentDir=path.join(rootDir,reading.content_dir);fs.mkdirSync(contentDir,{recursive:true});const metaPath=path.join(contentDir,"meta.json");let existing={};if(fs.existsSync(metaPath)){try{existing=JSON.parse(readText(metaPath));}catch(error){existing={};}}const validationOptions={requireBuiltArtifacts:Boolean(existing.validation_status?.require_built_artifacts)};const snapshot=buildValidationSnapshot(rootDir,reading,existing,validationOptions);const payload=mergeValidationFields({...existing,slug:reading.slug,source_filename:reading.source_filename,source_pdf:reading.source_pdf,content_dir:reading.content_dir,title:reading.title,subtitle:reading.subtitle,authors:reading.authors,year:reading.year??null,language:reading.language,type:reading.type,kind:reading.kind,class_date:reading.class_date,reading_date:reading.reading_date,sort_date:reading.sort_date,display_date_label:reading.display_date_label,description:reading.description,metadata_status:reading.metadata_status,metadata_notes:reading.metadata_notes,pdf_visibility:reading.pdf_visibility||"none",public_pdf:reading.public_pdf||null,overview_hook:reading.overview_hook||null,classroom_points:reading.classroom_points||[],shared_page_bundle:reading.shared_page_bundle||null,shared_page_keys:reading.shared_page_keys||[],enabled_page_keys:reading.enabled_page_keys||null,content_status:buildContentStatus(reading,existing,validationOptions)},snapshot);writeText(metaPath,`${JSON.stringify(payload,null,2)}\n`);});}
 function prepareReadings(manifest,siteMeta={}){
   const prepared=manifest.readings.map((rawReading,index)=>{
     const reading=normalizeReading(rawReading,index+1,siteMeta);
@@ -784,9 +821,6 @@ function isExternalUrl(value){return /^https?:\/\//i.test(toText(value));}
 function copyDirRecursive(sourceDir,targetDir){if(!fs.existsSync(sourceDir))return;for(const entry of fs.readdirSync(sourceDir,{withFileTypes:true})){const sourcePath=path.join(sourceDir,entry.name);const targetPath=path.join(targetDir,entry.name);if(entry.isDirectory()){copyDirRecursive(sourcePath,targetPath);continue;}fs.mkdirSync(path.dirname(targetPath),{recursive:true});fs.copyFileSync(sourcePath,targetPath);}}
 function copyReadingAssets(reading){const contentDir=path.join(rootDir,reading.content_dir);for(const assetDirName of["figures","assets"]){const sourceDir=path.join(contentDir,assetDirName);if(!fs.existsSync(sourceDir))continue;copyDirRecursive(sourceDir,path.join(siteDir,"assets","readings",reading.slug,assetDirName));}}
 function resolveSiteAssetHref(outputPath,value){const text=toText(value);if(!text)return"";if(isExternalUrl(text))return text;const normalized=text.replace(/^\.?\//,"");return relHref(outputPath,path.join(siteDir,...normalized.split("/")));}
-function toEmbedUrl(value){const text=toText(value);if(!text)return"";try{const url=new URL(text);if(url.hostname.includes("youtu.be")){const id=url.pathname.replace(/^\/+/,"").split("/")[0];return id?`https://www.youtube.com/embed/${id}`:text;}if(url.hostname.includes("youtube.com")&&url.searchParams.get("v"))return `https://www.youtube.com/embed/${url.searchParams.get("v")}`;return text;}catch(error){return text;}}
-function isDirectVideoFile(value){return /\.(mp4|webm|ogg)(\?.*)?$/i.test(toText(value));}
-function renderNotebookLmVideo(outputPath,reading){const rawUrl=reading.notebooklm_video_url;const note=toText(reading.notebooklm_video_note);if(!rawUrl)return `<div class="video-placeholder"><div><p class="section-kicker">NotebookLM 설명영상</p><h2>영상 준비 중</h2>${note?`<p class="meta">${escapeHtml(note)}</p>`:""}<p class="meta"><code>content/readings/${escapeHtml(reading.slug)}/meta.json</code>에 <code>notebooklm_video_url</code>을 넣으면 이 자리에 바로 표시됩니다.</p></div></div>`;const href=resolveSiteAssetHref(outputPath,rawUrl);if(isDirectVideoFile(rawUrl)){const poster=resolveSiteAssetHref(outputPath,reading.notebooklm_video_poster);return `<video class="video-media" controls preload="metadata"${poster?` poster="${escapeHtml(poster)}"`:""}><source src="${escapeHtml(href)}" /></video>`;}return `<iframe class="video-media" src="${escapeHtml(toEmbedUrl(href))}" title="${escapeHtml(reading.title)} NotebookLM 설명영상" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;}
 function renderBrandMarkSvg(){return `
 <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
   <defs>
@@ -1077,13 +1111,12 @@ ${siteHeader(siteMeta,outputPath)}
 </main>
 ${renderHomeReadingDataScript(siteMeta,outputPath,sortedReadings)}
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,siteMeta.title,body,siteMeta.tagline||siteMeta.title,'data-page-kind="home"',"ko"));}
-function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const accessible=isAccessibleReading(reading);const pointsSection=renderOverviewPoints(reading);const hasVideo=Boolean(toText(reading.notebooklm_video_url));const videoSection=accessible&&isApprovedStatus(landingStatus(reading))&&hasVideo?`<section class="panel detail-block detail-video-block"><div class="section-head"><h3>설명 영상</h3><span class="count">NotebookLM</span></div><div class="video-stage"><div class="video-frame">${renderNotebookLmVideo(outputPath,reading)}</div></div></section>`:`<section class="panel detail-block detail-video-block"><div class="section-head"><h3>설명 영상</h3></div><p>영상 업로드 예정입니다.</p></section>`;const body=`
+function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const pointsSection=renderOverviewPoints(reading);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell" data-reading-slug="${escapeHtml(reading.slug)}">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:"index"})}
   <div class="rpanel">
     <section class="rpanel-main">
-      ${videoSection}
       ${pointsSection?`<section class="panel detail-block">
         <div class="section-head">
           <h3>수업에서 먼저 잡을 포인트</h3>
@@ -1199,14 +1232,15 @@ ${siteHeader(siteMeta,outputPath)}
   </div>
 </main>
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function copyNotebooklmVideo(reading){if(!reading.notebooklm_video_source||!reading.notebooklm_video_url)return;const target=path.join(siteDir,...reading.notebooklm_video_url.split("/"));fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(reading.notebooklm_video_source,target);}
 function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource));writeText(path.join(siteDir,"assets","app.js"),readText(appSource));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}
 function refreshReadings(manifest,siteMeta={},slugFilter=null){ensureContentPlaceholders(manifest,siteMeta,slugFilter);return prepareReadings(manifest,siteMeta);}
-function buildSlugOutputs(siteMeta,manifest,readings,slug){const target=readings.find((reading)=>reading.slug===slug);if(!target)throw new Error(`Unknown slug: ${slug}`);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest,target.slug);writeAssets();buildIndex(siteMeta,readings,thumbnails);writePublicPdf(target);copyNotebooklmVideo(target);const readingDir=path.join(siteDir,"readings",target.slug);const readingAssetDir=path.join(siteDir,"assets","readings",target.slug);if(fs.existsSync(readingDir))fs.rmSync(readingDir,{recursive:true,force:true});if(fs.existsSync(readingAssetDir))fs.rmSync(readingAssetDir,{recursive:true,force:true});copyReadingAssets(target);buildLanding(siteMeta,target);for(const page of target.pages){buildPage(siteMeta,target,page);}return target;}
-function buildFullOutputs(siteMeta,manifest,readings){const preservedMarkdown=snapshotPreservedDocMarkdown();if(fs.existsSync(siteDir))fs.rmSync(siteDir,{recursive:true,force:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);for(const reading of readings){writePublicPdf(reading);copyNotebooklmVideo(reading);copyReadingAssets(reading);buildLanding(siteMeta,reading);for(const page of reading.pages){buildPage(siteMeta,reading,page);}}restorePreservedDocMarkdown(preservedMarkdown);}
-function parseArgs(){const slugIndex=process.argv.indexOf("--slug");return{slug:slugIndex!==-1?process.argv[slugIndex+1]:null,homeOnly:process.argv.includes("--home-only")};}
+function buildSlugOutputs(siteMeta,manifest,readings,slug){const target=readings.find((reading)=>reading.slug===slug);if(!target)throw new Error(`Unknown slug: ${slug}`);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest,target.slug);writeAssets();buildIndex(siteMeta,readings,thumbnails);writePublicPdf(target);const readingDir=path.join(siteDir,"readings",target.slug);const readingAssetDir=path.join(siteDir,"assets","readings",target.slug);if(fs.existsSync(readingDir))fs.rmSync(readingDir,{recursive:true,force:true});if(fs.existsSync(readingAssetDir))fs.rmSync(readingAssetDir,{recursive:true,force:true});copyReadingAssets(target);buildLanding(siteMeta,target);for(const page of target.pages){buildPage(siteMeta,target,page);}return target;}
+function buildFullOutputs(siteMeta,manifest,readings){const preservedMarkdown=snapshotPreservedDocMarkdown();if(fs.existsSync(siteDir))fs.rmSync(siteDir,{recursive:true,force:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);for(const reading of readings){writePublicPdf(reading);copyReadingAssets(reading);buildLanding(siteMeta,reading);for(const page of reading.pages){buildPage(siteMeta,reading,page);}}restorePreservedDocMarkdown(preservedMarkdown);}
+function cliValue(flag){const index=process.argv.indexOf(flag);return index!==-1?process.argv[index+1]||"":"";}
+function parseArgs(){const slug=cliValue("--slug");const previewLocked=process.argv.includes("--preview-locked");return{slug:slug||null,homeOnly:process.argv.includes("--home-only"),previewLocked,previewDraft:process.argv.includes("--preview-draft"),outputDir:cliValue("--output-dir")||null};}
 function buildPage(siteMeta,reading,page){if(page.type==="article"){buildArticle(siteMeta,reading,page);return;}if(page.type==="professor-prep"){buildProfessorPrep(siteMeta,reading,page);return;}buildQuiz(siteMeta,reading,page);}
 function buildHomeOutputs(siteMeta,manifest,readings){fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);}
-function buildSite(options={}){const manifest=loadManifest();const siteMeta=manifest.site;if(options.homeOnly){const readings=prepareReadings(manifest,siteMeta);buildHomeOutputs(siteMeta,manifest,readings);return{siteMeta,readings};}let readings=refreshReadings(manifest,siteMeta,options.slug||null);if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);readings=refreshReadings(manifest,siteMeta,options.slug);buildSlugOutputs(siteMeta,manifest,readings,options.slug);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}buildFullOutputs(siteMeta,manifest,readings);readings=refreshReadings(manifest,siteMeta);buildFullOutputs(siteMeta,manifest,readings);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}
+function resolvePreviewSiteDir(outputDir){const candidate=path.resolve(rootDir,outputDir||path.join("tmp","site-preview"));const relative=path.relative(rootDir,candidate);if(!relative||relative.startsWith("..")||path.isAbsolute(relative))throw new Error("Preview output must be a non-root directory inside the project.");if(candidate===path.join(rootDir,"docs"))throw new Error("Preview output cannot overwrite docs; omit --output-dir to use tmp/site-preview.");return candidate;}
+function buildSite(options={}){if(options.previewDraft&&!options.previewLocked)throw new Error("--preview-draft requires --preview-locked so draft content cannot be written to public docs");allowDraftPreview=Boolean(options.previewLocked&&options.previewDraft);const manifest=loadManifest();if(options.previewLocked){siteDir=resolvePreviewSiteDir(options.outputDir);const siteMeta={...manifest.site,publish_cutoff_date:"",publish_cutoff_note:""};const readings=prepareReadings(manifest,siteMeta);if(options.homeOnly){buildHomeOutputs(siteMeta,manifest,readings);}else if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);}else{buildFullOutputs(siteMeta,manifest,readings);}return{siteMeta,readings,siteDir,preview:true};}const siteMeta=manifest.site;if(options.homeOnly){const readings=prepareReadings(manifest,siteMeta);buildHomeOutputs(siteMeta,manifest,readings);return{siteMeta,readings};}let readings=refreshReadings(manifest,siteMeta,options.slug||null);if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);readings=refreshReadings(manifest,siteMeta,options.slug);buildSlugOutputs(siteMeta,manifest,readings,options.slug);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}buildFullOutputs(siteMeta,manifest,readings);readings=refreshReadings(manifest,siteMeta);buildFullOutputs(siteMeta,manifest,readings);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}
 module.exports={buildSite};
-if(require.main===module){const options=parseArgs();buildSite(options);console.log(options.homeOnly?"[built] home":options.slug?`[built] reading ${options.slug} + home`:"[built] docs" );}
+if(require.main===module){const options=parseArgs();const result=buildSite(options);console.log(options.previewLocked?`[built] locked-content preview ${path.relative(rootDir,result.siteDir)}`:options.homeOnly?"[built] home":options.slug?`[built] reading ${options.slug} + home`:"[built] docs" );}

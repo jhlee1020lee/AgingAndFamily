@@ -1,0 +1,127 @@
+{
+  "title": "Smith et al. (2007) OX 퀴즈",
+  "instructions": "문장을 읽고 O 또는 X를 고르세요. 정답 뒤에는 해당 원문 세그먼트에 근거한 이유가 제시됩니다.",
+  "question_set_type": "OX 퀴즈",
+  "items": [
+    {
+      "prompt": "이 논문은 노년 남성의 독립성을 언제나 건강을 해치는 단일한 남성적 특성으로 정의한다.",
+      "answer": "X",
+      "explanation": "저자들은 독립성이 남성건강 맥락에서는 건강 위해적일 수 있지만, 성공적 노화의 표지로서는 건강 증진적 의미도 지닌다고 주장한다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "헤게모니적 남성성의 독립성은 특히 자기의존과 자율성을 우선시한다.",
+      "answer": "O",
+      "explanation": "원문은 헤게모니적 남성성이 독립·강인함·자기주장 등 여러 특성을 기대하며, 그 독립성 정의가 자기의존과 자율성을 특권화한다고 설명한다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "성공적 노화 관점에서는 어떤 형태로든 타인에게 의존하면 자동으로 성공하지 못한 노화가 된다.",
+      "answer": "X",
+      "explanation": "저자들은 의존이 자동으로 실패한 노화를 뜻하지 않으며, 여러 의존 형태와 독립 수준을 성취의 연속선에서 볼 수 있다고 정리한다.",
+      "evidence_segment_id": "AGING-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "FAMAS 전체 코호트는 35~80세 남성 1,195명이었고, 질적 하위연구에는 연령과 혼인상태로 층화한 36명이 초대되었다.",
+      "answer": "O",
+      "explanation": "원문은 애들레이드 북서부 전화번호부에서 무작위 추출한 1,195명의 코호트와 별도로 36명을 질적 하위연구에 초대했다고 명시한다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "질적 하위연구의 36명 가운데 22명은 55세를 넘었고, 그중 12명은 65세 이상이었다.",
+      "answer": "O",
+      "explanation": "표본 설명에 제시된 수치는 55세 초과 22명과 65세 이상 12명이다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "모든 심층면담은 의료기관 진료실에서 오전에 진행되었다.",
+      "answer": "X",
+      "explanation": "대부분 참여자의 자택에서 오후나 저녁에 진행됐고, 참여자 요청으로 대학 또는 직장에서 진행한 경우도 네 차례 있었다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "easy"
+    },
+    {
+      "prompt": "25세였던 JS와 대다수 55세 이상 참여자의 연령차는 생애과정의 건강·남성성 이야기를 끌어낼 기회로 해석되었다.",
+      "answer": "O",
+      "explanation": "참여자들은 ‘내가 자네 나이였을 때’라는 방식으로 경험을 설명했고, 저자들은 연령차를 생애과정 이야기를 얻는 기회로 보았다.",
+      "evidence_segment_id": "METHOD-INTERVIEW-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "연구결과에서 남성성의 독립성과 성공적 노화의 독립성은 서로 겹치지 않는 별개의 담론으로 나타났다.",
+      "answer": "X",
+      "explanation": "저자들은 두 담론이 참여자의 논의에서 복잡하게 얽혀 있었으며 어느 하나로 쉽게 분리되지 않았다고 설명한다.",
+      "evidence_segment_id": "FINDINGS-OPEN-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Conrad의 당뇨병 통제 발화와 Harry의 강하게 버틴다는 발화는 통제·강인함이 독립성의 남성적 의미를 구성하는 사례다.",
+      "answer": "O",
+      "explanation": "Conrad는 당뇨병이 자신을 통제하지 못하게 한다고 했고, Harry는 가능한 한 강하게 버티며 늘 도움을 요청할 필요는 없다고 말했다.",
+      "evidence_segment_id": "FINDINGS-OPEN-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Sam·Ben·Arnold의 사례에서는 배우자의 관여나 타인에게 부담이 될지에 대한 생각이 자기의존적 도움 요청 결정과 함께 나타났다.",
+      "answer": "O",
+      "explanation": "Sam과 Ben은 아내의 관여 속에서도 스스로 해결하거나 의지하지 않으려 했고, Arnold는 도움을 타인에게 부담을 주는 일로 느꼈다.",
+      "evidence_segment_id": "MASCULINE-HELP-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "hard"
+    },
+    {
+      "prompt": "저자들은 Max가 간호사를 거절한 이유를 오직 타고난 고집으로 확정했고 그의 생애경험은 고려하지 않았다.",
+      "answer": "X",
+      "explanation": "Max의 ‘너무 오랫동안 독립적으로 살아왔다’는 설명은 완고한 노년 남성이라는 고정관념을 넘어 남성성과 노화의 교차를 보게 한다.",
+      "evidence_segment_id": "MASCULINE-MAX-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "David와 Bob의 발화에서 독립성은 스스로를 돌보고 원하는 일을 하며 신체적·인지적으로 기능하는 삶의 질과 연결되었다.",
+      "answer": "O",
+      "explanation": "David는 긴 삶보다 충만한 삶과 자기돌봄을, Bob은 신체적·인지적으로 독립해서 기능할 수 있는 건강을 강조했다.",
+      "evidence_segment_id": "SUCCESS-DAILY-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Roger의 사례는 의존이나 타인에게 부담이 되는 삶보다 수명을 최대한 연장하는 일이 우선이라는 주장에 쓰였다.",
+      "answer": "X",
+      "explanation": "Roger는 먹고 씻는 일까지 타인에게 의존하고 부담이 되는 삶을 걱정했으며, 죽음 근접 경험 뒤 삶의 질에 주목했다.",
+      "evidence_segment_id": "SUCCESS-RISK-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "medium"
+    },
+    {
+      "prompt": "Arnold의 전동 스쿠터 사용은 보조수단을 받아들이면서 독립성과 이상화된 남성성을 적응적으로 재구성한 사례다.",
+      "answer": "O",
+      "explanation": "스쿠터는 Arnold가 약국·상점·의사에게 혼자 이동하며 일상기능과 좋은 삶의 질을 유지하게 했다.",
+      "evidence_segment_id": "SUCCESS-SCOOTER-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "hard"
+    },
+    {
+      "prompt": "저자들이 말한 덜 보편주의적인 접근은 모든 남성 하위집단을 같은 정책으로 다뤄야 한다는 뜻이다.",
+      "answer": "X",
+      "explanation": "제안은 노년 남성 등 특정 하위집단의 고유한 관심과 여러 관점을 더 세밀하게 고려하자는 것으로, 일률적 일반화와 반대다.",
+      "evidence_segment_id": "CONCLUSION-001",
+      "source": "Smith et al. (2007)",
+      "difficulty": "hard"
+    }
+  ]
+}

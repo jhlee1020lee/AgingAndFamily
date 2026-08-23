@@ -21,10 +21,18 @@ function parseArgs(argv) {
   const slugIndex = argv.indexOf("--slug");
   const reviewerIndex = argv.indexOf("--reviewer");
   const noteIndex = argv.indexOf("--note");
+  const pages = [];
+  for (let index = 0; index < argv.length; index += 1) {
+    if (argv[index] === "--page" && argv[index + 1]) {
+      pages.push(argv[index + 1].replace(/_/g, "-"));
+      index += 1;
+    }
+  }
   return {
     slug: slugIndex >= 0 ? argv[slugIndex + 1] : "",
     reviewer: reviewerIndex >= 0 ? argv[reviewerIndex + 1] : "codex",
     note: noteIndex >= 0 ? argv[noteIndex + 1] : "Source, alignment, learning assets, and rendered artifacts reviewed.",
+    pages: [...new Set(pages)],
     requireBuiltArtifacts: !argv.includes("--source-only"),
   };
 }
@@ -47,23 +55,41 @@ function approveReading(options) {
   const sourceResults = initial.validation_status.source_page_results;
   const sourceEntries = Object.entries(sourceResults)
     .filter(([, result]) => result.status !== PAGE_STATUS.NOT_APPLICABLE);
-  const pageKeys = sourceEntries.map(([statusKey]) => statusKey.replace(/_/g, "-"));
+  const availablePageKeys = sourceEntries.map(([statusKey]) => statusKey.replace(/_/g, "-"));
+  const requestedPageKeys = options.pages?.length ? options.pages : availablePageKeys;
+  const unknownPages = requestedPageKeys.filter((pageKey) => !availablePageKeys.includes(pageKey));
+  if (unknownPages.length) {
+    throw new Error(`Unknown or disabled page key(s): ${unknownPages.join(", ")}`);
+  }
   const failures = sourceEntries
-    .filter(([, result]) => result.status !== PAGE_STATUS.SCHEMA_PASS && result.status !== PAGE_STATUS.APPROVED)
+    .filter(([statusKey, result]) => (
+      requestedPageKeys.includes(statusKey.replace(/_/g, "-"))
+      && result.status !== PAGE_STATUS.SCHEMA_PASS
+      && result.status !== PAGE_STATUS.APPROVED
+    ))
     .map(([statusKey]) => statusKey.replace(/_/g, "-"));
   if (failures.length) {
     throw new Error(`Source validation must pass before approval: ${failures.join(", ")}`);
   }
+
+  const pageKeys = [...new Set([
+    ...(initial.manual_review.approved_pages || []),
+    ...requestedPageKeys,
+  ])];
+  const reviewNotes = [...new Set([
+    ...(initial.manual_review.notes || []),
+    options.note,
+  ].filter(Boolean))];
 
   const seeded = {
     ...existing,
     manual_review: {
       ...initial.manual_review,
       approved_pages: pageKeys,
-      approved_page_hashes: {},
+      approved_page_hashes: { ...initial.manual_review.approved_page_hashes },
       reviewer: options.reviewer,
       reviewed_at: new Date().toISOString(),
-      notes: [options.note],
+      notes: reviewNotes,
       blocked_reason: "",
     },
   };
@@ -72,7 +98,7 @@ function approveReading(options) {
   });
   const payload = mergeValidationFields(seeded, approved);
   writeJson(metaPath, payload);
-  console.log(`[approved] ${options.slug}: ${approved.workflow_status} (${pageKeys.length} pages)`);
+  console.log(`[approved] ${options.slug}: ${approved.workflow_status} (${requestedPageKeys.join(", ")})`);
 }
 
 if (require.main === module) {

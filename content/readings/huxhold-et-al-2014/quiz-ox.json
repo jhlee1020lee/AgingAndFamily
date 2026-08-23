@@ -1,0 +1,127 @@
+{
+  "title": "Huxhold et al. (2014) OX 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. O 또는 X를 고른 뒤 설명에서 관계 원천·연령집단·안녕 지표와 근거 범위를 확인하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "prompt": "이 연구는 가족과의 활동과 친구와의 활동이 모든 연령과 모든 안녕 지표에서 같은 효과를 낸다고 결론 내렸다.",
+      "answer": "X",
+      "explanation": "효과는 연령집단과 PA·NA·삶의 만족도에 따라 달랐다. 특히 노년 집단의 삶의 만족도와 NA에서 가족·친구 활동의 방향 또는 크기가 달랐다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "구조화 초록의 핵심 결과",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "논문은 가족관계를 비교적 의무적이고 미리 주어진 관계로, 친구관계를 자발적이고 상호적인 관계로 구분한다.",
+      "answer": "O",
+      "explanation": "이 구조적 차이가 불만족스러운 관계의 해소 가능성, 동반활동과 지원 기능, 관계 유지 노력의 차이를 만든다고 본다.",
+      "evidence_segment_id": "FAMILY-001",
+      "source": "가족·친구 관계구조",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "H1은 노년 집단의 사회활동이 더 적고 그 연령 차이가 특히 친구 활동에서 클 것이라고 예측했다.",
+      "answer": "O",
+      "explanation": "H1의 두 요소는 전반적 활동량의 연령 차이와 친구 활동에서 더 큰 차이다. 다만 실제 6년 변화에서는 노년 집단의 가족 활동 감소가 더 컸다.",
+      "evidence_segment_id": "AIMS-001",
+      "source": "가설 1",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "최종 표본은 노년 집단 2,032명과 중년 집단 2,830명이었으며, 2002년과 2008년 자료를 사용했다.",
+      "answer": "O",
+      "explanation": "DEAS의 T1 2002년과 T2 2008년을 사용했다. 두 시점 모두 참여한 사람은 각각 665명과 1,327명으로 최종 표본 전체와 구분해야 한다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "표본과 조사시점",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "PA와 NA는 하나의 척도에서 서로 정확히 반대되는 점수로 측정되었다.",
+      "answer": "X",
+      "explanation": "긍정 정서와 부정 정서는 각각 10개 정서상태를 사용한 별도 결과다. 활동이 PA와 연결되지만 NA와 무관한 결과도 가능하다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "주관적 안녕 측정",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "LCS 모형을 사용했기 때문에 사회활동의 무작위 실험적 인과효과가 확정되었다.",
+      "answer": "X",
+      "explanation": "LCS는 기초수준과 변화를 모델링하고 시간 순서를 제공하지만 관찰자료다. 측정되지 않은 교란까지 배제한 무작위 실험은 아니다.",
+      "evidence_segment_id": "LCS-001",
+      "source": "잠재변화점수 모형의 범위",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "중년 집단은 노년 집단보다 전반적으로 사회활동을 더 많이 했고, 연령 차이는 가족 활동보다 친구 활동에서 더 컸다.",
+      "answer": "O",
+      "explanation": "전반적 연령 차이는 Δχ² = 366.97, 관계 원천별 차이는 Δχ² = 10.45로 보고되었다.",
+      "evidence_segment_id": "AGEGROUP-001",
+      "source": "활동량의 연령 차이",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "2002년에서 2008년 사이 노년 집단은 가족 활동보다 친구 활동을 더 많이 줄였다.",
+      "answer": "X",
+      "explanation": "친구 활동의 연령집단×시점 상호작용은 유의하지 않았고, 노년 집단은 친구 활동보다 가족 활동을 더 많이 줄였다.",
+      "evidence_segment_id": "AGEGROUP-001",
+      "source": "연령집단×시점 상호작용",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "중년 집단에서는 T1 활동수준이 PA와 삶의 만족도 변화와 연결됐지만 NA와는 연결되지 않았다.",
+      "answer": "O",
+      "explanation": "PA와 삶의 만족도는 각각 β = 0.08이었고, NA는 β = 0.01로 유의하지 않았다.",
+      "evidence_segment_id": "MIDDLE-001",
+      "source": "중년 집단 결과",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "중년 집단에서는 친구와 한 활동이 가족과 한 활동보다 PA를 유의하게 더 강하게 예측했다.",
+      "answer": "X",
+      "explanation": "중년 집단에서 가족·친구 활동의 효과 차이는 모든 대비에서 유의하지 않았다.",
+      "evidence_segment_id": "MIDDLE-001",
+      "source": "중년 집단의 관계 원천 비교",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "노년 집단의 삶의 만족도 변화에서는 친구 활동 계수 0.14와 가족 활동 계수 0.02가 보고되었고 친구 활동만 변화를 예측했다.",
+      "answer": "O",
+      "explanation": "등가제약을 풀었을 때 모형 적합도가 더 좋아졌으며, 삶의 만족도 결과에서 친구 활동만 유의한 예측요인이었다.",
+      "evidence_segment_id": "OLDER-001",
+      "source": "노년 집단 삶의 만족도",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "노년 집단에서 친구 활동과 가족 활동은 NA 변화에 같은 방향으로 연결되었다.",
+      "answer": "X",
+      "explanation": "친구 활동은 NA 감소(β = −0.08), 가족 활동은 NA 증가 또는 유지(β = 0.08)와 연결되어 방향이 반대였다.",
+      "evidence_segment_id": "OLDER-001",
+      "source": "노년 집단 NA 결과",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "저자들은 H1, H2, H3가 모두 부분적으로만 확인되었다고 결론 내렸다.",
+      "answer": "O",
+      "explanation": "활동량, 관계 원천과 세 안녕 지표의 결과가 가설의 일부와 맞고 일부와 달랐기 때문에 전면 지지가 아니다.",
+      "evidence_segment_id": "DISCUSSION-001",
+      "source": "가설 판정",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "변화분산을 두 연령집단에서 같게 둘 수 있었으므로 중년과 노년의 회귀계수를 직접 대비했다.",
+      "answer": "X",
+      "explanation": "변화분산의 집단 등가제약이 성립하지 않아 집단 간 회귀계수를 직접 비교하지 못했다. 각 집단 안에서 가족·친구 효과를 분석했다.",
+      "evidence_segment_id": "EFFECTS-001",
+      "source": "집단 비교의 통계 한계",
+      "difficulty": "심화"
+    },
+    {
+      "prompt": "이 연구는 가족 구성원별 관계와 관계의 질을 구분하지 못했다.",
+      "answer": "O",
+      "explanation": "배우자와 자녀 등 가족관계 유형의 차이와 고·저품질 관계를 분석하지 못한 점이 주요 한계로 제시된다.",
+      "evidence_segment_id": "LIMIT-001",
+      "source": "측정 한계",
+      "difficulty": "기본"
+    }
+  ]
+}

@@ -48,7 +48,7 @@
       "status": "verified",
       "unit": "context_block",
       "ko_anchor": {
-        "flat_index": 3,
+        "flat_index": 2,
         "block_type": "paragraph"
       },
       "en_anchor": {
@@ -3424,6 +3424,6 @@
   ],
   "sentence_alignment_version": 1,
   "sentence_alignment_note": "Sentence pairs were generated monotonically and all mismatch blocks were reviewed against the bilingual text before promotion.",
-  "sentence_alignment_reviewed_at": "2026-08-22T02:07:48.145Z",
+  "sentence_alignment_reviewed_at": "2026-08-22T06:39:13.243Z",
   "sentence_alignment_status": "verified"
 }

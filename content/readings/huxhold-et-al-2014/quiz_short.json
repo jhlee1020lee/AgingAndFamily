@@ -1,0 +1,127 @@
+{
+  "title": "Huxhold et al. (2014) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 핵심 개념·표본·계수를 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "가족·친구와 함께하는 방문, 산책, 문화활동, 운동 등을 묶어 부르는 핵심 활동 개념은?",
+      "accepted_answers": ["비공식 사회활동", "informal social activities"],
+      "answer_type": "term",
+      "explanation": "연구는 9개 일상 활동의 빈도를 관계 원천별로 합산했다.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "활동 측정"
+    },
+    {
+      "question": "삶의 만족도·긍정 정서·부정 정서를 포괄하는 결과 개념의 약어는?",
+      "accepted_answers": ["SWB", "주관적 안녕", "subjective well-being"],
+      "answer_type": "term",
+      "explanation": "세 측면은 서로 구분해 분석되며 관계 원천별 결과도 달랐다.",
+      "evidence_segment_id": "AIMS-001",
+      "source": "주관적 안녕"
+    },
+    {
+      "question": "즐겁고 활기찬 정서 경험을 가리키는 논문의 두 글자 약어는?",
+      "accepted_answers": ["PA", "긍정 정서", "positive affect"],
+      "answer_type": "term",
+      "explanation": "가족·친구 활동은 노년 집단의 PA 변화에 비슷한 정적 연관성을 보였다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "긍정 정서"
+    },
+    {
+      "question": "불쾌하고 괴로운 정서 경험을 가리키는 논문의 두 글자 약어는?",
+      "accepted_answers": ["NA", "부정 정서", "negative affect"],
+      "answer_type": "term",
+      "explanation": "노년 집단에서 친구 활동과 가족 활동은 NA에 반대 방향으로 연결되었다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "부정 정서"
+    },
+    {
+      "question": "제한된 미래 시간관이 정서적으로 의미 있는 관계선택을 이끈다고 보는 이론은?",
+      "accepted_answers": ["사회정서적 선택성이론", "SST", "Socioemotional Selectivity Theory"],
+      "answer_type": "term",
+      "explanation": "노년기에 남은 친구관계의 선택성을 해석하는 이론적 근거다.",
+      "evidence_segment_id": "AGE-001",
+      "source": "관계 선택 이론"
+    },
+    {
+      "question": "노년 성인의 정서조절 강점과 피할 수 없는 부정적 상호작용에 대한 취약성을 함께 설명하는 모형은?",
+      "accepted_answers": ["강점과 취약성 모형", "강점-취약성 통합 모형", "Strength and Vulnerability Integration model", "SAVI"],
+      "answer_type": "term",
+      "explanation": "가족처럼 해소하기 어려운 관계의 부정적 상호작용을 해석하는 데 사용된다.",
+      "evidence_segment_id": "H3-001",
+      "source": "노년기 정서조절 모형"
+    },
+    {
+      "question": "T1 수준과 T1–T2 변화를 분해한 분석모형의 약어는?",
+      "accepted_answers": ["LCS", "잠재변화점수 모형", "latent change score model"],
+      "answer_type": "term",
+      "explanation": "T1 활동수준이 6년간 SWB 변화와 어떻게 연결되는지 분석했다.",
+      "evidence_segment_id": "LCS-001",
+      "source": "분석모형"
+    },
+    {
+      "question": "연구에 사용된 독일의 전국 대표 노화조사 약어는?",
+      "accepted_answers": ["DEAS", "독일노화조사", "German Aging Survey"],
+      "answer_type": "term",
+      "explanation": "2002년과 2008년 파동의 중년·노년 집단 자료를 사용했다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "자료원"
+    },
+    {
+      "question": "불완전한 사례를 모두 삭제하지 않고 사용 가능한 관측정보로 모수를 추정한 결측 처리법의 약어는?",
+      "accepted_answers": ["FIML", "완전정보최대우도법", "full information maximum likelihood"],
+      "answer_type": "term",
+      "explanation": "사용 가능한 정보를 활용하지만 선택적 탈락 가능성 자체를 없애는 것은 아니다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "결측 처리"
+    },
+    {
+      "question": "T1 2002년과 T2 2008년 사이의 측정 간격은 몇 년인가?",
+      "accepted_answers": ["6년", "6", "six years"],
+      "answer_type": "number",
+      "explanation": "두 시점의 긴 간격은 장기변화 분석의 기반이면서 단기 정서변동을 놓치는 한계다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "조사 간격"
+    },
+    {
+      "question": "최종 노년 집단의 표본 수는?",
+      "accepted_answers": ["2,032명", "2032", "N = 2,032"],
+      "answer_type": "number",
+      "explanation": "노년 집단은 65세 이상, 평균연령 73.73세로 보고되었다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "노년 표본"
+    },
+    {
+      "question": "최종 중년 집단의 표본 수는?",
+      "accepted_answers": ["2,830명", "2830", "N = 2,830"],
+      "answer_type": "number",
+      "explanation": "중년 집단의 평균연령은 53.30세로 보고되었다.",
+      "evidence_segment_id": "SAMPLE-001",
+      "source": "중년 표본"
+    },
+    {
+      "question": "노년 집단에서 친구 활동이 삶의 만족도 변화를 예측한 표준화 계수는?",
+      "accepted_answers": ["0.14", "β = 0.14", "βfriends = 0.14"],
+      "answer_type": "number",
+      "explanation": "가족 활동 계수는 0.02였고 친구 활동만 삶의 만족도 변화를 예측했다.",
+      "evidence_segment_id": "OLDER-001",
+      "source": "친구 활동과 삶의 만족도"
+    },
+    {
+      "question": "노년 집단에서 친구 활동과 NA 변화의 계수는?",
+      "accepted_answers": ["−0.08", "-0.08", "β = −0.08", "βfriends = −0.08"],
+      "answer_type": "number",
+      "explanation": "높은 친구 활동은 NA 감소와 연결되었다.",
+      "evidence_segment_id": "OLDER-001",
+      "source": "친구 활동과 NA"
+    },
+    {
+      "question": "노년 집단에서 가족 활동과 NA 변화의 계수는?",
+      "accepted_answers": ["0.08", "+0.08", "β = 0.08", "βfamily = 0.08"],
+      "answer_type": "number",
+      "explanation": "가족 활동은 NA 증가 또는 유지와 연결되어 친구 활동과 반대 방향을 보였다.",
+      "evidence_segment_id": "OLDER-001",
+      "source": "가족 활동과 NA"
+    }
+  ]
+}

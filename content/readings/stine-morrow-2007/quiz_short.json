@@ -1,0 +1,127 @@
+{
+  "title": "Stine-Morrow (2007) 단답형 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 핵심 용어·프로그램·수치를 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "새 정보를 빠르게 부호화·변환하며 나이에 따라 정상적 저하 경향을 보이는 유동적 능력은?",
+      "accepted_answers": ["인지 역학", "mental mechanics"],
+      "answer_type": "term",
+      "explanation": "글은 이를 지식·문화 습득에 의존하는 결정화 능력과 대비하며 인지 노화의 쇠퇴 측면을 설명한다.",
+      "evidence_segment_id": "OPENING-001",
+      "source": "노화의 두 힘"
+    },
+    {
+      "question": "지식과 문화 습득에 의존하며 노년기에도 유지되거나 증가할 수 있는 능력은?",
+      "accepted_answers": ["결정화 능력", "crystallized abilities"],
+      "answer_type": "term",
+      "explanation": "생애경험이 키우는 문화적·실용적·지식 기반 역량은 유동적 인지 역학과 다른 궤적을 보일 수 있다.",
+      "evidence_segment_id": "OPENING-001",
+      "source": "노화의 두 힘"
+    },
+    {
+      "question": "현재 과제의 수행을 위해 과제별 처리에 주의와 노력을 효과적으로 배분하는 것은?",
+      "accepted_answers": ["주의 관여", "attentional engagement"],
+      "answer_type": "term",
+      "explanation": "이는 선택한 과제를 어떻게 처리하는가에 관한 자기조절이며 지적 환경을 고르는 과정과 구분된다.",
+      "evidence_segment_id": "ATTENTION-001",
+      "source": "관여의 첫 번째 의미"
+    },
+    {
+      "question": "지적으로 자극적인 환경 맥락을 습관적으로 선택해 장기적으로 능력을 확장할 가능성과 관련되는 것은?",
+      "accepted_answers": ["활동 참여", "activity engagement"],
+      "answer_type": "term",
+      "explanation": "저자는 환경 맥락의 습관적 자기조절이 미래 수행을 낳는 인지체계를 형성할 가능성을 제안한다.",
+      "evidence_segment_id": "ATTENTION-001",
+      "source": "관여의 두 번째 의미"
+    },
+    {
+      "question": "표면형·텍스트베이스·상황모형의 구성을 설명하는 읽기 모형의 약칭은?",
+      "accepted_answers": ["SRLP", "자기조절 언어처리 모형"],
+      "answer_type": "term",
+      "explanation": "이 모형은 텍스트 특성에 대한 읽기시간 반응으로 처리 요구에 대한 독자의 민감성을 살핀다.",
+      "evidence_segment_id": "ATTENTION-001",
+      "source": "언어처리 모형"
+    },
+    {
+      "question": "지각된 현재 이해와 목표 기준의 차이를 자원 투입으로 줄이는 SRLP의 조절 기제는?",
+      "accepted_answers": ["부적 피드백 고리", "negative feedback loop"],
+      "answer_type": "term",
+      "explanation": "현재 표상이 충분하지 않으면 해당 처리 수준이 더 많은 자원을 요구하고 기준을 충족하면 균형에 이른다.",
+      "evidence_segment_id": "ATTENTION-002",
+      "source": "Figure 1"
+    },
+    {
+      "question": "텍스트 처리 요구 변화에 따라 단위 읽기시간을 상대적으로 조정하는 개인의 자원 배분 양식은?",
+      "accepted_answers": ["배분 방침", "allocation policy"],
+      "answer_type": "term",
+      "explanation": "새 개념과 통합 지점에서 시간을 조정하는 패턴은 주의 관여의 질과 범위를 나타내는 지표로 사용된다.",
+      "evidence_segment_id": "ATTENTION-001",
+      "source": "읽기시간 지표"
+    },
+    {
+      "question": "자신의 노력으로 기억 수행 결과에 영향을 줄 수 있다고 믿는 정도는?",
+      "accepted_answers": ["기억 자기효능감", "memory self-efficacy"],
+      "answer_type": "term",
+      "explanation": "정확성 목표에 대한 연령별 반응성 차이의 일부는 작업기억 용량과 이 믿음으로 설명됐다.",
+      "evidence_segment_id": "ATTENTION-002",
+      "source": "정확성 목표 연구"
+    },
+    {
+      "question": "원래 활력이 높은 사람이 지적 활동을 더 자주 고르고 오래 유지해 겉보기 관계가 생기는 문제는?",
+      "accepted_answers": ["선택효과", "selection effect"],
+      "answer_type": "term",
+      "explanation": "이 가능성 때문에 활동적 생활양식과 좋은 인지의 상관을 곧바로 활동의 인과효과로 해석할 수 없다.",
+      "evidence_segment_id": "ACTIVITY-001",
+      "source": "관찰 상관의 한계"
+    },
+    {
+      "question": "활동·인지·치매 취약성이 같은 기저 노화과정에서 파생되어 함께 상관될 수 있다는 설명은?",
+      "accepted_answers": ["공통원인", "공통원인 설명", "common cause"],
+      "answer_type": "term",
+      "explanation": "저자는 여러 활력 지표가 유전적으로 추동되는 노화과정의 생물행동 표지일 가능성을 제시한다.",
+      "evidence_segment_id": "ACTIVITY-001",
+      "source": "공통원인 가능성"
+    },
+    {
+      "question": "풍부한 경험이 대안적 신경 레퍼토리를 제공해 병리의 임상적 발현을 더 오래 견디게 한다는 설명은?",
+      "accepted_answers": ["인지예비력", "cognitive reserve"],
+      "answer_type": "term",
+      "explanation": "교육 수준이 높은 사람이 뇌 병리를 더 오래 견딘다는 결과를 설명하기 위해 소개된 개념이다.",
+      "evidence_segment_id": "ACTIVITY-001",
+      "source": "교육과 알츠하이머병"
+    },
+    {
+      "question": "ACTIVE 시험이 기억·처리속도·추론 중 한 능력에 제공한 훈련은 몇 회기인가?",
+      "accepted_answers": ["10회기", "10 회기", "10 sessions"],
+      "answer_type": "number",
+      "explanation": "무작위로 배정된 노인 훈련집단은 비접촉 통제집단과 비교됐고 효과는 훈련한 능력에 구체적이었다.",
+      "evidence_segment_id": "ACTIVITY-001",
+      "source": "ACTIVE 설계"
+    },
+    {
+      "question": "ACTIVE에서 특정 능력 훈련효과의 유지가 확인된 최대 기간은?",
+      "accepted_answers": ["최대 5년", "5년", "5 years"],
+      "answer_type": "number",
+      "explanation": "효과의 장기 유지가 다른 능력이나 일상 과제로의 폭넓은 전이를 뜻하지는 않는다.",
+      "evidence_segment_id": "ACTIVITY-001",
+      "source": "ACTIVE 유지기간"
+    },
+    {
+      "question": "비정형 문제·창의성·팀 협업·선택을 묶어 참여가 활발한 생활을 모사한 노인 대상 개입은?",
+      "accepted_answers": ["Senior Odyssey", "시니어 오디세이"],
+      "answer_type": "term",
+      "explanation": "기존 Odyssey of the Mind와 연계한 다중양식 프로그램으로 폭넓은 능력과 관여 성향에 대한 효과를 시험한다.",
+      "evidence_segment_id": "ACTIVITY-002",
+      "source": "Box 1"
+    },
+    {
+      "question": "선택한 활동의 요구에 어떻게 관여하고 어떤 능력을 형성하는지가 인지 활력에 중요하다는 이론은?",
+      "accepted_answers": ["덤블도어 가설", "Dumbledore hypothesis"],
+      "answer_type": "term",
+      "explanation": "글의 결론은 이 이론을 확정하지 않고 두 관여와 심리사회적 메커니즘을 실증적으로 시험할 과제로 남긴다.",
+      "evidence_segment_id": "CONCLUSION-001",
+      "source": "결론의 가설"
+    }
+  ]
+}

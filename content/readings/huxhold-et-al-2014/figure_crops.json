@@ -1,0 +1,27 @@
+[
+  {
+    "source": "page-04.png",
+    "output": "figure-1.png",
+    "x": 125,
+    "y": 735,
+    "width": 1027,
+    "height": 800
+  },
+  {
+    "source": "page-05.png",
+    "output": "figure-2.png",
+    "x": 88,
+    "y": 95,
+    "width": 1065,
+    "height": 640
+  },
+  {
+    "source": "page-06.png",
+    "output": "table-1.png",
+    "x": 323,
+    "y": 135,
+    "width": 625,
+    "height": 1396,
+    "rotate": 90
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "title": "Carstensen et al. (1999) 단답형 퀴즈",
+  "instructions": "핵심 용어 또는 수치를 짧게 입력하세요. 띄어쓰기가 있는 정답도 7단어 이하입니다.",
+  "question_set_type": "단답형 퀴즈",
+  "items": [
+    {
+      "question": "미래 시간의 지각으로 사회적 목표의 우선순위를 설명하는 이론의 이름은 무엇인가요?",
+      "accepted_answers": ["사회정서선택이론", "SST"],
+      "answer_type": "term",
+      "explanation": "이 이론은 시간이 개방되거나 제한되어 있다는 지각이 지식·정서 목표의 우선순위를 바꾼다고 본다.",
+      "evidence_segment_id": "ABS-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "미래가 넓게 열려 있다고 느낄 때 상대적으로 우선되는 사회적 목표 범주는 무엇인가요?",
+      "accepted_answers": ["지식 습득 목표", "지식 관련 목표"],
+      "answer_type": "short_phrase",
+      "explanation": "개방된 미래에서는 장래 준비와 지연된 보상에 기여하는 지식 관련 목표가 우선된다.",
+      "evidence_segment_id": "TENETS-002",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "미래가 제한되어 있다고 느낄 때 상대적으로 우선되는 사회적 목표 범주는 무엇인가요?",
+      "accepted_answers": ["정서 조절 목표", "정서적 목표"],
+      "answer_type": "short_phrase",
+      "explanation": "제한된 미래에서는 현재의 느낌·의미·만족을 높이는 정서 관련 목표가 우선된다.",
+      "evidence_segment_id": "TENETS-002",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "예상되는 느낌의 유사성에 따라 분류하게 한 사회적 상대 카드는 몇 장이었나요?",
+      "accepted_answers": ["18장", "18개"],
+      "answer_type": "number",
+      "explanation": "참가자들은 18개의 사회적 상대 카드를 원하는 수의 묶음으로 분류했다.",
+      "evidence_segment_id": "PARTNER-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "HIV 음성·무증상·유증상 세 남성 하위집단의 공통 평균연령은 얼마였나요?",
+      "accepted_answers": ["37세"],
+      "answer_type": "number",
+      "explanation": "세 하위집단은 모두 남성이고 평균연령이 37세여서 연령과 생애 말기 근접성을 분리하는 데 쓰였다.",
+      "evidence_segment_id": "PARTNER-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "자유롭게 묶은 상대 카드에서 세 잠재 차원을 도출하는 데 사용한 분석법은 무엇인가요?",
+      "accepted_answers": ["다차원척도분석", "다차원 척도 분석"],
+      "answer_type": "term",
+      "explanation": "카드 분류 자료에 다차원척도분석을 적용해 정서적 잠재력·미래 접촉·정보 추구 차원을 확인했다.",
+      "evidence_segment_id": "PARTNER-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "참가자에게 미리 예고하지 않은 회상 절차를 가리키는 기억 유형은 무엇인가요?",
+      "accepted_answers": ["우연기억", "우연 기억"],
+      "answer_type": "term",
+      "explanation": "두 쪽의 사회적 장면을 읽은 뒤 약 한 시간 후 예상하지 못한 회상 검사를 실시했다.",
+      "evidence_segment_id": "MEMORY-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "일주일의 경험표집에서 참가자에게 무작위 호출을 총 몇 번 보냈나요?",
+      "accepted_answers": ["35번", "35회"],
+      "answer_type": "number",
+      "explanation": "참가자들은 낮과 저녁의 무작위 시점에 총 35번 호출을 받아 당시 정서를 보고했다.",
+      "evidence_segment_id": "EMOREG-002",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "각 경험표집 시점에 참가자가 보고한 정서 항목은 몇 가지였나요?",
+      "accepted_answers": ["19가지", "19개"],
+      "answer_type": "number",
+      "explanation": "각 무작위 호출에서 19가지 정서의 경험을 기록하게 했다.",
+      "evidence_segment_id": "EMOREG-002",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "Child Guidance Study가 같은 사람을 면담한 네 시점을 모두 쓰세요.",
+      "accepted_answers": ["18세·30세·40세·50세", "18세, 30세, 40세, 50세"],
+      "answer_type": "number",
+      "explanation": "같은 참가자들을 18세, 30세, 40세, 50세에 반복 면담해 관계 변화의 시기를 살폈다.",
+      "evidence_segment_id": "NETWORK-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "Berlin Aging Study에서 사회연결망을 조사한 표본의 연령범위는 어떻게 되나요?",
+      "accepted_answers": ["69~104세", "69세~104세"],
+      "answer_type": "number",
+      "explanation": "Berlin Aging Study는 69~104세의 대표성 있는 횡단 표본을 조사했다.",
+      "evidence_segment_id": "NETWORK-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "30분을 함께 보낼 세 선택지 중 정서적으로 의미 있는 친숙한 상대는 누구였나요?",
+      "accepted_answers": ["직계가족 구성원", "직계 가족 구성원"],
+      "answer_type": "short_phrase",
+      "explanation": "직계가족 구성원은 정서적 의미가 큰 친숙한 상대를 대표하는 선택지였다.",
+      "evidence_segment_id": "PREFER-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "의사의 획기적 발전 시나리오에서 기대수명이 얼마나 더 늘어난다고 상상했나요?",
+      "accepted_answers": ["약 20년", "20년"],
+      "answer_type": "number",
+      "explanation": "노인 참가자는 획기적 의학 발전으로 약 20년 더 살 가능성이 높다는 말을 상상했다.",
+      "evidence_segment_id": "PREFER-001",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "젊은이와 노인 모두 친숙한 상대를 선호한 조사는 홍콩 반환을 얼마나 앞두고 실시됐나요?",
+      "accepted_answers": ["약 4개월", "4개월"],
+      "answer_type": "number",
+      "explanation": "반환 약 4개월 전 조사에서는 종결이 임박한 맥락 속에서 젊은이와 노인 모두 친숙한 상대를 선호했다.",
+      "evidence_segment_id": "PREFER-002",
+      "source": "Carstensen et al. (1999)"
+    },
+    {
+      "question": "SST가 사회·정서 목표의 내용을 특정함으로써 보완한다고 한 생애 적응 틀의 약자는 무엇인가요?",
+      "accepted_answers": ["SOC", "보상을 수반한 선택적 최적화"],
+      "answer_type": "term",
+      "explanation": "SOC는 선택·최적화·보상의 일반 과정을 설명하고, SST는 제한시간에 선택되는 사회·정서 목표를 특정한다.",
+      "evidence_segment_id": "LIFESPAN-001",
+      "source": "Carstensen et al. (1999)"
+    }
+  ]
+}

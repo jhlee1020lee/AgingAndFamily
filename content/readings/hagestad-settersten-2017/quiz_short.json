@@ -1,0 +1,127 @@
+{
+  "title": "Hagestad & Settersten (2017) 단답형 퀴즈",
+  "instructions": "핵심 개념과 사례를 짧고 정확하게 답하세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "question": "노인을 우리와 분리된 그들로 만드는 사회적 과정은?",
+      "accepted_answers": ["타자화", "othering"],
+      "answer_type": "term",
+      "explanation": "공적·사적 담론의 분리는 노인을 타자화하고 연령주의와 낙인을 재생산할 수 있다.",
+      "evidence_segment_id": "PERSPECTIVE-001",
+      "source": "이중 담론"
+    },
+    {
+      "question": "가까움과 멂을 함께 경험하며 당연한 규칙을 질문하는 위치는?",
+      "accepted_answers": ["이방인", "the stranger"],
+      "answer_type": "term",
+      "explanation": "Simmel과 Schütz는 경계 안팎의 위치가 기존 처방을 비판적으로 보게 한다고 설명한다.",
+      "evidence_segment_id": "PERSPECTIVE-001",
+      "source": "이방인 이론"
+    },
+    {
+      "question": "타인의 반응에 비친 모습으로 자아를 구성한다는 Cooley의 개념은?",
+      "accepted_answers": ["거울자아", "looking-glass self"],
+      "answer_type": "term",
+      "explanation": "사회적 거울은 노화된 몸과 역할이 자아감에 통합되는 대인관계적 과정을 설명한다.",
+      "evidence_segment_id": "CHICAGO-001",
+      "source": "상징적 상호작용론"
+    },
+    {
+      "question": "한 사람의 오랜 생애사를 함께 기억하고 구성하는 관계의 타인은?",
+      "accepted_answers": ["공동 전기작가", "co-biographer", "co-biographers"],
+      "answer_type": "term",
+      "explanation": "오랜 관계를 잃으면 자신의 생애 연속성을 확인해 줄 증인도 줄어들 수 있다.",
+      "evidence_segment_id": "CHICAGO-001",
+      "source": "공유된 생애사"
+    },
+    {
+      "question": "사회적 경계를 여러 차례 넘어 기존 생애각본 밖을 살아온 사람을 글에서 부른 말은?",
+      "accepted_answers": ["생애과정 이주자", "life course migrant", "life course migrants"],
+      "answer_type": "term",
+      "explanation": "두 저자는 국경뿐 아니라 계층, 젠더, 건강과 가족형태의 경계를 넘은 경험을 공유한다.",
+      "evidence_segment_id": "MIGRANTS-001",
+      "source": "저자의 위치"
+    },
+    {
+      "question": "GOH가 4기 유방암 진단을 받은 생일 직후의 나이는?",
+      "accepted_answers": ["50세", "50번째 생일"],
+      "answer_type": "number",
+      "explanation": "50번째 생일 직후 진단과 집중치료는 때 이른 불안정성과 관계망 재편을 경험하게 했다.",
+      "evidence_segment_id": "GOH-COHORT-001",
+      "source": "GOH 질병"
+    },
+    {
+      "question": "질병 뒤 GOH의 중심·주변 관계가 바뀐 현상을 가리키는 말은?",
+      "accepted_answers": ["관계망 재편", "재편된 관계망", "reorganized convoy"],
+      "answer_type": "short_phrase",
+      "explanation": "기존 중심 인물이 사라지고 여동생처럼 주변에 있던 인물이 핵심 지지원으로 이동했다.",
+      "evidence_segment_id": "GOH-ILLNESS-001",
+      "source": "지원 관계망"
+    },
+    {
+      "question": "RAS 가족의 결혼권을 전국적으로 보장한 2015년 미국 판례는?",
+      "accepted_answers": ["Obergefell v. Hodges", "오버거펠 대 호지스"],
+      "answer_type": "short_phrase",
+      "explanation": "판결은 모든 주의 동성커플에게 결혼권과 결혼 인정권을 보장하도록 했다.",
+      "evidence_segment_id": "RAS-LAW-001",
+      "source": "법적 인정"
+    },
+    {
+      "question": "개인의 생애가 가족과 중요한 타인의 생애에 얽혀 있다는 원리는?",
+      "accepted_answers": ["연결된 삶", "linked lives", "상호의존성"],
+      "answer_type": "term",
+      "explanation": "한 사람의 건강·선택·권리가 관계를 통해 다른 사람의 삶과 노화에도 작용한다.",
+      "evidence_segment_id": "THEMES-INTERDEPENDENCE-001",
+      "source": "생애과정 원리"
+    },
+    {
+      "question": "죽음이 전 생애 위험에서 주로 노년과 연결되게 한 역사적 변화는?",
+      "accepted_answers": ["인구학적 전환", "demographic transition"],
+      "answer_type": "term",
+      "explanation": "더 길고 예측 가능한 삶은 죽음과 유한성의 사회적 의미를 바꾸었다.",
+      "evidence_segment_id": "THEMES-HISTORY-001",
+      "source": "역사적 변화"
+    },
+    {
+      "question": "감염병 중심 사망에서 생활습관 관련 질환으로 이동한 변화는?",
+      "accepted_answers": ["역학적 전환", "epidemiological transition"],
+      "answer_type": "term",
+      "explanation": "이 전환은 젠더화된 사망과 만성질환 경험을 논의하는 배경이 된다.",
+      "evidence_segment_id": "THEMES-VANGUARDS-001",
+      "source": "질병 양상의 변화"
+    },
+    {
+      "question": "사회적 각본이 없는 새로운 생애 선택지를 먼저 살아내는 사람은?",
+      "accepted_answers": ["선구자", "vanguard"],
+      "answer_type": "term",
+      "explanation": "GOH의 여성 교육·직업경로와 RAS의 게이 입양가족은 최초 또는 유일한 사람의 경험을 보여 준다.",
+      "evidence_segment_id": "THEMES-VANGUARDS-001",
+      "source": "사회변화"
+    },
+    {
+      "question": "몸·관계·권리와 미래 계획이 여러 조건에 달린 노년의 상태는?",
+      "accepted_answers": ["불안정성", "precariousness"],
+      "answer_type": "term",
+      "explanation": "질병과 장애, 타인의 기능과 제도적 인정은 노년 계획에 예측불가능성을 더한다.",
+      "evidence_segment_id": "THEMES-PRECARIOUSNESS-001",
+      "source": "노년의 조건성"
+    },
+    {
+      "question": "기능을 개인 능력과 환경 요구 사이 관계로 보는 접근은?",
+      "accepted_answers": ["관계적 장애", "relational disability"],
+      "answer_type": "term",
+      "explanation": "WHO가 제시한 관계적 관점은 장애·비장애의 이분법과 남은 능력의 배제를 경계한다.",
+      "evidence_segment_id": "THEMES-PRECARIOUSNESS-001",
+      "source": "WHO 관점"
+    },
+    {
+      "question": "미래 코호트의 관계세계와 노화 선택지를 전망하는 연구 과제는?",
+      "accepted_answers": ["예견적 노년학", "anticipatory gerontology"],
+      "answer_type": "term",
+      "explanation": "현재의 인구학·정책·문화 변화를 바탕으로 미래 노화의 도전과 가능성을 지도화한다.",
+      "evidence_segment_id": "FINAL-001",
+      "source": "미래 연구"
+    }
+  ]
+}

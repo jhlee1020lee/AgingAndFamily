@@ -3,7 +3,6 @@ const path = require("path");
 const vm = require("vm");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
-const PILOT_SLUGS = ["levy-2009", "settersten-godlewski-2016"];
 const QUIZ_PAGES = ["quiz-ox", "quiz-short", "quiz-mcq"];
 
 function readText(filePath) {
@@ -91,7 +90,11 @@ function checkHomeRail(manifest, errors) {
     expect(titles[index]?.lang === (reading.language === "en" ? "en" : "ko"), `home rail: lang mismatch at ${reading.slug}`, errors);
   });
   expect(count(html, /class="rail-meta"/g) === manifest.readings.length, "home rail: compact metadata row count mismatch", errors);
-  expect(count(html, /aria-disabled="true"/g) >= manifest.readings.filter((reading) => reading.class_date > manifest.site.publish_cutoff_date).length, "home rail: locked items need aria-disabled", errors);
+  const cutoffDate = String(manifest.site.publish_cutoff_date || "").trim();
+  const lockedReadingCount = cutoffDate
+    ? manifest.readings.filter((reading) => reading.class_date > cutoffDate).length
+    : 0;
+  expect(count(html, /aria-disabled="true"/g) >= lockedReadingCount, "home rail: locked items need aria-disabled", errors);
 }
 
 function checkClientLogic(errors) {
@@ -145,12 +148,12 @@ function checkClientLogic(errors) {
   expect(source.includes("initInteractiveQuizzes();"), "client: quiz initializer is not called", errors);
 }
 
-function checkChatbotExcluded(errors) {
+function checkChatbotExcluded(readings, errors) {
   const files = [
     path.join(ROOT_DIR, "docs", "index.html"),
-    ...PILOT_SLUGS.flatMap((slug) => fs.readdirSync(path.join(ROOT_DIR, "docs", "readings", slug))
+    ...readings.flatMap((reading) => fs.readdirSync(path.join(ROOT_DIR, "docs", "readings", reading.slug))
       .filter((name) => name.endsWith(".html"))
-      .map((name) => path.join(ROOT_DIR, "docs", "readings", slug, name))),
+      .map((name) => path.join(ROOT_DIR, "docs", "readings", reading.slug, name))),
   ];
   files.forEach((filePath) => {
     expect(!/(?:chat\s*bot|chatbot|챗봇)/i.test(readText(filePath)), `chatbot exclusion failed: ${path.relative(ROOT_DIR, filePath)}`, errors);
@@ -159,7 +162,7 @@ function checkChatbotExcluded(errors) {
 
 function main() {
   const manifest = readJson(path.join(ROOT_DIR, "manifest", "readings.json"));
-  const readings = PILOT_SLUGS.map((slug) => manifest.readings.find((reading) => reading.slug === slug));
+  const readings = manifest.readings;
   const errors = [];
   readings.forEach((reading) => {
     QUIZ_PAGES.forEach((pageKey) => checkQuizPage(reading, pageKey, errors));
@@ -167,7 +170,7 @@ function main() {
   });
   checkHomeRail(manifest, errors);
   checkClientLogic(errors);
-  checkChatbotExcluded(errors);
+  checkChatbotExcluded(readings, errors);
   if (errors.length) throw new Error(`Interaction checks failed\n  ${errors.join("\n  ")}`);
   console.log(`PASS interactions (${readings.length * QUIZ_PAGES.length} quizzes, ${readings.length} prep pages, ${manifest.readings.length} rail items, chatbot excluded)`);
 }

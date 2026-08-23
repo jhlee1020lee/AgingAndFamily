@@ -1,0 +1,3426 @@
+{
+  "version": 2,
+  "reading_slug": "lin-et-al-2018",
+  "page": "translation",
+  "entries": [
+    {
+      "id": "lin-et-al-2018-tr-001",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 1,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-001-s01",
+          "status": "verified",
+          "ko_text": "**목적:** 이혼을 경험하는 노인이 점점 늘고 있지만, 50세 이후의 이혼(‘황혼이혼’이라 함)과 관련된 위험요인에 관해서는 알려진 바가 거의 없다.",
+          "source_text": "**Objectives:** Increasingly, older adults are experiencing divorce, yet little is known about the risk factors associated with divorce after age 50 (termed “gray divorce”)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-001-s02",
+          "status": "verified",
+          "ko_text": "본 연구는 생애과정 관점에 따라 노년기의 주요 전환점이 황혼이혼과 관련되는지를 살펴보았다.",
+          "source_text": "Guided by a life course perspective, our study examined whether key later life turning points are related to gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-002",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 2,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 2,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-002-s01",
+          "status": "verified",
+          "ko_text": "**방법:** 1998–2012년 Health and Retirement Study 자료를 사용하여 황혼이혼의 선행요인을 부부 단위의 전향적 이산시간 사건사 분석으로 검토했다.",
+          "source_text": "**Method:** We used data from the 1998–2012 Health and Retirement Study to conduct a prospective, couple-level discrete-time event history analysis of the antecedents of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-002-s02",
+          "status": "verified",
+          "ko_text": "모형에는 주요 전환점(빈 둥지, 은퇴, 건강 악화)과 인구학적 특성 및 경제자원을 포함했다.",
+          "source_text": "Our models incorporated key turning points (empty nest, retirement, and poor health) as well as demographic characteristics and economic resources."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-003",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 3,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-003-s01",
+          "status": "verified",
+          "ko_text": "**결과:** 예상과 달리 빈 둥지의 시작, 아내나 남편의 은퇴, 아내나 남편의 만성질환은 황혼이혼 가능성과 관련이 없었다.",
+          "source_text": "**Results:** Contrary to our expectations, the onset of an empty nest, the wife’s or husband’s retirement, and the wife’s or husband’s chronic conditions were unrelated to the likelihood of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-003-s02",
+          "status": "verified",
+          "ko_text": "오히려 젊은 성인의 이혼과 전통적으로 관련된 요인들이 노인에게도 중요했다.",
+          "source_text": "Rather, factors traditionally associated with divorce among younger adults were also salient for older adults."
+        },
+        {
+          "id": "lin-et-al-2018-tr-003-s03",
+          "status": "verified",
+          "ko_text": "결혼기간, 결혼의 질, 주택 소유, 자산은 황혼이혼 위험과 부적으로 관련되었다.",
+          "source_text": "Marital duration, marital quality, home ownership, and wealth were negatively related to the risk of gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-004",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 4,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 4,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-004-s01",
+          "status": "verified",
+          "ko_text": "**논의:** 황혼이혼은 사회경제적으로 불리한 부부에게서 특히 발생할 가능성이 크며, 이는 황혼이혼이 개인의 건강과 안녕에 미치는 결과에 관한 새로운 질문을 제기한다.",
+          "source_text": "**Discussion:** Gray divorce is especially likely to occur among couples who are socially and economically disadvantaged, raising new questions about the consequences of gray divorce for individual health and well-being."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-005",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 6,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 6,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-005-s01",
+          "status": "verified",
+          "ko_text": "만성질환—빈 둥지—결혼이력—결혼의 질—은퇴",
+          "source_text": "Chronic conditions—Empty nest—Marital biography—Marital quality—Retirement"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-006",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 7,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 7,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-006-s01",
+          "status": "verified",
+          "ko_text": "중년 및 노년 성인의 이혼이 증가하고 있다.",
+          "source_text": "Divorce among middle-aged and older adults is on the rise."
+        },
+        {
+          "id": "lin-et-al-2018-tr-006-s02",
+          "status": "verified",
+          "ko_text": "최근 연구에 따르면 50세 이상인 사람의 이혼을 가리키는 황혼이혼의 비율은 1990년부터 2010년 사이 두 배로 증가했다(Brown & Lin, 2012).",
+          "source_text": "A recent study shows that the rate of gray divorce, a term that refers to divorce among persons aged 50 and older, doubled between 1990 and 2010 (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-006-s03",
+          "status": "verified",
+          "ko_text": "황혼이혼율의 두 배 증가와 인구고령화가 결합하면서 오늘날 이혼을 경험하는 사람 가운데 생애 후반기에 있는 사람의 비중이 커졌다. 1990년에는 이혼하는 사람 10명 중 1명 미만이 50세 이상이었다. 2010년에는 그 비중이 4명 중 1명을 넘어섰다(Brown & Lin, 2012).",
+          "source_text": "The doubling of the gray divorce rate coupled with the aging of the population means that a larger share of individuals experiencing divorce today are in the second half of life. In 1990, fewer than 1 in 10 people getting divorced were aged 50 or older. By 2010, the share exceeded one in four (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-006-s04",
+          "status": "verified",
+          "ko_text": "이제 황혼이혼은 전체 이혼에서 상당한 비중을 차지한다.",
+          "source_text": "Gray divorce now constitutes a sizeable share of all divorces."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-007",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 8,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-007-s01",
+          "status": "verified",
+          "ko_text": "황혼이혼율의 급격한 증가에도 불구하고 노년기 이혼의 선행요인에 관해서는 알려진 바가 거의 없다(Wu & Schimmele, 2007). 1980년대와 1990년대 초에 발표된 소수의 연구가 노인의 이혼과 관련된 요인을 살펴보았지만, 이 연구들은 황혼이혼의 증가보다 앞서 이루어졌기 때문에 이제는 시의성이 떨어진다(Berardo, 1982; Hammond & Muller, 1992; Uhlenberg & Myers, 1981). 10여 년 전 AARP는 40세 이후 이혼에 관한 횡단연구를 수행했지만 이혼 전 특성은 포착하지 못했다(Montenegro, 2004).",
+          "source_text": "Despite the rapid growth in the gray divorce rate, little is known about the antecedents of divorce in later life (Wu & Schimmele, 2007). A handful of studies published in the 1980s and early 1990s examined the correlates of divorce among older adults, but these studies are now dated because they preceded the increase in gray divorce (Berardo, 1982; Hammond & Muller, 1992; Uhlenberg & Myers, 1981). Over a decade ago, the AARP conducted a cross-sectional study of divorce after age 40, although they did not capture pre-divorce characteristics (Montenegro, 2004)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-007-s02",
+          "status": "verified",
+          "ko_text": "보다 최근에 Brown과 Lin(2012)은 지난 수십 년간 황혼이혼율이 상승했음을 기록했으나, 기본적인 횡단면 인구총조사 자료를 사용한 분석이어서 황혼이혼 관련 요인을 제한적으로만 평가했다.",
+          "source_text": "More recently, Brown and Lin (2012) documented the rise in the gray divorce rate over the past few decades, yet their analysis provided only a limited assessment of the correlates of gray divorce using basic cross-sectional Census data."
+        },
+        {
+          "id": "lin-et-al-2018-tr-007-s03",
+          "status": "verified",
+          "ko_text": "또한 Karraker와 Latham(2015)은 건강 악화가 황혼이혼과 관련되는지를 살펴보았지만, 연구 시작 시 신체적으로 건강했던 선별된 부부 표본에 의존했으므로 그 결과를 황혼이혼 위험에 놓인 모든 기혼 노인에게 일반화할 수 없다.",
+          "source_text": "Also, Karraker and Latham (2015) examined whether a health decline is related to gray divorce, but their approach relied on a select sample of couples who were physically healthy at the outset, and thus their findings are not generalizable to all married older adults at risk of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-007-s04",
+          "status": "verified",
+          "ko_text": "요컨대 연구는 황혼이혼의 위험요인을 규명하지 못했으며, 황혼이혼율의 가속화를 고려하면 이는 놀라운 공백이다.",
+          "source_text": "In short, research has not identified the risk factors for gray divorce, a startling omission given the acceleration in the gray divorce rate."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-008",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 9,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 9,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-008-s01",
+          "status": "verified",
+          "ko_text": "본 연구는 1998–2012년 Health and Retirement Study(HRS)의 전향적 종단자료를 사용하여 배우자 중 적어도 한 명이 50세 이상인 기혼부부의 이혼과 관련된 요인을 살펴본다.",
+          "source_text": "We use prospective, longitudinal data from the 1998–2012 Health and Retirement Study (HRS) to examine the factors associated with divorce among married couples in which at least one spouse is aged 50 or older."
+        },
+        {
+          "id": "lin-et-al-2018-tr-008-s02",
+          "status": "verified",
+          "ko_text": "생애과정 관점에 따라 중·노년기에 이혼 위험을 높일 수 있는 세 가지 주요 전환점, 즉 빈 둥지, 은퇴, 건강 악화에 초점을 맞춘다.",
+          "source_text": "Guided by the life course perspective, we focus on three key turning points in the mid- and later-life course that could heighten the risk of divorce: an empty nest, retirement, and failing health."
+        },
+        {
+          "id": "lin-et-al-2018-tr-008-s03",
+          "status": "verified",
+          "ko_text": "다른 인구학적·경제적 특성을 통제한 뒤에도 이러한 전환점이 황혼이혼과 관련되는지를 검토한다.",
+          "source_text": "We examine whether these turning points are associated with gray divorce net of other demographic and economic characteristics."
+        },
+        {
+          "id": "lin-et-al-2018-tr-008-s04",
+          "status": "verified",
+          "ko_text": "HRS는 대규모 기혼부부 표본에 관한 시간가변 정보를 포함하므로 연구 목적에 이상적이다.",
+          "source_text": "The HRS is ideal for our purposes because it includes time-varying information on a large sample of married couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-008-s05",
+          "status": "verified",
+          "ko_text": "실제로 HRS는 부부 양쪽의 자료를 제공하여 아내와 남편 모두의 특성과 경험을 포함하는 부부 단위 모형화를 가능하게 한다.",
+          "source_text": "Indeed, the HRS has data for both spouses, permitting a couple-level modeling approach that incorporates the characteristics and experiences of both the wife and the husband."
+        },
+        {
+          "id": "lin-et-al-2018-tr-008-s06",
+          "status": "verified",
+          "ko_text": "본 연구 결과는 중·노년기 부부의 이혼 위험과 관련된 요인을 밝힘으로써 황혼이혼에 관한 새로운 통찰을 제공할 것이다.",
+          "source_text": "The findings from our study will yield new insights on gray divorce by uncovering the factors related to a couple’s risk of divorce during mid and later life."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-009",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 11,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-009-s01",
+          "status": "verified",
+          "ko_text": "1990년에는 50세 이상 기혼자 1,000명 가운데 약 5명이 지난 1년 사이 이혼을 경험했다. 2010년에는 그 수가 1,000명당 10명으로 두 배가 되었다(Brown & Lin, 2012).",
+          "source_text": "In 1990, about 5 in 1,000 married persons aged 50 and older experienced a divorce in the past year. By 2010, the number doubled to 10 per 1,000 (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-009-s02",
+          "status": "verified",
+          "ko_text": "비교하면 중년(50–64세) 성인의 이혼율은 1990년부터 2010년 사이 1,000명당 7명에서 13명으로 증가했다.",
+          "source_text": "By comparison, for middle-aged (50–64) adults, the divorce rate rose from 7 to 13 per 1,000 between 1990 and 2010."
+        },
+        {
+          "id": "lin-et-al-2018-tr-009-s03",
+          "status": "verified",
+          "ko_text": "노년(65세 이상) 성인은 절대 수준이 상당히 낮았지만, 이 연령집단의 이혼율은 이 20년 동안 1,000명당 1.8명에서 4.8명으로 거의 세 배가 되었다.",
+          "source_text": "For older (65 and older) adults the absolute levels were rather low but the growth over the two decade period reflected nearly a tripling (from 1.8 to 4.8 per 1,000) in the divorce rate for this age group."
+        },
+        {
+          "id": "lin-et-al-2018-tr-009-s04",
+          "status": "verified",
+          "ko_text": "더 넓은 맥락에서 보면 이러한 양상은 두드러진다. 이 20년 동안 전체 이혼율은 상당히 안정적이었던 반면 황혼이혼율은 상승했다(Kennedy & Ruggles, 2014).",
+          "source_text": "These patterns are striking when considered in terms of the broader context: the gray divorce rate climbed whereas the overall divorce rate remained pretty stable during this 20-year period (Kennedy & Ruggles, 2014)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-010",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 12,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-010-s01",
+          "status": "verified",
+          "ko_text": "황혼이혼의 혁명은 예상 밖의 일이 아니었다. 30여 년 전부터 연구자들은 노인의 이혼이 증가하는 추세가 될 것이라고 주장했다(Berardo, 1982; Hammond & Muller, 1992).",
+          "source_text": "The gray divorce revolution was not unexpected. Over 30 years ago, researchers argued that older adult divorce would be a growing trend (Berardo, 1982; Hammond & Muller, 1992)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s02",
+          "status": "verified",
+          "ko_text": "Uhlenberg와 Myers(1981)는 노인의 이혼율이 상승할 몇 가지 이유를 제시했다.",
+          "source_text": "Uhlenberg and Myers (1981) identified several reasons why the divorce rate for older adults would rise."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s03",
+          "status": "verified",
+          "ko_text": "첫째, 생애과정의 앞선 단계에서 경험한 이혼을 반영하여 고차 결혼에 있는 노인의 비중이 커지고 있다.",
+          "source_text": "First, a growing share of older adults is in a higher order marriage, reflecting divorce experienced at earlier stages of the life course."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s04",
+          "status": "verified",
+          "ko_text": "오늘날 노인은 젊은 성인기에 1970년대의 이혼 혁명을 경험한 세대다.",
+          "source_text": "Today’s older adults are the generation that experienced the divorce revolution of the 1970s as young adults."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s05",
+          "status": "verified",
+          "ko_text": "이들 이혼자 가운데 많은 사람이 결국 재혼했으며, 재혼은 초혼보다 이혼으로 끝날 가능성이 훨씬 크다.",
+          "source_text": "Many of these divorcees eventually remarried, and remarriages are considerably more likely to end in divorce than are first marriages."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s06",
+          "status": "verified",
+          "ko_text": "둘째, 미국에서 이혼은 흔하므로, 노인 자신이나 주변 사람이 이혼을 경험함에 따라 앞으로도 노인은 이혼을 더 수용할 것이다.",
+          "source_text": "Second, divorce in the United States is common, and thus older adults will continue to be more accepting of divorce in the future as either they or people around them experience divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s07",
+          "status": "verified",
+          "ko_text": "셋째, 아내의 취업 증가는 여성이 결혼 밖에서도 스스로를 부양할 경제적 자율성을 제공하므로 이혼을 실행 가능한 선택으로 만든다.",
+          "source_text": "Third, rising employment among wives makes divorce a viable option because it provides women with the economic autonomy to support themselves outside of marriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-010-s08",
+          "status": "verified",
+          "ko_text": "마지막으로 기대수명의 증가는 궁극적으로 결혼이 사망으로 끝날 가능성을 낮추고 이혼 위험에 노출되는 기간을 늘린다(Uhlenberg & Myers, 1981).",
+          "source_text": "Finally, longer life expectancies ultimately lower the odds that marriages end through death and lengthen the duration of exposure to the risk of divorce (Uhlenberg & Myers, 1981)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-011",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 14,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-011-s01",
+          "status": "verified",
+          "ko_text": "황혼이혼에 앞서 노년기를 고유하게 특징짓는 생애과정 경험이 나타날 수 있다.",
+          "source_text": "Gray divorce may be presaged by life course experiences that uniquely characterize older adulthood."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s02",
+          "status": "verified",
+          "ko_text": "빈 둥지, 은퇴, 건강 악화는 노년기의 규범적 사건으로서 부부의 결혼생활에서 ‘전환점’(Elder, Johnson, & Crosnoe, 2003)으로 작용하여 궁극적으로 결혼 안정성을 약화시킬 수 있다.",
+          "source_text": "An empty nest, retirement, or failing health are normative events in later life that may operate as “turning points” (Elder, Johnson, & Crosnoe, 2003) in a couple’s marriage and ultimately undermine marital stability."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s03",
+          "status": "verified",
+          "ko_text": "생애 중년기에는 대부분의 기혼부부가 자녀를 양육한다.",
+          "source_text": "During the middle years of life, most married couples are rearing children."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s04",
+          "status": "verified",
+          "ko_text": "빈 둥지는 결혼생활의 새로운 장을 연다.",
+          "source_text": "An empty nest opens a new chapter in a marriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s05",
+          "status": "verified",
+          "ko_text": "한편으로 자녀가 독립하는 단계는 부부의 가사 부담이 줄어 함께 보낼 시간이 늘어남을 뜻한다.",
+          "source_text": "On the one hand, the offspring launching phase implies that there are fewer household burdens on couples, freeing them to spend more time together."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s06",
+          "status": "verified",
+          "ko_text": "빈 둥지로 전환한 뒤 결혼만족도는 대체로 소폭 상승한다(Gorchoff, John, & Helson, 2008).",
+          "source_text": "There tends to be a modest uptick in marital satisfaction following the transition to an empty nest (Gorchoff, John, & Helson, 2008)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s07",
+          "status": "verified",
+          "ko_text": "다른 한편으로 동거 자녀가 없어지면 이혼을 가로막던 잠재적 장벽도 제거된다.",
+          "source_text": "On the other hand, the absence of resident children removes a potential barrier to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s08",
+          "status": "verified",
+          "ko_text": "어떤 부부에게는 자녀가 관계를 붙들어 두는 접착제다.",
+          "source_text": "Children are the glue holding some couples together."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s09",
+          "status": "verified",
+          "ko_text": "빈 둥지는 동거 자녀라는 완충장치가 사라지면서 드러나는 부부관계의 긴장이나 거리를 적나라하게 보여 줄 수 있다.",
+          "source_text": "An empty nest can lay bare the couple’s relationship strains or distance that emerges without the buffer of resident children."
+        },
+        {
+          "id": "lin-et-al-2018-tr-011-s10",
+          "status": "verified",
+          "ko_text": "한 연구는 빈 둥지가 중년층의 더 높은 이혼 위험과 관련된다고 밝혔다(Hiedemann, Suhomlinova & O’Rand, 1998).",
+          "source_text": "One study found that an empty nest is related to a higher risk of divorce among the middle aged (Hiedemann, Suhomlinova & O’Rand, 1998)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-012",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 15,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 15,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-012-s01",
+          "status": "verified",
+          "ko_text": "은퇴하면 부부 활동에 쓸 시간이 늘고 부부관계로 파급될 수 있는 직무 스트레스는 줄어든다.",
+          "source_text": "Retirement allows more time for couple activities and reduces work-related stress that can spill over into the marital relationship."
+        },
+        {
+          "id": "lin-et-al-2018-tr-012-s02",
+          "status": "verified",
+          "ko_text": "은퇴는 전통적으로 부부의 황금기를 나타내는 표지이지만, 이 경험 역시 빈 둥지와 매우 비슷하게 작용하는 전환점이 될 수 있다.",
+          "source_text": "It is a traditional marker of a couple’s golden years, but again the experience can be a turning point that operates much like an empty nest."
+        },
+        {
+          "id": "lin-et-al-2018-tr-012-s03",
+          "status": "verified",
+          "ko_text": "관계가 견고한 부부에게 은퇴는 해롭지 않거나 오히려 유익할 수 있다(Wickrama, O’Neal, & Lorenz, 2013).",
+          "source_text": "For couples with a strong relationship, retirement could be benign or even advantageous (Wickrama, O’Neal, & Lorenz, 2013)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-012-s04",
+          "status": "verified",
+          "ko_text": "공통점이 거의 없거나 서로 멀어진 배우자들은 은퇴를 계기로 결혼생활을 재평가하고 관계를 끝내기로 할 수 있다(Canham, Mahmood, Stott, Sixsmith, & O’Rourke, 2014).",
+          "source_text": "Spouses with little in common or who have grown apart may reassess their marriages upon retirement and decide to call it quits (Canham, Mahmood, Stott, Sixsmith, & O’Rourke, 2014)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-013",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 16,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 16,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-013-s01",
+          "status": "verified",
+          "ko_text": "건강문제는 연령과 함께 증가한다.",
+          "source_text": "Health problems rise with age."
+        },
+        {
+          "id": "lin-et-al-2018-tr-013-s02",
+          "status": "verified",
+          "ko_text": "건강 악화는 배우자가 새로운 현실에 적응하는 과정에서 부부관계의 역학을 근본적으로 바꿀 수 있다.",
+          "source_text": "Declining health can fundamentally alter marital dynamics as spouses adjust to a new reality."
+        },
+        {
+          "id": "lin-et-al-2018-tr-013-s03",
+          "status": "verified",
+          "ko_text": "건강 악화는 결혼의 질에 파급효과를 미쳐 결혼 안정성을 낮추고 이혼 가능성을 높일 수 있다(Yorgason, Booth, & Johnson, 2008).",
+          "source_text": "Poor health may have spillover effects on marital quality, reducing marital stability, and heightening the odds of divorce (Yorgason, Booth, & Johnson, 2008)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-013-s04",
+          "status": "verified",
+          "ko_text": "또한 배우자는 주된 돌봄제공자이며, 돌봄 스트레스는 흔히 부부갈등을 일으켜(Booth & Johnson, 1994) 이혼 가능성을 높일 수 있다.",
+          "source_text": "Additionally, spouses are the primary caregiver, and caregiving stress often causes marital tension (Booth & Johnson, 1994) which could increase the chances of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-013-s05",
+          "status": "verified",
+          "ko_text": "건강한 중년부부 가운데 아내에게 질병이 시작되는 것은 이혼과 정적으로 관련된다.",
+          "source_text": "Among healthy middle-aged couples, the onset of illness for the wife is positively associated with divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-013-s06",
+          "status": "verified",
+          "ko_text": "그러나 남편의 질병 시작은 이혼 위험과 관련이 없다(Karraker & Latham, 2015).",
+          "source_text": "Nonetheless, onset of illness for the husband is unrelated to the risk of divorce (Karraker & Latham, 2015)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-014",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 17,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 17,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-014-s01",
+          "status": "verified",
+          "ko_text": "이러한 생애과정 경험은 시간이 흐르면서 대체로 낮아지고 이혼과 부적으로 관련되는 결혼의 질을 통해 작용할 가능성이 있다(Karraker & Latham, 2015; Umberson, Williams, Powers, Chen, & Campbell, 2005).",
+          "source_text": "These life course experiences probably operate through marital quality, which tends to decline over time and is negatively associated with divorce (Karraker & Latham, 2015; Umberson, Williams, Powers, Chen, & Campbell, 2005)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-014-s02",
+          "status": "verified",
+          "ko_text": "질 높은 결혼은 이러한 생애과정 경험에 덜 취약하여 변화에 대한 완충장치를 제공할 수 있다.",
+          "source_text": "High-quality marriages may be less vulnerable to these life course experiences, providing a buffer against change."
+        },
+        {
+          "id": "lin-et-al-2018-tr-014-s03",
+          "status": "verified",
+          "ko_text": "실제로 이 모든 전환은 배우자가 서로 더 자주 접촉하게 하는데, 결혼의 질이 높은 부부에게는 바람직해 보이지만 질이 낮은 결혼에는 잠재적으로 혼란을 일으킬 수 있다.",
+          "source_text": "In fact, all of these transitions bring spouses into closer contact with one another, which seemingly would be desirable for those couples with high marital quality, but potentially disruptive for those in lower quality marriages."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-015",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 19,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 19,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-015-s01",
+          "status": "verified",
+          "ko_text": "많은 노인에게 노년기 생애과정을 상징하는 주요 전환점 외에도 일반 인구의 이혼과 관련된 여러 요인이 있으며(Amato, 2010; White, 1990), 따라서 본 연구는 이 요인들이 황혼이혼에도 관련되는지 살펴본다.",
+          "source_text": "In addition to the key life turning points that are emblematic of the later life course for many older adults, several other factors are related to divorce in the general population (Amato, 2010; White, 1990) and thus we examine their relevance for gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-015-s02",
+          "status": "verified",
+          "ko_text": "이 요인들은 결혼 생애과정을 더 폭넓게 특징짓고, 그런 점에서 생애과정 관점의 주요 주제와 부합한다(Elder, 1994; Spitze & South, 1985).",
+          "source_text": "These factors characterize the marital life course more broadly and as such they align with the main themes of the life course perspective (Elder, 1994; Spitze & South, 1985)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-016",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 21,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-016-s01",
+          "status": "verified",
+          "ko_text": "생애과정 관점에 따르면 현재의 사건과 경험은 앞선 전환과 연결된다(Elder, 1994; Uhlenberg, 1996).",
+          "source_text": "According to the life course perspective, current events and experiences are linked to earlier transitions (Elder, 1994; Uhlenberg, 1996)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s02",
+          "status": "verified",
+          "ko_text": "결혼차수와 결혼기간으로 포착한 결혼이력은 황혼이혼 위험을 이해하는 데 필수적이다.",
+          "source_text": "The marital biography, captured by marriage order and marriage duration, is integral to understanding the risk of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s03",
+          "status": "verified",
+          "ko_text": "황혼이혼율은 초혼인 사람보다 재혼한 사람에게서 2.5배 높다.",
+          "source_text": "The gray divorce rate is 2.5 times higher for those in a remarriage than a first marriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s04",
+          "status": "verified",
+          "ko_text": "황혼이혼을 경험한 사람의 약 절반은 재혼 중이었다.",
+          "source_text": "Roughly half of those who experience a gray divorce were in a remarriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s05",
+          "status": "verified",
+          "ko_text": "반대로 결혼상태를 유지한 사람의 80%는 초혼 중이었다.",
+          "source_text": "In contrast, 80% of those who remain married are in a first marriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s06",
+          "status": "verified",
+          "ko_text": "결혼차수에 따른 차이는 부분적으로 결혼기간별 이혼 위험의 차이를 반영한다.",
+          "source_text": "The marriage order differential in part reflects variation in the risk of divorce by marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s07",
+          "status": "verified",
+          "ko_text": "결혼기간이 짧은 결혼은 긴 결혼보다 황혼이혼 위험이 높고, 짧은 결혼에는 재혼이 불균형하게 많이 포함된다(Brown & Lin, 2012).",
+          "source_text": "Shorter marriages are at higher risk of gray divorce than longer marriages and shorter marriages are disproportionately remarriages (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s08",
+          "status": "verified",
+          "ko_text": "또한 십대에 결혼하는 것은 잘 확립된 이혼 위험요인이다. 1970년대와 1980년대에 결혼한 여성 가운데 십대에 결혼한 사람은 더 늦은 나이에 결혼한 사람보다 이혼 위험이 두 배 높았다(Martin & Bumpass, 1989).",
+          "source_text": "Additionally, marrying as a teenager is a well-established risk factor for divorce. Among women who married during the 1970s and 1980s, the risk of divorce was twice as high for those who married as teens versus at later ages (Martin & Bumpass, 1989)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s09",
+          "status": "verified",
+          "ko_text": "따라서 십대 결혼은 오늘날 중년 및 노년 성인의 황혼이혼 승산 증가와 관련될 수 있다.",
+          "source_text": "Thus, having married as a teen could be related to a heightened odds of gray divorce among today’s middle-aged and older adults."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s10",
+          "status": "verified",
+          "ko_text": "마지막으로 재혼가족은 특히 해체될 가능성이 크다(Sweeney, 2010).",
+          "source_text": "Finally, married stepfamilies are especially likely to disrupt (Sweeney, 2010)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s11",
+          "status": "verified",
+          "ko_text": "재혼가족의 핵심 특징인 비공유 자녀는 흔히 기혼부부에게 결혼을 불안정하게 할 수 있는 중대한 관계상의 어려움을 일으킨다(Hetherington & Jodl, 1994).",
+          "source_text": "Non-shared children, the defining feature of a stepfamily, often create significant relationship challenges for married couples that can be destabilizing (Hetherington & Jodl, 1994)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-016-s12",
+          "status": "verified",
+          "ko_text": "재혼한 사람의 황혼이혼 위험이 높다는 점을 고려하여(재혼 가운데 전부는 아니지만 많은 경우 비공유 자녀가 있을 수 있다), 본 연구는 비공유 자녀가 황혼이혼 위험과 독립적으로 정적 관련을 보이는지 검토한다.",
+          "source_text": "Given the high risk of gray divorce for those in remarriages (many but not all of which could involve non-shared children), we consider whether non-shared children has an independent positive association with risk of gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-017",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 23,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-017-s01",
+          "status": "verified",
+          "ko_text": "개인은 사회적 상황이 제공하는 기회와 제약 안에서 자신이 내리는 선택을 통해 자기 생애궤적을 구성한다(Elder, 1994).",
+          "source_text": "Individuals construct their own life trajectories through the choices they make within the opportunities and constraints of social circumstance (Elder, 1994)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-017-s02",
+          "status": "verified",
+          "ko_text": "평생 지속되는 제도로서 결혼이라는 규범은 약화되고 있는 듯하다.",
+          "source_text": "Marriage as a lifelong institution appears to be a weakening norm."
+        },
+        {
+          "id": "lin-et-al-2018-tr-017-s03",
+          "status": "verified",
+          "ko_text": "한두 세대 전이라면 부부는 이혼하기보다 이처럼 껍데기만 남은 결혼을 유지했을 수도 있다.",
+          "source_text": "A generation or two ago, couples might have remained in these empty shell marriages rather than get divorced."
+        },
+        {
+          "id": "lin-et-al-2018-tr-017-s04",
+          "status": "verified",
+          "ko_text": "오늘날에는 개인화된 결혼이라는 규범과 결혼과 개인적 성취 사이의 연결이 이혼의 낙인을 줄였다.",
+          "source_text": "Nowadays, our norm of individualized marriage and the linkage between marriage and personal fulfillment has reduced the stigma of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-017-s05",
+          "status": "verified",
+          "ko_text": "자기성취, 의사소통, 유연한 역할에 대한 강조는 결혼에 높은 가치를 부여한다는 신호인 동시에, 질 낮은 결혼에 대한 해결책으로 이혼을 받아들일 수 있음을 시사한다(Cherlin, 2009).",
+          "source_text": "The emphasis on self-fulfillment, communication, and flexible roles signals the high value placed on marriage and suggests that divorce is an acceptable solution to a lower quality marriage (Cherlin, 2009)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-018",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 25,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-018-s01",
+          "status": "verified",
+          "ko_text": "부부의 삶은 상호의존적으로 연결되어 있다.",
+          "source_text": "Couples’ lives are linked interdependently."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s02",
+          "status": "verified",
+          "ko_text": "연령·인종·교육이 서로 다른 배우자는 가치관이 다를 수 있으므로 이혼 위험이 더 크다.",
+          "source_text": "Spouses who differ by age, race, or education may share different values and thus are at greater risk of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s03",
+          "status": "verified",
+          "ko_text": "선행연구는 연령과 대학교육이 황혼이혼과 부적으로 관련되고 흑인은 백인과 히스패닉보다 황혼이혼 위험이 높음을 보여 주었지만(Brown & Lin, 2012), 배우자 동질혼이 황혼이혼 위험과 어떻게 관련되는지에 관한 경험적 증거는 제한적이다.",
+          "source_text": "Although prior studies have shown that age and a college education are negatively associated with gray divorce and Blacks are at higher risk of gray divorce than Whites and Hispanics (Brown & Lin, 2012), empirical evidence on how spousal homogamy relates to the risk of gray divorce is limited."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s04",
+          "status": "verified",
+          "ko_text": "Karraker와 Latham(2015)은 남편이 아내보다 훨씬 나이가 많은 경우 황혼이혼을 경험할 가능성이 더 크다고 밝혔다.",
+          "source_text": "Karraker and Latham (2015) find that husbands who are much older than their wives are more likely to experience a gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s05",
+          "status": "verified",
+          "ko_text": "인종과 교육에서의 배우자 이질혼은 황혼이혼과 관련이 없다(Wilson & Waddoups, 2002).",
+          "source_text": "Spousal heterogamy in race and education is unrelated to gray divorce (Wilson & Waddoups, 2002)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s06",
+          "status": "verified",
+          "ko_text": "또한 가구자산과 주택 소유는 이혼 승산 감소와 관련되는 두 요인이지만, 지금까지의 제한된 증거는 황혼이혼과의 유의한 관련을 보여 주지 않는다(Karraker & Latham, 2015).",
+          "source_text": "Additionally, household assets and home ownership are two factors that are related to lower odds of divorce but the limited evidence to date does not point to significant associations with gray divorce (Karraker & Latham, 2015)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s07",
+          "status": "verified",
+          "ko_text": "이러한 지표와 황혼이혼 사이에 관련이 나타나지 않은 것은 신체적으로 건강한 부부에서 질병 시작이 황혼이혼에 미치는 역할에 초점을 둔 Karraker와 Latham(2015)의 선별 표본에서 비롯된 결과일 수 있다.",
+          "source_text": "The absence of associations between these indicators and gray divorce may be an artifact of the select sample examined by Karraker and Latham (2015), whose focus was on the role of illness onset for gray divorce among physically healthy couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-018-s08",
+          "status": "verified",
+          "ko_text": "본 연구는 황혼이혼 위험에 놓인 기혼부부의 전국 대표 표본에서 이러한 요인을 검토한다.",
+          "source_text": "We examine these factors among a nationally representative sample of married couples at risk of gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-019",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 27,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-019-s01",
+          "status": "verified",
+          "ko_text": "본 연구는 빈 둥지, 은퇴, 건강 악화를 포함한 주요 생애사건이 표준적인 이혼 예측요인(즉, 결혼이력, 결혼의 질, 배우자 동질혼, 경제자원)을 통제한 뒤에도 황혼이혼 위험과 어떻게 관련되는지를 살펴보도록 설계되었다.",
+          "source_text": "The current investigation is designed to examine how key life events, including empty nest, retirement, and poor health, are related to the risk of gray divorce net of the standard divorce predictors (i.e., marital biography, marital quality, spousal homogamy, and economic resources)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-019-s02",
+          "status": "verified",
+          "ko_text": "Brown과 Lin(2012)의 횡단면 증거를 고려하면 전통적인 이혼 예측요인 가운데 다수가 황혼이혼에도 비슷하게 작용할 것으로 예상하지만, 이러한 통상적 요인 외에도 노년기로의 전환을 대표하며 황혼이혼 위험에 중요한 역할을 할 가능성이 큰 고유한 생애사건이 있다.",
+          "source_text": "We anticipate that many of the traditional predictors of divorce operate similarly for gray divorce given the cross-sectional evidence from Brown and Lin (2012), but above and beyond these usual suspects there are unique life events that epitomize the transition to older adulthood and likely play a significant role in the risk of gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-020",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-020-s01",
+          "status": "verified",
+          "ko_text": "노년기를 고유하게 특징짓는 세 가지 전환점과 황혼이혼의 관련성을 살펴봄으로써 본 연구는 생애과정 관점의 핵심 원칙에 부합한다.",
+          "source_text": "By examining how gray divorce is related to three turning points that uniquely characterize older adulthood, our study aligns with core tenets of the life course perspective."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s02",
+          "status": "verified",
+          "ko_text": "또한 결혼차수, 결혼기간, 십대 결혼, 비공유 자녀를 포함하는 결혼이력이 황혼이혼 가능성과 어떻게 관련되는지도 조사한다.",
+          "source_text": "We also investigate how the marital biography, including marriage order, marital duration, marrying as a teenager, and having non-shared children, is associated with the likelihood of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s03",
+          "status": "verified",
+          "ko_text": "과거에 이혼했거나 결혼기간이 짧은 사람은 계속 결혼상태를 유지했거나 결혼기간이 긴 사람보다 다시 이혼할 가능성이 크다.",
+          "source_text": "Those who have divorced previously or are in a marriage of shorter duration are more likely to experience divorce again compared with those who are continuously married or in a marriage of longer duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s04",
+          "status": "verified",
+          "ko_text": "마찬가지로 십대 결혼과 비공유 자녀는 잘 알려진 이혼 예측요인이다(Amato, 2010).",
+          "source_text": "Similarly, teenage marriage and non-shared children are well-known predictors of divorce (Amato, 2010)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s05",
+          "status": "verified",
+          "ko_text": "본 연구는 결혼차수와 결혼기간이 황혼이혼 가능성에 미치는 주효과와 상호작용효과를 모두 검토한다.",
+          "source_text": "We consider both the main and interactive effects of marriage order and marital duration on the likelihood of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s06",
+          "status": "verified",
+          "ko_text": "결혼차수와 황혼이혼의 관련성은 결혼기간이 길어질수록 약해질 수 있다.",
+          "source_text": "The association between marriage order and gray divorce may weaken with longer marital durations."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s07",
+          "status": "verified",
+          "ko_text": "결혼차수는 주요 생애사건(즉, 빈 둥지, 은퇴, 건강 악화)이 이혼과 관련되는 방식의 조건이 될 수도 있다.",
+          "source_text": "Marriage order also may condition how the key life events (i.e., empty nest, retirement, and poor health) are related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-020-s08",
+          "status": "verified",
+          "ko_text": "고차 결혼을 한 사람은 초혼인 사람보다 이러한 잠재적 스트레스 전환에 대처할 수 있도록 결혼에 투자한 시간이 짧았으므로, 이 사건들은 초혼보다 재혼 중인 사람에게 더 큰 영향을 미칠 수 있다.",
+          "source_text": "These events could be more consequential for those in remarriages than first marriages because people in higher order marriages have had less time to invest in their marriages to cope with these potentially stressful turning points than people in first marriages."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-021",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 29,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-021-s01",
+          "status": "verified",
+          "ko_text": "또한 인간 행위주체성이라는 생애과정 원칙에 따라, 질이 낮은 결혼 중인 오늘날의 중년 및 노년 성인이 이혼할 가능성이 더 큰지를 살펴보고 주요 생애사건과 황혼이혼 사이의 관련성이 결혼의 질에 의해 조절되는지도 검토한다.",
+          "source_text": "Additionally, consistent with the life course tenet of human agency, we examine whether today’s middle-aged and older adults who are in a lower quality marriage are more likely to divorce and we address whether the associations between key life events and gray divorce are moderated by marital quality."
+        },
+        {
+          "id": "lin-et-al-2018-tr-021-s02",
+          "status": "verified",
+          "ko_text": "마지막으로 생애과정 관점에 맞추어 배우자들의 생애과정 궤적 사이의 상호의존성을 인식한다.",
+          "source_text": "Finally, in line with the life course perspective, we recognize the interdependence between the life course trajectories of spouses."
+        },
+        {
+          "id": "lin-et-al-2018-tr-021-s03",
+          "status": "verified",
+          "ko_text": "이혼을 요구하는 사람이 배우자 중 한 명뿐일 수 있지만, 연령·인종·교육과 공동 경제자원 등 배우자 양쪽의 특성이 궁극적으로 이혼 가능성을 형성한다.",
+          "source_text": "Although only one spouse may seek a divorce, the characteristics of both spouses, such as age, race, education, and shared economic resources, ultimately shape the likelihood of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-021-s04",
+          "status": "verified",
+          "ko_text": "요컨대 본 연구는 남편과 아내 모두의 생애과정 사건과 특성을 포착하여 황혼이혼과 관련된 위험요인을 부부 단위에서 전향적으로 검토함으로써 소수의 선행연구를 넘어선다.",
+          "source_text": "In short, our study goes beyond the handful of prior studies by capturing the life course events and characteristics of both husbands and wives to perform a couple-level, prospective examination of the risk factors associated with gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-022",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 31,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-022-s01",
+          "status": "verified",
+          "ko_text": "분석자료는 1960년 이전에 태어난 미국인과 그 배우자로 이루어진 전국 대표 연속 코호트의 종단연구인 1998–2012년 HRS에서 얻었다.",
+          "source_text": "Data used in the analysis came from the 1998–2012 HRS, a longitudinal study of a nationally representative, continuous cohort of individuals born before 1960 and their spouses in the United States."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s02",
+          "status": "verified",
+          "ko_text": "HRS는 빈 둥지, 은퇴, 건강상태, 인구사회학적 특성을 포함한 다양한 주제를 다룬다.",
+          "source_text": "The HRS covers a range of topics, including empty nest, retirement, health conditions, and sociodemographic characteristics."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s03",
+          "status": "verified",
+          "ko_text": "연구기간의 결합 해체에 관한 상세 정보와 완전한 결혼이력을 이용할 수 있어 본 연구 목적에 이상적인 자료다.",
+          "source_text": "Complete marital histories along with detailed information about union dissolution during the study period are available, making the data ideal for the purposes of this study."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s04",
+          "status": "verified",
+          "ko_text": "HRS는 1931–1941년 출생자 코호트(HRS 코호트)를 대상으로 1992년에 면접을 시작했으며 이후 격년으로 재면접을 실시했다. 1998년에는 HRS 코호트에 Asset and Health Dynamics among the Oldest Old 연구(AHEAD 코호트), 1924–1930년에 태어난 새로운 코호트(대공황기 자녀[CODA] 코호트), 1942–1947년 출생자를 보충한 표본(전쟁아기[WB] 코호트)을 결합하여 50세 이상 인구의 전국 대표 표본을 구성했다.",
+          "source_text": "The HRS began interviewing in 1992 with a cohort of individuals born in 1931–1941 (HRS cohort) and re-interviews have been conducted every other year. In 1998, the HRS cohort was combined with the study of Asset and Health Dynamics among the Oldest Old (AHEAD cohort), a new cohort born in 1924–1930 (children of the Depression era, CODA cohort), and a refresher sample born in 1942–1947 (war baby [WB] cohort) to form a national representative sample of individuals aged 50 or older."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s05",
+          "status": "verified",
+          "ko_text": "본 연구는 AHEAD와 CODA 코호트가 68세 이상이 되어서야 연구에 들어왔고 황혼이혼은 50–64세 사이에 가장 흔히 발생하기 때문에 HRS와 WB 코호트만 다룬다(Brown & Lin, 2012).",
+          "source_text": "This study focuses only on the HRS and WB cohorts because the AHEAD and CODA cohorts did not enter the study until ages 68 or older, and gray divorce most often occurs between ages 50 and 64 (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s06",
+          "status": "verified",
+          "ko_text": "각각 2004년과 2010년에 HRS에 추가된 최근의 두 코호트도 결혼의 질 문항을 묻지 않았기 때문에 분석에서 제외했다.",
+          "source_text": "Two more recent cohorts added to the HRS in 2004 and 2010, respectively, were also excluded from the analysis because marital quality questions were not asked."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s07",
+          "status": "verified",
+          "ko_text": "원래 HRS와 WB 기초선 면접의 응답률은 각각 82%와 70%였고, 재면접 응답률은 90%를 넘었다.",
+          "source_text": "The response rates for the original HRS and WB baseline interviews were 82% and 70%, respectively. The re-interview response rates were above 90%."
+        },
+        {
+          "id": "lin-et-al-2018-tr-022-s08",
+          "status": "verified",
+          "ko_text": "본 연구에서는 흑인·히스패닉·플로리다 거주 응답자의 불균등한 선택확률, 무응답, 표본탈락을 조정하기 위해 표본가중치를 사용했다(Ofstedal, Weir, Chen, & Wagner, 2011).",
+          "source_text": "For this study, sampling weights were used to adjust for the unequal probability of selection (for Blacks, Hispanics, and respondents living in Florida), non-response, and sample attrition (Ofstedal, Weir, Chen, & Wagner, 2011)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-023",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 32,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 32,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-023-s01",
+          "status": "verified",
+          "ko_text": "먼저 모든 HRS 응답자의 결혼이력 파일을 구축했다.",
+          "source_text": "We began by constructing a marital history file for all HRS respondents."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s02",
+          "status": "verified",
+          "ko_text": "모든 기혼자를 추출한 뒤 파일을 개인 단위에서 부부 단위로 전환했다.",
+          "source_text": "After extracting all married individuals, we converted the file from the individual level to the couple level."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s03",
+          "status": "verified",
+          "ko_text": "HRS는 주응답자와 그 배우자를 면접하므로 아내와 남편 양쪽의 자료를 제공한다.",
+          "source_text": "The HRS interviews main respondents and their spouses, providing us with data on both wives and husbands."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s04",
+          "status": "verified",
+          "ko_text": "배우자 중 한 명이 응답하지 않은 부부의 경우 면접한 배우자가 보고한 정보에 의존했다.",
+          "source_text": "For couples in which one spouse did not respond, we relied on information reported by the spouse who was interviewed."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s05",
+          "status": "verified",
+          "ko_text": "드물게 보고가 서로 일치하지 않으면 아내의 정보를 사용했다.",
+          "source_text": "In rare instances of inconsistent reports, we drew on the wife’s information."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s06",
+          "status": "verified",
+          "ko_text": "HRS 표본은 배우자 중 적어도 한 명이 HRS 또는 WB 코호트의 구성원이며 1998년 이후 면접에 참여한 기혼부부 5,566쌍으로 이루어졌다. 1998–2012년 동안 일부 응답자는 황혼이혼을 경험한 뒤 새 배우자와 재혼했다.",
+          "source_text": "In total, the HRS sample consists of 5,566 married couples in which at least one respondent was a member of either the HRS or WB cohort and was interviewed in 1998 or later. During the 1998–2012 period, some respondents experienced a gray divorce and then formed a remarriage with a new spouse."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s07",
+          "status": "verified",
+          "ko_text": "기혼부부 가운데 218쌍이 이 경우에 해당했다.",
+          "source_text": "This scenario characterizes 218 of the married couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s08",
+          "status": "verified",
+          "ko_text": "응답자마다 표본에 하나의 결혼만 기여하도록 새 배우자와 이루어진 이 218건의 재혼을 제외했다.",
+          "source_text": "These 218 remarriages to a new spouse were excluded so that each respondent contributes only one marriage to the sample."
+        },
+        {
+          "id": "lin-et-al-2018-tr-023-s09",
+          "status": "verified",
+          "ko_text": "또한 동성부부(n = 11), 한 차례 자료수집 시점에서만 관찰된 부부(n = 189), 기초선 가중치가 0인 부부(n = 35)를 제외하여 최종적으로 부부 5,331쌍(부부-면접-연도 관측치 29,286개)을 분석했다.",
+          "source_text": "We also excluded same-sex couples (n = 11), couples we observed for only one wave of data (n = 189), and couples that have a baseline weight of 0 (n = 35), resulting in 5,331 couples (29,286 couple-interview-year observations)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-024",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 34,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 34,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-024-s01",
+          "status": "verified",
+          "ko_text": "종속변수인 이혼은 해당 부부-면접-연도에 부부가 이혼했으면 1, 그렇지 않으면 0으로 코딩했다.",
+          "source_text": "The dependent variable, divorce, was coded 1 if the couple experienced divorce during the couple-interview-year and 0 otherwise."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-025",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 36,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 36,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-025-s01",
+          "status": "verified",
+          "ko_text": "빈 둥지의 시작은 부부의 자녀가 집을 떠난 경우 1, 그렇지 않은 경우 0으로 코딩했다.",
+          "source_text": "The onset of empty nest was coded 1 when the couple’s children moved out of the home and 0 otherwise."
+        },
+        {
+          "id": "lin-et-al-2018-tr-025-s02",
+          "status": "verified",
+          "ko_text": "아내와 남편의 은퇴 시작은 본인이 (부분적으로) 은퇴했다고 보고한 경우 1, 그렇지 않은 경우 0으로 코딩했다.",
+          "source_text": "The onset of the wife’s and the husband’s retirement were coded 1 when they reported they were (partly) retired and 0 otherwise."
+        },
+        {
+          "id": "lin-et-al-2018-tr-025-s03",
+          "status": "verified",
+          "ko_text": "Karraker와 Latham의 연구(Karraker & Latham, 2015)에 따라 아내 또는 남편이 의사로부터 심장질환, 암, 폐질환, 뇌졸중 진단을 받았다고 보고하면 만성질환이 있는 것으로 코딩했다(1 = 예, 0 = 아니요).",
+          "source_text": "Following Karraker and Latham’s work (Karraker & Latham, 2015), we coded the wife or the husband as having a chronic condition when they reported that a doctor diagnosed them with heart disease, cancer, lung disease, or stroke (1 = Yes, 0 = No)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-025-s04",
+          "status": "verified",
+          "ko_text": "부부가 빈 둥지를 경험하거나, 아내 또는 남편이 은퇴하거나, 아내 또는 남편이 만성질환 진단을 받은 뒤에는 남은 관찰기간 전체에 해당 생애전환 변수를 1로 코딩했다.",
+          "source_text": "Once the couple experienced an empty nest, the wife or husband retired, or the wife or husband was diagnosed with a chronic condition, these life transition variables were coded 1 for the rest of their periods of observation."
+        },
+        {
+          "id": "lin-et-al-2018-tr-025-s05",
+          "status": "verified",
+          "ko_text": "부부의 빈 둥지 상태, 아내와 남편의 은퇴 상태, 아내와 남편의 만성 건강상태는 모두 시간가변 변수였으며, 이혼보다 앞선 시간순서를 확립하기 위해 다변량 분석에서 한 면접 차수(즉, 2년)만큼 시차를 두었다.",
+          "source_text": "The couple’s empty nest, wife and husband retirement, and wife and husband chronic health condition statuses were all time-varying variables that were lagged by one interview-wave (i.e., 2 years) in the multivariate analysis to establish the temporal order prior to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-025-s06",
+          "status": "verified",
+          "ko_text": "예를 들어 이 전략은 t-2 시점의 빈 둥지 시작이 t 시점의 황혼이혼을 예측한다고 가정했다.",
+          "source_text": "This strategy assumed the onset of empty nest at t-2 was predictive of gray divorce at t, for example."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-026",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 38,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 38,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-026-s01",
+          "status": "verified",
+          "ko_text": "재혼은 배우자 중 적어도 한 명이 현재 결혼 전에 결혼한 적이 있는지를 나타내는 시간불변 공변량이었다(1 = 예, 0 = 아니요).",
+          "source_text": "Remarriage was a time-invariant covariate that accounted for whether at least one spouse had been married prior to the current marriage (1 = Yes, 0 = No)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-026-s02",
+          "status": "verified",
+          "ko_text": "결혼기간은 현재 결혼에서 보낸 연수를 나타내는 시간가변 공변량이었다.",
+          "source_text": "Marital duration was a time-varying covariate that represented the number of years spent in the current marriage."
+        },
+        {
+          "id": "lin-et-al-2018-tr-026-s03",
+          "status": "verified",
+          "ko_text": "시간불변 변수인 십대 결혼은 부부가 결혼할 당시 아내나 남편이 20세 미만이었음을 나타냈다(1 = 예, 0 = 아니요).",
+          "source_text": "Teen marriage, a time-invariant variable, indicated that when the couple married, either the wife or the husband was under age 20 (1 = Yes, 0 = No)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-026-s04",
+          "status": "verified",
+          "ko_text": "비공유 자녀 역시 시간불변 측정치로, 배우자 외 다른 상대와 낳은 자녀가 적어도 한 명 있는 부부(1로 코딩)와 공동 자녀만 있거나 자녀가 없는 부부(0으로 코딩)를 구분했다.",
+          "source_text": "Non-shared children was also a time-invariant measure that differentiated between couples who had at least one child with another partner (coded 1) versus only joint children or no children (coded 0)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-027",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 40,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 40,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-027-s01",
+          "status": "verified",
+          "ko_text": "아내와 남편 각각의 부부 상호작용을 측정했다.",
+          "source_text": "Marital interaction was captured for wives and husbands."
+        },
+        {
+          "id": "lin-et-al-2018-tr-027-s02",
+          "status": "verified",
+          "ko_text": "이 측정치는 여가시간을 어떻게 배분하는지에 관한 아내와 남편의 보고(1 = 대부분 함께, 2 = 일부는 함께하고 일부는 따로, 3 = 대부분 따로)와 함께 보낸 시간을 얼마나 즐기는지에 관한 보고(1 = 극도로 즐거움, 2 = 매우 즐거움, 3 = 어느 정도 즐거움, 4 = 별로 즐겁지 않음)를 나타내는 두 문항으로 구성했다.",
+          "source_text": "It was constructed from two questions that indicate the wife’s and the husband’s reports of how they allocated their free time together (1 = mostly together, 2 = some together, some apart, 3 = mostly apart) and how much they enjoyed the time spent together (1 = extremely enjoyable, 2 = very enjoyable, 3 = somewhat enjoyable, 4 = not too enjoyable)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-027-s03",
+          "status": "verified",
+          "ko_text": "함께 보낸 시간이 별로 즐겁지 않다고 보고한 응답자가 적었기 때문에 Bulanda의 연구(Bulanda, 2011)와 마찬가지로 이 응답범주를 ‘어느 정도 즐거움’과 합쳤다.",
+          "source_text": "Because few respondents reported time together as not too enjoyable, we combined this response category with somewhat enjoyable, similar to Bulanda’s study (Bulanda, 2011)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-027-s04",
+          "status": "verified",
+          "ko_text": "두 문항의 응답을 합산한 뒤 역코딩하여, 값이 높을수록 더 긍정적인 부부 상호작용을 나타내게 했으며 범위는 2–6이었다.",
+          "source_text": "Answers to these two questions were summed and reverse coded so that higher values represent more positive marital interaction, ranging from 2 to 6."
+        },
+        {
+          "id": "lin-et-al-2018-tr-027-s05",
+          "status": "verified",
+          "ko_text": "이 문항들은 부부가 처음 면접했을 때만 질문했으므로 아내와 남편이 보고한 결혼의 질을 시간불변 공변량으로 처리했다. 1992년에 처음 면접하고 1998년에도 결혼을 유지한 부부의 결혼의 질 점수는 1992년 면접에서 얻었다. 1992년에 처음 면접하고 헤어진 뒤 1998년까지 다른 사람과 재혼한 부부의 결혼의 질 점수는 처음 재혼했다고 보고한 면접에서 얻었다.",
+          "source_text": "Since these questions were asked only the first time couples were interviewed, the wife’s and husband’s reports of marital quality were treated as time-invariant covariates. Note that for couples who were first interviewed in 1992 and remained married in 1998, their marital quality scores were obtained from the 1992 interview. For couples who were first interviewed in 1992, broke up, and remarried to other persons by 1998, their marital quality scores were obtained from the interview when they first reported being remarried."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-028",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 42,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 42,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-028-s01",
+          "status": "verified",
+          "ko_text": "남편의 연령은 연수로 측정하여 시간가변 공변량으로 처리했다.",
+          "source_text": "Husband’s age was measured in years and treated as a time-varying covariate."
+        },
+        {
+          "id": "lin-et-al-2018-tr-028-s02",
+          "status": "verified",
+          "ko_text": "부부의 연령 동질성은 남편과 아내의 연령차로 정의했으므로 시간불변이었다.",
+          "source_text": "The couple’s age homogamy was defined as the difference between the husband’s and the wife’s ages and thus was time invariant."
+        },
+        {
+          "id": "lin-et-al-2018-tr-028-s03",
+          "status": "verified",
+          "ko_text": "시간불변 공변량인 인종 동질성은 두 배우자 모두 백인인 경우(준거범주), 두 배우자 모두 비백인인 경우(1 = 예, 0 = 아니요), 서로 다른 인종적 배경에 속하는 경우(1 = 예, 0 = 아니요)로 포착했다.",
+          "source_text": "Racial homogamy, a time-invariant covariate, was captured by whether both spouses were White (reference category), both spouses were non-White (1 = Yes, 0 = No), or spouses belonged to different racial backgrounds (1 = Yes, 0 = No)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-028-s04",
+          "status": "verified",
+          "ko_text": "남편의 교육수준은 이수한 총 교육연수를 나타내는 연속측정치로 평가했으며 범위는 0–17년이었다.",
+          "source_text": "Husband’s educational attainment was gauged by a continuous measure indicating the total number of years of schooling completed and ranged from 0 to 17."
+        },
+        {
+          "id": "lin-et-al-2018-tr-028-s05",
+          "status": "verified",
+          "ko_text": "교육 동질성은 남편과 아내의 교육연수 차이로 포착했다.",
+          "source_text": "Education homogamy was captured by taking the difference between the husband’s and the wife’s years of schooling."
+        },
+        {
+          "id": "lin-et-al-2018-tr-028-s06",
+          "status": "verified",
+          "ko_text": "교육 측정치는 시간불변이었다.",
+          "source_text": "The education measures were time invariant."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-029",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 44,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 44,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-029-s01",
+          "status": "verified",
+          "ko_text": "주택 소유는 해당 면접연도에 부부가 주택을 소유했는지를 나타내는 시간가변 공변량이었다(1 = 예, 0 = 아니요).",
+          "source_text": "Home ownership was a time-varying covariate indicating whether the couple owned their home at a given interview-year (1 = Yes, 0 = No)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-029-s02",
+          "status": "verified",
+          "ko_text": "역시 시간가변 공변량인 부부의 자산은 여섯 범주, 즉 부채 있음, $0–$50,000(준거범주), $50,001–$100,000, $100,001–$250,000, $250,001 이상으로 구성했다.",
+          "source_text": "The couple’s assets, also time-varying covariates, were composed of six categories: in debt, $0 to $50,000 (reference category), $50,001 to $100,000, $100,001 to $250,000, and $250,001 or more."
+        },
+        {
+          "id": "lin-et-al-2018-tr-029-s03",
+          "status": "verified",
+          "ko_text": "두 변수군 모두 이혼보다 앞선 시간순서를 확립하기 위해 한 면접 차수(즉, 2년)만큼 시차를 두었다.",
+          "source_text": "Both sets of variables were lagged by one interview-wave (i.e., 2 years) to establish the temporal order prior to divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-030",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 46,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 46,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-030-s01",
+          "status": "verified",
+          "ko_text": "먼저 결혼기간별 부부의 생존확률을 추정했다.",
+          "source_text": "We began by estimating the survival probabilities for couples by marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-030-s02",
+          "status": "verified",
+          "ko_text": "결혼이력의 이 두 차원 사이에 있을 수 있는 상호작용효과를 평가하기 위해 초혼부부와 재혼부부를 구분하여 추정했으며, 결혼기간이 길수록 결혼차수의 영향이 작을 것이라고 예상했다.",
+          "source_text": "Estimates were conducted separately for couples in first marriages versus remarriages to assess the potential for an interaction effect between these two dimensions of the marital biography with the expectation that marriage order was less consequential at higher marital durations."
+        },
+        {
+          "id": "lin-et-al-2018-tr-030-s03",
+          "status": "verified",
+          "ko_text": "다음으로 황혼이혼을 경험한 부부와 결혼상태를 유지한(또는 중도절단된) 부부 사이에서 각 변수의 평균 또는 백분율이 어떻게 다른지 보여 주기 위해 이변량 통계치를 계산했다.",
+          "source_text": "Then we calculated bivariate statistics to show how the means or percentages of each variable differed for the couples who experienced a gray divorce and those who remained married (or were censored)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-030-s04",
+          "status": "verified",
+          "ko_text": "마지막으로 로지스틱 회귀분석을 사용하여 황혼이혼을 예측하는 이산시간 사건사 모형을 추정하는 다변량 분석을 수행했다.",
+          "source_text": "Finally, we conducted the multivariate analyses, which involved estimating discrete-time event history models predicting gray divorce using logistic regression."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-031",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 47,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 47,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-031-s01",
+          "status": "verified",
+          "ko_text": "사건사 모형은 중도절단(예: 관찰기간이 끝난 뒤에도 사건을 경험할 위험이 계속되는 사람)과 이혼처럼 과정에 따라 일어나는 사건에 필수적인 시간가변 설명변수가 일으키는 문제를 다루는 데 가장 효과적인 접근이다(Allison, 1982).",
+          "source_text": "Event-history modeling is the most effective approach to handle the problems posed by censoring (e.g., persons continue to be at risk for an event after the observation period ends) as well as time-varying explanatory variables that are integral to process-driven events such as divorce (Allison, 1982)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-031-s02",
+          "status": "verified",
+          "ko_text": "결혼의 시작일과 종료일을 시간간격으로 측정했으므로 이산시간 모형은 연속시간 모형보다 이 연구에 적절하다.",
+          "source_text": "Discrete-time (vs. continuous-time) models are appropriate here because the start and end dates of marriage were measured using time intervals."
+        },
+        {
+          "id": "lin-et-al-2018-tr-031-s03",
+          "status": "verified",
+          "ko_text": "이산시간 모형에는 시간가변 공변량을 쉽게 포함할 수 있고 모형 추정에 로그선형 방법을 사용할 수 있다는 등 여러 장점이 있다.",
+          "source_text": "Discrete-time models have many advantages, including the ease of incorporating time-varying covariates and the use of log linear methods for model estimation."
+        },
+        {
+          "id": "lin-et-al-2018-tr-031-s04",
+          "status": "verified",
+          "ko_text": "모형은 다음과 같이 명시한다.",
+          "source_text": "The model is specified as follows:"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-032",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 49,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 49,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-032-s01",
+          "status": "verified",
+          "ko_text": "Pᵢₜ는 위험률이며 Pᵢₜ = Pr(T = t | T ≥ t)로 정의한다. 여기서 T는 중도절단되지 않은 사건 발생시간을 나타내는 이산확률변수다(Allison, 1982).",
+          "source_text": "Pᵢₜ is the hazard rate, defined by Pᵢₜ = Pr(T = t | T ≥ t), where T is the discrete random variable giving the uncensored time of event occurrence (Allison, 1982)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-032-s02",
+          "status": "verified",
+          "ko_text": "다시 말해 Pᵢₜ는 부부 i가 t 시점 이전에 이혼하지 않았다는 조건에서 그 시점에 이혼할 조건부확률이다.",
+          "source_text": "In other words, Pᵢₜ is the conditional probability that divorce occurs to couple i at time t, given that it has not already occurred."
+        },
+        {
+          "id": "lin-et-al-2018-tr-032-s03",
+          "status": "verified",
+          "ko_text": "본 연구는 이 위험률이 시간(αₜ)과 설명변수 벡터(xᵢₜ, 계수 벡터 β를 가짐)의 함수로 어떻게 나타나는지 살펴본다.",
+          "source_text": "We consider how this hazard rate is a function of time (αₜ) and a vector of explanatory variables (xᵢₜ, with its coefficient vector β)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-032-s04",
+          "status": "verified",
+          "ko_text": "부부는 (a) 결혼 중이고 (b) 배우자 가운데 적어도 한 명이 50세 이상인 가장 이른 시점부터 관찰했다.",
+          "source_text": "Couples were observed from the earliest time point at which they were (a) married and (b) at least one spouse was aged 50 or older."
+        },
+        {
+          "id": "lin-et-al-2018-tr-032-s05",
+          "status": "verified",
+          "ko_text": "모든 부부는 결혼 중이었던 첫 면접(1998년 이후)부터 분석에 진입했다.",
+          "source_text": "All couples entered the analysis beginning with the first interview at which they were married (1998 or later)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-032-s06",
+          "status": "verified",
+          "ko_text": "부부가 이혼하거나, 배우자 중 한 명이 사망하거나, 2012년 면접에 도달한(또는 표본에서 탈락한) 때 중도절단했다.",
+          "source_text": "They were censored once they divorced, when one of the spouses died, or at the 2012 interview (or attrition)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-033",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 50,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 50,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-033-s01",
+          "status": "verified",
+          "ko_text": "초기 모형에는 노년기의 세 가지 전환 지표, 즉 빈 둥지, 아내와 남편의 은퇴, 아내와 남편의 만성질환을 투입했다.",
+          "source_text": "The initial model introduced the three later life transition indicators: empty nest, wife’s retirement and husband’s retirement, and wife’s chronic conditions and husband’s chronic conditions."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s02",
+          "status": "verified",
+          "ko_text": "두 번째 모형에는 전통적인 이혼 예측요인이 전환의 역할을 어느 정도 설명하는지 평가하기 위해 모든 인구사회학적 통제변수를 추가했다.",
+          "source_text": "The second model added all of the sociodemographic controls to assess the extent to which the role of transitions was accounted for by the more traditional predictors of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s03",
+          "status": "verified",
+          "ko_text": "추가 분석에서는 노년기 전환과 결혼이력 및 결혼의 질 사이에 있을 수 있는 상호작용효과를 검토했다.",
+          "source_text": "Additional analyses were conducted to examine potential interaction effects for the later life transitions with marital biography and marital quality."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s04",
+          "status": "verified",
+          "ko_text": "모든 모형에는 시간의 효과를 반영하기 위해 면접연도 더미변수를 포함했다.",
+          "source_text": "All models included interview year dummy variables to account for the effect of time."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s05",
+          "status": "verified",
+          "ko_text": "오늘날 황혼이혼은 20년 전보다 더 흔하다(Brown & Lin, 2012).",
+          "source_text": "Gray divorce is more common today than two decades ago (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s06",
+          "status": "verified",
+          "ko_text": "결측자료는 적었다.",
+          "source_text": "Missing data were minimal."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s07",
+          "status": "verified",
+          "ko_text": "예를 들어 핵심 독립측정치인 생애전환 변수에서 결측된 사례는 1%–3%에 불과했다.",
+          "source_text": "On the core independent measures of life transitions, for example, just 1%–3% of cases were missing."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s08",
+          "status": "verified",
+          "ko_text": "한 변수의 결측값을 분석의 다른 공변량 함수로 대치하도록 Stata의 mi impute chained 명령을 사용하는 연쇄방정식 다중대치(Multivariate Imputation using Chained Equations, MICE) 절차를 수행했다(Raghunathan, Lepkowski, van Hoewyk, & Solenberger, 2001; van Buuren, Boshuizen, & Knook, 1999).",
+          "source_text": "A multiple imputation procedure, Multivariate Imputation using Chained Equations (MICE), was performed using Stata’s mi impute chained command to handle missing cases such that the missing value for a single variable was imputed as a function of other covariates in the analysis (Raghunathan, Lepkowski, van Hoewyk, & Solenberger, 2001; van Buuren, Boshuizen, & Knook, 1999)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s09",
+          "status": "verified",
+          "ko_text": "대치된 변수의 무작위성을 보존하기 위해 다섯 개의 무작위 다중대치 반복자료를 바탕으로 연구결과를 산출했다.",
+          "source_text": "To preserve the randomness of the imputed variables, the study results were based on five random, multiple-imputed replicates."
+        },
+        {
+          "id": "lin-et-al-2018-tr-033-s10",
+          "status": "verified",
+          "ko_text": "이변량 추정치와 다변량 추정치 모두 기초선 가중치를 적용했다.",
+          "source_text": "Both the bivariate and multivariate estimates were weighted using the baseline weights."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-034",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 52,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 52,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-034-s01",
+          "status": "verified",
+          "ko_text": "그림 1은 모든 결혼을 대상으로, 그리고 초혼과 재혼을 구분하여 결혼기간별 황혼이혼 누적확률을 보여 준다.",
+          "source_text": "Figure 1 shows the cumulative probability of gray divorce for all marriages and separately for first marriages and remarriages by marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s02",
+          "status": "verified",
+          "ko_text": "일반적으로 누적확률은 기간과 함께 상승했는데, 이는 황혼이혼이 시간에 따라 누적됨을 반영한다.",
+          "source_text": "In general, the cumulative probability rose with duration, reflecting the accumulation of gray divorces over time."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s03",
+          "status": "verified",
+          "ko_text": "초혼부부의 황혼이혼 가능성은 결혼한 지 처음 약 20년 동안 사실상 0이었다가 약 30년부터 급격히 상승했다.",
+          "source_text": "The likelihood of gray divorce among first married couples was essentially zero during the first 20 or so years of marriage and then jumped up beginning at about 30 years duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s04",
+          "status": "verified",
+          "ko_text": "이 양상은 연구설계에서 비롯된 결과였다. 거의 모든 초혼은 배우자가 비교적 젊은 20대 또는 30대에 형성되므로, 초혼부부는 대체로 오랫동안 결혼을 유지해야 황혼이혼을 경험할 수 있는 대상이 된다.",
+          "source_text": "This pattern was an artifact of the design: couples in first marriages typically must have remained married for a long time before they would be eligible to experience a gray divorce because nearly all first marriages were formed when the spouses were relatively young, in their twenties or thirties."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s05",
+          "status": "verified",
+          "ko_text": "반면 부부는 모든 연령에서 재혼하므로 재혼부부의 황혼이혼은 결혼기간과 더 가파른 관련성을 보였다.",
+          "source_text": "In contrast, couples entered remarriages at all ages and thus gray divorce among remarried couples exhibited a sharper association with marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s06",
+          "status": "verified",
+          "ko_text": "중요한 점은 결혼기간이 긴(즉, 40년 이상) 부부 가운데 황혼이혼이 초혼부부보다 재혼부부에게서 거의 세 배 높았다는 것이다.",
+          "source_text": "Importantly, gray divorce was nearly three times higher among remarried than first married couples among those in marriages of long duration (i.e., 40 or more years)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s07",
+          "status": "verified",
+          "ko_text": "결혼기간은 초혼부부보다 재혼부부에게서 이혼을 막는 보호효과가 약했다.",
+          "source_text": "Marital duration was not as protective against divorce for remarried as first married couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-034-s08",
+          "status": "verified",
+          "ko_text": "결혼기간이 길어지면 황혼이혼에서 결혼차수에 따른 차이가 수렴할 것이라는 예상과 달리, 재혼부부의 이혼 가능성은 결혼기간이 매우 긴 경우에도 계속 높게 유지되었다.",
+          "source_text": "Contrary to our expectations that the marriage order differential in gray divorce would converge at higher marital durations, in fact the likelihood of divorce for couples in remarriages remained persistently high even in marriages of very long duration."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-035",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 54,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 54,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-035-s01",
+          "status": "verified",
+          "ko_text": "그림 1.",
+          "source_text": "Figure 1."
+        },
+        {
+          "id": "lin-et-al-2018-tr-035-s02",
+          "status": "verified",
+          "ko_text": "결혼차수별 황혼이혼 누적확률.",
+          "source_text": "Cumulative probability of gray divorce by marriage order."
+        },
+        {
+          "id": "lin-et-al-2018-tr-035-s03",
+          "status": "verified",
+          "ko_text": "접근성 설명: 모든 부부에서 황혼이혼 누적확률은 결혼기간과 함께 상승한다.",
+          "source_text": "Accessibility description: Cumulative gray-divorce probability rises with marital duration for all couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-035-s04",
+          "status": "verified",
+          "ko_text": "재혼 곡선이 가장 일찍 상승하여 약 .095에 이르고, 전체 결혼 곡선은 약 .058에 이르며, 초혼 곡선은 약 30년까지 0에 가까운 수준을 유지하다가 약 .032에 이른다.",
+          "source_text": "The remarriage curve rises earliest and reaches roughly .095, the all-marriages curve reaches roughly .058, and the first-marriage curve remains near zero until around 30 years before reaching roughly .032."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-036",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 56,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 56,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-036-s01",
+          "status": "verified",
+          "ko_text": "표 1은 기초선에서 측정한 모든 변수의 가중평균 또는 백분율을 이혼한 부부와 결혼상태를 유지한 부부로 나누어 보여 준다.",
+          "source_text": "Table 1 show the weighted means or percentages (as appropriate) of all variables measured at baseline separately for couples who divorce versus remain married."
+        },
+        {
+          "id": "lin-et-al-2018-tr-036-s02",
+          "status": "verified",
+          "ko_text": "대체로 부부는 이혼 여부와 관계없이 노년기 전환에서 비슷한 수준을 보였다.",
+          "source_text": "For the most part, couples exhibited similar levels of later life transitions regardless of whether they divorced or stayed married."
+        },
+        {
+          "id": "lin-et-al-2018-tr-036-s03",
+          "status": "verified",
+          "ko_text": "절반을 약간 넘는 부부에게 동거 자녀가 없었다(이혼한 부부의 53.73%, 결혼상태를 유지한 부부의 60.32%).",
+          "source_text": "Slightly over one-half had no children in the household (53.73% of couples that divorced and 60.32% of couples that stayed married)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-036-s04",
+          "status": "verified",
+          "ko_text": "아내가 은퇴한 비율은 결혼상태를 유지한 부부보다 이혼한 부부에게서 유의하게 낮았지만(14.43% 대 23.63%), 남편이 은퇴한 비율은 유의하게 다르지 않았다(각각 30.41%와 35.57%).",
+          "source_text": "The share of divorced couples with a retired wife was significantly lower than it was for couples who remained married (14.43% vs. 23.63%) but the share with retired husbands did not significantly differ (30.41% and 35.57%, respectively)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-036-s05",
+          "status": "verified",
+          "ko_text": "아내와 남편의 만성질환 유병률은 이혼한 부부와 결혼상태를 유지한 부부 사이에 거의 차이가 없었다.",
+          "source_text": "The prevalence of chronic conditions for wives and husbands was nearly the same for couples that divorced and couples that remained married."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-037",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 58,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 58,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-037-s01",
+          "status": "verified",
+          "ko_text": "표 1.",
+          "source_text": "Table 1."
+        },
+        {
+          "id": "lin-et-al-2018-tr-037-s02",
+          "status": "verified",
+          "ko_text": "기초선 부부 특성의 가중평균 또는 백분율.",
+          "source_text": "Weighted Means or Percentages of Couples’ Characteristics at Baseline."
+        },
+        {
+          "id": "lin-et-al-2018-tr-037-s03",
+          "status": "verified",
+          "ko_text": "주: 이혼한 부부(비가중 n = 296)와 결혼상태를 유지한 부부(비가중 n = 5,035)를 생애과정 전환, 결혼이력, 결혼의 질, 배우자 동질혼, 경제자원에 걸쳐 비교했다.",
+          "source_text": "Notes: Divorced couples (unweighted n = 296) are compared with married couples (unweighted n = 5,035) across life-course transitions, marital biography, marital quality, spousal homogamy, and economic resources."
+        },
+        {
+          "id": "lin-et-al-2018-tr-037-s04",
+          "status": "verified",
+          "ko_text": "별표 범례: 1개 = p < .10, 2개 = p < .05, 3개 = p < .01, 4개 = p < .001.",
+          "source_text": "Asterisk legend: one = p < .10; two = p < .05; three = p < .01; four = p < .001."
+        },
+        {
+          "id": "lin-et-al-2018-tr-037-s05",
+          "status": "verified",
+          "ko_text": "정확한 값과 유의성 표지는 표 이미지에 보존되어 있다.",
+          "source_text": "Exact values and significance markers are preserved in the table image."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-038",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 59,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 59,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-038-s01",
+          "status": "verified",
+          "ko_text": "결혼이력은 이혼과 관련되었다.",
+          "source_text": "The marital biography was related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s02",
+          "status": "verified",
+          "ko_text": "이혼으로 끝난 결혼의 3분의 2(67.63%)는 재혼이었던 반면 유지된 결혼 가운데 재혼은 절반 미만(40.04%)이었다.",
+          "source_text": "Two-thirds (67.63%) of marriages that ended in divorce were remarriages whereas fewer than one-half (40.04%) of marriages that remained intact were remarriages."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s03",
+          "status": "verified",
+          "ko_text": "예상할 수 있듯 결혼기간은 이혼과 부적으로 관련되었다.",
+          "source_text": "Not surprisingly, marital duration was negatively related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s04",
+          "status": "verified",
+          "ko_text": "이혼한 부부의 평균 결혼기간은 17.32년이었다.",
+          "source_text": "The average marital duration for couples that divorce was 17.32 years."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s05",
+          "status": "verified",
+          "ko_text": "유지된 결혼의 평균은 27.98년으로 상당히 더 길었다.",
+          "source_text": "For intact marriages, the average was considerably longer at 27.98 years."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s06",
+          "status": "verified",
+          "ko_text": "십대에 결혼한 부부의 비율은 이혼한 부부에서 11.68%에 불과했던 반면 결혼상태를 유지한 부부에서는 23.95%였다.",
+          "source_text": "The proportion of couples who married as teens was just 11.68% for those who divorced versus 23.95% for those who remained married."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s07",
+          "status": "verified",
+          "ko_text": "이러한 예상 밖의 양상은 황혼이혼으로 끝난 결혼 가운데 재혼이 차지하는 비중이 큰 것을 반영하는 듯하다.",
+          "source_text": "This unexpected pattern likely reflects the large share of remarriages that ended through gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s08",
+          "status": "verified",
+          "ko_text": "재혼은 십대에 이루어졌을 가능성이 작았다.",
+          "source_text": "Remarriages were not likely to have been formed during the teen years."
+        },
+        {
+          "id": "lin-et-al-2018-tr-038-s09",
+          "status": "verified",
+          "ko_text": "이혼한 부부 가운데 57.90%에게 비공유 자녀가 있었던 반면 결혼상태를 유지한 부부에서는 32.43%에 불과했다.",
+          "source_text": "Among couples who divorced, 57.90% had non-shared children whereas just 32.43% of those who stayed married did."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-039",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 60,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 60,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-039-s01",
+          "status": "verified",
+          "ko_text": "아내와 남편 모두의 결혼의 질은 이혼과 부적으로 관련되었다.",
+          "source_text": "Both the wife’s and the husband’s marital quality were negatively associated with divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-039-s02",
+          "status": "verified",
+          "ko_text": "이혼한 부부에서 아내가 평가한 결혼의 질 평균값은 4.26, 남편의 평균값은 4.30이었던 반면, 결혼상태를 유지한 부부에서는 각각 4.55와 4.68이었다.",
+          "source_text": "In couples that divorced, the average value of wife’s marital quality as 4.26 and the husband’s was 4.30 versus 4.55 and 4.68, respectively, for couples that remained married."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-040",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 61,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 61,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-040-s01",
+          "status": "verified",
+          "ko_text": "선행연구에서 이혼과 연결된 인구사회학적 요인은 대체로 예상한 방식으로 황혼이혼과 관련되었다.",
+          "source_text": "The sociodemographic factors that have been linked to divorce in prior research were largely related to gray divorce in the expected ways."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s02",
+          "status": "verified",
+          "ko_text": "이혼한 부부의 남편은 결혼상태를 유지한 부부의 남편보다 약 2세 젊었다(57.17세 대 59.50세).",
+          "source_text": "For couples that divorce, husbands were about 2 years younger than for couples that remained married (57.17 vs. 59.50 years old)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s03",
+          "status": "verified",
+          "ko_text": "이혼한 부부의 평균 연령차는 결혼상태를 유지한 부부와 비슷했다(4.57 대 3.68).",
+          "source_text": "The average age difference for couples that divorced was comparable to that of couples who stayed married (4.57 vs. 3.68)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s04",
+          "status": "verified",
+          "ko_text": "인종 이질혼은 이혼한 부부에게서 더 흔하여, 서로 다른 인종인 배우자가 10.27%였다.",
+          "source_text": "Racial heterogamy was more common for couples that divorced with 10.27% of spouses of different races."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s05",
+          "status": "verified",
+          "ko_text": "결혼상태를 유지한 부부에서는 그 비율이 4.23%에 불과했다.",
+          "source_text": "Among intact married couples, the share was just 4.23%."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s06",
+          "status": "verified",
+          "ko_text": "결혼상태를 유지한 부부 가운데 백인 부부는 82.29%로, 이혼한 부부의 70.89%보다 불균형하게 많았다.",
+          "source_text": "Intact married couples were disproportionately White at 82.29% versus 70.89% among couples that divorced."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s07",
+          "status": "verified",
+          "ko_text": "남편의 교육수준은 두 집단 사이에 차이가 없었으며, 이혼한 부부는 12. 62년, 결혼상태를 유지한 부부는 12.92년 수준이었다.",
+          "source_text": "Husband’s education did not differ between the two groups, hovering at 12. 62 for those who divorced and 12.92 for those still married."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s08",
+          "status": "verified",
+          "ko_text": "이혼한 부부의 교육연수 차이는 −0.24로 아내의 교육연수가 남편보다 많다는 뜻이었다.",
+          "source_text": "In couples that divorced, the education difference was −0.24, meaning the wife’s education exceeded the husband’s."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s09",
+          "status": "verified",
+          "ko_text": "결혼상태를 유지한 부부의 평균 차이는 0.14로 남편이 교육을 약간 더 많이 받았다고 보고했음을 나타낸다.",
+          "source_text": "For those who remained married, the average difference was 0.14, signaling husbands reported slightly more education."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s10",
+          "status": "verified",
+          "ko_text": "경제자원은 결혼상태를 유지한 부부보다 이혼한 부부에게서 적은 경향이 있었다.",
+          "source_text": "Economic resources tended to be lower among couples that divorced than remained married."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s11",
+          "status": "verified",
+          "ko_text": "주택 소유율은 이혼한 부부가 83.13%, 결혼상태를 유지한 부부가 90.98%였다.",
+          "source_text": "Home ownership stood at 83.13% for divorcing couples versus 90.98% for intact married couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-040-s12",
+          "status": "verified",
+          "ko_text": "또한 부채가 있는 부부의 비율은 이혼한 부부(10.68%)가 결혼상태를 유지한 부부(4.73%)보다 두 배 넘게 높았다.",
+          "source_text": "And the share of couples that were in debt was more than twice as large for couples that divorced (10.68%) than couples that remained married (4.73%)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-041",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 63,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 63,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-041-s01",
+          "status": "verified",
+          "ko_text": "예상과 달리 표 2의 모형 1에서 보듯 노년기의 주요 생애사건은 대체로 이혼 위험과 관련이 없었다.",
+          "source_text": "Contrary to our expectations, key later life events were largely unrelated to the risk of divorce, as shown in Model 1 of Table 2."
+        },
+        {
+          "id": "lin-et-al-2018-tr-041-s02",
+          "status": "verified",
+          "ko_text": "빈 둥지의 시작도, 아내나 남편의 만성질환도 이혼과 관련되지 않았다.",
+          "source_text": "Neither the onset of an empty nest nor the wife’s or the husband’s chronic conditions were associated with divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-041-s03",
+          "status": "verified",
+          "ko_text": "아내의 은퇴 전환은 이혼과 부적으로 관련되었다.",
+          "source_text": "The wife’s transition to retirement was negatively related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-041-s04",
+          "status": "verified",
+          "ko_text": "아내가 은퇴한 부부의 이혼 승산은 약 43% 낮았다.",
+          "source_text": "The odds that a couple divorced were about 43% lower for those in which the wife was retired."
+        },
+        {
+          "id": "lin-et-al-2018-tr-041-s05",
+          "status": "verified",
+          "ko_text": "남편의 은퇴는 이혼 가능성과 관련이 없었다.",
+          "source_text": "The husband’s retirement was unrelated to the likelihood of divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-042",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 64,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 64,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-042-s01",
+          "status": "verified",
+          "ko_text": "모형 2에는 결혼이력과 인구사회학적 요인을 투입했다.",
+          "source_text": "Model 2 introduced the marital biography and sociodemographic factors."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s02",
+          "status": "verified",
+          "ko_text": "아내의 은퇴와 이혼 사이의 관련성은 감소하여 유의하지 않게 되었다.",
+          "source_text": "The association between the wife’s retirement and divorce reduced to non-significance."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s03",
+          "status": "verified",
+          "ko_text": "다른 노년기 전환도 이혼과 유의하게 관련되지 않았다.",
+          "source_text": "Other later life transitions were not significantly associated with divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s04",
+          "status": "verified",
+          "ko_text": "결혼이력은 이혼 위험과 밀접하게 연결되었다.",
+          "source_text": "The marital biography was closely tied to the risk of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s05",
+          "status": "verified",
+          "ko_text": "재혼과 결혼기간은 높은 상관을 보였으며(r = −0.69), 두 지표를 모두 모형에 포함했을 때 결혼기간만 이혼과 유의하게 관련되었다.",
+          "source_text": "Remarriage and marital duration were highly correlated (r = −0.69) and with both indicators in the model, only marital duration was significantly related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s06",
+          "status": "verified",
+          "ko_text": "결혼기간을 모형에서 제외하면 재혼은 예상한 대로 이혼과 유의한 정적 관련을 보였다(결과는 제시하지 않음).",
+          "source_text": "Without marital duration in the model, remarriage exhibited the expected significant, positive association with divorce (result not shown)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s07",
+          "status": "verified",
+          "ko_text": "이혼 위험은 결혼기간과 함께 감소했다.",
+          "source_text": "The risk of divorce declined with marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s08",
+          "status": "verified",
+          "ko_text": "십대 결혼과 비공유 자녀는 모두 이혼과 관련되지 않았다.",
+          "source_text": "Neither teen marriage nor non-shared children were related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s09",
+          "status": "verified",
+          "ko_text": "실제로 비공유 자녀와 재혼의 상관은 상당히 컸다(r = 0.79).",
+          "source_text": "Indeed, the correlation between non-shared children and remarriage was rather large (r = 0.79)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s10",
+          "status": "verified",
+          "ko_text": "아내와 남편 모두의 결혼의 질은 이혼과 부적으로 관련되었다.",
+          "source_text": "Both the wife’s and the husband’s marital quality were negatively associated with divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s11",
+          "status": "verified",
+          "ko_text": "남편의 연령과 이혼 사이에도 한계적으로 유의한 부적 관련이 있었으며, 이는 이혼 위험이 연령과 함께 낮아진다는 생각을 반영한다.",
+          "source_text": "There was also a marginal, negative association between husband’s age and divorce, reflecting the notion that the risk of divorce declines with age."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s12",
+          "status": "verified",
+          "ko_text": "인종이 다른 부부의 이혼 승산은 인종이 같은 부부의 1.76배였다.",
+          "source_text": "Interracial couples faced odds of divorce that were 1.76 times that of same race couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s13",
+          "status": "verified",
+          "ko_text": "주택 소유와 이혼 사이에는 부적 관련이 있었으며, 이는 공동재산이 결별을 가로막는 장벽 역할을 함을 시사한다.",
+          "source_text": "There was a negative association between home ownership and divorce, suggesting joint property serves as a barrier to splitting up."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s14",
+          "status": "verified",
+          "ko_text": "마찬가지로 자산은 이혼 가능성과 부적으로 관련되었다.",
+          "source_text": "Similarly, wealth was negatively related to the likelihood of divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-042-s15",
+          "status": "verified",
+          "ko_text": "자산이 $250,000을 넘는 부부의 이혼 승산은 자산이 $0–$50,000인 부부보다 약 38% 낮았다.",
+          "source_text": "The odds of divorce were roughly 38% lower for those with over $250,000 in assets compared with couples whose assets ranged from $0 to 50,000."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-043",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 65,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 65,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-043-s01",
+          "status": "verified",
+          "ko_text": "추가 분석에서는 노년기 전환과 이혼 사이의 관련성이 결혼의 질, 재혼 여부, 결혼기간에 따라 달라지는지를 조사했다.",
+          "source_text": "Additional analyses were conducted to investigate whether the associations between later life transitions and divorce differed by marital quality, remarriage, or marital duration."
+        },
+        {
+          "id": "lin-et-al-2018-tr-043-s02",
+          "status": "verified",
+          "ko_text": "유의한 상호작용효과는 나타나지 않았다.",
+          "source_text": "No significant interactive effects emerged."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-044",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 67,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 67,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-044-s01",
+          "status": "verified",
+          "ko_text": "표 2.",
+          "source_text": "Table 2."
+        },
+        {
+          "id": "lin-et-al-2018-tr-044-s02",
+          "status": "verified",
+          "ko_text": "황혼이혼에 대한 이산시간 로지스틱 회귀분석의 승산비(비가중 N = 29,286).",
+          "source_text": "Odds Ratios From Discrete-Time Logistic Regressions of Gray Divorce (Unweighted N = 29,286)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-044-s03",
+          "status": "verified",
+          "ko_text": "주: 모형 1은 시차를 둔 노년기 전환과 면접연도를 포함하고, 모형 2는 결혼이력, 결혼의 질, 배우자 동질혼, 경제자원을 추가한다.",
+          "source_text": "Notes: Model 1 includes the lagged later-life transitions and interview year; Model 2 adds marital biography, marital quality, spousal homogamy, and economic resources."
+        },
+        {
+          "id": "lin-et-al-2018-tr-044-s04",
+          "status": "verified",
+          "ko_text": "별표 범례: 1개 = p < .10, 2개 = p < .05, 3개 = p < .01, 4개 = p < .001.",
+          "source_text": "Asterisk legend: one = p < .10; two = p < .05; three = p < .01; four = p < .001."
+        },
+        {
+          "id": "lin-et-al-2018-tr-044-s05",
+          "status": "verified",
+          "ko_text": "정확한 승산비, 준거범주, 모형적합도 통계량, 유의성 표지는 표 이미지에 보존되어 있다.",
+          "source_text": "Exact odds ratios, reference categories, model-fit statistics, and significance markers are preserved in the table image."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-045",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 69,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 69,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-045-s01",
+          "status": "verified",
+          "ko_text": "최근 수십 년 동안 황혼이혼이 빠르게 증가했음에도 중·노년기 부부의 이혼 위험과 관련된 요인에 관해서는 알려진 바가 거의 없다.",
+          "source_text": "Despite the rapid rise in gray divorce in recent decades, little is known about the factors associated with a couple’s risk of divorce during middle and later life."
+        },
+        {
+          "id": "lin-et-al-2018-tr-045-s02",
+          "status": "verified",
+          "ko_text": "생애과정 관점에 따라 본 연구는 생애 후반기의 세 가지 주요 전환점이 황혼이혼과 관련되는지를 평가했다.",
+          "source_text": "Guided by the life course perspective, our study assessed whether three key turning points in the second half of life were related to gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-045-s03",
+          "status": "verified",
+          "ko_text": "구체적으로 배우자 가운데 적어도 한 명이 50세 이상인 기혼부부에서 빈 둥지의 시작, 은퇴, 건강 악화가 이혼 가능성 증가와 관련되는지를 검토했다.",
+          "source_text": "Specifically, we considered whether the onset of an empty nest, retirement, or poor health was associated with an increased likelihood of divorce among married couples in which at least one spouse was aged 50 or older."
+        },
+        {
+          "id": "lin-et-al-2018-tr-045-s04",
+          "status": "verified",
+          "ko_text": "HRS의 14년 종단자료를 사용한 사건사 분석 결과, 이러한 전환점은 유의한 이혼 위험요인이 아니었다.",
+          "source_text": "Using 14 years of longitudinal data from the HRS, our event history analyses revealed that these turning points were not significant risk factors for divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-045-s05",
+          "status": "verified",
+          "ko_text": "아내의 은퇴와 황혼이혼 사이에는 처음에 부적 관련이 있었지만, 이는 결혼이력, 결혼의 질, 인구학적 특성, 경제자원으로 설명되었다.",
+          "source_text": "Although there was an initial negative association between the wife’s retirement and gray divorce, it was accounted for by the marital biography, marital quality, demographic characteristics, and economic resources."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-046",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 70,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 70,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-046-s01",
+          "status": "verified",
+          "ko_text": "실제로 젊은 성인의 이혼을 예측하는 보다 전통적인 요인은 50세가 넘은 사람에게도 비슷하게 작용하는 듯했다.",
+          "source_text": "Indeed, these more traditional predictors of divorce among younger adults appeared to operate similarly for those over age 50."
+        },
+        {
+          "id": "lin-et-al-2018-tr-046-s02",
+          "status": "verified",
+          "ko_text": "결혼차수와 결혼기간은 이혼과 관련되었으며, 재혼부부가 초혼부부보다 이혼할 가능성이 컸다.",
+          "source_text": "Marriage order and marital duration were related to divorce with those in remarriages more likely to divorce than those in first marriages."
+        },
+        {
+          "id": "lin-et-al-2018-tr-046-s03",
+          "status": "verified",
+          "ko_text": "이러한 차이는 재혼의 평균 결혼기간이 초혼보다 상당히 짧다는 사실을 반영하며 결혼기간과 교란되어 있었다.",
+          "source_text": "This differential was confounded with marital duration, reflecting the fact that remarriages are of substantially shorter duration, on average, than are first marriages."
+        },
+        {
+          "id": "lin-et-al-2018-tr-046-s04",
+          "status": "verified",
+          "ko_text": "이혼 위험과 부적으로 관련된 결혼기간이 결혼차수와 이혼 사이의 정적 관련을 흡수했다.",
+          "source_text": "Marital duration, which was negatively associated with the risk of divorce, absorbed the positive association between marriage order and divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-046-s05",
+          "status": "verified",
+          "ko_text": "마찬가지로 비공유 자녀는 이변량 분석에서 이혼 위험과 관련되었지만, 다변량 모형에서 재혼과 결혼기간을 통제한 뒤에는 관련되지 않았다.",
+          "source_text": "Similarly, non-shared children was related to the risk of divorce in the bivariate analyses but not net of remarriage and duration in the multivariate model."
+        },
+        {
+          "id": "lin-et-al-2018-tr-046-s06",
+          "status": "verified",
+          "ko_text": "결혼이력이 황혼이혼에 중요하다는 결과는 Brown과 Lin(2012)의 연구와 일치하며, 생애 후반기의 결혼 안정성에도 결혼 생애과정이 지속적인 결과를 미침을 강조한다.",
+          "source_text": "The salience of the marital biography for gray divorce aligns with the findings from Brown and Lin’s (2012) study and underscores the enduring consequences of the marital life course for marital stability in the second half of life."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-047",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 71,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 71,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-047-s01",
+          "status": "verified",
+          "ko_text": "아내와 남편 모두의 결혼의 질은 이혼과 부적으로 관련되었지만 상호작용효과는 없었다.",
+          "source_text": "Both the wife’s and the husband’s marital quality were negatively related to divorce, but they did not have an interactive effect."
+        },
+        {
+          "id": "lin-et-al-2018-tr-047-s02",
+          "status": "verified",
+          "ko_text": "예상과 달리 결혼의 질은 노년기 전환과 이혼 사이의 관련성도 조절하지 않았다.",
+          "source_text": "Marital quality also did not modify the associations between the later life transitions and divorce, which was contrary to our expectations."
+        },
+        {
+          "id": "lin-et-al-2018-tr-047-s03",
+          "status": "verified",
+          "ko_text": "유의한 상호작용이 나타나지 않은 것은 결혼의 질을 부부가 연구에서 처음 면접한 시점에만 측정한 데서 비롯된 결과일 수 있다.",
+          "source_text": "It is possible that the absence of significant interactions was an artifact of the measurement of marital quality, which was captured only when the married couple was first interviewed in the study."
+        },
+        {
+          "id": "lin-et-al-2018-tr-047-s04",
+          "status": "verified",
+          "ko_text": "따라서 많은 부부에게 결혼의 질은 생애과정 사건이 일어나기 여러 해 전에 측정되었다.",
+          "source_text": "Thus, for many of the couples, marital quality was measured years prior to the life course event."
+        },
+        {
+          "id": "lin-et-al-2018-tr-047-s05",
+          "status": "verified",
+          "ko_text": "결혼의 질은 중·노년기에 상당히 안정적인 경향이 있지만(Glenn, 1998), 생애과정 전환 직전이나 직후에 변할 가능성도 있다.",
+          "source_text": "Marital quality tends to be pretty stable during the middle and later years (Glenn, 1998), but it is possible that it could change shortly before or after a life course transition."
+        },
+        {
+          "id": "lin-et-al-2018-tr-047-s06",
+          "status": "verified",
+          "ko_text": "안타깝게도 HRS는 매 면접에서 결혼의 질을 측정하지 않는다.",
+          "source_text": "Unfortunately, the HRS does not measure marital quality at each interview."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-048",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 72,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 72,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-048-s01",
+          "status": "verified",
+          "ko_text": "일부 인구학적·경제적 특성은 황혼이혼과 관련되었다.",
+          "source_text": "Some demographic and economic characteristics were related to gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s02",
+          "status": "verified",
+          "ko_text": "본 연구는 연령, 인종, 교육이라는 세 가지 부부 이질혼을 검토했다.",
+          "source_text": "We considered three types of couple heterogamy: age, race, and education."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s03",
+          "status": "verified",
+          "ko_text": "인종이 다른 부부는 인종이 같은 부부보다 이혼 승산이 높았다.",
+          "source_text": "Interracial couples experienced higher odds of divorce compared with same-race couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s04",
+          "status": "verified",
+          "ko_text": "그러나 연령 또는 교육에서 이질적인 부부는 동질적인 부부보다 이혼할 가능성이 높지 않았다.",
+          "source_text": "However, age or educational heterogamous couples were no more likely to divorce than their homogamous counterparts."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s05",
+          "status": "verified",
+          "ko_text": "이혼 위험은 교육에 따라 뚜렷하게 달라지지 않았으며, 이는 교육이 황혼이혼에서 제한적인 역할을 한다는 다른 연구와 일치한다(Brown & Lin, 2012).",
+          "source_text": "There was no appreciable variation in the risk of divorce by education, which is consistent with other work indicating that education plays a modest role in gray divorce (Brown & Lin, 2012)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s06",
+          "status": "verified",
+          "ko_text": "구체적으로 주택 소유, 더 넓게는 자산이 이혼의 장벽으로 작용했다.",
+          "source_text": "Home ownership specifically and wealth more broadly served as barriers to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-048-s07",
+          "status": "verified",
+          "ko_text": "따라서 경제적 안정은 이혼에 대한 보호요인이다.",
+          "source_text": "Thus, financial security is protective against divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-049",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 73,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 73,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-049-s01",
+          "status": "verified",
+          "ko_text": "본 연구 결과는 황혼이혼의 선행요인에 관한 새로운 통찰을 제공한다.",
+          "source_text": "The findings from our study provide new insights on the antecedents of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s02",
+          "status": "verified",
+          "ko_text": "노년기 전환 자체가 결혼을 탈선시키지는 않는다.",
+          "source_text": "Later life transitions alone do not derail marriages."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s03",
+          "status": "verified",
+          "ko_text": "부부가 자녀가 성장하여 집을 떠날 때까지 이혼을 기다린다는 일화적 증거가 있지만(Bair, 2007), 본 연구는 이 주장을 뒷받침하지 않는다.",
+          "source_text": "Although there is anecdotal evidence that couples wait to divorce once the children are grown and have left the household (Bair, 2007), our work does not support this assertion."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s04",
+          "status": "verified",
+          "ko_text": "미국인의 대다수는 자녀가 있는 경우에도 이혼을 수용하며(Thornton & Young-DeMarco, 2001), 이는 불만족한 많은 부부가 빈 둥지가 될 때까지 이혼을 미룰 이유가 없다고 볼 수 있음을 시사한다.",
+          "source_text": "The vast majority of Americans are accepting of divorce even when children are involved (Thornton & Young-DeMarco, 2001), suggesting that many dissatisfied couples may see no reason to delay divorce until their nest is empty."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s05",
+          "status": "verified",
+          "ko_text": "마찬가지로 은퇴는 결혼의 질과 연결될 수 있지만(Moen, Kim, & Hofmeister, 2001; Szinovacz, 1996), 본 연구에서는 은퇴가 이혼과 관련된다는 증거를 찾지 못했다.",
+          "source_text": "Likewise, retirement may be linked to marital quality (Moen, Kim, & Hofmeister, 2001; Szinovacz, 1996), but we find no evidence that it is related to divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s06",
+          "status": "verified",
+          "ko_text": "관련이 나타나지 않은 것은 이 영역에서 부부가 직면하는 제약과 기회가 다양하기 때문일 수 있다.",
+          "source_text": "The absence of an association may reflect the varied constraints and opportunities couples face in this domain."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s07",
+          "status": "verified",
+          "ko_text": "어떤 부부에게는 은퇴가 경제적으로 가능하지 않다.",
+          "source_text": "For some couples, retirement is not economically feasible."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s08",
+          "status": "verified",
+          "ko_text": "반대로 경제적으로 안정된 부부는 쉽게 은퇴할 수 있다.",
+          "source_text": "In contrast, financially secure couples may readily achieve retirement."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s09",
+          "status": "verified",
+          "ko_text": "또 다른 부부는 비자발적으로 은퇴하거나 경제적으로 안정되어도 은퇴하려 하지 않을 수 있다.",
+          "source_text": "Still others may experience involuntary retirement or be unwilling to retire despite economic security."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s10",
+          "status": "verified",
+          "ko_text": "HRS는 이렇게 서로 다른 은퇴 이유를 포착할 수 없지만, 이는 은퇴와 이혼 사이의 관계를 관찰하지 못한 이유를 설명할 수 있다.",
+          "source_text": "These disparate reasons for retirement cannot be captured with the HRS but may explain why we did not observe a relationship between retirement and divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s11",
+          "status": "verified",
+          "ko_text": "Karraker와 Latham(2015)은 건강한 부부 표본에서 아내에게 만성질환이 시작된 뒤 이혼 위험이 상승한다고 밝혔지만, 본 연구는 이 양상이 기혼 노인의 대표 표본에서는 성립하지 않음을 보여 준다.",
+          "source_text": "Karraker and Latham (2015) found that the risk of divorce climbs following the onset of a chronic condition for the wife among a sample of healthy couples, but our study reveals that this pattern does not hold for a representative sample of older married couples."
+        },
+        {
+          "id": "lin-et-al-2018-tr-049-s12",
+          "status": "verified",
+          "ko_text": "따라서 선별된 부부집단에서 나온 그들의 발견을 모든 기혼 노인에게 일반화할 수 없다.",
+          "source_text": "Thus, their finding for a select group of couples is not generalizable to all older married couples."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-050",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 74,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 74,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-050-s01",
+          "status": "verified",
+          "ko_text": "생애과정 관점은 황혼이혼의 위험요인을 해석하는 데 유리하다.",
+          "source_text": "The life course perspective is advantageous for deciphering the risk factors for gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-050-s02",
+          "status": "verified",
+          "ko_text": "노년기 전환은 황혼이혼과 관련되지 않았지만 결혼이력 같은 다른 요인은 중요했다.",
+          "source_text": "Although later life transitions were unrelated to gray divorce, other factors such as the marital biography were critical."
+        },
+        {
+          "id": "lin-et-al-2018-tr-050-s03",
+          "status": "verified",
+          "ko_text": "본 연구의 전향적 종단 접근은 이혼에 관한 폭넓은 잠재적 위험요인을 엄격히 평가한다.",
+          "source_text": "Our prospective, longitudinal approach offers a rigorous evaluation of a wide range of possible risk factors for divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-050-s04",
+          "status": "verified",
+          "ko_text": "대규모 전국 표본을 사용해 부부 단위 분석을 수행함으로써, 기술적 연구(Brown & Lin, 2012)에 머물렀거나 기혼 노인의 하위집단에 제한되어 결과의 일반화 가능성이 낮았던(Karraker & Latham, 2015) 황혼이혼 선행연구를 확장했다.",
+          "source_text": "By conducting couple-level analyses using a large, national sample, we extended prior work on gray divorce, which has been descriptive (Brown & Lin, 2012) or restricted to a subgroup of older married couples (Karraker & Latham, 2015), limiting the generalizability of the findings."
+        },
+        {
+          "id": "lin-et-al-2018-tr-050-s05",
+          "status": "verified",
+          "ko_text": "본 연구는 생애과정 관점의 주요 원칙에 근거한 풍부한 전국 단위의 황혼이혼상을 제시한다.",
+          "source_text": "The present study yields a rich, national portrait of gray divorce that is informed by key tenets of the life course perspective."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-051",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 75,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 75,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-051-s01",
+          "status": "verified",
+          "ko_text": "여러 강점과 더불어 본 연구에는 몇 가지 약점도 있다.",
+          "source_text": "In addition to its numerous strengths, our study also has some weaknesses."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s02",
+          "status": "verified",
+          "ko_text": "모든 종단분석에서 표본탈락은 우려되는 문제이며, 결혼상태를 유지한 부부보다 이혼한 부부에게 탈락이 더 흔했다면 결과가 편향될 수 있다.",
+          "source_text": "A concern in any longitudinal analysis is sample attrition, and it is possible that attrition was more common for couples who divorced versus remained married, which could bias our findings."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s03",
+          "status": "verified",
+          "ko_text": "HRS는 이전 조사차수에서 추적하지 못한 사람까지 포함해 모든 조사차수에서 응답자에게 연락하려 한다.",
+          "source_text": "The HRS attempts to contact respondents at every wave, even those lost to follow up at the prior wave."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s04",
+          "status": "verified",
+          "ko_text": "연구에서 탈락했던 일부 부부는 이후 조사차수에 다시 포착되어 분석에 포함할 수 있었다.",
+          "source_text": "Some couples who dropped out of the study were picked up in subsequent waves and we were able to include them in our analyses."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s05",
+          "status": "verified",
+          "ko_text": "HRS는 2004년에 초기 베이비붐 세대의 새 코호트를 도입했지만, 이 기혼부부 가운데 90% 넘게 본 연구의 핵심변수인 결혼의 질 자료가 결측되어 이 코호트를 제외했다.",
+          "source_text": "The HRS introduced a new cohort of early Baby Boomers in 2004, but we excluded this cohort because more than 90% of these married couples were missing data on marital quality, a focal variable in our study."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s06",
+          "status": "verified",
+          "ko_text": "이상적으로는 황혼이혼 위험의 가능한 코호트 차이를 평가하기 위해 이들을 포함하고자 했다.",
+          "source_text": "Ideally, we would have liked to have included them to assess possible cohort variation in the risk of gray divorce."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s07",
+          "status": "verified",
+          "ko_text": "앞서 언급했듯 결혼의 질은 최초 면접에서만 측정되었다.",
+          "source_text": "We noted earlier that marital quality is only measured at initial interview."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s08",
+          "status": "verified",
+          "ko_text": "노년기 전환의 효과가 결혼의 질에 따라 달라질 것이라고 예상했으므로, 결혼의 질을 시간가변 측정치로 삼아 노년기 전환에 관한 시간가변 지표와 조응시키는 것이 더 바람직했을 것이다.",
+          "source_text": "Preferably, marital quality would have been a time-varying measure to mesh with our time-varying indicators of later life transitions given our expectations that the effects of these transitions would be conditioned on marital quality."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s09",
+          "status": "verified",
+          "ko_text": "더욱이 부부 상호작용의 역학, 관계폭력, 물질사용, 부정 등 결혼의 질과 과정의 다른 측면도 이혼과 관련되며(Amato, 2010) 황혼이혼과도 관련될 수 있지만 HRS에서는 이용할 수 없었다.",
+          "source_text": "Moreover, other aspects of marital quality and processes, such as couple interaction dynamics, relationship violence, substance use, and infidelity, are related to divorce (Amato, 2010) and also could be associated with gray divorce but were not available in the HRS."
+        },
+        {
+          "id": "lin-et-al-2018-tr-051-s10",
+          "status": "verified",
+          "ko_text": "혼전동거와 성장기 가족구조(둘 다 HRS에서 측정되지 않음)를 포함하여 이혼과 관련된 다른 지표와 함께 이러한 요인을 황혼이혼의 선행요인에 관한 향후 연구에서 다루어야 한다.",
+          "source_text": "These factors along with other indicators associated with divorce, including premarital cohabitation and family structure while growing up (neither of which is measures in the HRS), should be addressed in future research on the antecedents of gray divorce."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-052",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 76,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 76,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-052-s01",
+          "status": "verified",
+          "ko_text": "황혼이혼의 혁명은 미국 이혼의 윤곽을 바꾸고 있다.",
+          "source_text": "The gray divorce revolution is changing the contours of divorce in the United States."
+        },
+        {
+          "id": "lin-et-al-2018-tr-052-s02",
+          "status": "verified",
+          "ko_text": "오늘날 이혼하는 사람 4명 중 1명은 50세가 넘지만, 황혼이혼의 선행요인에 관한 이해는 제한적이다.",
+          "source_text": "Nowadays, one in four individuals who gets divorced is over age 50, yet our understanding of the antecedents of gray divorce is limited."
+        },
+        {
+          "id": "lin-et-al-2018-tr-052-s03",
+          "status": "verified",
+          "ko_text": "본 연구는 황혼이혼의 잠재적 위험요인으로 지목된 노년기의 세 가지 전환점이 실제로는 미미한 역할만 함을 보여 줌으로써 연구를 진전시킨다.",
+          "source_text": "Our study moves the field forward by showing that three later-life turning points identified as potential risk factors for gray divorce actually play a minimal role."
+        },
+        {
+          "id": "lin-et-al-2018-tr-052-s04",
+          "status": "verified",
+          "ko_text": "그 대신 생애과정의 앞선 시기 이혼과 강하게 관련되는 결혼이력, 결혼의 질, 경제자원은 노년기 이혼에도 핵심적으로 관련된다.",
+          "source_text": "Instead, the marital biography, marital quality, and economic resources, which are strongly related to divorce earlier in the life course, are also integral to divorce in later life."
+        },
+        {
+          "id": "lin-et-al-2018-tr-052-s05",
+          "status": "verified",
+          "ko_text": "젊은 부모와 미성년 자녀에게 이혼이 미치는 결과는 폭넓게 기록되었지만(Amato, 2010), 현재까지 연구는 황혼이혼이 노인, 특히 나이 든 부모와 그 성인자녀에게 미치는 영향을 다루지 않았다.",
+          "source_text": "The consequences of divorce for young parents and their minor children have been extensively documented (Amato, 2010), but research to date has not addressed the effects of gray divorce for older adults, particularly, aging parents and their adult children."
+        },
+        {
+          "id": "lin-et-al-2018-tr-052-s06",
+          "status": "verified",
+          "ko_text": "황혼이혼이 증가하는 상황에서 노년학 연구자는 황혼이혼의 고유한 위험요인이 있는지를 계속 탐색할 뿐 아니라 황혼이혼이 이혼 당사자와 그 성인자녀의 안녕에 어떤 영향을 미치는지도 살펴보아야 한다.",
+          "source_text": "As gray divorce rises, it is important for gerontological researchers to not only continue exploring whether there are unique risk factors for gray divorce but also to examine how a gray divorce affects the well-being of divorcees and their adult children."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-053",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 78,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 78,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-053-s01",
+          "status": "verified",
+          "ko_text": "이 논문의 연구는 National Institute on Aging이 첫 두 저자에게 수여한 연구비(R15AG047588)의 지원을 받았다.",
+          "source_text": "The research for this article was supported by a grant to the first two authors from the National Institute on Aging (R15AG047588)."
+        },
+        {
+          "id": "lin-et-al-2018-tr-053-s02",
+          "status": "verified",
+          "ko_text": "추가 지원은 Eunice Kennedy Shriver National Institute of Child Health and Human Development의 핵심 연구비(P2CHD050959)를 받는 Bowling Green State University의 Center for Family and Demographic Research가 제공했다.",
+          "source_text": "Additional support was provided by the Center for Family and Demographic Research, Bowling Green State University, which has core funding from the Eunice Kennedy Shriver National Institute of Child Health and Human Development (P2CHD050959)."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-054",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 80,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 80,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-054-s01",
+          "status": "verified",
+          "ko_text": "Allison, P. D. (1982). Discrete-time methods for the analysis of event histories. In S. Leinhardt (Ed.), Sociological Methodology (pp. 61–98). San Francisco, CA: Jossey-Bass. doi:10.2307/270718",
+          "source_text": "Allison, P. D. (1982). Discrete-time methods for the analysis of event histories. In S. Leinhardt (Ed.), Sociological Methodology (pp. 61–98). San Francisco, CA: Jossey-Bass. doi:10.2307/270718"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-055",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 81,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 81,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-055-s01",
+          "status": "verified",
+          "ko_text": "Amato, P. R. (2010). Research on divorce: Continuing trends and new developments. Journal of Marriage and Family, 72, 650–666. doi:10.1111/j.1741-3737.2010.00723.x",
+          "source_text": "Amato, P. R. (2010). Research on divorce: Continuing trends and new developments. Journal of Marriage and Family, 72, 650–666. doi:10.1111/j.1741-3737.2010.00723.x"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-056",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 82,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 82,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-056-s01",
+          "status": "verified",
+          "ko_text": "Bair, D. (2007). Calling it quits: Late life divorce and starting over. New York, NY: Random House.",
+          "source_text": "Bair, D. (2007). Calling it quits: Late life divorce and starting over. New York, NY: Random House."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-057",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 83,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 83,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-057-s01",
+          "status": "verified",
+          "ko_text": "Berardo, D. H. (1982). Divorce and remarriage at middle age and beyond. Annals of the American Academy of Political and Social Science, 464, 132–139. doi:10.1177/0002716282464001012",
+          "source_text": "Berardo, D. H. (1982). Divorce and remarriage at middle age and beyond. Annals of the American Academy of Political and Social Science, 464, 132–139. doi:10.1177/0002716282464001012"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-058",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 84,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 84,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-058-s01",
+          "status": "verified",
+          "ko_text": "Booth, A., & Johnson, D. R. (1994). Declining health and marital quality. Journal of Marriage and the Family, 56, 218–223. doi:10.2307/352716",
+          "source_text": "Booth, A., & Johnson, D. R. (1994). Declining health and marital quality. Journal of Marriage and the Family, 56, 218–223. doi:10.2307/352716"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-059",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 85,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 85,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-059-s01",
+          "status": "verified",
+          "ko_text": "Brown, S. L., & Lin, I.-F. (2012). The gray divorce revolution: Rising divorce among middle-aged and older adults, 1990–2010. The Journals of Gerontology Series B: Psychological Sciences and Social Sciences, 67, 731–741. doi:10.1093/geronb/gbs089",
+          "source_text": "Brown, S. L., & Lin, I.-F. (2012). The gray divorce revolution: Rising divorce among middle-aged and older adults, 1990–2010. The Journals of Gerontology Series B: Psychological Sciences and Social Sciences, 67, 731–741. doi:10.1093/geronb/gbs089"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-060",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 86,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 86,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-060-s01",
+          "status": "verified",
+          "ko_text": "Bulanda, J. R. (2011). Gender, marital power, and marital quality in later life. Journal of Women & Aging, 23, 3–22. doi:10.1080/08952841.2011.540481",
+          "source_text": "Bulanda, J. R. (2011). Gender, marital power, and marital quality in later life. Journal of Women & Aging, 23, 3–22. doi:10.1080/08952841.2011.540481"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-061",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 87,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 87,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-061-s01",
+          "status": "verified",
+          "ko_text": "Canham, S. L., Mahmood, A., Stott, S., Sixsmith, J., & O’Rourke, N. (2014). ‘Til divorce do us part: Marriage dissolution in later life. Journal of Divorce & Remarriage, 55, 591–612. doi:10.1080/10502556.2014.959097",
+          "source_text": "Canham, S. L., Mahmood, A., Stott, S., Sixsmith, J., & O’Rourke, N. (2014). ‘Til divorce do us part: Marriage dissolution in later life. Journal of Divorce & Remarriage, 55, 591–612. doi:10.1080/10502556.2014.959097"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-062",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 88,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 88,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-062-s01",
+          "status": "verified",
+          "ko_text": "Cherlin, A. J. (2009). The marriage-go-round. New York, NY: Knopf.",
+          "source_text": "Cherlin, A. J. (2009). The marriage-go-round. New York, NY: Knopf."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-063",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 89,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 89,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-063-s01",
+          "status": "verified",
+          "ko_text": "Elder Jr., G. H. (1994). Time, human agency, and social change: Perspectives on the life course. Social Psychology Quarterly, 57, 4–15. doi:10.2307/2786971",
+          "source_text": "Elder Jr., G. H. (1994). Time, human agency, and social change: Perspectives on the life course. Social Psychology Quarterly, 57, 4–15. doi:10.2307/2786971"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-064",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 90,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 90,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-064-s01",
+          "status": "verified",
+          "ko_text": "Elder Jr., G. H., Johnson, M. K., & Crosnoe, R. (2003). The emergence and development of life course theory. In J. T. Mortimer & M. J. Shanan (Eds.), Handbook of the life course (pp. 3–19). New York: Kluwer Academic. doi:10.1007/978-0-306-48247-2_1",
+          "source_text": "Elder Jr., G. H., Johnson, M. K., & Crosnoe, R. (2003). The emergence and development of life course theory. In J. T. Mortimer & M. J. Shanan (Eds.), Handbook of the life course (pp. 3–19). New York: Kluwer Academic. doi:10.1007/978-0-306-48247-2_1"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-065",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 91,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 91,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-065-s01",
+          "status": "verified",
+          "ko_text": "Glenn, N. D. (1998). The course of marital success and failure in five American 10-year marriage cohorts. Journal of Marriage and the Family, 60, 569–576. doi:10.2307/353529",
+          "source_text": "Glenn, N. D. (1998). The course of marital success and failure in five American 10-year marriage cohorts. Journal of Marriage and the Family, 60, 569–576. doi:10.2307/353529"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-066",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 92,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 92,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-066-s01",
+          "status": "verified",
+          "ko_text": "Gorchoff, S. M., John, O. P., & Helson, R. (2008). Contextualizing change in marital satisfaction during middle age an 18-year longitudinal study. Psychological Science, 19, 1194–1200. doi:10.1111/j.1467-9280.2008.02222.x",
+          "source_text": "Gorchoff, S. M., John, O. P., & Helson, R. (2008). Contextualizing change in marital satisfaction during middle age an 18-year longitudinal study. Psychological Science, 19, 1194–1200. doi:10.1111/j.1467-9280.2008.02222.x"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-067",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 93,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 93,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-067-s01",
+          "status": "verified",
+          "ko_text": "Hammond, R. J., & Muller G. O. (1992). The late-life divorced: Another look. Journal of Divorce & Remarriage, 17, 135–150. doi:10.1300/j087v17n03_09",
+          "source_text": "Hammond, R. J., & Muller G. O. (1992). The late-life divorced: Another look. Journal of Divorce & Remarriage, 17, 135–150. doi:10.1300/j087v17n03_09"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-068",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 94,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 94,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-068-s01",
+          "status": "verified",
+          "ko_text": "Hetherington, E. M., & Jodl, K. M. (1994). Stepfamilies as settings for child development. In A. Booth & J. Dunn (Eds.), Stepfamilies: Who benefits? Who does not (pp. 55–79). Hillsdale, NJ: Lawrence Erlbaum Associates.",
+          "source_text": "Hetherington, E. M., & Jodl, K. M. (1994). Stepfamilies as settings for child development. In A. Booth & J. Dunn (Eds.), Stepfamilies: Who benefits? Who does not (pp. 55–79). Hillsdale, NJ: Lawrence Erlbaum Associates."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-069",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 95,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 95,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-069-s01",
+          "status": "verified",
+          "ko_text": "Hiedemann, B., Suhomlinova, O., & O’Rand, A. M. (1998). Economic independence, economic status, and empty nest in midlife marital disruption. Journal of Marriage and Family, 60, 219–231. doi:10.2307/353453",
+          "source_text": "Hiedemann, B., Suhomlinova, O., & O’Rand, A. M. (1998). Economic independence, economic status, and empty nest in midlife marital disruption. Journal of Marriage and Family, 60, 219–231. doi:10.2307/353453"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-070",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 96,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 96,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-070-s01",
+          "status": "verified",
+          "ko_text": "Karraker, A., & Latham, K. (2015). In sickness and in health? Physical illness as a risk factor for marital dissolution in later life. Journal of Health and Social Behavior, 56, 420–435. doi:10.1177/0022146515596354",
+          "source_text": "Karraker, A., & Latham, K. (2015). In sickness and in health? Physical illness as a risk factor for marital dissolution in later life. Journal of Health and Social Behavior, 56, 420–435. doi:10.1177/0022146515596354"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-071",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 97,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 97,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-071-s01",
+          "status": "verified",
+          "ko_text": "Kennedy, S., & Ruggles, S. (2014). Breaking up is hard to count: The rise of divorce in the United States, 1980–2010. Demography, 51, 587–598. doi:10.1007/s13524-013-0270-9",
+          "source_text": "Kennedy, S., & Ruggles, S. (2014). Breaking up is hard to count: The rise of divorce in the United States, 1980–2010. Demography, 51, 587–598. doi:10.1007/s13524-013-0270-9"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-072",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 98,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 98,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-072-s01",
+          "status": "verified",
+          "ko_text": "Martin, T. C., & Bumpass, L. L. (1989). Recent trends in marital disruption. Demography, 26, 37–51. doi:10.2307/2061492",
+          "source_text": "Martin, T. C., & Bumpass, L. L. (1989). Recent trends in marital disruption. Demography, 26, 37–51. doi:10.2307/2061492"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-073",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 99,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 99,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-073-s01",
+          "status": "verified",
+          "ko_text": "Moen, P., Kim, J. E., & Hofmeister, H. (2001). Couples’ work/retirement transitions, gender, and marital quality. Social Psychology Quarterly, 64, 55–71. doi:10.2307/3090150",
+          "source_text": "Moen, P., Kim, J. E., & Hofmeister, H. (2001). Couples’ work/retirement transitions, gender, and marital quality. Social Psychology Quarterly, 64, 55–71. doi:10.2307/3090150"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-074",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 100,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 100,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-074-s01",
+          "status": "verified",
+          "ko_text": "Montenegro, X. P. (2004). The divorce experience: A study of divorce at midlife and beyond. Washington, DC: AARP Public Policy Institute.",
+          "source_text": "Montenegro, X. P. (2004). The divorce experience: A study of divorce at midlife and beyond. Washington, DC: AARP Public Policy Institute."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-075",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 101,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 101,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-075-s01",
+          "status": "verified",
+          "ko_text": "Ofstedal, M. B., Weir, D. R., Chen, K. T., & Wagner, J. (2011). Updates to HRS sample weights (HRS Report No. DR-013). Retrieved from University of Michigan, Health and Retirement Study website: http://hrsonline.isr.umich.edu/sitedocs/userg/dr-013.pdf",
+          "source_text": "Ofstedal, M. B., Weir, D. R., Chen, K. T., & Wagner, J. (2011). Updates to HRS sample weights (HRS Report No. DR-013). Retrieved from University of Michigan, Health and Retirement Study website: http://hrsonline.isr.umich.edu/sitedocs/userg/dr-013.pdf"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-076",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 102,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 102,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-076-s01",
+          "status": "verified",
+          "ko_text": "Raghunathan, T. E., Lepkowski, J. M., van Hoewyk, J., & Solenberger, P. (2001). A multivariate technique for multiply imputing missing values using a sequence of regression models. Survey Methodology, 27, 85–95.",
+          "source_text": "Raghunathan, T. E., Lepkowski, J. M., van Hoewyk, J., & Solenberger, P. (2001). A multivariate technique for multiply imputing missing values using a sequence of regression models. Survey Methodology, 27, 85–95."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-077",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 103,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 103,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-077-s01",
+          "status": "verified",
+          "ko_text": "Spitze, G., & South, S. J. (1985). Women’s employment, time expenditure, and divorce. Journal of Family Issues, 6, 307–329. doi:10.1177/019251385006003004",
+          "source_text": "Spitze, G., & South, S. J. (1985). Women’s employment, time expenditure, and divorce. Journal of Family Issues, 6, 307–329. doi:10.1177/019251385006003004"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-078",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 104,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 104,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-078-s01",
+          "status": "verified",
+          "ko_text": "Sweeney, M. M. (2010). Remarriage and stepfamilies: Strategic sites for family scholarship in the 21st century. Journal of Marriage and Family, 72, 667–684. doi:10.1111/j.1741-3737.2010.00724.x",
+          "source_text": "Sweeney, M. M. (2010). Remarriage and stepfamilies: Strategic sites for family scholarship in the 21st century. Journal of Marriage and Family, 72, 667–684. doi:10.1111/j.1741-3737.2010.00724.x"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-079",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 105,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 105,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-079-s01",
+          "status": "verified",
+          "ko_text": "Szinovacz, M. (1996). Couples’ employment/retirement patterns and perceptions of marital quality. Research on Aging, 18, 243–268. doi:10.1177/0164027596182005",
+          "source_text": "Szinovacz, M. (1996). Couples’ employment/retirement patterns and perceptions of marital quality. Research on Aging, 18, 243–268. doi:10.1177/0164027596182005"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-080",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 106,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 106,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-080-s01",
+          "status": "verified",
+          "ko_text": "Thornton, A., & Young-DeMarco, L. (2001). Four decades of trends in attitudes toward family issues in the United States: The 1960s through the 1990s. Journal of Marriage and Family, 63, 1009–1037. doi:10.1111/j.1741-3737.2001.01009.x",
+          "source_text": "Thornton, A., & Young-DeMarco, L. (2001). Four decades of trends in attitudes toward family issues in the United States: The 1960s through the 1990s. Journal of Marriage and Family, 63, 1009–1037. doi:10.1111/j.1741-3737.2001.01009.x"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-081",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 107,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 107,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-081-s01",
+          "status": "verified",
+          "ko_text": "Uhlenberg, P. (1996). Mortality decline in the twentieth century and the supply of kin over the life course. The Gerontologist, 36, 681–685. doi:10.1093/geront/36.5.681",
+          "source_text": "Uhlenberg, P. (1996). Mortality decline in the twentieth century and the supply of kin over the life course. The Gerontologist, 36, 681–685. doi:10.1093/geront/36.5.681"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-082",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 108,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 108,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-082-s01",
+          "status": "verified",
+          "ko_text": "Uhlenberg, P., & Myers, M. A. P. (1981). Divorce and the elderly. The Gerontologist, 21, 276–282. doi:10.1093/geront/21.3.276",
+          "source_text": "Uhlenberg, P., & Myers, M. A. P. (1981). Divorce and the elderly. The Gerontologist, 21, 276–282. doi:10.1093/geront/21.3.276"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-083",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 109,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 109,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-083-s01",
+          "status": "verified",
+          "ko_text": "Umberson, D., Williams, K., Powers, D. A., Chen, M. D., & Campbell, A. M. (2005). As good as it gets? A life course perspective on marital quality. Social Forces, 84, 493–511. doi:10.1353/sof.2005.0131",
+          "source_text": "Umberson, D., Williams, K., Powers, D. A., Chen, M. D., & Campbell, A. M. (2005). As good as it gets? A life course perspective on marital quality. Social Forces, 84, 493–511. doi:10.1353/sof.2005.0131"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-084",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 110,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 110,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-084-s01",
+          "status": "verified",
+          "ko_text": "van Buuren, S., Boshuizen, H. C., & Knook, D. L. (1999). Multiple imputation of missing blood pressure covariates in survival analysis. Statistics in Medicine, 18, 681–694. doi:10.1002/(SICI)1097-0258(19990330)18:6<681::AID-SIM71>3.0.CO;2-R",
+          "source_text": "van Buuren, S., Boshuizen, H. C., & Knook, D. L. (1999). Multiple imputation of missing blood pressure covariates in survival analysis. Statistics in Medicine, 18, 681–694. doi:10.1002/(SICI)1097-0258(19990330)18:6<681::AID-SIM71>3.0.CO;2-R"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-085",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 111,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 111,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-085-s01",
+          "status": "verified",
+          "ko_text": "White, L. K. (1990). Determinants of divorce: A review of research in the eighties. Journal of Marriage and the Family, 52, 904–912. doi:10.2307/353309",
+          "source_text": "White, L. K. (1990). Determinants of divorce: A review of research in the eighties. Journal of Marriage and the Family, 52, 904–912. doi:10.2307/353309"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-086",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 112,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 112,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-086-s01",
+          "status": "verified",
+          "ko_text": "Wickrama, K. A. S., O’Neal, C. W., & Lorenz, F. O. (2013). Marital functioning from middle to later years: A life course–stress process framework. Journal of Family Theory & Review, 5, 15–34. doi:10.1111/jftr.12000",
+          "source_text": "Wickrama, K. A. S., O’Neal, C. W., & Lorenz, F. O. (2013). Marital functioning from middle to later years: A life course–stress process framework. Journal of Family Theory & Review, 5, 15–34. doi:10.1111/jftr.12000"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-087",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 113,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 113,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-087-s01",
+          "status": "verified",
+          "ko_text": "Wilson, S. E., & Waddoups, S. L. (2002). Good marriages gone bad: Health mismatches as a cause of later-life marital dissolution. Population Research and Policy Review, 21, 505–533. doi:10.1023/A:1022990517611",
+          "source_text": "Wilson, S. E., & Waddoups, S. L. (2002). Good marriages gone bad: Health mismatches as a cause of later-life marital dissolution. Population Research and Policy Review, 21, 505–533. doi:10.1023/A:1022990517611"
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-088",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 114,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 114,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-088-s01",
+          "status": "verified",
+          "ko_text": "Wu, Z., & Schimmele, C. (2007). Uncoupling in late life. Generations, 31, 41–46.",
+          "source_text": "Wu, Z., & Schimmele, C. (2007). Uncoupling in late life. Generations, 31, 41–46."
+        }
+      ]
+    },
+    {
+      "id": "lin-et-al-2018-tr-089",
+      "status": "verified",
+      "unit": "context_block",
+      "ko_anchor": {
+        "flat_index": 115,
+        "block_type": "paragraph"
+      },
+      "en_anchor": {
+        "flat_index": 115,
+        "block_type": "paragraph"
+      },
+      "sentence_alignment_method": "human-reviewed-v1",
+      "sentence_pairs": [
+        {
+          "id": "lin-et-al-2018-tr-089-s01",
+          "status": "verified",
+          "ko_text": "Yorgason, J. B., Booth, A., & Johnson, D. (2008). Health, disability, and marital quality: Is the association different for younger versus older cohorts? Research on Aging, 30, 623–648. doi:10.1177/0164027508322570",
+          "source_text": "Yorgason, J. B., Booth, A., & Johnson, D. (2008). Health, disability, and marital quality: Is the association different for younger versus older cohorts? Research on Aging, 30, 623–648. doi:10.1177/0164027508322570"
+        }
+      ]
+    }
+  ],
+  "sentence_alignment_version": 1,
+  "sentence_alignment_status": "verified",
+  "sentence_alignment_note": "All 332 sentence pairs were checked against the complete bilingual paragraph blocks for meaning, order, omissions, citations, names, numbers, qualification language, life-course turning points, couple construction, time-varying measures, lagging, event-history modeling, bivariate and multivariate results, interactions, limitations, and causal scope. Ten sentence-boundary mismatch blocks were regrouped manually; all 36 references remain verbatim."
+}

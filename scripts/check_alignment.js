@@ -48,7 +48,7 @@ function hasCitation(value) {
 }
 
 function hasTableOrFigure(value) {
-  return /\b(table|figure|fig\.)\s*\d+/i.test(toText(value));
+  return /\b(table|figure|fig\.|box)\s*\d+/i.test(toText(value));
 }
 
 function formatList(items) {
@@ -83,6 +83,7 @@ function qualityChecks(sourceSegment, translationSegment) {
   const warnings = [];
   const original = toText(sourceSegment.original_text);
   const translation = toText(translationSegment.ko_translation || translationSegment.translation);
+  const isVerbatimPreservation = original === translation;
   const segmentId = normalizeId(sourceSegment.segment_id);
 
   if (!translation) {
@@ -113,12 +114,12 @@ function qualityChecks(sourceSegment, translationSegment) {
   }
 
   if (sourceSegment.contains_table_or_figure_reference === true || hasTableOrFigure(original)) {
-    if (!/(표|그림|table|figure|fig\.)\s*\d*/i.test(translation)) {
+    if (!/(표|그림|박스|table|figure|fig\.|box)\s*\d*/i.test(translation)) {
       errors.push(`${segmentId}: table/figure reference may be missing`);
     }
   }
 
-  if ((LIMITATION_MARKERS.test(original) || MAY_LIMITATION_MARKER.test(original)) && !KOREAN_CAUTION_MARKERS.test(translation)) {
+  if (!isVerbatimPreservation && (LIMITATION_MARKERS.test(original) || MAY_LIMITATION_MARKER.test(original)) && !KOREAN_CAUTION_MARKERS.test(translation)) {
     warnings.push(`${segmentId}: limitation/caution wording may be weakened`);
   }
 

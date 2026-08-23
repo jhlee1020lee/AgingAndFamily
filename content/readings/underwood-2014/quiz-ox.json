@@ -1,0 +1,127 @@
+{
+  "title": "Underwood (2014) OX 퀴즈",
+  "instructions": "논문 근거 학습문제입니다. 수치의 지시대상과 상관·예측·인과의 차이를 확인한 뒤 O 또는 X를 고르세요.",
+  "question_set_type": "논문 근거 학습문제",
+  "items": [
+    {
+      "prompt": "1947년 6월 4일 스코틀랜드의 11세 아동 70,000명 이상이 같은 지능검사를 치렀다.",
+      "answer": "O",
+      "explanation": "이는 같은 연령 코호트 전체의 지능을 측정하려 한 초기 전국 조사 가운데 하나였다.",
+      "evidence_segment_id": "OPEN-001",
+      "source": "Scottish Mental Surveys",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "Scottish Mental Surveys는 처음부터 노년기 치매의 유전자를 찾기 위해 설계되었다.",
+      "answer": "X",
+      "explanation": "원래 목적은 당시 학교교육의 혜택을 받기 어렵다고 분류된 아동의 수를 파악하고, 전문직 가정의 저출산에 따른 평균지능 저하 우려를 조사하는 것이었다.",
+      "evidence_segment_id": "OPEN-001",
+      "source": "조사의 역사적 목적",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "기사에 나온 약 160,000명은 2014년 당시 생존해 있던 후속연구 참여자의 수다.",
+      "answer": "X",
+      "explanation": "약 160,000명은 1932년과 1947년 조사에서 검사를 치른 아동 규모이며, 그 모든 생존자에게 재접촉하기 어려웠다는 뜻이다.",
+      "evidence_segment_id": "DESIGN-001",
+      "source": "표본 모집",
+      "difficulty": "함정"
+    },
+    {
+      "prompt": "두 Lothian 코호트의 노년기 후속연구에는 최종적으로 1,641명이 참여했다.",
+      "answer": "O",
+      "explanation": "연구진은 로디언 지역 약 5,000명에게 연락했고 두 코호트에서 최종 1,641명을 등록했다.",
+      "evidence_segment_id": "DESIGN-001",
+      "source": "연구 설계",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "11세 점수가 77세 IQ 분산의 약 50%를 예측했다는 결과는 모든 개인의 지능 절반이 11세에 확정됐다는 뜻이다.",
+      "answer": "X",
+      "explanation": "50%는 집단 내 77세 IQ 개인차 가운데 예측된 분산의 비율이지 개인별 운명의 고정 비율이 아니다.",
+      "evidence_segment_id": "DESIGN-001",
+      "source": "50% 분산",
+      "difficulty": "함정"
+    },
+    {
+      "prompt": "아동기 IQ를 통제하자 소량 음주와 노년기 인지 사이에서 보였던 이익이 사라졌다.",
+      "answer": "O",
+      "explanation": "와인이 인지를 높였다기보다 원래 인지능력이 높은 사람이 더 마셨을 가능성을 보여 주는 선택효과 사례다.",
+      "evidence_segment_id": "FINDINGS-001",
+      "source": "음주와 교란",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "기사에 따르면 식단과 사회활동의 상관이 사라졌으므로 모든 생활방식 개입은 효과가 없다고 확정할 수 있다.",
+      "answer": "X",
+      "explanation": "Lothian 자료에서 초기 인지능력을 고려했을 때 일부 상관이 사라졌다는 결과이며 모든 개입의 보편적 무효를 직접 시험한 것은 아니다.",
+      "evidence_segment_id": "FINDINGS-001",
+      "source": "상관의 해석",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "Lothian 연구는 아동기 IQ가 설명하지 못하는 나머지 약 50%의 노년기 지능 개인차가 남는다고 시사한다.",
+      "answer": "O",
+      "explanation": "비흡연, 신체적 건강, 이중언어, 교육과 유전·환경 요인이 이후 차이에 관여할 가능성이 함께 제시된다.",
+      "evidence_segment_id": "FINDINGS-001",
+      "source": "남은 변이",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "반복검사에서 기억과 지식은 비교적 유지된 반면 추상적 문제해결과 처리속도 관련 능력은 평균적으로 저하했다.",
+      "answer": "O",
+      "explanation": "문단 이야기 기억과 단어 발음은 유지되었지만 빠른 사고와 반응시간을 요구하는 과제에서는 연령 저하가 나타났다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "인지영역별 변화",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "코호트 평균이 저하했으므로 모든 참여자의 인지점수는 같은 방향과 크기로 변했다.",
+      "answer": "X",
+      "explanation": "점수는 70대와 80대에 부채처럼 벌어졌고 Deary는 평균이 전체 이야기를 말하지 않는 개인별 분화를 강조했다.",
+      "evidence_segment_id": "CHANGE-001",
+      "source": "개인별 분화",
+      "difficulty": "함정"
+    },
+    {
+      "prompt": "확산텐서영상 결과에서 백질 신경 연결의 온전성은 일반 인지기능 차이의 약 10%와 관련되었다.",
+      "answer": "O",
+      "explanation": "물분자의 이동을 추적하는 확산텐서영상으로 백질 연결상태와 인지의 관련성을 평가했다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "뇌영상",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "백질 고신호강도 병변의 원인은 높은 코르티솔 하나로 이미 확정되었다.",
+      "answer": "X",
+      "explanation": "원인은 아직 충분히 밝혀지지 않았으며 높은 코르티솔과 상당히 밀접하게 관련된다는 관찰이 제시되었다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "백질 고신호강도 병변",
+      "difficulty": "함정"
+    },
+    {
+      "prompt": "노년기의 얇은 피질은 반드시 노화 과정에서 회백질을 많이 잃었다는 뜻은 아니다.",
+      "answer": "O",
+      "explanation": "노년기 피질이 얇은 사람이 아동기에도 IQ가 낮았다는 결과는 애초의 회백질 개인차 가능성을 제기한다.",
+      "evidence_segment_id": "NEURO-001",
+      "source": "피질 두께 해석",
+      "difficulty": "응용"
+    },
+    {
+      "prompt": "물탱크 가설은 초기의 유전자뿐 아니라 어느 정도 유리한 초기 환경도 인지예비력에 기여할 수 있다고 본다.",
+      "answer": "O",
+      "explanation": "더 잘 구성된 뇌로 시작하면 신경퇴행으로 잃을 수 있는 예비력이 더 많다는 비유이며 유전자와 초기 환경을 함께 언급한다.",
+      "evidence_segment_id": "RESERVE-001",
+      "source": "물탱크 가설",
+      "difficulty": "기본"
+    },
+    {
+      "prompt": "기사 당시 ENIGMA에는 70개국의 33개 기관이 참여하고 있었다.",
+      "answer": "X",
+      "explanation": "수치의 지시대상이 바뀌었다. 기사에는 33개국의 70개 기관이 참여한다고 제시된다.",
+      "evidence_segment_id": "RESERVE-001",
+      "source": "ENIGMA",
+      "difficulty": "기본"
+    }
+  ]
+}

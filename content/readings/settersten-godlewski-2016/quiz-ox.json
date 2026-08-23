@@ -12,14 +12,6 @@
       "difficulty": "기본"
     },
     {
-      "prompt": "생활연령은 쉽게 측정할 수 있으므로 특정 결과의 인과 메커니즘으로 자동 해석해도 된다.",
-      "answer": "X",
-      "explanation": "편리성과 보편성은 측정상 장점이지만, 중요한 것은 연령 자체가 아니라 연령이 가리키는 심리·생물·사회·기능 과정이다.",
-      "evidence_segment_id": "INDIVIDUAL-001",
-      "source": "대리변수로서의 연령",
-      "difficulty": "함정"
-    },
-    {
       "prompt": "미래시간조망은 실제 나이와 무관하게 자신에게 남은 시간에 대한 지각이 목표·행동·정서를 형성한다고 본다.",
       "answer": "O",
       "explanation": "저자들은 중년에 지난 시간보다 남은 시간을 더 생각하는 경험과 Carstensen의 미래시간조망 연구를 연결한다.",
@@ -28,11 +20,11 @@
       "difficulty": "기본"
     },
     {
-      "prompt": "연령 관련 변화에 대한 자각은 변화가 다른 조건에서 비롯되었다고 생각할 때도 성립한다.",
+      "prompt": "생활연령은 쉽게 측정할 수 있으므로 특정 결과의 인과 메커니즘으로 자동 해석해도 된다.",
       "answer": "X",
-      "explanation": "AARC는 변화를 의식하는 데 더해 그 변화를 다른 조건이 아니라 증가한 생활연령에 귀속할 때 성립한다.",
-      "evidence_segment_id": "SUBJECTIVE-AGE-001",
-      "source": "주관적 연령과 AARC",
+      "explanation": "편리성과 보편성은 측정상 장점이지만, 중요한 것은 연령 자체가 아니라 연령이 가리키는 심리·생물·사회·기능 과정이다.",
+      "evidence_segment_id": "INDIVIDUAL-001",
+      "source": "대리변수로서의 연령",
       "difficulty": "함정"
     },
     {
@@ -42,6 +34,14 @@
       "evidence_segment_id": "MULTIPLE-TIMES-001",
       "source": "역사시간",
       "difficulty": "기본"
+    },
+    {
+      "prompt": "연령 관련 변화에 대한 자각은 변화가 다른 조건에서 비롯되었다고 생각할 때도 성립한다.",
+      "answer": "X",
+      "explanation": "AARC는 변화를 의식하는 데 더해 그 변화를 다른 조건이 아니라 증가한 생활연령에 귀속할 때 성립한다.",
+      "evidence_segment_id": "SUBJECTIVE-AGE-001",
+      "source": "주관적 연령과 AARC",
+      "difficulty": "함정"
     },
     {
       "prompt": "가족 영역은 질병·출산·돌봄의 필요를 완전히 예측할 수 있으므로 노동 영역보다 선형적 시간에 더 강하게 묶인다.",
@@ -76,20 +76,20 @@
       "difficulty": "응용"
     },
     {
-      "prompt": "생애과정이 탈표준화되면 정상적인 전환 시기에 관한 오래된 연령규범도 즉시 사라진다.",
-      "answer": "X",
-      "explanation": "연령의 규제력이 약해졌을 수 있어도 개인은 현실과 맞지 않는 정상생애의 오래된 이상을 계속 붙들 수 있다.",
-      "evidence_segment_id": "ROLE-TIMING-001",
-      "source": "연령규범",
-      "difficulty": "함정"
-    },
-    {
       "prompt": "저자들은 연령통합이 언제나 긍정적이고 연령분리가 언제나 부정적이라고 가정해서는 안 된다고 말한다.",
       "answer": "O",
       "explanation": "연령다양 관계망은 협력과 갈등을 모두 가능하게 하고 연령제한 공동체도 접촉 제한과 또래 지원을 함께 낳는다.",
       "evidence_segment_id": "AGE-INTEGRATION-001",
       "source": "연령통합과 분리",
       "difficulty": "기본"
+    },
+    {
+      "prompt": "생애과정이 탈표준화되면 정상적인 전환 시기에 관한 오래된 연령규범도 즉시 사라진다.",
+      "answer": "X",
+      "explanation": "연령의 규제력이 약해졌을 수 있어도 개인은 현실과 맞지 않는 정상생애의 오래된 이상을 계속 붙들 수 있다.",
+      "evidence_segment_id": "ROLE-TIMING-001",
+      "source": "연령규범",
+      "difficulty": "함정"
     },
     {
       "prompt": "법과 정책은 미성년자·성인·노인 같은 범주를 사용하지만 구체적인 생활연령으로 권리나 수급자격을 정하지는 않는다.",
@@ -108,20 +108,20 @@
       "difficulty": "기본"
     },
     {
-      "prompt": "Project AGE는 모든 문화에서 연령범주와 세대 간 상호작용 경계가 동일하다는 결과를 냈다.",
-      "answer": "X",
-      "explanation": "7개 문화 맥락은 연령의 중요성, 노년기의 평가, 연령 간 상호작용 경계에서 상당한 변이를 보였다.",
-      "evidence_segment_id": "GENDER-CULTURE-002",
-      "source": "문화와 Project AGE",
-      "difficulty": "함정"
-    },
-    {
       "prompt": "저자들의 결론은 노화 연구에서 연령을 완전히 버리는 것이 아니라 개인 수준의 대리변수 문제와 사회 수준의 구조적 중요성을 함께 다루라는 것이다.",
       "answer": "O",
       "explanation": "결론은 연령으로부터 벗어날 필요와 사회적 연령의 중대한 결과를 동시에 제시하며 두 수준을 잇는 이론을 요구한다.",
       "evidence_segment_id": "CONCLUSION-002",
       "source": "결론",
       "difficulty": "응용"
+    },
+    {
+      "prompt": "Project AGE는 모든 문화에서 연령범주와 세대 간 상호작용 경계가 동일하다는 결과를 냈다.",
+      "answer": "X",
+      "explanation": "7개 문화 맥락은 연령의 중요성, 노년기의 평가, 연령 간 상호작용 경계에서 상당한 변이를 보였다.",
+      "evidence_segment_id": "GENDER-CULTURE-002",
+      "source": "문화와 Project AGE",
+      "difficulty": "함정"
     }
   ]
 }

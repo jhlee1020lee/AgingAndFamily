@@ -1,0 +1,127 @@
+{
+  "title": "Smith et al. (2007) 단답형 퀴즈",
+  "instructions": "질문마다 핵심 용어·인명·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "question_set_type": "단답형 퀴즈",
+  "items": [
+    {
+      "question": "서구사회에서 전통적·가부장적 남자다움을 가장 영향력 있고 문화적으로 수용되는 기준으로 만드는 구성은?",
+      "accepted_answers": ["헤게모니적 남성성"],
+      "answer_type": "term",
+      "explanation": "논문은 이를 독립·강인함·자기주장·감정 억제 등을 남성에게 기대하는 사회적 구성으로 설명한다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "남성성 담론의 독립성 정의가 특히 우선시하는 두 요소는?",
+      "accepted_answers": ["자기의존과 자율성", "자기의존·자율성"],
+      "answer_type": "short_phrase",
+      "explanation": "원문은 헤게모니적 남성성의 독립성 정의가 self-reliance와 autonomy를 특권화한다고 명시한다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "독립성 유지 능력을 노년기 성취의 표지로 받아들이는 담론은?",
+      "accepted_answers": ["성공적 노화"],
+      "answer_type": "term",
+      "explanation": "노화 담론에서 독립성을 유지하는 능력은 aging successfully의 표지로 제시된다.",
+      "evidence_segment_id": "INTRO-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "FAMAS 전체 코호트의 남성 수는?",
+      "accepted_answers": ["1,195명", "1195명"],
+      "answer_type": "number",
+      "explanation": "전체 코호트는 애들레이드 북서부에서 무작위 추출한 35~80세 남성 1,195명이었다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "연령과 혼인상태로 층화해 질적 하위연구에 초대한 남성 수는?",
+      "accepted_answers": ["36명"],
+      "answer_type": "number",
+      "explanation": "전체 코호트에서 연령과 혼인상태에 따라 층화한 남성 36명이 초대되었다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "심층면담 한 회의 최장 시간은?",
+      "accepted_answers": ["1시간 45분", "1시간45분"],
+      "answer_type": "number",
+      "explanation": "면담은 1시간에서 1시간 45분 동안 진행되었다.",
+      "evidence_segment_id": "METHOD-CONTEXT-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "JS가 전사자료를 코딩할 때 사용한 소프트웨어는?",
+      "accepted_answers": ["NVIVO", "Nvivo"],
+      "answer_type": "term",
+      "explanation": "축어 전사와 현장노트를 포함한 자료는 NVIVO로 코딩되어 귀납적 주제분석에 사용됐다.",
+      "evidence_segment_id": "METHOD-INTERVIEW-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "모든 면담을 수행한 JS의 당시 나이는?",
+      "accepted_answers": ["25세"],
+      "answer_type": "number",
+      "explanation": "JS는 25세였고 참여자 대다수는 55세 이상이어서 연령차가 생애과정 이야기를 촉진했다.",
+      "evidence_segment_id": "METHOD-INTERVIEW-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "당뇨병에 지배당하지 않고 자신이 질병을 통제한다고 말한 참여자는?",
+      "accepted_answers": ["Conrad", "콘래드"],
+      "answer_type": "person",
+      "explanation": "Conrad의 발화는 통제가 독립성의 남성적 의미를 구성하는 사례로 분석됐다.",
+      "evidence_segment_id": "FINDINGS-OPEN-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "아내가 자신을 막무가내고 고집스럽게 본다고 전하면서 타인에게 의지하기 싫다고 한 참여자는?",
+      "accepted_answers": ["Ben", "벤"],
+      "answer_type": "person",
+      "explanation": "Ben은 아내의 평가를 인정하면서도 타인에게 의존하지 않는 독립성을 옹호했다.",
+      "evidence_segment_id": "MASCULINE-HELP-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "간호사를 거절하고 바닥에 쓰러질 때까지 도움을 요청하지 않겠다고 한 참여자는?",
+      "accepted_answers": ["Max", "맥스"],
+      "answer_type": "person",
+      "explanation": "Max는 이어 너무 오랫동안 독립적으로 살아왔다고 설명해 단순한 완고함 이상의 맥락을 드러냈다.",
+      "evidence_segment_id": "MASCULINE-MAX-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "건강을 신체적·인지적으로 스스로 기능할 수 있는 상태로 설명한 참여자는?",
+      "accepted_answers": ["Bob", "밥"],
+      "answer_type": "person",
+      "explanation": "Bob은 건강과 독립성을 신체적·인지적 일상기능의 유지로 연결했다.",
+      "evidence_segment_id": "SUCCESS-DAILY-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "시력을 잃으면 독서와 운전을 할 수 없어 삶의 질이 낮아진다고 한 참여자는?",
+      "accepted_answers": ["Wayne", "웨인"],
+      "answer_type": "person",
+      "explanation": "Wayne의 사례에서 독립성은 독서와 운전이라는 구체적 일상기능에 연결됐다.",
+      "evidence_segment_id": "SUCCESS-RISK-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "인지능력 감퇴로 운전면허를 잃은 뒤 단순 생존과 실제 삶을 구분한 참여자는?",
+      "accepted_answers": ["Michael", "마이클"],
+      "answer_type": "person",
+      "explanation": "Michael은 거의 12개월 전에 면허를 잃었다고 했고 그 뒤 크게 낙담했으며, 독립적·생산적 생활을 삶의 핵심으로 말했다.",
+      "evidence_segment_id": "SUCCESS-MICHAEL-001",
+      "source": "Smith et al. (2007)"
+    },
+    {
+      "question": "전동 스쿠터로 이동 범위를 회복하며 새로운 방식의 독립성을 보여 준 참여자는?",
+      "accepted_answers": ["Arnold", "아널드"],
+      "answer_type": "person",
+      "explanation": "Arnold의 사례는 보조수단 수용을 통한 독립성과 남성성의 적응적 재구성으로 해석됐다.",
+      "evidence_segment_id": "SUCCESS-SCOOTER-001",
+      "source": "Smith et al. (2007)"
+    }
+  ]
+}

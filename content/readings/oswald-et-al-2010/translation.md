@@ -1,0 +1,259 @@
+# 기존 장소에서 계속 거주하며 나이 드는 것은 삶의 만족도에 자원인가, 위험인가?
+
+> Frank Oswald, PhD¹ · Daniela Jopp, PhD² · Christoph Rott, PhD³ · Hans-Werner Wahl, PhD⁴
+
+> ¹ 독일 프랑크푸르트 괴테대학교 교육학부 학제간 노화연구. ² 미국 뉴욕 브롱크스 포덤대학교 심리학과. ³ 독일 하이델베르크대학교 노년학연구소. ⁴ 독일 하이델베르크대학교 심리학연구소 심리노화연구부.
+
+> *The Gerontologist*, 51(2), 238–250 (2011). DOI: 10.1093/geront/gnq096. Advance Access 온라인 선출판 2010년 11월 19일.
+
+> 접수: 2010년 7월 2일; 승인: 2010년 10월 19일. 담당 편집자: William J. McAuley, PhD.
+
+> 교신: Frank Oswald, Interdisciplinary Ageing Research, Faculty of Educational Sciences, Goethe University Frankfurt, Robert-Mayer-Str. 1, D-60325 Frankfurt, Germany. 이메일: oswald@em.uni-frankfurt.de.
+
+> © 저자 2010. 미국노년학회를 대신하여 Oxford University Press가 출판함. 모든 권리 보유. 허가 관련 문의 이메일: journals.permissions@oup.com.
+
+## 초록
+
+**목적.** 연령에 따른 건강 제약을 고려하면 노년기에는 환경이 삶의 만족도에 미치는 중요성이 커질 수 있다. 이 연구는 주택과 주변 근린환경의 객관적·지각된 물리적·사회적 측면이 전기 노인과 후기 노인의 삶의 만족도에 자원 또는 위험으로 작용하는지를 조사했다.
+
+**설계 및 방법.** 65–94세 지역사회 거주자 381명으로 구성된 인구기반 표본이 설문지를 사용해 자신의 사회물리적 환경과 삶의 만족도를 보고했다.
+
+**결과.** 평균적으로 전기 노인과 후기 노인은 실내의 물리적 환경 지표에서는 달랐지만, 근린환경 특성이나 주거의 사회적 측면에서는 다르지 않았다. 회귀분석 결과 주택 면적, 지각된 근린환경의 질, 옥외 장소애착은 각각 독립적으로 삶의 만족도를 설명한 반면, 주거의 사회적 측면은 그 역할이 미미했다. 두 연령집단을 별도로 분석하자 연령에 따라 상이한 설명 양상이 나타났다. 주택 면적은 전기 노인의 삶의 만족도와는 정적으로 관련되었지만 후기 노인에서는 부적으로 관련되었다. 후기 노인에게는 지각된 근린환경의 질과 옥외 장소애착이 전기 노인보다 더 중요했다. 다른 사람과의 동거는 전기 노인에서만 삶의 만족도와 정적으로 관련되었다.
+
+**함의.** 웰빙과 관련하여 기존 장소에서 계속 거주하며 나이 드는 과정이 어떻게 달라지는지를 더 잘 이해하려면 주택과 근린환경의 환경적 특성을 고려해야 한다.
+
+## 핵심어
+
+지역사회 거주 노인, 주거, 근린환경, 삶의 만족도, 전기 노인, 후기 노인
+
+## 서론
+
+노인(65세 이상)의 대다수는 요양원에 살지 않고 지역사회 주택에 거주한다(Krout & Wethington, 2003; Oswald & Rowles, 2006). 대부분의 사람은 매우 높은 연령까지 높은 주거 안정성을 보이며 자신의 집과 근린환경에 강한 애착을 느낀다(Rowles, Oswald, & Hunter, 2004; Scharf, Phillipson, & Smith, 2005). 고령기에 겪는 건강 문제로 인해 초고령자는 활동 범위를 줄이고 하루 중 많은 시간을 집과 바로 인접한 옥외환경에서 보내는 경향이 있다(M. M. Baltes, Maas, Wilms, Borchelt, & Little, 1999). 건강 제약은 환경적 도전에 대한 취약성도 높이므로 주거와 근린환경 요인의 중요성이 커질 것이다(Wahl, 2001; Wahl & Oswald, 2010). 가정 내 위험요인과 낙상 같은 부정적 건강사건의 연관성을 보여 주는 경험적 근거가 있다(Gillespie, Gillespie, Robertson, Lamb, Cumming, & Rowe, 2003; Gitlin, 2003). 또한 근린환경의 측면이 심리적 고통, 장애, 심혈관 위험 및 우울과 관련된다는 근거도 있다(Beard et al., 2009; Clarke & George, 2005; Wight, Cummings, Karlamangla, & Aneshensel, 2009). 정상노화 관점에서도 주택과 근린환경의 환경적 특성은 웰빙과 삶의 만족도라는 일반적인 건강 관련 심리적 결과와 관련하여 연구되어 왔다(예: Wahl, Fänge, Oswald, Gitlin, & Iwarsson, 2009).
+
+그러나 노년기의 개인-환경 분석과 삶의 만족도를 연결해 비교적 포괄적으로 접근하려는 시도는 기존 문헌에서 드물었다(Wahl & Oswald, 2010). 첫째, 연구들은 정상노화의 과정과 결과에서 근린환경이 하는 역할을 흔히 간과한다(Abbott, Carman, Carman, & Scarfo, 2009; Krause, 2004; A. E. Smith, 2009). 둘째, 선행연구는 환경의 다차원적 속성을 고려하려는 경우가 드물다.
+
+따라서 이 연구에서는 독립성, 정체성, 웰빙이라는 주요 발달 결과와 관련하여 물리적 환경, 지각된 환경, 사회적 환경을 동시에 평가할 것을 명시적으로 요구하는 개념적 틀을 적용한다(Wahl & Oswald, 2010). Wahl과 Oswald의 주장에 따르면, 물리적 환경 자체의 활용을 주로 다루는 개인-환경 행위주체성 관점은 물리적 환경을 경험하고 평가하는 여러 측면을 포함하는 개인-환경 소속감 요소로 보완되어야 한다. 마찬가지로 사회적 환경도 객관적 관점뿐 아니라 지각된, 즉 더 주관적인 관점에서 살펴야 한다.
+
+행위주체성을 더 자세히 살펴보고 “전기 노인”과 “후기 노인”의 일반적인 구분도 참조하면, 주거상황이 긍정적 또는 부정적 효과를 미칠지는 “객관적 개인-환경 교환” 과정으로 예측할 수 있다(Lawton, 1989, 1998). 여기에는 실내외 주거조건 같은 물리적 환경자원을 활용하고 최적화하는 것뿐 아니라 환경적 장벽 같은 위험을 피하는 것도 포함된다. 더 나아가 제3연령, 즉 65–80세인 “전기 노인”(P. B. Baltes & Smith, 2003; Neugarten, 1974)은 역량 수준이 더 높기 때문에 물리적 환경자원(예: 주거 공간)이라는 측면에서 “환경적 풍요”(Lawton, 1989)를 더 자주 능동적으로 활용할 수 있다고 볼 수 있다. 반면 제4연령, 즉 80세 이상인 “후기 노인”은 독립성과 웰빙을 유지하기 위해 제한된 역량 수준 때문에 생활조건을 “환경 압력” 또는 환경적 위험과 장벽으로 대처해야 하는 경우가 더 많고, 환경에 순응적으로 대응해야 한다(Gitlin, 1998; Lawton & Nahemow 1973; Scheidt & Norris-Baker, 2004; Scheidt & Windley, 2006; Wahl, 2001). 예를 들어 넓은 주택은 전기 노인에게 자유롭게 움직일 공간을 더 많이 제공하거나 방을 여러 용도로 활용하게 해 주므로 주거자원이 될 수 있다. 이와 달리 넓은 주택에서 살면 더 긴 거리를 걸어야 하므로, 예컨대 이동 제약이 있을 때는 이것이 어려움이 될 수 있다. 환경자원을 활용하는 것에는 집 밖으로 나갈 수 있는 접근성과 옥외 편의시설도 포함된다. 무장애 접근성과 가까운 보건의료서비스 같은 기반시설 여건은 고령기, 특히 초고령기에 삶의 만족도를 위한 더욱 중요한 자원이 될 가능성이 크다.
+
+소속감 수준에서 보면 집과 근린환경은 주관적으로도 중요한 장소이므로, 주거는 객관적인 물리적 위험과 장벽 또는 자원만으로 정의되는 것이 아니라 자신이 사는 장소에 대한 경험으로도 정의된다. 여기에는 전망이 좋거나 근린환경에서 문화적 관심사를 누릴 수 있는 것처럼 개인이 가치 있게 여기는 실내외 측면과, 장소정체성 이론이 제시하듯 행동적·인지적·정서적 수준의 개인적 유대를 반영하는 장소애착이 포함된다(Altman & Low, 1992; Brown, Perkins, & Brown, 2003; Oswald, Schilling et al., 2006; Stedman, 2002). 예를 들어 장소애착에는 집에서 편안함을 느끼거나 특정 장소에 친숙함을 느끼는 것이 포함된다. 장소애착은 과거 경험과 일상적 습관을 바탕으로 대개 한 장소에서 상당 기간 거주한 뒤 형성된다(Oswald & Wahl, 2004, 2005; Rowles et al., 2004; A. E. Smith, 2009; Taylor, 2001; Wahl & Lang, 2004). 따라서 근린환경의 질에 대한 경험과 지각된 근린환경 애착은 특히 초고령기에 건강 저하를 경험하는 상황에서 삶의 만족도를 지키는 자원이 될 수 있다.
+
+환경의 역할을 고려할 때 집이나 근린환경에서 이루어지는 사회적 교환 과정도 중요하며, 여기에는 객관적·주관적 쟁점이 모두 포함된다(예: Krause, 2004; A. E. Smith, 2009; Wahl & Lang, 2004). 특히 중요하고 고전적인 사회관계 연구와도 부합하는 것은 근린환경에 친구나 친척이 있거나 공동주택 건물에서 우호적인 분위기를 경험하는 것과 같은 주거 관련 사회적 측면이다(Fingerman, 2003; Shaw, 2005). 이러한 주거의 사회적 측면이 노년기 웰빙에 미치는 영향을 보여 주는 경험적 근거가 있으며, 이는 바로 인접한 주거환경에서 사회적 교환과 지원이 미치는 긍정적 효과를 강조한다(예: Krause, 2004; Rowles, 2008; Shaw, 2005).
+
+사회적 근린환경에 관한 다른 개념들은 사회적 응집, 무질서, 통제 또는 집합효능감 같은 측면을 다룬다(예: Sampson, Raudenbush, & Earls, 1997). 연구결과는 가구 구성이 성공적인 노화에 필수적임을 더 보여 준다. 예를 들어 혼자 살면 독립성과 자율성을 잃을 위험이 커지는 반면(예: Iwarsson et al., 2007), 배우자와 함께 사는 것은 삶의 만족도와 관련된다(Diener, Suh, Lucas, & Smith, 1999). 지역사회에 거주하는 후기 노인은 배우자를 잃은 뒤 혼자 살면서 기존 장소에서 계속 나이 들어가는 경우가 많지만, 흔히 그런 생활에 잘 적응한 것으로 보인다. 따라서 가구 구성(즉, 혼자 살기 대 다른 사람과 함께 살기)은 전기 노인의 삶의 만족도에는 자원으로 간주될 수 있는 반면, 후기 노인은 혼자 사는 데 적응한 경우가 더 많다. 동시에 도시환경에서 혼자 사는 초고령자는 근린환경의 사회적 질이 변하는 것을 흔히 우려한다. 따라서 이웃의 지각된 사회적 질과 지역 내 사회적 관계자(친구와 친척)의 존재는 후기 노인의 삶의 만족도에 특히 중요할 것이다.
+
+이 연구는 선행연구를 두 가지 방식으로 확장한다. 노년기의 개인과 환경 사이 교환을 더 잘 이해할 필요가 있으므로, 첫째로 물리적·사회적 개인-환경 교환의 환경요인이 미치는 영향을 조사하기 위한 더 포괄적인 접근을 제시한다(Oswald et al., 2006, 2007; Wahl & Oswald, 2010). 선행연구에 대한 두 번째 확장으로, 개인-환경 과정이 전기 노인과 후기 노인 사이에서 다를 수 있다고 주장한다. 전기 노년기는 비교적 높은 수준의 건강, 인지기능, 풍부한 사회적 교류 및 다양한 활동으로 특징지어지므로, 삶의 만족도가 개인-환경 교환 과정의 여러 측면과 맺는 관계는 만성질환과 건강 제약, 배우자·친구·이웃의 상실, 독립성의 제약 증가 및 근린환경 내 활동 범위 축소라는 평균적 위험이 더 큰 후기 노년기와 다를 수 있다(예: Antonucci, 2001; P. B. Baltes & Smith, 2003; J. Smith, Borchelt, Maier, & Jopp, 2002).
+
+## 연구 목적
+
+기존 장소에서 계속 거주하며 나이 드는 사람들의 삶의 만족도에 개인-환경 과정이 미치는 영향을 더 포괄적으로 탐색하기 위해, 이 연구는 지역사회에 거주하는 전기 노인과 후기 노인의 물리적·사회적 실내 주거 및 근린환경 측면을 객관적·주관적으로 모두 고려하는 것을 목적으로 했다. 기능적 능력을 동시에 통제하면서 삶의 만족도에 대한 환경요인의 설명력을 검토했다. 측정변수 묶음은 가까운 물리적 실내환경(예: 주거 공간, 접근성, 쾌적성)과 근린환경(예: 근린환경의 질, 옥외 장소애착)의 객관적·지각된 측면을 나타냈으며, 사회적 환경의 객관적·지각된 측면(예: 혼자 살기 대 다른 사람과 함께 살기, 지역 내 사회적 관계자 유무, 사회적 근린환경의 질 평가)을 포괄했다. 환경요인의 영향에 관한 기존 경험적 근거와 이 연구결과를 연결하기 위해, 먼저 전체 표본에서 삶의 만족도를 설명하는 변수들을 조사한 다음 두 연령집단을 각각 조사했다. 선행연구에 따르면 기능적 능력이 삶의 만족도의 개인 간 차이를 설명하지만, 우리는 환경적 측면에도 추가적인 설명력이 있으며 특히 근린환경 관련 쟁점이 중요할 것이라고 가정했다.
+
+둘째, 특정 측면의 설명력이 연령에 따라 달라지는지를 탐색했다. 연령이 높아짐에 따라 환경조건과 개인 역량의 양상이 변하므로 개인-환경 관계도 달라지며(Lawton, 1998; Rowles et al., 2004), 전기 노인과 후기 노인이 특정 요인에서 서로 다르게 혜택을 얻을 것이라고 가정했다. 주거 공간은 전기 노인이 더 넓은 주택이 제공하는 기회를 활용할 수 있으므로 자원이 되지만, 초고령기의 건강 제약에 적응할 능력이 제한된 후기 노인에게는 삶의 만족도를 위협하는 위험이 될 수 있다고 가정했다. 반대로 접근성은 후기 노인에게만 (긍정적인) 역할을 할 것으로 가정했다. 근린환경 평가는 연령이 높아질수록 삶의 만족도에 점점 더 긍정적인 효과를 미칠 것으로 가정했다. 다른 사람과의 동거는 배우자와 함께 사는 사람, 즉 특히 전기 노인의 삶의 만족도를 위한 자원인 반면, 지역 내 사회적 관계자와 사회적 근린환경의 질은 후기 노인에게 자원이 될 것으로 보았다.
+
+## 방법
+
+### 참여자
+
+이 연구는 독일 다름슈타트시의 한 구역(주민 약 16,500명; 65세 이상 주민 3,350명)을 대상으로 한 노화 연구에서 수집한 자료를 바탕으로 한다(Hieber, Oswald, Rott, & Wahl, 2006). 지역 통계국은 연령(65–79세 대 80–94세)과 성별로 층화해 잠재적 참여자 773명의 무작위 표본을 추출했고, 이들에게 연구 설문지를 우편으로 보냈다. 응답률(52%)을 최대화하고 선택효과를 최소화하기 위해 모든 무응답자에게 전화로 재접촉했다(최대 8회까지 통화 시도). 전화로 연락된 참여자 가운데 3명은 면접자와 함께 전화로 설문지를 작성하기도 했다. 결측자료가 있는 참여자 21명을 제외한 최종 표본은 지역사회 거주자 381명으로, 전기 노인(65–79세; 여성 49.1%) 226명과 후기 노인(80–94세; 여성 57.4%) 155명이었다. 표본 특성은 표 1에 제시했다.
+
+전기 노인은 후기 노인보다 기혼인 경우가 더 많았고, 후기 노인은 사별한 경우가 더 많았다. 두 집단의 교육수준은 비슷했다. 소득은 연령집단에 따라 달랐으며, 전기 노인이 후기 노인보다 높은 소득을 더 자주 보고했다. 같은 장소에서 오랫동안 거주한 기간은 두 집단 모두 지역적 안정성이 높음을 보여 준다. 전기 노인의 약 3분의 2가 부부가구에 살았던 반면, 후기 노인은 표본의 약 절반이 혼자 살았다. 자가소유자의 비율은 전기 노인과 후기 노인이 비슷했다.
+
+![표 1, 1부: 표본 및 주요 연구변수](figures/table-1-part-1.png)
+
+![표 1, 2부: 건강 관련 변수 및 주석](figures/table-1-part-2.png)
+
+표 1. 표본 및 주요 연구변수의 기술통계: 전체 표본과 연령집단별 구분. 접근성 설명: 첫 번째 이미지는 전체 표본(N = 381), 전기 노인집단(n = 226), 후기 노인집단(n = 155)의 표본, 주거, 근린환경 및 사회적 특성을 제시한다. 두 번째 이미지는 ADL, IADL 및 삶의 만족도로 이어지며 주석 a–f를 포함한다. 정확한 셀 값, 유의성 검정, 척도 및 주석은 원문에서 잘라낸 두 이미지에 보존되어 있다.
+
+### 개념 및 관련 측정
+
+주거와 근린환경의 물리적·사회적 측면은 매우 구체적이고 정교한 측정도구로 평가할 수 있다(예: Iwarsson & Slaug, 2001; Sampson et al., 1997). 이 연구는 참여자가 집에서 혼자 작성한 설문조사에 기반했으므로, 평가에 드는 노력과 복잡성을 줄이기 위해 더 세분화된 측정도구는 사용하지 않았다. 사용한 개념과 측정은 아래에 설명한다.
+
+#### 실내 주거환경
+
+실내 주거환경은 설문지로 평가한 객관적 특성과 물리적 주거환경 특성에 대한 지각을 포함하는, 바로 가까운 가정 내 환경으로 정의했다. 참여자의 집이나 근린환경에서 객관적인 환경평가는 실시하지 않았다. 객관적 실내 주거지표로 집에서 이용 가능한 방의 수와 제곱미터 단위의 주택 면적이라는 주거 공간을 질문했다. 지각된 주거환경의 질을 다루기 위해, 집 안의 모든 편의시설에 무장애로 접근할 수 있음(1 = 예, 0 = 아니요)과 계단 없이 아파트/주택 현관문에 접근할 수 있음(1 = 예, 0 = 아니요)이라는 두 항목의 합으로 나타낸 기본 주거 접근성 평가점수를 사용했다. 집에서 쾌적성을 중시하는 물리적 환경조건을 평가하기 위해 10개 항목에 기반한 주거 쾌적성 합산점수를 구성했다. 여기에는 집이 충분히 넓고, 현대적이며, 아늑하고, 밝고 햇볕이 잘 들며, 전망이 좋고, 욕실과 화장실이 분리되어 있고, 발코니·차고·정원이 있으며, 집 가까이에 주차할 수 있다고 지각하는지에 관한 질문이 포함되었다. 모든 항목의 응답 형식은 1 = 예, 0 = 아니요였다.
+
+#### 근린환경
+
+근린환경 개념은 설문지로 평가한 객관적·지각된 물리적 특성과 기반시설 특성을 포함하는, 집 바로 바깥의 환경으로 정의했다. 객관적 근린환경의 질을 평가하기 위해 7개 항목의 합산점수를 사용했다. 항목은 안전한 근린환경과 조용한 주거지역에서 사는지, 대중교통 이용이 편리한지, 상점과 서비스를 이용하기 쉬운지, 가까이에 의료서비스가 있는지, 보도와 도로가 깨끗한지, 근린환경에서 문화적 선택지를 이용할 수 있는지에 관한 지각을 다루었다. 모든 항목의 응답 형식은 1 = 예, 0 = 아니요였다. 근린환경에 대한 주관적 유대, 즉 지각된 옥외 장소애착은 0(“전혀 애착이 없음”)부터 10(“완전히 애착이 있음”)까지의 11점 리커트형 평정으로 평가했다(Oswald, Hieber, Wahl, & Mollenkopf, 2005). 참여자가 근린환경에 대한 정서적·인지적 유대를 성찰할 수 있도록, 이 항목을 제시할 때 옥외 장소애착 개념에 대한 자세한 설명과 폭넓은 예를 함께 제공했다.
+
+#### 주거의 사회적 측면
+
+사회적 측면의 개념은 가구 구성과 지각된 사회적 근린환경의 질로 정의했다. 가정과 근린환경의 사회적 질을 평가하기 위해 세 영역을 조사했다. 첫째, 객관적 가구 구성, 즉 다른 사람과 함께 사는지(1 = 예, 0 = 아니요)를 질문했다. 둘째, 바로 인접한 주거환경과 가까운 이웃이라는 측면에서 지각된 사회적 근린환경의 질을 평가했다. 이를 위해 공동주택 건물이나 동거인 사이의 분위기가 우호적인지(1 = 예, 0 = 아니요), 근린환경 내 접촉관계가 양호한지(즉, 만족스러운지; 1 = 예, 0 = 아니요)를 묻는 합산점수를 사용했다. 셋째, 지역 내 이용 가능한 사회적 관계자, 즉 참여자가 친구와 친척 가까이에 사는지(1 = 예, 0 = 아니요)를 질문했다.
+
+#### 건강 관련 측면
+
+이 연구에서는 기능적 능력의 두 지표를 통제변수로 사용했다. 두 지표는 일상생활활동(ADL; 7개 항목: 식사, 옷 입기, 개인위생, 걷기, 침대에 눕기/침대에서 일어나기, 샤워, 화장실 이용)과 도구적 일상생활활동(IADL; 7개 항목: 장보기, 전화 통화, 요리, 집안일, 약 복용, 재정 관리, 교통수단으로 집 밖 장소에 가기)이었으며, 모두 Older Americans Resources and Services 절차로 평가했다(Fillenbaum, 1988). 응답 선택지는 2 = 도움 없이 가능, 1 = 약간의 도움을 받아 가능, 0 = 더 이상 불가능이었고, 두 척도 모두 0점(완전히 의존적)부터 14점(완전히 독립적)까지의 점수가 산출되었다.
+
+#### 삶의 만족도
+
+삶의 만족도는 웰빙의 인지적 차원을 가리키며(Diener et al., 1999), 이 연구의 결과변수였다. 0(전혀 만족하지 않음)부터 10(완전히 만족함)까지의 11점 리커트형 단일문항 자기평정척도로 평가했다. 만족도 단일문항 지표는 다양한 측정편향 원인에 취약하다는 신뢰도 우려가 제기되어 왔지만, 이는 경험연구 목적에는 단일문항 측정으로 충분하다는 결론으로 이어졌다(예: Epstein, 1983; Scherpenzeel, 1995; Veenhoven, 1996).
+
+### 분석 절차
+
+첫째, 전기 노인과 후기 노인 사이에서 삶의 만족도 및 그 통계적 예측변수의 평균수준과 빈도 차이를 분산분석(SPSS의 ONEWAY 절차)과 카이제곱(χ²) 분석으로 검토했다. 둘째, 주요 연구변수 사이의 관계를 0차 Pearson 상관에 기초해 살펴보았다. 셋째, 기능적 능력을 통제하면서 전체 표본과 두 연령집단 각각에서 삶의 만족도의 개인 간 차이를 설명하기 위해 물리적·사회적 주거 및 근린환경 지표를 일련의 회귀분석에 동시에 투입했다. 일부 지표 사이의 관계(예: 주거 공간과 기능적 능력)는 비교적 강했지만(표 2 참조), 각 지표가 다소 다른 측면을 가리키므로 회귀분석에서는 모든 변수를 별도로 사용했다. 다중공선성을 점검한 결과 이 절차에는 문제가 없었으나, IADL은 제외해야 했다. 예측변수와 예측변수 블록의 투입 순서를 바꾸는 공통성 분석으로 독립적(고유) 분산의 비율을 산출했다. 마지막으로 두 집단의 회귀계수를 직접 비교하는 것만으로는 잠재적 차이를 가리킬 뿐 그 차이가 유의한지를 판단할 수 없으므로, 전기 노인집단과 후기 노인집단에서 설명 양상이 달랐던 환경지표를 후속 분석했다. 즉, 연령×예측변수 상호작용효과를 검정해 두 연령집단에서 나타난 상이한 설명 양상의 통계적 신뢰성을 탐색했다.
+
+## 결과
+
+### 주요 연구변수의 연령집단별 평균 차이
+
+주거 공간과 주거 쾌적성에서 유의한 연령집단 차이가 나타났다(표 1 참조). 전기 노인의 주택은 평균적으로 후기 노인의 주택보다 더 넓었다. 전기 노인은 집에 쾌적성 관련 편의특성이 (10개 중) 약 1개 더 있다고 보고했다. 기본적인 환경 접근성과 근린환경 평가에서는 차이가 나타나지 않았다. 주거의 사회적 측면에서는 후기 노인보다 전기 노인이 배우자와 함께 사는 경우가 많았지만, 지각된 사회적 근린환경의 질과 지역 내 이용 가능한 사회적 관계자에서는 차이가 나타나지 않았다. 기능적 능력과 삶의 만족도에서도 연령집단 차이가 관찰되었으며, 전기 노인이 후기 노인보다 수준이 높았다. 다른 모든 변수와 비교했을 때 기능적 능력, 특히 IADL의 차이가 가장 컸다. 또한 전기 노인의 삶의 만족도는 후기 노인보다 높았다.
+
+### 주요 연구변수 간 상관
+
+전기 노인(대각선 아래)과 후기 노인(대각선 위)의 0차 상관을 표 2에 각각 제시했다. 삶의 만족도와 근린환경의 질 및 옥외 장소애착 사이의 관련성은 두 연령집단에서 달랐으며, 두 관련성 모두 후기 노인집단에서 더 강했다. 주거 공간에서는 다른 양상이 나타났다. 전기 노인에게는 삶의 만족도와 낮거나 중간 정도의 정적 관계가 있었지만 후기 노인에게는 부적 관계가 있었으며, 이는 삶의 만족도와 관련하여 주거 공간이 전기 노인에게는 잠재적 자원, 후기 노인에게는 위험이 될 수 있는 역방향 효과를 시사한다. 주거 쾌적성도 차이를 보였는데, 전기 노인에서만 삶의 만족도 및 기능적 능력과 정적으로 관련되었다. 주거 쾌적성과 다른 사람과의 동거 사이의 관련성은 전기 노인보다 후기 노인에서 더 강했다. 주거의 사회적 측면 중 다른 사람과의 동거는 전기 노인집단에서만 삶의 만족도와 정적으로 관련되었다. 후기 노인에서는 지역 내 사회적 관계자의 존재가 한계수준의 효과만 보였다.
+
+![표 2: 주요 연구변수 간 상관](figures/table-2.png)
+
+표 2. 주요 연구변수 간 상관: 전기 노인(n = 226; 대각선 아래)과 후기 노인(n = 155; 대각선 위)을 별도로 제시. 접근성 설명: 상관행렬은 주거 공간, 접근성, 쾌적성, 근린환경의 질, 옥외 장소애착, 주거의 사회적 변수, ADL, IADL 및 삶의 만족도를 포괄한다. 다른 사람과의 동거 및 지역 내 사회적 관계자는 0 = 아니요, 1 = 예로 코딩했고, 그 밖의 지표는 값이 높을수록 더 양호한 점수를 뜻한다. 원문에서 잘라낸 이미지에는 모든 계수와 유의성 기호가 보존되어 있다.
+
+### 삶의 만족도 차이에 대한 설명
+
+![표 3: 삶의 만족도를 설명하는 다중회귀모형](figures/table-3.png)
+
+표 3. 전체 표본 및 연령집단별 삶의 만족도를 설명하는 다중회귀모형. 접근성 설명: 목록별 삭제 후 모형의 표본은 전체 N = 345, 전기 노인 n = 207, 후기 노인 n = 138이다. 전체 R² 값은 .29, .27, .39이고, ADL의 고유 기여도는 .10, .08, .12이며, 근린환경 블록의 기여도는 각각 .08, .05, .11이다. 원문에서 잘라낸 이미지에는 B, SE, 표준화 β, 고유 기여도, 모든 예측변수 블록 및 유의성 기호가 보존되어 있다.
+
+일련의 회귀분석은 연령과 기능적 능력을 동시에 통제한 상태에서 물리적·사회적 환경지표의 설명력을 보여 준다(표 3). 전체 표본의 회귀분석은 삶의 만족도의 개인 간 차이 중 29%를 설명했다. 근린환경의 질, 옥외 장소애착, 건강 통제변수인 ADL 기능은 각각 독립적으로 삶의 만족도와 정적으로 관련되었고, 연령은 삶의 만족도와 부적으로 관련되었다. 따라서 근린환경의 질이 더 양호하고 그 지역에 대한 인지적·정서적 애착이 강한 것은 더 높은 삶의 만족도로 이어졌다. 연령이 더 낮고 ADL 기능이 더 양호한 것도 더 높은 삶의 만족도와 관련되었다. 공통성 분석 결과 근린환경 변수들은 함께 삶의 만족도 고유분산의 주목할 만한 부분(8%)을 설명했다. 구체적인 기여도를 보면 근린환경의 질은 모형에서 가장 큰 고유분산인 4%를 설명했고, 옥외 장소애착은 독립분산의 2%를 추가로 설명했다(표 3에는 제시되지 않음). 연령은 유의했지만 고유분산의 2%만 설명했다. 객관적·지각된 주거특성(즉, 주거 공간, 지각된 주거 접근성, 주거 쾌적성)과 주거의 사회적 측면은 삶의 만족도 설명에 유의하게 기여하지 않았다. 통제변수로 포함한 ADL 기능은 고유분산의 10%를 설명했다.
+
+전기 노인을 대상으로 같은 회귀분석을 실시한 결과 삶의 만족도의 개인 간 차이 중 27%를 설명했다. 관찰된 효과 양상은 전체 표본의 결과와 대체로 비슷했다. 예를 들어 근린환경의 질과 옥외 장소애착도 삶의 만족도와 유의하게 관련되었지만 그 효과는 더 작았다. 그렇더라도 근린환경의 질과 옥외 장소애착은 여전히 고유분산의 5%를 설명했다. 각 변수의 구체적 기여도 역시 주목할 만했다. 근린환경의 질은 고유분산의 3%를, 옥외 장소애착은 독립분산의 2%를 추가로 설명했다(표 3에는 제시되지 않음). 전체 표본의 결과와 마찬가지로 지각된 주거 접근성과 주거 쾌적성은 이 연령집단의 삶의 만족도와 관련되지 않았다. ADL 기능은 상당한 효과를 보이며 고유분산의 8%를 설명했다. 전기 노인 결과를 전체 표본 결과와 비교하면 주목할 만한 차이가 두 가지 나타났다. 이 연령집단에서는 제곱미터 단위의 주택 면적이 삶의 만족도와 정적으로 관련되어 고유분산의 2%를 설명했고(표 3에는 제시되지 않음), 다른 사람과의 동거도 삶의 만족도와 정적으로 관련되어 독립분산의 3%를 추가로 설명했다. 반면 사회적 근린환경의 질 평가와 지역 내 사회적 관계자의 존재는 효과가 없었다. 종합하면 전기 노인의 삶의 만족도는 주택이 더 넓고, 옥외 장소애착이 더 강하며, 근린환경의 질을 더 양호하게 경험하고, 배우자와 함께 살 때 더 높았다.
+
+후기 노인집단에서는 같은 변수 묶음을 사용한 회귀분석이 삶의 만족도 분산의 39%를 설명했으며, 이는 설명된 분산이 상당히 더 많았음을 뜻한다. 이 연령집단에서 삶의 만족도에 대한 가장 강한 통계적 예측변수는 건강 통제변수인 ADL(고유분산 12%)이었다. 그런데도 제곱미터 단위의 주택 면적, 지각된 근린환경의 질, 옥외 장소애착을 포함한 주거 측면은 삶의 만족도와 유의하게 관련되었다. 전기 노인집단과 마찬가지로 지각된 주거 접근성과 주거 쾌적성은 후기 노인의 삶의 만족도를 설명하지 못했다. 근린환경의 질과 옥외 장소애착은 고유분산의 총 11%를 설명했는데, 전기 노인집단에서는 5%였다. 따라서 특히 이 연령집단에서는 근린환경의 질이 더 양호하고 옥외 장소애착이 더 강할수록 삶의 만족도가 분명히 더 높았다. 고유분산의 비율로 보면 근린환경의 질은 고유분산의 5%(전기 노인은 3%)를 더했고, 장소애착은 고유분산의 3%(전기 노인은 2%)를 더했다. 그러나 전기 노인과 달리 후기 노인에서는 제곱미터 단위의 주택 면적이 삶의 만족도와 부적으로 관련되었으며, 이는 젊은 노년기에는 주거 공간이 넓을수록 삶의 만족도가 높아지는 반면 초고령기에는 넓은 주택이 삶의 만족도를 낮출 수 있음을 시사한다. 고유분산의 비율로 보면 제곱미터 단위의 주택 면적은 전기 노인집단의 2%에 비해 후기 노인집단에서는 3%를 더했다. 또한 전기 노인과 달리 후기 노인에서는 주거의 사회적 측면이 삶의 만족도와 관련되지 않았다. 종합하면 후기 노인 참여자의 삶의 만족도는 주택이 더 작고, 근린환경을 더 긍정적으로 평가하며, 그곳에 더 강한 애착을 보일 때 높았다.
+
+설명력이 연령에 따라 달랐던 변수, 즉 제곱미터 단위의 주택 면적, 근린환경의 질, 옥외 장소애착에 대한 후속 분석은 세 환경지표 모두에서 설명력의 연령집단 차이가 신뢰할 만하다는 추가 근거를 제시했다.
+
+## 논의
+
+전기 노인과 후기 노인의 주거환경을 비교하면, 연구결과는 기존 장소에서 계속 거주하며 나이 들어감에 따라 혼인상태가 변하고 같은 집에서의 거주기간이 길어지는 데 부분적으로 기인하는 노년기 도시 주거상황의 이미 확인된 연령 또는 코호트 차이를 반영한다(예: Krause, 2004; Oswald & Rowles, 2006). 그러나 같은 장소에서 산 평균 기간은 두 연령집단이 비슷했다. 또한 기능적 능력에서 예상된 연령집단 차이는 환경지표와 건강이 삶의 만족도에 미치는 효과를 분리하기 위해 두 연령집단 모두에서 일상활동 수준의 건강 관련 차이를 통제변수로 포함해야 함을 보여 준다.
+
+상관분석 결과는 환경지표 사이의 관계에 관한 통찰을 제공했다. 예를 들어 두 연령집단 모두에서 주거 공간은 지각된 주거 쾌적성과는 연관되었지만 지각된 주거 접근성과는 연관되지 않았으며, 이는 이러한 측면을 세부적인 수준에서 측정하는 것이 중요함을 보여 주었다. 또한 연구결과는 환경지표와 삶의 만족도 사이의 관련성이 연령에 따라 구분됨을 가리켜, 전기 노인에게는 자원 역학이, 후기 노인에게는 위험 역학이 작용할 가능성을 시사했다.
+
+전체 표본에서 환경요인의 동시적 설명력을 다룬 회귀분석은 연령과 기능적 능력의 효과가 상당함에도 특히 근린환경 관련 요인이 삶의 만족도에 상당히 기여했음을 보여 주었다. 이 결과는 환경요인, 특히 근린환경 관련 요인이 이 결과변수를 별도로 설명한다는 우리의 가설을 지지한다(Krause, 2004; A. E. Smith, 2009; Wahl & Lang, 2004). 예상과 달리 실내 주거환경과 사회적 측면은 역할을 하지 않는 듯했으나, 이는 뒤이은 분석에서 드러난 두 연령집단의 상이한 효과에 부분적으로 기인했다. 다만 설명된 분산의 양이 상당했음에도 분석에 포함하지 않은 다른 변수(예: 재정; Diener et al., 1999)가 환경적 측면을 넘어 삶의 만족도의 추가 분산을 설명할 수 있다.
+
+두 번째 분석 묶음은 전기 노인과 후기 노인이 서로 다른 요인에서 혜택을 얻을 수 있다고 가정하고, 삶의 만족도를 설명하는 연령별 양상을 다루었다. 예상대로 물리적 주거환경 변수, 근린환경 변수, 주거의 사회적 변수는 전기 노인과 후기 노인의 삶의 만족도에 서로 다르게 유익했다. 특히 객관적 실내 주거지표 중 하나인 제곱미터 단위의 주택 면적이 전기 노인의 삶의 만족도에는 자원, 후기 노인에게는 위험이 된다는 결과를 얻었다. 이 결과는 제3연령의 “환경적 풍요”에 대한 능동적 활용과 제4연령의 “환경 압력”에 대한 순응적 적응이라는 개인-환경 관계의 가정된 차이를 경험적으로 반영한다(Lawton, 1989, 1998; Lawton & Nahemow, 1973; Scheidt & Norris-Baker, 2004). 우리의 가설을 지지하듯 쾌적성은 전기 노인의 삶의 만족도와 관련되었지만, 다른 변수들을 동시에 사용하자 이 효과는 사라졌다. 그러나 예상과 달리 접근 가능한 주택에 거주하는 것은 전체 표본에서도 각 연령집단에서도 삶의 만족도 차이를 전혀 설명하지 못하는 것으로 보인다.
+
+이 연구결과는 특히 초고령기의 주거 접근성과 삶의 만족도 관계에 관해 광범위하고 객관적인 접근성 측정에 기초한 기존 지식과 대조된다(Iwarsson & Slaug, 2001; Iwarsson et al., 2007). 따라서 다른 연구(예: Oswald et al., 2007)와 달리 접근성과 삶의 만족도 사이에 관련성이 나타나지 않은 것은 측정도구의 차이 때문일 수 있다. 반면 보고된 제곱미터 수치는 접근성이나 쾌적성 측정과 비교해 해석의 여지가 크지 않은 “준객관적” 측정치로 볼 수 있다.
+
+근린환경의 질 평가와 옥외 장소애착 같은 근린환경 특성은 두 연령집단 모두에서 삶의 만족도 차이를 설명하는 중요한 환경적 통계 예측변수였으며, 이는 우리의 예상을 확인했다. 두 구성개념이 전기 노년기보다 후기 노년기에 분명히 더 중요했다는 점도 문헌과 일치한다(예: Oswald & Wahl, 2004, 2005; Rowles et al., 2004; A. E. Smith, 2009; Stedman, 2002; Wahl & Lang, 2004). 따라서 이 자료에서는 개인-근린환경 관계가 설명한 후기 노인 삶의 만족도 분산이 전기 노인의 약 2배였다. 실천적 관점에서 근린환경의 질 평가와 옥외 장소애착은 전기 노인보다 후기 노인의 삶의 만족도에 더 중요했으므로, 개인-근린환경 관계를 웰빙 및 건강한 노화와 관련하여 연구와 적용에서 더 진지하게 고려해야 한다. 긍정적인 측면으로, 근린환경 특성은 특히 근린환경에서 가장 많은 시간을 보내며 점차 규모가 커지는 지역사회 거주 초고령자 집단의 웰빙과 관련된다(Abbott et al., 2009; Krause, 2004; Krout & Wethington, 2003).
+
+이 연구에서 주거 관련 사회적 측면은 삶의 만족도에 큰 중요성을 갖지 않았다. 따라서 다른 사람과의 동거는 전기 노인의 삶의 만족도에만 자원이었고, 잠재적으로 의미 있는 근린환경의 사회적 측면은 관련되지 않았다. 이 연구의 사회적 측면은 가구 구성이나 지역 내 사회적 관계자의 존재 같은 환경적 특성으로 한정되었다는 점에 유의해야 한다. 특히 후기 노년기에 삶의 만족도와의 관련성이 약한 것은 배우자 상실과 그 결과 초고령기에 1인가구로 살게 되는 것처럼 바꿀 수 없는 상황에 성공적으로 적응한 결과로 해석할 수 있다.
+
+종합하면 객관적·지각된 주거 및 근린환경 특성의 차원은 삶의 만족도 차이를 설명하는 데 중요하며 노년기에 포괄적으로 다루어야 함을 이 연구결과는 분명히 보여 준다. 이 결과는 환경노년학의 선행연구를 지지한다(Gitlin, 2003; Lawton, 1989, 1998; Rowles et al., 2004; Scheidt & Windley, 2006; Wahl, 2001). 또한 전기 노인과 후기 노인의 근린환경 내 개인-환경 교환을 구분해 보는 관점이 필요함을 보여 주며, 이러한 관점을 통해 노년기의 특정 단계에서 삶의 만족도를 설명하는 서로 다른 환경특성의 양상을 발견할 수 있다.
+
+## 한계
+
+네 가지 한계를 고려해야 한다. 첫째, 이 연구의 자료는 자신이 사는 지역사회의 노화에 관한 우편 설문조사에 참여한 노인과 초고령자의 자기보고에 기반했다. 이에 따라 초고령자 표본이 스스로 작성하는 설문지는 짧고 이해하기 쉬워야 했고, 복잡성 때문에 잘 정립된 측정도구를 사용할 수 없었다. 그러나 가정방문에서 주거 접근성을 판단하거나(Iwarsson & Slaug, 2001), 전문가 점검을 통해 객관적 근린환경 여건을 평가하거나(예: Michael et al., 2009), 다양한 하위차원과 하위측면을 갖춘 설문지를 사용하는 것(예: Sampson et al., 1997)처럼 객관적 환경지표에 대한 관찰자 기반 평가가 더 바람직했을 것이다. 그러한 측정은 객관적 환경조건이 삶의 만족도에 미치는 더 강한 효과를 밝혀냈을 수도 있다. 따라서 광범위한 평가에 기초한 연구결과와 이 결과를 비교하는 데에는 한계가 있다. 관찰자 기반 주거 측정이 없다는 점은 일부 변수(예: 접근성)의 객관성을 제한할 수 있지만, 방의 수나 제곱미터(독일 임대계약서에 보통 표기됨)처럼 명확한 지표에는 해당하지 않을 수 있다. 또한 근린환경 평가는 지리적 위치, 크기, 관련 내용에 대한 개인의 정의 때문에 언제나 어느 정도 모호하다. 그럼에도 근린환경과 건강·웰빙의 관계를 온전히 파악하려면 개인-환경 교환의 객관적·주관적 쟁점을 고려해야 하며(Krause, 2004; Oswald, Schilling et al., 2006; Taylor, 2001), 이 연구에서는 편향될 가능성이 더 낮은 객관적 지표(예: 방의 수)와 생활상황에 대한 평가(예: 장소애착)를 함께 선정해 이를 반영했다. 변수 선정과 관련된 또 다른 단점은 설문조사의 실행 가능성 때문에 삶의 만족도를 설명하는 구성개념을 제한된 수만 사용했다는 점이다. 회귀모형에서 설명된 분산은 상당히 높았지만, 삶의 만족도에는 훨씬 더 많은 요인이 기여한다(예: Diener et al., 1999).
+
+둘째, 삶의 만족도 단일문항 측정은 다문항 측정보다 측정오차에 더 민감하여 다른 지표와의 상관을 낮출 수 있다고 여겨지므로 방법론적 단점으로 볼 수 있다(Epstein, 1983). 그러나 만족도 단일문항 측정이 충분한 심리측정학적 질을 갖춘다는 상당한 근거가 있다(Scherpenzeel, 1995; Veenhoven, 1996).
+
+셋째, 표본은 도시의 지역사회 주택에서 사는 노인으로 구성되었다. 따라서 이 연구가 노화 인구의 전체 범위, 특히 농촌지역이나 시설에서 사는 노인을 반영할 가능성에는 한계가 있다.
+
+마지막 한계는 자료가 횡단적이라는 점이다. 연령에 따라 달랐던 결과를 시간에 따른 발달적 개인-환경 변화, 즉 전기 노년기에서 후기 노년기로의 변화로 오해해서는 안 된다. 예를 들어 근린환경의 질이 시간에 걸쳐 삶의 만족도에도 영향을 미치는지를 살펴보려면 종단자료가 필요하다. 이는 인과성뿐 아니라 노년기의 더 후반 단계에 이르렀을 때 근린환경의 질이 미치는 영향이 증가하는지 감소하는지에 대해서도 일정한 단서를 제공할 수 있다.
+
+## 결론
+
+환경노년학 연구 관점에서 이 연구결과는 집과 근린환경을 포함하여 기존 장소에서 계속 거주하며 나이 드는 과정을 포괄적으로 이해하려면 물리적·사회적 개인-환경 관련 자원과 위험을 개념적으로 구분해야 함을 분명히 강조한다(Wahl & Oswald, 2010; Wahl et al., 2009). 따라서 이 결과는 노년기의 가정환경을 강조한 다른 연구결과(예: Iwarsson et al., 2007)에 근거를 더하며, 노년기 건강·웰빙과 관련된 개인-환경 교환의 복합적인 모습을 그리는 데 기여하고 향후 개념적 틀에서 둘을 모두 고려할 필요성을 보여 준다.
+
+적용 관점에서 이 연구결과는 개인 및 사회 차원의 주거계획과 지역사회 개입전략에 영향을 미칠 수 있다. 개인 차원에서는 가정과 근린환경에서 개인-환경 관계가 지닌 복잡성에 관한 지식이 개인의 주거욕구와 미래계획을 성찰하고 생애과정의 환경변화에 대한 예측적 인식을 높이는 데 도움이 될 수 있다. 따라서 자원과 위험이라는 측면에서, 미래의 주거 가능성과 불안에 대한 막연한 이해에서 벗어나 근린환경에 관해 더 구체적이고 숙고된 계획으로 나아가야 한다. 이는 현재 주택에서 계속 거주하며 나이 들거나, 보편적 설계 원칙에 따라 잘 조정되고 접근 가능한 생활지원시설에서 나이 드는 경우 모두에 해당한다(Sanford, 2010). 사회 차원에서는 주택의 객관적 측면을 대상으로 하는 무장애 건축기준에 대한 초점을 확대해야 한다. 지각된 주거 및 근린환경 측면을 포함하는 총체적 접근을 취해야 한다. 주거, 보건의료, 도시계획 분야의 전문가는 전기 노인과 후기 노인에게 적합한 환경개입을 설계하기 위해 연령별 설명 양상을 파악하고 활용하는 것이 중요하다(Abbott et al., 2009; Krout & Wethington, 2003; Oswald & Rowles, 2006). 또한 이 연구결과는 당국이 노인을 위한 지원적이고 의미 있는 근린환경 선택지를 결합하는 지침을 개발하도록 잠재적으로 장려하고, 이를 통해 고령친화 지역사회 원칙에 정보를 제공할 수 있다.
+
+## 참고문헌
+
+Abbott, P. S., Carman, N., Carman, J., & Scarfo, B. (Eds.), (2009). Recreating neighborhoods for successful aging. Baltimore, MD: Health Professional Press.
+
+Altman, I., & Low, S. M. (Eds.), (1992). Place attachment, Vol. 12. New York: Plenum Press.
+
+Antonucci, T. C. (2001). Social relations: An examination of social networks, social support, and sense of control. In J. E. Birren, & K. W. Schaie (Eds.), Handbook of the psychology of aging (5th ed. 427–453). San Diego, CA: Academic Press.
+
+Baltes, M. M., Maas, I., Wilms, H.-U., Borchelt, M., & Little, T. (1999). Everyday competence in old and very old age: Theoretical considerations and empirical findings. In P. B. Baltes, & K. U. Mayer (Eds.), The Berlin Aging Study. Aging from 70 to 100 (pp. 384–402). Cambridge: Cambridge University Press.
+
+Baltes, P. B., & Smith, J. (2003). New frontiers in the future of aging: From successful aging of the young old to the dilemmas of the fourth age. Gerontology, 49, 123–135.
+
+Beard, J. R., Blaney, S., Cerda, M., Frye, V., Lovasi, G. S., Ompad, D., et al. (2009). Neighborhood characteristics and disability in older adults. Journal of Gerontology: Social Sciences, 64B, 252–257.
+
+Brown, B., Perkins, D. D., & Brown, G. (2003). Place attachment in a revitalizing neighborhood: Individual and block levels of analysis. Journal of Environmental Psychology, 23, 259–271.
+
+Clarke, P., & George, L. K. (2005). The role of the built environment in the disablement process. American Journal of Public Health, 95, 1933–1939.
+
+Diener, E., Suh, E. M., Lucas, R. E., & Smith, H. L. (1999). Subjective well-being: Three decades of progress. Psychological Bulletin, 125, 276–302.
+
+Epstein, S. (1983). Aggregation and beyond: Some basic issues on the prediction of behavior. Journal of Personality, 51, 360–392.
+
+Fillenbaum, G. G. (1988). Multidimensional functional assessment of older adults: The Duke Older Americans Resources and Services procedures. Hillsdale, NJ: Lawrence Erlbaum Associates.
+
+Fingerman, K. L. (2003). The consequential stranger: Peripheral social ties across the life span. In F. R. Lang, & K. L. Fingerman (Eds.), Growing together: Personal relationships across the life span (pp. 183–209). New York: Cambridge University Press.
+
+Gillespie, L. D., Gillespie, W. J., Robertson, M. C., Lamb, S. E., Cumming, R. G., & Rowe, B. H. (2003). ‘Interventions for preventing falls in elderly people (Cochran Review)’. The Cochran Library, (3), 2001.
+
+Gitlin, L. N. (1998). Testing home modification interventions: Issues of theory, measurement, design, and implementation. In R. Schulz, G. Maddox, & M. P. Lawton (Eds.), Annual review of gerontology and geriatrics. Interventions research with older adults (pp. 190–246). New York: Springer.
+
+Gitlin, L. N. (2003). Conducting research on home environments: Lessons learned and new directions. The Gerontologist, 43, 628–637.
+
+Hieber, A., Oswald, F., Rott, C., & Wahl, H.-W. (2006). Selbstbestimmt Älterwerden in Arheilgen. Abschlussbericht [Independent aging in Arheilgen. Final report]. Heidelberg, Germany: Department of Psychological Ageing Research, Institute of Psychology, University of Heidelberg.
+
+Iwarsson, S., & Slaug, B. (2001). Housing enabler. An instrument for assessing and analyzing accessibility problems in housing. Lund, Sweden: Studentlitteratur.
+
+Iwarsson, S., Wahl, H.-W., Nygren, C., Oswald, F., Sixsmith, A., Sixsmith, J., et al. (2007). Importance of the home environment for healthy aging: Conceptual and methodological background of the European ENABLE-AGE project. The Gerontologist, 47, 78–84.
+
+Krause, N. (2004). Neighborhoods, health, and well-being in later life. In H.-W. Wahl, R. J. Scheidt, & P. G. Windley (Eds.), Aging in context: Socio-physical environments. (Annual Review of Gerontology and Geriatrics, 2003) (pp. 223–249). New York: Springer.
+
+Krout, J. A., & Wethington, E. (Eds.), (2003). Residential choices and experiences of older adults. Pathways to life quality. New York: Springer.
+
+Lawton, M. P. (1989). Environmental proactivity in older people. In V. L. Bengtson, & K. W. Schaie (Eds.), The course of later life (pp. 15–23). New York: Springer.
+
+Lawton, M. P. (1998). Environment and aging: Theory revisited. In R. Scheidt, & P. G. Windley (Eds.), Environment and aging theory. A focus on housing (pp. 1–31). Westport, CT: Greenwood Press.
+
+Lawton, M. P., & Nahemow, L. (1973). Ecology and the aging process. In C. Eisdorfer, & M. P. Lawton (Eds.), Psychology of adult development and aging (pp. 619–674). Washington, DC: American Psychological Association.
+
+Michael, Y. L., Keast, E. M., Chaudhury, H., Day, K., Mahmood, A., & Sarte, A. F. I. (2009). Revising the senior walking environmental assessment tool. Preventive Medicine, 48, 247–249.
+
+Neugarten, B. L. (1974). Age groups in American society and the rise of the young old. Annals of the American Academy of Social and Political Science, 415, 187–198.
+
+Oswald, F., Hieber, A., Wahl, H.-W., & Mollenkopf, H. (2005). Ageing and person-environment fit in different urban neighbourhoods. European Journal of Ageing, 2, 88–97.
+
+Oswald, F., & Rowles, G. D. (2006). Beyond the relocation trauma in old age: New trends in today’s elders’ residential decisions. In H.-W. Wahl, C. Tesch-Römer, & A. Hoff (Eds.), New dynamics in old age: Environmental and societal perspectives (pp. 127–152). Amityville, New York: Baywood.
+
+Oswald, F., Schilling, O., Wahl, H.-W., Fänge, A., Sixsmith, J., & Iwarsson, S. (2006). Homeward bound: Introducing a four domain model of perceived housing in very old age. Journal of Environmental Psychology, 26, 187–201.
+
+Oswald, F., & Wahl, H.-W. (2004). Housing and health in later life. Reviews of Environmental Health, 19, 223–252.
+
+Oswald, F., & Wahl, H.-W. (2005). Dimensions of the meaning of home. In G. D. Rowles, & H. Chaudhury (Eds.), Home and identity in late life: International perspectives (pp. 21–45). New York: Springer.
+
+Oswald, F., Wahl, H.-W., Naumann, D., Mollenkopf, H., & Hieber, A. (2006). The role of the home environment in middle and late adulthood. In H.-W. Wahl, H. Brenner, H. Mollenkopf, D. Rothenbacher, & C. Rott (Eds.), The many faces of health, competence and well-being in old age: Integrating epidemiological, psychological and social perspectives (pp. 7–24). Heidelberg, Germany: Springer.
+
+Oswald, F., Wahl, H.-W., Schilling, O., Nygren, C., Fänge, A., Sixsmith, A., et al. (2007). Relationships between housing and healthy aging in very old age. The Gerontologist, 47, 96–107.
+
+Rowles, G. D. (2008). Place in occupational science: A life course perspective on the role of environmental context in the quest of meaning. Journal of Occupational Science, 15, 127–135.
+
+Rowles, G. D., Oswald, F., & Hunter, E. G. (2004). Interior living environments in old age. In H.-W. Wahl, R. Scheidt, & P. G. Windley (Eds.), Aging in context: Socio-physical environments. (Annual Review of Gerontology and Geriatrics, 2003) (pp. 167–193). New York: Springer.
+
+Sampson, R. J., Raudenbush, S. W., & Earls, F. (1997). Neighborhoods and violent crime: a multilevel study of collective efficacy. Science, 277, 918–24.
+
+Sanford, J. A. (2010). Assessing universal design in the physical environment. In T. Oakland, & E. Mpofu (Eds.), Rehabilitation and health assessment (pp. 255–278). New York: Springer.
+
+Scharf, T., Phillipson, C., & Smith, A. E. (2005). Social exclusion of older people in deprived urban communities of England. European Journal of Ageing, 2, 76–87.
+
+Scheidt, R. J., & Norris-Baker, C. (2004). The general ecological model revisited: Evolution, current status, and continuing challenges. In H.-W. Wahl, R. J. Scheidt, & P. G. Windley (Eds.), Aging in context: Socio-physical environments. (Annual Review of Gerontology and Geriatrics, 23) (pp. 59–84). New York: Springer.
+
+Scheidt, R. J., & Windley, P. G. (2006). Environmental gerontology: Progress in the post-Lawton era. In J. E. Birren, & K. W. Schaie (Eds.), Handbook of the psychology of aging (6th ed. 105–125). San Diego, CA: Academic Press.
+
+Scherpenzeel, A. (1995). A question of quality: Evaluating survey questions by multitrade-multimethod studies. Amsterdam, NL: Nimmo.
+
+Shaw, B. (2005). Anticipating support from neighbors and physical functioning during later life. Research on Aging, 27, 503–525.
+
+Smith, A. E. (2009). Ageing in urban neighbourhoods. Place attachment and social exclusion. Bristol, UK: The Policy Press.
+
+Smith, J., Borchelt, M., Maier, H., & Jopp, D. (2002). Health and well-being in the young old and the oldest old. Journal of Social Issues, 58, 715–732.
+
+Stedman, R. S. (2002). Toward a social psychology of place. Predicting behaviour from place-based cognitions, attitude and identity. Environment & Behavior, 34, 561–581.
+
+Taylor, S. A. (2001). Place identification and positive realities of aging. Journal of Cross-Cultural Gerontology, 16, 5–20.
+
+Veenhoven, R. (1996). Developments in satisfaction research. Social Indicators Research, 37, 1–46.
+
+Wahl, H.-W. (2001). Environmental influences on aging and behavior. In J. E. Birren, & K. W. Schaie (Eds.), Handbook of the psychology of aging (5th ed. 215–237). San Diego, CA: Academic Press.
+
+Wahl, H.-W., Fänge, A., Oswald, F., Gitlin, L. N., & Iwarsson, S. (2009). The home environment and disability-related outcomes in aging individuals: What is the empirical evidence? The Gerontologist, 49, 355–367.
+
+Wahl, H.-W., & Lang, F. R. (2004). Aging in context across the adult life: Integrating physical and social research perspectives. In H.-W. Wahl, R. Scheidt, & P. G. Windley (Eds.), Aging in context: Socio-physical environments. (Annual Review of Gerontology and Geriatrics, 2003) (pp. 1–33). New York: Springer.
+
+Wahl, H.-W., & Oswald, F. (2010). Environmental perspectives on aging. In D. Dannefer, & C. Phillipson (Eds.), International handbook of social gerontology (pp. 111–124). London: Sage.
+
+Wight, R. G., Cummings, J. R., Karlamangla, A. S., & Aneshensel, C. S. (2009). Urban neighborhood context and change in depressive symptoms in later life. Journal of Gerontology: Social Sciences, 64B, 247–251.

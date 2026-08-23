@@ -22,20 +22,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Validate aligned translations
-        run: |
-          node scripts/check-alignment.js --slug levy-2009 --strict --write-report
-          node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report
-      - name: Build the pilot week
-        run: |
-          node scripts/build_site.js --slug levy-2009
-          node scripts/build_site.js --slug settersten-godlewski-2016
+      - name: Validate all aligned translations
+        run: node scripts/check_alignment.js --strict
+      - name: Build the complete site
+        run: node scripts/build_site.js
       - name: Verify rendered original reveal pairs
-        run: npm run check:reveals
-      - name: Enforce publish gates
+        shell: bash
         run: |
-          node scripts/validate_content.js --slug levy-2009 --publish-gate
-          node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate
+          while IFS= read -r slug; do
+            node scripts/check_rendered_reveals.js --slug "$slug" --site-dir docs
+          done < <(node -e "const m=require('./manifest/readings.json'); console.log(m.readings.map(r=>r.slug).join('\\n'))")
+      - name: Enforce publish gates
+        run: node scripts/validate_content.js --publish-gate
+      - name: Verify links and privacy gates
+        run: node scripts/check_site_links.js --site-dir docs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

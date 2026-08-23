@@ -1,0 +1,188 @@
+import re
+from collections import Counter
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+SLUG = "gruenewald-et-al-2016"
+SOURCE_PATH = ROOT_DIR / "content" / "readings" / SLUG / "full.md"
+OUTPUT_PATH = ROOT_DIR / "content" / "readings" / SLUG / "translation.md"
+
+
+HEADING_TRANSLATIONS = {
+    "# The Baltimore Experience Corps Trial: Enhancing Generativity via Intergenerational Activity Engagement in Later Life": "# 볼티모어 Experience Corps 시험: 노년기 세대 간 활동 참여를 통한 생성감(generativity) 증진",
+    "## Abstract": "## 초록",
+    "## Keywords": "## 핵심어",
+    "## Introduction": "## 서론",
+    "## Experience Corps": "## Experience Corps",
+    "## Mental and Physical Well-Being Benefits of Generativity": "## 생성감이 정신적·신체적 안녕에 주는 혜택",
+    "## Enhancing Self-Perceptions of Generativity": "## 생성감 자기지각의 증진",
+    "## Method": "## 방법",
+    "### Participants": "### 참여자",
+    "### Materials and Procedure": "### 자료 및 절차",
+    "### Perceptions of generative desire and achievement": "### 생성감 욕구와 생성감 성취에 대한 지각",
+    "### Sociodemographic and health status covariates": "### 사회인구학적 및 건강상태 공변량",
+    "### Analytic strategy": "### 분석 전략",
+    "## Results": "## 결과",
+    "## Discussion": "## 논의",
+    "## Conclusion": "## 결론",
+    "## Funding": "## 연구비 지원",
+    "## Acknowledgments": "## 감사의 말",
+    "## References": "## 참고문헌",
+}
+
+
+IMAGE_ALT_TRANSLATIONS = {
+    "Figure 1: Baltimore Experience Corps Trial CONSORT participant flowchart": "그림 1: 볼티모어 Experience Corps 시험 CONSORT 참여자 흐름도",
+    "Table 1: participant characteristics for the entire cohort and randomized groups": "표 1: 전체 코호트와 무작위배정 집단의 참여자 특성",
+    "Table 2: generativity desire and achievement measures across four assessments": "표 2: 네 차례 평가에서 측정한 생성감 욕구와 생성감 성취",
+    "Table 3: ITT and graded-exposure CACE estimates for generativity outcomes": "표 3: 생성감 결과에 대한 ITT 및 단계별 노출 CACE 추정치",
+}
+
+
+TRANSLATED_BLOCKS = [
+    """> Tara L. Gruenewald¹ · Elizabeth K. Tanner² · Linda P. Fried³ · Michelle C. Carlson⁴ · Qian-Li Xue⁵ · Jeanine M. Parisi⁶ · George W. Rebok⁶ · Lisa M. Yarnell⁷ · Teresa E. Seeman⁸""",
+    """> ¹ 서던캘리포니아대학교 로스앤젤레스 데이비스 노년학대학원. ² 메릴랜드주 볼티모어 존스홉킨스대학교 간호대학 지역사회·공중보건학과. ³ 뉴욕주 뉴욕 컬럼비아대학교 메일먼 공중보건대학원. ⁴ 메릴랜드주 볼티모어 존스홉킨스대학교 정신건강학과 및 역학과. ⁵ 메릴랜드주 볼티모어 존스홉킨스 블룸버그 공중보건대학원 역학과. ⁶ 메릴랜드주 볼티모어 존스홉킨스대학교 정신건강학과. ⁷ 워싱턴 D.C. 미국연구소(American Institutes for Research). ⁸ 캘리포니아주 로스앤젤레스 캘리포니아대학교 게펀 의과대학 노인의학부.""",
+    """> *Journals of Gerontology: Psychological Sciences*, 71(4), 661–670 (2016). DOI: 10.1093/geronb/gbv005. 2015년 2월 25일 Advance Access 게재.""",
+    """> 2014년 7월 29일 접수; 2014년 12월 22일 승인. 담당 편집자: Shevaun Neupert, PhD.""",
+    """> 교신: Tara L. Gruenewald, PhD, MPH, Davis School of Gerontology, University of Southern California, 3715 McClintock Ave., Los Angeles, CA 90095-0191. 이메일: Tara.Gruenewald@usc.edu.""",
+    """> © 저자 2015. The Gerontological Society of America를 대신하여 Oxford University Press가 발행함. 모든 권리 보유. 허가 문의 이메일: journals.permissions@oup.com.""",
+    """**목적.** 타인에게 도움이 되려는 관심과 행동을 보이는 것으로 정의되는 생성감(generativity, 이하 ‘생성감’)을 실천하고 느끼는 것은 중년기 이후의 중요한 발달 목표다. 노년기에 생성감을 느끼는 것이 정신 및 신체 건강에 유익하다는 증거가 늘고 있지만, 생성감에 대한 지각이 변화 가능한지에 관한 정보는 거의 없다. 본 연구는 세대 간 시민참여 프로그램인 Experience Corps(EC) 참여가 노인의 생성감 자기지각에 도움이 되는지를 검토한다.""",
+    """**방법.** 2년간의 볼티모어 Experience Corps 시험에서 EC 자원봉사자로 활동하도록 무작위배정된 노인과 대조군(통상적인 자원봉사 기회)의 생성감 수준을 4개월·12개월·24개월 평가 시점에 비교했다. 분석에는 중재 노출 정도를 분석모형에 포함하는 치료의도(intention-to-treat, ITT) 분석과 순응자 평균 인과효과(complier average causal effects, CACE) 분석을 사용했다.""",
+    """**결과.** EC 집단에 무작위배정된 참여자는 모든 추적 시점에서 대조군보다 생성감 욕구(generative desire)와 생성감 성취에 대한 지각(generative achievement)이 유의하게 높았으며, CACE 분석은 EC 프로그램 노출이 클수록 중재효과의 크기가 커지는 용량–반응 효과를 나타냈다.""",
+    """**논의.** 이 결과는 세대 간 시민참여 프로그램에 참여하면 노년기의 생성감 자기지각을 긍정적으로 변화시킬 수 있음을 보여 주는 최초의 대규모 실험 증거를 제공한다.""",
+    """시민참여—생성감—세대 간—무작위대조시험—사회참여—자원봉사""",
+    """성숙한 사람은 자신이 필요한 존재라는 느낌을 필요로 한다 . . . (Erikson, 1950)""",
+    """생성감은 다른 사람, 대개는 젊은 사람을 향한 돌봄과 관심이다. 생성감에 관한 대부분의 개념화에서 중심이 되는 것은 다음 세대의 발전을 도우려는 헌신이다(예: Erikson, 1950; McAdams & Destaubin, 1992; McAdams, Hart, & Maruna, 1998). 이러한 발전 촉진은 부모역할, 멘토링, 돌봄, 시민참여, 그리고 젊은 세대의 성공적 발달을 돕는 자원과 도구의 창출 등 여러 기제를 통해 이루어지는 것으로 여겨진다. 개인 수준에서 생성감은 단독으로 또는 함께 작용할 수 있는 여러 동기에서 비롯된다고 가정되며, 여기에는 종의 연속성을 돕고자 하는 욕구, 자신보다 오래 남을 무언가를 만들거나 유산을 남기려는 욕구, 필요한 존재가 되고자 하는 욕구, 그리고 보답하고 변화를 일으키며 타인의 삶에 의미 있게 기여하려는 동기가 포함된다(예: Erikson, 1950; Kotre, 1984; McAdams & Destaubin, 1992). 개인의 생성감 관련 관심과 행동은 다시 사회에서 개인과 집단이 번영할 수 있게 하는 사회자본의 필수 토대가 된다.""",
+    """생성감 있는 존재가 되고자 하는 욕구와 생성감 활동 참여는 규범적 의무와 발달 목표의 결과로 중년기에 가장 두드러지는 것으로 여겨지며(Erikson, 1950; Fleeson, 2001; McAdams, Aubin, & Logan, 1993), 생성감의 연령차에 관한 소수의 경험연구도 대체로 중년 성인이 청년 및/또는 노년 성인보다 생성감 자기지각이 높다는 결과를 뒷받침한다(Fleeson, 2001; Ochse & Plug, 1986; Ryff & Heincke, 1983; Ryff & Migdal, 1984). 그러나 중년 성인에 비해 노인의 생성감 자기지각이 대체로 낮게 관찰되는 한 가지 이유로, 나이가 들수록 생성감 활동에 대한 기대와 기회가 줄어든다는 가설이 있다. 지난 한 세기 동안 건강수명이 늘었지만, 중요한 생성적 기여를 할 잠재력이 있는 방대하고 계속 증가하는 노인인구를 효과적으로 활용할 수 있도록 사회체계가 같은 속도로 발전하지는 못했다. 우리 사회는 노인 시민의 생성적 잠재력을 살리는 일에서 구조적 지체라는 과제에 직면해 있다(Carlson, Seeman, & Fried, 2000; Freedman, 2002; Fried, Freedman, Endres, & Wasik, 1997; Riley, Kahn, & Foner, 1994). 이 과제를 인식하여 노인에게 생성감 활동의 기회를 제공하는 많은 정책과 프로그램이 개발되었다. 그중 하나인 Experience Corps(Fried et al., 2004, 2013)는 생성감 활동의 기회를 제공하는 새로운 사회제도를 만들기 위해 설계되었다. 이 분석은 노년기에 개인의 생성감 욕구와 실제 생성감 성취에 대한 지각을 모두 높이는 데 Experience Corps가 효과적인지를 평가한다.""",
+    """Experience Corps(EC)는 노인의 시간·에너지·지혜를 활용하여 초등학생의 학업성과를 높이도록 설계된 시민참여 프로그램이다. EC 자원봉사자는 학교장이 판단한 학교의 중요한 미충족 욕구를 채우기 위해 마련된 다양한 역할을 수행하며, 일반적으로 읽기와 수학 지도를 돕고 긍정적인 행동발달을 지원하는 데 필요한 관심과 지도를 아동에게 제공한다. EC는 세대 간 상생을 목표로 설계되어, 초등학생의 학업 및 사회행동적 안녕을 증진하는 한편 노인에게 타인에게 의미 있게 기여하고 다음 세대의 발전을 돕고자 하는 생성감 욕구를 충족할 기회를 제공하며, 동시에 노인 자원봉사자가 노년기의 더 양호한 건강 및 기능 변화궤적과 관련된 사회적·인지적·신체적 활동을 경험하게 한다(Fried et al., 2004; Glass et al., 2004). 이 프로그램은 1995년 5개 도시에서 처음 시범 운영된 뒤 현재 미국 21개 도시로 확대되었다. 전국 EC 프로그램은 2011년 AARP와 합류하여 AARP Experience Corp.가 되었다.""",
+    """메릴랜드주 볼티모어의 EC 프로그램은 표준이 될 프로그램을 발전시키고, 이어서 프로그램 참여가 노인 자원봉사자·아동·학교에 주는 혜택을 경험적으로 평가한 최초의 지역이었다. 볼티모어에서 노인 147명과 학교 6곳을 대상으로 시행한 무작위대조 예비시험은 이러한 혜택의 예비 증거를 제시했다. 볼티모어시의 통상적인 자원봉사 기회에 무작위배정된 노인과 비교할 때, EC 자원봉사자로 활동하도록 무작위배정된 노인은 신체활동 수준, 집행기능과 기억 수행, 이용 가능한 사회적 지지에 대한 지각이 더 크게 향상되었다(Carlson et al., 2008; Fried et al., 2004). 비교학교의 아동보다 EC 학교의 아동은 읽기 성취가 더 높고 문제행동 수준이 더 낮았다(Rebok et al., 2004). 아동의 학업성과와 노인 자원봉사자의 심리사회적·신체적 안녕이 향상되었음을 나타내는 다른 지표들도 EC 참여자에게 더 큰 혜택이 있는 방향의 경향을 보였다. 이러한 유망한 결과를 토대로, 2년 동안 고강도 EC 참여(주당 자원봉사 15시간 목표)가 노인 자원봉사자와 아동 및 학교 모두에게 줄 수 있는 잠재적 혜택을 검증하도록 설계된 이중 효과성 시험인 볼티모어 Experience Corps 시험(BECT; ClinicalTrials.gov 식별자: NCT00380562)이 개발되었다(Fried et al., 2013 참조).""",
+    """Experience Corps는 비슷한 세대 간 활동 및 시민참여 프로그램과 마찬가지로 노인에게 생성감 욕구를 충족할 기회를 제공하도록 설계되었다. 이러한 프로그램은 생성감 활동을 실천할 통로를 제공하여 노인에게 도움이 될 뿐 아니라, 생성감 목표의 충족을 통해 정신적·신체적 안녕에 추가적인 혜택을 제공할 가능성도 있다. 중년 및 노년 표본에서 더 긍정적인 생성감 자기지각은 더 낮은 수준의 부정 정서, 우울 기분, 불안 기분과 상관되어 있다(Gruenewald, Karlamangla, Greendale, Singer, & Seeman, 2007, 2009; Gruenewald, Liao, & Seeman, 2012; Stewart & Vandewater, 1998). 여러 연령이 섞인 표본과 노인 표본 모두에서 더 높은 생성감 자기지각은 더 긍정적인 심리적 안녕과도 관련된다(An & Cooney, 2006; Cheng, 2009; Cox, Wilt, Olson, & McAdams, 2010; Landes, Ardelt, Vaillant, & Waldinger, 2014; Rothrauff & Cooney, 2008).""",
+    """생성감에 대한 긍정적 지각은 더 건강한 인지기능 및 신체기능 양상과도 연관된다. 타인에게 유용하고 필요한 존재가 되는 것과 같은 핵심 생성감 목표를 달성하고 있다는 더 긍정적인 지각은 시설 입소, 신체장애의 발생 또는 악화, 사망의 위험이 낮은 것을 포함하여 이후 노년기의 더 건강한 노화궤적을 예측하는 것으로 나타났다(Grand, Grosclaude, Bocquet, Pous, & Albarede, 1988, 1990; Gruenewald et al., 2007, 2009, 2012; Okamoto & Tanaka, 2004; Pitkala, Laakkonen, Strandberg, & Tilvis, 2004). 생성감에 대한 긍정적 자기지각을 유지하는 능력도 노화과정을 형성할 수 있다. 노년기를 지나며 나이가 들 때 타인에게 유용하다는 느낌이 지속적으로 낮거나, 유용감 또는 생성감에 대한 지각이 시간에 따라 감소하는 것은 노년기의 더 높은 사망위험 및 더 낮은 인지기능과 관련되어 왔다(Gruenewald et al., 2009; Hagood & Gruenewald, 2014). 따라서 노년기에 생성감에 대한 긍정적 지각을 지니고 유지하는 것과 심리적·인지적·신체적 안녕 사이의 관련성을 뒷받침하는 증거가 늘고 있다.""",
+    """위에서 검토한 관찰연구들은 생성감에 대한 긍정적 지각이 노년기의 더 행복하고 건강한 노화궤적과 관련될 수 있다는 가설을 설득력 있게 뒷받침하며, 그러한 지각이 건강증진 중재의 중요한 표적일 수 있음을 시사한다. 그러나 지금까지의 연구는 한 시점의 생성감 지각 또는 그러한 지각에서 자연스럽게 일어난 변화를 평가했다. 따라서 심리사회적 또는 행동적 중재로 생성감 지각을 변화시킬 수 있는지는 분명하지 않다. 개인 또는 지역사회 수준에서 시행하여 노인의 생성감 성취에 대한 지각을 높일 수 있는 중재를 확인한다면, 증가하는 노인인구의 정신적·신체적 안녕을 증진하고 그 결과 전반적인 공중보건을 개선하는 한 가지 기제를 마련할 수 있다. 볼티모어 Experience Corps 프로그램은 생성감 활동 욕구를 충족할 기회로 노인을 봉사에 끌어들이고, 이를 통해 생성감 성취에 대한 지각을 높이도록 명시적으로 설계되었다(Fried et al., 2004; Tan et al., 2010).""",
+    """현재 분석의 목적은 EC 참여가 시간에 따라 생성감 지각에 실제로 긍정적 효과를 미칠 수 있는지를 평가하면서, EC 참여가 생성감 욕구에 미치는 효과뿐 아니라 생성감 성취에 대한 지각, 즉 타인의 삶에서 생성적 역할을 수행하고 있다는 지각에 미치는 효과도 살펴보는 것이다. 생성감에 관한 이론적 구성은 흔히 생성감 욕구가 생성감 활동 및 그 활동에 대한 지각(즉, 생성감 성취에 대한 지각)과 관련되지만 서로 구별되는 것이라고 본다(예: McAdams & Destaubin, 1992). 우리 역시 생성감 욕구와 생성감 성취를 서로 분리되지만 상호 강화하는 생성감의 구성요소로 개념화한다. 즉, 생성감 욕구는 생성감 활동을 촉진하여 생성감 성취를 지각할 기회를 제공할 수 있다. 마찬가지로 생성감 성취의 느낌은 생성감 활동을 계속하고자 하는 욕구를 북돋울 수 있다. 따라서 우리는 두 형태의 생성감 모두 EC 참여로 높아질 것이라고 가정한다. 구체적으로 현재 분석은 2년의 참여기간 동안 통상적인 자원봉사 기회를 제공받는 대조군에 무작위배정된 노인과 비교하여 EC 참여에 무작위배정된 노인이 생성감 욕구와 생성감 성취를 더 긍정적으로 지각하는지를 평가한다. 그러한 증거는 생성감 활동에 참여하려는 욕구와 그 욕구를 충족했다는 성취지각을 모두 긍정적으로 변화시킬 수 있음을 뜻할 것이다.""",
+    """BECT는 EC 프로그램이 노인 참여자와 프로그램을 제공받는 공립초등학교 아동에게 미치는 영향을 함께 평가하는 이중 효과성 시험이다. EC는 생성감 활동의 기회를 통해 노인 참여자를 유치한 다음, 인지적·신체적·심리사회적 경로를 통해 노인 자원봉사자의 건강과 안녕을 향상하는 동시에 초등학생의 학업 및 심리사회적 안녕, 그리고 EC 프로그램이 운영되는 학교와 지역사회의 분위기 및 사회자본을 증진하도록 설계되었다. BECT는 24개월 동안 노인 참여자와 프로그램을 제공받는 아동 및 학교에 미치는 혜택을 평가하도록 설계되었다. Fried와 동료들(2013)은 BECT의 근거·설계·방법을 포괄적으로 개관했다.""",
+    """볼티모어 지역사회 일반에서 모집한 60세 이상 성인은 시험의 중재군 또는 대조군에 무작위배정되는 데 동의하고, 중재군에 배정될 경우 적어도 1개 학년도 동안 주당 15시간 이상 EC 자원봉사자로 활동하는 데 동의하면 시험에 참여할 수 있었다(모두에게 2개 학년도 동안 활동하도록 권장했다). 참여자는 또한 6학년 수준 이상의 기능적 문해력을 갖추어야 했고(Wide Range Achievement Test[WRAT]-4로 판정; Wilkinson & Robertson, 2006), 교사와 아동을 효과적이고 안전하게 도울 수 있을 만큼 인지기능이 온전해야 했으며(Mini-Mental State Exam[MMSE]으로 판정; M. F. Folstein, S. E. Folstein, & McHugh, 1975; 절단점 ≥24), EC 자원봉사자로 무작위배정된 경우에는 배정된 학교로 이동할 수 있고 학교체계가 요구하는 범죄경력 조회를 통과하며 초등학교 환경에 적절하게 행동할 수 있어야 했다. 그림 1에 제시했듯이 2,675명을 처음 선별한 뒤 총 702명을 중재군(n = 352) 또는 대조군(n = 350)에 무작위배정했다. 무작위배정 후 중재군 참여자 68명은 자기선택(n = 41), 프로그램의 선택(n = 11; 예: EC 프로그램 또는 학교 직원이 학교 배치에 부적합하다고 판단), 또는 기타 사유(n = 16; 예: 훈련 프로그램에 참석할 수 없음) 때문에 학교 자원봉사 직책으로 진행하지 않았다. 참여자는 4년에 걸쳐 시험에 등록했다(코호트 1년차: n = 155, 코호트 2년차: n = 223, 코호트 3년차: n = 156, 코호트 4년차: n = 168).""",
+    """대조군 참여자는 볼티모어시 노화 및 은퇴교육위원회(Commission on Aging and Retirement Education, CARE)에 의뢰되었다. CARE는 도시 내 노인을 위한 다양한 자원봉사 기회를 소개한다(시험기간에는 Experience Corps 제외). CARE가 제공하는 자원봉사 기회는 EC 봉사의 특성과 비교하면 활동 강도와 기간(예: 약정 시간, 자원봉사 활동기간)이 더 낮거나 짧은 경우가 많지만 항상 그런 것은 아니며, 보통 세대 간 생성감 활동의 기회가 없다(Fried et al., 2013 참조).""",
+    """그림 1. 볼티모어 Experience Corps 시험 CONSORT 흐름도. 접근성 설명: 선별된 2,675명 가운데 768명이 제외되었고(609명은 관심 없음, 109명은 관심이 있으나 60세 미만, 50명은 관심이 있으나 주당 15시간을 약정할 수 없음), 1,907명이 설명회에 초대되었다. 초대자 중 1,108명은 철회하거나 참석하지 않았고, 799명이 평가를 받았으며, 97명이 제외되었다(69명은 포함기준 미충족, 28명은 참여 거절). 남은 702명은 EC 중재군(n = 352) 또는 대조군(n = 350)에 무작위배정되었다. EC군에서는 284명이 중재를 받았고 68명은 받지 않았다(41명 자기철회, 11명 프로그램 선택, 16명 기타 사유). EC 참여자 30명은 추적에서 탈락했고(사망 6명, 중도탈락 24명), 79명은 EC를 중단했다(사망 1명, 자기선택 27명, 프로그램 선택 10명, 기타 사유 41명). 대조군 참여자 350명은 모두 대조 조건을 받았다. 64명은 추적에서 탈락했고(사망 9명, 중도탈락 55명), 20명은 대조 상태를 중단했다(사망 9명, 중재군으로 교차 11명).""",
+    """연구 평가는 기초선과 4개월·8개월·12개월·16개월·20개월·24개월 추적 시점에 실시했다. 자료는 2–3시간의 대면면접 또는 더 짧은 1시간 미만의 전화면접(8개월·16개월·20개월)을 통해 수집했다. 생성감 욕구와 생성감 성취에 대한 지각은 기초선과 4개월·12개월·24개월 평가에서 측정했다. 현재 분석은 기초선 평가에서 수집한 사회인구학적 및 건강상태 자료도 사용한다.""",
+    """생성감 욕구와 현재의 생성감 성취에 대한 지각은 BECT를 위해 개발한 척도로 평가했다. 응답자는 생성감 욕구를 평가하는 7개 문항과 현재의 생성감 성취에 대한 지각을 평가하는 6개 문항에 얼마나 동의하는지를 평정했다(1: 전혀 동의하지 않음, 6: 매우 동의함). 척도 문항은 표 2에 자세히 제시되어 있다. 새 척도에 대해 가정한 2요인 구조를 확인하기 위해 13개 척도 문항에 최대우도 요인분석을 실시했다. 결과에서 고유값이 1보다 큰 2개 요인이 나타났고, 두 요인은 문항 분산–공분산 행렬의 분산 가운데 51.2%를 함께 설명했다. 사각회전 요인적재량을 검토한 결과 생성감 성취 문항과 생성감 욕구 문항은 각각 첫 번째 요인과 두 번째 요인에 강하면서 서로 분리되어 적재되었지만, 두 요인은 중간 정도로 상관되어 있었다(r = .54). 서로 구별되는 요인이라는 증거에 따라 각 하위척도의 문항을 평균하여 별도의 하위척도 점수를 산출했다. 각 하위척도의 내적 신뢰도는 양호했다(생성감 욕구 Cronbach’s alpha[α] = .82; 생성감 성취 α = .90).""",
+    """사회인구학적 공변량에는 연령, 성별, 인종/민족(흑인/아프리카계 미국인, 백인/코카서스계, 기타), 교육수준(고등학교 졸업 이하 또는 대학 일부 과정 이상), 연간 가구소득(<$15,000, $15,000–<$35,000, ≥$35,000)이 포함되었다. 건강상태 공변량에는 참여자가 의사에게 진단받았다고 보고한 주요 질환의 수(고혈압, 심혈관질환[심근경색, 간헐성 파행, 협심증, 울혈성 심부전], 뇌졸중, 당뇨병)와 노인우울척도로 측정한 우울증상 수준(Geriatric Depression Scale[GDS]; Yesavage, 1988; Yesavage et al., 1982)이 포함되었다.""",
+    """EC군과 대조군 사이의 생성감 욕구 및 생성감 성취에 대한 지각의 잠재적 차이는 치료의도(ITT) 전략과 순응자 평균 인과효과(CACE) 전략으로 평가했다. ITT 방법은 시험 참여자의 실제 치료 노출을 무시하고 무작위배정된 실험집단 사이의 중재효과를 추정한다. 따라서 ITT 접근은 중재군 분석에 치료에 순응했거나 노출된 사람과 비순응자를 모두 포함한다. 실제로 중재에 노출되었거나 순응한 사람에게서 치료효과를 추정하는 것이 목적이라면, ITT 분석은 중재군의 순응자와 비순응자를 똑같이 다룸으로써 치료효과 추정치를 편향시킬 수 있다. CACE 방법은 중재군에서 관찰된 순응자와 대조군에서 추정된 (잠재적) 순응자 사이의 치료효과를 추정한다(Angrist, Imbens, & Rubin, 1996; Dunn et al., 2003; Jo, Ginexi, & Ialongo, 2010; Stuart, Perry, Le, & Ialongo, 2008). 현재 분석에서는 대조군의 순응 상태를 추정하기 위해 흔히 쓰이는 범주형 잠재변수 모형 접근(Jo & Muthen, 2001)을 Mplus(Version 7.0) 소프트웨어로 수행했다. 구체적으로 일부 참여자는 계층 소속(순응)을 알 수 있지만 나머지는 알 수 없는 잠재계층 혼합모형을 사용했다(치료를 받은 사람은 알려져 있고, 대조군 참여자는 알려져 있지 않음).""",
+    """CACE 모형으로 생성감 욕구와 생성감 성취 수준의 차이를 검토하려면 다음 가정이 필요하다. (a) 시험에서 EC 중재 조건과 대조 조건으로의 배정이 무작위다(무작위배정 가정). (b) 각 참여자의 잠재결과는 다른 참여자의 치료상태와 무관하다(안정적 단위 처치값 가정, Stable Unit Treatment Value assumption). (c) 배정과 관계없이 언제나 치료를 받는 사람(always-taker)이 없다. (d) 언제나 배정된 치료조건과 반대로 행동하는 사람(defier)이 없다. (e) 비순응은 치료배정과 독립적이다(결과 배제제약[outcome exclusion restriction, OER] 가정). (f) 치료의 평균 인과효과가 0이 아니다(즉, 유의한 치료효과가 존재한다). 가정 1–4는 무작위배정과, 배정받지 않은 치료를 선택할 수 없게 한 프로그램 통제를 포함하는 시험설계로 충족된다(즉, 대조 조건에 배정된 사람은 EC 프로그램에 접근하여 대조 조건의 always-taker 또는 defier가 될 수 없었다). 치료군의 defier는 현재 분석에서 비순응자로 포착된다. OER 가정은 치료상태와 모든 관련 공변량이 순응을 예측하는 순응 하위모형을 포함한 모형의 결과를 순응 하위모형을 생략한 모형의 결과와 비교하여 검정한다. 순응 모형화를 생략했을 때 중재효과의 CACE 추정치가 유의하게 달라지면 OER 가정이 충족되지 않은 것이므로 순응 하위모형을 유지해야 한다. Jo(2002a,b)의 제안에 따라 OER 위반 가능성에서 비롯되는 편향을 최소화하기 위해 모든 CACE 분석에 순응 하위모형을 포함하고, 순응을 예측한다고 여겨지는 공변량을 결과모형에 추가했다. 그러나 이 접근의 타당성은 치료배정 효과의 가산성 가정, 즉 공변량 값이 달라도 치료배정의 평균 인과효과가 일정하다는 가정에 달려 있다. 가산성 가정은 치료조건과 공변량 사이의 상호작용항을 결과모형에 반복적으로 추가하여 검정한다. 이러한 상호작용이 통계적으로 유의하면 가산성 가정은 충족되지 않은 것이다. 상호작용이 존재할 때에는 모형 식별을 위해 결과모형의 상호작용효과와 공변량 주효과가 순응자와 비순응자 사이에서 같도록 제약한다.""",
+    """CACE 방법은 대조군의 관찰되지 않은 순응을 추정할 때 중재군에서 관찰된 순응률을 사용한다. 따라서 치료효과 추정은 분석모형에서 사용한 ‘순응’의 정의에 따라 달라질 수 있다. 중재 조건에 무작위배정된 참여자는 2개 학년도 전체에 걸쳐 주당 약 15시간 EC 자원봉사를 하도록 요청받았으므로 중재군에서 가능한 순응 정도(봉사 노출시간)의 변이가 상당히 컸다. 용량–반응 효과, 즉 노출이 많은 사람이 더 큰 혜택을 경험할 가능성이 있으므로, 각 평가기간의 관찰된 봉사시간 노출 분포의 분위수(즉, 20th, 40th, 60th, 80th 백분위수)를 이용하여 각 분석의 순응을 정의하고, 시점별 각 결과에 대해 일련의 CACE 모형을 실행했다. 중재에 어느 정도 순응한 352명 중 284명의 시점별 실제 누적 노출시간 범위는 4개월 = 26–417시간, 12개월 = 26–826시간, 24개월 = 26–1,589시간이었다(각 시점의 노출 분위수별 누적시간 절단점은 표 3 각주 참조).""",
+    """사회인구학적 및 건강상태 요인(성별, 인종, 교육수준, 소득, 주요 질환, 우울, 시험 코호트 연도)과 각 생성감 결과변수의 기초선 값을 ITT 및 CACE 모형의 공변량으로 포함했고, CACE 모형에서는 탈락과 순응의 예측변수로도 포함했다. 결측된 기초선 공변량 자료의 비율이 낮아 단일 회귀기반 대치를 시행했으며, 결측 비율은 소득 1.7%, 신체활동 0.2%, 주요 질환 3.9%, 우울 0.1%였다.""",
+    """그림 1에 자세히 제시했듯이 24개월의 시험기간 동안 중간 정도의 탈락이 있었다. 현재 분석의 초점인 4개월·12개월·24개월 연구평가를 완료한 등록 참여자의 수와 비율은 각각 4개월(n = 593 [84.5%]), 12개월(n = 558 [79.5%]), 24개월(n = 560 [79.8%])이었다. 종속변수의 결측자료는 CACE 분석에서 직접 모형화했고(Jo et al., 2010), ITT 분석에서는 SPSS의 다중대치 기제로 처리했다. 생성감 결과에 대한 중재효과는 4개월·12개월·24개월 추적 시점별로 ITT 및 CACE 분석에서 각각 모형화했다.""",
+    """전체 코호트와 중재 및 대조 조건의 사회인구학적·건강상태 공변량 기술통계는 표 1에 자세히 제시되어 있다. 각 생성감 척도를 구성하는 문항, Cronbach’s alpha 신뢰도계수, 각 평가시점의 평균점수는 표 2에 자세히 제시되어 있다. 대체로 참여자들은 생성감 욕구와 생성감 성취가 중간보다 높은 수준인 상태로 시험을 시작했다.""",
+    """표 1. 참여자 특성. 접근성 설명: 이 표는 전체 코호트(n = 702), 대조군 참여자(n = 350), 중재군 참여자(n = 352)를 비교한다. 모든 집단에서 평균연령은 67.4세, 여성은 85%이며, 인종, 교육, 소득, 노인우울척도 점수, 주요 질환을 보고한다. 정확한 평균, 표준편차, 백분율, 범주 표지와 표 주석은 원문 이미지에 보존되어 있다.""",
+    """표 2. 생성감 척도. 접근성 설명: 이 표는 기초선(n = 701), 4개월(n = 589), 12개월(n = 538), 24개월(n = 532)의 생성감 욕구 문항 7개와 생성감 성취 문항 6개를 제시한다. 욕구 하위척도의 평균(표준편차)은 5.62(.48), 5.62(.47), 5.56(.51), 5.57(.55)이고 alpha = .82이며, 성취 평균(표준편차)은 5.18(.82), 5.32(.70), 5.23(.76), 5.30(.75)이고 alpha = .90이다. 정확한 문항 표현과 셀은 원문 이미지에 보존되어 있다.""",
+    """표 3은 4개월·12개월·24개월 평가에서 두 생성감 결과측정치 모두에 대한 공변량 보정 ITT 및 CACE 분석 결과를 자세히 제시한다. 배제제약 가정과 가산성 가정에 대한 검정은 네 모형을 제외하고 모두 충족되었으며, 예외는 생성감 욕구의 20th 백분위수·24개월 모형, 그리고 생성감 성취의 60th 백분위수·4개월 모형, 40th 백분위수·12개월 모형, 40th 백분위수·24개월 모형이었다. 이 세 모형에서는 가산성 가정이 충족되지 않았으므로 결과를 주의해서 해석해야 한다(즉, 참여자의 사회인구학적 특성·건강상태·코호트 상태에 따라 CACE가 어떤 참여자에게는 더 강하고 다른 참여자에게는 더 약할 수 있다).""",
+    """표 3. 중재 순응을 정의하기 위해 단계별 노출 정의를 사용한 ITT 및 CACE 분석에서 4개월·12개월·24개월 평가 시 각 생성감 측정치에 대해 Experience Corps 중재군과 대조군 참여자의 평균차를 나타내는 회귀계수. 접근성 설명: 이 표는 4개월·12개월·24개월의 생성감 욕구와 생성감 성취에 대해 공변량 보정 ITT 추정치와 20th, 40th, 60th, 80th 노출 백분위수를 사용한 CACE 추정치를 보고하며, 표준오차, Cohen's d 효과크기, 유의성 표지, 누적시간 절단점, 가정 충족 여부 표지를 포함한다. 열 제목과 분석 본문은 60th 백분위수를 명시하지만 인쇄된 각주는 12개월 및 24개월 절단점에 65th 백분위수 표지를 사용하며, 원문 이미지는 이 표현을 그대로 보존한다.""",
+    """ITT 분석에 따르면 EC 중재군에 무작위배정된 참여자는 세 시점 모두에서 생성감 욕구와 생성감 성취 수준이 유의하게 더 높았다(표 3 참조). 생성감 욕구와 생성감 성취에서 중재군과 대조군의 차이를 CACE 모형으로 검토했을 때, 중재 순응을 정의하는 데 사용한 자원봉사 노출시간 수준이 높아질수록 두 집단 차이의 크기가 유의하게 더 컸다. 기술을 목적으로, 각 ITT 및 CACE 분석에서 Experience Corps 중재군과 대조군 참여자의 생성감 결과별 평균수준 차이의 크기를 나타내는 효과크기(ES) 추정치를 표 3의 베타 추정치 아래에 제시했다. 표 3에서 보듯이 CACE 모형에서 중재 ‘순응’을 정의할 때 더 높은 중재 노출수준을 사용할수록 더 큰 ES 추정치가 관찰되었으며, 이는 EC 참여의 긍정적 효과가 프로그램 노출이 증가함에 따라 커짐을 시사한다(즉, 용량–반응 관계).""",
+    """우리가 아는 한, 현재 결과는 세대 간 시민참여 프로그램에 참여하면 노인의 생성감 욕구와 생성감 성취에 대한 지각을 모두 높일 수 있음을 보여 주는 최초의 실험 증거다. ITT와 CACE 분석 모두에서 2년의 추적기간 중 여러 시점에 걸쳐 대조군보다 EC 참여자의 생성감 욕구와 생성감 성취 수준이 더 높게 관찰되었다. 또한 CACE 분석은 중재 순응을 정의할 때 더 큰 중재 노출 정도를 사용하면 생성감 변수에 대한 효과크기가 더 커짐을 시사했다. 이러한 결과는 EC와 같은 세대 간 활동에 참여하는 정도와 생성감 자기지각의 변화에서 ‘더 많이 하는 것이 실제로 더 낫다’는 점을 시사한다.""",
+    """많은 관찰연구는 생성감 지각이 실제 생성감 행동 참여와 관련된다는 것을 보여 주었지만(Cheng, 2009; Cox et al., 2010; Gruenewald et al., 2007, 2009; McAdams & Destaubin, 1992), 이러한 연구의 상관적 성격 때문에 생성감 행동과 생성감 지각 사이의 영향 방향을 분별하기 어려웠다. 두 변수가 양방향으로 관련될 가능성이 크지만, 세대 간 생성감 활동 프로그램에 무작위로 배정되어 참여하면 실제로 생성감 지각이 높아질 수 있다는 현재의 실험적 입증은 노년기에 이러한 지각이 어떻게 형성되는지를 이해하는 데 중요한 단서를 제공한다. 이러한 결과는 생성감 활동 프로그램의 개발에도 중요한데, 그러한 동기의 충족은 EC와 이와 비슷한 자원봉사 프로그램에 참여하는 이유로 자주 언급되기 때문이다(Barlow & Hainsworth, 2001; Okun, 1994; Tan et al., 2009).""",
+    """EC가 유발한 생성감 자기지각의 증진은 여러 추가 혜택으로 이어질 수 있는데, 여기에는 종단 관찰연구에서 생성감을 더 긍정적으로 지각하는 사람에게서 기록된 더 나은 정신건강, 더 양호한 인지기능 및 신체기능의 변화궤적, 더 긴 수명이 포함된다(예: Grand et al., 1988, 1990; Gruenewald et al., 2007, 2009; Hagood & Gruenewald, 2014; Okamoto & Tanaka, 2004; Pitkala et al., 2004). BECT에서 시간에 따른 생성감 지각과 이러한 건강 및 안녕 지표 사이의 관련성을 탐색하는 것은 향후 분석의 중요한 목표다. 생성감 있는 존재라는 지각의 증진은 그 자체로 중요한 혜택이지만, 나이가 들면서 긍정적인 생성감 지각에서 이어질 수 있는 추가 혜택은 EC와 같은 시민참여 건강증진 프로그램의 공중보건 영향을 더욱 키울 수 있다.""",
+    """본 연구에는 몇 가지 한계가 있다. 첫째, 참여자들은 대체로 생성감 욕구와 성취 수준이 상당히 높은 상태로 시험에 들어왔으며, 이 때문에 EC 참여가 생성감 지각을 크게 높일 여지가 제한되었을 수 있다. 마찬가지로 시험 참여자들은 기초선에서 이미 높은 비율(75% 초과)로 자원봉사 행동을 했고, 시험 참여는 두 집단 모두에서 EC 이외 자원봉사 참여율을 높였다(추적 시점에 두 집단 모두 85% 초과; 자료는 제시하지 않음). 중재군과 대조군 모두에서 다른 형태의 기여행동 비율이 높았음에도 EC 참여에 무작위배정된 사람의 생성감이 더 크게 높아졌다는 결과는 EC 자원봉사의 특징과 같은 세대 간 생성감 활동이 생성감 자기지각을 높이는 핵심 활성요인일 수 있음을 시사한다. 그렇지만 이것이 다른 형태의 고강도 자원봉사 활동과 비교해 세대 간 생성감 봉사에 특유한 것인지는 향후 연구에서 더 명확히 확인해야 한다. 둘째 한계는 추적기간 중 탈락이다. 현실세계의 종단 행동시험에서는 탈락이 흔하고 현재 분석에서도 적절한 통계적 대치 절차로 처리했지만, 시험기간 동안 4개월 평가에서 24개월 평가 사이에 약 15%–20%의 상당한 추적탈락이 실제로 발생했다. 그러나 결측자료 발생 가능성(주로 시험 탈락으로 인함)은 참여 전 생성감 수준의 영향을 받지 않았으며(자료는 제시하지 않음), 최초의 생성감 자기지각이 무작위배정 후 시험 참여 가능성을 좌우했을 수 있다는 우려를 줄인다. 셋째 한계는 시험 표본이 주로 소수인종(아프리카계 미국인)과 여성(85%)으로 구성되었다는 점이며, 이 때문에 결과를 다른 인종/민족 노인집단이나 노인 남성에게 일반화하기 어려울 수 있다. 그럼에도 이 시험은 행동 및 건강증진 중재에 통상 포함되지 않으며 EC 참여로 가정되는 건강 및 안녕 혜택을 가장 잘 얻을 수 있을지도 모르는 소수인종 노인집단을 성공적으로 모집했다.""",
+    """이 연구에는 주목할 만한 강점이 많다. 첫째이자 가장 중요한 강점은 현실세계 맥락에서 고강도·많은 시간 투입을 요하는 세대 간 시민참여를 통해 생성감 지각을 높일 수 있음을 처음으로 대규모 실험에서 입증했다는 점이다. 둘째, EC 참여가 생성감 지각에 미치는 유익한 효과의 증거를 전통적인 ITT 분석과 CACE 분석 모두에서 제시했으며, CACE 분석은 더 큰 노출 ‘용량’이 더 큰 긍정적 효과를 낼 수 있음을 보여 주었다. 장기간의 고강도 봉사는 노인 자원봉사자와 그들이 돕는 사람에게 상당한 혜택을 주는 핵심일 수 있다. 셋째, 현재 미국 21개 도시에서 운영 중인 프로그램 안에서 세대 간 시민참여가 노인의 생성감 지각을 높인다는 혜택을 보여 주었다. 현재 결과는 EC 참여가 보답하고 타인과 다음 세대에 의미 있게 기여하려는 욕구를 충족할 수 있다는 모집 홍보문구와 참여 동기를 뒷받침한다. 또한 이 프로그램이 현재 미국 21개 도시에서 운영되고 있다는 것은 지금까지 프로그램에 참여한 상당수 노인이 이러한 참여 혜택을 실현했을 수 있고, 앞으로 참여할 훨씬 더 많은 사람도 그러할 수 있음을 뜻한다. 이 결과는 프로그램을 추가 지역으로 확대하도록 장려할 수도 있다.""",
+    """결론적으로 현재 분석은 노인이 세대 간 시민참여 프로그램에 참여하면 자신의 생성적 기여에 대한 지각이 높아질 수 있다는 실험 증거를 제공한다. 생성감을 느끼는 일은 그 자체로 바람직한 목표일 뿐 아니라, 관찰연구에서 생성감을 더 크게 느끼는 사람에게 통상 관찰되는 더 나은 정신적·신체적 안녕의 혜택을 노인도 누릴 수 있다. 따라서 이 결과는 노인이 다른 사람을 도우면서 자신도 도울 수 있음을 시사한다. 노인의 생성적 돌봄을 받는 아동과 학교도 막대한 혜택을 누릴 수 있다는 점을 고려하면, 이 결과는 Experience Corps와 유사한 프로그램이 공중보건을 개선하는 중요한 수단일 수 있음을 추가로 뒷받침한다.""",
+    """BECT는 National Institute on Aging(NIA) 연구비 P01 AG027735, John A. Hartford Foundation, NIA 계약 P30-AG02133 및 R37-AG19905에 따른 Johns Hopkins Older Americans Independence Center, 그리고 T. L. Gruenewald에게 수여된 NIA 연구비 K01-AG028582의 지원을 받았다.""",
+    """저자들은 지속적인 비전과 지원을 제공한 Greater Homewood Community Corporation, Intergenerational Community Services, Experience Corps National, Civic Ventures, Baltimore City Public School System, City of Baltimore, Commission on Aging and Retirement Education, Baltimore City Retirees Association, AARP, Harry and Jeanette Weinberg Foundation, John D. and Catherine T. MacArthur Foundation에도 감사드린다.""",
+]
+
+
+def digit_tokens(value: str) -> Counter[str]:
+    return Counter(re.findall(r"\d+(?:[.,]\d+)*", value))
+
+
+def build_translation(source: str) -> str:
+    source_blocks = re.split(r"\n{2,}", source.strip())
+    if len(source_blocks) != 116:
+        raise ValueError(f"Expected 116 source blocks, found {len(source_blocks)}")
+
+    output_blocks: list[str] = []
+    translation_index = 0
+    in_references = False
+    image_count = 0
+    for block in source_blocks:
+        if re.match(r"^(#{1,6})\s+", block):
+            if block not in HEADING_TRANSLATIONS:
+                raise ValueError(f"Missing heading translation: {block}")
+            output_blocks.append(HEADING_TRANSLATIONS[block])
+            if block == "## References":
+                in_references = True
+            continue
+        if in_references:
+            output_blocks.append(block)
+            continue
+        image_match = re.fullmatch(r"!\[([^\]]+)\]\(([^)]+)\)", block)
+        if image_match:
+            alt, asset_path = image_match.groups()
+            if alt not in IMAGE_ALT_TRANSLATIONS:
+                raise ValueError(f"Missing image-alt translation: {alt}")
+            output_blocks.append(f"![{IMAGE_ALT_TRANSLATIONS[alt]}]({asset_path})")
+            image_count += 1
+            continue
+        if translation_index >= len(TRANSLATED_BLOCKS):
+            raise ValueError(f"Missing translation for source text block {translation_index + 1}")
+        translated = TRANSLATED_BLOCKS[translation_index].strip()
+        missing_numbers = digit_tokens(block) - digit_tokens(translated)
+        if missing_numbers:
+            raise ValueError(
+                f"Source number(s) missing in translated block {translation_index + 1}: "
+                f"{dict(missing_numbers)}"
+            )
+        output_blocks.append(translated)
+        translation_index += 1
+
+    if translation_index != 46 or translation_index != len(TRANSLATED_BLOCKS):
+        raise ValueError(
+            f"Expected 46 translated blocks; consumed {translation_index}, prepared {len(TRANSLATED_BLOCKS)}"
+        )
+    if image_count != 4 or image_count != len(IMAGE_ALT_TRANSLATIONS):
+        raise ValueError(f"Expected 4 images, found {image_count}")
+
+    translation = "\n\n".join(output_blocks).rstrip() + "\n"
+    source_refs = source.split("## References\n\n", 1)[1]
+    translated_refs = translation.split("## 참고문헌\n\n", 1)[1]
+    references = re.split(r"\n{2,}", source_refs.strip())
+    if len(references) != 47:
+        raise ValueError(f"Expected 47 source references, found {len(references)}")
+    if source_refs != translated_refs:
+        raise ValueError("Reference section changed during translation reconstruction")
+
+    required = (
+        "생성감(generativity, 이하 ‘생성감’)",
+        "생성감 욕구(generative desire)",
+        "생성감 성취에 대한 지각(generative achievement)",
+        "치료의도(intention-to-treat, ITT)",
+        "순응자 평균 인과효과(complier average causal effects, CACE)",
+        "결과 배제제약[outcome exclusion restriction, OER]",
+        "65th 백분위수",
+        "15%–20%",
+        "관찰연구",
+        "An, J. S.",
+        "Yesavage, J. A.",
+    )
+    for sentinel in required:
+        if sentinel not in translation:
+            raise ValueError(f"Required translation sentinel missing: {sentinel}")
+    prohibited = ("챗봇", "chatbot", "STT", "녹음", "recording", "개인정보")
+    for marker in prohibited:
+        if marker.lower() in translation.lower():
+            raise ValueError(f"Prohibited marker found: {marker}")
+    return translation
+
+
+def main() -> None:
+    source = SOURCE_PATH.read_text(encoding="utf-8")
+    translation = build_translation(source)
+    OUTPUT_PATH.write_text(translation, encoding="utf-8", newline="\n")
+    print(
+        f"Wrote {OUTPUT_PATH.relative_to(ROOT_DIR)}: "
+        f"{len(TRANSLATED_BLOCKS)} translated blocks, "
+        f"{len(IMAGE_ALT_TRANSLATIONS)} translated image alts, 47 references preserved"
+    )
+
+
+if __name__ == "__main__":
+    main()

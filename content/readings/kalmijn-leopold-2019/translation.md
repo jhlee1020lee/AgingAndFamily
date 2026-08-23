@@ -1,0 +1,293 @@
+# 부모 사망 후 형제자매 관계의 변화: 결속과 친족유지의 역할
+
+> Matthijs Kalmijn (ORCID: 0000-0001-5217-1897) · Thomas Leopold
+
+> 암스테르담대학교 및 네덜란드 학제간 인구학연구소∗
+
+> *Journal of Marriage and Family*, 81 (2019년 2월), 99–114. DOI: 10.1111/jomf.12509.
+
+> 암스테르담대학교 사회학과, Nieuwe Achtergracht 166, Building REC B/C, Room B6.08, 1018 WV Amsterdam, the Netherlands. (matthijskalmijn@gmail.com).
+
+> ∗네덜란드 학제간 인구학연구소, Lange Houtstraat 19, 2511 CV The Hague, Netherlands.
+
+## 초록
+
+**배경.** 결속 가설은 부모 사망 뒤 형제자매 관계가 단기적으로 강화될 것이라고 예측하는 반면, 친족유지 가설은 부모 사망 뒤 형제자매 관계가 장기적으로 약화될 것이라고 예측한다.
+
+**방법.** 네덜란드의 전국 대표 표본인 Netherlands Kinship Panel Study의 4개 조사차수(2003–2015; 응답자 N = 3,812)를 사용하여 고정효과 회귀모형으로 가설을 검증했다. 이 조사는 형제자매 유대 자료와 (생존) 부모와의 세대 간 유대 자료를 결합했다.
+
+**결과.** 결속 가설과 일치하게, 부모 사망 뒤 형제자매 접촉이 강화되었다. 이러한 증가는 첫 번째 부모를 잃은 뒤 더 오래 지속되었고, 생존 부모와의 접촉 및 생존 부모에 대한 지원의 변화로 일부 설명되었다. 두 번째 부모가 사망한 뒤 형제자매 사이의 접촉과 갈등은 증가했지만, 이러한 효과는 오래가지 않았다. 친족유지 가설과 일치하게, 성인 고아의 형제자매 관계는 장기적으로 희미해졌다.
+
+**결론.** 형제자매 사이의 수평적 유대 변화는 상당 부분 형제자매와 부모 사이의 수직적 유대 변화에서 비롯되었다.
+
+**함의.** 형제자매 유대는 더 큰 가족 네트워크의 맥락에서 연구할 때 더 잘 이해할 수 있다.
+
+## 핵심어
+
+사망, 세대 간 관계, 부모, 형제자매.
+
+가족관계 연구에서는 성인 형제자매 사이의 관계에 대한 관심이 커져 왔다. 이 연구들은 일반적으로 형제자매 유대가 애정과 지원의 지속적인 원천임을 보여 주지만(Cicirelli, 1994; Eriksen & Gerstel, 2002; Spitze & Trent, 2006; Voorpostel & Blieszner, 2008), 드문 접촉과 먼 지리적 거리로 제약되기도 하고(Voorpostel & van der Lippe, 2007), 소수의 경우 갈등과 경쟁으로 어려움을 겪기도 한다(Suitor, Sechrist, & Pillemer, 2007). 또 다른 더 큰 연구 흐름은 부모 사망이 생존 가족 구성원, 특히 배우자와 자녀의 안녕에 미치는 결과를 살펴보았다. 이 연구들은 사람들이 배우자와 부모의 상실에 대처하고 적응하는 방식에 초점을 맞춘다(Leopold & Lechner, 2015; Marks, Jun, & Song, 2007; Stroebe, Schut, & Stroebe, 2007; Wortman, Cohen Silver, & Kessler, 1993). 두 주제의 교차점을 살펴본 연구는 거의 없다. 이 논문에서 우리는 그 교차점의 한 측면, 즉 부모의 사망이 형제자매 관계에 어떤 영향을 미치는지를 검토한다. 일반적인 형제자매 연구의 분석 단위를 다이애드에서 가족 네트워크로 확장함으로써, 서구 사회의 확대가족이 작동하는 방식에 관한 새로운 통찰을 제시한다.
+
+가족 결속 이론(Bengtson & Roberts, 1991; Silverstein & Bengtson, 1997)과 친족유지 이론(Hagestad, 1986; Rosenthal, 1985)에 근거하여, 부모가 사망한 뒤 형제자매 관계가 어떻게 변하는지에 관한 가설을 도출한다. 우리의 가설은 남겨진 가족 구성원 사이의 응집성에 첫 번째 부모의 상실과 두 번째 부모의 상실이 대조적인 영향을 미친다고 본다. 결속 가설에 따르면 첫 번째 부모의 사망은 성인 형제자매 사이의 응집성을 높이며, 이 효과는 생존 부모와의 세대 간 결속 증가에서 일부 비롯된다. 친족유지 가설에 따르면 두 번째 부모의 사망은 가족 네트워크를 통합하는 핵심 역할 위치를 공석으로 만들기 때문에 성인 형제자매 사이의 응집성을 약화한다.
+
+이 가설들을 경험적으로 검증하면 공통 조상의 존재가 부부가족들이 속한 더 큰 가족 네트워크를 어느 정도 통합하고, 그들의 사망이 그 네트워크를 어느 정도 해체하는지 평가할 수 있으므로 가족 응집성에 대한 일반적 이해에 기여한다. 가설을 검토하기 위해 네덜란드 성인 자녀와 그 형제자매의 전국 표본으로부터 얻은 4개 조사차수 패널자료를 사용한다. 고정효과 모형을 사용하여 첫 번째 부모와 두 번째 부모의 사망 전후 형제자매 유대 변화의 상세한 동태를 제시한다. 결과변수로 형제자매 사이의 접촉과 갈등을 살펴보았다. 접촉은 비교적 측정하기 쉽고 형제자매 쌍과 가족 사이에서 상당히 다르며 사회적·정서적·실질적 지원과 밀접하게 연관된다(Hank, 2007). 갈등 또한 세대 간 관계와 형제자매 유대의 중요한 차원으로 인정된다(Luescher, 2002; Steinbach, 2008; Van Gaalen & Dykstra, 2006).
+
+## 배경
+
+### 선행연구
+
+우리가 제기한 질문의 일부 측면을 검토한 선행연구가 몇 편 있다. 미국 National Survey of Families and Households의 횡단면 분석에서는 한쪽 또는 양쪽 부모가 아직 살아 있는 형제자매가 부모가 모두 사망한 형제자매보다 서로 더 자주 접촉하고 서로에게 더 큰 애정을 느끼는 것으로 나타났다(White & Riedmann, 1992). 같은 자료를 분석한 연구에서는 한쪽 또는 양쪽 부모가 사망했을 때 형제자매 사이에 갈등이 더 많았다(Fuller-Thomson, 2000). 이 자료를 최근 재분석한 연구에서는 부모 사망이 형제자매 사이의 지원 교환 감소를 초래했지만 접촉에는 유의한 변화가 없었다(Spitze & Trent, 2016). 미국 고등학교 졸업생을 대상으로 한 2개 조사차수 종단연구에서는 조사차수 사이에 부모가 사망했을 때 형제자매 사이의 친밀감이 약간 감소했다(Khodyakov & Carr, 2009).
+
+여러 연구는 형제자매 유대의 차이나 변화를 더 일반적으로 분석하면서 부모의 생존 여부를 통제변수로 검토했다. 이 연구들은 부모가 더 이상 살아 있지 않을 때 형제자매 유대가 더 약하다는 점을 보여 주었다(Voorpostel, van der Lippe, & Flap, 2012; White, 2001). 전체적으로 볼 때 부모 사망이 형제자매 관계에 미치는 부정적 효과가 우세해 보이지만, 발견된 효과는 흔히 작았고 결과변수와 연구설계 전반에 걸쳐 강건하지 않았다.
+
+### 이론적 배경과 가설
+
+문헌에는 성인 형제자매 관계에 관한 서로 다른 이론적 관점이 있다. 한 관점은 형제자매를 우선 가족으로 본다. 사람들은 대체로 형제자매가 생물학적으로 연결되어 있고 함께 자랐기 때문에 그들의 안녕에 관심과 책임을 느끼며, 지원이 필요한 형제자매를 도울 것이다(Voorpostel, 2007; White & Riedmann, 1992). 형제자매 유대가 작동하는 방식은 가족관계의 결속 모형과 호송대 모형에 부합하는데, 이 모형들은 가족 유대가 오랫동안 잠재 상태에 머물 수 있지만 위기나 중요한 생애사건이 발생하면 활성화된다고 주장한다. 두 번째 관점은 형제자매를 친구로 본다(Connidis, 1989). 형제자매는 흔히 나이가 비슷하고 대개 함께한 역사가 길다. 이는 전형적으로 어떤 의미에서는 친구 관계에 견줄 만한 가까운 유대로 이어진다. 형제자매 유대는 선택한 것이 아니라 귀속된 것이지만, 그 기능 방식은 여전히 친구 관계와 비슷할 수 있다. 많은 연구가 친구 유대와 형제자매 유대의 유사점과 차이점을 검토했다(Floyd, 1995).
+
+세 번째 관점은 형제자매를 경쟁자로 본다(Suitor et al., 2009). 부모 가정의 자원은 한정되어 있으므로 형제자매는 부모의 관심, 지원, 애정을 두고 경쟁하게 된다. 형제자매 경쟁은 주로 어린 형제자매를 대상으로 연구되었지만, 나이가 든 뒤에도 지속되거나 다시 나타날 수 있다. 형제자매 경쟁 문헌은 형제자매 사이의 갈등을 강조한다. 마지막 네 번째 관점은 때때로 형제자매 구성이라고 부르는 형제자매 전체 집합에 초점을 맞춘다(Blake, 1989). 이 문헌은 흔히 교육과 소득 같은 계층화 결과에 관심을 두고 형제자매 수, 형제자매의 성별 구성, 형제자매 사이의 평균 출생간격이 미치는 효과를 검토한다(Steelman, Powell, Werum, & Carter, 2002).
+
+이 연구에서는 이러한 관점의 여러 측면을 활용하여 부모 사망의 효과에 관해 검증 가능한 가설을 개발한다. 우리는 세 묶음의 가설을 검증했다. 첫 번째 가설 묶음은 세대 간 결속 모형에서 도출했다(Bengtson & Roberts, 1991). 이 모형에 따르면 형제자매를 포함한 가족 구성원은 필요할 때 사회적·실질적 지원을 서로에게 의지한다. 형제자매 같은 확대가족 구성원은 위기 때 활성화되는 “잠재적 친족 행렬”의 일부이다(Riley & Riley, 1993). 사망에 앞서 질병이 발생하는 경우가 많으므로 이러한 활성화는 부모 사망 전후 모두에 일어날 수 있다. 분석의 기준기간으로 우리는 사망 몇 년 전의 상황, 즉 형제자매 접촉의 “정상적인” 양상을 반영하는 시점에 초점을 맞춘다.
+
+부모의 사망은 생존 가족 구성원에게 위기이며, 상호 지원의 필요를 만들어 낸다. 형제자매는 접촉을 늘림으로써 이러한 필요에 대응할 것으로 예상할 수 있다(Connidis, 1992).
+
+> Umberson(2003, p. 172)이 부모 사망에 관한 대규모 양적·질적 연구에서 관찰했듯이, 세상을 떠난 그 특별한 사람을 알고 사랑했던 가족 구성원, 특히 형제자매와의 관계에서는 흔히 슬픔과 상실을 공유한다는 감각이 생긴다. 상실을 공유한다는 감각은 공감을 촉진하며, 형제자매가 서로의 고통이 얼마나 깊은지 이해하도록 돕는다.
+
+그에 따른 형제자매 응집성의 변화는 부모 사망 뒤 형제자매 사이의 접촉 빈도가 증가하는 것으로 나타날 것이다(가설 1).
+
+결속 관점의 또 다른 함의는 형제자매 다이애드가 아니라 이를 둘러싼 가족 네트워크에 있다. 부모의 사망은 형제자매 사이의 지원 필요를 높일 뿐 아니라 임종을 앞둔 부모를 지원할 필요와 생존 부모를 지원할 필요도 만들 수 있다(Umberson, 2003). 생존 부모에게 제공하는 지원은 실질적·사회적·정서적일 수 있다. 형제자매는 생존 부모에게 제공하는 지원을 조율해야 하므로 서로 더 자주 만날 수 있다(Finch & Mason, 1993). 또한 형제자매가 생존 부모를 함께 지원하면 형제자매 사이의 접촉이 증가할 수 있다. 이때 형제자매 유대의 변화는 부모-자녀 유대 변화의 부산물이다. 즉 형제자매가 서로를 돕기 위해 손을 내미는 것이 아니라 생존 부모가 이들을 한데 모으는 것이다. 이러한 생각과 일치하게, 선행연구는 성인 자녀와 부모 사이에 교환되는 지원이 성인 형제자매 사이에 교환되는 지원과 정적 상관을 보였다고 밝혔다(Voorpostel & Blieszner, 2008).
+
+결속 모형의 이 구체적인 측면을 검증하기 위해 첫 번째 부모의 사망과 두 번째 부모의 사망을 구분한다. 우리는 두 번째 부모가 사망할 때보다 첫 번째 부모가 사망할 때 형제자매 사이 접촉의 증가가 더 클 것으로 예상한다(가설 2). 또한 첫 번째 부모의 사망에서는 형제자매 사이 접촉의 증가가 생존 부모와의 접촉 및 생존 부모에 대한 지원의 변화에 의해 매개될 것으로 예상한다(가설 3).
+
+두 번째 가설 묶음은 친족유지 이론에서 도출했다(Fuller-Thomson, 2000; Hagestad, 1986; Rosenthal, 1985). 친족유지는 가족 유대를 지속시키고 가족 네트워크의 응집성과 안정성을 보장하는 모든 활동을 가리킨다. 친족유지자 역할을 수행하려면 여러 가족 구성원과 정기적으로 연락하고, 재정적·실질적 지원을 제공하며, 성인 자녀와 그들이 이룬 가족들이 만나는 가족 모임, 생일잔치 등의 행사를 조직하는 것과 같은 상당한 노력이 흔히 필요하다. 부모는 친족유지자로서 자녀들이 이룬 부부가족 사이의 응집성을 높인다. 친족유지자 역할은 흔히 여성에게 부여되고 친족 활동은 규범적으로 “여성의 일”로 규정되지만, 남성도 여성만큼은 아니더라도 이 역할을 수행할 의무감을 느낀다고 보고하며 친족유지 활동에 참여한다(Rosenthal, 1985).
+
+우리 연구의 초점과 관련하여, 친족유지자의 상실은 두 번째 부모가 사망하여 자녀들이 (성인) 고아로 전환할 때 가장 큰 결과를 낳는다. 앞서 논의했듯이 성인 형제자매와 긍정적 관계를 맺는 생존 부모는 가족 네트워크를 계속 연결한다. 마지막 부모가 사망하면 형제자매는 응집성의 중요한 원천을 잃는다. 부부 사이의 전형적인 연령 차이와 여성의 더 긴 기대수명 때문에 이 부모는 대부분 어머니이다. 성인 형제자매 한 명이 친족유지자 역할을 맡을 수는 있지만(Umberson, 2003), 서구 가족에는 공석이 된 위치를 채울 것인지, 누가 채울 것인지, 어느 정도 채울 것인지에 관한 명확한 규범이 없다. 확대가족 네트워크가 친족유지자의 상실을 보완하지 못하거나 충분히 보완하지 못한다면 성인 형제자매는 점차 연락을 잃을 수 있다(Fuller-Thomson, 2000).
+
+이러한 고려에 근거하여, 두 번째 부모가 사망한 뒤 형제자매 사이의 접촉 빈도는 장기적으로 사망 전보다 낮은 수준까지 감소할 것으로 예상한다(가설 4). 다시 말해 두 번째 부모를 잃은 직후 처음에는 증가하지만, 장기적으로는 형제자매 접촉이 감소할 것으로 예상한다.
+
+형제자매 유대에 관한 많은 연구는 형제자매 사이의 갈등, 특정 자녀를 다른 자녀보다 편애하는 부모, 관심·인정·자원을 두고 경쟁하는 자녀와 같은 관계의 부정적 측면을 강조했다(Suitor, Sechrist, Plikuhn, Pardo, & Pillemer, 2008). 갈등은 형제자매가 어리고 집에서 함께 살 때 가장 흔하지만(Brody, 1998), 일부 학자들은 형제자매 갈등이 훗날, 특히 가족 위기 때 다시 나타난다고 주장했다(Lashewicz & Keating, 2009). 부모의 사망은 유대를 맺을 새로운 기회를 만들 수 있지만 갈등의 기회도 만들 수 있다. 멀어진 형제자매가 어쩔 수 없이 다시 접촉하면 긴장이 되살아날 수 있다. 부모의 사망과 그에 앞선 질병 기간에는 흔히 형제자매가 돌봄 책임을 협상해야 한다(Connidis & Kemp, 2008; Finch & Mason, 1993). 연구들은 형제자매 갈등이 노부모를 돌보는 맥락에서 흔히 생기며(Ingersoll-Dayton, Neal, Ha, & Hammer, 2003), 특히 형제자매들이 동등하게 기여하지 않을 때 그렇다는 점을 보여 준다(Khodyakov & Carr, 2009). 마지막으로 형제자매 갈등은 유산 분배를 두고 생길 수 있다. 네덜란드에서는 균등 분배가 기본이지만 부모는 공식적으로(유언을 통해) 또는 비공식적으로 이 모형과 다르게 정할 수 있다.
+
+사망 전후에 갈등이 증가할 것으로 예상할 수 있지만 장기적 효과는 다를 것이라고 볼 이유도 있다. 특히 마지막 부모가 사망하고 친족유지자 역할이 공석으로 남으면 접촉이 점차 감소할 것으로 예상한다. 접촉은 갈등의 전제조건이므로, 사망 전후에 갈등이 불거지더라도 갈등 역시 감소할 것으로 예상한다. 이 생각은 부모 사망 뒤 관계가 더 문제화된다는 관점과 대조된다(Khodyakov & Carr, 2009). 그 대신 우리는 형제자매 관계가 악화되기보다 희미해지는 양상을 제안한다. 우리의 가설은 부모 사망 뒤 형제자매 사이의 갈등이 단기적으로 증가하고(가설 5) 장기적으로 감소한다(가설 6)는 것이다. 장기효과는 두 번째 부모 사망 뒤의 상황에만 적용된다.
+
+## 방법
+
+### 자료와 표본
+
+우리는 Netherlands Kinship Panel Study의 자료를 사용했다(Dykstra et al., 2007; Dykstra, Kalmijn, Komter, Liefbroer, & Mulder, 2005; Hogerbrugge et al., 2015; Merz, Dykstra, Hogerbrugge, Komter, & Mulder, 2012). 이 조사는 네덜란드 개인의 전국 대표 표본에 기초한다. 자료는 4개 조사차수(2002–2004, 2006–2007, 2010–2011, 2014–2015)에 걸쳐 수집되었다. 첫 3개 조사차수는 대면 면접으로 진행했고 마지막 조사차수는 웹 설문으로 진행했다. 첫 번째 조사차수의 응답자는 8,161명이었으며, 조사차수 간 패널 유지율은 각각 75%, 72%, 65%였다. 조사차수 사이의 간격이 3~4년임을 고려하면 합리적인 수준이지만, 미국과 독일의 연례 패널조사에서 달성한 수준보다는 낮다.
+
+우리는 첫 2개 이상의 조사차수에 참여하고(n = 6,091), 첫 번째 조사차수에 출생연도 정보가 유효한 생존 부모가 적어도 한 명 있었던 응답자(n = 4,017)를 선택했다. 매우 어리거나 매우 많은 나이(30세 미만 또는 70세 초과)에 부모 사망을 겪은 응답자 33명을 제외했다. (생존) 형제자매가 없는 응답자 172명도 제외했다. 남은 표본크기는 N = 3,812였다.
+
+이 분석표본은 두 하위표본으로 구성되었다. 사건표본은 관찰기간에 한쪽 또는 양쪽 부모를 잃은 응답자(n = 1,211)로, 이 기간에 어머니 사망을 겪은 응답자는 732명, 아버지 사망을 겪은 응답자는 641명이었다(부모 모두의 사망을 겪은 응답자는 162명). 사건표본에 더하여, 관찰기간에 부모 사망을 겪지 않았고 첫 번째 조사차수에 생존 부모가 적어도 한 명 있었던 응답자로 구성된 통제표본(n = 2,601)을 유지했다. 이 기준집단은 결과변수에 미치는 연령의 효과, 즉 우리 분석에서 중요한 통제변수를 추정하는 데 기여했다(White, 2001).
+
+면접에서 응답자들은 자신의 모든 형제자매를 열거한 뒤 각 형제자매와의 접촉을 보고하도록 요청받았다. 면접 시간을 줄이기 위해 갈등 측정치(그리고 여기에서 사용하지 않는 관계의 다른 측면)는 형제자매 두 명으로 제한했다. 응답자에게 형제자매가 두 명보다 많으면 갈등 질문의 대상 두 명을 무작위로 선택했다. 형제자매들이 서로 얼마나 접촉하는지에 관한 자료는 없었으므로, 우리 자료는 응답자 중심이었다. 이 다이애드 정보를 토대로 자료집합을 형제자매 다이애드로 확장한 결과, 접촉 분석에는 고유한 형제자매 다이애드 10,367개(응답자당 평균 형제자매 2.7명), 갈등 분석에는 6,186개(평균 1.6명)가 포함되었다. 응답자마다 여러 형제자매를 분석한 점을 고려하기 위해 고정효과 모형의 표준오차를 가족 수준 군집화에 맞게 조정했다.
+
+부모 사망이 접촉과 갈등에 미치는 효과를 분석하기 위해 개인-연도 파일을 만들었다. (한 조사차수의) 면접이 항상 같은 역년에 이루어진 것은 아니므로 개인-조사차수 파일보다 개인-연도 파일이 더 적절했다. 또한 조사차수 사이에 부모가 사망했다면 사망이 발생한 연도에 관한 정보를 사용할 수 있었다. 이를 통해 사망 전후의 시간을 연 단위로 검토할 수 있었다. 접촉과 갈등의 수준(그리고 조사차수별 다른 모든 측정치)은 면접이 이루어진 역년 전체에 적용된다고 가정했다. 조사차수 사이의 평균 기간은 3.62년이었다. 면접이 이루어지지 않은 연도는 개인-연도 파일에서 제외했다(불균형 패널). 접촉에 관한 연도별 자료가 있었다면 더 우수했겠지만 이용할 수 없었다. 면접 연도와 부모 사망 연도의 변이가 있었기 때문에, 우리 자료는 집계 수준에서 접촉의 연도별 변화를 추정하기에 충분히 상세했다.
+
+부모가 면접 연도와 같은 역년에 사망했다면 다소 모호한 경우가 있었다는 점에 유의해야 한다. 이 사례 대부분에서는 부모가 면접 전에 사망했으므로 그 면접 정보는 사망 후 측정치를 나타낸다. 일부 사례, 특히 면접이 연초에 이루어진 경우에는 부모가 면접 연도에 사망했지만 면접 뒤에 사망했다. 이 사례에서 면접 정보는 사망 전 측정치를 나타낸다. 이는 아버지가 사망한 사례의 9%, 어머니가 사망한 사례의 11%에서 발생했다. 이 모든 사례에서 사망 전 측정치는 사망 직전의 상황에 적용되었다. 이 사례들을 제외하고 모형을 반복 추정했을 때 동일한 효과 양상을 발견했으나, 첫 번째 부모 사망의 효과는 다소 더 강했다.
+
+### 측정
+
+표 1은 모형에 포함된 모든 변수의 기술통계와 측정 세부사항을 제시한다. 접촉, 갈등, (부모에 대한) 지원 측정치는 노화 맥락의 가족 결속에 관한 기존 연구 전통에서 가져왔지만(Dykstra et al., 2006; Szydlik, 2016), 정확한 문항 표현은 국가와 조사에 따라 다를 수 있다.
+
+![표 1. 기술통계](figures/table-1.png)
+
+표 1. 기술통계. 접근성 설명: 원자료의 표를 읽기 쉽도록 똑바로 회전한 것으로, 대면 접촉과 전화 접촉, 형제자매 갈등, 각 부모 사망의 시점과 경과기간, 생존 부모와의 접촉 및 생존 부모에 대한 지원, 연령에 관해 평균, 표준편차, 최솟값, 최댓값, 표본크기와 측정 설명을 열거한다. ‘두 번째 부모 사망 후 연수’의 인쇄된 설명에는 ‘첫 번째 부모 사망 후 연수’라고 되어 있으며, 이미지에는 이 원문 표현을 그대로 보존했다.
+
+#### 종속변수
+
+접촉 빈도는 모든 형제자매에 대해 측정했다. 형제자매가 같은 가구에 살면 접촉 정보가 결측이었고, 이 다이애드는 제외했다. 두 가지 접촉 측정치를 사용했다. 즉 (a) 지난 12개월간 대면 접촉 빈도와 (b) 지난 12개월간 전화 접촉(편지와 이메일 포함) 빈도이다. 응답자는 7점 척도로 답했다. 부모-자녀 접촉에 관한 선행연구(Waite & Harrison, 1992)에 따라 범주를 다음과 같이 1년 동안 접촉한 대략적 일수로 재코딩했다. “전혀 없음” = 0, “한 번” = 1, “몇 번” = 4, “적어도 매월” = 12, “적어도 매주” = 52, “일주일에 여러 번” = 104, “거의 매일” = 300이다. 우측으로 치우친 분포를 처리하고 회귀효과를 상대적 변화로 해석할 수 있도록 결과값을 로그변환했다(변환이 가능하도록 “전혀 없음”을 1로 재코딩했다). 갈등은 무작위로 선택한 형제자매 두 명에 대해 평가했으며, 지난 3개월간 형제자매와 갈등, 긴장 또는 의견 불일치를 겪은 빈도를 묻는 질문으로 측정했다. 응답자는 “전혀 없음”, “한두 번”, “자주” 가운데 하나로 답할 수 있었다. 갈등 수준이 낮았으므로 “한두 번”과 “자주”를 한 범주로 합쳐 “전혀 없음”과 대비했다.
+
+#### 독립변수
+
+첫 번째 및 두 번째 부모의 사망이 결과변수에 미치는 효과를 나타내기 위해, 우리는 (a) 사망 연도에 앞선 모든 연도에는 0이었다가 사망 연도와 그 뒤 모든 연도에는 1로 바뀌는 지표변수와 (b) 사망 연도에는 0으로 설정한 뒤 사망 후 연수를 세는 기간변수를 사용했다. 이 분석 설정으로 전환효과와 기간효과를 분리할 수 있었다(Kalmijn, 2017; Leopold & Kalmijn, 2016). 사망 전 접촉과 갈등 수준의 기준기간이 가족의 “정상적인” 상황을 반영하도록 어느 부모든 사망 연도 1년 또는 2년 전에 해당하는 관측치를 제외했다. 사망 후 연도에 대한 더미변수 집합과 여러 모수화(선형, 이차, 삼차, 사차)를 포함하여 기간효과의 함수 형태를 검토하는 추가 분석을 수행했다. 첫 번째 부모 사망 후 기간에는 선형 측정치가 자료에 가장 잘 적합했고, 두 번째 부모 사망 후 기간에는 이차 모형이 가장 잘 적합했다. 두 번째 부모의 사망에 대해서는 기준모형으로 선형 모형도 추가했다.
+
+#### 매개변수
+
+첫 번째 부모 사망의 효과를 다루는 모형에는, 형제자매 접촉 변화가 생존 부모와의 관계 변화로 설명된다고 진술한 가설 4를 검증하기 위해 두 가지 매개변수를 포함했다. 이 변수들은 응답자와 생존 부모 사이 관계의 두 측면을 측정했다. (a) 부모와 교환한 지원은 실질적 지원을 주고받는 빈도, 가사 지원을 주고받는 빈도, 유용한 조언을 주고받는 빈도, 정서적 지원을 주고받는 빈도에 관한 8개 문항을 바탕으로 산출한 표준화 지수로 측정했다(Cronbach’s α는 조사차수에 따라 .71에서 .74까지였다). (b) 부모와의 대면 접촉은 형제자매 접촉의 해당 결과변수와 같은 방식으로 측정했다. 이 두 매개변수 사이의 상관은 r = .5였다(다이애드-연도 파일에서 측정). 어머니와 아버지가 모두 살아 있는 관측치에는 부모들의 평균을 사용했다.
+
+#### 통제변수
+
+부모 사망 지표는 연령과 혼재되어 있었으므로, 형제자매 관계의 연령 관련 변화를 통제하는 것이 중요했다. 형제자매 관계에 대한 연령효과의 여러 모수화를 검토하고, 형제자매 접촉과 갈등에 미치는 연령의 효과를 추정하기 위해 선형 및 이차 모형을 사용했다. 더 높은 차수의 다항식은 자료 적합도를 개선했지만 개선 폭은 점증적이었고 관심 추정치에는 영향을 미치지 않았다. 모형에서는 연령변수를 표본평균(45.5세)을 중심으로 중심화했다.
+
+### 모형
+
+다이애드-연도 자료를 분석하기 위해 가족 안에 내재된 다이애드에 대해 군집-강건 표준오차를 적용한 고정효과 모형을 사용했다. 고정효과 모형은 형제자매 관계의 시간에 따른 변화를 독립변수의 시간에 따른 변화에만 연결한다(Petersen, 2004). 시간에 따라 변하는 변수만 고정효과 모형에 들어간다. 우리 연구는 가족 동태에 초점을 맞추므로 가족 안에 형제자매 다이애드가 내재된 자료 구조를 고려하기 위해 다층모형을 사용하지 않았다. 그 대신 가족 수준의 군집화에 맞게 표준오차를 보정했다.
+
+대면 접촉과 전화 접촉의 분석에는 고정효과 선형회귀모형을 추정했다. 갈등의 분석에는 고정효과 조건부 로짓모형과 고정효과 선형회귀모형을 추정했다. 이분형 결과에 대한 선형회귀모형은 선형확률모형이다. 그러나 결과변수의 왜도 때문에 로짓모형은 갈등이 있을 확률의 상대적 변화에 더 민감하므로 결과에 의미 있는 세부사항을 더할 수 있다. 고정효과 로짓모형에는 종속변수가 변한 사례만 포함되므로 표본크기가 상당히 줄어든다는 점에 유의해야 한다(Petersen, 2004). 첫 번째 부모와 두 번째 부모를 잃는 효과가 혼재되지 않도록 첫 번째 부모 사망을 다루는 모형에서는 두 번째 부모 사망 후의 모든 관측치를 제외했다.
+
+생존 부모와의 관계가 지니는 매개효과를 검토하기 위해, 첫 번째 부모 사망이 대면 접촉과 전화 접촉에 미치는 효과에 관하여 두 모형을 추정했다. 비조정 모형은 매개변수를 제외했고(모형 1a와 2a), 조정 모형은 매개변수를 추가했다(모형 1b와 2b). 매개효과를 검토하기 위해 생존 부모에 대한 지원과 생존 부모와의 접촉을 거치는 부모 사망의 간접효과에 대한 유의성 검정을 제시했다. 이 검정은 Stata에서 이용할 수 있는 khb(KHB) 회귀 기법으로 수행했다(Kohler & Karlson, 2012). 이 모듈을 적용하기 위해 개체 내 변환 자료(즉 각 변수에서 개인별 평균을 뺀 자료)를 바탕으로 고정효과 모형을 통상최소제곱 선형회귀모형으로 추정했는데, 이는 고정효과 모형과 동등하고(Petersen, 2004) khb 모듈과 호환된다. 개체 내 변환 자료로 추정한 통상최소제곱 모형은 가족 안 다이애드의 군집화에 맞게 보정했다.
+
+두 번째 부모 사망의 효과를 다루는 모형에서는 이차 기간효과를 포함한 완전 모형(모형 3b, 4b, 6b)에 선형 기간효과를 포함한 기준모형(모형 3a, 4a, 6a)을 보완하여 제시했다.
+
+## 결과
+
+회귀분석 결과를 논의하기 전에 표 2에서 결과변수를 기술적으로 살펴본다. 형제자매와의 대면 접촉은 상당히 다양했다. 형제자매 다이애드의 거의 절반은 적어도 매월 접촉했다. 매주 이상의 접촉은 덜 흔했으며(16%), 네덜란드에서 50%가 매주 접촉한다고 보고한 부모와 성인 자녀의 관계와 비교할 때 특히 그러했다(Kalmijn, 2006). 형제자매 다이애드 가운데 무시할 수 없는 소수에서는 지난 1년 동안 접촉이 전혀 없거나 한 번뿐이었다(13%). 또 다른 큰 집단(40%)에서는 이따금(“몇 번”)만 접촉했다. 표 2에 제시된 기술통계에서는 대면 접촉과 전화 접촉의 빈도 사이에 큰 차이가 나타나지 않는다. 마지막으로 기술통계는 형제자매 관계에서 갈등이 드물었음을 보여 준다. 갈등이 한 번이라도 보고된 관측치는 10%에 불과했고, 잦은 갈등이 보고된 관측치는 2%뿐이었다. 형제자매 갈등이 다소 적게 보고되었을 수 있지만, 이 수치는 형제자매 유대가 대체로 조화로웠음을 시사한다. 다만 Netherlands Kinship Panel Study 설문에서 갈등의 회상기간은 비교적 짧다는 점에 유의해야 한다(지난 3개월을 가리킨다). 접촉과 갈등 사이의 상관은 크지 않았지만 예상과 일치하게 정적이었다(r = .08).
+
+![표 2. 모든 조사차수·모든 다이애드의 형제자매 접촉과 갈등 빈도](figures/table-2.png)
+
+표 2. 모든 조사차수·모든 다이애드의 형제자매 접촉과 갈등 빈도. 주. Netherlands Kinship Panel Study 2002~2014. 접근성 설명: 이 표는 대면 접촉 7개 범주, 전화 접촉 7개 범주, 갈등 3개 범주의 백분율과 누적 백분율을 보고한다. 매월 이상 대면 접촉의 합계는 46.9%, 매월 이상 전화 접촉의 합계는 47.9%, 갈등이 한 번이라도 있었던 비율은 10.1%이며, 각각의 관측치 수는 30,289개, 30,289개, 18,108개이다.
+
+고정효과 모형은 표 3(형제자매 접촉)과 표 4(형제자매 갈등)에 제시한다. 그림 1과 2에서는 이 모형들의 주요 결과를 평균 한계효과로 나타낸다. 먼저 부모 사망이 형제자매 접촉에 미치는 효과를 추정했다(표 3). 사망 연도의 효과는 전환효과, 즉 사망 최소 2년 전 관측치로 구성된 기준기간과 비교한 부모 상실의 평균적인 즉각적 영향을 나타낸다. 사망 후 연수의 효과는 기간효과, 즉 부모를 잃은 뒤 1년이 지날 때마다 접촉에서 나타나는 평균적인 다이애드 내 변화를 뜻한다.
+
+형제자매와의 로그 대면 접촉에 대한 비조정 모형(모형 1a)은 첫 번째 부모를 잃은 연도에 빈도가 약 17% 증가했음을 보여 주었다. 그 뒤 이어진 몇 년에는 통계적으로 유의하지 않은 감소가 나타났으며, 이는 형제자매의 대면 접촉과 전화 접촉 증가가 장기적이었음을 뜻한다. 로그 전화 접촉(모형 2a)에서도 정(+)의 전환효과와 유의하지 않은 기간효과라는 유사한 양상이 나타났다. 첫 번째 부모 사망 모형에 적용한 표본 제한을 고려하면, 이 결과는 두 번째 부모가 아직 살아 있는 상황에 적용된다는 점에 유의해야 한다.
+
+![표 3. 형제자매 접촉 변화의 고정효과 회귀분석](figures/table-3.png)
+
+표 3. 형제자매 접촉 변화의 고정효과 회귀분석. 주. Netherlands Kinship Panel Study 2002~2014. 괄호 안은 강건 표준오차이다. 결과변수는 로그변환했다. 괄호 안은 표준오차이다. 생존 부모와의 접촉 및 생존 부모에 대한 지원에 의한 매개효과이다. F-to-F = 대면 접촉. *p < .05. 접근성 설명: 8개의 고정효과 모형은 첫 번째 및 두 번째 부모 사망 뒤 대면 접촉과 전화 접촉을 비교한다. 핵심 전환계수는 첫 번째 부모 사망의 대면 접촉 모형에서 0.173과 0.100, 첫 번째 부모 사망의 전화 접촉 모형에서 0.166과 0.123, 두 번째 부모 사망의 대면 접촉/전화 접촉 모형에서 −0.006/0.068과 0.175/0.208이다. 두 번째 부모 사망 후 유의한 부(-)의 기간효과는 −0.040, −0.099, −0.045, −0.072이며, 매개효과는 0.071과 0.042이다.
+
+로그 대면 접촉에 대한 조정 모형(모형 1b)과 로그 전화 접촉에 대한 조정 모형(모형 2b)에는 생존 부모와의 관계 측정치를 추가했다. 두 측정치는 모두 형제자매의 대면 접촉 변화와 정적으로 연관되었지만, 생존 부모와의 대면 접촉 효과만 크기가 상당하고 통계적으로 유의했다. 두 접촉변수를 모두 로그변환했으므로 계수는 탄력성으로 해석할 수 있으며, 생존 부모와의 대면 접촉이 100% 증가하면 형제자매와의 대면 접촉이 19% 증가하는 것과 연관되었음을 뜻한다.
+
+모형 1a와 1b를 비교하면 형제자매 접촉에 대한 전환효과가 0.17에서 0.10으로 감소했다. 따라서 생존 부모와의 접촉 증가는 첫 번째 부모 사망 연도에 발견된 형제자매 대면 접촉 증가의 약 절반을 설명했다. 표 하단에 보고한 매개효과 검정은 이러한 감소가 통계적으로 유의했음을 보여 준다.
+
+형제자매의 전화 접촉에서는 생존 부모와의 접촉 및 생존 부모에 대한 지원의 효과가 정적이고 통계적으로 유의했다(모형 2b). 접촉 측정치에서 발견된 효과는 모형 1b보다 덜 두드러졌으며, 생존 부모와의 대면 접촉이 100% 증가하면 형제자매와의 전화 접촉이 6% 증가하는 것과 연관되었음을 뜻한다. 지원 지수의 효과는 생존 부모에 대한 지원이 1표준편차 증가하면 형제자매와의 전화 접촉이 8% 증가하는 것과 연관되었음을 보여 주었다. 이 측정치들은 함께 첫 번째 부모 사망 연도에 발견된 형제자매 전화 접촉 증가의 일부를 설명했지만, 대면 접촉과 비교하면 매개효과는 덜 두드러졌다. 전환효과는 0.16에서 0.12로 감소했으며, 이는 통계적으로 유의하지만 크기는 크지 않은 감소였다.
+
+그림 1은 첫 번째 부모 사망 뒤 형제자매 접촉 변화에 관한 모든 결과를 보여 준다. 이 그림은 전환효과(검은색 비조정선)뿐 아니라 생존 부모와의 접촉 및 생존 부모에 대한 결속 측정치의 변화를 통제한 뒤 이러한 효과가 어느 정도 감소했는지(회색 조정선)도 보여 준다.
+
+![그림 1. 첫 번째 부모 사망과 형제자매 접촉 변화](figures/figure-1.png)
+
+그림 1. 첫 번째 부모 사망과 형제자매 접촉 변화. 주. 평균 한계효과는 모형 1a와 1b(왼쪽 도표), 모형 2a와 2b(오른쪽 도표)에서 계산했다. 접근성 설명: 두 선 도표는 첫 번째 부모 사망 2년보다 더 이전부터 사망 후 7년까지 대면 접촉과 전화 접촉의 백분율 변화를 보여 준다. 검은색 비조정 효과는 사망 시점에 상승한 뒤 양(+)의 값을 유지한다. 생존 부모와의 결속 및 생존 부모와의 접촉을 조정한 회색 효과는 더 작고, 특히 대면 접촉에서 그러하다.
+
+이어서 두 번째 부모의 사망이 형제자매의 대면 접촉(모형 3)과 전화 접촉(모형 4)에 미치는 효과를 살펴본다. 모형 3b에서는 두 번째 부모 사망의 정(+)의 전환효과와 부(-)의 기간효과를 관찰했다. 이차항은 정(+)이었지만 주된 양상은 선형모형(모형 3a)이 보여 주듯이 하향 기울기였다. 이는 두 번째 부모 사망 뒤 대면 접촉이 증가했지만 이후 몇 년 동안 크게 감소했음을 뜻한다. 모형 3b에서 기간 제곱항의 정(+) 효과가 나타내듯 감소세가 완만해지기는 했지만, 대면 접촉 수준은 부모가 아직 살아 있을 때보다 상당히 낮아졌다. 이러한 장기효과는 그림 2에 제시한다.
+
+![그림 2. 두 번째 부모 사망과 형제자매 접촉 변화](figures/figure-2.png)
+
+그림 2. 두 번째 부모 사망과 형제자매 접촉 변화. 주. 평균 한계효과는 모형 3b(왼쪽 도표)와 모형 4b(오른쪽 도표)에서 계산했다. 접근성 설명: 두 선 도표는 두 번째 부모 사망 2년보다 더 이전부터 사망 후 7년까지의 백분율 변화를 보여 준다. 대면 접촉과 전화 접촉은 모두 사망 전후에 증가한 뒤 사망 전 기준수준보다 낮아진다. 대면 접촉의 감소가 더 가파르며 7년째에는 약 −30%에 이른다.
+
+대면 접촉에서는 형제자매 접촉이 장기적으로 약 30% 감소했다(7년 후 한계효과는 그림에 나타난 것처럼 −0.30에 가까웠다).
+
+전화 접촉에서도 정(+)의 전환효과 뒤 부(-)의 기간효과가 이어지는 유사한 양상을 관찰했다. 전화 접촉의 증가는 대면 접촉의 증가보다 더 컸다. 계수는 기준기간과 비교하여 20% 넘게 증가했음을 나타냈다. 전화 접촉의 장기적 감소는 덜 두드러졌지만 여전히 약 15%에 달했다.
+
+종합해 보면 두 번째 부모의 사망 뒤 접촉이 일시적으로 증가했다가 장기적으로 두 번째 부모가 살아 있을 때 관찰된 수준보다 낮아지는 양상이 나타났다.
+
+추가 분석(제시하지 않음)에서는 두 번째 부모 사망의 효과가 이 사례의 대다수(우리 자료에서는 75%)에서 어머니가 아버지보다 나중에 사망했다는 사실에서 비롯되었는지를 검토했다. 이는 어머니를 주된 친족유지자로 보는 우리의 관점과 일치했지만, 형제자매 접촉의 장기적 감소가 어머니를 잃은 뒤 더욱 강했는지를 추가로 살펴보았다. 그러나 형제자매 사이의 대면 접촉 및 전화 접촉 빈도에서 두 번째 부모 사망 지표(전환효과와 기간효과)와 두 번째 부모의 성별 사이에 유의한 상호작용은 나타나지 않았다. 이는 자료에서 관찰된 양상이 어머니의 사망이 아니라 두 번째 부모의 사망에서 비롯되었음을 시사한다.
+
+![표 4. 형제자매 갈등 변화의 고정효과 로짓 및 선형확률 회귀분석](figures/table-4.png)
+
+표 4. 형제자매 갈등 변화의 고정효과 로짓 및 선형확률 회귀분석. 주. Netherlands Kinship Panel Study 2002~2014. 괄호 안은 강건 표준오차이다. *p < .05. 접근성 설명: 6개의 고정효과 모형은 첫 번째 부모 사망의 전환효과와 기간효과가 갈등에 유의하지 않았고, 두 번째 부모 사망의 전환효과도 유의하지 않았음을 보여 준다. 두 번째 부모 사망 후 유의한 부(-)의 기간계수는 로짓모형에서 −0.243과 −0.359, 선형확률모형에서 −0.015와 −0.023이며, 이차 기간항은 유의하지 않다.
+
+표 4에는 형제자매 갈등 변화에 대한 고정효과 로짓모형(모형 5, 6a, 6b)과 고정효과 선형확률모형(모형 7, 8a, 8b)의 결과를 제시한다. 첫 번째 부모의 사망에서는 유의한 변화를 발견하지 못했다. 형제자매 갈등은 대체로 드물었고 첫 번째 부모 사망에 반응하여 변하지 않았다. 두 번째 부모의 상실에서는 형제자매 갈등이 처음에 통계적으로 유의하지 않게 증가한 뒤 기준기간보다 낮은 수준까지 점차 감소했다. 갈등에 대한 부(-)의 기간효과는 통계적으로 유의했다. 평균 한계효과(제시하지 않음)는 두 번째 부모 사망 뒤 몇 년 동안 형제자매 갈등의 비율이 0에 가까워졌음을 보여 주었다. 선형모형과 로짓모형 모두 두 번째 부모 사망 뒤 유의한 감소를 보여 주었다. 로짓모형은 선형모형보다 갈등이 처음에 더 크게 증가했음을 나타냈지만, 이는 로짓모형이 상대적 변화를 포착한다는 사실로 설명할 수 있다. 갈등은 흔하지 않기 때문에 절대적으로 작은 갈등 증가도 상대적으로는 상당할 수 있다.
+
+## 결론 및 논의
+
+전체적인 결과 양상은 결속 관점에서 도출한 기대의 대부분과 일치했지만 전부와 일치한 것은 아니었다. 형제자매 접촉이 부모를 잃은 연도에 대체로 증가했으므로 가설 1은 지지되었다. 가설 2도 지지되었다. 형제자매 접촉에 대한 정(+)의 효과는 첫 번째 부모 사망에서 더 강했으며, 이는 생존 부모에게 지원이 필요하기 때문에 형제자매 접촉이 일부 증가한다는 생각과 일치한다. 그러나 이는 대면 접촉에만 적용되었다. 생존 부모와의 관계가 지니는 매개역할에 관한 가설 3은 형제자매의 대면 접촉에서 가장 명확히 지지되었으며, 발견된 증가의 거의 절반은 남은 부모와의 결속 변화에서 비롯되었다. 그렇지만 두 접촉 유형 모두에서 세대 간 관계 변화를 조정한 뒤에도 크기가 중간 정도인 형제자매 관계의 독립적 효과가 남았다. 전체적으로 볼 때 이러한 결과는 형제자매 유대에 대한 세대 간 결속 관점을 지지하며, 형제자매 결속이 상당 부분 부모에 의해 좌우되고 형제자매 사이에만 존재하는 것이 아님을 시사한다.
+
+두 번째 가설 묶음은 친족유지 개념에 기반했다. 가설 4는 친족유지자 효과를 다루면서 두 번째 부모의 상실이 장기적으로 형제자매 응집성을 낮춘다고 보았다. 이 가설은 뒷받침되었다. 두 접촉 측정치 모두 장기적 감소를 나타냈고, 대면 접촉에서는 이 효과의 크기가 상당했다. 더욱이 두 번째 부모 사망 후의 접촉 빈도는 부모가 한 명 또는 두 명 살아 있을 때 관찰된 수준보다 상당히 낮은 수준까지 감소했다. 추가 분석은 두 번째 부모 사망의 효과가 이 부모가 흔히 어머니라는 사실에서 비롯된 것이 아님을 보여 주었다.
+
+부모의 사망이 형제자매 사이의 갈등을 일시적으로 불러일으킨다는 가설 5는 지지되지 않았다. 그 대신 우리가 발견한 양상은 사망 뒤 갈등이 감소한다는 가설 6과 일치했다. 접촉의 감소와 함께 보면, 우리는 이를 가족 네트워크의 통합 행위자를 잃은 뒤 형제자매 관계가 악화되는 것이 아니라 희미해진다는 증거로 해석한다. 이 양상의 중요한 함의는 확대가족 네트워크의 성장과 응집성이 제한된다는 것이다. 처음에는 부부가족들이 강한 형제자매 유대로 연결되지만, 부모의 사망은 이러한 연결을 점차 약화하고 가계도 아래쪽에서 형성된 새로운 가족들이 연결되어 새로운 확대가족 네트워크를 구축할 여지를 만든다.
+
+결론을 맺으면서, 부모 사망과 형제자매 관계의 연결에 관한 현재 문헌 속에 이 논문을 자리매김하는 것이 중요하다. 우리의 분석은 여러 방식으로 이 연결을 더 명확하게 밝혔다. 이 연결을 검토한 선행연구는 약하고 고르지 않은 효과를 보고했다(Khodyakov & Carr, 2009; Voorpostel et al., 2012; White, 2001; White & Riedmann, 1992). 이처럼 일관되지 않은 결과는 부모 사망의 효과와 관련된 복잡한 동태에서 비롯되었을 수 있다. 우리 분석이 보여 주듯이 단기효과는 장기효과와 다르다. 더욱이 첫 번째 부모와 두 번째 부모를 잃는 결과는 중요하고 이론적으로 의미 있는 방식으로 다르며, 첫 번째 부모 사망의 장기적인 정(+)의 효과와 두 번째 부모 사망의 장기적인 부(-)의 효과에 관한 우리의 근거가 이를 보여 준다. 선행연구들은 연구자가 이용할 수 있었던 조사차수가 적어서 흔히 덜 상세한 설계를 사용했으므로, 이러한 대조적인 효과가 서로 상쇄되었을 수 있다. 물론 우리의 결과는 네덜란드에 적용되는 반면, 이 문헌의 선행 결과는 대부분 미국 맥락에 적용된다.
+
+우리 분석은 가족관계에 대한 다이애드 접근을 넘어설 때 얻는 이점을 보여 주는 또 하나의 사례이다(Voorpostel & Blieszner, 2008). 한 관계의 변화가 다른 관계의 변화에 의존하기 때문이다. 가족연구에서 연결된 삶 원리는 수직적 또는 수평적 유대에 초점을 맞추는 일반적인 접근보다 확대가족 네트워크를 더 포괄적으로 다루는 분석에서 가장 잘 검토할 수 있다. 우리 분석이 보여 주듯이 형제자매 사이의 수평적 유대 변화는 상당 부분 형제자매와 부모 사이의 수직적 유대 변화에서 비롯되었다. 한 가지 중요한 함의는 더 큰 가족 네트워크의 맥락에서 연구할 때 형제자매 유대를 더 잘 이해할 수 있다는 것이다. 그러한 접근은 이상적으로 형제자매의 배우자와 자녀가 하는 역할도 포함하여, 세 세대 수준에 걸친 복잡한 가족 다이애드 집합으로 이어질 것이다. 그러한 네트워크에서는 형제자매 다이애드가 네트워크의 다른 다이애드에 영향을 미치는 동시에 다른 다이애드의 영향을 받을 것이다. 특히 인구조사에서 이러한 네트워크 자료를 수집하기는 어렵지만, 그러한 자료를 분석하는 방법론적 도구는 네트워크 문헌에 이미 존재한다.
+
+마지막으로 한계와 후속연구를 위한 질문을 제시한다. 한 가지 한계는 네덜란드 맥락만 검토했다는 점이다. 네덜란드는 전형적인 서유럽 사례이지만, 우리의 결과가 미국이나 다른 유럽 국가에서 재현될지는 더 지켜봐야 한다. 또 다른 한계는 결과 측정치와 관련된다. 접촉에는 조화로운 상호작용뿐 아니라 양가감정과 긴장도 포함될 수 있다. 결과변수에 갈등을 포함했고 그 결과가 형제자매 사이에 긴장이 잦았음을 시사하지는 않았지만, 우리의 측정치는 여전히 다소 기초적이었다. 세대 간 관계의 부정적 차원에 관한 더 폭넓은 측정치(Connidis, 2015)는 관계의 질을 더 넓게 이해하게 할 수 있다. 또한 갈등은 형제자매 두 명에 대해서만 단일 문항으로 짧은 회상기간(지난 3개월)에 걸쳐 측정했으므로 갈등 빈도가 다소 낮았다는 점에 유의해야 한다. 후속연구에서는 더 정교한 측정치를 사용하여 형제자매 갈등의 변화를 더 자세히 검토할 수 있다. 또 다른 한계는 형제자매 유대의 접촉 측정치가 모두 응답자의 보고(단일 보고자)에 기반했다는 점이다. 이상적으로는 다이애드 양쪽의 보고를 확보하는 것이 바람직하다. 이는 측정오차를 줄이고 접촉 빈도를 더 정확하게 추정하게 해 줄 것이다. 더욱이 형제자매가 생존 부모에게 얼마나 많은 지원을 제공했는지에 관한 형제자매들의 보고가 있었다면 우리가 발견한 매개효과가 더 강했을 수 있지만, 현재는 응답자에 대해서만 이 사실을 알고 있다. 마지막 한계는 결속 가설에 관한 근거와 관련된다. 우리의 해석은 생존 부모와의 결속이 형제자매 접촉을 촉진한다는 것이다. 이러한 해석은 대면 접촉에서 매개효과가 대체로 더 강하고 전화 접촉에서 매개효과가 더 약한 양상으로 뒷받침되지만, 형제자매 접촉의 증가가 생존 부모와의 결속을 촉진한다는 대안적 해석을 배제할 수 없다.
+
+마지막으로 후속연구는 친족유지와 가족 응집성에 더 직접적으로 초점을 맞출 수 있다. 우리 연구는 부부가족들을 연결하는 통합적 인물로서 노부모의 역할에 관한 초기 통찰을 제공했지만, 부모 사망 전후 가족 네트워크의 친족유지자와 친족유지 활동을 직접 측정한 자료는 없었다. 가까운 친족과 확대친족이 가족 네트워크의 역할 위치에 어떻게 들어오고, 떠나고, 이를 넘겨주는지에 관한 종단정보가 있다면, 후속 연구자는 가족 구성원들의 얽힌 생애과정 전반에서 친족유지의 동태와 응집성을 유지하는 친족유지자의 중요성을 더 많이 밝혀낼 수 있을 것이다.
+
+## 주
+
+Netherlands Kinship Panel Study는 Major Investments Fund의 Grant 480-10-009, Netherlands Organization for Scientific Research의 Longitudinal Survey and Panel Funding이 제공한 Grant 481-08-008, 그리고 Netherlands Interdisciplinary Demographic Institute, Utrecht University, University of Amsterdam, Erasmus University Rotterdam의 지원을 받았다. Matthijs Kalmijn의 연구는 Horizon 2020 체계의 FamilyComplextiy 프로그램에 대한 European Research Council 고급연구비(Grant ERC AdG 669334)의 지원으로 수행되었다.
+
+## 참고문헌
+
+Bengtson, V. L., & Roberts, R. E. L. (1991). Intergenerational solidarity in aging families—An example of formal theory construction. Journal of Marriage and the Family, 53, 856–870.
+
+Blake, J. (1989). Family size and achievement. Berkeley, CA: University of California Press.
+
+Brody, G. H. (1998). Sibling relationship quality: Its causes and consequences. Annual Review of Psychology, 49, 1–24. https://doi.org/10.1146/annurev.psych.49.1.1
+
+Cicirelli, V. G. (1994). Sibling relations in cross-cultural perspective. Journal of Marriage and the Family, 56, 7–20.
+
+Connidis, I. A. (1989). Siblings as friends in later life. American Behavioral Scientist, 33, 81–93. https://doi.org/10.1177/0002764289033001008
+
+Connidis, I. A. (1992). Life transitions and the adult sibling tie: A qualitative study. Journal of Marriage and the Family, 54, 972–982. https://doi.org/10.2307/353176
+
+Connidis, I. A. (2015). Exploring ambivalence in family ties: Progress and prospects. Journal of Marriage and Family, 77, 77–95. https://doi.org/10.1111/jomf.12150
+
+Connidis, I. A., & Kemp, C. L. (2008). Negotiating actual and anticipated parental support: Multiple sibling voices in three-generation families. Journal of Aging Studies, 22, 229–238. https://doi.org/10.1016/j.jaging.2007.06.002
+
+Dykstra, P. A., Kalmijn, M., Knijn, T. C. M., Komter, A. E., Liefbroer, A. C., & Mulder, C. H. (2006). Family solidarity in the Netherlands. Amsterdam: Dutch University Press.
+
+Dykstra, P. A., Kalmijn, M., Knijn, T. C. M., Komter, A. E., Liefbroer, A. C., & Mulder, C. H. (2007). Codebook of the Netherlands Kinship Panel Study Wave 2. The Hague: Netherlands Interdisciplinary Demographic Institute.
+
+Dykstra, P. A., Kalmijn, M., Komter, A. E., Liefbroer, A., & Mulder, C. H. (2005). Codebook of the Netherlands Kinship Panel Study, a multi-actor, multi-method panel study on solidarity in family relationships, Wave 1 (Netherlands Kinship Panel Study Working Paper No. 4). The Hague: Netherlands Interdisciplinary Demographic Institute.
+
+Eriksen, S., & Gerstel, N. (2002). A labor of love or labor itself—Care work among adult brothers and sisters. Journal of Family Issues, 23, 836–856. https://doi.org/10.1177/019251302236597
+
+Finch, J., & Mason, J. (1993). Negotiating family responsibilities. London and New York: Tavistock/Routledge.
+
+Floyd, K. (1995). Gender and closness among friends and siblings. Journal of Psychology, 129, 193–202. https://doi.org/10.1080/00223980.1995.9914958
+
+Fuller-Thomson, E. (2000). Loss of the kin-keeper? Sibling conflict following parental death. Omega-Journal of Death and Dying, 40(4), 547–559. https://doi.org/10.2190/j357-qf31-f0fc-pv4u
+
+Hagestad, G. O. (1986). The family: Women and grandparents as kinkeepers. In A. Pifer & L. Bronte (Eds.), Our aging society: Paradox and promise (pp. 141–160). New York: Norton.
+
+Hank, K. (2007). Proximity and contacts between older parents and their children: A European comparison. Journal of Marriage and Family, 69, 157–173. https://doi.org/10.1111/j.1741-3737.2006.00351.x
+
+Hogerbrugge, M. J. A., De Hoon, S., Dykstra, P. A., Komter, A. E., Liefbroer, A. C., & Mulder, C. H. (2015). Codebook of the Netherlands Kinship Panel Study Wave 4. The Hague: Netherlands Interdisciplinary Demographic Institute.
+
+Ingersoll-Dayton, B., Neal, M. B., Ha, J. H., & Hammer, L. B. (2003). Redressing inequity in parent care among siblings. Journal of Marriage and Family, 65, 201–212. https://doi.org/10.1111/j.1741-3737.2003.00201.x
+
+Kalmijn, M. (2006). Educational inequality and family relationships: Influences on contact and proximity. European Sociological Review, 22(1), 1–16. https://doi.org/10.1093/esr/jci036
+
+Kalmijn, M. (2017). The ambiguous link between marriage and health: A dynamic reanalysis of loss and gain effects. Social Forces, 95(4), 1607–1636. https://doi.org/10.1093/sf/sox015
+
+Khodyakov, D., & Carr, D. (2009). The impact of late-life parental death on adult sibling relationships do parents’ advance directives help or hurt? Research on Aging, 31, 495–519. https://doi.org/10.1177/0164027509337193
+
+Kohler, U., & Karlson, K. (2012). Khb: Stata module to decompose total effects into direct and indirect via Khb-method (Statistical Software Components). Boston, MA: Boston College Department of Economics.
+
+Lashewicz, B., & Keating, N. (2009). Tensions among siblings in parent care. European Journal of Ageing, 6(2), 127–135. https://doi.org/10.1007/s10433-009-0109-9
+
+Leopold, T., & Kalmijn, M. (2016). Is divorce more painful when couples have children? Evidence from long-term panel data on multiple domains of well-being. Demography, 53(6), 1717–1742. https://doi.org/10.1007/s13524-016-0518-2
+
+Leopold, T., & Lechner, C. M. (2015). Parents’ death and adult well-being: Gender, age, and adaptation to filial bereavement. Journal of Marriage and Family, 77, 747–760. https://doi.org/10.1111/jomf.12186
+
+Luescher, K. (2002). Intergenerational ambivalence: Further steps in theory and research. Journal of Marriage and Family, 64, 585–593. https://doi.org/10.1111/j.1741-3737.2002.00585.x
+
+Marks, N. F., Jun, H., & Song, J. (2007). Death of parents and adult psychological and physical well-being—a prospective US national study. Journal of Family Issues, 28, 1611–1638. https://doi.org/10.1177/0192513x07302728
+
+Merz, E.-M., Dykstra, P. A., Hogerbrugge, M. J. A., Komter, A. E., Liefbroer, A. C., & Mulder, C. H. (2012). Codebook of the Netherlands Kinship Panel Study Wave 3. The Hague: Netherlands Interdisciplinary Demographic Institute.
+
+Petersen, T. (2004). Analyzing panel data: Fixed- and random-effects models. In M. Hardy & A. Bryman (Eds.), Handbook of data analysis (pp. 331–345). London: Sage.
+
+Riley, M. W., & Riley, J. W. Jr. (1993). Connections: Kin and cohort. In V. L. Bengtson & W. A. Achenbaum (Eds.), The changing contract across generations (pp. 169–190). Hawthorne, NY: de Gruyter.
+
+Rosenthal, C. J. (1985). Kinkeeping in the familial division of labor. Journal of Marriage and the Family, 47, 965–974.
+
+Silverstein, M., & Bengtson, V. L. (1997). Intergenerational solidarity and the structure of adult child-parent relationships in American families. American Journal of Sociology, 103, 429–460.
+
+Spitze, G., & Trent, K. (2006). Gender differences in adult sibling relations in two-child families. Journal of Marriage and Family, 68, 977–992. https://doi.org/10.1111/j.1741-3737.2006.00308.x
+
+Spitze, G. D., & Trent, K. (2016). Changes in individual sibling relationships in response to life events. Journal of Family Issues, 39, 503–526. https://doi.org/10.1177/0192513X16653431
+
+Steelman, L. C., Powell, B., Werum, R., & Carter, S. (2002). Reconsidering the effects of sibling configuration: Recent advances and challenges. Annual Review of Sociology, 28(1), 243–269. https://doi.org/10.1146/annurev.soc.28.111301.093304
+
+Steinbach, A. (2008). Intergenerational solidarity and ambivalence: Types of relationships in German families. Journal of Comparative Family Studies, 39, 115–127.
+
+Stroebe, M., Schut, H., & Stroebe, W. (2007). Health outcomes of bereavement. Lancet, 370(9603), 1960–1973. https://doi.org/10.1016/s0140-6736(07)61816-9
+
+Suitor, J. J., Sechrist, J., & Pillemer, K. (2007). When mothers have favourites: Conditions under which mothers differentiate among their adult children. Canadian Journal on Aging-Revue Canadienne Du Vieillissement, 26(2), 85–99.
+
+Suitor, J. J., Sechrist, J., Plikuhn, M., Pardo, S. T., Gilligan, M., & Pillemer, K. (2009). The role of perceived maternal favoritism in sibling relations in midlife. Journal of Marriage and the Family, 71, 1026–1038. https://doi.org/10.1111/j.1741-3737.2009.00650.x
+
+Suitor, J. J., Sechrist, J., Plikuhn, M., Pardo, S. T., & Pillemer, K. (2008). Within-family differences in parent-child relations across the life course. Current Directions in Psychological Science, 17(5), 334–338.
+
+Szydlik, M. (2016). Sharing lives: Adult children and parents. Oxon: Routledge.
+
+Umberson, D. (2003). Death of a parent: Transition to a new adult identity. New York: Cambridge University Press.
+
+Van Gaalen, R. I., & Dykstra, P. A. (2006). Solidarity and conflicts between adult children and parents: A latent class approach. Journal of Marriage and Family, 68, 947–960.
+
+Voorpostel, M. (2007). Sibling support: The exchange of help among brothers and sisters in the Netherlands (Unpublished dissertation). Utrecht, Netherlands: Utrecht University.
+
+Voorpostel, M., & Blieszner, R. (2008). Intergenerational solidarity and support between adult siblings. Journal of Marriage and Family, 70, 157–167.
+
+Voorpostel, M., & van der Lippe, T. (2007). Support between siblings and between friends: Two worlds apart? Journal of Marriage and Family, 69, 1271–1282. https://doi.org/10.1111/j.1741-3737.2007.00446.x
+
+Voorpostel, M., van der Lippe, T., & Flap, H. (2012). For better or worse: Negative life events and sibling relationships. International Sociology, 27(3), 330–348. https://doi.org/10.1177/0268580911423051
+
+Waite, L., & Harrison, S. C. (1992). Keeping in touch: How Women in mid-life allocate social contacts among kith and kin. Social Forces, 70, 637–655.
+
+White, L. (2001). Sibling relationships over the life course: A panel analysis. Journal of Marriage and Family, 63, 555–568. https://doi.org/10.1111/j.1741-3737.2001.00555.x
+
+White, L. K., & Riedmann, A. (1992). Ties among adult siblings. Social Forces, 71(1), 85–102. https://doi.org/10.2307/2579967
+
+Wortman, C. B., Cohen Silver, R., & Kessler, R. C. (1993). The meaning of loss and adjustment to bereavement. In M. Stroebe, W. Stroebe, & R. O. Hansson (Eds.), Handbook of bereavement: Theory, research and intervention (pp. 349–366). Cambridge: Cambridge University Press.
