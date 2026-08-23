@@ -3129,38 +3129,78 @@ body{
 
 .rcard-thumb{
   position:relative;
+  isolation:isolate;
   width:100%;
   aspect-ratio:16/9;
   overflow:hidden;
   border:1px solid var(--line);
   border-radius:12px;
   background:
-    linear-gradient(135deg,var(--tint-sky),var(--tint-lavender));
+    linear-gradient(135deg,var(--thumb-a,#fff1ba),var(--thumb-b,#ffdcd2));
+}
+
+.reading-card-shell[data-week="3"]{--thumb-a:#dff3ea;--thumb-b:#dceafe;}
+.reading-card-shell[data-week="4"]{--thumb-a:#e8e0ff;--thumb-b:#d9efff;}
+.reading-card-shell[data-week="6"]{--thumb-a:#ffe0ea;--thumb-b:#fff0c7;}
+.reading-card-shell[data-week="7"]{--thumb-a:#dff6ef;--thumb-b:#dceeff;}
+.reading-card-shell[data-week="8"]{--thumb-a:#ffe7d6;--thumb-b:#f7e0f3;}
+.reading-card-shell[data-week="9"]{--thumb-a:#e8e1ff;--thumb-b:#ffe4e1;}
+.reading-card-shell[data-week="11"]{--thumb-a:#e6f3dc;--thumb-b:#f6e7d6;}
+.reading-card-shell[data-week="12"]{--thumb-a:#fff2b8;--thumb-b:#d9f1e8;}
+.reading-card-shell[data-week="13"]{--thumb-a:#e8e4ff;--thumb-b:#f9dce8;}
+.reading-card-shell[data-week="14"]{--thumb-a:#dce9f5;--thumb-b:#eee7df;}
+
+.rcard-thumb::before{
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:0;
+  background:
+    radial-gradient(circle at 18% 24%,rgba(255,255,255,.7) 0 8%,transparent 8.5%),
+    radial-gradient(circle at 82% 72%,rgba(255,255,255,.46) 0 12%,transparent 12.5%);
+  pointer-events:none;
 }
 
 .rcard-thumb::after{
   content:"";
   position:absolute;
+  z-index:2;
   inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,0) 42%,rgba(0,0,0,.28));
+  background:linear-gradient(180deg,rgba(255,255,255,.12),transparent 55%,rgba(31,41,55,.1));
   pointer-events:none;
 }
 
 .rcard-thumb img{
+  position:relative;
+  z-index:1;
   width:100%;
   height:100%;
   object-fit:cover;
+  object-position:center;
   transition:transform .2s ease;
 }
+
+.rcard-thumb.is-sticker img{
+  object-fit:contain;
+  padding:.15rem 1.35rem;
+  filter:drop-shadow(0 .45rem .7rem rgba(73,54,32,.12));
+}
+
+.rcard-thumb.is-photo img{object-fit:cover;}
 
 .card-link.rcard:hover .rcard-thumb img{
   transform:scale(1.02);
 }
 
+@media (prefers-reduced-motion:reduce){
+  .rcard-thumb img{transition:none;}
+  .card-link.rcard:hover .rcard-thumb img{transform:none;}
+}
+
 .rcard-thumb .rcard-status,
 .rcard-thumb .rcard-date{
   position:absolute;
-  z-index:1;
+  z-index:3;
 }
 
 .rcard-thumb .rcard-status{
