@@ -859,7 +859,15 @@ function siteHeader(siteMeta,outputPath){const homeHref=relHref(outputPath,path.
   </div>
 </header>
 `;}
-function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts=""){const cssHref=relHref(outputPath,path.join(siteDir,"assets","styles.css"));const jsHref=relHref(outputPath,path.join(siteDir,"assets","app.js"));const bodyHtml=String(body||"").trim();return `<!DOCTYPE html>
+function renderCloudflareWebAnalytics(siteMeta){
+  const token=toText(siteMeta?.analytics?.cloudflare_token);
+  if(!token)return"";
+  if(!/^[a-f0-9]{32}$/i.test(token))throw new Error("site.analytics.cloudflare_token must be a 32-character hexadecimal token");
+  return `<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${token}"}'></script>
+<!-- End Cloudflare Web Analytics -->`;
+}
+function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts=""){const cssHref=relHref(outputPath,path.join(siteDir,"assets","styles.css"));const jsHref=relHref(outputPath,path.join(siteDir,"assets","app.js"));const bodyHtml=String(body||"").trim();const analyticsHtml=renderCloudflareWebAnalytics(siteMeta);return `<!DOCTYPE html>
 <html lang="${escapeHtml(lang)}">
 <head>
   <meta charset="utf-8" />
@@ -882,6 +890,7 @@ function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",
 ${bodyHtml}
 ${extraScripts?`\n${extraScripts}`:""}
 <script src="${escapeHtml(jsHref)}"></script>
+${analyticsHtml}
 </body>
 </html>
 `;}

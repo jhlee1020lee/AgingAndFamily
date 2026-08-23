@@ -7,7 +7,10 @@
     "tagline": "주차별 논문을 원문, 전체 번역, 개념, 퀴즈까지 한 흐름으로 공부합니다.",
     "description": "서울대학교 고령화와 가족 수업의 읽기자료를 수업 순서대로 정리한 개인 학습 사이트입니다.",
     "publish_cutoff_date": "",
-    "publish_cutoff_note": "전체 읽기자료를 공개합니다."
+    "publish_cutoff_note": "전체 읽기자료를 공개합니다.",
+    "analytics": {
+      "cloudflare_token": "f66167a5f094464ebdbfab410f2639ed"
+    }
   },
   "readings": [
     {
