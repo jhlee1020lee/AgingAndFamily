@@ -562,6 +562,55 @@ function truncateWords(value,maxWords){const words=toText(value).replace(/\s+/g,
 function sentenceList(value){return toText(value).replace(/\s+/g," ").split(/(?<=[.!?])\s+/).map((item)=>item.trim()).filter(Boolean);}
 function cleanQuestionLabel(value){return toText(value).replace(/[?？]\s*$/,"");}
 function requireText(value,label,filePath){const text=toText(value);if(!text)throw new Error(`[invalid] ${fileLabel(filePath)}: ${label} is required`);return text;}
+function loadOverviewComic(contentDir){
+  const filePath=path.join(rootDir,contentDir,"overview_comic.json");
+  const payload=loadJson(filePath);
+  if(!payload)return null;
+  if(!payload||typeof payload!=="object"||Array.isArray(payload))throw new Error(`[invalid] ${fileLabel(filePath)}: root must be an object`);
+  const title=requireText(payload.title,"title",filePath);
+  const intro=requireText(payload.intro,"intro",filePath);
+  const rawPanels=Array.isArray(payload.panels)?payload.panels:[];
+  if(rawPanels.length!==4)throw new Error(`[invalid] ${fileLabel(filePath)}: panels must contain exactly 4 items`);
+  const contentPath=path.dirname(filePath);
+  const panelIds=new Set();
+  const panels=rawPanels.map((panel,index)=>{
+    if(!panel||typeof panel!=="object"||Array.isArray(panel))throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}] must be an object`);
+    const panel_id=requireText(panel.panel_id,`panels[${index}].panel_id`,filePath);
+    if(panelIds.has(panel_id))throw new Error(`[invalid] ${fileLabel(filePath)}: duplicate panel_id ${panel_id}`);
+    panelIds.add(panel_id);
+    const image=requireText(panel.image,`panels[${index}].image`,filePath).replace(/\\/g,"/");
+    if(isExternalUrl(image)||path.isAbsolute(image))throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].image must be a local relative path`);
+    const imagePath=path.resolve(contentPath,...image.split("/"));
+    const relativeImagePath=path.relative(contentPath,imagePath);
+    if(!relativeImagePath||relativeImagePath.startsWith("..")||path.isAbsolute(relativeImagePath))throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].image escapes the reading content directory`);
+    if(!fs.existsSync(imagePath))throw new Error(`[missing] ${fileLabel(filePath)}: panels[${index}].image not found (${image})`);
+    const width=Number(panel.width);
+    const height=Number(panel.height);
+    if(!Number.isInteger(width)||width<=0||!Number.isInteger(height)||height<=0)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}] width and height must be positive integers`);
+    const rawDialogues=Array.isArray(panel.dialogues)?panel.dialogues:[];
+    if(rawDialogues.length!==2)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].dialogues must contain exactly 2 items`);
+    const dialogues=rawDialogues.map((dialogue,dialogueIndex)=>({
+      speaker:requireText(dialogue?.speaker,`panels[${index}].dialogues[${dialogueIndex}].speaker`,filePath),
+      text:requireText(dialogue?.text,`panels[${index}].dialogues[${dialogueIndex}].text`,filePath)
+    }));
+    const evidence_segment_ids=textArray(panel.evidence_segment_ids);
+    if(!evidence_segment_ids.length)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].evidence_segment_ids must be non-empty`);
+    return{
+      panel_id,
+      label:requireText(panel.label,`panels[${index}].label`,filePath),
+      image,
+      width,
+      height,
+      alt:requireText(panel.alt,`panels[${index}].alt`,filePath),
+      dialogues,
+      caption:requireText(panel.caption,`panels[${index}].caption`,filePath),
+      detail:requireText(panel.detail,`panels[${index}].detail`,filePath),
+      limit:requireText(panel.limit,`panels[${index}].limit`,filePath),
+      evidence_segment_ids
+    };
+  });
+  return{title,intro,panels};
+}
 function professorPrepAnswerText(card){return toText(card.answer_30s||card.answer||card.model_answer);}
 function usesLegacyProfessorPrepAnswer(card){return!toText(card.answer_30s)&&!!toText(card.answer||card.model_answer);}
 function loadQuiz(page,filePath){
@@ -737,6 +786,7 @@ function prepareReadings(manifest,siteMeta={}){
   const prepared=manifest.readings.map((rawReading,index)=>{
     const reading=normalizeReading(rawReading,index+1,siteMeta);
     const existingMeta=loadReadingMeta(reading.content_dir);
+    const overview_comic=loadOverviewComic(reading.content_dir);
     const validationOptions={requireBuiltArtifacts:Boolean(existingMeta.validation_status?.require_built_artifacts)};
     const snapshot=buildValidationSnapshot(rootDir,reading,existingMeta,validationOptions);
     const mergedMeta=mergeValidationFields(existingMeta,snapshot);
@@ -750,6 +800,7 @@ function prepareReadings(manifest,siteMeta={}){
       workflow_status:mergedMeta.workflow_status,
       workflow_notes:mergedMeta.workflow_notes,
       manual_review:mergedMeta.manual_review,
+      overview_comic,
       pages
     };
   });
@@ -974,6 +1025,47 @@ function renderHomeCard(outputPath,reading,thumbnailHref=""){
   return `<article class="reading-card-shell" data-reading-card data-reading-slug="${escapeHtml(reading.slug)}" data-week="${escapeHtml(String(reading.week||""))}" data-card-state="${escapeHtml(reading.state)}" data-card-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}" data-search="${escapeHtml(searchBlob(reading))}" data-type="${escapeHtml(reading.type)}" data-filter-group="${escapeHtml(reading.filter_group)}" data-tags="${escapeHtml(reading.tags.map((tag)=>tag.toLowerCase()).join("||"))}" data-sort-date="${escapeHtml(reading.effective_sort_date||"")}" data-sequence="${reading.sequence}"><${tag} ${attrs}>${thumbnailMarkup}<div class="rcard-content">${mobileEyebrow}<p class="rcard-week">${escapeHtml(reading.week?`${reading.week}주차 · ${reading.topic||""}`:reading.topic||"")}</p><h2 class="rcard-title title">${escapeHtml(reading.title)}</h2><p class="rcard-meta card-meta">${escapeHtml([reading.type_label,reading.language_label,reading.authors_display].filter(Boolean).join(" · "))}</p><p class="rcard-sub card-subtitle">${escapeHtml(reading.subtitle)}</p><div class="rcard-foot"><span class="rcard-arrow" aria-hidden="true">→</span></div></div></${tag}></article>`;
 }
 function renderOverviewPoints(reading){if(Array.isArray(reading.classroom_points)&&reading.classroom_points.length){return `<ol class="points-list">${reading.classroom_points.map((point,index)=>`<li><span class="n">${String(index+1).padStart(2,"0")}</span><span>${escapeHtml(point)}</span></li>`).join("")}</ol>`;}return"";}
+function renderOverviewComic(outputPath,reading){
+  const comic=reading.overview_comic;
+  if(!comic||!Array.isArray(comic.panels)||comic.panels.length!==4)return"";
+  const panels=comic.panels.map((panel,index)=>{
+    const imageTarget=path.join(siteDir,"assets","readings",reading.slug,...panel.image.split("/"));
+    const imageHref=relHref(outputPath,imageTarget);
+    const priority=index===0?' fetchpriority="high"':"";
+    const dialogues=panel.dialogues.map((dialogue,dialogueIndex)=>`<p class="overview-comic-bubble ${dialogueIndex===0?"is-ppyorong":"is-jjorong"}"><span class="overview-comic-speaker">${escapeHtml(dialogue.speaker)}</span><span>${escapeHtml(dialogue.text)}</span></p>`).join("");
+    const evidence=panel.evidence_segment_ids.map((segmentId)=>`<code>${escapeHtml(segmentId)}</code>`).join("");
+    return `<li class="overview-comic-panel" id="${escapeHtml(panel.panel_id)}">
+      <div class="overview-comic-visual">
+        <img src="${escapeHtml(imageHref)}" alt="${escapeHtml(panel.alt)}" width="${panel.width}" height="${panel.height}" loading="${index===0?"eager":"lazy"}" decoding="async"${priority} />
+        <span class="overview-comic-index" aria-hidden="true">${String(index+1).padStart(2,"0")}</span>
+      </div>
+      <div class="overview-comic-dialogues" role="group" aria-label="${escapeHtml(panel.label)} 대화">${dialogues}</div>
+      <div class="overview-comic-copy">
+        <p class="overview-comic-label">${escapeHtml(panel.label)}</p>
+        <h3>${escapeHtml(panel.caption)}</h3>
+        <details class="overview-comic-notes">
+          <summary>논문 근거와 한계</summary>
+          <div>
+            <p>${escapeHtml(panel.detail)}</p>
+            <p class="overview-comic-limit"><strong>주의</strong><span>${escapeHtml(panel.limit)}</span></p>
+            <p class="overview-comic-evidence"><span>근거 구간</span>${evidence}</p>
+          </div>
+        </details>
+      </div>
+    </li>`;
+  }).join("");
+  return `<section class="panel detail-block overview-comic" lang="ko" aria-labelledby="overview-comic-title">
+    <div class="section-head overview-comic-head">
+      <div>
+        <p class="section-kicker">ILLUSTRATED OVERVIEW</p>
+        <h2 id="overview-comic-title">${escapeHtml(comic.title)}</h2>
+      </div>
+      <span class="count">4컷</span>
+    </div>
+    <p class="overview-comic-intro">${escapeHtml(comic.intro)}</p>
+    <ol class="overview-comic-grid" role="list">${panels}</ol>
+  </section>`;
+}
 function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다."),renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","sub-link")];return `<div class="sub-link-list">${links.join("")}</div>`;}
 function renderReadingDetailHeader(outputPath,reading,options={}){const activeKey=options.activeKey||"index";const currentLabel=options.currentLabel!==undefined?options.currentLabel:(activeKey==="index"?"":"");return `<header class="article-header reading-detail-header"><div class="article-header-top reading-detail-top">${renderBreadcrumbs(outputPath,reading,currentLabel||"")}<p class="section-kicker">${escapeHtml(readingSequenceLabel(reading.sequence))}</p><div class="rdp-kicker"><span class="chip brand">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><span class="chip strong">${escapeHtml(reading.type_label)}</span><span class="chip">${escapeHtml(reading.language_label)}</span></div><h1 class="rdp-title">${escapeHtml(reading.title)}</h1><p class="rdp-authors">${escapeHtml([reading.authors_label,reading.year?String(reading.year):""].filter(Boolean).join(" · "))}</p>${reading.overview_hook?`<p class="rdp-hook">${escapeHtml(reading.overview_hook)}</p>`:""}<div class="hero-cta-row">${renderActionLinkOrGate(outputPath,reading,"읽기",readingStartTarget(reading),"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")} ${renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","btn-ghost")}</div></div>${pageTabs(outputPath,reading,activeKey)}</header>`;}
 function renderReadingDetailAside(outputPath,reading){
@@ -1129,19 +1221,19 @@ ${siteHeader(siteMeta,outputPath)}
 </main>
 ${renderHomeReadingDataScript(siteMeta,outputPath,sortedReadings)}
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,siteMeta.title,body,siteMeta.tagline||siteMeta.title,'data-page-kind="home"',"ko"));}
-function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const pointsSection=renderOverviewPoints(reading);const body=`
-${siteHeader(siteMeta,outputPath)}
-<main class="reading-shell reading-detail-shell" data-reading-slug="${escapeHtml(reading.slug)}">
-  ${renderReadingDetailHeader(outputPath,reading,{activeKey:"index"})}
-  <div class="rpanel">
-    <section class="rpanel-main">
-      ${pointsSection?`<section class="panel detail-block">
+function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const comicSection=renderOverviewComic(outputPath,reading);const pointsSection=renderOverviewPoints(reading);const overviewSection=comicSection||(pointsSection?`<section class="panel detail-block">
         <div class="section-head">
           <h3>수업에서 먼저 잡을 포인트</h3>
           <span class="count">${reading.classroom_points.length}개</span>
         </div>
         ${pointsSection}
-      </section>`:""}
+      </section>`:"");const body=`
+${siteHeader(siteMeta,outputPath)}
+<main class="reading-shell reading-detail-shell" data-reading-slug="${escapeHtml(reading.slug)}">
+  ${renderReadingDetailHeader(outputPath,reading,{activeKey:"index"})}
+  <div class="rpanel">
+    <section class="rpanel-main">
+      ${overviewSection}
     </section>
     ${renderReadingDetailAside(outputPath,reading)}
   </div>

@@ -100,7 +100,7 @@
     "index": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-08-23T11:48:37.718Z",
+    "updated_at": "2026-08-23T13:17:32.563Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",
@@ -109,7 +109,9 @@
       "metrics": {
         "overview_hook_length": 62,
         "classroom_point_raw_count": 5,
-        "classroom_point_count": 5
+        "classroom_point_count": 5,
+        "overview_comic_panel_count": 4,
+        "overview_comic_asset_bytes": 328772
       }
     },
     "page_results": {

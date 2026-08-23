@@ -888,17 +888,98 @@ function validateQuizPayload(pageKey, payload) {
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
 }
 
-function validateLandingOverview(reading, existingMeta = {}) {
+function validateOverviewComic(rootDir, reading) {
+  const contentDir = path.resolve(rootDir, reading.content_dir || "");
+  const comicPath = path.join(contentDir, "overview_comic.json");
+  if (!fs.existsSync(comicPath)) {
+    return { errors: [], warnings: [], metrics: { overview_comic_panel_count: 0, overview_comic_asset_bytes: 0 } };
+  }
+  const errors = [];
+  const warnings = [];
+  let payload = null;
+  try {
+    payload = loadJson(comicPath);
+  } catch (error) {
+    errors.push(`overview_comic.json is not valid JSON: ${error.message}`);
+    return { errors, warnings, metrics: { overview_comic_panel_count: 0, overview_comic_asset_bytes: 0 } };
+  }
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    errors.push("overview_comic.json root must be an object");
+    return { errors, warnings, metrics: { overview_comic_panel_count: 0, overview_comic_asset_bytes: 0 } };
+  }
+  if (!toText(payload.title)) errors.push("overview_comic.json missing title");
+  if (!toText(payload.intro)) errors.push("overview_comic.json missing intro");
+  const panels = Array.isArray(payload.panels) ? payload.panels : [];
+  if (panels.length !== 4) errors.push(`overview_comic.json must contain exactly 4 panels (found ${panels.length})`);
+  const sourceSegments = loadJson(path.join(contentDir, "source_segments.json"));
+  const knownSegmentIds = new Set((Array.isArray(sourceSegments?.segments) ? sourceSegments.segments : []).map((segment) => toText(segment?.segment_id)).filter(Boolean));
+  const panelIds = new Set();
+  let assetBytes = 0;
+  panels.forEach((panel, index) => {
+    const label = `overview_comic.json panels[${index}]`;
+    if (!panel || typeof panel !== "object" || Array.isArray(panel)) {
+      errors.push(`${label} must be an object`);
+      return;
+    }
+    const panelId = toText(panel.panel_id);
+    if (!panelId) errors.push(`${label} missing panel_id`);
+    if (panelId && panelIds.has(panelId)) errors.push(`${label} duplicates panel_id ${panelId}`);
+    panelIds.add(panelId);
+    ["label", "alt", "caption", "detail", "limit"].forEach((field) => {
+      if (!toText(panel[field])) errors.push(`${label} missing ${field}`);
+    });
+    const width = Number(panel.width);
+    const height = Number(panel.height);
+    if (!Number.isInteger(width) || width <= 0 || !Number.isInteger(height) || height <= 0) {
+      errors.push(`${label} width and height must be positive integers`);
+    }
+    const image = toText(panel.image).replace(/\\/g, "/");
+    if (!image) {
+      errors.push(`${label} missing image`);
+    } else if (/^(?:[a-z]+:|\/)/i.test(image) || path.isAbsolute(image)) {
+      errors.push(`${label} image must be a local relative path`);
+    } else {
+      const imagePath = path.resolve(contentDir, ...image.split("/"));
+      const relativeImagePath = path.relative(contentDir, imagePath);
+      if (!relativeImagePath || relativeImagePath.startsWith("..") || path.isAbsolute(relativeImagePath)) {
+        errors.push(`${label} image escapes the reading content directory`);
+      } else if (!fs.existsSync(imagePath)) {
+        errors.push(`${label} image does not exist: ${image}`);
+      } else {
+        const size = fs.statSync(imagePath).size;
+        assetBytes += size;
+        if (size > 250000) warnings.push(`${label} image is larger than 250 KB (${size} bytes)`);
+      }
+      if (path.extname(image).toLowerCase() !== ".webp") warnings.push(`${label} image should use WebP for the overview`);
+    }
+    const dialogues = Array.isArray(panel.dialogues) ? panel.dialogues : [];
+    if (dialogues.length !== 2) errors.push(`${label} dialogues must contain exactly 2 items`);
+    dialogues.forEach((dialogue, dialogueIndex) => {
+      if (!toText(dialogue?.speaker) || !toText(dialogue?.text)) errors.push(`${label} dialogues[${dialogueIndex}] requires speaker and text`);
+    });
+    const evidenceIds = (Array.isArray(panel.evidence_segment_ids) ? panel.evidence_segment_ids : []).map((item) => toText(item)).filter(Boolean);
+    if (!evidenceIds.length) errors.push(`${label} evidence_segment_ids must be non-empty`);
+    if (knownSegmentIds.size) {
+      evidenceIds.filter((segmentId) => !knownSegmentIds.has(segmentId)).forEach((segmentId) => errors.push(`${label} references unknown evidence segment ${segmentId}`));
+    }
+  });
+  if (assetBytes > 600000) warnings.push(`overview comic assets exceed 600 KB total (${assetBytes} bytes)`);
+  return { errors, warnings, metrics: { overview_comic_panel_count: panels.length, overview_comic_asset_bytes: assetBytes } };
+}
+
+function validateLandingOverview(rootDir, reading, existingMeta = {}) {
   const overviewHook = toText(reading.overview_hook || existingMeta.overview_hook);
   const rawClassroomPoints = Array.isArray(reading.classroom_points)
     ? reading.classroom_points
     : (Array.isArray(existingMeta.classroom_points) ? existingMeta.classroom_points : []);
   const classroomPoints = rawClassroomPoints.map((point) => toText(point)).filter(Boolean);
-  const errors = [];
+  const comic = validateOverviewComic(rootDir, reading);
+  const errors = [...comic.errors];
   const metrics = {
     overview_hook_length: overviewHook.length,
     classroom_point_raw_count: rawClassroomPoints.length,
     classroom_point_count: classroomPoints.length,
+    ...comic.metrics,
   };
   if (!overviewHook) {
     errors.push("missing overview_hook");
@@ -913,7 +994,7 @@ function validateLandingOverview(reading, existingMeta = {}) {
   if (duplicatePoints.length) {
     errors.push(`classroom_points contains duplicate items: ${duplicatePoints.join(" | ")}`);
   }
-  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.APPROVED, errors, [], metrics);
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.APPROVED, errors, comic.warnings, metrics);
 }
 
 function sourceHashForPath(filePath) {
@@ -1138,7 +1219,7 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
 
 function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = {}) {
   const rawManualReview = normalizeManualReview(existingMeta.manual_review);
-  const landing = validateLandingOverview(reading, existingMeta);
+  const landing = validateLandingOverview(rootDir, reading, existingMeta);
   const basePageResults = {
     full: validatePage(rootDir, reading, "full", existingMeta),
     translation: validatePage(rootDir, reading, "translation", existingMeta),

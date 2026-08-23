@@ -84,6 +84,18 @@ function checkDocument(html,filePath,errors){
     const panelAt=html.indexOf('class="rpanel"');
     expect(headerAt>=0&&tabsAt>headerAt&&panelAt>tabsAt,`${relative}: header/tab/content DOM order`,errors);
   }
+
+  if(/class="[^"]*overview-comic[^"]*"/.test(html)){
+    expect(/<section class="[^"]*overview-comic[^"]*" lang="ko"/.test(html),`${relative}: overview comic Korean language boundary missing`,errors);
+    expect(/<ol class="overview-comic-grid" role="list">/.test(html),`${relative}: overview comic list semantics`,errors);
+    expect(count(html,/class="overview-comic-panel"/g)===4,`${relative}: overview comic must contain four panels`,errors);
+    expect(count(html,/<img\b[^>]*width="[1-9]\d*"[^>]*height="[1-9]\d*"[^>]*loading="(?:eager|lazy)"[^>]*decoding="async"/g)===4,`${relative}: overview comic responsive image attributes`,errors);
+    expect(count(html,/class="overview-comic-bubble /g)===8,`${relative}: overview comic dialogue count`,errors);
+    expect(count(html,/class="overview-comic-dialogues" role="group"/g)===4,`${relative}: overview comic dialogue group semantics`,errors);
+    expect(count(html,/class="overview-comic-notes"/g)===4,`${relative}: overview comic evidence disclosure count`,errors);
+    expect(count(html,/loading="eager"/g)===1&&count(html,/fetchpriority="high"/g)===1,`${relative}: overview comic first-panel priority`,errors);
+    expect(count(html,/loading="lazy"/g)===3,`${relative}: overview comic remaining panels must be lazy`,errors);
+  }
 }
 
 function checkHome(html,manifest,errors){
@@ -145,6 +157,7 @@ function checkCss(widths,errors){
   contractRule(block,".reading-detail-shell .tab-row",[/display:\s*none/],errors);
   contractRule(block,".reading-detail-shell .mobile-tab-row",[/display:\s*flex/,/overflow-x:\s*auto/],errors);
   contractRule(block,".reading-detail-shell .mobile-tab-row .tab",[/min-height:\s*44px/,/white-space:\s*nowrap/],errors);
+  contractRule(block,".overview-comic-grid",[/grid-template-columns:\s*minmax\(0,1fr\)/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-detail-side',[/order:\s*-1/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-toc-panel .toc-list',[/max-height:\s*10rem/,/overflow-y:\s*auto/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .article-body',[/font-size:\s*calc\(1rem\s*\*\s*var\(--reader-font-scale\)\)/],errors);
