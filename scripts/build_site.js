@@ -916,7 +916,8 @@ function pageTabs(outputPath,reading,activeKey){
     return isApprovedStatus(tab.sourceStatus)?renderActiveTab(outputPath,tab,isActiveTab(tab)):renderGatedTab(tab.label,isActiveTab(tab),"이 탭은 아직 공개되지 않았습니다.");
   };
   const hiddenMarkup=!hiddenTabs.length?"":`<details class="tab-more${hiddenActive?" has-active":""}" data-tab-more><summary class="tab-more-toggle" data-tab-more-toggle>더보기</summary><div class="tab-more-list" data-tab-more-list>${hiddenTabs.map((tab)=>renderTab(tab).replace("data-tab-link","data-tab-link data-tab-more-link")).join("")}</div></details>`;
-  return `<nav class="tab-row" data-tab-row>${tabs.map((tab)=>renderTab(tab)).join("")}${hiddenMarkup}</nav>`;
+  const mobileMarkup=[...tabs,...hiddenTabs].map((tab)=>renderTab(tab)).join("");
+  return `<nav class="tab-row" aria-label="읽기 페이지 메뉴" data-tab-row>${tabs.map((tab)=>renderTab(tab)).join("")}${hiddenMarkup}</nav><nav class="mobile-tab-row" aria-label="읽기 페이지 메뉴" data-mobile-tab-row>${mobileMarkup}</nav>`;
 }
 function renderBreadcrumbs(outputPath,reading,currentLabel=""){const homeHref=relHref(outputPath,path.join(siteDir,"index.html"));const overviewHref=relHref(outputPath,path.join(siteDir,"readings",reading.slug,"index.html"));const crumbs=[`<a href="${escapeHtml(homeHref)}">홈</a>`];if(currentLabel){crumbs.push(`<a href="${escapeHtml(overviewHref)}">${escapeHtml(reading.title)}</a>`);crumbs.push(`<span aria-current="page">${escapeHtml(currentLabel)}</span>`);}else{crumbs.push(`<span aria-current="page">${escapeHtml(reading.title)}</span>`);}return `<nav class="breadcrumbs" aria-label="breadcrumb">${crumbs.map((item,index)=>`${index?'<span class="crumb-sep">/</span>':""}${item}`).join("")}</nav>`;}
 function renderArticleMeta(reading,options={}){const bits=[options.pageLabel||"",reading.display_date,reading.type_label,options.includeLanguage?reading.language_label:"",reading.authors_label].filter(Boolean);return `<div class="article-meta-row">${bits.map((bit)=>`<span>${escapeHtml(bit)}</span>`).join("")}</div>`;}
@@ -967,8 +968,10 @@ function renderHomeCard(outputPath,reading,thumbnailHref=""){
   const thumbnailVisualClass=path.posix.extname(thumbnailHref).toLowerCase()===".png"?" is-sticker":" is-photo";
   const imageLoading=reading.state==="current"?"eager":"lazy";
   const imagePriority=reading.state==="current"?' fetchpriority="high"':"";
+  const mobileState=reading.state==="current"?'<span class="rcard-mobile-state current">이번 주</span>':reading.state==="locked"?'<span class="rcard-mobile-state locked">잠금</span>':"";
+  const mobileEyebrow=`<p class="rcard-mobile-eyebrow"><time datetime="${escapeHtml(reading.class_date||"")}">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</time>${mobileState}</p>`;
   const thumbnailMarkup=thumbnailSrc?`<div class="rcard-thumb${thumbnailVisualClass}"><img src="${escapeHtml(thumbnailSrc)}" alt="" width="360" height="360" loading="${imageLoading}" decoding="async"${imagePriority} /><span class="rcard-status ${escapeHtml(reading.state)}">${escapeHtml(stateLabel)}</span><span class="rcard-date card-date">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span></div>`:`<div class="rcard-thumb rcard-thumb-fallback"><span class="rcard-status ${escapeHtml(reading.state)}">${escapeHtml(stateLabel)}</span><span class="rcard-date card-date">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span></div>`;
-  return `<article class="reading-card-shell" data-reading-card data-reading-slug="${escapeHtml(reading.slug)}" data-week="${escapeHtml(String(reading.week||""))}" data-card-state="${escapeHtml(reading.state)}" data-card-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}" data-search="${escapeHtml(searchBlob(reading))}" data-type="${escapeHtml(reading.type)}" data-filter-group="${escapeHtml(reading.filter_group)}" data-tags="${escapeHtml(reading.tags.map((tag)=>tag.toLowerCase()).join("||"))}" data-sort-date="${escapeHtml(reading.effective_sort_date||"")}" data-sequence="${reading.sequence}"><${tag} ${attrs}>${thumbnailMarkup}<div class="rcard-content"><p class="rcard-week">${escapeHtml(reading.week?`${reading.week}주차 · ${reading.topic||""}`:reading.topic||"")}</p><h2 class="rcard-title title">${escapeHtml(reading.title)}</h2><p class="rcard-meta card-meta">${escapeHtml([reading.type_label,reading.language_label,reading.authors_display].filter(Boolean).join(" · "))}</p><p class="rcard-sub card-subtitle">${escapeHtml(reading.subtitle)}</p><div class="rcard-foot"><span class="rcard-arrow" aria-hidden="true">→</span></div></div></${tag}></article>`;
+  return `<article class="reading-card-shell" data-reading-card data-reading-slug="${escapeHtml(reading.slug)}" data-week="${escapeHtml(String(reading.week||""))}" data-card-state="${escapeHtml(reading.state)}" data-card-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}" data-search="${escapeHtml(searchBlob(reading))}" data-type="${escapeHtml(reading.type)}" data-filter-group="${escapeHtml(reading.filter_group)}" data-tags="${escapeHtml(reading.tags.map((tag)=>tag.toLowerCase()).join("||"))}" data-sort-date="${escapeHtml(reading.effective_sort_date||"")}" data-sequence="${reading.sequence}"><${tag} ${attrs}>${thumbnailMarkup}<div class="rcard-content">${mobileEyebrow}<p class="rcard-week">${escapeHtml(reading.week?`${reading.week}주차 · ${reading.topic||""}`:reading.topic||"")}</p><h2 class="rcard-title title">${escapeHtml(reading.title)}</h2><p class="rcard-meta card-meta">${escapeHtml([reading.type_label,reading.language_label,reading.authors_display].filter(Boolean).join(" · "))}</p><p class="rcard-sub card-subtitle">${escapeHtml(reading.subtitle)}</p><div class="rcard-foot"><span class="rcard-arrow" aria-hidden="true">→</span></div></div></${tag}></article>`;
 }
 function renderOverviewPoints(reading){if(Array.isArray(reading.classroom_points)&&reading.classroom_points.length){return `<ol class="points-list">${reading.classroom_points.map((point,index)=>`<li><span class="n">${String(index+1).padStart(2,"0")}</span><span>${escapeHtml(point)}</span></li>`).join("")}</ol>`;}return"";}
 function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다."),renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","sub-link")];return `<div class="sub-link-list">${links.join("")}</div>`;}
@@ -1095,7 +1098,8 @@ function buildThumbnails(manifest,slugFilter=null){const thumbnailDir=path.join(
 function buildIndex(siteMeta,readings,thumbnails){const outputPath=path.join(siteDir,"index.html");const sortedReadings=[...readings].sort((a,b)=>compareReadings(a,b,"chronological"));const currentReading=sortedReadings.find((reading)=>reading.current_candidate)||null;const cards=sortedReadings.map((reading)=>renderHomeCard(outputPath,reading,thumbnails?.[reading.slug]||"")).join("");const railItems=sortedReadings.map((reading)=>renderHomeRailItem(outputPath,reading)).join("");const railToggleMeta=currentReading?`${currentReading.display_date_label||displayDateLabel(currentReading)} · ${currentReading.type_label}`:`총 ${sortedReadings.length}개`;const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="home-shell home-dashboard" data-page-kind="home">
-  <details class="rail" id="schedule" aria-label="읽기 일정" open>
+  <h1 class="sr-only">${escapeHtml(siteMeta.title)}</h1>
+  <details class="rail" id="schedule" aria-label="읽기 일정">
     <summary class="rail-toggle"><span class="rail-toggle-label">읽기 일정</span><span class="rail-toggle-meta">${escapeHtml(railToggleMeta)}</span></summary>
     <div class="rail-panel">
       <p class="rail-label">읽기 일정</p>
@@ -1110,11 +1114,13 @@ ${siteHeader(siteMeta,outputPath)}
         <span class="count">${sortedReadings.length}개</span>
       </div>
       <div class="filter-row" data-home-controls>
-        <input class="filter-search" type="search" placeholder="제목, 저자, 태그 검색" data-reading-search />
-        <button class="filter-chip is-active" type="button" data-filter-chip data-filter-value="">전체</button>
-        <button class="filter-chip" type="button" data-filter-chip data-filter-value="paper">논문</button>
-        <button class="filter-chip" type="button" data-filter-chip data-filter-value="chapter">핸드북 장</button>
-        <button class="filter-chip" type="button" data-filter-chip data-filter-value="article">기사</button>
+        <input class="filter-search" type="search" aria-label="제목, 저자 또는 태그로 읽기 검색" placeholder="제목, 저자, 태그 검색" data-reading-search />
+        <div class="filter-chip-row" role="group" aria-label="읽기 유형 필터">
+          <button class="filter-chip is-active" type="button" data-filter-chip data-filter-value="">전체</button>
+          <button class="filter-chip" type="button" data-filter-chip data-filter-value="paper">논문</button>
+          <button class="filter-chip" type="button" data-filter-chip data-filter-value="chapter">핸드북 장</button>
+          <button class="filter-chip" type="button" data-filter-chip data-filter-value="article">기사</button>
+        </div>
       </div>
       <div class="reading-grid" data-reading-grid>${cards}</div>
       <p class="meta empty-state" data-empty-state hidden>조건에 맞는 읽기가 없습니다.</p>

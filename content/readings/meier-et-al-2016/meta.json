@@ -96,7 +96,7 @@
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-23T10:20:53.711Z",
+    "updated_at": "2026-08-23T10:51:12.400Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",

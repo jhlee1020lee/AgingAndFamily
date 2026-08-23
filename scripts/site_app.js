@@ -172,6 +172,8 @@ function renderDynamicHomeHero(reading){
 function syncHomeCardState(card,state){
   const link=card.querySelector(".card-link.rcard");
   const status=card.querySelector(".rcard-status");
+  const eyebrow=card.querySelector(".rcard-mobile-eyebrow");
+  let mobileState=card.querySelector(".rcard-mobile-state");
   const stateLabel=state==="current"?"이번 주":state==="ready"?"공개됨":"잠금";
   card.dataset.cardState=state;
   if(link){
@@ -182,6 +184,16 @@ function syncHomeCardState(card,state){
     status.classList.remove("ready","current","locked");
     status.classList.add(state);
     status.textContent=stateLabel;
+  }
+  if(state==="ready"){
+    mobileState?.remove();
+  }else if(eyebrow){
+    if(!mobileState){
+      mobileState=document.createElement("span");
+      eyebrow.appendChild(mobileState);
+    }
+    mobileState.className=`rcard-mobile-state ${state}`;
+    mobileState.textContent=stateLabel;
   }
 }
 
@@ -536,6 +548,25 @@ function initTranslationSentenceReveals(){
   });
 }
 
+function initMobileTabs(){
+  const media=window.matchMedia("(max-width: 560px)");
+  const rows=Array.from(document.querySelectorAll("[data-mobile-tab-row]"));
+  const centerActiveTabs=()=>{
+    if(!media.matches)return;
+    rows.forEach((row)=>{
+      const active=row.querySelector('[aria-current="page"]');
+      if(!active)return;
+      window.requestAnimationFrame(()=>{
+        const left=active.offsetLeft-(row.clientWidth-active.offsetWidth)/2;
+        row.scrollTo({left:Math.max(0,left),behavior:"auto"});
+      });
+    });
+  };
+  centerActiveTabs();
+  if(typeof media.addEventListener==="function")media.addEventListener("change",centerActiveTabs);
+  else if(typeof media.addListener==="function")media.addListener(centerActiveTabs);
+}
+
 function normalizeQuizAnswer(value){
   return String(value??"")
     .normalize("NFKC")
@@ -801,6 +832,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   initHomeRail();
   initHomeFilters();
   initTabMenus();
+  initMobileTabs();
   initReader();
   initTranslationSentenceReveals();
   initInteractiveQuizzes();

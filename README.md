@@ -29,9 +29,11 @@ foreach ($reading in $manifest.readings) {
 }
 node scripts/validate_content.js --publish-gate
 node scripts/check_site_links.js --site-dir docs
+npm run check:mobile
 ```
 
 `node scripts/build_site.js`는 승인된 22편 전체 정적 사이트를 `docs/`에 생성합니다.
+`npm run check:mobile`은 생성된 243개 페이지와 홈 카드 22개를 360·390·430px 모바일 계약으로 검사합니다.
 
 ## 로컬 미리보기
 
