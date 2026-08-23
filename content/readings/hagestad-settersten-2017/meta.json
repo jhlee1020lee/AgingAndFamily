@@ -100,7 +100,7 @@
     "index": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-08-23T16:59:01.882Z",
+    "updated_at": "2026-08-23T17:54:21.495Z",
     "require_built_artifacts": true,
     "landing": {
       "status": "approved",
