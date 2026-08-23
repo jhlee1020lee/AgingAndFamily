@@ -1,0 +1,105 @@
+{
+  "title": "‘I’ve Been Independent for So Damn Long!’: Independence, Masculinity and Aging in a Help Seeking Context",
+  "intro": "독립은 혼자 버티는 규범이 되기도, 도움을 받아 자기 삶을 다시 움직이는 힘이 되기도 한다.",
+  "panels": [
+    {
+      "panel_id": "smith-et-al-2007-comic-01",
+      "label": "1컷 · 독립의 두 갈래",
+      "image": "assets/comic/panel-01.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이와 쪼롱이가 혼자 오르는 가파른 길과 도움 장비가 있는 완만한 길 사이에서 같은 정상을 바라본다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "혼자 해야 독립 아냐?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "삶을 지키는 독립도 있어."
+        }
+      ],
+      "caption": "같은 ‘독립’에 자기의존의 남성성 규범과 기능·삶의 질을 지키는 노화의 의미가 겹친다.",
+      "detail": "참여자들의 말에서 두 담론은 분리되지 않았다. 강함·통제·자기충족은 남성 정체성을 지키는 방식이면서, 일상기능과 좋은 삶을 유지하려는 목표이기도 했다.",
+      "limit": "독립을 언제나 해롭거나 언제나 이로운 단일 성향으로 읽으면 논문의 핵심인 다중 의미를 잃는다.",
+      "evidence_segment_ids": [
+        "INTRO-001",
+        "FINDINGS-OPEN-001"
+      ]
+    },
+    {
+      "panel_id": "smith-et-al-2007-comic-02",
+      "label": "2컷 · 구조 신호를 접다",
+      "image": "assets/comic/panel-02.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "넘어진 뾰롱이가 구조 신호를 숨기고, 쪼롱이는 안전 로프를 조심스럽게 내민다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "도움을 부르면 짐일까 봐."
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "버티다 더 다칠 수 있어."
+        }
+      ],
+      "caption": "강하고 통제해야 한다는 자기의존은 타인에게 부담이 되기 싫다는 마음과 만나 도움 요청을 늦출 수 있다.",
+      "detail": "면담에서 참가자들은 스스로 해결하려 하거나, 넘어져도 부르지 않고, 간호 방문을 꺼리는 경험을 말했다. 저자들은 이를 독립성이 건강을 해칠 수 있는 경로로 해석했다.",
+      "limit": "이 장면은 모든 노년 남성이 완고하다는 뜻이 아니며, 참여자의 진술과 연구자의 주제 해석을 보편적 성격으로 바꾸면 안 된다.",
+      "evidence_segment_ids": [
+        "MASCULINE-HELP-001",
+        "MASCULINE-MAX-001"
+      ]
+    },
+    {
+      "panel_id": "smith-et-al-2007-comic-03",
+      "label": "3컷 · 장비로 되찾은 길",
+      "image": "assets/comic/panel-03.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이가 보조 이동차를 스스로 운전해 산장과 진료소 쪽으로 가고 쪼롱이가 곁에서 함께한다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "이걸 타니 다시 움직여!"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "도움이 자율성을 되찾았네."
+        }
+      ],
+      "caption": "보조수단의 수용은 의존의 패배가 아니라 일상기능과 자기결정을 회복하는 ‘재구성된 독립’이 될 수 있다.",
+      "detail": "Arnold는 걷기 어려워진 뒤 전동 스쿠터로 상점과 의사를 혼자 방문했다. 저자들은 이를 이상화된 남성성을 바꾸면서 삶의 질을 유지한 사례로 읽었다.",
+      "limit": "한 참가자의 스쿠터 경험은 보조기구가 누구에게나 같은 효과를 낸다는 개입시험의 증거가 아니다.",
+      "evidence_segment_ids": [
+        "SUCCESS-SCOOTER-001"
+      ]
+    },
+    {
+      "panel_id": "smith-et-al-2007-comic-04",
+      "label": "4컷 · 지형에 맞춘 독립",
+      "image": "assets/comic/panel-04.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이와 쪼롱이가 하나의 만능 경로 대신 상황과 장비에 맞는 여러 산길을 비교한다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "독립을 그냥 밀면 안 되네."
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "사람과 상황부터 봐야 해."
+        }
+      ],
+      "caption": "실천은 독립을 완고함으로 낙인찍기보다 연령·젠더·건강·관계 맥락 속에서 건강을 돕는 방식으로 다시 협상해야 한다.",
+      "detail": "저자들은 보건서비스와 정책이 독립의 건강손상적·건강증진적 측면을 함께 보고, 노년 남성이 통제와 삶의 질을 유지하도록 대화를 설계할 것을 제안했다.",
+      "limit": "근거는 FAMAS 전체 1,195명이 아니라 남성 36명의 질적 하위연구이며, 그중 22명이 55세 초과, 12명이 65세 이상이었다. 인과효과나 모든 남성에 대한 일반화가 아니다.",
+      "evidence_segment_ids": [
+        "METHOD-CONTEXT-001",
+        "CONCLUSION-001"
+      ]
+    }
+  ]
+}

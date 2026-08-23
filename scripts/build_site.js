@@ -1221,13 +1221,7 @@ ${siteHeader(siteMeta,outputPath)}
 </main>
 ${renderHomeReadingDataScript(siteMeta,outputPath,sortedReadings)}
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,siteMeta.title,body,siteMeta.tagline||siteMeta.title,'data-page-kind="home"',"ko"));}
-function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const comicSection=renderOverviewComic(outputPath,reading);const pointsSection=renderOverviewPoints(reading);const overviewSection=comicSection||(pointsSection?`<section class="panel detail-block">
-        <div class="section-head">
-          <h3>수업에서 먼저 잡을 포인트</h3>
-          <span class="count">${reading.classroom_points.length}개</span>
-        </div>
-        ${pointsSection}
-      </section>`:"");const body=`
+function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const overviewSection=renderOverviewComic(outputPath,reading);if(!overviewSection)throw new Error(`Missing or invalid overview_comic.json for ${reading.slug}`);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell" data-reading-slug="${escapeHtml(reading.slug)}">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:"index"})}

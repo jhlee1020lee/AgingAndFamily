@@ -1,0 +1,112 @@
+{
+  "title": "Successful Aging and Its Discontents",
+  "intro": "누군가를 ‘성공한 노인’으로 가르는 기준은 동시에 더 많은 사람을 실패의 바깥으로 밀어낼 수 있다.",
+  "panels": [
+    {
+      "panel_id": "martinson-berridge-2015-comic-01",
+      "label": "1컷 · 너무 좁은 금빛 액자",
+      "image": "assets/comic/panel-01.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이가 좁은 성공 액자에 몸을 맞추려 하고 쪼롱이는 액자 밖의 다양한 조각들을 가리킨다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "여기 못 들면 실패야?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "그 이분법부터 문제야."
+        }
+      ],
+      "caption": "질병·장애 회피와 높은 기능을 규범적 성공으로 삼는 좁은 기준은 다수의 노년을 실패로 분류한다.",
+      "detail": "비판문헌은 기존 모형의 성공률이 매우 낮고, 성공/실패의 위계가 질병·장애가 있는 몸을 폄하하는 연령주의와 능력주의를 만들 수 있다고 지적했다.",
+      "limit": "낮은 유병률 수치들은 검토에 포함된 개별 연구 사례이며, 하나의 통합 표본에서 새로 계산한 추정치가 아니다.",
+      "evidence_segment_ids": [
+        "PREVALENCE-001",
+        "AGEISM-001"
+      ]
+    },
+    {
+      "panel_id": "martinson-berridge-2015-comic-02",
+      "label": "2컷 · 네 개의 비평 전시실",
+      "image": "assets/comic/panel-02.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "두 캐릭터가 기준 확장, 노인의 목소리, 근본 비판, 새 틀을 상징하는 네 전시실을 바라본다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "비판도 네 갈래였네."
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "넓히고, 듣고, 깨고, 바꿨어."
+        }
+      ],
+      "caption": "67편의 처방은 Add and Stir, Missing Voices, Hard Hitting Critiques, New Frames and Names의 네 범주로 구성됐다.",
+      "detail": "네 범주는 비판 주제가 완전히 배타적이어서가 아니라 해결책의 방향, 즉 확장·주관적 의미·폐기·대안 명명에 따라 구분됐다.",
+      "limit": "이 수는 효과크기나 찬성률이 아니라 저자들이 질적으로 배치한 논문 수다.",
+      "evidence_segment_ids": [
+        "METHODS-001",
+        "ADD-STIR-001",
+        "MISSING-VOICES-001",
+        "HARD-HITTING-001",
+        "NEW-FRAMES-001"
+      ]
+    },
+    {
+      "panel_id": "martinson-berridge-2015-comic-03",
+      "label": "3컷 · 거울과 기울어진 바닥",
+      "image": "assets/comic/panel-03.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "객관 측정 액자와 자기평가 거울이 다른 모습을 보이고, 쪼롱이가 불평등한 전시 환경을 드러낸다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "노력만 재면 공정해?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "기회와 문화가 가려져."
+        }
+      ],
+      "caption": "노인의 자기평가와 전문가 기준은 다를 수 있고, 개인 성취만 강조하면 계층·젠더·인종·장애·문화의 구조적 기회 차이가 사라진다.",
+      "detail": "검토된 연구들에서는 객관 기준보다 훨씬 많은 노인이 스스로 성공적으로 늙었다고 평가했다. 비판자들은 교육·고용·주거·건강자원 접근이 성공 가능성을 불평등하게 만든다고 봤다.",
+      "limit": "자기평가를 유일한 ‘진실’로 바꾸거나, 문헌에 인용된 비판을 이 리뷰가 새로 검증한 인과효과로 제시하면 안 된다.",
+      "evidence_segment_ids": [
+        "COMPARE-001",
+        "CULTURE-001",
+        "INDIVIDUALISM-001"
+      ]
+    },
+    {
+      "panel_id": "martinson-berridge-2015-comic-04",
+      "label": "4컷 · 액자보다 전시 조건",
+      "image": "assets/comic/panel-04.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "두 캐릭터가 승자 받침대를 없애고 박물관의 접근 조건을 고치며 새 액자도 돋보기로 다시 살핀다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "새 이름이면 다 해결돼?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "또 개인 기준이 될 수 있어."
+        }
+      ],
+      "caption": "목표는 더 정교한 승자 선별보다 다양한 노년이 존엄하게 살아갈 사회·정치·경제적 조건을 만드는 데 있다.",
+      "detail": "New Frames and Names도 더 포괄적이지만 종종 개인의 이상형을 남겼다. 저자들은 성공적 노화 용어 자체를 성찰하고 비판·경험연구·실천을 한 대화에 놓자고 결론냈다.",
+      "limit": "1987–2013년 ASG의 영어 논문 453편 중 67편을 구성적으로 묶은 검토라서 ASG 밖·비영어 비판이 빠졌고, 메타분석이나 인과평가가 아니다.",
+      "evidence_segment_ids": [
+        "NEW-FRAMES-001",
+        "DISCUSSION-001",
+        "CONCLUSION-001",
+        "LIMITATIONS-001"
+      ]
+    }
+  ]
+}

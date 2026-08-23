@@ -26,6 +26,8 @@ jobs:
         run: node scripts/check_alignment.js --strict
       - name: Build the complete site
         run: node scripts/build_site.js
+      - name: Verify illustrated overviews and optimized assets
+        run: npm run check:comics
       - name: Verify mobile layout contract
         run: npm run check:mobile
       - name: Verify rendered original reveal pairs

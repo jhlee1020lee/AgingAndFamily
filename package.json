@@ -12,6 +12,7 @@
     "check:reveals": "node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016",
     "check:interactions": "node scripts/check_interactions.js",
     "check:links": "node scripts/check_site_links.js",
+    "check:comics": "node scripts/check_overview_comics.js --require-built",
     "check:mobile": "node scripts/check_mobile_contract.js --width 360 --width 390 --width 430",
     "validate:pilot": "node scripts/validate_content.js --slug levy-2009 --publish-gate && node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate",
     "serve": "python -m http.server 8765 --directory docs"

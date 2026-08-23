@@ -1,0 +1,108 @@
+{
+  "title": "The Baltimore Experience Corps Trial",
+  "intro": "기여할 힘이 있어도 사회적 역할의 회로가 끊겨 있다면 생성감은 현실의 성취로 이어지기 어렵다.",
+  "panels": [
+    {
+      "panel_id": "gruenewald-et-al-2016-comic-01",
+      "label": "1컷 · 남은 힘, 끊긴 회로",
+      "image": "assets/comic/panel-01.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "에너지가 가득한 축전 탱크와 학교·묘목 장치 사이의 끊어진 전선을 뾰롱이와 쪼롱이가 바라본다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "기여할 힘은 남았는데?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "이어 줄 역할이 부족해."
+        }
+      ],
+      "caption": "건강수명은 늘었지만 노년의 기여 잠재력을 활용할 사회제도의 변화가 따라오지 못한 ‘구조적 지체’가 출발점이다.",
+      "detail": "저자들은 노년기에 생성감이 낮아지는 이유를 개인의 동기 부족만이 아니라 기대와 기회의 축소에서 찾고, 새로운 사회적 역할을 제공하는 제도의 필요성을 제시했다.",
+      "limit": "구조적 지체는 이 시험에서 직접 수치화한 결과변수가 아니라 프로그램의 이론적 배경이다.",
+      "evidence_segment_ids": [
+        "INTRO-001"
+      ]
+    },
+    {
+      "panel_id": "gruenewald-et-al-2016-comic-02",
+      "label": "2컷 · 두 개의 생성감 불빛",
+      "image": "assets/comic/panel-02.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이와 쪼롱이가 세대 연결 회로를 켜자 씨앗과 열매 모양의 두 불빛이 따로 밝아진다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "배정만 봐도 둘 다 커졌네!"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "마음과 성취감은 따로야."
+        }
+      ],
+      "caption": "Experience Corps 배정군은 4·12·24개월 모두 생성감 욕구와 생성감 성취의 자기평가가 대조군보다 높았다.",
+      "detail": "프로그램은 노인이 학교의 필요에 따라 문해·수학·행동 지원 역할을 맡도록 설계됐다. 욕구 7문항과 성취 6문항은 서로 구별되는 두 요인으로 측정됐다.",
+      "limit": "두 척도는 상관되어도 같은 개념이 아니며, 아동의 학업성과는 이 분석의 직접 결과변수가 아니다.",
+      "evidence_segment_ids": [
+        "EC-001",
+        "MEASURES-001",
+        "RESULTS-MODELS-001"
+      ]
+    },
+    {
+      "panel_id": "gruenewald-et-al-2016-comic-03",
+      "label": "3컷 · 배정과 실제 노출",
+      "image": "assets/comic/panel-03.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "뾰롱이와 쪼롱이가 무작위로 갈린 두 발전 레일과 노출이 커질수록 밝아지는 불빛, 이를 받치는 가정의 받침대를 살핀다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "더 오래 하면 더 커졌네?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "순응자 분석엔 가정이 필요해."
+        }
+      ],
+      "caption": "ITT는 무작위 배정 전체를 비교했고, CACE는 실제 노출 수준이 높은 순응자를 추정하며 더 큰 효과 양상을 보였다.",
+      "detail": "702명 가운데 352명이 중재군, 350명이 대조군에 배정됐고 중재군 284명이 실제 프로그램을 받았다. CACE에서 더 높은 노출 기준일수록 효과크기가 커졌지만 네 모형에서는 가법성 가정 예외가 있었다.",
+      "limit": "CACE는 통제군의 잠재적 순응자를 모형으로 추정하고 여러 식별 가정에 의존한다. 대조군도 통상적 자원봉사 기회를 안내받았으므로 ‘아무 활동도 없음’이 아니다.",
+      "evidence_segment_ids": [
+        "PARTICIPANTS-001",
+        "ANALYTIC-ITT-CACE-001",
+        "ANALYTIC-ASSUMPTIONS-001",
+        "RESULTS-MODELS-001"
+      ]
+    },
+    {
+      "panel_id": "gruenewald-et-al-2016-comic-04",
+      "label": "4컷 · 밝혀진 계기판만 보기",
+      "image": "assets/comic/panel-04.webp",
+      "width": 900,
+      "height": 900,
+      "alt": "생성감의 두 계기만 밝고 건강·인지·수명을 뜻하는 계기들은 연결되지 않은 모습을 두 캐릭터가 확인한다.",
+      "dialogues": [
+        {
+          "speaker": "뾰롱이",
+          "text": "건강도 좋아졌단 뜻이야?"
+        },
+        {
+          "speaker": "쪼롱이",
+          "text": "직접 본 건 생성감 평가야."
+        }
+      ],
+      "caption": "이 논문이 실험적으로 보인 것은 생성감 욕구와 성취에 대한 자기지각의 향상이다.",
+      "detail": "건강·인지·수명과 생성감의 관계는 주로 관찰연구와 다른 EC 연구가 제공한 배경이며, 본 분석의 두 직접 결과와 구별해야 한다.",
+      "limit": "기초 생성감과 자원봉사율이 높았고, 24개월까지 약 15–20%가 탈락했으며, 표본의 85%가 여성이고 대다수가 아프리카계 미국인이어서 다른 집단으로의 일반화에 주의해야 한다.",
+      "evidence_segment_ids": [
+        "LIMITATIONS-001",
+        "CONCLUSION-001"
+      ]
+    }
+  ]
+}

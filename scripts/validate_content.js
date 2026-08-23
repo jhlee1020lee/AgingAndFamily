@@ -105,6 +105,54 @@ function toText(value) {
   return typeof value === "string" ? value.trim() : "";
 }
 
+function readUInt24LE(buffer, offset) {
+  return buffer[offset] | (buffer[offset + 1] << 8) | (buffer[offset + 2] << 16);
+}
+
+function webpDimensions(filePath) {
+  const buffer = fs.readFileSync(filePath);
+  if (
+    buffer.length < 30 ||
+    buffer.toString("ascii", 0, 4) !== "RIFF" ||
+    buffer.toString("ascii", 8, 12) !== "WEBP"
+  ) {
+    throw new Error("not a WebP file");
+  }
+  let offset = 12;
+  while (offset + 8 <= buffer.length) {
+    const type = buffer.toString("ascii", offset, offset + 4);
+    const size = buffer.readUInt32LE(offset + 4);
+    const data = offset + 8;
+    if (type === "VP8X" && size >= 10) {
+      return {
+        width: readUInt24LE(buffer, data + 4) + 1,
+        height: readUInt24LE(buffer, data + 7) + 1,
+      };
+    }
+    if (
+      type === "VP8 " &&
+      size >= 10 &&
+      buffer[data + 3] === 0x9d &&
+      buffer[data + 4] === 0x01 &&
+      buffer[data + 5] === 0x2a
+    ) {
+      return {
+        width: buffer.readUInt16LE(data + 6) & 0x3fff,
+        height: buffer.readUInt16LE(data + 8) & 0x3fff,
+      };
+    }
+    if (type === "VP8L" && size >= 5 && buffer[data] === 0x2f) {
+      const bits = buffer.readUInt32LE(data + 1);
+      return {
+        width: (bits & 0x3fff) + 1,
+        height: ((bits >>> 14) & 0x3fff) + 1,
+      };
+    }
+    offset = data + size + (size % 2);
+  }
+  throw new Error("unsupported WebP bitstream");
+}
+
 function wordCount(value) {
   return toText(value).split(/\s+/).filter(Boolean).length;
 }
@@ -892,7 +940,11 @@ function validateOverviewComic(rootDir, reading) {
   const contentDir = path.resolve(rootDir, reading.content_dir || "");
   const comicPath = path.join(contentDir, "overview_comic.json");
   if (!fs.existsSync(comicPath)) {
-    return { errors: [], warnings: [], metrics: { overview_comic_panel_count: 0, overview_comic_asset_bytes: 0 } };
+    return {
+      errors: ["overview_comic.json is required for every reading landing page"],
+      warnings: [],
+      metrics: { overview_comic_panel_count: 0, overview_comic_asset_bytes: 0 },
+    };
   }
   const errors = [];
   const warnings = [];
@@ -914,6 +966,8 @@ function validateOverviewComic(rootDir, reading) {
   const sourceSegments = loadJson(path.join(contentDir, "source_segments.json"));
   const knownSegmentIds = new Set((Array.isArray(sourceSegments?.segments) ? sourceSegments.segments : []).map((segment) => toText(segment?.segment_id)).filter(Boolean));
   const panelIds = new Set();
+  const imagePaths = new Set();
+  const imageHashes = new Set();
   let assetBytes = 0;
   panels.forEach((panel, index) => {
     const label = `overview_comic.json panels[${index}]`;
@@ -932,6 +986,8 @@ function validateOverviewComic(rootDir, reading) {
     const height = Number(panel.height);
     if (!Number.isInteger(width) || width <= 0 || !Number.isInteger(height) || height <= 0) {
       errors.push(`${label} width and height must be positive integers`);
+    } else if (width !== 900 || height !== 900) {
+      errors.push(`${label} width and height must be 900x900`);
     }
     const image = toText(panel.image).replace(/\\/g, "/");
     if (!image) {
@@ -946,16 +1002,36 @@ function validateOverviewComic(rootDir, reading) {
       } else if (!fs.existsSync(imagePath)) {
         errors.push(`${label} image does not exist: ${image}`);
       } else {
+        if (imagePaths.has(image)) errors.push(`${label} reuses image path ${image}`);
+        imagePaths.add(image);
         const size = fs.statSync(imagePath).size;
         assetBytes += size;
-        if (size > 250000) warnings.push(`${label} image is larger than 250 KB (${size} bytes)`);
+        if (size > 250000) errors.push(`${label} image is larger than 250 KB (${size} bytes)`);
+        try {
+          const dimensions = webpDimensions(imagePath);
+          if (dimensions.width !== 900 || dimensions.height !== 900) {
+            errors.push(`${label} actual image is ${dimensions.width}x${dimensions.height}, expected 900x900`);
+          }
+          const hash = crypto.createHash("sha256").update(fs.readFileSync(imagePath)).digest("hex");
+          if (imageHashes.has(hash)) errors.push(`${label} duplicates another panel image`);
+          imageHashes.add(hash);
+        } catch (error) {
+          errors.push(`${label} cannot read WebP image (${error.message})`);
+        }
       }
-      if (path.extname(image).toLowerCase() !== ".webp") warnings.push(`${label} image should use WebP for the overview`);
+      if (path.extname(image).toLowerCase() !== ".webp") errors.push(`${label} image must use WebP for the overview`);
     }
     const dialogues = Array.isArray(panel.dialogues) ? panel.dialogues : [];
     if (dialogues.length !== 2) errors.push(`${label} dialogues must contain exactly 2 items`);
     dialogues.forEach((dialogue, dialogueIndex) => {
       if (!toText(dialogue?.speaker) || !toText(dialogue?.text)) errors.push(`${label} dialogues[${dialogueIndex}] requires speaker and text`);
+      const expectedSpeaker = dialogueIndex === 0 ? "뾰롱이" : "쪼롱이";
+      if (toText(dialogue?.speaker) && toText(dialogue?.speaker) !== expectedSpeaker) {
+        errors.push(`${label} dialogues[${dialogueIndex}] speaker must be ${expectedSpeaker}`);
+      }
+      if ([...toText(dialogue?.text)].length > 28) {
+        warnings.push(`${label} dialogues[${dialogueIndex}] may be too long for mobile`);
+      }
     });
     const evidenceIds = (Array.isArray(panel.evidence_segment_ids) ? panel.evidence_segment_ids : []).map((item) => toText(item)).filter(Boolean);
     if (!evidenceIds.length) errors.push(`${label} evidence_segment_ids must be non-empty`);
@@ -963,7 +1039,7 @@ function validateOverviewComic(rootDir, reading) {
       evidenceIds.filter((segmentId) => !knownSegmentIds.has(segmentId)).forEach((segmentId) => errors.push(`${label} references unknown evidence segment ${segmentId}`));
     }
   });
-  if (assetBytes > 600000) warnings.push(`overview comic assets exceed 600 KB total (${assetBytes} bytes)`);
+  if (assetBytes > 600000) errors.push(`overview comic assets exceed 600 KB total (${assetBytes} bytes)`);
   return { errors, warnings, metrics: { overview_comic_panel_count: panels.length, overview_comic_asset_bytes: assetBytes } };
 }
 
