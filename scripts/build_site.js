@@ -587,12 +587,7 @@ function loadOverviewComic(contentDir){
     const width=Number(panel.width);
     const height=Number(panel.height);
     if(!Number.isInteger(width)||width<=0||!Number.isInteger(height)||height<=0)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}] width and height must be positive integers`);
-    const rawDialogues=Array.isArray(panel.dialogues)?panel.dialogues:[];
-    if(rawDialogues.length!==2)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].dialogues must contain exactly 2 items`);
-    const dialogues=rawDialogues.map((dialogue,dialogueIndex)=>({
-      speaker:requireText(dialogue?.speaker,`panels[${index}].dialogues[${dialogueIndex}].speaker`,filePath),
-      text:requireText(dialogue?.text,`panels[${index}].dialogues[${dialogueIndex}].text`,filePath)
-    }));
+    if(Object.prototype.hasOwnProperty.call(panel,"dialogues"))throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].dialogues is no longer supported; use caption`);
     const evidence_segment_ids=textArray(panel.evidence_segment_ids);
     if(!evidence_segment_ids.length)throw new Error(`[invalid] ${fileLabel(filePath)}: panels[${index}].evidence_segment_ids must be non-empty`);
     return{
@@ -602,7 +597,6 @@ function loadOverviewComic(contentDir){
       width,
       height,
       alt:requireText(panel.alt,`panels[${index}].alt`,filePath),
-      dialogues,
       caption:requireText(panel.caption,`panels[${index}].caption`,filePath),
       detail:requireText(panel.detail,`panels[${index}].detail`,filePath),
       limit:requireText(panel.limit,`panels[${index}].limit`,filePath),
@@ -995,25 +989,14 @@ function renderOverviewComic(outputPath,reading){
     const imageTarget=path.join(siteDir,"assets","readings",reading.slug,...panel.image.split("/"));
     const imageHref=relHref(outputPath,imageTarget);
     const priority=index===0?' fetchpriority="high"':"";
-    const dialogues=panel.dialogues.map((dialogue,dialogueIndex)=>`<p class="overview-comic-bubble ${dialogueIndex===0?"is-ppyorong":"is-jjorong"}"><span class="overview-comic-speaker">${escapeHtml(dialogue.speaker)}</span><span>${escapeHtml(dialogue.text)}</span></p>`).join("");
-    const evidence=panel.evidence_segment_ids.map((segmentId)=>`<code>${escapeHtml(segmentId)}</code>`).join("");
-    return `<li class="overview-comic-panel" id="${escapeHtml(panel.panel_id)}">
+    const captionId=`${panel.panel_id}-caption`;
+    return `<li class="overview-comic-panel" id="${escapeHtml(panel.panel_id)}" aria-labelledby="${escapeHtml(captionId)}">
       <div class="overview-comic-visual">
         <img src="${escapeHtml(imageHref)}" alt="${escapeHtml(panel.alt)}" width="${panel.width}" height="${panel.height}" loading="${index===0?"eager":"lazy"}" decoding="async"${priority} />
         <span class="overview-comic-index" aria-hidden="true">${String(index+1).padStart(2,"0")}</span>
       </div>
-      <div class="overview-comic-dialogues" role="group" aria-label="${escapeHtml(panel.label)} 대화">${dialogues}</div>
       <div class="overview-comic-copy">
-        <p class="overview-comic-label">${escapeHtml(panel.label)}</p>
-        <h3>${escapeHtml(panel.caption)}</h3>
-        <details class="overview-comic-notes">
-          <summary>논문 근거와 한계</summary>
-          <div>
-            <p>${escapeHtml(panel.detail)}</p>
-            <p class="overview-comic-limit"><strong>주의</strong><span>${escapeHtml(panel.limit)}</span></p>
-            <p class="overview-comic-evidence"><span>근거 구간</span>${evidence}</p>
-          </div>
-        </details>
+        <p class="overview-comic-caption" id="${escapeHtml(captionId)}">${escapeHtml(panel.caption)}</p>
       </div>
     </li>`;
   }).join("");

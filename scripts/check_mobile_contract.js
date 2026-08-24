@@ -91,9 +91,9 @@ function checkDocument(html,filePath,errors){
     expect(/<ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">/.test(html),`${relative}: overview comic scroll region semantics`,errors);
     expect(count(html,/class="overview-comic-panel"/g)===4,`${relative}: overview comic must contain four panels`,errors);
     expect(count(html,/<img\b[^>]*width="[1-9]\d*"[^>]*height="[1-9]\d*"[^>]*loading="(?:eager|lazy)"[^>]*decoding="async"/g)===4,`${relative}: overview comic responsive image attributes`,errors);
-    expect(count(html,/class="overview-comic-bubble /g)===8,`${relative}: overview comic dialogue count`,errors);
-    expect(count(html,/class="overview-comic-dialogues" role="group"/g)===4,`${relative}: overview comic dialogue group semantics`,errors);
-    expect(count(html,/class="overview-comic-notes"/g)===4,`${relative}: overview comic evidence disclosure count`,errors);
+    expect(count(html,/class="overview-comic-caption"/g)===4,`${relative}: overview comic caption count`,errors);
+    expect(count(html,/aria-labelledby="[^"]+-caption"/g)===4,`${relative}: overview comic caption labelling`,errors);
+    expect(!/overview-comic-(?:dialogues|bubble|speaker|label|notes|limit|evidence)/.test(html),`${relative}: overview comic must render image and caption only`,errors);
     expect(count(html,/loading="eager"/g)===1&&count(html,/fetchpriority="high"/g)===1,`${relative}: overview comic first-panel priority`,errors);
     expect(count(html,/loading="lazy"/g)===3,`${relative}: overview comic remaining panels must be lazy`,errors);
   }
@@ -138,6 +138,7 @@ function checkCss(widths,errors){
   contractRule(css,".overview-comic",[/overflow:\s*hidden/],errors);
   contractRule(css,".overview-comic-swipe-hint",[/display:\s*none/],errors);
   contractRule(css,".overview-comic-grid",[/display:\s*grid/,/grid-template-columns:\s*repeat\(2,minmax\(0,1fr\)\)/],errors);
+  expect(!/\.overview-comic-(?:dialogues|bubble|speaker|label|notes|limit|evidence)\b/.test(css),"CSS: retired overview comic text-block styles remain",errors);
   const startMarker="/* mobile-contract:start";
   const endMarker="/* mobile-contract:end */";
   const start=css.indexOf(startMarker);

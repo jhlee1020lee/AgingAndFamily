@@ -2513,148 +2513,17 @@ body[data-reading-layout="reader-v2"] .article-backmatter-heading{
   backdrop-filter:blur(8px);
 }
 
-.overview-comic-dialogues{
-  position:relative;
-  z-index:1;
-  display:grid;
-  gap:.45rem;
-  margin:-1.2rem .8rem 0;
-}
-
-.overview-comic-bubble{
-  display:grid;
-  gap:.12rem;
-  width:fit-content;
-  max-width:92%;
-  margin:0;
-  padding:.58rem .72rem .62rem;
-  border:1px solid var(--line-strong);
-  border-radius:15px 15px 15px 4px;
-  background:color-mix(in srgb,var(--surface) 94%,transparent);
-  box-shadow:0 8px 22px rgba(28,31,45,.12);
-  color:var(--text-strong);
-  font-size:.9rem;
-  line-height:1.42;
-  text-wrap:pretty;
-  backdrop-filter:blur(10px);
-}
-
-.overview-comic-bubble.is-jjorong{
-  justify-self:end;
-  border-radius:15px 15px 4px 15px;
-  background:color-mix(in srgb,var(--tint-mint) 46%,var(--surface));
-}
-
-.overview-comic-speaker{
-  color:var(--primary);
-  font:700 .68rem var(--display);
-  letter-spacing:.02em;
-}
-
 .overview-comic-copy{
-  padding:.85rem 1rem 1rem;
+  padding:1rem;
 }
 
-.overview-comic-label{
-  margin:0 0 .35rem;
-  color:var(--muted);
-  font:700 .72rem var(--display);
-  letter-spacing:.02em;
-}
-
-.overview-comic-copy h3{
+.overview-comic-caption{
   margin:0;
   color:var(--text-strong);
+  font-weight:700;
   font-size:1.04rem;
   line-height:1.48;
   text-wrap:pretty;
-}
-
-.overview-comic-notes{
-  margin-top:.75rem;
-  padding-top:.1rem;
-  border-top:1px solid var(--line);
-}
-
-.overview-comic-notes summary{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:.75rem;
-  min-height:44px;
-  color:var(--muted);
-  font:650 .82rem var(--display);
-  cursor:pointer;
-  list-style:none;
-}
-
-.overview-comic-notes summary::-webkit-details-marker{
-  display:none;
-}
-
-.overview-comic-notes summary::after{
-  content:"+";
-  display:inline-flex;
-  flex:0 0 auto;
-  align-items:center;
-  justify-content:center;
-  width:1.4rem;
-  height:1.4rem;
-  border-radius:999px;
-  background:var(--accent-soft);
-  color:var(--primary);
-  font:700 .92rem/1 var(--mono);
-}
-
-.overview-comic-notes[open] summary::after{
-  content:"−";
-}
-
-.overview-comic-notes > div{
-  display:grid;
-  gap:.7rem;
-  padding:.1rem 0 .2rem;
-}
-
-.overview-comic-notes p{
-  margin:0;
-  color:var(--muted);
-  font-size:.84rem;
-  line-height:1.66;
-}
-
-.overview-comic-limit{
-  display:grid;
-  grid-template-columns:auto minmax(0,1fr);
-  gap:.45rem;
-  padding:.65rem .7rem;
-  border-radius:10px;
-  background:var(--surface-muted);
-}
-
-.overview-comic-limit strong{
-  color:var(--warn);
-}
-
-.overview-comic-evidence{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:.35rem;
-}
-
-.overview-comic-evidence > span{
-  margin-right:.15rem;
-  font-weight:700;
-}
-
-.overview-comic-evidence code{
-  padding:.18rem .38rem;
-  border:1px solid var(--line);
-  border-radius:6px;
-  background:var(--surface-muted);
-  color:var(--text);
-  font-size:.72rem;
 }
 
 .reading-tag-row{
@@ -4809,32 +4678,13 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
     font-size:.72rem;
   }
 
-  .overview-comic-dialogues{
-    gap:.38rem;
-    margin:-1rem .6rem 0;
-  }
-
-  .overview-comic-bubble{
-    max-width:94%;
-    padding:.52rem .62rem .56rem;
-    font-size:.84rem;
-  }
-
   .overview-comic-copy{
-    padding:.72rem .78rem .8rem;
+    padding:.8rem;
   }
 
-  .overview-comic-copy h3{
+  .overview-comic-caption{
     font-size:.98rem;
     line-height:1.45;
-  }
-
-  .overview-comic-notes{
-    margin-top:.6rem;
-  }
-
-  .overview-comic-notes p{
-    font-size:.81rem;
   }
 
   body[data-reading-layout="reader-v2"] .reader-detail-side{

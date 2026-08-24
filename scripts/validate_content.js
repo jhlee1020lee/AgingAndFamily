@@ -1021,18 +1021,9 @@ function validateOverviewComic(rootDir, reading) {
       }
       if (path.extname(image).toLowerCase() !== ".webp") errors.push(`${label} image must use WebP for the overview`);
     }
-    const dialogues = Array.isArray(panel.dialogues) ? panel.dialogues : [];
-    if (dialogues.length !== 2) errors.push(`${label} dialogues must contain exactly 2 items`);
-    dialogues.forEach((dialogue, dialogueIndex) => {
-      if (!toText(dialogue?.speaker) || !toText(dialogue?.text)) errors.push(`${label} dialogues[${dialogueIndex}] requires speaker and text`);
-      const expectedSpeaker = dialogueIndex === 0 ? "뾰롱이" : "쪼롱이";
-      if (toText(dialogue?.speaker) && toText(dialogue?.speaker) !== expectedSpeaker) {
-        errors.push(`${label} dialogues[${dialogueIndex}] speaker must be ${expectedSpeaker}`);
-      }
-      if ([...toText(dialogue?.text)].length > 28) {
-        warnings.push(`${label} dialogues[${dialogueIndex}] may be too long for mobile`);
-      }
-    });
+    if (Object.prototype.hasOwnProperty.call(panel, "dialogues")) {
+      errors.push(`${label} dialogues is no longer supported; use the single caption field`);
+    }
     const evidenceIds = (Array.isArray(panel.evidence_segment_ids) ? panel.evidence_segment_ids : []).map((item) => toText(item)).filter(Boolean);
     if (!evidenceIds.length) errors.push(`${label} evidence_segment_ids must be non-empty`);
     if (knownSegmentIds.size) {

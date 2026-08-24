@@ -49,7 +49,7 @@ const manifest = readJson(path.join(rootDir, "manifest", "readings.json"));
 const readings = Array.isArray(manifest.readings) ? manifest.readings : [];
 const errors = [];
 let panelCount = 0;
-let dialogueCount = 0;
+let captionCount = 0;
 let assetBytes = 0;
 
 if (readings.length !== EXPECTED_READING_COUNT) {
@@ -79,12 +79,9 @@ for (const reading of readings) {
   const imageHashes = new Set();
   panels.forEach((panel, index) => {
     const prefix = `${slug} panel ${index + 1}`;
-    const dialogues = Array.isArray(panel.dialogues) ? panel.dialogues : [];
-    dialogueCount += dialogues.length;
-    if (dialogues.length !== 2) errors.push(`${prefix}: expected 2 dialogues`);
-    if (dialogues[0]?.speaker !== "뾰롱이" || dialogues[1]?.speaker !== "쪼롱이") {
-      errors.push(`${prefix}: dialogue order must be 뾰롱이 then 쪼롱이`);
-    }
+    if (Object.prototype.hasOwnProperty.call(panel, "dialogues")) errors.push(`${prefix}: retired dialogues field remains`);
+    if (typeof panel.caption !== "string" || !panel.caption.trim()) errors.push(`${prefix}: missing caption`);
+    else captionCount += 1;
     if (panel.width !== 900 || panel.height !== 900) errors.push(`${prefix}: metadata must be 900x900`);
     const image = typeof panel.image === "string" ? panel.image.replace(/\\/g, "/") : "";
     if (path.posix.extname(image).toLowerCase() !== ".webp") errors.push(`${prefix}: image must be WebP`);
@@ -120,18 +117,19 @@ for (const reading of readings) {
     } else {
       const html = fs.readFileSync(htmlPath, "utf8");
       if (count(html, /class="overview-comic-panel"/g) !== 4) errors.push(`${slug}: built page does not contain 4 comic panels`);
-      if (count(html, /class="overview-comic-bubble /g) !== 8) errors.push(`${slug}: built page does not contain 8 dialogue bubbles`);
+      if (count(html, /class="overview-comic-caption"/g) !== 4) errors.push(`${slug}: built page does not contain 4 captions`);
+      if (/overview-comic-(?:dialogues|bubble|speaker|label|notes|limit|evidence)/.test(html)) errors.push(`${slug}: built panel contains text beyond its caption`);
       if (html.includes('class="points-list"')) errors.push(`${slug}: built page still contains the old point list`);
     }
   }
 }
 
 const expectedPanels = readings.length * 4;
-const expectedDialogues = readings.length * 8;
+const expectedCaptions = readings.length * 4;
 if (panelCount !== expectedPanels) errors.push(`site total: expected ${expectedPanels} panels, found ${panelCount}`);
-if (dialogueCount !== expectedDialogues) errors.push(`site total: expected ${expectedDialogues} dialogues, found ${dialogueCount}`);
+if (captionCount !== expectedCaptions) errors.push(`site total: expected ${expectedCaptions} captions, found ${captionCount}`);
 
-console.log(`Overview comics: ${readings.length} readings, ${panelCount} panels, ${dialogueCount} dialogues, ${assetBytes} bytes`);
+console.log(`Overview comics: ${readings.length} readings, ${panelCount} panels, ${captionCount} captions, ${assetBytes} bytes`);
 if (errors.length) {
   errors.forEach((error) => console.error(`ERROR ${error}`));
   process.exitCode = 1;
