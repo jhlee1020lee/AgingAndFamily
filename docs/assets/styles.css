@@ -2457,6 +2457,10 @@ body[data-reading-layout="reader-v2"] .article-backmatter-heading{
   text-wrap:pretty;
 }
 
+.overview-comic-swipe-hint{
+  display:none;
+}
+
 .overview-comic-grid{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -3169,121 +3173,6 @@ body{
   color:#fff;
 }
 
-.workspace-mockup-card{
-  position:relative;
-  z-index:1;
-  width:min(55rem,100%);
-  margin:2.25rem auto 0;
-  overflow:hidden;
-  border:1px solid rgba(15,15,15,.1);
-  border-radius:12px;
-  background:#fff;
-  color:#37352f;
-  text-align:left;
-  box-shadow:var(--shadow-lg);
-}
-
-.workspace-mockup-top{
-  display:flex;
-  align-items:center;
-  gap:.45rem;
-  min-height:2.45rem;
-  padding:.65rem .85rem;
-  border-bottom:1px solid #e6e1d8;
-  background:#f7f6f3;
-}
-
-.workspace-mockup-top span{
-  width:.62rem;
-  height:.62rem;
-  border-radius:999px;
-  background:#e36f3d;
-}
-
-.workspace-mockup-top span:nth-child(2){background:#ffe15c;}
-.workspace-mockup-top span:nth-child(3){background:#10a7a0;}
-
-.workspace-mockup-top strong{
-  margin-left:.4rem;
-  font:600 .84rem var(--display);
-  color:#6f6d66;
-}
-
-.workspace-mockup-body{
-  padding:1.15rem;
-  background:#fff;
-}
-
-.workspace-page-title{
-  display:flex;
-  gap:.8rem;
-  align-items:center;
-  margin-bottom:1rem;
-}
-
-.workspace-page-title p,
-.workspace-page-title strong{
-  display:block;
-  margin:0;
-}
-
-.workspace-page-title p{
-  color:#9b9790;
-  font:500 .78rem var(--display);
-}
-
-.workspace-page-title strong{
-  color:#0f0f0f;
-  font:600 1rem var(--display);
-}
-
-.workspace-icon{
-  display:grid;
-  place-items:center;
-  width:2.2rem;
-  height:2.2rem;
-  border-radius:8px;
-  background:#0f0f0f;
-  color:#fff;
-  font:700 .95rem var(--display);
-}
-
-.workspace-board{
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:.75rem;
-}
-
-.workspace-task{
-  min-height:5.4rem;
-  padding:.85rem;
-  border:1px solid #e6e1d8;
-  border-radius:10px;
-  background:#fbfbfa;
-}
-
-.workspace-task span,
-.workspace-task strong{
-  display:block;
-}
-
-.workspace-task span{
-  margin-bottom:.55rem;
-  color:#6f6d66;
-  font:500 .78rem var(--display);
-}
-
-.workspace-task strong{
-  color:#37352f;
-  font:600 .88rem/1.35 var(--display);
-}
-
-.workspace-task.accent-purple{background:var(--tint-lavender);}
-.workspace-task.accent-orange{background:var(--tint-peach);}
-.workspace-task.accent-teal{background:var(--tint-mint);}
-.workspace-task.accent-pink{background:var(--tint-rose);}
-.workspace-task.is-pending{opacity:.7;}
-
 .section-head h3{
   margin:0;
   color:var(--text-strong);
@@ -3663,10 +3552,6 @@ body{
     font-size:3.25rem;
   }
 
-  .workspace-board{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-
   .rdp-title{
     font-size:2.25rem;
   }
@@ -3689,13 +3574,8 @@ body{
     font-size:.98rem;
   }
 
-  .workspace-board,
   .home-dashboard .reading-grid{
     grid-template-columns:1fr;
-  }
-
-  .workspace-mockup-card{
-    margin-top:1.3rem;
   }
 
   .reading-detail-top{
@@ -4593,10 +4473,6 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
     line-height:1.25;
   }
 
-  .home-dashboard .workspace-mockup-card{
-    display:none;
-  }
-
   .section-head h3{
     font-size:1.2rem;
   }
@@ -4891,13 +4767,38 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
     line-height:1.58;
   }
 
+  .overview-comic-swipe-hint{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:.3rem;
+    margin:-.25rem 0 .65rem;
+    color:var(--muted);
+    font:650 .75rem var(--display);
+  }
+
   .overview-comic-grid{
-    grid-template-columns:minmax(0,1fr);
-    gap:.85rem;
+    display:flex;
+    gap:.75rem;
+    margin-inline:-.75rem;
+    padding:0 .75rem .65rem;
+    overflow-x:auto;
+    overscroll-behavior-x:contain;
+    scroll-padding-inline:.75rem;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .overview-comic-grid::-webkit-scrollbar{
+    display:none;
   }
 
   .overview-comic-panel{
+    flex:0 0 calc(100% - 2.75rem);
     border-radius:13px;
+    scroll-snap-align:center;
+    scroll-snap-stop:always;
   }
 
   .overview-comic-index{

@@ -87,7 +87,8 @@ function checkDocument(html,filePath,errors){
 
   if(/class="[^"]*overview-comic[^"]*"/.test(html)){
     expect(/<section class="[^"]*overview-comic[^"]*" lang="ko"/.test(html),`${relative}: overview comic Korean language boundary missing`,errors);
-    expect(/<ol class="overview-comic-grid" role="list">/.test(html),`${relative}: overview comic list semantics`,errors);
+    expect(/<p class="overview-comic-swipe-hint" id="overview-comic-swipe-hint">/.test(html),`${relative}: overview comic mobile swipe hint missing`,errors);
+    expect(/<ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">/.test(html),`${relative}: overview comic scroll region semantics`,errors);
     expect(count(html,/class="overview-comic-panel"/g)===4,`${relative}: overview comic must contain four panels`,errors);
     expect(count(html,/<img\b[^>]*width="[1-9]\d*"[^>]*height="[1-9]\d*"[^>]*loading="(?:eager|lazy)"[^>]*decoding="async"/g)===4,`${relative}: overview comic responsive image attributes`,errors);
     expect(count(html,/class="overview-comic-bubble /g)===8,`${relative}: overview comic dialogue count`,errors);
@@ -113,10 +114,10 @@ function checkHome(html,manifest,errors){
   expect(!/<details class="rail"[^>]*\sopen(?:\s|>)/.test(html),"home: schedule rail must be closed in initial mobile HTML",errors);
 
   const railAt=html.indexOf('class="rail"');
-  const heroAt=html.indexOf('class="hero"');
   const filterAt=html.indexOf('class="filter-row"');
   const gridAt=html.indexOf('class="reading-grid"');
-  expect(railAt>=0&&heroAt>railAt&&filterAt>heroAt&&gridAt>filterAt,"home: rail/hero/filter/grid DOM order",errors);
+  expect(!/data-home-hero|workspace-mockup-card|id="weekly"/.test(html),"home: retired weekly hero or workspace mockup remains",errors);
+  expect(railAt>=0&&filterAt>railAt&&gridAt>filterAt,"home: rail/filter/grid DOM order",errors);
 
   for(const match of html.matchAll(/<a class="card-link rcard[^"]*"[\s\S]*?<\/a>|<button class="card-link rcard[^"]*"[\s\S]*?<\/button>/g)){
     expect(stripTags(match[0]).length>0,"home: card has no accessible text",errors);
@@ -134,6 +135,9 @@ function contractRule(block,selectorFragment,declarations,errors){
 
 function checkCss(widths,errors){
   const css=fs.readFileSync(CSS_PATH,"utf8");
+  contractRule(css,".overview-comic",[/overflow:\s*hidden/],errors);
+  contractRule(css,".overview-comic-swipe-hint",[/display:\s*none/],errors);
+  contractRule(css,".overview-comic-grid",[/display:\s*grid/,/grid-template-columns:\s*repeat\(2,minmax\(0,1fr\)\)/],errors);
   const startMarker="/* mobile-contract:start";
   const endMarker="/* mobile-contract:end */";
   const start=css.indexOf(startMarker);
@@ -146,7 +150,6 @@ function checkCss(widths,errors){
   expect(/@media\s*\(max-width:560px\)/.test(block),"CSS <=560px contract media query missing",errors);
   contractRule(block,".topbar",[/flex-direction:\s*row/,/min-height:\s*60px/],errors);
   contractRule(block,".topbar-actions .ghost-btn",[/min-height:\s*44px/],errors);
-  contractRule(block,".home-dashboard .workspace-mockup-card",[/display:\s*none/],errors);
   contractRule(block,".home-dashboard [data-home-controls]",[/grid-template-columns:\s*minmax\(0,1fr\)/],errors);
   contractRule(block,".filter-chip-row",[/display:\s*flex/,/overflow-x:\s*auto/],errors);
   contractRule(block,".home-dashboard .filter-chip",[/min-height:\s*44px/],errors);
@@ -157,7 +160,9 @@ function checkCss(widths,errors){
   contractRule(block,".reading-detail-shell .tab-row",[/display:\s*none/],errors);
   contractRule(block,".reading-detail-shell .mobile-tab-row",[/display:\s*flex/,/overflow-x:\s*auto/],errors);
   contractRule(block,".reading-detail-shell .mobile-tab-row .tab",[/min-height:\s*44px/,/white-space:\s*nowrap/],errors);
-  contractRule(block,".overview-comic-grid",[/grid-template-columns:\s*minmax\(0,1fr\)/],errors);
+  contractRule(block,".overview-comic-swipe-hint",[/display:\s*flex/],errors);
+  contractRule(block,".overview-comic-grid",[/display:\s*flex/,/overflow-x:\s*auto/,/scroll-snap-type:\s*x mandatory/],errors);
+  contractRule(block,".overview-comic-panel",[/flex:\s*0 0 calc\(100% - 2\.75rem\)/,/scroll-snap-align:\s*center/,/scroll-snap-stop:\s*always/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-detail-side',[/order:\s*-1/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-toc-panel .toc-list',[/max-height:\s*10rem/,/overflow-y:\s*auto/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .article-body',[/font-size:\s*calc\(1rem\s*\*\s*var\(--reader-font-scale\)\)/],errors);
@@ -168,6 +173,11 @@ function checkCss(widths,errors){
     const thumbnail=Math.min(112,Math.max(104,width*.28));
     const textWidth=outerWidth-16-10-thumbnail;
     expect(textWidth>=185,`${width}px: card text column is only ${textWidth.toFixed(1)}px`,errors);
+    const comicContentWidth=outerWidth-24;
+    const comicPanelWidth=comicContentWidth-44;
+    const nextPanelPeek=comicContentWidth-comicPanelWidth-12;
+    expect(comicPanelWidth>=260,`${width}px: swipe comic panel is only ${comicPanelWidth.toFixed(1)}px`,errors);
+    expect(nextPanelPeek>=24&&nextPanelPeek<=40,`${width}px: next comic panel peek is ${nextPanelPeek.toFixed(1)}px`,errors);
   }
 }
 
@@ -175,6 +185,7 @@ function checkClientLogic(errors){
   const app=fs.readFileSync(APP_PATH,"utf8");
   expect(/function\s+initMobileTabs\s*\(/.test(app)&&/\binitMobileTabs\(\);/.test(app),"client: mobile active-tab centering is not initialized",errors);
   expect(/querySelector\("\.rcard-mobile-eyebrow"\)/.test(app)&&/mobileState\.className=`rcard-mobile-state \$\{state\}`/.test(app),"client: dynamic current-reading state does not update mobile cards",errors);
+  expect(!/renderDynamicHomeHero|renderHomeWorkspaceMockup|data-home-hero/.test(app),"client: retired home hero logic remains",errors);
   const builtApp=fs.readFileSync(path.join(SITE,"assets","app.js"),"utf8");
   expect(builtApp.replace(/\r\n/g,"\n")===app.replace(/\r\n/g,"\n"),"docs/assets/app.js is stale; rebuild the site",errors);
 }

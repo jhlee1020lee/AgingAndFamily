@@ -32,15 +32,6 @@ const UI_TEXT={
   prepNoDifficult:"표시한 답변 카드가 여기에 모입니다."
 };
 
-function escapeHtmlText(value){
-  return String(value??"")
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/\"/g,"&quot;")
-    .replace(/'/g,"&#39;");
-}
-
 function setTheme(theme){
   document.documentElement.dataset.theme=theme;
   try{localStorage.setItem(THEME_KEY,theme);}catch(error){}
@@ -133,42 +124,6 @@ function homeReadingState(reading,currentSlug){
   return reading.slug===currentSlug?"current":"ready";
 }
 
-function renderHomeHeroAction(label,href,className,message,download=false){
-  if(href){
-    return `<a class="${escapeHtmlText(className)}" href="${escapeHtmlText(href)}"${download?" download":""}>${escapeHtmlText(label)}</a>`;
-  }
-  return `<button class="${escapeHtmlText(`${className} is-disabled`)}" type="button" data-gated-link data-gated-message="${escapeHtmlText(message||"준비중입니다.")}">${escapeHtmlText(label)}</button>`;
-}
-
-function renderHomeWorkspaceMockup(reading){
-  const accents=["purple","orange","teal","pink"];
-  const tasks=(Array.isArray(reading?.progressItems)?reading.progressItems:[]).map((item,index)=>{
-    const value=Number(item.value)||0;
-    const state=value>=1?"ready":value>0?"partial":"pending";
-    const accent=accents[index%accents.length];
-    return `<article class="workspace-task is-${escapeHtmlText(state)} accent-${escapeHtmlText(accent)}"><span>${escapeHtmlText(item.label)}</span><strong>${escapeHtmlText(item.detail)}</strong></article>`;
-  }).join("");
-  if(!tasks)return"";
-  return `<div class="workspace-mockup-card" aria-hidden="true">
-    <div class="workspace-mockup-top"><span></span><span></span><span></span><strong>Aging &amp; Family</strong></div>
-    <div class="workspace-mockup-body">
-      <div class="workspace-page-title"><span class="workspace-icon">N</span><div><p>이번 주 스터디 보드</p><strong>${escapeHtmlText(reading.title)}</strong></div></div>
-      <div class="workspace-board">${tasks}</div>
-    </div>
-  </div>`;
-}
-
-function renderDynamicHomeHero(reading){
-  if(!reading){
-    return `<div class="hero-body"><p class="hero-kicker">이번 주</p><h2>표시할 읽기가 아직 없습니다.</h2><p class="hook">수업 날짜가 지난 읽기가 생기면 이 영역에 자동으로 반영됩니다.</p></div>`;
-  }
-  const tags=(Array.isArray(reading.tags)?reading.tags:[])
-    .slice(0,2)
-    .map((tag)=>`<span class="chip brand"># ${escapeHtmlText(tag)}</span>`)
-    .join("");
-  return `<div class="hero-body"><span class="hero-kicker"><span class="pulse"></span>이번 주 · ${escapeHtmlText(reading.displayDateLabel||reading.classDate||"날짜 미정")}</span><h2>${escapeHtmlText(reading.title)}</h2><p class="hook">${escapeHtmlText(reading.hook||reading.subtitle||"")}</p><div class="hero-meta"><span class="chip strong">${escapeHtmlText(reading.typeLabel||"읽기")}</span><span class="chip">${escapeHtmlText(reading.languageLabel||"")}</span><span class="chip">${escapeHtmlText(reading.authorsDisplay||"")}</span>${tags}</div><div class="hero-cta-row">${renderHomeHeroAction("읽기",reading.overviewHref,"btn-primary",reading.gateMessage)} ${renderHomeHeroAction("교수님 답변 대비",reading.prepHref,"btn-ghost",reading.prepGateMessage)} ${renderHomeHeroAction("PDF 다운로드",reading.pdfHref,"btn-ghost",reading.pdfGateMessage,true)}</div></div>${renderHomeWorkspaceMockup(reading)}`;
-}
-
 function syncHomeCardState(card,state){
   const link=card.querySelector(".card-link.rcard");
   const status=card.querySelector(".rcard-status");
@@ -209,15 +164,12 @@ function syncHomeRailState(item,state,isScheduleCurrent=false){
   }
 }
 
-function initDynamicHomeCurrentReading(){
+function initHomeCurrentReading(){
   const payload=parseHomeReadingData();
   if(!payload)return;
   const today=todayIsoDateForZone(payload.dateTimeZone||"Asia/Seoul");
   const current=selectHomeCurrentReading(payload.readings,today,String(payload.publishCutoffDate||"").trim());
   const currentSlug=current?.slug||"";
-  const hero=document.querySelector("[data-home-hero]");
-  if(hero)hero.innerHTML=renderDynamicHomeHero(current);
-
   document.querySelectorAll("[data-reading-card]").forEach((card)=>{
     const reading=payload.readings.find((item)=>item.slug===card.dataset.readingSlug);
     syncHomeCardState(card,homeReadingState(reading,currentSlug));
@@ -827,7 +779,7 @@ function initReadingProgressAndToc(){
 
 document.addEventListener("DOMContentLoaded",()=>{
   initTheme();
-  initDynamicHomeCurrentReading();
+  initHomeCurrentReading();
   initGatedLinks();
   initHomeRail();
   initHomeFilters();

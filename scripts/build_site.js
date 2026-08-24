@@ -835,36 +835,21 @@ function renderPdfDownloadAction(outputPath,reading,label,className="btn-ghost")
 function progressSummaryItems(reading){return[{label:"읽기",value:reading.progress.read,detail:reading.progress.read>=1?"준비됨":"대기"},{label:"개념",value:reading.progress.concepts,detail:reading.progress.concepts>=1?"준비됨":"대기"},{label:"퀴즈",value:reading.progress.quiz,detail:`${reading.progress.quiz_available_count}/3 세트`},{label:"답변 대비",value:reading.progress.prep,detail:reading.progress.prep>=1?"준비됨":"대기"}];}
 function renderProgressGrid(reading){return `<div class="progress-grid">${progressSummaryItems(reading).map((item)=>`<article class="prog-item"><p class="k">${escapeHtml(item.label)}</p><div class="prog-bar${item.value<1&&item.value>0?" pale":""}"><span style="width:${escapeHtml(String(Math.max(0,Math.min(100,Math.round(item.value*100)))))}%"></span></div><p class="v">${escapeHtml(item.detail)}</p></article>`).join("")}</div>`;}
 function jsonScriptContent(value){return JSON.stringify(value).replace(/</g,"\\u003c").replace(/>/g,"\\u003e").replace(/&/g,"\\u0026").replace(/\u2028/g,"\\u2028").replace(/\u2029/g,"\\u2029");}
-function homeReadingClientData(outputPath,reading){
-  const overviewTarget=readingOverviewTarget(reading);
-  const prepPageTarget=prepTarget(reading);
+function homeReadingClientData(reading){
   return{
     slug:reading.slug,
-    title:reading.title,
-    subtitle:reading.subtitle,
     displayDateLabel:reading.display_date_label||displayDateLabel(reading),
     classDate:reading.class_date||"",
     sequence:reading.sequence,
     baseState:reading.state==="locked"?"locked":"ready",
-    typeLabel:reading.type_label,
-    languageLabel:reading.language_label,
-    authorsDisplay:reading.authors_display,
-    tags:reading.tags||[],
-    hook:reading.overview_hook||reading.subtitle||actionIntroText(reading),
-    overviewHref:overviewTarget?readingPageHref(outputPath,reading,overviewTarget):"",
-    prepHref:prepPageTarget?readingPageHref(outputPath,reading,prepPageTarget):"",
-    pdfHref:pdfHref(outputPath,reading),
-    gateMessage:readingGateMessage(reading),
-    prepGateMessage:"읽기 답변 준비는 아직 공개되지 않았습니다.",
-    pdfGateMessage:pdfStatusText(reading),
-    progressItems:progressSummaryItems(reading).map((item)=>({label:item.label,value:item.value,detail:item.detail}))
+    typeLabel:reading.type_label
   };
 }
-function renderHomeReadingDataScript(siteMeta,outputPath,readings){
+function renderHomeReadingDataScript(siteMeta,readings){
   const payload={
     dateTimeZone:"Asia/Seoul",
     publishCutoffDate:publishCutoffDate(siteMeta),
-    readings:readings.map((reading)=>homeReadingClientData(outputPath,reading))
+    readings:readings.map((reading)=>homeReadingClientData(reading))
   };
   return `<script type="application/json" id="home-reading-data">${jsonScriptContent(payload)}</script>`;
 }
@@ -901,7 +886,6 @@ function siteHeader(siteMeta,outputPath){const homeHref=relHref(outputPath,path.
     </div>
   </div>
   <nav class="topbar-nav" aria-label="주요 메뉴">
-    <a href="${escapeHtml(`${homeHref}#weekly`)}">이번 주</a>
     <a href="${escapeHtml(`${homeHref}#readings`)}">전체 읽기</a>
     <a href="${escapeHtml(`${homeHref}#schedule`)}">읽기 일정</a>
   </nav>
@@ -988,27 +972,6 @@ function renderHomeRailItem(outputPath,reading){
   const meta=`<div class="rail-meta" id="${escapeHtml(metaId)}"><span>${escapeHtml(weekLabel)}</span><span aria-hidden="true">·</span><time datetime="${escapeHtml(reading.class_date||"")}">${escapeHtml(dateLabel)}</time><span aria-hidden="true">·</span><span>${escapeHtml(reading.type_label)}</span></div>`;
   return `<li class="rail-item${reading.current_candidate?" is-current":""}${reading.state==="ready"?" is-done":""}" data-home-rail-item data-reading-slug="${escapeHtml(reading.slug)}" data-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}"><div class="rail-body">${meta}${content}</div></li>`;
 }
-function renderHeroWorkspaceMockup(reading){
-  if(!reading)return "";
-  const tasks=progressSummaryItems(reading).map((item,index)=>{
-    const state=item.value>=1?"ready":item.value>0?"partial":"pending";
-    const accent=["purple","orange","teal","pink"][index%4];
-    return `<article class="workspace-task is-${escapeHtml(state)} accent-${escapeHtml(accent)}"><span>${escapeHtml(item.label)}</span><strong>${escapeHtml(item.detail)}</strong></article>`;
-  }).join("");
-  return `<div class="workspace-mockup-card" aria-hidden="true">
-    <div class="workspace-mockup-top"><span></span><span></span><span></span><strong>Aging &amp; Family</strong></div>
-    <div class="workspace-mockup-body">
-      <div class="workspace-page-title"><span class="workspace-icon">N</span><div><p>이번 주 스터디 보드</p><strong>${escapeHtml(reading.title)}</strong></div></div>
-      <div class="workspace-board">${tasks}</div>
-    </div>
-  </div>`;
-}
-function renderHomeHero(outputPath,reading){
-  if(!reading)return `<section class="hero" id="weekly" data-home-hero><div class="hero-body"><p class="hero-kicker">이번 주</p><h2>표시할 읽기가 아직 없습니다.</h2><p class="hook">수업 날짜가 지난 읽기가 생기면 이 영역에 자동으로 반영됩니다.</p></div></section>`;
-  const overviewTarget=readingOverviewTarget(reading);
-  const prepPageTarget=prepTarget(reading);
-  return `<section class="hero" id="weekly" data-home-hero><div class="hero-body"><span class="hero-kicker"><span class="pulse"></span>이번 주 · ${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><h2>${escapeHtml(reading.title)}</h2><p class="hook">${escapeHtml(reading.overview_hook||reading.subtitle||actionIntroText(reading))}</p><div class="hero-meta"><span class="chip strong">${escapeHtml(reading.type_label)}</span><span class="chip">${escapeHtml(reading.language_label)}</span><span class="chip">${escapeHtml(reading.authors_display)}</span>${(reading.tags||[]).slice(0,2).map((tag)=>`<span class="chip brand"># ${escapeHtml(tag)}</span>`).join("")}</div><div class="hero-cta-row">${renderActionLinkOrGate(outputPath,reading,"읽기",overviewTarget,"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepPageTarget,"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")} ${renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","btn-ghost")}</div></div>${renderHeroWorkspaceMockup(reading)}</section>`;
-}
 function renderHomeCard(outputPath,reading,thumbnailHref=""){
   const target=readingOverviewTarget(reading);
   const clickable=Boolean(target);
@@ -1063,7 +1026,8 @@ function renderOverviewComic(outputPath,reading){
       <span class="count">4컷</span>
     </div>
     <p class="overview-comic-intro">${escapeHtml(comic.intro)}</p>
-    <ol class="overview-comic-grid" role="list">${panels}</ol>
+    <p class="overview-comic-swipe-hint" id="overview-comic-swipe-hint">옆으로 넘겨 4컷 보기 <span aria-hidden="true">→</span></p>
+    <ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">${panels}</ol>
   </section>`;
 }
 function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다."),renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","sub-link")];return `<div class="sub-link-list">${links.join("")}</div>`;}
@@ -1199,7 +1163,6 @@ ${siteHeader(siteMeta,outputPath)}
     </div>
   </details>
   <div class="home-main">
-    ${renderHomeHero(outputPath,currentReading)}
     <section id="readings">
       <div class="section-head">
         <h3>주차별 읽기</h3>
@@ -1219,7 +1182,7 @@ ${siteHeader(siteMeta,outputPath)}
     </section>
   </div>
 </main>
-${renderHomeReadingDataScript(siteMeta,outputPath,sortedReadings)}
+${renderHomeReadingDataScript(siteMeta,sortedReadings)}
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,siteMeta.title,body,siteMeta.tagline||siteMeta.title,'data-page-kind="home"',"ko"));}
 function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const overviewSection=renderOverviewComic(outputPath,reading);if(!overviewSection)throw new Error(`Missing or invalid overview_comic.json for ${reading.slug}`);const body=`
 ${siteHeader(siteMeta,outputPath)}
