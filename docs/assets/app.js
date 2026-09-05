@@ -309,7 +309,6 @@ function isReaderHeading(heading){
 function initTranslationSentenceReveals(){
   const buttons=Array.from(document.querySelectorAll("[data-source-sentence]"));
   if(!buttons.length)return;
-  const finePointer=window.matchMedia("(hover: hover) and (pointer: fine)");
   let activeButton=null;
 
   const close=(button=activeButton)=>{
@@ -334,30 +333,22 @@ function initTranslationSentenceReveals(){
   };
 
   buttons.forEach((button)=>{
-    const pair=button.closest("[data-sentence-pair]");
-    button.addEventListener("pointerenter",()=>{if(finePointer.matches)open(button);});
-    pair?.addEventListener("pointerleave",()=>{
-      if(finePointer.matches&&!pair.contains(document.activeElement))close(button);
-    });
-    button.addEventListener("focus",()=>{if(finePointer.matches)open(button);});
-    button.addEventListener("blur",()=>{
-      window.setTimeout(()=>{
-        if(!pair?.contains(document.activeElement))close(button);
-      },0);
-    });
-    button.addEventListener("click",(event)=>{
-      if(finePointer.matches&&event.detail!==0)return;
+    button.addEventListener("click",()=>{
       if(activeButton===button)close(button);
       else open(button);
     });
-    button.addEventListener("keydown",(event)=>{
-      if(event.key!=="Escape")return;
-      event.preventDefault();
-      close(button);
-      button.focus();
-    });
   });
 
+  document.addEventListener("keydown",(event)=>{
+    if(event.key!=="Escape"||!activeButton)return;
+    const button=activeButton;
+    const returnFocus=button.closest("[data-sentence-pair]")?.contains(document.activeElement);
+    close(button);
+    if(returnFocus){
+      event.preventDefault();
+      button.focus();
+    }
+  });
   document.addEventListener("click",(event)=>{
     if(activeButton&&!event.target.closest("[data-sentence-pair]"))close(activeButton);
   });

@@ -482,7 +482,7 @@ function renderTranslationSentencePairs(reveal){
   return reveal.sentencePairs.map((pair)=>{
     const pairId=toText(pair.id);
     const popoverId=`${pairId}-source`;
-    return `<span class="translation-sentence-pair" data-sentence-pair><button class="translation-sentence" type="button" aria-expanded="false" aria-controls="${escapeHtml(popoverId)}" aria-describedby="${escapeHtml(popoverId)}" data-source-sentence data-pair-id="${escapeHtml(pairId)}" data-translation-text="${escapeHtml(pair.ko_text)}" data-source-text="${escapeHtml(pair.source_text)}">${renderInline(pair.ko_text)}</button><span class="sentence-source-popover" id="${escapeHtml(popoverId)}" role="tooltip" lang="en" data-source-popover hidden>${renderInline(pair.source_text)}</span></span>`;
+    return `<span class="translation-sentence-pair" data-sentence-pair><button class="translation-sentence" type="button" aria-expanded="false" aria-controls="${escapeHtml(popoverId)}" data-source-sentence data-pair-id="${escapeHtml(pairId)}" data-translation-text="${escapeHtml(pair.ko_text)}" data-source-text="${escapeHtml(pair.source_text)}">${renderInline(pair.ko_text)}</button><span class="sentence-source-popover" id="${escapeHtml(popoverId)}" role="region" aria-label="영어 원문" lang="en" data-source-popover hidden>${renderInline(pair.source_text)}</span></span>`;
   }).join(" ");
 }
 function renderParsedArticleDocument(document,options={}){
@@ -498,7 +498,7 @@ function renderParsedArticleDocument(document,options={}){
     const sentenceHtml=Array.isArray(reveal.sentencePairs)&&reveal.sentencePairs.length?`<p class="translation-sentence-paragraph">${renderTranslationSentencePairs(reveal)}</p>`:blockHtml;
     return `<section class="translation-segment original-translation-pair source-segment-anchor" id="${escapeHtml(reveal.id)}" data-segment-id="${escapeHtml(reveal.id)}" data-reveal-unit="${escapeHtml(reveal.unit||"paragraph")}">${sentenceHtml}<details class="source-reveal original-toggle"><summary class="source-reveal-summary">${escapeHtml(revealSummaryLabel(reveal))}</summary><div class="source-reveal-body" lang="en">${renderRevealSourceHtml(reveal.sourceText)}</div></details></section>`;
   }).join("\n");
-  const sentenceHint=revealByFlatIndex.size?`<aside class="translation-sentence-hint" aria-label="문장별 원문 사용법"><strong>문장별 원문</strong><span>한국어 문장에 마우스를 올리거나 키보드로 선택하세요. 모바일에서는 문장을 누르면 영어 원문이 열립니다.</span></aside>`:"";
+  const sentenceHint=revealByFlatIndex.size?`<aside class="translation-sentence-hint" aria-label="문장별 원문 사용법"><strong>문장별 원문</strong><span>한국어 문장을 클릭하거나 누르면 바로 아래에 영어 원문이 펼쳐집니다. 다시 누르거나 Esc 키를 누르면 닫힙니다. 키보드에서는 Tab으로 문장을 선택한 뒤 Enter 또는 Space를 누르세요.</span></aside>`:"";
   return[sentenceHint,frontmatterHtml,contentHtml].filter(Boolean).join("\n");
 }
 function buildTranslationOriginalRevealHtml(reading,page,outputPath,text){
