@@ -71,10 +71,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:e957a121149edc365b2ca4735d3683090b6f5844a3948bacfdd19539d842e44c",
@@ -84,22 +84,23 @@
       "concepts": "v2:0977fec4d2f7e399955ec895c424354bfa9db13ef5f459fc56761a5ea6183acc",
       "pitfalls": "v2:64635163e99568a498b0e7a0dafabb98fc761121fa5bb4c914e6f131deba04b7",
       "review-sheet": "v2:286acb736a058ef4bb3da7918bad1a98f672adc643338d8797b5f491a27c2340",
-      "professor-prep": "v2:f21421f142ce67282507b9f7055c02b5201fa3aec503fad4ffe95e71b31813d6",
       "quiz-ox": "v2:0526ec0c9b5a8957cfeba67fc41f938bf239b63b113ed842f5f956a62c952d0b",
       "quiz-short": "v2:00fbcd4c8b14e6faae93358172d5f5fc63f46746a976f1c73bb2903e5edc5921",
-      "quiz-mcq": "v2:0d0e601c5b8fa3aad57b7a7443febcf11afbd60c3ad90ce4f4d66429c69e378a"
+      "quiz-mcq": "v2:0d0e601c5b8fa3aad57b7a7443febcf11afbd60c3ad90ce4f4d66429c69e378a",
+      "professor-prep": "v2:046aa6ac2b17c33bdd577aec5516738ec8bb4dcd1978d715763c1a23d72a71a4"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T01:08:05.717Z",
+    "reviewed_at": "2026-09-05T03:52:02.290Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Independent Stage 3 content and quiz-pattern audit C0/M0/m0; strict alignment, isolated full-preview links/reveals, and privacy/chatbot exclusion verified.",
-      "English learning materials reviewed against stored source segments and Tables 3/4; source and translation preserved; composite dependencies reviewed. Numeric recall rebalanced toward concepts and methods; gender, entry/exit, reference groups and odds distinguished. Male-transfer coefficient significance discrepancy explicitly attributed to author report. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments and Tables 3/4; source and translation preserved; composite dependencies reviewed. Numeric recall rebalanced toward concepts and methods; gender, entry/exit, reference groups and odds distinguished. Male-transfer coefficient significance discrepancy explicitly attributed to author report. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:35.017Z",
+    "updated_at": "2026-09-05T03:52:11.018Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -229,7 +230,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -391,12 +393,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:f21421f142ce67282507b9f7055c02b5201fa3aec503fad4ffe95e71b31813d6",
+        "source_hash": "v2:046aa6ac2b17c33bdd577aec5516738ec8bb4dcd1978d715763c1a23d72a71a4",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

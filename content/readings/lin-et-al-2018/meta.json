@@ -68,10 +68,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:c6e51a465177eee52ec455ccb2375dd3669b1f5329a54fcd93691698b396093d",
@@ -81,13 +81,13 @@
       "concepts": "v2:245773354deccda65815bd5a2b60c9a81617c44c0c5edcfcf1be31271b77635e",
       "pitfalls": "v2:65134e974004433934f9741c2b03285ad17e84f51fe2504dc830cc47e5d6f225",
       "review-sheet": "v2:fa8291a61f1bcf04321ac124e969590f3afcbb68f2605ea9392c23451dde4adf",
-      "professor-prep": "v2:583d8164d134bf173c58b340bff2fdcd16e0aeaf87651a46fec33f85c34f0273",
       "quiz-ox": "v2:df356f4b22c335cce9ca0f25dea471b36fec7309a6cdadfcb1dbaad52425311b",
       "quiz-short": "v2:3feac554bd73cb2038633eb0c4271aa0c687d57c9a124d036fc1f8adfddec362",
-      "quiz-mcq": "v2:75ff7b3f4f1e54fcd66329b625c17274431f74448f8403ed2f10ec7f9d0b5613"
+      "quiz-mcq": "v2:75ff7b3f4f1e54fcd66329b625c17274431f74448f8403ed2f10ec7f9d0b5613",
+      "professor-prep": "v2:6c99ef163a990e6857b778aec6de62ebecc03f8b38d0fa275041069c43bbd9dc"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T00:36:07.389Z",
+    "reviewed_at": "2026-09-05T03:52:01.816Z",
     "notes": [
       "Stage 1 source reconstruction independently re-audited against the PDF; 7,954 words, 36 references, 94 blocks, exact captions and figure/table crops verified.",
       "Stage 2 independently audited against all 22 approved source segments and original-resolution Figure 1 and Tables 1-2; two minor scope/wording issues corrected, deterministic regeneration and isolated rendered reveal/link checks passed, chatbot excluded.",
@@ -96,12 +96,13 @@
       "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
-      "English learning materials reviewed against stored source segments and Table 2; source and translation preserved; composite dependencies reviewed. Short answers rebalanced toward concepts, design and interpretation. Reported sample totals distinguished from ambiguous exclusion arithmetic; asset category-count ambiguity not tested. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments and Table 2; source and translation preserved; composite dependencies reviewed. Short answers rebalanced toward concepts, design and interpretation. Reported sample totals distinguished from ambiguous exclusion arithmetic; asset category-count ambiguity not tested. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:34.467Z",
+    "updated_at": "2026-09-05T03:52:10.629Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -231,7 +232,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -393,12 +395,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:583d8164d134bf173c58b340bff2fdcd16e0aeaf87651a46fec33f85c34f0273",
+        "source_hash": "v2:6c99ef163a990e6857b778aec6de62ebecc03f8b38d0fa275041069c43bbd9dc",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

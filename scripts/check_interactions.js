@@ -92,6 +92,23 @@ function checkProfessorPrep(reading, errors) {
   if (source.language === "en") {
     expect(html.includes('data-prep-language="en"'), `${prefix}: English workspace marker missing`, errors);
   }
+  const cards = [...source.cards, ...source.reading_response.cards];
+  const bilingual = source.language === "en" && cards.every((card) => card.title_ko && card.answer_30s_ko);
+  if (bilingual) {
+    for (const control of ["question", "answer"]) {
+      const selects = [...html.matchAll(new RegExp(`<select\\b[^>]*\\bdata-prep-${control}-select[^>]*>([\\s\\S]*?)<\\/select>`, "g"))];
+      expect(selects.length === 1, `${prefix}: one ${control} language selector is required`, errors);
+      expect(selects[0] && count(selects[0][1], /<option\b[^>]*value="(?:en|ko)"/g) === 2, `${prefix}: ${control} selector must offer English and Korean`, errors);
+      for (const language of ["en", "ko"]) {
+        const spans = [...html.matchAll(new RegExp(`<span\\b[^>]*\\bdata-prep-${control}-language="${language}"[^>]*>`, "g"))];
+        expect(spans.length === expectedCards, `${prefix}: ${language} ${control} variant count mismatch`, errors);
+        expect(spans.every(([tag]) => tag.includes(`lang="${language}"`)), `${prefix}: ${control} variants need matching lang attributes`, errors);
+        expect(spans.every(([tag]) => /\bhidden(?:\s|>|=)/.test(tag) === (language === "ko")), `${prefix}: ${control} variants must default to English visible and Korean hidden`, errors);
+      }
+    }
+  } else {
+    expect(!/\bdata-prep-(?:question|answer)-select\b/.test(html), `${prefix}: legacy prep must retain its single-language fallback`, errors);
+  }
 }
 
 function checkReadingPage(reading, pageKey, errors) {

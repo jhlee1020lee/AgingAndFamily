@@ -9,105 +9,135 @@
       "title": "State the article's central argument in one sentence.",
       "answer_30s": "Cognitive aging may depend partly on choices about allocating effort, alongside genetically driven senescence and accumulated abilities. Choices may act directly through attentional engagement in a current task and indirectly as experience shapes the neural foundations of component abilities. Stine-Morrow advances this as an argument to investigate, rather than an established causal law.",
       "evidence_segment_id": "ABS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 논문의 핵심 주장을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "인지 노화는 유전적으로 진행되는 노화와 축적된 능력뿐 아니라 노력을 어떻게 배분할지에 관한 선택에도 부분적으로 달려 있을 수 있습니다. 선택은 현재 과제에 대한 주의 관여를 통해 직접 작용할 수 있고, 경험이 개별 능력의 신경적 토대를 형성하면서 간접적으로 작용할 수도 있습니다. Stine-Morrow는 이를 확립된 인과 법칙이 아니라 연구할 필요가 있는 주장으로 제시합니다."
     },
     {
       "card_id": "stine-prep-02",
       "title": "Distinguish mental mechanics from cultural and pragmatic competence.",
       "answer_30s": "Mental mechanics are fluid abilities involved in rapidly encoding and transforming new information, which normally tend to decline with age. Crystallized abilities depend on knowledge and the acquisition of culture, and may remain stable or increase well into later life. Cognitive aging therefore involves more than uniform decline. The article adds choices about effort allocation to this account of competing developmental forces.",
       "evidence_segment_id": "OPENING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "정신적 기계성과 문화적·실용적 역량을 구분해 보세요.",
+      "answer_30s_ko": "정신적 기계성은 새로운 정보를 빠르게 부호화하고 변환하는 데 관여하는 유동적 능력으로, 일반적으로 나이가 들며 감소하는 경향이 있습니다. 결정적 능력은 지식과 문화의 습득에 의존하며 노년기 상당 기간까지 안정적으로 유지되거나 증가할 수 있습니다. 따라서 인지 노화에는 일률적인 저하 이상의 과정이 포함됩니다. 이 논문은 서로 경쟁하는 발달적 힘에 관한 이러한 설명에 노력 배분의 선택을 더합니다."
     },
     {
       "card_id": "stine-prep-03",
       "title": "How does attentional engagement differ from activity engagement?",
       "answer_30s": "Attentional engagement means allocating resources to the cognitive processes needed for a selected task, supporting current performance. Activity engagement means habitually choosing intellectually stimulating environments that may shape or expand capacity over time. The distinction is between how we process a task and which environments and activities we choose to enter.",
       "evidence_segment_id": "ATTENTION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "주의 관여와 활동 관여는 어떻게 다른가요?",
+      "answer_30s_ko": "주의 관여는 선택한 과제에 필요한 인지 과정에 자원을 배분하여 현재의 수행을 뒷받침하는 것입니다. 활동 관여는 지적으로 자극적인 환경을 습관적으로 선택하는 것이며, 이런 환경은 시간에 걸쳐 역량을 형성하거나 확장할 수 있습니다. 즉 과제를 어떻게 처리하는지와 어떤 환경 및 활동에 들어가기로 선택하는지의 구분입니다."
     },
     {
       "card_id": "stine-prep-04",
       "title": "Explain the negative feedback loops in the SRLP model.",
       "answer_30s": "At the surface-form, textbase, and situation-model levels, readers compare their perceived understanding with a reference value. If understanding is not good enough, the relevant processor requests more resources until perceived comprehension meets the criterion. Negative feedback means regulation that reduces a discrepancy, rather than a harmful effect. The reference values are influenced by readers' cognitive and socioemotional goals.",
       "evidence_segment_id": "ATTENTION-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "SRLP 모형의 부적 피드백 순환을 설명해 보세요.",
+      "answer_30s_ko": "독자는 표면 형태, 텍스트 기반, 상황모형의 각 수준에서 자신이 지각한 이해 정도를 기준값과 비교합니다. 이해가 충분하지 않으면 해당 처리기는 지각된 이해가 기준에 도달할 때까지 더 많은 자원을 요청합니다. 부적 피드백은 해로운 효과가 아니라 불일치를 줄이는 조절을 뜻합니다. 기준값은 독자의 인지적 목표와 사회정서적 목표의 영향을 받습니다."
     },
     {
       "card_id": "stine-prep-05",
       "title": "What is allocation policy, and how is it measured?",
       "answer_30s": "Allocation policy describes how readers adjust reading time as text-processing demands vary. Regression coefficients capture relative changes in reading time, such as extra time for words introducing new concepts or for integration at clause and sentence endings. The measure characterizes responsiveness to particular text demands, rather than simply whether someone reads slowly overall.",
       "evidence_segment_id": "ATTENTION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "배분 방침이란 무엇이며 어떻게 측정하나요?",
+      "answer_30s_ko": "배분 방침은 독자가 텍스트 처리 요구의 변화에 따라 읽기 시간을 어떻게 조절하는지를 설명합니다. 회귀계수는 새로운 개념을 제시하는 단어나 절·문장 끝에서의 통합에 시간을 더 쓰는 것처럼, 읽기 시간의 상대적인 변화를 포착합니다. 이 측정치는 전반적으로 느리게 읽는지 자체보다 특정한 텍스트 요구에 얼마나 반응하는지를 나타냅니다."
     },
     {
       "card_id": "stine-prep-06",
       "title": "What age difference appeared in the study of accuracy goals?",
       "answer_30s": "Participants read short texts either for accurate recall or to get the main idea efficiently. Younger readers were especially responsive to the accuracy goal, increasing reading time as informational density rose. Older readers responded less to the stricter criterion for information acquisition. Working-memory capacity and memory self-efficacy each accounted for part of the age difference in responsiveness.",
       "evidence_segment_id": "ATTENTION-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "정확성 목표 연구에서는 어떤 연령 차이가 나타났나요?",
+      "answer_30s_ko": "참여자들은 정확하게 회상하기 위해서 또는 핵심 내용을 효율적으로 파악하기 위해 짧은 글을 읽었습니다. 젊은 독자는 정확성 목표에 특히 민감하게 반응하여 정보 밀도가 높아질수록 읽기 시간을 늘렸습니다. 나이 든 독자는 정보 습득에 대한 더 엄격한 기준에 덜 반응했습니다. 작업기억 용량과 기억 자기효능감은 이러한 반응성의 연령 차이를 각각 부분적으로 설명했습니다."
     },
     {
       "card_id": "stine-prep-07",
       "title": "How do the memory self-efficacy findings differ from an explanation based only on limited ability?",
       "answer_30s": "Memory self-efficacy concerns beliefs that one's effort can affect memory performance. Along with working-memory capacity, it explained part of the age difference in responding to an accuracy goal. Older readers' reluctance therefore cannot be interpreted only as inability. The author also describes unpublished evidence that specific instructions on conceptual integration can induce more thorough semantic analysis, distinguishing available capacity from willingness to recruit resources.",
       "evidence_segment_id": "ATTENTION-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "기억 자기효능감 결과는 능력의 한계만으로 설명하는 것과 어떻게 다른가요?",
+      "answer_30s_ko": "기억 자기효능감은 자신의 노력이 기억 수행에 영향을 줄 수 있다는 믿음입니다. 이는 작업기억 용량과 함께 정확성 목표에 대한 반응에서 나타나는 연령 차이를 부분적으로 설명했습니다. 따라서 나이 든 독자가 주저하는 것을 능력 부족만으로 해석할 수는 없습니다. 저자는 개념 통합에 대한 구체적인 지시가 더 철저한 의미 분석을 유도할 수 있다는 미출판 근거도 소개합니다. 이를 통해 이용 가능한 역량과 자원을 동원하려는 의지를 구분합니다."
     },
     {
       "card_id": "stine-prep-08",
       "title": "Why does the association between an active lifestyle and better cognition fall short of causal evidence?",
       "answer_30s": "People in intellectually challenging environments may live longer and score better cognitively, but those with greater initial vitality may be more likely to select and remain in such environments. Occupational engagement, leisure activity, and vulnerability to dementia might also reflect a common genetically driven aging process. These observational associations do not establish that activity itself prevented cognitive decline.",
       "evidence_segment_id": "ACTIVITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "활동적인 생활양식과 더 나은 인지의 관계만으로는 왜 인과적 근거가 충분하지 않나요?",
+      "answer_30s_ko": "지적으로 도전적인 환경에 있는 사람이 더 오래 살고 인지검사 점수가 높을 수 있지만, 원래 활력이 높은 사람이 그런 환경을 선택하고 계속 머물 가능성도 더 클 수 있습니다. 직업적 관여, 여가활동, 치매 취약성이 공통된 유전적 노화 과정을 반영할 가능성도 있습니다. 이러한 관찰적 관계만으로 활동 자체가 인지 저하를 예방했다고 결론 내릴 수는 없습니다."
     },
     {
       "card_id": "stine-prep-09",
       "title": "Distinguish selection effects from a common-cause explanation.",
       "answer_30s": "A selection explanation emphasizes that people with greater initial vitality are more likely to enter intellectual activities and sustain participation. A common-cause explanation treats activity, cognitive performance, and dementia vulnerability as possible biobehavioral indicators of the same underlying aging process. Both limit causal inference, but one emphasizes selection into participation and the other a shared underlying cause.",
       "evidence_segment_id": "ACTIVITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "선택 효과에 따른 설명과 공통 원인에 따른 설명을 구분해 보세요.",
+      "answer_30s_ko": "선택에 따른 설명은 초기 활력이 더 높은 사람이 지적 활동에 참여하고 이를 지속할 가능성도 더 높다는 점을 강조합니다. 공통 원인에 따른 설명은 활동, 인지 수행, 치매 취약성이 동일한 기저 노화 과정을 나타내는 생물행동적 지표일 수 있다고 봅니다. 두 설명 모두 인과 추론을 제한하지만, 하나는 활동 참여에 이르는 선택을, 다른 하나는 공통된 기저 원인을 강조합니다."
     },
     {
       "card_id": "stine-prep-10",
       "title": "What role does cognitive reserve play in the argument?",
       "answer_30s": "The article describes evidence that lower education is an Alzheimer's disease risk factor and that more highly educated people can tolerate pathology longer before showing clinical symptoms. These findings are harder to explain through selection alone. Cognitive reserve proposes that rich experience strengthens neural circuitry and alternative repertoires for functioning despite pathology. The article does not newly establish a direct causal effect of education.",
       "evidence_segment_id": "ACTIVITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 논의에서 인지 예비력은 어떤 역할을 하나요?",
+      "answer_30s_ko": "이 글은 낮은 교육 수준이 알츠하이머병의 위험요인이며, 교육 수준이 더 높은 사람은 병리적 변화가 있어도 임상 증상이 나타나기까지 더 오래 견딜 수 있다는 근거를 설명합니다. 이러한 결과는 선택만으로 설명하기가 더 어렵습니다. 인지 예비력 관점은 풍부한 경험이 신경회로와 대안적인 기능 수행 방식을 강화해 병리적 변화에도 기능할 수 있게 한다고 봅니다. 이 글 자체가 교육의 직접적인 인과 효과를 새롭게 입증한 것은 아닙니다."
     },
     {
       "card_id": "stine-prep-11",
       "title": "Describe the design and central findings of the ACTIVE trial.",
       "answer_30s": "ACTIVE was a randomized clinical trial that gave older adults 10 sessions of training in memory, processing speed, or reasoning and compared them with a no-contact control group. Training effects were retained for up to five years. The benefits were highly specific: speed training improved speeded tasks but did not transfer to memory or reasoning.",
       "evidence_segment_id": "ACTIVITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "ACTIVE 실험의 설계와 핵심 결과를 설명해 보세요.",
+      "answer_30s_ko": "ACTIVE는 노인에게 기억, 처리 속도 또는 추론 훈련을 10회 제공하고 비접촉 대조군과 비교한 무작위 임상시험입니다. 훈련 효과는 최대 5년까지 유지되었습니다. 효과는 매우 특정한 능력에 한정되었습니다. 속도 훈련은 속도를 요구하는 과제의 수행을 향상했지만, 기억이나 추론으로 전이되지는 않았습니다."
     },
     {
       "card_id": "stine-prep-12",
       "title": "What exactly does the article report about transfer from ACTIVE to everyday activities?",
       "answer_30s": "The article states that transfer to everyday analogues of the trained abilities had not been demonstrated. Participants who received reasoning training did report greater ease with instrumental activities of daily living, such as preparing meals or paying bills. Self-reported ease and demonstrated transfer to everyday performance therefore need to remain distinct conclusions.",
       "evidence_segment_id": "ACTIVITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "ACTIVE의 효과가 일상 활동으로 전이되는 것에 관해 이 글은 정확히 무엇을 보고하나요?",
+      "answer_30s_ko": "이 글은 훈련한 능력과 유사한 일상 과제로의 전이가 입증되지 않았다고 설명합니다. 다만 추론 훈련을 받은 참여자들은 식사 준비나 청구서 납부 같은 도구적 일상생활 활동을 더 수월하게 수행한다고 보고했습니다. 따라서 수행이 수월해졌다는 자기보고와 일상 수행으로의 전이가 입증되었다는 결론은 구분해야 합니다."
     },
     {
       "card_id": "stine-prep-13",
       "title": "Why does the author compare engagement with education rather than training?",
       "answer_30s": "Training and expertise studies suggest that experience often benefits the specific abilities practiced. Training prepares a defined set of skills, whereas education prepares people to act in unpredictable contexts. Activity engagement requires choices about selecting, prioritizing, and structuring unfamiliar problems and organizing resources. Drawing on skills as needed might produce broader effects, but that pathway was still largely unexplored.",
       "evidence_segment_id": "ACTIVITY-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "저자는 왜 관여를 훈련보다 교육에 비유하나요?",
+      "answer_30s_ko": "훈련 및 전문성 연구는 경험의 이점이 흔히 연습한 특정 능력에 나타난다는 점을 시사합니다. 훈련은 정해진 기술을 준비시키는 반면, 교육은 예측하기 어려운 상황에서 행동할 수 있도록 준비시킵니다. 활동 관여에는 낯선 문제를 선택하고 우선순위를 정하며 구조화하는 일과 자원을 조직하는 일에 관한 선택이 필요합니다. 필요에 따라 여러 기술을 활용하는 과정이 더 폭넓은 효과를 낳을 수도 있지만, 그 경로는 당시 여전히 대부분 탐구되지 않은 상태였습니다."
     },
     {
       "card_id": "stine-prep-14",
       "title": "Describe the features and findings of Senior Odyssey.",
       "answer_30s": "Senior Odyssey combined collaborative, ill-defined long-term problems, quick spontaneous challenges, creativity, friendly competition, activity choices, and age integration. Preliminary findings showed better processing speed and marginal improvement in divergent thinking relative to wait-list controls, alongside relative increases in mindfulness and need for cognition. Whether the program produced broad improvements in cognitive functioning remained an open hypothesis.",
       "evidence_segment_id": "ACTIVITY-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "Senior Odyssey의 특징과 연구 결과를 설명해 보세요.",
+      "answer_30s_ko": "Senior Odyssey는 협력해서 해결하는 명확히 정의되지 않은 장기 과제, 짧은 시간 안에 대응해야 하는 즉흥 과제, 창의성, 우호적인 경쟁, 활동 선택, 연령 통합을 결합했습니다. 예비 결과에서 대기자 대조군에 비해 처리 속도가 더 좋아졌고 확산적 사고는 경계 수준의 향상을 보였으며, 마음챙김과 인지 욕구도 상대적으로 증가했습니다. 이 프로그램이 인지 기능을 폭넓게 향상하는지는 아직 검증되지 않은 가설로 남아 있었습니다."
     },
     {
       "card_id": "stine-prep-15",
       "title": "What might you propose when applying the article to family or educational settings?",
       "answer_30s": "My application would be to offer older adults choices among meaningful, emotionally satisfying intellectual challenges and opportunities to attend to the skills those challenges require. Families and educators need not assume that capacity is entirely fixed. This is an inference from the argument, not a tested family intervention. Supporting choice, novelty, and self-regulation should not become a promise that participation will prevent decline.",
       "evidence_segment_id": "CONCLUSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 글을 가족이나 교육 현장에 적용한다면 무엇을 제안하겠나요?",
+      "answer_30s_ko": "저라면 노인에게 의미 있고 정서적으로 만족스러운 지적 도전 가운데 선택할 기회를 제공하고, 그 도전에 필요한 기술에 주의를 기울일 기회도 마련하겠습니다. 가족과 교육자는 능력이 전적으로 고정되어 있다고 가정할 필요가 없습니다. 이는 글의 논의에서 도출한 추론이지, 검증된 가족 개입은 아닙니다. 선택, 새로움, 자기조절을 지원한다는 제안이 참여하면 기능 저하를 예방할 수 있다는 약속이 되어서는 안 됩니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this as a proposal that effort allocation and choices of intellectual environments may provide additional routes to cognitive vitality while senescence and capacity constraints still matter. It is not a claim that willpower alone determines performance. The interaction between attentional engagement in selected tasks and habitual activity engagement still requires empirical examination.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "overall",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "이 논문에 대한 기본적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 글을 노화와 능력의 제약이 여전히 중요하지만, 노력의 배분과 지적 환경의 선택도 인지적 활력을 유지하는 추가적인 경로가 될 수 있다는 제안으로 읽었습니다. 의지력만으로 수행이 결정된다는 주장은 아닙니다. 선택한 과제에서의 주의 관여와 습관적인 활동 관여가 어떻게 상호작용하는지는 여전히 실증적으로 검토해야 합니다."
       },
       {
         "card_id": "stine-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "The finding that younger readers adjusted their reading time more strongly than older readers when accurate recall was required stood out to me. Working memory explained part of the difference, but so did beliefs about being able to influence memory outcomes. I found it useful to distinguish available capacity from beliefs that may affect whether people recruit their resources.",
         "evidence_segment_id": "ATTENTION-002",
         "response_angle": "surprise",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "어떤 결과가 가장 눈에 띄었나요?",
+        "answer_30s_ko": "정확한 회상이 요구되었을 때 젊은 독자가 나이 든 독자보다 읽기 시간을 더 크게 조정했다는 결과가 눈에 띄었습니다. 작업기억이 그 차이의 일부를 설명했지만, 기억 결과에 자신이 영향을 줄 수 있다는 믿음도 차이를 설명했습니다. 이용할 수 있는 능력과, 사람들이 자신의 자원을 동원할지에 영향을 줄 수 있는 믿음을 구분하는 것이 유용했습니다."
       },
       {
         "card_id": "stine-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had tended to interpret better cognition among intellectually active people as evidence that activity was protective. The article separates the possibility that initially more vital people select and sustain participation from the possibility that several indicators share an underlying aging process. I now look for selection effects and common causes before interpreting an observational association causally.",
         "evidence_segment_id": "ACTIVITY-001",
         "response_angle": "changed-view",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "논문을 읽고 기존의 이해가 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 지적으로 활동적인 사람의 인지 기능이 더 좋으면 활동이 보호 효과를 낸다는 근거로 해석하는 경향이 있었습니다. 이 논문은 처음부터 활력이 더 높은 사람이 참여를 선택하고 유지할 가능성과, 여러 지표가 공통된 기저 노화 과정을 반영할 가능성을 구분합니다. 이제 저는 관찰된 관계를 인과적으로 해석하기 전에 선택 효과와 공통 원인을 살펴봅니다."
       },
       {
         "card_id": "stine-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I now ask what was trained and where benefits transferred, rather than asking only whether training works. In ACTIVE, effects of 10 training sessions persisted for up to five years, but speed-training benefits did not extend to memory or reasoning, and everyday transfer had not been demonstrated. I would distinguish improvement in a specific ability from broad cognitive vitality.",
         "evidence_segment_id": "ACTIVITY-001",
         "response_angle": "evidence",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "ACTIVE 연구는 두뇌 훈련에 대한 생각을 어떻게 바꿨나요?",
+        "answer_30s_ko": "이제 저는 훈련이 효과가 있는지만 묻지 않고, 무엇을 훈련했고 그 이점이 어디로 전이되었는지도 묻습니다. ACTIVE에서는 10회 훈련의 효과가 최대 5년까지 지속되었지만, 처리속도 훈련의 이점이 기억이나 추론으로 확장되지는 않았고 일상생활로의 전이는 입증되지 않았습니다. 저는 특정 능력의 향상과 폭넓은 인지적 활력을 구분하겠습니다."
       },
       {
         "card_id": "stine-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "Senior Odyssey showed preliminary changes in processing speed and engagement-related dispositions, but broad cognitive improvement remained unestablished. I would like to know which components of an intervention resembling everyday life matter, and whether benefits extend to untrained abilities and everyday performance. I read the results within the stated context of ongoing program development and evaluation.",
         "evidence_segment_id": "ACTIVITY-002",
         "response_angle": "limitation",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "어떤 질문이나 한계가 남았나요?",
+        "answer_30s_ko": "Senior Odyssey에서는 처리속도와 관여 관련 성향의 예비적 변화가 나타났지만, 광범위한 인지 향상은 아직 입증되지 않았습니다. 저는 일상생활과 유사한 개입에서 어떤 구성요소가 중요한지, 그리고 이점이 훈련하지 않은 능력과 일상적 수행에도 확장되는지 알고 싶습니다. 프로그램의 개발과 평가가 진행 중이라는 논문의 맥락 안에서 이 결과를 읽었습니다."
       },
       {
         "card_id": "stine-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My application would be for families to support older adults in choosing meaningful new activities and giving the necessary processes sufficient attention, rather than treating a slower response as proof of inability. This is my interpretation of the article's self-regulation perspective. The article does not directly establish that a particular form of family support prevents cognitive decline.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "family-application",
-        "style_basis": "reading-grounded"
+        "style_basis": "reading-grounded",
+        "title_ko": "이 논문을 가족생활과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "제가 도출한 적용은 가족이 느린 반응을 무능력의 증거로 받아들이기보다, 노인이 의미 있는 새로운 활동을 선택하고 필요한 과정에 충분히 주의를 기울이도록 지원하는 것입니다. 이는 논문의 자기조절 관점을 제가 해석한 것입니다. 이 논문이 특정한 가족 지원 방식으로 인지 저하를 예방할 수 있음을 직접 입증한 것은 아닙니다."
       }
     ]
   }

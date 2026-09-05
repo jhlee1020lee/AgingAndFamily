@@ -6,91 +6,121 @@
       "card_id": "lee-yeung-prep-01",
       "title": "How does this paper reconceptualize retirement?",
       "answer_30s": "It treats retirement as a process over time rather than a single exit from the labor market. Some people keep working, others leave and return, and others move repeatedly between employment and nonemployment. The authors therefore ask whether the predictors of remaining outside the workforce differ from those of reentry, and whether the relationships of work histories and family circumstances with these transitions differ by gender.",
-      "evidence_segment_id": "INTRO-001"
+      "evidence_segment_id": "INTRO-001",
+      "title_ko": "이 논문은 은퇴를 어떻게 새롭게 개념화하나요?",
+      "answer_30s_ko": "은퇴를 노동시장에서 한 번 이탈하는 사건이 아니라 시간에 걸친 과정으로 봅니다. 어떤 사람은 계속 일하고, 어떤 사람은 떠났다가 돌아오며, 또 어떤 사람은 취업과 비취업 사이를 반복해서 오갑니다. 따라서 저자들은 노동시장 밖에 계속 머무는 것을 예측하는 요인과 재진입을 예측하는 요인이 다른지, 그리고 직업 이력 및 가족 상황과 이러한 전환의 관계가 성별에 따라 다른지 묻습니다."
     },
     {
       "card_id": "lee-yeung-prep-02",
       "title": "Why does the Korean pension and labor-market context matter?",
       "answer_30s": "The historical statistics cited in the paper describe limited retirement protection. The 2013 sources report that about 37.6% of people aged 65 or older received national pension benefits, with benefits around 51% of the minimum cost of living. More than 60% of older adults' income came from work, compared with 16% from public pensions and social security. The paper also reports lower pension coverage among women. These conditions make economic constraints and gendered career interruptions relevant to later-life work; they are historical context, not current pension statistics.",
-      "evidence_segment_id": "CONTEXT-001"
+      "evidence_segment_id": "CONTEXT-001",
+      "title_ko": "한국의 연금과 노동시장 맥락은 왜 중요한가요?",
+      "answer_30s_ko": "논문에서 인용한 과거 통계는 은퇴 후 보장이 제한적이었음을 보여 줍니다. 2013년 자료에 따르면 65세 이상 인구의 약 37.6%가 국민연금을 받았으며, 급여액은 최저생계비의 약 51%였습니다. 노인 소득의 60%를 넘는 부분이 근로에서 나왔고, 공적연금과 사회보장에서는 16%가 나왔습니다. 논문은 여성의 연금 적용률이 더 낮다고도 보고합니다. 이러한 조건 때문에 경제적 제약과 성별화된 경력단절은 노년기 노동을 이해하는 데 중요합니다. 이는 역사적 맥락이며 현재의 연금 통계는 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-03",
       "title": "How are the six hypotheses organized around work histories and families?",
       "answer_30s": "H1a predicts greater workforce attachment after manual work or self-employment; H1b predicts attenuation after accounting for health, wealth, and pensions; H1c predicts stronger work-history associations among men. H2a predicts greater attachment after marital dissolution specifically among women. H2b predicts less attachment with coresidence and financial support from children, and H2c predicts stronger intergenerational-support associations among women. These are hypotheses to test, not a list of established findings.",
-      "evidence_segment_id": "CONTEXT-002"
+      "evidence_segment_id": "CONTEXT-002",
+      "title_ko": "여섯 가설은 직업 이력과 가족을 중심으로 어떻게 구성되나요?",
+      "answer_30s_ko": "H1a는 육체노동이나 자영업 이력이 있으면 노동시장 참여 경향이 더 강할 것으로, H1b는 건강·자산·연금을 고려하면 그 관계가 약해질 것으로, H1c는 직업 이력과의 관계가 남성에게서 더 강할 것으로 예상합니다. H2a는 특히 여성에게서 혼인 해체 후 노동시장 참여 경향이 더 강할 것으로 예상합니다. H2b는 자녀와의 동거 및 자녀의 재정 지원이 있으면 참여 경향이 더 약할 것으로, H2c는 세대 간 지원과의 관계가 여성에게서 더 강할 것으로 예상합니다. 이는 검증할 가설이며, 이미 확립된 결과를 나열한 것이 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-04",
       "title": "How was the analytic sample constructed, and what selection issue follows?",
       "answer_30s": "The study follows KLoSA respondents aged 50-64 in 2006, who would be 60-74 in 2016. It excludes 1,295 people who had never done paid work and the 14.3% with labor-force status data for fewer than three of the six waves. The final sample contains 2,600 people: 1,579 men and 1,021 women, contributing 26,520 person-years. Excluding people without any paid-work history may overrepresent work-oriented women, so the sample does not represent all older women equally well.",
-      "evidence_segment_id": "DATA-001"
+      "evidence_segment_id": "DATA-001",
+      "title_ko": "분석 표본은 어떻게 구성되었으며 어떤 선택 문제가 따르나요?",
+      "answer_30s_ko": "이 연구는 2006년에 50~64세여서 2016년에는 60~74세가 되는 KLoSA 응답자를 추적합니다. 유급노동을 한 적이 없는 1,295명과 여섯 조사 차수 중 노동시장 상태 자료가 세 차수 미만인 14.3%를 제외합니다. 최종 표본은 남성 1,579명과 여성 1,021명으로 구성된 2,600명이며, 26,520인년의 자료를 제공합니다. 유급노동 이력이 전혀 없는 사람을 제외하면 일 지향적인 여성이 과도하게 대표될 수 있으므로, 표본이 모든 노년기 여성을 똑같이 잘 대표하지는 않습니다."
     },
     {
       "card_id": "lee-yeung-prep-05",
       "title": "How were workforce entry and exit measured?",
       "answer_30s": "An event is a change between employment and nonemployment or retirement from wave t to wave t+1, coded 1 for a transition and 0 for no transition. Neither state is absorbing, so a person may contribute multiple spells and transitions. Someone describing themselves as retired but receiving income from paid employment is classified as having reentered. The outcome therefore captures repeatable changes in employment status, not just the date of first retirement.",
-      "evidence_segment_id": "MEASURES-001"
+      "evidence_segment_id": "MEASURES-001",
+      "title_ko": "노동시장 진입과 이탈은 어떻게 측정했나요?",
+      "answer_30s_ko": "사건은 t차 조사에서 t+1차 조사 사이에 취업과 비취업 또는 은퇴 사이의 상태가 달라지는 것으로, 전환이 있으면 1, 없으면 0으로 코딩합니다. 어느 상태도 일단 들어가면 벗어날 수 없는 흡수상태가 아니므로, 한 사람이 여러 지속 구간과 전환을 제공할 수 있습니다. 자신을 은퇴했다고 설명해도 유급 취업에서 소득을 얻으면 재진입한 것으로 분류합니다. 따라서 결과변수는 최초 은퇴 날짜만이 아니라 반복될 수 있는 취업상태 변화를 포착합니다."
     },
     {
       "card_id": "lee-yeung-prep-06",
       "title": "How were work histories, proximate correlates, and family circumstances operationalized?",
       "answer_30s": "Work histories include five main occupational classes, years of self-employment, and the longest uninterrupted job tenure. Proximate correlates include self-rated health, net wealth calculated as assets minus debts, and pension eligibility. Family measures combine partnership and spouse employment status, distinguish coresidence with married and unmarried children, and sum financial transfers received from all children in the previous year. Transfers are log-transformed because their distribution is skewed; coresidence and transfers are time-varying.",
-      "evidence_segment_id": "EXPLANATORY-001"
+      "evidence_segment_id": "EXPLANATORY-001",
+      "title_ko": "노동이력, 근접 관련 요인, 가족 상황은 어떻게 조작화했나요?",
+      "answer_30s_ko": "노동이력에는 다섯 가지 주요 직업 계층, 자영업 종사 연수, 가장 오래 중단 없이 유지한 일자리의 근속기간이 포함됩니다. 근접 관련 요인은 주관적 건강, 자산에서 부채를 뺀 순자산, 연금 수급 자격입니다. 가족 측정은 파트너 유무와 배우자의 취업 상태를 결합하고, 기혼 자녀 및 미혼 자녀와의 동거를 구분하며, 지난 1년간 모든 자녀에게서 받은 금전 이전을 합산합니다. 금전 이전은 분포가 치우쳐 있어 로그변환했으며, 동거와 금전 이전은 시간에 따라 변하는 변수입니다."
     },
     {
       "card_id": "lee-yeung-prep-07",
       "title": "Why use a joint multilevel discrete-time model?",
       "answer_30s": "Reentry and exit are distinct transitions that can recur within the same person and share unobserved propensities. The authors give each equation a person-level random effect and allow those effects to correlate. They right-censor deaths and observation loss, and use full-information maximum likelihood, survey-design adjustment, and nonresponse weighting under stated attrition assumptions. After testing gender interactions, they estimate gender-specific models that sequentially add work histories, proximate correlates, and family circumstances. This observational design models associations; it does not establish causal mechanisms.",
-      "evidence_segment_id": "ANALYSIS-001"
+      "evidence_segment_id": "ANALYSIS-001",
+      "title_ko": "결합 다수준 이산시간 모형을 사용한 이유는 무엇인가요?",
+      "answer_30s_ko": "재진입과 이탈은 같은 사람에게 반복해서 일어날 수 있는 서로 다른 전환이며, 관찰되지 않은 성향을 공유할 수 있습니다. 저자들은 각 방정식에 개인 수준의 임의효과를 두고 이 효과들 사이의 상관을 허용합니다. 사망과 관찰 탈락은 우측 중도절단으로 처리하며, 명시한 탈락 가정 아래 완전정보최대우도법, 조사 설계 보정, 무응답 가중치를 사용합니다. 성별 상호작용을 검정한 뒤에는 노동이력, 근접 관련 요인, 가족 상황을 차례로 추가하는 성별 모형을 추정합니다. 이 관찰연구 설계는 관련성을 모형화하는 것이지 인과적 작동 과정을 확립하는 것은 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-08",
       "title": "How should the descriptive exit and reentry rates be compared?",
       "answer_30s": "Among women's employed observations, about 16% ended in an exit by the next wave; among their nonemployed observations, about 25% ended in reentry. The corresponding rates for men were about 13% and 16%. Women contributed 10,414 person-years, divided into 6,528 employed and 3,886 nonemployed observations; men contributed 16,106, divided into 12,301 and 3,805. Each rate must be paired with its starting-state denominator. These are not percentages of people who ever retired or returned during the entire study.",
-      "evidence_segment_id": "RESULTS-DESCRIPTIVE-001"
+      "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
+      "title_ko": "기술통계의 이탈률과 재진입률은 어떻게 비교해야 하나요?",
+      "answer_30s_ko": "여성의 취업 상태 관측치 가운데 약 16%는 다음 조사 때까지 이탈로 이어졌고, 비취업 상태 관측치 가운데 약 25%는 재진입으로 이어졌습니다. 남성의 해당 비율은 약 13%와 16%였습니다. 여성은 총 10,414인년의 관측치를 제공했으며 취업 6,528개와 비취업 3,886개로 나뉘었습니다. 남성은 총 16,106인년으로, 각각 12,301개와 3,805개였습니다. 각 비율은 출발 상태에 해당하는 분모와 함께 읽어야 합니다. 연구 기간 전체에서 한 번이라도 은퇴하거나 복귀한 사람의 비율은 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-09",
       "title": "What directions did the five gender interactions show?",
       "answer_30s": "With women coded 0 and men 1, more self-employment years were more strongly associated with lower exit among men (interaction -0.02, p < .001), and longer tenure with lower reentry among men (-0.03, p < .05). The marital-dissolution association with reentry was lower for men than women (-0.38, p < .01), and the coresidence association with exit was less pronounced for men (-0.28, p < .01). Transfers from children were associated with lower reentry among women only, with a positive gender interaction (+0.44, p < .05). These are interaction coefficients, not percentage-point changes in probability.",
-      "evidence_segment_id": "RESULTS-INTERACTIONS-001"
+      "evidence_segment_id": "RESULTS-INTERACTIONS-001",
+      "title_ko": "다섯 가지 성별 상호작용은 어떤 방향으로 나타났나요?",
+      "answer_30s_ko": "여성을 0, 남성을 1로 코딩했을 때, 자영업 연수가 많을수록 이탈이 낮아지는 관련성은 남성에서 더 강했고(상호작용 −0.02, p < .001), 근속기간이 길수록 재진입이 낮아지는 관련성도 남성에서 더 강했습니다(−0.03, p < .05). 혼인 해체와 재진입의 관련성은 여성보다 남성에서 더 낮았으며(−0.38, p < .01), 자녀 동거와 이탈의 관련성은 남성에서 덜 뚜렷했습니다(−0.28, p < .01). 자녀에게서 받은 금전 이전은 여성에서만 더 낮은 재진입과 관련되었고, 성별 상호작용은 양수였습니다(+0.44, p < .05). 이 값들은 상호작용 계수이며 확률의 %포인트 변화가 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-10",
       "title": "What were the main findings for women, separated by transition?",
       "answer_30s": "Occupational class did not significantly predict women's transitions, and self-employment years had no strong association. Unpartnered women had about 39% lower exit odds than women with a retired spouse. Coresidence with married children was associated with lower reentry odds; coresidence with unmarried children was associated with 42% higher exit odds. Transfers from children were associated with lower reentry and higher exit. Pension eligibility was not significant for either transition. The random-effect correlation was .49, indicating related unobserved transition propensities, not a 49% transition probability.",
-      "evidence_segment_id": "RESULTS-WOMEN-001"
+      "evidence_segment_id": "RESULTS-WOMEN-001",
+      "title_ko": "여성의 주요 결과를 전환별로 나누어 설명해 보세요.",
+      "answer_30s_ko": "직업 계층은 여성의 전환을 유의하게 예측하지 않았고, 자영업 연수도 강한 관련성을 보이지 않았습니다. 파트너가 없는 여성은 은퇴한 배우자가 있는 여성보다 이탈 오즈가 약 39% 낮았습니다. 기혼 자녀와의 동거는 더 낮은 재진입 오즈와 관련되었고, 미혼 자녀와의 동거는 42% 높은 이탈 오즈와 관련되었습니다. 자녀에게서 받은 금전 이전은 더 낮은 재진입과 더 높은 이탈에 관련되었습니다. 연금 수급 자격은 어느 전환에서도 유의하지 않았습니다. 임의효과 간 상관은 .49로, 관찰되지 않은 두 전환 성향이 서로 관련됨을 뜻하며 전환 확률이 49%라는 뜻은 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-11",
       "title": "What were the work-history and family findings for men?",
       "answer_30s": "Compared with nonmanual work, skilled manual work was associated with higher reentry and lower exit odds. Longer tenure predicted lower reentry odds (OR 0.98), and more self-employment years predicted lower exit odds (OR 0.97). Compared with men with a nonworking spouse, those with a working spouse were more likely to reenter and had about 22% lower exit odds. Child coresidence predicted lower reentry but was not strongly associated with exit. The authors report no significant transfer association for men, although Table 4 gives a reentry coefficient of -.08 with SE .02 and no significance marker, an unresolved reporting discrepancy. The random-effect correlation was .44.",
-      "evidence_segment_id": "RESULTS-MEN-001"
+      "evidence_segment_id": "RESULTS-MEN-001",
+      "title_ko": "남성의 직업 이력과 가족에 관한 결과는 무엇이었나요?",
+      "answer_30s_ko": "비육체노동과 비교하면 숙련 육체노동은 더 높은 재진입 오즈와 더 낮은 이탈 오즈에 연결되었습니다. 근속기간이 길수록 재진입 오즈가 낮았고(OR 0.98), 자영업 기간이 길수록 이탈 오즈가 낮았습니다(OR 0.97). 배우자가 일하지 않는 남성과 비교하면 배우자가 일하는 남성은 재진입할 가능성이 더 높고 이탈 오즈는 약 22% 낮았습니다. 자녀와의 동거는 더 낮은 재진입을 예측했지만 이탈과 강한 관계는 없었습니다. 저자들은 남성의 경우 이전소득과 유의한 관계가 없다고 보고하지만, 표 4에는 재진입 계수 -.08과 표준오차 .02가 유의성 표시 없이 제시되어 보고 불일치가 남아 있습니다. 임의효과 간 상관은 .44였습니다."
     },
     {
       "card_id": "lee-yeung-prep-12",
       "title": "How did the authors interpret the manual-work and self-employment findings?",
       "answer_30s": "They did not treat extended work and reentry among skilled manual workers as an unqualified advantage. They argue that earlier insecurity and exposure to involuntary exits may produce cumulative disadvantage, supporting a need for social insurance for older workers. For self-employment and lower exit, they propose several explanations: flexible retirement timing, limited access to retirement benefits, and work attachment. These are possible interpretations of the associations, not directly established causal mechanisms.",
-      "evidence_segment_id": "DISCUSSION-001"
+      "evidence_segment_id": "DISCUSSION-001",
+      "title_ko": "저자들은 육체노동과 자영업에 관한 결과를 어떻게 해석했나요?",
+      "answer_30s_ko": "저자들은 숙련 육체노동자의 장기 근로와 재진입을 조건 없이 유리한 것으로 보지 않았습니다. 과거의 불안정성과 비자발적 이탈 경험이 누적된 불이익을 만들 수 있다고 주장하며, 나이 든 근로자에게 사회보험이 필요하다는 논거로 삼습니다. 자영업과 낮은 이탈의 관계에는 유연한 은퇴 시기, 은퇴급여에 대한 제한적 접근, 일에 대한 애착 등 여러 설명을 제안합니다. 이는 관계에 대한 가능한 해석이지 직접 입증된 인과적 기제는 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-13",
       "title": "How do the authors interpret gendered family associations in terms of inequality?",
       "answer_30s": "For unpartnered women, the authors propose financial hardship linked to modest survivor benefits and the divorced-partner benefit arrangements described for that historical setting. Reduced family obligations could also encourage continued work. For men with working wives, they suggest that employment may help maintain a breadwinner identity and family status. The stronger transfer associations among women are interpreted in relation to gendered caregiving and limited economic autonomy. These are proposed mechanisms, and longer working lives need not always reduce inequality or social burdens.",
-      "evidence_segment_id": "DISCUSSION-002"
+      "evidence_segment_id": "DISCUSSION-002",
+      "title_ko": "저자들은 성별에 따른 가족 관련성을 불평등의 관점에서 어떻게 해석하나요?",
+      "answer_30s_ko": "배우자가 없는 여성에 대해서는 당시 제도적 맥락의 적은 유족급여와 이혼한 배우자의 급여 제도에 연결된 경제적 어려움을 설명으로 제안합니다. 가족 의무가 줄어든 것도 계속 일하도록 할 수 있습니다. 아내가 일하는 남성에게는 고용이 생계부양자 정체성과 가족 내 지위를 유지하는 데 도움이 될 수 있다고 봅니다. 여성에게서 더 강한 이전소득과의 관계는 성별화된 돌봄과 제한적인 경제적 자율성에 연결해 해석합니다. 이는 제안된 기제이며, 근로 생애가 길어진다고 해서 항상 불평등이나 사회적 부담이 줄어드는 것은 아닙니다."
     },
     {
       "card_id": "lee-yeung-prep-14",
       "title": "What two main limitations do the authors identify?",
       "answer_30s": "First, they do not test cohort effects, so they cannot determine how changing pension policies, labor-market organization, and gender norms alter the predictors of transitions. Second, controlling several proxies for retirement feasibility does not adequately capture nonfinancial mechanisms. They propose measuring work orientation, risk aversion, and reasons for occupational choices. Observed work-history associations therefore cannot establish an individual's motives for continuing or resuming work.",
-      "evidence_segment_id": "LIMITATIONS-001"
+      "evidence_segment_id": "LIMITATIONS-001",
+      "title_ko": "저자들이 제시하는 주요 한계 두 가지는 무엇인가요?",
+      "answer_30s_ko": "첫째, 코호트 효과를 검증하지 않아 연금정책, 노동시장 조직, 성별 규범의 변화가 전환의 예측요인을 어떻게 바꾸는지 판단할 수 없습니다. 둘째, 은퇴 가능성을 나타내는 여러 대리변수를 통제해도 비금전적 기제를 충분히 포착하지 못합니다. 저자들은 일 지향성, 위험회피 성향, 직업 선택 이유를 측정하자고 제안합니다. 따라서 관찰된 직업 이력과의 관계만으로 개인이 일을 계속하거나 다시 시작하는 동기를 입증할 수는 없습니다."
     },
     {
       "card_id": "lee-yeung-prep-15",
       "title": "What policy implications can be stated without overstating the evidence?",
       "answer_30s": "The authors argue that societies with limited public old-age support and low pension replacement rates need to understand who works beyond conventional retirement ages. They emphasize better-quality jobs and varied training opportunities, especially for older job seekers with low skills or without family members who can care for them. Their findings can inform policies that consider retirement institutions, labor-market conditions, families, and gender norms together. These are policy implications, not evaluations showing that a particular program works.",
-      "evidence_segment_id": "IMPLICATIONS-001"
+      "evidence_segment_id": "IMPLICATIONS-001",
+      "title_ko": "근거를 과장하지 않으면서 어떤 정책적 함의를 말할 수 있나요?",
+      "answer_30s_ko": "저자들은 공적 노후 지원이 제한적이고 연금 소득대체율이 낮은 사회에서는 누가 통상적인 은퇴 연령 이후에도 일하는지 이해할 필요가 있다고 주장합니다. 특히 숙련 수준이 낮거나 자신을 돌봐 줄 가족이 없는 고령 구직자에게 더 질 좋은 일자리와 다양한 훈련 기회가 필요하다고 강조합니다. 이 결과는 은퇴제도, 노동시장 조건, 가족, 성별 규범을 함께 고려하는 정책에 정보를 제공할 수 있습니다. 이는 정책적 함의이지 특정 프로그램이 효과가 있음을 보여 주는 평가는 아닙니다."
     }
   ],
   "reading_response": {
@@ -101,37 +131,49 @@
         "card_id": "lee-yeung-reading-01",
         "title": "How did the article change your understanding of retirement?",
         "answer_30s": "I used to think of retirement as a date, but this article made me see it as a process that can include repeated employment and nonemployment. Some people never withdraw completely, and others return after a long absence and may retire again. I would now ask not only when someone retired, but who stays outside the workforce, who returns, and how the predictors of those paths differ.",
-        "evidence_segment_id": "INTRO-001"
+        "evidence_segment_id": "INTRO-001",
+        "title_ko": "이 논문은 은퇴에 대한 이해를 어떻게 바꿨나요?",
+        "answer_30s_ko": "저는 은퇴를 하나의 날짜로 생각했지만, 이 논문을 읽고 고용과 비고용이 반복될 수 있는 과정으로 보게 되었습니다. 어떤 사람은 완전히 물러나지 않고, 어떤 사람은 오래 일을 떠나 있다가 돌아와 다시 은퇴하기도 합니다. 이제는 언제 은퇴했는지뿐 아니라 누가 노동시장 밖에 남는지, 누가 돌아오는지, 각 경로의 예측요인이 어떻게 다른지도 묻겠습니다."
       },
       {
         "card_id": "lee-yeung-reading-02",
         "title": "Which feature of the Korean context surprised you most?",
         "answer_30s": "The contrast between income sources surprised me: the 2013 statistics cited in the paper attribute more than 60% of older adults' income to work but only 16% to public pensions and social security. The paper also cites national pension receipt among about 37.6% of people aged 65 or older and reports lower pension coverage among women. I read these historical figures as reasons to examine limited retirement protection and gendered careers, rather than interpreting high later-life employment simply as a preference for work.",
-        "evidence_segment_id": "CONTEXT-001"
+        "evidence_segment_id": "CONTEXT-001",
+        "title_ko": "한국의 맥락에서 어떤 특징이 가장 놀라웠나요?",
+        "answer_30s_ko": "소득원의 대비가 놀라웠습니다. 논문에 인용된 2013년 통계에서는 노인 소득의 60% 초과가 근로에서 나오지만 공적연금과 사회보장은 16%에 그칩니다. 또한 65세 이상 인구 중 약 37.6%가 국민연금을 받는다는 수치를 인용하며 여성의 연금 적용률이 더 낮다고 보고합니다. 저는 이런 과거 수치를 노년기의 높은 고용을 단순히 일에 대한 선호로 해석하기보다, 제한적인 은퇴 보장과 성별화된 경력을 살펴봐야 할 이유로 읽었습니다."
       },
       {
         "card_id": "lee-yeung-reading-03",
         "title": "What requires the most care when interpreting the sample?",
         "answer_30s": "I would be especially careful about the exclusion of 1,295 people who had never done paid work. The authors acknowledge that this can overrepresent work-oriented women. I would also distinguish the 2,600 people from their 26,520 person-years. The reported 29% with continuous employment, 36% with reentry, and 27% with multiple transitions refer to different pathway definitions or conditions, so I would not add them as mutually exclusive categories with an identical denominator.",
-        "evidence_segment_id": "DATA-001"
+        "evidence_segment_id": "DATA-001",
+        "title_ko": "표본을 해석할 때 어떤 점에 가장 주의해야 하나요?",
+        "answer_30s_ko": "저는 유급노동 경험이 전혀 없는 1,295명을 제외했다는 점에 특히 주의하겠습니다. 저자들은 이 때문에 일 지향적인 여성이 과대대표될 수 있다고 인정합니다. 또한 2,600명이라는 인원과 26,520인년을 구분하겠습니다. 계속 고용된 29%, 재진입한 36%, 여러 차례 전환한 27%라는 보고는 경로의 정의나 조건이 서로 다르므로, 같은 분모를 가진 상호배타적 범주로 더하지 않겠습니다."
       },
       {
         "card_id": "lee-yeung-reading-04",
         "title": "Which findings for women made the role of family circumstances clearest?",
         "answer_30s": "Women's occupational class did not significantly predict transitions, yet family circumstances were associated with several different directions of movement. Unpartnered women had about 39% lower exit odds than women with a retired spouse. Coresidence with married children was associated with lower reentry, while coresidence with unmarried children was associated with 42% higher exit odds. Transfers from children were associated with lower reentry and higher exit. I therefore think family support must be unpacked by relationship and transition, rather than treated as one uniform influence.",
-        "evidence_segment_id": "RESULTS-WOMEN-001"
+        "evidence_segment_id": "RESULTS-WOMEN-001",
+        "title_ko": "여성의 어떤 결과가 가족 상황의 역할을 가장 분명하게 보여 줬나요?",
+        "answer_30s_ko": "여성의 직업계층은 전환을 유의하게 예측하지 않았지만, 가족 상황은 서로 다른 여러 방향의 이동과 관련되었습니다. 배우자가 없는 여성은 배우자가 은퇴한 여성보다 이탈 오즈가 약 39% 낮았습니다. 기혼 자녀와의 동거는 더 낮은 재진입과, 미혼 자녀와의 동거는 42% 더 높은 이탈 오즈와 관련되었습니다. 자녀로부터 받는 이전소득은 더 낮은 재진입과 더 높은 이탈에 연결되었습니다. 따라서 저는 가족 지원을 하나의 동일한 영향으로 취급하지 말고 관계와 전환 유형별로 나누어 살펴봐야 한다고 생각합니다."
       },
       {
         "card_id": "lee-yeung-reading-05",
         "title": "Which result seemed most uncomfortable or paradoxical?",
         "answer_30s": "I found it striking that longer work and reentry among skilled manual workers could reflect cumulative disadvantage. The authors suggest that these workers may have faced greater insecurity and involuntary exits over their lives. I therefore would not automatically equate high workforce participation with autonomy or success. The authors' social-insurance argument follows from this interpretation, although the study does not directly establish the proposed insecurity mechanism or test a policy remedy.",
-        "evidence_segment_id": "DISCUSSION-001"
+        "evidence_segment_id": "DISCUSSION-001",
+        "title_ko": "어떤 결과가 가장 불편하거나 역설적으로 느껴졌나요?",
+        "answer_30s_ko": "숙련 육체노동자의 장기 근로와 재진입이 누적된 불이익을 반영할 수 있다는 점이 인상적이었습니다. 저자들은 이들이 생애에 걸쳐 더 큰 불안정성과 비자발적 이탈을 겪었을 수 있다고 제안합니다. 따라서 저는 높은 노동시장 참여를 곧바로 자율성이나 성공과 동일시하지 않겠습니다. 사회보험이 필요하다는 저자들의 논거는 이 해석에서 나오지만, 연구가 제안된 불안정성 기제를 직접 입증하거나 정책적 해법을 검증한 것은 아닙니다."
       },
       {
         "card_id": "lee-yeung-reading-06",
         "title": "What would you prioritize in follow-up research?",
         "answer_30s": "I would directly measure nonfinancial mechanisms. The authors control several proxies for retirement feasibility but cannot fully explain the motivations linking earlier work histories to later-life participation. Their proposed measures of work orientation, risk aversion, and reasons for occupational choices could help distinguish preferences from constraints. I would also compare cohorts to investigate whether policy and gender-norm changes alter these associations. These are proposed research extensions, not findings already demonstrated in this study.",
-        "evidence_segment_id": "LIMITATIONS-001"
+        "evidence_segment_id": "LIMITATIONS-001",
+        "title_ko": "후속 연구에서 무엇을 우선하겠나요?",
+        "answer_30s_ko": "저는 비금전적 기제를 직접 측정하겠습니다. 저자들은 은퇴 가능성의 여러 대리변수를 통제하지만, 이전 직업 이력과 노년기 참여를 연결하는 동기를 충분히 설명하지는 못합니다. 제안한 일 지향성, 위험회피 성향, 직업 선택 이유의 측정은 선호와 제약을 구분하는 데 도움이 될 수 있습니다. 또한 코호트를 비교해 정책과 성별 규범의 변화가 이런 관계를 바꾸는지 살펴보겠습니다. 이는 제안하는 연구 확장이지 이 연구에서 이미 입증된 결과는 아닙니다."
       }
     ]
   },

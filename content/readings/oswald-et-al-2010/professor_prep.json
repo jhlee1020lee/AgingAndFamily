@@ -9,105 +9,135 @@
       "title": "State the study's question and conclusion together.",
       "answer_30s": "The study asked whether home and neighborhood environments relate differently to life satisfaction in young-old and old-old adults. Neighborhood quality and place attachment had independent associations; apartment size was positive in the younger group and negative in the older group, while living with others was significant only in the younger group. These cross-sectional patterns support examining both home and neighborhood, without establishing causal or within-person developmental change.",
       "evidence_segment_id": "ABS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연구 질문과 결론을 함께 말해 보세요.",
+      "answer_30s_ko": "이 연구는 주거 및 근린 환경과 삶의 만족도의 관계가 전기노인과 후기노인에게서 다른지 물었습니다. 근린의 질과 장소애착은 독립적인 관련성을 보였습니다. 아파트 면적은 더 젊은 집단에서 정적, 더 나이 든 집단에서 부적 관계를 보였고, 다른 사람과 함께 사는 것은 더 젊은 집단에서만 유의했습니다. 이러한 횡단적 양상은 주거와 근린을 모두 살펴볼 필요를 뒷받침하지만, 인과적 변화나 개인 내 발달적 변화를 확립하지는 않습니다."
     },
     {
       "card_id": "oswald-prep-02",
       "title": "How do person-environment agency and belonging differ?",
       "answer_30s": "Agency concerns using and optimizing physical environmental resources and avoiding barriers. Belonging concerns experiencing and evaluating places, including behavioral, cognitive, and emotional bonds to the home and neighborhood. This distinction explains why the study included physical features such as space and accessibility alongside neighborhood evaluations and place attachment, rather than treating the environment only as a collection of physical conditions.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "개인·환경의 행위성과 소속감은 어떻게 다른가요?",
+      "answer_30s_ko": "행위성은 물리적 환경 자원을 활용하고 최적화하며 장애물을 피하는 것에 관한 것입니다. 소속감은 장소를 경험하고 평가하는 것으로, 집과 근린에 대한 행동적·인지적·정서적 유대를 포함합니다. 이 구분은 연구가 환경을 단순한 물리적 조건의 집합으로 보지 않고 공간과 접근성 같은 물리적 특성과 함께 근린 평가 및 장소애착을 포함한 이유를 설명합니다."
     },
     {
       "card_id": "oswald-prep-03",
       "title": "Use environmental richness and environmental press to explain the age-group hypotheses.",
       "answer_30s": "The theory proposes that relatively greater competence may help young-old adults use spacious housing as an environmental resource. With greater functional limitations, similar space may create environmental press, such as longer walking distances inside the home. Thus, one feature can plausibly be a resource or a challenge depending on personal capacities. This is a proposed person-environment mechanism, rather than a causal process demonstrated for every older adult.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "환경의 풍요성과 환경 압박을 통해 연령집단별 가설을 설명해 보세요.",
+      "answer_30s_ko": "이론은 상대적으로 역량이 더 높은 전기노인이 넓은 주거공간을 환경 자원으로 활용할 수 있다고 봅니다. 기능 제한이 더 커지면 같은 공간도 집 안에서 더 멀리 걸어야 하는 것과 같은 환경 압박이 될 수 있습니다. 따라서 하나의 특성이 개인의 역량에 따라 자원이 되거나 어려움이 될 수 있습니다. 이는 제안된 개인·환경 기제이며, 모든 노인에게서 입증된 인과 과정은 아닙니다."
     },
     {
       "card_id": "oswald-prep-04",
       "title": "Summarize the age-specific hypotheses.",
       "answer_30s": "The authors expected living space to be a resource for young-old adults but a risk for old-old adults, with accessibility benefiting mainly the latter. Neighborhood evaluations were expected to matter more at older ages. Living with others was expected to benefit mainly young-old adults, while nearby social partners and social neighborhood quality were expected to benefit the old-old. These were hypotheses, not uniformly supported findings.",
       "evidence_segment_id": "AIMS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연령별 가설을 요약해 보세요.",
+      "answer_30s_ko": "저자들은 주거공간이 전기노인에게는 자원이고 후기노인에게는 위험일 것으로, 접근성은 주로 후자에게 도움이 될 것으로 예상했습니다. 근린에 대한 평가는 더 높은 연령에서 중요할 것으로 예상했습니다. 다른 사람과 함께 사는 것은 주로 전기노인에게, 가까이 있는 관계 상대와 사회적 근린의 질은 후기노인에게 도움이 될 것으로 예상했습니다. 이는 가설이며, 모두 일관되게 지지된 결과는 아닙니다."
     },
     {
       "card_id": "oswald-prep-05",
       "title": "Distinguish the sampling frame from the final age-group samples.",
       "answer_30s": "A local statistics office randomly selected 773 potential participants, stratified by age and gender, for a survey in a district of Darmstadt, Germany. The response rate was 52%. After excluding 21 cases with missing data, the sample contained 381 community-dwelling adults: 226 young-old participants aged 65 to 79 and 155 old-old participants aged 80 to 94. These are the study groups, rather than universal boundaries of aging.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "표집틀과 최종 연령집단별 표본을 구분해 보세요.",
+      "answer_30s_ko": "지역 통계기관은 독일 다름슈타트의 한 구역에서 실시할 조사를 위해 연령과 성별로 층화하여 잠재적 참여자 773명을 무작위로 뽑았습니다. 응답률은 52%였습니다. 결측자료가 있는 21명을 제외한 표본은 지역사회 거주 성인 381명으로, 65~79세 전기노인 226명과 80~94세 후기노인 155명으로 구성되었습니다. 이는 이 연구의 집단 구분이며, 노화의 보편적인 경계가 아닙니다."
     },
     {
       "card_id": "oswald-prep-06",
       "title": "How was the indoor environment measured?",
       "answer_30s": "Participants reported room count and apartment area in square meters. The authors regarded these as relatively quasi-objective indicators, but no observer assessed the homes. Perceived accessibility summed two items on barrier-free indoor amenities and stair-free entrance access. Comfort summed 10 yes-or-no features, including adequate size, coziness, light, view, and amenities. All data still came from self-report.",
       "evidence_segment_id": "INDOOR-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "실내 환경은 어떻게 측정했나요?",
+      "answer_30s_ko": "참여자는 방의 개수와 제곱미터 단위의 아파트 면적을 보고했습니다. 저자들은 이를 비교적 준객관적인 지표로 보았지만, 관찰자가 집을 평가한 것은 아닙니다. 지각된 접근성은 실내 시설에 장애물이 없는지와 출입구를 계단 없이 드나들 수 있는지의 두 문항을 합산했습니다. 쾌적성은 적절한 크기, 아늑함, 채광, 전망, 시설 등을 포함한 예·아니오 형태의 특성 열 개를 합산했습니다. 모든 자료는 여전히 자기보고에서 나왔습니다."
     },
     {
       "card_id": "oswald-prep-07",
       "title": "How do neighborhood quality and outdoor place attachment differ?",
       "answer_30s": "Neighborhood quality summed seven yes-or-no reports covering safety, quiet, transport, shops and services, medical care, clean streets, and cultural opportunities. Outdoor place attachment used a rating from zero, not attached, to 10, fully attached, to capture emotional and cognitive bonds. The former evaluates local conditions; the latter measures a bond to place. Neither was an independent observer audit of the neighborhood.",
       "evidence_segment_id": "NEIGHBORHOOD-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "근린의 질과 실외 장소애착은 어떻게 다른가요?",
+      "answer_30s_ko": "근린의 질은 안전, 조용함, 교통, 상점과 서비스, 의료, 깨끗한 거리, 문화적 기회에 대한 일곱 개의 예·아니오 응답을 합산했습니다. 실외 장소애착은 전혀 애착이 없는 0점부터 완전히 애착을 느끼는 10점까지의 평정을 사용하여 정서적·인지적 유대를 포착했습니다. 전자는 지역의 여건을 평가하고, 후자는 장소에 대한 유대를 측정합니다. 어느 쪽도 독립적인 관찰자가 근린을 조사해 평가한 것은 아닙니다."
     },
     {
       "card_id": "oswald-prep-08",
       "title": "What were the three social-environment domains?",
       "answer_30s": "First was household composition: whether the respondent lived with others. Second was perceived social neighborhood quality, combining a friendly atmosphere in the building or household with satisfying neighborhood contacts. Third was the availability of nearby friends and relatives. These indicators describe selected environmental aspects of social life, rather than comprehensively measuring relationship quality or all forms of social support.",
       "evidence_segment_id": "SOCIAL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 환경의 세 영역은 무엇이었나요?",
+      "answer_30s_ko": "첫째는 가구 구성, 즉 응답자가 다른 사람과 함께 사는지였습니다. 둘째는 지각된 사회적 근린의 질로, 건물이나 가구의 친근한 분위기와 만족스러운 이웃 접촉을 결합했습니다. 셋째는 가까이에 친구와 친척이 있는지였습니다. 이 지표들은 사회생활의 특정한 환경적 측면을 설명하며, 관계의 질이나 모든 형태의 사회적 지원을 포괄적으로 측정하지는 않습니다."
     },
     {
       "card_id": "oswald-prep-09",
       "title": "Describe the analysis sequence and why IADL was excluded.",
       "answer_30s": "The researchers compared group means and frequencies, examined zero-order correlations, and entered environmental predictors concurrently in regression with functional capacity controls. Commonality analysis separated unique explained variance for predictors and blocks. IADL was excluded because of multicollinearity. Follow-up age-by-predictor interactions tested whether apparent group differences were statistically reliable, rather than inferring a difference merely because one group's coefficient was significant and the other's was not.",
       "evidence_segment_id": "ANALYTIC-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "분석 순서와 IADL을 제외한 이유를 설명해 보세요.",
+      "answer_30s_ko": "연구자들은 집단의 평균과 빈도를 비교하고, 영차상관을 검토한 뒤 기능적 능력을 통제하면서 환경 예측변수들을 회귀모형에 동시에 투입했습니다. 공통성 분석으로 각 예측변수와 변수군이 고유하게 설명하는 분산을 분리했습니다. 도구적 일상생활 활동인 IADL은 다중공선성 때문에 제외했습니다. 이후 연령과 예측변수의 상호작용을 검정해 관찰된 집단 차이가 통계적으로 뒷받침되는지 확인했습니다. 한 집단의 계수만 유의하고 다른 집단에서는 유의하지 않다는 이유만으로 차이를 추론한 것은 아닙니다."
     },
     {
       "card_id": "oswald-prep-10",
       "title": "What average differences appeared between the age groups?",
       "answer_30s": "Young-old participants had larger homes, reported about one additional comfort feature, and more often lived with a partner. They also had higher functional capacity and life satisfaction. Basic accessibility, neighborhood evaluations, perceived social neighborhood quality, and nearby social partners did not differ significantly. These are comparisons between groups at one time, rather than evidence that the same individuals changed in those ways with age.",
       "evidence_segment_id": "AGE-DIFF-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "두 연령 집단의 평균적인 차이는 무엇이었나요?",
+      "answer_30s_ko": "전기노인 참여자는 더 큰 주택에 살고, 쾌적성 특성이 평균적으로 약 한 가지 더 있다고 보고했으며, 파트너와 동거하는 경우가 더 많았습니다. 기능적 능력과 삶의 만족도도 더 높았습니다. 기본 접근성, 근린환경에 대한 평가, 지각된 근린의 사회적 질, 가까이 사는 사회적 관계 상대에서는 유의한 차이가 없었습니다. 이는 한 시점의 집단 간 비교이지, 같은 개인들이 나이가 들면서 그런 방식으로 변했다는 증거는 아닙니다."
     },
     {
       "card_id": "oswald-prep-11",
       "title": "Explain the total-sample regression and unique contributions.",
       "answer_30s": "The complete-case regression used 345 participants and explained 29% of life-satisfaction variance. ADL, neighborhood quality, and outdoor place attachment were positively associated; age was negatively associated. Unique contributions included 10% for ADL and 8% for the neighborhood block; individual contributions were 4% for quality and 2% each for attachment and age. Total and unique variance are different quantities, so overlapping block and individual figures should not be added as independent pieces.",
       "evidence_segment_id": "EXPLANATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "전체 표본의 회귀분석과 고유한 기여도를 설명해 보세요.",
+      "answer_30s_ko": "결측치가 없는 사례만 사용한 회귀분석에는 345명이 포함되었고 삶의 만족도 분산의 29%를 설명했습니다. ADL, 근린환경의 질, 주거지 외부의 장소애착은 정적으로 관련되었고, 연령은 부적으로 관련되었습니다. 고유한 기여도는 ADL이 10%, 근린환경 변수군이 8%였으며, 개별 변수로는 환경의 질이 4%, 장소애착과 연령이 각각 2%였습니다. 전체 설명분산과 고유 설명분산은 서로 다른 양이므로, 서로 겹치는 변수군과 개별 변수의 수치를 독립적인 부분처럼 더해서는 안 됩니다."
     },
     {
       "card_id": "oswald-prep-12",
       "title": "Compare explained variance in the two age-group models.",
       "answer_30s": "After listwise deletion, the young-old model used 207 participants and had R-squared of 27%; the old-old model used 138 and had R-squared of 39%. Unique ADL contributions were 8% and 12%, and neighborhood-block contributions were 5% and 11%. Within the groups, quality contributed 3% versus 5% and attachment 2% versus 3%. These are statistical explanations of cross-sectional differences, not percentages of change caused by the environment.",
       "evidence_segment_id": "EXPLANATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "두 연령 집단 모형의 설명분산을 비교해 보세요.",
+      "answer_30s_ko": "결측치가 있는 사례를 일괄 제외한 뒤 전기노인 모형에는 207명이 포함되었고 R²는 27%였으며, 후기노인 모형에는 138명이 포함되었고 R²는 39%였습니다. ADL의 고유 기여도는 각각 8%와 12%, 근린환경 변수군은 5%와 11%였습니다. 각 집단에서 환경의 질은 3%와 5%, 장소애착은 2%와 3%를 기여했습니다. 이는 횡단면 차이에 대한 통계적 설명이지, 환경 때문에 일어난 변화의 비율은 아닙니다."
     },
     {
       "card_id": "oswald-prep-13",
       "title": "How did the apartment-size association reverse direction?",
       "answer_30s": "Apartment area was positively associated with life satisfaction among young-old adults, accounting for 2% unique variance, but negatively associated among old-old adults, accounting for 3%. A follow-up age-by-size interaction supported the age-group difference. This supports a differential association in the sample; it does not show that enlarging or reducing someone's home would cause the corresponding change in satisfaction.",
       "evidence_segment_id": "EXPLANATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "아파트 면적과의 관련성은 어떻게 반대 방향으로 나타났나요?",
+      "answer_30s_ko": "아파트 면적은 전기노인에서 삶의 만족도와 정적으로 관련되었고 삶의 만족도 분산의 2%를 고유하게 설명했지만, 후기노인에서는 부적으로 관련되며 3%를 고유하게 설명했습니다. 이후의 연령과 면적 간 상호작용 검정도 연령 집단 차이를 뒷받침했습니다. 이는 표본 안에서 관련성이 서로 다르다는 근거이지, 누군가의 집을 넓히거나 줄이면 만족도가 그에 따라 변한다는 인과관계를 보여 주는 것은 아닙니다."
     },
     {
       "card_id": "oswald-prep-14",
       "title": "Why was the accessibility hypothesis not supported?",
       "answer_30s": "The accessibility measure did not significantly explain life satisfaction in the total sample or either age group. The authors contrast this with prior studies using more extensive objective assessments and suggest that measurement differences may matter. The result therefore concerns the limited self-reported accessibility measure used here, rather than demonstrating that accessible housing has no value.",
       "evidence_segment_id": "DISCUSSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "접근성 가설이 지지되지 않은 이유는 무엇인가요?",
+      "answer_30s_ko": "접근성 측정치는 전체 표본이나 두 연령 집단 어느 쪽에서도 삶의 만족도를 유의하게 설명하지 못했습니다. 저자들은 이를 더 광범위한 객관적 평가를 사용한 선행 연구와 대비하며 측정 방식의 차이가 중요할 수 있다고 제안합니다. 따라서 이 결과는 여기서 사용한 제한적인 자기보고 접근성 측정에 관한 것이지, 접근하기 쉬운 주거에 가치가 없다는 것을 보여 주는 것은 아닙니다."
     },
     {
       "card_id": "oswald-prep-15",
       "title": "Name four central limitations.",
       "answer_30s": "First, the brief self-report survey lacked observer assessments and several detailed environmental measures. Second, life satisfaction was measured with one item. Third, the sample came from urban community dwellings in one city, limiting coverage of rural and institutional settings. Fourth, the cross-sectional design cannot establish causal direction or show how an individual's person-environment relationship changes from young-old to old-old age.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "핵심 한계 네 가지를 말해 보세요.",
+      "answer_30s_ko": "첫째, 짧은 자기보고 조사에는 관찰자의 평가와 여러 세부적인 환경 측정이 없었습니다. 둘째, 삶의 만족도는 문항 하나로 측정했습니다. 셋째, 표본이 한 도시의 지역사회 거주자들로 구성되어 농촌과 시설 거주 환경을 포괄하는 데 한계가 있습니다. 넷째, 횡단면 설계로는 인과 방향을 확립하거나 한 개인의 인간–환경 관계가 전기노인에서 후기노인으로 넘어가며 어떻게 달라지는지 보여 줄 수 없습니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this paper as suggesting that the same environment can be experienced as a resource or a challenge depending on capacities and age-related circumstances. Neighborhood quality and attachment mattered, while apartment size had opposite associations in the two groups. I would therefore consider both home and neighborhood rather than assume that remaining in a familiar place is always beneficial. The study does not test that causal claim.",
         "evidence_segment_id": "ABS-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 논문이 같은 환경도 개인의 역량과 연령에 따른 상황에 따라 자원이나 도전으로 경험될 수 있음을 시사한다고 읽었습니다. 근린환경의 질과 장소애착은 중요했고, 주택 크기는 두 집단에서 반대 방향의 관계를 보였습니다. 따라서 익숙한 곳에 계속 사는 것이 언제나 이롭다고 가정하기보다 주택과 근린환경을 함께 고려하겠습니다. 이 연구가 그런 인과적 주장을 검증한 것은 아닙니다."
       },
       {
         "card_id": "oswald-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "The finding that a larger home was not uniformly favorable surprised me. Apartment size had a positive association among young-old adults and a negative association among old-old adults, with unique contributions of 2% and 3%. The follow-up interaction supported a group difference. I would interpret that as a reason to examine person-environment fit, rather than recommend downsizing on the basis of this cross-sectional result alone.",
         "evidence_segment_id": "EXPLANATION-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 직관에 어긋났나요?",
+        "answer_30s_ko": "더 큰 집이 한결같이 유리하지는 않다는 결과가 놀라웠습니다. 주택 크기는 전기노인에게서는 정적 관계를, 후기노인에게서는 부적 관계를 보였으며 고유 기여도는 각각 2%와 3%였습니다. 후속 상호작용 검정도 집단 차이를 뒷받침했습니다. 저는 이 횡단적 결과만으로 주거 규모를 줄이라고 권하기보다, 개인과 환경의 적합성을 살펴봐야 할 이유로 해석하겠습니다."
       },
       {
         "card_id": "oswald-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I appreciated that the researchers did more than compare separate regression coefficients visually. Commonality analyses examined unique contributions, while age-by-predictor tests assessed differences for apartment size, neighborhood quality, and place attachment. They also excluded IADL because of multicollinearity. That helped me separate a suggestive group pattern from a tested interaction and distinguish shared explanatory information from unique variance.",
         "evidence_segment_id": "ANALYTIC-001",
         "response_angle": "method",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 방법론적 특징이 눈에 띄었나요?",
+        "answer_30s_ko": "연구자들이 별도의 회귀계수를 눈으로 비교하는 데 그치지 않았다는 점이 좋았습니다. 공통성 분석으로 고유 기여도를 살펴보고, 연령과 예측변수의 상호작용 검정으로 주택 크기, 근린환경의 질, 장소애착의 차이를 평가했습니다. 다중공선성 때문에 IADL을 제외하기도 했습니다. 이를 통해 시사적인 집단 양상과 검정된 상호작용을 구별하고, 서로 공유하는 설명 정보와 고유 분산을 구분할 수 있었습니다."
       },
       {
         "card_id": "oswald-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I had expected indoor housing features to dominate, so the neighborhood block's unique contribution of 11% among old-old adults versus 5% among young-old adults changed my emphasis. I became more interested in how people evaluate and feel attached to the surrounding area. These figures describe explained cross-sectional variation; they do not show that neighborhood interventions would produce equivalent gains in an individual's satisfaction.",
         "evidence_segment_id": "EXPLANATION-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "근린환경에 대한 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 주택 내부 특성이 가장 큰 역할을 할 것이라고 예상했기 때문에, 근린환경 변수 묶음의 고유 기여도가 후기노인에서는 11%, 전기노인에서는 5%라는 결과를 보고 관심의 무게중심이 바뀌었습니다. 사람들이 주변 지역을 어떻게 평가하고 어떤 애착을 느끼는지에 더 관심을 갖게 되었습니다. 이 수치는 횡단적 변이의 설명 정도를 나타내며, 근린환경 개입이 개인의 만족도를 그만큼 높일 것임을 보여 주지는 않습니다."
       },
       {
         "card_id": "oswald-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "The cross-sectional design matters most to me. Differences between adults aged 65 to 79 and those aged 80 to 94 are not observations of the same people developing over time. The study also cannot establish whether neighborhood quality preceded life satisfaction. Longitudinal evidence would be needed to examine temporal ordering and whether the associations change as people grow older.",
         "evidence_segment_id": "LIMITATIONS-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 한계가 가장 중요했나요?",
+        "answer_30s_ko": "제게는 횡단연구 설계가 가장 중요합니다. 65~79세와 80~94세 성인 사이의 차이는 동일한 사람들이 시간에 따라 변화하는 모습을 관찰한 것이 아닙니다. 또한 근린환경의 질이 삶의 만족도에 앞서 있었는지도 이 연구로는 입증할 수 없습니다. 시간적 순서와 사람들이 나이 들면서 관계가 달라지는지를 살펴보려면 종단적 근거가 필요합니다."
       },
       {
         "card_id": "oswald-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "I would not assume that living with others is a universal source of greater life satisfaction. It had an independent association only in the young-old model. The authors suggest that some old-old adults may have adapted to circumstances such as widowhood and living alone, but adaptation was an interpretation rather than a measured causal mechanism. I would keep age-group context and the limited social measures in view.",
         "evidence_segment_id": "DISCUSSION-001",
         "response_angle": "family-implication",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "가족과 함께 사는 것에 대해 어떤 의문을 갖게 되었나요?",
+        "answer_30s_ko": "저는 다른 사람과 함께 사는 것이 누구에게나 더 높은 삶의 만족도를 가져온다고 가정하지 않겠습니다. 독립적인 관계는 전기노인 모형에서만 나타났습니다. 저자들은 일부 후기노인이 사별이나 독거 같은 상황에 적응했을 수 있다고 제안하지만, 적응은 측정한 인과적 기제가 아니라 해석이었습니다. 저는 연령집단의 맥락과 제한적인 사회적 측정을 함께 고려하겠습니다."
       }
     ]
   }

@@ -9,105 +9,135 @@
       "title": "How does the paper broaden the study of sibling relationships?",
       "answer_30s": "The authors move beyond the sibling dyad to the surrounding family network. After the first parent dies, sibling contact may change alongside contact with and support to the surviving parent. After the second dies, the family may lose a central integrative role. The approach therefore explains horizontal sibling ties in the context of vertical parent-child relationships.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 논문은 형제자매 관계 연구를 어떻게 넓히나요?",
+      "answer_30s_ko": "저자들은 형제자매 두 사람의 관계를 넘어 주변 가족 관계망으로 시야를 넓힙니다. 부모 중 한 명이 먼저 사망하면 남은 부모와의 접촉 및 지원과 함께 형제자매 간 접촉도 바뀔 수 있습니다. 두 번째 부모가 사망하면 가족은 핵심적인 통합 역할을 잃을 수 있습니다. 따라서 이 접근은 수직적인 부모·자녀 관계의 맥락에서 수평적인 형제자매 관계를 설명합니다."
     },
     {
       "card_id": "kalmijn-prep-02",
       "title": "What is a latent kin matrix, and why might it become active?",
       "answer_30s": "A latent kin matrix is an extended family network that can remain relatively dormant but become active for contact and support during a crisis or major life event. Parental illness and death can create shared loss and empathy among siblings, suggesting increased contact. The analysis compares postdeath patterns with contact several years before death, rather than assuming the period immediately before a death is an unaffected baseline.",
       "evidence_segment_id": "THEORY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "잠재적 친족 관계망은 무엇이며 왜 활성화될 수 있나요?",
+      "answer_30s_ko": "잠재적 친족 관계망은 평소에는 비교적 드러나지 않다가 위기나 중요한 생애 사건이 생기면 접촉과 지원을 위해 활성화될 수 있는 확대가족 관계망입니다. 부모의 질병과 사망은 형제자매 사이에 상실의 공유와 공감을 만들어 접촉이 늘어날 가능성을 제시합니다. 분석은 사망 직전이 영향을 받지 않은 기준시점이라고 가정하지 않고, 사망 이후의 양상을 사망 수년 전의 접촉과 비교합니다."
     },
     {
       "card_id": "kalmijn-prep-03",
       "title": "Explain solidarity hypotheses H1 through H3.",
       "answer_30s": "H1 predicts increased sibling contact after a parent dies. H2 predicts a larger increase after the first than the second death because siblings may coordinate visits and support for the surviving parent. H3 predicts that changes in contact with and support to the surviving parent mediate the first-death increase. The empirical question is whether part of sibling solidarity reflects their shared relationship with that parent.",
       "evidence_segment_id": "SOLIDARITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "결속에 관한 가설 H1부터 H3까지 설명해 보세요.",
+      "answer_30s_ko": "H1은 부모 사망 후 형제자매 접촉이 늘어날 것으로 예측합니다. H2는 형제자매가 남은 부모 방문과 지원을 함께 조정할 수 있으므로 첫 번째 부모 사망 후의 증가가 두 번째 사망 후보다 클 것으로 예측합니다. H3는 남은 부모와의 접촉 및 지원 변화가 첫 번째 사망 후의 증가를 매개할 것으로 예측합니다. 경험적으로 확인할 질문은 형제자매 결속의 일부가 그 부모와 공유하는 관계를 반영하는지입니다."
     },
     {
       "card_id": "kalmijn-prep-04",
       "title": "Explain the kinkeeping and conflict hypotheses H4 through H6.",
       "answer_30s": "H4 predicts that contact eventually falls below its predeath level after the second parent dies, leaving a central kinkeeping role vacant. H5 predicts a short-term conflict increase after a parent dies. H6 predicts a long-term conflict decline specifically after the second death. Decreasing contact and conflict together would fit fading ties, rather than relationships that remain active but become increasingly antagonistic.",
       "evidence_segment_id": "KINKEEPING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "친족관계 유지와 갈등에 관한 가설 H4부터 H6까지 설명해 보세요.",
+      "answer_30s_ko": "H4는 두 번째 부모가 사망하여 핵심적인 친족관계 유지 역할이 공석이 되면, 결국 접촉이 사망 전 수준보다 낮아질 것으로 예측합니다. H5는 부모 사망 후 단기적으로 갈등이 늘어날 것으로 예측합니다. H6는 특히 두 번째 사망 후 장기적으로 갈등이 줄어들 것으로 예측합니다. 접촉과 갈등이 함께 줄어든다면 관계가 활발하게 유지되면서 점점 더 적대적으로 되는 것보다 관계가 희미해지는 양상에 부합합니다."
     },
     {
       "card_id": "kalmijn-prep-05",
       "title": "Describe the data and analytic sample.",
       "answer_30s": "The study used four Netherlands Kinship Panel waves from 2002-2004 through 2014-2015. Its 3,812 respondents included 1,211 who lost a parent during observation and 2,601 who did not. Contact analyses covered 10,367 sibling dyads; conflict was asked for at most two siblings, producing 6,186 dyads. Waves averaged 3.62 years apart, so modeled annual dynamics should not be mistaken for annual interviews with every respondent.",
       "evidence_segment_id": "SAMPLE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "자료와 분석 표본을 설명해 보세요.",
+      "answer_30s_ko": "이 연구는 2002~2004년부터 2014~2015년까지 네 차례의 네덜란드 친족패널 자료를 사용했습니다. 응답자 3,812명에는 관찰기간 동안 부모를 잃은 1,211명과 그렇지 않은 2,601명이 포함되었습니다. 접촉 분석은 형제자매 관계쌍 10,367개를 다뤘고, 갈등은 최대 두 명의 형제자매에 대해서만 질문하여 관계쌍 6,186개가 나왔습니다. 조사 간격은 평균 3.62년이었으므로, 모형으로 추정한 연간 변화를 모든 응답자에게 매년 면접한 것으로 오해해서는 안 됩니다."
     },
     {
       "card_id": "kalmijn-prep-06",
       "title": "How were contact, conflict, and postdeath dynamics measured?",
       "answer_30s": "Face-to-face contact and phone contact, including letters and email, used seven frequency categories for the previous year, converted to approximate annual contact and logged. Conflict was reduced to any versus none in the previous three months. A transition indicator captured the level shift from the death year; duration measured years since death. Observations one or two years before death were excluded to obtain a more typical predeath reference.",
       "evidence_segment_id": "OUTCOMES-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "접촉, 갈등, 사망 이후의 변화는 어떻게 측정했나요?",
+      "answer_30s_ko": "대면 접촉과 편지·이메일을 포함한 전화 접촉은 지난 1년의 빈도를 일곱 범주로 측정하고, 대략적인 연간 접촉 횟수로 환산한 뒤 로그변환했습니다. 갈등은 지난 3개월간 있었는지 없었는지의 이분형으로 만들었습니다. 전환 지표는 사망한 해부터의 수준 변화를 포착하고, 기간 변수는 사망 후 지난 연수를 측정했습니다. 더 전형적인 사망 전 기준을 얻기 위해 사망 1~2년 전의 관측치는 제외했습니다."
     },
     {
       "card_id": "kalmijn-prep-07",
       "title": "Why use fixed effects and family-clustered standard errors?",
       "answer_30s": "Fixed effects relate changes over time in sibling relationships to changes in predictors, reducing confounding by stable characteristics of the analyzed units. Repeated observations and multiple sibling dyads within a family are not independent, so the authors used family-clustered robust standard errors. That addresses the dependence in uncertainty estimates, while fixed effects still cannot remove all time-varying confounding or establish causal direction.",
       "evidence_segment_id": "MODELS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "고정효과와 가족 단위로 군집화한 표준오차를 사용하는 이유는 무엇인가요?",
+      "answer_30s_ko": "고정효과는 시간에 따른 형제자매 관계의 변화를 예측변수의 변화와 연결하여 분석단위의 안정적인 특성에서 오는 교란을 줄입니다. 한 가족 안의 반복 관측과 여러 형제자매 관계쌍은 독립적이지 않으므로, 저자들은 가족 단위로 군집화한 강건 표준오차를 사용했습니다. 이는 불확실성 추정에서 자료의 의존성을 다루는 방법입니다. 그러나 고정효과로도 모든 시변 교란을 제거하거나 인과의 방향을 확립할 수는 없습니다."
     },
     {
       "card_id": "kalmijn-prep-08",
       "title": "Why use different models for contact and conflict?",
       "answer_30s": "Logged contact was analyzed with linear fixed-effects regression. Binary conflict was analyzed with both fixed-effects conditional logit and linear probability models. Logit can reveal relative changes in an uncommon outcome that look small in absolute probability. However, conditional fixed-effects logit retains only cases whose conflict status changes, sharply reducing the usable sample. Model type and sample selection therefore both matter when interpreting the estimates.",
       "evidence_segment_id": "MODELS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "접촉과 갈등에 서로 다른 모형을 사용하는 이유는 무엇인가요?",
+      "answer_30s_ko": "로그변환한 접촉은 선형 고정효과 회귀로 분석했습니다. 이분형 갈등은 고정효과 조건부 로짓과 선형확률모형으로 모두 분석했습니다. 로짓은 흔하지 않은 결과에서 절대확률로 보면 작아 보이는 상대적 변화를 드러낼 수 있습니다. 그러나 조건부 고정효과 로짓은 갈등 상태가 변한 사례만 남기므로 사용 가능한 표본이 크게 줄어듭니다. 따라서 추정치를 해석할 때 모형 유형과 표본 선택을 모두 고려해야 합니다."
     },
     {
       "card_id": "kalmijn-prep-09",
       "title": "What happened to contact after the first parent died?",
       "answer_30s": "The unadjusted face-to-face model had a transition coefficient of about .173, which the authors summarize as an approximately 17% increase using a log-coefficient approximation. The subsequent decline was not significant. Phone, letter, and email contact showed a similar positive transition and nonsignificant duration pattern. These models exclude observations after the second death, so the apparent persistence applies while the other parent is still alive.",
       "evidence_segment_id": "CONTACT-FIRST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "부모 중 한 명이 먼저 사망한 뒤 접촉은 어떻게 달라졌나요?",
+      "answer_30s_ko": "보정하지 않은 대면 접촉 모형의 전환 계수는 약 .173이었고, 저자들은 로그계수의 근사를 사용해 이를 약 17% 증가로 요약했습니다. 이후의 감소는 유의하지 않았습니다. 전화·편지·이메일 접촉에서도 전환 시점의 정적 변화와 유의하지 않은 기간 효과라는 비슷한 양상이 나타났습니다. 이 모형들은 두 번째 부모 사망 이후의 관측치를 제외하므로, 변화가 지속되는 듯한 양상은 다른 부모가 아직 살아 있는 동안에 적용됩니다."
     },
     {
       "card_id": "kalmijn-prep-10",
       "title": "How much did relationships with the surviving parent explain?",
       "answer_30s": "Changes in face-to-face contact with the surviving parent were positively associated with sibling face-to-face contact, with a log-log coefficient around .19. Adding the parent measures reduced the first-death coefficient from about .17 to .10. For phone contact, parent contact and support were associated with a smaller reduction, about .16 to .12. Significant indirect associations support partial mediation, but do not settle its causal direction.",
       "evidence_segment_id": "MEDIATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생존 부모와의 관계는 어느 정도를 설명했나요?",
+      "answer_30s_ko": "생존 부모와의 대면 접촉 변화는 형제자매 간 대면 접촉과 정적으로 관련되었으며, 로그-로그 계수는 약 .19였습니다. 부모 관련 측정을 추가하자 첫 번째 사망의 계수는 약 .17에서 .10으로 줄었습니다. 전화 접촉에서는 부모와의 접촉 및 지원에 따른 계수 감소가 약 .16에서 .12로 더 작았습니다. 유의한 간접 관련성은 부분 매개를 뒷받침하지만, 그 인과 방향까지 확정하지는 않습니다."
     },
     {
       "card_id": "kalmijn-prep-11",
       "title": "Describe contact after the second parent died.",
       "answer_30s": "The quadratic models showed a positive transition followed by a negative duration pattern, with declines gradually leveling off. Contact eventually fell below the predeath reference. The authors describe the predicted face-to-face decline at roughly seven years as about 30%, and the longer-term phone, letter, and email decline as about 15%. These are approximate model summaries of observed dynamics, rather than exact effects for every family.",
       "evidence_segment_id": "CONTACT-SECOND-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "두 번째 부모 사망 이후의 접촉을 설명해 보세요.",
+      "answer_30s_ko": "이차항 모형에서는 전환 시점의 증가 뒤에 시간이 지나면서 감소하는 양상이 나타났고, 감소는 점차 완만해졌습니다. 접촉은 결국 사망 전의 준거 수준보다 낮아졌습니다. 저자들은 대략 7년 시점에 예측된 대면 접촉의 감소를 약 30%로, 더 장기적인 전화·편지·이메일 접촉의 감소를 약 15%로 설명합니다. 이는 관찰된 변화 양상을 모형으로 대략 요약한 것이지 모든 가족에게 적용되는 정확한 효과는 아닙니다."
     },
     {
       "card_id": "kalmijn-prep-12",
       "title": "How did conflict change after the first and second deaths?",
       "answer_30s": "No significant conflict change followed the first death. After the second, the initial increase was not significant, but the later decline was significant and predicted conflict prevalence approached zero. Although mothers were the second parent to die in 75% of cases, separate analyses found no significant parent-gender interactions for contact. That does not establish a distinct maternal effect or prove that all family conflict disappears.",
       "evidence_segment_id": "CONFLICT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "첫 번째와 두 번째 사망 이후 갈등은 어떻게 달라졌나요?",
+      "answer_30s_ko": "첫 번째 사망 이후에는 유의한 갈등 변화가 없었습니다. 두 번째 사망 이후 초기 증가는 유의하지 않았지만, 이후 감소는 유의했고 갈등을 경험할 것으로 예측된 비율은 0에 가까워졌습니다. 사례의 75%에서 어머니가 두 번째로 사망한 부모였지만, 별도의 분석에서 접촉에 대한 부모 성별 상호작용은 유의하지 않았습니다. 이 결과가 어머니만의 고유한 효과를 확립하거나 모든 가족 갈등이 사라진다고 입증하는 것은 아닙니다."
     },
     {
       "card_id": "kalmijn-prep-13",
       "title": "Summarize the authors' conclusions about hypothesis support.",
       "answer_30s": "H1 was supported, and H2 was supported for face-to-face contact only. H3 received partial-mediation support, clearest for face-to-face contact, with an association remaining after adjustment. H4 and H6 were supported by long-term contact and conflict declines after the second death. H5 was not supported: neither death produced a significant short-term conflict increase. The authors interpret the later pattern as fading rather than deteriorating ties.",
       "evidence_segment_id": "DISCUSSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "가설의 지지 여부에 관한 저자들의 결론을 요약해 보세요.",
+      "answer_30s_ko": "H1은 지지되었고, H2는 대면 접촉에서만 지지되었습니다. H3은 부분 매개로 지지되었으며, 대면 접촉에서 가장 뚜렷했고 보정 후에도 관련성이 남았습니다. H4와 H6은 두 번째 사망 이후 접촉과 갈등의 장기적 감소로 지지되었습니다. H5는 지지되지 않았습니다. 두 번의 사망 중 어느 사망 이후에도 단기적으로 유의한 갈등 증가는 나타나지 않았습니다. 저자들은 이후의 양상을 관계가 악화되기보다 옅어지는 것으로 해석합니다."
     },
     {
       "card_id": "kalmijn-prep-14",
       "title": "Why is the causal direction of mediation unresolved?",
       "answer_30s": "The authors interpret increased solidarity with the surviving parent as promoting sibling contact. But they explicitly acknowledge the reverse possibility: more sibling contact could encourage support and solidarity toward the parent. A significant indirect association therefore does not establish which process preceded or caused the other. The family-network interpretation is plausible, but its causal sequence remains uncertain.",
       "evidence_segment_id": "SYNTHESIS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "매개의 인과 방향이 아직 해결되지 않은 이유는 무엇인가요?",
+      "answer_30s_ko": "저자들은 생존 부모와의 결속 증가가 형제자매 접촉을 촉진한다고 해석합니다. 그러나 형제자매 접촉이 늘면서 부모에 대한 지원과 결속이 촉진될 수 있다는 반대 방향의 가능성도 명시적으로 인정합니다. 따라서 유의한 간접 관련성만으로 어느 과정이 먼저 일어났거나 다른 과정을 일으켰는지 확정할 수 없습니다. 가족 관계망에 따른 해석은 개연성이 있지만, 그 인과적 순서는 여전히 불확실합니다."
     },
     {
       "card_id": "kalmijn-prep-15",
       "title": "What limits measurement and generalization?",
       "answer_30s": "The study covers the Netherlands, uses one respondent's contact reports, and measures conflict with one item over three months for at most two siblings. Contact can include tension as well as harmony. The data lack siblings' own reports of parental support and direct measures of kinkeepers or their activities. These limits call for caution about mechanisms, relationship quality, and generalization to other countries or cultures.",
       "evidence_segment_id": "SYNTHESIS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "측정과 일반화에는 어떤 한계가 있나요?",
+      "answer_30s_ko": "이 연구는 네덜란드를 대상으로 하며, 한 응답자가 보고한 접촉을 사용하고 최대 두 명의 형제자매에 대한 지난 3개월간의 갈등을 문항 하나로 측정합니다. 접촉에는 조화뿐 아니라 긴장도 포함될 수 있습니다. 자료에는 부모 지원에 대한 형제자매 자신의 보고와 친족관계를 유지하는 사람이나 그 활동을 직접 측정한 값이 없습니다. 이러한 한계 때문에 작동 과정, 관계의 질, 다른 국가나 문화로의 일반화를 해석할 때 주의해야 합니다."
     }
   ],
   "reading_response": {
@@ -121,7 +151,9 @@
         "evidence_segment_id": "ABS-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Main claim",
-        "style_basis": "Summarize the abstract through first versus second parental death and short-term versus long-term patterns."
+        "style_basis": "Summarize the abstract through first versus second parental death and short-term versus long-term patterns.",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 논문이 사별 후 형제자매 관계가 강해지는지 약해지는지 중 하나를 택하기보다, 결속과 친족관계 유지가 서로 다른 시기에 작동할 수 있음을 보여 준다고 읽었습니다. 부모 한 분이 먼저 사망하고 다른 한 분이 살아 있는 동안에는 접촉 증가가 더 지속적으로 나타났습니다. 남은 부모까지 사망한 뒤에는 처음에 접촉이 늘었다가 이후 접촉과 갈등이 감소했습니다. 이를 통해 더 넓은 가족 관계망과 시점이 제 해석의 중심이 되었습니다."
       },
       {
         "card_id": "kalmijn-reading-02",
@@ -130,7 +162,9 @@
         "evidence_segment_id": "THEORY-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Theoretical insight",
-        "style_basis": "Distinguish the four theoretical perspectives, the latent kin matrix, and shared loss."
+        "style_basis": "Distinguish the four theoretical perspectives, the latent kin matrix, and shared loss.",
+        "title_ko": "어떤 관점이 가장 새롭게 다가왔나요?",
+        "answer_30s_ko": "형제자매를 친구나 경쟁자로만 보지 않고 잠재적인 친족 관계망의 일부로 보는 것이 유용했습니다. 같은 부모를 알고 사랑했다는 사실은 슬픔을 공유하게 하고 서로의 고통을 이해하도록 도울 수 있습니다. 따라서 이론은 비교적 잠잠하던 관계가 상실을 겪으며 활성화될 수 있다고 예측합니다. 저는 이런 설명의 제안과 모든 형제자매의 동기에 관한 직접적인 근거를 구분하겠습니다."
       },
       {
         "card_id": "kalmijn-reading-03",
@@ -139,7 +173,9 @@
         "evidence_segment_id": "MEDIATION-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Specific evidence",
-        "style_basis": "Present the mediation coefficients together with the limits of partial mediation."
+        "style_basis": "Present the mediation coefficients together with the limits of partial mediation.",
+        "title_ko": "어떤 결과가 가장 설득력 있었나요?",
+        "answer_30s_ko": "부모 한 분이 먼저 사망한 뒤의 대면 접촉 전환 계수는 생존 부모와의 관계를 고려하자 약 .17에서 .10으로 낮아졌습니다. 저는 이를 가족 관계망에 주목하는 해석을 뒷받침하는 유용한 근거로 보았습니다. 간접적 관계는 유의했지만 보정 후에도 정적 관계가 남았으므로, 완전매개가 아니라 부분매개였습니다. 계수가 줄었다는 사실만으로 기제의 방향이 입증되는 것도 아닙니다."
       },
       {
         "card_id": "kalmijn-reading-04",
@@ -148,7 +184,9 @@
         "evidence_segment_id": "DISCUSSION-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Interpreting the findings",
-        "style_basis": "Focus on the discussion's distinction between fading and deteriorating ties."
+        "style_basis": "Focus on the discussion's distinction between fading and deteriorating ties.",
+        "title_ko": "어떤 해석에 가장 주의해야 하나요?",
+        "answer_30s_ko": "저는 갈등이 줄었다고 해서 관계의 질이 저절로 좋아졌다고 해석하지 않겠습니다. 남은 부모까지 사망한 뒤에는 시간이 흐르면서 접촉과 갈등이 모두 감소했습니다. 저자들은 이를 형제자매가 점점 더 적대적으로 변하는 것이라기보다, 가족을 통합하던 구성원을 잃은 뒤 서로의 일상에서 멀어져 가는 것으로 해석합니다. 접촉 빈도나 갈등의 부재를 관계의 질과 동일시하면 이 구분을 놓치게 됩니다."
       },
       {
         "card_id": "kalmijn-reading-05",
@@ -157,7 +195,9 @@
         "evidence_segment_id": "SYNTHESIS-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Causal limitation",
-        "style_basis": "Center the reverse-direction interpretation explicitly acknowledged by the authors."
+        "style_basis": "Center the reverse-direction interpretation explicitly acknowledged by the authors.",
+        "title_ko": "어떤 방법론적 한계가 가장 중요한가요?",
+        "answer_30s_ko": "제게는 매개 양상의 인과적 순서가 가장 중요합니다. 살아 계신 부모에 대한 결속이 형제자매를 모이게 할 수도 있지만, 형제자매 간 접촉이 늘면서 그런 결속과 지원이 촉진될 수도 있습니다. 저자들도 이 대안적 설명을 인정합니다. 따라서 저는 관찰된 매개 양상과 가능한 해석을 설명하되, 그 방향은 아직 해결되지 않은 것으로 남기겠습니다."
       },
       {
         "card_id": "kalmijn-reading-06",
@@ -166,7 +206,9 @@
         "evidence_segment_id": "SYNTHESIS-001",
         "question_type": "리딩 리스폰스",
         "response_angle": "Future research",
-        "style_basis": "Propose a design that measures the mechanisms the paper could not observe directly."
+        "style_basis": "Propose a design that measures the mechanisms the paper could not observe directly.",
+        "title_ko": "어떤 후속 연구를 제안하겠나요?",
+        "answer_30s_ko": "저는 여러 가족 구성원에게 누가 모임과 연락을 주선하는지, 부모가 사망한 뒤 누가 그 일을 이어받는지 반복해서 묻겠습니다. 이 연구에는 친족관계 유지 담당자와 그 활동을 직접 측정한 자료, 형제자매가 직접 보고한 부모 지원 자료가 없었습니다. 여러 사람의 보고와 반복적인 역할 측정은 책임이 사라지는지 다른 사람에게 이전되는지 구분하고 시점을 밝히는 데 도움이 될 수 있습니다. 이는 여기서 입증된 결과가 아니라 제가 제안하는 연구입니다."
       }
     ]
   }

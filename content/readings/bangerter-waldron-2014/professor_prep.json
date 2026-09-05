@@ -9,105 +9,135 @@
       "title": "Summarize the central finding in one sentence.",
       "answer_30s": "Qualitative interviews with long-distance grandparents identified 100 unique turning points in eight categories, while the Retrospective Interview Technique yielded five closeness trajectories. Events varied in their perceived positive or negative implications. The findings show diverse relationship paths and communication challenges during grandchildren's adolescence, as recalled by grandparents; they do not establish a single developmental course or causal effects.",
       "evidence_segment_id": "META-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "핵심 결과를 한 문장으로 요약해 보세요.",
+      "answer_30s_ko": "멀리 사는 조부모와의 질적 면접에서 여덟 범주에 속하는 고유한 전환점 100개가 확인되었고, 회고적 면접기법을 통해 다섯 친밀감 궤적이 도출되었습니다. 각 사건이 긍정적 또는 부정적으로 받아들여진 의미는 다양했습니다. 이 결과는 조부모의 회상에 나타난 손자녀 청소년기의 다양한 관계 경로와 의사소통상의 어려움을 보여 줍니다. 하나의 발달 경로나 인과 효과를 확립한 것은 아닙니다."
     },
     {
       "card_id": "bangerter-prep-02",
       "title": "What did the two research questions ask?",
       "answer_30s": "RQ1 asked how grandparent-grandchild closeness changes during the grandchild's adolescence. RQ2 asked which relational events grandparents most identify as positive or negative turning points with a long-distance adolescent grandchild. The authors anticipated variation but did not specify the exact trajectories in advance. The questions therefore guided an exploratory analysis of grandparents' perspectives.",
       "evidence_segment_id": "RATIONALE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "두 연구 질문은 무엇을 물었나요?",
+      "answer_30s_ko": "RQ1은 손자녀의 청소년기에 조부모·손자녀 간 친밀감이 어떻게 변하는지 물었습니다. RQ2는 멀리 사는 청소년 손자녀와의 관계에서 조부모가 어떤 관계 사건을 긍정적 또는 부정적 전환점으로 가장 많이 꼽는지 물었습니다. 저자들은 다양성을 예상했지만 구체적인 궤적을 미리 정하지는 않았습니다. 따라서 이 질문들은 조부모 관점의 탐색적 분석을 이끌었습니다."
     },
     {
       "card_id": "bangerter-prep-03",
       "title": "How should the sample counts of 35 and 30 be distinguished?",
       "answer_30s": "Researchers conducted 35 semi-structured interviews, but five could not be transcribed. The reported usable demographic counts, including 21 women and nine men, sum to 30, and 30 relationship graphs were analyzed. Thus, 35 refers to interviews conducted and 30 to the usable sample; neither number should be substituted for the other without explaining the missing transcripts.",
       "evidence_segment_id": "METHOD-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "표본 수 35와 30은 어떻게 구분해야 하나요?",
+      "answer_30s_ko": "연구자들은 반구조화 면접을 35회 실시했지만 다섯 면접은 전사할 수 없었습니다. 여성 21명과 남성 9명을 포함한 사용 가능한 표본의 인구학적 수는 30명으로 합산되며, 관계 그래프 30개를 분석했습니다. 따라서 35는 실시한 면접 수이고 30은 사용 가능한 표본 수입니다. 누락된 전사자료를 설명하지 않은 채 한 수치를 다른 수치로 대체해서는 안 됩니다."
     },
     {
       "card_id": "bangerter-prep-04",
       "title": "Where were participants recruited, and what limits did their composition create?",
       "answer_30s": "Participants were recruited through Arizona State University's Osher Lifelong Learning Institute. The usable sample included 29 Caucasian and one Hispanic participant, 21 women and nine men, and 26 married participants. The authors describe a largely middle-class, married, relatively educated retired sample. Income was not asked directly; that characterization drew partly on the broader program population and housing context, limiting population-wide generalization.",
       "evidence_segment_id": "METHOD-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "참여자는 어디에서 모집했으며 표본 구성에는 어떤 한계가 있나요?",
+      "answer_30s_ko": "참여자는 애리조나주립대학교의 Osher 평생학습원을 통해 모집했습니다. 사용 가능한 표본에는 백인 29명과 히스패닉 1명, 여성 21명과 남성 9명, 기혼자 26명이 포함되었습니다. 저자들은 대체로 중산층이고 기혼이며 비교적 교육 수준이 높은 은퇴자 표본이라고 설명합니다. 소득을 직접 묻지는 않았고, 이러한 설명은 더 넓은 프로그램 참여자 집단과 주거 맥락에 부분적으로 근거하므로 인구 전체로 일반화하는 데 한계가 있습니다."
     },
     {
       "card_id": "bangerter-prep-05",
       "title": "What did the Retrospective Interview Technique capture?",
       "answer_30s": "Grandparents identified turning points and plotted changes in closeness for one selected long-distance grandchild, from age five to the child's current age. Closeness was defined as the psychological bond the grandparent felt toward the grandchild. Interviews lasted roughly seven to 45 minutes, and 30 hand-drawn graphs were digitized. These were retrospective reconstructions, rather than repeated observations collected throughout childhood.",
       "evidence_segment_id": "PROCEDURE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "회고적 면접기법은 무엇을 포착했나요?",
+      "answer_30s_ko": "조부모들은 멀리 사는 손자녀 한 명을 선택해 그 아이가 다섯 살이었을 때부터 현재 나이까지의 전환점을 찾고 친밀감 변화를 그렸습니다. 친밀감은 조부모가 손자녀에게 느끼는 심리적 유대로 정의했습니다. 면접은 대략 7~45분 동안 진행되었고 손으로 그린 그래프 30개를 디지털화했습니다. 이는 아동기 전반에 걸쳐 수집한 반복 관찰이 아니라 회고적 재구성이었습니다."
     },
     {
       "card_id": "bangerter-prep-06",
       "title": "How should the inconsistent scale direction be handled?",
       "answer_30s": "The trajectory prose describes consistently close and consistently distant relationships, but the numeric direction implied by the figure descriptions conflicts with the scale interpretation in the methods and prose. I would flag that inconsistency and use the authors' named trajectory categories and verbal descriptions of increasing or decreasing closeness. I would not infer a settled direction from higher or lower plotted numbers alone.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "척도 방향의 불일치는 어떻게 다뤄야 하나요?",
+      "answer_30s_ko": "궤적을 설명한 본문은 지속적으로 가까운 관계와 지속적으로 먼 관계를 서술하지만, 그림 설명이 함축하는 수치 방향은 방법과 본문에서의 척도 해석과 충돌합니다. 저는 이 불일치를 지적하고 저자들이 이름 붙인 궤적 범주 및 친밀감 증가·감소에 대한 언어적 설명을 사용하겠습니다. 그래프의 숫자가 높거나 낮다는 이유만으로 방향이 확정되었다고 추론하지는 않겠습니다."
     },
     {
       "card_id": "bangerter-prep-07",
       "title": "How was constant comparative analysis conducted?",
       "answer_30s": "Each turning point was compared with earlier ones, with coding notes explaining grouping and separation. The first author developed initial categories, refined definitions through discussion with the second author and several grandparents, and reapplied the scheme while searching for negative cases. Saturation appeared after roughly 75% of the data, but all data were coded. The graphs were similarly grouped by patterns of reported change.",
       "evidence_segment_id": "ANALYSIS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "지속적 비교분석은 어떻게 수행했나요?",
+      "answer_30s_ko": "각 전환점을 이전 전환점들과 비교하고, 함께 묶거나 분리한 이유를 코딩 메모로 설명했습니다. 제1저자가 초기 범주를 만들고 제2저자 및 여러 조부모와 논의하며 정의를 다듬은 뒤, 기존 분류에 맞지 않는 반례를 찾으면서 분류 틀을 다시 적용했습니다. 자료의 약 75%를 다뤘을 때 포화에 이른 것으로 보였지만 전체 자료를 모두 코딩했습니다. 그래프도 보고된 변화 양상에 따라 비슷한 방식으로 묶었습니다."
     },
     {
       "card_id": "bangerter-prep-08",
       "title": "What were the five trajectories and their frequencies?",
       "answer_30s": "Marked decrease was most common, with 10 graphs; consistent closeness had eight, minimal change five, multidimensional change five, and marked increase two. These sum to 30 digitized graphs. Consistency did not necessarily mean a close relationship: it also included relationships perceived as consistently distant. The categories therefore distinguish the pattern of change from the level of closeness.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "다섯 궤적과 그 빈도는 어떻게 되나요?",
+      "answer_30s_ko": "뚜렷한 감소가 그래프 10개로 가장 흔했고, 지속적 친밀이 8개, 최소 변화가 5개, 다차원적 변화가 5개, 뚜렷한 증가가 2개였습니다. 합계는 디지털화한 그래프 30개입니다. 일정하게 유지된다고 반드시 가까운 관계인 것은 아니었으며, 지속적으로 멀다고 지각된 관계도 포함되었습니다. 따라서 이 범주들은 변화의 양상과 친밀감 수준을 구분합니다."
     },
     {
       "card_id": "bangerter-prep-09",
       "title": "What do the turning-point counts represent?",
       "answer_30s": "The results identify 100 unique turning points: 50 positive and 50 negative across eight categories. Individuals reported between zero and 10, and eight grandparents reported none. The equal positive and negative counts describe events, rather than equal numbers of happy and unhappy people. They should not be interpreted as population prevalence or as 100 independent participants.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "전환점의 개수는 무엇을 나타내나요?",
+      "answer_30s_ko": "결과에서는 여덟 범주에 걸쳐 서로 구별되는 전환점 100개를 확인했으며, 긍정적 전환점 50개와 부정적 전환점 50개였습니다. 개인별로 보고한 전환점은 0~10개였고, 조부모 여덟 명은 하나도 보고하지 않았습니다. 긍정적·부정적 전환점의 개수가 같다는 것은 사건에 관한 설명이지, 행복한 사람과 불행한 사람의 수가 같다는 뜻은 아닙니다. 이를 모집단에서의 발생 비율이나 서로 독립적인 참여자 100명으로 해석해서는 안 됩니다."
     },
     {
       "card_id": "bangerter-prep-10",
       "title": "How did shared time, family dynamics, and geographic distance differ?",
       "answer_30s": "Spending Time Together was the most frequently cited category, and its reported events were unanimously positive, including visits, vacations, and holidays. Family Relational Dynamics included conflict, abuse, and living-arrangement changes; 12 events were negative, but some were positive. Geographic Distance described moves and reduced opportunities to meet as negative turning points. These are grandparents' interpretations of events, rather than experimental effects.",
       "evidence_segment_id": "TURNING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "함께 보낸 시간, 가족관계의 역동, 지리적 거리는 어떻게 달랐나요?",
+      "answer_30s_ko": "‘함께 시간 보내기’는 가장 자주 언급된 범주였고, 방문, 휴가, 명절 등을 포함해 보고된 사건이 모두 긍정적이었습니다. ‘가족관계의 역동’에는 갈등, 학대, 거주 형태의 변화가 포함되었으며, 12개 사건은 부정적이었지만 일부는 긍정적이었습니다. ‘지리적 거리’는 이사와 만날 기회의 감소를 부정적 전환점으로 다뤘습니다. 이는 사건에 대한 조부모의 해석이지 실험으로 확인한 효과가 아닙니다."
     },
     {
       "card_id": "bangerter-prep-11",
       "title": "What do the long-drive example and technology accounts illustrate?",
       "answer_30s": "A grandfather who drove 400 miles described disappointment when his granddaughter left after dinner to meet friends. The authors classified this as Lack of Relational Investment: he experienced the effort as one-sided, rather than describing distance alone. Other accounts presented texting, Facebook, and Skype as ways to connect with grandchildren's daily lives. These illustrate perceived relational meanings, rather than prove that particular technologies increase closeness.",
       "evidence_segment_id": "TURNING-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "장거리 운전 사례와 기술 사용에 관한 이야기는 무엇을 보여 주나요?",
+      "answer_30s_ko": "400마일을 운전해 간 한 할아버지는 손녀가 저녁 식사 후 친구를 만나러 나갔을 때 느낀 실망을 이야기했습니다. 저자들은 이를 ‘관계적 투자 부족’으로 분류했습니다. 그는 거리만을 설명한 것이 아니라 자신의 노력이 일방적이라고 경험했기 때문입니다. 다른 이야기에서는 문자메시지, 페이스북, 스카이프가 손자녀의 일상과 연결되는 수단으로 제시되었습니다. 이러한 사례는 당사자가 느낀 관계적 의미를 보여 주는 것이지 특정 기술이 친밀감을 높인다는 것을 입증하지는 않습니다."
     },
     {
       "card_id": "bangerter-prep-12",
       "title": "What behaviors illustrated relational investment?",
       "answer_30s": "Relational investment included either generation initiating contact or making efforts to maintain closeness. Examples were a grandfather helping with homework, a grandson calling to share school experiences, and a granddaughter arranging repeated one-to-one visits. The accounts suggest that reciprocated initiative can matter. They are grandparents' reports of these exchanges, rather than direct observations or independent reports from both generations.",
       "evidence_segment_id": "TURNING-003",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "어떤 행동들이 관계적 투자를 보여 주었나요?",
+      "answer_30s_ko": "관계적 투자에는 어느 세대든 먼저 연락하거나 친밀감을 유지하려고 노력하는 행동이 포함되었습니다. 할아버지가 숙제를 도와주거나, 손자가 학교에서의 경험을 나누려고 전화하거나, 손녀가 단둘이 만나는 시간을 반복해서 마련한 사례가 있습니다. 이 이야기들은 서로 먼저 다가가는 노력이 중요할 수 있음을 시사합니다. 다만 이는 이러한 교류에 관한 조부모의 보고이며, 직접 관찰이나 두 세대에서 각각 독립적으로 얻은 보고는 아닙니다."
     },
     {
       "card_id": "bangerter-prep-13",
       "title": "How do lack of free time and growing independence differ?",
       "answer_30s": "Lack of Free Time concerns competing schedules, including grandchildren's school, friends, and activities as well as grandparents' commitments. Grandchild Gaining Independence concerns maturity, privacy, and changed relational expectations. Most independence events were perceived negatively, but one grandparent described a positive opportunity to advocate for a maturing granddaughter. Independence therefore was not uniformly negative even within this small sample.",
       "evidence_segment_id": "TURNING-004",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "여유 시간의 부족과 독립성의 증가는 어떻게 다른가요?",
+      "answer_30s_ko": "‘여유 시간 부족’은 손자녀의 학교, 친구, 활동 일정뿐 아니라 조부모의 약속과 책임 등 서로 겹치는 일정에 관한 것입니다. ‘손자녀의 독립성 증가’는 성숙, 사생활, 달라진 관계적 기대에 관한 것입니다. 독립성과 관련된 사건 대부분은 부정적으로 받아들여졌지만, 한 조부모는 성장하는 손녀를 옹호할 수 있는 긍정적 기회라고 설명했습니다. 따라서 이 작은 표본 안에서도 독립성이 한결같이 부정적인 것은 아니었습니다."
     },
     {
       "card_id": "bangerter-prep-14",
       "title": "How does the discussion interpret both change and stability?",
       "answer_30s": "About one-third reported marked decline, but eight grandparents perceived no change, so the study did not support inevitable deterioration during adolescence. Others appeared to maintain stability through visits and communication efforts. The discussion refers to more than 100 change events from 22 participants, while the results count 100 unique turning points; I would retain that wording distinction rather than present an exactly reconciled event count.",
       "evidence_segment_id": "DISCUSSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "논의에서는 변화와 안정을 어떻게 함께 해석하나요?",
+      "answer_30s_ko": "약 3분의 1은 친밀감이 뚜렷하게 감소했다고 보고했지만, 조부모 여덟 명은 변화가 없다고 느꼈으므로 이 연구는 청소년기에 관계가 반드시 악화된다는 주장을 뒷받침하지 않았습니다. 다른 참여자들은 방문과 의사소통 노력을 통해 안정성을 유지하는 것으로 보였습니다. 논의는 참여자 22명에게서 나온 변화 사건이 100개가 넘는다고 표현하지만, 결과는 서로 구별되는 전환점을 100개로 집계합니다. 저는 정확히 일치시킨 사건 수를 제시하기보다 이 표현상의 차이를 그대로 유지하겠습니다."
     },
     {
       "card_id": "bangerter-prep-15",
       "title": "What are the main limitations and practical implications?",
       "answer_30s": "Closeness was subjective, cultural diversity was limited, and retrospective trajectories began at age five; some grandchildren had not completed adolescence. The authors propose arranging shared time, learning communication technologies, adjusting expectations, and sustaining involvement during family disruption. These are practical implications from qualitative accounts, rather than tested interventions, and the partial trajectories do not establish universal lifelong patterns.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "주요 한계와 실천적 함의는 무엇인가요?",
+      "answer_30s_ko": "친밀감은 주관적이었고 문화적 다양성은 제한적이었으며, 회고한 관계 궤적은 손자녀가 5세였을 때부터 시작했습니다. 일부 손자녀는 아직 청소년기를 마치지 않았습니다. 저자들은 함께 보낼 시간을 마련하고, 의사소통 기술을 배우며, 기대를 조정하고, 가족의 혼란 속에서도 관여를 유지할 것을 제안합니다. 이는 질적 이야기에서 도출한 실천적 함의이지 검증된 개입이 아니며, 생애 일부만 다룬 궤적으로 보편적인 평생의 양상을 확립할 수는 없습니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this paper as showing varied relationship paths through five trajectories and eight turning-point categories, rather than an inevitable decline in long-distance closeness during adolescence. Its 100 unique turning points offer a useful typology of relational experiences. I would keep the perspective clear, though: these are changes grandparents perceived and recalled, rather than a direct account of how their grandchildren felt.",
         "evidence_segment_id": "META-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 논문이 청소년기에 장거리 관계의 친밀감이 필연적으로 줄어든다고 보기보다, 다섯 변화 경로와 여덟 전환점 범주를 통해 다양한 관계의 흐름을 보여 준다고 읽었습니다. 구별되는 전환점 100개는 관계 경험을 이해하는 유용한 유형론을 제공합니다. 다만 관점을 분명히 하겠습니다. 이는 조부모가 지각하고 회상한 변화이지, 손자녀가 어떻게 느꼈는지를 직접 보여 주는 기록은 아닙니다."
       },
       {
         "card_id": "bangerter-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I paid attention to the difference between 35 interviews conducted and 30 usable records after five interviews could not be transcribed. The demographic counts and graph count reflect the latter. Recruitment through a lifelong-learning program also produced a largely married, relatively educated retired sample. I would therefore keep both the usable-sample denominator and its social composition alongside any interpretation of the findings.",
         "evidence_segment_id": "METHOD-001",
         "response_angle": "method",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 방법론적 세부사항을 가장 신중하게 살펴봤나요?",
+        "answer_30s_ko": "저는 실시한 면접 35건과, 5건을 전사할 수 없어 남은 사용 가능한 기록 30건의 차이에 주목했습니다. 인구학적 특성의 인원수와 그래프 수는 후자를 반영합니다. 평생학습 프로그램을 통한 모집으로 인해 표본은 대체로 기혼이며 교육 수준이 비교적 높은 은퇴자로 구성되었습니다. 따라서 결과를 해석할 때 사용 가능한 표본의 분모와 그 사회적 구성을 함께 고려하겠습니다."
       },
       {
         "card_id": "bangerter-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "Although marked decline was the largest category with 10 graphs, there were also eight consistent, five minimally changing, five multidimensional, and two increasing trajectories. I found the distinction between stability and closeness especially useful: a stable relationship could remain distant as well as close. I would use these named categories rather than rely on the source's inconsistent numeric scale direction.",
         "evidence_segment_id": "TRAJECTORY-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 결과가 가장 눈에 띄었나요?",
+        "answer_30s_ko": "뚜렷한 감소가 그래프 10개로 가장 큰 범주였지만, 일정하게 유지된 경로 8개, 변화가 미미한 경로 5개, 다차원적 경로 5개, 증가 경로 2개도 있었습니다. 저는 안정성과 친밀감을 구분하는 것이 특히 유용했습니다. 안정적인 관계는 가까운 상태뿐 아니라 먼 상태로도 유지될 수 있습니다. 원문의 수치 척도 방향이 일관되지 않으므로, 저는 그 방향에 의존하지 않고 이름이 붙은 범주들을 사용하겠습니다."
       },
       {
         "card_id": "bangerter-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I was struck by how the perceived reason for less contact mattered. Unreciprocated effort could leave grandparents feeling shut out and make the relationship seem one-sided. Busy schedules were also negative, but grandparents often accepted them as part of development and experienced them as less damaging. I would therefore ask what reduced contact means to the people involved, rather than infer closeness from frequency alone.",
         "evidence_segment_id": "DISCUSSION-003",
         "response_angle": "comparison",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 논문은 접촉 감소에 대한 해석을 어떻게 바꿨나요?",
+        "answer_30s_ko": "접촉이 줄어든 이유를 어떻게 지각하느냐가 중요하다는 점이 인상적이었습니다. 노력에 대한 응답이 없으면 조부모는 소외감을 느끼고 관계가 일방적이라고 생각할 수 있습니다. 바쁜 일정 역시 부정적이었지만, 조부모는 이를 발달 과정의 일부로 받아들이고 상대적으로 덜 해로운 것으로 경험하는 경우가 많았습니다. 따라서 저는 빈도만으로 친밀감을 추론하지 않고, 접촉 감소가 당사자들에게 어떤 의미인지 묻겠습니다."
       },
       {
         "card_id": "bangerter-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "The authors thought grandparents using communication technologies appeared more able to sustain close relationships. Phones and social media offered direct contact and access to grandchildren's lives. But this interpretation came from qualitative interviews, without random assignment or independent reports from grandchildren. I would treat it as a possible relationship-maintenance pathway worth examining, rather than a demonstrated causal benefit of technology use.",
         "evidence_segment_id": "DISCUSSION-002",
         "response_angle": "critical-evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기술에 관한 결과를 어떻게 비판적으로 읽겠나요?",
+        "answer_30s_ko": "저자들은 의사소통 기술을 사용하는 조부모가 가까운 관계를 더 잘 유지하는 듯하다고 보았습니다. 전화와 소셜미디어는 직접 접촉하고 손자녀의 생활을 접할 기회를 제공했습니다. 하지만 이 해석은 무작위 배정이나 손자녀의 독립적인 보고 없이 질적 면접에서 나온 것입니다. 저는 이를 기술 사용의 인과적 이점이 입증된 것으로 보기보다, 살펴볼 가치가 있는 관계 유지의 가능한 경로로 보겠습니다."
       },
       {
         "card_id": "bangerter-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "Closeness is subjective, the sample had limited cultural diversity, and the recalled trajectories missed ages before five and, for some grandchildren, later adolescence. The authors also identify technologies, expectations, and cultural norms as topics for further study. I see this as a useful typology and source of questions, rather than a study that establishes one universal relationship trajectory across the entire life course.",
         "evidence_segment_id": "LIMITATIONS-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "추가 연구가 필요한 이유는 무엇인가요?",
+        "answer_30s_ko": "친밀감은 주관적이고 표본의 문화적 다양성은 제한적이며, 회상된 변화 경로에는 5세 이전과 일부 손자녀의 청소년기 후반이 빠져 있었습니다. 저자들은 기술, 기대, 문화적 규범도 추가 연구 주제로 제시합니다. 저는 이 연구를 생애 전체에 걸친 하나의 보편적인 관계 경로를 입증한 연구라기보다, 유용한 유형론과 질문을 제공하는 연구로 봅니다."
       }
     ]
   }

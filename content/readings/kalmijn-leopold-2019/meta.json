@@ -66,10 +66,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:7b345ae386ad5e141f97ba0cd23a31575a546ac6d077e082b6800c1bfb722e05",
@@ -79,23 +79,24 @@
       "concepts": "v2:db6753da5806409ddceb04f7b4563c337ae35b3f5578c53a2ffa844d693e1de2",
       "pitfalls": "v2:1a3d77b38cc885b885a0534edb405128ba077c7f4299d144d1994986825ffd59",
       "review-sheet": "v2:23a69f213d4b95d04137c70e27b6e86494d1636727e204baa4c298c30352f7e5",
-      "professor-prep": "v2:a9f1d295cffa118990a61c135b594734144588e3fd390c35be22036cc3c058af",
       "quiz-ox": "v2:53cede84fdd4e8f4e3b042d60ac38e4005884908ffb1ca1193501cb22960068a",
       "quiz-short": "v2:105ea32bf86451019ec05cf985db44bbe3714c1f4961342fd4e66841876e6909",
-      "quiz-mcq": "v2:9428aed42a351c434b39e06210c9d34f9e91b77077158b72d3443f2cca3ab3f8"
+      "quiz-mcq": "v2:9428aed42a351c434b39e06210c9d34f9e91b77077158b72d3443f2cca3ab3f8",
+      "professor-prep": "v2:e157905950dccfd48d935fddab50f4d0279a611d02de599200a7f7b656447cf3"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T00:49:07.525Z",
+    "reviewed_at": "2026-09-05T03:52:01.972Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
       "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
-      "English learning materials reviewed against stored source segments; source and translation preserved; composite dependencies reviewed. First/second deaths, transition/duration, contact/conflict and approximate log-coefficient interpretations distinguished. Source hypothesis and duration-label inconsistencies not repeated as settled facts. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments; source and translation preserved; composite dependencies reviewed. First/second deaths, transition/duration, contact/conflict and approximate log-coefficient interpretations distinguished. Source hypothesis and duration-label inconsistencies not repeated as settled facts. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:34.618Z",
+    "updated_at": "2026-09-05T03:52:10.746Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -225,7 +226,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -387,12 +389,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:a9f1d295cffa118990a61c135b594734144588e3fd390c35be22036cc3c058af",
+        "source_hash": "v2:e157905950dccfd48d935fddab50f4d0279a611d02de599200a7f7b656447cf3",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

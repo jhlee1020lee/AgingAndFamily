@@ -9,105 +9,135 @@
       "title": "State the central conclusion of this review in one sentence.",
       "answer_30s": "More positive relationships in later life may reflect a combination of older adults' time horizons, partner selection, appraisals, and conflict-management skills; changing social roles; and partners' kinder, less confrontational responses. The review integrates individual regulation and reciprocal social processes. Its conclusion concerns a general pattern and possible explanations, rather than a universal rule that every older adult's relationships automatically improve.",
       "evidence_segment_id": "CONCLUSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 리뷰의 핵심 결론을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "노년기의 더 긍정적인 관계는 노인의 시간 전망, 관계 상대 선택, 평가, 갈등 관리 능력과 함께 사회적 역할의 변화, 상대방의 더 친절하고 덜 대립적인 반응이 결합된 결과일 수 있습니다. 이 리뷰는 개인의 조절과 상호적인 사회적 과정을 통합합니다. 결론은 일반적인 양상과 가능한 설명에 관한 것이며, 모든 노인의 관계가 자동으로 좋아진다는 보편적 법칙은 아닙니다."
     },
     {
       "card_id": "luong-prep-02",
       "title": "What evidence suggests that social relationships become more positive with age?",
       "answer_30s": "Older adults reported greater relationship satisfaction, positive emotion, and support, alongside fewer problematic or ambivalent ties and interpersonal stressors. In marital conflict, older spouses often expressed more affection and positive emotion, and later evaluated their partners more positively than objective coders did. These are patterns across reported experiences and observations, rather than proof that every individual's relationships improve objectively.",
       "evidence_segment_id": "POSREL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 관계가 나이가 들수록 더 긍정적이 된다는 것을 어떤 근거가 시사하나요?",
+      "answer_30s_ko": "노인들은 더 높은 관계 만족도, 긍정적 정서, 지원을 보고하는 한편, 문제적이거나 양가적인 관계와 대인관계 스트레스 요인은 더 적다고 보고했습니다. 부부 갈등에서 나이 든 배우자들은 흔히 애정과 긍정적 정서를 더 많이 표현했고, 이후 상대방을 객관적 코더의 평가보다 더 긍정적으로 평가했습니다. 이는 보고된 경험과 관찰에서 나타난 양상이지, 모든 개인의 관계가 객관적으로 좋아진다는 증거는 아닙니다."
     },
     {
       "card_id": "luong-prep-03",
       "title": "Why should a smaller network not automatically be interpreted as decline?",
       "answer_30s": "Older adults' networks are smaller but contain a larger proportion of close partners. Intimate ties such as romantic partners, close friends, and siblings remain fairly stable as an inner circle. The review primarily attributes these age differences to actively reducing less close ties while maintaining meaningful ones, rather than deaths alone. A lower number of contacts therefore does not by itself establish poorer relationship quality or support.",
       "evidence_segment_id": "SST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "관계망이 작아진 것을 왜 자동으로 쇠퇴로 해석해서는 안 되나요?",
+      "answer_30s_ko": "노인의 관계망은 더 작지만 가까운 상대가 차지하는 비중은 더 큽니다. 연인, 친한 친구, 형제자매 같은 친밀한 관계는 핵심 관계망으로 비교적 안정적으로 유지됩니다. 리뷰는 이러한 연령 차이를 사망만의 결과라기보다 의미 있는 관계는 유지하면서 덜 가까운 관계를 능동적으로 줄인 결과로 주로 설명합니다. 따라서 접촉 상대의 수가 적다는 것만으로 관계의 질이나 지원이 더 나쁘다고 판단할 수는 없습니다."
     },
     {
       "card_id": "luong-prep-04",
       "title": "Explain the link between time horizons and changing goals in SST.",
       "answer_30s": "Socioemotional selectivity theory links goals to perceived time remaining, rather than age alone. An expansive horizon favors information, knowledge, and contacts useful for the future; a limited horizon gives greater priority to present emotional meaning and relationship satisfaction. Older adults may consequently reduce contact with potentially problematic peripheral partners and concentrate on their most meaningful family relationships and friendships.",
       "evidence_segment_id": "SST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "SST에서 시간 전망과 목표 변화가 어떻게 연결되는지 설명해 보세요.",
+      "answer_30s_ko": "사회정서선택이론은 목표를 연령만이 아니라 지각된 남은 시간과 연결합니다. 시간이 넓게 열려 있다고 느끼면 미래에 유용한 정보, 지식, 접촉을 중시하고, 시간이 제한되어 있다고 느끼면 현재의 정서적 의미와 관계 만족에 더 높은 우선순위를 둡니다. 이에 따라 노인은 문제가 될 수 있는 주변적 상대와의 접촉을 줄이고 가장 의미 있는 가족관계와 우정에 집중할 수 있습니다."
     },
     {
       "card_id": "luong-prep-05",
       "title": "Does a positivity bias mean that relationships are objectively better?",
       "answer_30s": "Not necessarily. Positivity bias involves attending to positive experiences, disengaging from negative information, and evaluating partners less negatively. Older spouses recalled their partners' behavior more positively than objective coders did, and older adults showed less interest in the motives behind imagined negative comments. These findings concern attention and appraisal; they do not mean conflict is absent or that the more positive evaluation is more accurate.",
       "evidence_segment_id": "APPRAISAL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "긍정성 편향은 관계가 객관적으로 더 좋다는 뜻인가요?",
+      "answer_30s_ko": "반드시 그렇지는 않습니다. 긍정성 편향은 긍정적인 경험에 주의를 기울이고 부정적 정보에서 관심을 거두며 상대를 덜 부정적으로 평가하는 것을 포함합니다. 나이 든 배우자들은 객관적 코더보다 상대방의 행동을 더 긍정적으로 회상했고, 노인들은 가상 상황의 부정적 발언 뒤에 있는 동기에 관심을 덜 보였습니다. 이는 주의와 평가에 관한 결과이며, 갈등이 없다거나 더 긍정적인 평가가 더 정확하다는 뜻은 아닙니다."
     },
     {
       "card_id": "luong-prep-06",
       "title": "Give evidence for social expertise and explain its limits.",
       "answer_30s": "In Hess and colleagues' vignette studies, older adults revised impressions selectively in response to stable traits harmful to relationships, such as repeated dishonesty, rather than every new piece of information. The authors interpret this as expertise that may help people avoid problematic partners. Yet socially active younger adults also made similar trait-diagnostic judgments, suggesting a contribution from experience rather than an effect unique to older age.",
       "evidence_segment_id": "EXPERTISE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 전문성의 근거와 그 한계를 설명해 보세요.",
+      "answer_30s_ko": "Hess와 동료들의 가상 상황 연구에서 노인들은 모든 새로운 정보에 반응하기보다 반복적인 부정직처럼 관계에 해로운 안정적 특성에 선택적으로 반응하여 인상을 수정했습니다. 저자들은 이를 문제가 있는 상대를 피하는 데 도움이 될 수 있는 전문성으로 해석합니다. 그러나 사회적으로 활발한 젊은 성인도 이처럼 특성을 판별하는 판단을 내렸으므로, 노년기에만 고유한 효과라기보다 경험의 기여를 시사합니다."
     },
     {
       "card_id": "luong-prep-07",
       "title": "When can conflict avoidance help, and what are its limits?",
       "answer_30s": "Older adults more often preferred disengagement, such as ignoring a situation or avoiding a conflict topic. When younger and older adults used the same avoidance strategy, only older adults reported lower emotional reactivity; when they argued, both groups were similarly reactive. Avoidance can nevertheless leave problems unresolved. It should be understood as a strategy whose usefulness depends on the situation, rather than a prescription for every conflict.",
       "evidence_segment_id": "BEHAVIOR-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "갈등 회피는 언제 도움이 되며 어떤 한계가 있나요?",
+      "answer_30s_ko": "노인들은 상황을 무시하거나 갈등 주제를 피하는 것처럼 관여를 줄이는 방식을 더 자주 선호했습니다. 젊은 성인과 노인이 같은 회피 전략을 사용했을 때 정서적 반응성이 더 낮다고 보고한 것은 노인뿐이었고, 논쟁할 때는 두 집단의 반응성이 비슷했습니다. 그러나 회피는 문제를 해결되지 않은 채 남길 수 있습니다. 모든 갈등에 대한 처방이 아니라 상황에 따라 유용성이 달라지는 전략으로 이해해야 합니다."
     },
     {
       "card_id": "luong-prep-08",
       "title": "How can the social environment affect relationship quality?",
       "answer_30s": "Retirement and an empty nest can reduce unavoidable workplace conflict and full-time childcare demands while increasing freedom to choose partners and leisure activities. Conversely, spousal caregiving and bereavement can create substantial distress. More positive relationships in later life therefore cannot be attributed only to individual maturity: work, living arrangements, and family-care responsibilities also shape the circumstances in which relationships occur.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 환경은 관계의 질에 어떻게 영향을 줄 수 있나요?",
+      "answer_30s_ko": "은퇴와 빈 둥지는 피하기 어려운 직장 갈등과 상시적인 자녀 돌봄 요구를 줄이는 한편, 관계 상대와 여가활동을 선택할 자유를 늘릴 수 있습니다. 반대로 배우자 돌봄과 사별은 상당한 고통을 초래할 수 있습니다. 따라서 노년기의 더 긍정적인 관계를 개인의 성숙만으로 설명할 수는 없습니다. 일, 거주 형태, 가족 돌봄 책임도 관계가 이루어지는 여건을 형성합니다."
     },
     {
       "card_id": "luong-prep-09",
       "title": "How does SIM differ from SST?",
       "answer_30s": "SST chiefly links a person's time horizon to goals and partner selection. The Social Input Model, or SIM, focuses on reciprocal responses between older adults and their partners. Older adults may enhance positive relationship qualities, while partners respond with kindness, forgiveness, and less confrontation, potentially reinforcing satisfying exchanges. The models offer complementary accounts of individual selection and interaction between people.",
       "evidence_segment_id": "SIM-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 입력 모형은 사회정서선택이론과 어떻게 다른가요?",
+      "answer_30s_ko": "사회정서선택이론은 주로 개인의 시간 전망을 목표 및 관계 상대의 선택과 연결합니다. 사회적 입력 모형, 즉 SIM은 노인과 관계 상대 사이의 상호적인 반응에 초점을 맞춥니다. 노인은 관계의 긍정적 특성을 높일 수 있고, 상대는 친절, 용서, 대립의 감소로 반응해 만족스러운 교류가 강화될 수 있습니다. 두 모형은 개인의 선택과 사람들 사이의 상호작용을 상호 보완적으로 설명합니다."
     },
     {
       "card_id": "luong-prep-10",
       "title": "Give concrete evidence that partners treat older adults preferentially.",
       "answer_30s": "In vignettes describing the same social transgression, respondents more often expected the offended character to disengage when the offender was older, but to communicate directly or confront a younger offender. In a separate naturalistic study of holiday cards received by adults aged 20 to 87, older recipients received more personal and sentimental messages. The studies suggest age-related differences in anticipated responses and actual messages, using different designs.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "관계 상대가 노인을 우대한다는 구체적인 근거를 제시해 보세요.",
+      "answer_30s_ko": "동일한 사회적 위반 행동을 묘사한 가상 사례에서 응답자들은 잘못한 사람이 노인일 때 피해를 입은 인물이 상황에서 물러날 것이라고 더 자주 예상했고, 젊은 사람일 때는 직접 대화하거나 맞설 것이라고 예상했습니다. 별도로 20~87세 성인이 받은 명절 카드를 살펴본 자연적 관찰 연구에서는 나이 든 수신자가 더 개인적이고 정감 어린 메시지를 받았습니다. 서로 다른 설계를 사용한 이 연구들은 예상되는 반응과 실제 메시지에서 연령 관련 차이가 있음을 시사합니다."
     },
     {
       "card_id": "luong-prep-11",
       "title": "How can time remaining in a relationship affect conflict and forgiveness?",
       "answer_30s": "Limited time with a partner may shift priorities toward emotional harmony rather than boundary setting or problem solving. When participants imagined less time with close younger or older partners, they opted to avoid arguments; a Hong Kong experiment also found that forgiveness varied with time remaining. Avoidance and forgiveness are distinct: avoidance may leave resentment, while forgiveness may help reduce those lingering negative feelings.",
       "evidence_segment_id": "FORGIVENESS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "관계에서 남은 시간은 갈등과 용서에 어떤 영향을 줄 수 있나요?",
+      "answer_30s_ko": "상대와 함께할 시간이 제한되어 있으면 경계를 설정하거나 문제를 해결하기보다 정서적 조화를 우선하게 될 수 있습니다. 참여자들은 가까운 젊은 상대나 나이 든 상대와 함께할 시간이 더 짧다고 상상했을 때 논쟁을 피하는 쪽을 택했습니다. 홍콩의 한 실험에서도 남은 시간에 따라 용서가 달라졌습니다. 회피와 용서는 다릅니다. 회피는 원망을 남길 수 있지만, 용서는 이처럼 남아 있는 부정적 감정을 줄이는 데 도움이 될 수 있습니다."
     },
     {
       "card_id": "luong-prep-12",
       "title": "How can negative aging stereotypes produce kinder treatment?",
       "answer_30s": "When a woman left without paying for a hat and her reasons were ambiguous, an older woman was more often judged forgetful and received less blame and punishment; a younger woman was more often judged to have intended theft. Slow older workers also received more sympathy and less anger than younger workers. This illustrates a paradoxical effect of negative stereotypes, rather than showing that the stereotypes are accurate or positive.",
       "evidence_segment_id": "STEREOTYPE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노화에 대한 부정적 고정관념이 어떻게 더 친절한 대우로 이어질 수 있나요?",
+      "answer_30s_ko": "한 여성이 모자 값을 내지 않고 떠났고 그 이유가 불분명한 상황에서, 나이 든 여성은 깜빡한 것으로 더 자주 판단되어 비난과 처벌을 덜 받았습니다. 반면 젊은 여성은 훔칠 의도가 있었던 것으로 더 자주 판단되었습니다. 작업 속도가 느린 고령 근로자도 젊은 근로자보다 동정을 더 많이, 분노를 더 적게 받았습니다. 이는 부정적 고정관념의 역설적 효과를 보여 주는 것이지, 그 고정관념이 정확하거나 긍정적이라는 뜻은 아닙니다."
     },
     {
       "card_id": "luong-prep-13",
       "title": "What evidence shows that cultural and living circumstances matter?",
       "answer_30s": "Nationally representative Japanese and American samples aged 13 to 96 both showed fewer problematic ties at older ages. However, older Japanese adults reported problems with grown children that Americans did not, and this difference was explained by living with those children. Similar age patterns can therefore coexist with differences linked to family living arrangements. The finding should not be generalized into a single norm for all societies.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "문화와 생활 여건이 중요하다는 점을 어떤 근거가 보여 주나요?",
+      "answer_30s_ko": "13~96세를 포함하는 일본과 미국의 전국 대표 표본 모두에서 연령이 높을수록 문제가 되는 관계가 적었습니다. 그러나 일본의 노인은 미국 참여자들에게서는 보고되지 않은 성인 자녀와의 문제를 보고했고, 이러한 차이는 그 자녀들과 함께 사는 것으로 설명되었습니다. 따라서 비슷한 연령별 양상과 가족의 동거 형태에 따른 차이가 함께 나타날 수 있습니다. 이 결과를 모든 사회에 적용되는 하나의 규범으로 일반화해서는 안 됩니다."
     },
     {
       "card_id": "luong-prep-14",
       "title": "How can you connect networks with health without overstating the evidence?",
       "answer_30s": "Older adults reporting fewer than three close partners also reported less social embeddedness and satisfaction and greater loneliness; the review identifies loneliness as a risk factor for late-life depression. These findings do not establish that a social intervention directly improves physical disease or functioning. My inference for relationship support is to consider unmet needs, loneliness, control over time, and illness-related partner control as well as contact numbers.",
       "evidence_segment_id": "FUTURE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "근거를 과장하지 않으면서 관계망과 건강을 어떻게 연결할 수 있나요?",
+      "answer_30s_ko": "가까운 관계 상대가 3명 미만이라고 보고한 노인은 사회적 관계망에 통합된 정도와 만족감이 더 낮고 외로움이 더 크다고도 보고했습니다. 이 리뷰는 외로움을 노년기 우울의 위험요인으로 제시합니다. 이러한 결과가 사회적 개입이 신체질환을 완화하거나 기능을 직접 개선한다는 것을 입증하지는 않습니다. 제가 관계 지원에 관해 도출한 추론은 접촉 인원수뿐 아니라 충족되지 않은 필요, 외로움, 시간을 스스로 조절할 수 있는 정도, 질병과 관련해 관계 상대가 행사하는 통제도 고려해야 한다는 것입니다."
     },
     {
       "card_id": "luong-prep-15",
       "title": "Why should social expertise not be treated as a causal effect of age alone?",
       "answer_30s": "Older adults responded more selectively to stable, relationship-harming traits in Hess and colleagues' studies. But younger adults with high social activity made similar trait-diagnostic judgments. The authors suggest that social experience contributes to these judgments and that encounters with problematic partners may accumulate with age. An age difference therefore leaves room for experience and selection, rather than isolating a causal effect of aging itself.",
       "evidence_segment_id": "EXPERTISE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회적 전문성을 연령만의 인과 효과로 보아서는 안 되는 이유는 무엇인가요?",
+      "answer_30s_ko": "Hess와 동료들의 연구에서 노인은 안정적이면서 관계에 해를 끼치는 특성에 더 선택적으로 반응했습니다. 그러나 사회활동 수준이 높은 젊은 성인도 특성을 가려내는 판단을 비슷하게 했습니다. 저자들은 사회적 경험이 이러한 판단에 기여하며, 문제가 되는 관계 상대를 만나는 경험이 나이가 들면서 누적될 수 있다고 제안합니다. 따라서 연령 차이에는 경험과 선택에 따른 설명의 여지가 남아 있으며, 노화 자체의 인과 효과만을 분리해 보여 주는 것은 아닙니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this review as reframing smaller networks in later life through selection and interaction, rather than decline alone. Older adults may prioritize meaningful contact as time seems shorter, draw on experience to avoid conflict, and receive kinder responses from partners. What stood out to me was that relationship quality reflects both a person's regulation and other people's responses.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "관계의 질은 한 사람만으로 만들어지지 않습니다.",
+        "answer_30s_ko": "저는 이 종설이 노년기의 작은 관계망을 쇠퇴만으로 보지 않고 선택과 상호작용을 통해 다시 설명한다고 읽었습니다. 노인은 남은 시간이 짧게 느껴지면서 의미 있는 접촉을 우선하고, 경험을 활용해 갈등을 피하며, 상대에게서 더 친절한 반응을 받을 수 있습니다. 제게 눈에 띈 점은 관계의 질에 개인의 조절과 다른 사람의 반응이 모두 반영된다는 것이었습니다."
       },
       {
         "card_id": "luong-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I was struck by the argument that a smaller network need not mean social deterioration. Older adults can reduce peripheral ties while retaining close family and friends in an inner circle, so fewer contacts can coexist with a higher proportion of intimate partners. The review's emphasis on active network restructuring, rather than deaths alone, changed how I interpreted network size.",
         "evidence_segment_id": "SST-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 놀라웠나요?",
+        "answer_30s_ko": "작은 관계망이 반드시 사회적 관계의 악화를 뜻하지는 않는다는 논지가 인상적이었습니다. 노인은 가까운 가족과 친구를 핵심 관계망에 유지하면서 주변적 관계를 줄일 수 있으므로, 접촉하는 사람이 줄어도 친밀한 상대의 비율은 높아질 수 있습니다. 이 종설이 사망만이 아니라 능동적인 관계망 재구성을 강조한다는 점은 관계망 크기에 대한 제 해석을 바꿨습니다."
       },
       {
         "card_id": "luong-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had mainly attributed less conflict in later life to older adults becoming more agreeable. The review explains that retirement and an empty nest can reduce unavoidable workplace tensions and full-time childcare demands while increasing choice over partners and leisure. This broadened my view: emotional regulation matters, but work, living arrangements, and family-care responsibilities also shape the available social choices.",
         "evidence_segment_id": "ENVIRONMENT-001",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기존의 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 노년기의 갈등 감소를 주로 노인이 더 원만해지기 때문이라고 생각했습니다. 이 종설은 은퇴와 자녀 독립이 피하기 어려운 직장 내 긴장과 상시적인 자녀 돌봄 요구를 줄이는 한편, 교류 상대와 여가를 선택할 여지를 늘릴 수 있다고 설명합니다. 이를 통해 관점이 넓어졌습니다. 정서조절도 중요하지만 일, 거주 형태, 가족 돌봄 책임 역시 가능한 사회적 선택을 형성합니다."
       },
       {
         "card_id": "luong-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I found it important that positive relationships cannot be explained only by older adults' abilities. When the same social transgression was attributed to an older offender, respondents more often expected the offended person to disengage and avoid conflict rather than confront the offender. I read this as evidence that responses to a partner's age also matter, while recognizing that these were predictions about vignettes rather than observed conflicts.",
         "evidence_segment_id": "PREFERENTIAL-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "다른 사람들은 노년기 관계를 형성하는 데 어떤 역할을 하나요?",
+        "answer_30s_ko": "긍정적인 관계를 노인의 능력만으로 설명할 수는 없다는 점이 중요하게 다가왔습니다. 동일한 사회적 잘못을 나이 든 사람이 저질렀다고 제시하면, 응답자들은 피해를 본 사람이 가해자와 맞서기보다 상황에서 물러나 갈등을 피할 것이라고 더 자주 예상했습니다. 저는 이를 상대의 나이에 대한 반응도 중요하다는 근거로 읽었지만, 실제 갈등을 관찰한 것이 아니라 가상 사례에 대한 예측이었다는 점도 인식했습니다."
       },
       {
         "card_id": "luong-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "Cohort effects remain a possible explanation for sentimental-card findings: older adults may receive more thoughtful cards because of earlier generations' card-giving norms, rather than age itself. The authors also call for research on networks too small to meet social needs and on circumstances such as schedule control and illness. I therefore read the positive relationship pattern as conditional, with important unanswered questions.",
         "evidence_segment_id": "FUTURE-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 한계가 눈에 띄었나요?",
+        "answer_30s_ko": "정서적인 카드에 관한 결과에는 코호트 효과라는 설명이 여전히 가능합니다. 노인이 더 정성 어린 카드를 받는 것은 나이 자체가 아니라 이전 세대의 카드 주고받기 규범 때문일 수 있습니다. 저자들은 사회적 욕구를 충족하기에 너무 작은 관계망과 일정 통제권, 질병 같은 상황도 연구할 필요가 있다고 합니다. 따라서 저는 긍정적인 관계 양상이 조건에 따라 달라지며 중요한 미해결 질문이 남아 있다고 읽었습니다."
       },
       {
         "card_id": "luong-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My inference is that relationship support should go beyond increasing contact numbers. The review links fewer than three close partners with loneliness and lower satisfaction, and proposes that schedule freedom may support relationships while illness-related spousal control may undermine them. I would therefore consider meaningful ties, control over time, and how partners respond to illness. These are implications to examine, rather than policies whose effects the review tested.",
         "evidence_segment_id": "FUTURE-001",
         "response_angle": "family-policy",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 종설을 가족이나 정책과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "제 추론은 관계 지원이 접촉하는 사람 수를 늘리는 데서 더 나아가야 한다는 것입니다. 이 종설은 가까운 상대가 세 명 미만인 경우를 외로움과 낮은 만족도에 연결하며, 일정의 자유는 관계에 도움이 될 수 있지만 질병과 관련한 배우자의 통제는 관계를 해칠 수 있다고 제안합니다. 따라서 저는 의미 있는 관계, 시간에 대한 통제권, 상대가 질병에 반응하는 방식을 고려하겠습니다. 이는 검토할 함의이지, 이 종설에서 정책 효과를 검증한 결과는 아닙니다."
       }
     ]
   }

@@ -189,6 +189,44 @@ try {
     const changed = structuredClone(prep); changed.cards[0].answer_30s = "한국어 답변";
     assert.ok(validateProfessorPrepJson(changed, evidence).errors.some((error) => error.includes("must contain English")));
   });
+  const bilingualPrep = structuredClone(prep);
+  [...bilingualPrep.cards, ...bilingualPrep.reading_response.cards].forEach((card, index) => {
+    card.title_ko = `검증 질문 ${index + 1}`;
+    card.answer_30s_ko = `원문을 설명하는 한국어 답변 ${index + 1}입니다.`;
+  });
+  verify("complete bilingual prep preserves the English schema", () => assert.deepEqual(validateProfessorPrepJson(bilingualPrep, evidence).errors, []));
+  for (const [label, change, expected] of [
+    ["an incomplete Korean pair", (data) => { delete data.cards[0].answer_30s_ko; }, /answer_30s_ko must contain non-empty Korean/],
+    ["blank Korean text", (data) => { data.cards[0].title_ko = " "; }, /title_ko must contain non-empty Korean/],
+    ["English-only text in Korean fields", (data) => { data.cards[0].answer_30s_ko = "This is still English."; }, /answer_30s_ko must contain non-empty Korean/],
+    ["mixed translated and untranslated decks", (data) => { for (const card of data.reading_response.cards) { delete card.title_ko; delete card.answer_30s_ko; } }, /must cover every card/],
+  ]) {
+    const changed = structuredClone(bilingualPrep); change(changed);
+    verify(`prep schema rejects ${label}`, () => assert.ok(validateProfessorPrepJson(changed, evidence).errors.some((error) => expected.test(error))));
+  }
+  alter(path.join(reading.content_dir, "professor_prep.json"), (target) => {
+    writeJson(target, bilingualPrep);
+    alter(path.join(reading.content_dir, "meta.json"), () => {
+      approveReading({ slug: reading.slug, reviewer: "bilingual-fixture", note: "Temporary bilingual approval test only.", requireBuiltArtifacts: false }, fixture);
+      assert.equal(snapshot().content_status.professor_prep, "approved");
+      const changed = structuredClone(bilingualPrep); changed.cards[0].answer_30s_ko += " 검토 후 바뀐 번역입니다."; writeJson(target, changed);
+      verify("Korean answer edits revoke an existing prep approval", () => {
+        assert.equal(snapshot().content_status.professor_prep, "schema_pass");
+        assert(!snapshot().manual_review.approved_pages.includes("professor-prep"));
+      });
+    });
+    writeJson(target, bilingualPrep);
+    alter(`docs/readings/${reading.slug}/professor-prep.html`, (htmlPath) => {
+      const escapeHtml = (value) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const html = [...bilingualPrep.cards, ...bilingualPrep.reading_response.cards].map((card) => `<h3>${escapeHtml(card.title)}<span data-prep-question-language="ko" lang="ko" hidden>${escapeHtml(card.title_ko)}</span></h3><p>${escapeHtml(card.answer_30s)}<span data-prep-answer-language="ko" lang="ko" hidden>${escapeHtml(card.answer_30s_ko)}</span></p>`).join("");
+      const artifacts = () => validateBuildArtifacts(fixture, reading, readJson(metaPath), { "professor-prep": { status: "approved" } });
+      fs.writeFileSync(htmlPath, html);
+      verify("built Korean question and answer variants match their approved cards", () => assert.deepEqual(artifacts().errors, []));
+      const firstAnswer = escapeHtml(bilingualPrep.cards[0].answer_30s_ko);
+      fs.writeFileSync(htmlPath, html.replace(firstAnswer, "변조된 답변입니다.") + `<aside>${firstAnswer}</aside>`);
+      verify("changed Korean variants fail even when the original text exists elsewhere", () => assert.ok(artifacts().errors.some((error) => error.includes("built Korean content differs at item 1 (answer_30s_ko)"))));
+    });
+  });
   alter(path.join(reading.content_dir, "quiz_short.json"), (target) => {
     writeJson(target, quiz);
     const artifacts = validateBuildArtifacts(fixture, reading, readJson(metaPath), { "quiz-short": { status: "approved" } });

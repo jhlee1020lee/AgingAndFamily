@@ -162,7 +162,7 @@ function legacyReaderEntries(pagePath){
 async function checkPrepAndFilters(){
   const prep=`<section data-prep-root data-prep-language="en"><button data-prep-tab="talk" aria-selected="true">Talk</button><button data-prep-tab="response" aria-selected="false">Response</button><div data-prep-panel="talk"><article data-prep-card data-card-id="stable-card"><h3 data-prep-title>Question</h3><button data-prep-difficult>Mark</button><section data-prep-answer><h4 class="prep-answer-label">Model answer</h4><p class="prep-answer-copy">This paper proposes four components.</p></section></article></div><div data-prep-panel="response" hidden><article data-prep-card data-card-id="response-card"><h3 data-prep-title>Reading response</h3><section data-prep-answer><h4 class="prep-answer-label">Model answer</h4><p class="prep-answer-copy">The argument connects individual and social processes.</p></section></article></div></section>`;
   const key="aaf-prep:/readings/fixture/quiz.html";
-  let dom=await boot(prep,{[key]:JSON.stringify({activeTab:"talk",difficultIds:[],drafts:{"stable-card":"Obsolete saved draft"}})});
+  let dom=await boot(prep,{[key]:JSON.stringify({activeTab:"talk",difficultIds:[],drafts:{"stable-card":"Obsolete saved draft"}}),"aaf-prep-languages":JSON.stringify({questionLanguage:"ko",answerLanguage:"ko"})});
   assert.equal(dom.window.document.querySelector("textarea, [data-prep-practice], [data-prep-model]"),null);
   assert.equal(dom.window.document.querySelector(".prep-answer-copy").closest("details, [hidden]"),null,"active-tab model answers must be displayed immediately");
   dom.window.document.querySelector("[data-prep-difficult]").click();
@@ -186,6 +186,83 @@ async function checkPrepAndFilters(){
   assert.equal(dom.window.document.querySelectorAll("[data-reading-card]:not([hidden])").length,1);
   assert.match(dom.window.document.querySelector("[data-filter-result-count]").textContent,/1.*2/);
   assert.equal(dom.window.document.querySelector('[data-filter-value="article"]').getAttribute("aria-pressed"),"true");
+  dom.window.close();
+}
+
+function bilingualPrepFixture(){
+  const card=(id)=>`<article data-prep-card data-card-id="${id}"><h3 data-prep-title lang="en"><span data-prep-question-language="en" lang="en">English question ${id}</span><span data-prep-question-language="ko" lang="ko" hidden>한국어 질문 ${id}</span></h3><button data-prep-difficult>Mark for review</button><section data-prep-answer><h4 class="prep-answer-label" data-prep-answer-label lang="en">30-second answer</h4><p class="prep-answer-copy" lang="en"><span data-prep-answer-language="en" lang="en">English answer ${id}</span><span data-prep-answer-language="ko" lang="ko" hidden>한국어 답변 ${id}</span></p></section></article>`;
+  const selector=(kind)=>`<label>${kind}<select data-prep-${kind}-select><option value="en">English</option><option value="ko">한국어</option></select></label>`;
+  return `<section data-prep-root data-prep-language="en">${selector("question")}${selector("answer")}<button data-prep-tab="talk" aria-selected="true">Talk</button><button data-prep-tab="response" aria-selected="false">Response</button><section data-prep-panel="talk">${card("cold")}</section><section data-prep-panel="response" hidden>${card("response")}</section><div data-prep-difficult-list></div></section>`;
+}
+
+function setPrepLanguage(dom,kind,language){
+  const select=dom.window.document.querySelector(`[data-prep-${kind}-select]`);
+  assert(select,`The ${kind} language selector is missing`);
+  select.value=language;
+  select.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
+}
+
+function assertPrepLanguages(dom,questionLanguage,answerLanguage){
+  const root=dom.window.document.querySelector("[data-prep-root]");
+  assert.equal(root.querySelector("[data-prep-question-select]").value,questionLanguage);
+  assert.equal(root.querySelector("[data-prep-answer-select]").value,answerLanguage);
+  for(const card of root.querySelectorAll("[data-prep-card]")){
+    for(const [kind,language,selector] of [["question",questionLanguage,"[data-prep-title]"],["answer",answerLanguage,".prep-answer-copy"]]){
+      const container=card.querySelector(selector);
+      assert.equal(container.lang,language,`${kind} container must expose its selected language`);
+      const variants=Array.from(container.querySelectorAll(`span[data-prep-${kind}-language]`));
+      assert.equal(variants.length,2,`Each ${kind} needs English and Korean variants`);
+      for(const expected of ["en","ko"]){
+        const variant=variants.find((item)=>item.getAttribute(`data-prep-${kind}-language`)===expected);
+        assert(variant?.textContent.trim(),`${expected} ${kind} text is missing`);
+        assert.equal(variant.lang,expected);
+        assert.equal(variant.hidden,expected!==language,`${kind} visibility must follow only its own selector`);
+      }
+    }
+    const label=card.querySelector("[data-prep-answer-label]");
+    assert.equal(label.lang,answerLanguage);
+    assert.equal(/[\uac00-\ud7af]/.test(label.textContent),answerLanguage==="ko","answer label must follow the answer language");
+  }
+}
+
+async function checkPrepLanguages(){
+  const html=bilingualPrepFixture();
+  const key="aaf-prep-languages";
+  let dom=await boot(html);
+  assertPrepLanguages(dom,"en","en");
+  dom.window.document.querySelector('[data-prep-tab="response"]').click();
+  let previousAnswer="en";
+  for(const [questionLanguage,answerLanguage] of [["en","en"],["ko","en"],["ko","ko"],["en","ko"]]){
+    setPrepLanguage(dom,"question",questionLanguage);
+    assertPrepLanguages(dom,questionLanguage,previousAnswer);
+    setPrepLanguage(dom,"answer",answerLanguage);
+    assertPrepLanguages(dom,questionLanguage,answerLanguage);
+    assert.equal(dom.window.document.querySelector('[data-prep-tab="response"]').getAttribute("aria-selected"),"true","language changes must preserve the active tab");
+    previousAnswer=answerLanguage;
+  }
+  setPrepLanguage(dom,"question","ko");setPrepLanguage(dom,"answer","en");
+  dom.window.document.querySelector('[data-prep-panel="response"] [data-prep-difficult]').click();
+  assert.match(dom.window.document.querySelector("[data-prep-difficult-list]").textContent,/한국어 질문/);
+  const saved=snapshot(dom);
+  assert.deepEqual(JSON.parse(saved[key]),{questionLanguage:"ko",answerLanguage:"en"});
+  dom.window.close();
+  dom=await boot(html,saved);
+  assertPrepLanguages(dom,"ko","en");
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="response"]').getAttribute("aria-selected"),"true");
+  dom.window.close();
+  dom=await boot(html,saved,()=>{},"https://example.test/readings/another-paper/professor-prep.html");
+  assertPrepLanguages(dom,"ko","en");
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="talk"]').getAttribute("aria-selected"),"true","language preferences must cross readings while tab state remains per reading");
+  dom.window.close();
+  for(const [stored,questionLanguage,answerLanguage] of [["broken JSON","en","en"],[JSON.stringify({questionLanguage:"invalid",answerLanguage:"ko"}),"en","ko"],[JSON.stringify({questionLanguage:"ko",answerLanguage:null}),"ko","en"],[JSON.stringify([]),"en","en"]]){
+    dom=await boot(html,{[key]:stored});
+    assertPrepLanguages(dom,questionLanguage,answerLanguage);
+    dom.window.close();
+  }
+  dom=await boot(html,{},(window)=>Object.defineProperty(window,"localStorage",{get(){throw new Error("Storage blocked for fixture");}}));
+  assertPrepLanguages(dom,"en","en");
+  setPrepLanguage(dom,"question","ko");setPrepLanguage(dom,"answer","ko");
+  assertPrepLanguages(dom,"ko","ko");
   dom.window.close();
 }
 
@@ -246,6 +323,11 @@ async function checkGeneratedPages(){
     assert.equal(prepRoot.dataset.prepLanguage,"en");
     assert.equal(prepRoot.querySelector("textarea, [data-prep-practice], [data-prep-model], [data-prep-practice-status]"),null,`${slug}: removed prep inputs and disclosures must stay absent`);
     const cards=Array.from(prepRoot.querySelectorAll("[data-prep-card]"));
+    assertPrepLanguages(dom,"en","en");
+    for(const [questionLanguage,answerLanguage] of [["ko","en"],["ko","ko"],["en","ko"],["en","en"]]){
+      setPrepLanguage(dom,"question",questionLanguage);setPrepLanguage(dom,"answer",answerLanguage);
+      assertPrepLanguages(dom,questionLanguage,answerLanguage);
+    }
     const seenCards=new Set();
     for(const tab of prepRoot.querySelectorAll("[data-prep-tab]")){
       tab.click();
@@ -290,6 +372,7 @@ async function checkGeneratedPages(){
   await checkPlayer();
   await checkReader();
   await checkPrepAndFilters();
-  const {renderedQuestions,prepAnswerCount,readingPageCount}=await checkGeneratedPages();
-  console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, direct prep answers with tabs/review marks, and filters; ${renderedQuestions} generated questions, ${prepAnswerCount} directly displayed prep answers, ${readingPageCount} reading pages)`);
+  await checkPrepLanguages();
+  const counts=process.argv.includes("--fixture-only")?null:await checkGeneratedPages();
+  console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, direct bilingual prep answers with independent languages/tabs/review marks, and filters; ${counts?`${counts.renderedQuestions} generated questions, ${counts.prepAnswerCount} bilingual prep answers, ${counts.readingPageCount} reading pages`:"fixtures only"})`);
 })().catch((error)=>{console.error(error);process.exitCode=1;});

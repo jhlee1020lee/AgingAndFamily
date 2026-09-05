@@ -9,105 +9,135 @@
       "title": "State the review's central conclusion in one sentence.",
       "answer_30s": "Human senescence has been delayed by about a decade because people reach old age in better health, rather than because the rate of aging has demonstrably slowed. The abstract says that the rate of deterioration with age seems constant across individuals and over time. I would therefore distinguish an improvement in the level of health from a change in the slope of deterioration.",
       "evidence_segment_id": "ABS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 리뷰의 핵심 결론을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "인간의 노화가 약 10년 지연된 것은 노화 속도가 실제로 느려졌기 때문이라기보다 사람들이 더 건강한 상태로 노년에 도달하기 때문입니다. 초록은 나이에 따른 악화 속도가 개인 간에도, 시간에 걸쳐서도 일정해 보인다고 말합니다. 따라서 저는 건강 수준의 개선과 악화 기울기의 변화를 구분하겠습니다."
     },
     {
       "card_id": "vaupel-prep-02",
       "title": "What is the strongest evidence that mortality has been postponed?",
       "answer_30s": "Figure 1 shows the trends in X5 and X10, the ages at which remaining life expectancy is five and ten years. Since 1950, X10 rose by about eight years for Swedish women and twelve for Japanese women. X5 and X10 moved together while remaining roughly ten years apart. As captured by these measures, senescence was being postponed rather than lengthened.",
       "evidence_segment_id": "MORT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사망이 더 늦은 나이로 미뤄졌다는 가장 강력한 근거는 무엇인가요?",
+      "answer_30s_ko": "그림 1은 남은 기대여명이 각각 5년과 10년이 되는 나이인 X5와 X10의 추세를 보여 줍니다. 1950년 이후 X10은 스웨덴 여성에서 약 8년, 일본 여성에서 약 12년 높아졌습니다. X5와 X10은 약 10년의 간격을 유지하면서 함께 이동했습니다. 이 지표로 포착한 노화는 기간이 늘어났다기보다 더 늦은 나이로 지연되었습니다."
     },
     {
       "card_id": "vaupel-prep-03",
       "title": "How does postponement differ from deceleration?",
       "answer_30s": "Postponement shifts the curve to the right: mortality and health levels previously seen at age 70 are reached at age 80. Deceleration reduces the slope of deterioration, so the decline formerly occurring from ages 70 to 80 might instead extend from 70 to 85. The human evidence reviewed by Vaupel supports postponement rather than an established slowing of the rate of aging.",
       "evidence_segment_id": "DEBILITY-003",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "지연과 속도 감소는 어떻게 다른가요?",
+      "answer_30s_ko": "지연은 곡선을 오른쪽으로 옮깁니다. 과거에 70세에서 보였던 사망률과 건강 수준에 80세가 되어서 도달하는 것입니다. 속도 감소는 악화의 기울기를 낮추므로, 과거에 70세부터 80세까지 일어났던 저하가 70세부터 85세까지 이어질 수 있습니다. Vaupel이 검토한 인간 자료는 노화 속도가 느려졌다는 확립된 결론보다 지연을 뒷받침합니다."
     },
     {
       "card_id": "vaupel-prep-04",
       "title": "Why is Box 1 important?",
       "answer_30s": "Box 1 shows that a population's mortality trajectory can differ from those of its individuals or subpopulations. If groups with higher mortality die out first, mortality among all survivors can level off even while risk within each subgroup keeps increasing. The plateau observed at validated ages 110–114 does not mean that individuals stop aging, and observations beyond age 114 are sparse.",
       "evidence_segment_id": "DELAY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "상자 1은 왜 중요한가요?",
+      "answer_30s_ko": "상자 1은 인구집단의 사망률 궤적이 그 안의 개인이나 하위집단의 궤적과 다를 수 있음을 보여 줍니다. 사망률이 높은 집단이 먼저 사라지면 각 하위집단 내부의 위험은 계속 높아지더라도 전체 생존자의 사망률은 평탄해질 수 있습니다. 나이가 검증된 110~114세에서 관찰된 평탄화가 개인의 노화가 멈춘다는 뜻은 아니며, 114세 이후의 관찰자료는 드뭅니다."
     },
     {
       "card_id": "vaupel-prep-05",
       "title": "Is the evidence for postponed debility as clear as the evidence for postponed mortality?",
       "answer_30s": "No. Vital statistics measure death relatively reliably, but health is harder to define and measure. Surveys have low participation, especially among sick people, and evidence after age 85 and on cognitive performance is limited. Years in self-perceived good health generally increased, but trends in years with disability differed by severity and country. Evidence for postponed debility is therefore more mixed.",
       "evidence_segment_id": "DEBILITY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "기능쇠약이 지연되었다는 근거도 사망 지연의 근거만큼 명확한가요?",
+      "answer_30s_ko": "그렇지 않습니다. 인구동태통계는 사망을 비교적 신뢰할 만하게 측정하지만, 건강은 정의하고 측정하기가 더 어렵습니다. 조사 참여율은 특히 아픈 사람들에게 낮고, 85세 이후와 인지 수행에 관한 근거도 제한적입니다. 스스로 건강이 좋다고 느끼며 지내는 기간은 대체로 늘었지만, 장애를 지닌 채 지내는 기간의 추세는 심각도와 국가에 따라 달랐습니다. 따라서 기능쇠약 지연의 근거는 더 혼재되어 있습니다."
     },
     {
       "card_id": "vaupel-prep-06",
       "title": "How could health improve while disease prevalence increases?",
       "answer_30s": "Prevalence depends on incidence, detection, and survival. Earlier diagnosis can increase recorded incidence, while treatment can delay death. A person whose irregular heartbeat is controlled by a pacemaker, or whose disability is reduced by rehabilitation after a stroke, may survive and function with disease. Rising morbidity prevalence alone therefore does not establish that functioning or survival has worsened.",
       "evidence_segment_id": "DEBILITY-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "질병 유병률이 높아지는데도 건강이 좋아질 수 있는 이유는 무엇인가요?",
+      "answer_30s_ko": "유병률은 발생률, 발견, 생존에 따라 달라집니다. 조기 진단은 기록되는 발생률을 높일 수 있고, 치료는 사망을 늦출 수 있습니다. 심박조율기로 불규칙한 심장박동을 조절하거나 뇌졸중 이후 재활로 장애를 줄인 사람은 질병이 있어도 생존하며 기능할 수 있습니다. 따라서 질병 유병률이 높아졌다는 사실만으로 기능이나 생존이 악화되었다고 판단할 수는 없습니다."
     },
     {
       "card_id": "vaupel-prep-07",
       "title": "How much of human lifespan does genetic variation explain in the reviewed research?",
       "answer_30s": "Studies of Danish twins attributed about 25% of variation in adult lifespans to genetic differences between individuals. This does not mean that 25% of a particular person's lifespan is fixed. Genetic variation seemed to have a modest influence even among older people, although the review leaves open the possibility of a more substantial influence at the oldest ages.",
       "evidence_segment_id": "MORT-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "검토된 연구에서 유전적 차이는 인간 수명을 얼마나 설명하나요?",
+      "answer_30s_ko": "덴마크 쌍둥이 연구들은 성인 수명의 변이 중 약 25%를 개인 간 유전적 차이에 기인한 것으로 보았습니다. 이는 특정 개인 수명의 25%가 고정되어 있다는 뜻이 아닙니다. 유전적 차이의 영향은 노인에서도 크지 않은 것으로 보였지만, 리뷰는 가장 높은 연령대에서는 영향이 더 클 가능성을 열어 둡니다."
     },
     {
       "card_id": "vaupel-prep-08",
       "title": "What does the review conclude about the search for major human longevity genes?",
       "answer_30s": "The 2010 review reports little success in finding human longevity genes with large effects. APOE had a modest effect; other reported genes did not have larger effects, and few associations had been replicated across studies. Vaupel suggests that variation at hundreds, perhaps thousands, of genetic loci may each make a small contribution to risks of death and debility in old age.",
       "evidence_segment_id": "MORT-003",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "인간의 주요 장수 유전자를 찾는 연구에 대해 리뷰는 어떤 결론을 내리나요?",
+      "answer_30s_ko": "2010년 리뷰는 효과가 큰 인간 장수 유전자를 찾는 데 거의 성공하지 못했다고 보고합니다. APOE의 효과는 크지 않았고, 보고된 다른 유전자의 효과도 그보다 크지 않았으며, 여러 연구에서 반복 확인된 관계는 적었습니다. Vaupel은 수백 개, 어쩌면 수천 개의 유전자 좌위에서 나타나는 차이가 노년기의 사망과 기능쇠약 위험에 각각 조금씩 기여할 수 있다고 제안합니다."
     },
     {
       "card_id": "vaupel-prep-09",
       "title": "Explain the health–survival paradox.",
       "answer_30s": "Older men often appear healthier than women of the same age on several health and disability measures, yet men die younger. In the Swedish figures reported in the review, there were three women per two men at age 80 and six women per man among centenarians. Social and biological factors, medical care, risky behavior, and women's survival with poor health may contribute, but their relative importance is not well understood.",
       "evidence_segment_id": "DEBILITY-003",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "건강–생존 역설을 설명해 보세요.",
+      "answer_30s_ko": "노년기 남성은 여러 건강 및 장애 지표에서 같은 나이의 여성보다 건강해 보이는 경우가 많지만, 더 이른 나이에 사망합니다. 이 리뷰가 제시한 스웨덴 수치에서 80세 인구는 남성 두 명당 여성 세 명이었고, 100세 이상 인구는 남성 한 명당 여성 여섯 명이었습니다. 사회적·생물학적 요인, 의료, 위험 행동, 여성들이 건강이 좋지 않은 상태에서도 생존하는 점 등이 영향을 줄 수 있지만, 각 요인의 상대적 중요성은 충분히 밝혀지지 않았습니다."
     },
     {
       "card_id": "vaupel-prep-10",
       "title": "Can the postponement of senescence be attributed to one main cause?",
       "answer_30s": "The review identifies prosperity and medicine as two main contributors, but says their relative importance is unknown. Prosperity supports housing, nutrition, education, treatment, and research; healthier populations can in turn become more productive and prosperous. The two factors interact. Countries at the same income level can also have different healthy life expectancies, so a single-cause explanation is inadequate.",
       "evidence_segment_id": "CAUSES-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노화의 지연을 하나의 주된 원인으로 설명할 수 있나요?",
+      "answer_30s_ko": "이 리뷰는 경제적 번영과 의학을 두 가지 주요 기여 요인으로 제시하지만, 둘의 상대적 중요성은 알려져 있지 않다고 말합니다. 경제적 번영은 주거, 영양, 교육, 치료, 연구를 뒷받침하고, 더 건강해진 인구는 다시 생산성과 경제적 번영을 높일 수 있습니다. 두 요인은 상호작용합니다. 소득 수준이 같은 국가라도 건강수명은 다를 수 있으므로 하나의 원인만으로 설명하는 것은 충분하지 않습니다."
     },
     {
       "card_id": "vaupel-prep-11",
       "title": "How should we distinguish personal behavior from population-level longevity?",
       "answer_30s": "Avoiding smoking, inactivity, and severe obesity matters greatly for living longer than one's contemporaries. Yet under the health conditions described in the review, even a person who tries to live healthily has only a few percent chance of reaching 100. Vaupel distinguishes these relative individual advantages from the population's general longevity level, which he attributes to prosperity and medicine.",
       "evidence_segment_id": "CAUSES-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "개인의 행동과 인구 수준의 장수를 어떻게 구분해야 하나요?",
+      "answer_30s_ko": "흡연, 신체활동 부족, 심한 비만을 피하는 것은 동시대 사람들보다 더 오래 사는 데 매우 중요합니다. 그러나 이 리뷰가 설명한 건강 여건에서는 건강하게 살려고 노력하는 사람조차 100세에 이를 확률이 몇 퍼센트에 불과합니다. Vaupel은 개인이 얻는 이러한 상대적 이점과 인구의 전반적인 장수 수준을 구분하며, 후자는 경제적 번영과 의학에 기인한다고 설명합니다."
     },
     {
       "card_id": "vaupel-prep-12",
       "title": "How should we interpret the review's forecast of children reaching age 100?",
       "answer_30s": "The review projects that 50,000 or 60,000 Swedes, more than half of the cohort born in 2007, might turn 100 in 2107. Demographers generally make such forecasts by extrapolating past mortality trends. Future disasters or breakthroughs remain possible, so this is a plausible population projection, not a guaranteed outcome for every child.",
       "evidence_segment_id": "FORECAST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 리뷰에서 아동이 100세에 이를 것이라는 전망을 어떻게 해석해야 하나요?",
+      "answer_30s_ko": "이 리뷰는 2007년 출생 코호트의 절반이 넘는 스웨덴인 5만 명 또는 6만 명이 2107년에 100세를 맞을 수 있다고 전망합니다. 인구학자들은 대체로 과거 사망률 추세를 미래로 연장해 이런 전망을 내놓습니다. 앞으로 재난이나 획기적인 발전이 일어날 가능성이 남아 있으므로, 이는 개연성 있는 인구 전망이지 모든 아동에게 보장된 결과는 아닙니다."
     },
     {
       "card_id": "vaupel-prep-13",
       "title": "How do the effects of reducing mortality probability and reducing the rate of aging differ?",
       "answer_30s": "For Swedish women at age 50, the review's illustration shows that halving the annual probability of death after 50 raises the expected age at death from 84 to 90. Halving the rate at which mortality increases with age after 50 instead raises it to 118. This hypothetical comparison distinguishes reducing the level of risk from slowing its age-related increase; it does not report an achieved intervention.",
       "evidence_segment_id": "FORECAST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사망확률을 낮추는 것과 노화 속도를 낮추는 것의 효과는 어떻게 다른가요?",
+      "answer_30s_ko": "이 리뷰의 스웨덴 50세 여성에 관한 예시에서는 50세 이후의 연간 사망확률을 절반으로 낮추면 예상 사망 연령이 84세에서 90세로 높아집니다. 반면 50세 이후 사망률이 연령에 따라 증가하는 속도를 절반으로 낮추면 예상 사망 연령은 118세가 됩니다. 이 가상 비교는 위험의 수준을 낮추는 것과 연령에 따른 위험의 증가를 늦추는 것을 구분하며, 실제로 달성된 개입 효과를 보고한 것은 아닙니다."
     },
     {
       "card_id": "vaupel-prep-14",
       "title": "How might longer lives change the allocation of time to work and family?",
       "answer_30s": "Vaupel proposes reconsidering a life course divided into education, intensive work and child rearing, and then retirement. The German illustration suggests that working for more years but fewer hours per week could maintain economic output. The proposal is to redistribute work, family life, education, and leisure across a longer life, rather than simply add more employment at older ages.",
       "evidence_segment_id": "FORECAST-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "수명이 길어지면 일과 가족에 시간을 배분하는 방식은 어떻게 달라질 수 있나요?",
+      "answer_30s_ko": "Vaupel은 교육, 집중적인 노동과 자녀 양육, 이후의 은퇴로 나뉜 생애과정을 재고하자고 제안합니다. 독일의 예시는 일하는 기간을 더 늘리되 주당 노동시간을 줄이면 경제적 산출을 유지할 수 있음을 시사합니다. 이 제안은 단순히 노년기의 고용을 늘리는 것이 아니라, 길어진 삶에 걸쳐 일, 가족생활, 교육, 여가를 재배분하자는 것입니다."
     },
     {
       "card_id": "vaupel-prep-15",
       "title": "What is the longevity riddle, and what research questions remain?",
       "answer_30s": "The riddle is why health levels and the timing of death have changed substantially while the pace of age-related deterioration has not clearly slowed. Vaupel proposes that the rate of increase in human mortality with age may be similar, perhaps invariant, across individuals and time. This is a hypothesis to test, alongside research on people in their 90s, centenarians, supercentenarians, sex differences, and health improvements across life.",
       "evidence_segment_id": "PERSPECTIVES-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "장수의 수수께끼는 무엇이며, 어떤 연구 질문이 남아 있나요?",
+      "answer_30s_ko": "건강 수준과 사망 시점은 크게 달라졌는데 연령에 따른 기능 악화의 속도는 뚜렷하게 느려지지 않은 이유가 무엇인지가 이 수수께끼입니다. Vaupel은 인간의 사망률이 연령에 따라 증가하는 속도가 개인과 시대를 넘어 비슷할 수 있으며, 어쩌면 불변할 수도 있다고 제안합니다. 이는 검증해야 할 가설이며, 90대, 100세 이상 장수인, 초고령 장수인(supercentenarians), 성별 차이, 생애 전반의 건강 개선에 관한 연구도 함께 필요합니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read the gains in longevity as the postponement of death because people reach old age in better health, rather than proof that aging has already slowed. The author treats a potentially invariant rate of increase in mortality with age as a hypothesis requiring testing. I therefore distinguish the observed postponement of mortality from the proposed biological constant.",
         "evidence_segment_id": "PERSPECTIVES-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 종설에서 어떤 핵심적인 긴장 관계를 보았나요?",
+        "answer_30s_ko": "저는 수명 증가를 노화가 이미 느려졌다는 증거라기보다, 사람들이 더 건강한 상태로 노년기에 이르기 때문에 사망이 뒤로 미뤄진 것으로 읽었습니다. 저자는 나이에 따른 사망률 증가 속도가 일정할 가능성을 검증이 필요한 가설로 다룹니다. 따라서 저는 관찰된 사망의 지연과 제안된 생물학적 상수를 구분합니다."
       },
       {
         "card_id": "vaupel-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I was most surprised by the finding of an annual death probability of about 50% at validated ages 110–114. Box 1 made it more interesting: a population curve can flatten as more vulnerable subgroups die out first, without individuals stopping their aging process. It made the distinction between population patterns and individual trajectories especially clear to me.",
         "evidence_segment_id": "DELAY-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 놀라웠나요?",
+        "answer_30s_ko": "연령이 검증된 110~114세에서 연간 사망확률이 약 50%라는 결과가 가장 놀라웠습니다. 상자글 1은 이를 더 흥미롭게 했습니다. 개인의 노화 과정이 멈추지 않더라도, 더 취약한 하위집단이 먼저 사망하면 인구 수준의 곡선은 평탄해질 수 있습니다. 이를 통해 인구 수준의 양상과 개인의 변화 경로를 구분하는 것이 특히 분명해졌습니다."
       },
       {
         "card_id": "vaupel-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I previously assumed that increasing disease prevalence among older people meant worsening health. The review helped me see that treatment can delay death and rehabilitation can reduce disability, leaving more people alive and functioning with disease. Prevalence may then rise. I now distinguish incidence, prevalence, disability, and survival instead of treating them as interchangeable indicators.",
         "evidence_segment_id": "DEBILITY-002",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "종설을 읽고 기존의 이해가 어떻게 바뀌었나요?",
+        "answer_30s_ko": "이전에는 노인의 질병 유병률 증가가 건강 악화를 뜻한다고 생각했습니다. 이 종설을 통해 치료는 사망을 늦추고 재활은 장애를 줄여, 질병이 있어도 생존하며 기능을 유지하는 사람이 더 많아질 수 있음을 알게 되었습니다. 그러면 유병률은 높아질 수 있습니다. 이제 저는 발생률, 유병률, 장애, 생존을 서로 바꿔 쓸 수 있는 지표로 취급하지 않고 구분합니다."
       },
       {
         "card_id": "vaupel-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I had been inclined to assume that longer lives would simply mean a longer period of senescence. Seeing X5 and X10 shift together while remaining roughly ten years apart challenged that assumption. The rise in X10 among Swedish and Japanese women supports postponement rather than lengthening as measured by these indicators. Mortality measures alone, however, cannot settle every question about people's experience of health.",
         "evidence_segment_id": "MORT-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "그림 1은 수명 증가에 대한 해석을 어떻게 바꿨나요?",
+        "answer_30s_ko": "저는 더 오래 살면 단순히 노화 기간도 더 길어질 것이라고 생각하는 편이었습니다. X5와 X10이 약 10년의 간격을 유지한 채 함께 이동하는 모습은 그 가정에 의문을 갖게 했습니다. 스웨덴과 일본 여성의 X10 상승은 이 지표들로 측정했을 때 노화 기간의 연장보다는 지연을 뒷받침합니다. 다만 사망 지표만으로 사람들이 경험하는 건강에 관한 모든 문제를 해결할 수는 없습니다."
       },
       {
         "card_id": "vaupel-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "The evidence for postponed mortality is strong, but conclusions about postponed debility depend on how health is defined and measured. Sick people participate less in surveys, data after age 85 and on cognition are limited, and disability trends differ across studies. I would not assume that gains in lifespan establish equally large gains in healthy life expectancy.",
         "evidence_segment_id": "DEBILITY-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 질문이나 한계가 남았나요?",
+        "answer_30s_ko": "사망이 지연된다는 근거는 강하지만, 쇠약의 지연에 관한 결론은 건강을 어떻게 정의하고 측정하느냐에 달려 있습니다. 아픈 사람은 조사에 덜 참여하고, 85세 이후와 인지에 관한 자료는 제한적이며, 장애 추세는 연구마다 다릅니다. 수명이 늘어났다는 사실만으로 건강수명도 똑같이 크게 늘었다고 가정하지는 않겠습니다."
       },
       {
         "card_id": "vaupel-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "I would question the assumption that people must work hardest while raising children and then retire completely when daily child care has diminished. The review proposes mixing education, work, child rearing, and leisure across more years, with longer working lives but shorter working weeks. My application would be to discuss institutions that redistribute time for family care and employment across the life course.",
         "evidence_segment_id": "FORECAST-002",
         "response_angle": "family-application",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 종설을 가족생활이나 정책과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "저는 자녀를 키울 때 가장 열심히 일하고, 일상적인 자녀 돌봄이 줄어들면 완전히 은퇴해야 한다는 가정에 의문을 제기하겠습니다. 이 종설은 교육, 일, 자녀 양육, 여가를 더 긴 기간에 걸쳐 함께 배치하되, 일하는 생애는 늘리고 주당 근로시간은 줄이자고 제안합니다. 제가 도출한 적용은 생애 전반에 걸쳐 가족 돌봄과 고용에 쓰는 시간을 재분배하는 제도를 논의하는 것입니다."
       }
     ]
   }

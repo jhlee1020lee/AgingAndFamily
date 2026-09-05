@@ -9,105 +9,135 @@
       "title": "State the research question and main conclusion together.",
       "answer_30s": "The study tested whether Experience Corps could change older adults' self-perceived generativity. Over two years, participants assigned to EC reported significantly higher generative desire and perceived achievement than usual-volunteer-opportunity controls at four, 12, and 24 months. CACE estimates showed a generally larger pattern at higher exposure thresholds, with exceptions. Dose was not randomized, so this does not establish an optimal intensity or a causal benefit of each additional hour.",
       "evidence_segment_id": "ABS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연구 질문과 주요 결론을 함께 말해 보세요.",
+      "answer_30s_ko": "이 연구는 Experience Corps가 노인의 자기지각된 생성감을 변화시킬 수 있는지 검증했습니다. 2년에 걸쳐 EC에 배정된 참여자들은 일반적인 자원봉사 기회를 제공받은 대조군보다 4개월, 12개월, 24개월 시점에 생성적 기여 욕구와 지각된 생성적 기여 성취를 유의하게 높게 보고했습니다. CACE 추정치는 더 높은 참여량 기준에서 대체로 더 크게 나타났지만 예외도 있었습니다. 참여량은 무작위로 배정되지 않았으므로, 최적의 강도나 매시간 추가 참여의 인과적 편익을 확립한 결과는 아닙니다."
     },
     {
       "card_id": "gruenewald-prep-02",
       "title": "How does generativity relate to structural lag?",
       "answer_30s": "Generativity involves concern and action benefiting others, often younger generations. Lower reported generativity in later life may partly reflect reduced expectations and opportunities rather than reduced capacity. Structural lag describes social systems failing to develop opportunities at the pace of gains in healthy longevity and older adults' potential contributions. EC was designed as an institution offering meaningful generative roles, making that possibility testable.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생성감은 구조적 지체와 어떤 관계가 있나요?",
+      "answer_30s_ko": "생성감은 다른 사람들, 흔히 젊은 세대에게 도움이 되려는 관심과 행동을 포함합니다. 노년기에 더 낮게 보고되는 생성감은 역량의 감소보다 기대와 기회의 감소를 일부 반영할 수 있습니다. 구조적 지체는 사회제도가 건강수명 증가와 노인의 잠재적 기여에 맞추어 기회를 발전시키지 못하는 것을 설명합니다. EC는 의미 있는 생성적 역할을 제공하는 제도로 설계되어 이러한 가능성을 검증할 수 있게 했습니다."
     },
     {
       "card_id": "gruenewald-prep-03",
       "title": "What kind of program is Experience Corps?",
       "answer_30s": "EC engages older adults in elementary schools, commonly supporting literacy, mathematics, and positive behavior in roles matched to school needs. Its design combines contributions to children with meaningful roles and social, cognitive, and physical activity for volunteers. These are intended benefits for both generations; the present analysis specifically evaluates older adults' self-perceptions of generativity, rather than directly testing every proposed benefit.",
       "evidence_segment_id": "EC-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "Experience Corps는 어떤 프로그램인가요?",
+      "answer_30s_ko": "EC는 노인들이 초등학교에서 활동하도록 하며, 대체로 학교의 필요에 맞춘 역할을 통해 읽고 쓰기, 수학, 긍정적 행동을 지원합니다. 이 프로그램의 설계는 아동에 대한 기여와 자원봉사자를 위한 의미 있는 역할 및 사회적·인지적·신체적 활동을 결합합니다. 이는 두 세대 모두를 위해 의도한 편익입니다. 이 분석은 제안된 모든 편익을 직접 검증하기보다, 구체적으로 노인 자신이 지각하는 생성감을 평가합니다."
     },
     {
       "card_id": "gruenewald-prep-04",
       "title": "What preliminary evidence preceded the main trial?",
       "answer_30s": "A randomized Baltimore pilot involving 147 older adults and six schools reported greater gains in volunteer physical activity, executive function, memory, and perceived available support compared with usual volunteer opportunities. Children in EC schools also showed better reading achievement and fewer behavior problems than comparison-school children. Those prior findings motivated the larger two-year BECT; they are distinct from the current generativity analysis.",
       "evidence_segment_id": "EC-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "본시험에 앞서 어떤 예비 근거가 있었나요?",
+      "answer_30s_ko": "노인 147명과 학교 여섯 곳이 참여한 볼티모어 무작위 예비시험에서는 일반적인 자원봉사 기회를 제공한 경우보다 자원봉사자의 신체활동, 실행기능, 기억, 이용 가능한 지원에 대한 지각이 더 크게 향상되었다고 보고했습니다. EC 학교의 아동도 비교 학교 아동보다 읽기 성취가 더 좋고 행동 문제가 더 적었습니다. 이 선행 결과가 더 큰 규모의 2년짜리 BECT를 추진하는 계기가 되었으며, 현재의 생성감 분석과는 별개입니다."
     },
     {
       "card_id": "gruenewald-prep-05",
       "title": "Why distinguish generative desire from perceived achievement?",
       "answer_30s": "Generative desire concerns motivation to contribute, whereas perceived achievement concerns feeling that one currently plays a generative role in others' lives. The authors view them as distinct but potentially reinforcing: desire may encourage activity, and feeling effective may sustain desire. The trial therefore tested both self-reported outcomes. Perceived achievement should not be confused with an independently measured amount of benefit delivered to children.",
       "evidence_segment_id": "ENHANCING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생성적 기여 욕구와 지각된 생성적 기여 성취를 왜 구분하나요?",
+      "answer_30s_ko": "생성적 기여 욕구는 기여하려는 동기에 관한 것이고, 지각된 생성적 기여 성취는 현재 다른 사람들의 삶에서 생성적 역할을 하고 있다고 느끼는 것에 관한 것입니다. 저자들은 두 개념이 구별되지만 서로 강화할 수 있다고 봅니다. 욕구는 활동을 촉진할 수 있고, 자신이 효과적으로 기여한다고 느끼면 욕구가 지속될 수 있습니다. 따라서 시험에서는 두 자기보고 결과를 모두 검증했습니다. 지각된 성취를 아동에게 제공한 편익의 양을 독립적으로 측정한 값과 혼동해서는 안 됩니다."
     },
     {
       "card_id": "gruenewald-prep-06",
       "title": "What were the key eligibility requirements?",
       "answer_30s": "Baltimore-area adults had to be at least 60, accept randomization, and agree to at least 15 weekly EC hours for one school year if assigned to EC. Other criteria included sixth-grade functional literacy, MMSE of at least 24, ability to reach the school, a required background check, and appropriate school behavior. Fifteen hours was a program commitment, rather than a randomized comparison establishing an optimal dose.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "핵심 참여 자격 요건은 무엇이었나요?",
+      "answer_30s_ko": "볼티모어 지역의 성인은 60세 이상이어야 했고, 무작위 배정을 수용하며 EC에 배정되면 한 학년도 동안 주당 최소 15시간의 EC 활동에 참여하는 데 동의해야 했습니다. 다른 기준으로는 초등학교 6학년 수준의 기능적 문해력, MMSE 24점 이상, 학교에 갈 수 있는 능력, 필수 신원조회, 학교에서의 적절한 행동이 있었습니다. 15시간은 프로그램 참여 약속이지, 최적의 참여량을 확립한 무작위 비교 결과가 아닙니다."
     },
     {
       "card_id": "gruenewald-prep-07",
       "title": "Distinguish screening, randomization, and actual participation counts.",
       "answer_30s": "Researchers initially screened 2,675 people and randomized 702: 352 to EC and 350 to control. Of the 352 assigned to EC, 284 received the intervention. The other 68 did not proceed to school service: 41 withdrew themselves, 11 were not placed by the program, and 16 had other reasons. Randomized assignment and actual exposure therefore have different denominators.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "선별, 무작위 배정, 실제 참여 인원을 구분해 보세요.",
+      "answer_30s_ko": "연구자들은 처음에 2,675명을 선별 평가하고 702명을 무작위 배정했습니다. EC 집단은 352명, 대조군은 350명이었습니다. EC에 배정된 352명 중 실제로 중재를 받은 사람은 284명이었습니다. 나머지 68명은 학교 봉사활동으로 이어지지 않았는데, 41명은 스스로 철회했고, 11명은 프로그램에서 배치하지 않았으며, 16명은 다른 이유가 있었습니다. 따라서 무작위 배정과 실제 중재 노출은 분모가 다릅니다."
     },
     {
       "card_id": "gruenewald-prep-08",
       "title": "Was the control group a no-activity condition?",
       "answer_30s": "No. Controls were referred to Baltimore's Commission on Aging and Retirement Education for usual volunteer opportunities intended to exclude EC during the trial. These opportunities were often less intensive or shorter, but not always. The flowchart nevertheless reports 11 control-to-EC crossovers. I would describe the intended comparison accurately without claiming either that controls did nothing or that no control participant ever entered EC.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "대조군은 아무 활동도 하지 않는 조건이었나요?",
+      "answer_30s_ko": "아닙니다. 대조군은 볼티모어의 노화 및 은퇴교육 위원회로 안내되어 일반적인 자원봉사 기회를 소개받았으며, 연구 기간에는 EC를 제외하도록 계획되었습니다. 이러한 기회는 활동 강도가 더 낮거나 기간이 더 짧은 경우가 많았지만 항상 그렇지는 않았습니다. 한편 흐름도에는 대조군에서 EC로 넘어간 사람이 11명으로 보고되어 있습니다. 저는 대조군이 아무것도 하지 않았다거나 단 한 명도 EC에 참여하지 않았다고 주장하지 않고, 의도했던 비교 조건을 정확히 설명하겠습니다."
     },
     {
       "card_id": "gruenewald-prep-09",
       "title": "How do the study assessment schedule and generativity schedule differ?",
       "answer_30s": "Assessments occurred at baseline and four, eight, 12, 16, 20, and 24 months. The eight-, 16-, and 20-month assessments were shorter telephone interviews; the others were longer in-person interviews. Generative desire and achievement were measured only at baseline and four, 12, and 24 months. Thus, findings at every generativity follow-up do not mean those outcomes were measured at every study contact.",
       "evidence_segment_id": "MATERIALS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연구의 전체 평가 일정과 생성감 평가 일정은 어떻게 다른가요?",
+      "answer_30s_ko": "평가는 기초 시점과 4, 8, 12, 16, 20, 24개월에 이루어졌습니다. 8, 16, 20개월 평가는 더 짧은 전화 면접이었고, 나머지는 더 긴 대면 면접이었습니다. 생성적 기여 욕구와 지각된 생성적 기여 성취는 기초 시점과 4, 12, 24개월에만 측정했습니다. 따라서 생성감의 모든 추적 측정 시점에서 결과가 보고되었다고 해서 연구의 모든 접촉 시점에 이 결과변수들을 측정했다는 뜻은 아닙니다."
     },
     {
       "card_id": "gruenewald-prep-10",
       "title": "Describe the generativity scales and psychometric findings.",
       "answer_30s": "Seven desire items and six perceived-achievement items were rated from one to six and averaged into separate subscales. Factor analysis supported two distinct factors explaining 51.2% of item variance, with a moderate correlation of .54. Internal consistency was .82 for desire and .90 for achievement. These findings support distinguishing the self-report constructs; reliability alone does not turn perceived achievement into objective evidence of contributions.",
       "evidence_segment_id": "MEASURES-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생성감 척도와 심리측정 결과를 설명해 보세요.",
+      "answer_30s_ko": "생성적 기여 욕구 7문항과 지각된 생성적 기여 성취 6문항을 1~6점으로 평가한 뒤 각각 평균을 내어 별도의 하위척도로 구성했습니다. 요인분석은 문항 분산의 51.2%를 설명하는 구별되는 두 요인을 뒷받침했고, 두 요인 간 상관은 .54로 중간 정도였습니다. 내적 일관성은 욕구가 .82, 성취가 .90이었습니다. 이 결과는 두 자기보고 구성개념을 구분하는 것을 뒷받침하지만, 신뢰도만으로 지각된 성취가 실제 기여의 객관적 증거가 되는 것은 아닙니다."
     },
     {
       "card_id": "gruenewald-prep-11",
       "title": "What different questions do ITT and CACE answer?",
       "answer_30s": "ITT compares original randomized groups regardless of actual participation, estimating the effect of assignment to EC. CACE compares observed intervention compliers with estimated potential compliers in the control group, targeting an effect for those who would meet the specified compliance criterion under EC assignment. It requires identification assumptions. CACE is therefore not simply a comparison of everyone who volunteered more with everyone who volunteered less.",
       "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "ITT와 CACE는 각각 어떤 다른 질문에 답하나요?",
+      "answer_30s_ko": "ITT는 실제 참여 여부에 관계없이 처음 무작위배정된 집단을 비교하여 EC에 배정되는 효과를 추정합니다. CACE는 관찰된 중재집단 순응자와 대조군의 추정된 잠재적 순응자를 비교하며, EC에 배정되었다면 지정된 순응 기준을 충족할 사람들의 효과를 대상으로 합니다. 이를 위해서는 식별 가정이 필요합니다. 따라서 CACE는 자원봉사를 더 많이 한 모든 사람과 덜 한 모든 사람을 단순히 비교하는 분석이 아닙니다."
     },
     {
       "card_id": "gruenewald-prep-12",
       "title": "Which assumptions matter for the CACE interpretation?",
       "answer_30s": "CACE relies on randomization and assumptions about interference, compliance types, and exclusion restrictions. The authors added compliance predictors and tested additivity through assignment-by-covariate interactions. Their claim that controls could not access EC also needs qualification because the flowchart reports 11 crossovers. These assumptions should therefore not be declared guaranteed by design; reported exceptions require caution about identifying and generalizing the modeled complier effect.",
       "evidence_segment_id": "ANALYTIC-ASSUMPTIONS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "CACE를 해석할 때 어떤 가정이 중요한가요?",
+      "answer_30s_ko": "CACE는 무작위배정과 함께 간섭, 순응 유형, 배제 제약에 관한 가정에 의존합니다. 저자들은 순응 예측변수를 추가하고 배정과 공변량의 상호작용을 통해 가산성을 검정했습니다. 대조군은 EC에 접근할 수 없었다는 주장에도 단서가 필요합니다. 흐름도에는 교차 참여 11명이 보고되어 있기 때문입니다. 따라서 설계만으로 이런 가정이 보장된다고 선언해서는 안 됩니다. 보고된 예외를 고려해 모형으로 추정한 순응자 효과의 식별과 일반화에 주의해야 합니다."
     },
     {
       "card_id": "gruenewald-prep-13",
       "title": "How were exposure thresholds and missing data handled?",
       "answer_30s": "Methods define compliance using the 20th, 40th, 60th, and 80th percentiles of cumulative hours at each generativity follow-up. Table footnotes instead label some later cutpoints as 65th rather than 60th, an unresolved reporting inconsistency. Outcome missingness was modeled directly for CACE and multiply imputed for ITT. Completion was 84.5%, 79.5%, and 79.8% at four, 12, and 24 months; exposure thresholds themselves were not randomized.",
       "evidence_segment_id": "ANALYTIC-EXPOSURE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "참여시간 기준과 결측자료는 어떻게 다뤘나요?",
+      "answer_30s_ko": "방법에서는 생성감의 각 추적평가 시점까지 누적된 활동시간의 20·40·60·80백분위수를 순응 기준으로 정의합니다. 그러나 표의 각주는 일부 후기 절단점을 60이 아니라 65백분위수로 표시하며, 이 보고 불일치는 해결되지 않았습니다. 결과변수의 결측은 CACE에서 직접 모형화하고 ITT에서는 다중대체했습니다. 완료율은 4개월, 12개월, 24개월에 각각 84.5%, 79.5%, 79.8%였습니다. 참여시간 기준 자체는 무작위로 배정되지 않았습니다."
     },
     {
       "card_id": "gruenewald-prep-14",
       "title": "Summarize Table 3 while retaining the reported qualifications.",
       "answer_30s": "ITT found higher desire and perceived achievement at all three generativity follow-ups. CACE estimates showed generally larger effects at higher thresholds, but not a strictly increasing pattern at every step. The source also lists four assumption exceptions then refers to three, and contains a coefficient/significance mismatch in one table cell. I would report the overall pattern cautiously rather than assert uniform significance, guaranteed assumptions, or an optimal nonrandomized dose.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "보고된 단서를 유지하면서 표 3을 요약해 보세요.",
+      "answer_30s_ko": "ITT에서는 생성감의 세 추적평가 시점 모두에서 생성적 기여 욕구와 지각된 생성적 기여 성취가 더 높았습니다. CACE 추정치는 기준이 높을수록 대체로 더 큰 효과를 보였지만, 모든 단계에서 엄격하게 증가한 것은 아닙니다. 원문은 가정의 예외 네 가지를 나열한 뒤 세 가지라고 언급하며, 표의 한 칸에는 계수와 유의성의 불일치도 있습니다. 저는 모든 결과가 유의하거나 가정이 보장된다거나 비무작위 참여량의 최적값이 밝혀졌다고 단정하지 않고, 전반적인 양상을 신중하게 보고하겠습니다."
     },
     {
       "card_id": "gruenewald-prep-15",
       "title": "What are three main limitations?",
       "answer_30s": "Participants began with high generativity and high volunteering rates, limiting room for improvement and leaving the specific active ingredient uncertain. Roughly 15% to 20% were missing at follow-up despite statistical handling. The sample was predominantly African American and 85% female, limiting generalization to other groups. It also successfully included older minority adults often underrepresented in behavioral trials, which is a strength alongside that scope limitation.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "주요 한계 세 가지는 무엇인가요?",
+      "answer_30s_ko": "참여자들은 처음부터 생성감과 자원봉사 참여율이 높아 향상될 여지가 제한적이었고, 구체적으로 어떤 요소가 효과를 냈는지도 불확실했습니다. 통계적으로 처리했지만 추적 시점에는 약 15~20%의 자료가 없었습니다. 표본은 주로 아프리카계 미국인이고 85%가 여성이어서 다른 집단으로의 일반화에도 한계가 있습니다. 동시에 행동 중재 시험에서 흔히 충분히 포함되지 못하는 소수집단 노인을 성공적으로 포함했다는 점은 이런 적용 범위의 한계와 함께 인정해야 할 강점입니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this trial as evidence that self-perceived generativity can change in later life when meaningful institutional opportunities are offered. EC assignment improved both desire and perceived achievement at the three relevant follow-ups. The generally larger CACE estimates at higher thresholds were interesting, but the pattern had exceptions and dose was not randomized. I would separate evidence for the program offer from claims about ideal hours.",
         "evidence_segment_id": "ABS-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 시험을 의미 있는 제도적 기회가 제공되면 노년기에도 자신이 지각하는 생성감이 달라질 수 있다는 근거로 읽었습니다. EC 배정은 관련된 세 추적 시점에서 생성적 기여 욕구와 지각된 생성적 기여 성취를 모두 향상시켰습니다. 높은 기준에서 CACE 추정치가 대체로 더 컸다는 점은 흥미로웠지만, 예외가 있었고 참여량은 무작위배정되지 않았습니다. 저는 프로그램을 제공하는 효과의 근거와 이상적인 참여시간에 관한 주장을 구분하겠습니다."
       },
       {
         "card_id": "gruenewald-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I was struck by the possibility that lower later-life generativity reflects limited opportunities and expectations rather than diminished capacity. The structural-lag argument connects longer healthy lives with social institutions that have not fully adapted to older adults' potential contributions. That made EC seem like a way to create valued roles, rather than merely occupy people's spare time.",
         "evidence_segment_id": "INTRO-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 새롭게 다가왔나요?",
+        "answer_30s_ko": "노년기의 낮은 생성감이 능력 저하보다 제한된 기회와 기대를 반영할 수 있다는 가능성이 인상적이었습니다. 구조적 지체 논지는 더 길어진 건강한 삶을, 노인의 잠재적 기여에 아직 충분히 적응하지 못한 사회제도와 연결합니다. 이를 통해 EC는 단순히 여가시간을 채워 주는 것이 아니라 가치 있는 역할을 만드는 방법으로 보였습니다."
       },
       {
         "card_id": "gruenewald-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I appreciated the explicit distinction between assignment and compliance. ITT retains everyone in the randomized group; CACE models outcomes for observed EC compliers and potential control-group compliers under assumptions. They answer different questions, so a larger CACE estimate does not make ITT incorrect for the effect of assignment. It also should not be read as an assumption-free causal comparison between self-selected exposure levels.",
         "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
         "response_angle": "method",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 방법론적 특징이 눈에 띄었나요?",
+        "answer_30s_ko": "배정과 순응을 명시적으로 구분한 점이 좋았습니다. ITT는 무작위배정 집단에 모든 사람을 유지하고, CACE는 가정 아래에서 관찰된 EC 순응자와 대조군의 잠재적 순응자의 결과를 모형화합니다. 서로 다른 질문에 답하므로 CACE 추정치가 더 크다고 해서 배정 효과를 추정하는 ITT가 틀린 것은 아닙니다. 또한 스스로 선택한 참여 수준들을 가정 없이 인과적으로 비교한 것으로 읽어서도 안 됩니다."
       },
       {
         "card_id": "gruenewald-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "The 702 randomized participants did not all receive an identical experience. Only 284 of the 352 assigned to EC proceeded to intervention, while 68 did not for participant, program, or other reasons. That helped me distinguish assignment from participation and understand why the paper used both ITT and CACE. It would be misleading to label all assigned participants as exposed volunteers.",
         "evidence_segment_id": "PARTICIPANTS-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무작위배정 인원수는 효과 해석에 관해 무엇을 알려 줬나요?",
+        "answer_30s_ko": "무작위배정된 702명이 모두 동일한 경험을 한 것은 아니었습니다. EC에 배정된 352명 중 실제 중재로 이어진 사람은 284명이었고, 68명은 참여자 사정, 프로그램 사정, 기타 이유로 참여하지 않았습니다. 이를 통해 배정과 참여를 구분하고 논문이 ITT와 CACE를 함께 사용한 이유를 이해했습니다. 배정된 사람 모두를 실제로 프로그램을 경험한 자원봉사자라고 부르면 오해를 낳습니다."
       },
       {
         "card_id": "gruenewald-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "The predominantly African American, 85%-female sample makes me cautious about assuming identical effects for other groups, especially older men. At the same time, recruitment of older minority adults often missing from behavioral trials is valuable. I would describe the population to which the evidence directly applies, rather than treat the sample's identity as a defect or assume results transfer automatically.",
         "evidence_segment_id": "LIMITATIONS-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 한계가 가장 중요했나요?",
+        "answer_30s_ko": "표본이 주로 아프리카계 미국인이고 85%가 여성이라는 점 때문에, 다른 집단, 특히 나이 든 남성에게도 효과가 같다고 가정하는 데 신중해집니다. 동시에 행동 중재 시험에서 흔히 빠지는 소수집단 노인을 모집한 것은 가치가 있습니다. 저는 표본의 정체성을 결함으로 취급하거나 결과가 자동으로 다른 집단에 적용된다고 가정하지 않고, 근거가 직접 적용되는 모집단을 설명하겠습니다."
       },
       {
         "card_id": "gruenewald-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "I became more interested in programs where older adults contribute to other generations as well as receive support. The trial directly supports improved self-perceptions of generativity; broader mental or physical health benefits remain implications rather than outcomes established by this analysis. My community-design inference is to create meaningful reciprocal roles while separately evaluating effects for volunteers, children, and schools.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "family-community",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "지역사회 프로그램에 대한 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 노인이 지원을 받으면서 다른 세대에도 기여하는 프로그램에 더 관심을 갖게 되었습니다. 이 시험이 직접 뒷받침하는 것은 생성감 자기지각의 향상입니다. 더 폭넓은 정신적·신체적 건강상의 이점은 이 분석에서 입증된 결과라기보다 함의로 남아 있습니다. 제가 도출한 지역사회 설계의 추론은 의미 있는 상호적 역할을 만들면서 자원봉사자, 아동, 학교에 미치는 효과를 별도로 평가하는 것입니다."
       }
     ]
   }

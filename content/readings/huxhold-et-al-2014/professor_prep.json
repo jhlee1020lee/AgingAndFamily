@@ -9,105 +9,135 @@
       "title": "State the central conclusion in one sentence.",
       "answer_30s": "The relationship between informal activity and well-being depended on company, age group, and outcome. Results prose links older adults' friend activities with favorable outcomes and family activities with mixed affective outcomes. However, the preserved Table 1 reverses the older-group negative-affect signs reported in the text, so that direction remains unresolved. The observational design also prevents a causal conclusion.",
       "evidence_segment_id": "DISCUSSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "핵심 결론을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "비공식 활동과 안녕감의 관계는 누구와 함께하는지, 어느 연령집단인지, 어떤 결과를 보는지에 따라 달랐습니다. 결과 본문은 노인의 친구 활동을 유리한 결과와, 가족 활동을 정서 측면에서 혼재된 결과와 연결합니다. 그러나 보존된 표 1은 본문에 보고된 노년집단의 부정 정서 계수 부호를 반대로 제시하므로 그 방향은 아직 해결되지 않은 상태입니다. 관찰연구 설계라는 점에서도 인과적 결론을 내릴 수 없습니다."
     },
     {
       "card_id": "huxhold-prep-02",
       "title": "Why distinguish activities with family from activities with friends?",
       "answer_30s": "Family ties are relatively predetermined and often difficult to end even when unsatisfying. Friendships are voluntary, reciprocal, and especially important for companionship, but also require maintenance. Equal activity frequencies can therefore reflect different functions, obligations, opportunities for selection, and emotional qualities. Separating the two sources helps avoid treating these different relationship experiences as interchangeable.",
       "evidence_segment_id": "FAMILY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "가족과의 활동을 친구와의 활동과 왜 구분하나요?",
+      "answer_30s_ko": "가족관계는 상대적으로 미리 정해져 있고, 만족스럽지 않더라도 끝내기 어려운 경우가 많습니다. 우정은 자발적이고 상호적이며 동반자 관계에 특히 중요하지만, 유지하기 위한 노력도 필요합니다. 따라서 활동 빈도가 같더라도 서로 다른 기능, 의무, 선택의 기회, 정서적 질을 반영할 수 있습니다. 두 관계 유형을 구분하면 이러한 관계 경험을 서로 바꾸어 놓을 수 있는 것으로 취급하지 않게 됩니다."
     },
     {
       "card_id": "huxhold-prep-03",
       "title": "What did H1, H2, and H3 predict?",
       "answer_30s": "H1 predicted fewer informal activities among older than middle-aged adults, with a larger age difference for friend activities. H2 predicted generally favorable well-being associations, stronger for friend than family activities. H3 predicted a stronger friend-activity association in older adults, but no age difference for family activities. The subsequent findings supported these hypotheses only partly, with patterns depending on the well-being outcome.",
       "evidence_segment_id": "AIMS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "H1, H2, H3는 각각 무엇을 예측했나요?",
+      "answer_30s_ko": "H1은 노인이 중년보다 비공식 활동이 적고, 특히 친구 활동에서 연령 차이가 더 클 것으로 예측했습니다. H2는 활동이 대체로 더 좋은 안녕감과 관련되며 그 관계가 가족보다 친구 활동에서 더 강할 것으로 예측했습니다. H3는 친구 활동과의 관계가 노인에게서 더 강하되 가족 활동에서는 연령 차이가 없을 것으로 예측했습니다. 이후의 결과는 안녕감의 어떤 결과를 보느냐에 따라 달라졌고, 이 가설들을 부분적으로만 지지했습니다."
     },
     {
       "card_id": "huxhold-prep-04",
       "title": "Describe the sample and longitudinal design.",
       "answer_30s": "The study used German Aging Survey data from 2002 and 2008, six years apart. The analysis included 2,830 middle-aged adults and 2,032 adults aged 65 or older; 1,327 and 665, respectively, participated at both waves. Full information maximum likelihood addressed missing data. Follow-up participants were generally younger, healthier, better educated, and better off financially, so accounting for missingness does not make selective attrition disappear.",
       "evidence_segment_id": "SAMPLE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "표본과 종단설계를 설명해 보세요.",
+      "answer_30s_ko": "이 연구는 6년 간격인 2002년과 2008년 독일노화조사 자료를 사용했습니다. 분석에는 중년 성인 2,830명과 65세 이상 성인 2,032명이 포함되었고, 두 시점에 모두 참여한 사람은 각각 1,327명과 665명이었습니다. 결측자료에는 완전정보 최대우도법을 적용했습니다. 후속조사 참여자는 대체로 더 젊고 건강하며 교육 수준과 경제적 형편이 더 좋았으므로, 결측을 다룬다고 해서 선택적 탈락이 사라지는 것은 아닙니다."
     },
     {
       "card_id": "huxhold-prep-05",
       "title": "How were informal social activities measured?",
       "answer_30s": "Participants reported frequency over the previous year for nine activities, including visits, cultural events, walks, and sports. Except for inviting or visiting friends, items distinguished partner or relatives from friends, other people, or clubs and associations. Frequencies from less than monthly to daily were summed by source. Thus, the friend-activity category was broader than close friendship, and the measure captured reported activity frequency rather than relationship quality.",
       "evidence_segment_id": "MEASURES-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "비공식 사회활동은 어떻게 측정했나요?",
+      "answer_30s_ko": "참여자는 방문, 문화행사, 산책, 운동 등 아홉 활동을 지난 1년 동안 얼마나 자주 했는지 보고했습니다. 친구를 초대하거나 방문하는 항목을 제외한 나머지 항목에서는 파트너·친척과 친구·기타 사람·클럽 및 단체를 구분했습니다. 월 1회 미만부터 매일까지의 빈도를 관계 유형별로 합산했습니다. 따라서 친구 활동 범주는 친밀한 우정보다 넓으며, 측정한 것은 관계의 질이 아니라 보고된 활동 빈도입니다."
     },
     {
       "card_id": "huxhold-prep-06",
       "title": "Why use a latent change score model, and why does it not establish causality?",
       "answer_30s": "The model separates the initial level from change between 2002 and 2008, estimating how baseline activities predict six-year well-being changes while accounting for baseline well-being and covariates. It also incorporates reciprocal associations; the authors do not interpret change-to-change paths as directional evidence. This was not random assignment to social partners, so temporal ordering and statistical controls do not eliminate unmeasured confounding or all reverse-causation concerns.",
       "evidence_segment_id": "LCS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "잠재변화점수 모형을 사용하는 이유와, 이 모형이 인과성을 입증하지 못하는 이유는 무엇인가요?",
+      "answer_30s_ko": "이 모형은 초기 수준과 2002~2008년 사이의 변화를 분리하여, 기초시점의 안녕감과 공변량을 고려하면서 기초시점 활동이 6년간의 안녕감 변화를 어떻게 예측하는지 추정합니다. 상호적인 관계도 포함하며, 저자들은 변화와 변화 사이의 경로를 방향성을 보여 주는 근거로 해석하지 않습니다. 사회적 상대를 무작위로 배정한 연구가 아니므로 시간적 선후와 통계적 통제가 측정되지 않은 교란이나 모든 역인과 가능성을 제거하지는 않습니다."
     },
     {
       "card_id": "huxhold-prep-07",
       "title": "How did activity levels and six-year changes differ by age group?",
       "answer_30s": "Older adults reported fewer family and friend activities than middle-aged adults, with larger age differences for friend activities. Both activity types declined between waves. There was no significant age-group-by-time interaction for friend activities, but there was one for family activities, whose decline was greater among older adults. The baseline age pattern and longitudinal changes therefore should not be treated as the same result.",
       "evidence_segment_id": "AGEGROUP-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "활동 수준과 6년간의 변화는 연령집단별로 어떻게 달랐나요?",
+      "answer_30s_ko": "노인은 중년보다 가족 및 친구 활동을 더 적게 보고했으며, 친구 활동에서 연령 차이가 더 컸습니다. 두 활동 모두 조사 시점 사이에 감소했습니다. 친구 활동에서는 연령집단과 시간의 상호작용이 유의하지 않았지만, 가족 활동에서는 유의했고 노인의 감소 폭이 더 컸습니다. 따라서 기초시점의 연령별 양상과 종단적 변화를 같은 결과로 취급해서는 안 됩니다."
     },
     {
       "card_id": "huxhold-prep-08",
       "title": "Give the main middle-aged-group results with coefficients.",
       "answer_30s": "For middle-aged adults, the common coefficients estimated for family and friend paths were beta = 0.08 for positive-affect change and beta = 0.08 for life-satisfaction change over six years. The negative-affect coefficient, beta = 0.01, was not significant. The source-specific coefficients did not differ significantly. Activity thus showed some favorable associations, without evidence that friend activities were superior in this group.",
       "evidence_segment_id": "MIDDLE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "중년집단의 주요 결과를 계수와 함께 제시해 보세요.",
+      "answer_30s_ko": "중년 성인에서 가족 및 친구 경로에 공통으로 추정된 계수는 6년간의 긍정 정서 변화에 대해 β = 0.08, 삶의 만족도 변화에 대해 β = 0.08이었습니다. 부정 정서 계수 β = 0.01은 유의하지 않았습니다. 관계 유형별 계수 사이에도 유의한 차이가 없었습니다. 따라서 활동은 일부 유리한 결과와 관련되었지만, 이 집단에서 친구 활동이 더 우월하다는 근거는 없었습니다."
     },
     {
       "card_id": "huxhold-prep-09",
       "title": "What was the positive-affect result among older adults?",
       "answer_30s": "Family and friend activities shared an estimated positive association with positive-affect change, beta = 0.09. Their coefficients did not differ significantly. Positive affect alone therefore does not support claiming that friend activities were superior to family activities. The clearer differences between relationship sources concerned life satisfaction and negative affect.",
       "evidence_segment_id": "OLDER-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노인 집단에서 긍정 정서에 관한 결과는 어떠했나요?",
+      "answer_30s_ko": "가족 활동과 친구 활동은 긍정 정서의 변화와 공통적으로 β = 0.09의 정적 관련성을 보이는 것으로 추정되었습니다. 두 계수는 유의하게 다르지 않았습니다. 따라서 긍정 정서 결과만으로 친구 활동이 가족 활동보다 우월하다고 주장할 수는 없습니다. 관계 상대에 따른 더 뚜렷한 차이는 삶의 만족도와 부정 정서에서 나타났습니다."
     },
     {
       "card_id": "huxhold-prep-10",
       "title": "What was the life-satisfaction result among older adults?",
       "answer_30s": "Friend activities predicted life-satisfaction change with beta = 0.14, whereas the family-activity coefficient was beta = 0.02 and was not significant. Allowing these coefficients to differ improved model fit. Combining the two sources could therefore hide a meaningful distinction for older adults' life satisfaction. This relative advantage does not mean the same difference appeared for every well-being outcome.",
       "evidence_segment_id": "OLDER-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노인 집단에서 삶의 만족도에 관한 결과는 어떠했나요?",
+      "answer_30s_ko": "친구 활동은 β = 0.14로 삶의 만족도 변화를 예측한 반면, 가족 활동의 계수는 β = 0.02였고 유의하지 않았습니다. 두 계수가 서로 다르도록 허용하자 모형 적합도가 좋아졌습니다. 따라서 두 활동을 합치면 노인의 삶의 만족도와 관련된 의미 있는 차이가 가려질 수 있습니다. 이러한 상대적 이점이 모든 안녕감 결과에서 같은 차이가 나타났다는 뜻은 아닙니다."
     },
     {
       "card_id": "huxhold-prep-11",
       "title": "Why is the older-adult negative-affect result especially important?",
       "answer_30s": "According to the results text, older adults' friend activities predict declining negative affect, beta = -0.08, and family activities predict increasing negative affect, beta = +0.08. The preserved Table 1 shows the opposite signs for those paths. These conflict, so the direction should not be presented as settled without checking the original. Even a resolved association would not establish that family activity causes harm.",
       "evidence_segment_id": "OLDER-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노인 집단의 부정 정서 결과가 특히 중요한 이유는 무엇인가요?",
+      "answer_30s_ko": "결과 본문에 따르면 노인의 친구 활동은 β = −0.08로 부정 정서의 감소를 예측하고, 가족 활동은 β = +0.08로 부정 정서의 증가를 예측합니다. 보존된 표 1에는 이 경로들의 부호가 반대로 제시되어 있습니다. 서로 충돌하므로 원본을 확인하지 않은 채 방향이 확정된 것처럼 제시해서는 안 됩니다. 관련성의 방향이 확인되더라도 가족 활동이 해를 끼친다는 인과관계가 입증되는 것은 아닙니다."
     },
     {
       "card_id": "huxhold-prep-12",
       "title": "How might SST and the strength and vulnerability model explain the findings?",
       "answer_30s": "The authors interpret their results text through emotionally motivated selection of voluntary friendships and vulnerability to unavoidable negative family interactions. SST and the strength and vulnerability model offer possible mechanisms, rather than tested mediation. Their negative-affect interpretation follows the prose, but the preserved Table 1 reverses its family and friend coefficient signs. That unresolved discrepancy limits treating the proposed explanation as support for a settled directional finding.",
       "evidence_segment_id": "H3-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사회정서선택이론과 강점 및 취약성 모형은 이 결과를 어떻게 설명할 수 있나요?",
+      "answer_30s_ko": "저자들은 정서적 동기에 따라 자발적인 친구 관계를 선택하는 과정과 피할 수 없는 부정적 가족 상호작용에 대한 취약성을 통해 결과 본문을 해석합니다. 사회정서선택이론과 강점 및 취약성 모형은 가능한 작동 과정을 제시하는 것이며, 매개효과를 검증한 것은 아닙니다. 부정 정서에 관한 저자들의 해석은 본문을 따르지만, 보존된 표 1은 가족과 친구의 계수 부호를 반대로 제시합니다. 이 불일치가 해결되지 않았으므로, 제안된 설명을 방향이 확정된 결과를 뒷받침하는 근거로 다루는 데는 한계가 있습니다."
     },
     {
       "card_id": "huxhold-prep-13",
       "title": "Why could the regression coefficients not be directly compared between age groups?",
       "answer_30s": "Equal factor loadings supported measurement invariance across waves, but equal change variances across age groups could not be imposed. The authors therefore could not directly contrast the groups' regression weights for change. They compared family and friend paths within each group instead. A coefficient being significant in one group but not another does not by itself establish a significant difference between age groups.",
       "evidence_segment_id": "EFFECTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연령 집단 간에 회귀계수를 직접 비교할 수 없었던 이유는 무엇인가요?",
+      "answer_30s_ko": "동일한 요인부하량은 조사 시점 간 측정 불변성을 뒷받침했지만, 연령 집단 간 변화량의 분산을 동일하게 하는 제약은 둘 수 없었습니다. 따라서 저자들은 변화에 대한 두 집단의 회귀계수를 직접 대조할 수 없었습니다. 대신 각 집단 안에서 가족과 친구 경로를 비교했습니다. 한 집단에서 계수가 유의하고 다른 집단에서 유의하지 않다는 사실만으로 연령 집단 간 차이가 유의하다고 할 수는 없습니다."
     },
     {
       "card_id": "huxhold-prep-14",
       "title": "Name at least three important limitations.",
       "answer_30s": "All measures were self-reported and potentially affected by long recall periods and current mood. Only two waves, six years apart, could miss shorter affective fluctuations and more complex reciprocal dynamics. The study also could not distinguish family relationship types, such as partners versus children, and did not measure relationship quality. These limits prevent identifying a specific family mechanism or interpreting the findings as established causal effects.",
       "evidence_segment_id": "LIMIT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "중요한 한계를 세 가지 이상 말해 보세요.",
+      "answer_30s_ko": "모든 측정은 자기보고였으며, 긴 회상 기간과 현재 기분의 영향을 받았을 수 있습니다. 조사 시점은 6년 간격의 두 번뿐이어서 더 짧은 정서 변동과 더 복잡한 상호 영향의 과정을 놓칠 수 있습니다. 또한 배우자와 자녀처럼 가족 관계의 유형을 구분하지 못했고, 관계의 질도 측정하지 않았습니다. 이러한 한계 때문에 특정한 가족 내 작동 과정을 확인하거나 결과를 확립된 인과 효과로 해석할 수 없습니다."
     },
     {
       "card_id": "huxhold-prep-15",
       "title": "What implications might the study have for families or aging policy?",
       "answer_30s": "The authors suggest helping older adults build and maintain friend-based networks. Examples include elder-helping-elder volunteering and cultural, university, or occupational-therapy programs that encourage informal interaction. These are practical implications drawn from the observed associations. This study did not test those programs as interventions, so their effects need to be distinguished from the study's longitudinal findings.",
       "evidence_segment_id": "CONCLUSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 연구는 가족이나 노인 정책에 어떤 함의를 줄 수 있나요?",
+      "answer_30s_ko": "저자들은 노인이 친구 중심의 관계망을 만들고 유지하도록 돕자고 제안합니다. 예로는 노인이 노인을 돕는 자원봉사와 비공식적 상호작용을 촉진하는 문화·대학·작업치료 프로그램이 있습니다. 이는 관찰된 관련성에서 도출한 실천적 함의입니다. 이 연구가 해당 프로그램들을 개입으로 검증한 것은 아니므로, 프로그램의 효과와 이 연구의 종단적 결과는 구분해야 합니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this paper as questioning whether more social activity is always better. Company and the well-being outcome mattered: older adults' life-satisfaction associations differed by source, while their positive-affect associations did not. I would qualify the negative-affect finding because the results text and preserved Table 1 give opposite family and friend signs. That made careful separation of outcomes and evidence especially important to my reading.",
         "evidence_segment_id": "DISCUSSION-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 논문이 사회활동은 많을수록 언제나 더 좋은지 묻는다고 읽었습니다. 누구와 함께하는지와 어떤 안녕감 지표를 보는지가 중요했습니다. 노인의 삶의 만족도와의 관계는 교류 상대에 따라 달랐지만, 긍정적 정서와의 관계는 그렇지 않았습니다. 부정적 정서에 관한 결과는 결과 본문과 보존된 표 1에서 가족과 친구의 부호가 반대이므로 단서를 붙여 설명하겠습니다. 이 때문에 결과 지표와 근거를 신중하게 구분하는 일이 제 독해에서 특히 중요해졌습니다."
       },
       {
         "card_id": "huxhold-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "The results prose surprised me by reporting opposite older-adult negative-affect paths: friend activities beta = -0.08 and family activities beta = +0.08. But the preserved Table 1 reverses those signs. I would therefore discuss a reporting discrepancy, rather than memorize which relationship source increases negative affect as a settled fact. The original would need checking before resolving the direction.",
         "evidence_segment_id": "OLDER-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 놀라웠나요?",
+        "answer_30s_ko": "결과 본문이 노인의 부정적 정서에 대해 친구 활동은 beta = -0.08, 가족 활동은 beta = +0.08로 반대 방향의 경로를 보고한다는 점이 놀라웠습니다. 하지만 보존된 표 1에서는 이 부호가 반대로 제시됩니다. 따라서 어느 관계 상대와의 활동이 부정적 정서를 높이는지를 확정된 사실로 외우기보다 보고 내용의 불일치를 논의하겠습니다. 방향을 확정하려면 원문을 확인해야 합니다."
       },
       {
         "card_id": "huxhold-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had assumed that increasing family activities would generally be as helpful as increasing friend activities. The paper's conceptual discussion highlights family obligations and the difficulty of ending unsatisfying ties, compared with the voluntary and reciprocal nature of friendship. I now want to ask who an activity involves and what the relationship is like, rather than relying only on how often it happens.",
         "evidence_segment_id": "FAMILY-001",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기존의 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 가족 활동을 늘리는 것도 친구 활동을 늘리는 것만큼 대체로 도움이 될 것이라고 생각했습니다. 이 논문의 개념적 논의는 자발성과 상호성이 특징인 우정과 비교해, 가족에게는 의무가 있고 불만족스러운 관계를 끝내기 어렵다는 점을 강조합니다. 이제 저는 활동 빈도에만 의존하지 않고 누구와 하는 활동인지, 그 관계가 어떤지 묻고 싶습니다."
       },
       {
         "card_id": "huxhold-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "Among older adults, family and friend activities did not differ significantly in predicting positive-affect change, but showed different patterns for life satisfaction and negative affect. That made me reluctant to compress well-being into one score. I would read an activity association in relation to both the social partner and the particular outcome being measured.",
         "evidence_segment_id": "OLDER-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "안녕감을 하나의 점수로 보지 않게 된 이유는 무엇인가요?",
+        "answer_30s_ko": "노인에게서 가족 활동과 친구 활동은 긍정적 정서의 변화를 예측하는 데 유의한 차이가 없었지만, 삶의 만족도와 부정적 정서에서는 서로 다른 양상을 보였습니다. 이 때문에 안녕감을 한 점수로 압축하는 데 신중해졌습니다. 저는 활동과의 관계를 교류 상대와 구체적으로 측정한 결과 지표를 함께 고려해 읽겠습니다."
       },
       {
         "card_id": "huxhold-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "I would not read an association with negative affect as proof that family relationships are harmful. The study did not separate spouses from children or assess relationship quality, and it used self-reports at two waves six years apart. Before identifying a mechanism, we would need more detailed relationships and timing; a causal conclusion would also require a design that addresses confounding more convincingly.",
         "evidence_segment_id": "LIMIT-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "가족 활동에 관한 결과를 왜 인과적으로 해석하지 않았나요?",
+        "answer_30s_ko": "저는 부정적 정서와의 관계를 가족 관계가 해롭다는 증거로 읽지 않겠습니다. 이 연구는 배우자와 자녀를 구분하지 않았고 관계의 질도 평가하지 않았으며, 6년 간격의 두 시점에서 자기보고를 사용했습니다. 기제를 규명하려면 관계와 시점에 관한 더 자세한 정보가 필요합니다. 인과적 결론을 내리려면 교란 요인을 더 설득력 있게 다루는 설계도 필요합니다."
       },
       {
         "card_id": "huxhold-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My policy inference is to support sustained opportunities for older adults to form and maintain voluntary friend-based networks. The paper gives examples such as elder-helping-elder volunteering and cultural, university, and occupational-therapy programs. I would distinguish that practical proposal from demonstrated program effectiveness: the study observed longitudinal associations, so the effects of particular interventions require separate evaluation.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "family-policy",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 결과를 가족이나 정책과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "제 정책적 추론은 노인이 자발적인 친구 관계망을 만들고 유지할 수 있는 지속적인 기회를 지원하는 것입니다. 논문은 노인이 노인을 돕는 자원봉사와 문화·대학·작업치료 프로그램 등을 예로 듭니다. 저는 이런 실천적 제안과 입증된 프로그램 효과를 구분하겠습니다. 이 연구는 종단적 관계를 관찰했으므로, 특정 개입의 효과는 별도로 평가해야 합니다."
       }
     ]
   }

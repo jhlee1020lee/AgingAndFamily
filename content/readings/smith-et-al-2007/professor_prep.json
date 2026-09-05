@@ -9,105 +9,135 @@
       "title": "State the paper's central conclusion in one sentence.",
       "answer_30s": "Independence has multiple meanings in men's accounts, intertwining masculine identity with ideas of successful aging. It can be invoked to delay help or avoid services, but also to value daily functioning and a good quality of life. Understanding those combined meanings offers a fuller account of help seeking than treating independence only as a harmful masculine trait. The evidence is qualitative, rather than a population-wide causal estimate.",
       "evidence_segment_id": "ABS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "논문의 핵심 결론을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "남성들의 이야기에서 독립은 여러 의미를 지니며, 남성적 정체성과 성공적 노화에 대한 생각이 서로 얽혀 있습니다. 독립은 도움을 미루거나 서비스를 피하는 이유로 쓰일 수 있지만, 일상 기능과 좋은 삶의 질을 중시하는 뜻으로도 쓰일 수 있습니다. 이러한 의미의 결합을 이해하면 독립을 해로운 남성적 특성으로만 볼 때보다 도움 추구를 더 온전히 설명할 수 있습니다. 근거는 질적 자료이며, 전체 인구에 대한 인과적 추정치는 아닙니다."
     },
     {
       "card_id": "smith-prep-02",
       "title": "What does it mean for independence to have multiple meanings?",
       "answer_30s": "In some men's-health discussions, handling problems alone is linked to risk taking, service avoidance, and poor attention to health. In aging discussions, maintaining independence is often valued as part of aging successfully. The paper examines how those meanings interact among men in northwest Adelaide. It therefore asks what independence means in context, rather than assuming that every independent action either harms or benefits health.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "독립이 여러 의미를 지닌다는 것은 무엇을 뜻하나요?",
+      "answer_30s_ko": "남성 건강에 관한 일부 논의에서는 혼자 문제를 처리하는 것이 위험 감수, 서비스 회피, 건강에 대한 부족한 관심과 연결됩니다. 노화에 관한 논의에서는 독립을 유지하는 것이 성공적 노화의 일부로 높이 평가되는 경우가 많습니다. 이 논문은 애들레이드 북서부 남성들에게서 이러한 의미들이 어떻게 상호작용하는지 살펴봅니다. 따라서 모든 독립적 행동이 건강에 해롭거나 이롭다고 가정하기보다, 맥락 속에서 독립이 무엇을 의미하는지 묻습니다."
     },
     {
       "card_id": "smith-prep-03",
       "title": "How is independence constructed within hegemonic masculinity?",
       "answer_30s": "The paper describes hegemonic masculinity in Western society as an influential, culturally accepted ideal associated with toughness, assertiveness, emotional restraint, competitiveness, physical competence, self-reliance, and autonomy. These are social expectations, rather than fixed traits of all men. The authors also recognize that masculinities vary across cultures and environments, so this framework cannot by itself explain every man's understanding of independence.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "헤게모니적 남성성에서 독립은 어떻게 구성되나요?",
+      "answer_30s_ko": "논문은 서구 사회의 헤게모니적 남성성을 강인함, 자기주장, 감정 억제, 경쟁성, 신체적 능력, 자립, 자율성과 연결된, 영향력 있고 문화적으로 수용되는 이상으로 설명합니다. 이는 모든 남성의 고정된 특성이 아니라 사회적 기대입니다. 저자들은 남성성이 문화와 환경에 따라 다양하다는 점도 인정하므로, 이 틀만으로 모든 남성이 독립을 이해하는 방식을 설명할 수는 없습니다."
     },
     {
       "card_id": "smith-prep-04",
       "title": "How are independence and dependency understood in successful-aging discussions?",
       "answer_30s": "Independence can include self-reliance, self-esteem, self-determination, purpose, personal growth, and continuity of self. Depending on others does not automatically mean aging unsuccessfully. The paper emphasizes different forms of dependency and degrees of independence rather than a simple success-or-failure judgment. It also recognizes that successful aging is a fluid, culturally variable concept.",
       "evidence_segment_id": "AGING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "성공적 노화 논의에서 독립과 의존은 어떻게 이해되나요?",
+      "answer_30s_ko": "독립에는 자립, 자존감, 자기결정, 목적의식, 개인적 성장, 자아의 연속성이 포함될 수 있습니다. 다른 사람에게 의존한다고 해서 곧바로 성공적으로 나이 들지 못한다는 뜻은 아닙니다. 논문은 단순한 성공 또는 실패의 판단보다 다양한 의존 형태와 독립의 정도를 강조합니다. 성공적 노화가 유동적이며 문화에 따라 달라지는 개념이라는 점도 인정합니다."
     },
     {
       "card_id": "smith-prep-05",
       "title": "Distinguish FAMAS from this qualitative substudy.",
       "answer_30s": "The full Florey Adelaide Male Ageing Study cohort contained 1,195 men aged 35 to 80, randomly drawn using the northwest Adelaide telephone directory. The qualitative substudy included 36 men selected through age and marital-status strata. Of these, 22 were described as over 55 and 12 were 65 or older, and the paper primarily draws on older men's accounts. It did not interview the entire cohort or only men over 65.",
       "evidence_segment_id": "METHOD-CONTEXT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "FAMAS와 이 질적 하위연구를 구분해 보세요.",
+      "answer_30s_ko": "플로리 애들레이드 남성 노화 연구인 FAMAS의 전체 코호트에는 애들레이드 북서부 전화번호부를 이용해 무작위로 추출한 35~80세 남성 1,195명이 포함되었습니다. 질적 하위연구에는 연령과 혼인상태에 따른 층화를 통해 선정한 남성 36명이 참여했습니다. 이 중 22명은 55세 초과, 12명은 65세 이상으로 기술되었으며, 논문은 주로 나이 든 남성들의 이야기를 사용합니다. 전체 코호트를 면담한 것도, 65세 초과 남성만 면담한 것도 아닙니다."
     },
     {
       "card_id": "smith-prep-06",
       "title": "Where and how were the interviews conducted?",
       "answer_30s": "The first author conducted interviews lasting one to one-and-three-quarter hours, mostly in participants' homes in the afternoon or evening. The researchers sought settings where men would feel less threatened or alienated than in some health-service environments. Four interviews used a university room or workplace at participants' request. These setting choices were part of the study's approach, rather than evidence that one setting works for all men.",
       "evidence_segment_id": "METHOD-CONTEXT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "면접은 어디에서, 어떻게 진행되었나요?",
+      "answer_30s_ko": "제1저자가 1시간에서 1시간 45분 동안 면접을 진행했으며, 대부분 오후나 저녁에 참여자의 집에서 이루어졌습니다. 연구자들은 일부 보건의료 서비스 환경에서보다 남성들이 위협감이나 소외감을 덜 느낄 수 있는 장소를 찾았습니다. 네 차례의 면접은 참여자의 요청에 따라 대학의 한 공간이나 직장에서 진행했습니다. 이러한 장소 선택은 연구 접근의 일부이지, 한 가지 환경이 모든 남성에게 적합하다는 근거는 아닙니다."
     },
     {
       "card_id": "smith-prep-07",
       "title": "Why do rapport, age differences, and analysis matter?",
       "answer_30s": "Four pilot interviews informed a flexible guide. Shared interests, family stories, and sometimes informal activities helped establish rapport, after which men discussed depression, erectile dysfunction, and crying. The interviewer was 25, and participants often used life-course comparisons to explain their experiences. Interviews were transcribed verbatim with field notes and analyzed inductively using NVIVO. The accounts should therefore be understood in the context of the research relationship.",
       "evidence_segment_id": "METHOD-INTERVIEW-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "라포, 연령 차이, 분석 과정은 왜 중요한가요?",
+      "answer_30s_ko": "네 차례의 예비 면접을 바탕으로 유연한 면접 지침을 마련했습니다. 공통 관심사, 가족 이야기, 때로는 비공식적 활동이 라포 형성에 도움이 되었고, 이후 남성들은 우울, 발기부전, 울음에 관해 이야기했습니다. 면접자는 25세였으며, 참여자들은 자신의 경험을 설명할 때 생애과정상의 비교를 자주 사용했습니다. 면접은 발언 그대로 전사하고 현장 노트와 함께 NVIVO를 사용해 귀납적으로 분석했습니다. 따라서 이 이야기들은 연구자와 참여자 사이의 관계라는 맥락에서 이해해야 합니다."
     },
     {
       "card_id": "smith-prep-08",
       "title": "What early evidence suggested the two independence discourses were intertwined?",
       "answer_30s": "One participant emphasized controlling his diabetes rather than letting it control him; another stressed being strong through illness and not always seeking help. The authors interpret these accounts through both masculine control and the desire to maintain life quality while aging. The men did not neatly separate the two discourses. These examples illustrate meanings they expressed, rather than independently establish the health effects of their behavior.",
       "evidence_segment_id": "FINDINGS-OPEN-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "독립에 관한 두 담론이 얽혀 있음을 어떤 초기 근거가 보여 주었나요?",
+      "answer_30s_ko": "한 참여자는 당뇨병이 자신을 통제하게 두기보다 자신이 당뇨병을 통제해야 한다고 강조했습니다. 다른 참여자는 질병을 겪으면서도 강인함을 유지하고 매번 도움을 구하지는 않는다는 점을 강조했습니다. 저자들은 이 이야기들을 남성성에 기반한 통제 의식과 나이 들면서 삶의 질을 유지하려는 욕구라는 두 관점으로 해석합니다. 남성들은 두 담론을 명확하게 분리하지 않았습니다. 이 사례들은 그들이 표현한 의미를 보여 주는 것이지, 행동이 건강에 미친 효과를 독립적으로 입증하지는 않습니다."
     },
     {
       "card_id": "smith-prep-09",
       "title": "How did partners and concerns about burden appear in help-seeking accounts?",
       "answer_30s": "Sam described trying to solve problems first while expecting his wife to challenge him when needed. Ben reported that his wife saw stubbornness where he valued self-reliance. Arnold did not call an available lodger after a bathroom fall because he felt like a burden. These are the men's reports, showing how help availability can coexist with reluctance rooted in independence and perceived burden.",
       "evidence_segment_id": "MASCULINE-HELP-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "도움을 구하는 이야기에서 배우자와 부담에 대한 염려는 어떻게 나타났나요?",
+      "answer_30s_ko": "Sam은 먼저 문제를 해결하려고 노력하면서도 필요할 때는 아내가 자신의 생각에 이의를 제기하리라고 기대한다고 설명했습니다. Ben은 자신이 자립을 중요하게 여기는 행동을 아내는 고집으로 본다고 보고했습니다. Arnold는 욕실에서 넘어진 뒤 도움을 줄 수 있는 하숙인을 부르지 않았는데, 자신이 상대에게 짐이 된다고 느꼈기 때문입니다. 이는 남성들 자신의 보고이며, 도움을 받을 수 있는 상황에서도 독립과 부담감에 뿌리를 둔 주저함이 함께 존재할 수 있음을 보여 줍니다."
     },
     {
       "card_id": "smith-prep-10",
       "title": "How does the refusal-of-nursing-help case go beyond a stubborn-man stereotype?",
       "answer_30s": "Max described refusing community nursing visits and delaying help, initially calling himself stubborn. He then explained that he had cared for himself for so long and feared reaching a point where he could no longer do so. The authors interpret the account through masculine identity, continuity of his way of life, and aging concerns. That broadens understanding without establishing that delaying help is harmless or appropriate.",
       "evidence_segment_id": "MASCULINE-MAX-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "간호 도움을 거부한 사례는 ‘고집 센 남성’이라는 고정관념을 어떻게 넘어가나요?",
+      "answer_30s_ko": "Max는 지역사회 간호사의 방문을 거부하고 도움받기를 미뤘다고 말하며 처음에는 자신을 고집스럽다고 표현했습니다. 이어서 오랫동안 스스로 자신을 돌봐 왔으며, 더 이상 그렇게 할 수 없는 지점에 이르는 것이 두려웠다고 설명했습니다. 저자들은 남성적 정체성, 생활방식의 연속성, 노화에 대한 염려를 통해 이 이야기를 해석합니다. 이는 이해의 폭을 넓혀 주지만 도움받기를 미루는 것이 해롭지 않거나 적절하다고 입증하는 것은 아닙니다."
     },
     {
       "card_id": "smith-prep-11",
       "title": "How did daily functioning shape accounts of healthy aging?",
       "answer_30s": "David emphasized a full life, self-care, and being able to do what he wanted rather than longevity alone. Bob described health through independent physical and cognitive functioning. Both were middle-aged participants, aged 52 and 51, with similar themes also appearing among older men. Here independence concerned sustaining a valued life, rather than simply refusing assistance.",
       "evidence_segment_id": "SUCCESS-DAILY-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "일상 기능은 건강한 노화에 관한 이야기를 어떻게 형성했나요?",
+      "answer_30s_ko": "David는 단순한 장수보다 충실한 삶, 자기 돌봄, 원하는 일을 할 수 있는 능력을 강조했습니다. Bob은 독립적인 신체·인지 기능을 통해 건강을 설명했습니다. 두 사람은 각각 52세와 51세인 중년 참여자였으며, 나이 든 남성들에게서도 비슷한 주제가 나타났습니다. 여기서 독립성은 단순히 도움을 거절하는 것이 아니라 자신이 가치 있게 여기는 삶을 유지하는 것과 관련되었습니다."
     },
     {
       "card_id": "smith-prep-12",
       "title": "What did concerns about sight loss and a heart attack reveal about quality of life?",
       "answer_30s": "Wayne worried that losing sight would prevent reading and driving. Roger, reflecting on a heart attack, feared needing help with feeding and personal care and becoming a burden. The authors interpret these accounts as shifting attention from survival alone to the kind of life one can lead. They express participants' concerns, rather than establish a universal judgment about the value of living with disability or receiving care.",
       "evidence_segment_id": "SUCCESS-RISK-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "시력 상실과 심장마비에 대한 우려는 삶의 질에 관해 무엇을 보여 줬나요?",
+      "answer_30s_ko": "Wayne은 시력을 잃으면 독서와 운전을 할 수 없게 될까 걱정했습니다. Roger는 심장마비를 돌아보며 식사와 개인적인 돌봄에 도움을 받아야 하고 짐이 될까 두려워했습니다. 저자들은 이런 이야기를 단순한 생존에서 어떤 삶을 살 수 있는지로 관심이 이동하는 것으로 해석합니다. 이는 참여자들의 우려를 표현한 것이지, 장애가 있거나 돌봄을 받으며 사는 삶의 가치에 관한 보편적 판단을 확립한 것은 아닙니다."
     },
     {
       "card_id": "smith-prep-13",
       "title": "Distinguish the driving-loss account from the authors' interpretation.",
       "answer_30s": "Michael reported losing his license because of declining cognitive ability and described feeling remote, despondent, and unable to live as he wished. He distinguished enjoyment and meaningful living from mere survival. A loss of masculine identity was the authors' interpretation, which they explicitly note he did not state directly. I would preserve that distinction rather than attribute the analytical label to the participant himself.",
       "evidence_segment_id": "SUCCESS-MICHAEL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "운전을 못 하게 된 경험과 저자들의 해석을 구분해 보세요.",
+      "answer_30s_ko": "Michael은 인지 능력 저하로 면허를 잃었다고 보고하며, 단절감과 낙담을 느끼고 원하는 대로 살 수 없다고 설명했습니다. 그는 즐거움과 의미 있는 삶을 단순한 생존과 구분했습니다. 남성적 정체성의 상실은 저자들의 해석이며, 저자들은 그가 이를 직접 말하지 않았다고 명시합니다. 저는 이 구분을 유지하고 분석적 명칭을 참여자 자신의 표현으로 돌리지 않겠습니다."
     },
     {
       "card_id": "smith-prep-14",
       "title": "Why is the electric-scooter account an adaptive reconstruction of independence?",
       "answer_30s": "Arnold had very limited walking ability but used a scooter to visit local shops and his doctor on his own. He described short local trips and said he did not attempt its claimed roughly 40-kilometer range. The authors interpret this as independence taking a new form through assisted mobility, preserving daily functioning and quality of life. Using an aid was compatible with independence in his account.",
       "evidence_segment_id": "SUCCESS-SCOOTER-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "전동 스쿠터 이야기는 왜 독립성을 적응적으로 재구성한 사례인가요?",
+      "answer_30s_ko": "Arnold는 걷는 능력이 매우 제한적이었지만 스쿠터를 이용해 동네 상점과 의사를 혼자 찾아갔습니다. 그는 가까운 곳으로 짧게 이동한다고 설명하며, 알려진 약 40킬로미터의 주행거리를 직접 시도하지는 않았다고 말했습니다. 저자들은 이를 이동 보조를 통해 독립성이 새로운 형태를 띠며 일상 기능과 삶의 질을 유지하는 것으로 해석합니다. 그의 이야기에서 보조기구 사용과 독립성은 양립할 수 있었습니다."
     },
     {
       "card_id": "smith-prep-15",
       "title": "What implications do the authors propose for practice and men's-health policy?",
       "answer_30s": "The authors suggest discussing independence as a potential resource for control, responsibility, treatment choices, and preventive health, rather than equating it automatically with noncompliance. They also favor policies attentive to age and subgroups of men instead of assuming one universal masculinity. These are proposals arising from qualitative interpretations; the paper calls for closer examination and does not test their clinical or policy effectiveness.",
       "evidence_segment_id": "CONCLUSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "저자들은 실천과 남성 건강 정책에 어떤 함의를 제안하나요?",
+      "answer_30s_ko": "저자들은 독립성을 곧바로 치료 비순응과 동일시하지 말고, 통제감, 책임, 치료 선택, 예방적 건강 관리의 잠재적 자원으로 논의하자고 제안합니다. 또한 하나의 보편적인 남성성을 가정하기보다 남성의 연령과 하위집단에 주목하는 정책을 지지합니다. 이는 질적 해석에서 나온 제안입니다. 논문은 더 면밀한 검토를 요구하며, 임상적·정책적 효과를 검증하지는 않습니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "It made me question interpretations that stop at calling a man stubborn or uncooperative. The qualitative substudy connects independence with both masculinity and successful aging, drawing primarily on older participants' accounts. My inference is that understanding reluctance requires listening to what independence means to the person, alongside considering the behavior and its consequences. That is an interpretive lesson, rather than a tested method of changing help seeking.",
         "evidence_segment_id": "ABS-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 논문은 나이 든 남성의 도움 요청에 대한 관점을 어떻게 바꿨나요?",
+        "answer_30s_ko": "저는 남성을 고집스럽거나 비협조적이라고 부르는 데 그치는 해석에 의문을 갖게 되었습니다. 이 질적 하위연구는 주로 나이 든 참여자들의 이야기를 바탕으로 독립성을 남성성과 성공적 노화 모두에 연결합니다. 제 추론은 도움을 꺼리는 태도를 이해하려면 행동과 그 결과를 살피는 것과 함께, 독립성이 당사자에게 어떤 의미인지 들어야 한다는 것입니다. 이는 해석에서 얻은 배움이지, 도움 요청을 바꾸는 검증된 방법은 아닙니다."
       },
       {
         "card_id": "smith-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "Max's explanation stood out. His refusal of nursing help could easily be labeled stubbornness, but he connected it to a long history of looking after himself and concern about losing that capacity. I found it useful to consider identity and the life course together. It complicates the interpretation of delayed help seeking without endorsing delay or reducing his motives to one trait.",
         "evidence_segment_id": "MASCULINE-MAX-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 새롭게 다가왔나요?",
+        "answer_30s_ko": "Max의 설명이 눈에 띄었습니다. 간호 도움을 거부하는 행동은 쉽게 고집으로 불릴 수 있지만, 그는 이를 오랫동안 자신을 돌봐 온 이력과 그 능력을 잃을까 하는 우려에 연결했습니다. 저는 정체성과 생애과정을 함께 고려하는 것이 유용했습니다. 이는 도움 요청의 지연을 지지하거나 그의 동기를 하나의 성격 특성으로 환원하지 않으면서, 지연의 해석을 더 복합적으로 만들어 줍니다."
       },
       {
         "card_id": "smith-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had tended to associate an assistive device with reduced independence. Arnold instead described using a scooter to reach shops and his doctor on his own despite difficulty walking. That helped me see support and independence as potentially compatible: an aid can enable valued daily activities. The case illustrates one man's adaptive meaning of independence, rather than establish the same outcome for every device user.",
         "evidence_segment_id": "SUCCESS-SCOOTER-001",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "보조기구에 대한 기존의 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 보조기구를 독립성의 감소와 연결해 생각하는 경향이 있었습니다. 하지만 Arnold는 걷기 어려운 상황에서도 스쿠터로 상점과 의사를 혼자 찾아간다고 설명했습니다. 이를 통해 지원과 독립성이 양립할 수 있음을 보게 되었습니다. 보조기구는 가치 있는 일상 활동을 가능하게 할 수 있습니다. 이 사례는 한 남성이 독립성에 적응적으로 부여한 의미를 보여 주며, 모든 보조기구 사용자가 같은 결과를 얻는다고 입증한 것은 아닙니다."
       },
       {
         "card_id": "smith-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I had assumed that someone nearby would be asked for help when needed. Arnold described not calling his lodger after a fall because he felt like a burden. My inference is that improving availability alone may not address the meanings attached to asking. I would want to understand perceived burden and independence as well, while recognizing that this is an interpretation of a single account.",
         "evidence_segment_id": "MASCULINE-HELP-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "욕실에서 넘어진 이야기는 도움에 대한 가정에 어떤 의문을 제기했나요?",
+        "answer_30s_ko": "저는 도움이 필요하면 가까이 있는 사람에게 요청할 것이라고 생각했습니다. Arnold는 넘어진 뒤 자신이 짐처럼 느껴져 세 들어 사는 사람을 부르지 않았다고 설명했습니다. 제 추론은 도움을 받을 수 있게 하는 것만으로 요청에 부여된 의미까지 다루지는 못할 수 있다는 것입니다. 저는 부담이 된다는 느낌과 독립성도 이해하고 싶습니다. 다만 이는 하나의 이야기에 대한 해석임을 인식하겠습니다."
       },
       {
         "card_id": "smith-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "I learned not to treat men's apparent reluctance to discuss health as a fixed personal trait. The researchers describe establishing rapport through interests, family stories, and informal interaction, after which sensitive subjects were discussed. I would examine how the interviewer and setting made particular accounts possible before interpreting silence or openness. The study describes that process; it does not experimentally isolate which rapport techniques caused disclosure.",
         "evidence_segment_id": "METHOD-INTERVIEW-001",
         "response_angle": "method",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "면접 접근 방식에서 무엇을 배웠나요?",
+        "answer_30s_ko": "저는 남성이 건강 이야기를 꺼리는 듯한 모습을 고정된 개인적 특성으로 취급하지 않아야 한다고 배웠습니다. 연구자들은 관심사, 가족 이야기, 비공식적 상호작용으로 친밀한 신뢰 관계를 형성한 뒤 민감한 주제도 논의했다고 설명합니다. 저는 침묵이나 개방성을 해석하기 전에 면접자와 환경이 특정 이야기를 어떻게 가능하게 했는지 살펴보겠습니다. 이 연구는 그 과정을 설명하지만, 어떤 신뢰 형성 기법이 민감한 이야기를 털어놓게 했는지 실험적으로 분리해 검증하지는 않습니다."
       },
       {
         "card_id": "smith-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My practice inference is to explore how independence could support a person's health goals and quality of life while addressing the risks of delayed help. I would also avoid assuming that all men share one masculine identity or that needing assistance means failure. The paper suggests this age- and context-sensitive approach, but further research would be needed to evaluate specific clinical or policy applications.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "family-policy",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 논문을 적용할 때 어떤 원칙을 따르겠나요?",
+        "answer_30s_ko": "제가 도출한 실천적 추론은 도움 요청이 늦어지는 위험을 다루면서, 독립성이 개인의 건강 목표와 삶의 질에 어떻게 도움이 될 수 있는지 살펴보는 것입니다. 모든 남성이 하나의 남성적 정체성을 공유하거나 도움이 필요하다는 것이 실패를 뜻한다고 가정하지도 않겠습니다. 논문은 연령과 맥락을 고려하는 이런 접근을 제안하지만, 구체적인 임상·정책 적용을 평가하려면 추가 연구가 필요합니다."
       }
     ]
   }

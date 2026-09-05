@@ -54,6 +54,11 @@ function checkEnglishReading(rootDir,reading){
     if(page.key==="professor-prep")prepCardCount+=items.length;
     else questionCount+=items.length;
     items.forEach((item,index)=>{
+      if(page.key==="professor-prep"){
+        for(const field of ["title_ko","answer_30s_ko"]){
+          if(!/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(text(item?.[field])))errors.push(`${page.file}: item ${index+1} ${field} must contain Korean text for bilingual publication`);
+        }
+      }
       const id=text(item?.evidence_segment_id);
       const segment=knownSegments.get(id);
       if(!id||!segment)errors.push(`${page.file}: item ${index+1} must reference an existing evidence_segment_id (found ${JSON.stringify(id)})`);
@@ -90,10 +95,14 @@ function checkEnglishLearning(rootDir=ROOT,slugs=[]){
 
 function runSelfTests(){
   // Use real validated schemas as the fixture baseline; copy JSON only, never PDFs or public assets.
-  const baselineReading=readJson(path.join(ROOT,"manifest","readings.json")).readings.find((reading)=>reading.slug==="levy-2009");
-  assert(baselineReading,"Levy schema fixture baseline must exist");
+  const baselineReading=readJson(path.join(ROOT,"manifest","readings.json")).readings[0];
+  assert(baselineReading,"A manifest reading is required for the schema fixture");
   const baselineDir=path.join(ROOT,baselineReading.content_dir);
   const baseline=Object.fromEntries([...REQUIRED_PAGES.map((page)=>page.file),"source_segments.json"].map((file)=>[file,readJson(path.join(baselineDir,file))]));
+  [...baseline["professor_prep.json"].cards,...baseline["professor_prep.json"].reading_response.cards].forEach((card,index)=>{
+    card.title_ko=`검증용 질문 ${index+1}`;
+    card.answer_30s_ko=`원문 근거를 설명하는 검증용 답변 ${index+1}입니다.`;
+  });
   const temporaryRoot=fs.mkdtempSync(path.join(os.tmpdir(),"aaf-english-learning-"));
   const fixtureReading={...baselineReading,slug:"english-gate-fixture",content_dir:"content/fixture",translation_original_reveal:{enabled:false}};
   const fixtureDir=path.join(temporaryRoot,fixtureReading.content_dir);
@@ -125,6 +134,20 @@ function runSelfTests(){
       else payload.items[0].explanation="한국어로 되돌아간 문항 해설입니다.";
       write(page.file,payload);
       assert(inspect().some((error)=>error.includes("must contain English text")),`${page.file}: English tag must not hide Korean content`);
+      scenarios++;
+    }
+    restore();
+    const untranslated=structuredClone(baseline["professor_prep.json"]);
+    for(const card of [...untranslated.cards,...untranslated.reading_response.cards]){delete card.title_ko;delete card.answer_30s_ko;}
+    write("professor_prep.json",untranslated);
+    assert(inspect().some((error)=>error.includes("Korean text for bilingual publication")),"legacy English-only prep cannot pass the publication gate");
+    scenarios++;
+    for(const field of ["title_ko","answer_30s_ko"]){
+      restore();
+      const incomplete=structuredClone(baseline["professor_prep.json"]);
+      delete incomplete.cards[0][field];
+      write("professor_prep.json",incomplete);
+      assert(inspect().some((error)=>error.includes(`${field} must contain Korean text`)),`publication requires each ${field}`);
       scenarios++;
     }
     restore();
@@ -182,7 +205,7 @@ function main(argv=process.argv.slice(2)){
   else if(failures.length){
     console.error(`FAIL English learning gate (${failures.length} / ${results.length} readings)`);
     failures.forEach(({slug,errors})=>errors.forEach((error)=>console.error(`  ${slug}: ${error}`)));
-  }else console.log(`PASS English learning gate (${results.length} readings, ${results.length*REQUIRED_PAGES.length} English JSON files, ${results.reduce((sum,result)=>sum+result.questionCount,0)} questions, ${results.reduce((sum,result)=>sum+result.prepCardCount,0)} prep cards; source schemas and evidence IDs verified)`);
+  }else console.log(`PASS English learning gate (${results.length} readings, ${results.length*REQUIRED_PAGES.length} English JSON files, ${results.reduce((sum,result)=>sum+result.questionCount,0)} questions, ${results.reduce((sum,result)=>sum+result.prepCardCount,0)} bilingual prep cards; source schemas and evidence IDs verified)`);
   return failures.length?1:0;
 }
 

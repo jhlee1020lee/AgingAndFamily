@@ -742,6 +742,12 @@ function validateProfessorPrepJson(payload, knownIds = new Set()) {
     card_count: cards.length,
     reading_response_card_count: readingResponseCards.length,
   };
+  const allCards = [...cards, ...readingResponseCards];
+  const hasKoreanFields = (card) => card && typeof card === "object" && ["title_ko", "answer_30s_ko"].some((field) => Object.prototype.hasOwnProperty.call(card, field));
+  metrics.korean_card_count = allCards.filter(hasKoreanFields).length;
+  if (metrics.korean_card_count && metrics.korean_card_count !== allCards.length) {
+    errors.push("professor-prep Korean translations must cover every card; mixed translated and untranslated cards are not allowed");
+  }
   if (payload.language === "en") {
     for (const field of ["title", "instructions"]) validateEnglishText(payload[field], `professor-prep ${field}`, errors);
     for (const field of ["title", "instructions"]) validateEnglishText(readingResponse?.[field], `reading_response ${field}`, errors);
@@ -790,6 +796,13 @@ function validateProfessorPrepJson(payload, knownIds = new Set()) {
         }
       }
       if (requireEvidence) validateEvidenceId(card.evidence_segment_id, `${label} ${index + 1}`, knownIds, errors);
+      if (hasKoreanFields(card)) {
+        for (const field of ["title_ko", "answer_30s_ko"]) {
+          if (!/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(toText(card[field]))) {
+            errors.push(`${label} ${index + 1} ${field} must contain non-empty Korean text`);
+          }
+        }
+      }
       if (payload.language === "en") {
         for (const field of ["title", "answer_30s", "source"]) validateEnglishText(card[field], `${label} ${index + 1} ${field}`, errors);
       }
@@ -1381,6 +1394,17 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
             if (expected && !text.includes(expected)) errors.push(`built English content differs at item ${index + 1}: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
           });
         });
+        if (pageKey === "professor-prep" && cards.some((card) => card.title_ko !== undefined || card.answer_30s_ko !== undefined)) {
+          for (const [field, attribute] of [["title_ko", "data-prep-question-language"], ["answer_30s_ko", "data-prep-answer-language"]]) {
+            const pattern = new RegExp(`<span\\b(?=[^>]*\\b${attribute}="ko")(?=[^>]*\\blang="ko")[^>]*>([\\s\\S]*?)<\\/span>`, "g");
+            const translated = [...html.matchAll(pattern)].map((match) => match[1].replace(/<[^>]*>/g, "").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim());
+            if (translated.length !== cards.length) errors.push(`built Korean ${field} count differs: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
+            cards.forEach((card, index) => {
+              const expected = toText(card[field]).replace(/[*`]/g, "").replace(/\s+/g, " ");
+              if (!expected || translated[index] !== expected) errors.push(`built Korean content differs at item ${index + 1} (${field}): docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
+            });
+          }
+        }
       }
     }
   });

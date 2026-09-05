@@ -9,105 +9,135 @@
       "title": "How does the chapter distinguish ICTs from emerging technologies?",
       "answer_30s": "Information and communication technologies, or ICTs, are devices and applications for gathering and exchanging information and communicating with others, including phones, computers, the internet, tablets, social network sites, and apps. In this 2021 chapter, emerging technologies are recently developed technologies in early public dissemination, with less known about their use and effects. Examples include robots, virtual reality, voice assistants, smart homes, and telehealth applications.",
       "evidence_segment_id": "DEFINE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 장은 ICT와 신흥 기술을 어떻게 구분하나요?",
+      "answer_30s_ko": "정보통신기술, 즉 ICT는 정보를 수집·교환하고 다른 사람과 소통하는 기기와 응용 프로그램으로, 전화, 컴퓨터, 인터넷, 태블릿, 소셜 네트워크 사이트, 앱을 포함합니다. 이 2021년 장에서 신흥 기술은 최근 개발되어 대중에게 보급되기 시작한 초기 단계의 기술이며, 사용과 효과에 대해 알려진 바가 더 적습니다. 로봇, 가상현실, 음성 비서, 스마트홈, 원격보건 응용 기술 등이 그 예입니다."
     },
     {
       "card_id": "cotten-prep-02",
       "title": "How does the life course perspective explain older adults' technology use?",
       "answer_30s": "The life course perspective connects ICT trajectories with historical context, the timing of technological developments, life stage, and linked lives. Many Baby Boomers encountered technologies during adulthood and employment, while earlier cohorts had less workplace exposure. Present age-group differences therefore reflect different technological histories and social support as well as possible aging processes. They should not be explained by aging alone.",
       "evidence_segment_id": "VARIATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생애과정 관점은 노인의 기술 사용을 어떻게 설명하나요?",
+      "answer_30s_ko": "생애과정 관점은 ICT 사용 궤적을 역사적 맥락, 기술 발전의 시기, 생애 단계, 연결된 삶과 관련짓습니다. 많은 베이비붐 세대는 성인기와 직장생활 중에 기술을 접했지만, 그보다 앞선 코호트는 직장에서 기술에 노출될 기회가 더 적었습니다. 따라서 현재의 연령집단 차이에는 가능한 노화 과정뿐 아니라 서로 다른 기술 경험의 역사와 사회적 지원도 반영됩니다. 노화만으로 설명해서는 안 됩니다."
     },
     {
       "card_id": "cotten-prep-03",
       "title": "Why distinguish age from cohort?",
       "answer_30s": "Age is time since birth; a cohort shares major experiences within a similar historical period. Older adults include birth cohorts who were at different life stages when technologies spread and who had different workplace exposure. Cross-sectional data cannot separate age from cohort effects. An age-group difference at one time therefore cannot simply be treated as a change that occurs within individuals as they grow older.",
       "evidence_segment_id": "VARIATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연령과 코호트를 왜 구분하나요?",
+      "answer_30s_ko": "연령은 출생 이후 흐른 시간이고, 코호트는 비슷한 역사적 시기에 주요 경험을 공유하는 집단입니다. 노인에는 기술이 확산될 때 서로 다른 생애 단계에 있었고 직장에서의 노출 경험도 달랐던 출생 코호트들이 포함됩니다. 단면자료로는 연령 효과와 코호트 효과를 분리할 수 없습니다. 따라서 한 시점의 연령집단 차이를 개인이 나이 들면서 겪는 변화로 단순히 취급해서는 안 됩니다."
     },
     {
       "card_id": "cotten-prep-04",
       "title": "What shows that older adults are not one uniform technology-user group?",
       "answer_30s": "In the cited 2016 data, internet use was 60% at ages 75 to 79 and 44% at 80 or older; smartphone ownership was 31% and 17%, respectively. Interviews with 41 Toronto older adults also identified six types: Non-Users, Reluctants, Apprehensives, Basic Users, Go-Getters, and Savvy Users. Those subtype proportions describe that small interview sample, rather than national US prevalence.",
       "evidence_segment_id": "VARIATION-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "노인이 하나의 동질적인 기술 사용자 집단이 아니라는 것을 무엇이 보여 주나요?",
+      "answer_30s_ko": "인용된 2016년 자료에서 인터넷 사용률은 75~79세가 60%, 80세 이상이 44%였고, 스마트폰 보유율은 각각 31%와 17%였습니다. 토론토 노인 41명과의 면담에서는 비사용자(Non-Users), 소극형(Reluctants), 불안형(Apprehensives), 기본 사용자(Basic Users), 적극 활용형(Go-Getters), 능숙한 사용자(Savvy Users)의 여섯 유형도 확인했습니다. 이 하위유형의 비율은 소규모 면담 표본을 설명하는 것이며, 미국 전국의 비율이 아닙니다."
     },
     {
       "card_id": "cotten-prep-05",
       "title": "Why separate access, skills, use, and benefits?",
       "answer_30s": "Being online matters, but the chapter stresses that access alone is insufficient to obtain benefits. People also need skills to find information and use relevant functions. Even within older age groups, internet access, broadband, device ownership, and functional uses differ. Access rates therefore should not be substituted for measures of proficiency, meaningful use, or outcomes.",
       "evidence_segment_id": "VARIATION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "접근, 기술 역량, 사용, 이점을 왜 나누어 보나요?",
+      "answer_30s_ko": "온라인에 연결되는 것도 중요하지만, 이 장은 접근만으로 이점을 얻기에 충분하지 않다고 강조합니다. 정보를 찾고 관련 기능을 활용하는 능력도 필요합니다. 노년 연령집단 안에서도 인터넷 접근, 초고속 인터넷, 기기 보유, 기능의 사용이 다릅니다. 따라서 접근률을 숙련도, 의미 있는 사용, 결과의 측정치 대신 사용해서는 안 됩니다."
     },
     {
       "card_id": "cotten-prep-06",
       "title": "How does cumulative disadvantage extend the digital-divide explanation?",
       "answer_30s": "Early computer and internet access can create later opportunities for education, job seeking, advanced skills, information, and social connections. Limited access and proficiency linked to income, education, or rural location can make those advantages harder to accumulate. Small initial differences may therefore widen across the life course. Even when two people are both online now, past experience can affect how effectively they activate resources.",
       "evidence_segment_id": "DIVIDE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "누적 불이익은 정보격차에 대한 설명을 어떻게 확장하나요?",
+      "answer_30s_ko": "생애 초기의 컴퓨터와 인터넷 접근은 이후 교육, 구직, 고급 기술 역량, 정보, 사회적 연결의 기회를 만들 수 있습니다. 소득, 교육, 농촌 거주와 관련된 접근 및 숙련도의 제약은 이런 이점을 축적하기 어렵게 만들 수 있습니다. 따라서 작은 초기 차이가 생애과정에 걸쳐 벌어질 수 있습니다. 현재 두 사람 모두 온라인을 이용하더라도 과거의 경험이 자원을 얼마나 효과적으로 활용하는지에 영향을 줄 수 있습니다."
     },
     {
       "card_id": "cotten-prep-07",
       "title": "What are important limitations of existing survey data?",
       "answer_30s": "The chapter notes that Pew surveys largely cover community residents able to complete phone or online questionnaires. People in care facilities, poorer health, or social isolation may be missed, potentially inflating usage estimates. Other large panels offer richer health and longitudinal covariates but coarse technology measures. Self-reports have recall errors, while device logs also face installation, privacy, and organizational constraints.",
       "evidence_segment_id": "DATA-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "기존 조사자료에는 어떤 중요한 한계가 있나요?",
+      "answer_30s_ko": "이 장은 Pew 조사가 주로 전화나 온라인 설문을 완료할 수 있는 지역사회 거주자를 포함한다고 지적합니다. 돌봄시설 거주자, 건강이 더 나쁜 사람, 사회적으로 고립된 사람이 빠질 수 있어 사용률 추정치가 높게 나타날 가능성이 있습니다. 다른 대규모 패널은 건강 및 종단 공변량이 더 풍부하지만 기술 사용 측정이 세밀하지 않습니다. 자기보고에는 회상 오류가 있고, 기기 기록도 설치, 개인정보 보호, 조직적 제약에 부딪힙니다."
     },
     {
       "card_id": "cotten-prep-08",
       "title": "Apply social causation and social selection to technology use.",
       "answer_30s": "A social-causation account proposes that ICT use changes well-being through connection and information, or through distressing content and displaced face-to-face contact. A social-selection account emphasizes prior depression, loneliness, weak ties, or individual characteristics that influence use and outcomes. Both positive and negative pathways are possible, so a correlation between technology use and loneliness or depression does not establish its causal direction.",
       "evidence_segment_id": "IMPACTS-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "기술 사용에 사회적 인과와 사회적 선택을 적용해 보세요.",
+      "answer_30s_ko": "사회적 인과 설명은 ICT 사용이 연결과 정보를 통해, 또는 고통스러운 내용과 대면 접촉의 대체를 통해 안녕감을 바꾼다고 봅니다. 사회적 선택 설명은 기존의 우울, 외로움, 약한 사회적 유대 또는 개인적 특성이 사용과 결과에 영향을 준다는 점을 강조합니다. 긍정적 경로와 부정적 경로가 모두 가능하므로 기술 사용과 외로움 또는 우울의 상관만으로 인과의 방향을 확정할 수는 없습니다."
     },
     {
       "card_id": "cotten-prep-09",
       "title": "Through which pathways might psychosocial benefits arise?",
       "answer_30s": "Four-wave Health and Retirement Study analyses linked internet or email use with lower depression over time after accounting for prior depression, with social contact suggested as one mechanism. In a three-wave New Zealand study, social ICT use was linked to well-being through lower loneliness and greater engagement; informational and instrumental uses were linked through broader participation. These longitudinal associations help distinguish pathways but do not establish universal causal benefits.",
       "evidence_segment_id": "PSYCH-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "심리사회적 이점은 어떤 경로를 통해 나타날 수 있나요?",
+      "answer_30s_ko": "건강과 은퇴 연구의 네 차례 조사 자료를 분석한 결과, 이전의 우울을 고려한 뒤에도 인터넷이나 이메일 사용은 시간이 지나면서 더 낮은 우울 수준과 관련되었으며, 사회적 접촉이 한 가지 작동 과정으로 제시되었습니다. 뉴질랜드의 세 차례 조사 연구에서는 사회적 목적의 정보통신기술 사용이 외로움 감소와 관여 증가를 통해 안녕감과 연결되었고, 정보 획득 및 도구적 목적의 사용은 더 폭넓은 참여를 통해 연결되었습니다. 이러한 종단적 관련성은 경로를 구분하는 데 도움이 되지만 보편적인 인과적 이점을 입증하지는 않습니다."
     },
     {
       "card_id": "cotten-prep-10",
       "title": "How strong is the evidence about physical health?",
       "answer_30s": "The chapter reports much less evidence on physical than psychosocial outcomes. In a cross-sectional study of adults aged 80 or older, using more devices and apps was associated with better self-rated health and fewer functional limitations. Social use was unrelated to those outcomes, whereas use to learn information and skills was associated with them. The design cannot separate healthier people using more technology from effects of use itself.",
       "evidence_segment_id": "PHYSICAL-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "신체 건강에 관한 근거는 얼마나 강한가요?",
+      "answer_30s_ko": "이 장은 신체적 결과에 관한 근거가 심리사회적 결과에 관한 근거보다 훨씬 적다고 보고합니다. 80세 이상 성인을 대상으로 한 횡단면 연구에서 더 많은 기기와 앱을 사용하는 것은 더 좋은 주관적 건강 및 더 적은 기능 제한과 관련되었습니다. 사회적 목적의 사용은 이 결과들과 관련이 없었지만, 정보와 기술을 배우기 위한 사용은 관련이 있었습니다. 이 설계로는 더 건강한 사람이 기술을 더 많이 사용하는 것과 기술 사용 자체의 효과를 구분할 수 없습니다."
     },
     {
       "card_id": "cotten-prep-11",
       "title": "What are phubbing and the physical-digital divide?",
       "answer_30s": "Phubbing means interacting with a smartphone rather than the people physically present. It may disrupt copresence and leave older adults feeling ignored or disconnected. The chapter calls this gap between ICT-engaged generations and older adults a physical-digital divide. However, poorer relationships might also encourage phubbing or make it more consequential, so longitudinal evidence is needed before assuming a single causal direction.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "퍼빙과 물리적-디지털 격차란 무엇인가요?",
+      "answer_30s_ko": "퍼빙은 물리적으로 함께 있는 사람들 대신 스마트폰과 상호작용하는 것을 뜻합니다. 이는 함께 있다는 감각을 방해하고 노인이 무시당하거나 단절되었다고 느끼게 할 수 있습니다. 이 장은 정보통신기술에 몰입한 세대와 노인 사이의 이런 간극을 물리적-디지털 격차라고 부릅니다. 그러나 관계가 좋지 않아 퍼빙이 더 일어나거나 그 영향이 더 커질 수도 있으므로, 인과의 방향이 하나라고 가정하기 전에 종단적 근거가 필요합니다."
     },
     {
       "card_id": "cotten-prep-12",
       "title": "Why can technology maintenance become another digital divide?",
       "answer_30s": "Continued use requires connection costs, repairs, updates, passwords, and privacy or security management. People with low incomes may lack repair or connection resources, and older adults often depend on the availability of family or other social ties for help. Assistance can solve problems and create social connection, but initial device provision does not guarantee sustained use when maintenance demands arise.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "기술의 유지·관리가 또 다른 디지털 격차가 될 수 있는 이유는 무엇인가요?",
+      "answer_30s_ko": "계속 사용하려면 접속 비용, 수리, 업데이트, 비밀번호, 개인정보 보호와 보안 관리가 필요합니다. 저소득층은 수리나 접속에 필요한 자원이 부족할 수 있고, 노인은 도움을 받을 수 있는 가족이나 다른 사회적 관계가 있는지에 의존하는 경우가 많습니다. 지원은 문제를 해결하고 사회적 연결을 만들 수 있지만, 유지·관리의 필요가 생겼을 때 처음에 기기를 제공했다는 사실만으로 지속적인 사용이 보장되지는 않습니다."
     },
     {
       "card_id": "cotten-prep-13",
       "title": "Why does the Internet of Things not automatically enable aging in place?",
       "answer_30s": "Connected sensors, cameras, and wearables can monitor movement, sleep, falls, or health indicators and alert caregivers to changes. Their contribution to independent living nevertheless depends on adaptable housing, accessibility, affordability, high-speed internet, and maintenance skills. Privacy and security also matter because connected devices may collect data without users' awareness. Technical capability alone therefore does not guarantee successful aging in place.",
       "evidence_segment_id": "IOT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "사물인터넷이 살던 곳에서 나이 드는 것을 자동으로 가능하게 하지 않는 이유는 무엇인가요?",
+      "answer_30s_ko": "연결된 센서, 카메라, 웨어러블 기기는 움직임, 수면, 낙상, 건강 지표를 살피고 변화가 생기면 돌봄자에게 알릴 수 있습니다. 그렇더라도 독립생활에 기여하려면 필요에 맞게 조정할 수 있는 주거, 접근성, 감당할 수 있는 비용, 고속 인터넷, 유지·관리 능력이 뒷받침되어야 합니다. 연결된 기기가 사용자가 모르는 사이에 자료를 수집할 수 있으므로 개인정보 보호와 보안도 중요합니다. 따라서 기술적 기능만으로 살던 곳에서 성공적으로 나이 드는 것이 보장되지는 않습니다."
     },
     {
       "card_id": "cotten-prep-14",
       "title": "Explain the telehealth evidence and barriers in the chapter's context.",
       "answer_30s": "The 2021 chapter cites evidence for remote chronic-condition monitoring, counseling and communication for chronic conditions, and behavioral-health psychotherapy. It also warns that technical assistance may add to family caregiving demands, while less-skilled adults aging alone may lack support. Its policy discussion reports US state differences in access requirements, reimbursable services, and eligible providers at that time; it should not be treated as a current policy guide.",
       "evidence_segment_id": "TELEHEALTH-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 장의 맥락에서 원격의료의 근거와 장벽을 설명해 보세요.",
+      "answer_30s_ko": "2021년에 나온 이 장은 만성질환의 원격 모니터링, 만성질환 관련 상담과 의사소통, 정신·행동건강 분야의 심리치료에 관한 근거를 인용합니다. 또한 기술적 지원이 가족의 돌봄 부담을 늘릴 수 있고, 혼자 나이 들며 기술 활용 능력이 낮은 성인은 지원이 부족할 수 있다고 지적합니다. 정책 논의는 당시 미국의 주별로 접근 요건, 비용 보상 대상 서비스, 서비스 제공 자격이 달랐다는 내용을 다룹니다. 이를 현재의 정책 안내로 취급해서는 안 됩니다."
     },
     {
       "card_id": "cotten-prep-15",
       "title": "What research and policy priorities does the author propose?",
       "answer_30s": "The author calls for research on caregiving, monitoring, cumulative advantage and disadvantage, specific forms of use, and life course change. Tailored training should be accompanied by support for repairs, updates, passwords, and interface changes so people can continue using technology. Better collaboration between researchers and technology companies is also proposed. These priorities acknowledge that technological potential does not automatically translate into improved quality of life for every group.",
       "evidence_segment_id": "FUTURE-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "저자는 어떤 연구 및 정책 과제를 우선적으로 제안하나요?",
+      "answer_30s_ko": "저자는 돌봄, 모니터링, 이점과 불이익의 누적, 구체적인 사용 형태, 생애과정상의 변화에 관한 연구를 촉구합니다. 사람들이 기술을 계속 사용할 수 있도록 맞춤형 교육과 함께 수리, 업데이트, 비밀번호, 인터페이스 변화에 대한 지원을 제공해야 합니다. 연구자와 기술 기업의 더 나은 협력도 제안합니다. 이러한 우선 과제는 기술의 잠재력이 모든 집단의 삶의 질 향상으로 자동으로 이어지는 것은 아니라는 점을 인정합니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this chapter as expanding the technology question beyond device provision to cumulative inequalities and continued use across the life course. Tailored training matters, but breakdowns, updates, passwords, and interface changes may interrupt use when help is unavailable. For me, the central point was that maintenance and social support stand between a technology's potential and the benefits someone actually gains.",
         "evidence_segment_id": "FUTURE-002",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 장이 기술에 관한 질문을 기기 제공에서 더 나아가 생애 전반의 누적된 불평등과 지속적인 사용으로 확장한다고 읽었습니다. 맞춤형 교육도 중요하지만, 도움을 받을 수 없으면 고장, 업데이트, 비밀번호, 인터페이스 변경 때문에 사용이 중단될 수 있습니다. 제게 핵심은 기술의 잠재력과 실제로 얻는 이점 사이에 유지관리와 사회적 지원이 있다는 점이었습니다."
       },
       {
         "card_id": "cotten-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I was struck by the cumulative-disadvantage account of the digital divide. Early access can open later opportunities for jobs, education, skills, information, and social ties, with advantages building on one another. It helped me understand why two people who are both connected today may still differ greatly in their ability to use digital resources because of their earlier experiences.",
         "evidence_segment_id": "DIVIDE-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 놀라웠나요?",
+        "answer_30s_ko": "디지털 격차를 누적된 불이익으로 설명하는 관점이 인상적이었습니다. 이른 시기의 접근은 이후의 일자리, 교육, 기술, 정보, 사회적 관계에 관한 기회를 열 수 있으며, 이런 이점은 서로를 토대로 쌓입니다. 이를 통해 지금은 둘 다 인터넷에 연결되어 있더라도 이전 경험 때문에 디지털 자원을 활용하는 능력에는 큰 차이가 남을 수 있음을 이해하게 되었습니다."
       },
       {
         "card_id": "cotten-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had thought that family help largely solved an access problem. The chapter describes older adults relying on the availability of social ties when devices fail or updates cause difficulties. That help can also become an opportunity for connection. I now see technology support as an ongoing matter of relationships, continuity, and resources, rather than a one-time installation task.",
         "evidence_segment_id": "UNANTICIPATED-001",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기존의 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 가족이 도와주면 접근 문제가 대체로 해결된다고 생각했습니다. 이 장은 기기가 고장 나거나 업데이트로 어려움이 생길 때 노인이 사회적 관계를 통해 도움을 받을 수 있는지에 의존한다고 설명합니다. 그런 도움은 관계를 맺는 기회가 되기도 합니다. 이제 저는 기술 지원을 일회성 설치 작업이 아니라 관계, 연속성, 자원에 관한 지속적인 문제로 봅니다."
       },
       {
         "card_id": "cotten-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "I found it more useful to ask which use connects to which outcome than to conclude that the internet is simply good for older adults. HRS analyses linked use with lower later depression, while the New Zealand study distinguished social pathways through loneliness and engagement from informational or instrumental pathways through broader participation. These observational findings encouraged me to examine mechanisms while keeping causal uncertainty in view.",
         "evidence_segment_id": "PSYCH-001",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기술의 전반적인 효과보다 경로에 주목한 이유는 무엇인가요?",
+        "answer_30s_ko": "저는 인터넷이 노인에게 무조건 좋다고 결론짓기보다, 어떤 사용이 어떤 결과와 연결되는지 묻는 편이 더 유용했습니다. HRS 분석에서는 사용이 이후의 낮은 우울과 연결되었고, 뉴질랜드 연구에서는 외로움과 관여를 거치는 사회적 경로를 더 폭넓은 참여를 거치는 정보적·도구적 경로와 구분했습니다. 이러한 관찰연구 결과를 보고, 인과적 불확실성을 염두에 두면서 기제를 살펴보게 되었습니다."
       },
       {
         "card_id": "cotten-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "Technology-use statistics may miss some of the most vulnerable older adults. Samples limited to community residents who can complete phone or online surveys can exclude care-facility residents and people in poorer health or isolation, making use appear more widespread. Self-reports also have recall errors, but logs are not a complete solution because installing and collecting them raises skill, privacy, and organizational challenges.",
         "evidence_segment_id": "DATA-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "근거의 어떤 한계가 눈에 띄었나요?",
+        "answer_30s_ko": "기술 사용 통계는 가장 취약한 일부 노인을 놓칠 수 있습니다. 전화나 온라인 조사에 응할 수 있는 지역사회 거주자로 표본을 한정하면 돌봄시설 거주자와 건강이 더 나쁘거나 고립된 사람을 제외해, 사용이 실제보다 널리 퍼진 것처럼 보일 수 있습니다. 자기보고에는 회상 오류도 있지만, 사용 기록 역시 완전한 해결책은 아닙니다. 기록 도구를 설치하고 자료를 수집하는 데 기술 역량, 사생활 보호, 조직 운영상의 문제가 따르기 때문입니다."
       },
       {
         "card_id": "cotten-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My inference is that telehealth support should address user skills and family workload alongside service availability. The chapter suggests that helping with technology can add to caregivers' responsibilities, while less-skilled people aging alone may lack help. Its 2021 discussion also describes inconsistent US state policies. I would treat coordinated support as a policy implication to evaluate, rather than assume access rules or effectiveness are identical across people and settings.",
         "evidence_segment_id": "TELEHEALTH-001",
         "response_angle": "family-policy",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 장을 가족이나 정책과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "제 추론은 원격의료 지원이 서비스 제공 여부와 함께 이용자의 역량과 가족의 업무 부담도 다뤄야 한다는 것입니다. 이 장은 기술 사용을 돕는 일이 돌봄 제공자의 책임을 늘릴 수 있는 반면, 역량이 부족하고 홀로 나이 들어 가는 사람은 도움을 받기 어려울 수 있다고 제안합니다. 2021년의 논의에서는 미국 주별 정책이 일관되지 않다는 점도 설명합니다. 저는 접근 규정이나 효과가 사람과 환경에 관계없이 같다고 가정하기보다, 서로 연계된 지원을 평가해야 할 정책적 함의로 보겠습니다."
       }
     ]
   }

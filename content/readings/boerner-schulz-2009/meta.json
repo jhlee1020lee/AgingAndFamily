@@ -66,10 +66,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:8c971afd60f10a0192e0d7d5004ee6abc364145c8b0ec869b777191ca2307d40",
@@ -79,22 +79,23 @@
       "concepts": "v2:a4714ee01f9a4efc5510342e7ffec1e4149a7a8e67e4973ff2b07c28ca6a140b",
       "pitfalls": "v2:58271e0f1e424be10875ff99ad4818591b9be613e278a74ff2302a70cd33d477",
       "review-sheet": "v2:8829e8a454257c691b7072a8b41974471a6bb7c0782fca8a2d03cbaf816390d0",
-      "professor-prep": "v2:d00310c848fb0d472eb3e73be5a74ed4a23e8a4c69197a1aa8ead095a3f68e56",
       "quiz-ox": "v2:5869852ce44fd45d86b1c484be4371e9092a209b05d85fa7ba9ae1072add50e5",
       "quiz-short": "v2:8e55fc957a799f898bde392b0a016d3a2097c304bb5d7264e7b548351515bf64",
-      "quiz-mcq": "v2:a43c2b24190c31086634ab23f333400f33d207b4cae44b05957a654b82cc878a"
+      "quiz-mcq": "v2:a43c2b24190c31086634ab23f333400f33d207b4cae44b05957a654b82cc878a",
+      "professor-prep": "v2:d9d7cd04597ef8bab628e56329dbe067b5f808d720b576cccf9e2f55fc87b92c"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T01:25:45.565Z",
+    "reviewed_at": "2026-09-05T03:52:02.536Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent final audit PASS: Critical 0, Major 0, Minor 0; all 66 evidence-linked records and all concepts rechecked; isolated full-preview links/reveals/privacy/chatbot checks passed.",
-      "English learning materials and composite dependencies reviewed against the complete stored source. Source and translation preserved. Historical 2009 proposed diagnostic criteria, caregiver heterogeneity, study-specific risk estimates, preparedness dimensions and cited trial scope distinguished. Original PDF unavailable."
+      "English learning materials and composite dependencies reviewed against the complete stored source. Source and translation preserved. Historical 2009 proposed diagnostic criteria, caregiver heterogeneity, study-specific risk estimates, preparedness dimensions and cited trial scope distinguished. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:35.323Z",
+    "updated_at": "2026-09-05T03:52:11.320Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -224,7 +225,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -386,12 +388,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:d00310c848fb0d472eb3e73be5a74ed4a23e8a4c69197a1aa8ead095a3f68e56",
+        "source_hash": "v2:d9d7cd04597ef8bab628e56329dbe067b5f808d720b576cccf9e2f55fc87b92c",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

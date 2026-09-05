@@ -9,105 +9,135 @@
       "title": "State the research question and main conclusion together.",
       "answer_30s": "The study asked whether an empty nest, retirement, and declining health predicted gray divorce, defined as divorce after age 50. In couple-level event-history analyses of 1998-2012 HRS data, these transitions were not significant predictors in the full model. Longer marriage, higher marital quality, home ownership, and wealth were negatively associated with divorce. These are observational associations, rather than established causal effects.",
       "evidence_segment_id": "ABSTRACT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "연구 질문과 주요 결론을 함께 말해 보세요.",
+      "answer_30s_ko": "이 연구는 빈 둥지, 은퇴, 건강 악화가 50세 이후의 이혼으로 정의한 황혼이혼을 예측하는지 물었습니다. 1998~2012년 HRS 자료를 이용한 부부 단위 사건사 분석에서 이러한 전환은 전체 모형의 유의한 예측변수가 아니었습니다. 더 긴 혼인기간, 더 높은 결혼의 질, 주택 소유, 자산은 이혼과 부적으로 관련되었습니다. 이는 관찰된 관계이며 확립된 인과 효과는 아닙니다."
     },
     {
       "card_id": "lin-prep-02",
       "title": "Why study gray divorce separately?",
       "answer_30s": "Among married Americans aged 50 or older, the annual divorce rate rose from about 5 per 1,000 in 1990 to 10 in 2010. Rates rose from 7 to 13 for ages 50 to 64 and from 1.8 to 4.8 for ages 65 or older. The overall divorce rate remained relatively stable. This historical increase motivates studying later-life divorce separately; these rates are not lifetime divorce probabilities.",
       "evidence_segment_id": "BACKGROUND-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "황혼이혼을 따로 연구하는 이유는 무엇인가요?",
+      "answer_30s_ko": "50세 이상 기혼 미국인의 연간 이혼율은 1990년 약 1,000명당 5명에서 2010년 10명으로 높아졌습니다. 50~64세에서는 7명에서 13명으로, 65세 이상에서는 1.8명에서 4.8명으로 높아졌습니다. 전체 이혼율은 비교적 안정적이었습니다. 이러한 역사적 증가가 노년기 이혼을 별도로 연구할 이유가 됩니다. 이 수치들은 평생 이혼할 확률이 아닙니다."
     },
     {
       "card_id": "lin-prep-03",
       "title": "How did the life course perspective shape the model?",
       "answer_30s": "The authors combined later-life turning points with marital biography, human agency, and linked lives. They examined empty nest, retirement, and health alongside marriage order, duration, quality, and prior family experiences. Because spouses' trajectories are interdependent, both partners' characteristics and shared economic resources entered a prospective couple-level analysis. This links current transitions with accumulated relationship histories rather than treating each spouse in isolation.",
       "evidence_segment_id": "CURRENT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "생애과정 관점은 모형을 어떻게 구성하게 했나요?",
+      "answer_30s_ko": "저자들은 노년기의 전환점을 혼인생애사, 인간의 행위성, 연결된 삶과 결합했습니다. 빈 둥지, 은퇴, 건강을 혼인 순서, 기간, 질, 이전의 가족 경험과 함께 살펴봤습니다. 배우자들의 궤적이 상호의존적이므로 두 사람의 특성과 공동 경제자원을 전향적인 부부 단위 분석에 포함했습니다. 이는 각 배우자를 따로 다루기보다 현재의 전환을 축적된 관계의 역사와 연결하는 것입니다."
     },
     {
       "card_id": "lin-prep-04",
       "title": "Why might the three transitions increase divorce risk?",
       "answer_30s": "An empty nest might remove a barrier to divorce and expose relationship strain. Retirement can increase time together and prompt reassessment of a distant relationship. Poor health can alter roles and create caregiving stress. Yet the same transitions could be benign or beneficial in a strong marriage. These were competing theoretical possibilities, including a proposed buffering role for marital quality, rather than results already demonstrated by the study.",
       "evidence_segment_id": "TURNING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "세 가지 전환은 왜 이혼 위험을 높일 수 있나요?",
+      "answer_30s_ko": "빈 둥지는 이혼을 막던 장벽을 없애고 관계의 긴장을 드러낼 수 있습니다. 은퇴는 함께 보내는 시간을 늘려 멀어진 관계를 다시 평가하게 할 수 있습니다. 건강 악화는 역할을 바꾸고 돌봄 스트레스를 만들 수 있습니다. 그러나 같은 전환도 탄탄한 결혼에서는 별문제 없거나 이로울 수 있습니다. 이는 결혼의 질이 완충 역할을 할 수 있다는 제안을 포함한 경쟁하는 이론적 가능성이며, 연구가 이미 입증한 결과는 아닙니다."
     },
     {
       "card_id": "lin-prep-05",
       "title": "How should the final sample be reported when exclusion accounting is unclear?",
       "answer_30s": "The paper reports a final sample of 5,331 couples and 29,286 couple-interview-year observations. It also reports 5,566 married couples and several exclusions, including 218 new remarriages, but those listed counts do not reconcile through straightforward subtraction. The stage at which all exclusions apply is therefore unclear. I would use the final totals as reported values, rather than claim that the text supplies a complete arithmetic reconstruction.",
       "evidence_segment_id": "METHOD-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "제외 인원의 계산이 명확하지 않을 때 최종 표본을 어떻게 보고해야 하나요?",
+      "answer_30s_ko": "논문은 최종 표본을 5,331쌍의 부부와 부부·면접연도 관측치 29,286개로 보고합니다. 동시에 기혼 부부 5,566쌍과 새로 재혼한 218쌍 등 여러 제외 수를 제시하지만, 나열된 수를 단순히 빼서는 최종 합계와 맞지 않습니다. 따라서 모든 제외가 어느 단계에 적용되는지는 명확하지 않습니다. 저는 본문이 완전한 산술적 재구성을 제공한다고 주장하지 않고 최종 합계를 보고된 값으로 사용하겠습니다."
     },
     {
       "card_id": "lin-prep-06",
       "title": "How were transitions and marital biography measured?",
       "answer_30s": "Empty nest, each spouse's partial or full retirement, and diagnosed heart disease, cancer, lung disease, or stroke were time-varying indicators that stayed coded one after onset. They were lagged one interview wave, or two years, before divorce. Remarriage, teen marriage, and non-shared children were time-invariant; marital duration varied over time. Divorce was coded as an event for the relevant couple-interview-year.",
       "evidence_segment_id": "MEASURE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "전환과 혼인생애사는 어떻게 측정했나요?",
+      "answer_30s_ko": "빈 둥지, 각 배우자의 부분 또는 완전 은퇴, 진단된 심장병·암·폐질환·뇌졸중은 시변 지표였으며, 발생한 뒤에는 계속 1로 코딩되었습니다. 이 지표들은 이혼보다 한 차수, 즉 2년 앞선 값으로 시차를 두었습니다. 재혼, 10대 혼인, 현재 배우자와 공유하지 않는 자녀는 시간불변 변수였고 혼인기간은 시간에 따라 달라졌습니다. 이혼은 해당 부부·면접연도의 사건으로 코딩했습니다."
     },
     {
       "card_id": "lin-prep-07",
       "title": "Describe marital quality and spousal homogamy measures.",
       "answer_30s": "Marital quality combined two reports about time together and enjoyment, reverse-coded into a 2-to-6 scale for each spouse. Because it was asked only at the initial interview, it was treated as time-invariant. Homogamy was assessed through age differences, racial categories, and years-of-education differences. Home ownership and assets varied over time and were lagged two years before divorce.",
       "evidence_segment_id": "MEASURE-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "결혼의 질과 배우자 동질성의 측정치를 설명해 보세요.",
+      "answer_30s_ko": "결혼의 질은 함께 보내는 시간과 즐거움에 관한 두 응답을 결합하고 역코딩하여, 배우자별로 2~6점 척도를 만들었습니다. 최초 면접에서만 질문했으므로 시간불변으로 취급했습니다. 동질성은 나이 차이, 인종 범주, 교육연수 차이로 평가했습니다. 주택 소유와 자산은 시간에 따라 변했고 이혼보다 2년 앞선 값으로 시차를 두었습니다."
     },
     {
       "card_id": "lin-prep-08",
       "title": "Why use a discrete-time event-history model?",
       "answer_30s": "Marriage timing was recorded in intervals. The model estimates the conditional probability of divorce in an interval among couples who have not yet divorced, while handling time-varying covariates and right-censoring. This hazard differs from cumulative divorce probability. Model 1 included transitions and interview year; Model 2 added traditional predictors. Missing values were handled with five MICE-imputed datasets. Longitudinal ordering still does not establish causality.",
       "evidence_segment_id": "ANALYTIC-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이산시간 사건사 모형을 사용하는 이유는 무엇인가요?",
+      "answer_30s_ko": "혼인 관련 사건의 시점은 구간 단위로 기록되었습니다. 이 모형은 아직 이혼하지 않은 부부 가운데 한 구간 동안 이혼할 조건부 확률을 추정하면서 시변 공변량과 우측 중도절단을 다룹니다. 이 위험률은 누적 이혼 확률과 다릅니다. 모형 1에는 전환과 면접연도를, 모형 2에는 전통적 예측변수를 추가했습니다. 결측값은 MICE로 대치한 다섯 자료집합을 이용해 처리했습니다. 종단적 선후관계만으로 인과성이 확립되는 것은 아닙니다."
     },
     {
       "card_id": "lin-prep-09",
       "title": "How should Figure 1's first-marriage and remarriage curves be read?",
       "answer_30s": "These are cumulative gray-divorce probabilities by marital duration, rather than current interval hazards. First marriages usually began young, so reaching the study's age-50 risk set often required decades of marriage; the early near-zero curve reflects that design. Remarriage curves rose earlier, and cumulative probability remained nearly three times higher after 40 or more years. The descriptive curves did not show the expected convergence, but do not isolate a causal marriage-order effect.",
       "evidence_segment_id": "RESULT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "그림 1의 초혼과 재혼 곡선은 어떻게 읽어야 하나요?",
+      "answer_30s_ko": "이 곡선들은 현재 조사 구간의 위험률이 아니라 혼인 지속기간에 따른 황혼이혼의 누적확률을 보여 줍니다. 초혼은 대개 젊을 때 시작했으므로 연구의 50세 이상 위험집합에 들어가기까지 수십 년의 혼인생활이 필요한 경우가 많았습니다. 초기 곡선이 거의 0인 것은 이런 설계를 반영합니다. 재혼 곡선은 더 이르게 상승했고, 40년 이상 지난 뒤에도 누적확률이 거의 세 배 높은 상태로 남았습니다. 관찰된 양상을 나타낸 이 곡선에서 예상했던 수렴은 나타나지 않았지만, 이것이 혼인 차수의 인과 효과만을 분리해 보여 주는 것은 아닙니다."
     },
     {
       "card_id": "lin-prep-10",
       "title": "Why should Table 1's bivariate differences not be read as causes?",
       "answer_30s": "Table 1 compares weighted baseline characteristics for 296 couples who divorced and 5,035 who remained married or were censored. The divorce group more often had remarriages, non-shared children, racial heterogamy, and debt, and had shorter marriages, lower reported quality, and less home ownership. Each comparison is bivariate. It does not estimate a causal effect or an association adjusted simultaneously for the other characteristics.",
       "evidence_segment_id": "BIVARIATE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "표 1의 이변량 비교에서 나타난 차이를 원인으로 읽어서는 안 되는 이유는 무엇인가요?",
+      "answer_30s_ko": "표 1은 이혼한 296쌍과 혼인을 유지했거나 관찰이 중도절단된 5,035쌍의 기초 특성에 가중치를 적용해 비교합니다. 이혼 집단에서는 재혼, 비공유 자녀, 서로 다른 인종 간 혼인, 부채가 더 흔했고, 혼인기간은 더 짧았으며 보고된 관계의 질과 주택 소유율은 더 낮았습니다. 각 비교는 두 변수 간 비교입니다. 인과 효과나 다른 특성들을 동시에 보정한 관련성을 추정한 것은 아닙니다."
     },
     {
       "card_id": "lin-prep-11",
       "title": "How did the wife's retirement result change across models?",
       "answer_30s": "In Model 1, which included transitions and interview year, a wife's retirement was associated with about 43% lower divorce odds. In Model 2, after adding marital biography, quality, demographics, and economic resources, that association weakened and was no longer significant. This is an odds comparison, rather than a 43-percentage-point reduction in probability, and it does not establish retirement itself as protective.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "아내의 은퇴에 관한 결과는 모형에 따라 어떻게 달라졌나요?",
+      "answer_30s_ko": "전환 사건과 면접 연도를 포함한 모형 1에서 아내의 은퇴는 약 43% 낮은 이혼 오즈와 관련되었습니다. 혼인이력, 관계의 질, 인구학적 특성, 경제적 자원을 추가한 모형 2에서는 이 관련성이 약해졌고 더 이상 유의하지 않았습니다. 이는 오즈의 비교이지 확률이 43%포인트 낮아졌다는 뜻이 아니며, 은퇴 자체가 보호 효과를 갖는다고 입증한 것도 아닙니다."
     },
     {
       "card_id": "lin-prep-12",
       "title": "Why are the remarriage and marital-duration results complicated?",
       "answer_30s": "Remarriage and duration were strongly correlated, r = -0.69. With both included, only duration was significant; omitting duration restored a significant positive remarriage association. Non-shared children were also strongly correlated with remarriage, r = 0.79, and were not significant in the full model. These patterns show why descriptive group differences must be distinguished from model-dependent adjusted associations, without treating either as a causal effect.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "재혼과 혼인 지속기간에 관한 결과가 복잡한 이유는 무엇인가요?",
+      "answer_30s_ko": "재혼과 혼인 지속기간은 r = −0.69로 강하게 상관되어 있었습니다. 둘을 함께 포함하면 지속기간만 유의했고, 지속기간을 제외하면 재혼의 정적 관련성이 다시 유의해졌습니다. 비공유 자녀도 재혼과 r = 0.79의 강한 상관을 보였고, 전체 모형에서는 유의하지 않았습니다. 이러한 양상은 기술통계에서 나타난 집단 차이와 모형에 따라 달라지는 보정된 관련성을 구분해야 하는 이유를 보여 줍니다. 어느 쪽도 인과 효과로 취급해서는 안 됩니다."
     },
     {
       "card_id": "lin-prep-13",
       "title": "Describe the full model's significant relationship and economic findings.",
       "answer_30s": "Higher wife- and husband-reported marital quality and home ownership were associated with lower divorce odds. Different-race couples had an odds ratio of 1.76 relative to the table's both-White reference group; age and education differences were not significant. Couples with assets above $250,000 had about 38% lower odds than those with $0-$50,000. These associations do not establish causal effects of resources or couple characteristics.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "전체 모형에서 유의했던 관계 및 경제적 요인의 결과를 설명해 보세요.",
+      "answer_30s_ko": "아내와 남편이 각각 보고한 혼인관계의 질이 높을수록, 그리고 주택을 소유할수록 이혼 오즈가 낮았습니다. 서로 다른 인종으로 이루어진 부부의 오즈비는 표에서 부부 모두 백인인 준거집단에 비해 1.76이었으며, 부부의 연령 차이와 교육 수준 차이는 유의하지 않았습니다. 자산이 25만 달러를 초과하는 부부는 자산이 0~5만 달러인 부부보다 오즈가 약 38% 낮았습니다. 이러한 관련성이 자원이나 부부 특성의 인과 효과를 입증하는 것은 아닙니다."
     },
     {
       "card_id": "lin-prep-14",
       "title": "How should the absence of moderation be interpreted?",
       "answer_30s": "Both spouses' marital-quality reports were negatively associated with divorce, but quality did not significantly moderate the transition-divorce associations. Quality was measured only at the couple's first interview, sometimes years before the transition. That timing could miss relationship changes immediately before or after an event. The null interactions therefore should be read with the measurement limitation, rather than as proof that relationship context never matters.",
       "evidence_segment_id": "DISCUSSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "조절효과가 없었다는 결과를 어떻게 해석해야 하나요?",
+      "answer_30s_ko": "두 배우자가 각각 보고한 혼인관계의 질은 이혼과 부적으로 관련되었지만, 관계의 질은 전환과 이혼 사이의 관련성을 유의하게 조절하지 않았습니다. 관계의 질은 부부의 첫 면접에서만 측정되어, 경우에 따라 전환보다 여러 해 앞선 값이었습니다. 이러한 측정 시점은 사건 직전이나 직후의 관계 변화를 놓칠 수 있습니다. 따라서 유의하지 않은 상호작용은 관계의 맥락이 언제나 중요하지 않다는 증거로 보기보다, 이 측정상의 한계와 함께 읽어야 합니다."
     },
     {
       "card_id": "lin-prep-15",
       "title": "What are the main limitations and follow-up questions?",
       "answer_30s": "Possible differential attrition, exclusion of newer cohorts lacking marital-quality data, and measuring quality only once limit the analysis. HRS also lacked relevant measures such as relationship violence, substance use, infidelity, premarital cohabitation, and childhood family structure. The authors call for further research on distinctive gray-divorce risks and on consequences for divorcees and their adult children, an underdeveloped area at the time of the paper.",
       "evidence_segment_id": "LIMIT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "주요 한계와 후속 연구 질문은 무엇인가요?",
+      "answer_30s_ko": "집단에 따라 다를 수 있는 표본 이탈, 혼인관계의 질 자료가 없는 최근 코호트의 제외, 관계의 질을 한 번만 측정한 점이 분석을 제한합니다. HRS에는 관계 내 폭력, 물질 사용, 외도, 혼전 동거, 아동기 가족 구조와 같은 관련 측정도 없었습니다. 저자들은 황혼이혼의 고유한 위험요인과 이혼 당사자 및 성인 자녀에게 미치는 결과를 더 연구해야 한다고 요청합니다. 이는 논문 발표 당시 연구가 충분히 발전하지 않은 영역이었습니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read the paper as placing gray divorce within accumulated marital histories and relationship quality rather than explaining it through a single later-life event. Empty nest, retirement, and illness were not significant in the full model; the descriptive remarriage difference was intertwined with duration. Each spouse's reported marital quality was negatively associated with divorce. That encouraged me to distinguish life transitions from the relationship histories around them.",
         "evidence_segment_id": "DISCUSSION-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 논문이 황혼이혼을 하나의 노년기 사건으로 설명하기보다 축적된 혼인 이력과 관계의 질 속에 놓고 살펴본다고 읽었습니다. 자녀 독립, 은퇴, 질병은 전체 모형에서 유의하지 않았고, 재혼 여부에 따른 기술적 차이는 혼인 기간과 얽혀 있었습니다. 배우자 각각이 보고한 혼인의 질은 이혼과 부적 관계를 보였습니다. 이를 통해 생애 전환과 그 전환을 둘러싼 관계의 이력을 구분하게 되었습니다."
       },
       {
         "card_id": "lin-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "It seemed intuitive that empty nest, retirement, or poor health might destabilize marriage, so their lack of significant full-model associations surprised me. The authors discuss varied retirement circumstances and differences between selected healthy samples and their broader national sample. I took this as a reason to examine context and prior marital history, rather than proof that these transitions have no consequences for any couple.",
         "evidence_segment_id": "DISCUSSION-002",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "무엇이 가장 직관에 어긋났나요?",
+        "answer_30s_ko": "자녀 독립, 은퇴, 나쁜 건강이 혼인을 불안정하게 할 수 있다는 생각은 직관적이었기에, 전체 모형에서 유의한 관계가 없었다는 점이 놀라웠습니다. 저자들은 다양한 은퇴 상황과, 건강한 사람을 선별한 표본과 더 폭넓은 전국 표본 사이의 차이를 논의합니다. 저는 이를 어떤 부부에게도 이런 전환의 결과가 없다는 증거가 아니라, 맥락과 이전 혼인 이력을 살펴봐야 할 이유로 받아들였습니다."
       },
       {
         "card_id": "lin-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I found the conversion from individual records to linked couple histories valuable because it used both spouses' information. When only one responded, that report was used; rare inconsistencies were resolved using the wife's report. The paper reports 5,331 couples and 29,286 observations, but its initial count and four listed exclusions do not reconcile arithmetically. I would preserve the reported totals while making that inconsistency visible.",
         "evidence_segment_id": "METHOD-001",
         "response_angle": "method",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 방법론적 특징이 눈에 띄었나요?",
+        "answer_30s_ko": "개인 기록을 서로 연결된 부부의 이력으로 전환해 두 배우자의 정보를 모두 활용한 점이 유용했습니다. 한 명만 응답하면 그 보고를 사용했고, 드물게 응답이 불일치하면 아내의 보고를 기준으로 처리했습니다. 논문은 5,331쌍과 관측치 29,286개를 보고하지만, 최초 수와 나열된 네 가지 제외 수는 산술적으로 맞지 않습니다. 저는 보고된 총수를 유지하면서 이 불일치도 드러내겠습니다."
       },
       {
         "card_id": "lin-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "The paper made me ask which difference was being measured. The adjusted model showed higher odds for different-race couples relative to its both-White reference group, but no significant association for age or education differences. I would not generalize one category's result into a rule that all spousal differences are risky, or treat the association as an intrinsic causal effect of race.",
         "evidence_segment_id": "DISCUSSION-002",
         "response_angle": "evidence",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "배우자 간의 모든 차이를 한데 묶어 보지 않게 된 이유는 무엇인가요?",
+        "answer_30s_ko": "이 논문을 읽고 어떤 차이를 측정했는지 묻게 되었습니다. 보정된 모형에서 인종이 다른 부부는 두 사람 모두 백인인 기준집단보다 이혼 오즈가 높았지만, 나이나 교육 수준의 차이는 유의한 관계를 보이지 않았습니다. 저는 한 범주의 결과를 모든 배우자 간 차이가 위험하다는 규칙으로 일반화하거나, 이 관계를 인종에 내재한 인과적 효과로 취급하지 않겠습니다."
       },
       {
         "card_id": "lin-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "The one-time measurement of marital quality seemed especially important. The authors expected quality to condition transitions, but could not align repeated quality measures with the periods immediately before and after those events. Other relationship processes, including conflict dynamics, violence, substance use, and infidelity, were also unavailable. That limits how confidently I would interpret the absence of moderation or identify the processes behind divorce.",
         "evidence_segment_id": "LIMIT-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 한계가 가장 중요했나요?",
+        "answer_30s_ko": "혼인의 질을 한 번만 측정했다는 점이 특히 중요했습니다. 저자들은 혼인의 질에 따라 전환의 영향이 달라질 것으로 예상했지만, 반복 측정한 관계의 질을 사건 직전과 직후 시기에 맞춰 분석할 수 없었습니다. 갈등의 역동, 폭력, 물질 사용, 외도를 포함한 다른 관계 과정의 자료도 없었습니다. 따라서 조절효과가 나타나지 않았다는 점을 해석하거나 이혼의 배경 과정을 규명할 때 얼마나 확신할 수 있는지에는 한계가 있습니다."
       },
       {
         "card_id": "lin-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "The paper studies antecedents of gray divorce but highlights how little was known then about consequences for older divorcees and their adult children. My follow-up question would track both generations before and after divorce to examine changes in well-being and support. That is a research proposal prompted by the paper, rather than a claim that its antecedent models establish those family consequences.",
         "evidence_segment_id": "LIMIT-001",
         "response_angle": "family-implication",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "읽은 뒤 가족에 관해 어떤 질문이 남았나요?",
+        "answer_30s_ko": "이 논문은 황혼이혼의 선행요인을 연구하지만, 당시에는 나이 들어 이혼한 사람과 그 성인 자녀에게 어떤 결과가 생기는지 알려진 것이 적다는 점도 강조합니다. 제가 이어서 제기할 질문은 이혼 전후에 두 세대를 모두 추적해 안녕감과 지원의 변화를 살펴보는 것입니다. 이는 논문에서 촉발된 연구 제안이지, 선행요인 모형이 그런 가족의 결과까지 입증했다는 주장은 아닙니다."
       }
     ]
   }

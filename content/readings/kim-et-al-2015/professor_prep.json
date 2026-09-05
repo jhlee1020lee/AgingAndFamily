@@ -9,105 +9,135 @@
       "title": "State the chapter's central conclusion in one sentence.",
       "answer_30s": "Asian families are adapting to changing socioeconomic conditions by renegotiating traditional filial beliefs and forms of intergenerational support. Evidence about declining support is mixed, and both practices and beliefs vary. The chapter argues that culturally sensitive research should examine multiple aspects of parent-child relationships from both generations' perspectives, rather than reduce change to a single measure of filial decline.",
       "evidence_segment_id": "CONCLUSION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 장의 핵심 결론을 한 문장으로 말해 보세요.",
+      "answer_30s_ko": "아시아의 가족은 전통적인 효 신념과 세대 간 지원 방식을 재조정하며 변화하는 사회경제적 조건에 적응하고 있습니다. 지원이 줄어든다는 근거는 혼재되어 있고, 실천과 신념 모두 다양합니다. 이 장은 변화를 효의 쇠퇴라는 단일 지표로 축소하기보다, 문화적 맥락을 고려하는 연구가 부모·자녀 관계의 여러 측면을 두 세대의 관점에서 살펴봐야 한다고 주장합니다."
     },
     {
       "card_id": "kim-prep-02",
       "title": "What does the chapter mean by the paradox of filial piety?",
       "answer_30s": "Strong beliefs about supporting and respecting parents may coexist with changing contact and assistance. In a Beijing university study, 89% endorsed financial support for parents as a criterion of adulthood. A separate Chinese survey reported in 2012 found that 33% saw parents only annually and 12% had not visited for years. These are different studies, so they do not demonstrate an attitude-behavior contradiction within the same individuals.",
       "evidence_segment_id": "INTRO-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 장에서 말하는 효의 역설은 무엇인가요?",
+      "answer_30s_ko": "부모를 지원하고 존중해야 한다는 강한 신념이 변화하는 접촉 및 도움의 양상과 함께 존재할 수 있다는 뜻입니다. 베이징의 대학 연구에서는 89%가 부모에 대한 경제적 지원을 성인됨의 기준으로 인정했습니다. 2012년에 보고된 별도의 중국 조사에서는 33%가 부모를 일 년에 한 번만 만났고, 12%는 수년간 방문하지 않았습니다. 서로 다른 연구이므로 같은 개인에게서 태도와 행동이 모순된다는 것을 보여 주지는 않습니다."
     },
     {
       "card_id": "kim-prep-03",
       "title": "How does the chapter contrast filial piety with Western filial responsibility?",
       "answer_30s": "Both include supporting older parents, but filial piety also emphasizes how help is given: respect, gratitude, obedience, protecting parents' face, and bringing them honor. It describes a lifelong responsibility that includes healthy parents, while the chapter characterizes Western filial responsibility as more focused on helping when needs arise. These are contrasting emphases in the literature, rather than traits present in every member of one culture and absent in another.",
       "evidence_segment_id": "WEST-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이 장은 효와 서구의 부모 부양 책임을 어떻게 대비하나요?",
+      "answer_30s_ko": "둘 다 나이 든 부모를 지원하는 것을 포함하지만, 효는 존중, 감사, 순종, 부모의 체면을 지키는 것, 부모에게 명예를 가져다주는 것처럼 도움을 어떻게 제공하는지도 강조합니다. 효는 건강한 부모에게도 적용되는 평생의 책임을 설명하는 반면, 이 장은 서구의 부모 부양 책임이 필요가 생겼을 때 돕는 데 더 초점을 둔다고 서술합니다. 이는 문헌에서 강조하는 점의 차이이며, 한 문화의 모든 구성원에게 있고 다른 문화에는 없는 특성이 아닙니다."
     },
     {
       "card_id": "kim-prep-04",
       "title": "Why distinguish normative from functional solidarity?",
       "answer_30s": "Normative solidarity concerns beliefs that children should help parents; functional solidarity concerns actual exchanges of help, money, time, or care. A belief measure therefore cannot substitute for observed support. The chapter also warns that studies use inconsistent definitions of filial piety. Treating coresidence or care alone as the whole concept can obscure motivations and the gap between norms and behavior.",
       "evidence_segment_id": "MEASURE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "규범적 결속과 기능적 결속을 왜 구분하나요?",
+      "answer_30s_ko": "규범적 결속은 자녀가 부모를 도와야 한다는 신념에 관한 것이고, 기능적 결속은 실제로 주고받는 도움, 돈, 시간, 돌봄에 관한 것입니다. 따라서 신념을 측정한 값이 관찰된 지원을 대신할 수는 없습니다. 이 장은 연구마다 효를 일관되지 않게 정의한다는 점도 경고합니다. 동거나 돌봄만을 효 전체로 취급하면 동기와 규범·행동 사이의 차이가 가려질 수 있습니다."
     },
     {
       "card_id": "kim-prep-05",
       "title": "Explain the two dimensions and value of the Dual Filial Piety Model.",
       "answer_30s": "Reciprocal filial piety centers on love, care, and gratitude for parents' sacrifices and investment. Authoritarian filial piety centers on hierarchy, parental authority, and obedience attached to the child's role, potentially suppressing personal wishes. Distinguishing these dimensions can reveal simultaneous continuity and change: younger adults may retain support obligations while giving parents less authority over career or marriage decisions.",
       "evidence_segment_id": "DFPM-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "이중 효 모형의 두 차원과 그 가치를 설명해 보세요.",
+      "answer_30s_ko": "호혜적 효는 부모의 희생과 투자에 대한 사랑, 돌봄, 감사를 중심에 둡니다. 권위주의적 효는 위계, 부모의 권위, 자녀 역할에 따르는 순종을 중심에 두며 개인의 바람을 억누를 수 있습니다. 두 차원을 구분하면 연속성과 변화를 동시에 드러낼 수 있습니다. 젊은 성인은 지원 의무를 유지하면서도 진로나 결혼 결정에 대한 부모의 권위는 덜 인정할 수 있습니다."
     },
     {
       "card_id": "kim-prep-06",
       "title": "Why is modernization alone insufficient to explain family change?",
       "answer_30s": "Modernization theory predicts weaker extended-family obligations with industrialization and urbanization. But the chapter shows that policies and historical context also matter. In a comparison using 1990s data, adults in Taiwan endorsed some more traditional beliefs than those in mainland China despite Taiwan's greater economic development. Change therefore cannot be assumed to follow a uniform path of Westernization or declining filial commitment.",
       "evidence_segment_id": "CHANGE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "근대화만으로 가족의 변화를 설명하기에는 왜 부족한가요?",
+      "answer_30s_ko": "근대화 이론은 산업화와 도시화에 따라 확대가족에 대한 의무가 약해질 것으로 예측합니다. 그러나 이 장은 정책과 역사적 맥락도 중요함을 보여 줍니다. 1990년대 자료를 이용한 비교에서는 대만의 경제 발전 수준이 더 높았는데도 대만 성인이 중국 본토 성인보다 일부 전통적 신념을 더 강하게 인정했습니다. 따라서 변화가 서구화나 효에 대한 헌신 감소라는 획일적인 경로를 따른다고 가정할 수는 없습니다."
     },
     {
       "card_id": "kim-prep-07",
       "title": "How can government policy shape filial behavior?",
       "answer_30s": "The chapter describes China's Family Support Agreements as seeking legally enforceable financial and practical assistance. It contrasts these with national long-term care insurance introduced in Japan in 2000 and South Korea in 2008 to address care gaps. Such policies can strengthen safety nets while changing family roles. The authors also raise possible unintended effects on spontaneity, flexibility, affection, and trust, rather than establish that public provision simply replaces family support.",
       "evidence_segment_id": "CHANGE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "정부 정책은 효 행동을 어떻게 형성할 수 있나요?",
+      "answer_30s_ko": "이 장은 중국의 가족부양협약이 법적으로 집행할 수 있는 경제적·실질적 지원을 추구한다고 설명합니다. 이를 돌봄 공백에 대응하기 위해 일본이 2000년, 한국이 2008년에 도입한 전국적 장기요양보험과 대비합니다. 이러한 정책은 안전망을 강화하면서 가족 역할을 바꿀 수 있습니다. 저자들은 자발성, 유연성, 애정, 신뢰에 예상하지 못한 영향이 생길 가능성도 제기하며, 공적 제공이 가족 지원을 단순히 대체한다고 확정하지는 않습니다."
     },
     {
       "card_id": "kim-prep-08",
       "title": "Give examples of filial piety taking new forms.",
       "answer_30s": "In rural China, ritualistic coresidence involves briefly living in the paternal household after marriage to express filial commitment. For some Chinese Singaporean parents, an open invitation to coreside can fulfill the traditional ideal even without moving in. Paying for high-quality institutional care when direct care is impractical is another reinterpretation. The chapter notes that access to some of these new practices may depend on social class.",
       "evidence_segment_id": "CHANGE-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "효가 새로운 형태를 띠는 사례를 들어 보세요.",
+      "answer_30s_ko": "중국 농촌의 의례적 동거는 결혼 후 잠시 부계 가구에서 함께 살며 효에 대한 헌신을 표현하는 방식입니다. 일부 중국계 싱가포르 부모에게는 실제로 이사해 들어가지 않더라도 언제든 함께 살자는 열린 초대가 전통적 이상을 충족할 수 있습니다. 직접 돌봄이 현실적으로 어려울 때 양질의 시설 돌봄 비용을 부담하는 것도 또 다른 재해석입니다. 이 장은 이러한 새로운 실천 일부에 접근할 수 있는지가 사회계층에 따라 달라질 수 있다고 지적합니다."
     },
     {
       "card_id": "kim-prep-09",
       "title": "How should we interpret the cited coresidence percentages?",
       "answer_30s": "The chapter cites separate studies reporting coresidence with adult children among older adults aged 65 or over: 14% in the United States, 43% in Japan, and 68.7% in China. These historical estimates illustrate differing living arrangements, rather than rank filial virtue or care quality. Living together can facilitate support, but does not automatically guarantee good care or better relationships.",
       "evidence_segment_id": "LIVING-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "인용된 동거 비율을 어떻게 해석해야 하나요?",
+      "answer_30s_ko": "이 장은 65세 이상 노인이 성인 자녀와 함께 사는 비율을 각각 보고한 별도의 연구들을 인용합니다. 그 비율은 미국 14%, 일본 43%, 중국 68.7%입니다. 이러한 과거의 추정치는 서로 다른 거주 형태를 보여 주는 것이지 효심이나 돌봄의 질에 순위를 매기는 수치가 아닙니다. 함께 사는 것이 지원을 원활하게 할 수는 있지만, 좋은 돌봄이나 더 나은 관계를 자동으로 보장하지는 않습니다."
     },
     {
       "card_id": "kim-prep-10",
       "title": "What is quasi-coresidence, and what are its limits?",
       "answer_30s": "Quasi-coresidence means separate households located nearby. In a cited Chinese study, among parents aged 60 or over who had children and lived alone or only with a spouse, 59% had a child in the same village or community and 79% in the same county. A Korean study nevertheless associated nearby separate residence with more depressive symptoms than coresidence. Proximity alone therefore does not establish supportive interaction or better well-being.",
       "evidence_segment_id": "LIVING-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "준동거란 무엇이며 어떤 한계가 있나요?",
+      "answer_30s_ko": "준동거는 가구를 따로 이루되 가까운 곳에 사는 것을 뜻합니다. 인용된 중국 연구에서 자녀가 있고 혼자 또는 배우자와만 사는 60세 이상 부모 가운데 59%는 같은 마을이나 지역사회에 자녀가 있었고, 79%는 같은 현에 자녀가 있었습니다. 그러나 한국의 한 연구에서는 가까이 살면서 가구를 분리한 경우가 동거보다 더 많은 우울 증상과 관련되었습니다. 따라서 가까이 산다는 사실만으로 지지적인 상호작용이나 더 나은 안녕감이 확인되는 것은 아닙니다."
     },
     {
       "card_id": "kim-prep-11",
       "title": "Why view intergenerational coresidence as mutual aid?",
       "answer_30s": "Coresidence can respond to parental widowhood or poor health, but also to adult children's housing and childcare needs. Older parents may provide housing or grandchild care while children provide money and assistance. The chapter therefore frames living arrangements through both generations' needs, resources, and negotiations. They are not adequately explained as one-way parental dependence or a direct measure of children's filial commitment.",
       "evidence_segment_id": "LIVING-003",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "세대 간 동거를 상호부조로 보는 이유는 무엇인가요?",
+      "answer_30s_ko": "동거는 부모가 배우자를 잃거나 건강이 나빠졌을 때뿐 아니라 성인 자녀에게 주거와 자녀 돌봄이 필요할 때도 이루어질 수 있습니다. 노부모는 주거를 제공하거나 손자녀를 돌보고, 자녀는 돈과 도움을 제공할 수 있습니다. 따라서 이 장은 두 세대 모두의 필요, 자원, 협상을 통해 거주 형태를 이해합니다. 부모의 일방적인 의존이나 자녀의 효 실천 의지를 직접 보여 주는 지표로는 충분히 설명할 수 없습니다."
     },
     {
       "card_id": "kim-prep-12",
       "title": "What shows that living apart need not mean support has stopped?",
       "answer_30s": "Non-coresident children can live nearby, maintain contact, and provide money. A Korean study cited as Park (2012) reported that 57% of older parents had in-person contact at least monthly and 89% had phone or email contact. Migrant children could also send more money to compensate for less hands-on care. Residential separation can constrain daily help without eliminating other exchanges.",
       "evidence_segment_id": "SUPPORT-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "따로 산다고 해서 지원이 중단된 것은 아니라는 점을 무엇이 보여 주나요?",
+      "answer_30s_ko": "동거하지 않는 자녀도 가까이 살면서 연락을 유지하고 돈을 제공할 수 있습니다. Park(2012)로 인용된 한국 연구에서는 노부모의 57%가 적어도 한 달에 한 번 직접 만났고, 89%는 전화나 이메일로 연락했다고 보고했습니다. 이주한 자녀는 직접 돌보는 일이 줄어든 것을 보완하기 위해 돈을 더 많이 보낼 수도 있습니다. 주거의 분리는 일상적인 도움을 제한할 수 있지만 다른 교환까지 없애는 것은 아닙니다."
     },
     {
       "card_id": "kim-prep-13",
       "title": "Why are findings on children's support and parental well-being mixed?",
       "answer_30s": "Many studies are cross-sectional: parents in poor health or well-being may receive more help, making need-driven support look harmful. The meaning of help can also depend on culturally expected providers and beliefs such as familism. These design and contextual differences can produce inconsistent associations. A correlation alone cannot establish the causal effect of receiving support.",
       "evidence_segment_id": "SUPPORT-002",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "자녀의 지원과 부모의 안녕감에 관한 연구 결과가 엇갈리는 이유는 무엇인가요?",
+      "answer_30s_ko": "많은 연구가 횡단면 설계를 사용합니다. 건강이나 안녕감이 좋지 않은 부모가 도움을 더 많이 받을 수 있기 때문에, 필요에 따라 제공된 지원이 오히려 해로운 것처럼 보일 수 있습니다. 도움의 의미는 문화적으로 누구에게 지원을 기대하는지, 가족주의와 같은 믿음이 어떠한지에 따라서도 달라질 수 있습니다. 이러한 설계와 맥락의 차이가 일관되지 않은 관련성을 만들어 낼 수 있습니다. 상관관계만으로 지원을 받는 것의 인과 효과를 확립할 수는 없습니다."
     },
     {
       "card_id": "kim-prep-14",
       "title": "Why measure emotional closeness in culturally sensitive ways?",
       "answer_30s": "Studies reviewed in the chapter suggest that some Asian adults are reluctant to request emotional support explicitly because they fear worrying others, disrupting harmony, or losing face. Fewer direct requests or fewer relatives named as intimate therefore need not mean that family ties matter less or are lower quality. Research should distinguish forms of emotional expression from relationship quality and consider less explicit forms of support.",
       "evidence_segment_id": "EMOTION-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "정서적 친밀감을 문화에 민감한 방식으로 측정해야 하는 이유는 무엇인가요?",
+      "answer_30s_ko": "이 장이 검토한 연구들은 일부 아시아 성인이 다른 사람을 걱정시키거나 조화를 깨뜨리거나 체면을 잃을까 봐 정서적 지원을 명시적으로 요청하기를 꺼린다고 시사합니다. 따라서 직접적인 요청이 적거나 친밀한 상대로 지목한 친족이 적다고 해서 가족 관계의 중요성이나 질이 더 낮다는 뜻은 아닙니다. 연구에서는 정서 표현의 형태와 관계의 질을 구분하고, 덜 명시적인 지원 형태도 고려해야 합니다."
     },
     {
       "card_id": "kim-prep-15",
       "title": "What is intergenerational ambivalence, and how do its two levels differ?",
       "answer_30s": "Ambivalence means positive and negative sentiments toward the same parent-child relationship, such as affection alongside burden or conflict. Structural ambivalence concerns competing social roles and expectations, for example paid employment alongside gendered care obligations. Psychological ambivalence concerns a person's mixed feelings toward a particular relative. The levels may be connected, but contradictory role demands and subjective feelings are not identical measures.",
       "evidence_segment_id": "AMBIVALENCE-001",
-      "question_type": "교수 스타일 예상문제"
+      "question_type": "교수 스타일 예상문제",
+      "title_ko": "세대 간 양가성이란 무엇이며, 두 수준은 어떻게 다른가요?",
+      "answer_30s_ko": "양가성은 같은 부모–자녀 관계에 대해 애정과 함께 부담이나 갈등을 느끼는 것처럼 긍정적 감정과 부정적 감정을 함께 갖는 것을 뜻합니다. 구조적 양가성은 유급노동과 성별에 따라 부과되는 돌봄 의무처럼 사회적 역할과 기대가 서로 충돌하는 것과 관련됩니다. 심리적 양가성은 특정 가족 구성원에게 개인이 느끼는 복합적인 감정에 관한 것입니다. 두 수준은 연결될 수 있지만, 모순되는 역할 요구와 주관적 감정은 동일한 측정 대상이 아닙니다."
     }
   ],
   "reading_response": {
@@ -120,7 +150,9 @@
         "answer_30s": "I read this chapter as showing how families renegotiate support and filial expectations under changing socioeconomic conditions, rather than simply deciding whether support in Asia is declining. The evidence is mixed across beliefs and forms of assistance. I found its call to consider both parents' and children' perspectives especially important for understanding change without imposing a single cultural standard.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "overall",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
+        "answer_30s_ko": "저는 이 장이 아시아의 가족 지원이 줄어드는지 여부를 단순히 판단하기보다, 사회경제적 조건이 바뀌는 가운데 가족이 지원과 효에 대한 기대를 어떻게 다시 협의하는지 보여 준다고 읽었습니다. 믿음과 지원 형태에 따라 근거는 혼재되어 있습니다. 하나의 문화적 기준을 강요하지 않고 변화를 이해하려면 부모와 자녀 양쪽의 관점을 고려해야 한다는 제안이 특히 중요하게 다가왔습니다."
       },
       {
         "card_id": "kim-reading-02",
@@ -128,7 +160,9 @@
         "answer_30s": "I was struck by the strong norm illustrated by 89% of Beijing university students endorsing parental financial support as a marker of adulthood, alongside a separate Chinese survey reporting that 33% visited only annually. Because these are different samples, I would not claim that the same people contradicted their beliefs. I read the contrast as a reason to investigate how norms and practices may move differently.",
         "evidence_segment_id": "INTRO-001",
         "response_angle": "surprise",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "어떤 역설이 눈에 띄었나요?",
+        "answer_30s_ko": "베이징 대학생의 89%가 부모에 대한 경제적 지원을 성인됨의 기준으로 지지할 만큼 규범이 강한 한편, 별도의 중국 조사에서는 33%가 연 1회만 방문한다고 보고했다는 점이 인상적이었습니다. 서로 다른 표본이므로 같은 사람들이 자신의 믿음과 모순되게 행동했다고 주장하지는 않겠습니다. 저는 이 대비를 규범과 실천이 어떻게 다르게 움직일 수 있는지 연구해야 할 이유로 읽었습니다."
       },
       {
         "card_id": "kim-reading-03",
@@ -136,7 +170,9 @@
         "answer_30s": "I had pictured coresidence mainly as older parents in poor health depending on adult children. The chapter also describes children's housing and childcare needs and older parents' contributions of housing and grandchild care. That changed my view toward mutual aid: both generations' resources and needs help explain the arrangement, rather than parental need alone.",
         "evidence_segment_id": "LIVING-003",
         "response_angle": "changed-view",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "기존의 관점이 어떻게 바뀌었나요?",
+        "answer_30s_ko": "저는 동거를 주로 건강이 나쁜 노부모가 성인 자녀에게 의존하는 모습으로 생각했습니다. 이 장은 자녀의 주거와 돌봄 필요, 그리고 노부모가 주택과 손자녀 돌봄을 제공하는 기여도 설명합니다. 이를 통해 상호부조에 주목하게 되었습니다. 부모의 필요만이 아니라 두 세대의 자원과 필요가 모두 이런 거주 형태를 설명하는 데 도움이 됩니다."
       },
       {
         "card_id": "kim-reading-04",
@@ -144,7 +180,9 @@
         "answer_30s": "The Dual Filial Piety Model made a single strong-versus-weak scale seem insufficient to me. Gratitude and loving repayment of parental investment differ from obedience rooted in hierarchy and role obligations. This distinction helps explain why support duties can remain valued even when deference over jobs or marriage declines. I would ask which dimension is changing before claiming that filial piety as a whole has weakened.",
         "evidence_segment_id": "DFPM-001",
         "response_angle": "concept",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "효를 하나의 규범으로 보지 않게 된 이유는 무엇인가요?",
+        "answer_30s_ko": "이중효도모형을 보고 효가 강한지 약한지만 따지는 하나의 척도로는 충분하지 않다고 느꼈습니다. 부모의 투자에 감사하며 애정으로 보답하는 것은 위계와 역할 의무에 바탕을 둔 복종과 다릅니다. 이 구분은 직업이나 결혼에 관해 부모의 뜻을 따르는 태도가 약해져도 부양 의무는 계속 중요하게 여겨질 수 있는 이유를 설명합니다. 저는 효 전체가 약해졌다고 주장하기 전에 어느 차원이 변하는지 묻겠습니다."
       },
       {
         "card_id": "kim-reading-05",
@@ -152,7 +190,9 @@
         "answer_30s": "I would not turn the separate US, Japanese, and Chinese coresidence estimates of 14%, 43%, and 68.7% into a ranking of filial piety or care quality. These are historical figures from different cited studies, and the chapter itself warns against equating high coresidence with adequate care. Support can cross households, while shared residence can coexist with poor care or conflict.",
         "evidence_segment_id": "LIVING-001",
         "response_angle": "limitation",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "해석의 어떤 한계가 눈에 띄었나요?",
+        "answer_30s_ko": "저는 미국, 일본, 중국에서 각각 제시된 동거율 추정치 14%, 43%, 68.7%를 효나 돌봄의 질에 대한 순위로 바꾸지 않겠습니다. 이는 서로 다른 인용 연구에서 나온 과거 수치이며, 이 장 자체도 높은 동거율을 충분한 돌봄과 동일시하지 말라고 경고합니다. 지원은 가구를 넘어 이루어질 수 있고, 함께 살아도 돌봄이 부족하거나 갈등이 있을 수 있습니다."
       },
       {
         "card_id": "kim-reading-06",
@@ -160,7 +200,9 @@
         "answer_30s": "My inference is to evaluate how policies interact with family relationships, as well as whether they secure care. The chapter contrasts legally enforceable Family Support Agreements in China with long-term care insurance in Japan and South Korea. It raises the possibility that sanctions could weaken flexibility, affection, or trust. I would treat these as potential consequences to investigate, rather than assume that government support necessarily replaces family commitment.",
         "evidence_segment_id": "CHANGE-001",
         "response_angle": "family-policy",
-        "style_basis": "course-question-pattern"
+        "style_basis": "course-question-pattern",
+        "title_ko": "이 장을 가족이나 정책과 어떻게 연결하겠나요?",
+        "answer_30s_ko": "제 추론은 정책이 돌봄을 확보하는지뿐 아니라 가족 관계와 어떻게 상호작용하는지도 평가해야 한다는 것입니다. 이 장은 중국의 법적 강제력이 있는 가족부양협약을 일본과 한국의 장기요양보험과 대비합니다. 또한 제재가 유연성, 애정, 신뢰를 약화시킬 가능성을 제기합니다. 저는 정부 지원이 반드시 가족의 헌신을 대체한다고 가정하지 않고, 이를 연구해야 할 잠재적 결과로 보겠습니다."
       }
     ]
   }

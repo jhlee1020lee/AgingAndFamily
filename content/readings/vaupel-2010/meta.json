@@ -52,10 +52,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:694b751868efb45dbc9b070bdbb29575b1d3f57dbad0faf3e504d887b550915a",
@@ -65,13 +65,13 @@
       "concepts": "v2:00692955ab3c4fef787f9626221640107819c0a4c97de32c8f6419f3b234091f",
       "pitfalls": "v2:c21671cab212248089381165fa53da7a2c738911f6e983a761ae4162a17aa132",
       "review-sheet": "v2:eb86eca869e8cb757f212b89e786be92359b85beecc69ec25011f3b7339c7184",
-      "professor-prep": "v2:d739d70572bd76d141e5ed3eadb947caf3be5f23edd9896053462991013b0a4e",
       "quiz-ox": "v2:30306e0cd28a4b4b716c1a8ddbbee39da7c2ff468bd43252f5828402b23a63d9",
       "quiz-short": "v2:ae1e95db1eb862d017b67e89a293c3c4c49c65690e367465dcb5c008158fec3b",
-      "quiz-mcq": "v2:3c0aca85dce4ba652d7bf5093ac956b66b6ad15547bce2d5b776f474cb5780ed"
+      "quiz-mcq": "v2:3c0aca85dce4ba652d7bf5093ac956b66b6ad15547bce2d5b776f474cb5780ed",
+      "professor-prep": "v2:9b2abc762757a271b83eded415b63204a7b5626c9fe8d35140eca39b08a73be2"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-04T23:51:58.985Z",
+    "reviewed_at": "2026-09-05T03:52:01.165Z",
     "notes": [
       "Stage 1 source reconstruction completed; independent manual approval pending.",
       "Stage 1: seven rendered pages, 156 content blocks, Box 1, Figures 1–4, quantitative anchors, and references 1–100 independently cross-checked with no source defects found.",
@@ -80,7 +80,8 @@
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
-      "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
@@ -98,7 +99,7 @@
     "quiz_mcq": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:33.726Z",
+    "updated_at": "2026-09-05T03:52:09.826Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -228,7 +229,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -390,12 +392,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:d739d70572bd76d141e5ed3eadb947caf3be5f23edd9896053462991013b0a4e",
+        "source_hash": "v2:9b2abc762757a271b83eded415b63204a7b5626c9fe8d35140eca39b08a73be2",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

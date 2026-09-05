@@ -68,10 +68,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:72f583d3c3c65c2d6577a47a8c3f853a6f476333b51b836a851a9d7ea068a2db",
@@ -81,13 +81,13 @@
       "concepts": "v2:69d097390b746337056613700df78eafebdd5c8369b6e4c0a98afc302f05b856",
       "pitfalls": "v2:c54684f1ecf0f8f28e749437130ea04788ec227060b3bbec37fce749d5376296",
       "review-sheet": "v2:b4ad0df47533a7de0f4672d5981c986c2bd044eaac093d6f68d7b537075ec48a",
-      "professor-prep": "v2:49c2c0598ba397caab00974ff2db7357e4157e5c2a091b23bf638ff0f2633c50",
       "quiz-ox": "v2:630acc9e84685a903109ee88633aeb537317fbcaea877ffc87bdadde8a6bac6e",
       "quiz-short": "v2:06a684b54783efc46322d3489753f98310fb93acdc5511ceed2f950228f202e8",
-      "quiz-mcq": "v2:0bfe8dad97b253d0944d23f7965554f42e38c40934f9268777fe8532334d5f0e"
+      "quiz-mcq": "v2:0bfe8dad97b253d0944d23f7965554f42e38c40934f9268777fe8532334d5f0e",
+      "professor-prep": "v2:f2ac340c9627534cc4372bfb8332d4c7b8ce276015a42dbc5b344c6defb7f438"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T00:31:22.503Z",
+    "reviewed_at": "2026-09-05T03:52:01.732Z",
     "notes": [
       "Stage 1 independently audited across all 22 PDF pages; 177 source blocks in 17 segments, 132 references, metadata, numerical/policy anchors, no-figure status, and reproducible reconstruction verified. One wrapped RAND URL was corrected and re-audited.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
@@ -95,12 +95,13 @@
       "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
-      "English learning materials reviewed against stored source segments; source and Korean translation preserved; composite dependencies reviewed. Beliefs, behavior, residence and relationship quality distinguished. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments; source and Korean translation preserved; composite dependencies reviewed. Beliefs, behavior, residence and relationship quality distinguished. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:34.359Z",
+    "updated_at": "2026-09-05T03:52:10.547Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -230,7 +231,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -392,12 +394,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:49c2c0598ba397caab00974ff2db7357e4157e5c2a091b23bf638ff0f2633c50",
+        "source_hash": "v2:f2ac340c9627534cc4372bfb8332d4c7b8ce276015a42dbc5b344c6defb7f438",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

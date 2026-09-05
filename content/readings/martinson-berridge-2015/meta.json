@@ -71,10 +71,10 @@
       "concepts",
       "pitfalls",
       "review-sheet",
-      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq"
+      "quiz-mcq",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:5a5161bbff3759bbe1e5e4f605c898b0225f6c6ce5fe5a9871c81c3549032842",
@@ -84,25 +84,26 @@
       "concepts": "v2:6e16143cc708e5622baa3d433977ce0608405031c9b33afcf3ab3fe5dc3fc0ee",
       "pitfalls": "v2:f39de03c0ce7baecad091b305493fb9ba6635c51c643cdc498735abce29de2a8",
       "review-sheet": "v2:7db19c14549499dfc47a0c0594d84368e1191a0deceadd4fe6a66a2b3da859f3",
-      "professor-prep": "v2:07f8c02132b4f5f3519003e1916b57928ba4690b4d95d45a40386335a79f8c5d",
       "quiz-ox": "v2:d90f17e392896e769a7b951475924b5a464ae0ef40925e5916395a7f5068a47e",
       "quiz-short": "v2:a2ab56c8c9847018b9a380d2d948b67ebd70ab8a83af7eded228963a847648e9",
-      "quiz-mcq": "v2:5c3d594e6e7f2681a999297dfffa2de5b1d04210139f29dcc7c500681d0bc4a8"
+      "quiz-mcq": "v2:5c3d594e6e7f2681a999297dfffa2de5b1d04210139f29dcc7c500681d0bc4a8",
+      "professor-prep": "v2:46b8bb493ab868433e601aca7b203791ed9346b6948506512d12565aa4723bb7"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T01:14:57.817Z",
+    "reviewed_at": "2026-09-05T03:52:02.373Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 2 correction re-audit PASS: Critical 0, Major 0, Minor 0; 28/28 segments, 127/127 blocks, 284 sentence pairs, deterministic hashes, links, privacy and no-chatbot verified.",
       "Independent Stage 3 semantic and quiz-pattern audit C0/M0/m0; 66/66 evidence records, strict 28/28 alignment, isolated full-preview links/reveals, and privacy/chatbot exclusion verified.",
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
-      "English learning materials reviewed against stored source segments; composite dependencies reviewed and source/translation preserved. Configurative design, recommendations defining the categories, critic versus author claims, cultural variation and inclusive alternatives preserved. Short answers emphasize concepts over numeric recall. Original PDF unavailable."
+      "English learning materials reviewed against stored source segments; composite dependencies reviewed and source/translation preserved. Configurative design, recommendations defining the categories, critic versus author claims, cultural variation and inclusive alternatives preserved. Short answers emphasize concepts over numeric recall. Original PDF unavailable.",
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T02:01:35.129Z",
+    "updated_at": "2026-09-05T03:52:11.126Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -232,7 +233,8 @@
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {
@@ -394,12 +396,13 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:07f8c02132b4f5f3519003e1916b57928ba4690b4d95d45a40386335a79f8c5d",
+        "source_hash": "v2:46b8bb493ab868433e601aca7b203791ed9346b6948506512d12565aa4723bb7",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
-          "reading_response_card_count": 6
+          "reading_response_card_count": 6,
+          "korean_card_count": 21
         }
       },
       "quiz_ox": {

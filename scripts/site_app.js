@@ -817,13 +817,26 @@ function initProfessorPrep(){
     difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])
   };
   const difficultList=document.querySelector("[data-prep-difficult-list]");
+  const questionSelect=root.querySelector("[data-prep-question-select]");
+  const answerSelect=root.querySelector("[data-prep-answer-select]");
+  const languageKey=`${STORAGE_PREFIX}-prep-languages`;
+  const storedLanguages=questionSelect||answerSelect?storage.get(languageKey,{}):{};
+  const savedLanguages=storedLanguages&&typeof storedLanguages==="object"?storedLanguages:{};
+  const validLanguage=(value)=>value==="ko"||value==="en"?value:"en";
+  const languages={
+    questionLanguage:validLanguage(savedLanguages.questionLanguage),
+    answerLanguage:validLanguage(savedLanguages.answerLanguage)
+  };
 
   const cards=Array.from(root.querySelectorAll("[data-prep-card]")).map((card)=>{
     const id=card.dataset.cardId||card.id;
-    const title=(card.querySelector("[data-prep-title]")?.textContent||card.querySelector("h3, h2")?.textContent||id).trim();
+    const titleElement=card.querySelector("[data-prep-title]")||card.querySelector("h3, h2");
+    const visibleTitle=titleElement?.querySelector("[data-prep-question-language]:not([hidden])");
+    const title=(visibleTitle?.textContent||titleElement?.textContent||id).trim();
     return{
       id,
       card,
+      titleElement,
       title,
       difficultButton:card.querySelector("[data-prep-difficult]")
     };
@@ -895,6 +908,48 @@ function initProfessorPrep(){
     }
   };
 
+  const applyLanguages=()=>{
+    if(questionSelect){
+      questionSelect.value=languages.questionLanguage;
+      root.dataset.prepQuestionLanguage=languages.questionLanguage;
+      cards.forEach((card)=>{
+        const variants=Array.from(card.titleElement?.querySelectorAll("[data-prep-question-language]")||[]);
+        if(!variants.length)return;
+        variants.forEach((variant)=>{
+          variant.hidden=variant.dataset.prepQuestionLanguage!==languages.questionLanguage;
+          variant.lang=variant.dataset.prepQuestionLanguage;
+        });
+        card.titleElement.lang=languages.questionLanguage;
+        const visibleTitle=variants.find((variant)=>!variant.hidden);
+        card.title=(visibleTitle?.textContent||card.title).trim();
+      });
+    }
+    if(answerSelect){
+      answerSelect.value=languages.answerLanguage;
+      root.dataset.prepAnswerLanguage=languages.answerLanguage;
+      root.querySelectorAll("[data-prep-answer-language]").forEach((variant)=>{
+        variant.hidden=variant.dataset.prepAnswerLanguage!==languages.answerLanguage;
+        variant.lang=variant.dataset.prepAnswerLanguage;
+        const copy=variant.closest(".prep-answer-copy");
+        if(copy)copy.lang=languages.answerLanguage;
+      });
+      root.querySelectorAll("[data-prep-answer-label]").forEach((label)=>{
+        label.textContent=languages.answerLanguage==="ko"?"30초 답변":"30-second answer";
+        label.lang=languages.answerLanguage;
+      });
+    }
+    renderDifficult();
+  };
+
+  [[questionSelect,"questionLanguage"],[answerSelect,"answerLanguage"]].forEach(([select,key])=>{
+    if(!select)return;
+    select.addEventListener("change",()=>{
+      languages[key]=validLanguage(select.value);
+      applyLanguages();
+      storage.set(languageKey,languages);
+    });
+  });
+
   cards.forEach((card)=>{
     if(card.difficultButton){
       card.difficultButton.addEventListener("click",()=>{
@@ -908,7 +963,7 @@ function initProfessorPrep(){
 
   if(!revealHashedCard())activateTab(state.activeTab,{persist:false});
   window.addEventListener("hashchange",revealHashedCard);
-  renderDifficult();
+  applyLanguages();
 }
 
 function initReadingProgressAndToc(){
