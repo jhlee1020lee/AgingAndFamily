@@ -72,19 +72,7 @@ function displayDate(reading) {
 }
 
 function sortReadings(readings) {
-  return [...readings]
-    .map((reading, index) => ({ ...reading, __order_index: index }))
-    .sort((a, b) => {
-      const aDate = effectiveSortDate(a);
-      const bDate = effectiveSortDate(b);
-      if (aDate && bDate && aDate !== bDate) {
-        return aDate.localeCompare(bDate);
-      }
-      if (Boolean(aDate) !== Boolean(bDate)) {
-        return aDate ? -1 : 1;
-      }
-      return a.__order_index - b.__order_index;
-    });
+  return [...readings];
 }
 
 function readingStatusLabel(status) {

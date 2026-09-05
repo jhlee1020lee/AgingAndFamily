@@ -1,217 +1,218 @@
 {
-  "title": "Huxhold et al. (2014) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 가장 정확한 선택지를 고르고 설명에서 설계·계수·한계를 확인하세요.",
+  "title": "Huxhold et al. (2014): Multiple Choice",
+  "instructions": "Choose the answer that best preserves the study design, coefficient patterns, and limits of interpretation.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "이 연구의 중심 결론으로 가장 정확한 것은?",
+      "prompt": "Which conclusion best captures the study's main pattern of findings?",
       "options": [
-        "사회활동의 연관성은 관계 원천보다 활동 빈도만으로 설명됐다",
-        "활동-안녕 연관성은 원천·연령·안녕 지표에 따라 달랐다",
-        "관계 원천의 차이는 노년이 아니라 중년 집단에서만 나타났다",
-        "친구 활동의 이점은 정서가 아닌 삶의 만족도에서만 나타났다"
+        "Activity frequency alone explained well-being, regardless of the social partner",
+        "Associations differed by partner source, age group, and aspect of well-being",
+        "Family-friend differences appeared only in middle age and disappeared among older adults",
+        "Friend activities were linked only to life satisfaction and never to positive or negative affect"
       ],
-      "answer": "활동-안녕 연관성은 원천·연령·안녕 지표에 따라 달랐다",
-      "explanation": "논문은 활동 총량을 단일 효과로 보지 않고 관계 원천, 연령과 세 안녕 결과를 분리했다.",
+      "answer": "Associations differed by partner source, age group, and aspect of well-being",
+      "explanation": "The study distinguishes family and friend activities and examines life satisfaction, positive affect (PA), and negative affect (NA) separately. It does not treat all activity as one uniform benefit.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록의 통합 결론",
-      "difficulty": "기본"
+      "source": "The overall pattern",
+      "difficulty": "Core"
     },
     {
-      "prompt": "논문이 제시한 가족관계와 친구관계의 차이로 가장 정확한 것은?",
+      "prompt": "Which contrast between family and friendship relationships underlies the study?",
       "options": [
-        "가족은 동반활동을, 친구는 도구적 지원을 전담하므로 따로 분석해야 한다",
-        "두 관계의 기능은 같지만 가족관계만 선택적으로 끝낼 수 있다고 보았다",
-        "친구는 규범적 의무로, 가족은 자발적 선택으로 유지된다고 보았다",
-        "가족은 의무성이, 친구는 자발성·상호성과 동반활동 기능이 두드러진다"
+        "Families provide companionship exclusively, whereas friends provide only instrumental support",
+        "The functions are identical, but only family ties can be voluntarily ended",
+        "Friendship is maintained by obligation, whereas family ties depend entirely on voluntary choice",
+        "Family ties carry obligations; friendships emphasize choice, reciprocity, and companionship"
       ],
-      "answer": "가족은 의무성이, 친구는 자발성·상호성과 동반활동 기능이 두드러진다",
-      "explanation": "이 구조·기능 차이가 불만족스러운 관계의 해소 가능성과 활동 효과의 차이를 설명한다.",
+      "answer": "Family ties carry obligations; friendships emphasize choice, reciprocity, and companionship",
+      "explanation": "The authors discuss structural and functional differences, including the greater difficulty of dissolving unsatisfying family ties. They do not assign each type of relationship one exclusive function.",
       "evidence_segment_id": "FAMILY-001",
-      "source": "관계구조 비교",
-      "difficulty": "기본"
+      "source": "Relationship structure and function",
+      "difficulty": "Core"
     },
     {
-      "prompt": "H1의 예측은 무엇인가?",
+      "prompt": "What did Hypothesis 1 predict?",
       "options": [
-        "노년은 중년보다 활동이 적고 친구 활동의 연령 차이가 더 클 것이다",
-        "노년은 중년보다 활동이 많고 가족 활동의 연령 차이가 더 클 것이다",
-        "두 집단의 활동량은 같지만 노년에서 친구 활동만 증가할 것이다",
-        "관계의 질만 연령에 따라 달라지고 활동량 차이는 없을 것이다"
+        "Older adults would be less active, with a larger age difference in friend activities",
+        "Older adults would be more active, with a larger age difference in family activities",
+        "Activity levels would be identical, although friend activity alone would rise in old age",
+        "Only relationship quality would differ by age, with no differences in activity levels"
       ],
-      "answer": "노년은 중년보다 활동이 적고 친구 활동의 연령 차이가 더 클 것이다",
-      "explanation": "전반적 활동량 차이와 친구 활동에서 더 큰 연령 차이가 H1의 두 요소다.",
+      "answer": "Older adults would be less active, with a larger age difference in friend activities",
+      "explanation": "H1 combined a general prediction of lower activity among older adults with a particularly pronounced difference in activities with friends.",
       "evidence_segment_id": "AIMS-001",
-      "source": "가설 1",
-      "difficulty": "기본"
+      "source": "Hypothesis 1",
+      "difficulty": "Core"
     },
     {
-      "prompt": "연구표본과 시점의 조합으로 맞는 것은?",
+      "prompt": "Which combination correctly identifies the data used and final analysis groups?",
       "options": [
-        "독일 1996·2002, 중년 2,032명과 노년 2,830명",
-        "독일 2002·2008, 완전응답자 4,862명만 분석",
-        "독일 2002·2008, 중년 2,830명과 노년 2,032명",
-        "독일 2002년 단면, 중년 1,327명과 노년 665명"
+        "Germany, 1996 and 2002: 2,032 middle-aged and 2,830 older adults",
+        "Germany, 2002 and 2008: only 4,862 participants with complete data at both waves",
+        "Germany, 2002 and 2008: 2,830 middle-aged and 2,032 older adults",
+        "Germany, 2002 only: 1,327 middle-aged and 665 older adults"
       ],
-      "answer": "독일 2002·2008, 중년 2,830명과 노년 2,032명",
-      "explanation": "DEAS의 두 파동을 사용했으며 두 시점 모두 참여한 하위표본 수와 최종 분석표본 수를 구분해야 한다.",
+      "answer": "Germany, 2002 and 2008: 2,830 middle-aged and 2,032 older adults",
+      "explanation": "The study used two German Aging Survey waves. Only 1,327 middle-aged and 665 older adults participated at both waves; full-information maximum likelihood retained available information beyond these complete follow-up cases.",
       "evidence_segment_id": "SAMPLE-001",
-      "source": "표본설계",
-      "difficulty": "기본"
+      "source": "Sample and survey waves",
+      "difficulty": "Core"
     },
     {
-      "prompt": "잠재변화점수(LCS) 모형을 사용한 이유로 가장 적절한 것은?",
+      "prompt": "Why use latent change score (LCS) models for the main research question?",
       "options": [
-        "두 시점 평균을 합쳐 연령집단의 단면 차이만 검정하기 위해",
-        "T1 수준과 변화를 분리해 초기 활동과 이후 안녕 변화의 연관성을 추정하기 위해",
-        "관찰되지 않은 모든 교란을 통제해 인과효과를 식별하기 위해",
-        "결측 사례를 제거하고 완전응답자만으로 변화를 비교하기 위해"
+        "To average both waves and test only cross-sectional age-group differences",
+        "To relate baseline activity to subsequent well-being change while accounting for initial levels",
+        "To remove every unmeasured confounder and identify an experimental causal effect",
+        "To discard all incomplete cases before comparing raw change scores"
       ],
-      "answer": "T1 수준과 변화를 분리해 초기 활동과 이후 안녕 변화의 연관성을 추정하기 위해",
-      "explanation": "LCS는 T1 활동수준과 6년 안녕 변화를 연결하고 기초수준을 고려하지만 실험설계는 아니다.",
+      "answer": "To relate baseline activity to subsequent well-being change while accounting for initial levels",
+      "explanation": "LCS separates the T1 level from T1-to-T2 change and estimates associations between initial activity and six-year change in well-being. Change-to-change associations were included but were not interpreted as directional evidence.",
       "evidence_segment_id": "LCS-001",
-      "source": "분석 전략",
-      "difficulty": "응용"
+      "source": "The analytic strategy",
+      "difficulty": "Application"
     },
     {
-      "prompt": "중년과 노년의 회귀계수를 직접 비교하지 못한 이유는?",
+      "prompt": "Why could the researchers not directly contrast regression weights between age groups?",
       "options": [
-        "측정시점 간 요인부하가 달라 척도 자체를 비교할 수 없었기 때문에",
-        "중년과 노년의 표본 크기가 달라 다집단 모형을 만들 수 없었기 때문에",
-        "기초 활동수준과 기초 안녕의 상관을 모형에 넣지 않았기 때문에",
-        "변화분산을 두 연령집단에서 같게 제약할 수 없었기 때문에"
+        "Factor loadings changed over time, preventing a consistent measurement model",
+        "Unequal sample sizes made any multigroup analysis mathematically impossible",
+        "The models omitted every baseline association between activity and well-being",
+        "Variances of the change scores could not be constrained equal across groups"
       ],
-      "answer": "변화분산을 두 연령집단에서 같게 제약할 수 없었기 때문에",
-      "explanation": "측정시점의 요인부하는 불변성을 보였지만 변화분산의 집단 등가성이 성립하지 않았다.",
+      "answer": "Variances of the change scores could not be constrained equal across groups",
+      "explanation": "Factor loadings supported invariance between measurement occasions. However, equality of change variances across age groups was not supported, limiting direct between-group comparisons of regression weights.",
       "evidence_segment_id": "EFFECTS-001",
-      "source": "집단비교 제약",
-      "difficulty": "심화"
+      "source": "A limit on age-group coefficient comparisons",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "2002–2008 활동량 변화에 관한 결과는?",
+      "prompt": "Which result describes activity change among older adults from 2002 to 2008?",
       "options": [
-        "노년의 친구 활동은 줄고 가족 활동은 유의하게 늘었다",
-        "두 집단 모두 친구 활동만 감소했고 가족 활동은 유지됐다",
-        "노년 집단은 친구 활동보다 가족 활동을 더 많이 줄였다",
-        "중년은 친구 활동을, 노년은 가족 활동을 더 많이 늘렸다"
+        "Friend activity declined while family activity increased significantly",
+        "Only friend activity declined; family activity remained unchanged in both groups",
+        "Family activity declined more than friend activity",
+        "Friend activity rose in middle age while family activity rose in old age"
       ],
-      "answer": "노년 집단은 친구 활동보다 가족 활동을 더 많이 줄였다",
-      "explanation": "가족 활동에서만 연령집단×시점 상호작용이 유의했다.",
+      "answer": "Family activity declined more than friend activity",
+      "explanation": "The age-group-by-time interaction was significant for family activity but not friend activity. The within-period decline is distinct from the larger between-group difference in friend activity levels.",
       "evidence_segment_id": "AGEGROUP-001",
-      "source": "활동 변화",
-      "difficulty": "응용"
+      "source": "Differences between levels and change",
+      "difficulty": "Application"
     },
     {
-      "prompt": "중년 집단의 결과로 맞는 것은?",
+      "prompt": "Which summary matches the middle-aged group's results?",
       "options": [
-        "활동은 PA·삶의 만족도와 정적으로 연결됐고 NA·관계 원천 차이는 없었다",
-        "가족 활동은 PA에, 친구 활동은 삶의 만족도에만 정적으로 연결됐다",
-        "활동은 세 안녕 지표와 정적으로 연결됐지만 가족 활동 계수만 유의했다",
-        "활동은 NA 감소와만 연결됐고 PA·삶의 만족도와는 무관했다"
+        "Activity predicted PA and life-satisfaction gains, with no NA link or significant source difference",
+        "Family activity predicted only PA, whereas friend activity predicted only life satisfaction",
+        "Both activity sources predicted increases in all three outcomes, but only family coefficients were significant",
+        "Activity predicted only declining NA and was unrelated to PA or life satisfaction"
       ],
-      "answer": "활동은 PA·삶의 만족도와 정적으로 연결됐고 NA·관계 원천 차이는 없었다",
-      "explanation": "PA와 삶의 만족도 β는 각각 0.08, NA β는 0.01이었다.",
+      "answer": "Activity predicted PA and life-satisfaction gains, with no NA link or significant source difference",
+      "explanation": "The standardized coefficients were 0.08 for PA and 0.08 for life satisfaction; the NA coefficient was 0.01 and nonsignificant. Family-friend contrasts were not significant.",
       "evidence_segment_id": "MIDDLE-001",
-      "source": "중년 집단 결과",
-      "difficulty": "기본"
+      "source": "Middle-aged adults",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노년 집단의 PA 결과로 맞는 것은?",
+      "prompt": "What was found for positive affect in the older group?",
       "options": [
-        "친구 활동만 PA 증가와 연결되고 가족 활동 계수는 유의하지 않았다",
-        "두 원천의 공통계수는 정적이었고 가족·친구 차이는 유의하지 않았다",
-        "가족 활동은 PA 증가, 친구 활동은 PA 감소와 서로 반대로 연결됐다",
-        "가족·친구 활동 모두 PA 변화와 무관하고 기초수준에만 연결됐다"
+        "Only friend activity predicted PA; the family association was absent",
+        "The common coefficient was positive, with no significant family-friend difference",
+        "Family activity predicted PA gains while friend activity predicted PA losses",
+        "Neither activity source predicted PA change after baseline levels were considered"
       ],
-      "answer": "두 원천의 공통계수는 정적이었고 가족·친구 차이는 유의하지 않았다",
-      "explanation": "노년 집단의 PA 계수는 0.09였고 관계 원천별 회귀가중치 차이는 유의하지 않았다.",
+      "answer": "The common coefficient was positive, with no significant family-friend difference",
+      "explanation": "The common standardized coefficient for PA was 0.09. Allowing separate family and friend weights did not reveal a significant source difference.",
       "evidence_segment_id": "OLDER-001",
-      "source": "노년 집단 PA",
-      "difficulty": "기본"
+      "source": "Positive affect among older adults",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노년 집단의 삶의 만족도 결과는?",
+      "prompt": "Which coefficients and interpretation match older adults' life-satisfaction results?",
       "options": [
-        "친구 β = 0.02, 가족 β = 0.14였고 가족만 변화를 예측했다",
-        "두 계수 모두 β = 0.09였고 관계 원천 차이가 나타나지 않았다",
-        "친구 β = −0.08, 가족 β = +0.08로 삶의 만족도에서 상쇄됐다",
-        "친구 β = 0.14, 가족 β = 0.02였고 친구만 변화를 예측했다"
+        "Friends: 0.02; family: 0.14; only family activity predicted change",
+        "Friends and family: 0.09; their weights did not differ",
+        "Friends: -0.08; family: +0.08; their associations canceled",
+        "Friends: 0.14; family: 0.02; only friend activity predicted change"
       ],
-      "answer": "친구 β = 0.14, 가족 β = 0.02였고 친구만 변화를 예측했다",
-      "explanation": "등가제약을 해제했을 때 관계 원천별 차이가 드러났다.",
+      "answer": "Friends: 0.14; family: 0.02; only friend activity predicted change",
+      "explanation": "Releasing the equality constraint improved model fit. In this model, baseline friend activity predicted life-satisfaction change, whereas family activity did not.",
       "evidence_segment_id": "OLDER-001",
-      "source": "노년 집단 삶의 만족도",
-      "difficulty": "응용"
+      "source": "Life satisfaction among older adults",
+      "difficulty": "Application"
     },
     {
-      "prompt": "노년 집단의 NA 결과로 맞는 것은?",
+      "prompt": "According to the older-group results prose, which pattern was reported for negative affect?",
       "options": [
-        "친구와 가족 모두 −0.08로 NA 감소와 연결됐다",
-        "친구 +0.14, 가족 +0.02로 모두 NA 증가와 연결됐다",
-        "친구 −0.08, 가족 +0.08로 반대 방향이었다",
-        "두 계수 차이는 있었지만 모두 0에 가까워 유의하지 않았다"
+        "Friends and family both had coefficients of -0.08",
+        "Friends had a coefficient of +0.14 and family of +0.02",
+        "Friends: -0.08; family: +0.08, indicating opposite directions",
+        "The source coefficients differed but both were effectively zero"
       ],
-      "answer": "친구 −0.08, 가족 +0.08로 반대 방향이었다",
-      "explanation": "두 연관성이 합산 분석에서는 서로 상쇄될 수 있다는 점이 논문의 핵심이다.",
+      "answer": "Friends: -0.08; family: +0.08, indicating opposite directions",
+      "explanation": "The results prose links friend activity to decreasing NA and family activity to increasing NA, so a common coefficient obscures opposing directions. This answer follows that prose. Table 1 reverses the signs in the family and friend rows, creating an unresolved text-table discrepancy.",
       "evidence_segment_id": "OLDER-001",
-      "source": "노년 집단 NA",
-      "difficulty": "응용"
+      "source": "Negative affect among older adults",
+      "difficulty": "Application"
     },
     {
-      "prompt": "H2에 대한 판정으로 가장 정확한 것은?",
+      "prompt": "How should the evidence for Hypothesis 2 be judged?",
       "options": [
-        "긍정적 연관성과 친구 우위가 지표·연령별로 달라 부분 지지다",
-        "모든 지표와 집단에서 친구 우위가 나타나 완전히 지지됐다",
-        "활동과 안녕의 연관성이 어느 집단에서도 없어 기각됐다",
-        "중년에서만 친구 우위가 나타났으므로 노년 결과와 무관하게 지지됐다"
+        "Partial support: beneficial associations did not imply a uniform advantage for friends",
+        "Complete support: friend activity was superior for every outcome in both age groups",
+        "Complete rejection: no activity-well-being association appeared in either age group",
+        "Support confined to a friend advantage in middle age, regardless of older-adult findings"
       ],
-      "answer": "긍정적 연관성과 친구 우위가 지표·연령별로 달라 부분 지지다",
-      "explanation": "중년 집단에서는 친구·가족 차이가 없었고 노년 집단에서도 PA는 차이가 없었다.",
+      "answer": "Partial support: beneficial associations did not imply a uniform advantage for friends",
+      "explanation": "The H2 discussion notes benefits of shared leisure activity in middle age, but no advantage for friends over family in that group. Positive activity associations and a stronger friend effect are separate parts of the hypothesis.",
       "evidence_segment_id": "H2-001",
-      "source": "가설 2 논의",
-      "difficulty": "응용"
+      "source": "Evaluating Hypothesis 2",
+      "difficulty": "Application"
     },
     {
-      "prompt": "연구의 인과해석 범위를 가장 정확히 지킨 것은?",
+      "prompt": "Which interpretation respects the causal limits of the design?",
       "options": [
-        "T1 활동이 이후 SWB 변화를 예측했으므로 인과효과가 입증됐다",
-        "T1 활동은 이후 SWB 변화와 연관됐지만 인과효과로 확정할 수 없다",
-        "두 시점 자료로는 시간 순서도 파악할 수 없어 방향 연관성도 말할 수 없다",
-        "공변량을 통제해 측정되지 않은 교란과 역인과가 모두 제거됐다"
+        "Baseline activity predicted later well-being change, proving a causal effect",
+        "Baseline activity predicted later change, but the design does not establish causation",
+        "Two-wave data contain no temporal ordering and cannot support directional associations",
+        "Covariate adjustment eliminated every unmeasured confounder and all reverse influences"
       ],
-      "answer": "T1 활동은 이후 SWB 변화와 연관됐지만 인과효과로 확정할 수 없다",
-      "explanation": "LCS는 초기 활동과 이후 SWB 변화의 방향적 연관성을 추정하지만 무작위 실험은 아니다.",
+      "answer": "Baseline activity predicted later change, but the design does not establish causation",
+      "explanation": "The models estimate directional associations from T1 activity to later well-being change while considering baseline and reciprocal associations. The study did not randomly assign social activities.",
       "evidence_segment_id": "LCS-001",
-      "source": "방향적 연관성의 범위",
-      "difficulty": "심화"
+      "source": "Directional association and causation",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "저자들이 밝힌 한계는?",
+      "prompt": "Which set of limitations did the authors identify?",
       "options": [
-        "활동 상대는 구분했지만 PA와 NA를 하나의 척도로 합산했다",
-        "가족관계 질은 측정했지만 활동 빈도와 표본 연령은 측정하지 않았다",
-        "자기보고·6년 간격 두 시점·가족관계 유형과 관계 질 미구분",
-        "무작위배정은 했지만 실험집단의 장기 추적자료가 부족했다"
+        "PA and NA were combined into one scale after partners had been distinguished",
+        "Relationship quality was measured, but activity frequency and age were not",
+        "Self-report, two widely spaced waves, and limited detail on family ties and relationship quality",
+        "Random assignment was successful, but the experimental group lacked long-term follow-up"
       ],
-      "answer": "자기보고·6년 간격 두 시점·가족관계 유형과 관계 질 미구분",
-      "explanation": "이 한계들은 회상오류, 단기 정서변동과 가족활동 해석의 범위를 제한한다.",
+      "answer": "Self-report, two widely spaced waves, and limited detail on family ties and relationship quality",
+      "explanation": "Recall may depend on current affect. Two waves six years apart can miss shorter-term dynamics. Different family relationships and the quality of family or friendship ties were not distinguished in the analyses.",
       "evidence_segment_id": "LIMIT-001",
-      "source": "연구 한계",
-      "difficulty": "기본"
+      "source": "Measurement and design limitations",
+      "difficulty": "Core"
     },
     {
-      "prompt": "논문 결론의 실천적 함의로 가장 적절한 것은?",
+      "prompt": "Which practical implication do the authors draw?",
       "options": [
-        "노년기에 자발적 친구관계를 형성·유지할 기회와 프로그램을 지원한다",
-        "노년기의 비공식 활동을 가족관계 중심으로만 재편하고 친구 활동은 줄인다",
-        "활동 상대와 무관하게 접촉 횟수만 늘리는 일률적 프로그램을 설계한다",
-        "관찰된 연관성을 근거로 모든 노년 성인에게 같은 개입효과를 가정한다"
+        "Support opportunities to build and maintain voluntary friendship networks in later life",
+        "Reorganize informal activity around family alone and reduce older adults' friend contacts",
+        "Increase contact frequency uniformly without considering partners or emotional consequences",
+        "Assume the same intervention effect for every older adult from the observed associations"
       ],
-      "answer": "노년기에 자발적 친구관계를 형성·유지할 기회와 프로그램을 지원한다",
-      "explanation": "저자들은 친구 기반 관계망과 자원봉사·문화·대학·작업치료 프로그램을 예로 들지만 개입효과를 직접 시험하지는 않았다.",
+      "answer": "Support opportunities to build and maintain voluntary friendship networks in later life",
+      "explanation": "The conclusion suggests friend-based networks and examples such as volunteering, cultural, university, and occupational-therapy programs. These are implications; this survey study did not itself test their intervention effects.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "정책·실천 함의",
-      "difficulty": "응용"
+      "source": "Implications for opportunities and programs",
+      "difficulty": "Application"
     }
-  ]
+  ],
+  "language": "en"
 }

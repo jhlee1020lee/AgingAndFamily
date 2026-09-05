@@ -1,127 +1,128 @@
 {
-  "title": "Stine-Morrow (2007) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 두 종류의 관여, 근거 설계, 효과의 전이 범위와 가설의 주장 강도를 구분해 O 또는 X를 고르세요.",
+  "title": "Stine-Morrow (2007): True or False",
+  "instructions": "Distinguish the two forms of engagement, study designs, limits on transfer, and the strength of the hypothesis. Use the article to choose True or False.",
+  "language": "en",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "새 정보를 빠르게 부호화·변환하는 인지 역학은 나이가 들며 정상적으로 저하하는 경향이 있지만, 지식과 문화 습득에 의존하는 능력은 유지되거나 증가할 수 있다.",
+      "prompt": "Mental mechanics involving rapid encoding and transformation of new information typically decline with age, whereas abilities based on knowledge and cultural acquisition can remain stable or increase.",
       "answer": "O",
-      "explanation": "글은 인지 노화를 성장과 쇠퇴가 함께 있는 다면적 현상으로 설명하며 유동적 능력과 결정화 능력의 서로 다른 경향을 대비한다.",
+      "explanation": "The article describes cognitive aging as a multifaceted process involving both growth and decline. It contrasts the typical decline in fluid abilities with the potential stability or growth of crystallized abilities into late life.",
       "evidence_segment_id": "OPENING-001",
-      "source": "인지 역학과 결정화 능력",
-      "difficulty": "기본"
+      "source": "Mental mechanics and crystallized abilities",
+      "difficulty": "Core"
     },
     {
-      "prompt": "성공적으로 읽는 노년 독자는 개념 통합에 더 주의를 기울이고, 더 자주 묶어 처리하며, 상황적 특징과 담화구조에 자원을 더 배분하는 양상을 보일 수 있다.",
+      "prompt": "Successful older readers may devote more attention to conceptual integration, chunk language input more frequently, and allocate more attention to situational features and discourse structures.",
       "answer": "O",
-      "explanation": "글은 이런 조정을 처리용량의 연령 변화를 더 효과적으로 수용하는 성공적인 노년 읽기의 자원 배분 양상으로 제시한다.",
+      "explanation": "These adjustments can help accommodate age-related changes in processing capacity. More frequent chunking means pausing more often to integrate concepts.",
       "evidence_segment_id": "ATTENTION-002",
-      "source": "성공적인 노년 독자의 배분 적응",
-      "difficulty": "응용"
+      "source": "Allocation adjustments in successful older readers",
+      "difficulty": "Application"
     },
     {
-      "prompt": "주의 관여와 활동 참여는 모두 지적 자극이 많은 생활환경을 선택하는 동일한 과정을 가리킨다.",
+      "prompt": "Attentional engagement and activity engagement both refer to the same process of selecting intellectually stimulating environments.",
       "answer": "X",
-      "explanation": "주의 관여는 현재 과제의 처리에 자원을 배분하는 방식이고, 활동 참여는 지적으로 자극적인 환경을 습관적으로 선택하는 방식이다.",
+      "explanation": "Attentional engagement concerns implementing task-specific processes through the allocation of cognitive effort. Activity engagement concerns habitually selecting intellectually stimulating environmental contexts.",
       "evidence_segment_id": "ATTENTION-001",
-      "source": "두 종류의 관여",
-      "difficulty": "함정"
+      "source": "Two forms of engagement",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "SRLP 모형에서 글 이해는 표면형, 텍스트베이스, 상황모형이라는 여러 수준의 정신표상 구성에 의존한다.",
+      "prompt": "In the SRLP model, text understanding depends on constructing mental representations at the levels of surface form, textbase, and situation model.",
       "answer": "O",
-      "explanation": "단어의 표면형, 글이 표현한 아이디어, 글이 묘사한 상황을 구성하는 과정이 함께 언어 이해와 기억을 만든다.",
+      "explanation": "The model describes representations of the text's lexical expression, the ideas it conveys, and the situation suggested by those ideas. Component processes at these levels support language understanding and memory.",
       "evidence_segment_id": "ATTENTION-001",
-      "source": "SRLP의 표상 수준",
-      "difficulty": "기본"
+      "source": "Levels of representation in the SRLP model",
+      "difficulty": "Core"
     },
     {
-      "prompt": "SRLP의 부적 피드백 고리는 현재 이해가 기준보다 낮을 때 해당 수준의 처리를 중단하게 한다.",
+      "prompt": "The negative feedback loop in the SRLP model stops processing at a given level when perceived comprehension falls below its reference value.",
       "answer": "X",
-      "explanation": "현재 표상이 ‘충분히 좋지 않으면’ 그 수준의 처리기가 더 많은 자원을 요구하고, 지각된 이해가 기준을 충족할 때까지 차이를 줄인다.",
+      "explanation": "When the current representation is not good enough, the processor at that level demands more resources. The loop reduces the discrepancy until perceived comprehension satisfies the reference value.",
       "evidence_segment_id": "ATTENTION-002",
-      "source": "Figure 1의 부적 피드백",
-      "difficulty": "함정"
+      "source": "Negative feedback in Figure 1",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "배분 방침은 텍스트의 처리 요구가 변할 때 단위 읽기시간이 상대적으로 어떻게 달라지는지로 조작화된다.",
+      "prompt": "Allocation policy is operationalized as the relative change in unit reading times as text-processing demands vary.",
       "answer": "O",
-      "explanation": "단순한 총 읽기시간이 아니라 새 개념이나 통합 지점 같은 텍스트 특성에 대한 시간 조정의 회귀계수가 개인의 자원 배분 양식을 나타낸다.",
+      "explanation": "Regression coefficients relating reading times to text characteristics indicate a reader's allocation pattern. Examples include extra time for new concepts and for integration at clause or sentence boundaries; total reading time alone does not capture these adjustments.",
       "evidence_segment_id": "ATTENTION-001",
       "source": "allocation policy",
-      "difficulty": "응용"
+      "difficulty": "Application"
     },
     {
-      "prompt": "정확성 목표와 효율성 목표를 비교한 연구에서는 노년 독자가 젊은 독자보다 정확성 목표에 읽기시간을 더 크게 조정했다.",
+      "prompt": "In the study comparing accuracy and efficiency goals, older readers adjusted their reading-time allocation more strongly to the accuracy goal than younger readers did.",
       "answer": "X",
-      "explanation": "실제 결과는 반대였다. 특히 정확성 목표에 반응해 정보밀도가 높을수록 시간을 더 배분한 집단은 젊은 독자였다.",
+      "explanation": "The observed pattern was the reverse: younger readers' time allocation was especially responsive to the accuracy goal. Older adults were less responsive, despite the expectation that reduced processing capacity would require them to allocate disproportionately more time for accurate recall.",
       "evidence_segment_id": "ATTENTION-002",
-      "source": "Figure 2의 목표 반응성",
-      "difficulty": "함정"
+      "source": "Responsiveness to reading goals and Figure 2",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "정확성 목표에 대한 연령차의 일부는 작업기억 용량과 기억 자기효능감으로 설명됐다.",
+      "prompt": "Age differences in responsiveness to the accuracy goal were accounted for in part by working-memory capacity and memory self-efficacy.",
       "answer": "O",
-      "explanation": "글은 실제 과제 관여 능력과 별개로, 노력하면 기억 결과를 바꿀 수 있다는 믿음도 노년층의 낮은 목표 반응성에 기여했다고 설명한다.",
+      "explanation": "The study linked responsiveness both to existing capacity and to beliefs that one could affect memory outcomes. The article therefore identifies self-efficacy, as well as capacity, as relevant to older adults' lower responsiveness to the goal.",
       "evidence_segment_id": "ATTENTION-002",
-      "source": "기억 자기효능감",
-      "difficulty": "기본"
+      "source": "Working memory and memory self-efficacy",
+      "difficulty": "Core"
     },
     {
-      "prompt": "지적 도전이 많은 환경에 있는 사람의 인지점수가 더 높다는 관찰은 활동 참여가 인지저하를 막는 인과효과를 확정한다.",
+      "prompt": "The observation that people in intellectually challenging environments obtain higher cognitive scores establishes that activity engagement causally prevents cognitive decline.",
       "answer": "X",
-      "explanation": "선행 활력이 높은 사람이 그런 활동을 선택·유지했을 가능성과 여러 활력 지표가 같은 공통원인에서 나왔을 가능성이 남는다.",
+      "explanation": "People with greater inherent vitality may be more likely to seek out and sustain such activities. Engagement and cognitive outcomes may also correlate because they share an underlying cause, so the association does not establish the proposed causal effect.",
       "evidence_segment_id": "ACTIVITY-001",
-      "source": "활동 상관의 인과 한계",
-      "difficulty": "함정"
+      "source": "Causal limits of activity correlations",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "저자가 제시한 공통원인 설명에 따르면 직업·여가 참여와 치매 취약성은 같은 유전적으로 추동되는 노화과정의 생물행동 지표일 수 있다.",
+      "prompt": "Under the common-cause account discussed by the author, occupational engagement, leisure activities, and vulnerability to dementia may be biobehavioral markers of the same genetically driven aging process.",
       "answer": "O",
-      "explanation": "이 경우 여러 지표가 서로 직접 원인이어서가 아니라 공통된 기저과정에서 파생되어 상관될 수 있다.",
+      "explanation": "In this proposed account, the indicators can correlate because they derive from a common underlying process. Their association need not mean that one directly causes the others; the author presents this as a plausible alternative explanation.",
       "evidence_segment_id": "ACTIVITY-001",
       "source": "common-cause account",
-      "difficulty": "응용"
+      "difficulty": "Application"
     },
     {
-      "prompt": "ACTIVE 시험은 노인에게 기억·처리속도·추론 중 특정 능력을 10회기 훈련했고, 효과 유지가 최대 5년까지 확인됐다.",
+      "prompt": "The ACTIVE trial provided older adults with 10 sessions of training in memory, processing speed, or reasoning, and retention of training effects was demonstrated for up to 5 years.",
       "answer": "O",
-      "explanation": "비접촉 통제집단과 비교한 무작위 임상시험에서 훈련 효과와 그 유지가 보고됐지만 효과의 범위는 매우 구체적이었다.",
+      "explanation": "This randomized clinical trial found training effects relative to a no-contact control group, with retention demonstrated for up to 5 years. The article emphasizes that the effects were highly specific to the abilities trained.",
       "evidence_segment_id": "ACTIVITY-001",
-      "source": "ACTIVE 시험",
-      "difficulty": "기본"
+      "source": "The ACTIVE trial",
+      "difficulty": "Core"
     },
     {
-      "prompt": "ACTIVE의 처리속도 훈련효과는 기억과 추론에도 폭넓게 전이됐다.",
+      "prompt": "The effects of processing-speed training in ACTIVE transferred broadly to memory and reasoning.",
       "answer": "X",
-      "explanation": "처리속도 훈련의 효과는 속도가 요구되는 과제에 한정됐고 기억이나 추론으로 전이되지 않았다.",
+      "explanation": "The effects of processing-speed training were specific to speeded tasks. The article states that they did not transfer to memory or reasoning.",
       "evidence_segment_id": "ACTIVITY-001",
-      "source": "훈련 특이성",
-      "difficulty": "기본"
+      "source": "Specificity of training effects",
+      "difficulty": "Core"
     },
     {
-      "prompt": "ACTIVE에서는 훈련효과가 일상 대응 과제로 전이된다는 사실도 객관적으로 입증됐다.",
+      "prompt": "ACTIVE also objectively demonstrated transfer of training effects to everyday analogues of the trained abilities.",
       "answer": "X",
-      "explanation": "글은 일상 대응 과제로의 입증된 전이가 없다고 밝힌다. 추론 훈련자가 수단적 일상생활 활동을 더 수월하게 느꼈다는 자기보고는 별도 결과다.",
+      "explanation": "The article reports no demonstrated transfer to everyday analogues of the abilities. Its separate observation that reasoning trainees reported greater ease with instrumental activities of daily living is a self-report finding, not proof of that transfer.",
       "evidence_segment_id": "ACTIVITY-001",
-      "source": "일상 전이의 한계",
-      "difficulty": "함정"
+      "source": "Limits on transfer to everyday activities",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "Senior Odyssey의 예비 결과에서는 대기자 통제집단보다 처리속도가 향상되고 마음챙김과 인지욕구가 상대적으로 증가했다.",
+      "prompt": "Preliminary Senior Odyssey findings showed improved processing speed and relative increases in mindfulness and need for cognition compared with wait-list controls.",
       "answer": "O",
-      "explanation": "확산적 사고는 경계선 수준으로 향상했으며, 광범위한 인지기능 개선 여부는 아직 확인되지 않았다고 제한했다.",
+      "explanation": "The preliminary findings also showed a marginal improvement in divergent thinking. The author explicitly notes that whether Senior Odyssey produces broad-based improvement in cognitive function remains to be seen.",
       "evidence_segment_id": "ACTIVITY-002",
-      "source": "Senior Odyssey 예비 결과",
-      "difficulty": "기본"
+      "source": "Preliminary Senior Odyssey findings",
+      "difficulty": "Core"
     },
     {
-      "prompt": "덤블도어 가설은 개인의 선택이 노쇠보다 중요하다는 인과관계가 이 글에서 이미 확정됐다는 결론이다.",
+      "prompt": "The article establishes that individual choices have a greater causal influence on cognitive vitality than senescence does, confirming the Dumbledore hypothesis.",
       "answer": "X",
-      "explanation": "저자는 주의 관여와 활동 참여의 상호작용, 새로움과 심리사회적 메커니즘의 역할을 실증적으로 검토해야 이 가설을 시험할 수 있다고 말한다.",
+      "explanation": "The hypothesis still requires empirical testing. The conclusion identifies interactions between attentional and activity engagement, conditions such as novelty, and psychosocial mechanisms such as self-efficacy and mindfulness as questions for further investigation.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "덤블도어 가설의 지위",
-      "difficulty": "응용"
+      "source": "Empirical status of the Dumbledore hypothesis",
+      "difficulty": "Application"
     }
   ]
 }

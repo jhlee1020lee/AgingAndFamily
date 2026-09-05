@@ -7,14 +7,27 @@
     "node": ">=20.0.0"
   },
   "scripts": {
+    "build": "node scripts/build_site.js",
+    "check": "npm run check:alignment && npm run check:reveals && npm run validate && npm run check:english && npm run check:links && npm run check:comics && npm run check:interactions && npm run check:quiz-player && npm run check:app && npm run check:validation && npm run check:build && npm run check:mobile",
     "build:pilot": "node scripts/build_site.js --slug levy-2009 && node scripts/build_site.js --slug settersten-godlewski-2016",
-    "check:alignment": "node scripts/check-alignment.js --slug levy-2009 --strict --write-report && node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report",
-    "check:reveals": "node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016",
+    "check:alignment": "node scripts/check_alignment.js --strict",
+    "check:alignment:pilot": "node scripts/check-alignment.js --slug levy-2009 --strict --write-report && node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report",
+    "check:reveals": "node scripts/check_rendered_reveals.js",
+    "check:reveals:pilot": "node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016",
+    "check:app": "node scripts/check_app_behaviors.js",
+    "check:validation": "node scripts/check_validation_gates.js",
+    "check:build": "node scripts/check_build_contracts.js",
+    "check:english": "node scripts/check_english_learning.js --self-test && node scripts/check_english_learning.js",
     "check:interactions": "node scripts/check_interactions.js",
+    "check:quiz-player": "node scripts/check_quiz_player.js",
     "check:links": "node scripts/check_site_links.js",
     "check:comics": "node scripts/check_overview_comics.js --require-built",
     "check:mobile": "node scripts/check_mobile_contract.js --width 360 --width 390 --width 430",
+    "validate": "node scripts/validate_content.js --publish-gate",
     "validate:pilot": "node scripts/validate_content.js --slug levy-2009 --publish-gate && node scripts/validate_content.js --slug settersten-godlewski-2016 --publish-gate",
     "serve": "python -m http.server 8765 --directory docs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
   }
 }

@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { normalizeTranslationOriginalRevealConfig, parseMarkdownDocument, resolveTranslationAlignment } = require("./translation_original_reveal");
 const { validateSentencePairs } = require("./sentence_alignment");
+const { checkReading: checkSegmentAlignment } = require("./check_alignment");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 
@@ -163,6 +164,12 @@ function countMatches(value, pattern) {
 
 function normalizedText(value) {
   return toText(value).toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+function containsEnglishAnswer(question, answer) {
+  const escapedAnswer = normalizedText(answer).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const boundary = "[^\\p{L}\\p{N}_]";
+  return new RegExp(`(^|${boundary})${escapedAnswer}(?=$|${boundary})`, "u").test(normalizedText(question));
 }
 
 function findDuplicateNormalizedTexts(values) {
@@ -395,7 +402,7 @@ function withApproval(pageKey, baseResult, manualReview) {
   if (
     baseStatus === PAGE_STATUS.SCHEMA_PASS
     && manualReview.approved_pages.includes(pageKey)
-    && (!storedHash || !sourceHash || storedHash === sourceHash)
+    && Boolean(storedHash && sourceHash && storedHash === sourceHash)
   ) {
     return PAGE_STATUS.APPROVED;
   }
@@ -706,7 +713,21 @@ function validateTranslationMarkdown(rootDir, reading, existingMeta, text, fullT
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
 }
 
-function validateProfessorPrepJson(payload) {
+function validateEnglishText(value, label, errors, options = {}) {
+  const text = toText(value);
+  if (!text) return;
+  if (/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(text) || (!options.allowNumeric && !/[A-Za-z]/.test(text))) {
+    errors.push(`${label} must contain English text for language=en`);
+  }
+}
+
+function validateEvidenceId(value, label, knownIds, errors) {
+  const id = toText(value);
+  if (!id) errors.push(`${label} is missing evidence_segment_id`);
+  else if (!knownIds.has(id)) errors.push(`${label} references unknown evidence_segment_id ${id}`);
+}
+
+function validateProfessorPrepJson(payload, knownIds = new Set()) {
   if (!payload) {
     return missingResult();
   }
@@ -721,6 +742,10 @@ function validateProfessorPrepJson(payload) {
     card_count: cards.length,
     reading_response_card_count: readingResponseCards.length,
   };
+  if (payload.language === "en") {
+    for (const field of ["title", "instructions"]) validateEnglishText(payload[field], `professor-prep ${field}`, errors);
+    for (const field of ["title", "instructions"]) validateEnglishText(readingResponse?.[field], `reading_response ${field}`, errors);
+  }
   if (cards.length < 15) {
     errors.push("professor-prep needs at least 15 cards");
   }
@@ -764,8 +789,9 @@ function validateProfessorPrepJson(payload) {
           errors.push(`${label} ${index + 1} is missing answer_30s`);
         }
       }
-      if (requireEvidence && !toText(card.evidence_segment_id)) {
-        errors.push(`${label} ${index + 1} is missing evidence_segment_id`);
+      if (requireEvidence) validateEvidenceId(card.evidence_segment_id, `${label} ${index + 1}`, knownIds, errors);
+      if (payload.language === "en") {
+        for (const field of ["title", "answer_30s", "source"]) validateEnglishText(card[field], `${label} ${index + 1} ${field}`, errors);
       }
     });
   };
@@ -774,7 +800,7 @@ function validateProfessorPrepJson(payload) {
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
 }
 
-function validateQuizPayload(pageKey, payload) {
+function validateQuizPayload(pageKey, payload, knownIds = new Set()) {
   if (!payload) {
     return missingResult();
   }
@@ -782,6 +808,19 @@ function validateQuizPayload(pageKey, payload) {
   const errors = [];
   const warnings = [];
   const metrics = { item_count: items.length, evidence_segment_count: 0 };
+  if (payload.language === "en") {
+    for (const field of ["title", "instructions"]) validateEnglishText(payload[field], `${pageKey} ${field}`, errors);
+  }
+  items.forEach((item, index) => {
+    validateEvidenceId(item?.evidence_segment_id, `${pageKey} item ${index + 1}`, knownIds, errors);
+    if (payload.language === "en") {
+      for (const field of ["question", "prompt", "explanation", "source", "misconception_targeted"]) validateEnglishText(item?.[field], `${pageKey} item ${index + 1} ${field}`, errors);
+      for (const [field, values] of [["options", item?.options], ["accepted_answers", item?.accepted_answers]]) {
+        (Array.isArray(values) ? values : []).forEach((value, answerIndex) => validateEnglishText(value, `${pageKey} item ${index + 1} ${field}[${answerIndex}]`, errors, { allowNumeric: item?.answer_type === "number" }));
+      }
+      if (pageKey !== "quiz-short") validateEnglishText(item?.answer, `${pageKey} item ${index + 1} answer`, errors, { allowNumeric: true });
+    }
+  });
   if (items.length !== 15) {
     errors.push(`${pageKey} must contain exactly 15 items`);
   }
@@ -825,7 +864,10 @@ function validateQuizPayload(pageKey, payload) {
         if (wordCount(answer) > 7) {
           errors.push(`quiz-short item ${index + 1} answer ${answerIndex + 1} exceeds 7 words`);
         }
-        if (answer.length >= 2 && normalizedText(question).includes(normalizedText(answer))) {
+        const leaksAnswer = payload.language === "en"
+          ? containsEnglishAnswer(question, answer)
+          : normalizedText(question).includes(normalizedText(answer));
+        if (answer.length >= 2 && leaksAnswer) {
           errors.push(`quiz-short item ${index + 1} leaks the accepted answer in the question`);
         }
       });
@@ -1061,15 +1103,50 @@ function validateLandingOverview(rootDir, reading, existingMeta = {}) {
   if (duplicatePoints.length) {
     errors.push(`classroom_points contains duplicate items: ${duplicatePoints.join(" | ")}`);
   }
-  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.APPROVED, errors, comic.warnings, metrics);
+  return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, comic.warnings, metrics);
 }
 
-function sourceHashForPath(filePath) {
-  if (!filePath || !fs.existsSync(filePath)) {
-    return "";
+function approvalDependenciesForPage(rootDir, reading, pageKey, existingMeta = {}) {
+  const contentDir = path.resolve(rootDir, reading.content_dir);
+  const files = new Set([path.join(contentDir, "source_segments.json")]);
+  const sourcePath = pageKey === "index" ? path.join(contentDir, "overview_comic.json") : contentPathForPage(rootDir, reading, pageKey);
+  files.add(sourcePath);
+  const metadata = { version: 2, slug: reading.slug, page: pageKey, language: reading.language };
+  if (pageKey === "translation") {
+    files.add(path.join(contentDir, "translation_segments.json"));
+    files.add(contentPathForPage(rootDir, reading, "full"));
+    const config = normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal || existingMeta.translation_original_reveal);
+    metadata.translation_original_reveal = config;
+    if (config.enabled) files.add(path.join(path.dirname(sourcePath), config.alignment_file));
   }
-  const normalized = readText(filePath).replace(/\r\n?/g, "\n");
-  return crypto.createHash("sha1").update(normalized, "utf8").digest("hex");
+  if (pageKey === "index") {
+    metadata.overview_hook = reading.overview_hook || existingMeta.overview_hook || "";
+    metadata.classroom_points = reading.classroom_points || existingMeta.classroom_points || [];
+    const comic = loadJson(sourcePath);
+    (Array.isArray(comic?.panels) ? comic.panels : []).forEach((panel) => {
+      if (toText(panel?.image)) files.add(path.resolve(contentDir, panel.image));
+    });
+  }
+  // Hash the files actually used by Markdown image inserts as well as their paths.
+  for (const filePath of [...files]) {
+    if (!filePath.endsWith(".md") || !fs.existsSync(filePath)) continue;
+    for (const match of readText(filePath).matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)) {
+      const image = match[1].trim().replace(/^<|>$/g, "");
+      if (!/^(?:[a-z]+:|\/\/)/i.test(image)) files.add(path.resolve(path.dirname(filePath), image));
+    }
+  }
+  return { metadata, files: [...files].sort() };
+}
+
+function sourceHashForPage(rootDir, reading, pageKey, existingMeta = {}) {
+  const { metadata, files } = approvalDependenciesForPage(rootDir, reading, pageKey, existingMeta);
+  const dependencies = files.map((filePath) => {
+    const relative = path.relative(rootDir, filePath).split(path.sep).join("/");
+    if (!fs.existsSync(filePath)) return [relative, "missing"];
+    const bytes = /\.(?:md|json)$/i.test(filePath) ? Buffer.from(readText(filePath).replace(/\r\n?/g, "\n")) : fs.readFileSync(filePath);
+    return [relative, crypto.createHash("sha256").update(bytes).digest("hex")];
+  });
+  return `v2:${crypto.createHash("sha256").update(JSON.stringify({ metadata, dependencies })).digest("hex")}`;
 }
 
 function contentPathForPage(rootDir, reading, pageKey) {
@@ -1118,7 +1195,7 @@ function validatePage(rootDir, reading, pageKey, existingMeta = {}) {
   if (!fs.existsSync(sourcePath)) {
     return missingResult();
   }
-  const sourceHash = sourceHashForPath(sourcePath);
+  const sourceHash = sourceHashForPage(rootDir, reading, pageKey, existingMeta);
   if (ARTICLE_PAGE_KEYS.has(pageKey)) {
     const text = readText(sourcePath);
     let result;
@@ -1141,12 +1218,14 @@ function validatePage(rootDir, reading, pageKey, existingMeta = {}) {
   }
   if (pageKey === "professor-prep") {
     const payload = loadJson(sourcePath);
-    const result = validateProfessorPrepJson(payload);
+    const source = loadJson(path.join(rootDir, reading.content_dir, "source_segments.json"));
+    const result = validateProfessorPrepJson(payload, new Set((source?.segments || []).map((segment) => toText(segment.segment_id))));
     return { ...result, source_hash: sourceHash };
   }
   if (QUIZ_PAGE_KEYS.has(pageKey)) {
     const payload = loadJson(sourcePath);
-    const result = validateQuizPayload(pageKey, payload);
+    const source = loadJson(path.join(rootDir, reading.content_dir, "source_segments.json"));
+    const result = validateQuizPayload(pageKey, payload, new Set((source?.segments || []).map((segment) => toText(segment.segment_id))));
     return { ...result, source_hash: sourceHash };
   }
   return missingResult();
@@ -1164,14 +1243,11 @@ function sanitizeManualReviewApprovals(manualReview, basePageResults) {
     }
     const sourceHash = toText(result.source_hash);
     const storedHash = toText(approvedPageHashes[pageKey]);
-    if (storedHash && sourceHash && storedHash !== sourceHash) {
+    if (!storedHash || !sourceHash || storedHash !== sourceHash) {
       delete approvedPageHashes[pageKey];
       return;
     }
     approvedPages.push(pageKey);
-    if (sourceHash) {
-      approvedPageHashes[pageKey] = sourceHash;
-    }
   });
 
   return {
@@ -1223,6 +1299,8 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
   const translationErrors = [];
   const readingDir = path.join(rootDir, "docs", "readings", reading.slug);
   const requiredPages = ["index.html", ...enabledPageKeys(reading, existingMeta).map((pageKey) => builtPageFilename(pageKey))];
+  const quizKeys = enabledPageKeys(reading, existingMeta).filter((pageKey) => QUIZ_PAGE_KEYS.has(pageKey));
+  if (quizKeys.length) requiredPages.push("quiz.html");
   requiredPages.forEach((file) => {
     if (!fs.existsSync(path.join(readingDir, file))) {
       const message = `missing built page: docs/readings/${reading.slug}/${file}`;
@@ -1273,6 +1351,16 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
       return;
     }
     const html = readText(htmlPath);
+    const contentDir = path.resolve(rootDir, reading.content_dir);
+    const imageDependencies = approvalDependenciesForPage(rootDir, reading, pageKey, existingMeta).files.filter((filePath) => /\.(?:webp|png|jpe?g|gif|svg)$/i.test(filePath));
+    imageDependencies.forEach((sourcePath) => {
+      const relativeImage = path.relative(contentDir, sourcePath);
+      if (relativeImage.startsWith("..") || path.isAbsolute(relativeImage)) return;
+      const builtImage = path.join(rootDir, "docs", "assets", "readings", reading.slug, relativeImage);
+      if (!fs.existsSync(sourcePath) || !fs.existsSync(builtImage) || !fs.readFileSync(sourcePath).equals(fs.readFileSync(builtImage))) {
+        errors.push(`built image differs from approved source (${relativeImage}): docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
+      }
+    });
     if (hasBuiltPlaceholderContent(html)) {
       const message = `approved page still renders placeholder content: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`;
       errors.push(message);
@@ -1280,14 +1368,41 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
         translationErrors.push(message);
       }
     }
+    if (QUIZ_PAGE_KEYS.has(pageKey) || pageKey === "professor-prep") {
+      const payload = loadJson(contentPathForPage(rootDir, reading, pageKey));
+      if (payload?.language === "en") {
+        // Strip markup before decoding entities so displayed inequalities cannot become HTML tags.
+        const text = html.replace(/<[^>]*>/g, " ").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ");
+        const cards = pageKey === "professor-prep" ? [...(payload.cards || []), ...(payload.reading_response?.cards || [])] : payload.items || [];
+        cards.forEach((item, index) => {
+          const values = pageKey === "professor-prep" ? [item.title, item.answer_30s] : [item.question || item.prompt, item.explanation, ...(pageKey === "quiz-short" ? item.accepted_answers || [] : [item.answer])];
+          values.forEach((value) => {
+            const expected = toText(value).replace(/[*`]/g, "").replace(/\s+/g, " ");
+            if (expected && !text.includes(expected)) errors.push(`built English content differs at item ${index + 1}: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
+          });
+        });
+      }
+    }
   });
-  return { errors: [...errors, ...translationErrors], translationErrors, page_count: requiredPages.length };
+  if (quizKeys.length && quizKeys.every((key) => pageResults[key]?.status === PAGE_STATUS.APPROVED)) {
+    const playerPath = path.join(readingDir, "quiz.html");
+    if (fs.existsSync(playerPath) && hasBuiltPlaceholderContent(readText(playerPath))) errors.push(`approved page still renders placeholder content: docs/readings/${reading.slug}/quiz.html`);
+  }
+  const allErrors = [...new Set([...errors, ...translationErrors])];
+  const pageErrors = {};
+  allErrors.forEach((message) => {
+    const match = message.match(/\/([^/]+)\.html(?:\b|$)/);
+    const keys = match?.[1] === "quiz" ? quizKeys : [match?.[1] || "full"];
+    keys.forEach((key) => { (pageErrors[key] ||= []).push(message); });
+  });
+  return { errors: allErrors, pageErrors, translationErrors, page_count: requiredPages.length };
 }
 
 function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = {}) {
   const rawManualReview = normalizeManualReview(existingMeta.manual_review);
-  const landing = validateLandingOverview(rootDir, reading, existingMeta);
+  const landingSource = validateLandingOverview(rootDir, reading, existingMeta);
   const basePageResults = {
+    index: { ...landingSource, source_hash: sourceHashForPage(rootDir, reading, "index", existingMeta) },
     full: validatePage(rootDir, reading, "full", existingMeta),
     translation: validatePage(rootDir, reading, "translation", existingMeta),
     summary: validatePage(rootDir, reading, "summary", existingMeta),
@@ -1299,6 +1414,14 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
     "quiz-short": validatePage(rootDir, reading, "quiz-short", existingMeta),
     "quiz-mcq": validatePage(rootDir, reading, "quiz-mcq", existingMeta),
   };
+  if (reading.language === "en") {
+    const segmentResult = checkSegmentAlignment(reading, { strict: true, rootDir });
+    for (const pageKey of ["full", "translation"]) {
+      if (basePageResults[pageKey].status !== PAGE_STATUS.NOT_APPLICABLE && segmentResult.errors.length) {
+        basePageResults[pageKey] = applyArtifactErrorsToPageResult(basePageResults[pageKey], segmentResult.errors.map((error) => `segment alignment: ${error}`));
+      }
+    }
+  }
   const manualReview = sanitizeManualReviewApprovals(rawManualReview, basePageResults);
   const sourcePageResults = Object.fromEntries(
     Object.entries(basePageResults).map(([pageKey, result]) => [
@@ -1327,13 +1450,12 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
     );
   if (requireBuiltArtifacts) {
     const artifactResult = validateBuildArtifacts(rootDir, reading, existingMeta, pageResults);
-    if (artifactResult.errors.length) {
-      stage1Extra.push(...artifactResult.errors.filter((message) => message.includes("public pdf")));
-    }
-    if (artifactResult.translationErrors.length) {
-      pageResults.translation = applyArtifactErrorsToPageResult(pageResults.translation, artifactResult.translationErrors);
-    }
+    Object.entries(artifactResult.pageErrors).forEach(([pageKey, errors]) => {
+      if (pageResults[pageKey]) pageResults[pageKey] = applyArtifactErrorsToPageResult(pageResults[pageKey], errors);
+      else stage1Extra.push(...errors);
+    });
   }
+  const landing = pageResults.index;
   const enabledKeys = enabledPageKeys(reading, existingMeta);
   const stage1Required = STAGE1_PAGE_KEYS.filter((key) => enabledKeys.includes(key));
   const stage1 = stageStatusFromPages(pageResults, stage1Required, { extraNotes: stage1Extra });
@@ -1347,7 +1469,7 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
     readingStatus = READING_STATUS.BLOCKED;
     readingNotes.push(manualReview.blocked_reason);
   } else if (
-    landing.status !== PAGE_STATUS.APPROVED
+    [PAGE_STATUS.MISSING, PAGE_STATUS.SCHEMA_FAIL].includes(landing.status)
     || stage1.status === READING_STATUS.PARTIAL
     || stage2.status === READING_STATUS.PARTIAL
     || stage3.status === READING_STATUS.PARTIAL
@@ -1358,6 +1480,7 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
     stage1.status === READING_STATUS.APPROVED
     && stage2.status === READING_STATUS.APPROVED
     && stage3.status === READING_STATUS.APPROVED
+    && landing.status === PAGE_STATUS.APPROVED
   ) {
     readingStatus = READING_STATUS.APPROVED;
   } else {
@@ -1395,6 +1518,7 @@ function buildValidationSnapshot(rootDir, reading, existingMeta = {}, options = 
         statusKeyForPage(pageKey),
         {
           status: result.status,
+          source_hash: result.source_hash,
           errors: result.errors,
           warnings: result.warnings,
           metrics: result.metrics,
@@ -1437,6 +1561,9 @@ function loadManifest(rootDir = ROOT_DIR) {
 function validateManifestReadings(rootDir = ROOT_DIR, slugFilter = null, options = {}) {
   const manifest = loadManifest(rootDir);
   const readings = Array.isArray(manifest?.readings) ? manifest.readings : [];
+  if (!readings.length) throw new Error("manifest must contain at least one reading");
+  if (new Set(readings.map((reading) => reading.slug)).size !== readings.length) throw new Error("manifest contains duplicate reading slugs");
+  if (slugFilter && !readings.some((reading) => reading.slug === slugFilter)) throw new Error(`Unknown slug: ${slugFilter}`);
   return readings
     .filter((reading) => !slugFilter || reading.slug === slugFilter)
     .map((reading) => {
@@ -1487,6 +1614,9 @@ module.exports = {
   mergeValidationFields,
   validateBuildArtifacts,
   validateManifestReadings,
+  sourceHashForPage,
+  validateQuizPayload,
+  validateProfessorPrepJson,
 };
 
 if (require.main === module) {

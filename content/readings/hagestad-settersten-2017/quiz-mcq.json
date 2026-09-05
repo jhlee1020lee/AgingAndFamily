@@ -1,142 +1,218 @@
 {
-  "title": "Hagestad & Settersten (2017) 객관식 퀴즈",
-  "instructions": "글의 주장, 사례와 근거 범위에 가장 정확한 답 하나를 고르세요.",
+  "title": "Hagestad & Settersten (2017): Multiple Choice",
+  "instructions": "Choose the single answer most accurately supported by the reading.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "이 글의 중심 주장으로 가장 정확한 것은?",
-      "options": ["노화의 차이는 생물학적 유전자와 개인의 생활습관만으로 설명된다", "노화는 관계·정책·역사가 함께 만드는 대인관계적 과정이다", "노년기에는 관계망이 보편적으로 축소되며 정책·역사는 거의 작용하지 않는다", "성공적 노화는 상근고용과 완전한 독립성을 오래 유지하는 것으로 측정된다"],
-      "answer": "노화는 관계·정책·역사가 함께 만드는 대인관계적 과정이다",
-      "explanation": "두 저자의 생애사는 고립된 개인보다 연결된 삶과 사회적 조건을 노화 분석의 중심에 둔다.",
+      "prompt": "Which statement best captures the essay's central argument?",
+      "options": [
+        "Aging differences arise only from genes and individual lifestyle",
+        "Aging is interpersonal, shaped by relationships, policy, and history",
+        "Later-life networks universally shrink independently of social conditions",
+        "Successful aging requires full-time employment and complete independence"
+      ],
+      "answer": "Aging is interpersonal, shaped by relationships, policy, and history",
+      "explanation": "The autobiographies place interdependent lives and social conditions at the center of understanding aging.",
       "evidence_segment_id": "ABS-001",
-      "source": "중심 논지",
-      "difficulty": "기본"
+      "source": "Central argument",
+      "difficulty": "Core"
     },
     {
-      "prompt": "이 글의 연구 성격을 가장 알맞게 설명한 것은?",
-      "options": ["전국 노인패널로 이주와 건강의 인과효과를 추정한 종단분석", "두 이주민의 임상 사례보고", "가족돌봄정책의 비용효과를 국가별로 비교한 체계적 문헌고찰", "자전적 생애사 두 편을 사회이론과 연결한 성찰적 글"],
-      "answer": "자전적 생애사 두 편을 사회이론과 연결한 성찰적 글",
-      "explanation": "사례와 개념을 통해 질문을 생성하는 이론적 글이며 대표성이나 인과효과를 추정하지 않는다.",
+      "prompt": "What kind of evidence does the essay primarily develop?",
+      "options": [
+        "A national panel estimating the causal effect of migration on health",
+        "A clinical case report diagnosing two migrants",
+        "A cross-national cost-effectiveness review of caregiving policies",
+        "A reflective interpretation of two autobiographies using social theory"
+      ],
+      "answer": "A reflective interpretation of two autobiographies using social theory",
+      "explanation": "The stories make mechanisms and questions visible; they do not estimate population frequencies or average causal effects.",
       "evidence_segment_id": "MIGRANTS-001",
-      "source": "글의 방법",
-      "difficulty": "응용"
+      "source": "Method of the essay",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Simmel과 Schütz가 말한 이방인의 분석적 가능성은?",
-      "options": ["집단 안팎의 위치에서 당연시된 규칙을 질문할 수 있다", "국적만으로 집단 안팎의 위치를 구분할 수 있다", "공유된 의미를 잃을수록 토착 규칙을 더 잘 따른다", "집단에서 멀수록 관계 없이 완전히 객관적이 된다"],
-      "answer": "집단 안팎의 위치에서 당연시된 규칙을 질문할 수 있다",
-      "explanation": "가까움과 멂의 결합은 토착 구성원의 검증된 처방에 왜와 어떻게를 묻게 한다.",
+      "prompt": "What analytical possibility does the stranger's position offer?",
+      "options": [
+        "Questioning familiar rules from both inside and outside",
+        "Defining every social boundary exclusively by nationality",
+        "Following local rules more accurately by losing all shared meanings",
+        "Achieving complete objectivity through total absence of relationships"
+      ],
+      "answer": "Questioning familiar rules from both inside and outside",
+      "explanation": "Combining nearness and distance can reveal questions that established members take for granted.",
       "evidence_segment_id": "PERSPECTIVE-001",
-      "source": "이방인 개념",
-      "difficulty": "기본"
+      "source": "The stranger",
+      "difficulty": "Core"
     },
     {
-      "prompt": "나이가 들며 자기 자신에게도 이방인이 될 수 있는 이유로 글이 강조한 것은?",
-      "options": ["법적 이름과 국적이 바뀌어 과거의 정체성이 공식적으로 사라져서", "노화하면 모든 기억이 같은 시기에 사라져서", "공유된 의미와 생애사를 아는 오랜 관계의 증인이 줄어서", "직업 역할이 은퇴와 함께 자동으로 없어져서"],
-      "answer": "공유된 의미와 생애사를 아는 오랜 관계의 증인이 줄어서",
-      "explanation": "생활세계의 동료와 공동 전기작가를 잃으면 정체성의 연속성을 함께 구성할 사람이 줄어든다.",
+      "prompt": "Why may an aging person become a stranger even to themselves?",
+      "options": [
+        "A legal change of name or nationality erases all prior identity",
+        "All autobiographical memories disappear at the same age",
+        "Longstanding witnesses to shared meanings and life history become fewer",
+        "Retirement automatically removes every past occupational identity"
+      ],
+      "answer": "Longstanding witnesses to shared meanings and life history become fewer",
+      "explanation": "The loss of consociates and co-biographers can weaken the relational basis of continuity in one's biography.",
       "evidence_segment_id": "CHICAGO-001",
-      "source": "공동 전기작가",
-      "difficulty": "응용"
+      "source": "Co-biographers",
+      "difficulty": "Application"
     },
     {
-      "prompt": "GOH의 암 경험이 대인관계적 위기였다는 설명으로 맞는 것은?",
-      "options": ["환자 역할이 다른 정체성을 가리고 관계망의 중심과 주변을 바꾸었다", "가족과 동료가 질병을 몰라 지원망이 전혀 바뀌지 않았다", "치료 후 역할과 관계의 우선순위가 모두 즉시 복원되었다", "질병은 역사적 시간과 관계망에서 분리된 사건이었다"],
-      "answer": "환자 역할이 다른 정체성을 가리고 관계망의 중심과 주변을 바꾸었다",
-      "explanation": "질병은 정상 시간표에서 이탈하게 하고, 가족·친구·교수 역할보다 환자 지위를 앞세우며 지원망을 재편했다.",
+      "prompt": "How did GOH's illness become an interpersonal crisis?",
+      "options": [
+        "The patient role overshadowed other identities and reorganized her support convoy",
+        "Her family and colleagues remained unaware, so every relationship stayed unchanged",
+        "All previous relationships immediately returned to normal after treatment",
+        "The illness unfolded independently of timetables, roles, and social ties"
+      ],
+      "answer": "The patient role overshadowed other identities and reorganized her support convoy",
+      "explanation": "Illness interrupted expected participation and shifted the centrality of people in her network.",
       "evidence_segment_id": "GOH-ILLNESS-001",
-      "source": "GOH 질병",
-      "difficulty": "기본"
+      "source": "GOH's illness",
+      "difficulty": "Core"
     },
     {
-      "prompt": "RAS와 Dan의 초기 입양 경험이 보여 준 제도적 배제는?",
-      "options": ["두 사람 모두 대학과 연방법에서 출산 부모와 같은 유급휴가·권리를 자동 보장받았다", "연방법이 두 사람을 배우자로 인정해 입양 심의에도 같은 법적 지위를 부여했다", "RAS만 입양부모가 되고 Dan은 심의에 함께 참여하지 못했다", "인종 간 입양이 법률상 의무여서 선택권이 없었다"],
-      "answer": "RAS만 입양부모가 되고 Dan은 심의에 함께 참여하지 못했다",
-      "explanation": "법과 행정은 가족역할을 뒷받침하기보다 주변성을 강화했고 대학의 육아휴직도 출산한 어머니에게만 제공됐다.",
+      "prompt": "What exclusion occurred during RAS and Dan's first adoption?",
+      "options": [
+        "Both men automatically received identical legal recognition and parental leave",
+        "Federal law already recognized their relationship as a marriage",
+        "RAS was recognized as the adoptive parent while Dan was excluded from the hearing",
+        "Interracial adoption was mandatory, leaving them no choice of family form"
+      ],
+      "answer": "RAS was recognized as the adoptive parent while Dan was excluded from the hearing",
+      "explanation": "Dan was treated as a household member. The essay also describes parental leave limited to mothers who had physically given birth.",
       "evidence_segment_id": "RAS-FAMILY-001",
-      "source": "입양과 가족정책",
-      "difficulty": "기본"
+      "source": "Adoption and family policy",
+      "difficulty": "Core"
     },
     {
-      "prompt": "동성결혼의 법적 인정이 노화와 연결되는 가장 직접적인 이유는?",
-      "options": ["법적 혼인이 모든 부부의 건강과 기대수명을 동일하게 만들기 때문에", "생존배우자·상속·의료·생애말기 돌봄 권리를 조직하기 때문에", "혼인이 부모의 질병 발생을 예방하기 때문에", "관계망의 물리적 거리를 없애기 때문에"],
-      "answer": "생존배우자·상속·의료·생애말기 돌봄 권리를 조직하기 때문에",
-      "explanation": "가족을 인정하는 법은 배우자급여와 의료 의사결정 등 노년기의 상호의존적 권리와 의무에 직접 영향을 준다.",
+      "prompt": "Why does marriage recognition matter directly for aging in RAS's account?",
+      "options": [
+        "It equalizes health and life expectancy across all married couples",
+        "It organizes rights and decisions that matter in later life",
+        "It prevents the onset of illness in parents",
+        "It removes geographical distance from family networks"
+      ],
+      "answer": "It organizes rights and decisions that matter in later life",
+      "explanation": "Legal recognition shapes interdependent rights and decisions that become particularly consequential in later life.",
       "evidence_segment_id": "RAS-LAW-001",
-      "source": "법과 생애과정",
-      "difficulty": "응용"
+      "source": "Law and the life course",
+      "difficulty": "Application"
     },
     {
-      "prompt": "역사적 시간이 개인에게 작용하는 범위를 가장 정확히 설명한 것은?",
-      "options": ["개인에게 작용하는 역사적 시간은 현재 연도에 시행 중인 정책으로 한정된다", "출생연도가 같으면 계층·가족사와 무관하게 모든 생애경험이 동일하다", "본인이 직접 겪은 전쟁과 경제위기만 이후의 습관과 가치에 영향을 준다", "자기 코호트와 가족세대의 경험이 관계를 통해 이어진다"],
-      "answer": "자기 코호트와 가족세대의 경험이 관계를 통해 이어진다",
-      "explanation": "저자들은 부모·조부모의 결핍과 상실이 습관, 가치와 관계를 통해 다음 세대에 전달된다고 본다.",
+      "prompt": "How does historical time reach into individual lives?",
+      "options": [
+        "Only through policies currently in force in a given calendar year",
+        "By giving all people born in one year identical experiences",
+        "Only through crises the individual personally witnessed",
+        "Through one's own cohort and the experiences of close family generations"
+      ],
+      "answer": "Through one's own cohort and the experiences of close family generations",
+      "explanation": "The authors describe historical experiences transmitted through shared meanings, habits, and interdependent relationships.",
       "evidence_segment_id": "THEMES-HISTORY-001",
-      "source": "세대 간 역사",
-      "difficulty": "응용"
+      "source": "History across generations",
+      "difficulty": "Application"
     },
     {
-      "prompt": "글에서 인구학적 전환이 유한성의 의미에 미친 변화는?",
-      "options": ["죽음을 아동기에만 집중시켰다", "더 길고 예측 가능한 삶 속에서 죽음을 주로 노년과 연결했다", "연령과 죽음의 관계를 완전히 없앴다", "모든 코호트가 죽음을 동일하게 이해하게 했다"],
-      "answer": "더 길고 예측 가능한 삶 속에서 죽음을 주로 노년과 연결했다",
-      "explanation": "과거에는 죽음이 나이를 가리지 않았지만 고령사회에서는 유한성이 노년과 더 강하게 연결되었다.",
+      "prompt": "How did the demographic transition alter the meaning of finitude in the essay?",
+      "options": [
+        "It confined death to childhood",
+        "It increasingly linked death to the end of a long life",
+        "It eliminated every relationship between age and death",
+        "It made all cohorts understand death identically"
+      ],
+      "answer": "It increasingly linked death to the end of a long life",
+      "explanation": "The essay contrasts an earlier sense of death as possible at any age with its later association with old age.",
       "evidence_segment_id": "THEMES-HISTORY-001",
-      "source": "인구학적 전환",
-      "difficulty": "기본"
+      "source": "Demographic transition",
+      "difficulty": "Core"
     },
     {
-      "prompt": "역학적 전환과 젠더에 관한 글의 설명으로 맞는 것은?",
-      "options": ["감염병에서 만성질환으로의 전환이 성별과 관계없이 모든 질병경험을 동일하게 만들었다", "남녀의 질병 경험은 역사와 무관하다", "여성은 생물학적으로만 더 관계적이라고 확정한다", "남성의 급성 사망위험과 여성의 긴 만성질환 경험 및 관계망 차이를 함께 논한다"],
-      "answer": "남성의 급성 사망위험과 여성의 긴 만성질환 경험 및 관계망 차이를 함께 논한다",
-      "explanation": "사망·유병 양상은 돌봄역할, 몸의 문화적 의미와 관계투자 같은 젠더화된 생애과정 속에서 해석된다.",
+      "prompt": "Which account of the epidemiological transition and gender matches the essay?",
+      "options": [
+        "Changing causes of death made all illness experiences identical across genders",
+        "Gendered illness experiences operate outside historical circumstances",
+        "Women's relationships are explained entirely by timeless biology",
+        "They connect gendered illness patterns with relational worlds"
+      ],
+      "answer": "They connect gendered illness patterns with relational worlds",
+      "explanation": "The discussion links mortality and morbidity patterns to demographic change, bodies, caregiving, and opportunities for long relationships.",
       "evidence_segment_id": "THEMES-VANGUARDS-001",
-      "source": "역학적 전환과 젠더",
-      "difficulty": "응용"
+      "source": "Epidemiological transition and gender",
+      "difficulty": "Application"
     },
     {
-      "prompt": "상호의존성의 양면을 가장 정확히 설명한 것은?",
-      "options": ["지지와 연속성을 주지만 타인의 건강·기능 때문에 위험과 조건성도 만든다", "가족 수가 많아지면 지원이 자동으로 늘어 타인의 건강이나 제도와 무관해진다", "독립성보다 낮은 단계의 상태다", "현재의 도움 교환만 뜻하며 생애에 걸친 장기 호혜성과 미래 기대는 포함하지 않는다"],
-      "answer": "지지와 연속성을 주지만 타인의 건강·기능 때문에 위험과 조건성도 만든다",
-      "explanation": "연결된 삶은 보호자원이면서 계획을 타인의 상태와 제도적 권리에 의존하게 만드는 조건이기도 하다.",
+      "prompt": "Which statement captures both sides of interdependence?",
+      "options": [
+        "It provides support and continuity while exposing plans to others' health and functioning",
+        "Having more relatives automatically removes uncertainty and policy dependence",
+        "It is merely an inferior developmental stage before independence",
+        "It includes only present exchanges and excludes long-term reciprocity"
+      ],
+      "answer": "It provides support and continuity while exposing plans to others' health and functioning",
+      "explanation": "Relationships can be protective resources and sources of contingency; reciprocal obligations may also span decades.",
       "evidence_segment_id": "THEMES-INTERDEPENDENCE-001",
-      "source": "상호의존성",
-      "difficulty": "기본"
+      "source": "Interdependence",
+      "difficulty": "Core"
     },
     {
-      "prompt": "저자들이 활동적 노화 담론에서 경계하는 것은?",
-      "options": ["노년기 운동과 사회참여가 건강에 미칠 수 있는 모든 긍정적 효과 자체", "신체활동 접근성을 높이기 위한 지역사회와 제도의 지원 확대", "활동/수동 이분법이 한계와 의존을 실패로 만들 수 있음", "노인이 원하는 방식으로 사회참여 기회를 선택하고 조정할 가능성"],
-      "answer": "활동/수동 이분법이 한계와 의존을 실패로 만들 수 있음",
-      "explanation": "활동성을 유일한 기준으로 삼으면 환자나 장애인의 남은 능력과 기여가 보이지 않을 수 있다.",
+      "prompt": "What do the authors criticize in active-aging discourse?",
+      "options": [
+        "Every possible benefit of exercise or social participation",
+        "Institutional support for accessible community activities",
+        "An active/passive division that can turn limitations and dependence into failure",
+        "Older people choosing and adapting activities to their own circumstances"
+      ],
+      "answer": "An active/passive division that can turn limitations and dependence into failure",
+      "explanation": "Such dichotomies can obscure capacities and contributions retained by people labeled ill, disabled, or dependent.",
       "evidence_segment_id": "GOH-ILLNESS-001",
-      "source": "활동적 노화 비판",
-      "difficulty": "함정"
+      "source": "Critique of active aging",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "WHO의 장애 관점과 가장 가까운 설명은?",
-      "options": ["진단명이 곧 참여수준을 결정한다", "노인은 모두 같은 환경조정을 필요로 한다", "기능은 개인 능력과 환경 요구·지원의 관계에서 달라진다", "장애와 비장애는 완전히 분리된 두 집단이다"],
-      "answer": "기능은 개인 능력과 환경 요구·지원의 관계에서 달라진다",
-      "explanation": "관계적 접근은 개인의 손상만 보지 않고 환경이 능력의 사용과 사회참여를 가능하게 하거나 막는지를 본다.",
+      "prompt": "Which account best reflects the disability perspective discussed in the essay?",
+      "options": [
+        "A diagnosis alone determines participation",
+        "Every older person needs the same environmental adaptation",
+        "Functioning reflects capacity in relation to environment",
+        "Disabled and non-disabled people form two entirely separate categories"
+      ],
+      "answer": "Functioning reflects capacity in relation to environment",
+      "explanation": "The relational view asks how environments allow or prevent the use of capacities, rather than locating everything within an individual impairment.",
       "evidence_segment_id": "THEMES-PRECARIOUSNESS-001",
-      "source": "관계적 장애",
-      "difficulty": "기본"
+      "source": "Relational disability",
+      "difficulty": "Core"
     },
     {
-      "prompt": "선구자 경험에 대한 저자들의 해석으로 가장 정확한 것은?",
-      "options": ["경계 넘기에서 익힌 대처전략이 노화에 도움 될 가능성을 묻되 확정하지 않는다", "경계를 넘은 선구자는 회복탄력성을 이미 획득했으므로 노년기에 제도적 지원이 전혀 필요하지 않다", "낙인 경험은 언제나 관계망을 강화한다", "새로운 생애경로는 여성에게만 나타난다"],
-      "answer": "경계 넘기에서 익힌 대처전략이 노화에 도움 될 가능성을 묻되 확정하지 않는다",
-      "explanation": "지원망 구축의 어려움과 회복탄력성 가능성을 함께 제시하므로 자동적인 긍정효과로 읽으면 안 된다.",
+      "prompt": "How do the authors interpret their vanguard experiences?",
+      "options": [
+        "They ask whether strategies developed through boundary crossing may help with aging",
+        "They prove that vanguards require no institutional support in later life",
+        "They conclude that stigma invariably strengthens every support network",
+        "They restrict new life-course pathways to women alone"
+      ],
+      "answer": "They ask whether strategies developed through boundary crossing may help with aging",
+      "explanation": "The discussion combines difficulties in maintaining convoys with questions about resilience. It does not establish a universal advantage.",
       "evidence_segment_id": "THEMES-VANGUARDS-001",
-      "source": "선구자",
-      "difficulty": "응용"
+      "source": "Vanguards",
+      "difficulty": "Application"
     },
     {
-      "prompt": "예견적 노년학이 요구하는 작업은?",
-      "options": ["미래 기대수명과 건강수준을 하나의 숫자로 확정해 모든 코호트에 똑같이 적용하는 것", "현재 변화가 미래 코호트의 관계망과 노화 선택지를 어떻게 바꿀지 전망하는 것", "과거 가족사만 상세히 기록하는 것", "현재 노인의 사적 경험을 배제하고 거시적 인구통계만으로 미래 노화의 경로를 예측하는 것"],
-      "answer": "현재 변화가 미래 코호트의 관계망과 노화 선택지를 어떻게 바꿀지 전망하는 것",
-      "explanation": "인구학·정책·문화 변화를 통해 미래 노화의 새로운 도전과 가능성을 지도화하는 연구 과제다.",
+      "prompt": "What does anticipatory gerontology involve?",
+      "options": [
+        "Assigning one certain future lifespan and health level to every cohort",
+        "Projecting how current changes may shape future cohorts' relationships and aging options",
+        "Restricting analysis to detailed records of past family history",
+        "Excluding lived experience and relying only on aggregate demographic prediction"
+      ],
+      "answer": "Projecting how current changes may shape future cohorts' relationships and aging options",
+      "explanation": "The agenda maps possible consequences of demographic, policy, and cultural change for future interpersonal worlds.",
       "evidence_segment_id": "FINAL-001",
-      "source": "미래 지향적 결론",
-      "difficulty": "기본"
+      "source": "Future directions",
+      "difficulty": "Core"
     }
-  ]
+  ],
+  "language": "en"
 }

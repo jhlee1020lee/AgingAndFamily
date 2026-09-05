@@ -1,127 +1,194 @@
 {
-  "title": "Hagestad & Settersten (2017) 단답형 퀴즈",
-  "instructions": "핵심 개념과 사례를 짧고 정확하게 답하세요.",
+  "title": "Hagestad & Settersten (2017): Short Answers",
+  "instructions": "Answer with a precise English term or brief phrase. Use the requested units for numerical answers.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "노인을 우리와 분리된 그들로 만드는 사회적 과정은?",
-      "accepted_answers": ["타자화", "othering"],
+      "question": "What process places older people in a separate category of them rather than including them in us?",
+      "accepted_answers": [
+        "othering"
+      ],
       "answer_type": "term",
-      "explanation": "공적·사적 담론의 분리는 노인을 타자화하고 연령주의와 낙인을 재생산할 수 있다.",
+      "explanation": "The separation of public and private aging discourses can reproduce this distancing process, along with ageism and stigma.",
       "evidence_segment_id": "PERSPECTIVE-001",
-      "source": "이중 담론"
+      "source": "Public and private discourses"
     },
     {
-      "question": "가까움과 멂을 함께 경험하며 당연한 규칙을 질문하는 위치는?",
-      "accepted_answers": ["이방인", "the stranger"],
+      "question": "Which theoretical figure combines nearness and distance and can question taken-for-granted group rules?",
+      "accepted_answers": [
+        "stranger",
+        "the stranger"
+      ],
       "answer_type": "term",
-      "explanation": "Simmel과 Schütz는 경계 안팎의 위치가 기존 처방을 비판적으로 보게 한다고 설명한다.",
+      "explanation": "Simmel and Schütz connect this position to the ability to question familiar social recipes.",
       "evidence_segment_id": "PERSPECTIVE-001",
-      "source": "이방인 이론"
+      "source": "The stranger"
     },
     {
-      "question": "타인의 반응에 비친 모습으로 자아를 구성한다는 Cooley의 개념은?",
-      "accepted_answers": ["거울자아", "looking-glass self"],
+      "question": "What Cooley concept describes the self through reflections encountered in other people's responses?",
+      "accepted_answers": [
+        "looking-glass self",
+        "looking glass self",
+        "the looking-glass self",
+        "the looking glass self"
+      ],
       "answer_type": "term",
-      "explanation": "사회적 거울은 노화된 몸과 역할이 자아감에 통합되는 대인관계적 과정을 설명한다.",
+      "explanation": "Social mirrors help explain the interpersonal construction of identity, including the meanings of an aging body.",
       "evidence_segment_id": "CHICAGO-001",
-      "source": "상징적 상호작용론"
+      "source": "Symbolic interaction"
     },
     {
-      "question": "한 사람의 오랜 생애사를 함께 기억하고 구성하는 관계의 타인은?",
-      "accepted_answers": ["공동 전기작가", "co-biographer", "co-biographers"],
+      "question": "What term names longstanding others who share memories and help compose a person's life history?",
+      "accepted_answers": [
+        "co-biographer",
+        "co-biographers",
+        "co biographer",
+        "co biographers",
+        "cobiographer",
+        "cobiographers"
+      ],
       "answer_type": "term",
-      "explanation": "오랜 관계를 잃으면 자신의 생애 연속성을 확인해 줄 증인도 줄어들 수 있다.",
+      "explanation": "Losing these people can mean losing witnesses who help establish continuity across a life.",
       "evidence_segment_id": "CHICAGO-001",
-      "source": "공유된 생애사"
+      "source": "Shared biography"
     },
     {
-      "question": "사회적 경계를 여러 차례 넘어 기존 생애각본 밖을 살아온 사람을 글에서 부른 말은?",
-      "accepted_answers": ["생애과정 이주자", "life course migrant", "life course migrants"],
+      "question": "What term do the authors use for people whose pathways cross social boundaries and familiar life scripts?",
+      "accepted_answers": [
+        "life course migrant",
+        "life course migrants",
+        "life-course migrant",
+        "life-course migrants"
+      ],
       "answer_type": "term",
-      "explanation": "두 저자는 국경뿐 아니라 계층, 젠더, 건강과 가족형태의 경계를 넘은 경험을 공유한다.",
+      "explanation": "Their autobiographies describe crossings of national, class, gender, family, and other social boundaries.",
       "evidence_segment_id": "MIGRANTS-001",
-      "source": "저자의 위치"
+      "source": "The authors' positions"
     },
     {
-      "question": "GOH가 4기 유방암 진단을 받은 생일 직후의 나이는?",
-      "accepted_answers": ["50세", "50번째 생일"],
+      "question": "Shortly after which birthday was GOH diagnosed with stage IV breast cancer?",
+      "accepted_answers": [
+        "50",
+        "50th",
+        "50th birthday",
+        "fiftieth",
+        "fiftieth birthday"
+      ],
       "answer_type": "number",
-      "explanation": "50번째 생일 직후 진단과 집중치료는 때 이른 불안정성과 관계망 재편을 경험하게 했다.",
+      "explanation": "The diagnosis shortly after this birthday brought treatment and a premature encounter with precariousness.",
       "evidence_segment_id": "GOH-COHORT-001",
-      "source": "GOH 질병"
+      "source": "GOH's illness"
     },
     {
-      "question": "질병 뒤 GOH의 중심·주변 관계가 바뀐 현상을 가리키는 말은?",
-      "accepted_answers": ["관계망 재편", "재편된 관계망", "reorganized convoy"],
+      "question": "What phrase describes the shift of central and peripheral people in GOH's support network after illness?",
+      "accepted_answers": [
+        "reorganized convoy",
+        "reorganized convoys",
+        "reorganised convoy",
+        "reorganised convoys",
+        "convoy reorganization",
+        "convoy reorganisation"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "기존 중심 인물이 사라지고 여동생처럼 주변에 있던 인물이 핵심 지지원으로 이동했다.",
+      "explanation": "Some central people disappeared, while previously peripheral people, including her sister, became crucial sources of support.",
       "evidence_segment_id": "GOH-ILLNESS-001",
-      "source": "지원 관계망"
+      "source": "Support convoys"
     },
     {
-      "question": "RAS 가족의 결혼권을 전국적으로 보장한 2015년 미국 판례는?",
-      "accepted_answers": ["Obergefell v. Hodges", "오버거펠 대 호지스"],
+      "question": "Which 2015 US Supreme Court decision figures in RAS's account of marriage recognition?",
+      "accepted_answers": [
+        "Obergefell v. Hodges",
+        "Obergefell v Hodges",
+        "Obergefell versus Hodges",
+        "Obergefell"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "판결은 모든 주의 동성커플에게 결혼권과 결혼 인정권을 보장하도록 했다.",
+      "explanation": "The essay links this historical decision to marriage recognition and spousal protections, while describing uncertainty surrounding its implementation at the time.",
       "evidence_segment_id": "RAS-LAW-001",
-      "source": "법적 인정"
+      "source": "Legal recognition"
     },
     {
-      "question": "개인의 생애가 가족과 중요한 타인의 생애에 얽혀 있다는 원리는?",
-      "accepted_answers": ["연결된 삶", "linked lives", "상호의존성"],
+      "question": "What life-course principle describes lives woven together through family and other significant relationships?",
+      "accepted_answers": [
+        "linked lives",
+        "interdependence",
+        "interdependence of lives"
+      ],
       "answer_type": "term",
-      "explanation": "한 사람의 건강·선택·권리가 관계를 통해 다른 사람의 삶과 노화에도 작용한다.",
+      "explanation": "One person's health, circumstances, and rights can affect another person's aging through relationships.",
       "evidence_segment_id": "THEMES-INTERDEPENDENCE-001",
-      "source": "생애과정 원리"
+      "source": "Life-course perspective"
     },
     {
-      "question": "죽음이 전 생애 위험에서 주로 노년과 연결되게 한 역사적 변화는?",
-      "accepted_answers": ["인구학적 전환", "demographic transition"],
+      "question": "Which historical transition made lives longer and more predictable, associating finitude increasingly with old age?",
+      "accepted_answers": [
+        "demographic transition",
+        "the demographic transition"
+      ],
       "answer_type": "term",
-      "explanation": "더 길고 예측 가능한 삶은 죽음과 유한성의 사회적 의미를 바꾸었다.",
+      "explanation": "The authors contrast earlier experiences of death across ages with its stronger association with later life in aging societies.",
       "evidence_segment_id": "THEMES-HISTORY-001",
-      "source": "역사적 변화"
+      "source": "Historical change"
     },
     {
-      "question": "감염병 중심 사망에서 생활습관 관련 질환으로 이동한 변화는?",
-      "accepted_answers": ["역학적 전환", "epidemiological transition"],
+      "question": "Which transition describes the shift in causes of death from infectious disease toward lifestyle-related illnesses?",
+      "accepted_answers": [
+        "epidemiological transition",
+        "the epidemiological transition"
+      ],
       "answer_type": "term",
-      "explanation": "이 전환은 젠더화된 사망과 만성질환 경험을 논의하는 배경이 된다.",
+      "explanation": "The essay discusses this shift alongside gendered patterns of mortality, morbidity, and relationships.",
       "evidence_segment_id": "THEMES-VANGUARDS-001",
-      "source": "질병 양상의 변화"
+      "source": "Changing disease patterns"
     },
     {
-      "question": "사회적 각본이 없는 새로운 생애 선택지를 먼저 살아내는 사람은?",
-      "accepted_answers": ["선구자", "vanguard"],
+      "question": "What term describes people who are among the first to pursue new life-course options without established scripts?",
+      "accepted_answers": [
+        "vanguard",
+        "vanguards",
+        "a vanguard",
+        "social vanguard"
+      ],
       "answer_type": "term",
-      "explanation": "GOH의 여성 교육·직업경로와 RAS의 게이 입양가족은 최초 또는 유일한 사람의 경험을 보여 준다.",
+      "explanation": "GOH's educational and occupational pathway and RAS's family formation illustrate being the first or the only.",
       "evidence_segment_id": "THEMES-VANGUARDS-001",
-      "source": "사회변화"
+      "source": "Social change"
     },
     {
-      "question": "몸·관계·권리와 미래 계획이 여러 조건에 달린 노년의 상태는?",
-      "accepted_answers": ["불안정성", "precariousness"],
+      "question": "What concept captures the uncertainty of later life when plans depend on bodies, relationships, and continuing support?",
+      "accepted_answers": [
+        "precariousness",
+        "precarity"
+      ],
       "answer_type": "term",
-      "explanation": "질병과 장애, 타인의 기능과 제도적 인정은 노년 계획에 예측불가능성을 더한다.",
+      "explanation": "Illness and disability, as well as other people's functioning, can make future plans increasingly conditional.",
       "evidence_segment_id": "THEMES-PRECARIOUSNESS-001",
-      "source": "노년의 조건성"
+      "source": "Conditions of later life"
     },
     {
-      "question": "기능을 개인 능력과 환경 요구 사이 관계로 보는 접근은?",
-      "accepted_answers": ["관계적 장애", "relational disability"],
+      "question": "What perspective understands disability through individual capacity in relation to environmental demands?",
+      "accepted_answers": [
+        "relational disability",
+        "relational view of disability",
+        "relational perspective on disability",
+        "relational approach to disability",
+        "relational model of disability"
+      ],
       "answer_type": "term",
-      "explanation": "WHO가 제시한 관계적 관점은 장애·비장애의 이분법과 남은 능력의 배제를 경계한다.",
+      "explanation": "The WHO perspective discussed by the authors challenges a simple disabled/non-disabled division and recognizes remaining capacities.",
       "evidence_segment_id": "THEMES-PRECARIOUSNESS-001",
-      "source": "WHO 관점"
+      "source": "WHO perspective"
     },
     {
-      "question": "미래 코호트의 관계세계와 노화 선택지를 전망하는 연구 과제는?",
-      "accepted_answers": ["예견적 노년학", "anticipatory gerontology"],
+      "question": "What research agenda maps how change may shape the relational worlds and options of future aging cohorts?",
+      "accepted_answers": [
+        "anticipatory gerontology"
+      ],
       "answer_type": "term",
-      "explanation": "현재의 인구학·정책·문화 변화를 바탕으로 미래 노화의 도전과 가능성을 지도화한다.",
+      "explanation": "It considers how demographic, policy, and cultural developments may create future challenges and possibilities.",
       "evidence_segment_id": "FINAL-001",
-      "source": "미래 연구"
+      "source": "Future research"
     }
-  ]
+  ],
+  "language": "en"
 }

@@ -1,217 +1,218 @@
 {
-  "title": "Lee & Yeung (2021) 객관식 퀴즈",
-  "instructions": "가장 정확한 답 하나를 고르세요. 네 선택지는 지정된 근거 세그먼트만으로 판별할 수 있습니다.",
+  "title": "Lee & Yeung (2021): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Distinguish labor-force exit from re-entry, women from men, odds from probabilities, and hypotheses from findings. The 2006–2016 observational data and cited policy statistics describe their historical context.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "가설 1a의 예상을 정확히 표현한 것은?",
+      "prompt": "What did Hypothesis 1a predict?",
       "options": [
-        "건강·자산·공적연금을 추가하면 직업력과 노동시장 잔류의 관계가 약해질 것이다",
-        "성인기 대부분을 육체노동이나 자영업에 보낸 노년층은 노동시장에 남을 가능성이 더 클 것이다",
-        "혼인 해체를 경험한 사람은 노동시장에 남을 가능성이 크고 여성에게서 더 뚜렷할 것이다",
-        "자녀동거와 상향 재정이전을 받으면 노동시장에 남을 가능성이 낮아질 것이다"
+        "Adding health, wealth, and public pension measures would weaken associations between work history and continued work.",
+        "People with extensive manual-work or self-employment histories would be more likely to remain in the labor force.",
+        "Marital dissolution would be associated with continued work, with the relationship appearing only among women.",
+        "Coresidence with children and upward financial transfers would be associated with reduced labor-force attachment."
       ],
-      "answer": "성인기 대부분을 육체노동이나 자영업에 보낸 노년층은 노동시장에 남을 가능성이 더 클 것이다",
-      "explanation": "H1a는 육체노동과 자영업 경력을 노동시장 잔류 가능성에 연결한 사전 예상이다.",
+      "answer": "People with extensive manual-work or self-employment histories would be more likely to remain in the labor force.",
+      "explanation": "H1a concerns manual occupations and self-employment histories as predictors of remaining economically active. The alternatives describe other hypotheses about adjustment and family circumstances. These are expectations to be tested, not statements that all manual workers or all self-employed people necessarily continue working.",
       "evidence_segment_id": "CONTEXT-002",
-      "source": "Lee & Yeung (2021)",
+      "source": "Hypotheses: work history",
       "difficulty": "easy"
     },
     {
-      "prompt": "이 연구에서 위험기간을 가장 정확히 정의한 것은?",
+      "prompt": "How does the measures section define the initial period at risk?",
       "options": [
-        "각 개인의 관찰 시작부터 최초 노동시장 상태 전환이 나타날 때까지의 기간",
-        "회고 직업력의 첫 유급일자리부터 기초조사 직전까지의 전체 기간",
-        "최초 노동시장 이탈 뒤 재진입부터 다음 이탈까지의 기간만",
-        "기초조사부터 법정 연금수급연령에 도달한 조사차수까지의 기간"
+        "The time from the start of observation until the first change in labor-force status.",
+        "The entire time from the first paid job in the retrospective history until the baseline survey.",
+        "Only the period from a return to work after retirement until the next departure from work.",
+        "The time from baseline until the survey wave when statutory pension eligibility is first reached."
       ],
-      "answer": "각 개인의 관찰 시작부터 최초 노동시장 상태 전환이 나타날 때까지의 기간",
-      "explanation": "측정 세그먼트는 위험기간을 관찰 시작에서 첫 상태변화까지로 정의하며, 한 개인이 이후 복수 구간을 경험할 수 있다고 설명한다.",
+      "answer": "The time from the start of observation until the first change in labor-force status.",
+      "explanation": "The source defines the initial risk period from observation start to the first status transition. Individuals may subsequently experience additional spells. The models therefore allow repeated exit and re-entry rather than ending the analysis of a person's career after the first retirement event.",
       "evidence_segment_id": "MEASURES-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Measures: periods at risk",
       "difficulty": "medium"
     },
     {
-      "prompt": "분석대상의 연령 제한을 조사연도와 정확히 연결한 것은?",
+      "prompt": "Which age restriction corresponds to the observation years?",
       "options": [
-        "2006년 45–59세의 초기 중년층만 뽑았고 2016년에는 55–69세가 되었다",
-        "2006년 50–64세였고 2016년에는 60–74세가 되었다",
-        "2006년 55–69세의 후기 중년층만 뽑았고 2016년에는 65–79세가 되었다",
-        "2006년 60–74세였고 2016년에는 70–84세가 되었다"
+        "Ages 45–59 in 2006, becoming ages 55–69 in 2016.",
+        "Ages 50–64 in 2006, becoming ages 60–74 in 2016.",
+        "Ages 55–69 in 2006, becoming ages 65–79 in 2016.",
+        "Ages 60–74 in 2006, becoming ages 70–84 in 2016."
       ],
-      "answer": "2006년 50–64세였고 2016년에는 60–74세가 되었다",
-      "explanation": "저자들은 노동참여가 50세부터 감소하고 최근 차수의 평균 유효 이탈연령이 약 73세라는 근거로 이 범위를 설정했다.",
+      "answer": "Ages 50–64 in 2006, becoming ages 60–74 in 2016.",
+      "explanation": "Although KLoSA covers adults aged 45 and older, this analysis restricted baseline age to 50–64 and followed the sample from 2006 to 2016. The authors used the decline in work participation around age 50 and the contemporary effective retirement-age context to motivate that range. It is not a sample of all Korean older adults.",
       "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Data: age and observation window",
       "difficulty": "medium"
     },
     {
-      "prompt": "모형 1에서 모형 3까지 변수 추가 순서를 정확히 묶은 것은?",
+      "prompt": "In what order did the models add the main predictor domains?",
       "options": [
-        "모형 1 건강·재정 관련요인, 모형 2 가족 상황, 모형 3 직업 경험",
-        "모형 1 가족 상황, 모형 2 직업 경험, 모형 3 건강·재정 관련요인",
-        "모형 1 직업 경험, 모형 2 가족 상황, 모형 3 건강·재정 관련요인",
-        "모형 1 직업 경험, 모형 2 건강·재정 관련요인, 모형 3 가족 상황"
+        "Model 1: health and finances; Model 2: family circumstances; Model 3: work history.",
+        "Model 1: family circumstances; Model 2: work history; Model 3: health and finances.",
+        "Model 1: work history; Model 2: family circumstances; Model 3: health and finances.",
+        "Model 1: work history; Model 2: health and finances; Model 3: family circumstances."
       ],
-      "answer": "모형 1 직업 경험, 모형 2 건강·재정 관련요인, 모형 3 가족 상황",
-      "explanation": "세 단계는 직업력의 기저 관계, 근접 관련요인의 설명, 가족 상황의 추가 관련성을 차례로 살핀다.",
+      "answer": "Model 1: work history; Model 2: health and finances; Model 3: family circumstances.",
+      "explanation": "The sequence first examines prior work experiences, then adds proximate correlates such as health, wealth, and pension eligibility, and finally family circumstances. Changes across models can clarify statistical associations but do not by themselves demonstrate the causal mechanisms linking a career to later transitions.",
       "evidence_segment_id": "ANALYSIS-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Analysis: model sequence",
       "difficulty": "easy"
     },
     {
-      "prompt": "저자들이 은퇴를 한 번의 이탈이 아니라 과정으로 보아야 한다고 주장한 이유는?",
+      "prompt": "Why do the authors treat retirement as a process rather than a single permanent exit?",
       "options": [
-        "법정 연금수급연령 이전의 이탈만 은퇴로 정의해야 장기추적의 혼선을 피할 수 있기 때문에",
-        "건강과 자산은 최초 은퇴에는 관련되지만 이후 노동상태에는 관련되지 않아 추가 추적은 필요하지 않다고 보았기 때문에",
-        "계속 취업자와 계속 비취업자는 전환 위험집단이 아니어서 분석에서 제외했기 때문에",
-        "일부는 완전히 철수하지 않고 반복해 드나들며 오래 떠났던 사람도 복귀했다가 다시 은퇴하기 때문에"
+        "Only exits before pension eligibility can be classified as retirement, making later transitions irrelevant.",
+        "Health and assets affect the first exit only, so following subsequent labor-market states adds no information.",
+        "People who stayed employed or nonemployed were removed because they could not belong to a transition risk set.",
+        "Some people repeatedly leave and return to work, including returns after long absences followed by another exit."
       ],
-      "answer": "일부는 완전히 철수하지 않고 반복해 드나들며 오래 떠났던 사람도 복귀했다가 다시 은퇴하기 때문에",
-      "explanation": "서론은 계속 비취업, 은퇴 후 재취업, 복귀 뒤 재은퇴를 구분하며 은퇴를 시간에 걸친 전체 전환과정으로 정의한다.",
+      "answer": "Some people repeatedly leave and return to work, including returns after long absences followed by another exit.",
+      "explanation": "The introduction describes repeated movement across employment and nonemployment. These are nonabsorbing states: entering one does not prevent leaving it later. A multiple-spell perspective retains this variation instead of assuming that every first exit marks final withdrawal from paid work.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Introduction: retirement as repeated transitions",
       "difficulty": "easy"
     },
     {
-      "prompt": "KLoSA 표집과 응답률에 관한 설명으로 맞는 것은?",
+      "prompt": "Which sampling approach did the source report for KLoSA?",
       "options": [
-        "다단계 층화확률표집으로 가구 71%를 선정했고 가구 내 개인 응답률은 약 75%였다",
-        "다단계 층화확률표집으로 가구 71%를 선정했고 개인 응답률도 약 71%였다",
-        "다단계 층화확률표집으로 가구 75%를 선정했고 가구 내 개인 응답률도 약 75%로 같았다",
-        "다단계 층화확률표집으로 가구 75%를 선정했고 개인 응답률은 약 71%였다"
+        "Multistage stratified probability sampling of households and eligible individuals.",
+        "Convenience recruitment restricted to pension claimants visiting urban benefit offices.",
+        "A complete enumeration of every Korean worker whose first retirement occurred in 2006.",
+        "Online self-selection by people who planned to take up paid work after retirement."
       ],
-      "answer": "다단계 층화확률표집으로 가구 71%를 선정했고 가구 내 개인 응답률은 약 75%였다",
-      "explanation": "자료 세그먼트는 가구 선정 71%와 가구 내 개인 응답 약 75%를 서로 다른 단계의 비율로 제시한다.",
+      "answer": "Multistage stratified probability sampling of households and eligible individuals.",
+      "explanation": "The source identifies KLoSA as a nationally representative survey using multistage stratified probability sampling. The present analytic sample imposed additional age, paid-work-history, and observation requirements. The source's separate phrase about selecting 71% of households is unclear about the household-stage denominator, so this question tests the stated sampling design rather than that ambiguous percentage.",
       "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Data: sampling design",
       "difficulty": "medium"
     },
     {
-      "prompt": "혼인상태와 배우자 취업상태를 결합한 세 범주는?",
+      "prompt": "How were partnership and partner work status combined?",
       "options": [
-        "취업 배우자와 기혼·은퇴 배우자와 기혼·배우자 없음",
-        "취업 배우자와 기혼·비취업 배우자와 기혼·사별만 구분",
-        "취업 배우자와 동거·비취업 배우자와 동거·자녀와 동거",
-        "기혼·이혼 또는 별거·사별의 세 혼인상태만 구분"
+        "Partnered with a working spouse, partnered with a retired spouse, and having no partner.",
+        "Partnered with a working spouse, partnered with a nonworking spouse, and widowed only.",
+        "Living with a working partner, living with a nonworking partner, and living with children.",
+        "Married, divorced or separated, and widowed, without distinguishing a spouse's work status."
       ],
-      "answer": "취업 배우자와 기혼·은퇴 배우자와 기혼·배우자 없음",
-      "explanation": "배우자 없음에는 미혼·이혼·별거·사별이 포함됐으며, 기혼자는 배우자의 노동시장 참여 여부로 나뉘었다.",
+      "answer": "Partnered with a working spouse, partnered with a retired spouse, and having no partner.",
+      "explanation": "The measures distinguish a working partner, a partner described as already retired, and no partner. The no-partner category includes single, divorced, separated, and widowed individuals. The regression tables call the nonworking reference category partner nonemployed. This composite measure is distinct from the separate child-coresidence variable.",
       "evidence_segment_id": "EXPLANATORY-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Measures: partnership and spouse employment",
       "difficulty": "medium"
     },
     {
-      "prompt": "저자들이 OECD 국가 중 한국에 초점을 맞춘 직접적인 비교 근거는?",
+      "prompt": "Which comparison motivated the focus on Korea in the introduction's historical context?",
       "options": [
-        "실질 은퇴연령이 법정 연금수급연령과 거의 일치하는 국가였기 때문이다",
-        "노년기 근로소득 비중이 OECD 평균보다 가장 낮게 보고된 국가였기 때문이다",
-        "실질 은퇴연령과 연금수급연령의 격차가 가장 컸기 때문이다",
-        "여성과 남성의 연금 적용률 차이가 비교적 작은 국가였기 때문이다"
+        "Its effective retirement age almost exactly matched pensionable age relative to other OECD countries.",
+        "Its older population had the lowest reported share of income from work among OECD countries.",
+        "It had the largest recorded gap between effective retirement age and pensionable age.",
+        "Its pension coverage showed an unusually small difference between older women and older men."
       ],
-      "answer": "실질 은퇴연령과 연금수급연령의 격차가 가장 컸기 때문이다",
-      "explanation": "서론은 두 연령의 격차가 가장 큰 것으로 기록된 한국을 젠더화된 전환 경로의 연구맥락으로 선택했다고 밝힌다.",
+      "answer": "It had the largest recorded gap between effective retirement age and pensionable age.",
+      "explanation": "The introduction cites OECD evidence from 2013 for this comparison. It motivates studying work transitions in a setting where people often worked beyond pensionable age. The claim is tied to the cited period and should not be read as a verified current ranking or current description of pension law.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Introduction: historical comparative context",
       "difficulty": "easy"
     },
     {
-      "prompt": "가장 오래 유지한 일자리가 둘 이상 같은 근속기간일 때 어떤 정보를 사용했나요?",
+      "prompt": "When more than one longest-held job had the same duration, which information was used?",
       "options": [
-        "가장 먼저 시작한 일자리의 정보를 사용했다",
-        "같은 근속기간의 일자리 정보를 평균했다",
-        "자영업 경험이 있는 일자리를 우선했다",
-        "가장 최근 경험을 사용했다"
+        "Information from the earliest of the tied jobs.",
+        "An average of the information from the tied jobs.",
+        "Information from a self-employed job whenever possible.",
+        "Information from the most recent tied work experience."
       ],
-      "answer": "가장 최근 경험을 사용했다",
-      "explanation": "가장 오래 유지한 일자리의 근속기간이 동률인 일부 응답자에게는 가장 최근 노동시장 경험 정보를 사용했다.",
+      "answer": "Information from the most recent tied work experience.",
+      "explanation": "For tied longest-duration jobs, the authors used the most recent labor-force experience. This coding rule concerns the retrospective longest-job indicator. It is distinct from total years of self-employment and does not average every job into a single occupational history.",
       "evidence_segment_id": "EXPLANATORY-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Work-history measures: equal job durations",
       "difficulty": "easy"
     },
     {
-      "prompt": "여성 모형에서 자녀동거 결과를 정확히 구분한 것은?",
+      "prompt": "Which pairing matches the reported associations of child coresidence among women?",
       "options": [
-        "기혼 자녀 동거는 노동시장 이탈을 낮췄고 미혼 자녀 동거는 노동시장 재진입 오즈를 42% 높였다",
-        "기혼 자녀 동거는 노동시장 재진입을 높였고 미혼 자녀 동거는 노동시장 이탈 오즈를 42% 낮췄다",
-        "기혼 자녀 동거는 재진입을 낮췄고 미혼 자녀 동거는 이탈 오즈를 42% 높였다",
-        "기혼 자녀 동거는 이탈을 높였고 미혼 자녀 동거는 재진입을 낮췄다"
+        "Living with married children reduced exit; living with unmarried children raised re-entry odds by about 42%.",
+        "Living with married children raised re-entry; living with unmarried children reduced exit odds by about 42%.",
+        "Living with married children reduced re-entry; living with unmarried children raised exit odds by about 42%.",
+        "Living with married children raised exit; living with unmarried children reduced re-entry odds significantly."
       ],
-      "answer": "기혼 자녀 동거는 재진입을 낮췄고 미혼 자녀 동거는 이탈 오즈를 42% 높였다",
-      "explanation": "두 자녀동거 범주는 서로 다른 전환방향과 관련됐으므로 ‘자녀와 살면 은퇴한다’로 합치면 안 된다.",
+      "answer": "Living with married children reduced re-entry; living with unmarried children raised exit odds by about 42%.",
+      "explanation": "The two child categories relate to different transition directions. The measures define the no-child-coresidence reference as living alone or with a spouse only, although the table label is shortened to living with a spouse. The roughly 42% figure refers to an odds increase, not a 42-percentage-point probability increase. These findings do not establish that coresidence causes retirement.",
       "evidence_segment_id": "RESULTS-WOMEN-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Women: coresidence and transition direction",
       "difficulty": "hard"
     },
     {
-      "prompt": "추적손실과 사망을 다룬 분석절차를 정확히 설명한 것은?",
+      "prompt": "How did the analysis address death, loss to follow-up, and attrition?",
       "options": [
-        "추적손실 시점의 노동상태를 이탈사건으로 처리하고 이후 위험구간을 제외한 뒤 조사설계 가중치만 적용했다",
-        "마지막 관측상태를 이후 차수에 이월하고 무응답 확률의 역수로만 가중했다",
-        "우측절단하고 FIML을 사용했으며 조사설계를 보정하고 무응답 확률로 가중했다",
-        "완전 사례만 남긴 뒤 사망과 추적손실을 별도의 경쟁위험으로 추정했다"
+        "It counted every loss as a labor-force exit event, removed later spells, and applied only survey-design weights.",
+        "It carried the last labor status forward into every later wave and relied only on inverse nonresponse weights.",
+        "It right-censored observation, used FIML, and applied survey and nonresponse adjustments.",
+        "It retained complete cases only and estimated death and dropout as competing labor-market transition outcomes."
       ],
-      "answer": "우측절단하고 FIML을 사용했으며 조사설계를 보정하고 무응답 확률로 가중했다",
-      "explanation": "저자들은 탈락이 무작위이며 모형 변수와 체계적으로 관련된다고 가정하고 이 절차로 탈락편향을 줄이려 했다.",
+      "answer": "It right-censored observation, used FIML, and applied survey and nonresponse adjustments.",
+      "explanation": "The authors right-censored individuals at death or loss to follow-up and used full-information maximum likelihood with survey and nonresponse adjustments. This differs from treating a death as retirement or filling later outcomes with the last observed status. The procedure relies on their assumptions about attrition relative to included variables; it does not guarantee the absence of selection bias.",
       "evidence_segment_id": "ANALYSIS-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Analysis: censoring and attrition",
       "difficulty": "hard"
     },
     {
-      "prompt": "자영업 종사연수와 노동시장 이탈의 젠더 차이를 나타낸 상호작용계수는?",
+      "prompt": "What did the reported interaction for self-employment years and labor-force exit indicate?",
       "options": [
-        "+0.44, p<.05: 상향 재정이전과 재진입의 젠더 차이",
-        "−0.02, p<.001: 자영업연수와 이탈의 젠더 차이",
-        "−0.03, p<.05: 근속기간과 재진입의 젠더 상호작용",
-        "−0.38, p<.01: 혼인 해체와 재진입의 젠더 상호작용"
+        "Upward financial transfers had a stronger negative association with re-entry among men than among women.",
+        "The negative association of self-employment years with exit was stronger among men than among women.",
+        "Longer job tenure increased re-entry more strongly among men than among women in the interaction model.",
+        "Marital dissolution increased re-entry more strongly among men than among women in the interaction model."
       ],
-      "answer": "−0.02, p<.001: 자영업연수와 이탈의 젠더 차이",
-      "explanation": "이 부적 상호작용은 자영업 종사연수와 낮은 이탈 가능성의 관계가 남성에게 더 강했음을 뜻한다.",
+      "answer": "The negative association of self-employment years with exit was stronger among men than among women.",
+      "explanation": "Gender was coded 0 for women and 1 for men. The reported interaction coefficient for self-employment years and exit was −.02, p < .001, indicating a more negative association for men. The coefficient describes a difference in the modeled association; it is not itself an odds ratio or a two-percentage-point difference in retirement probability.",
       "evidence_segment_id": "RESULTS-INTERACTIONS-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Interactions: gender and prior self-employment",
       "difficulty": "hard"
     },
     {
-      "prompt": "남성의 근속기간과 자영업연수 결과를 옳게 연결한 것은?",
+      "prompt": "Which pairing of men's work-history measures and transition odds matches the reported results?",
       "options": [
-        "장기근속은 이탈 오즈 0.98, 자영업연수는 재진입 오즈 0.97과 관련됐다",
-        "장기근속은 재진입 오즈 0.98, 자영업연수는 이탈 오즈 0.97과 관련됐다",
-        "장기근속은 재진입 오즈 0.97, 자영업연수는 이탈 오즈 0.98과 관련됐다",
-        "장기근속과 자영업연수는 모두 남성의 이탈 오즈 0.97과 관련됐고 전환방향은 구분되지 않았다"
+        "A year of longest-job tenure: exit odds ratio .98; a year of self-employment: re-entry odds ratio .97.",
+        "A year of longest-job tenure: re-entry odds ratio .98; a year of self-employment: exit odds ratio .97.",
+        "A year of longest-job tenure: re-entry odds ratio .97; a year of self-employment: exit odds ratio .98.",
+        "Both a year of longest-job tenure and a year of self-employment: exit odds ratio .97, with no distinction in direction."
       ],
-      "answer": "장기근속은 재진입 오즈 0.98, 자영업연수는 이탈 오즈 0.97과 관련됐다",
-      "explanation": "남성 모형에서 장기근속은 다른 일자리를 구할 가능성을 낮췄고 자영업연수는 재정보정 뒤에도 이탈을 낮췄다.",
+      "answer": "A year of longest-job tenure: re-entry odds ratio .98; a year of self-employment: exit odds ratio .97.",
+      "explanation": "The reported coefficients of about −.02 for tenure and re-entry and −.03 for self-employment and exit correspond to odds ratios of about .98 and .97 per year. The self-employment association persisted after adjustment for financial conditions. These concern observed transitions and model-based odds, not a direct measure of job-search motives or a probability change of the same magnitude.",
       "evidence_segment_id": "RESULTS-MEN-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Men: tenure, self-employment, and direction",
       "difficulty": "hard"
     },
     {
-      "prompt": "논의에서 자영업 경력과 낮은 노동시장 이탈의 관계에 제시한 해석은?",
+      "prompt": "Which possible explanation did the discussion offer for continued work after self-employment?",
       "options": [
-        "건강상태가 자영업 관계를 설명하며 은퇴시점의 통제 가능성은 낮다는 해석",
-        "재정 관련요인을 보정한 뒤 관계가 약해져 유의하지 않게 됐다는 해석",
-        "은퇴시점의 유연성, 낮은 은퇴급여 접근, 일 애착을 중시하는 문화규범이 함께 가능하다는 해석",
-        "경제적 만족과 자영업의 관련성이 은퇴급여 접근의 중요성을 대신한다는 해석"
+        "Health fully explained the association, while self-employed people had no flexibility over retirement timing.",
+        "Financial adjustment removed the association entirely, leaving no role for occupational history or job attachment.",
+        "Flexible timing, limited access to retirement benefits, and work-attachment norms could all contribute.",
+        "Economic satisfaction made benefit access irrelevant and proved that every self-employed person worked by choice."
       ],
-      "answer": "은퇴시점의 유연성, 낮은 은퇴급여 접근, 일 애착을 중시하는 문화규범이 함께 가능하다는 해석",
-      "explanation": "저자들은 자영업자의 지속 노동에 선택의 유연성과 자원 제약 및 문화적 일 애착이 함께 작동할 가능성을 제시했다.",
+      "answer": "Flexible timing, limited access to retirement benefits, and work-attachment norms could all contribute.",
+      "explanation": "The discussion combines possible choice and constraint: self-employed workers may control retirement timing while having weaker benefit access and strong attachment to work. The authors did not directly establish all these mechanisms. Additional measures of work orientation and reasons for occupational choices were identified as needs for future research.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Lee & Yeung (2021)",
+      "source": "Discussion: interpreting self-employment",
       "difficulty": "hard"
     },
     {
-      "prompt": "논의가 근로생애 연장과 사회적 불평등의 관계에 내린 결론은?",
+      "prompt": "What does the discussion imply about extending working lives and inequality?",
       "options": [
-        "근로생애 연장은 불평등을 자동으로 줄이지 않는다",
-        "연금과 가족지원을 고려하면 근로생애 연장은 경제적 불평등을 줄이는 경로가 된다",
-        "노동시장 재진입은 주로 유리한 조건의 선택이므로 연금연령 상향이 핵심 대응이다",
-        "가족 상황의 효과가 젠더에 따라 비슷하므로 보편적 취업지원만으로 충분하다"
+        "Longer working lives do not automatically reduce inequality; returning to work can reflect constrained resources.",
+        "Once pensions and family support are considered, every extension of paid work necessarily reduces inequality.",
+        "Re-entry mainly reflects advantaged choice, so raising pension ages is sufficient to address older workers' needs.",
+        "Family circumstances operate identically across gender, so one uniform employment policy addresses all risks."
       ],
-      "answer": "근로생애 연장은 불평등을 자동으로 줄이지 않는다",
-      "explanation": "불리한 조건이 사람을 다시 노동시장으로 밀어낼 수 있으므로 연장된 노동이 경제적 불평등과 사회적 부담을 언제나 줄이는 것은 아니라고 논의한다.",
+      "answer": "Longer working lives do not automatically reduce inequality; returning to work can reflect constrained resources.",
+      "explanation": "The authors argue that insecure resources can push people to remain in or return to work, particularly those with interrupted careers or limited family support. Longer employment is therefore not automatically evidence of unconstrained choice or reduced social burdens. Proposed job-quality and support policies are implications of observational findings, not evaluated interventions.",
       "evidence_segment_id": "DISCUSSION-002",
-      "source": "Lee & Yeung (2021)",
+      "source": "Discussion: extended work and inequality",
       "difficulty": "hard"
     }
-  ]
+  ],
+  "language": "en"
 }

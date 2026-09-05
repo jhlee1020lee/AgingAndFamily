@@ -31,7 +31,7 @@ function textArray(value) {
 }
 
 function normalizeId(value) {
-  return toText(value).toUpperCase();
+  return toText(value);
 }
 
 function countWords(value) {
@@ -39,7 +39,13 @@ function countWords(value) {
 }
 
 function digitTokens(value) {
-  return Array.from(new Set((toText(value).match(/\d+(?:[.,]\d+)?%?/g) || []).map((item) => item.replace(/,/g, ""))));
+  return Array.from(new Set((toText(value).match(/\d+(?:,\d{3})*(?:\.\d+)?%?/g) || []).map((item) => item.replace(/,/g, ""))));
+}
+
+function hasNumericCitation(value) {
+  // PDF superscripts commonly survive extraction as refs attached to a word.
+  return /[A-Za-z가-힣”"')](?:\d{1,3})(?:\s*[–—,-]\s*\d{1,3})*(?=[\s.,;:)\]]|$)/u.test(toText(value))
+    || /(?:\[|\brefs?\.?\s*|references?\s*|참고문헌\s*)\d{1,3}(?:\s*[–—,-]\s*\d{1,3})*/i.test(toText(value));
 }
 
 function hasCitation(value) {
@@ -81,10 +87,12 @@ function parseArgs(argv) {
 function qualityChecks(sourceSegment, translationSegment) {
   const errors = [];
   const warnings = [];
-  const original = toText(sourceSegment.original_text);
-  const translation = toText(translationSegment.ko_translation || translationSegment.translation);
+  const original = toText(sourceSegment?.original_text);
+  const translation = toText(translationSegment?.ko_translation || translationSegment?.translation);
   const isVerbatimPreservation = original === translation;
   const segmentId = normalizeId(sourceSegment.segment_id);
+
+  if (!original) errors.push(`${segmentId}: missing original_text`);
 
   if (!translation) {
     errors.push(`${segmentId}: missing ko_translation`);
@@ -108,7 +116,7 @@ function qualityChecks(sourceSegment, translationSegment) {
   }
 
   if (sourceSegment.contains_citations === true || hasCitation(original)) {
-    if (!/\d{4}|et\s+al\.|[A-Z][A-Za-z-]+\s*\(/.test(translation)) {
+    if (!/\d{4}|et\s+al\.|[A-Z][A-Za-z-]+\s*\(/.test(translation) && !(hasNumericCitation(original) && hasNumericCitation(translation))) {
       warnings.push(`${segmentId}: citation marker may be missing`);
     }
   }
@@ -133,7 +141,7 @@ function qualityChecks(sourceSegment, translationSegment) {
 }
 
 function checkReading(reading, options = {}) {
-  const contentDir = path.join(ROOT_DIR, reading.content_dir);
+  const contentDir = path.join(options.rootDir || ROOT_DIR, reading.content_dir);
   const sourcePath = path.join(contentDir, "source_segments.json");
   const translationPath = path.join(contentDir, "translation_segments.json");
   const hasSource = fs.existsSync(sourcePath);
@@ -170,12 +178,26 @@ function checkReading(reading, options = {}) {
 
   if (!sourceSegments.length) errors.push("source_segments.json has no segments");
   if (!translationSegments.length) errors.push("translation_segments.json has no translations");
+  if (sourceSegments.length !== translationSegments.length) errors.push(`segment counts differ: ${sourceSegments.length} source / ${translationSegments.length} translation`);
+  for (const [label, payload] of [["source_segments.json", sourcePayload], ["translation_segments.json", translationPayload]]) {
+    if (options.strict && toText(payload?.paper_id) !== reading.slug) errors.push(`${label} paper_id must match manifest slug ${reading.slug}`);
+  }
   if (toText(sourcePayload?.paper_id) && toText(translationPayload?.paper_id) && toText(sourcePayload.paper_id) !== toText(translationPayload.paper_id)) {
     errors.push("paper_id differs between source_segments.json and translation_segments.json");
   }
 
-  const sourceIds = sourceSegments.map((segment) => normalizeId(segment.segment_id));
-  const translationIds = translationSegments.map((segment) => normalizeId(segment.segment_id));
+  const sourceIds = sourceSegments.map((segment) => normalizeId(segment?.segment_id));
+  const translationIds = translationSegments.map((segment) => normalizeId(segment?.segment_id));
+  for (const [label, ids] of [["source", sourceIds], ["translation", translationIds]]) {
+    const seen = new Set();
+    ids.forEach((id, index) => {
+      if (!id) errors.push(`${label} segment ${index + 1} is missing segment_id`);
+      else if (seen.has(id)) errors.push(`${label} has duplicate segment_id ${id}`);
+      seen.add(id);
+    });
+  }
+  sourceSegments.forEach((segment, index) => { if (!toText(segment?.original_text)) errors.push(`source segment ${index + 1} is missing original_text`); });
+  translationSegments.forEach((segment, index) => { if (!toText(segment?.ko_translation || segment?.translation)) errors.push(`translation segment ${index + 1} is missing ko_translation`); });
   const sourceIdSet = new Set(sourceIds);
   const translationIdSet = new Set(translationIds);
   const missingTranslationIds = sourceIds.filter((id) => !translationIdSet.has(id));
@@ -192,9 +214,9 @@ function checkReading(reading, options = {}) {
   if (extraTranslationIds.length) errors.push(`translation has unknown segment_id(s): ${extraTranslationIds.join(", ")}`);
   if (orderMismatchIds.length) errors.push(`segment order differs: ${orderMismatchIds.join(", ")}`);
 
-  const translationById = new Map(translationSegments.map((segment) => [normalizeId(segment.segment_id), segment]));
+  const translationById = new Map(translationSegments.map((segment) => [normalizeId(segment?.segment_id), segment]));
   sourceSegments.forEach((sourceSegment, index) => {
-    const id = normalizeId(sourceSegment.segment_id);
+    const id = normalizeId(sourceSegment?.segment_id);
     if (!id) {
       errors.push(`source segment ${index + 1} is missing segment_id`);
       return;
@@ -286,7 +308,10 @@ function writeReports(result) {
 
 function main() {
   const options = parseArgs(process.argv.slice(2));
-  const readings = loadManifest().filter((reading) => !options.slug || reading.slug === options.slug);
+  const manifestReadings = loadManifest();
+  if (!manifestReadings.length) throw new Error("manifest must contain at least one reading");
+  if (new Set(manifestReadings.map((reading) => reading.slug)).size !== manifestReadings.length) throw new Error("manifest contains duplicate reading slugs");
+  const readings = manifestReadings.filter((reading) => !options.slug || reading.slug === options.slug);
   if (options.slug && !readings.length) {
     console.error(`No reading found for slug: ${options.slug}`);
     process.exit(1);
@@ -313,4 +338,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { checkReading, renderMarkdownReport, renderQaChecklist, main };
+module.exports = { checkReading, qualityChecks, digitTokens, renderMarkdownReport, renderQaChecklist, main };

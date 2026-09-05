@@ -8,7 +8,10 @@ const storage={
     }
   },
   set(key,value){
-    try{localStorage.setItem(key,JSON.stringify(value));}catch(error){}
+    try{localStorage.setItem(key,JSON.stringify(value));return true;}catch(error){return false;}
+  },
+  remove(key){
+    try{localStorage.removeItem(key);}catch(error){}
   }
 };
 
@@ -112,11 +115,7 @@ function selectHomeCurrentReading(readings,today,publishCutoffDate){
   const upcoming=published
     .filter((reading)=>reading.classDate>=today)
     .sort(byDateThenSequence);
-  if(upcoming.length)return upcoming[0];
-  const referenceDate=publishCutoffDate&&publishCutoffDate<today?publishCutoffDate:today;
-  return published
-    .filter((reading)=>reading.classDate<=referenceDate)
-    .sort((a,b)=>String(b.classDate).localeCompare(String(a.classDate))||(Number(b.sequence)||0)-(Number(a.sequence)||0))[0]||null;
+  return upcoming[0]||null;
 }
 
 function homeReadingState(reading,currentSlug){
@@ -129,7 +128,7 @@ function syncHomeCardState(card,state){
   const status=card.querySelector(".rcard-status");
   const eyebrow=card.querySelector(".rcard-mobile-eyebrow");
   let mobileState=card.querySelector(".rcard-mobile-state");
-  const stateLabel=state==="current"?"이번 주":state==="ready"?"공개됨":"잠금";
+  const stateLabel=state==="current"?"다음 읽기":state==="ready"?"공개됨":"잠금";
   card.dataset.cardState=state;
   if(link){
     link.classList.toggle("is-current",state==="current");
@@ -203,6 +202,7 @@ function initHomeFilters(){
   const grid=document.querySelector("[data-reading-grid]");
   const cards=Array.from(document.querySelectorAll("[data-reading-card]"));
   const empty=document.querySelector("[data-empty-state]");
+  const resultCount=document.querySelector("[data-filter-result-count]");
 
   const activeChipValue=()=>{
     const chip=chips.find((item)=>item.classList.contains("is-active"));
@@ -227,16 +227,21 @@ function initHomeFilters(){
     cards.forEach((card)=>{card.hidden=!visible.includes(card);});
     visible.forEach((card)=>grid?.appendChild(card));
     if(empty)empty.hidden=visible.length!==0;
+    if(resultCount)resultCount.textContent=`${visible.length}개 / 전체 ${cards.length}개`;
   };
 
   [input,typeSelect,tagSelect].forEach((element)=>element&&element.addEventListener("input",apply));
   [typeSelect,tagSelect].forEach((element)=>element&&element.addEventListener("change",apply));
   chips.forEach((chip)=>{
     chip.addEventListener("click",()=>{
-      chips.forEach((item)=>item.classList.toggle("is-active",item===chip));
+      chips.forEach((item)=>{
+        item.classList.toggle("is-active",item===chip);
+        item.setAttribute("aria-pressed",String(item===chip));
+      });
       apply();
     });
   });
+  chips.forEach((chip)=>chip.setAttribute("aria-pressed",String(chip.classList.contains("is-active"))));
   apply();
 }
 
@@ -304,7 +309,11 @@ function initTabMenus(){
 }
 
 function slugify(value){
-  return value.toLowerCase().trim().replace(/[^a-z0-9\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||"section";
+  return value.toLowerCase().trim().replace(/[^a-z0-9\uac00-\ud7a3\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||"section";
+}
+
+function escapeUiText(value){
+  return String(value??"").replace(/[&<>"']/g,(character)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[character]));
 }
 
 function cleanHeadingText(text){
@@ -316,7 +325,8 @@ function isReaderHeading(heading){
 }
 
 function setFontScale(scale){
-  const clamped=Math.min(1.35,Math.max(0.9,Number(scale.toFixed(2))));
+  const numeric=Number(scale);
+  const clamped=Math.min(1.35,Math.max(0.9,Number((Number.isFinite(numeric)?numeric:1).toFixed(2))));
   document.documentElement.style.setProperty("--reader-font-scale",String(clamped));
   try{localStorage.setItem(FONT_KEY,String(clamped));}catch(error){}
   return clamped;
@@ -337,7 +347,8 @@ function initReader(){
   const bookmarkButton=root.querySelector("[data-page-bookmark]");
   const importantList=root.querySelector("[data-important-list]");
   const toc=root.querySelector("[data-generated-toc]");
-  const marked=new Set(storage.get(marksKey,[]));
+  const savedMarks=storage.get(marksKey,[]);
+  const marked=new Set(Array.isArray(savedMarks)?savedMarks:[]);
   const savedScale=Number((()=>{try{return localStorage.getItem(FONT_KEY);}catch(error){return 1;}})()||1);
 
   setFontScale(savedScale||1);
@@ -351,12 +362,14 @@ function initReader(){
     });
   });
 
-  const bookmarked=new Set(storage.get(bookmarksKey,[]));
+  const savedBookmarks=storage.get(bookmarksKey,[]);
+  const bookmarked=new Set(Array.isArray(savedBookmarks)?savedBookmarks:[]);
   const updateBookmark=()=>{
     const active=bookmarked.has(pagePath);
     if(bookmarkButton){
       bookmarkButton.textContent=active?UI_TEXT.bookmarked:UI_TEXT.bookmark;
       bookmarkButton.classList.toggle("is-active",active);
+      bookmarkButton.setAttribute("aria-pressed",String(active));
     }
   };
 
@@ -379,7 +392,7 @@ function initReader(){
     }
     const markedHeadings=headings.filter((heading)=>marked.has(heading.id));
     importantList.innerHTML=markedHeadings.length
-      ? markedHeadings.map((heading)=>`<a class="important-link" href="#${heading.id}">${cleanHeadingText(heading.textContent)}</a>`).join("")
+      ? markedHeadings.map((heading)=>`<a class="important-link" href="#${escapeUiText(heading.id)}">${escapeUiText(cleanHeadingText(heading.textContent))}</a>`).join("")
       : `<p class="meta">${UI_TEXT.noImportant}</p>`;
   };
 
@@ -415,7 +428,7 @@ function initReader(){
     });
 
     syncMarker();
-    return `<a class="toc-link toc-${heading.tagName.toLowerCase()} ${marked.has(heading.id)?"is-important":""}" href="#${heading.id}">${cleanHeadingText(heading.textContent)}</a>`;
+    return `<a class="toc-link toc-${heading.tagName.toLowerCase()} ${marked.has(heading.id)?"is-important":""}" href="#${escapeUiText(heading.id)}" data-reader-toc-link>${escapeUiText(cleanHeadingText(heading.textContent))}</a>`;
   });
 
   if(toc&&tocLinks.length)toc.innerHTML=tocLinks.join("");
@@ -424,23 +437,28 @@ function initReader(){
   const saved=storage.get(scrollKey,null);
   if(saved&&typeof saved.y==="number"&&saved.y>120&&resume){
     resume.hidden=false;
-    resume.addEventListener("click",()=>{window.scrollTo({top:saved.y,behavior:"smooth"});});
+    resume.addEventListener("click",()=>{
+      const heading=saved.headingId?document.getElementById(saved.headingId):null;
+      const top=heading&&articleBody.contains(heading)
+        ?window.scrollY+heading.getBoundingClientRect().top+(Number(saved.offset)||0):saved.y;
+      window.scrollTo({top:Math.max(0,top),behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+    });
     if(note)note.textContent=UI_TEXT.savedResume;
   }
 
-  let ticking=false;
+  let saveTimer=null;
   const saveScroll=()=>{
-    storage.set(scrollKey,{y:window.scrollY,t:Date.now()});
-    if(note)note.textContent=UI_TEXT.savedPosition;
-    ticking=false;
+    const heading=headings.reduce((current,item)=>item.getBoundingClientRect().top<=160?item:current,null);
+    const savedOk=storage.set(scrollKey,{y:window.scrollY,t:Date.now(),headingId:heading?.id||null,offset:heading?-heading.getBoundingClientRect().top:0});
+    if(note)note.textContent=savedOk?UI_TEXT.savedPosition:"이 브라우저에서 읽던 위치를 저장할 수 없습니다.";
   };
 
   window.addEventListener("scroll",()=>{
-    if(ticking)return;
-    ticking=true;
-    window.requestAnimationFrame(saveScroll);
+    window.clearTimeout(saveTimer);
+    saveTimer=window.setTimeout(saveScroll,160);
   },{passive:true});
   window.addEventListener("beforeunload",saveScroll);
+  window.addEventListener("pagehide",saveScroll);
 }
 
 function initTranslationSentenceReveals(){
@@ -529,6 +547,48 @@ function normalizeQuizAnswer(value){
     .trim();
 }
 
+function quizAnswerKey(value){
+  const normalized=normalizeQuizAnswer(value).replace(/\u2212/g,"-");
+  // A space between two digits separates numbers; never turn “7 5” into “75”.
+  const compact=normalized.replace(/(\d)\s+(?=\d)/g,"$1| ").replace(/\s+/g,"");
+  const numeric=compact.match(/^([+-]?(?:(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?|\.\d+))(%|percent|percentage|years?|yrs?|yr|년|months?|mos?|개월|weeks?|주|days?|일|milliseconds?|msec|ms|밀리초|seconds?|secs?|sec|s|초|명|people|persons?)?$/);
+  if(!numeric)return compact;
+  const unit=numeric[2]||"";
+  const units={percent:"%",percentage:"%",year:"year",years:"year",yr:"year",yrs:"year","년":"year",month:"month",months:"month",mo:"month",mos:"month","개월":"month",week:"week",weeks:"week","주":"week",day:"day",days:"day","일":"day",millisecond:"ms",milliseconds:"ms",msec:"ms",ms:"ms","밀리초":"ms",second:"s",seconds:"s",sec:"s",secs:"s",s:"s","초":"s",people:"person",person:"person",persons:"person","명":"person"};
+  // Canonicalize decimals as strings so distinct high-precision values never round together.
+  const token=numeric[1].replace(/,/g,"");
+  const unsigned=token.replace(/^[+-]/,"");
+  const [whole="",fraction=""]=unsigned.split(".");
+  const integer=whole.replace(/^0+/,"")||"0";
+  const decimals=fraction.replace(/0+$/,"");
+  const negative=token.startsWith("-")&&(integer!=="0"||decimals);
+  return `number:${negative?"-":""}${integer}${decimals?`.${decimals}`:""}:${units[unit]||unit}`;
+}
+
+function quizAnswersMatch(actual,accepted){
+  return quizAnswerKey(actual)===quizAnswerKey(accepted);
+}
+
+function quizLanguage(item){
+  return item?.dataset?.quizLanguage||item?.closest?.("[data-quiz-language]")?.dataset.quizLanguage||"ko";
+}
+
+function containsKorean(value){
+  return /[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(String(value||""));
+}
+
+function quizInputMessage(item,message){
+  let note=item.querySelector("[data-quiz-input-message]");
+  if(!note&&message){
+    note=document.createElement("p");
+    note.className="player-note";
+    note.setAttribute("data-quiz-input-message","");
+    note.setAttribute("role","status");
+    item.appendChild(note);
+  }
+  if(note)note.textContent=message;
+}
+
 function quizItemValue(item){
   if(item.dataset.quizKind==="short")return item.querySelector("[data-quiz-input]")?.value||"";
   return item.querySelector("[data-quiz-input]:checked")?.value||"";
@@ -536,6 +596,16 @@ function quizItemValue(item){
 
 function gradeQuizItem(item){
   const value=quizItemValue(item);
+  const english=quizLanguage(item)==="en";
+  if(english&&item.dataset.quizKind==="short"&&containsKorean(value)){
+    delete item.dataset.quizGraded;
+    item.classList.remove("is-correct","is-incorrect","is-unanswered");
+    const previousFeedback=item.querySelector("[data-quiz-feedback]");
+    if(previousFeedback)previousFeedback.hidden=true;
+    quizInputMessage(item,"Please answer in English. Your answer has not been graded.");
+    return{answered:false,correct:false,blocked:true};
+  }
+  quizInputMessage(item,"");
   const normalizedValue=normalizeQuizAnswer(value);
   const answered=Boolean(normalizedValue);
   let acceptedAnswers=[];
@@ -544,14 +614,14 @@ function gradeQuizItem(item){
   }else{
     acceptedAnswers=[item.dataset.correctAnswer||""];
   }
-  const correct=answered&&acceptedAnswers.some((answer)=>normalizeQuizAnswer(answer)===normalizedValue);
+  const correct=answered&&acceptedAnswers.some((answer)=>quizAnswersMatch(answer,value));
   item.dataset.quizGraded="true";
   item.classList.toggle("is-correct",correct);
   item.classList.toggle("is-incorrect",answered&&!correct);
   item.classList.toggle("is-unanswered",!answered);
   item.querySelectorAll(".quiz-choice").forEach((choice)=>{
     const input=choice.querySelector("[data-quiz-input]");
-    const isAnswer=acceptedAnswers.some((answer)=>normalizeQuizAnswer(answer)===normalizeQuizAnswer(input?.value));
+    const isAnswer=acceptedAnswers.some((answer)=>quizAnswersMatch(answer,input?.value));
     choice.classList.toggle("is-answer",isAnswer);
     choice.classList.toggle("is-selected",Boolean(input?.checked));
   });
@@ -559,20 +629,25 @@ function gradeQuizItem(item){
   const result=item.querySelector("[data-quiz-result]");
   if(feedback)feedback.hidden=false;
   if(result){
-    result.textContent=!answered?"미응답입니다. 정답과 해설을 확인하세요.":correct?"정답입니다.":"오답입니다. 정답과 해설을 확인하세요.";
+    result.textContent=english
+      ?(!answered?"Unanswered. Review the answer and explanation.":correct?"Correct.":"Incorrect. Review the answer and explanation.")
+      :(!answered?"미응답입니다. 정답과 해설을 확인하세요.":correct?"정답입니다.":"오답입니다. 정답과 해설을 확인하세요.");
   }
   return{answered,correct};
 }
 
 function initInteractiveQuizzes(){
   document.querySelectorAll("[data-quiz-root]").forEach((root)=>{
+    const english=quizLanguage(root)==="en";
     const items=Array.from(root.querySelectorAll("[data-quiz-item]"));
     const score=root.querySelector("[data-quiz-score]");
     const updateScore=()=>{
       const graded=items.filter((item)=>item.dataset.quizGraded==="true");
       const correct=graded.filter((item)=>item.classList.contains("is-correct")).length;
       const answered=graded.filter((item)=>!item.classList.contains("is-unanswered")).length;
-      if(score)score.textContent=graded.length?`정답 ${correct} / ${items.length} · 응답 ${answered}문제 · 채점 ${graded.length}문제`:"아직 채점하지 않았습니다.";
+      if(score)score.textContent=english
+        ?(graded.length?`${correct} / ${items.length} correct · ${answered} answered · ${graded.length} graded`:"No answers graded yet.")
+        :(graded.length?`정답 ${correct} / ${items.length} · 응답 ${answered}문제 · 채점 ${graded.length}문제`:"아직 채점하지 않았습니다.");
     };
 
     items.forEach((item)=>{
@@ -582,7 +657,7 @@ function initInteractiveQuizzes(){
       });
       const shortInput=item.dataset.quizKind==="short"?item.querySelector("[data-quiz-input]"):null;
       shortInput?.addEventListener("keydown",(event)=>{
-        if(event.key!=="Enter")return;
+        if(event.key!=="Enter"||event.isComposing)return;
         event.preventDefault();
         gradeQuizItem(item);
         updateScore();
@@ -605,10 +680,278 @@ function initInteractiveQuizzes(){
           if(feedback)feedback.hidden=true;
           const result=item.querySelector("[data-quiz-result]");
           if(result)result.textContent="";
+          quizInputMessage(item,"");
         });
         updateScore();
       },0);
     });
+  });
+}
+
+function selectQuizQuestions(questions,kind,count,random=Math.random){
+  const pool=questions.filter((question)=>kind==="all"||question.kind===kind);
+  for(let index=pool.length-1;index>0;index--){
+    const other=Math.floor(random()*(index+1));
+    [pool[index],pool[other]]=[pool[other],pool[index]];
+  }
+  const limit=count==="all"?pool.length:Math.max(0,Math.min(pool.length,Number(count)||0));
+  return pool.slice(0,limit);
+}
+
+function quizBankFingerprint(bank){
+  let hash=2166136261;
+  const value=bank.map((question)=>`${question.id}:${question.template.innerHTML}`).join("\n");
+  for(let index=0;index<value.length;index++)hash=Math.imul(hash^value.charCodeAt(index),16777619);
+  return (hash>>>0).toString(16);
+}
+
+function validQuizSession(saved,bank,version){
+  if(!saved||saved.schema!==1||saved.bankVersion!==version||!Array.isArray(saved.questionIds)||!saved.questionIds.length)return false;
+  const known=new Set(bank.map((question)=>question.id));
+  if(new Set(saved.questionIds).size!==saved.questionIds.length||saved.questionIds.some((id)=>!known.has(id)))return false;
+  if(!Number.isInteger(saved.index)||saved.index<0||saved.index>=saved.questionIds.length)return false;
+  if(!["round","results"].includes(saved.screen)||!Array.isArray(saved.results)||saved.results.length>saved.questionIds.length)return false;
+  if(saved.results.some((result,index)=>!result||result.id!==saved.questionIds[index]||typeof result.answer!=="string"||typeof result.correct!=="boolean"||typeof result.skipped!=="boolean"))return false;
+  if(saved.screen==="round"&&![saved.index,saved.index+1].includes(saved.results.length))return false;
+  return typeof saved.draft==="string";
+}
+
+function initQuizPlayers(){
+  document.querySelectorAll("[data-quiz-player]").forEach((root)=>{
+    const get=(name)=>root.querySelector(`[data-player-${name}]`);
+    const english=quizLanguage(root)==="en";
+    const say=(en,ko)=>english?en:ko;
+    const bank=Array.from(root.querySelectorAll("template[data-player-question]"),
+      (template)=>({id:template.dataset.playerQuestion,kind:template.dataset.kind,template}));
+    const bankById=new Map(bank.map((question)=>[question.id,question]));
+    const version=root.dataset.questionBankVersion||quizBankFingerprint(bank);
+    const stateKey=`${STORAGE_PREFIX}-quiz:${root.dataset.pagePath||window.location.pathname}`;
+    const kindLabels=english?{ox:"True / False",short:"Short answer",mcq:"Multiple choice"}:{ox:"OX",short:"단답형",mcq:"객관식"};
+    const settings=get("settings");
+    if(!settings||!bank.length)return;
+    const kindSelect=settings.elements.kind;
+    const countSelect=settings.elements.count;
+    const answerForm=get("answer");
+    let questions=[];
+    let results=[];
+    let index=0;
+    let graded=false;
+    let missed=[];
+    let card=null;
+    let screen="setup";
+    let saved=storage.get(stateKey,null);
+    const invalidated=Boolean(saved&&!validQuizSession(saved,bank,version));
+    if(invalidated){saved=null;storage.remove(stateKey);}
+    const missedIds=new Set(Array.isArray(saved?.missedQuestionIds)?saved.missedQuestionIds.filter((id)=>bankById.has(id)):[]);
+    const ensureSetupControl=(name,tag="button")=>{
+      let element=get(name);
+      if(!element){
+        element=document.createElement(tag);
+        element.setAttribute(`data-player-${name}`,"");
+        element.className=tag==="button"?"btn-ghost player-saved-action":"player-note";
+        if(tag==="button")element.type="button";
+        else element.setAttribute("role","status");
+        get("setup").appendChild(element);
+      }
+      return element;
+    };
+    const resumeButton=ensureSetupControl("resume");
+    const resetSavedButton=ensureSetupControl("reset-saved");
+    const practiceMissedButton=ensureSetupControl("review-missed");
+    const savedNote=ensureSetupControl("saved-note","p");
+    if(invalidated)savedNote.textContent=say("Saved progress was reset because the question bank changed.","문항이 바뀌어 이전 퀴즈 기록을 초기화했습니다.");
+    const updateSavedControls=()=>{
+      resumeButton.hidden=!saved;
+      resetSavedButton.hidden=!saved;
+      resumeButton.textContent=saved?.screen==="results"
+        ?say("View saved results","저장된 결과 보기")
+        :say(`Resume saved quiz (${saved?.results.length||0} / ${saved?.questionIds.length||0})`,`이어서 풀기 (${saved?.results.length||0} / ${saved?.questionIds.length||0})`);
+      resetSavedButton.textContent=say("Clear saved quiz","저장된 퀴즈 지우기");
+      practiceMissedButton.hidden=!missedIds.size;
+      practiceMissedButton.textContent=say(`Practice saved mistakes (${missedIds.size})`,`저장된 오답 ${missedIds.size}문제 풀기`);
+    };
+    const persist=()=>{
+      if(!questions.length||screen==="setup")return;
+      const next={schema:1,bankVersion:version,kind:kindSelect.value,count:countSelect.value,screen,index,
+        questionIds:questions.map((question)=>question.id),results:results.map((result)=>({id:result.question.id,answer:result.answer,correct:result.correct,skipped:result.skipped})),
+        draft:card?quizItemValue(card):"",missedQuestionIds:Array.from(missedIds),updatedAt:Date.now()};
+      if(storage.set(stateKey,next)){
+        saved=next;
+        savedNote.textContent=say("Progress and mistakes are saved in this browser.","풀이 진행과 오답을 이 브라우저에 저장했습니다.");
+      }else savedNote.textContent=say("This browser could not save your progress.","이 브라우저에서 퀴즈 기록을 저장할 수 없습니다.");
+      updateSavedControls();
+    };
+    const show=(nextScreen)=>{
+      screen=nextScreen;
+      ["setup","round","results"].forEach((name)=>{get(name).hidden=name!==screen;});
+    };
+    const refreshSelection=()=>{
+      const available=bank.filter((question)=>kindSelect.value==="all"||question.kind===kindSelect.value).length;
+      const count=countSelect.value==="all"?available:Math.min(available,Number(countSelect.value));
+      get("selection").textContent=say(`${count} of ${available} questions, in random order.`,`${available}문제 중 ${count}문제를 무작위 순서로 풉니다.`);
+      get("start").textContent=count?say(`Start ${count} question${count===1?"":"s"}`,`${count}문제 시작하기`):say("No questions available","준비된 문제가 없습니다");
+      get("start").disabled=!count;
+    };
+    const showGradedCard=(result)=>{
+      graded=true;
+      const inputs=card.querySelectorAll("[data-quiz-input]");
+      inputs.forEach((input)=>{
+        if(input.type==="radio")input.checked=!result.skipped&&input.value===result.answer;
+        else input.value=result.skipped?"":result.answer;
+      });
+      gradeQuizItem(card);
+      inputs.forEach((input)=>{input.disabled=true;});
+      if(result.skipped)card.querySelector("[data-quiz-result]").textContent=say("That's okay. Review the answer and try again.","괜찮아요. 정답과 해설을 확인하고 다시 풀어 보세요.");
+      get("check").hidden=true;
+      get("skip").hidden=true;
+      get("next").hidden=false;
+      get("progress").value=results.length;
+    };
+    const renderQuestion=(draft="")=>{
+      graded=false;
+      get("card").replaceChildren(questions[index].template.content.cloneNode(true));
+      card=get("card").querySelector("[data-quiz-item]");
+      card.querySelector(".quiz-item-actions")?.remove();
+      card.querySelector(".quiz-number").textContent=String(index+1).padStart(2,"0");
+      const heading=card.querySelector("h3");
+      heading.tabIndex=-1;
+      get("kind").textContent=kindLabels[questions[index].kind];
+      get("counter").textContent=`${index+1} / ${questions.length}`;
+      get("progress").max=questions.length;
+      get("progress").value=index;
+      get("message").textContent="";
+      get("check").hidden=false;
+      get("skip").hidden=false;
+      get("next").hidden=true;
+      get("next").textContent=index===questions.length-1?say("View results","결과 보기"):say("Next question","다음 문제");
+      card.querySelectorAll("[data-quiz-input]").forEach((input)=>{
+        if(input.type==="radio")input.checked=input.value===draft;
+        else input.value=draft;
+      });
+      if(results[index])showGradedCard(results[index]);
+      heading.focus();
+    };
+    const start=(selection)=>{
+      if(!selection.length)return;
+      questions=selection;
+      results=[];
+      index=0;
+      missed=[];
+      get("review").replaceChildren();
+      show("round");
+      renderQuestion();
+      persist();
+    };
+    const finish=()=>{
+      show("results");
+      missed=results.filter((result)=>!result.correct);
+      const correct=results.length-missed.length;
+      const remaining=questions.length-results.length;
+      const skipped=results.filter((result)=>result.skipped).length;
+      get("result-title").textContent=results.length
+        ?say(`${results.length} question${results.length===1?"":"s"} ${remaining?"reviewed":"completed"}`,`${results.length}문제 풀이 ${remaining?"종료":"완료"}`)
+        :say("Quiz ended","풀이를 종료했어요");
+      get("result-score").textContent=results.length
+        ?say(`${Math.round(correct/results.length*100)}% · ${correct} / ${results.length} correct`,`${Math.round(correct/results.length*100)}점 · ${correct} / ${results.length} 정답`)
+        :say("No questions answered yet.","아직 푼 문제가 없습니다.");
+      get("result-note").textContent=results.length
+        ?say(`${missed.length} incorrect${skipped?` (including ${skipped} skipped)`:""}${remaining?` · ${remaining} remaining question${remaining===1?" was":"s were"} not graded.`:missed.length?" · Review the explanations and try again.":" · All correct!"}`,
+          `오답 ${missed.length}문제${skipped?` (모르겠어요 ${skipped}문제 포함)`:""}${remaining?` · 남은 ${remaining}문제는 채점하지 않았습니다.`:missed.length?" · 해설을 확인하고 다시 도전해 보세요.":" · 모두 맞혔어요!"}`)
+        :say("Start a new quiz or change the settings.","새 문제로 다시 시작하거나 설정을 바꿔 보세요.");
+      get("retry").hidden=!missed.length;
+      get("retry").textContent=say(`Retry missed questions (${missed.length})`,`틀린 ${missed.length}문제 다시 풀기`);
+      get("review").replaceChildren();
+      if(missed.length){
+        const title=document.createElement("h3");
+        title.textContent=say("Review missed questions","틀린 문제 돌아보기");
+        get("review").append(title);
+      }
+      missed.forEach((result)=>{
+        const original=result.question.template.content;
+        const details=document.createElement("details");
+        const summary=document.createElement("summary");
+        summary.textContent=original.querySelector("h3").textContent;
+        const ownAnswer=document.createElement("p");
+        ownAnswer.className="player-own-answer";
+        ownAnswer.textContent=say(`Your answer: ${result.skipped?"Skipped":result.answer}`,`내 답: ${result.skipped?"모르겠어요":result.answer}`);
+        const feedback=original.querySelector("[data-quiz-feedback]").cloneNode(true);
+        feedback.hidden=false;
+        feedback.querySelector("[data-quiz-result]")?.remove();
+        details.append(summary,ownAnswer,feedback);
+        get("review").append(details);
+      });
+      persist();
+      get("result-title").focus();
+    };
+    const submit=(skip=false)=>{
+      if(graded||screen!=="round")return;
+      const answer=quizItemValue(card);
+      if(!skip&&!normalizeQuizAnswer(answer)){
+        get("message").textContent=questions[index].kind==="short"
+          ?say("Enter an answer, or choose 'I don't know'.","답을 입력해 주세요. 모르면 ‘모르겠어요’를 눌러 주세요.")
+          :say("Select an answer, or choose 'I don't know'.","답을 선택해 주세요. 모르면 ‘모르겠어요’를 눌러 주세요.");
+        card.querySelector("[data-quiz-input]")?.focus();
+        return;
+      }
+      if(skip)card.querySelectorAll("[data-quiz-input]").forEach((input)=>{if(input.type==="radio")input.checked=false;else input.value="";});
+      const outcome=gradeQuizItem(card);
+      if(outcome.blocked){persist();card.querySelector("[data-quiz-input]")?.focus();return;}
+      const result={question:questions[index],answer:skip?"":answer,correct:outcome.correct,skipped:skip};
+      results.push(result);
+      if(result.correct)missedIds.delete(result.question.id);
+      else missedIds.add(result.question.id);
+      showGradedCard(result);
+      get("message").textContent="";
+      persist();
+      const feedback=card.querySelector("[data-quiz-feedback]");
+      feedback.tabIndex=-1;
+      feedback.focus();
+    };
+    settings.addEventListener("change",refreshSelection);
+    settings.addEventListener("submit",(event)=>{event.preventDefault();start(selectQuizQuestions(bank,kindSelect.value,countSelect.value));});
+    answerForm.addEventListener("submit",(event)=>{event.preventDefault();submit();});
+    answerForm.addEventListener("keydown",(event)=>{if(event.isComposing&&event.key==="Enter")event.preventDefault();});
+    answerForm.addEventListener("input",persist);
+    answerForm.addEventListener("change",persist);
+    get("skip").addEventListener("click",()=>submit(true));
+    get("next").addEventListener("click",()=>{
+      if(!graded)return;
+      if(index===questions.length-1){finish();return;}
+      index++;
+      renderQuestion();
+      persist();
+    });
+    get("exit").addEventListener("click",finish);
+    get("retry").addEventListener("click",()=>start(missed.map((result)=>result.question)));
+    get("again").addEventListener("click",()=>start(selectQuizQuestions(bank,kindSelect.value,countSelect.value)));
+    get("configure").addEventListener("click",()=>{show("setup");updateSavedControls();get("setup-title").focus();});
+    resumeButton.addEventListener("click",()=>{
+      if(!validQuizSession(saved,bank,version))return;
+      questions=saved.questionIds.map((id)=>bankById.get(id));
+      results=saved.results.map((result)=>({...result,question:bankById.get(result.id)}));
+      index=saved.index;
+      const draft=saved.draft;
+      const resumeResults=saved.screen==="results";
+      show("round");
+      renderQuestion(draft);
+      if(resumeResults)finish();
+    });
+    resetSavedButton.addEventListener("click",()=>{
+      storage.remove(stateKey);
+      saved=null;
+      missedIds.clear();
+      savedNote.textContent=say("Saved quiz cleared.","저장된 퀴즈 기록을 지웠습니다.");
+      updateSavedControls();
+      get("setup-title").focus();
+    });
+    practiceMissedButton.addEventListener("click",()=>start(Array.from(missedIds,(id)=>bankById.get(id)).filter(Boolean)));
+    if(saved){
+      if(Array.from(kindSelect.options).some((option)=>option.value===saved.kind))kindSelect.value=saved.kind;
+      if(Array.from(countSelect.options).some((option)=>option.value===saved.count))countSelect.value=saved.count;
+      savedNote.textContent=say("Saved progress is available in this browser.","이 브라우저에 저장된 퀴즈 기록이 있습니다.");
+    }
+    updateSavedControls();
+    refreshSelection();
   });
 }
 
@@ -618,14 +961,17 @@ function initProfessorPrep(){
   const readerRoot=root.closest("[data-reader-root]");
   const pagePath=readerRoot?.dataset.pagePath||window.location.pathname;
   const stateKey=`${STORAGE_PREFIX}-prep:${pagePath}`;
-  const saved=storage.get(stateKey,{});
+  const stored=storage.get(stateKey,{});
+  const saved=stored&&typeof stored==="object"?stored:{};
+  const english=root.dataset.prepLanguage==="en";
   const tabs=Array.from(root.querySelectorAll("[data-prep-tab]"));
   const panels=Array.from(root.querySelectorAll("[data-prep-panel]"));
   const availableTabKeys=tabs.map((tab)=>tab.dataset.prepTab).filter(Boolean);
   const initialTab=availableTabKeys.includes(saved.activeTab)?saved.activeTab:(availableTabKeys[0]||"");
   const state={
     activeTab:initialTab,
-    difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])
+    difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[]),
+    drafts:saved.drafts&&typeof saved.drafts==="object"&&!Array.isArray(saved.drafts)?saved.drafts:{}
   };
   const difficultList=document.querySelector("[data-prep-difficult-list]");
 
@@ -641,7 +987,7 @@ function initProfessorPrep(){
   });
 
   const persist=()=>{
-    storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds)});
+    return storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds),drafts:state.drafts});
   };
 
   const activateTab=(key,options={})=>{
@@ -692,7 +1038,7 @@ function initProfessorPrep(){
       const active=state.difficultIds.has(card.id);
       card.card.classList.toggle("is-difficult",active);
       if(card.difficultButton){
-        card.difficultButton.textContent=active?UI_TEXT.prepDifficultActive:UI_TEXT.prepDifficult;
+        card.difficultButton.textContent=english?(active?"Marked":"Mark for review"):(active?UI_TEXT.prepDifficultActive:UI_TEXT.prepDifficult);
         card.difficultButton.classList.toggle("is-active",active);
         card.difficultButton.setAttribute("aria-pressed",String(active));
       }
@@ -701,12 +1047,38 @@ function initProfessorPrep(){
     if(difficultList){
       const activeCards=cards.filter((card)=>state.difficultIds.has(card.id));
       difficultList.innerHTML=activeCards.length
-        ? activeCards.map((card)=>`<a class="important-link" href="#${card.id}">${card.title}</a>`).join("")
-        : `<p class="meta">${UI_TEXT.prepNoDifficult}</p>`;
+        ? activeCards.map((card)=>`<a class="important-link" href="#${escapeUiText(card.id)}">${escapeUiText(card.title)}</a>`).join("")
+        : `<p class="meta">${english?"Marked answers appear here.":UI_TEXT.prepNoDifficult}</p>`;
     }
   };
 
   cards.forEach((card)=>{
+    const practice=card.card.querySelector("textarea[data-prep-practice], [data-prep-practice] textarea");
+    if(practice){
+      practice.value=typeof state.drafts[card.id]==="string"?state.drafts[card.id]:"";
+      let status=card.card.querySelector("[data-prep-practice-status]");
+      if(!status){
+        status=document.createElement("p");
+        status.className="prep-practice-status";
+        status.setAttribute("data-prep-practice-status","");
+        status.setAttribute("role","status");
+        practice.insertAdjacentElement("afterend",status);
+      }
+      const updateStatus=(savedOk=true)=>{
+        status.textContent=!savedOk
+          ?(english?"This browser could not save your draft.":"이 브라우저에서 연습 답안을 저장할 수 없습니다.")
+          :english&&containsKorean(practice.value)
+            ?"Please practice your answer in English. Your draft is saved; it is not graded."
+            :practice.value.trim()
+              ?(english?"Draft saved in this browser. Compare the key points and practice speaking aloud.":"연습 답안을 이 브라우저에 저장했습니다. 모델 답변과 비교하고 소리 내어 말해 보세요.")
+              :(english?"Write or say your answer before opening the model response.":"모델 답변을 열기 전에 자신의 답을 적거나 말해 보세요.");
+      };
+      practice.addEventListener("input",()=>{
+        state.drafts[card.id]=practice.value;
+        updateStatus(persist());
+      });
+      updateStatus();
+    }
     if(card.difficultButton){
       card.difficultButton.addEventListener("click",()=>{
         if(state.difficultIds.has(card.id))state.difficultIds.delete(card.id);
@@ -727,7 +1099,7 @@ function initReadingProgressAndToc(){
   if(!article)return;
   const progressBar=document.querySelector("[data-reading-progress-bar]");
   const tocLinks=Array.from(document.querySelectorAll("[data-reader-toc-link]"));
-  const headings=Array.from(article.querySelectorAll("h2[id],h3[id],h4[id]"));
+  const headings=Array.from(article.querySelectorAll("h2[id],h3[id],h4[id]")).filter(isReaderHeading);
 
   const setActiveToc=(id)=>{
     tocLinks.forEach((link)=>{
@@ -742,8 +1114,10 @@ function initReadingProgressAndToc(){
     if(!progressBar)return;
     const rect=article.getBoundingClientRect();
     const start=window.scrollY+rect.top;
-    const height=Math.max(1,article.scrollHeight-window.innerHeight*.72);
-    const progress=Math.min(1,Math.max(0,(window.scrollY-start)/height));
+    const lastScroll=Math.max(0,document.documentElement.scrollHeight-window.innerHeight);
+    const end=Math.min(lastScroll,start+article.scrollHeight-window.innerHeight*.72);
+    const height=Math.max(1,end-start);
+    const progress=end<=start?(window.scrollY>=end?1:0):Math.min(1,Math.max(0,(window.scrollY-start)/height));
     progressBar.style.width=`${Math.round(progress*100)}%`;
   };
 
@@ -753,7 +1127,7 @@ function initReadingProgressAndToc(){
     ticking=true;
     window.requestAnimationFrame(()=>{
       syncProgress();
-      if(headings.length&&!("IntersectionObserver" in window)){
+      if(headings.length){
         const active=headings.reduce((current,heading)=>heading.getBoundingClientRect().top<160?heading:current,headings[0]);
         setActiveToc(active.id);
       }
@@ -761,20 +1135,9 @@ function initReadingProgressAndToc(){
     });
   };
 
-  if(headings.length&&"IntersectionObserver" in window){
-    const visible=new Map();
-    const observer=new IntersectionObserver((entries)=>{
-      entries.forEach((entry)=>visible.set(entry.target.id,entry.isIntersecting));
-      const active=headings.find((heading)=>visible.get(heading.id))||headings.find((heading)=>heading.getBoundingClientRect().top>0)||headings[headings.length-1];
-      if(active)setActiveToc(active.id);
-    },{rootMargin:"-18% 0px -70% 0px",threshold:[0,1]});
-    headings.forEach((heading)=>observer.observe(heading));
-    setActiveToc(headings[0].id);
-  }
-
   window.addEventListener("scroll",onScroll,{passive:true});
   window.addEventListener("resize",onScroll);
-  syncProgress();
+  onScroll();
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -788,6 +1151,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   initReader();
   initTranslationSentenceReveals();
   initInteractiveQuizzes();
+  initQuizPlayers();
   initProfessorPrep();
   initReadingProgressAndToc();
 });

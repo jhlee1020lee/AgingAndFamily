@@ -1,142 +1,218 @@
 {
-  "title": "Underwood (2014) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 기사에 실제로 제시된 범위와 주장 강도에 가장 정확한 답 하나를 고르세요.",
+  "title": "Underwood (2014): Multiple Choice",
+  "instructions": "Choose the answer that best preserves the article's study designs, findings, and limits of interpretation.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "Lothian Birth Cohorts가 일반적인 노화 연구보다 특별한 가장 직접적인 이유는?",
-      "options": ["모든 참여자의 출생 당시 MRI가 있기 때문에", "11세 인지검사 기록이 남아 있기 때문에", "모든 스코틀랜드인이 후속연구에 참여했기 때문에", "치매 진단을 받은 고령 참여자만 장기적으로 다시 모집해 추적했기 때문에"],
-      "answer": "11세 인지검사 기록이 남아 있기 때문에",
-      "explanation": "보관된 Scottish Mental Surveys 기록이 노년기 결과를 해석할 드문 아동기 기준점을 제공했다.",
+      "prompt": "What gives the Lothian Birth Cohort studies an unusually early baseline?",
+      "options": [
+        "MRI scans collected from every participant at birth",
+        "Archived cognitive test scores from age 11",
+        "Follow-up participation by every Scottish survey respondent",
+        "Recruitment limited to older adults with diagnosed dementia"
+      ],
+      "answer": "Archived cognitive test scores from age 11",
+      "explanation": "The recovered Scottish Mental Survey records provide a rare childhood measure against which later-life cognition can be interpreted.",
       "evidence_segment_id": "COHORT-001",
-      "source": "연구의 독창성",
-      "difficulty": "기본"
+      "source": "An unusual longitudinal resource",
+      "difficulty": "Core"
     },
     {
-      "prompt": "약 160,000명이라는 수치의 지시대상을 가장 정확히 설명한 것은?",
-      "options": ["후속연구에서 자기공명영상 촬영까지 마친 고령 참여자의 전체 인원", "2014년 기사 시점까지 스코틀랜드에 생존해 있던 두 출생연도 구성원 전체", "두 조사에서 검사받은 아동 약 16만 명", "ENIGMA의 DNA 표본 수"],
-      "answer": "두 조사에서 검사받은 아동 약 16만 명",
-      "explanation": "재정 여건 때문에 그 아동들 가운데 모든 생존자에게 다시 연락하기는 현실적으로 어려웠다.",
+      "prompt": "What does the figure of roughly 160,000 refer to in the recruitment account?",
+      "options": [
+        "Older adults who completed MRI scans in the follow-up study",
+        "Surviving members of both birth cohorts living in Scotland in 2014",
+        "Children tested in the 1932 and 1947 national surveys",
+        "DNA samples supplied by the Lothian team to ENIGMA"
+      ],
+      "answer": "Children tested in the 1932 and 1947 national surveys",
+      "explanation": "The figure describes the original survey participants, not the later Lothian sample of 1,641. Financial constraints prevented researchers from recontacting all surviving survey participants.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "표본 모집",
-      "difficulty": "함정"
+      "source": "Recruitment and sample boundaries",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "11세 점수가 77세 IQ 분산의 약 50%를 예측했다는 결과의 올바른 해석은?",
-      "options": ["노년기 IQ 개인차의 상당 부분이 11세 점수와 관련됐다", "각 개인의 평생 지능 가운데 정확히 절반은 환경이나 경험과 무관하게 11세에 영구 고정되었다", "노년기 IQ 평균이 정확히 절반으로 줄었다", "나머지 요인은 전혀 존재하지 않는다"],
-      "answer": "노년기 IQ 개인차의 상당 부분이 11세 점수와 관련됐다",
-      "explanation": "설명된 분산은 집단 수준 통계이며 나머지 약 50%의 변이도 남는다.",
+      "prompt": "How should the finding that age-11 scores predicted about 50% of age-77 IQ variance be interpreted?",
+      "options": [
+        "Childhood scores were related to a substantial share of later-life individual differences",
+        "Exactly half of every person's intelligence was permanently fixed at age 11, irrespective of later experience",
+        "The mean IQ of the cohort fell by precisely half between the two assessments",
+        "All differences in later-life IQ were explained, leaving no role for other factors"
+      ],
+      "answer": "Childhood scores were related to a substantial share of later-life individual differences",
+      "explanation": "This is a group-level statement about variation among people. It does not mean that half of each individual's intelligence is fixed, and about half of the variance remains unaccounted for by childhood IQ.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "설명된 분산",
-      "difficulty": "응용"
+      "source": "Interpreting explained variance",
+      "difficulty": "Application"
     },
     {
-      "prompt": "소량의 와인과 노년기 인지의 관계를 아동기 IQ로 통제했을 때 나타난 결과는?",
-      "options": ["인지 이익이 두 배였다", "통제 후 겉보기 이익이 사라졌다", "음주자 IQ가 낮았다", "아동기 기록이 없어졌다"],
-      "answer": "통제 후 겉보기 이익이 사라졌다",
-      "explanation": "원래 인지능력이 높은 사람이 음주를 더 했을 수 있다는 선택효과 해석을 뒷받침했다.",
+      "prompt": "What happened to the apparent cognitive benefit of wine consumption after adjustment for childhood IQ?",
+      "options": [
+        "It doubled after the childhood measure was added",
+        "It disappeared after childhood IQ was taken into account",
+        "It proved that wine directly causes cognitive decline",
+        "It remained identical in size and statistical interpretation"
+      ],
+      "answer": "It disappeared after childhood IQ was taken into account",
+      "explanation": "Deary reported that people who drank more were already likely to have higher cognitive ability. The adjustment challenges a simple interpretation that drinking produced the apparent benefit.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "음주 분석",
-      "difficulty": "기본"
+      "source": "Childhood ability and lifestyle associations",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Greenwood가 Lothian 결과에 덧붙인 주의를 가장 정확히 옮긴 것은?",
-      "options": ["노년기 정신기능은 초기 지능만으로 완전히 예정되어 이후 경험과 개입이 바꿀 수 없다", "인지훈련은 확정적으로 성공했다", "교육은 아동기에만 가능하다", "초기 IQ가 중요해도 개입 여지는 남는다"],
-      "answer": "초기 IQ가 중요해도 개입 여지는 남는다",
-      "explanation": "인지훈련 연구는 초기 단계지만 특정 능력 향상 활동의 실질적 이익을 시사하는 증거가 늘고 있다고 말했다.",
+      "prompt": "What caution did Greenwood add to the Lothian findings?",
+      "options": [
+        "Early IQ completely predetermines later mental function and rules out benefits from subsequent experience",
+        "Cognitive training has already been established as a universal cure for dementia",
+        "Learning can influence cognition only before people leave primary school",
+        "The importance of early IQ leaves room for useful interventions"
+      ],
+      "answer": "The importance of early IQ leaves room for useful interventions",
+      "explanation": "She described cognitive-training research as still at an early stage, while noting growing evidence that improving specific abilities may benefit reasoning and problem-solving.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "개입 가능성",
-      "difficulty": "응용"
+      "source": "Intervention possibilities and uncertainty",
+      "difficulty": "Application"
     },
     {
-      "prompt": "10년간 반복검사에서 나타난 인지영역별 경향은?",
-      "options": ["기억·지식은 비교적 유지되고 속도·반응은 저하했다", "기억·지식·문제해결·반응속도를 포함한 모든 인지영역이 같은 폭으로 계속 향상되었다", "처리속도는 보존되었지만 축적된 언어지식만 10년 사이 완전히 사라졌다", "추상적 문제해결만 향상되었다"],
-      "answer": "기억·지식은 비교적 유지되고 속도·반응은 저하했다",
-      "explanation": "검사 친숙성의 가능성도 언급되었고 처리속도 관련 과제의 저하가 특히 두드러졌다.",
+      "prompt": "Which pattern was reported across the decade of repeated cognitive testing?",
+      "options": [
+        "Memory and knowledge held up relatively well, while speed-related abilities declined",
+        "Memory, knowledge, abstract reasoning, and reaction speed all improved by the same amount",
+        "Processing speed was fully preserved, but accumulated verbal knowledge disappeared",
+        "Abstract problem-solving improved steadily while every measure of memory deteriorated"
+      ],
+      "answer": "Memory and knowledge held up relatively well, while speed-related abilities declined",
+      "explanation": "The article reports some decline in abstract problem-solving, fast thinking, and reaction time. Familiarity with repeated tests may partly explain the comparatively stable memory and knowledge scores.",
       "evidence_segment_id": "CHANGE-001",
-      "source": "반복검사",
-      "difficulty": "기본"
+      "source": "Domain-specific change and practice effects",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Deary가 코호트 평균보다 개인별 분화에 관심을 둔 이유는?",
-      "options": ["추적 기간에 모든 참여자의 검사 점수가 연령과 상관없이 완전히 같아졌기 때문에", "코호트 평균을 계산할 만큼 반복측정 자료나 참여자가 전혀 남아 있지 않았기 때문에", "평균은 서로 벌어지는 개인별 경로를 가릴 수 있기 때문에", "각 개인은 연구기간 전체에서 인지검사를 단 한 차례만 받아 변화 자료가 없었기 때문에"],
-      "answer": "평균은 서로 벌어지는 개인별 경로를 가릴 수 있기 때문에",
-      "explanation": "70대와 80대의 점수가 부채처럼 벌어져 평균이 전체 이야기를 말하지 못했다.",
+      "prompt": "Why did Deary emphasize individual divergence as well as cohort averages?",
+      "options": [
+        "Every participant's score converged to the same level, regardless of age or initial ability",
+        "There were no repeated measurements left from which to estimate a cohort mean",
+        "Averages can conceal increasingly different individual trajectories",
+        "Each participant completed only one assessment, making individual change unobservable"
+      ],
+      "answer": "Averages can conceal increasingly different individual trajectories",
+      "explanation": "Scores spread out as participants reached their seventies and eighties. The mean therefore does not fully describe the variation that Deary wanted to explain.",
       "evidence_segment_id": "CHANGE-001",
-      "source": "개인별 분화",
-      "difficulty": "응용"
+      "source": "Individual trajectories",
+      "difficulty": "Application"
     },
     {
-      "prompt": "확산텐서영상이 이 기사에서 측정하는 데 사용된 것은?",
-      "options": ["백질 신경로를 따라 이동하는 물분자", "심박수만", "아동기 학교성적", "가족의 소득"],
-      "answer": "백질 신경로를 따라 이동하는 물분자",
-      "explanation": "이를 통해 신경 연결의 온전성과 인지기능 차이의 관련성을 살폈다.",
+      "prompt": "What does diffusion tensor imaging track in the account of brain connectivity?",
+      "options": [
+        "Water movement through white matter tracts",
+        "Blood pressure changes during cognitive testing",
+        "Childhood school grades reconstructed from adult MRI scans",
+        "Family income inferred from the thickness of the cortex"
+      ],
+      "answer": "Water movement through white matter tracts",
+      "explanation": "The technique was used to examine the integrity of neuronal connections. Roughly 10% of the differences in general cognitive function were linked to connection integrity in this account.",
       "evidence_segment_id": "NEURO-001",
-      "source": "확산텐서영상",
-      "difficulty": "기본"
+      "source": "Imaging white matter connections",
+      "difficulty": "Core"
     },
     {
-      "prompt": "백질 고신호강도 병변에 관한 기사 내용으로 옳은 것은?",
-      "options": ["연령·건강·생활조건과 무관하게 모든 참여자에게 정확히 같은 양으로 생긴다", "나이가 들수록 줄어든다", "원인이 완전히 밝혀졌다", "연령과 함께 늘 수 있으나 개인차가 크다"],
-      "answer": "연령과 함께 늘 수 있으나 개인차가 크다",
-      "explanation": "인지에 미치는 영향과 취약성 차이, 원인은 계속 연구 중이다.",
+      "prompt": "Which statement about white matter hyperintensities matches the article?",
+      "options": [
+        "They occur in exactly equal amounts in everyone, independent of age, health, and living conditions",
+        "They consistently decrease in number as people grow older",
+        "Their causes and cognitive consequences are fully established",
+        "They generally increase with age but vary greatly among individuals"
+      ],
+      "answer": "They generally increase with age but vary greatly among individuals",
+      "explanation": "Hyperintensities signal damage, but their causes, differing cognitive consequences, and individual susceptibility remained under investigation. A reported link with cortisol does not settle causation.",
       "evidence_segment_id": "NEURO-001",
-      "source": "백질 병변",
-      "difficulty": "기본"
+      "source": "White matter abnormalities",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Karama의 피질 두께 결과가 제기한 대안적 해석은?",
-      "options": ["노년기에 관찰되는 얇은 피질은 실제 뇌 차이가 아니라 언제나 영상 측정 오류만을 뜻한다", "아동기 지능과 노년기 피질 두께는 어떤 표본에서도 통계적으로 관련될 수 없다", "정상 노화에서는 피질이 절대 변하지 않는다", "일부 얇은 피질은 원래의 회백질 차이일 수 있다"],
-      "answer": "일부 얇은 피질은 원래의 회백질 차이일 수 있다",
-      "explanation": "노년기 피질이 얇은 사람이 성인기뿐 아니라 아동기에도 IQ가 낮았다는 결과에서 나온 해석이다.",
+      "prompt": "What alternative interpretation did Karama's cortical-thickness finding suggest?",
+      "options": [
+        "A thinner cortex in old age always indicates an imaging error rather than a biological difference",
+        "Childhood IQ and later cortical thickness cannot be statistically associated in any sample",
+        "The cerebral cortex never changes during normal aging",
+        "Some later differences may reflect less gray matter from the outset"
+      ],
+      "answer": "Some later differences may reflect less gray matter from the outset",
+      "explanation": "People with a relatively thinner cortex in old age also had lower IQ in childhood. This suggests a possible longstanding difference; it does not demonstrate that cortical shrinkage never occurs.",
       "evidence_segment_id": "NEURO-001",
-      "source": "피질 두께",
-      "difficulty": "응용"
+      "source": "Initial differences versus later loss",
+      "difficulty": "Application"
     },
     {
-      "prompt": "물탱크 가설에서 탱크가 더 많이 차 있다는 말의 의미는?",
-      "options": ["인지예비력이 커 손실을 더 오래 견딘다는 뜻", "물을 더 자주 많이 마실수록 노년기의 뇌 용적과 인지능력이 직접 증가한다는 뜻", "성인기 이후 뇌 용적이 매년 같은 비율로 계속 증가해 신경퇴행이 일어나지 않는다는 뜻", "인지 노화에서는 유전자·초기환경·교육경험이 어떤 역할도 하지 않는다는 뜻"],
-      "answer": "인지예비력이 커 손실을 더 오래 견딘다는 뜻",
-      "explanation": "좋은 유전자와 어느 정도 유리한 초기 환경을 함께 언급하는 비유적 가설이다.",
+      "prompt": "In the water tank hypothesis, what does starting with a fuller tank represent?",
+      "options": [
+        "Greater cognitive reserve that takes longer to deplete",
+        "Drinking more water directly increases brain volume and prevents cognitive decline",
+        "Brain volume rises at a constant annual rate throughout adulthood, eliminating neurodegeneration",
+        "Genes, early environments, and life experiences have no part in cognitive aging"
+      ],
+      "answer": "Greater cognitive reserve that takes longer to deplete",
+      "explanation": "The metaphor proposes that a better initial brain endowment, attributed to genes and partly to a favorable early environment, provides more reserve to withstand loss. It is an explanatory hypothesis.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "물탱크 가설",
-      "difficulty": "기본"
+      "source": "The cognitive-reserve metaphor",
+      "difficulty": "Core"
     },
     {
-      "prompt": "인지 노화에 관여하는 유전변이를 찾는 데 매우 큰 표본이 필요한 이유는?",
-      "options": ["DNA를 한 명에게서 채취할 수 없어서", "인지검사를 사용할 수 없어서", "여러 유전변이의 뇌 영향과 유전자-환경 상호작용을 식별해야 해서", "모든 유전자가 같은 효과를 내서"],
-      "answer": "여러 유전변이의 뇌 영향과 유전자-환경 상호작용을 식별해야 해서",
-      "explanation": "연구자들은 작은 진전에도 수십만 개의 DNA 표본이 필요하다고 설명했다.",
+      "prompt": "Why does the article emphasize very large samples for research on genetic influences on the brain?",
+      "options": [
+        "DNA cannot be collected from individual participants",
+        "Cognitive tests cannot be used in genetic research",
+        "Detecting variant effects and gene-environment interplay requires substantial statistical power",
+        "Every genetic variant has the same large, easily observed effect"
+      ],
+      "answer": "Detecting variant effects and gene-environment interplay requires substantial statistical power",
+      "explanation": "The researchers describe needing hundreds of thousands of DNA samples to make even modest progress on variant effects and their interactions with environmental influences.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "대규모 유전연구",
-      "difficulty": "응용"
+      "source": "Scale of genetic research",
+      "difficulty": "Application"
     },
     {
-      "prompt": "기사 당시 ENIGMA의 규모로 맞는 것은?",
-      "options": ["3개국 70개 연구기관", "70개국 33명", "한 국가 1,641명", "33개국 70개 기관"],
-      "answer": "33개국 70개 기관",
-      "explanation": "Lothian 연구는 2009년에 이 국제 컨소시엄에 합류했다.",
+      "prompt": "Which description matches ENIGMA's institutional scale in the 2014 article?",
+      "options": [
+        "70 institutions in 3 countries",
+        "33 participants in 70 countries",
+        "1,641 participants in a single country",
+        "70 institutions in 33 countries"
+      ],
+      "answer": "70 institutions in 33 countries",
+      "explanation": "The article reports that the Lothian studies joined this international consortium in 2009. These figures describe the article's historical account, not the consortium's current membership.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "ENIGMA 규모",
-      "difficulty": "기본"
+      "source": "ENIGMA in the article's historical context",
+      "difficulty": "Core"
     },
     {
-      "prompt": "기사 말미 Sheila McGowan의 행동이 보여 주는 것은?",
-      "options": ["연구 참여로 자신의 뇌 노화를 알게 된 뒤 그림·공부·사회활동을 포함한 모든 일상 활동을 중단했다", "그림을 다시 시작하고 75세에 온라인 강좌를 들었다", "보존되어 있던 자신의 11세 정신검사 기록과 후속 인지검사 자료를 연구진에게 폐기해 달라고 했다", "추가 인지검사를 거부했다"],
-      "answer": "그림을 다시 시작하고 75세에 온라인 강좌를 들었다",
-      "explanation": "자신의 뇌 노화를 마주한 일을 실천에 나서는 계기로 받아들였다는 개인 사례다.",
+      "prompt": "What did McGowan do in response to confronting her own cognitive aging?",
+      "options": [
+        "She stopped painting, studying, and all other daily activities after hearing about the research",
+        "She returned to painting and began online university courses at 75",
+        "She asked researchers to destroy her childhood records and all follow-up measurements",
+        "She withdrew from every subsequent cognitive assessment"
+      ],
+      "answer": "She returned to painting and began online university courses at 75",
+      "explanation": "The closing account presents her decision to act through art and learning. This personal example does not establish that those activities prevented cognitive decline.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "마무리 사례",
-      "difficulty": "기본"
+      "source": "The closing personal example",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Lothian Birth Cohorts의 장기 추적 성과로 기사에 제시된 것은?",
-      "options": ["250편 넘는 논문과 20,000시간 넘는 인지검사·뇌 스캔", "모든 참여자를 매달 검사한 단일 임상시험", "참여자 전원의 치매 확진", "11세 검사기록의 전면 폐기"],
-      "answer": "250편 넘는 논문과 20,000시간 넘는 인지검사·뇌 스캔",
-      "explanation": "약 2~3년 간격으로 축적한 인지검사와 뇌 스캔이 20,000시간을 넘었고 관련 논문도 250편 이상 나왔다.",
+      "prompt": "Which output of the Lothian follow-up studies was reported by 2014?",
+      "options": [
+        "Over 250 publications and over 20,000 hours of cognitive tests and brain scans",
+        "One clinical trial in which every participant received a new assessment each month",
+        "A confirmed dementia diagnosis for every person who took part in either cohort",
+        "A complete replacement of childhood test records with retrospective self-reports"
+      ],
+      "answer": "Over 250 publications and over 20,000 hours of cognitive tests and brain scans",
+      "explanation": "The article describes more than 250 publications and more than 20,000 hours of tests and scans, conducted at roughly two- to three-year intervals. These are cumulative research outputs, not evidence from a randomized intervention.",
       "evidence_segment_id": "COHORT-001",
-      "source": "장기 추적 성과",
-      "difficulty": "응용"
+      "source": "Longitudinal research outputs",
+      "difficulty": "Application"
     }
-  ]
+  ],
+  "language": "en"
 }

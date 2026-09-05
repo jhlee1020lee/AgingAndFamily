@@ -199,7 +199,8 @@ function parseArgs(argv) {
 if (require.main === module) {
   const { slugs, siteDir } = parseArgs(process.argv.slice(2));
   if (!slugs.length) {
-    throw new Error("Use --slug <reading-slug>.");
+    const manifest = readJson(path.join(ROOT_DIR, "manifest", "readings.json"));
+    slugs.push(...manifest.readings.filter((reading) => reading.language === "en").map((reading) => reading.slug));
   }
   slugs.forEach((slug) => checkSlug(slug, { siteDir }));
 }

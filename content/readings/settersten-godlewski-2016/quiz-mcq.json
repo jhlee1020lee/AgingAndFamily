@@ -1,142 +1,218 @@
 {
-  "title": "Settersten & Godlewski (2016) 객관식 퀴즈",
-  "instructions": "논문에 가장 정확히 부합하는 답 하나를 고르세요.",
+  "title": "Settersten & Godlewski (2016): Multiple Choice",
+  "instructions": "Choose the single answer that most accurately reflects the chapter.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "저자들이 제시한 두 탐구 흐름의 조합으로 가장 정확한 것은?",
-      "options": ["개인 유기체의 생물학적 노화와 질병 과정으로 나타나는 병리적 노화만을 비교하는 흐름", "개인·집단의 속성인 연령과 사회조직·역동의 속성인 연령", "아동기 인지발달과 노년기 인지저하를 하나의 연속적 발달모형으로 묶어 비교하는 흐름", "질적 면담 연구와 양적 통계 연구 중 어느 방법이 더 우월한지를 판정하는 두 방법론적 흐름"],
-      "answer": "개인·집단의 속성인 연령과 사회조직·역동의 속성인 연령",
-      "explanation": "논문은 개인 수준의 대리변수·시간·주관적 경험과 사회 수준의 단계·규범·제도·교차성을 나누어 검토한다.",
+      "prompt": "Which pair captures the chapter's two main strands of inquiry?",
+      "options": [
+        "Biological and pathological aging as processes confined to an individual organism",
+        "Age as a property of individuals and groups, and of social organization and dynamics",
+        "Childhood development and late-life decline as one fixed sequence of cognitive stages",
+        "Qualitative and quantitative methods ranked by their general scientific superiority"
+      ],
+      "answer": "Age as a property of individuals and groups, and of social organization and dynamics",
+      "explanation": "The chapter contrasts individual-level proxies, time, and subjective experiences with social phases, norms, institutions, and intersections.",
       "evidence_segment_id": "INTRO-001",
-      "source": "도입부",
-      "difficulty": "기본"
+      "source": "Introduction",
+      "difficulty": "Core"
     },
     {
-      "prompt": "연구에서 생활연령을 사용할 때 저자들이 가장 먼저 요구하는 질문은?",
-      "options": ["표본 평균연령이 다른 모든 선행연구보다 가장 높고 조사대상도 최고령층에 집중되어 있는가", "생활연령을 몇 개 범주로 잘라야 집단 간 차이가 통계적으로 유의해지는가", "연령이 대신하는 과정을 이론화하고 직접 측정할 수 있는가", "분석에서 연령을 통제했는가"],
-      "answer": "연령이 대신하는 과정을 이론화하고 직접 측정할 수 있는가",
-      "explanation": "연령 자체는 결과 원인이 아니므로 심리적·사회적·생물학적·기능적 과정 중 무엇을 가리키는지 이론화해야 한다.",
+      "prompt": "What should researchers ask when including chronological age in an analysis?",
+      "options": [
+        "Is this sample older than every sample used in previous research?",
+        "Which age cutoffs make the group differences statistically significant?",
+        "What process does age represent, and can that process be measured directly?",
+        "Has age been included automatically as a control?"
+      ],
+      "answer": "What process does age represent, and can that process be measured directly?",
+      "explanation": "Age is not itself the underlying mechanism. Researchers must theorize the psychological, social, biological, or functional process it indexes.",
       "evidence_segment_id": "INDIVIDUAL-001",
-      "source": "대리변수로서의 연령",
-      "difficulty": "기본"
+      "source": "Age as a proxy",
+      "difficulty": "Core"
     },
     {
-      "prompt": "다음 중 상대적인 개인 시간의 예가 아닌 것은?",
-      "options": ["딸이 졸업할 때 53세가 됨", "교수로 40년 일한 뒤 67세에 은퇴함", "딸과 아들을 3년 간격으로 낳음", "모든 67세는 동일한 기능능력을 가짐"],
-      "answer": "모든 67세는 동일한 기능능력을 가짐",
-      "explanation": "앞의 세 선택지는 사건까지 시간·역할기간·사건 사이 기간이며, 마지막은 논문이 비판하는 연령 내 동질성 가정이다.",
+      "prompt": "Which is NOT an example of relative personal time?",
+      "options": [
+        "Being 53 when a daughter graduates",
+        "Retiring at 67 after 40 years as a professor",
+        "Having children three years apart",
+        "Assuming all 67-year-olds have identical functional ability"
+      ],
+      "answer": "Assuming all 67-year-olds have identical functional ability",
+      "explanation": "The first three describe time to an event, time in a role, or time between events. The final option assumes within-age homogeneity.",
       "evidence_segment_id": "RELATIVE-TIME-001",
-      "source": "상대적인 개인 시간",
-      "difficulty": "기본"
+      "source": "Relative personal time",
+      "difficulty": "Core"
     },
     {
-      "prompt": "AARC에 반드시 포함되는 해석은?",
-      "options": ["모든 변화는 질병 때문이다", "변화를 타인의 노화 탓으로 돌린다", "변화를 우연으로만 본다", "변화를 자신의 생활연령 증가에 귀속한다"],
-      "answer": "변화를 자신의 생활연령 증가에 귀속한다",
-      "explanation": "AARC는 행동·수행·반추된 경험의 변화를 의식하고 다른 조건이 아닌 자기 나이 증가 때문이라고 보는 과정이다.",
+      "prompt": "Which interpretation is necessary for awareness of age-related change?",
+      "options": [
+        "Attributing every change to illness",
+        "Attributing personal changes to somebody else's aging",
+        "Treating all changes as random events",
+        "Attributing perceived changes to one's own increasing chronological age"
+      ],
+      "answer": "Attributing perceived changes to one's own increasing chronological age",
+      "explanation": "AARC includes conscious perceptions of change and attribution to increased chronological age rather than other conditions.",
       "evidence_segment_id": "SUBJECTIVE-AGE-001",
       "source": "AARC",
-      "difficulty": "기본"
+      "difficulty": "Core"
     },
     {
-      "prompt": "연령효과와 코호트효과를 올바르게 구분한 것은?",
-      "options": ["연령효과는 성숙, 코호트효과는 역사적 사건과 사회변동", "연령효과는 당시의 역사적 사건·사회변동만을 뜻하고 코호트효과는 개인의 생물학적 성숙만 뜻한다", "둘은 언제나 같은 효과", "둘 다 가족 내 세대 위치만 뜻함"],
-      "answer": "연령효과는 성숙, 코호트효과는 역사적 사건과 사회변동",
-      "explanation": "연령과 코호트는 각각 생애시간과 역사시간의 단순 지표이므로 구별하지 않으면 설명이 혼입된다.",
+      "prompt": "Which distinction between age and cohort explanations is accurate?",
+      "options": [
+        "Age concerns maturation; cohort concerns historical events and social change",
+        "Age concerns only historical change; cohort concerns only biological maturation",
+        "Age and cohort are always interchangeable explanations",
+        "Both refer only to generational positions inside a family"
+      ],
+      "answer": "Age concerns maturation; cohort concerns historical events and social change",
+      "explanation": "Age and cohort index lifetime and historical time respectively. Using them without distinguishing the underlying processes confuses the explanation.",
       "evidence_segment_id": "MULTIPLE-TIMES-001",
-      "source": "역사시간",
-      "difficulty": "기본"
+      "source": "Historical time",
+      "difficulty": "Core"
     },
     {
-      "prompt": "가족 영역이 경제·정치 영역보다 덜 연령구조화될 수 있는 이유로 논문이 제시한 것은?",
-      "options": ["가족에는 생애단계·친족세대·역할전환 같은 시간적·세대적 구분이 전혀 존재하지 않기 때문에", "가족관계와 돌봄은 국가법·노동시장·복지제도의 규칙과 지원을 어떤 방식으로도 받지 않기 때문에", "가족시간이 덜 선형적이고 몸·타인의 필요가 계획을 제약해서", "구성원이 자기 나이를 몰라서"],
-      "answer": "가족시간이 덜 선형적이고 몸·타인의 필요가 계획을 제약해서",
-      "explanation": "질병·출산·양육의 필요는 선형적 시계시간에 맞춘 계획을 어렵게 하여 일–가족 시간갈등을 만든다.",
+      "prompt": "Why may family life be less age-structured than economic and political life?",
+      "options": [
+        "Families have no life phases, generations, or role transitions",
+        "Family relationships operate independently of laws, markets, and welfare systems",
+        "Family time is less linear, and bodily and others' needs constrain planning",
+        "Family members generally do not know their chronological ages"
+      ],
+      "answer": "Family time is less linear, and bodily and others' needs constrain planning",
+      "explanation": "Illness, childbirth, and childrearing needs can resist predictable clock-time schedules and contribute to work–family time conflicts.",
       "evidence_segment_id": "SOCIAL-ORG-001",
-      "source": "사회조직과 시간",
-      "difficulty": "응용"
+      "source": "Social organization and time",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Neugarten의 젊은 노인/고령 노인 구분의 원래 취지를 가장 잘 설명한 것은?",
-      "options": ["노년층의 사회보장 수급 자격을 두 연령집단별로 다르게 정하는 행정기준을 만들려고", "65세와 75세를 기능·건강·사회활동의 개인차가 없는 보편적 생물학 경계로 확정하려고", "20대 초반과 후반을 젊은 노인과 고령 노인이라는 고정 생활연령 집단으로 구별하려고", "나이가 아니라 건강·부·활동성 차이로 노인을 구별하려고"],
-      "answer": "나이가 아니라 건강·부·활동성 차이로 노인을 구별하려고",
-      "explanation": "후대의 고정 연령범주와 달리 원래 개념은 같은 연령 사람들의 큰 변이를 포착하려는 것이었다.",
+      "prompt": "What was the original purpose of Neugarten's young-old/old-old distinction?",
+      "options": [
+        "To prescribe different social-security eligibility rules for two fixed ages",
+        "To establish ages 65 and 75 as universal biological boundaries",
+        "To divide people in their twenties into fixed categories of old age",
+        "To distinguish health, affluence, and activity regardless of chronological age"
+      ],
+      "answer": "To distinguish health, affluence, and activity regardless of chronological age",
+      "explanation": "The original concepts emphasized heterogeneity among people of the same age, rather than the fixed age bands adopted later.",
       "evidence_segment_id": "LIFE-PHASES-001",
-      "source": "생애단계",
-      "difficulty": "응용"
+      "source": "Life phases",
+      "difficulty": "Application"
     },
     {
-      "prompt": "연령 고정관념에 관한 설명 중 논문과 일치하는 것은?",
-      "options": ["부정적 고정관념만 사회적 효과를 낸다", "긍정적 고정관념도 사회적 이점과 비현실적 기준을 함께 만들 수 있다", "젊은 사람은 연령주의의 대상이 될 수 없다", "연령주의는 성별·인종에 관계없이 동일하게 경험된다"],
-      "answer": "긍정적 고정관념도 사회적 이점과 비현실적 기준을 함께 만들 수 있다",
-      "explanation": "저자들은 긍정적 끝도 이론화하되 성공적 노화의 지나치게 긍정적인 묘사가 위험할 수 있다고 지적한다.",
+      "prompt": "Which statement about age stereotypes matches the chapter?",
+      "options": [
+        "Only negative stereotypes have social consequences",
+        "Positive stereotypes may provide advantages while also creating unrealistic standards",
+        "Younger people cannot be targets of ageism",
+        "Ageism is experienced identically across gender and racial groups"
+      ],
+      "answer": "Positive stereotypes may provide advantages while also creating unrealistic standards",
+      "explanation": "The authors call for study of positive stereotypes while warning that overly positive portrayals of successful aging may be unattainable for many people.",
       "evidence_segment_id": "AGEISM-002",
-      "source": "연령주의와 긍정적 고정관념",
-      "difficulty": "응용"
+      "source": "Positive stereotypes and ageism",
+      "difficulty": "Application"
     },
     {
-      "prompt": "연령규범이 개인에게 제공하는 것과 사회가 이탈에 대응하는 방식을 올바르게 짝지은 것은?",
-      "options": ["개인의 생애경로에 어떤 질서나 예측 가능성도 제공하지 않는 무작위성–일탈에 대한 완전한 사회적 무관심", "질서·예측 가능성–보상·처벌의 제재", "생물학적 불변성–유전검사", "역사적 동일성–코호트 제거"],
-      "answer": "질서·예측 가능성–보상·처벌의 제재",
-      "explanation": "연령 각본은 삶을 조직하는 지도가 되며 사회질서 관점에서는 궤도 준수와 이탈에 제재가 따른다.",
+      "prompt": "Which pairing describes what age norms provide and how conformity is enforced?",
+      "options": [
+        "Randomness and unpredictability; complete social indifference to deviation",
+        "Order and predictability; sanctions through rewards and penalties",
+        "Biological immutability; genetic testing",
+        "Historical sameness; removal of cohort differences"
+      ],
+      "answer": "Order and predictability; sanctions through rewards and penalties",
+      "explanation": "Age scripts organize lives, while social sanctions can reward staying on track or penalize departures from expected timing.",
       "evidence_segment_id": "ROLE-TIMING-001",
-      "source": "연령규범",
-      "difficulty": "기본"
+      "source": "Age norms",
+      "difficulty": "Core"
     },
     {
-      "prompt": "연령통합과 연령분리에 대한 저자들의 입장은?",
-      "options": ["통합과 분리 모두 득실이 있어 맥락을 봐야 한다", "연령이 다양한 집단을 통합하기만 하면 모든 세대갈등과 자원경쟁이 자동으로 완전히 사라진다", "연령분리 제도와 공동체는 개인의 선택·건강·관계 욕구와 무관하게 오직 강제로만 형성된다", "가족 밖 세대관계는 중요하지 않다"],
-      "answer": "통합과 분리 모두 득실이 있어 맥락을 봐야 한다",
-      "explanation": "연령다양 관계망도 갈등을 만들 수 있고 연령제한 공동체도 또래 관계와 건강지원이라는 편익을 줄 수 있다.",
+      "prompt": "What is the authors' position on age integration and segregation?",
+      "options": [
+        "Both involve costs and benefits that require attention to context",
+        "Mixing age groups automatically eliminates every intergenerational conflict",
+        "Age-restricted communities arise only through coercion",
+        "Intergenerational relationships outside the family are unimportant"
+      ],
+      "answer": "Both involve costs and benefits that require attention to context",
+      "explanation": "Age-diverse networks may bring conflict as well as cooperation; restricted communities may provide peer relationships and health-related support.",
       "evidence_segment_id": "AGE-INTEGRATION-001",
-      "source": "연령통합과 분리",
-      "difficulty": "기본"
+      "source": "Age integration and segregation",
+      "difficulty": "Core"
     },
     {
-      "prompt": "미국의 생애 초·말기 사회프로그램 비계에 대한 설명으로 가장 정확한 것은?",
-      "options": ["아동·노인의 위험과 의존 가정에 기반한다", "생애 중년기에 있는 성인에게만 대학교육과 직업훈련 비용을 지원하려고 만든 체계다", "연령·건강·소득·돌봄 필요와 무관하게 모든 사람에게 완전히 동일한 급여와 자격을 준다", "노년기 은퇴를 금지하고 모든 사람이 사망 직전까지 유급노동을 하도록 만드는 것이 목적이다"],
-      "answer": "아동·노인의 위험과 의존 가정에 기반한다",
-      "explanation": "아동기에는 투자와 보호, 노년기에는 건강·경제적 안전과 은퇴 가능성을 지원하는 논리가 작동한다.",
+      "prompt": "What underlies the concentration of US social programs in early and later life?",
+      "options": [
+        "Assumptions about risk and dependence in childhood and old age",
+        "A framework designed exclusively to fund education for middle-aged adults",
+        "Identical benefits for everyone regardless of age, need, or circumstances",
+        "A policy requiring every older person to work until death"
+      ],
+      "answer": "Assumptions about risk and dependence in childhood and old age",
+      "explanation": "The chapter describes protection and investment for children, and health and economic security and feasible retirement for older adults.",
       "evidence_segment_id": "AGE-RIGHTS-001",
-      "source": "권리와 혜택",
-      "difficulty": "기본"
+      "source": "Rights and benefits",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노화하는 몸의 젠더 이중기준을 가장 잘 나타낸 것은?",
-      "options": ["남녀 모두 노화 징후로 같은 사회자본을 얻는다", "여성의 징후만 언제나 자본을 높인다", "노화 징후가 남성의 사회자본을 높이지만 여성에게서는 빼앗을 수 있다", "몸의 평가는 문화와 무관하다"],
-      "answer": "노화 징후가 남성의 사회자본을 높이지만 여성에게서는 빼앗을 수 있다",
-      "explanation": "연령과 젠더는 결합되어 작동하므로 성별 없는 보편적 노화현상을 가정하면 이 차이를 가린다.",
+      "prompt": "Which example illustrates a gendered double standard of aging?",
+      "options": [
+        "Visible aging always increases social capital equally for men and women",
+        "Visible aging invariably increases only women's social capital",
+        "Signs of aging may add to men's social capital while diminishing women's",
+        "Cultural meanings have no bearing on evaluations of aging bodies"
+      ],
+      "answer": "Signs of aging may add to men's social capital while diminishing women's",
+      "explanation": "Treating aging as a gender-neutral phenomenon conceals differences in the meanings, expectations, and evaluations attached to age.",
       "evidence_segment_id": "GENDER-CULTURE-001",
-      "source": "연령과 젠더",
-      "difficulty": "기본"
+      "source": "Age and gender",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Project AGE의 세 가지 연령 의미에 포함되지 않는 것은?",
-      "options": ["인지 의미", "평가 의미", "사회참여와 상호작용 규범의 의미", "유전적 의미"],
-      "answer": "유전적 의미",
-      "explanation": "연구진은 연령범주의 인식, 연령에 부여하는 가치, 연령 간 상호작용 규범이라는 세 영역을 비교했다.",
+      "prompt": "Which was NOT one of the three meanings of age examined in Project AGE?",
+      "options": [
+        "Cognitive meaning",
+        "Evaluative meaning",
+        "Social participation and interaction norms",
+        "Genetic meaning"
+      ],
+      "answer": "Genetic meaning",
+      "explanation": "The study compared perceived age categories, the values attached to ages, and norms governing interaction across age groups.",
       "evidence_segment_id": "GENDER-CULTURE-002",
       "source": "Project AGE",
-      "difficulty": "기본"
+      "difficulty": "Core"
     },
     {
-      "prompt": "연령집단 차이로부터 성숙 변화를 추론할 때 가장 필요한 것은?",
-      "options": ["생활연령 집단의 이름과 경계만 더 세밀하게 나누면 개인의 성숙변화를 자동으로 알 수 있다는 분류", "모든 차이를 코호트라고 부르기", "생활연령을 모든 통계모형에 자동 공변량으로 넣고 그 계수 자체를 원인으로 간주하는 절차", "어떤 연령 관련 과정이 집단차를 만드는지 밝히는 이론"],
-      "answer": "어떤 연령 관련 과정이 집단차를 만드는지 밝히는 이론",
-      "explanation": "연령집단을 쌓아 만든 인위적 성장곡선은 개인 변화나 코호트 차이를 오해하게 할 수 있다.",
+      "prompt": "What is needed to interpret age-group differences as evidence about maturation?",
+      "options": [
+        "More finely divided age bands that automatically reveal individual change",
+        "Relabeling every observed difference as a cohort effect",
+        "Treating the coefficient of an automatic age control as a cause",
+        "A theory identifying the processes that produce the observed age differences"
+      ],
+      "answer": "A theory identifying the processes that produce the observed age differences",
+      "explanation": "Stacking age groups into an artificial growth curve can confuse individual change with cohort differences. Theory must identify the relevant mechanisms.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "결론의 방법론적 제안",
-      "difficulty": "응용"
+      "source": "Methodological implications",
+      "difficulty": "Application"
     },
     {
-      "prompt": "논문의 마지막 역설을 가장 정확히 표현한 것은?",
-      "options": ["연령은 모든 개인변화의 원인이므로 사회는 무관하다", "연령 없는 과학은 가능하므로 제도를 보지 않아도 된다", "노화의 일부를 이해하려면 연령을 넘어서야 하지만 사회적 연령은 개인과 집단에 중대한 결과를 낳는다", "노년학은 생활연령만 연구해야 한다"],
-      "answer": "노화의 일부를 이해하려면 연령을 넘어서야 하지만 사회적 연령은 개인과 집단에 중대한 결과를 낳는다",
-      "explanation": "개인 수준의 비판과 사회 수준의 중요성을 함께 유지하는 것이 저자들의 최종 결론이다.",
+      "prompt": "Which statement best captures the chapter's concluding paradox?",
+      "options": [
+        "Age directly causes every individual change, so social institutions are irrelevant",
+        "A science without age makes institutions unnecessary to study",
+        "Understanding aging may require moving beyond age, even though social age remains consequential",
+        "Gerontology should study only chronological age"
+      ],
+      "answer": "Understanding aging may require moving beyond age, even though social age remains consequential",
+      "explanation": "The conclusion holds together the critique of age as an individual-level proxy and its substantial consequences as a principle of social organization.",
       "evidence_segment_id": "CONCLUSION-002",
-      "source": "결론",
-      "difficulty": "응용"
+      "source": "Conclusion",
+      "difficulty": "Application"
     }
-  ]
+  ],
+  "language": "en"
 }

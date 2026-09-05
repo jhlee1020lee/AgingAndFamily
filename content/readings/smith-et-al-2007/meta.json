@@ -47,6 +47,7 @@
     "professor-prep"
   ],
   "content_status": {
+    "index": "approved",
     "full": "approved",
     "translation": "approved",
     "summary": "approved",
@@ -56,49 +57,51 @@
     "professor_prep": "approved",
     "quiz_ox": "approved",
     "quiz_short": "approved",
-    "quiz_mcq": "approved",
-    "index": "approved"
+    "quiz_mcq": "approved"
   },
   "manual_review": {
     "approved_pages": [
+      "index",
       "full",
       "translation",
       "summary",
       "concepts",
       "pitfalls",
       "review-sheet",
+      "professor-prep",
       "quiz-ox",
       "quiz-short",
-      "quiz-mcq",
-      "professor-prep"
+      "quiz-mcq"
     ],
     "approved_page_hashes": {
-      "full": "1e7ad329c364a5ba5e196163ce499116e7597d83",
-      "translation": "bae1ab2381167625b9b3a89c32d79a6380ed0208",
-      "summary": "2caf34b18e4811421ecbc42a70568ec00dcb5587",
-      "concepts": "14d7302245ef90446de12abf77a4e92664607b8e",
-      "pitfalls": "874aac1e8e8adcaa4a25fae084c5e4d17233260c",
-      "review-sheet": "c6395997ec6903274350fe481f8997d593ea1989",
-      "quiz-ox": "4801d48fa8bbd4899c4386a6bed12a6bc9d28ad2",
-      "quiz-short": "d21dcca8401fe53b8bd1d34d05e38363e963c617",
-      "quiz-mcq": "ed877f44c79de4eb673fa639655d81249835756d",
-      "professor-prep": "f9b9cc734206974b2fd5cbbeece08922c801f915"
+      "index": "v2:946a1d524c41c086ab0f90e8eabcc9a32d5d35a21573e35bf05dda2e9ea26ccf",
+      "full": "v2:9dc6d29b63dd7092819a588085c376f11090725d664216f94d2878f1d97ce528",
+      "translation": "v2:30be61db15718f5f33d6f0d3bb7836db8f2bf868fa99e962ef0824d0465b2ddc",
+      "summary": "v2:1a49386e21b24f415d8817d7a9112c05692ce17bf7a961dbd422a3d6febcd2bf",
+      "concepts": "v2:ca73535bbc981b6ab8b44e0cbec27761b51d883832b269a208474bdc51d9180b",
+      "pitfalls": "v2:0e872c66d9c4f63d197293da6284fba6e2318d63a7e99eb01b7d3ca76d2d7c05",
+      "review-sheet": "v2:91586ccab36c5b1d5d23622a88788ef8c6c5a89303b1c96ac83c475f29a7d644",
+      "professor-prep": "v2:7ea0e813ddea0cdf94d9fc17e56ce29bc390aebc0bf9b3da5e8f847e3b42135f",
+      "quiz-ox": "v2:6bdaf3402d59e60a03e6cefa5da191a3f78c2dae993cf780da8b6c498069330a",
+      "quiz-short": "v2:728729098987b9866f264cc0e2f5f912145212992dca58789125a07b81fc1ddf",
+      "quiz-mcq": "v2:6d3d3cd666b465c143c3a3932caaa8c992c3c1e0f21b16b2a9898ee0b0b7488c"
     },
-    "reviewer": "codex-reading-response-audit",
-    "reviewed_at": "2026-08-23T11:48:51.101Z",
+    "reviewer": "codex",
+    "reviewed_at": "2026-09-05T00:57:22.314Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent final audit PASS after correcting one minor overstatement in Sam's spouse/help wording; Critical 0, Major 0, Minor 0; all 66 evidence-linked records, isolated full-preview links/reveals/privacy/chatbot checks passed.",
       "문항·정답·해설·근거를 유지한 채 선택지 위치만 균형 있게 재배치해 검수함.",
       "렌더 산출물까지 확인하고 선택지 위치 재배치를 승인함.",
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
-      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved."
+      "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
+      "English learning materials reviewed against stored source segments; source and translation preserved; composite dependencies reviewed. Seven participant-name questions replaced by case interpretation; sampling and qualitative design distinguished from the parent cohort. Original PDF unavailable."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-08-24T10:24:10.990Z",
-    "require_built_artifacts": true,
+    "updated_at": "2026-09-05T01:29:54.302Z",
+    "require_built_artifacts": false,
     "landing": {
       "status": "approved",
       "errors": [],
@@ -112,6 +115,18 @@
       }
     },
     "page_results": {
+      "index": {
+        "status": "approved",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "overview_hook_length": 66,
+          "classroom_point_raw_count": 5,
+          "classroom_point_count": 5,
+          "overview_comic_panel_count": 4,
+          "overview_comic_asset_bytes": 504470
+        }
+      },
       "full": {
         "status": "approved",
         "errors": [],
@@ -250,17 +265,31 @@
             "4": 3
           },
           "correct_option_length_rank_counts": {
-            "1": 4,
+            "1": 5,
             "2": 4,
-            "3": 4,
-            "4": 3
+            "3": 1,
+            "4": 5
           }
         }
       }
     },
     "source_page_results": {
+      "index": {
+        "status": "approved",
+        "source_hash": "v2:946a1d524c41c086ab0f90e8eabcc9a32d5d35a21573e35bf05dda2e9ea26ccf",
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "overview_hook_length": 66,
+          "classroom_point_raw_count": 5,
+          "classroom_point_count": 5,
+          "overview_comic_panel_count": 4,
+          "overview_comic_asset_bytes": 504470
+        }
+      },
       "full": {
         "status": "approved",
+        "source_hash": "v2:9dc6d29b63dd7092819a588085c376f11090725d664216f94d2878f1d97ce528",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -281,6 +310,7 @@
       },
       "translation": {
         "status": "approved",
+        "source_hash": "v2:30be61db15718f5f33d6f0d3bb7836db8f2bf868fa99e962ef0824d0465b2ddc",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -313,6 +343,7 @@
       },
       "summary": {
         "status": "approved",
+        "source_hash": "v2:1a49386e21b24f415d8817d7a9112c05692ce17bf7a961dbd422a3d6febcd2bf",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -324,6 +355,7 @@
       },
       "concepts": {
         "status": "approved",
+        "source_hash": "v2:ca73535bbc981b6ab8b44e0cbec27761b51d883832b269a208474bdc51d9180b",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -336,6 +368,7 @@
       },
       "pitfalls": {
         "status": "approved",
+        "source_hash": "v2:0e872c66d9c4f63d197293da6284fba6e2318d63a7e99eb01b7d3ca76d2d7c05",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -347,6 +380,7 @@
       },
       "review_sheet": {
         "status": "approved",
+        "source_hash": "v2:91586ccab36c5b1d5d23622a88788ef8c6c5a89303b1c96ac83c475f29a7d644",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -358,6 +392,7 @@
       },
       "professor_prep": {
         "status": "approved",
+        "source_hash": "v2:7ea0e813ddea0cdf94d9fc17e56ce29bc390aebc0bf9b3da5e8f847e3b42135f",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -367,6 +402,7 @@
       },
       "quiz_ox": {
         "status": "approved",
+        "source_hash": "v2:6bdaf3402d59e60a03e6cefa5da191a3f78c2dae993cf780da8b6c498069330a",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -376,6 +412,7 @@
       },
       "quiz_short": {
         "status": "approved",
+        "source_hash": "v2:728729098987b9866f264cc0e2f5f912145212992dca58789125a07b81fc1ddf",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -385,6 +422,7 @@
       },
       "quiz_mcq": {
         "status": "approved",
+        "source_hash": "v2:6d3d3cd666b465c143c3a3932caaa8c992c3c1e0f21b16b2a9898ee0b0b7488c",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -397,10 +435,10 @@
             "4": 3
           },
           "correct_option_length_rank_counts": {
-            "1": 4,
+            "1": 5,
             "2": 4,
-            "3": 4,
-            "4": 3
+            "3": 1,
+            "4": 5
           }
         }
       }

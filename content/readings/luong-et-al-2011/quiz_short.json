@@ -1,127 +1,196 @@
 {
-  "title": "Luong et al. (2011) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 핵심 이론·개념·수치를 짧고 정확하게 답하세요.",
+  "title": "Luong et al. (2011): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or phrase. Distinguish older adults' own choices from how their social partners respond.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "남은 시간의 지각이 목표와 사회적 파트너 선택을 조직한다고 보는 이론은?",
-      "accepted_answers": ["사회정서적 선택성 이론", "SST", "Socioemotional Selectivity Theory"],
+      "question": "Which theory explains social goals and partner selection in terms of perceived time remaining?",
+      "accepted_answers": [
+        "socioemotional selectivity theory",
+        "socio-emotional selectivity theory",
+        "SST"
+      ],
       "answer_type": "term",
-      "explanation": "이 이론은 넓은 미래에서는 정보·지식 목표를, 제한된 미래에서는 현재의 정서적 의미와 관계 만족 목표를 상대적으로 우선한다고 본다.",
+      "explanation": "An expansive future favors information and knowledge goals; limited time increases the relative priority of present emotional meaning and relationship satisfaction.",
       "evidence_segment_id": "SST-001",
-      "source": "목표전환 이론"
+      "source": "Goal priorities"
     },
     {
-      "question": "사람이 자기 삶에 남은 시간을 길거나 짧게 지각하는 범위를 가리키는 말은?",
-      "accepted_answers": ["시간지평", "시간적 지평", "temporal horizon"],
+      "question": "What term describes how much time a person perceives as remaining in life?",
+      "accepted_answers": [
+        "temporal horizon",
+        "temporal horizons",
+        "time horizon",
+        "future time perspective"
+      ],
       "answer_type": "term",
-      "explanation": "SST에서 이 지각은 연령 자체와 구분되며 정보추구 또는 정서적 목표의 우선순위를 결정한다.",
+      "explanation": "SST distinguishes perceived remaining time from chronological age. This perception helps organize knowledge-related and emotional goals.",
       "evidence_segment_id": "SST-001",
-      "source": "SST 핵심 변수"
+      "source": "Temporal horizons"
     },
     {
-      "question": "연인·가까운 친구·형제자매가 비교적 안정적인 내적 원을 이루며 생애를 함께 이동한다는 관계망 비유는?",
-      "accepted_answers": ["사회적 호송대", "social convoy"],
+      "question": "What network metaphor describes the relationships, including a relatively stable inner circle, that accompany people as they grow older?",
+      "accepted_answers": [
+        "social convoy",
+        "social convoys",
+        "convoy",
+        "convoys"
+      ],
       "answer_type": "term",
-      "explanation": "가장 친밀한 유대는 성인기 전반에 비교적 일정하게 남아 관계망이 축소되어도 핵심 관계의 연속성을 제공할 수 있다.",
+      "explanation": "Intimate partners, close friends, and siblings can form a relatively stable inner circle even as the broader network becomes smaller.",
       "evidence_segment_id": "SST-001",
-      "source": "관계망의 내적 원"
+      "source": "Inner-circle continuity"
     },
     {
-      "question": "긍정적 경험에는 주의를 두고 부정적 사회정보에서는 주의를 거두는 인지 경향은?",
-      "accepted_answers": ["긍정성 편향", "positivity bias"],
+      "question": "What cognitive bias involves greater attention to positive experiences and reduced attention to negative social information in later life?",
+      "accepted_answers": [
+        "positivity bias",
+        "positivity effect",
+        "age-related positivity bias"
+      ],
       "answer_type": "term",
-      "explanation": "노년 배우자의 더 긍정적인 회상과 부정적 발언의 동기에 대한 낮은 관심을 연결하는 평가 경로다.",
+      "explanation": "The review calls this the positivity bias. It relates older adults' more positive appraisals to their reduced focus on negative social exchanges.",
       "evidence_segment_id": "APPRAISAL-001",
-      "source": "평가 경향"
+      "source": "Positive appraisals"
     },
     {
-      "question": "관계에 해로운 안정적 특성을 식별해 잠재적 대립을 피하는 경험 기반 판단 능력은?",
-      "accepted_answers": ["사회적 전문성", "social expertise"],
+      "question": "What experience-based capacity helps people identify relationship-harming traits and avoid potentially problematic partners?",
+      "accepted_answers": [
+        "social expertise"
+      ],
       "answer_type": "term",
-      "explanation": "Hess 등의 연구는 노년 성인이 한 번의 모순정보보다 반복되는 부정직성 같은 특성 진단적 정보에 선택적으로 반응할 수 있음을 보여 준다.",
+      "explanation": "Hess and colleagues emphasize sensitivity to stable, diagnostic traits such as repeated dishonesty, rather than indiscriminate reactions to every new piece of information.",
       "evidence_segment_id": "EXPERTISE-001",
-      "source": "특성 진단성"
+      "source": "Diagnostic judgments"
     },
     {
-      "question": "상황을 무시하거나 갈등 주제를 피하여 직접 대립에서 빠지는 방식은?",
-      "accepted_answers": ["관여 중단 전략", "관여 중단", "disengagement strategies"],
+      "question": "What conflict-management strategies involve ignoring a situation or avoiding a contentious topic instead of direct confrontation?",
+      "accepted_answers": [
+        "disengagement strategies",
+        "disengagement",
+        "passive disengagement",
+        "avoidance strategies"
+      ],
       "answer_type": "term",
-      "explanation": "노년 성인은 이 방식을 더 선호했으며, 같은 회피 전략을 쓸 때 노년 성인만 더 낮은 정서적 반응성을 보고했다.",
+      "explanation": "Older adults more often favored these strategies. In the reviewed research, avoiding an argument was linked to reduced emotional reactivity among older adults, whereas engaging in an argument elicited similar reactivity across ages.",
       "evidence_segment_id": "BEHAVIOR-001",
-      "source": "갈등관리 행동"
+      "source": "Managing conflict"
     },
     {
-      "question": "노년 성인의 행동과 파트너의 친절한 반응이 호혜적으로 긍정 경험을 강화한다고 보는 모형은?",
-      "accepted_answers": ["사회적 입력 모형", "SIM", "Social Input Model"],
+      "question": "Which model explains positive later-life relationships through reciprocal behavior between older adults and their social partners?",
+      "accepted_answers": [
+        "Social Input Model",
+        "SIM"
+      ],
       "answer_type": "term",
-      "explanation": "이 모형은 관계의 긍정성을 개인 내부가 아니라 두 사람 사이의 역동적 상호작용으로 설명한다.",
+      "explanation": "The model includes older adults' behavior and partners' kinder treatment, forgiveness, and age-related expectations. The proposed process operates between people, not solely within an individual.",
       "evidence_segment_id": "SIM-001",
-      "source": "상호작용 모형"
+      "source": "Reciprocal social input"
     },
     {
-      "question": "같은 결례에도 노년 성인에게 덜 맞서고 더 친절하게 대하는 차별적 반응은?",
-      "accepted_answers": ["우대", "선호적 대우", "preferential treatment"],
+      "question": "What term describes responding more kindly and less confrontationally to older adults than to younger adults for similar social missteps?",
+      "accepted_answers": [
+        "preferential treatment",
+        "preferential social treatment"
+      ],
       "answer_type": "term",
-      "explanation": "가상 결례 연구와 카드 선택 연구에서 사회적 파트너는 젊은 성인과 노년 성인을 서로 다르게 대했다.",
+      "explanation": "Vignette and card studies suggest age-differentiated responses by social partners. Positive treatment can help create a more benign social environment for older adults.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "source": "파트너의 반응"
+      "source": "Partners' responses"
     },
     {
-      "question": "회피 뒤 남을 수 있는 원망을 줄이고 관계 신뢰와 연결되는 과정은?",
-      "accepted_answers": ["용서", "forgiveness"],
+      "question": "What process can counteract resentment after a conflict is avoided and is linked to trust in a relationship?",
+      "accepted_answers": [
+        "forgiveness",
+        "forgiving"
+      ],
       "answer_type": "term",
-      "explanation": "문제를 피하는 것만으로는 악감정이 남을 수 있지만, 파트너를 용서하면 그 감정을 상쇄하고 관계 만족의 요소인 신뢰와 연결될 수 있다.",
+      "explanation": "Avoidance can leave issues unresolved. Forgiveness may reduce ill will and is distinct from merely declining to confront a partner.",
       "evidence_segment_id": "FORGIVENESS-001",
-      "source": "회피와 구분되는 과정"
+      "source": "Forgiveness and trust"
     },
     {
-      "question": "정서적으로 가깝지만 동시에 문제도 있는 유대를 가리키는 관계 유형은?",
-      "accepted_answers": ["양가적 관계", "ambivalent relationship"],
+      "question": "What term describes a relationship that is emotionally close but also problematic?",
+      "accepted_answers": [
+        "ambivalent relationship",
+        "ambivalent relationships",
+        "ambivalent tie",
+        "ambivalent ties",
+        "ambivalence"
+      ],
       "answer_type": "term",
-      "explanation": "가족 구성원은 모든 연령대에서 친밀함과 문제를 함께 일으킬 수 있으므로 가까운 관계와 어려운 관계는 상호배타적이지 않다.",
+      "explanation": "Closeness and difficulty are not mutually exclusive. Family relationships can involve both at any age.",
       "evidence_segment_id": "APPRAISAL-001",
-      "source": "관계의 양면성"
+      "source": "Closeness and difficulty"
     },
     {
-      "question": "가까운 사회적 파트너 수가 어느 기준 아래일 때 낮은 사회적 통합감과 만족, 높은 외로움이 보고되었나?",
-      "accepted_answers": ["3명 미만", "세 명 미만", "fewer than three"],
+      "question": "In the study cited by the review, how few close partners were associated with greater loneliness and lower social satisfaction?",
+      "accepted_answers": [
+        "fewer than three",
+        "fewer than 3",
+        "less than three",
+        "less than 3",
+        "under three",
+        "under 3",
+        "fewer than three close partners"
+      ],
       "answer_type": "number",
-      "explanation": "선택적으로 작은 관계망과 사회적 욕구를 충족하지 못할 정도로 지나치게 작은 관계망을 구분하게 하는 하한이다.",
+      "explanation": "Older adults reporting fewer than three close partners reported poorer social well-being. This study-specific finding distinguishes selective networks from networks too small to meet a person's needs; it is not a universal quota.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "관계망의 위험 기준"
+      "source": "Insufficient social networks"
     },
     {
-      "question": "실제 연말연시 카드를 제출한 자연 관찰 연구 참가자의 연령 범위는?",
-      "accepted_answers": ["20–87세", "20세에서 87세", "20 to 87"],
-      "answer_type": "number",
-      "explanation": "이 연구에서 노년 성인의 카드에는 젊은 성인보다 더 개인적이고 감상적인 메시지가 포함되었다.",
+      "question": "What study approach examined participants' actual holiday cards rather than asking only about imagined interactions?",
+      "accepted_answers": [
+        "naturalistic study",
+        "naturalistic observation",
+        "naturalistic observational study",
+        "observational study"
+      ],
+      "answer_type": "term",
+      "explanation": "Adults aged 20 to 87 submitted holiday cards for analysis. Older recipients received more personal and sentimental messages, but this naturalistic comparison does not rule out cohort differences.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "source": "카드 연구 연령"
+      "source": "Naturalistic card study"
     },
     {
-      "question": "일본인과 미국인 전국 대표 표본을 비교한 연구 참가자의 연령 범위는?",
-      "accepted_answers": ["13–96세", "13세에서 96세", "13 to 96"],
-      "answer_type": "number",
-      "explanation": "연령이 높을수록 문제적 유대가 줄었지만 일본 노년 성인의 성인 자녀 문제는 동거 차이로 설명되었다.",
+      "question": "What living arrangement explained the greater problems with grown children reported by Japanese older adults in the comparison with Americans?",
+      "accepted_answers": [
+        "co-residency",
+        "coresidency",
+        "co-residence",
+        "coresidence",
+        "living with adult children",
+        "co-residence with adult children",
+        "living with grown children"
+      ],
+      "answer_type": "term",
+      "explanation": "The nationally representative Japanese and American samples spanned ages 13 to 96. Household arrangements helped explain the difference, rather than age alone.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "source": "문화 간 연구 연령"
+      "source": "Household arrangements"
     },
     {
-      "question": "과거 세대의 카드 규범이 현재 연령집단 차이를 설명할 가능성을 가리키는 것은?",
-      "accepted_answers": ["코호트 효과", "cohort effect"],
+      "question": "What alternative explanation attributes differences in sentimental cards to norms learned by different generations rather than aging itself?",
+      "accepted_answers": [
+        "cohort effect",
+        "cohort effects",
+        "cohort differences",
+        "generational differences"
+      ],
       "answer_type": "term",
-      "explanation": "노년 성인이 더 감상적인 카드를 받는 결과가 나이의 효과가 아니라 이전 세대의 사려 깊은 카드 규범에서 비롯될 가능성을 배제할 수 없다.",
+      "explanation": "The review explicitly notes that earlier generations may have had different card-giving norms. Cohort explanations cannot be ruled out by the reported age differences.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "저자가 밝힌 한계"
+      "source": "A cohort explanation"
     },
     {
-      "question": "노년기 우울증의 위험요인으로 논문이 언급한 사회적 경험은?",
-      "accepted_answers": ["외로움", "loneliness"],
+      "question": "Which subjective social experience does the review identify as a risk factor for late-life depression?",
+      "accepted_answers": [
+        "loneliness"
+      ],
       "answer_type": "term",
-      "explanation": "관계망이 사회적 욕구를 충족하지 못할 정도로 작으면 외로움과 낮은 사회적 만족이 나타날 수 있으며 외로움은 우울증 위험요인으로 제시된다.",
+      "explanation": "Networks that fail to meet social needs can be associated with loneliness and low social satisfaction. A small, selectively maintained network is not necessarily an inadequate one.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "관계망과 안녕"
+      "source": "Loneliness and well-being"
     }
-  ]
+  ],
+  "language": "en"
 }

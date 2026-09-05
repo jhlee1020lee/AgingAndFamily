@@ -1,127 +1,185 @@
 {
-  "title": "Martinson & Berridge (2015) 단답형 퀴즈",
-  "instructions": "수치의 분모와 인용된 개념명을 구분해 짧고 정확하게 답하세요.",
+  "title": "Martinson and Berridge (2015): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or phrase. Distinguish the review authors, the critics they cite, and findings from individual studies.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "비판의 의미를 질적으로 코딩해 귀납적으로 구성한 이 연구의 검토 유형은?",
-      "accepted_answers": ["구성적 문헌고찰", "configurative review"],
+      "question": "Which type of review qualitatively assembled the meanings and themes of criticisms rather than pooling effect sizes?",
+      "accepted_answers": [
+        "configurative review",
+        "a configurative review",
+        "configurative literature review"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 질적 방법으로 비판의 핵심주제와 의미를 귀납적으로 구성했다.",
+      "explanation": "The authors used an inductive qualitative approach to 67 articles. The search covered English-language peer-reviewed articles in Abstracts in Social Gerontology (ASG) from January 1987 through December 2013.",
       "evidence_segment_id": "METHODS-001",
-      "source": "검토 설계"
+      "source": "Review design"
     },
     {
-      "question": "초기 코딩 다음 단계에서 코드 사이의 더 높은 연결을 찾은 코딩 방식은?",
-      "accepted_answers": ["축코딩", "axial coding"],
+      "question": "Which second-stage coding approach sought higher-level connections across the initial codes?",
+      "accepted_answers": [
+        "axial coding"
+      ],
       "answer_type": "term",
-      "explanation": "두 번째 단계에서 코드 전반의 핵심주제와 더 높은 추상수준의 연결을 귀납적으로 명명했다.",
+      "explanation": "The authors connected codes into broader themes. Both independently examined a subset of 15 articles and compared interpretations; the account does not establish that all 67 articles were independently double-coded.",
       "evidence_segment_id": "METHODS-001",
-      "source": "질적 분석절차"
+      "source": "Qualitative analysis"
     },
     {
-      "question": "기존 모델을 유지하며 기준을 완화·추가한 첫 번째 비판범주의 논문 수는?",
-      "accepted_answers": ["16편", "16"],
-      "answer_type": "number",
-      "explanation": "검토한 67편 중 16편이 성공적 노화 모델을 기준선으로 유지한 채 문턱을 낮추거나 기준을 추가했다.",
+      "question": "Which category retained the established model while loosening its thresholds or adding criteria?",
+      "accepted_answers": [
+        "Add and Stir",
+        "the Add and Stir category"
+      ],
+      "answer_type": "term",
+      "explanation": "This category contained 16 articles. The four categories were organized by proposed responses to criticism, even though their criticisms could overlap.",
       "evidence_segment_id": "ADD-STIR-001",
-      "source": "범주별 논문 수"
+      "source": "Expanding the existing model"
     },
     {
-      "question": "노인이 직접 정의한 주관적 의미를 추가하자고 한 두 번째 비판범주의 논문 수는?",
-      "accepted_answers": ["30편", "30"],
-      "answer_type": "number",
-      "explanation": "67편 가운데 거의 절반인 30편이 노인의 주관적 정의라는 누락된 목소리에 초점을 맞췄다.",
+      "question": "Which category emphasized including older adults' own subjective definitions of aging well?",
+      "accepted_answers": [
+        "Missing Voices",
+        "the Missing Voices category"
+      ],
+      "answer_type": "term",
+      "explanation": "The 30 articles in this category sought to add perspectives omitted by conventional definitions, generally retaining the broader idea of successful aging.",
       "evidence_segment_id": "MISSING-VOICES-001",
-      "source": "범주별 논문 수"
+      "source": "Whose definitions count"
     },
     {
-      "question": "장애와 만성 신체질환이 흔한 Montross 연구 표본에서 성공적으로 늙는다고 자기평가한 비율은?",
-      "accepted_answers": ["92%", "92퍼센트"],
+      "question": "In the Montross study cited in this review, what percentage rated themselves as aging successfully despite widespread disability and chronic physical illness?",
+      "accepted_answers": [
+        "92%",
+        "92 percent",
+        "92 per cent"
+      ],
       "answer_type": "number",
-      "explanation": "대다수가 장애와 만성 신체질환을 경험했지만 표본의 92%는 자신이 성공적으로 노화하고 있다고 평가했다.",
+      "explanation": "This is the reported self-rating in that particular sample. It is not a pooled estimate across the review or evidence that disability rules out a personally meaningful later life.",
       "evidence_segment_id": "COMPARE-001",
-      "source": "주관적 자기평가"
+      "source": "Subjective self-assessment"
     },
     {
-      "question": "한국 저소득 노인이 제시한 성공적 노화의 가족 관련 추가 기준은?",
-      "accepted_answers": ["성인 자녀의 성공", "자녀의 성공"],
+      "question": "What family-related criterion did participants in the cited study of low-income South Korean older adults add to their definitions?",
+      "accepted_answers": [
+        "success of adult children",
+        "adult children's success",
+        "their adult children's success",
+        "the success of adult children"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "Soondool과 Soo-Jung은 성인 자녀의 성공과 삶에 대한 긍정적 태도를 주관적 기준으로 제시했다.",
+      "explanation": "The study also identified a positive attitude toward life. These findings describe that study, not all Korean older adults; the review also discusses variation within cultural groups.",
       "evidence_segment_id": "CULTURE-001",
-      "source": "한국의 문화적 의미"
+      "source": "Contextual meanings"
     },
     {
-      "question": "성공적 노화의 기본 가정과 사회정의 문제를 근본적으로 다룬 세 번째 비판범주의 논문 수는?",
-      "accepted_answers": ["14편", "14"],
-      "answer_type": "number",
-      "explanation": "1990–2013년에 출판된 14편이 패러다임의 가정·개념화·적용을 비판하고 대안 틀을 요구했다.",
+      "question": "Which category challenged the paradigm's fundamental assumptions and raised questions of inequality and social justice?",
+      "accepted_answers": [
+        "Hard Hitting Critiques",
+        "Hard-Hitting Critiques",
+        "the Hard Hitting Critiques category"
+      ],
+      "answer_type": "term",
+      "explanation": "The 14 articles went beyond adding criteria to question the concept and its consequences. The label identifies a position in the review, not an empirical finding that every intervention has the same effects.",
       "evidence_segment_id": "HARD-HITTING-001",
-      "source": "범주별 논문 수"
+      "source": "Fundamental challenges"
     },
     {
-      "question": "개인주의적 최종상태 모델이 폭넓은 생물사회적 과정 대신 노화를 무엇처럼 만든다고 비판했는가?",
-      "accepted_answers": ["이기거나 지는 게임", "승패 게임"],
+      "question": "What competitive metaphor did critics use for classifying aging into successful and unsuccessful end states?",
+      "accepted_answers": [
+        "a game you win or lose",
+        "a win-or-lose game",
+        "a winning or losing game",
+        "a game of winning and losing",
+        "win-or-lose game"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "비판자들은 개인이 성공적 또는 통상적이라고 진단되는지에 따라 노화를 이기거나 지는 게임으로 잘못 구성한다고 했다.",
+      "explanation": "The critics argued that this classification reduces a broad biosocial process to individual success or failure and neglects unequal access to resources.",
       "evidence_segment_id": "INDIVIDUALISM-001",
-      "source": "최종상태 모델의 은유"
+      "source": "Critique of individualism"
     },
     {
-      "question": "Angus와 Reeve가 성공한 노화 대 실패한 노화의 이분법을 부른 말은?",
-      "accepted_answers": ["새로운 연령주의", "new ageism"],
+      "question": "What term did Angus and Reeve use for the age-based hierarchy produced by the successful-versus-failed aging distinction?",
+      "accepted_answers": [
+        "new ageism",
+        "a new ageism"
+      ],
       "answer_type": "term",
-      "explanation": "질병·장애의 회피를 좋은 노화로 높이는 이분법은 새로운 연령주의라는 비판을 받았다.",
+      "explanation": "As reported in the review, this criticism concerns moral rankings that privilege avoiding disease and disability. The review discusses the criticism without endorsing such rankings.",
       "evidence_segment_id": "AGEISM-001",
-      "source": "연령주의 개념"
+      "source": "Age-based judgments"
     },
     {
-      "question": "성공적·생산적 노화 패러다임의 부상과 미국 보수주의 강화가 겹쳤다고 지적한 두 연대는?",
-      "accepted_answers": ["1980년대와 1990년대", "1980~1990년대"],
-      "answer_type": "short_phrase",
-      "explanation": "Dillaway와 Byrnes는 복지국가를 경제위기의 탓으로 돌리는 보수주의가 강해진 1980년대와 1990년대의 역사적 맥락을 강조했다.",
+      "question": "Which political-economic orientation did reviewed critics link to personal responsibility for aging and reduced state support?",
+      "accepted_answers": [
+        "neoliberalism",
+        "neoliberal ideology",
+        "neoliberal policy"
+      ],
+      "answer_type": "term",
+      "explanation": "The review discusses historical links to developments in the 1980s and 1990s. This is an interpretation advanced by critics, not an experiment estimating the causal effects of a policy.",
       "evidence_segment_id": "NEOLIBERAL-001",
-      "source": "담론의 역사적 맥락"
+      "source": "Political context"
     },
     {
-      "question": "Rozanova와 동료들이 성공적 노화의 강력한 미디어 서사를 확인한 캐나다 신문은?",
-      "accepted_answers": ["The Globe & Mail", "Globe & Mail", "글로브 앤 메일"],
+      "question": "What phrase describes scholarly ideals becoming norms in media and public understandings of aging?",
+      "accepted_answers": [
+        "value transfer",
+        "value transfer to the public domain",
+        "the transfer of values"
+      ],
       "answer_type": "term",
-      "explanation": "이 신문의 노화 묘사는 개인통제, 질병·장애 회피, 성공적으로 늙는 사람의 가치화를 강조했다.",
+      "explanation": "The review discusses how successful-aging ideals travel into public discourse and consumer practices. The cited media examples illustrate this concern rather than establishing a universal audience response.",
       "evidence_segment_id": "INFLUENCES-001",
-      "source": "미디어 담론"
+      "source": "Public influence"
     },
     {
-      "question": "Morell이 힘과 취약성을 함께 인정하며 제안한 대안 모델의 이름은?",
-      "accepted_answers": ["체현된 역량강화 모델", "embodied empowerment model"],
+      "question": "Which model discussed by Morell recognizes both personal power and vulnerability, including disability and death?",
+      "accepted_answers": [
+        "embodied empowerment",
+        "embodied empowerment model",
+        "the embodied empowerment model"
+      ],
       "answer_type": "term",
-      "explanation": "이 모델은 장애와 죽음을 존중받을 인간 경험으로 포용하고 노인이 욕구와 바람을 직접 정의하도록 한다.",
+      "explanation": "This approach respects older adults' ability to define their needs while recognizing vulnerability and the social conditions that support dignity.",
       "evidence_segment_id": "SOCIAL-JUSTICE-001",
-      "source": "사회정의 대안"
+      "source": "An inclusive alternative"
     },
     {
-      "question": "Butler, Fujii와 Sasaki가 제시한 대안적 노화 모델은?",
-      "accepted_answers": ["균형 잡힌 노화", "balanced aging"],
+      "question": "Which category proposed alternative labels and holistic models such as balanced, resilient, and harmonious aging?",
+      "accepted_answers": [
+        "New Frames and Names",
+        "the New Frames and Names category"
+      ],
       "answer_type": "term",
-      "explanation": "이는 상실과 의미를 포용하는 새로운 틀과 명칭 가운데 하나로 열거됐다.",
+      "explanation": "These seven articles offered new formulations. Many retained an individual ideal, but the review highlights an ecological account of resilience that includes structural inequality.",
       "evidence_segment_id": "NEW-FRAMES-001",
-      "source": "대안 모델"
+      "source": "Reframing aging"
     },
     {
-      "question": "20년의 패러다임 투자와 20년의 우려가 사회노년학자에게 만든 문제는?",
-      "accepted_answers": ["윤리적 딜레마", "ethical dilemma"],
+      "question": "What kind of dilemma do the authors identify when substantial investment in a paradigm persists alongside repeated criticism of its exclusions?",
+      "accepted_answers": [
+        "ethical dilemma",
+        "an ethical dilemma"
+      ],
       "answer_type": "term",
-      "explanation": "모델이 위험하고 사람을 주변화할 수 있다는 비판에도 장기간 투자해 온 상황을 저자들은 윤리적 딜레마로 제시했다.",
+      "explanation": "The authors question continuing to promote a universal ideal after decades of criticisms. This is their evaluative conclusion about the field, rather than a measured psychological outcome.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "패러다임의 딜레마"
+      "source": "Authors' assessment"
     },
     {
-      "question": "Tornstam이 노인 스스로 욕구·가치·연구질문을 정의하게 하며 노년학자에게 한 요구는?",
-      "accepted_answers": ["경계를 터뜨리라", "burst the borders"],
+      "question": "Whose own needs, values, and meanings should help define aging research questions in the authors' proposed direction?",
+      "accepted_answers": [
+        "older adults",
+        "older people",
+        "elders",
+        "older persons"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "기존 패러다임의 경계를 깨고 생산성·독립성·개인책임 밖의 새로운 가치와 질문을 탐색하라는 요구였다.",
+      "explanation": "The call to burst the borders challenges imposed ideals and supports conditions in which people can thrive on their own terms, including interdependence and social responsibility.",
       "evidence_segment_id": "DISCUSSION-002",
-      "source": "패러다임 전환"
+      "source": "Defining future research"
     }
-  ]
+  ],
+  "language": "en"
 }

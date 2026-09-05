@@ -1,127 +1,128 @@
 {
-  "title": "Settersten & Godlewski (2016) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 문장의 수준·방향·주장 강도를 확인한 뒤 O 또는 X를 고르세요.",
+  "title": "Settersten & Godlewski (2016): True or False",
+  "instructions": "Evaluate each statement's level of analysis, direction, and scope, then choose True or False.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "저자들은 개인적 노화의 여러 측면에서 생활연령이 연구자가 가정하는 것만큼 직접 중요하지 않을 수 있다고 본다.",
+      "prompt": "The authors suggest that chronological age may matter less directly for many aspects of individual aging than researchers assume.",
       "answer": "O",
-      "explanation": "도입부는 개인 수준에서는 연령이 직접 원인이라기보다 다른 과정을 대신하는 경우가 많다고 제안한다.",
+      "explanation": "The opening distinguishes age itself from the underlying processes for which it may serve as a proxy.",
       "evidence_segment_id": "INTRO-001",
-      "source": "도입부",
-      "difficulty": "기본"
+      "source": "Introduction",
+      "difficulty": "Core"
     },
     {
-      "prompt": "미래시간조망은 실제 나이와 무관하게 자신에게 남은 시간에 대한 지각이 목표·행동·정서를 형성한다고 본다.",
+      "prompt": "Research on future time perspective proposes that perceived remaining time can shape goals, behavior, and emotion in people of any age.",
       "answer": "O",
-      "explanation": "저자들은 중년에 지난 시간보다 남은 시간을 더 생각하는 경험과 Carstensen의 미래시간조망 연구를 연결한다.",
+      "explanation": "The chapter connects this research to the experience of thinking less about years since birth and more about time left to live.",
       "evidence_segment_id": "RELATIVE-TIME-001",
-      "source": "상대적인 개인 시간",
-      "difficulty": "기본"
+      "source": "Relative personal time",
+      "difficulty": "Core"
     },
     {
-      "prompt": "생활연령은 쉽게 측정할 수 있으므로 특정 결과의 인과 메커니즘으로 자동 해석해도 된다.",
+      "prompt": "Because chronological age is easy to measure, it can automatically be interpreted as the causal mechanism behind an outcome.",
       "answer": "X",
-      "explanation": "편리성과 보편성은 측정상 장점이지만, 중요한 것은 연령 자체가 아니라 연령이 가리키는 심리·생물·사회·기능 과정이다.",
+      "explanation": "Ease of measurement does not identify a mechanism. Researchers must consider the biological, psychological, social, or functional process that age indexes.",
       "evidence_segment_id": "INDIVIDUAL-001",
-      "source": "대리변수로서의 연령",
-      "difficulty": "함정"
+      "source": "Age as a proxy",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "연령효과는 성숙에 관한 설명이고 코호트효과는 역사적 사건과 사회변동에 관한 설명이다.",
+      "prompt": "Age-based explanations concern maturation, whereas cohort-based explanations concern historical events and social change.",
       "answer": "O",
-      "explanation": "저자들은 연령과 코호트가 단순한 시간 지표라는 공통점 때문에 자주 혼입되지만 설명 영역은 다르다고 구분한다.",
+      "explanation": "Both age and cohort are simple time indicators, but their explanatory meanings differ and should not be conflated.",
       "evidence_segment_id": "MULTIPLE-TIMES-001",
-      "source": "역사시간",
-      "difficulty": "기본"
+      "source": "Historical time",
+      "difficulty": "Core"
     },
     {
-      "prompt": "연령 관련 변화에 대한 자각은 변화가 다른 조건에서 비롯되었다고 생각할 때도 성립한다.",
+      "prompt": "Awareness of age-related change is present whenever a person notices change, even if they attribute it entirely to conditions other than their age.",
       "answer": "X",
-      "explanation": "AARC는 변화를 의식하는 데 더해 그 변화를 다른 조건이 아니라 증가한 생활연령에 귀속할 때 성립한다.",
+      "explanation": "AARC involves both awareness of change and attribution of that change to increased chronological age rather than other conditions.",
       "evidence_segment_id": "SUBJECTIVE-AGE-001",
-      "source": "주관적 연령과 AARC",
-      "difficulty": "함정"
+      "source": "Subjective age and AARC",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "가족 영역은 질병·출산·돌봄의 필요를 완전히 예측할 수 있으므로 노동 영역보다 선형적 시간에 더 강하게 묶인다.",
+      "prompt": "Family life is more tightly governed by linear time than work because illness, childbirth, and care needs are completely predictable.",
       "answer": "X",
-      "explanation": "원문은 가족시간이 덜 선형적이며 몸과 타인의 필요가 계획을 제한한다고 설명한다.",
+      "explanation": "The authors describe family time as less linear. Bodily needs and the needs of others can limit planning and create tensions with work schedules.",
       "evidence_segment_id": "SOCIAL-ORG-001",
-      "source": "사회조직과 시간",
-      "difficulty": "함정"
+      "source": "Social organization and time",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "Neugarten이 처음 사용한 젊은 노인과 고령 노인의 구분은 생활연령이 아니라 건강·경제자원·활동성의 차이를 겨냥했다.",
+      "prompt": "Neugarten's original distinction between the young-old and old-old concerned health, affluence, and activity rather than fixed chronological ages.",
       "answer": "O",
-      "explanation": "후대에는 65–74세와 75세 이상으로 수치화되었지만 원래 의도는 같은 나이 안의 큰 이질성을 드러내는 것이었다.",
+      "explanation": "Later research often used ages 65–74 and 75+, but the original distinction highlighted substantial variation among people of the same age.",
       "evidence_segment_id": "LIFE-PHASES-001",
-      "source": "생애단계",
-      "difficulty": "응용"
+      "source": "Life phases",
+      "difficulty": "Application"
     },
     {
-      "prompt": "고정관념 체화 이론은 연령 고정관념이 의식 밖에서 작동하거나 심리·행동·생리적으로 발현될 수 없다고 본다.",
+      "prompt": "Stereotype embodiment theory denies that age stereotypes can operate outside awareness or manifest through psychological, behavioral, and physiological pathways.",
       "answer": "X",
-      "explanation": "SET는 고정관념이 생애에 걸쳐 내면화되고 비의식적으로 존재하며 경험과 맞을 때 여러 수준에서 발현될 수 있다고 본다.",
+      "explanation": "SET proposes life-span internalization and possible operation outside awareness, with effects expressed through multiple pathways.",
       "evidence_segment_id": "AGEISM-001",
-      "source": "연령주의와 SET",
-      "difficulty": "기본"
+      "source": "Ageism and SET",
+      "difficulty": "Core"
     },
     {
-      "prompt": "긍정적 노화 고정관념도 도달하기 어려운 획일적 기준이 되면 비현실적이고 위험할 수 있다.",
+      "prompt": "Positive aging stereotypes can become unrealistic and harmful when they establish standards that many people cannot attain.",
       "answer": "O",
-      "explanation": "저자들은 부정적 이미지를 긍정적 이미지로 단순 교체하는 전략이 성공적 노화의 과도한 기준을 만들 수 있다고 경고한다.",
+      "explanation": "The chapter cautions against simply replacing negative images with overly positive models of successful aging.",
       "evidence_segment_id": "AGEISM-002",
-      "source": "긍정적 고정관념의 한계",
-      "difficulty": "응용"
+      "source": "Limits of positive stereotypes",
+      "difficulty": "Application"
     },
     {
-      "prompt": "저자들은 연령통합이 언제나 긍정적이고 연령분리가 언제나 부정적이라고 가정해서는 안 된다고 말한다.",
+      "prompt": "The authors warn against assuming that age integration is uniformly beneficial or that age segregation is uniformly harmful.",
       "answer": "O",
-      "explanation": "연령다양 관계망은 협력과 갈등을 모두 가능하게 하고 연령제한 공동체도 접촉 제한과 또래 지원을 함께 낳는다.",
+      "explanation": "Age-diverse networks may support cooperation or conflict. Age-restricted communities may offer peer support while limiting contact with younger people.",
       "evidence_segment_id": "AGE-INTEGRATION-001",
-      "source": "연령통합과 분리",
-      "difficulty": "기본"
+      "source": "Age integration and segregation",
+      "difficulty": "Core"
     },
     {
-      "prompt": "생애과정이 탈표준화되면 정상적인 전환 시기에 관한 오래된 연령규범도 즉시 사라진다.",
+      "prompt": "Once the life course becomes less standardized, older norms about the timing of transitions immediately disappear.",
       "answer": "X",
-      "explanation": "연령의 규제력이 약해졌을 수 있어도 개인은 현실과 맞지 않는 정상생애의 오래된 이상을 계속 붙들 수 있다.",
+      "explanation": "People may continue to hold onto ideals of a normal life even when their circumstances do not allow them to meet those ideals.",
       "evidence_segment_id": "ROLE-TIMING-001",
-      "source": "연령규범",
-      "difficulty": "함정"
+      "source": "Age norms",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "법과 정책은 미성년자·성인·노인 같은 범주를 사용하지만 구체적인 생활연령으로 권리나 수급자격을 정하지는 않는다.",
+      "prompt": "Laws and policies use categories such as minors and older adults but never set rights or eligibility through specific chronological ages.",
       "answer": "X",
-      "explanation": "운전·음주·투표·혼인과 연금·사회보험 등 많은 권리와 수급자격은 구체적인 생활연령 규칙을 사용한다.",
+      "explanation": "Specific age rules often govern voting, driving, marriage, pensions, social services, and other rights or benefits.",
       "evidence_segment_id": "AGE-RIGHTS-001",
-      "source": "권리와 혜택",
-      "difficulty": "기본"
+      "source": "Rights and benefits",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노화하는 몸의 신체적 징후는 남성의 사회자본을 높이면서 여성의 사회자본은 낮추는 이중기준의 대상이 될 수 있다.",
+      "prompt": "Physical signs of aging may increase men's social capital while reducing women's, reflecting a gendered double standard.",
       "answer": "O",
-      "explanation": "저자들은 연령과 젠더가 결합하며 남녀의 노화하는 몸이 문화적으로 다르게 평가된다고 설명한다.",
+      "explanation": "The chapter argues that age and gender operate together and that aging bodies receive different cultural evaluations.",
       "evidence_segment_id": "GENDER-CULTURE-001",
-      "source": "젠더와 연령",
-      "difficulty": "기본"
+      "source": "Age and gender",
+      "difficulty": "Core"
     },
     {
-      "prompt": "저자들의 결론은 노화 연구에서 연령을 완전히 버리는 것이 아니라 개인 수준의 대리변수 문제와 사회 수준의 구조적 중요성을 함께 다루라는 것이다.",
+      "prompt": "The conclusion calls for attention both to age as an individual-level proxy and to its structural importance in social life.",
       "answer": "O",
-      "explanation": "결론은 연령으로부터 벗어날 필요와 사회적 연령의 중대한 결과를 동시에 제시하며 두 수준을 잇는 이론을 요구한다.",
+      "explanation": "The authors seek explanations of how age matters or does not matter at different levels, including connections between institutions and individual aging.",
       "evidence_segment_id": "CONCLUSION-002",
-      "source": "결론",
-      "difficulty": "응용"
+      "source": "Conclusion",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Project AGE는 모든 문화에서 연령범주와 세대 간 상호작용 경계가 동일하다는 결과를 냈다.",
+      "prompt": "Project AGE found identical age categories and boundaries around intergenerational interaction in every culture studied.",
       "answer": "X",
-      "explanation": "7개 문화 맥락은 연령의 중요성, 노년기의 평가, 연령 간 상호작용 경계에서 상당한 변이를 보였다.",
+      "explanation": "The seven contexts differed in the significance of age, evaluations of old age, and boundaries around interaction among age groups.",
       "evidence_segment_id": "GENDER-CULTURE-002",
-      "source": "문화와 Project AGE",
-      "difficulty": "함정"
+      "source": "Culture and Project AGE",
+      "difficulty": "Check the distinction"
     }
-  ]
+  ],
+  "language": "en"
 }

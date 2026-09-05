@@ -1,124 +1,125 @@
 {
-  "title": "Oswald et al. (2010) OX 퀴즈",
-  "instructions": "문장을 읽고 O 또는 X를 고르세요. 표본의 분모, 측정방식, 분석단계, 연령별 방향과 인과범위를 함께 판단해야 합니다.",
+  "title": "Oswald et al. (2010) True/False Quiz",
+  "instructions": "Choose True or False. Distinguish the young-old group (ages 65–79) from the old-old group (ages 80–94), and check sample denominators, measurement methods, and analysis stages. These cross-sectional associations do not establish individual development or causal effects.",
+  "language": "en",
   "question_set_type": "OX 퀴즈",
   "items": [
     {
-      "prompt": "전기노인은 후기노인보다 사별 상태가 더 흔했고, 후기노인은 전기노인보다 기혼 상태가 더 흔했다.",
+      "prompt": "Young-old participants were more often widowed than old-old participants, whereas old-old participants were more often married.",
       "answer": "X",
-      "explanation": "방향이 반대다. 전기노인은 기혼이 더 흔했고 후기노인은 사별이 더 흔했다.",
+      "explanation": "The pattern was the reverse: young-old participants were more often married, and old-old participants were more often widowed.",
       "evidence_segment_id": "PARTICIPANTS-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "최종 표본에서 여성 비율은 전기노인 49.1%, 후기노인 57.4%였다.",
+      "prompt": "In the final descriptive sample, women represented 49.1% of the young-old group and 57.4% of the old-old group.",
       "answer": "O",
-      "explanation": "결측자료 제외 후 전기노인 226명 중 49.1%, 후기노인 155명 중 57.4%가 여성이었다.",
+      "explanation": "After excluding 21 participants because of missing data, the sample included 226 young-old participants, 49.1% women, and 155 old-old participants, 57.4% women.",
       "evidence_segment_id": "PARTICIPANTS-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "easy"
     },
     {
-      "prompt": "연구진은 참여자의 집이나 근린에서 객관적 환경평가를 실시하지 않고 설문으로 환경지표를 측정했다.",
+      "prompt": "The researchers measured environmental indicators through a questionnaire without conducting objective environmental assessments in participants' homes or neighborhoods.",
       "answer": "O",
-      "explanation": "방 수와 면적도 응답자에게 물었으며 접근성과 쾌적성 역시 자기보고였다.",
+      "explanation": "Room counts and floor area were reported by participants, as were perceived accessibility and comfort. Even the indicators the authors labeled objective were collected through the questionnaire, rather than an observer's home assessment.",
       "evidence_segment_id": "INDOOR-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "지각된 주거 접근성은 집 안 편의시설, 현관, 근린의 대중교통 접근이라는 세 문항을 합산했다.",
+      "prompt": "Perceived housing accessibility summed three items covering amenities inside the home, the front door, and neighborhood public transport access.",
       "answer": "X",
-      "explanation": "접근성 척도는 집 안 편의시설과 현관의 무장벽 접근이라는 두 문항으로 구성됐다.",
+      "explanation": "The accessibility score summed two items: barrier-free access to amenities within the home and access to the front door without stairs. Public transport access was not a third item in this score.",
       "evidence_segment_id": "INDOOR-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "easy"
     },
     {
-      "prompt": "ADL과 IADL은 각각 일곱 활동을 측정했고 두 척도 모두 0점에서 14점 범위였다.",
+      "prompt": "ADL and IADL each assessed seven activities, and both scales ranged from 0 to 14.",
       "answer": "O",
-      "explanation": "각 활동은 독립 2점, 일부 도움 1점, 불가능 0점으로 채점되었다.",
+      "explanation": "Each activity was scored 2 for functioning without help, 1 for functioning with some help, and 0 when it was no longer possible. Higher total scores indicated greater independence.",
       "evidence_segment_id": "HEALTH-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "easy"
     },
     {
-      "prompt": "연령집단의 평균과 빈도 차이는 모두 영차 Pearson 상관만으로 검정했다.",
+      "prompt": "Differences between age groups in both means and frequencies were tested only with zero-order Pearson correlations.",
       "answer": "X",
-      "explanation": "평균 차이는 분산분석, 빈도 차이는 카이제곱으로 검정했고 영차 Pearson 상관은 변수 간 관계를 보는 별도 단계였다.",
+      "explanation": "Mean differences were examined with analysis of variance and frequency differences with chi-square tests. Zero-order Pearson correlations addressed relationships among variables in a separate analysis stage.",
       "evidence_segment_id": "ANALYTIC-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "후기노인은 전기노인보다 평균 주거면적이 더 넓고 열 가지 쾌적성 특성도 약 하나 더 많았다.",
+      "prompt": "Old-old participants had larger homes on average and reported about one more of the ten comfort-related amenities than young-old participants.",
       "answer": "X",
-      "explanation": "더 넓은 집과 약 하나 더 많은 쾌적성 특성을 보고한 집단은 전기노인이었다.",
+      "explanation": "The young-old group, not the old-old group, had larger homes on average and reported about one additional comfort-related amenity.",
       "evidence_segment_id": "AGE-DIFF-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "삶의 만족도는 인지적 안녕을 나타내는 0점부터 10점까지의 단일 자기평정 문항이었다.",
+      "prompt": "Life satisfaction represented the cognitive dimension of well-being and was assessed with one self-rating item from 0 to 10.",
       "answer": "O",
-      "explanation": "0은 전혀 만족하지 않음, 10은 완전히 만족함을 뜻했다.",
+      "explanation": "The 11-point response scale ranged from 0, totally unsatisfied, to 10, totally satisfied. It measured an evaluation of life satisfaction, not cognitive functioning.",
       "evidence_segment_id": "SATISFACTION-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "easy"
     },
     {
-      "prompt": "영차 상관에서 근린의 질과 장소애착은 전기노인의 삶의 만족도와 더 강하게 연결되었다.",
+      "prompt": "In the zero-order correlations, neighborhood quality and outdoor place attachment were more strongly related to life satisfaction in the young-old group.",
       "answer": "X",
-      "explanation": "두 근린변수와 삶의 만족도의 관계가 더 큰 집단은 후기노인이었다.",
+      "explanation": "Both neighborhood indicators had stronger correlations with life satisfaction in the old-old group. These are cross-sectional associations, not evidence that their effects grew as the same individuals aged.",
       "evidence_segment_id": "CORRELATIONS-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "두 연령집단은 기본 접근성, 근린 평가, 사회적 근린의 질과 가까운 사회적 파트너에서 평균 차이가 없었다.",
+      "prompt": "The study found no significant age-group differences in basic housing accessibility, neighborhood evaluations, perceived social neighborhood quality, or available social partners in the area.",
       "answer": "O",
-      "explanation": "물리적 실내조건과 동거·기능능력에는 차이가 있었지만 열거된 지표에는 집단 차이가 없었다.",
+      "explanation": "Differences were reported for living space, comfort, living with a partner, and functional capacity, but not for the listed accessibility and neighborhood indicators. A nonsignificant difference does not establish that the groups are exactly identical.",
       "evidence_segment_id": "AGE-DIFF-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "영차 상관에서 주거 쾌적성은 전기노인에서만 삶의 만족도와 기능능력에 정적으로 연결되었다.",
+      "prompt": "In the zero-order correlations, housing comfort was positively related to both life satisfaction and functional capacity only in the young-old group.",
       "answer": "O",
-      "explanation": "후기노인에서는 주거 쾌적성과 두 결과의 같은 상관 양상이 나타나지 않았다.",
+      "explanation": "The authors report this positive pattern for young-old participants, but not for old-old participants. This statement concerns the zero-order correlations rather than an independent effect established in the regression models.",
       "evidence_segment_id": "CORRELATIONS-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "hard"
     },
     {
-      "prompt": "저자들은 사회 차원의 주거정책을 무장벽 건축기준에만 한정해야 한다고 결론지었다.",
+      "prompt": "The authors concluded that societal housing policy should focus exclusively on barrier-free building standards.",
       "answer": "X",
-      "explanation": "저자들은 무장벽 기준을 넘어 주거와 근린의 지각된 측면까지 포괄하는 접근을 제안했다.",
+      "explanation": "They proposed expanding the focus beyond objective building standards to include perceived aspects of housing and the neighborhood in a broader approach to planning.",
       "evidence_segment_id": "CONCLUSION-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "hard"
     },
     {
-      "prompt": "후속 상호작용 검정은 주거면적의 연령차만 지지했고 근린의 질과 장소애착의 연령차는 지지하지 않았다.",
+      "prompt": "The follow-up interaction tests supported age-group differences only for apartment size, not for neighborhood quality or outdoor place attachment.",
       "answer": "X",
-      "explanation": "주거면적·근린의 질·야외 장소애착 세 지표의 연령별 설명 차이가 모두 지지되었다.",
+      "explanation": "The follow-up analyses provided evidence of reliable age-group differences in the explanatory value of all three indicators: apartment size, neighborhood quality, and outdoor place attachment. These tests concern differences in associations across groups, not developmental changes within individuals.",
       "evidence_segment_id": "EXPLANATION-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "hard"
     },
     {
-      "prompt": "전기노인과 후기노인이 같은 장소에서 살아온 평균 기간은 서로 비슷했다.",
+      "prompt": "The young-old and old-old groups had comparable average durations of residence in the same place.",
       "answer": "O",
-      "explanation": "저자들은 두 집단 모두 높은 지역 안정성을 보였고 평균 거주기간도 비교 가능했다고 설명했다.",
+      "explanation": "The discussion explicitly notes that mean durations of residence in the same place were comparable across the two age groups.",
       "evidence_segment_id": "DISCUSSION-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "medium"
     },
     {
-      "prompt": "저자들은 횡단자료의 연령차를 개인의 발달변화로 오해하지 말고 시간적 영향은 종단자료로 검토해야 한다고 밝혔다.",
+      "prompt": "The authors caution that cross-sectional age differences should not be mistaken for individual developmental change and that change over time requires longitudinal data.",
       "answer": "O",
-      "explanation": "현재 자료만으로는 환경의 인과방향이나 노년단계가 바뀔 때 효과가 증가·감소하는지를 확인할 수 없다.",
+      "explanation": "These data cannot establish the causal direction of environmental associations or show whether their influence increases or decreases as individuals move from young-old to old-old age.",
       "evidence_segment_id": "LIMITATIONS-001",
       "source": "Oswald et al. (2010)",
       "difficulty": "hard"

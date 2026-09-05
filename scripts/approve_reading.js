@@ -37,19 +37,19 @@ function parseArgs(argv) {
   };
 }
 
-function approveReading(options) {
+function approveReading(options, rootDir = ROOT_DIR) {
   if (!options.slug) throw new Error("Use --slug <reading-slug>.");
-  const manifest = readJson(path.join(ROOT_DIR, "manifest", "readings.json"));
+  const manifest = readJson(path.join(rootDir, "manifest", "readings.json"));
   const reading = manifest.readings.find((item) => item.slug === options.slug);
   if (!reading) throw new Error(`Unknown slug: ${options.slug}`);
 
-  const metaPath = path.join(ROOT_DIR, reading.content_dir, "meta.json");
+  const metaPath = path.join(rootDir, reading.content_dir, "meta.json");
   if (!fs.existsSync(metaPath)) {
     throw new Error(`Missing meta.json. Build the slug first: ${reading.content_dir}`);
   }
 
   const existing = readJson(metaPath);
-  const initial = buildValidationSnapshot(ROOT_DIR, reading, existing, {
+  const initial = buildValidationSnapshot(rootDir, reading, existing, {
     requireBuiltArtifacts: options.requireBuiltArtifacts,
   });
   const sourceResults = initial.validation_status.source_page_results;
@@ -93,12 +93,20 @@ function approveReading(options) {
       blocked_reason: "",
     },
   };
-  const approved = buildValidationSnapshot(ROOT_DIR, reading, seeded, {
+  requestedPageKeys.forEach((pageKey) => {
+    const sourceHash = sourceResults[pageKey.replace(/-/g, "_")]?.source_hash;
+    if (!sourceHash) throw new Error(`Missing approval dependency hash: ${pageKey}`);
+    seeded.manual_review.approved_page_hashes[pageKey] = sourceHash;
+  });
+  const approved = buildValidationSnapshot(rootDir, reading, seeded, {
     requireBuiltArtifacts: options.requireBuiltArtifacts,
   });
+  const artifactFailures = requestedPageKeys.filter((pageKey) => approved.content_status[pageKey.replace(/-/g, "_")] !== PAGE_STATUS.APPROVED);
+  if (artifactFailures.length) throw new Error(`Approval checks failed: ${artifactFailures.join(", ")}. For reviewed source changes, use --source-only, rebuild, then validate --publish-gate.`);
   const payload = mergeValidationFields(seeded, approved);
   writeJson(metaPath, payload);
   console.log(`[approved] ${options.slug}: ${approved.workflow_status} (${requestedPageKeys.join(", ")})`);
+  return approved;
 }
 
 if (require.main === module) {

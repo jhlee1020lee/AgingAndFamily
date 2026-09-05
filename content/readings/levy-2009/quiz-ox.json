@@ -1,127 +1,128 @@
 {
-  "title": "Levy (2009) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 문장의 범위와 주장 강도를 확인한 뒤 O 또는 X를 고르세요.",
+  "title": "Levy (2009): True or False",
+  "instructions": "Evaluate the scope and strength of each claim using the article, then choose True or False.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "고정관념 체화 이론은 노화 과정이 부분적으로 사회적 구성물이라고 본다.",
+      "prompt": "Stereotype embodiment theory holds that aging is partly a social construct.",
       "answer": "O",
-      "explanation": "저자는 생리적 노화를 부정하지 않으면서 문화에서 동화한 연령 고정관념도 기능과 건강에 영향을 줄 수 있다고 주장한다.",
+      "explanation": "Levy does not deny biological aging. She argues that culturally acquired age stereotypes can also influence functioning and health.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록",
-      "difficulty": "기본"
+      "source": "Abstract",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Ohio 종단연구에서 더 긍정적인 노화 자기지각은 더 좋은 기능적 건강과 평균 7.5년 긴 생존에 관련되었다.",
+      "prompt": "In the Ohio longitudinal studies, more positive self-perceptions of aging were associated with better functional health and an average survival advantage of 7.5 years.",
       "answer": "O",
-      "explanation": "연구 시작 시 50세 이상이었던 참여자를 20년 넘게 추적한 결과이며, 시작 시 기능적 건강과 관련 변수 조정 후에도 집단차가 유지되었다.",
+      "explanation": "Participants were at least 50 at baseline and were followed for more than two decades. The advantages remained after adjustment for baseline functional health and other relevant variables.",
       "evidence_segment_id": "INTRO-002",
-      "source": "종단연구 근거",
-      "difficulty": "기본"
+      "source": "Longitudinal evidence",
+      "difficulty": "Core"
     },
     {
-      "prompt": "이 이론에 따르면 연령 고정관념은 노년기에 처음 학습되기 시작한다.",
+      "prompt": "According to the theory, people first begin learning age stereotypes in old age.",
       "answer": "X",
-      "explanation": "연령 고정관념은 아동기부터 환경과 매체를 통해 습득되고 생애 전반에 걸쳐 내면화된다.",
+      "explanation": "Children encounter age stereotypes through their environment and media. Internalization continues across the life span.",
       "evidence_segment_id": "LIFE-001",
-      "source": "생애 전반의 내면화",
-      "difficulty": "기본"
+      "source": "Internalization across the life span",
+      "difficulty": "Core"
     },
     {
-      "prompt": "7.5년의 생존 차이는 긍정적 생각이 모든 개인의 수명을 정확히 7.5년 늘린다는 실험적 증명이다.",
+      "prompt": "The 7.5-year survival difference experimentally proves that positive thinking adds exactly 7.5 years to every individual's life.",
       "answer": "X",
-      "explanation": "이는 자기지각이 더 긍정적인 집단과 더 부정적인 집단 사이에서 관찰된 평균 종단 차이이며 개인에게 보장되는 실험적 인과효과가 아니다.",
+      "explanation": "This was an average difference between groups in longitudinal observational data, not an experimentally established benefit guaranteed to each individual.",
       "evidence_segment_id": "INTRO-002",
-      "source": "종단연구 해석",
-      "difficulty": "응용"
+      "source": "Interpreting longitudinal evidence",
+      "difficulty": "Application"
     },
     {
-      "prompt": "젊은 성인은 부정적 연령 고정관념으로 제한된 자원의 우선권 같은 단기 이익을 얻을 수도 있다.",
+      "prompt": "Negative age stereotypes may give young adults short-term advantages, such as priority in the allocation of limited resources.",
       "answer": "O",
-      "explanation": "저자는 차별이 고정관념으로 정당화되면서 제한된 자원의 배분에서 젊은 성인에게 우선권을 줄 수 있다고 설명한다.",
+      "explanation": "Levy explains that stereotypes can justify discrimination that gives younger adults priority when limited resources are allocated.",
       "evidence_segment_id": "LIFE-001",
-      "source": "생애 전반의 내면화",
-      "difficulty": "응용"
+      "source": "Internalization across the life span",
+      "difficulty": "Application"
     },
     {
-      "prompt": "18-39세 하위표본에서 초기의 부정적 연령 고정관념 집단은 60세 이후 심혈관 사건 가능성이 긍정적 집단의 절반이었다.",
+      "prompt": "Among the participants aged 18–39 at baseline, those with more negative age stereotypes were half as likely as the positive-stereotype group to experience a cardiovascular event after age 60.",
       "answer": "X",
-      "explanation": "방향이 반대다. 부정적 고정관념 집단은 긍정적 고정관념 집단보다 60세 이후 심혈관 사건 가능성이 두 배였다.",
+      "explanation": "The direction is reversed: the negative-stereotype group was twice as likely to experience a cardiovascular event after age 60, after adjustment for relevant covariates.",
       "evidence_segment_id": "LIFE-002",
-      "source": "심혈관 종단근거",
-      "difficulty": "함정"
+      "source": "Cardiovascular longitudinal evidence",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "역하 점화는 대부분의 사람이 의식적으로 알아차리지 못하지만 부호화할 수 있는 55밀리초 제시를 사용했다.",
+      "prompt": "The subliminal priming procedure presented words for 55 milliseconds, allowing encoding while preventing conscious perception for most people.",
       "answer": "O",
-      "explanation": "저자는 의식적 지각을 막을 만큼 빠르면서도 부호화가 가능한 속도로 55밀리초를 제시했다고 설명한다.",
+      "explanation": "Levy describes 55 milliseconds as fast enough to prevent conscious perception for most individuals but slow enough to permit encoding.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "무의식적 작동",
-      "difficulty": "기본"
+      "source": "Unconscious operation",
+      "difficulty": "Core"
     },
     {
-      "prompt": "자기관련성은 연령 고정관념이 자신의 현재 노인 정체성과 연결되면서 개인적 울림을 얻는 것을 뜻한다.",
+      "prompt": "Self-relevance means that age stereotypes acquire personal resonance as old age becomes part of a person's current identity.",
       "answer": "O",
-      "explanation": "노년기가 멀리 있는 상태에서 현재 상태로 바뀌었다고 인식하면 일반적 고정관념이 자신의 정체성과 연결된다.",
+      "explanation": "When people recognize old age as their present state rather than a remote prospect, general age stereotypes become connected to their own identity.",
       "evidence_segment_id": "SELFREL-001",
-      "source": "자기관련성",
-      "difficulty": "기본"
+      "source": "Self-relevance",
+      "difficulty": "Core"
     },
     {
-      "prompt": "긍정적 연령 고정관념 점화 집단은 비용이 있는 생명연장 개입을 부정적 점화 집단보다 더 자주 거부했다.",
+      "prompt": "Participants exposed to positive age stereotypes tended to reject costly life-prolonging interventions more often than participants exposed to negative stereotypes.",
       "answer": "X",
-      "explanation": "긍정적 점화 집단은 개입을 받아들이는 경향이 있었고, 부정적 점화 집단은 거부하는 경향이 있었다.",
+      "explanation": "The positive-stereotype group tended to accept the intervention; the negative-stereotype group tended to reject it.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "살고자 하는 의지 실험",
-      "difficulty": "함정"
+      "source": "Will-to-live experiment",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "고정관념 일치 효과는 고정관념 내용과 결과 영역이 대응할 때 영향이 가장 크다는 뜻이다.",
+      "prompt": "The stereotype-matching effect refers to stronger effects when stereotype content corresponds to the domain of the outcome.",
       "answer": "O",
-      "explanation": "인지 고정관념과 인지과제, 신체 고정관념과 신체과제처럼 내용과 결과가 맞을 때 효과가 가장 컸다.",
+      "explanation": "Effects were greatest when cognitive stereotypes corresponded to cognitive tasks or physical stereotypes corresponded to physical tasks.",
       "evidence_segment_id": "PATH-PSYCH-001",
-      "source": "심리적 경로",
-      "difficulty": "기본"
+      "source": "Psychological pathway",
+      "difficulty": "Core"
     },
     {
-      "prompt": "같은 점화 절차를 따른 젊은 참여자는 노인 참여자보다 항상 더 강한 고정관념 일치 효과를 보였다.",
+      "prompt": "Younger participants following the same priming protocol always showed stronger stereotype-congruent effects than older participants.",
       "answer": "X",
-      "explanation": "젊은 참여자는 효과가 없거나 훨씬 약한 경향이 있었고, 저자는 노인 정체성의 활성화로 차이를 설명한다.",
+      "explanation": "Younger participants tended to show no effects or much weaker effects. Levy partly explains the older participants' responses through activation of an older-person identity.",
       "evidence_segment_id": "SELFREL-001",
-      "source": "자기관련성",
-      "difficulty": "함정"
+      "source": "Self-relevance",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "부정적 연령 고정관념의 역하 점화는 스트레스에 대한 심혈관 반응을 낮췄다.",
+      "prompt": "Subliminal exposure to negative age stereotypes reduced cardiovascular responses to stress.",
       "answer": "X",
-      "explanation": "부정적 점화는 심혈관 반응을 높였고 긍정적 점화는 그 반응을 낮췄다.",
+      "explanation": "Negative priming heightened cardiovascular stress responses, whereas positive priming reduced them.",
       "evidence_segment_id": "PATH-PHYS-001",
-      "source": "생리적 경로",
-      "difficulty": "함정"
+      "source": "Physiological pathway",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "논문이 제시한 행동적 경로는 부정적 고정관념이 건강행동을 무의미하게 느끼게 하고 자기효능감을 낮출 수 있다는 것이다.",
+      "prompt": "The behavioral pathway includes the possibility that negative stereotypes make healthy practices seem futile and undermine self-efficacy.",
       "answer": "O",
-      "explanation": "부정적 고정관념은 건강문제를 필연적 결과로 보게 해 건강행동을 쓸모없다고 여기게 할 수 있다.",
+      "explanation": "If health problems are seen as inevitable consequences of aging, people may regard healthy practices as pointless and feel less able to influence their health.",
       "evidence_segment_id": "PATH-BEHAV-001",
-      "source": "행동적 경로",
-      "difficulty": "응용"
+      "source": "Behavioral pathway",
+      "difficulty": "Application"
     },
     {
-      "prompt": "저자는 긍정적 연령 고정관념을 일상에서 지속적으로 활성화하는 것을 개입의 남은 과제로 제시했다.",
+      "prompt": "Levy identifies sustained activation of positive age stereotypes in everyday life as a remaining intervention challenge.",
       "answer": "O",
-      "explanation": "실험실 점화는 가능성을 보였지만 일상생활에서 긍정적 활성화를 지속시키는 일이 아직 과제로 남아 있다.",
+      "explanation": "Laboratory priming demonstrated potential benefits, but maintaining positive activation in everyday life remained an open challenge.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "향후 연구 방향",
-      "difficulty": "응용"
+      "source": "Future directions",
+      "difficulty": "Application"
     },
     {
-      "prompt": "이 논문은 고정관념 체화의 네 전제가 모든 낙인집단에 그대로 적용된다고 결론 내린다.",
+      "prompt": "The article concludes that all four premises of stereotype embodiment apply unchanged to every stigmatized group.",
       "answer": "X",
-      "explanation": "저자는 그런 보편적 주장을 하지 않았으며 다른 집단으로의 전이 가능성은 향후 연구에서 평가해야 한다고 제한했다.",
+      "explanation": "Levy explicitly avoids this universal claim. The transferability of stereotype embodiment to other targeted groups remains a question for future research.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "이론의 적용 한계",
-      "difficulty": "응용"
+      "source": "Limits of transferability",
+      "difficulty": "Application"
     }
-  ]
+  ],
+  "language": "en"
 }

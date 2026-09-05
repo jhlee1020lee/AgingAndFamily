@@ -1,127 +1,181 @@
 {
-  "title": "Cotten (2021) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 핵심 개념과 구분을 짧고 정확하게 답하세요.",
+  "title": "Cotten (2021): Short-answer practice",
+  "instructions": "Answer in English with a concise term or phrase. Use the chapter's definitions and distinguish proposed mechanisms from causal evidence.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "정보를 수집·교환하고 타인과 소통하는 기기와 응용프로그램을 묶는 약어는?",
-      "accepted_answers": ["ICT", "ICTs", "정보통신기술"],
+      "question": "Which abbreviation covers devices and applications used to gather and exchange information and communicate with others?",
+      "accepted_answers": [
+        "ICT",
+        "ICTs",
+        "information and communication technology",
+        "information and communication technologies",
+        "information communication technology"
+      ],
       "answer_type": "term",
-      "explanation": "휴대전화, 컴퓨터, 인터넷, 태블릿, 소셜 네트워크 사이트와 앱이 포함된다.",
+      "explanation": "The chapter includes mobile phones, computers, the Internet, tablets, social network sites, and apps in this category.",
       "evidence_segment_id": "DEFINE-001",
-      "source": "핵심 기술 범주"
+      "source": "Technology categories"
     },
     {
-      "question": "최근 개발되어 대중 보급 초기 단계에 있고 사용과 영향이 덜 알려진 기술 범주는?",
-      "accepted_answers": ["신흥기술", "emerging technologies"],
+      "question": "What category describes recently developed tools in the early stages of public dissemination, whose use and effects are less well understood?",
+      "accepted_answers": [
+        "emerging technologies",
+        "emerging technology"
+      ],
       "answer_type": "term",
-      "explanation": "로봇, 가상현실, 음성비서, 스마트홈과 원격보건이 예로 제시된다.",
+      "explanation": "Examples discussed in the 2021 chapter include robots, virtual reality, voice assistants, augmented reality, smart homes, and telehealth applications. This classification reflects the chapter's historical context.",
       "evidence_segment_id": "DEFINE-001",
-      "source": "새 기술의 범주"
+      "source": "New technology categories"
     },
     {
-      "question": "비슷한 역사적 시기에 주요 생애사건을 경험한 인구집단을 가리키는 말은?",
-      "accepted_answers": ["코호트", "cohort", "출생코호트"],
+      "question": "What term denotes people who experience similar major life events during a particular historical period?",
+      "accepted_answers": [
+        "cohort",
+        "cohorts",
+        "birth cohort"
+      ],
       "answer_type": "term",
-      "explanation": "이 개념은 출생 후 흐른 시간인 나이와 다르며 단면자료로 두 효과를 분리하기 어렵다.",
+      "explanation": "A cohort is distinct from age, or time since birth. Cross-sectional data cannot separate age and cohort effects.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "생애과정의 집단 구분"
+      "source": "Life-course groups"
     },
     {
-      "question": "기술에 접속하거나 사용하는 집단 사이에 지속되는 간극을 무엇이라 하는가?",
-      "accepted_answers": ["디지털 격차", "digital divide"],
+      "question": "What term describes persistent gaps between groups in access to or use of technology?",
+      "accepted_answers": [
+        "digital divide",
+        "the digital divide"
+      ],
       "answer_type": "term",
-      "explanation": "농촌 거주, 낮은 소득과 높은 연령은 기술 접근과 사용 가능성이 낮은 것과 관련된다.",
+      "explanation": "Rural residence, lower income, and older age were associated with lower access and use in the research reviewed. Differences also involve proficiency and resources for maintaining access.",
       "evidence_segment_id": "DIVIDE-001",
-      "source": "기술 접근의 층화"
+      "source": "Inequality in access"
     },
     {
-      "question": "초기의 작은 자원 차이가 후속 이익의 차이를 낳아 생애에 걸쳐 확대되는 과정을 무엇이라 하는가?",
-      "accepted_answers": ["누적불이익", "cumulative disadvantage"],
+      "question": "What life-course process explains why small early disadvantages widen as later benefits accrue disproportionately to people with greater resources?",
+      "accepted_answers": [
+        "cumulative disadvantage"
+      ],
       "answer_type": "term",
-      "explanation": "이른 컴퓨터·인터넷 접근은 교육, 구직, 고급 기술과 정보·관계 자원의 후속 이점으로 이어질 수 있다.",
+      "explanation": "Early access can support education, job searches, more advanced skills, and social resources. People without access and skills can miss these subsequent benefits, widening initial gaps.",
       "evidence_segment_id": "DIVIDE-001",
-      "source": "생애과정의 격차 확대"
+      "source": "Accumulating inequality"
     },
     {
-      "question": "온라인 상태만으로는 편익이 충분하지 않을 때, 여러 기능을 실제로 다룰 수 있는 능력을 무엇이라 하는가?",
-      "accepted_answers": ["디지털 역량", "digital skills", "기술 역량"],
+      "question": "What abilities are needed to operate online tools effectively and gain benefits beyond simply having an Internet connection?",
+      "accepted_answers": [
+        "digital skills",
+        "ICT skills",
+        "technology skills",
+        "technological skills"
+      ],
       "answer_type": "term",
-      "explanation": "인터넷 접속 뒤에도 정보탐색과 다양한 기능 사용을 위한 능력이 편익 획득에 중요하다.",
+      "explanation": "Going online is insufficient on its own. Skills help users find information, communicate, and make effective use of available functions.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "접근 이후의 능력"
+      "source": "Capabilities beyond access"
     },
     {
-      "question": "기술 사용이나 사회조건이 유대·정보 접근과 건강 결과를 변화시킨다고 보는 방향의 설명은?",
-      "accepted_answers": ["사회적 원인", "social causation", "사회적 인과"],
+      "question": "Which explanatory perspective treats technology use and social conditions as causes of changes in social ties or well-being?",
+      "accepted_answers": [
+        "social causation",
+        "social causation perspective"
+      ],
       "answer_type": "term",
-      "explanation": "기술은 연결과 안녕을 높일 수도 있고 괴로운 정보 노출이나 대면접촉 대체로 해를 줄 수도 있다.",
+      "explanation": "This perspective can explain benefits from connection and information or harms from distressing content and displaced contact. A correlation alone does not establish either causal pathway.",
       "evidence_segment_id": "IMPACTS-001",
-      "source": "영향의 인과 방향"
+      "source": "Direction of influence"
     },
     {
-      "question": "기존의 외로움·관계상태·성격 같은 개인요인이 기술 이용과 결과의 상관을 만든다고 보는 설명은?",
-      "accepted_answers": ["사회적 선택", "social selection", "선택효과"],
+      "question": "Which perspective explains an association through pre-existing characteristics, such as loneliness or strained relationships, that influence technology use?",
+      "accepted_answers": [
+        "social selection",
+        "social selection perspective",
+        "selection effects"
+      ],
       "answer_type": "term",
-      "explanation": "외롭거나 관계가 약한 사람이 인터넷과 다른 기기를 더 자주 찾는 경로가 예다.",
+      "explanation": "For example, people who are already lonely may turn to online interaction more often. This differs from attributing their loneliness to technology use.",
       "evidence_segment_id": "IMPACTS-001",
-      "source": "선행 특성과 기술 이용"
+      "source": "Prior characteristics"
     },
     {
-      "question": "자신이 다른 사람에게 중요하고 인정받으며 의지되는 사람이라고 지각하는 상태는?",
-      "accepted_answers": ["mattering", "중요성 지각", "중요한 존재감"],
+      "question": "What term describes perceiving oneself as important to, acknowledged by, and relied upon by other people?",
+      "accepted_answers": [
+        "mattering",
+        "sense of mattering"
+      ],
       "answer_type": "term",
-      "explanation": "생활시설 연구에서는 이 상태가 정보통신기술 사용과 우울의 관계를 매개했다.",
+      "explanation": "Studies of assisted and independent living communities found this perception mediated the association between ICT use and depression. The proposed pathway runs through social connectedness.",
       "evidence_segment_id": "PSYCH-001",
-      "source": "사회적 가치의 매개경로"
+      "source": "Psychosocial pathway"
     },
     {
-      "question": "대면 상황에서 곁에 있는 사람보다 스마트폰과 상호작용하는 행동은?",
-      "accepted_answers": ["퍼빙", "phubbing"],
+      "question": "What behavior involves attending to a smartphone rather than to other people who are physically present?",
+      "accepted_answers": [
+        "phubbing"
+      ],
       "answer_type": "term",
-      "explanation": "이 행동은 공동현존을 깨뜨려 노년층이 무시되거나 단절됐다고 느끼게 할 수 있다.",
+      "explanation": "This can disrupt copresence and leave older adults feeling ignored. The chapter notes that poor relationship quality could also precede such behavior, so its direction of influence needs longitudinal study.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "대면 장면의 휴대전화 사용"
+      "source": "Interaction during face-to-face encounters"
     },
     {
-      "question": "기술에 몰입한 세대와 대면 장면에서 배제감을 느끼는 노년층 사이의 간극을 저자들이 부른 말은?",
-      "accepted_answers": ["물리–디지털 격차", "물리-디지털 격차", "physical–digital divide"],
+      "question": "What term names the gap between digitally engaged generations and older adults who feel excluded when others use devices during shared encounters?",
+      "accepted_answers": [
+        "physical-digital divide",
+        "physical–digital divide",
+        "physical digital divide"
+      ],
       "answer_type": "term",
-      "explanation": "이 개념은 타인의 기기 사용이 노년층의 공동현존과 연결감에 미치는 간극을 포착한다.",
+      "explanation": "The term concerns disrupted copresence and connection during interaction. It extends the discussion beyond whether someone owns or can use a device.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "대면과 디지털 세계의 간극"
+      "source": "Connection across physical and digital settings"
     },
     {
-      "question": "인터페이스·비밀번호·보안처럼 변화하는 기술의 인지적·사회적 요구에서 생기는 스트레스는?",
-      "accepted_answers": ["테크노스트레스", "technostress"],
+      "question": "What term describes stress from the changing cognitive and social demands of using ICTs?",
+      "accepted_answers": [
+        "technostress",
+        "techno-stress"
+      ],
       "answer_type": "term",
-      "explanation": "높은 수준의 이 스트레스는 높은 연령과 관련되며 기술 사용 지속을 어렵게 할 수 있다.",
+      "explanation": "Changing interfaces, passwords, and safety requirements can create difficulties. The reviewed research associated higher levels of this stress with older age; it does not imply every older user experiences it.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "변화하는 기술 요구"
+      "source": "Demands of changing technology"
     },
     {
-      "question": "저자가 ‘중독’ 대신 일상생활 활동을 방해하는 수준의 이용을 가리키는 데 쓴 말은?",
-      "accepted_answers": ["기술 과잉사용", "technology overuse", "과잉사용"],
+      "question": "What term does Cotten prefer to addiction when use interferes with activities of daily living?",
+      "accepted_answers": [
+        "technology overuse",
+        "overuse",
+        "ICT overuse"
+      ],
       "answer_type": "term",
-      "explanation": "집안일, 일, 심부름과 사회적 만남을 제쳐 두고 계속 소셜미디어를 확인하는 경우가 예다.",
+      "explanation": "The criterion is interference with ordinary activities, such as errands, work, or social visits. Frequent use alone is not sufficient, and the cited cross-sectional evidence cannot establish causation.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "문제가 되는 이용의 정의"
+      "source": "Problematic use"
     },
     {
-      "question": "스마트 기기와 앱이 Wi-Fi를 통해 서로 연결되어 통신하는 체계를 가리키는 약어는?",
-      "accepted_answers": ["IoT", "사물인터넷", "Internet of Things"],
+      "question": "Which abbreviation describes interconnected smart devices and applications that communicate with one another?",
+      "accepted_answers": [
+        "IoT",
+        "Internet of Things",
+        "the Internet of Things"
+      ],
       "answer_type": "term",
-      "explanation": "조명·온도·문·카메라부터 낙상과 건강지표 감지까지 연결된 기능이 포함된다.",
+      "explanation": "The chapter describes connected home controls, sensors, cameras, and health monitoring. Possible support for independent living depends on access, housing, maintenance, privacy, and security.",
       "evidence_segment_id": "IOT-001",
-      "source": "연결된 기기 체계"
+      "source": "Connected devices"
     },
     {
-      "question": "통신기술로 의료·공중보건·건강교육의 전달과 지원을 수행하는 서비스 범주는?",
-      "accepted_answers": ["원격보건", "telehealth", "텔레헬스"],
+      "question": "What service category uses telecommunications to deliver and support healthcare, public health, and health education at a distance?",
+      "accepted_answers": [
+        "telehealth",
+        "tele-health"
+      ],
       "answer_type": "term",
-      "explanation": "전화, 이메일, 보안 메시지, 무선 모니터링, 앱과 영상도구가 사용될 수 있다.",
+      "explanation": "The chapter includes telephone, email, secure messaging, wireless monitoring, apps, and video tools. Technical assistance and caregiver resources can affect whether older adults benefit.",
       "evidence_segment_id": "TELEHEALTH-001",
-      "source": "원격 건강서비스"
+      "source": "Remote health services"
     }
-  ]
+  ],
+  "language": "en"
 }

@@ -1,217 +1,218 @@
 {
-  "title": "Martinson & Berridge (2015) 객관식 퀴즈",
-  "instructions": "지정된 한 근거 세그먼트의 주장과 수치에 가장 정확히 부합하는 답 하나를 고르세요.",
+  "title": "Martinson & Berridge (2015): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Distinguish the review's categories of proposed remedies, findings from individual cited studies, and the normative arguments made by critics and reviewers. No single cultural or health profile defines a person's worth.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "Villar가 설명한 Rowe–Kahn 모델의 학문적 기여로 가장 정확한 것은?",
+      "prompt": "What contribution did Villar attribute to the Rowe–Kahn model, as summarized in the introduction?",
       "options": [
-        "생물학적·행동적·사회적 요인에 대한 관심을 높이고 생애 후반을 예방적이고 낙관적으로 보게 했다",
-        "모델이 노년기 질병의 생물학적 원인만 탐색하게 했다",
-        "모델이 합의된 하나의 정의를 확립해 개념논쟁을 끝냈다",
-        "모델이 사회참여를 성공적 노화 기준에서 제외하게 했다"
+        "It stimulated interest in biological, behavioral, and social influences and a preventive, optimistic view of later life.",
+        "It restricted research to biological causes of disease and discouraged attention to behavioral or social influences.",
+        "It established one universally accepted definition of successful aging and ended conceptual disagreement in the field.",
+        "It removed social engagement from the criteria and replaced it with a purely clinical assessment of physical health."
       ],
-      "answer": "생물학적·행동적·사회적 요인에 대한 관심을 높이고 생애 후반을 예방적이고 낙관적으로 보게 했다",
-      "explanation": "Villar는 이 모델이 잘 늙는 데 관련된 생물학적·행동적·사회적 요인에 대한 관심과 예방적·낙관적 접근을 촉진했다고 평가했다.",
+      "answer": "It stimulated interest in biological, behavioral, and social influences and a preventive, optimistic view of later life.",
+      "explanation": "The introduction acknowledges Villar's positive assessment before reviewing the criticisms. It also emphasizes the continuing absence of an agreed definition. Recognizing the model's influence is distinct from accepting all of its criteria or dismissing the concerns examined in this review.",
       "evidence_segment_id": "INTRO-001",
-      "source": "모델의 기여",
-      "difficulty": "기본"
+      "source": "Introduction: influence and continuing debate",
+      "difficulty": "easy"
     },
     {
-      "prompt": "저자들이 문헌검색을 ASG 데이터베이스로 좁힌 이유는?",
+      "prompt": "Why did the authors choose the Abstracts in Social Gerontology database?",
       "options": [
-        "사회노년학의 생물·심리 연구에 집중해 문화·비판 연구를 배제해서",
-        "사회노년학의 폭넓은 학제간 연구를 제공해서",
-        "경험연구만 선별해 이론적 분석과 사설을 제외할 수 있어서",
-        "성공적 노화 비판이 실린 단행본·비영어 문헌까지 함께 제공해서"
+        "It limited the search to biological and psychological studies, excluding cultural and critical gerontology.",
+        "It offered a broad interdisciplinary range of social-gerontology research.",
+        "It supplied empirical studies only, ensuring that theoretical analyses and editorials could not enter the review.",
+        "It comprehensively included every relevant book and all non-English critiques of successful-aging models."
       ],
-      "answer": "사회노년학의 폭넓은 학제간 연구를 제공해서",
-      "explanation": "ASG는 생물학·심리학·사회학·경제학·문화·비판적 노화연구를 아우르는 학제적 범위를 제공했기 때문에 선택됐다.",
+      "answer": "It offered a broad interdisciplinary range of social-gerontology research.",
+      "explanation": "ASG provided biological, psychological, sociological, economic, cultural, and critical research. The review selected 67 articles in which critique was central, including empirical work, theoretical analyses, and editorials. The database choice was a scope decision, not a claim to cover all relevant scholarship.",
       "evidence_segment_id": "METHODS-001",
-      "source": "데이터베이스 선택",
-      "difficulty": "기본"
+      "source": "Methods: database scope",
+      "difficulty": "easy"
     },
     {
-      "prompt": "McLaughlin 후속연구에서 기준을 점차 완화해 비교한 결과는?",
+      "prompt": "What did the cited McLaughlin follow-up study find when it progressively relaxed successful-aging criteria?",
       "options": [
-        "한 기준으로 계산한 고정 유병률 11.9%",
-        "완화 전후의 차이가 거의 없는 16%–24%",
-        "기준을 완화할수록 33.5%에서 3.3%로 낮아졌다는 역방향 범위",
-        "기준을 점차 완화했을 때 3.3%–33.5%로 달라진 범위"
+        "An unchanged prevalence of 11.9% under every version of the criteria.",
+        "A narrow range of 16%–24% that remained almost unchanged by the revisions.",
+        "A decrease from 33.5% to 3.3% as the criteria became progressively less restrictive.",
+        "A prevalence range of 3.3%–33.5%, depending on how restrictive the criteria were."
       ],
-      "answer": "기준을 점차 완화했을 때 3.3%–33.5%로 달라진 범위",
-      "explanation": "후속연구는 점점 완화된 기준에 따라 성공적 노화 유병률이 3.3%에서 33.5%까지 달라짐을 보고했다.",
+      "answer": "A prevalence range of 3.3%–33.5%, depending on how restrictive the criteria were.",
+      "explanation": "The review reports this range from the cited follow-up, illustrating sensitivity to definitions. The investigators recommended loosening thresholds while retaining the Rowe–Kahn foundation. These are results of a particular reviewed study, not a pooled prevalence estimate from the 67-article review or a universal rate.",
       "evidence_segment_id": "PREVALENCE-001",
-      "source": "기준완화와 유병률",
-      "difficulty": "기본"
+      "source": "Reviewed evidence: classification thresholds",
+      "difficulty": "easy"
     },
     {
-      "prompt": "Villar가 Baltes–Baltes 모델 수정안에서 성공적 노화 기준에 더하자고 한 것은?",
+      "prompt": "What did Villar propose adding when revising a successful-aging framework?",
       "options": [
-        "질병과 장애를 피하는 기준을 더 엄격히 적용하자는 제안",
-        "개인의 기능상태를 주관적 자기평가로 완전히 대체하자는 제안",
-        "혼인상태와 여가활동을 하나의 생의학 지수로 묶자는 제안",
-        "생성감을 기준에 포함하자는 제안"
+        "A stricter requirement to avoid every disease and disability.",
+        "A single self-rating that would completely replace all other dimensions.",
+        "A biomedical index combining marital status with leisure frequency.",
+        "A multifaceted concept of generativity alongside maintenance and loss regulation."
       ],
-      "answer": "생성감을 기준에 포함하자는 제안",
-      "explanation": "Villar는 사회·지역사회·개인 발달을 포함하는 다면적 생성감을 넣고, 손실조절이나 유지와 함께 생성도 고려하자고 했다.",
+      "answer": "A multifaceted concept of generativity alongside maintenance and loss regulation.",
+      "explanation": "Villar proposed including generativity involving personal, community, and social development. The review presents this as a recommendation for revising a model, not an intervention result demonstrating that one new criterion resolves the broader objections to normative ideals.",
       "evidence_segment_id": "CRITERIA-001",
-      "source": "생성감 기준",
-      "difficulty": "응용"
+      "source": "Proposed additions: generativity",
+      "difficulty": "medium"
     },
     {
-      "prompt": "‘누락된 목소리’가 ‘추가하고 섞기’와 구별되는 핵심 권고는?",
+      "prompt": "What most clearly distinguishes Missing Voices from Add and Stir?",
       "options": [
-        "기존 전문가 기준의 문턱만 낮추어 더 많은 노인을 포함하자",
-        "노인의 관점을 조사하되 기존 객관적 측정에는 반영하지 말자",
-        "노인의 관점에서 나온 주관적 기준을 기존 측정에 더하자",
-        "노인의 주관적 의미를 빼고 생의학 기준을 세분하자"
+        "It only lowers thresholds set by experts, without seeking older adults' own accounts.",
+        "It gathers older adults' views but explicitly excludes them from the criteria or measures.",
+        "It specifically calls for criteria derived from older adults' own subjective meanings.",
+        "It removes subjective experience and replaces it with more detailed biomedical categories."
       ],
-      "answer": "노인의 관점에서 나온 주관적 기준을 기존 측정에 더하자",
-      "explanation": "두 범주 모두 기준의 협소함을 비판했지만, 누락된 목소리는 노인에게서 도출된 주관적 기준의 추가를 명시적으로 요구했다.",
+      "answer": "It specifically calls for criteria derived from older adults' own subjective meanings.",
+      "explanation": "Both groups criticize narrow criteria and largely retain successful aging as an ideal. Missing Voices is distinguished by explicitly grounding additional criteria in older adults' perspectives. The review sorts articles by their proposed remedies, even when the concerns they express overlap.",
       "evidence_segment_id": "MISSING-VOICES-001",
-      "source": "두 범주의 차이",
-      "difficulty": "기본"
+      "source": "Categories: whose meanings shape the criteria",
+      "difficulty": "easy"
     },
     {
-      "prompt": "Strawbridge와 동료들이 보고한 자기평가와 Rowe–Kahn 기준의 성공적 노화 비율은?",
+      "prompt": "Which comparison did Strawbridge and colleagues report, according to the review?",
       "options": [
-        "자기평가 63%, 기존 기준 30%",
-        "자기평가 50.3%, Rowe–Kahn 기준 18.8%",
-        "자기평가 18.8%, Rowe–Kahn 기준 50.3%로 순서가 반대였다",
-        "두 기준이 50.3%로 같아 차이가 없었다"
+        "63% self-rated success versus 30% meeting the Rowe–Kahn criteria.",
+        "50.3% self-rated success versus 18.8% meeting the Rowe–Kahn criteria.",
+        "18.8% self-rated success versus 50.3% meeting the Rowe–Kahn criteria.",
+        "50.3% under both measures, with no difference between the definitions."
       ],
-      "answer": "자기평가 50.3%, Rowe–Kahn 기준 18.8%",
-      "explanation": "Strawbridge와 동료들은 자기평가 50.3%와 Rowe–Kahn 기준 18.8% 사이에 유의한 차이를 보고했다.",
+      "answer": "50.3% self-rated success versus 18.8% meeting the Rowe–Kahn criteria.",
+      "explanation": "The review attributes 50.3% versus 18.8% to Strawbridge and colleagues. The 63% versus 30% comparison belongs to a different study involving African American older adults. The findings illustrate how subjective and externally defined classifications can differ; they do not rank either group's worth or establish one population-wide percentage.",
       "evidence_segment_id": "COMPARE-001",
-      "source": "주관·객관 비율",
-      "difficulty": "기본"
+      "source": "Reviewed evidence: self-ratings and external criteria",
+      "difficulty": "easy"
     },
     {
-      "prompt": "Torres의 문화내적 접근이 보여 준 성공적 노화 정의의 특징은?",
+      "prompt": "What did Torres's intracultural approach show about meanings of successful aging?",
       "options": [
-        "문화가 다르면 성공적 노화 정의도 하나씩 고정된다",
-        "이주 뒤에는 출신문화의 가치가 성공적 노화에서 사라진다",
-        "문화 간·문화 내부 모두에서 정의 방식과 가치지향이 다양하다",
-        "문화적 가치는 모든 구성원을 한 정의로 이끌어 문화내 차이를 줄인다"
+        "Each culture determines one fixed definition shared by all its members.",
+        "Migration removes all influence of earlier cultural values on later-life meanings.",
+        "Definitions and the values behind them vary both across and within cultures.",
+        "Cultural values necessarily lead every member toward an identical understanding."
       ],
-      "answer": "문화 간·문화 내부 모두에서 정의 방식과 가치지향이 다양하다",
-      "explanation": "Torres는 문화가 이해를 이끌 수 있지만 특정 문화의 사람들이 성공적 노화를 한 방식으로만 생각하지는 않는다고 보았다.",
+      "answer": "Definitions and the values behind them vary both across and within cultures.",
+      "explanation": "Torres examined complexity among people migrating between cultural settings and emphasized variation in both definitions and how people reach them. Cultural values can guide interpretation without dictating one position for every person. Culture-specific labels should therefore not become stereotypes that erase differences within a group.",
       "evidence_segment_id": "CULTURE-001",
-      "source": "문화내 다양성",
-      "difficulty": "응용"
+      "source": "Culture: variation within as well as between groups",
+      "difficulty": "medium"
     },
     {
-      "prompt": "‘통렬한 비판’의 공통 방향을 가장 정확히 설명한 것은?",
+      "prompt": "What distinguishes the overall direction of Hard Hitting Critiques?",
       "options": [
-        "기준의 문턱을 조금 낮추고 기존 모델을 유지하자",
-        "동양철학의 새 명칭으로 성공적 노화의 기본원칙을 보존하자",
-        "개인주의·연령주의·비장애 중심주의·신자유주의와 사회정의 문제 때문에 성공적이라는 관념을 폭넓게 거부하자",
-        "주관적 자기평가 문항 하나를 객관적 모델에 추가하자"
+        "They retain the model and respond only by lowering the existing biomedical thresholds.",
+        "They preserve every original assumption while changing only the name to an Eastern ideal.",
+        "They challenge the broader ideal and seek alternatives addressing exclusion and structural injustice.",
+        "They accept the model unchanged except for adding a single subjective self-rating question."
       ],
-      "answer": "개인주의·연령주의·비장애 중심주의·신자유주의와 사회정의 문제 때문에 성공적이라는 관념을 폭넓게 거부하자",
-      "explanation": "초점은 달라도 이 비판들은 개인주의, 연령주의·비장애 중심주의, 신자유주의, 삶과 사회정의에 대한 영향을 공유하고 대안 틀을 요구했다.",
+      "answer": "They challenge the broader ideal and seek alternatives addressing exclusion and structural injustice.",
+      "explanation": "These critiques raise one or more concerns about individualism, ageism, ableism, neoliberal contexts, lived experience, and social justice. Their broad rejection of the successful-aging ideal distinguishes them from modest expansion. The category summarizes related arguments; it does not imply that every article makes every criticism.",
       "evidence_segment_id": "HARD-HITTING-001",
-      "source": "근본 비판의 범위",
-      "difficulty": "응용"
+      "source": "Categories: fundamental criticism and alternative directions",
+      "difficulty": "medium"
     },
     {
-      "prompt": "Scheidt와 동료들이 개인주의적 성공적 노화관에서 빠졌다고 지적한 것은?",
+      "prompt": "What did Scheidt and colleagues argue was missing from an individualistic account of successful aging?",
       "options": [
-        "사회구조적 맥락이 노화에 강한 결정 역할을 한다는 점",
-        "개인의 태도가 기회격차를 상쇄한다는 점",
-        "성공적 노화는 개인의 승패를 진단하는 최종상태일수록 현실적이라는 점",
-        "신체기능만 보면 사회맥락은 불필요하다는 점"
+        "The powerful role of social and structural contexts in shaping how people age.",
+        "The claim that a positive individual attitude can always offset unequal opportunities.",
+        "The value of classifying every person as a winner or loser at one fixed endpoint.",
+        "The principle that physical-function scores make social circumstances irrelevant."
       ],
-      "answer": "사회구조적 맥락이 노화에 강한 결정 역할을 한다는 점",
-      "explanation": "Scheidt와 동료들은 협소한 개인주의 시각이 우리가 어떻게 나이 드는지에 강력한 결정 역할을 하는 사회구조적 맥락을 고려하지 못한다고 했다.",
+      "answer": "The powerful role of social and structural contexts in shaping how people age.",
+      "explanation": "The review attributes this critique to Scheidt and colleagues and connects it with unequal access to education, employment, housing, food, and other resources. It challenges explanations centered solely on individual control. This is an argument about how aging should be understood, not a numerical estimate of one structural cause.",
       "evidence_segment_id": "INDIVIDUALISM-001",
-      "source": "사회구조적 맥락",
-      "difficulty": "응용"
+      "source": "Individualism: structural conditions",
+      "difficulty": "medium"
     },
     {
-      "prompt": "질병·장애 회피를 성공으로 명명할 때 생길 수 있는 도덕적 효과는?",
+      "prompt": "What moral consequence did critics identify in defining success as avoiding disease and disability?",
       "options": [
-        "질병·장애가 있는 몸을 실패로 낮추고 개인에게 그 상태의 책임을 돌릴 수 있다",
-        "장애를 통상적 노화보다 높은 성공범주로 올린다",
-        "인지·신체능력의 모든 비교를 없애 장애 노인을 도덕적 판단과 책임귀속에서 보호한다",
-        "질병·장애가 있어도 성공의 상위범주로 평가해 개인 책임귀속과 위계를 약화하는 효과가 있다"
+        "It can devalue people with illness or disability as failures and assign them personal blame.",
+        "It necessarily elevates disabled people above nondisabled people in a hierarchy of success.",
+        "It eliminates all comparisons of capacity and protects people from every moral judgment.",
+        "It guarantees equal social standing by placing every health condition in the highest category."
       ],
-      "answer": "질병·장애가 있는 몸을 실패로 낮추고 개인에게 그 상태의 책임을 돌릴 수 있다",
-      "explanation": "능력 있는 몸을 가치 있게 하고 장애를 폄하하는 이분법은 질병·장애가 있는 노인을 실패로 간주해 도덕적 판단과 책임귀속에 노출할 수 있다.",
+      "answer": "It can devalue people with illness or disability as failures and assign them personal blame.",
+      "explanation": "The critics argue that apparently neutral success language can create hierarchies of bodies and moral responsibility. The review examines this stigmatizing potential; it does not endorse the judgment that illness or disability makes a life unsuccessful. The proposed response values diversity, interdependence, and dignity.",
       "evidence_segment_id": "AGEISM-001",
-      "source": "몸의 도덕적 위계",
-      "difficulty": "응용"
+      "source": "Ageism and ableism: moral classification",
+      "difficulty": "medium"
     },
     {
-      "prompt": "Holstein과 Minkler가 성공적 노화 고정관념 때문에 타격을 받을 수 있다고 든 정책조합은?",
+      "prompt": "Which policy proposals did Holstein and Minkler warn could lose support under stereotypes of self-sufficient successful agers?",
       "options": [
-        "Medicare의 주택개조·보조기기 보장 축소와 소득지원 동결",
-        "Medicare의 주택개조 보장 확대와 소득지원을 빈곤선 아래로 제한",
-        "보조기기 비용의 수급자 부담 확대와 소득지원을 건강상담으로 대체",
-        "Medicare의 주택개조·보조기기 보장 확대와 수급자를 빈곤선 위로 올릴 소득지원 인상"
+        "Reducing coverage for home adaptations and assistive devices while freezing income support.",
+        "Expanding home adaptations while permanently capping income support below the poverty line.",
+        "Shifting device costs onto recipients and replacing material income support with health advice.",
+        "Expanding coverage for adaptations and assistive devices, and raising income support above poverty."
       ],
-      "answer": "Medicare의 주택개조·보조기기 보장 확대와 수급자를 빈곤선 위로 올릴 소득지원 인상",
-      "explanation": "정부지원이 덜 필요한 성공적 노인이라는 고정관념은 주택개조·보조기기 보장과 Supplemental Social Security Income 인상을 약화시킬 수 있다는 사례다.",
+      "answer": "Expanding coverage for adaptations and assistive devices, and raising income support above poverty.",
+      "explanation": "The quoted criticism argues that portraying older people as needing little public support may weaken support for these expansions. It is a historical policy argument cited in the review, not a claim that the review measured an enacted funding cut or a statement of current program coverage.",
       "evidence_segment_id": "NEOLIBERAL-001",
-      "source": "안전망 정책 사례",
-      "difficulty": "응용"
+      "source": "Neoliberal critique: public support",
+      "difficulty": "medium"
     },
     {
-      "prompt": "유방암 경험자에게 부담이 된 ‘씩씩한 생존자’ 서사의 내용은?",
+      "prompt": "What expectations were associated with the spunky-survivorship narrative discussed in the review?",
       "options": [
-        "암 재발 가능성을 의료진이 판단하는 임상지침",
-        "긍정적으로 생각하고 건강증진 행동을 하며 허약함과 자신을 동일시하지 말라는 생존자 규범",
-        "암 경험을 허약함과 연결해 두려움을 표현해야 성공한 생존자로 인정하는 규범",
-        "치료 뒤 두려움 표현을 권장하는 지지집단 규칙"
+        "A clinical rule requiring physicians to determine recurrence risk before discussing emotional concerns.",
+        "Positive thinking, health-promoting behavior, and pressure not to identify with frailty.",
+        "A requirement to identify with frailty and express fear in order to count as a successful survivor.",
+        "A formal support-group rule guaranteeing that every participant could express discomfort without judgment."
       ],
-      "answer": "긍정적으로 생각하고 건강증진 행동을 하며 허약함과 자신을 동일시하지 말라는 생존자 규범",
-      "explanation": "이 서사는 긍정적 사고와 건강증진 행동, 허약함과 자신을 동일시하지 말라는 금지를 포함해 재발을 실패처럼 느끼게 할 수 있었다.",
+      "answer": "Positive thinking, health-promoting behavior, and pressure not to identify with frailty.",
+      "explanation": "The reviewed study described how these expectations could burden women who had experienced breast cancer, leaving less room for fear or discomfort and framing recurrence as personal failure. This is a critique of a moralizing narrative, not advice about how a person with cancer ought to feel or evidence that attitude determines recurrence.",
       "evidence_segment_id": "INFLUENCES-001",
-      "source": "생존자 담론",
-      "difficulty": "응용"
+      "source": "Lived experience: pressures of a survivor ideal",
+      "difficulty": "medium"
     },
     {
-      "prompt": "사회정의 지향 노화모델이 구조적 영향에 대응하기 위해 찾으라고 한 전략은?",
+      "prompt": "Which response fits the social-justice-oriented recommendations?",
       "options": [
-        "개인의 운동·식이를 표준화하고 이를 따르는 사람에게 주거와 소득지원을 연계하는 전략",
-        "경제적 안정·안전한 주거·차별방지·존엄 보호를 강화하는 정책과 지역전략",
-        "질병·장애 회피를 정책목표로 삼고 지역의 역할을 개인 자기관리 교육으로 제한하는 전략",
-        "경제·주거 문제는 두고 노년의 의미만 개인상담으로 바꾸는 전략"
+        "Make housing and income support conditional on compliance with standardized exercise and diet rules.",
+        "Strengthen economic security, safe housing, protection from discrimination, and respect for dignity.",
+        "Make freedom from disease the sole policy goal and restrict community work to teaching self-management.",
+        "Leave economic and housing conditions unchanged while addressing every difficulty through individual counseling."
       ],
-      "answer": "경제적 안정·안전한 주거·차별방지·존엄 보호를 강화하는 정책과 지역전략",
-      "explanation": "비판자들은 경제안정, 안전한 주거와 지역사회, 차별방지, 존엄·정체성 보호를 강화할 정책·제도·지역사회 중심 전략을 요구했다.",
+      "answer": "Strengthen economic security, safe housing, protection from discrimination, and respect for dignity.",
+      "explanation": "The critics call for policy, institutional, and community strategies that address material conditions and discrimination. They also emphasize older adults' own needs, meanings, and rights to self-determination, including people with disability or illness. The review synthesizes these recommendations rather than testing a specific policy package.",
       "evidence_segment_id": "SOCIAL-JUSTICE-001",
-      "source": "구조적 사회정의 전략",
-      "difficulty": "응용"
+      "source": "Social justice: conditions that support dignity",
+      "difficulty": "medium"
     },
     {
-      "prompt": "Wild와 동료들의 생태학적 회복탄력성 개념에서 함께 고려한 요소는?",
+      "prompt": "How does Wild and colleagues' ecological account broaden resilience?",
       "options": [
-        "개인·사회 회복탄력성, 권력불평등, 숨겨진 지역자원을 함께 본다",
-        "개인의 긍정적 태도와 적응행동에 집중하고 사회구조와 권력은 모델 밖에 둔다",
-        "회복탄력성을 질병 회피·독립성과 동일시하고 지역자원은 외부 환경으로 제외한다",
-        "사회자원과 개인자원을 분리해 측정하고 문화 차이는 동일 척도로 통제한다"
+        "It includes individual–social interdependence, power inequalities, and often overlooked community resources.",
+        "It confines resilience to positive attitude and coping while placing social structure outside the model.",
+        "It equates resilience with avoiding disease and dependence, excluding local resources from consideration.",
+        "It separates individuals from their communities and assumes one uniform meaning across all cultures."
       ],
-      "answer": "개인·사회 회복탄력성, 권력불평등, 숨겨진 지역자원을 함께 본다",
-      "explanation": "이 개념화는 개인과 사회의 상호의존, 사회구조와 권력불평등, 주변화된 지역사회의 숨겨진 자원을 포함해 개인을 넘어섰다.",
+      "answer": "It includes individual–social interdependence, power inequalities, and often overlooked community resources.",
+      "explanation": "The review highlights an approach incorporating older adults' meanings, structural conditions, power, and hidden resources in marginalized communities. It also cautions that resilience language can be used to blame people. This ecological example goes beyond the mainly individual focus of many alternative ideals in New Frames and Names.",
       "evidence_segment_id": "NEW-FRAMES-001",
-      "source": "생태학적 회복탄력성",
-      "difficulty": "응용"
+      "source": "New frames: ecological resilience",
+      "difficulty": "medium"
     },
     {
-      "prompt": "저자들이 명시한 문헌범위의 한계로 가장 정확한 것은?",
+      "prompt": "Which limitation did the authors identify about the review's coverage?",
       "options": [
-        "ASG의 생의학 논문만 골라 문화·비판 노화연구와 이론적 분석이 누락됐을 수 있다",
-        "이론적 분석과 사설만 포함해 경험연구에서 제기된 모델 비판이 누락됐을 수 있다",
-        "ASG 밖의 학술기여와 비영어권의 덜 개인주의적인 비판이 빠졌을 수 있다",
-        "영어 이외 언어권 자료만 검토해 영어권의 개인주의·노화 비판이 누락됐을 수 있다"
+        "Only biomedical ASG studies were selected, excluding theoretical and cultural critiques by design.",
+        "Only theoretical analyses and editorials were selected, excluding all critiques based on empirical work.",
+        "Scholarship outside ASG and non-English critiques, including less individualistic perspectives, may be missing.",
+        "Only non-English sources were reviewed, leaving English-language critiques of aging and individualism unexamined."
       ],
-      "answer": "ASG 밖의 학술기여와 비영어권의 덜 개인주의적인 비판이 빠졌을 수 있다",
-      "explanation": "ASG 밖의 학술기여와 영어 이외 언어로 출판된 비판, 특히 덜 개인주의적인 삶과 노년관이 누락됐을 가능성이 있다.",
+      "answer": "Scholarship outside ASG and non-English critiques, including less individualistic perspectives, may be missing.",
+      "explanation": "The review was restricted to English-language articles in ASG. Relevant books, work in other disciplinary journals, and other languages could therefore be absent. The 67 included articles support a configurative synthesis within this search scope, not a complete census of every critique or culture.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "source": "검색범위의 한계",
-      "difficulty": "기본"
+      "source": "Limitations: search scope and missing perspectives",
+      "difficulty": "easy"
     }
-  ]
+  ],
+  "language": "en"
 }

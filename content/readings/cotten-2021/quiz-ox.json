@@ -1,127 +1,128 @@
 {
-  "title": "Cotten (2021) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. O 또는 X를 고른 뒤 설명에서 접근·역량·사용·편익, 나이·코호트와 인과해석의 범위를 확인하세요.",
+  "title": "Cotten (2021) True/False Quiz",
+  "instructions": "Choose True or False for each statement, then use the explanation to distinguish access, skills, use, and benefits; age and cohort; and associations and causal claims. Interpret statistics in the historical periods reported in this chapter.",
+  "language": "en",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "이 장에서 정보통신기술은 정보를 수집·교환하고 다른 사람과 소통하는 기기와 응용프로그램을 뜻한다.",
+      "prompt": "In this chapter, information and communication technologies (ICTs) are devices and applications used to gather and exchange information and communicate with others.",
       "answer": "O",
-      "explanation": "휴대전화, 컴퓨터, 인터넷, 태블릿, 소셜 네트워크 사이트와 앱이 정보통신기술의 예로 제시된다.",
+      "explanation": "Examples include mobile phones, computers, the Internet, tablets, social network sites, and apps.",
       "evidence_segment_id": "DEFINE-001",
-      "source": "정보통신기술의 정의",
-      "difficulty": "기본"
+      "source": "Defining ICTs",
+      "difficulty": "Core"
     },
     {
-      "prompt": "이 장은 나이와 코호트를 같은 개념으로 취급하며 단면자료로 두 효과를 완전히 구분할 수 있다고 본다.",
+      "prompt": "The chapter treats age and cohort as the same concept and states that cross-sectional data can fully separate their effects.",
       "answer": "X",
-      "explanation": "나이는 출생 후 경과시간이고 코호트는 비슷한 시기의 사건을 경험한 집단이다. 단면자료로 두 효과를 분리할 수 없다.",
+      "explanation": "Age refers to time since birth, whereas a cohort consists of people who experience similar life events within particular periods. Cross-sectional data cannot separate age and cohort effects.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "나이와 코호트",
-      "difficulty": "기본"
+      "source": "Age and cohort",
+      "difficulty": "Core"
     },
     {
-      "prompt": "월드와이드웹이 대중에게 개방된 1991년에 가장 어린 GI 코호트 구성원은 55세였다.",
+      "prompt": "When the World Wide Web opened to the public in 1991, the youngest member of the GI cohort was 55, using the chapter's cohort definitions.",
       "answer": "O",
-      "explanation": "같은 시점에 가장 어린 침묵세대 구성원은 46세, 가장 어린 붐 세대 구성원은 27세였다.",
+      "explanation": "At that point, the youngest Silent Generation member was 46 and the youngest Baby Boomer was 27. These ages illustrate differences in historical exposure to technology.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "기술 보급의 역사적 시기",
-      "difficulty": "기본"
+      "source": "Historical timing of technology diffusion",
+      "difficulty": "Core"
     },
     {
-      "prompt": "2016년 자료에서 80세 이상 노년층의 스마트폰 보유율은 17%였다.",
+      "prompt": "In the 2016 survey data reported in the chapter, 17% of adults aged 80 and older owned a smartphone.",
       "answer": "O",
-      "explanation": "같은 집단에서 인터넷 사용은 44%, 가정용 광대역 보유는 28%로 보고되어 접근지표별 비율도 서로 달랐다.",
+      "explanation": "For the same age group, Internet use was 44% and home broadband access was 28%. These are distinct indicators from the historical survey, not current adoption rates.",
       "evidence_segment_id": "VARIATION-002",
-      "source": "80세 이상 기술 사용",
-      "difficulty": "기본"
+      "source": "Technology use among adults aged 80 and older",
+      "difficulty": "Core"
     },
     {
-      "prompt": "저자는 온라인 접속 자체가 기술 사용의 편익을 얻는 충분조건이라고 본다.",
+      "prompt": "The author considers being online sufficient by itself to obtain the benefits of technology use.",
       "answer": "X",
-      "explanation": "온라인 상태는 중요하지만 충분하지 않으며, 편익을 얻으려면 기술을 사용할 역량도 필요하다.",
+      "explanation": "Being online is important but insufficient. Skills in using technology also matter for obtaining its benefits.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "접근과 역량의 구분",
-      "difficulty": "응용"
+      "source": "Distinguishing access from skills",
+      "difficulty": "Application"
     },
     {
-      "prompt": "디지털 격차는 연령만으로 설명되며 소득, 교육, 농촌 거주와 인지능력은 관련이 없다.",
+      "prompt": "Age alone explains the digital divide; income, education, rural residence, and cognitive ability are unrelated to it.",
       "answer": "X",
-      "explanation": "농촌 거주, 낮은 소득과 교육, 높은 연령, 비용과 인지능력이 접근·사용·숙련의 차이와 관련된다.",
+      "explanation": "Rural residence, lower income and education, older age, cost, and cognitive ability are relevant to differences in access, use, and proficiency.",
       "evidence_segment_id": "DIVIDE-001",
-      "source": "디지털 격차의 층화 요인",
-      "difficulty": "기본"
+      "source": "Social inequalities in the digital divide",
+      "difficulty": "Core"
     },
     {
-      "prompt": "누적불이익 관점에서는 초기의 디지털 접근과 역량 차이가 교육·구직·정보와 사회적 유대의 후속 격차로 확대될 수 있다.",
+      "prompt": "From a cumulative disadvantage perspective, early differences in digital access and skills can widen into later gaps in education, job seeking, information, and social connections.",
       "answer": "O",
-      "explanation": "초기의 작은 차이가 후속 자원과 편익을 낳아 생애과정에서 더 커질 수 있다는 것이 장의 설명이다.",
+      "explanation": "Early access and skills can create further opportunities and benefits. Initially small differences may therefore grow over the life course.",
       "evidence_segment_id": "DIVIDE-001",
-      "source": "누적불이익",
-      "difficulty": "응용"
+      "source": "Cumulative disadvantage",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Pew의 노년층 기술 통계에는 요양시설 거주자와 전화·인터넷 설문을 수행할 수 없는 사람도 대표적으로 포함된다.",
+      "prompt": "The Pew statistics discussed in the chapter represent older adults in care facilities and people unable to complete telephone or Internet surveys.",
       "answer": "X",
-      "explanation": "이 표집은 시설 거주자와 건강이 나쁘거나 고립된 사람을 누락할 수 있어 사용률을 과대추정할 가능성이 있다.",
+      "explanation": "The sampling design excludes care-facility residents and people unable to complete these surveys. People in poor health or who are socially isolated may be underrepresented or missing, so ICT use rates may be overestimated.",
       "evidence_segment_id": "DATA-001",
-      "source": "표본 포괄성",
-      "difficulty": "응용"
+      "source": "Survey coverage limitations",
+      "difficulty": "Application"
     },
     {
-      "prompt": "기술 사용과 외로움이 상관되면 기술 사용이 외로움의 원인이라는 방향이 자동으로 확정된다.",
+      "prompt": "A correlation between technology use and loneliness automatically establishes that technology use causes loneliness.",
       "answer": "X",
-      "explanation": "외롭거나 관계가 약한 사람이 기술을 더 찾는 사회적 선택과 기술이 유대를 돕는 사회적 원인 경로가 모두 가능하다.",
+      "explanation": "Lonely people or those with weaker ties may turn to ICTs more often, a social selection pathway. ICT use may also affect ties and well-being, a social causation pathway that could involve benefits or harms. A correlation alone does not establish the direction.",
       "evidence_segment_id": "IMPACTS-001",
-      "source": "사회적 선택과 사회적 원인",
-      "difficulty": "응용"
+      "source": "Social selection and social causation",
+      "difficulty": "Application"
     },
     {
-      "prompt": "네 시점 건강은퇴연구에서는 인터넷·이메일 사용이 이전 우울 수준을 고려한 뒤에도 시간에 따른 낮은 우울과 관련되었다.",
+      "prompt": "In the four-wave Health and Retirement Study analysis discussed in the chapter, Internet/email use was associated with lower depression over time even after accounting for prior depression.",
       "answer": "O",
-      "explanation": "분석은 과거 우울이 현재 우울에 영향을 주도록 했고 공변량 중첩을 위한 매칭 뒤에도 연관성이 유지되었다.",
+      "explanation": "The analysis allowed past depression to affect current depression. The association also remained after matching to ensure adequate covariate overlap. This longitudinal association does not by itself establish causation.",
       "evidence_segment_id": "PSYCH-001",
-      "source": "종단 심리사회적 근거",
-      "difficulty": "응용"
+      "source": "Longitudinal psychosocial evidence",
+      "difficulty": "Application"
     },
     {
-      "prompt": "80세 이상 대상 단면연구에서 사회적 목적의 정보통신기술 사용은 주관적 건강과 기능제한 모두에 유의하게 관련되었다.",
+      "prompt": "In the cross-sectional study of adults aged 80 and older, using ICTs for social reasons was significantly associated with both subjective health and functional limitations.",
       "answer": "X",
-      "explanation": "사회적 목적의 사용은 두 신체건강 결과와 관련되지 않았고, 새 정보와 기술을 배우기 위한 사용이 더 나은 결과와 관련되었다.",
+      "explanation": "Social ICT use was not related to either physical health outcome. Using ICTs to learn new information and skills was associated with better outcomes. Both outcomes were self-reported, and the cross-sectional findings do not establish causation.",
       "evidence_segment_id": "PHYSICAL-001",
-      "source": "신체건강 결과",
-      "difficulty": "심화"
+      "source": "Physical health outcomes",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "퍼빙은 대면 상황에서 함께 있는 사람보다 스마트폰과 상호작용하는 행동으로, 노년층의 공동현존 경험을 해칠 수 있다.",
+      "prompt": "Phubbing means interacting with a smartphone instead of other people present in a social setting, and it may disrupt older adults' experience of copresence.",
       "answer": "O",
-      "explanation": "이 행동은 친밀감을 낮추고 노년층이 무시되거나 단절됐다고 느끼게 할 수 있다.",
+      "explanation": "Phone use during face-to-face interactions may reduce intimacy and leave older adults feeling ignored or disconnected. The chapter also notes that poorer relationships may precede phubbing; the direction remains uncertain without longitudinal research.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "퍼빙과 공동현존",
-      "difficulty": "기본"
+      "source": "Phubbing and copresence",
+      "difficulty": "Core"
     },
     {
-      "prompt": "저자는 규범적인 사용량을 초과한 모든 기술 사용을 곧바로 기술 중독이라고 정의한다.",
+      "prompt": "The author defines any technology use above a group's usual level as technology addiction.",
       "answer": "X",
-      "explanation": "저자는 중독이라는 말을 피하고, 일상생활 활동을 방해하는 수준을 기술 과잉사용으로 정의한다.",
+      "explanation": "The author avoids the term addiction because usual levels of use differ across individuals and groups. Technology overuse is defined as use that interferes with activities of daily living.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "기술 과잉사용",
-      "difficulty": "기본"
+      "source": "Technology overuse",
+      "difficulty": "Core"
     },
     {
-      "prompt": "사물인터넷을 통한 지역사회 계속거주에는 기기뿐 아니라 개조 가능한 주택, 고속 인터넷과 유지 역량도 중요하다.",
+      "prompt": "Aging in place with Internet of Things systems depends on more than devices: adaptable housing, high-speed Internet, and the ability to maintain the systems also matter.",
       "answer": "O",
-      "explanation": "주택의 접근성·비용·유지상태와 장애 적합성, 연결망과 기술지원이 독립생활 가능성을 좌우한다.",
+      "explanation": "Housing accessibility, affordability, maintenance, and suitability for disabilities matter, as do Internet connections and the skills needed to maintain IoT systems. These systems may support independent living, but benefits are conditional and privacy and security concerns remain.",
       "evidence_segment_id": "IOT-001",
-      "source": "사물인터넷과 주택",
-      "difficulty": "응용"
+      "source": "Internet of Things systems and housing",
+      "difficulty": "Application"
     },
     {
-      "prompt": "원격보건의 기술지원이 가족돌봄에 추가 부담을 만들고, 혼자 나이 드는 저숙련 노년층이 지원 부족을 겪을 가능성이 있다.",
+      "prompt": "Technical assistance for telehealth may add to family caregivers' burden, while older adults aging alone with limited digital skills may lack the support they need.",
       "answer": "O",
-      "explanation": "장에서는 기술지원 부담이 가족에게 갈 수 있고, 지원자가 없는 노년층은 원격의료 기회를 덜 성공적으로 이용할 수 있다고 지적한다.",
+      "explanation": "The chapter suggests that technical assistance may fall to family caregivers. A lack of support may make telemedicine opportunities less successful for older adults who lack digital skills and are aging alone. Further research is needed.",
       "evidence_segment_id": "TELEHEALTH-001",
-      "source": "원격보건과 돌봄 부담",
-      "difficulty": "응용"
+      "source": "Telehealth and caregiving burden",
+      "difficulty": "Application"
     }
   ]
 }

@@ -1,187 +1,213 @@
 {
-  "title": "Utz et al. (2002) 단답형 퀴즈",
-  "instructions": "설계·결과·논의의 핵심을 일곱 단어 이내로 답하세요.",
+  "title": "Utz et al. (2002): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Distinguish formal from informal participation and the six-month analysis from other follow-up interviews.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "기초면접 완료자 수와 응답률을 함께 쓰면?",
+      "question": "What design allowed this study to observe participation before a spouse died and compare it with later participation?",
       "accepted_answers": [
-        "1,532명·68%",
-        "1532명·68%",
-        "1,532명, 68%"
+        "prospective longitudinal design",
+        "prospective longitudinal study",
+        "prospective study",
+        "longitudinal prospective design"
       ],
-      "answer_type": "number",
-      "explanation": "1987–1988년 기초면접은 1,532명이 완료했으며 보고된 응답률은 68%였다.",
+      "answer_type": "term",
+      "explanation": "CLOC began with married respondents and subsequently followed bereaved respondents and matched married controls. This provides preloss observations but does not randomly assign bereavement.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "기초면접 표본과 응답률"
+      "source": "Study design"
     },
     {
-      "question": "모형 3의 사별자-대조군 비공식 참여 차이는?",
+      "question": "In Model 3, how much higher were widowed respondents' informal participation scores than controls' scores, in standard-deviation units?",
       "accepted_answers": [
-        "0.44 표준편차",
-        ".44 표준편차",
         "0.44 SD",
-        ".44 SD"
+        ".44 SD",
+        "0.44 standard deviations",
+        ".44 standard deviations",
+        "0.44",
+        ".44",
+        "0.44 SD units"
       ],
       "answer_type": "number",
-      "explanation": "기초참여와 공변량을 반영한 뒤 사별자의 비공식 참여가 대조군보다 0.44 표준편차 높았다.",
+      "explanation": "The adjusted group difference was measured on the standardized outcome after controlling for baseline participation and covariates. It is not a 44% increase in contact frequency or an individual change experienced by everyone.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "조정된 비공식 참여 집단차이"
+      "source": "Adjusted group difference"
     },
     {
-      "question": "배우자 사망 뒤 가장 늦은 재면접 시점은?",
+      "question": "How many months after the spouse's death did the primary Wave 1 interview occur?",
       "accepted_answers": [
-        "48개월",
-        "사망 48개월 뒤",
-        "48 months"
+        "6 months",
+        "six months",
+        "6",
+        "six",
+        "at six months"
       ],
       "answer_type": "number",
-      "explanation": "사별자는 배우자 사망 6개월, 18개월, 48개월 뒤에 재면접했다.",
+      "explanation": "The six-month interval begins at the death, not at the baseline interview. Later interviews were scheduled at 18 and 48 months; the paper separately reports similar coefficients in an additional 18-month analysis.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "최장 추적시점"
+      "source": "Timing of the main analysis"
     },
     {
-      "question": "전환기에도 엄선된 관계망이 지원을 제공한다는 모형은?",
+      "question": "Which model describes support from a selected network of people accompanying a person through life transitions?",
       "accepted_answers": [
-        "사회적 호송모형",
-        "사회적 호송",
-        "social convoy model"
+        "social convoy model",
+        "the social convoy model",
+        "social convoy",
+        "convoy model"
       ],
       "answer_type": "term",
-      "explanation": "사회적 호송모형은 생애전환의 스트레스 속에서 엄선된 사람들에게 자기정체성과 정서적·도구적 지원을 얻는다고 본다.",
+      "explanation": "The authors discuss this developmental framework as an alternative for understanding identity and emotional and instrumental support across transitions. Their study does not directly establish its superiority in a full comparative test.",
       "evidence_segment_id": "DISCUSSION-THEORY-001",
-      "source": "발달적 대안 이론"
+      "source": "Developmental framework"
     },
     {
-      "question": "가중·비가중 분석표본의 전체 인원을 순서대로 쓰면?",
+      "question": "On which three characteristics were the continuously married controls individually matched?",
       "accepted_answers": [
-        "297명·333명",
-        "297명, 333명",
-        "297·333명"
+        "age, race, and sex",
+        "age race sex",
+        "age, sex, and race",
+        "race, age, and sex",
+        "race, sex, and age",
+        "sex, age, and race",
+        "sex, race, and age"
       ],
-      "answer_type": "number",
-      "explanation": "가중 분석표본은 297명이고, 가중치 적용 전 표본은 333명이었다.",
+      "answer_type": "short_phrase",
+      "explanation": "Controls were reinterviewed at comparable times. The actual unweighted analytic sample contained 333 people; the reported weighted total was 297. Matching and weighting do not remove every possible confounder.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "가중·비가중 표본"
+      "source": "Comparison group"
     },
     {
-      "question": "두 종속변수의 비교와 해석을 위해 적용한 처리는?",
+      "question": "What transformation of both outcome scales made their coefficients easier to interpret and compare?",
       "accepted_answers": [
-        "표준화",
-        "척도 표준화",
-        "standardization"
+        "standardization",
+        "standardisation",
+        "scale standardization",
+        "standardizing the scales",
+        "standardising the scales"
       ],
       "answer_type": "term",
-      "explanation": "비표준화 척도에서도 결과는 비슷했지만, 연구진은 해석과 비교가 쉽도록 두 종속변수를 표준화했다.",
+      "explanation": "The authors report similar findings with the unstandardized scales. Higher scores represent more participation, and the two scales measure distinct formal and informal domains.",
       "evidence_segment_id": "METHOD-MEASURES-001",
-      "source": "종속변수의 표준화"
+      "source": "Outcome scaling"
     },
     {
-      "question": "바쁘게 지내거나 활동에 참여하려 했던 사별자 비율은?",
+      "question": "Whose increased interest in contact did the authors suggest might help explain the bereaved group's higher informal participation?",
       "accepted_answers": [
-        "87%",
-        "87퍼센트"
+        "friends and relatives",
+        "relatives and friends",
+        "their friends and relatives",
+        "friends' and relatives' interest"
       ],
-      "answer_type": "number",
-      "explanation": "사별자의 87%가 슬픔과 외로움에 대처하려고 바쁘게 지내거나 활동에 참여하려 했다고 답했다.",
+      "answer_type": "short_phrase",
+      "explanation": "Thirty-five percent reported more interest from friends and relatives, while 71% reported unchanged interest of their own. These self-reports suggest others may rally around the bereaved; they do not prove a single causal mechanism.",
       "evidence_segment_id": "RESULTS-MOTIVES-001",
-      "source": "활동적 대처 시도"
+      "source": "Possible source of additional contact"
     },
     {
-      "question": "모든 배우자 사망을 확인할 때 사용한 국가자료는?",
+      "question": "Which national record source was used to verify spouses' deaths?",
       "accepted_answers": [
         "National Death Index",
-        "국가사망지수",
-        "NDI"
+        "NDI",
+        "the National Death Index"
       ],
       "answer_type": "term",
-      "explanation": "월별 미시간 사망기록으로 생존상태를 추적한 뒤 National Death Index로 사망을 확인했다.",
+      "explanation": "Monthly Michigan death records were used to monitor spouses' vital status, and the national index verified deaths. Interview timing was then anchored to the spouse's death.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "사망 확인 절차"
+      "source": "Death verification"
     },
     {
-      "question": "공식적 참여의 안정성을 설명할 수 있는 지원 차이는?",
+      "question": "Which participation domain did the authors suggest might provide less direct emotional and instrumental support?",
       "accepted_answers": [
-        "정서적·도구적 지원이 적음",
-        "정서적·도구적 지원 부족",
-        "less emotional and instrumental support"
+        "formal participation",
+        "formal social participation",
+        "formal activities",
+        "formal social activities"
       ],
       "answer_type": "term",
-      "explanation": "저자들은 공식 참여가 비공식 참여만큼 정서적·도구적 지원을 제공하지 않을 수 있어 사별 뒤에도 비교적 안정적이라고 해석했다.",
+      "explanation": "They offered this as a possible explanation for the relative stability of this domain after widowhood. It is an interpretation, not a direct experimental comparison of the support provided by each activity.",
       "evidence_segment_id": "DISCUSSION-SUMMARY-001",
-      "source": "공식 참여 안정성의 해석"
+      "source": "Interpreting stable participation"
     },
     {
-      "question": "연구진이 여성을 과대표집한 목적은?",
+      "question": "Why did the researchers oversample women?",
       "accepted_answers": [
-        "사별 응답자 수 최대화",
-        "사별자 수 최대화",
-        "bereaved respondents 수 최대화"
+        "to maximize bereaved respondents",
+        "maximize the number of bereaved respondents",
+        "to obtain more bereaved respondents",
+        "to increase the bereaved sample",
+        "maximize bereaved respondents"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "The goal was to obtain enough bereaved respondents during the five-year study. Eligibility required noninstitutionalized English-speaking married couples whose husbands were at least 65; this does not imply that every wife was at least 65.",
+      "evidence_segment_id": "METHOD-SAMPLE-001",
+      "source": "Sampling strategy"
+    },
+    {
+      "question": "Which preloss measure strongly predicted later participation in both domains in Model 3?",
+      "accepted_answers": [
+        "baseline social participation",
+        "baseline participation",
+        "preloss social participation",
+        "pre-loss social participation",
+        "prior social participation"
       ],
       "answer_type": "term",
-      "explanation": "5년 연구기간에 충분한 사별 응답자를 확보하려고 여성을 과대표집했다.",
-      "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "여성 과대표집 이유"
-    },
-    {
-      "question": "기초참여의 공식·비공식 회귀계수를 순서대로 쓰면?",
-      "accepted_answers": [
-        ".58·.31",
-        "0.58·0.31",
-        ".58, .31"
-      ],
-      "answer_type": "number",
-      "explanation": "모형 3에서 기초참여 계수는 공식 .58, 비공식 .31이었고 둘 다 p ≤ .001이었다.",
+      "explanation": "The baseline coefficients were .58 for formal and .31 for informal participation, both reported as significant. Stability across these observations supports continuity but cannot establish unchanged networks across the entire life course.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "지속성의 회귀계수"
+      "source": "Continuity over time"
     },
     {
-      "question": "행동변화와 함께 향후 측정하자고 한 심리요인은?",
+      "question": "Which subjective psychological response to particular behavioral changes did the authors recommend measuring in future research?",
       "accepted_answers": [
-        "지각된 스트레스",
-        "행동변화의 지각된 스트레스",
-        "perceived stress"
+        "perceived stress",
+        "stress",
+        "perceived stress associated with behavioral changes"
       ],
       "answer_type": "term",
-      "explanation": "저자들은 특정 행동변화와 관련된 지각된 스트레스를 측정하면 사별 뒤 심리적 고통의 기제를 더 잘 이해할 수 있다고 보았다.",
+      "explanation": "Future work could connect changes in daily roles and arrangements with psychological distress. The authors also recommend measuring the meaning or quality of an activity rather than treating contact frequency as sufficient.",
       "evidence_segment_id": "DISCUSSION-LIMITS-001",
-      "source": "향후 심리 측정"
+      "source": "Future measurement"
     },
     {
-      "question": "선택확률과 무응답을 조정해 모든 분석에 적용한 것은?",
+      "question": "What adjustment did the analyses apply for unequal selection probabilities and nonresponse?",
       "accepted_answers": [
-        "최종 중심화 가중치",
-        "중심화 가중치",
-        "final centered weight"
+        "final centered weight",
+        "a final centered weight",
+        "centered weight",
+        "centred weight",
+        "final centred weight",
+        "survey weight",
+        "sampling weight"
       ],
       "answer_type": "term",
-      "explanation": "연구진은 불균등한 선택확률과 무응답을 보정한 최종 중심화 가중치를 분석 전에 적용했다.",
+      "explanation": "The reported weighted sample total differs from the actual unweighted count. Applying a weight addresses the specified sampling and response patterns under its assumptions; it does not make the study experimental.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "분석 가중치"
+      "source": "Analysis weights"
     },
     {
-      "question": "기초시점 배우자 돌봄제공자의 최소 돌봄 기준은?",
+      "question": "Which personality characteristic represented being outgoing, socially active, and emotionally connected?",
       "accepted_answers": [
-        "주당 1시간 이상",
-        "1시간 이상",
-        "at least 1 hour weekly"
-      ],
-      "answer_type": "number",
-      "explanation": "배우자에게 주당 1시간 이상의 가정 내 돌봄을 제공한 사람을 기초시점 돌봄제공자로 식별했다.",
-      "evidence_segment_id": "METHOD-CONFOUNDERS-001",
-      "source": "배우자 돌봄 측정"
-    },
-    {
-      "question": "부부의 사회참여 역동을 연구할 때 필요한 자료수준은?",
-      "accepted_answers": [
-        "부부수준 자료",
-        "부부 자료",
-        "couple-level data"
+        "extraversion",
+        "extroversion"
       ],
       "answer_type": "term",
-      "explanation": "저자들은 남편과 아내를 함께 고려하는 부부수준 자료로 혼인전환과 두 배우자의 건강을 살필 것을 제안했다.",
+      "explanation": "This baseline scale was one of the potential confounders considered in the models. Other measured personality characteristics were excluded when they were not significant predictors; this does not show they are universally irrelevant.",
+      "evidence_segment_id": "METHOD-CONFOUNDERS-001",
+      "source": "Individual differences"
+    },
+    {
+      "question": "What level of data did the authors recommend for studying how both spouses' health and marital transitions shape participation?",
+      "accepted_answers": [
+        "couple-level data",
+        "couple level data",
+        "couple data",
+        "data on both spouses",
+        "dyadic data"
+      ],
+      "answer_type": "term",
+      "explanation": "A survivor's behavior is linked to the partner's health and the couple's arrangements. The authors recommend following both partners to understand widowhood as a process extending before and after the death.",
       "evidence_segment_id": "DISCUSSION-LIMITS-001",
-      "source": "부부수준 후속연구"
+      "source": "Relational research design"
     }
-  ]
+  ],
+  "language": "en"
 }

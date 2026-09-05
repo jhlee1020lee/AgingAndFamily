@@ -1,166 +1,167 @@
 {
-  "title": "Meier et al. (2016) 교수님 질문 대비",
-  "instructions": "결론을 먼저 말하고 좋은 죽음의 개념 경계, 36편 선정·코딩 절차, 논문 단위 빈도, 관점 차이와 해석 한계를 30초 안에 연결하는 연습용입니다.",
+  "title": "Meier et al. (2016): Professor Question Preparation",
+  "instructions": "State the conclusion first, then briefly explain the concept, selection and coding of 36 articles, article-level theme frequencies, stakeholder comparisons, and interpretive limits. Use the assigned source segment and preserve the distinction between reported themes and individual preferences.",
   "question_set_type": "교수 스타일 예상문제",
   "cards": [
     {
       "card_id": "meier-prep-01",
-      "title": "이 논문의 질문과 결론을 한 번에 말해 보세요.",
-      "answer_30s": "이 종설은 경험연구 36편에서 환자·사별 전후 가족·HCP가 좋은 죽음을 어떻게 정의했는지 비교했습니다. 임종 과정 선호, 통증이 없는 상태, 정서적 안녕이 전체에서 가장 자주 등장했지만 삶의 질·존엄성·영성에는 관점 차이가 있었습니다. 따라서 하나의 체크리스트보다 환자 중심의 개별화된 대화가 필요하다고 결론 냈습니다.",
+      "title": "What does this review ask, and what does it conclude?",
+      "answer_30s": "The review compares definitions of a good death in 36 empirical studies representing patients, prebereaved or bereaved family members, and healthcare providers. Preferences for the dying process, pain-free status, and emotional well-being appeared most often overall, while the frequency of themes such as quality of life, dignity, and spirituality differed across perspectives. The authors call for individualized dialogue centered on the patient's viewpoint. These are patterns in the included literature, not a universal checklist of what every patient wants.",
       "evidence_segment_id": "ABS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-02",
-      "title": "좋은 죽음과 죽음과 죽어감의 질은 어떻게 다른가요?",
-      "answer_30s": "좋은 죽음은 무엇이 바람직한 임종 경험을 구성하는지에 관한 다면적이고 개인화된 정의입니다. 죽음과 죽어감의 질은 당사자가 원한 방식과 실제로 어떻게 죽었는지에 대한 타인의 관찰이 일치하는 정도입니다. 이 종설은 후자의 결과점수보다 세 이해관계자가 명시적으로 제시한 좋은 죽음의 정의에 초점을 맞췄습니다.",
+      "title": "How does a good death differ from the quality of death and dying?",
+      "answer_30s": "A good death concerns the multifaceted, individualized features considered desirable in the experience of dying. Quality of death and dying concerns the agreement between a person's preferences and other people's reports of how the person actually died. This review focuses on definitions explicitly offered from patient, family, and provider perspectives, rather than on an outcome score measuring that agreement. The authors also acknowledge criticism of imposing an external standard on an individual's dying experience.",
       "evidence_segment_id": "INTRO-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-03",
-      "title": "3,434편이 36편이 된 선정 흐름을 설명해 보세요.",
-      "answer_30s": "데이터베이스 검색에서 3,434편을 찾았습니다. 제목·초록 검토로 3,042편을 제외해 392편의 전문을 평가했고, 좋은 죽음을 주된 목적이나 결과로 구체적으로 정의·측정하지 않은 문헌 등 356편을 제외해 최종 36편을 남겼습니다.",
+      "title": "How did the search narrow 3,434 records to 36 articles?",
+      "answer_30s": "The database search identified 3,434 records. Title and abstract screening excluded 3,042, leaving 392 full texts for assessment. A further 356 were excluded, leaving 36 articles in the final analysis. The review required qualitative or quantitative evidence specifically defining or measuring a good death as a main aim or outcome. Related end-of-life topics were not automatically eligible simply because they concerned death or care.",
       "evidence_segment_id": "METHOD-CODING-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-04",
-      "title": "포함 연구의 설계와 측정도구 구성을 말해 보세요.",
-      "answer_30s": "36편 중 질적 연구가 27편, 양적 연구가 5편, 혼합방법 연구가 4편이었습니다. 양적·혼합방법 9편 가운데 좋은 죽음의 표준화된 도구를 사용한 연구는 3편이었고, 나머지 6편은 12·44·57·72문항 설문 같은 자체 측정도구를 개발해 사용했습니다.",
+      "title": "What designs and measures were represented?",
+      "answer_30s": "Of the 36 articles, 27 were qualitative, five quantitative, and four mixed-methods studies. Among the nine quantitative or mixed-methods articles, three used standardized good-death measures. The other six developed their own measures, including questionnaires with different numbers and kinds of items. This variation matters because the review combines findings produced through different approaches rather than results from a common instrument administered to one comparable population.",
       "evidence_segment_id": "METHOD-SELECTION-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-05",
-      "title": "11개 핵심주제는 어떻게 만들어졌나요?",
-      "answer_30s": "두 연구자가 36편을 독립적으로 읽고 근거이론에 기반한 코딩 합의·동시발생·비교 절차를 적용했습니다. 네 차례 합의 회의를 거쳐 초기 38개 주제를 11개로 좁혔고 각 정의를 다시 독립 코딩했습니다. 카파는 0.896이었으며 불일치는 필요시 세 번째 연구자와 최종 합의했습니다.",
+      "title": "How were the 11 core themes developed?",
+      "answer_30s": "Two researchers independently read all 36 articles using a grounded-theory-based process of coding consensus, co-occurrence, and comparison. Four consensus meetings helped establish the coding scheme, with a three-author meeting narrowing 38 initial themes to 11. Two researchers then independently mapped definitions to those themes. Reported interrater agreement was kappa .896, and remaining disagreements were resolved through discussion, consulting a third author when needed. I would report the kappa without reproducing the malformed p-value printed in the source.",
       "evidence_segment_id": "METHOD-CODING-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-06",
-      "title": "관점별 N을 왜 합산하면 안 되나요?",
-      "answer_30s": "관점 출처는 환자 20편, 사별 전후 가족 10편, HCP 18편이지만 서로 배타적인 연구 묶음이 아닙니다. 36편 중 29편은 한 집단에만, 2편은 두 집단에, 5편은 세 집단 모두에 코딩됐습니다. 따라서 20·10·18은 관점별 분모이고 더해서 48편이라고 말할 수 없습니다.",
+      "title": "Why should the stakeholder-group counts not be added as distinct studies?",
+      "answer_30s": "Patient perspectives appeared in 20 articles, family perspectives in 10, and provider perspectives in 18. These categories overlap: 29 of the 36 articles were assigned to one group, two to two groups, and five to all three. The values 20, 10, and 18 are therefore the denominators for their respective perspective groups. Their sum is 48 group assignments, not 48 distinct studies or 48 participants.",
       "evidence_segment_id": "METHOD-CODING-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-07",
-      "title": "왜 공식 메타분석과 가중치를 사용하지 않았나요?",
-      "answer_30s": "연구마다 인구학 정보, 진단, 치료상태, 인지평가와 측정방법의 깊이가 달라 통계적 결과를 정식으로 결합하기 어려웠습니다. 또한 질적 연구와 양적 연구를 함께 묶어 표본크기나 정밀도에 따른 가중치를 주지 않았습니다. 대신 각 관점의 논문 가운데 11개 주제가 등장한 비율을 비가중 집계했습니다.",
+      "title": "Why were no formal meta-analysis or study weights used?",
+      "answer_30s": "The studies differed in their methods and in the depth of demographic, diagnostic, treatment, and cognitive information, making formal statistical pooling inappropriate for these data. The authors also chose not to weight the combined qualitative and quantitative literature. They instead describe frequencies of the 11 themes within stakeholder sources. The reported percentages should be read as descriptive, unweighted theme frequencies, not precision-weighted pooled effect sizes or a direct estimate of individual preferences.",
       "evidence_segment_id": "METHOD-ANALYSES-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-08",
-      "title": "포함 연구와 환자표본의 특징을 요약해 보세요.",
-      "answer_30s": "연구는 1996–2015년에 출판됐고 개별 표본은 3명에서 2,548명, 평균 184.4명이었습니다. 환자 연령은 14–93세였고 원문 평균은 89.7세지만 일부 논문이 범위만 보고해 편향됐다고 저자들이 경고했습니다. 환자 관점 논문의 절반에 60세 초과 참여자가 포함됐다는 논문 수준 결과도 구분해야 합니다.",
+      "title": "What were the main characteristics of the included studies and patient samples?",
+      "answer_30s": "The studies were published from 1996 through 2015, and reported sample sizes ranged from three to 2,548, with a mean of 184.4. Patient ages ranged from 14 to 93. Half of the patient-perspective articles included people over 60; that does not mean half of all participants were over 60. Age reporting varied, with some studies giving only ranges, so I would avoid relying on the article's questionable pooled mean-age statement as a dependable summary of this heterogeneous population.",
       "evidence_segment_id": "RESULTS-SAMPLE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-09",
-      "title": "11개 핵심주제를 빠짐없이 말해 보세요.",
-      "answer_30s": "임종 과정에 대한 선호, 통증이 없는 상태, 종교성·영성, 정서적 안녕, 삶의 완결, 치료 선호, 존엄성, 가족, 삶의 질, HCP와의 관계, 기타입니다. 각 주제는 2~4개 하위주제로 구성되며, 예를 들어 삶의 완결에는 작별·잘 살아온 삶·죽음의 수용이 포함됩니다.",
+      "title": "What are the 11 core themes?",
+      "answer_30s": "They are preferences for the dying process, pain-free status, religiosity or spirituality, emotional well-being, life completion, treatment preferences, dignity, family, quality of life, relationships with healthcare providers, and other. Each contains two to four subthemes. Life completion, for example, includes saying goodbye, a sense of a life well lived, and acceptance of death. These are coding categories for the literature, not requirements that every individual must meet.",
       "evidence_segment_id": "RESULTS-THEMES-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-10",
-      "title": "전체에서 가장 자주 나타난 세 주제와 수치는 무엇인가요?",
-      "answer_30s": "전체 보고서에서 임종 과정에 대한 선호가 94%로 가장 높았고, 통증이 없는 상태가 81%, 정서적 안녕이 64%였습니다. 이 값은 모든 개인 응답을 합친 비율이 아니라 각 보고서에 주제가 등장했는지를 집계한 수치이며, 각 관점 안의 순위와도 구분해야 합니다.",
+      "title": "Which three themes appeared most often overall, and what is the unit of those percentages?",
+      "answer_30s": "The Results section reports preferences for the dying process in 94% of articles, pain-free status in 81%, and emotional well-being in 64%. These percentages describe whether themes appeared in reports, not the percentage of all individual respondents endorsing them or their importance scores. The discussion's wording about pain-free status is inconsistent with the Results figure, so I would identify these specifically as the reported Results values and avoid presenting the discrepancy as resolved.",
       "evidence_segment_id": "RESULTS-THEMES-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-11",
-      "title": "세 관점이 가장 강하게 수렴한 지점은 무엇인가요?",
-      "answer_30s": "임종 과정 선호는 환자와 가족 관점 논문에서 각각 100%, HCP에서 94%였고, 통증이 없는 상태는 각각 85%, 90%, 83%였습니다. 두 주제 모두 세 관점 각각에서 83% 이상 등장했으며, 이 수치는 개인 응답률이 아니라 해당 관점을 포함한 논문 가운데 주제가 나타난 비율입니다.",
+      "title": "Where did the three stakeholder perspectives converge most clearly?",
+      "answer_30s": "Preferences for the dying process appeared in 100% of patient-perspective articles, 100% of family-perspective articles, and 94% of provider-perspective articles. Pain-free status appeared in 85%, 90%, and 83%, respectively. Both themes were therefore frequent in every perspective group. The denominators are articles containing those perspectives, not individual patients, relatives, or providers, and high frequency does not establish identical personal priorities across those groups.",
       "evidence_segment_id": "RESULTS-STAKEHOLDERS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-12",
-      "title": "가장 큰 관점 차이는 무엇이었고 어떻게 해석해야 하나요?",
-      "answer_30s": "삶의 질은 가족 관점 논문의 70%에서 등장해 환자 35%의 두 배였습니다. 그러나 가족 연구 대부분은 사별 후 회고였고, 가족과 환자가 삶의 질을 서로 다르게 정의했을 수 있습니다. 따라서 이 결과만으로 어느 관점이 더 정확한지 단정할 수 없고, 생애말기의 삶의 질을 각 집단에서 더 조사해야 합니다.",
+      "title": "What was the largest perspective difference, and how should it be interpreted?",
+      "answer_30s": "Quality of life appeared in 70% of family-perspective articles compared with 35% of patient-perspective articles. That is twice the article-level frequency, not proof that families value quality of life twice as much or understand patients better. Most family studies involved recollections after bereavement, and the authors suggest that families and patients may define quality of life differently. They call for further research rather than identifying one perspective as more accurate.",
       "evidence_segment_id": "DISCUSSION-CONSENSUS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-13",
-      "title": "존엄성의 55% 대 70%를 왜 문자 그대로 읽으면 안 되나요?",
-      "answer_30s": "존엄성은 환자 관점 논문 55%, 가족 관점 70%에 등장했지만 이 차이가 환자에게 존엄성이 덜 중요하다는 뜻은 아닙니다. 존엄성의 정의가 다양해 다른 주제에 흡수됐거나 환자가 필요를 표현하기 어려웠을 수 있습니다. 외부 자료에서도 자율성·활동능력·존엄성 상실은 큰 우려로 나타났습니다.",
+      "title": "Why does the dignity comparison not imply that patients value dignity less?",
+      "answer_30s": "Dignity appeared in 55% of patient-perspective articles and 70% of family-perspective articles. The authors caution that definitions vary, dignity may be represented within other themes, and patients may find it difficult to express the concept. They also cite other research on concerns about autonomy, respect, meaningful activity, and dignity. The comparison therefore cannot be read as a measure showing that dignity is less important to patients.",
       "evidence_segment_id": "DISCUSSION-DIGNITY-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-14",
-      "title": "신체증상 외에 돌봄을 어디까지 확장해야 하나요?",
-      "answer_30s": "환자도 가족과 HCP처럼 정서적 안녕을 좋은 죽음의 핵심으로 보았습니다. 따라서 통증과 신체증상을 관리하는 데서 그치지 않고 두려움·의미·사회적 관계·종교적 또는 영적 우려를 함께 다뤄야 합니다. 저자들은 정신건강 전문가의 역할과 임종 환자를 위한 심리 선별도구·개입에 관한 연구를 요청했습니다.",
+      "title": "How do the authors propose broadening care beyond physical symptoms?",
+      "answer_30s": "The review identifies emotional well-being as a recurring theme across patient, family, and provider perspectives. The authors argue for addressing psychological, social, and religious or spiritual concerns alongside pain and physical symptoms. They also call for more research on psychological assessment and appropriate interventions near the end of life. These are implications and research recommendations; the review does not establish that one fixed package meets every person's needs or evaluate the effectiveness of a specific intervention.",
       "evidence_segment_id": "DISCUSSION-PSYCHOLOGICAL-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "meier-prep-15",
-      "title": "이 종설의 핵심 방법론적 한계를 말해 보세요.",
-      "answer_30s": "영어 동료심사 논문만 포함했고 연구마다 공통 측정도구와 인구학·진단·인지상태·면접과 사망 간격 정보가 부족했습니다. 사별 전 가족은 충분히 대표되지 않았고 HCP를 직종별로 나누거나 임종돌봄 경험과 훈련을 확인하기도 어려웠습니다. 작은 문헌기반 때문에 관점 간 정식 통계비교의 검정력도 부족했습니다.",
+      "title": "What are the main methodological limitations?",
+      "answer_30s": "The review includes only English-language, peer-reviewed articles and combines studies with differing measures and uneven demographic, diagnostic, and other reporting. Timing between interviews and death was often unclear. Prebereavement family perspectives were poorly represented, and provider roles, end-of-life experience, and training were often combined or unspecified. The limited literature and some small descriptive differences also restricted statistical comparison. The reported patterns therefore should not be presented as statistically established population differences.",
       "evidence_segment_id": "DISCUSSION-LIMITATIONS-001",
       "question_type": "교수 스타일 예상문제"
     }
   ],
   "reading_response": {
-    "title": "“어떻게 읽었어요?” 답변 준비",
-    "instructions": "인상, 방법, 반직관적 결과, 가족 함의를 자기 말로 설명하되 논문 빈도와 개인 선호, 권고와 검증된 인과효과를 구분하는 연습입니다.",
+    "title": "Preparing a Reading Response",
+    "instructions": "Explain your impressions, methodological assessment, surprising findings, and family implications in your own words. Distinguish article-level theme frequencies from individual preferences and recommendations from demonstrated effects.",
     "cards": [
       {
         "card_id": "meier-reading-01",
-        "title": "30초 기본 답변",
-        "answer_30s": "저는 이 논문을 좋은 죽음을 정답 목록으로 만드는 연구가 아니라, 서로 다른 관점이 왜 대화를 필요로 하는지 보여 주는 연구로 읽었습니다. 임종 과정 선호와 통증 관리는 공통적이었지만 삶의 질·존엄성·영성은 달랐습니다. 그래서 가족과 의료진이 판단을 대신하기보다 환자에게 직접 묻고 돌봄을 개인화해야 한다는 결론이 핵심입니다.",
+        "title": "Give a brief overall response to the review.",
+        "answer_30s": "I read the review as a reason for dialogue among people who may approach the same dying experience differently. Preferences for the dying process and pain-free status were commonly represented, but themes such as quality of life, dignity, and spirituality varied across the literature. For me, the central implication is to ask patients about their priorities and individualize care. The recurring themes offer a starting point for conversation, not a substitute for a particular patient's viewpoint.",
         "evidence_segment_id": "ABS-001",
         "response_angle": "overall",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "meier-reading-02",
-        "title": "가장 반직관적인 점을 물으면",
-        "answer_30s": "가족 관점 논문에서 삶의 질이 70%로 환자 관점 35%의 두 배였다는 점이 반직관적이었습니다. 다만 이를 가족이 환자를 더 잘 안다는 뜻으로 읽으면 안 됩니다. 가족자료 대부분이 사별 후 회고였고 삶의 질 정의도 다를 수 있어, 차이 자체가 환자의 선호를 미리 확인해야 할 이유라고 보았습니다.",
+        "title": "Which finding seemed most counterintuitive?",
+        "answer_30s": "I was struck that quality of life appeared in 70% of family-perspective articles but 35% of patient-perspective articles. I would not interpret that as families knowing the patient better or caring twice as much about quality of life. Most family studies were retrospective after bereavement, and the construct may have different meanings across groups. I see the descriptive difference as a reason to clarify preferences and meanings, while recognizing that the review does not directly test that proposed explanation.",
         "evidence_segment_id": "DISCUSSION-CONSENSUS-001",
         "response_angle": "surprise",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "meier-reading-03",
-        "title": "방법론에서 인상적인 점을 물으면",
-        "answer_30s": "두 코더가 36편을 독립적으로 읽고 근거이론에 기반한 코딩 절차를 적용한 점이 인상적이었습니다. 네 차례 합의 회의로 초기 38개 주제를 11개로 줄이고, 독립 코딩의 카파 0.896을 확인한 뒤 불일치는 필요시 세 번째 연구자와 논의했습니다. 서로 다른 표현을 비교 가능한 범주로 만드는 과정이 투명했습니다.",
+        "title": "What was most interesting about the method?",
+        "answer_30s": "I appreciated the independent reading and explicit coding process used to make varied definitions comparable. Four consensus meetings helped develop the scheme, 38 initial themes were narrowed to 11, and independent coding yielded a reported kappa of .896. Disagreements were discussed with a third researcher when needed. This makes the construction of the categories visible, although strong coding agreement does not by itself establish the validity of every category or the representativeness of the underlying literature.",
         "evidence_segment_id": "METHOD-CODING-001",
         "response_angle": "method",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "meier-reading-04",
-        "title": "세 관점의 공통분모로 읽은 결과",
-        "answer_30s": "저는 임종 과정 선호와 통증이 없는 상태가 세 관점의 공통분모라는 점을 가장 중요하게 읽었습니다. 임종 과정 선호는 환자·가족·의료진 관점 논문에서 각각 100%, 100%, 94%, 통증이 없는 상태는 85%, 90%, 83% 등장했습니다. 다만 이 수치는 개인 응답률이 아니라 주제가 나타난 논문의 비율이므로, 공통 항목을 개인의 선호 대신 대화의 출발점으로 삼아야 한다고 보았습니다.",
+        "title": "Which finding did you read as common ground across perspectives?",
+        "answer_30s": "Preferences for the dying process and pain-free status were frequent across all three perspective groups. The former appeared in 100%, 100%, and 94% of patient, family, and provider articles; the latter in 85%, 90%, and 83%. These are article-level frequencies, not individual response rates. I would use them to begin a conversation about a person's priorities, while keeping room for themes that appeared less often. Lower frequency does not make a concern unimportant to a particular patient.",
         "evidence_segment_id": "RESULTS-STAKEHOLDERS-001",
         "response_angle": "evidence",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "meier-reading-05",
-        "title": "가장 중요한 한계를 물으면",
-        "answer_30s": "저는 공식 메타분석과 연구별 가중치가 없다는 점을 가장 중요하게 봤습니다. 연구마다 인구학·진단·치료·인지정보와 측정방법의 깊이가 달랐고 질적·양적 연구를 함께 결합했기 때문입니다. 따라서 제시된 평균 백분율은 정밀도로 가중한 통합 효과크기가 아니라 논문별 주제 빈도의 비가중 집계로 읽어야 합니다.",
+        "title": "Which analytic limitation matters most?",
+        "answer_30s": "I would emphasize the absence of formal meta-analysis and study weighting. Differences in reported patient characteristics, diagnoses, treatment, cognitive information, and methods limited what could be pooled, and the review combined qualitative and quantitative evidence. Its percentages are therefore a descriptive, unweighted summary of themes in the literature. I would not interpret them as precision-weighted effect estimates, population preference rates, or statistical tests of stakeholder differences.",
         "evidence_segment_id": "METHOD-ANALYSES-001",
         "response_angle": "limitation",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "meier-reading-06",
-        "title": "가족연구의 함의로 연결하면",
-        "answer_30s": "가족은 임종 돌봄의 핵심 구성원이지만 환자의 선호를 자동으로 대신할 수는 없습니다. 환자·가족·HCP 관점이 수렴하거나 엇갈리는 주제를 실제 대화에서 확인하고, 그 대화가 환자결과에 어떤 영향을 주는지도 연구해야 합니다. 죽음에 관한 대화를 더 일찍 시작해 환자의 가치와 믿음에 맞춰 돌봄을 수정하는 것이 가족연구의 함의입니다.",
+        "title": "How would you connect the review to family research?",
+        "answer_30s": "Families are central to end-of-life care, but their views should not automatically stand in for the patient's preferences. I would investigate how patients, families, and providers discuss areas of agreement and difference, and whether addressing those themes changes patient-related outcomes. The authors call for earlier dialogue and better characterized, diverse samples. I see adapting care to the patient's values as a research and practice direction, not an intervention benefit already demonstrated by this review.",
         "evidence_segment_id": "FUTURE-001",
         "response_angle": "family-implication",
         "style_basis": "course-question-pattern"
       }
     ]
-  }
+  },
+  "language": "en"
 }

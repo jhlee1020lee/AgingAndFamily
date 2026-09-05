@@ -4,7 +4,6 @@ const path = require("path");
 
 const rootDir = path.resolve(__dirname, "..");
 const requireBuilt = process.argv.includes("--require-built");
-const EXPECTED_READING_COUNT = 22;
 const MAX_PANEL_BYTES = 250000;
 const MAX_READING_BYTES = 600000;
 
@@ -52,9 +51,8 @@ let panelCount = 0;
 let captionCount = 0;
 let assetBytes = 0;
 
-if (readings.length !== EXPECTED_READING_COUNT) {
-  errors.push(`site total: expected ${EXPECTED_READING_COUNT} readings, found ${readings.length}`);
-}
+if (!readings.length) errors.push("manifest must contain at least one reading");
+if (new Set(readings.map((reading) => reading.slug)).size !== readings.length) errors.push("manifest contains duplicate reading slugs");
 
 for (const reading of readings) {
   const slug = reading.slug;

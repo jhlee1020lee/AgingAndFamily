@@ -1,127 +1,200 @@
 {
-  "title": "Kalmijn & Leopold (2019) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 핵심 용어·가설·수치를 짧고 정확하게 답하세요.",
+  "title": "Kalmijn and Leopold (2019): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Distinguish the first and second parental deaths, immediate changes and later trajectories, and model-based associations from causal proof.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "부모 사망이라는 위기가 잠재된 가족관계를 활성화해 형제접촉을 늘린다는 가설은?",
-      "accepted_answers": ["연대 가설", "solidarity hypothesis"],
+      "question": "Which hypothesis predicts that a family crisis activates support ties and increases contact between siblings?",
+      "accepted_answers": [
+        "solidarity hypothesis",
+        "intergenerational solidarity hypothesis"
+      ],
       "answer_type": "term",
-      "explanation": "H1–H3은 위기 뒤 접촉 증가와 첫째 사망의 더 큰 효과, 생존 부모 관계의 부분매개를 예측한다.",
+      "explanation": "Shared loss can prompt support, and coordination of care for a surviving parent can also bring siblings together. The latter pathway depends on the wider family network.",
       "evidence_segment_id": "SOLIDARITY-001",
-      "source": "연대 가설"
+      "source": "Crisis and family support"
     },
     {
-      "question": "가족구성원 사이의 연락과 모임을 이어 주는 활동을 가리키는 영문 개념은?",
-      "accepted_answers": ["kinkeeping", "친족관계 유지"],
+      "question": "What term describes the work of maintaining family contact, organizing gatherings, and sustaining cohesion?",
+      "accepted_answers": [
+        "kinkeeping",
+        "kin-keeping",
+        "kin keeping",
+        "kin work"
+      ],
       "answer_type": "term",
-      "explanation": "마지막 부모가 하던 연결활동과 위치의 상실이 둘째 사망 뒤 장기 접촉감소를 설명한다.",
+      "explanation": "Parents can perform this role across their children's separate households. When the last parent dies, replacement by another family member is not guaranteed.",
       "evidence_segment_id": "KINKEEPING-001",
-      "source": "친족관계 유지 가설"
+      "source": "Maintaining family networks"
     },
     {
-      "question": "평소 잠잠해도 위기 때 활성화될 수 있는 확대친족망을 부르는 개념은?",
-      "accepted_answers": ["잠재적 친족 매트릭스", "latent kin matrix"],
+      "question": "What concept describes extended kin ties that can remain dormant but become active during a crisis?",
+      "accepted_answers": [
+        "latent kin matrix",
+        "the latent kin matrix"
+      ],
       "answer_type": "term",
-      "explanation": "부모 질병과 사망 같은 위기가 친족의 접촉과 상호지원을 활성화할 수 있다는 개념이다.",
+      "explanation": "The solidarity perspective treats sibling ties as available sources of practical and emotional support when circumstances create a need.",
       "evidence_segment_id": "THEORY-001",
-      "source": "형제자매 연대의 이론"
+      "source": "Potential family support"
     },
     {
-      "question": "부모 사망 직후 결과 수준이 사망 전보다 얼마나 달라졌는지를 나타내는 효과는?",
-      "accepted_answers": ["전환효과", "전환 효과", "transition effect"],
+      "question": "What model term describes the immediate shift in the outcome in the year of parental death relative to the predeath reference period?",
+      "accepted_answers": [
+        "transition effect",
+        "transition effects"
+      ],
       "answer_type": "term",
-      "explanation": "전환변수는 사망 전 기준기간과 비교한 사망 뒤의 즉각적 수준변화를 나타낸다.",
+      "explanation": "The death indicator changes from zero before death to one in the death year and thereafter. The separate duration term represents subsequent change.",
       "evidence_segment_id": "OUTCOMES-001",
-      "source": "사망 동태변수"
+      "source": "Immediate shift"
     },
     {
-      "question": "부모 사망 뒤 한 해가 더 지날 때 결과가 어떻게 변하는지를 나타내는 효과는?",
-      "accepted_answers": ["기간효과", "기간 효과", "duration effect"],
+      "question": "What model term describes how the outcome changes with additional time elapsed after a parent's death?",
+      "accepted_answers": [
+        "duration effect",
+        "duration effects"
+      ],
       "answer_type": "term",
-      "explanation": "둘째 사망 뒤 접촉에는 선형 기간항과 이차 기간항을 함께 사용해 하락과 평탄화를 나타냈다.",
+      "explanation": "Duration begins at zero in the death year. The authors used a linear specification after the first death and also considered a quadratic trajectory after the second death, so later change need not be constant.",
       "evidence_segment_id": "OUTCOMES-001",
-      "source": "사망 동태변수"
+      "source": "Change over elapsed time"
     },
     {
-      "question": "같은 응답자 안의 시간변화만 이용해 시간불변 차이를 제거한 분석모형은?",
-      "accepted_answers": ["고정효과 모형", "fixed effects", "FE 모형"],
+      "question": "Which model uses within-unit changes over time to remove stable differences between units?",
+      "accepted_answers": [
+        "fixed effects",
+        "fixed-effects model",
+        "fixed effects model",
+        "fixed-effects models",
+        "FE",
+        "FE model"
+      ],
       "answer_type": "term",
-      "explanation": "시간에 따라 변하는 형제관계와 독립변수의 변화만 추정에 사용했다.",
+      "explanation": "The model relates changes in sibling ties to changes in predictors. It controls time-invariant differences, but it does not automatically remove time-varying confounding.",
       "evidence_segment_id": "MODELS-001",
-      "source": "분석모형"
+      "source": "Within-unit analysis"
     },
     {
-      "question": "같은 가족의 여러 형제관계와 반복관측의 상관을 고려한 표준오차는?",
-      "accepted_answers": ["가족 군집강건 표준오차", "군집강건 표준오차", "cluster-robust standard errors"],
+      "question": "What type of standard errors accounted for dependence among sibling dyads within the same family?",
+      "accepted_answers": [
+        "cluster-robust standard errors",
+        "cluster robust standard errors",
+        "family-clustered standard errors",
+        "family clustered standard errors"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 형제자매 쌍이 가족 안에 중첩된 점을 가족 수준 군집보정으로 처리했다.",
+      "explanation": "The authors corrected uncertainty estimates for clustering at the family level. This is distinct from fitting a multilevel model or changing the substantive unit of observation.",
       "evidence_segment_id": "MODELS-001",
-      "source": "표준오차 보정"
+      "source": "Dependence in the data"
     },
     {
-      "question": "생존 부모 접촉·지지를 통한 간접효과의 유의성을 검정한 Stata 기법은?",
-      "accepted_answers": ["KHB", "khb", "KHB 방법"],
+      "question": "Which Stata procedure tested the indirect association through contact with and support to the surviving parent?",
+      "accepted_answers": [
+        "KHB",
+        "KHB method",
+        "KHB procedure"
+      ],
       "answer_type": "term",
-      "explanation": "within 변환 OLS로 고정효과와 동등한 모형을 만든 뒤 KHB 간접효과 검정을 적용했다.",
+      "explanation": "The authors used within-transformed data compatible with the procedure and corrected for family clustering. Statistical evidence for mediation does not by itself establish a causal mechanism.",
       "evidence_segment_id": "MODELS-001",
-      "source": "매개효과 검정"
+      "source": "Mediation test"
     },
     {
-      "question": "이분형 갈등의 절대확률 변화를 보조적으로 추정한 선형 모형은?",
-      "accepted_answers": ["선형확률모형", "선형 확률 모형", "linear probability model"],
+      "question": "Which regression model treated the binary conflict outcome as a linear function to estimate changes in absolute probability?",
+      "accepted_answers": [
+        "linear probability model",
+        "linear probability models",
+        "LPM"
+      ],
       "answer_type": "term",
-      "explanation": "갈등에는 고정효과 조건부 로짓과 함께 고정효과 선형회귀인 선형확률모형을 제시했다.",
+      "explanation": "The authors also used conditional fixed-effects logit models. The latter retain only cases whose conflict outcome changes, which reduces the estimation sample.",
       "evidence_segment_id": "MODELS-001",
-      "source": "갈등 분석모형"
+      "source": "Binary outcome analysis"
     },
     {
-      "question": "최종 분석에 포함된 응답자는 몇 명인가?",
-      "accepted_answers": ["3,812명", "3812명", "3,812", "3812"],
+      "question": "How many respondents were retained in the final analytic sample?",
+      "accepted_answers": [
+        "3812",
+        "3,812",
+        "3812 respondents",
+        "3,812 respondents",
+        "N = 3,812"
+      ],
       "answer_type": "number",
-      "explanation": "사건집단 1,211명과 비교집단 2,601명을 합한 분석표본이다.",
+      "explanation": "The sample included 1,211 respondents who lost one or both parents and 2,601 who did not lose a parent during observation. Contact and conflict analyses used different numbers of sibling dyads.",
       "evidence_segment_id": "SAMPLE-001",
-      "source": "분석표본"
+      "source": "Respondent sample"
     },
     {
-      "question": "첫째 부모 사망 직후 형제자매 대면접촉은 약 몇 퍼센트 증가했는가?",
-      "accepted_answers": ["17%", "약 17%", "17퍼센트"],
+      "question": "What approximate percentage increase in sibling face-to-face contact did the authors report in the year of the first parent's death in the unadjusted model?",
+      "accepted_answers": [
+        "17%",
+        "17 percent",
+        "17 per cent",
+        "about 17%",
+        "approximately 17%"
+      ],
       "answer_type": "number",
-      "explanation": "조정 전 전환계수는 약 .17이었고, 이후 유의한 감소가 없어 증가가 비교적 지속되었다.",
+      "explanation": "The paper interprets the logged-outcome transition coefficient of about .17 as an approximate 17% increase. This is its approximation, not an exact exponentiated percentage or a proven causal effect.",
       "evidence_segment_id": "CONTACT-FIRST-001",
-      "source": "첫째 사망의 대면접촉 효과"
+      "source": "First-parent results"
     },
     {
-      "question": "생존 부모 변수를 넣었을 때 첫째 사망의 대면접촉 전환계수는 약 .17에서 얼마로 줄었는가?",
-      "accepted_answers": [".10", "0.10", "약 .10", "약 0.10"],
+      "question": "After adjustment for the relationship with the surviving parent, what was the rounded transition coefficient for sibling face-to-face contact?",
+      "accepted_answers": [
+        "0.10",
+        ".10",
+        "0.1",
+        ".1",
+        "about 0.10",
+        "approximately 0.10"
+      ],
       "answer_type": "number",
-      "explanation": "계수는 거의 절반 줄었지만 남아 있으므로 생존 부모 관계는 완전매개가 아니라 부분매개다.",
+      "explanation": "The coefficient declined from about .17 to .10, supporting partial mediation in the model. The remaining positive association means the measured parent-related variables did not explain the entire increase.",
       "evidence_segment_id": "MEDIATION-001",
-      "source": "대면접촉 매개결과"
+      "source": "Adjusted transition coefficient"
     },
     {
-      "question": "둘째 부모 사망 약 7년 뒤 대면접촉은 사망 전보다 약 몇 퍼센트 낮았는가?",
-      "accepted_answers": ["30%", "약 30%", "30퍼센트"],
+      "question": "About seven years after the second parent's death, by what approximate percentage was face-to-face contact below its predeath reference level?",
+      "accepted_answers": [
+        "30%",
+        "30 percent",
+        "30 per cent",
+        "about 30%",
+        "approximately 30%"
+      ],
       "answer_type": "number",
-      "explanation": "둘째 사망 직후에는 증가했지만 음의 기간효과를 따라 장기적으로 사망 전 아래로 내려갔다.",
+      "explanation": "The model-based marginal effect was near −.30. Contact initially increased and later fell below the earlier reference level; the decline was more pronounced than for phone contact.",
       "evidence_segment_id": "CONTACT-SECOND-001",
-      "source": "둘째 사망 뒤 장기 접촉"
+      "source": "Longer-term second-parent results"
     },
     {
-      "question": "부모 사망 뒤 단기 갈등 증가를 예측했지만 지지되지 않은 가설 번호는?",
-      "accepted_answers": ["H5", "가설 5", "5번 가설"],
-      "answer_type": "short_phrase",
-      "explanation": "저자들은 부모 사망이 갈등을 단기적으로 불러일으킨다는 H5를 지지할 근거를 찾지 못했다.",
+      "question": "Which aspect of sibling relationships failed to show the predicted short-term increase after parental death?",
+      "accepted_answers": [
+        "conflict",
+        "sibling conflict",
+        "conflicts",
+        "conflict between siblings"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors found no support for Hypothesis 5. This does not establish that no family experiences conflict; it describes the pattern in the measured outcome and models.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "가설 판정"
+      "source": "Unsupported prediction"
     },
     {
-      "question": "둘째 부모 사망 뒤 시간이 흐르며 갈등이 감소한다고 예측해 지지된 가설 번호는?",
-      "accepted_answers": ["H6", "가설 6", "6번 가설"],
-      "answer_type": "short_phrase",
-      "explanation": "장기 갈등감소는 접촉감소와 함께 관계가 악화되기보다 희미해지는 소멸 해석을 뒷받침했다.",
+      "question": "What term did the authors use for a pattern in which both sibling contact and conflict decline after the last parent dies?",
+      "accepted_answers": [
+        "fading",
+        "fading relationships",
+        "fading sibling relationships",
+        "relationship fading"
+      ],
+      "answer_type": "term",
+      "explanation": "They interpret the joint decline as fading rather than deteriorating relationships. Less conflict need not indicate reconciliation or greater intimacy when opportunities for contact also diminish.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "가설 판정"
+      "source": "Interpreting joint decline"
     }
-  ]
+  ],
+  "language": "en"
 }

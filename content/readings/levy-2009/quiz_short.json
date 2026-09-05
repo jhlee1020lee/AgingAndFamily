@@ -1,127 +1,190 @@
 {
-  "title": "Levy (2009) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 허용 정답 범위 안에서 짧고 정확하게 답하세요.",
+  "title": "Levy (2009): Short Answers",
+  "instructions": "Answer with a precise English term or brief phrase. Include units when the question does not already supply them.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "문화에서 동화한 믿음이 자기정의를 거쳐 기능과 건강에 영향을 주는 이론의 이름은?",
-      "accepted_answers": ["고정관념 체화 이론", "stereotype embodiment theory"],
+      "question": "Which theory explains how culturally acquired beliefs become self-definitions that influence functioning and health?",
+      "accepted_answers": [
+        "stereotype embodiment theory",
+        "stereotype embodiment",
+        "SET"
+      ],
       "answer_type": "term",
-      "explanation": "Levy는 여러 실험과 종단결과를 네 구성요소로 묶어 이 이론을 제시한다.",
+      "explanation": "Levy organizes experimental and longitudinal findings into four components of this theory.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록"
+      "source": "Abstract"
     },
     {
-      "question": "노년기에 일반적 믿음이 자기 자신을 향할 때 형성되는 인식은?",
-      "accepted_answers": ["노화에 대한 자기지각", "self-perceptions of aging"],
+      "question": "What are general age stereotypes called when they are directed at oneself in old age?",
+      "accepted_answers": [
+        "self-perceptions of aging",
+        "self perceptions of aging",
+        "self-perceptions of ageing",
+        "self perceptions of ageing"
+      ],
       "answer_type": "term",
-      "explanation": "연령 고정관념이 자기 자신을 향하면 자신의 노화에 관한 믿음으로 분류된다.",
+      "explanation": "General beliefs about older people become beliefs about one's own aging when they are self-directed.",
       "evidence_segment_id": "INTRO-002",
-      "source": "자기지각"
+      "source": "Self-perceptions of aging"
     },
     {
-      "question": "더 긍정적인 자기지각 집단과 더 부정적인 집단의 평균 생존 차이는?",
-      "accepted_answers": ["7.5년", "평균 7.5년"],
+      "question": "What was the average survival difference between the more positive and more negative self-perception groups, in years?",
+      "accepted_answers": [
+        "7.5",
+        "7.5 years",
+        "an average of 7.5 years"
+      ],
       "answer_type": "number",
-      "explanation": "Ohio 종단자료에서 관련 변수를 조정한 뒤에도 평균 생존 차이가 관찰되었다.",
+      "explanation": "The Ohio longitudinal studies reported this average group difference after adjustment for relevant variables. It is not a guaranteed individual gain.",
       "evidence_segment_id": "INTRO-002",
-      "source": "종단연구 근거"
+      "source": "Longitudinal evidence"
     },
     {
-      "question": "연령 고정관념이 사회에서 개인으로 흐르는 방향을 무엇이라 부르는가?",
-      "accepted_answers": ["하향식", "top-down"],
+      "question": "What term describes the direction of influence from society to the individual?",
+      "accepted_answers": [
+        "top-down",
+        "top down"
+      ],
       "answer_type": "term",
-      "explanation": "이론은 사회에서 개인으로 가는 하향식 방향과 아동기에서 노년기로 가는 시간적 방향을 함께 제시한다.",
+      "explanation": "The theory describes influence both from society to the individual and over time, from childhood to old age.",
       "evidence_segment_id": "INTRO-002",
-      "source": "이론의 방향"
+      "source": "Directions of influence"
     },
     {
-      "question": "18-49세 참여자 440명을 추적한 연구의 최대 추적기간은?",
-      "accepted_answers": ["38년", "최대 38년"],
+      "question": "For how many years were the 440 participants aged 18–49 followed in the cardiovascular study?",
+      "accepted_answers": [
+        "38",
+        "38 years",
+        "up to 38 years"
+      ],
       "answer_type": "number",
-      "explanation": "초기의 부정적 연령 고정관념은 이후 38년 동안 심혈관 사건 위험과 관련되었다.",
+      "explanation": "More negative age stereotypes at baseline predicted a greater likelihood of cardiovascular events over the next 38 years.",
       "evidence_segment_id": "LIFE-002",
-      "source": "심혈관 종단근거"
+      "source": "Cardiovascular longitudinal evidence"
     },
     {
-      "question": "대부분의 사람이 의식하지 못하도록 점화단어를 제시한 시간은?",
-      "accepted_answers": ["55밀리초", "55 ms"],
+      "question": "How long were the priming words displayed, in milliseconds?",
+      "accepted_answers": [
+        "55",
+        "55 milliseconds",
+        "55 ms",
+        "55ms"
+      ],
       "answer_type": "number",
-      "explanation": "55밀리초는 의식적 지각을 막을 만큼 빠르면서도 부호화할 수 있는 속도로 설명된다.",
+      "explanation": "The presentation duration was intended to permit encoding without conscious perception for most participants.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "역하 점화"
+      "source": "Subliminal priming"
     },
     {
-      "question": "필적과 의료개입 선택 연구가 보여 준 작동 수준은?",
-      "accepted_answers": ["무의식 수준", "무의식적 작동"],
+      "question": "At what level of awareness did the priming studies demonstrate that age stereotypes can operate?",
+      "accepted_answers": [
+        "unconscious",
+        "unconsciously",
+        "unconscious level",
+        "the unconscious level",
+        "outside conscious awareness",
+        "without conscious awareness"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "참여자가 점화 자극을 의식하지 못한 상태에서도 고정관념 방향과 일치하는 결과가 나타났다.",
+      "explanation": "Handwriting ratings and intervention choices differed in stereotype-congruent directions even when participants did not consciously perceive the primes.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "무의식적 작동"
+      "source": "Unconscious operation"
     },
     {
-      "question": "일반적 연령 믿음에 개인적 울림을 부여하는 성질은?",
-      "accepted_answers": ["자기관련성", "self-relevance"],
+      "question": "What property gives general age stereotypes personal resonance?",
+      "accepted_answers": [
+        "self-relevance",
+        "self relevance"
+      ],
       "answer_type": "term",
-      "explanation": "노년기를 자신의 현재 상태로 인식하면 고정관념이 자기 정체성과 연결된다.",
+      "explanation": "Recognizing old age as one's current state connects stereotypes to one's identity.",
       "evidence_segment_id": "SELFREL-001",
-      "source": "자기관련성"
+      "source": "Self-relevance"
     },
     {
-      "question": "5년 종단연구에서 전형적 노인의 속성이 통합된다고 한 두 가지 자기관은?",
-      "accepted_answers": ["현재 및 미래 자기관", "현재와 미래 자기관"],
+      "question": "Which two kinds of self-views incorporated attributes of the typical older person in the five-year study?",
+      "accepted_answers": [
+        "current and future self-views",
+        "current and future self views",
+        "current and future",
+        "present and future self-views"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "Rothermund 연구는 내면화된 속성이 노인의 current and future self-views에 들어간다고 보고했다.",
+      "explanation": "Rothermund's longitudinal study found that these attributes entered older adults' current and future views of themselves.",
       "evidence_segment_id": "SELFREL-002",
-      "source": "자기관련성의 종단근거"
+      "source": "Longitudinal evidence on self-relevance"
     },
     {
-      "question": "내용 영역과 결과 영역이 맞을 때 영향이 커지는 현상은?",
-      "accepted_answers": ["고정관념 일치 효과", "stereotype-matching effect"],
+      "question": "What effect occurs when stereotype content has its strongest impact in the corresponding outcome domain?",
+      "accepted_answers": [
+        "stereotype-matching effect",
+        "stereotype matching effect",
+        "stereotype matching"
+      ],
       "answer_type": "term",
-      "explanation": "인지 내용은 인지과제, 신체 내용은 신체과제와 맞을 때 효과가 가장 컸다.",
+      "explanation": "Cognitive and physical stereotype content had its greatest effect on the matching cognitive or physical task.",
       "evidence_segment_id": "PATH-PSYCH-001",
-      "source": "심리적 경로"
+      "source": "Psychological pathway"
     },
     {
-      "question": "건강행동을 할 수 있다는 믿음과 관련되어 부정적 믿음이 저해할 수 있는 것은?",
-      "accepted_answers": ["자기효능감", "self-efficacy"],
+      "question": "What belief in one's ability to influence outcomes can negative age stereotypes undermine?",
+      "accepted_answers": [
+        "self-efficacy",
+        "self efficacy"
+      ],
       "answer_type": "term",
-      "explanation": "건강문제를 필연적으로 보면 건강행동을 쓸모없게 느끼고 자기효능감도 낮아질 수 있다.",
+      "explanation": "Seeing health problems as inevitable can make healthy practices seem futile and weaken confidence in one's ability to act.",
       "evidence_segment_id": "PATH-BEHAV-001",
-      "source": "행동적 경로"
+      "source": "Behavioral pathway"
     },
     {
-      "question": "환경 스트레스에 반응하며 생리적 경로에 관여할 가능성이 있는 체계는?",
-      "accepted_answers": ["자율신경계", "autonomic nervous system"],
+      "question": "Which stress-responsive system does Levy suggest is likely involved in the physiological pathway?",
+      "accepted_answers": [
+        "autonomic nervous system",
+        "the autonomic nervous system",
+        "ANS"
+      ],
       "answer_type": "term",
-      "explanation": "점화 조건에 따라 혈압과 피부전도도 같은 스트레스 반응이 달라진 근거와 연결된다.",
+      "explanation": "The proposed pathway is supported by differences in cardiovascular stress responses following positive versus negative priming.",
       "evidence_segment_id": "PATH-PHYS-001",
-      "source": "생리적 경로"
+      "source": "Physiological pathway"
     },
     {
-      "question": "그림 2에서 혈압과 함께 측정한 전기생리 지표는?",
-      "accepted_answers": ["피부전도도", "skin conductance"],
+      "question": "Which electrophysiological measure appears alongside blood pressure in Figure 2?",
+      "accepted_answers": [
+        "skin conductance"
+      ],
       "answer_type": "term",
-      "explanation": "그림 2는 수축기 혈압, 이완기 혈압, 피부전도도의 변화를 제시한다.",
+      "explanation": "Figure 2 presents changes in systolic blood pressure, diastolic blood pressure, and this measure.",
       "evidence_segment_id": "PATH-PHYS-001",
-      "source": "그림 2"
+      "source": "Figure 2"
     },
     {
-      "question": "긍정적 활성화를 잠깐이 아니라 계속 유지해야 한다는 개입 과제의 핵심 표현은?",
-      "accepted_answers": ["지속적 활성화", "지속적인 활성화"],
+      "question": "What kind of activation of positive age stereotypes remains an intervention challenge beyond temporary laboratory priming?",
+      "accepted_answers": [
+        "sustained activation",
+        "sustained positive activation",
+        "activation on a sustained basis",
+        "sustained activation in everyday life"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "실험실에서 긍정적 점화는 가능했지만 일상에서 그 상태를 유지하는 것이 남은 과제다.",
+      "explanation": "The open challenge is to maintain positive activation in everyday life rather than produce it only briefly in the laboratory.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "향후 연구 방향"
+      "source": "Future directions"
     },
     {
-      "question": "저자가 다른 낙인집단에 대해 향후 평가해야 한다고 남긴 이론적 쟁점은?",
-      "accepted_answers": ["전이 가능성", "transferability"],
+      "question": "What issue must future research assess before extending stereotype embodiment to other stigmatized groups?",
+      "accepted_answers": [
+        "transferability",
+        "generalizability",
+        "generalisability"
+      ],
       "answer_type": "term",
-      "explanation": "저자는 연령 고정관념의 독특성 때문에 다른 집단에 같은 전제가 적용되는지 추가 연구가 필요하다고 했다.",
+      "explanation": "Age stereotypes have distinctive features, so their applicability to other targeted groups requires further study.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "이론의 적용 한계"
+      "source": "Limits of transferability"
     }
-  ]
+  ],
+  "language": "en"
 }

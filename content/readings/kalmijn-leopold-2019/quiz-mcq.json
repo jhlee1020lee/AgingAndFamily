@@ -1,217 +1,218 @@
 {
-  "title": "Kalmijn & Leopold (2019) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 가장 정확한 선택지를 고르고 해설에서 사망순서·시간경로·모형·인과해석을 확인하세요.",
+  "title": "Kalmijn & Leopold (2019): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Distinguish the first and second parental deaths, immediate transitions and later changes, communication modes, and what the observational models can establish. The explanations refer to the linked source segments.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "논문의 전체 결론을 가장 정확히 요약한 것은?",
+      "prompt": "Which statement best summarizes the overall findings?",
       "options": [
-        "첫째 사망 뒤 접촉은 비교적 오래 늘지만 둘째 사망 뒤의 증가는 짧고 장기적으로 관계가 희미해진다",
-        "부모 사망은 모든 가족에서 형제자매 갈등을 계속 높이고 접촉도 감소시켜 가족관계를 시간이 갈수록 일관되게 악화시킨다",
-        "부모 사망의 순서와 경과시간은 중요하지 않으며 대면과 원거리 접촉 및 갈등이 모두 같은 고정효과를 보인다",
-        "둘째 사망 뒤에도 형제접촉은 높은 수준으로 유지된다"
+        "Contact increased more persistently after the first death; after the second, the rise was brief and ties faded over time.",
+        "Every family experienced steadily rising conflict and continuously falling contact after either parent died.",
+        "Death order and elapsed time made no difference: both contact measures and conflict followed the same constant pattern.",
+        "After the second death, both contact measures remained permanently above their levels while the parents were alive."
       ],
-      "answer": "첫째 사망 뒤 접촉은 비교적 오래 늘지만 둘째 사망 뒤의 증가는 짧고 장기적으로 관계가 희미해진다",
-      "explanation": "초록은 첫째 부모 사망 뒤 증가가 더 오래 지속되고 생존 부모 관계가 일부를 설명했으며, 둘째 사망 뒤의 접촉·갈등 증가는 짧고 장기적으로 관계가 희미해졌다고 요약한다.",
+      "answer": "Contact increased more persistently after the first death; after the second, the rise was brief and ties faded over time.",
+      "explanation": "The abstract describes a longer-lasting increase after the first parent died, partly explained by ties to the surviving parent. After the second death, the reported increases were short-lived and sibling relationships faded in the longer term. This is an average pattern in the study, not a prediction for every family. The abstract's brief description of an initial conflict increase should not be read as establishing statistical significance.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록의 결과와 결론",
-      "difficulty": "기본"
+      "source": "Abstract: overall findings",
+      "difficulty": "easy"
     },
     {
-      "prompt": "연대 가설의 H2가 첫째 부모 사망 뒤 더 큰 접촉 증가를 예측한 이유는?",
+      "prompt": "Why did the solidarity hypothesis predict a larger contact increase after the first parent's death?",
       "options": [
-        "첫째 사망은 언제나 어머니 사망이기 때문에",
-        "첫째 사망 뒤에는 형제자매 갈등이 완전히 사라지기 때문에",
-        "생존 부모를 함께 만나고 지원하는 과정이 형제자매가 접촉할 추가 계기를 만들기 때문에",
-        "둘째 사망 뒤에는 조사대상 형제자매가 표본에서 모두 제외되기 때문에"
+        "The first parent to die was assumed to be the mother, whose absence always brings siblings together.",
+        "Losing the first parent was expected to remove all rivalry and end every dispute between siblings.",
+        "Joint contact with and support for the surviving parent could create extra occasions for siblings to meet.",
+        "Siblings experiencing a second parental death were automatically removed from every part of the study."
       ],
-      "answer": "생존 부모를 함께 만나고 지원하는 과정이 형제자매가 접촉할 추가 계기를 만들기 때문에",
-      "explanation": "H2는 생존 부모와 형제자매의 접촉·지원이 서로 얽혀 있으므로 첫째 사망 뒤 접촉 증가가 둘째 사망 뒤보다 더 클 것으로 예측한다.",
+      "answer": "Joint contact with and support for the surviving parent could create extra occasions for siblings to meet.",
+      "explanation": "Hypothesis 2 concerns an additional family-network pathway: siblings may meet while coordinating or jointly providing support to the surviving parent. Hypothesis 3 separately predicts mediation through contact with and support to that parent. The reasoning is distinct from mutual support between siblings themselves.",
       "evidence_segment_id": "SOLIDARITY-001",
-      "source": "연대 가설 H2",
-      "difficulty": "기본"
+      "source": "Solidarity: the surviving parent",
+      "difficulty": "easy"
     },
     {
-      "prompt": "친족관계 유지 가설 H4의 예측은?",
+      "prompt": "What did Hypothesis 4, derived from kinkeeping theory, predict?",
       "options": [
-        "둘째 부모 사망 직후 형제자매 갈등이 유의하게 급증함",
-        "둘째 부모 사망 뒤 장기 접촉 감소",
-        "첫째 부모 사망 뒤 생존 부모에게 주는 지원이 완전히 중단됨",
-        "둘째 부모가 살아 있는 동안 모든 형제자매 관계가 잠재상태에서 영구적으로 활성화됨"
+        "Conflict would rise permanently after the second death because siblings would compete for the vacant family role.",
+        "After the second death, sibling contact would eventually fall below its level before the death.",
+        "Support to the surviving parent would cease immediately after the first death, leaving contact unchanged.",
+        "While either parent survived, every sibling relationship would remain continuously active and equally close."
       ],
-      "answer": "둘째 부모 사망 뒤 장기 접촉 감소",
-      "explanation": "마지막 부모가 사망하면 여러 자녀가족을 통합하던 중심 위치가 비므로 장기적으로 접촉이 사망 전보다 낮아진다고 예측한다.",
+      "answer": "After the second death, sibling contact would eventually fall below its level before the death.",
+      "explanation": "The last parent can occupy a position that connects siblings and their own families. If that position is not fully replaced, contact may gradually decline after an initial increase following the second death. This is a hypothesis about a long-term contact pattern, not a claim that all siblings permanently sever ties.",
       "evidence_segment_id": "KINKEEPING-001",
-      "source": "친족관계 유지 가설 H4",
-      "difficulty": "기본"
+      "source": "Kinkeeping: Hypothesis 4",
+      "difficulty": "easy"
     },
     {
-      "prompt": "분석표본의 구성을 정확히 제시한 것은?",
+      "prompt": "Which description matches the analytic respondent sample?",
       "options": [
-        "첫 차수 8,161명 전원을 네 차수에서 빠짐없이 관찰했다",
-        "사건집단 2,601명과 비교집단 1,211명을 분석했다",
-        "갈등 10,367쌍과 접촉 6,186쌍을 네 조사차수에서 모두 같은 방식으로 빠짐없이 측정했다",
-        "응답자 3,812명 중 사건집단 1,211명과 비교집단 2,601명이 포함됐다"
+        "All 8,161 initial respondents were observed without attrition in each of the four survey waves.",
+        "The analysis included 2,601 respondents who lost a parent and 1,211 who experienced no parental death.",
+        "The same 10,367 sibling dyads supplied complete conflict and contact measurements at every wave.",
+        "There were 3,812 respondents: 1,211 experienced parental death and 2,601 formed the comparison group."
       ],
-      "answer": "응답자 3,812명 중 사건집단 1,211명과 비교집단 2,601명이 포함됐다",
-      "explanation": "최종 응답자 표본은 3,812명이다. 접촉은 10,367개 관계쌍, 갈등은 6,186개 관계쌍으로 결과별 범위도 다르다.",
+      "answer": "There were 3,812 respondents: 1,211 experienced parental death and 2,601 formed the comparison group.",
+      "explanation": "The final respondent sample comprised an event group of 1,211 and a comparison group of 2,601. The expanded data contained 10,367 unique sibling dyads for contact and 6,186 for conflict before the outcome-specific modeling restrictions. These dyad counts are distinct from respondents and dyad-year observations. Conflict questions covered at most two selected siblings.",
       "evidence_segment_id": "SAMPLE-001",
-      "source": "분석표본과 관계쌍",
-      "difficulty": "기본"
+      "source": "Sample: respondents and sibling dyads",
+      "difficulty": "easy"
     },
     {
-      "prompt": "접촉 결과변수의 측정을 가장 정확히 설명한 것은?",
+      "prompt": "How were the two contact outcomes measured?",
       "options": [
-        "지난 3개월의 접촉 여부를 모든 형제자매에 대해 이분형으로 측정하고 대면과 원거리 접촉을 하나로 합쳤다",
-        "지난 12개월의 대면과 전화접촉을 하나의 5점 친밀감 척도로 합산하고 형제자매별 평균을 계산했다",
-        "지난 12개월 빈도를 연간 일수로 재부호화하고 대면과 전화·편지·전자우편을 각각 로그화했다",
-        "형제자매가 직접 기록한 통신기기 로그에서 모든 통화·편지·전자우편의 월별 지속시간을 합산했다"
+        "Any contact in the previous three months was coded as present or absent and combined across communication modes.",
+        "Face-to-face and phone contact were combined into a five-point closeness score averaged across all siblings.",
+        "Past-year frequencies were converted to approximate annual contact days and logged separately for the two modes.",
+        "Device records supplied monthly durations for every call, letter, and email exchanged directly by the siblings."
       ],
-      "answer": "지난 12개월 빈도를 연간 일수로 재부호화하고 대면과 전화·편지·전자우편을 각각 로그화했다",
-      "explanation": "일곱 범주를 연간 일수 0·1·4·12·52·104·300으로 바꾸고 로그변환했다. 갈등만 지난 3개월의 이분변수다.",
+      "answer": "Past-year frequencies were converted to approximate annual contact days and logged separately for the two modes.",
+      "explanation": "The seven past-12-month categories were recoded to 0, 1, 4, 12, 52, 104, or 300 contact days per year. Before logging, never was recoded from 0 to 1. Face-to-face contact was separate from the measure called phone contact, which also included letters and emails. Conflict instead concerned the past three months and was dichotomized.",
       "evidence_segment_id": "OUTCOMES-001",
-      "source": "접촉 측정",
-      "difficulty": "응용"
+      "source": "Outcomes: contact measurement",
+      "difficulty": "medium"
     },
     {
-      "prompt": "이 연구의 고정효과 분석을 가장 정확히 설명한 것은?",
+      "prompt": "Which description fits the fixed-effects strategy?",
       "options": [
-        "같은 응답자 안의 시간변화를 이용하고 가족 수준 군집강건 표준오차를 적용했다",
-        "부모 사망을 무작위 배정한 뒤 처치집단과 통제집단의 평균을 비교했다",
-        "형제자매가 없는 응답자를 기준집단으로 삼아 성별의 고정효과만 추정했다",
-        "한 시점의 가족 간 차이만 이용해 시간에 따라 변하지 않는 변수의 계수를 중심으로 추정했다"
+        "It related within-unit changes over time and used family-clustered robust standard errors.",
+        "It randomly assigned parental death and compared average outcomes between treatment arms.",
+        "It used respondents without siblings as controls and estimated only an unchanging sex effect.",
+        "It relied on one-time differences between families to estimate stable family characteristics."
       ],
-      "answer": "같은 응답자 안의 시간변화를 이용하고 가족 수준 군집강건 표준오차를 적용했다",
-      "explanation": "고정효과는 시간에 따라 변하는 변수만 사용하며, 여러 형제관계가 가족 안에 중첩된 점은 가족 수준 군집강건 표준오차로 처리했다.",
+      "answer": "It related within-unit changes over time and used family-clustered robust standard errors.",
+      "explanation": "The fixed-effects models relate changes in sibling relationships to changes in predictors, with standard errors adjusted for sibling dyads nested in families. Stable differences are absorbed by the fixed effects. This does not remove all time-varying confounding or make the timing of parental death a randomized treatment.",
       "evidence_segment_id": "MODELS-001",
-      "source": "고정효과 분석전략",
-      "difficulty": "응용"
+      "source": "Models: changes within units and family clustering",
+      "difficulty": "medium"
     },
     {
-      "prompt": "첫째 부모 사망효과 모형에서 둘째 부모 사망 뒤의 관측치는 어떻게 처리했는가?",
+      "prompt": "In models of the first parent's death, how were observations after the second parent's death handled?",
       "options": [
-        "둘째 사망 직후 관측만 남겼다",
-        "부모 성별에 따라 절반씩 가중했다",
-        "모든 관측을 첫째 사망 전으로 재분류했다",
-        "제외했다"
+        "They replaced all earlier observations.",
+        "They received weights based on parent sex.",
+        "They were recoded as pre-first-death data.",
+        "They were excluded from those models."
       ],
-      "answer": "제외했다",
-      "explanation": "첫째와 둘째 부모 사망효과가 뒤섞이지 않도록 첫째 사망 모형에서는 둘째 사망 뒤의 모든 관측을 제외했다.",
+      "answer": "They were excluded from those models.",
+      "explanation": "The authors excluded all observations after the second death when estimating effects of the first. This separates the two transitions and means that the first-death findings apply while the other parent was still alive. The second-death analyses use their own model specification.",
       "evidence_segment_id": "MODELS-001",
-      "source": "첫째 사망 모형의 관측범위",
-      "difficulty": "기본"
+      "source": "Models: separating the two deaths",
+      "difficulty": "easy"
     },
     {
-      "prompt": "생존 부모 변수를 포함한 대면접촉 매개분석의 결과는?",
+      "prompt": "What happened to the first-death coefficient for sibling face-to-face contact after adding the surviving-parent measures?",
       "options": [
-        "생존 부모와의 접촉을 넣자 첫째 사망계수가 .10에서 .17로 커져 완전한 억제효과가 확인되었다",
-        "첫째 사망계수가 약 .17에서 .10으로 줄었지만 독립적인 증가가 남았다",
-        "생존 부모의 접촉과 지지를 함께 넣자 첫째 사망계수와 간접효과가 모두 정확히 0이 되어 완전매개가 확인되었다",
-        "생존 부모 접촉은 형제자매 대면접촉과 아무 관련이 없었다"
+        "It rose from approximately .10 to .17, confirming complete suppression by the parent variables.",
+        "It fell from approximately .17 to .10, while a positive adjusted association remained.",
+        "It and the indirect effect both became exactly zero, establishing complete causal mediation.",
+        "It stayed unchanged because neither parent-contact measure was associated with sibling contact."
       ],
-      "answer": "첫째 사망계수가 약 .17에서 .10으로 줄었지만 독립적인 증가가 남았다",
-      "explanation": "생존 부모와의 대면접촉을 고려하면 전환계수가 거의 절반 줄었고 간접효과도 유의했으나, 조정 후 계수가 남아 부분매개로 해석된다.",
+      "answer": "It fell from approximately .17 to .10, while a positive adjusted association remained.",
+      "explanation": "The reduction from about .17 to .10 was statistically significant in the mediation test. Face-to-face contact with the surviving parent provided the clearest contribution; its support index was not independently significant for this outcome. A positive adjusted first-death coefficient remained. This supports partial statistical mediation rather than an established causal sequence.",
       "evidence_segment_id": "MEDIATION-001",
-      "source": "대면접촉 매개결과",
-      "difficulty": "응용"
+      "source": "Mediation: face-to-face contact",
+      "difficulty": "medium"
     },
     {
-      "prompt": "첫째 부모 사망 뒤 형제자매 접촉 결과로 맞는 것은?",
+      "prompt": "Which statement matches the authors' approximate interpretation of face-to-face contact after the first death?",
       "options": [
-        "대면접촉은 약 17% 증가했고 이후의 유의한 감소는 없었다",
-        "대면접촉은 사망 직후 약 30% 줄었고 그 뒤에는 해마다 더 빠른 속도로 계속 감소했다",
-        "전화·편지·전자우편 접촉만 감소하고 대면접촉은 변하지 않았다",
-        "갈등 증가만 유의했고 두 접촉지표에는 변화가 없었다"
+        "It rose by about 17%, with no statistically significant decline over the subsequent observed years.",
+        "It fell by about 30% immediately and continued to decline at an increasingly rapid rate afterward.",
+        "It remained unchanged, while phone, letter, and email contact declined significantly every year.",
+        "It showed no transition effect because conflict was the only outcome that changed significantly."
       ],
-      "answer": "대면접촉은 약 17% 증가했고 이후의 유의한 감소는 없었다",
-      "explanation": "첫째 사망 뒤 대면접촉과 전화·편지·전자우편 접촉은 증가했으며, 이후 기간효과는 유의하지 않아 둘째 부모가 살아 있는 동안 비교적 지속되었다.",
+      "answer": "It rose by about 17%, with no statistically significant decline over the subsequent observed years.",
+      "explanation": "The unadjusted log-contact transition coefficient was .173, which the authors describe approximately as a 17% increase. This uses the log coefficient as a percentage approximation, not an exact percentage conversion. The duration coefficient was not significant. Phone contact showed a similar positive transition and nonsignificant duration; the other parent remained alive in these models.",
       "evidence_segment_id": "CONTACT-FIRST-001",
-      "source": "첫째 부모 사망 뒤 접촉",
-      "difficulty": "기본"
+      "source": "First death: transition and duration",
+      "difficulty": "easy"
     },
     {
-      "prompt": "둘째 부모 사망 뒤 접촉 궤적을 가장 정확히 설명한 것은?",
+      "prompt": "What pattern did the fitted contact trajectories show after the second parent's death?",
       "options": [
-        "두 접촉지표 모두 사망 직후부터 일정한 속도로 계속 감소했다",
-        "대면접촉만 잠시 늘고 다른 원거리 접촉은 전혀 변하지 않았다",
-        "두 접촉지표가 직후 증가한 뒤 감소해 장기적으로 사망 전보다 낮아졌고 감소속도는 완만해졌다",
-        "접촉은 직후 감소했다가 7년 뒤 사망 전보다 약 30% 높아졌다"
+        "Both contact measures declined at a constant rate from the death year, without an initial increase.",
+        "Only face-to-face contact briefly increased; phone, letter, and email contact remained unchanged.",
+        "Both initially rose, then fell below the predeath level, with the fitted decline becoming less steep.",
+        "Both initially fell, then recovered to approximately 30% above the predeath level after seven years."
       ],
-      "answer": "두 접촉지표가 직후 증가한 뒤 감소해 장기적으로 사망 전보다 낮아졌고 감소속도는 완만해졌다",
-      "explanation": "음의 선형 기간항과 양의 이차항이 초기 증가 뒤 하락과 평탄화를 나타냈다. 약 7년 뒤 대면은 30%, 원거리 접촉은 15%가량 낮았다.",
+      "answer": "Both initially rose, then fell below the predeath level, with the fitted decline becoming less steep.",
+      "explanation": "The quadratic models combined positive transition estimates, negative linear duration terms, and positive squared-duration terms. The fitted trajectories therefore declined after the initial rise and later flattened. The authors describe about 30% lower face-to-face contact and 15% lower phone contact by the longer-term comparison illustrated around year seven. These are estimated patterns, not a uniform change in every dyad.",
       "evidence_segment_id": "CONTACT-SECOND-001",
-      "source": "둘째 부모 사망 뒤 접촉",
-      "difficulty": "응용"
+      "source": "Second death: fitted contact trajectories",
+      "difficulty": "medium"
     },
     {
-      "prompt": "형제자매 갈등에 관한 가설 판정으로 맞는 것은?",
+      "prompt": "How did the authors assess the two conflict hypotheses?",
       "options": [
-        "H5와 H6이 모두 지지되어 갈등은 잠시 늘었다가 장기적으로 감소했다",
-        "H5는 지지되지 않았고 H6의 갈등 감소 양상은 지지되었다",
-        "H5만 지지되어 갈등은 단기에만 증가했다",
-        "H6도 지지되지 않아 갈등 변화는 없었다"
+        "Both H5 and H6 were supported: a significant initial increase was followed by a significant long-term decline.",
+        "H5's temporary increase was not supported; the long-term decline after the second death was consistent with H6.",
+        "Only H5 was supported: conflict rose initially but showed no subsequent decline after the second death.",
+        "Neither H5 nor H6 was supported because no transition or duration coefficient indicated a change in conflict."
       ],
-      "answer": "H5는 지지되지 않았고 H6의 갈등 감소 양상은 지지되었다",
-      "explanation": "저자들은 부모 사망이 갈등을 단기적으로 불러일으킨다는 H5를 지지하지 않았고, 갈등 감소 양상은 H6와 일치한다고 판정했다.",
+      "answer": "H5's temporary increase was not supported; the long-term decline after the second death was consistent with H6.",
+      "explanation": "The discussion explicitly rejects support for H5 and identifies the declining pattern as consistent with H6. The first death showed no significant conflict change, and the initial increase after the second death was not significant. The significant result was the later decline after the second death, so a positive initial estimate is not evidence of a confirmed temporary conflict surge.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "H5·H6 판정",
-      "difficulty": "기본"
+      "source": "Discussion: evaluating H5 and H6",
+      "difficulty": "easy"
     },
     {
-      "prompt": "둘째 부모 사망효과와 부모 성별에 관한 해석으로 맞는 것은?",
+      "prompt": "What did the additional analysis suggest about parent sex and the second-death pattern?",
       "options": [
-        "둘째 사망은 모두 어머니 사망이므로 성별효과를 따로 검정하지 않았다",
-        "아버지가 둘째로 사망한 가족에서만 접촉감소가 관찰되었다",
-        "어머니 사망은 갈등만, 아버지 사망은 접촉만 변화시켰다",
-        "둘째 사망의 다수가 어머니였지만 성별 상호작용은 없어 둘째 부모라는 위치에 초점을 두었다"
+        "All second deaths were mothers' deaths, so the authors had no basis for examining parent sex.",
+        "Declining contact occurred only when the father died second and was absent when the mother died second.",
+        "Mothers' deaths changed conflict alone, whereas fathers' deaths changed contact alone in all models.",
+        "Most second deaths were mothers' deaths, but the contact effects did not differ significantly by parent sex."
       ],
-      "answer": "둘째 사망의 다수가 어머니였지만 성별 상호작용은 없어 둘째 부모라는 위치에 초점을 두었다",
-      "explanation": "둘째 부모 사망의 75%가 아버지 뒤 어머니 사망이었지만, 성별에 따른 사망효과 차이는 유의하지 않았다.",
+      "answer": "Most second deaths were mothers' deaths, but the contact effects did not differ significantly by parent sex.",
+      "explanation": "In 75% of these cases, the mother died after the father. The authors found no significant interactions of second-death transition or duration with parent sex for either contact measure. They therefore emphasized the position of the second parent rather than attributing the pattern solely to mothers. A nonsignificant interaction does not establish identical effects in every group.",
       "evidence_segment_id": "CONFLICT-001",
-      "source": "사망순서와 부모 성별",
-      "difficulty": "응용"
+      "source": "Additional analysis: death order and parent sex",
+      "difficulty": "medium"
     },
     {
-      "prompt": "둘째 부모 사망 뒤 접촉과 갈등이 함께 감소한 결과를 저자들은 어떻게 해석했는가?",
+      "prompt": "Why did the authors describe the later pattern as fading rather than deteriorating sibling ties?",
       "options": [
-        "경쟁이 심해져 갈등이 계속 커지는 관계 악화",
-        "모든 형제가 화해해 친밀감이 높아진 관계 회복",
-        "상호작용 자체가 줄어 관계의 활성도가 낮아지는 소멸",
-        "측정오차만으로 생긴 변화이므로 이론적 의미가 없는 결과"
+        "Competition intensified, producing increasingly frequent conflict despite unchanged contact.",
+        "All siblings reconciled, so less conflict demonstrated greater affection and stronger relationships.",
+        "Contact and conflict both declined, suggesting less interaction rather than escalating antagonism.",
+        "Only measurement error changed, leaving the observed contact and conflict patterns without meaning."
       ],
-      "answer": "상호작용 자체가 줄어 관계의 활성도가 낮아지는 소멸",
-      "explanation": "갈등 감소만 보면 개선처럼 보일 수 있지만 접촉도 함께 줄었다. 저자들은 형제관계가 악화되기보다 희미해진다고 보았다.",
+      "answer": "Contact and conflict both declined, suggesting less interaction rather than escalating antagonism.",
+      "explanation": "A decline in conflict alone could look like improvement, but the parallel decline in contact suggests that ties became less active. The authors interpret this as fading after the loss of an integrative family member. They did not directly demonstrate either universal reconciliation or worsening hostility.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "소멸과 악화의 구분",
-      "difficulty": "응용"
+      "source": "Discussion: fading and deterioration",
+      "difficulty": "medium"
     },
     {
-      "prompt": "이 연구의 인과적 한계를 가장 정확히 설명한 것은?",
+      "prompt": "Which alternative interpretation limits the causal conclusion about the surviving parent?",
       "options": [
-        "형제접촉 증가가 생존 부모에 대한 연대와 지원을 촉진했을 가능성도 배제할 수 없다",
-        "무작위 실험이므로 부모지원에서 형제접촉으로 가는 방향이 확정되었다",
-        "고정효과가 모든 시간가변 교란을 제거해 역인과 가능성이 사라졌다",
-        "매개분석은 부모 사망과 무관한 횡단면 상관만 사용했다"
+        "More sibling contact might itself encourage solidarity with and support for the surviving parent.",
+        "Random assignment established that parent support always preceded and caused greater sibling contact.",
+        "Fixed effects removed every changing confounder, making a reverse direction logically impossible.",
+        "The mediation estimates used only cross-sectional differences unrelated to the observed parental deaths."
       ],
-      "answer": "형제접촉 증가가 생존 부모에 대한 연대와 지원을 촉진했을 가능성도 배제할 수 없다",
-      "explanation": "저자들은 반대 방향의 해석을 명시적으로 인정했다. 관찰된 매개 패턴만으로 어느 관계변화가 먼저였는지 확정할 수 없다.",
+      "answer": "More sibling contact might itself encourage solidarity with and support for the surviving parent.",
+      "explanation": "The authors explicitly acknowledge that sibling contact may promote solidarity with the surviving parent. Their pattern is consistent with the proposed parent-to-sibling pathway but does not rule out the reverse direction. Single-reporter measures, limited conflict measurement, and the Dutch setting also constrain interpretation.",
       "evidence_segment_id": "SYNTHESIS-001",
-      "source": "관찰자료의 인과 한계",
-      "difficulty": "심화"
+      "source": "Synthesis: causal direction and limitations",
+      "difficulty": "hard"
     },
     {
-      "prompt": "이 연구가 직접 측정하지 않은 것으로 옳은 것은?",
+      "prompt": "Which mechanism was not directly measured?",
       "options": [
-        "지난 12개월 동안 모든 형제자매와 나눈 대면접촉의 범주별 빈도와 연간 환산일수",
-        "가족모임을 누가 조직했는지와 실제 친족관계 유지자의 정체",
-        "지난 3개월 동안 무작위로 선정된 최대 두 형제자매와 겪은 긴장이나 갈등의 빈도",
-        "생존 부모와 응답자 사이의 대면접촉 빈도"
+        "Past-year face-to-face contact frequencies for the respondent's nonresident siblings.",
+        "Who acted as a kinkeeper and which activities they used to organize the family network.",
+        "Recent conflicts or disagreements with up to two randomly selected nonresident siblings.",
+        "The respondent's frequency of face-to-face contact with the surviving parent over the year."
       ],
-      "answer": "가족모임을 누가 조직했는지와 실제 친족관계 유지자의 정체",
-      "explanation": "관찰된 장기 패턴은 친족관계 유지 가설과 부합하지만, 저자들은 유지자의 정체와 구체적 조직활동을 측정하지 못했다고 밝혔다.",
+      "answer": "Who acted as a kinkeeper and which activities they used to organize the family network.",
+      "explanation": "The long-term results fit kinkeeping theory, but the study lacked direct measures of kinkeeper identities and activities before and after death. Who organized gatherings or assumed a vacant role therefore remains a mechanism for future research, rather than an observed mediation pathway in these data.",
       "evidence_segment_id": "SYNTHESIS-001",
-      "source": "미측정 메커니즘",
-      "difficulty": "응용"
+      "source": "Synthesis: unmeasured kinkeeping mechanisms",
+      "difficulty": "medium"
     }
-  ]
+  ],
+  "language": "en"
 }

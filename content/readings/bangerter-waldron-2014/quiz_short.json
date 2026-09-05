@@ -1,127 +1,192 @@
 {
-  "title": "Bangerter & Waldron (2014) 단답형 퀴즈",
-  "instructions": "핵심 용어 또는 수치를 짧게 입력하세요. 띄어쓰기가 있는 정답도 7단어 이하입니다.",
+  "title": "Bangerter and Waldron (2014): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or phrase. Focus on grandparents' accounts of relationship change and the limits of retrospective qualitative evidence.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "관계가 어떤 방식으로든 변화하는 변혁적 사건을 무엇이라 부르나요?",
-      "accepted_answers": ["전환점", "관계 전환점"],
+      "question": "What term describes an event that transforms a relationship by changing it in some way?",
+      "accepted_answers": [
+        "turning point",
+        "relational turning point",
+        "relationship turning point"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 관계를 변화시키는 변혁적 사건을 이 개념으로 정의하고, 심리적 친밀감의 증가와 감소를 추적한다.",
+      "explanation": "The framework traces increases and decreases in psychological closeness across the life course. A transformative event can be positive or negative.",
       "evidence_segment_id": "BACKGROUND-001",
-      "source": "Bangerter & Waldron (2014)"
+      "source": "Relationship change"
     },
     {
-      "question": "사건을 회고하고 격자에 관계 변화를 그리게 한 면접기법의 영문 약어는 무엇인가요?",
-      "accepted_answers": ["RIT"],
+      "question": "Which interview technique asked participants to recall meaningful events and plot the relationship on a grid?",
+      "accepted_answers": [
+        "RIT",
+        "Retrospective Interview Technique"
+      ],
       "answer_type": "term",
-      "explanation": "회고적 면접기법은 사건을 말하게 한 뒤 친밀감의 시간적 변화를 격자에 표시하게 했다.",
+      "explanation": "Participants mapped the relationship from the grandchild's age five to the current age and discussed the events associated with changes. The graphs visualize remembered experience.",
       "evidence_segment_id": "PROCEDURE-001",
-      "source": "Bangerter & Waldron (2014)"
+      "source": "Interview technique"
     },
     {
-      "question": "면접 참여자의 평균 연령은 몇 세인가요?",
-      "accepted_answers": ["70.9세", "70.9"],
+      "question": "How many interviews yielded usable transcripts and relationship graphs?",
+      "accepted_answers": [
+        "30",
+        "thirty",
+        "30 interviews",
+        "thirty interviews"
+      ],
       "answer_type": "number",
-      "explanation": "참여자의 연령 범위는 60–82세였고 평균은 70.9세였다.",
+      "explanation": "Thirty-five people were interviewed, but five interviews could not be transcribed. The analysis used 30 graphs; the participant demographics also describe these 30 cases.",
       "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
+      "source": "Interview and analysis samples"
     },
     {
-      "question": "연구에서 선택된 손자녀의 평균 연령은 몇 세인가요?",
-      "accepted_answers": ["14.7세", "14.7"],
-      "answer_type": "number",
-      "explanation": "손자녀는 12–19세였고 평균 연령은 14.7세였다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "면접 참여자의 연령 범위는 어떻게 되나요?",
-      "accepted_answers": ["60–82세", "60~82세", "60세에서 82세"],
-      "answer_type": "number",
-      "explanation": "면접 참여자는 60세부터 82세까지 분포했다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "면접 참여자 연령의 표준편차는 얼마인가요?",
-      "accepted_answers": ["5.34", "5.34세"],
-      "answer_type": "number",
-      "explanation": "참여자 평균 연령은 70.9세이고 표준편차는 5.34였다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "분석 가능한 인구학적 수치에서 여성 참여자는 몇 명인가요?",
-      "accepted_answers": ["21명", "21"],
-      "answer_type": "number",
-      "explanation": "여성 21명과 남성 9명으로 보고되어 합계는 30명이다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "분석 가능한 인구학적 수치에서 기혼 참여자는 몇 명인가요?",
-      "accepted_answers": ["26명", "26"],
-      "answer_type": "number",
-      "explanation": "기혼 26명과 미혼·사별·이혼 4명으로 보고됐다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "30세 손자녀 가운데 살아 있는 조부모가 있는 비율은 대략 얼마였나요?",
-      "accepted_answers": ["약 75%", "75%", "대략 75%"],
-      "answer_type": "number",
-      "explanation": "선행연구 배경에서 30세 손자녀의 약 75%가 살아 있는 조부모를 둔다고 제시됐다.",
-      "evidence_segment_id": "INTRO-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "한 차례 면접의 보고된 시간 범위는?",
-      "accepted_answers": ["7–45분", "7~45분", "약 7–45분"],
-      "answer_type": "number",
-      "explanation": "면접은 짧게는 약 7분, 길게는 45분가량 진행됐다.",
-      "evidence_segment_id": "PROCEDURE-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "면접 녹음을 옮긴 두 줄 간격 전사자료의 분량은?",
-      "accepted_answers": ["116쪽", "116페이지", "116"],
-      "answer_type": "number",
-      "explanation": "면접 직후 작성된 전사자료는 두 줄 간격으로 116쪽이었다.",
-      "evidence_segment_id": "PROCEDURE-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "참여자를 모집한 비학점 대학 후원 교육프로그램은?",
-      "accepted_answers": ["Osher Lifelong Learning Institute", "Osher 평생학습원", "Osher 평생학습 프로그램"],
+      "question": "What design term describes reconstructing earlier relationship changes from an interview conducted later?",
+      "accepted_answers": [
+        "retrospective",
+        "retrospective design",
+        "retrospective study",
+        "retrospective interview",
+        "retrospective interviews"
+      ],
       "answer_type": "term",
-      "explanation": "지역사회 고령자를 위한 애리조나주립대 Osher 평생학습 프로그램을 통해 모집했다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)"
+      "explanation": "The study reconstructed earlier events through interviews and graphs. It did not repeatedly measure each relationship as all those events occurred, so these are remembered trajectories.",
+      "evidence_segment_id": "PROCEDURE-001",
+      "source": "Time in the research design"
     },
     {
-      "question": "한 참여자가 보고한 전환점 수의 범위는?",
-      "accepted_answers": ["0–10개", "0~10개", "0개에서 10개"],
-      "answer_type": "number",
-      "explanation": "참여자별 전환점 수는 최소 0개에서 최대 10개였다.",
+      "question": "What central construct was defined as the psychological bond a grandparent feels toward a grandchild?",
+      "accepted_answers": [
+        "closeness",
+        "relational closeness",
+        "psychological closeness"
+      ],
+      "answer_type": "term",
+      "explanation": "Researchers discussed the definition before asking participants to plot changes. The construct concerns a perceived emotional bond and is distinct from geographic proximity.",
+      "evidence_segment_id": "PROCEDURE-001",
+      "source": "Core relationship construct"
+    },
+    {
+      "question": "Which analytic method formed categories by repeatedly comparing events for similarities and differences?",
+      "accepted_answers": [
+        "constant comparative method",
+        "constant comparison",
+        "constant comparative analysis"
+      ],
+      "answer_type": "term",
+      "explanation": "The first author developed and revised categories through comparisons, discussion, and examination of negative cases, then applied them to the entire data set.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Qualitative analysis"
+    },
+    {
+      "question": "What concept describes the point at which further material appeared unlikely to add new conceptual categories?",
+      "accepted_answers": [
+        "theoretical saturation",
+        "saturation"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors judged this point to have been reached after roughly 75% of the material, but they still coded the whole data set. It does not imply population representativeness.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Completeness of qualitative categories"
+    },
+    {
+      "question": "Which frequency of in-person contact had to be very difficult or impossible for a grandchild to meet the study's distance criterion?",
+      "accepted_answers": [
+        "daily",
+        "every day",
+        "daily contact",
+        "daily visits",
+        "everyday contact"
+      ],
+      "answer_type": "term",
+      "explanation": "Eligibility used the grandparent's judgment about seeing a grandchild every day, not a fixed mileage threshold. The selected grandchildren were aged 12–19.",
+      "evidence_segment_id": "METHOD-001",
+      "source": "Distance eligibility"
+    },
+    {
+      "question": "Which turning-point category was most frequently reported and unanimously positive in the coded accounts?",
+      "accepted_answers": [
+        "spending time together",
+        "time together",
+        "quality time together"
+      ],
+      "answer_type": "term",
+      "explanation": "Visits, vacations, and holiday gatherings were examples. The 22 coded events in this category were positive in these accounts; that does not mean every visit benefits every family.",
+      "evidence_segment_id": "TURNING-001",
+      "source": "Shared interaction"
+    },
+    {
+      "question": "Which category included divorce, abuse, discipline, and other family changes that could either strengthen or weaken the bond?",
+      "accepted_answers": [
+        "family relational dynamics",
+        "family dynamics"
+      ],
+      "answer_type": "term",
+      "explanation": "Most events in this category were negative, but some brought grandparents and grandchildren closer. For example, providing protection could strengthen a bond, while becoming a disciplinarian could create strain.",
+      "evidence_segment_id": "TURNING-001",
+      "source": "Events in the wider family"
+    },
+    {
+      "question": "Which category captured relationships feeling one-sided because someone made little effort to sustain connection?",
+      "accepted_answers": [
+        "lack of relational investment",
+        "lack of investment"
+      ],
+      "answer_type": "term",
+      "explanation": "Grandparents described disappointment when grandchildren seemed uninterested in visits or conversation. These are the grandparents' interpretations, without independent accounts from the grandchildren.",
+      "evidence_segment_id": "TURNING-002",
+      "source": "One-sided effort"
+    },
+    {
+      "question": "Which positive turning-point category included texting, social media, and video calls?",
+      "accepted_answers": [
+        "use of technology",
+        "technology use",
+        "technology",
+        "communication technology"
+      ],
+      "answer_type": "term",
+      "explanation": "Participants described maintaining contact and sharing everyday experiences through these tools. These qualitative examples do not establish a causal effect or guarantee that devices overcome distance.",
+      "evidence_segment_id": "TURNING-002",
+      "source": "Communication practices"
+    },
+    {
+      "question": "Which category included deliberate acts such as initiating calls, helping with homework, or arranging one-to-one visits?",
+      "accepted_answers": [
+        "relational investment",
+        "relationship investment"
+      ],
+      "answer_type": "term",
+      "explanation": "Effort could come from either generation. The examples concern actions that cultivate connection, rather than assuming that grandparents alone must maintain the relationship.",
+      "evidence_segment_id": "TURNING-003",
+      "source": "Effort to sustain a bond"
+    },
+    {
+      "question": "Which trajectory category described a relationship that stayed at a similar level, whether emotionally close or consistently distant?",
+      "accepted_answers": [
+        "consistent relational closeness",
+        "consistent closeness",
+        "stable trajectory",
+        "stable relationship",
+        "stability"
+      ],
+      "answer_type": "term",
+      "explanation": "The straight-line graphs indicated little change, not necessarily a strong bond. Eight participants were assigned to this category, and their levels differed.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "source": "Bangerter & Waldron (2014)"
+      "source": "Interpreting stability"
     },
     {
-      "question": "선행연구에서 면접한 젊은 성인 손녀의 수는?",
-      "accepted_answers": ["42명", "42"],
-      "answer_type": "number",
-      "explanation": "Holladay 등은 평균 19세인 젊은 성인 여성 42명을 면접해 할머니와의 전환점을 분석했다.",
-      "evidence_segment_id": "BACKGROUND-001",
-      "source": "Bangerter & Waldron (2014)"
-    },
-    {
-      "question": "연구자들이 아직 탐구하지 않았다고 하며 두 번째 연구질문의 필요성을 뒷받침한 당사자의 시각은 누구의 것인가요?",
-      "accepted_answers": ["조부모 관점", "조부모의 관점"],
-      "answer_type": "short_phrase",
-      "explanation": "저자들은 장거리 관계의 전환점을 조부모의 관점에서 연구한 적이 없다고 지적하고 RQ2를 제시했다.",
+      "question": "Whose perspective on long-distance turning points did the study seek to add to earlier research centered on granddaughters?",
+      "accepted_answers": [
+        "grandparents",
+        "grandparent",
+        "grandparents' perspective",
+        "grandparent perspective"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors asked grandparents about positive and negative events involving adolescent grandchildren. The findings represent that perspective and do not independently establish how grandchildren perceived the same events.",
       "evidence_segment_id": "RATIONALE-001",
-      "source": "Bangerter & Waldron (2014)"
+      "source": "Perspective and scope"
     }
-  ]
+  ],
+  "language": "en"
 }

@@ -1,127 +1,206 @@
 {
-  "title": "Lin et al. (2018) 단답형 퀴즈",
-  "instructions": "질문마다 핵심 용어·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "title": "Lin et al. (2018): Short-answer practice",
+  "instructions": "Answer in English with a concise concept, method, or result. Distinguish longitudinal associations, model adjustments, and cumulative probabilities.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "이 연구가 사용한 HRS 자료의 관찰기간은?",
-      "accepted_answers": ["1998–2012년", "1998-2012년"],
-      "answer_type": "number",
-      "explanation": "저자들은 1998년부터 2012년까지의 종단자료로 부부의 이혼 선행요인을 추적했다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "원 HRS 코호트의 출생연도 범위는?",
-      "accepted_answers": ["1931–1941년", "1931-1941년"],
-      "answer_type": "number",
-      "explanation": "HRS는 1992년에 1931–1941년생 코호트의 면접으로 시작했다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "War Baby 코호트의 출생연도 범위는?",
-      "accepted_answers": ["1942–1947년", "1942-1947년"],
-      "answer_type": "number",
-      "explanation": "1998년에 합류한 War Baby 보충표본은 1942–1947년생으로 구성됐다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "이성 부부 표본 정의 때문에 제외한 동성부부 수는?",
-      "accepted_answers": ["11쌍", "11"],
-      "answer_type": "number",
-      "explanation": "출판 원문은 동성부부 11쌍을 제외했다고 보고한다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "한 조사차수에서만 관찰되어 제외된 부부 수는?",
-      "accepted_answers": ["189쌍", "189"],
-      "answer_type": "number",
-      "explanation": "종단분석에 필요한 반복 관찰이 없는 부부 189쌍을 제외했다고 원문은 보고한다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "기초선 표본가중치가 0이라 제외된 부부 수는?",
-      "accepted_answers": ["35쌍", "35"],
-      "answer_type": "number",
-      "explanation": "원문은 기초선 가중치가 0인 부부 35쌍을 제외범주로 열거한다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "Table 1에서 이혼집단의 비가중 부부 수는?",
-      "accepted_answers": ["296쌍", "296"],
-      "answer_type": "number",
-      "explanation": "기초선 특성을 비교한 Table 1에서 이혼한 부부의 비가중 분모는 296쌍이다.",
-      "evidence_segment_id": "BIVARIATE-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "Table 1에서 결혼유지집단의 비가중 부부 수는?",
-      "accepted_answers": ["5,035쌍", "5035쌍"],
-      "answer_type": "number",
-      "explanation": "이혼하지 않고 결혼을 유지했거나 중도절단된 비교집단은 5,035쌍이다.",
-      "evidence_segment_id": "BIVARIATE-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "원 HRS 코호트의 기초선 응답률은?",
-      "accepted_answers": ["82%", "82퍼센트"],
-      "answer_type": "number",
-      "explanation": "원 HRS 코호트의 기초선 면접 응답률은 82%로 보고됐다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "War Baby 코호트의 기초선 응답률은?",
-      "accepted_answers": ["70%", "70퍼센트"],
-      "answer_type": "number",
-      "explanation": "War Baby 보충표본의 기초선 면접 응답률은 70%였다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "후속 재면접의 보고된 응답률 수준은?",
-      "accepted_answers": ["90% 초과", "90% 이상"],
-      "answer_type": "number",
-      "explanation": "원 HRS와 War Baby 코호트의 재면접 응답률은 90%를 넘었다.",
-      "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "핵심 노년기 전환변수의 결측률 범위는?",
-      "accepted_answers": ["1–3%", "1-3%"],
-      "answer_type": "number",
-      "explanation": "빈 둥지·은퇴·건강 같은 핵심 독립변수의 결측은 사례의 1–3%로 적었다.",
-      "evidence_segment_id": "ANALYTIC-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "Figure 1에서 초혼 곡선이 도달한 누적확률은 대략?",
-      "accepted_answers": ["약 .032", ".032", "0.032"],
-      "answer_type": "number",
-      "explanation": "접근성 설명에 따르면 초혼의 누적 황혼이혼확률 곡선은 약 .032에 이른다.",
-      "evidence_segment_id": "RESULT-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "이혼집단의 기초선 주택 소유 비율은?",
-      "accepted_answers": ["83.13%", "83.13퍼센트"],
-      "answer_type": "number",
-      "explanation": "Table 1 본문에서 이혼한 부부의 주택 소유 비율은 83.13%로 보고됐다.",
-      "evidence_segment_id": "BIVARIATE-001",
-      "source": "Lin et al. (2018)"
-    },
-    {
-      "question": "연쇄방정식으로 결측값을 채운 절차의 약어는?",
-      "accepted_answers": ["MICE"],
+      "question": "Which nationally representative U.S. panel survey supplied the 1998–2012 data?",
+      "accepted_answers": [
+        "HRS",
+        "Health and Retirement Study"
+      ],
       "answer_type": "term",
-      "explanation": "다른 공변량의 함수로 결측값을 대치하는 연쇄방정식 다중대치 절차다.",
+      "explanation": "The authors used the original HRS and War Baby cohorts, with data on respondents and spouses. These cohorts were born in 1931–1941 and 1942–1947; other cohorts were excluded for reasons of age coverage or missing marital-quality measures.",
+      "evidence_segment_id": "METHOD-001",
+      "source": "Data source"
+    },
+    {
+      "question": "What was the substantive unit of analysis after the authors combined the spouses' records?",
+      "accepted_answers": [
+        "couple",
+        "couples",
+        "married couple",
+        "married couples",
+        "the couple"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors converted individual records to couple-level data. They report a final sample of 5,331 couples and 29,286 couple-interview-year observations; those observations are not 29,286 distinct couples. The stated exclusion counts do not clearly reconcile with the final total, so this item does not ask you to reconstruct it.",
+      "evidence_segment_id": "METHOD-001",
+      "source": "Analytic unit"
+    },
+    {
+      "question": "What design term describes measuring potential antecedents before observing whether a later divorce occurs?",
+      "accepted_answers": [
+        "prospective",
+        "prospective design",
+        "prospective longitudinal design",
+        "prospective longitudinal study",
+        "prospective study"
+      ],
+      "answer_type": "term",
+      "explanation": "This study followed couples over time to examine antecedents of gray divorce. Temporal ordering improves on a single cross-section, but the study remains observational.",
+      "evidence_segment_id": "ABSTRACT-001",
+      "source": "Research design"
+    },
+    {
+      "question": "Which measure of a couple's financial holdings was associated with lower divorce odds in the adjusted model?",
+      "accepted_answers": [
+        "wealth",
+        "household wealth",
+        "assets",
+        "household assets",
+        "couple assets"
+      ],
+      "answer_type": "term",
+      "explanation": "Couples with over $250,000 had roughly 38% lower divorce odds than those with $0–$50,000. This adjusted association does not establish that adding money would itself prevent divorce.",
+      "evidence_segment_id": "MULTIVARIATE-001",
+      "source": "Economic resources"
+    },
+    {
+      "question": "What potential bias arises if couples who divorce are more likely than other couples to disappear from follow-up interviews?",
+      "accepted_answers": [
+        "selective attrition",
+        "sample attrition",
+        "attrition",
+        "attrition bias",
+        "differential attrition"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors acknowledge that differential loss to follow-up could bias their estimates. Efforts to recontact respondents and include later returning participants do not guarantee its elimination.",
+      "evidence_segment_id": "LIMIT-001",
+      "source": "Study limitations"
+    },
+    {
+      "question": "What statistical adjustment addressed unequal selection probabilities, nonresponse, and loss to follow-up?",
+      "accepted_answers": [
+        "sampling weights",
+        "sample weights",
+        "baseline weights",
+        "survey weights",
+        "weighting"
+      ],
+      "answer_type": "term",
+      "explanation": "The study used sampling weights, including baseline weights for bivariate and multivariate estimates. The original HRS and War Baby baseline response rates were 82% and 70%, with re-interview rates above 90%.",
+      "evidence_segment_id": "METHOD-001",
+      "source": "Sample adjustment"
+    },
+    {
+      "question": "What term does the study use for divorce occurring when at least one spouse is aged 50 or older?",
+      "accepted_answers": [
+        "gray divorce",
+        "grey divorce"
+      ],
+      "answer_type": "term",
+      "explanation": "The study examines later-life marital dissolution from a life-course perspective. Its main question is whether empty nest, retirement, and chronic illness predict this event.",
+      "evidence_segment_id": "ABSTRACT-001",
+      "source": "Central concept"
+    },
+    {
+      "question": "Which later-life transition was recorded when a couple's children moved out of the home?",
+      "accepted_answers": [
+        "empty nest",
+        "empty-nest transition",
+        "onset of empty nest",
+        "empty nest onset"
+      ],
+      "answer_type": "term",
+      "explanation": "After the transition was observed, the indicator remained coded 1 for the rest of observation. The measure therefore tracks an onset retained in the coding, rather than continually reassessing every later household change.",
+      "evidence_segment_id": "MEASURE-001",
+      "source": "Life-transition measurement"
+    },
+    {
+      "question": "By how many years were the life-transition indicators lagged to place them before the divorce outcome?",
+      "accepted_answers": [
+        "2",
+        "2 years",
+        "two",
+        "two years"
+      ],
+      "answer_type": "number",
+      "explanation": "One interview wave corresponds to two years. Lagging establishes the measured temporal order but does not remove all confounding or prove a causal effect.",
+      "evidence_segment_id": "MEASURE-001",
+      "source": "Temporal order"
+    },
+    {
+      "question": "How were the marital-quality scores classified over time, given that they were collected only at the initial interview?",
+      "accepted_answers": [
+        "time-invariant",
+        "time invariant",
+        "time-invariant covariates",
+        "time invariant covariates",
+        "time-invariant variables"
+      ],
+      "answer_type": "term",
+      "explanation": "The scores were held fixed even though relationships may change. Marital quality concerned time spent together and enjoyment of that time; the authors identify the absence of repeated quality measures as a limitation.",
+      "evidence_segment_id": "MEASURE-002",
+      "source": "Marital-quality measurement"
+    },
+    {
+      "question": "Which event-history approach estimated divorce risk when marriage timing was measured in intervals?",
+      "accepted_answers": [
+        "discrete-time event history",
+        "discrete time event history",
+        "discrete-time event history model",
+        "discrete-time event history models",
+        "discrete-time logistic regression"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors used logistic regression for discrete-time event history models. The hazard is the probability of divorce in an interval conditional on no earlier divorce, not the cumulative probability across all earlier intervals.",
       "evidence_segment_id": "ANALYTIC-001",
-      "source": "Lin et al. (2018)"
+      "source": "Event-history analysis"
+    },
+    {
+      "question": "What term describes observation ending before a couple experiences the event, while the couple could otherwise remain at risk?",
+      "accepted_answers": [
+        "censoring",
+        "right censoring",
+        "right-censoring"
+      ],
+      "answer_type": "term",
+      "explanation": "Event-history models accommodate incomplete event times and time-varying covariates. Observation could end at a spouse's death, attrition, or the 2012 study endpoint; divorce itself is the observed event.",
+      "evidence_segment_id": "ANALYTIC-001",
+      "source": "Incomplete event observation"
+    },
+    {
+      "question": "Which marriage-order group retained a higher cumulative probability of gray divorce even after very long marital durations?",
+      "accepted_answers": [
+        "remarriages",
+        "remarried couples",
+        "remarriage",
+        "couples in remarriages"
+      ],
+      "answer_type": "term",
+      "explanation": "Among marriages lasting 40 years or more, the figure showed gray divorce nearly three times as high for remarried as first-married couples. This cumulative pattern should not be confused with a duration-specific hazard or with the adjusted remarriage coefficient.",
+      "evidence_segment_id": "RESULT-001",
+      "source": "Cumulative results"
+    },
+    {
+      "question": "After marital biography and sociodemographic controls were added, how was the wife's retirement association classified statistically?",
+      "accepted_answers": [
+        "not significant",
+        "not statistically significant",
+        "nonsignificant",
+        "non-significant",
+        "statistically nonsignificant"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "Model 1 associated the wife's retirement with about 43% lower odds. In Model 2, that association was no longer statistically significant. This does not prove an effect is exactly zero or that retirement can never matter for an individual couple.",
+      "evidence_segment_id": "MULTIVARIATE-001",
+      "source": "Comparing adjusted models"
+    },
+    {
+      "question": "Which abbreviated imputation procedure filled in missing values through a sequence of conditional models for variables?",
+      "accepted_answers": [
+        "MICE",
+        "multivariate imputation using chained equations",
+        "multiple imputation by chained equations",
+        "multiple imputation using chained equations"
+      ],
+      "answer_type": "term",
+      "explanation": "The study based its results on five imputed replicates. Core transition measures had 1%–3% missingness; imputation uses other covariates and depends on assumptions rather than recovering the unknown values with certainty.",
+      "evidence_segment_id": "ANALYTIC-001",
+      "source": "Missing-data method"
     }
-  ]
+  ],
+  "language": "en"
 }

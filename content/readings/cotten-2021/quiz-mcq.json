@@ -1,217 +1,218 @@
 {
-  "title": "Cotten (2021) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 가장 정확한 선택지를 고르고 설명에서 개념의 단계, 근거 수준과 사회기술적 조건을 확인하세요.",
+  "title": "Cotten (2021): Multiple Choice",
+  "instructions": "Choose the answer that best reflects the chapter's concepts, study designs, and qualifications. Read statistics and policy descriptions in their original historical context.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "이 장에서 정보통신기술의 정의로 가장 정확한 것은?",
+      "prompt": "How does the chapter define information and communication technologies (ICTs)?",
       "options": [
-        "최근 개발되어 보급 초기 단계에 있지만 사용과 영향은 아직 충분히 알려지지 않은 신흥 제품",
-        "집 안의 센서가 무선망으로 연결된 자동화 장치",
-        "정보를 수집·교환하고 타인과 소통하는 데 쓰는 기기와 응용프로그램",
-        "사람의 모든 과업을 대신 수행하는 물리적 도구"
+        "Recently developed products in early distribution whose uses and effects remain little understood",
+        "Automated household sensors connected exclusively to a single wireless network",
+        "Devices and applications for gathering and exchanging information and communicating",
+        "Physical tools that perform every human task without any user involvement"
       ],
-      "answer": "정보를 수집·교환하고 타인과 소통하는 데 쓰는 기기와 응용프로그램",
-      "explanation": "휴대전화, 컴퓨터, 인터넷, 태블릿, 소셜 네트워크 사이트와 앱이 이 범주에 포함된다.",
+      "answer": "Devices and applications for gathering and exchanging information and communicating",
+      "explanation": "Examples include phones, computers, the Internet, tablets, social network sites, and apps. The chapter distinguishes ICTs from the broader concept of technology and the category of emerging technologies.",
       "evidence_segment_id": "DEFINE-001",
-      "source": "정보통신기술의 정의",
-      "difficulty": "기본"
+      "source": "Defining ICTs",
+      "difficulty": "Core"
     },
     {
-      "prompt": "나이와 코호트의 관계를 가장 정확히 설명한 것은?",
+      "prompt": "Which statement correctly distinguishes age from cohort in the chapter's life-course account?",
       "options": [
-        "단면자료는 두 효과를 완전히 분리한다",
-        "단면자료만으로 나이효과와 코호트효과를 떼어낼 수 없다",
-        "코호트는 조사 시점의 현재 연령으로만 구성된다",
-        "나이와 코호트는 같은 분석개념이다"
+        "One cross-sectional survey completely separates age effects from cohort effects",
+        "Cross-sectional data alone cannot separate age from cohort effects",
+        "A cohort is defined only by respondents' current ages on the interview date",
+        "Age and cohort are interchangeable concepts with the same analytic meaning"
       ],
-      "answer": "단면자료만으로 나이효과와 코호트효과를 떼어낼 수 없다",
-      "explanation": "나이는 출생 후 경과시간이고 코호트는 비슷한 시기에 주요 사건을 경험한 집단이다.",
+      "answer": "Cross-sectional data alone cannot separate age from cohort effects",
+      "explanation": "Age measures time since birth; cohorts share exposure to events during particular historical periods. Technological timing, life stage, and linked lives can shape use.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "생애과정의 나이·코호트 구분",
-      "difficulty": "응용"
+      "source": "Age, cohort, and historical exposure",
+      "difficulty": "Application"
     },
     {
-      "prompt": "접근, 역량, 사용과 편익의 관계로 맞는 것은?",
+      "prompt": "How does the chapter connect access to the benefits of technology?",
       "options": [
-        "편익에는 접속 뒤의 사용 역량과 구체적 사용 방식도 필요하다",
-        "인터넷에 접속하면 과거 경험과 관계없이 모든 사용자가 같은 편익을 얻는다",
-        "기기를 보유하면 숙련도와 사용 목적에 관계없이 안녕이 자동 향상된다",
-        "사용 빈도 하나만 알면 구체적 기능이나 목적과 관계없이 모든 편익을 정확히 결정할 수 있다"
+        "Access matters, but skills and the ways technology is used also matter",
+        "Internet access ensures identical benefits regardless of previous experience or skills",
+        "Owning a device automatically improves well-being regardless of what a person does with it",
+        "A single measure of frequency precisely determines benefits without information on functions or purposes"
       ],
-      "answer": "편익에는 접속 뒤의 사용 역량과 구체적 사용 방식도 필요하다",
-      "explanation": "저자는 온라인 상태가 중요하지만 충분하지 않고 기술을 사용할 역량도 중요하다고 설명한다.",
+      "answer": "Access matters, but skills and the ways technology is used also matter",
+      "explanation": "Being online is important but insufficient. The chapter emphasizes skills and previous experience when considering whether people can obtain useful resources through ICTs.",
       "evidence_segment_id": "VARIATION-001",
-      "source": "접근 이후의 편익 조건",
-      "difficulty": "기본"
+      "source": "Conditions beyond access",
+      "difficulty": "Core"
     },
     {
-      "prompt": "토론토 노년층 41명의 사용자 유형 연구 결과로 맞는 것은?",
+      "prompt": "Which finding describes the Toronto interview study of 41 older adults?",
       "options": [
-        "Non-Users가 절반이었다",
-        "Go-Getters는 기술이 낮고 온라인 활동을 피했다",
-        "Savvy Users는 7%였다",
-        "Basic Users보다 Savvy Users가 더 많이 나타났다"
+        "Non-Users made up half of the interview sample",
+        "Go-Getters had low skills and avoided online activities",
+        "Savvy Users made up 7% of the interview sample",
+        "Savvy Users outnumbered Basic Users in the sample"
       ],
-      "answer": "Savvy Users는 7%였다",
-      "explanation": "능숙한 사용자는 가장 작은 집단이었고, 기본 사용자가 27%로 가장 큰 집단이었다.",
+      "answer": "Savvy Users made up 7% of the interview sample",
+      "explanation": "Savvy Users were the smallest subtype at 7%, while Basic Users were the largest at 27%. These percentages describe this qualitative interview sample, not population prevalence.",
       "evidence_segment_id": "VARIATION-002",
-      "source": "정보통신기술 사용자 유형",
-      "difficulty": "기본"
+      "source": "Heterogeneity of ICT use",
+      "difficulty": "Core"
     },
     {
-      "prompt": "누적불이익 관점에서 디지털 격차를 해석한 것으로 맞는 것은?",
+      "prompt": "What does a cumulative-disadvantage perspective add to the digital-divide account?",
       "options": [
-        "이른 접근이 교육·구직·기술과 관계 자원의 후속 이점을 낳아 격차를 키울 수 있다",
-        "현재 인터넷에 접속할 수만 있다면 과거의 기술 경험과 숙련도 차이는 더 이상 어떤 편익에도 영향을 주지 않는다",
-        "디지털 격차는 고령기에 갑자기 생기며 이전 생애의 자원과 무관하다",
-        "초기 접근 차이는 시간이 지나면 별도 개입 없이 자연스럽게 사라진다"
+        "Early access can generate later advantages in skills, opportunities, and social resources",
+        "Current access removes the influence of all earlier differences in experience and proficiency",
+        "Digital inequality first appears in old age and has no connection to earlier resources",
+        "Early access gaps inevitably disappear over time without any change in circumstances"
       ],
-      "answer": "이른 접근이 교육·구직·기술과 관계 자원의 후속 이점을 낳아 격차를 키울 수 있다",
-      "explanation": "초기의 작은 차이가 후속 자원과 편익의 차이를 만들어 생애과정에서 확대될 수 있다.",
+      "answer": "Early access can generate later advantages in skills, opportunities, and social resources",
+      "explanation": "Small initial differences can accumulate through education, employment opportunities, advanced skills, information access, and social connections. Equal access at one moment does not erase earlier disparities.",
       "evidence_segment_id": "DIVIDE-001",
-      "source": "누적불이익의 디지털 경로",
-      "difficulty": "응용"
+      "source": "Accumulation across the life course",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Pew의 노년층 기술 통계에 관한 평가로 가장 정확한 것은?",
+      "prompt": "What limitation does the chapter identify in the Pew statistics it reviews?",
       "options": [
-        "시설 거주자와 설문 수행이 어려운 사람까지 모두 포함해 사용률을 낮게 추정한다",
-        "취약한 노년층이 빠져 실제 기술 사용률보다 높게 추정될 가능성이 있다",
-        "기술 문항은 적지만 시설 거주자와 지역사회 거주자를 같은 비율로 포함해 두 집단을 대표적으로 비교한다",
-        "건강과 사회적 지원의 종단지표를 기술의 유형·기능·시점·동기별로 모두 풍부하게 측정한다"
+        "Full inclusion of care-facility residents makes estimated technology use artificially low",
+        "Exclusion of vulnerable older adults may lead to overestimates of ICT use",
+        "Equal sampling of institutional and community residents guarantees representative comparisons",
+        "All surveys include detailed longitudinal measures of health, support, and every technology function"
       ],
-      "answer": "취약한 노년층이 빠져 실제 기술 사용률보다 높게 추정될 가능성이 있다",
-      "explanation": "전화나 인터넷 설문이 가능한 지역사회 거주자 중심이라 건강이 나쁘거나 고립된 사람과 시설 거주자가 누락될 수 있다.",
+      "answer": "Exclusion of vulnerable older adults may lead to overestimates of ICT use",
+      "explanation": "Community samples able to complete telephone or Internet surveys may underrepresent people with poor health or isolation and exclude care-facility residents. The chapter also notes gaps in measures needed to explain outcomes.",
       "evidence_segment_id": "DATA-001",
-      "source": "기술 통계의 표본 한계",
-      "difficulty": "응용"
+      "source": "Coverage and measurement limitations",
+      "difficulty": "Application"
     },
     {
-      "prompt": "사회적 선택 관점에 해당하는 설명은?",
+      "prompt": "Which explanation illustrates social selection?",
       "options": [
-        "기술이 사회적 유대를 늘려 외로움을 낮추고 안녕을 향상시킨다",
-        "기술이 대면접촉을 대체해 고립과 심리적 고통을 직접 높인다",
-        "원래 외롭거나 관계가 약한 사람이 인터넷과 다른 정보통신기술을 더 자주 찾는다",
-        "정보 접근이 중요한 결정과 사회참여를 돕는다"
+        "Technology strengthens social ties and consequently reduces loneliness",
+        "Technology displaces face-to-face contact and consequently increases distress",
+        "Pre-existing loneliness or strained relationships leads some people to use ICTs more",
+        "Online information improves decisions and subsequently increases social participation"
       ],
-      "answer": "원래 외롭거나 관계가 약한 사람이 인터넷과 다른 정보통신기술을 더 자주 찾는다",
-      "explanation": "기존 개인특성과 관계상태가 기술 사용과 결과의 상관을 만들 수 있다는 설명이다.",
+      "answer": "Pre-existing loneliness or strained relationships leads some people to use ICTs more",
+      "explanation": "Selection explains a use-outcome association through characteristics or circumstances that precede use. Social-causation accounts instead propose consequences of using ICTs, which could be beneficial or harmful.",
       "evidence_segment_id": "IMPACTS-001",
-      "source": "사회적 선택",
-      "difficulty": "응용"
+      "source": "Selection versus causation",
+      "difficulty": "Application"
     },
     {
-      "prompt": "뉴질랜드 세 시점 연구에서 사회적 정보통신기술 사용과 안녕을 이은 경로는?",
+      "prompt": "Which pathways linked social ICT use to well-being in the three-wave New Zealand study?",
       "options": [
-        "온라인 건강정보가 의료진 방문을 완전히 대체하는 경로",
-        "기기 수가 기능제한을 직접 제거하는 신체훈련 경로",
-        "소득 증가와 기기 보유",
-        "외로움 감소와 사회참여 증가"
+        "Online health information entirely replacing clinical care",
+        "Device ownership directly eliminating physical limitations",
+        "Rising income and a larger collection of devices",
+        "Reduced loneliness and increased social engagement"
       ],
-      "answer": "외로움 감소와 사회참여 증가",
-      "explanation": "친구·가족과 연결하는 사회적 사용은 두 경로를 통해 안녕과 관련되었다.",
+      "answer": "Reduced loneliness and increased social engagement",
+      "explanation": "Social use to connect with friends and family was related to well-being through both pathways. Informational and instrumental uses were linked through wider engagement, rather than reduced loneliness.",
       "evidence_segment_id": "PSYCH-001",
-      "source": "사회적 사용의 종단 경로",
-      "difficulty": "기본"
+      "source": "Different uses and pathways",
+      "difficulty": "Core"
     },
     {
-      "prompt": "80세 이상 대상 신체건강 연구 결과로 맞는 것은?",
+      "prompt": "Which statement matches the study of physical health among adults aged 80 and older?",
       "options": [
-        "사회적 목적의 사용만 두 신체건강 결과와 일관되게 관련되었다",
-        "기기·앱을 더 많이 쓰는 사람은 더 나은 주관적 건강과 적은 기능제한을 보고했지만 연구는 단면이었다",
-        "온라인 건강정보 사용은 모든 의료전문가 이용을 완전히 대체했다",
-        "무작위 실험으로 기술 사용의 신체효과가 확정되었다"
+        "Only social-purpose use was consistently related to both physical-health outcomes",
+        "More devices and apps correlated with better health, but the study was cross-sectional",
+        "Online health information completely replaced contact with healthcare professionals",
+        "Random assignment conclusively established the physical-health effects of ICT use"
       ],
-      "answer": "기기·앱을 더 많이 쓰는 사람은 더 나은 주관적 건강과 적은 기능제한을 보고했지만 연구는 단면이었다",
-      "explanation": "사회적 목적 사용은 두 결과와 관련되지 않았고 선택효과와 인과효과를 구분할 추가 연구가 필요하다.",
+      "answer": "More devices and apps correlated with better health, but the study was cross-sectional",
+      "explanation": "Greater use was associated with better self-rated health and fewer functional limitations. Social-purpose use was unrelated to those outcomes, whereas learning information and skills was relevant. The design cannot settle selection versus causation.",
       "evidence_segment_id": "PHYSICAL-001",
-      "source": "신체건강 근거의 범위",
-      "difficulty": "심화"
+      "source": "Physical-health findings and design",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "퍼빙과 나쁜 관계의 연관성을 가장 안전하게 해석한 것은?",
+      "prompt": "How does the chapter qualify the association between phubbing and poor relationships?",
       "options": [
-        "퍼빙이 배제감을 줄 수도 있고 낮은 관계의 질이 퍼빙을 늘릴 수도 있다",
-        "퍼빙이 모든 가족관계 악화의 유일한 직접 원인임을 단면자료가 이미 확정했다",
-        "노년층은 퍼빙에 영향을 받지 않으므로 관계의 질과 무관하다",
-        "퍼빙은 온라인 사기를 경험한 뒤에만 나타난다"
+        "Phubbing may foster exclusion, while poor relationships may also encourage phubbing",
+        "Cross-sectional findings establish phubbing as the sole cause of every family conflict",
+        "Older adults cannot be affected by others' phone use during shared interactions",
+        "Phubbing can occur only after someone has experienced an online financial scam"
       ],
-      "answer": "퍼빙이 배제감을 줄 수도 있고 낮은 관계의 질이 퍼빙을 늘릴 수도 있다",
-      "explanation": "저자는 내생성 가능성을 명시하며 방향을 밝히기 위한 종단연구를 요구한다.",
+      "answer": "Phubbing may foster exclusion, while poor relationships may also encourage phubbing",
+      "explanation": "The author identifies possible endogeneity and calls for longitudinal research. Feeling ignored may follow phone-focused interaction, but prior relationship quality may also influence that behavior.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "퍼빙의 인과방향",
-      "difficulty": "심화"
+      "source": "Direction of the phubbing association",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "기술 유지관리에 관한 장의 설명으로 맞는 것은?",
+      "prompt": "What maintenance-related source of digital inequality does the chapter discuss?",
       "options": [
-        "최초 기기 보급 뒤에는 소득과 사회적 지원이 지속사용에 영향을 주지 않는다",
-        "공공정책이 저소득 노년층의 모든 수리와 업데이트를 이미 보장하고 있다",
-        "연결비·수리·갱신을 감당할 자원 차이가 새로운 격차가 될 수 있다",
-        "가족지원은 기술문제 해결과 관계경험 모두에 무관하다"
+        "Income and social support stop affecting continued use once a device is acquired",
+        "Existing public policy guarantees every repair and update for all older adults",
+        "Resources for connections, repairs, and updates can shape continued access",
+        "Family assistance has no relationship to technical problem-solving or social connection"
       ],
-      "answer": "연결비·수리·갱신을 감당할 자원 차이가 새로운 격차가 될 수 있다",
-      "explanation": "저소득층은 연결과 수리를 지속할 자원이 부족할 수 있고 노년층은 사회적 유대의 도움에 의존한다.",
+      "answer": "Resources for connections, repairs, and updates can shape continued access",
+      "explanation": "Ongoing financial and social resources matter. Older adults may depend on others for technical help, and difficulty can sometimes prompt supportive contact. These are conditions of sustained use beyond initial access.",
       "evidence_segment_id": "UNANTICIPATED-001",
-      "source": "기술 유지관리 격차",
-      "difficulty": "응용"
+      "source": "Maintaining technology use",
+      "difficulty": "Application"
     },
     {
-      "prompt": "사물인터넷이 지역사회 계속거주를 지원하려면 필요한 조건은?",
+      "prompt": "Which conditions matter for IoT technologies to support aging in place?",
       "options": [
-        "모든 생활자료를 동의 없이 수집하는 단일 감시체계",
-        "센서 기능만 늘리고 주택과 통신망은 그대로 두는 설계",
-        "스마트폰 앱을 설치하면 다른 지원은 없애는 방식",
-        "개조 가능한 주택·고속망·유지 역량"
+        "Collecting all household data without awareness or consent",
+        "Adding sensors while ignoring housing and connectivity",
+        "Installing one app and withdrawing all other support",
+        "Adaptable housing, broadband, and maintenance support"
       ],
-      "answer": "개조 가능한 주택·고속망·유지 역량",
-      "explanation": "주택의 접근성·비용·유지상태와 장애 적합성, 고속 인터넷과 기술지원이 함께 필요하다.",
+      "answer": "Adaptable housing, broadband, and maintenance support",
+      "explanation": "The chapter connects smart-home use to housing accessibility, affordability, suitability for disabilities, Internet service, and users' ability to maintain the systems. Privacy and security also remain concerns.",
       "evidence_segment_id": "IOT-001",
-      "source": "사물인터넷과 주거 조건",
-      "difficulty": "응용"
+      "source": "IoT and the conditions of independent living",
+      "difficulty": "Application"
     },
     {
-      "prompt": "원격보건에 관해 장이 지지하는 설명은?",
+      "prompt": "Which account reflects the telehealth evidence and barriers described in the 2021 chapter?",
       "options": [
-        "모든 진료영역에서 대면의료보다 항상 우월하고, 기술지원이나 사용자 훈련 없이도 모든 집단에서 동일한 효과를 낸다",
-        "만성질환 모니터링·상담과 행동건강 심리치료에는 효과 근거가 있지만 가족지원과 주별 정책 장벽이 남는다",
-        "주별 접근요건과 보상규칙이 같아서 제도 차이는 이용에 영향을 주지 않는다",
-        "저숙련 노년층일수록 혼자서 원격의료를 더 성공적으로 이용한다"
+        "Telehealth outperforms in-person care for every service and works equally well without user support",
+        "Evidence supports three uses, while technical assistance and state policy differences remain barriers",
+        "Uniform access and reimbursement rules across all states eliminate institutional barriers",
+        "Older adults with fewer digital skills obtain better results when they use telehealth entirely alone"
       ],
-      "answer": "만성질환 모니터링·상담과 행동건강 심리치료에는 효과 근거가 있지만 가족지원과 주별 정책 장벽이 남는다",
-      "explanation": "세 용도의 효과가 보고됐지만 기술지원 부담이 남고, 주별 이용 요건과 비용상환 정책, 상환 대상 서비스와 제공자 유형도 다르다.",
+      "answer": "Evidence supports three uses, while technical assistance and state policy differences remain barriers",
+      "explanation": "The cited evidence concerns chronic-condition monitoring, counseling and communication for chronic conditions, and behavioral-health psychotherapy. In the chapter's historical account, support burdens and variation in eligibility, reimbursement, services, and provider types remain relevant.",
       "evidence_segment_id": "TELEHEALTH-001",
-      "source": "원격보건의 근거와 장벽",
-      "difficulty": "응용"
+      "source": "Telehealth in the chapter's historical context",
+      "difficulty": "Application"
     },
     {
-      "prompt": "신흥기술이 기존 격차를 확대할 수 있는 이유로 맞는 것은?",
+      "prompt": "Why might emerging technologies reproduce or widen existing inequalities?",
       "options": [
-        "출시된 제품이 비싸고 보험 보장이 드물어 이용 가능성이 자원에 따라 달라질 수 있기 때문에",
-        "시장에 소개된 모든 신흥기술 제품이 공공보험으로 완전히 보장되어 저소득층에게 먼저 보급되기 때문에",
-        "제품의 사업계획과 시장포화는 보급 여부와 관련이 없기 때문에",
-        "신흥기술은 이미 대중 보급을 마친 제품만을 뜻하므로 출시 뒤에는 가격과 보험 보장의 차이가 모두 사라지기 때문에"
+        "High prices and limited insurance coverage can make access depend on resources",
+        "Every marketed product is fully insured and reaches low-income users first",
+        "Business planning and market saturation have no influence on distribution",
+        "Emerging products are already universally available, so price differences no longer matter"
       ],
-      "answer": "출시된 제품이 비싸고 보험 보장이 드물어 이용 가능성이 자원에 따라 달라질 수 있기 때문에",
-      "explanation": "많은 제품은 시장에 이르지 못하고, 출시 제품도 비싸고 보험 보장이 드물어 불평등을 심화할 수 있다.",
+      "answer": "High prices and limited insurance coverage can make access depend on resources",
+      "explanation": "The chapter notes that many products never reach mass distribution and those that do are often costly and not insured. These market conditions create a risk of unequal access; they do not establish identical outcomes for all products.",
       "evidence_segment_id": "EMERGING-001",
-      "source": "신흥기술의 시장·비용 조건",
-      "difficulty": "응용"
+      "source": "Markets, cost, and unequal access",
+      "difficulty": "Application"
     },
     {
-      "prompt": "저자가 제안한 향후 기술 사용 연구로 가장 적절한 것은?",
+      "prompt": "Which research approach best matches the author's recommendations?",
       "options": [
-        "한 시점의 인터넷 사용 여부만 묻고 모든 기기와 기능을 하나의 노출로 합친다",
-        "자기보고를 없애고 제조사가 제공하지 않는 기기자료만을 유일한 근거로 삼는다",
-        "가상 관계와 대면 관계를 같다고 전제한다",
-        "자기보고와 기기 사용자료를 함께 결합해 기능·시점·동기, 시간에 따른 사용 변화와 건강결과를 종단 추적한다"
+        "Measure only Internet access once and combine every device and function into one exposure",
+        "Replace all self-report with device records, assuming complete manufacturer access and no privacy constraints",
+        "Treat virtual ties as equivalent to face-to-face relationships without studying users' experiences",
+        "Combine self-report and device data to follow specific uses, motivations, changes, and health over time"
       ],
-      "answer": "자기보고와 기기 사용자료를 함께 결합해 기능·시점·동기, 시간에 따른 사용 변화와 건강결과를 종단 추적한다",
-      "explanation": "저자는 다중기기 사용과 회상오차를 고려해 구체적 기능·동기·변화와 건강결과를 장기간 측정할 것을 요구한다.",
+      "answer": "Combine self-report and device data to follow specific uses, motivations, changes, and health over time",
+      "explanation": "The chapter calls for longitudinal, differentiated measures of multimodal use and its outcomes. Device traces can complement self-report, while data access, privacy, recall, and installation difficulties require attention.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "향후 자료와 연구설계",
-      "difficulty": "심화"
+      "source": "Future measurement and study design",
+      "difficulty": "Advanced"
     }
-  ]
+  ],
+  "language": "en"
 }

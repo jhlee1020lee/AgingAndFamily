@@ -1,127 +1,194 @@
 {
-  "title": "Gruenewald et al. (2016) 단답형 퀴즈",
-  "instructions": "질문마다 핵심 용어·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "title": "Gruenewald et al. (2016): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Distinguish randomized assignment, actual participation, self-perceived outcomes, and assumption-dependent complier analyses.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "타인, 대개 젊은 사람을 돌보고 다음 세대의 발전에 기여하려는 관심과 행동은?",
-      "accepted_answers": ["생성감", "generativity"],
+      "question": "What concept describes care, concern, and contributions directed toward others, typically members of younger generations?",
+      "accepted_answers": [
+        "generativity"
+      ],
       "answer_type": "term",
-      "explanation": "서론은 다음 세대의 발전을 돕는 헌신을 이 개념의 중심으로 놓는다.",
+      "explanation": "The concept includes parenting, mentoring, civic engagement, and creating resources for the next generation. The trial examined perceived desire and achievement in this domain.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Contribution across generations"
     },
     {
-      "question": "노인의 시간·에너지·지혜를 초등학교의 필요와 연결한 프로그램의 이름은?",
-      "accepted_answers": ["Experience Corps", "EC"],
+      "question": "Which program connected older volunteers' time, energy, and experience with elementary schools' needs?",
+      "accepted_answers": [
+        "Experience Corps",
+        "EC",
+        "AARP Experience Corps"
+      ],
       "answer_type": "term",
-      "explanation": "이 프로그램은 아동의 학업·행동발달과 노인의 생성감 기회를 함께 겨냥한다.",
+      "explanation": "Volunteers assisted with academic and behavioral needs identified by schools. The paper studies the Baltimore trial, and its account of program expansion reflects its publication context.",
       "evidence_segment_id": "EC-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Intergenerational program"
     },
     {
-      "question": "노인의 기여 잠재력 증가를 사회적 역할과 제도가 따라가지 못한 상태는?",
-      "accepted_answers": ["구조적 지체", "structural lag"],
+      "question": "What concept describes a mismatch between older adults' capacity to contribute and the roles or institutions available to use that capacity?",
+      "accepted_answers": [
+        "structural lag"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 건강수명 증가에 비해 노인의 생성적 잠재력을 활용할 사회체계가 뒤처졌다고 설명한다.",
+      "explanation": "The authors argue that social opportunities have not kept pace with gains in healthy life expectancy and older adults' potential contributions. This frames a role for new forms of engagement.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Opportunity and social structure"
     },
     {
-      "question": "기여 활동을 하고자 하는 동기적 구성요소는?",
-      "accepted_answers": ["생성감 욕구", "generative desire"],
+      "question": "What motivational component refers to wanting to contribute meaningfully to other people and the next generation?",
+      "accepted_answers": [
+        "generative desire",
+        "desire to be generative"
+      ],
       "answer_type": "term",
-      "explanation": "이 구성요소는 활동을 촉진해 실제 기여를 성취했다고 느낄 기회를 만들 수 있다.",
+      "explanation": "The authors distinguish this motivation from perceiving that one is already making such contributions. They conceptualize the two components as related and potentially mutually reinforcing.",
       "evidence_segment_id": "ENHANCING-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Motivational outcome"
     },
     {
-      "question": "현재 타인의 삶에서 생성적 역할을 수행하고 있다는 자기지각은?",
-      "accepted_answers": ["생성감 성취", "생성감 성취 지각"],
+      "question": "What outcome refers to perceiving that one is currently making meaningful contributions in other people's lives?",
+      "accepted_answers": [
+        "generative achievement",
+        "perceived generative achievement",
+        "perceptions of generative achievement"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 이를 기여하고자 하는 욕구와 구별되지만 상호 강화되는 구성요소로 본다.",
+      "explanation": "This is a self-perceived outcome, distinct from motivation and from an independent assessment of benefits to children or society.",
       "evidence_segment_id": "ENHANCING-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Perceived accomplishment"
     },
     {
-      "question": "중재군과 대조군에 최종 무작위배정된 전체 인원은?",
-      "accepted_answers": ["702명"],
+      "question": "How many participants were randomized across the two trial arms?",
+      "accepted_answers": [
+        "702",
+        "702 participants",
+        "N = 702"
+      ],
       "answer_type": "number",
-      "explanation": "처음 선별한 2,675명 가운데 702명이 EC군 352명과 대조군 350명으로 배정됐다.",
+      "explanation": "The intervention arm contained 352 participants and the control arm 350. Assignment is distinct from receipt: 284 of those assigned to EC proceeded to receive the intervention.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Randomized sample"
     },
     {
-      "question": "EC군에 배정된 사람 가운데 실제 중재를 받은 인원은?",
-      "accepted_answers": ["284명"],
-      "answer_type": "number",
-      "explanation": "EC군 352명 중 68명은 직책에 진입하지 않아 284명이 실제 중재를 받았다.",
+      "question": "What trial feature is illustrated by some participants not taking up the school volunteer role after assignment to EC?",
+      "accepted_answers": [
+        "noncompliance",
+        "non-compliance",
+        "nonadherence",
+        "non-adherence",
+        "nonparticipation"
+      ],
+      "answer_type": "term",
+      "explanation": "Sixty-eight of the 352 intervention-assigned participants did not proceed to a placement for self-selection, program-selection, or other reasons. This distinction matters for comparing assignment-based and complier analyses.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Assignment versus receipt"
     },
     {
-      "question": "EC군이 적어도 한 학년도 동안 약정하도록 요청받은 주당 봉사 목표는?",
-      "accepted_answers": ["15시간", "주당 15시간"],
+      "question": "How many hours per week were EC-assigned participants asked to commit to volunteering, as a minimum target?",
+      "accepted_answers": [
+        "15",
+        "15 hours",
+        "15 hours per week",
+        "15 hr",
+        "15 hrs",
+        "fifteen hours"
+      ],
       "answer_type": "number",
-      "explanation": "참여자격에는 중재군 배정 시 적어도 한 학년도 동안 주당 15시간 이상 봉사 동의가 포함됐다.",
+      "explanation": "Eligibility required willingness to serve at least 15 hours weekly for one school year, with two years encouraged. This was a target; actual service exposure varied and the study did not establish 15 hours as an optimal dose.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Intended participation"
     },
     {
-      "question": "기초선 이후 두 생성감 결과를 측정한 세 추적시점은?",
-      "accepted_answers": ["4·12·24개월", "4, 12, 24개월"],
+      "question": "At which three follow-up months were both generativity outcomes assessed after baseline?",
+      "accepted_answers": [
+        "4, 12, 24 months",
+        "4, 12, and 24 months",
+        "4 12 24 months",
+        "4/12/24 months",
+        "4, 12, 24",
+        "4/12/24",
+        "4 and 12 and 24 months"
+      ],
       "answer_type": "number",
-      "explanation": "전체 평가는 더 자주 이루어졌지만 생성감 욕구와 성취는 기초선과 이 세 시점에 측정됐다.",
+      "explanation": "The outcomes were measured at 4, 12, and 24 months. Other trial assessments occurred at 8, 16, and 20 months, but those were not the generativity follow-ups used here.",
       "evidence_segment_id": "MATERIALS-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Outcome timing"
     },
     {
-      "question": "동기적 하위척도를 구성한 문항 수는?",
-      "accepted_answers": ["7개", "7문항"],
-      "answer_type": "number",
-      "explanation": "욕구 하위척도는 7문항이고 현재 성취 하위척도는 6문항이었다.",
-      "evidence_segment_id": "MEASURES-001",
-      "source": "Gruenewald et al. (2016)"
-    },
-    {
-      "question": "요인분석의 두 요인이 함께 설명한 분산 비율은?",
-      "accepted_answers": ["51.2%"],
-      "answer_type": "number",
-      "explanation": "고유값 1을 넘는 두 요인이 13개 문항의 분산–공분산 행렬 분산 중 51.2%를 설명했다.",
-      "evidence_segment_id": "MEASURES-001",
-      "source": "Gruenewald et al. (2016)"
-    },
-    {
-      "question": "두 하위요인 사이에 보고된 상관계수는?",
-      "accepted_answers": [".54", "0.54", "r = .54"],
-      "answer_type": "number",
-      "explanation": "욕구와 성취 요인은 서로 구별되면서도 r = .54로 중간 정도 상관됐다.",
-      "evidence_segment_id": "MEASURES-001",
-      "source": "Gruenewald et al. (2016)"
-    },
-    {
-      "question": "욕구와 성취 하위척도의 Cronbach’s alpha를 순서대로 쓰면?",
-      "accepted_answers": [".82, .90", "욕구 .82, 성취 .90"],
-      "answer_type": "number",
-      "explanation": "내적 신뢰도는 욕구 α = .82, 성취 α = .90으로 보고됐다.",
-      "evidence_segment_id": "MEASURES-001",
-      "source": "Gruenewald et al. (2016)"
-    },
-    {
-      "question": "실제 치료 노출과 무관하게 최초 무작위배정 집단 전체를 비교하는 분석은?",
-      "accepted_answers": ["치료의도 분석", "ITT"],
+      "question": "Which statistical procedure tested whether the 13 scale items reflected distinct desire and achievement dimensions?",
+      "accepted_answers": [
+        "factor analysis",
+        "maximum likelihood factor analysis"
+      ],
       "answer_type": "term",
-      "explanation": "이 접근은 중재군의 순응자와 비순응자를 모두 최초 배정에 따라 분석한다.",
-      "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
-      "source": "Gruenewald et al. (2016)"
+      "explanation": "The analysis supported two correlated factors. Seven items assessed desire and six assessed achievement; the two factors together explained 51.2% of the item variance-covariance matrix.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Scale structure"
     },
     {
-      "question": "중재군의 관찰 순응자와 대조군의 추정 잠재 순응자를 비교하는 방법은?",
-      "accepted_answers": ["순응자 평균 인과효과", "CACE"],
+      "question": "Which measurement property was assessed by the reported Cronbach's alpha values?",
+      "accepted_answers": [
+        "internal consistency",
+        "internal reliability",
+        "internal consistency reliability"
+      ],
       "answer_type": "term",
-      "explanation": "대조군의 관찰되지 않은 순응상태를 잠재계층 혼합모형으로 추정해 효과를 계산한다.",
+      "explanation": "Alpha was .82 for desire and .90 for achievement. These estimates concern consistency among items and do not by themselves demonstrate every aspect of measurement validity.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Reliability"
+    },
+    {
+      "question": "Which named assumption requires a participant's potential outcome to be unrelated to other participants' treatment assignments?",
+      "accepted_answers": [
+        "SUTVA",
+        "stable unit treatment value assumption"
+      ],
+      "answer_type": "term",
+      "explanation": "This is one of the assumptions listed for the CACE models. Random allocation alone does not establish that there is no interference among participants.",
+      "evidence_segment_id": "ANALYTIC-ASSUMPTIONS-001",
+      "source": "Causal-model assumptions"
+    },
+    {
+      "question": "What relationship did the authors propose when generally larger estimated benefits appeared under higher service-hour definitions of compliance?",
+      "accepted_answers": [
+        "dose-response relationship",
+        "dose response relationship",
+        "dose-response",
+        "dose response"
+      ],
+      "answer_type": "term",
+      "explanation": "The overall pattern was suggestive, with exceptions rather than a strict increase at every threshold. Hours were not randomly assigned, and changing the threshold changes the complier group, so this pattern alone does not establish an optimal dose.",
+      "evidence_segment_id": "RESULTS-MODELS-001",
+      "source": "Interpreting exposure patterns"
+    },
+    {
+      "question": "Which analysis compares the originally randomized groups regardless of whether participants actually received the intervention?",
+      "accepted_answers": [
+        "ITT",
+        "intention-to-treat",
+        "intention to treat",
+        "intention-to-treat analysis",
+        "intention to treat analysis"
+      ],
+      "answer_type": "term",
+      "explanation": "This estimates the effect of assignment under the analysis assumptions. It retains noncompliers and should not be confused with estimating the effect among everyone who actually participated.",
       "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
-      "source": "Gruenewald et al. (2016)"
+      "source": "Assignment-based analysis"
+    },
+    {
+      "question": "Which method compares observed intervention compliers with estimated potential compliers in the control group?",
+      "accepted_answers": [
+        "CACE",
+        "complier average causal effect",
+        "complier average causal effects",
+        "complier average causal effects analysis"
+      ],
+      "answer_type": "term",
+      "explanation": "Control-group compliance status is estimated using a latent-class approach. Identification depends on assumptions and the definition of compliance; some reported models raised assumption concerns.",
+      "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
+      "source": "Complier analysis"
     }
-  ]
+  ],
+  "language": "en"
 }

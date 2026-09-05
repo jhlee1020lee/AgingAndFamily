@@ -42,6 +42,11 @@ function checkQuizPage(reading, pageKey, errors) {
   const htmlPath = path.join(ROOT_DIR, "docs", "readings", reading.slug, `${pageKey}.html`);
   const html = readText(htmlPath);
   const prefix = `${reading.slug}/${pageKey}`;
+  if (source.language === "en") {
+    expect(count(html, /data-quiz-language="en"/g) === source.items.length + 1, `${prefix}: English quiz language boundaries are missing`, errors);
+    expect(html.includes("Check answer") && html.includes("Explanation:"), `${prefix}: English grading labels are missing`, errors);
+  }
+  expect(count(html, /class="quiz-evidence-detail"/g) === source.items.length, `${prefix}: every question needs an expandable source passage`, errors);
   expect(count(html, /\bdata-quiz-root(?:="")?/g) === 1, `${prefix}: one interactive quiz form is required`, errors);
   expect(count(html, /\bdata-quiz-item(?:="")?/g) === source.items.length, `${prefix}: quiz item count mismatch`, errors);
   expect(count(html, /\bdata-quiz-check(?:="")?/g) === source.items.length, `${prefix}: per-item grade button count mismatch`, errors);
@@ -77,7 +82,15 @@ function checkProfessorPrep(reading, errors) {
   expect(count(html, /\bdata-prep-tab=/g) === 2, `${prefix}: two prep tabs are required`, errors);
   expect(count(html, /\bdata-prep-panel=/g) === 2, `${prefix}: two prep panels are required`, errors);
   expect(count(html, /\bdata-prep-card(?:\s|>)/g) === source.cards.length + source.reading_response.cards.length, `${prefix}: prep card count mismatch`, errors);
-  expect(html.includes("어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
+  const expectedCards = source.cards.length + source.reading_response.cards.length;
+  expect(html.includes(source.language === "en" ? "Reading response" : "어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
+  expect(count(html, /\bdata-prep-practice(?:\s|>)/g) === expectedCards, `${prefix}: each question needs a practice field`, errors);
+  expect(count(html, /\bdata-prep-model(?:\s|>)/g) === expectedCards, `${prefix}: each question needs a model-answer disclosure`, errors);
+  expect(!/<details\b[^>]*data-prep-model[^>]*\bopen\b|<details\b[^>]*\bopen\b[^>]*data-prep-model/.test(html), `${prefix}: model answers should start collapsed`, errors);
+  if (source.language === "en") {
+    expect(html.includes('data-prep-language="en"'), `${prefix}: English workspace marker missing`, errors);
+    expect(html.includes("Your answer in English"), `${prefix}: English practice prompt missing`, errors);
+  }
 }
 
 function checkHomeRail(manifest, errors) {
@@ -99,9 +112,15 @@ function checkHomeRail(manifest, errors) {
 
 function checkClientLogic(errors) {
   const source = readText(path.join(ROOT_DIR, "scripts", "site_app.js"));
-  const context = { document: { addEventListener() {} } };
+  const context = { document: { addEventListener() {}, createElement() { return { textContent: "", setAttribute() {} }; } } };
   vm.createContext(context);
   vm.runInContext(source, context, { filename: "site_app.js" });
+  const schedule = [
+    { slug: "second", sequence: 2, classDate: "2026-09-14" },
+    { slug: "first", sequence: 1, classDate: "2026-09-14" },
+  ];
+  expect(context.selectHomeCurrentReading(schedule, "2026-09-05", "")?.slug === "first", "home: next reading must respect manifest order for the same date", errors);
+  expect(context.selectHomeCurrentReading(schedule, "2026-12-31", "") === null, "home: completed readings cannot be labeled next reading", errors);
   expect(typeof context.normalizeQuizAnswer === "function", "client: normalizeQuizAnswer is unavailable", errors);
   if (typeof context.normalizeQuizAnswer === "function") {
     expect(context.normalizeQuizAnswer("  SELF–RELEVANCE. ") === "self–relevance", "client: answer normalization failed", errors);
@@ -112,19 +131,25 @@ function checkClientLogic(errors) {
     const makeClassList = () => {
       const values = new Set();
       return {
+        add(...names) { names.forEach((name) => values.add(name)); },
+        remove(...names) { names.forEach((name) => values.delete(name)); },
         toggle(name, active) { if (active) values.add(name); else values.delete(name); },
         contains(name) { return values.has(name); },
       };
     };
-    const makeItem = ({ kind, value = "", correctAnswer = "", acceptedAnswers = [] }) => {
+    const makeItem = ({ kind, value = "", correctAnswer = "", acceptedAnswers = [], language = "ko" }) => {
       const input = { value, checked: Boolean(value) };
       const choice = { classList: makeClassList(), querySelector() { return input; } };
       const feedback = { hidden: true };
       const result = { textContent: "" };
+      let inputMessage = null;
       const item = {
-        dataset: { quizKind: kind, correctAnswer, acceptedAnswers: JSON.stringify(acceptedAnswers) },
+        dataset: { quizKind: kind, quizLanguage: language, correctAnswer, acceptedAnswers: JSON.stringify(acceptedAnswers) },
         classList: makeClassList(),
+        closest() { return null; },
+        appendChild(node) { inputMessage = node; },
         querySelector(selector) {
+          if (selector === "[data-quiz-input-message]") return inputMessage;
           if (selector === "[data-quiz-input]:checked") return input.checked ? input : null;
           if (selector === "[data-quiz-input]") return input;
           if (selector === "[data-quiz-feedback]") return feedback;
@@ -133,7 +158,7 @@ function checkClientLogic(errors) {
         },
         querySelectorAll(selector) { return selector === ".quiz-choice" && kind !== "short" ? [choice] : []; },
       };
-      return { item, feedback, result };
+      return { item, input, feedback, result };
     };
     const correctChoice = makeItem({ kind: "mcq", value: "정답", correctAnswer: "정답" });
     expect(context.gradeQuizItem(correctChoice.item).correct === true, "client: choice grading failed", errors);
@@ -143,6 +168,14 @@ function checkClientLogic(errors) {
     const unanswered = makeItem({ kind: "short", value: "", acceptedAnswers: ["정답"] });
     const unansweredResult = context.gradeQuizItem(unanswered.item);
     expect(unansweredResult.answered === false && unanswered.item.classList.contains("is-unanswered"), "client: unanswered grading failed", errors);
+    const spacedAnswer = makeItem({ kind: "short", value: "Self relevance", acceptedAnswers: ["selfrelevance"], language: "en" });
+    expect(context.gradeQuizItem(spacedAnswer.item).correct === true, "client: spacing promise must be reflected in short-answer grading", errors);
+    expect(spacedAnswer.result.textContent === "Correct.", "client: English quiz feedback should be English", errors);
+    spacedAnswer.input.value = "한국어";
+    expect(context.gradeQuizItem(spacedAnswer.item).blocked === true, "client: Korean input must not be graded on an English quiz", errors);
+    expect(spacedAnswer.feedback.hidden && !spacedAnswer.item.dataset.quizGraded, "client: blocked input must clear the previous grade and hide its answer", errors);
+    const differentNumber = makeItem({ kind: "short", value: "7 5 years", acceptedAnswers: ["75 years"], language: "en" });
+    expect(context.gradeQuizItem(differentNumber.item).correct === false, "client: removing spaces must not combine different numbers", errors);
   }
   expect(source.includes("initTranslationSentenceReveals();"), "client: sentence reveal initializer is not called", errors);
   expect(source.includes("initInteractiveQuizzes();"), "client: quiz initializer is not called", errors);

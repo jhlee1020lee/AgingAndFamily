@@ -1,127 +1,202 @@
 {
-  "title": "Underwood (2014) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 허용 정답 범위 안에서 짧고 정확하게 답하세요.",
+  "title": "Underwood (2014): Short-answer practice",
+  "instructions": "Answer in English with a concise term, study name, or number. Interpret the findings in the context of this 2014 article.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "1932년과 1947년 스코틀랜드 11세 아동에게 실시한 전국 검사의 이름은?",
-      "accepted_answers": ["Scottish Mental Surveys", "스코틀랜드 정신능력 조사"],
+      "question": "What were the nationwide intelligence surveys of Scottish 11-year-olds in 1932 and 1947 called?",
+      "accepted_answers": [
+        "Scottish Mental Surveys",
+        "Scottish Mental Survey"
+      ],
       "answer_type": "term",
-      "explanation": "보관된 전국 조사 기록이 수십 년 뒤 노화 연구의 아동기 기준점이 되었다.",
+      "explanation": "The archived survey records supplied a childhood baseline for cognitive-aging research decades later.",
       "evidence_segment_id": "OPEN-001",
-      "source": "조사명"
+      "source": "The original surveys"
     },
     {
-      "question": "Scottish Mental Surveys 참여자를 노년기에 재추적한 연구집단의 이름은?",
-      "accepted_answers": ["Lothian Birth Cohorts", "로디언 출생 코호트"],
+      "question": "What are the later-life study cohorts that followed participants from the Scottish Mental Surveys called?",
+      "accepted_answers": [
+        "Lothian Birth Cohorts",
+        "Lothian Birth Cohort",
+        "Lothian cohorts"
+      ],
       "answer_type": "term",
-      "explanation": "두 출생 코호트는 아동기 검사와 노년기 반복측정을 연결한다.",
+      "explanation": "The cohorts connect childhood assessments with repeated cognitive, health, and brain measurements in later life.",
       "evidence_segment_id": "COHORT-001",
-      "source": "코호트명"
+      "source": "The follow-up cohorts"
     },
     {
-      "question": "노년기 인지능력의 가장 강한 단일 예측변수로 제시된 측정 연령은?",
-      "accepted_answers": ["11세", "만 11세"],
+      "question": "At what age was the intelligence test that best predicted later-life cognitive ability administered?",
+      "accepted_answers": [
+        "11",
+        "11 years",
+        "age 11",
+        "eleven",
+        "eleven years"
+      ],
       "answer_type": "number",
-      "explanation": "운동이나 교육보다 11세 때의 지능 수준이 더 강한 단일 예측변수로 나타났다.",
+      "explanation": "Intelligence at age 11 was the strongest single predictor reported. This is not a claim that other factors are irrelevant or that outcomes are fixed.",
       "evidence_segment_id": "COHORT-001",
-      "source": "초기 인지"
+      "source": "Childhood cognitive ability"
     },
     {
-      "question": "두 Lothian 코호트의 최종 노년기 후속연구 참여자는 몇 명인가?",
-      "accepted_answers": ["1,641명", "1641명"],
+      "question": "How many people from the two cohorts ultimately participated in the later-life follow-up described in the article?",
+      "accepted_answers": [
+        "1641",
+        "1,641",
+        "1641 participants",
+        "1,641 participants",
+        "1641 people",
+        "1,641 people"
+      ],
       "answer_type": "number",
-      "explanation": "로디언 지역 약 5,000명에게 연락한 뒤 두 코호트에서 최종 1,641명이 참여했다.",
+      "explanation": "Researchers contacted nearly 5,000 people living in the Lothian region, and 1,641 participants from the two cohorts enrolled. This differs from the original national-survey population.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "표본"
+      "source": "Follow-up sample"
     },
     {
-      "question": "11세 점수가 예측한 77세 IQ 분산은 약 몇 퍼센트인가?",
-      "accepted_answers": ["약 50%", "50%"],
+      "question": "Approximately what percentage of the variance in IQ at age 77 could be predicted from IQ scores at age 11?",
+      "accepted_answers": [
+        "50%",
+        "50",
+        "50 percent",
+        "about 50%",
+        "approximately 50%",
+        "half",
+        "one half"
+      ],
       "answer_type": "number",
-      "explanation": "집단의 개인차를 설명하는 분산 비율이며 개인 운명의 비율이 아니다.",
+      "explanation": "The estimate concerns differences among participants, not a percentage of an individual's intelligence or destiny.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "핵심 수치"
+      "source": "Variance explained"
     },
     {
-      "question": "원래 인지능력이 생활방식 선택과 노년기 인지 모두에 관련되는 문제는?",
-      "accepted_answers": ["선택효과", "교란", "selection effect", "confounding"],
+      "question": "What methodological problem arises when earlier intelligence is related to both adult lifestyle choices and later cognition?",
+      "accepted_answers": [
+        "confounding",
+        "selection effect",
+        "selection effects",
+        "selection bias"
+      ],
       "answer_type": "term",
-      "explanation": "아동기 IQ를 통제하자 음주의 겉보기 이익이 사라진 결과가 대표 사례다.",
+      "explanation": "The apparent benefit of wine drinking disappeared after childhood IQ was taken into account. Adjustment challenges a causal interpretation of the unadjusted association.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "음주 분석"
+      "source": "Interpreting lifestyle associations"
     },
     {
-      "question": "아동기 IQ가 설명하지 못해 다른 요인이 설명해야 할 변이는 약 얼마인가?",
-      "accepted_answers": ["나머지 50%", "약 50%"],
+      "question": "Approximately what percentage of later-life IQ variation remained to be explained by factors other than childhood IQ?",
+      "accepted_answers": [
+        "50%",
+        "50",
+        "50 percent",
+        "about 50%",
+        "approximately 50%",
+        "half",
+        "one half"
+      ],
       "answer_type": "number",
-      "explanation": "강한 초기 예측에도 절반가량의 개인차가 남아 결정론을 제한한다.",
+      "explanation": "About half the variation remained. The article therefore rejects the inference that early cognitive ability completely determines later outcomes.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "남은 변이"
+      "source": "Unexplained variation"
     },
     {
-      "question": "나이가 들수록 개인의 인지변화 경로가 서로 벌어지는 현상은?",
-      "accepted_answers": ["개인별 분화", "individual divergence"],
+      "question": "What term does Deary use for the way people's cognitive trajectories fan out from the average as they enter their 70s and 80s?",
+      "accepted_answers": [
+        "individual divergence",
+        "divergence"
+      ],
       "answer_type": "term",
-      "explanation": "평균만으로는 유지와 저하의 서로 다른 개인 경로를 설명할 수 없다.",
+      "explanation": "Group averages conceal substantial differences in how individuals change over time.",
       "evidence_segment_id": "CHANGE-001",
-      "source": "개인차"
+      "source": "Differences in trajectories"
     },
     {
-      "question": "백질 신경로에서 물분자 이동을 추적한 뇌영상 기법은?",
-      "accepted_answers": ["확산텐서영상", "diffusion tensor imaging", "DTI"],
+      "question": "Which imaging technique tracks water-molecule movement through the brain's white-matter tracts?",
+      "accepted_answers": [
+        "diffusion tensor imaging",
+        "DTI",
+        "diffusion-tensor imaging"
+      ],
       "answer_type": "term",
-      "explanation": "이 기법으로 백질 연결의 온전성과 일반 인지기능의 관련성을 살폈다.",
+      "explanation": "The technique was used to examine the relationship between the integrity of neural connections and general cognitive function.",
       "evidence_segment_id": "NEURO-001",
-      "source": "뇌영상 기법"
+      "source": "Brain imaging"
     },
     {
-      "question": "신경 연결의 온전성과 관련된 일반 인지기능 차이는 약 얼마인가?",
-      "accepted_answers": ["약 10%", "10%"],
+      "question": "Approximately what percentage of differences in general cognitive function was associated with the integrity of neuronal connections?",
+      "accepted_answers": [
+        "10%",
+        "10",
+        "10 percent",
+        "about 10%",
+        "approximately 10%",
+        "one tenth"
+      ],
       "answer_type": "number",
-      "explanation": "기사에 제시된 Lothian 참여자 집단의 통계적 관련 수치다.",
+      "explanation": "The article reports a roughly 10% association in the Lothian participants. It does not establish that a wiring intervention would improve cognition by 10%.",
       "evidence_segment_id": "NEURO-001",
-      "source": "백질 연결"
+      "source": "White-matter connections"
     },
     {
-      "question": "뇌영상에서 밝게 보이는 비정상 백질 영역을 무엇이라 하는가?",
-      "accepted_answers": ["백질 고신호강도 병변", "white matter hyperintensities", "WMH"],
+      "question": "What are the abnormal white-matter patches visible on brain scans called?",
+      "accepted_answers": [
+        "white matter hyperintensities",
+        "white-matter hyperintensities",
+        "hyperintensities",
+        "WMH",
+        "WMHs"
+      ],
       "answer_type": "term",
-      "explanation": "나이와 함께 늘지만 개인차가 크고 원인은 아직 충분히 밝혀지지 않았다.",
+      "explanation": "These abnormalities generally increase with age but vary greatly between people. Their causes and cognitive significance were not fully understood.",
       "evidence_segment_id": "NEURO-001",
-      "source": "백질 병변"
+      "source": "White-matter abnormalities"
     },
     {
-      "question": "백질 고신호강도 병변과 밀접한 관련이 제시된 스트레스 호르몬은?",
-      "accepted_answers": ["코르티솔", "cortisol"],
+      "question": "High levels of which stress hormone were linked to white-matter hyperintensities in the article?",
+      "accepted_answers": [
+        "cortisol"
+      ],
       "answer_type": "term",
-      "explanation": "관련성이 제시되었지만 단일 인과원인으로 확정된 것은 아니다.",
+      "explanation": "Research linked hyperintensities with high cortisol levels, but this association does not identify cortisol as their sole cause.",
       "evidence_segment_id": "NEURO-001",
-      "source": "스트레스 호르몬"
+      "source": "Stress and brain differences"
     },
     {
-      "question": "신경퇴행으로 기능이 손상될 때까지 버틸 수 있는 인지 자원은?",
-      "accepted_answers": ["인지예비력", "cognitive reserve"],
+      "question": "What term describes the cognitive resources that may allow someone to withstand neurodegeneration longer before impairment?",
+      "accepted_answers": [
+        "cognitive reserve",
+        "cognitive reserves"
+      ],
       "answer_type": "term",
-      "explanation": "초기 뇌와 환경의 이점이 손실을 견디는 여유와 연결된다는 가설이다.",
+      "explanation": "The reserve account links initial brain resources and early advantages to the capacity to tolerate subsequent losses. It is an explanatory hypothesis.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "인지예비력"
+      "source": "Resources and neurodegeneration"
     },
     {
-      "question": "인지예비력을 탱크의 시작량과 소진시간에 비유한 가설은?",
-      "accepted_answers": ["물탱크 가설", "water tank hypothesis"],
+      "question": "What metaphor-based hypothesis says that greater initial brain resources take longer to be depleted?",
+      "accepted_answers": [
+        "water tank hypothesis",
+        "water-tank hypothesis",
+        "the water tank hypothesis"
+      ],
       "answer_type": "term",
-      "explanation": "더 많이 담긴 채 출발하면 바닥날 때까지 더 오래 걸린다는 비유다.",
+      "explanation": "The metaphor describes starting with more resources and taking longer to draw them down. It does not prove that later-life functioning is predetermined.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "비유"
+      "source": "A metaphor for reserve"
     },
     {
-      "question": "뇌영상과 DNA를 국제적으로 결합하는 컨소시엄 이름은?",
-      "accepted_answers": ["ENIGMA", "ENIGMA 컨소시엄"],
+      "question": "Which international consortium combines brain scans and DNA to study genetic influences on the brain?",
+      "accepted_answers": [
+        "ENIGMA",
+        "ENIGMA consortium",
+        "the ENIGMA consortium"
+      ],
       "answer_type": "term",
-      "explanation": "기사 당시 33개국 70개 기관이 참여해 대규모 뇌영상·DNA 자료로 유전적 영향을 연구했다.",
+      "explanation": "The article describes the consortium as involving 70 institutions in 33 countries in its 2014 context. Such collaboration supplies the scale needed to investigate small, complex genetic effects.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "국제협력"
+      "source": "International collaboration"
     }
-  ]
+  ],
+  "language": "en"
 }

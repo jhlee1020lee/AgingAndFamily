@@ -1,124 +1,125 @@
 {
-  "title": "Meier et al. (2016) OX 퀴즈",
-  "instructions": "문장을 읽고 O 또는 X를 고르세요. 수치의 분모, 관점의 중복, 분석 수준과 결론 범위를 함께 판단해야 합니다.",
+  "title": "Meier et al. (2016) True/False Quiz",
+  "instructions": "Choose True or False. Check article-level denominators, overlapping stakeholder categories, and the scope of conclusions. The frequency with which a theme appears in studies is not an individual preference score or a universal ranking of what matters at the end of life.",
+  "language": "en",
   "question_set_type": "OX 퀴즈",
   "items": [
     {
-      "prompt": "포함 연구의 개별 표본은 3명에서 2,548명이었고 평균 표본크기는 148.4명이었다.",
+      "prompt": "The included qualitative and quantitative studies had roughly comparable sample sizes, so sample-size differences were negligible.",
       "answer": "X",
-      "explanation": "범위 3–2,548명은 맞지만 보고된 평균 표본크기는 184.4명이다.",
+      "explanation": "Reported sample sizes ranged from 3 to 2,548, and qualitative studies generally had much smaller samples than quantitative studies. The review therefore combined studies with markedly different sample sizes.",
       "evidence_segment_id": "RESULTS-SAMPLE-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "좋은 죽음 개념은 호스피스 운동에서 나왔으며, 다면적이고 개인화된 경험으로 설명되어 왔다.",
+      "prompt": "The concept of a good death arose from the hospice movement and has been described as a multifaceted, individualized experience.",
       "answer": "O",
-      "explanation": "저자들은 호스피스 운동에서 등장한 좋은 죽음 개념을 하나의 외부 기준이 아니라 환자 관점에 좌우되는 다면적·개인화된 경험으로 소개했다.",
+      "explanation": "The introduction traces the concept to hospice and discusses the importance of the dying person's perspective. It also notes criticism of imposing a single external criterion for a good death.",
       "evidence_segment_id": "INTRO-001",
       "source": "Meier et al. (2016)",
       "difficulty": "easy"
     },
     {
-      "prompt": "포함된 연구들 사이에는 표본이 서로 중복된 사례가 없었다.",
+      "prompt": "The authors reported no overlapping participant samples among the studies included in the review.",
       "answer": "O",
-      "explanation": "저자들은 관련 문헌과 종설의 참고문헌까지 검토했으며 포함 논문의 표본 중복 사례는 없었다고 밝혔다.",
+      "explanation": "After removing duplicate articles and checking relevant reference lists, the authors reported no overlapping samples. This is separate from an article containing more than one stakeholder perspective.",
       "evidence_segment_id": "METHOD-SELECTION-001",
       "source": "Meier et al. (2016)",
       "difficulty": "easy"
     },
     {
-      "prompt": "제목·초록 단계에서 제외된 3,042편은 모두 동일 논문의 중복 검색 결과였다.",
+      "prompt": "All 3,042 records excluded at title-and-abstract screening were duplicate versions of the same articles.",
       "answer": "X",
-      "explanation": "대부분은 good cell death, good bone death, animal death처럼 주제와 무관한 검색 결과였고 중복은 별도로 제거했다.",
+      "explanation": "Most initial exclusions reflected irrelevant topics, such as cell, bone, or animal death. Duplicate articles were removed separately; irrelevance and duplication were different exclusion reasons.",
       "evidence_segment_id": "METHOD-SELECTION-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "포함 연구의 국가별 분포에서 일본이 7편, 영국이 3편으로 보고되었다.",
+      "prompt": "The reported geographic distribution included seven studies from Japan and three from the United Kingdom.",
       "answer": "X",
-      "explanation": "영국이 7편이었고 일본과 네덜란드는 각각 3편이었다.",
+      "explanation": "The review reported seven studies from the United Kingdom and three each from Japan and the Netherlands. These are counts of included studies, not population estimates of end-of-life preferences.",
       "evidence_segment_id": "RESULTS-SAMPLE-001",
       "source": "Meier et al. (2016)",
       "difficulty": "hard"
     },
     {
-      "prompt": "검토된 연구들을 합쳐 보면 환자 표본의 남녀 분포는 비교적 고르게 나타났다.",
+      "prompt": "The authors described the distribution of men and women across the reviewed studies as relatively even overall.",
       "answer": "O",
-      "explanation": "저자들은 연구 전체에서 남성과 여성의 분포가 비교적 균등했다고 기술했다.",
+      "explanation": "This is the authors' summary across studies. It does not mean that every individual study included equal numbers of men and women.",
       "evidence_segment_id": "RESULTS-SAMPLE-001",
       "source": "Meier et al. (2016)",
       "difficulty": "easy"
     },
     {
-      "prompt": "삶의 완결 주제에는 작별하기, 잘 살아온 삶, 다가오는 죽음의 수용이 포함됐다.",
+      "prompt": "The life-completion theme included saying goodbye, feeling that life had been well lived, and accepting impending death.",
       "answer": "O",
-      "explanation": "저자들은 이 세 내용을 삶의 완결이라는 하나의 핵심주제 아래 묶었다.",
+      "explanation": "The researchers grouped these three subthemes under life completion. They represent concerns identified in the literature, not requirements that every dying person must meet.",
       "evidence_segment_id": "RESULTS-THEMES-001",
       "source": "Meier et al. (2016)",
       "difficulty": "easy"
     },
     {
-      "prompt": "두 코더가 의견을 달리하면 둘 중 한 사람의 판단을 그대로 최종값으로 채택하고 제3 저자는 관여하지 않았다.",
+      "prompt": "When the two coders disagreed, one coder's judgment was accepted automatically and a third author was never involved.",
       "answer": "X",
-      "explanation": "불일치는 두 코더가 논의했고 필요하면 제3 저자를 불러 각 정의의 최종 합의에 도달했다.",
+      "explanation": "The coders discussed discrepancies and consulted a third author when needed to reach a final consensus. Disagreement resolution was part of the coding process.",
       "evidence_segment_id": "METHOD-CODING-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "세 이해관계자 관점을 종합해 비교했을 때 HCP와의 관계는 가장 덜 두드러진 구체적 주제였다.",
+      "prompt": "Relationships with healthcare providers were identified as a distinct core theme, separate from treatment preferences.",
       "answer": "O",
-      "explanation": "원문의 표현은 각 관점 내부에서 모두 최저였다는 뜻이 아니라, 세 관점을 함께 놓고 본 종합적 비교를 가리킨다.",
+      "explanation": "This theme included trust, support, and comfort from clinicians, their comfort with dying, and discussion of spiritual beliefs or fears. Its frequency in articles does not determine how important that relationship is to an individual patient.",
       "evidence_segment_id": "RESULTS-THEMES-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "환자들은 정서적 안녕을 좋은 죽음의 구성요소로 보지 않았고 이 주제는 가족과 HCP에게만 나타났다.",
+      "prompt": "Patients did not view emotional well-being as part of a good death; this theme appeared only in family and healthcare-provider perspectives.",
       "answer": "X",
-      "explanation": "종설은 환자도 가족과 HCP처럼 정서적 안녕을 성공적 죽음의 중요한 구성요소로 본다고 해석했다.",
+      "explanation": "The review interprets emotional well-being as an important component in patients' perspectives as well as those of families and healthcare providers. It calls for attention to psychological concerns alongside physical symptoms.",
       "evidence_segment_id": "DISCUSSION-PSYCHOLOGICAL-001",
       "source": "Meier et al. (2016)",
       "difficulty": "hard"
     },
     {
-      "prompt": "평정자 간 일치도의 유의확률은 논문에 통상적인 `p < 0.000` 형식으로 인쇄돼 있다.",
+      "prompt": "Each of the 36 articles was assigned exclusively to one stakeholder category, so the patient, family, and healthcare-provider article counts must sum to 36.",
       "answer": "X",
-      "explanation": "원문에는 이례적으로 `p < 0.0.000`이라고 인쇄돼 있으며, 이를 임의로 정상 표기로 고치지 않아야 한다.",
+      "explanation": "Seven articles included more than one stakeholder perspective. The counts of 20 patient-perspective, 10 family-perspective, and 18 healthcare-provider articles therefore overlap and should not be added as mutually exclusive groups.",
       "evidence_segment_id": "METHOD-CODING-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "종교성·영성은 가족 관점 논문 50%보다 환자 관점 논문 65%에서 더 자주 등장했다.",
+      "prompt": "Religiosity or spirituality appeared in a greater proportion of patient-perspective articles (65%) than family-perspective articles (50%).",
       "answer": "O",
-      "explanation": "이 차이는 다른 일부 주제와 반대 방향이었으며 서비스 접근성 같은 맥락도 함께 고려해야 한다.",
-      "evidence_segment_id": "DISCUSSION-DIGNITY-001",
+      "explanation": "Table 3 reports this theme in 13 of 20 patient-perspective articles and 5 of 10 family-perspective articles. These are article-level frequencies, not percentages of individual patients or family members and not proof of a statistically significant difference in personal priorities.",
+      "evidence_segment_id": "RESULTS-STAKEHOLDERS-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "포함 연구들은 면접·설문과 환자 사망 사이의 간격을 일관되게 보고해 임종 시점에 따른 선호 변화를 조정할 수 있었다.",
+      "prompt": "The included studies consistently reported the interval between interviews or surveys and patients' deaths, allowing adjustment for changes in preferences as death approached.",
       "answer": "X",
-      "explanation": "그 간격은 보고되지 않았고, 저자들은 죽음이 가까워지며 바람·필요·좋은 죽음 인식이 달라질 수 있음을 한계로 들었다.",
+      "explanation": "The review identifies the lack of reported timing as a limitation. Wishes, needs, and understandings of a good death may change as death approaches, so that missing information matters for interpretation.",
       "evidence_segment_id": "DISCUSSION-LIMITATIONS-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "일부 환자가 호스피스 서비스를 받지 않았고 기관에 성직자·영적 상담자가 없었던 점이 영성의 중요성 인식에 영향을 주었을 수 있다.",
+      "prompt": "The authors suggest that differences in hospice use and the lack of on-site clergy or spiritual counselors in some settings may have influenced recognition of religious or spiritual concerns.",
       "answer": "O",
-      "explanation": "저자들은 다양한 환자를 위한 영적 돌봄 인력의 현장 가용성이 충분하지 않을 수 있음을 함께 논의했다.",
+      "explanation": "Not all patients received hospice services, and the authors discuss limited availability of spiritual-care staff, especially for diverse patient groups. This is a possible contextual explanation, not a tested effect or a claim that every patient wants religious care.",
       "evidence_segment_id": "DISCUSSION-DIGNITY-001",
       "source": "Meier et al. (2016)",
       "difficulty": "medium"
     },
     {
-      "prompt": "후속연구로 생애말기 환자와 더 이른 단계의 만성질환자를 비교하는 혼합방법 설계와 여러 연령코호트의 포함이 제안됐다.",
+      "prompt": "The authors propose future mixed-methods studies comparing people near the end of life with people at earlier stages of chronic illness and including different age cohorts.",
       "answer": "O",
-      "explanation": "질병단계와 연령이 좋은 죽음의 주제에 미치는 영향을 비교하고 표준화된 도구를 발전시키는 것이 제안됐다.",
+      "explanation": "The proposed research would examine how illness stage and age relate to definitions of a good death and develop standardized, validated measures. These are future directions, not comparisons or treatment effects established by this review.",
       "evidence_segment_id": "FUTURE-001",
       "source": "Meier et al. (2016)",
       "difficulty": "easy"

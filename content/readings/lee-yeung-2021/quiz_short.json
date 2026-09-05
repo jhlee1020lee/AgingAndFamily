@@ -1,127 +1,208 @@
 {
-  "title": "Lee & Yeung (2021) 단답형 퀴즈",
-  "instructions": "정확한 수치나 용어를 짧게 쓰세요. 허용정답은 모두 7단어 이하입니다.",
+  "title": "Lee and Yeung (2021): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Distinguish entry from exit, women's and men's models, and odds from probabilities. Interpret the findings within the 2006–2016 study period.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "한국의 국민연금제도가 처음 시작된 연도는?",
-      "accepted_answers": ["1988년", "1988"],
-      "answer_type": "number",
-      "explanation": "국민연금은 1988년에 근로자 10명 초과 사업체의 근로자를 포괄하며 시작됐다.",
-      "evidence_segment_id": "CONTEXT-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "논문이 인용한 당시 65세 이상 인구의 국민연금 수급 비율은?",
-      "accepted_answers": ["약 37.6%", "37.6%"],
-      "answer_type": "number",
-      "explanation": "수급자 비율은 약 37.6%였고 연금액은 최저생계비의 약 51%였다.",
-      "evidence_segment_id": "CONTEXT-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "한국 노년층 소득에서 근로소득이 차지한 비중은?",
-      "accepted_answers": ["60% 초과"],
-      "answer_type": "short_phrase",
-      "explanation": "근로소득은 60% 초과였고 저축 21%, 공적연금·사회보장 16%와 대비됐다.",
-      "evidence_segment_id": "CONTEXT-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "생애 유급노동 경험이 없어 분석에서 제외된 사람 수는?",
-      "accepted_answers": ["1,295명", "1295명", "1,295"],
-      "answer_type": "number",
-      "explanation": "이 제외는 분석표본이 특히 여성 중 일 지향성이 강한 사람을 과대대표할 가능성을 남긴다.",
-      "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "노동시장 상태 결측 기준으로 제외된 응답자의 비율은?",
-      "accepted_answers": ["14.3%"],
-      "answer_type": "number",
-      "explanation": "여섯 차수 중 최소 세 차수의 노동시장 상태 정보가 없는 응답자 14.3%를 제외했다.",
-      "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "최종 표본이 제공한 총 관측량을 인년으로 쓰면?",
-      "accepted_answers": ["26,520인년", "26520인년", "26,520"],
-      "answer_type": "number",
-      "explanation": "최종 분석표본의 반복 관측을 합하면 총 26,520인년이었다.",
-      "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "상태변화 위험집단 중 여러 차례 전환한 비율은?",
-      "accepted_answers": ["약 27%", "27%"],
-      "answer_type": "number",
-      "explanation": "이 값은 상태변화 위험에 놓인 개인을 분모로 하며 전체 표본의 계속 취업 비율과 다르다.",
-      "evidence_segment_id": "DATA-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "모형에서 반복 이동이 가능한 노동시장 상태는 모두 몇 개인가요?",
-      "accepted_answers": ["2개", "두 개", "2"],
-      "answer_type": "number",
-      "explanation": "비흡수상태는 노동시장 참여와 비취업·은퇴의 두 상태다.",
-      "evidence_segment_id": "MEASURES-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "생애 대부분의 고용부문은 몇 범주로 나뉘었나요?",
-      "accepted_answers": ["5개", "다섯 개", "5"],
-      "answer_type": "number",
-      "explanation": "전문직, 비육체노동직, 숙련 육체노동직, 농업직, 비숙련 육체노동직으로 범주화했다.",
-      "evidence_segment_id": "EXPLANATORY-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "배우자가 없는 응답자 중 사별한 사람의 비율은?",
-      "accepted_answers": ["83.9%", "약 83.9%"],
-      "answer_type": "number",
-      "explanation": "배우자 없는 범주에서 이혼은 약 12%, 사별은 83.9%였다.",
-      "evidence_segment_id": "EXPLANATORY-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "편포된 상향이전액에 적용한 변환은?",
-      "accepted_answers": ["로그변환", "로그 변환"],
+      "question": "Which national panel survey supplied the observations used in this study?",
+      "accepted_answers": [
+        "KLoSA",
+        "Korean Longitudinal Study of Aging",
+        "Korean Longitudinal Study of Ageing"
+      ],
       "answer_type": "term",
-      "explanation": "로그값을 포함한 모형의 적합도가 더 좋아 여성과 남성 모두 같은 변환을 적용했다.",
+      "explanation": "The analysis used 2006–2016 data, selecting people aged 50–64 at baseline. The broader survey began with adults aged 45 and older, so its full population differs from this analytic sample.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Data source"
+    },
+    {
+      "question": "Which life-course framework emphasizes that occupational advantages and disadvantages build up over time?",
+      "accepted_answers": [
+        "cumulative social stratification",
+        "cumulative stratification",
+        "cumulative advantage and disadvantage"
+      ],
+      "answer_type": "term",
+      "explanation": "Earlier work can shape health, pension resources, and later employment opportunities. Disadvantage can create financial pressure to keep working while also reducing the ability to remain employed.",
+      "evidence_segment_id": "WORK-001",
+      "source": "Accumulating career conditions"
+    },
+    {
+      "question": "Which prior career pattern, measured in years, was associated with lower retirement odds among men?",
+      "accepted_answers": [
+        "self-employment",
+        "self employment",
+        "self-employment history",
+        "years of self-employment"
+      ],
+      "answer_type": "term",
+      "explanation": "Longer experience in this form of work was associated with lower exit odds even after financial conditions were adjusted for. Nonfinancial explanations such as work attachment were proposed, not directly established mechanisms.",
+      "evidence_segment_id": "RESULTS-MEN-001",
+      "source": "Career history"
+    },
+    {
+      "question": "What lifetime background was required for inclusion in the analytic sample?",
+      "accepted_answers": [
+        "paid work experience",
+        "a history of paid work",
+        "previous paid employment",
+        "prior paid work",
+        "ever working for pay"
+      ],
+      "answer_type": "term",
+      "explanation": "The analysis excluded 1,295 people who had never worked for pay. The authors note that the remaining women may be more work-oriented, limiting generalization to all older women.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Sample eligibility"
+    },
+    {
+      "question": "Which likelihood-based estimation approach used available information to address attrition in the longitudinal models?",
+      "accepted_answers": [
+        "FIML",
+        "full information maximum likelihood",
+        "full-information maximum likelihood"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors combined this approach with survey adjustments and nonresponse weights. Its use does not eliminate the assumptions about missingness or guarantee absence of attrition bias.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Missing observations"
+    },
+    {
+      "question": "What unit describes the reported 26,520 observations of time rather than the 2,600 distinct participants?",
+      "accepted_answers": [
+        "person-years",
+        "person years",
+        "personyears",
+        "person-year observations",
+        "person years of observation"
+      ],
+      "answer_type": "term",
+      "explanation": "Repeated observations contribute time at risk. Confusing the observation-time total with the number of people would greatly overstate the sample size.",
+      "evidence_segment_id": "DATA-001",
+      "source": "Observation unit"
+    },
+    {
+      "question": "What event-history structure is needed when an individual can leave work, return, and leave again during follow-up?",
+      "accepted_answers": [
+        "multiple spells",
+        "multiple-spell structure",
+        "multiple spell structure",
+        "repeated transitions",
+        "multiple transitions",
+        "recurrent transitions"
+      ],
+      "answer_type": "term",
+      "explanation": "The outcome permits repeated movements in both directions. A single irreversible retirement event would miss these sequences; the authors report multiple transitions among about 27% of those at risk of changing status.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "Repeated movement"
+    },
+    {
+      "question": "How are employment and nonemployment classified when entering either state does not prevent a later return to the other?",
+      "accepted_answers": [
+        "nonabsorbing states",
+        "non-absorbing states",
+        "nonabsorbing",
+        "non-absorbing"
+      ],
+      "answer_type": "term",
+      "explanation": "The two states permit exits and reentries. Someone reporting retirement but receiving income from a paid job is classified as reentering employment under the study's definition.",
+      "evidence_segment_id": "MEASURES-001",
+      "source": "State structure"
+    },
+    {
+      "question": "Which career measure was based on the sector in which someone spent most of their working life?",
+      "accepted_answers": [
+        "employment sector",
+        "occupational class",
+        "main employment sector",
+        "main occupational class"
+      ],
+      "answer_type": "term",
+      "explanation": "The time-constant measure distinguished professional, nonmanual, skilled manual, agricultural, and unskilled manual work. It is distinct from the time-varying current employment state.",
       "evidence_segment_id": "EXPLANATORY-001",
-      "source": "Lee & Yeung (2021)"
+      "source": "Main career measure"
     },
     {
-      "question": "여성 진입식과 이탈식 무작위효과 사이의 상관계수는?",
-      "accepted_answers": ["0.49", ".49"],
+      "question": "Which person-level model components represented unobserved propensities in the entry and exit equations?",
+      "accepted_answers": [
+        "random effects",
+        "individual random effects",
+        "person-level random effects",
+        "individual-level random effects",
+        "person level random effects"
+      ],
+      "answer_type": "term",
+      "explanation": "The two components were allowed to correlate through joint estimation. They represent modeled unobserved heterogeneity; they do not imply that occupations or family circumstances were randomly assigned.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Unobserved heterogeneity"
+    },
+    {
+      "question": "Which transformation was applied to the skewed amount of money transferred upward from adult children?",
+      "accepted_answers": [
+        "log transformation",
+        "logarithmic transformation",
+        "log transform",
+        "log-transformation"
+      ],
+      "answer_type": "term",
+      "explanation": "The measure summed support from all children in the prior year. The authors logged the values for both women and men because of skewness and improved model fit.",
+      "evidence_segment_id": "EXPLANATORY-001",
+      "source": "Financial support measure"
+    },
+    {
+      "question": "Which terms tested whether predictor associations differed between women and men before the final models were stratified?",
+      "accepted_answers": [
+        "gender interaction terms",
+        "gender-by-predictor interactions",
+        "gender interactions",
+        "interaction terms",
+        "sex interaction terms"
+      ],
+      "answer_type": "term",
+      "explanation": "Significant interactions motivated gender-specific models. One group's significant coefficient and another group's nonsignificant coefficient alone would not establish a statistically significant group difference.",
+      "evidence_segment_id": "ANALYSIS-001",
+      "source": "Testing gender differences"
+    },
+    {
+      "question": "Compared with married women whose spouses were retired, by approximately what percentage were nonpartnered women's exit odds lower?",
+      "accepted_answers": [
+        "39%",
+        "39 percent",
+        "39 per cent",
+        "about 39%",
+        "approximately 39%"
+      ],
       "answer_type": "number",
-      "explanation": "세 여성 모형 모두 무작위효과 상관은 `ρ=.49`였으며 관측 전환율을 뜻하지 않는다.",
+      "explanation": "The reported difference concerns odds of exit for a combined nonpartnered category, not a 39-percentage-point change in retirement probability or a separate estimate for widows alone.",
       "evidence_segment_id": "RESULTS-WOMEN-001",
-      "source": "Lee & Yeung (2021)"
+      "source": "Women's exit results"
     },
     {
-      "question": "무배우 여성의 이탈 오즈는 준거집단보다 얼마나 낮았나요?",
-      "accepted_answers": ["약 39%", "39%"],
+      "question": "What reported odds ratio compared men in agricultural occupations with nonmanual workers for labor-force exit?",
+      "accepted_answers": [
+        "0.68",
+        ".68",
+        "OR = 0.68",
+        "about 0.68"
+      ],
       "answer_type": "number",
-      "explanation": "배우자가 없는 여성은 은퇴한 배우자가 있는 여성보다 노동시장 이탈 오즈가 약 39% 낮았다.",
-      "evidence_segment_id": "RESULTS-WOMEN-001",
-      "source": "Lee & Yeung (2021)"
-    },
-    {
-      "question": "남성 농업직의 이탈 오즈비를 비육체노동직과 비교한 값은?",
-      "accepted_answers": ["0.68", ".68"],
-      "answer_type": "number",
-      "explanation": "농업직 남성의 지수화 계수는 `e^(−0.39)=0.68`로 이탈이 덜 흔했다.",
+      "explanation": "The results text reports exp(−.39) ≈ .68, indicating lower exit odds for agricultural workers relative to the reference group. An odds ratio is not a probability, and this is an observational association.",
       "evidence_segment_id": "RESULTS-MEN-001",
-      "source": "Lee & Yeung (2021)"
+      "source": "Men's occupational comparison"
     },
     {
-      "question": "취업 배우자가 있는 기혼 남성의 이탈 오즈 감소폭은?",
-      "accepted_answers": ["약 22%", "22%"],
+      "question": "By approximately what percentage were married men's exit odds lower when their spouses worked, compared with having retired spouses?",
+      "accepted_answers": [
+        "22%",
+        "22 percent",
+        "22 per cent",
+        "about 22%",
+        "approximately 22%"
+      ],
       "answer_type": "number",
-      "explanation": "비취업 배우자가 있는 기혼 남성과 비교할 때 이탈 오즈가 약 22% 낮았다.",
+      "explanation": "The results text reports about 22% lower exit odds. The authors propose work-role and breadwinner-identity explanations, but these mechanisms were not directly measured or experimentally tested.",
       "evidence_segment_id": "RESULTS-MEN-001",
-      "source": "Lee & Yeung (2021)"
+      "source": "Spousal work status"
     }
-  ]
+  ],
+  "language": "en"
 }

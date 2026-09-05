@@ -1,217 +1,218 @@
 {
-  "title": "Carstensen et al. (1999) 객관식 퀴즈",
-  "instructions": "가장 정확한 답을 하나 고르세요. 정답 뒤에는 해당 원문 세그먼트에 근거한 설명이 제시됩니다.",
+  "title": "Carstensen et al. (1999): Multiple Choice",
+  "instructions": "Choose the answer that best preserves the theory, study design, evidence, and qualifications in the article.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "논문 초록에 제시된 SST의 핵심 시간-목표 관계로 가장 정확한 것은?",
+      "prompt": "Which relationship between time and goals is central to socioemotional selectivity theory (SST)?",
       "options": [
-        "연령이 높아질수록 지식 목표와 정서 목표가 같은 비율로 약해진다.",
-        "남은 시간이 많다고 느낄수록 친숙한 상대와 현재 만족만을 우선한다.",
-        "개방된 미래에서는 지식 목표가, 제한된 미래에서는 정서 목표가 우선된다.",
-        "연대기적 연령이 목표를 고정하므로 시간 제약을 주어도 젊은 사람과 노인의 선택은 달라지지 않는다."
+        "Knowledge and emotional goals weaken at the same rate as chronological age increases",
+        "An expansive future directs people exclusively toward familiar partners and immediate satisfaction",
+        "Expansive time favors knowledge goals; limited time favors emotional goals",
+        "Chronological age fixes social goals, so imposing time constraints cannot change either younger or older adults' choices"
       ],
-      "answer": "개방된 미래에서는 지식 목표가, 제한된 미래에서는 정서 목표가 우선된다.",
-      "explanation": "초록은 지각된 시간이 사회적 목표를 조직하며, 개방된 시간은 지식 관련 목표를, 제한된 시간은 정서적 목표를 우선시한다고 정리한다.",
+      "answer": "Expansive time favors knowledge goals; limited time favors emotional goals",
+      "explanation": "The theory assigns a central role to perceived time in prioritizing social goals. The article also presents evidence that time perspective is malleable and that preferences can change in both younger and older people.",
       "evidence_segment_id": "ABS-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Core time-goal prediction",
       "difficulty": "easy"
     },
     {
-      "prompt": "SST가 말하는 지식 습득 목표의 기능에 해당하는 것은?",
+      "prompt": "Which function belongs to the knowledge-acquisition category in SST?",
       "options": [
-        "세상과 자신을 배우는 것",
-        "부정 정서를 피하면서 사회 안에 깊이 연결되었다고 느끼는 것",
-        "여러 목표가 충돌하더라도 선택 과정 없이 곧바로 행동하는 것",
-        "사회적 접촉을 통해 친밀감과 소속감을 안정적으로 높이는 것"
+        "Learning about the social and physical world",
+        "Maintaining emotional satisfaction through intimacy",
+        "Acting without first selecting among competing goals",
+        "Feeling comforted and socially embedded"
       ],
-      "answer": "세상과 자신을 배우는 것",
-      "explanation": "지식 관련 목표는 사회적 접촉을 통해 사회·물리적 세계를 배우고 타인과의 비교 속에서 자신을 이해하는 습득적 행동이다.",
+      "answer": "Learning about the social and physical world",
+      "explanation": "Knowledge goals involve learning about the social and physical world, including understanding oneself through contact and comparison with others.",
       "evidence_segment_id": "TENETS-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Functions of knowledge goals",
       "difficulty": "easy"
     },
     {
-      "prompt": "저자들이 ‘지식’과 ‘정서’를 휴리스틱한 명칭이라고 한 이유는?",
+      "prompt": "Why do the authors treat knowledge and emotion as heuristic labels for social goals?",
       "options": [
-        "지식 목표는 이른 생애에, 정서 목표는 후기 생애에 서로 독립적으로 작동하기 때문에",
-        "모든 사회적 행동의 동기는 연구자가 관찰할 수 없기 때문에",
-        "시간이 제한되면 미래 관련 정보와 함께 현재 필요한 정보의 우선순위도 낮아지기 때문에",
-        "두 목표가 함께 존재할 수 있어 명칭은 행동의 감정 유무가 아니라 우세한 동기를 가리키기 때문에"
+        "Knowledge goals operate only early in life and emotional goals only later, with no overlap",
+        "Researchers cannot infer any aspect of motivation from observable social behavior",
+        "Limited time lowers the priority of immediately necessary information as well as future-oriented knowledge",
+        "The categories overlap and distinguish primary functions rather than the presence of emotion"
       ],
-      "answer": "두 목표가 함께 존재할 수 있어 명칭은 행동의 감정 유무가 아니라 우세한 동기를 가리키기 때문에",
-      "explanation": "원문은 지식·정서 목표가 절대적이거나 상호배타적이지 않으며, 명칭은 선택에서 지배적인 동기를 구분하는 휴리스틱이라고 설명한다.",
+      "answer": "The categories overlap and distinguish primary functions rather than the presence of emotion",
+      "explanation": "Information seeking can be emotional, and emotional goals can involve learning. The functional distinction concerns preparing for the future versus satisfying emotional needs; immediately relevant information may be sought regardless of time perspective.",
       "evidence_segment_id": "TENETS-002",
-      "source": "Carstensen et al. (1999)",
+      "source": "Overlapping goal categories",
       "difficulty": "medium"
     },
     {
-      "prompt": "Figure 1의 생애 목표 궤적을 해석하는 방식으로 옳은 것은?",
+      "prompt": "How should Figure 1's life-span trajectories be read?",
       "options": [
-        "모든 참가자를 영아기부터 노년기까지 추적해 얻은 실제 평균값이다.",
-        "지식과 정서 목표의 발달을 개념적으로 나타낸 이상화된 이론 궤적이다.",
-        "과거 지향이 나이와 함께 일정하게 증가한다는 조사 결과의 도표다.",
-        "영아기의 높은 정서 목표가 추상적 시간 제한의 지각에서 비롯됨을 보여 준다."
+        "As measured averages from participants followed continuously from infancy into old age",
+        "As idealized theoretical trajectories of knowledge and emotional goal salience",
+        "As survey evidence that orientation toward the past rises at a constant rate with age",
+        "As proof that infants prioritize emotion because they understand abstract limits on lifetime"
       ],
-      "answer": "지식과 정서 목표의 발달을 개념적으로 나타낸 이상화된 이론 궤적이다.",
-      "explanation": "Figure 1은 지식 목표와 정서 목표가 생애에 걸쳐 어떻게 달라질 것으로 이론화되는지를 그린 이상화된 발달 궤적이다.",
+      "answer": "As idealized theoretical trajectories of knowledge and emotional goal salience",
+      "explanation": "Figure 1 is an idealized model. The infancy footnote explicitly states that limited cognitive capacity precludes appreciation of abstract time and that infants are highly motivated by both goal classes.",
       "evidence_segment_id": "TIMEDEV-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Interpreting the theoretical figure",
       "difficulty": "medium"
     },
     {
-      "prompt": "HIV 하위집단을 포함한 상대 분류 연구의 설계와 결과를 바르게 묶은 것은?",
+      "prompt": "Which description matches the social-partner classification study comparing HIV-status groups?",
       "options": [
-        "평균연령 37세인 세 남성 집단을 비교했고, 유증상 집단은 거의 전적으로 정서 차원에 비중을 두었다.",
-        "연령이 서로 다른 세 여성 집단을 비교했고, 무증상 집단은 정보 차원을 사용하지 않았다.",
-        "참가자가 정해진 두 묶음에 카드를 넣었고, 분석에서는 친숙도 한 차원만 나타났다.",
-        "HIV 상태를 무작위로 배정한 뒤 미래 접촉에 관한 직접 질문만 실시했다."
+        "Three male groups averaged 37 years; symptomatic participants weighted affect almost exclusively",
+        "Three female groups differed in age; asymptomatic participants ignored every information-related dimension",
+        "Participants sorted partners into two prescribed piles; analysis revealed familiarity as the sole dimension",
+        "Researchers randomly assigned HIV status and then asked only direct questions about expected future contact"
       ],
-      "answer": "평균연령 37세인 세 남성 집단을 비교했고, 유증상 집단은 거의 전적으로 정서 차원에 비중을 두었다.",
-      "explanation": "HIV 음성·양성 무증상·양성 유증상/AIDS 집단은 모두 남성이며 평균연령이 37세였다. 유증상 집단의 분류는 정서적 잠재력 차원에 거의 전적으로 의존했다.",
+      "answer": "Three male groups averaged 37 years; symptomatic participants weighted affect almost exclusively",
+      "explanation": "The groups were HIV-negative, HIV-positive and asymptomatic, and HIV-positive with AIDS symptoms. Mean age was 37 in each group. Sorting 18 partner cards and multidimensional scaling assessed representations; HIV status was not experimentally assigned.",
       "evidence_segment_id": "PARTNER-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "HIV-status comparison and partner representations",
       "difficulty": "medium"
     },
     {
-      "prompt": "우연기억 연구에서 연령에 따라 증가한 것으로 보고된 지표는?",
+      "prompt": "What increased with age in the incidental-memory study of a social narrative?",
       "options": [
-        "읽은 두 쪽의 문장을 그대로 재생한 전체 단어 수",
-        "예고된 검사에서 비정서 항목만 정확히 맞힌 수",
-        "전체 회상 중 정서 내용의 비율",
-        "한 시간 동안 반복해서 읽은 횟수"
+        "The total number of words reproduced verbatim from the two-page passage",
+        "The number of nonemotional details recalled on a test announced before reading",
+        "The proportion of recalled material that was emotional",
+        "The number of times participants reread the passage during the experimental hour"
       ],
-      "answer": "전체 회상 중 정서 내용의 비율",
-      "explanation": "저자들의 예측과 결과는 정서 항목의 절대 개수가 아니라 각 참가자의 전체 회상에서 정서 내용이 차지하는 비율에 관한 것이었다.",
+      "answer": "The proportion of recalled material that was emotional",
+      "explanation": "Participants aged 20 to 83 read a narrative and recalled it after unrelated activities. The prediction concerned the composition of recall, not a greater absolute amount of emotional recall among older adults.",
       "evidence_segment_id": "MEMORY-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Relative emotional salience in memory",
       "difficulty": "easy"
     },
     {
-      "prompt": "1999년 당시 정서조절의 연령차에 관한 근거와 한계를 가장 정확히 설명한 것은?",
+      "prompt": "Which statement preserves the evidence and limitation of emotion-regulation research as described in 1999?",
       "options": [
-        "종단연구에서 같은 개인의 정서조절 향상을 여러 시점에 확인해 횡단자료의 코호트 가능성이 작다고 해석했다.",
-        "여러 횡단 표본에서 노년기의 더 나은 통제가 보고됐지만 종단자료가 없어 코호트 대안은 남았다.",
-        "정서유발 실험에서 노인의 주관적 강도가 훨씬 낮아 정서 둔화를 확인했다.",
-        "문화적으로 단일한 표본만 사용해 집단 간 유사성을 살피지 못했다."
+        "Repeated longitudinal assessments had already ruled out cohort explanations for improved regulation within individuals",
+        "Diverse cross-sectional samples supported better control in old age, but cohort explanations remained",
+        "Mood-induction experiments showed much weaker subjective emotions in older adults, establishing emotional blunting",
+        "Only a culturally uniform sample was studied, preventing any examination of consistency across groups"
       ],
-      "answer": "여러 횡단 표본에서 노년기의 더 나은 통제가 보고됐지만 종단자료가 없어 코호트 대안은 남았다.",
-      "explanation": "다양한 횡단 표본은 노인의 더 나은 부정 정서 통제에 부합했지만, 당시 정서조절 종단연구가 없어서 코호트 설명을 배제하지 못했다.",
+      "answer": "Diverse cross-sectional samples supported better control in old age, but cohort explanations remained",
+      "explanation": "Older adults reported better emotional control across varied samples. The authors state that longitudinal emotion-regulation studies were then unavailable, so age differences could not conclusively be attributed to developmental change.",
       "evidence_segment_id": "EMOREG-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Evidence available in the article's historical context",
       "difficulty": "hard"
     },
     {
-      "prompt": "경험표집에서 관찰된 성인기 정서 양상으로 가장 정확한 것은?",
+      "prompt": "Which frequency-versus-intensity pattern was found in the experience-sampling study?",
       "options": [
-        "긍정 정서의 빈도는 유지됐지만 강도는 연령과 함께 크게 낮아졌고 초고령기에 다시 높아졌다.",
-        "부정 정서의 빈도는 성인기 내내 일정했고 초고령기에 강도와 지속만 크게 증가했으며, 긍정 정서의 빈도와 강도는 연령과 함께 감소했다.",
-        "긍정과 부정 정서를 동시에 경험하는 빈도는 연령과 함께 줄었고 두 정서의 강도도 모두 낮아졌다.",
-        "긍정 정서는 유지됐고 부정 정서 빈도는 대체로 줄다 초고령기에 반등했지만 젊은 성인보다 높지 않았고, 강도는 유지됐다."
+        "Positive emotions retained their frequency but lost intensity steadily throughout adulthood",
+        "Negative emotions stayed equally frequent, while positive and negative emotional intensity declined",
+        "Positive and negative emotions became less frequent and less intense with each successive age group",
+        "Positive affect stayed stable; negative affect generally became less frequent but not less intense"
       ],
-      "answer": "긍정 정서는 유지됐고 부정 정서 빈도는 대체로 줄다 초고령기에 반등했지만 젊은 성인보다 높지 않았고, 강도는 유지됐다.",
-      "explanation": "긍정 정서의 빈도와 강도는 성인기 전반에 유지됐다. 부정 정서 빈도는 대체로 감소하다 초고령기에 일부 반등했지만 젊은 성인기보다 높지 않았고, 경험할 때의 강도는 연령에 따라 낮아지지 않았다.",
+      "answer": "Positive affect stayed stable; negative affect generally became less frequent but not less intense",
+      "explanation": "Positive-emotion frequency and intensity were maintained. Negative-emotion frequency generally declined, with a modest rebound in very old age that did not exceed young-adult levels; negative-emotion intensity did not decline. These preliminary findings required further research.",
       "evidence_segment_id": "EMOREG-002",
-      "source": "Carstensen et al. (1999)",
+      "source": "Experience-sampling results",
       "difficulty": "medium"
     },
     {
-      "prompt": "사회연결망 자료에 대한 저자들의 해석으로 가장 적절한 것은?",
+      "prompt": "How do the authors interpret age differences in social networks?",
       "options": [
-        "연결망 감소는 성격과 가족상태에서 비롯된 표본 구성 차이가 만드는 현상으로 주로 해석된다.",
-        "노년기의 관계 감소는 죽음을 준비하는 과정에서 나타나는 사회적 이탈과 정서적 철수로 설명된다.",
-        "상실 가능성과 함께 의미 있는 관계를 남기는 선제적 가지치기도 고려해야 한다.",
-        "Berlin 횡단자료가 같은 사람의 관계 변화를 직접 보여 주었다."
+        "Personality and family status fully explain network selectivity",
+        "Withdrawal mainly removes the closest emotional relationships",
+        "Loss can matter, alongside proactive retention of emotionally meaningful relationships",
+        "Cross-sectional network differences establish individual change"
       ],
-      "answer": "상실 가능성과 함께 의미 있는 관계를 남기는 선제적 가지치기도 고려해야 한다.",
-      "explanation": "종단자료의 선택적 주변 관계 감소와 Berlin 표본의 친밀한 내적 원 보존은 상실만이 아니라 능동적 가지치기 해석을 뒷받침한다.",
+      "answer": "Loss can matter, alongside proactive retention of emotionally meaningful relationships",
+      "explanation": "Longitudinal findings showed selective reductions in acquaintance contact beginning before old age. The Berlin comparison found relatively preserved inner circles, but its cross-sectional design cannot establish individual developmental change.",
       "evidence_segment_id": "NETWORK-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Network composition and proactive selection",
       "difficulty": "medium"
     },
     {
-      "prompt": "이사와 생명 연장 상상 연구의 결과를 올바르게 비교한 것은?",
+      "prompt": "How did the imagined-move and imagined-life-extension conditions affect partner preferences?",
       "options": [
-        "이사 조건은 젊은이의 친숙한 상대 선호를 높였고, 연장 조건은 노인의 그 선호를 없앴다.",
-        "이사 조건은 젊은이에게 미래 정보가 있는 최근 지인을 고르게 했고 연장 조건은 노인의 사회적 선택에 영향을 주지 않았다.",
-        "이사 조건은 노인에게만, 연장 조건은 젊은이에게만 친숙한 상대를 고르게 했다.",
-        "두 조건에서도 기존 연령차는 유지되었고 책 저자의 상대적 선호만 높아졌다."
+        "An approaching move increased younger adults' familiar-partner preference; extra years removed older adults' bias",
+        "An approaching move led younger adults to favor recent acquaintances, while extra years left older adults' choices unchanged",
+        "An approaching move affected only older adults, whereas extra years affected only younger adults",
+        "Both conditions preserved the original age difference and merely increased every group's preference for a book author"
       ],
-      "answer": "이사 조건은 젊은이의 친숙한 상대 선호를 높였고, 연장 조건은 노인의 그 선호를 없앴다.",
-      "explanation": "제한시간 상상은 젊은이의 선호를 노인과 비슷하게 만들었고, 약 20년 연장 상상은 노인의 친숙한 상대 우세를 제거했다.",
+      "answer": "An approaching move increased younger adults' familiar-partner preference; extra years removed older adults' bias",
+      "explanation": "Imagining an imminent move made younger adults' preferences resemble older adults'. In a separate study, imagining a medical breakthrough adding about 20 years removed older adults' familiar-partner bias. These were hypothetical experimental conditions.",
       "evidence_segment_id": "PREFER-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Manipulating the perceived time horizon",
       "difficulty": "medium"
     },
     {
-      "prompt": "홍콩 반환을 이용한 연구에서 반환 1년 뒤 관찰된 양상은?",
+      "prompt": "What was observed one year after the Hong Kong handover?",
       "options": [
-        "반환 직전처럼 젊은이와 노인 사이의 친숙한 상대 선호 차이가 나타나지 않았다.",
-        "연령-선호의 일반 양상이 다시 나타났다.",
-        "젊은이는 친숙한 상대를, 노인은 책 저자를 더 선호하게 되었다.",
-        "정치적 종결 이후 사회적 상대 선호를 더는 측정하지 않았다."
+        "The absence of age differences seen immediately before the handover persisted without change",
+        "The earlier, typical association between age and partner preference reappeared",
+        "Younger adults favored familiar partners while older adults newly preferred unfamiliar book authors",
+        "Social-partner preferences were no longer measured after the political transition occurred"
       ],
-      "answer": "연령-선호의 일반 양상이 다시 나타났다.",
-      "explanation": "반환 약 4개월 전에는 젊은이와 노인 모두 친숙한 상대를 선호했지만, 1년 뒤에는 연령-선호 관련성이 이전의 일반 양상과 구분되지 않았다.",
+      "answer": "The earlier, typical association between age and partner preference reappeared",
+      "explanation": "About four months before the handover, both younger and older adults preferred familiar partners. One year afterward, the age pattern resembled that observed a year before the handover. This historical comparison is distinct from the imagined-emigration experiment.",
       "evidence_segment_id": "PREFER-002",
-      "source": "Carstensen et al. (1999)",
+      "source": "Hong Kong: political transition and preferences",
       "difficulty": "hard"
     },
     {
-      "prompt": "논문이 제시한 SST와 SOC의 관계로 옳은 것은?",
+      "prompt": "How does SST complement selective optimization with compensation (SOC)?",
       "options": [
-        "SST는 SOC의 선택 과정보다 노화로 인한 상실 보상에 설명의 초점을 옮긴다.",
-        "SOC는 사회·정서 목표를 특정하고 SST는 모든 영역의 일반 적응과정만 설명한다.",
-        "SST는 제한시간에 선택되는 사회·정서 목표를 특정하여 일반 적응과정을 다루는 SOC를 보완한다.",
-        "두 이론은 선택·최적화·보상의 동일한 세 과정을 서로 다른 이름으로 설명한다."
+        "SST replaces goal selection with compensation for loss as the sole explanation of later-life behavior",
+        "SOC specifies social and emotional goals, while SST describes only general adaptation processes across every domain",
+        "SST specifies social-emotional goal priorities within SOC's general account of adaptation",
+        "The two theories describe exactly the same three processes under interchangeable labels"
       ],
-      "answer": "SST는 제한시간에 선택되는 사회·정서 목표를 특정하여 일반 적응과정을 다루는 SOC를 보완한다.",
-      "explanation": "SOC는 선택·최적화·보상의 과정을 설명하지만 목표 내용을 특정하지 않고, SST는 제한된 시간에서 사회·정서 목표가 선택되는 이유를 구체화한다.",
+      "answer": "SST specifies social-emotional goal priorities within SOC's general account of adaptation",
+      "explanation": "SOC describes selection, optimization, and compensation without prescribing specific developmental goals. SST supplies domain-specific predictions about emotional and social goals as endings approach.",
       "evidence_segment_id": "LIFESPAN-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Relationship between SST and SOC",
       "difficulty": "hard"
     },
     {
-      "prompt": "SST의 문화적 적용에 관해 저자들이 붙인 한정으로 적절한 것은?",
+      "prompt": "What qualification do the authors make about applying SST across cultures?",
       "options": [
-        "홍콩의 유사한 결과를 근거로 구체적 관계의 의미와 사회적 목표도 문화 간에 상당히 안정적이라고 본다.",
-        "연령과 죽음의 관련성도 문화마다 크게 달라 이론의 핵심 명제가 재현되리라 예상하지 않는다.",
-        "이사 조작은 이동이 흔한 문화에서도 같은 종결을 뜻한다.",
-        "핵심 예측은 넓게 기대하되 목표·관계·종결의 의미는 문화마다 달라질 수 있다."
+        "Similar Hong Kong findings establish that particular relationships and social goals have identical meanings in every culture",
+        "Age and mortality are so unrelated across cultures that the theory makes no expectation of shared predictions",
+        "Imagining a move necessarily signals an ending even where frequent moves and expected returns are ordinary",
+        "Core predictions may recur, while goals, relationships, and the meaning of endings vary"
       ],
-      "answer": "핵심 예측은 넓게 기대하되 목표·관계·종결의 의미는 문화마다 달라질 수 있다.",
-      "explanation": "저자들은 기본적인 사회적 유대와 연령-죽음 관계의 폭넓은 가능성을 말하면서도, 목표와 관계의 의미 및 시간 조작의 타당성이 문화에 따라 달라질 수 있다고 한다.",
+      "answer": "Core predictions may recur, while goals, relationships, and the meaning of endings vary",
+      "explanation": "The authors expect the central proposition to generalize but acknowledge limited cross-cultural investigation. Cultural meanings can change which situations signal endings and which relationships or goals carry emotional value.",
       "evidence_segment_id": "CULTURE-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Cultural meanings and the scope of generalization",
       "difficulty": "hard"
     },
     {
-      "prompt": "인지적 연령차에 대한 논문의 입장으로 가장 정확한 것은?",
+      "prompt": "What position does the article take on cognitive age differences?",
       "options": [
-        "생물학적 인지저하를 인정하면서 동기적 초점도 일부 차이에 기여할 가능성을 제안한다.",
-        "출처기억 연령차의 주된 원인은 정서 목표이며 감각·공간 정보의 생물학적 변화는 부차적이라고 결론 낸다.",
-        "사실에 초점을 맞추라는 지시는 노인의 수행을 낮추고 정서초점은 젊은이의 출처기억을 높였다고 결론 낸다.",
-        "동기 설명이 탈억제 설명보다 더 잘 맞는다는 쪽으로 해석했다."
+        "Biological changes matter, and motivational focus may also contribute",
+        "Emotional goals are established as the main cause of source-memory deficits, making biological changes incidental",
+        "Factual-focus instructions impair older adults' recall, while emotional-focus instructions improve younger adults' source memory",
+        "The evidence decisively favors motivation over disinhibition as the explanation for source-memory differences"
       ],
-      "answer": "생물학적 인지저하를 인정하면서 동기적 초점도 일부 차이에 기여할 가능성을 제안한다.",
-      "explanation": "저자들은 생물학적 인지저하를 부정하지 않으며, 목표에 따른 초점이 일부 연령차에 기여할 가능성을 열어 둔다. 동기와 탈억제 설명도 확정하지 않는다.",
+      "answer": "Biological changes matter, and motivational focus may also contribute",
+      "explanation": "The authors accept biologically based cognitive changes while proposing a contributory role for motivational priorities. Whether the cited source-memory pattern reflects motivation or disinhibition remains unresolved.",
       "evidence_segment_id": "COGNITIVE-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Cognitive performance and motivational priorities",
       "difficulty": "hard"
     },
     {
-      "prompt": "생애 말기의 현재초점에 관한 임상 논의를 읽는 방식으로 알맞은 것은?",
+      "prompt": "How should the clinical discussion of present focus near the end of life be interpreted?",
       "options": [
-        "현재초점이 생애 말기 우울에 도움이 된다는 치료 전후 결과의 임상 적용으로 이해한다.",
-        "저자들이 제안한 미검증 추측이므로 향후 연구질문으로 한정해 이해한다.",
-        "생의 종결이 부정 정서를 높인다는 임상문헌의 관점을 확인한 치료 권고로 이해한다.",
-        "정신장애의 연령차에서 시간 관점이 주된 원인이라는 결론이다."
+        "As an intervention whose efficacy was tested in this article",
+        "As an explicitly untested conjecture that suggests further research",
+        "As proof that approaching endings invariably worsen mood",
+        "As a complete explanation of psychiatric age differences"
       ],
-      "answer": "저자들이 제안한 미검증 추측이므로 향후 연구질문으로 한정해 이해한다.",
-      "explanation": "저자들은 현재에 초점을 맞추는 일이 일부 사람에게 도움이 될 가능성을 ‘우리의 추측’이라고 명시했다. 이는 치료효과의 검증이나 현재 치료조언이 아니다.",
+      "answer": "As an explicitly untested conjecture that suggests further research",
+      "explanation": "The authors explicitly call the possible therapeutic benefit of present focus their conjecture. The passage proposes implications to investigate; it does not report a treatment-efficacy test.",
       "evidence_segment_id": "CLINICAL-001",
-      "source": "Carstensen et al. (1999)",
+      "source": "Limits of the proposed clinical implications",
       "difficulty": "hard"
     }
-  ]
+  ],
+  "language": "en"
 }

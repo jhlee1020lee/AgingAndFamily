@@ -1,142 +1,218 @@
 {
-  "title": "Levy (2009) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 가장 정확한 답 하나를 고르세요.",
+  "title": "Levy (2009): Multiple Choice",
+  "instructions": "Choose the single best answer supported by the article.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "고정관념 체화 이론의 네 구성요소에 포함되지 않는 것은?",
-      "options": ["생애 전반에 걸친 내면화", "유전적 필연성", "의식 밖에서의 자동적 작동", "노년기 단서가 높이는 자기관련성"],
-      "answer": "유전적 필연성",
-      "explanation": "네 요소는 내면화, 무의식적 작동, 자기관련성, 여러 경로다. 유전적 필연성은 이론 구성요소가 아니다.",
+      "prompt": "Which is NOT one of the four components of stereotype embodiment theory?",
+      "options": [
+        "Internalization across the life span",
+        "Genetic inevitability",
+        "Operation outside conscious awareness",
+        "Salience gained from self-relevance"
+      ],
+      "answer": "Genetic inevitability",
+      "explanation": "The four components are internalization, unconscious operation, self-relevance, and multiple pathways. Genetic inevitability is not a component.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록",
-      "difficulty": "기본"
+      "source": "Abstract",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노화에 대한 심리사회적 접근이 필요하다고 제시한 직접적인 이유는?",
-      "options": ["노인 건강에 큰 문화차가 관찰되기 때문에", "모든 생리적 쇠퇴가 허구이고 노년기 기능 저하가 실제로는 전혀 일어나지 않기 때문에", "젊은 사람은 어떤 문화에서도 연령 고정관념을 접하거나 학습하는 일이 전혀 없기 때문에", "의료제도만 건강을 결정해서"],
-      "answer": "노인 건강에 큰 문화차가 관찰되기 때문에",
-      "explanation": "불가피한 생리적 쇠퇴만으로는 문화에 따라 노인의 건강이 다른 현상을 충분히 설명할 수 없다는 것이 문제제기다.",
+      "prompt": "What motivates a psychosocial approach to aging in this article?",
+      "options": [
+        "Substantial cultural variation in older adults' health",
+        "The absence of any biological changes during adulthood",
+        "Young adults' complete immunity to age stereotypes",
+        "The claim that medical institutions alone determine health"
+      ],
+      "answer": "Substantial cultural variation in older adults' health",
+      "explanation": "An account based entirely on inevitable physiological decline does not adequately explain cultural differences in older adults' health.",
       "evidence_segment_id": "INTRO-001",
-      "source": "심리사회적 접근",
-      "difficulty": "기본"
+      "source": "Psychosocial approach",
+      "difficulty": "Core"
     },
     {
-      "prompt": "Ohio 종단연구 결과를 가장 정확하게 해석한 것은?",
-      "options": ["긍정적 자기지각이 개인차와 다른 위험요인에 상관없이 모든 사람의 수명을 정확히 7.5년 늘린다고 보장했다", "부정적 집단이 평균 7.5년 더 살았다", "18세 미만을 6개월 추적했다", "조정 후에도 긍정 집단은 기능과 평균 생존에서 우세했다"],
-      "answer": "조정 후에도 긍정 집단은 기능과 평균 생존에서 우세했다",
-      "explanation": "시작 시 50세 이상을 20년 넘게 추적했고, 더 긍정적인 자기지각 집단이 평균 7.5년 오래 살았지만 개인에게 보장되는 인과효과는 아니다.",
+      "prompt": "Which interpretation of the Ohio longitudinal findings is most accurate?",
+      "options": [
+        "Positive thinking guarantees an additional 7.5 years for every person",
+        "The negative-self-perception group lived 7.5 years longer on average",
+        "The study followed children for six months",
+        "The positive group retained functional and average survival advantages after adjustment"
+      ],
+      "answer": "The positive group retained functional and average survival advantages after adjustment",
+      "explanation": "Participants were at least 50 at baseline and followed for more than two decades. The average 7.5-year difference was observational, not a guaranteed individual causal effect.",
       "evidence_segment_id": "INTRO-002",
-      "source": "종단연구 근거",
-      "difficulty": "응용"
+      "source": "Longitudinal evidence",
+      "difficulty": "Application"
     },
     {
-      "prompt": "젊은 성인이 부정적 연령 고정관념을 방어 없이 내면화하기 쉬운 이유로 제시된 것은?",
-      "options": ["이미 스스로를 노인으로 보아서", "매체에 긍정적 이미지만 나와서", "고정관념이 아직 자신을 겨냥하지 않는다고 느끼기 때문에", "법으로 고정관념을 배워서"],
-      "answer": "고정관념이 아직 자신을 겨냥하지 않는다고 느끼기 때문에",
-      "explanation": "자신을 향하지 않는다고 느낄 때 맞서 방어할 필요도 덜 느끼므로 장기적으로 고정관념을 지닌 채 노년기에 들어갈 수 있다.",
+      "prompt": "Why may younger adults internalize negative age stereotypes without defending against them?",
+      "options": [
+        "They already identify themselves as older adults",
+        "Media expose them only to positive images of aging",
+        "They do not yet feel that the stereotypes target them",
+        "The law requires them to learn age stereotypes"
+      ],
+      "answer": "They do not yet feel that the stereotypes target them",
+      "explanation": "When stereotypes do not feel self-directed, people may feel little need to resist them and later carry those beliefs into old age.",
       "evidence_segment_id": "LIFE-001",
-      "source": "생애 전반의 내면화",
-      "difficulty": "응용"
+      "source": "Internalization across the life span",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Baltimore 종단자료의 18-39세 하위표본 결과는?",
-      "options": ["두 집단의 사건위험은 같았다", "긍정적 집단은 공변량 조정 뒤에도 38세 이전 심혈관 사건을 겪을 가능성이 부정적 집단의 정확히 두 배였다", "부정적 집단은 60세 이후 심혈관 사건 가능성이 두 배였다", "TV 시청량이 전부 설명했다"],
-      "answer": "부정적 집단은 60세 이후 심혈관 사건 가능성이 두 배였다",
-      "explanation": "18-39세 229명 하위표본에서 관련 공변량을 조정한 뒤에도 부정적 고정관념 집단의 가능성이 더 높았다.",
+      "prompt": "What did the Baltimore study find in its subgroup aged 18–39 at baseline?",
+      "options": [
+        "The two stereotype groups had identical cardiovascular risks",
+        "The positive group had twice the event risk before age 38",
+        "The negative group was twice as likely to have an event after age 60",
+        "Television viewing entirely accounted for cardiovascular risk"
+      ],
+      "answer": "The negative group was twice as likely to have an event after age 60",
+      "explanation": "In the subgroup of 229 participants, more negative baseline age stereotypes predicted twice the likelihood of a cardiovascular event after 60, after covariate adjustment.",
       "evidence_segment_id": "LIFE-002",
-      "source": "심혈관 종단근거",
-      "difficulty": "기본"
+      "source": "Cardiovascular longitudinal evidence",
+      "difficulty": "Core"
     },
     {
-      "prompt": "역하 점화 연구에서 55밀리초를 사용한 목적은?",
-      "options": ["참여자가 각 단어를 충분히 의식하고 장기기억에 남길 때까지 반복해서 암기하게 하려고", "의식적 지각은 막되 부호화는 가능하게 하려고", "시력검사와 안과 질환 진단을 한 번에 실시하려고", "반응속도만 진단하려고"],
-      "answer": "의식적 지각은 막되 부호화는 가능하게 하려고",
-      "explanation": "자극을 알아차리지 못한 상태에서 고정관념이 기능에 영향을 주는지를 검증하기 위한 속도였다.",
+      "prompt": "Why did the priming studies use a presentation duration of 55 milliseconds?",
+      "options": [
+        "To let participants consciously memorize every word",
+        "To permit encoding while preventing conscious perception",
+        "To diagnose eye disease during the experiment",
+        "To measure reaction speed without activating stereotypes"
+      ],
+      "answer": "To permit encoding while preventing conscious perception",
+      "explanation": "This duration was used to test whether age stereotypes could influence outcomes without participants consciously perceiving the stimulus.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "무의식적 작동",
-      "difficulty": "기본"
+      "source": "Unconscious operation",
+      "difficulty": "Core"
     },
     {
-      "prompt": "살고자 하는 의지 실험에서 긍정적 점화 집단의 경향은?",
-      "options": ["비용이 있어도 생명연장 개입을 택했다", "저축 손실 조건은 제시되지 않아 참가자들이 비용 정보를 전혀 듣지 못했다", "저축과 가족 부담 조건에 상관없이 모든 의료개입을 곧바로 거부했다", "자신의 결정을 연구에 참여하지 않은 젊은 사람에게 전적으로 맡겼다"],
-      "answer": "비용이 있어도 생명연장 개입을 택했다",
-      "explanation": "저축 손실과 가족돌봄 부담이라는 비용을 제시했을 때 긍정적 집단은 수용, 부정적 집단은 거부 쪽으로 기울었다.",
+      "prompt": "In the will-to-live experiment, what did positive-stereotype participants tend to choose?",
+      "options": [
+        "A life-prolonging intervention despite its costs",
+        "An intervention only when no financial costs were mentioned",
+        "Immediate rejection of every intervention regardless of its costs",
+        "Delegation of the entire decision to younger people"
+      ],
+      "answer": "A life-prolonging intervention despite its costs",
+      "explanation": "The scenarios included loss of savings and extensive family care. Positive priming favored acceptance, whereas negative priming favored rejection.",
       "evidence_segment_id": "UNCONSC-001",
-      "source": "살고자 하는 의지 실험",
-      "difficulty": "응용"
+      "source": "Will-to-live experiment",
+      "difficulty": "Application"
     },
     {
-      "prompt": "객관적 노년기 시작과 주관적 노년기 시작의 관계를 가장 정확하게 설명한 것은?",
-      "options": ["두 시작은 언제나 정확히 같은 날이다", "주관적 시작은 제도적 단서와 무관하다", "객관적 시작은 오직 생물학 검사로 정한다", "객관적 경계는 주관적 시작과 다르지만 그 인식에 기여할 수 있다"],
-      "answer": "객관적 경계는 주관적 시작과 다르지만 그 인식에 기여할 수 있다",
-      "explanation": "경로 할인이나 Social Security 가입 같은 자의적 경계는 개인이 노년기를 현재 상태로 인식하도록 만들 수 있다.",
+      "prompt": "How are the objective and subjective onsets of old age related?",
+      "options": [
+        "They always occur on exactly the same day",
+        "Subjective onset is unaffected by institutional cues",
+        "Objective onset is determined only by biological tests",
+        "Formal age thresholds are distinct from subjective onset but may contribute to it"
+      ],
+      "answer": "Formal age thresholds are distinct from subjective onset but may contribute to it",
+      "explanation": "Arbitrary thresholds, such as senior admission prices or Social Security enrollment, may contribute to recognizing old age as one's present state.",
       "evidence_segment_id": "SELFREL-001",
-      "source": "자기관련성",
-      "difficulty": "응용"
+      "source": "Self-relevance",
+      "difficulty": "Application"
     },
     {
-      "prompt": "자기관련성을 촉진하는 제도 수준의 단서에 해당하는 것은?",
-      "options": ["노인이 긍정적 단어를 직접 선택하는 일", "노년기 제도적 차별과 무관한 친구 사이의 취미·여가 활동을 서로 공유하는 일", "아동이 수학문제를 푸는 일", "노인에게 고용이나 적절한 의료처치를 거부하는 일"],
-      "answer": "노인에게 고용이나 적절한 의료처치를 거부하는 일",
-      "explanation": "저자는 대인관계의 잘난 체하는 말투와 제도 수준의 고용·의료 차별을 노년기 단서로 구분한다.",
+      "prompt": "Which is an institutional cue that can make age stereotypes self-relevant?",
+      "options": [
+        "An older person freely choosing positive words",
+        "Friends sharing hobbies without age-based restrictions",
+        "A child solving a mathematics problem",
+        "An older person being denied employment or appropriate medical treatment"
+      ],
+      "answer": "An older person being denied employment or appropriate medical treatment",
+      "explanation": "Levy distinguishes interpersonal cues, such as patronizing speech, from institutional cues in employment and medical care.",
       "evidence_segment_id": "SELFREL-002",
-      "source": "사회적 단서",
-      "difficulty": "기본"
+      "source": "Societal cues",
+      "difficulty": "Core"
     },
     {
-      "prompt": "고정관념 일치 효과의 예로 가장 적절한 것은?",
-      "options": ["고정관념의 내용 영역과 수행과제의 결과 영역이 달라도 모든 효과가 같은 크기로 나타나는 것", "신체 고정관념이 신체과제와 맞을 때 효과가 커지는 것", "특정 결과를 피하려고 노인 참여자를 연구 표본에서 처음부터 모두 제외하는 것", "긍정 점화가 의식적으로만 작동하는 것"],
-      "answer": "신체 고정관념이 신체과제와 맞을 때 효과가 커지는 것",
-      "explanation": "고정관념의 내용 영역이 결과 영역과 맞을 때 기대가 더 구체적인 결과를 향해 영향이 커진다.",
+      "prompt": "Which example best illustrates the stereotype-matching effect?",
+      "options": [
+        "All stereotype content produces identical effects on every task",
+        "Physical stereotypes have stronger effects on a corresponding physical task",
+        "Researchers exclude all older participants to avoid an unwanted finding",
+        "Positive primes operate only when consciously perceived"
+      ],
+      "answer": "Physical stereotypes have stronger effects on a corresponding physical task",
+      "explanation": "Corresponding stereotype content and outcome domains appear to strengthen expectations directed at the relevant outcome.",
       "evidence_segment_id": "PATH-PSYCH-001",
-      "source": "심리적 경로",
-      "difficulty": "기본"
+      "source": "Psychological pathway",
+      "difficulty": "Core"
     },
     {
-      "prompt": "행동적 경로의 대표 근거는?",
-      "options": ["부정적 점화가 혈압과 피부전도 같은 생리적 스트레스 반응을 즉시 높였다는 실험 결과", "고정관념 점화 효과가 노년층보다 젊은 참여자에게 더 약하게 나타났다는 집단 비교 결과", "긍정 집단이 이후 18년 동안 건강행동을 실천할 가능성이 더 높았다는 결과", "텔레비전 시청량과 방송 내용이 모든 문화와 연령집단에서 정확히 같았다는 조사 결과"],
-      "answer": "긍정 집단이 이후 18년 동안 건강행동을 실천할 가능성이 더 높았다는 결과",
-      "explanation": "처방약 복용 같은 건강행동의 차이는 고정관념이 행동을 거쳐 건강에 연결될 수 있음을 보여 준다.",
+      "prompt": "Which finding most directly supports the behavioral pathway?",
+      "options": [
+        "Negative primes increased immediate cardiovascular stress responses",
+        "Younger adults showed weaker responses to the same priming protocol",
+        "Positive self-perceptions predicted healthier practices over the next 18 years",
+        "Television exposure was identical across cultures and age groups"
+      ],
+      "answer": "Positive self-perceptions predicted healthier practices over the next 18 years",
+      "explanation": "Differences in practices such as taking prescribed medication illustrate how beliefs may influence health through behavior.",
       "evidence_segment_id": "PATH-BEHAV-001",
-      "source": "행동적 경로",
-      "difficulty": "기본"
+      "source": "Behavioral pathway",
+      "difficulty": "Core"
     },
     {
-      "prompt": "그림 2의 결과 방향은?",
-      "options": ["긍정 점화는 심혈관 반응을 낮추고 부정 점화는 그 반응을 높였다", "두 점화 모두 반응을 완전히 없앴다", "점화 조건과 반응 사이에 어떤 차이도 없었다", "긍정적 점화는 심혈관 반응을 높이고 부정적 점화는 낮췄다"],
-      "answer": "긍정 점화는 심혈관 반응을 낮추고 부정 점화는 그 반응을 높였다",
-      "explanation": "수축기·이완기 혈압과 피부전도도에서 긍정적 고정관념과 부정적 고정관념이 반대 방향의 스트레스 반응을 만들었다.",
+      "prompt": "What direction of response is shown in Figure 2?",
+      "options": [
+        "Positive priming reduced stress responses; negative priming increased them",
+        "Both kinds of priming completely eliminated stress responses",
+        "The priming conditions produced identical responses",
+        "Positive priming increased responses; negative priming reduced them"
+      ],
+      "answer": "Positive priming reduced stress responses; negative priming increased them",
+      "explanation": "Systolic and diastolic blood pressure and skin conductance showed opposing response directions under positive and negative age-stereotype priming.",
       "evidence_segment_id": "PATH-PHYS-001",
-      "source": "생리적 경로",
-      "difficulty": "함정"
+      "source": "Physiological pathway",
+      "difficulty": "Check the distinction"
     },
     {
-      "prompt": "향후 개입의 남은 과제로 저자가 지목한 것은?",
-      "options": ["부정적인 의미가 조금이라도 들어 있는 모든 연령 관련 단어와 표현을 법률로 일괄 금지하는 것", "긍정적 연령 고정관념을 일상에서 지속 활성화하는 것", "노년기의 생리연구를 중단하는 것", "젊은 사람만 대상으로 실험하는 것"],
-      "answer": "긍정적 연령 고정관념을 일상에서 지속 활성화하는 것",
-      "explanation": "실험실에서 긍정적 점화의 가능성은 확인했지만 일상생활에서 지속되게 만드는 방법은 남아 있다.",
+      "prompt": "Which intervention challenge does Levy identify for future work?",
+      "options": [
+        "Legally banning every age-related word with any negative connotation",
+        "Sustaining positive age-stereotype activation in everyday life",
+        "Discontinuing physiological research on older adults",
+        "Restricting future experiments to younger participants"
+      ],
+      "answer": "Sustaining positive age-stereotype activation in everyday life",
+      "explanation": "Laboratory experiments demonstrated the potential of positive priming; maintaining that activation in daily life remains a challenge.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "향후 연구 방향",
-      "difficulty": "응용"
+      "source": "Future directions",
+      "difficulty": "Application"
     },
     {
-      "prompt": "연령 고정관념이 다른 고정관념과 다른 특징으로 논문이 든 것은?",
-      "options": ["젊은 적용자도 오래 살면 결국 대상집단에 들어간다는 점", "연령 고정관념의 대상집단은 생애 동안 절대로 변하지 않아 적용자와 대상자의 위치가 영구히 고정된다는 점", "연령 고정관념에는 긍정적인 내용이나 긍정적 자기지각이 존재할 가능성이 전혀 없다는 점", "오직 학교에서만 학습된다는 점"],
-      "answer": "젊은 적용자도 오래 살면 결국 대상집단에 들어간다는 점",
-      "explanation": "현재 노인을 대상화하는 젊은 사람도 오래 살면 노인 집단에 합류한다는 전환성이 연령 고정관념의 독특성이다.",
+      "prompt": "Which distinctive feature of age stereotypes does the article identify?",
+      "options": [
+        "Younger people who stereotype older people will join that group if they live long enough",
+        "The people applying a stereotype and its targets remain permanently separate",
+        "Age stereotypes cannot contain positive beliefs or self-perceptions",
+        "Age stereotypes are learned exclusively at school"
+      ],
+      "answer": "Younger people who stereotype older people will join that group if they live long enough",
+      "explanation": "Unlike membership in many other targeted groups, membership in the older age group is a prospective transition for younger people who survive long enough.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "이론의 적용 한계",
-      "difficulty": "응용"
+      "source": "Limits of transferability",
+      "difficulty": "Application"
     },
     {
-      "prompt": "논문 전체의 연구유형을 가장 잘 설명한 것은?",
-      "options": ["하나의 새 표본만 분석한 단일 횡단연구", "임상치료 지침만 제시한 매뉴얼", "실험·종단 증거를 통합해 이론을 제시한 논문", "고정관념과 무관한 생물학 실험"],
-      "answer": "실험·종단 증거를 통합해 이론을 제시한 논문",
-      "explanation": "저자는 기존의 실험·종단 증거를 네 구성요소로 조직해 고정관념 체화 이론을 제시한다.",
+      "prompt": "Which description best captures the article's research approach?",
+      "options": [
+        "A single cross-sectional analysis of a new sample",
+        "A manual containing only clinical treatment guidelines",
+        "A theoretical synthesis of experimental and longitudinal evidence",
+        "A biological experiment unrelated to stereotypes"
+      ],
+      "answer": "A theoretical synthesis of experimental and longitudinal evidence",
+      "explanation": "Levy organizes prior experimental and longitudinal findings into the four components of stereotype embodiment theory.",
       "evidence_segment_id": "ABS-001",
-      "source": "초록",
-      "difficulty": "응용"
+      "source": "Abstract",
+      "difficulty": "Application"
     }
-  ]
+  ],
+  "language": "en"
 }

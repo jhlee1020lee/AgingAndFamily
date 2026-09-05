@@ -1,217 +1,218 @@
 {
-  "title": "Oswald et al. (2010) 객관식 퀴즈",
-  "instructions": "각 문항에서 가장 정확한 답 하나를 고르세요. 유사한 측정치, 분석단계, 연령별 결과와 인과범위를 구분해야 합니다.",
+  "title": "Oswald et al. (2010): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Distinguish measures, hypotheses, zero-order correlations, simultaneous regressions, and their limits. Young–old denotes ages 65–79 and old–old ages 80–94 in this sample. Cross-sectional associations do not establish individual change or causal effects.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "이 연구가 직접 답하려 한 중심 질문은?",
+      "prompt": "What was the study's central question?",
       "options": [
-        "시설 입소 뒤 주거서비스 이용량과 의료비가 지역사회 거주자의 같은 비용보다 낮아지는지를 연령별로 비교하는 질문",
-        "농촌과 도시의 주택가격 차이가 모든 연령대 주민의 이주 의향을 결정하는지를 추적하는 질문",
-        "집·근린의 물리·사회 환경이 두 노년집단의 삶의 만족도에 자원 또는 위험으로 관련되는지를 묻는 질문",
-        "배우자 사별 뒤 자녀와의 접촉빈도가 주거면적 변화의 원인이 되는지를 실험하는 질문"
+        "Whether entering an institution reduced housing-service use and medical costs compared with remaining in the community.",
+        "Whether differences in urban and rural house prices caused relocation intentions across the entire adult population.",
+        "Whether physical and social features of home and neighborhood related to life satisfaction in two older age groups.",
+        "Whether contact with adult children experimentally changed apartment size after an older person lost a spouse."
       ],
-      "answer": "집·근린의 물리·사회 환경이 두 노년집단의 삶의 만족도에 자원 또는 위험으로 관련되는지를 묻는 질문",
-      "explanation": "연구는 지역사회 거주 65–94세의 집·근린 환경과 삶의 만족도를 연령집단별로 비교했다.",
+      "answer": "Whether physical and social features of home and neighborhood related to life satisfaction in two older age groups.",
+      "explanation": "The study examined home and neighborhood environments in relation to life satisfaction among 381 community-dwelling adults aged 65–94. Its cross-sectional design compared age groups; it did not follow the same individuals from young–old to old–old age or test the effects of a housing intervention.",
       "evidence_segment_id": "ABS-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Abstract: research question and scope",
       "difficulty": "easy"
     },
     {
-      "prompt": "개인–환경 행위성과 소속감을 가장 정확히 구분한 것은?",
+      "prompt": "How does the framework distinguish person–environment agency from belonging?",
       "options": [
-        "행위성은 환경 이용·조절, 소속감은 장소 경험·평가와 유대다",
-        "행위성은 지역 평균소득이고, 소속감은 같은 집에 거주한 객관적 연수만을 뜻한다",
-        "행위성은 이웃 접촉의 정서적 만족이며, 소속감은 계단과 현관의 물리적 접근성이다",
-        "행위성은 후기노인에게만 측정한 건강변수이고, 소속감은 전기노인에게만 측정한 결과변수다"
+        "Agency concerns using and managing the environment; belonging concerns experiencing, evaluating, and bonding with places.",
+        "Agency refers to average neighborhood income; belonging refers only to the recorded number of years at an address.",
+        "Agency means emotional satisfaction with neighbors; belonging means the physical accessibility of stairs and entrances.",
+        "Agency is a health variable measured only in the old–old; belonging is an outcome assessed only in the young–old group."
       ],
-      "answer": "행위성은 환경 이용·조절, 소속감은 장소 경험·평가와 유대다",
-      "explanation": "이 틀은 물리환경의 사용과 장소의 주관적 경험을 상호보완적인 개인–환경 과정으로 본다.",
+      "answer": "Agency concerns using and managing the environment; belonging concerns experiencing, evaluating, and bonding with places.",
+      "explanation": "The framework complements use of physical environmental resources with subjective experience and evaluation of places. Agency and belonging are related perspectives on person–environment processes, not separate labels for objective income and residential duration.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Framework: agency and belonging",
       "difficulty": "medium"
     },
     {
-      "prompt": "주거면적에 대한 연령별 이론적 예측은?",
+      "prompt": "What age-related hypothesis did the authors propose about a larger apartment?",
       "options": [
-        "큰 집은 지원 서비스가 많으므로 후기노인에게만 자원이고 전기노인에게는 위험일 것이다",
-        "주거면적은 개인 역량과 무관하므로 두 연령집단 모두에서 같은 방향으로 작동할 것이다",
-        "방 수만 효과가 있고 제곱미터 면적은 어느 연령집단에서도 삶의 만족도와 관련되지 않을 것이다",
-        "넓은 공간은 전기노인에게 환경 풍부함이지만 후기노인에게 더 긴 실내 이동거리를 요구하는 환경압박일 수 있다"
+        "It would benefit only the old–old because larger homes necessarily provide more formal care services.",
+        "It would have the same association in both groups because personal competence cannot affect the meaning of space.",
+        "Its room count would matter, but its measured area could not relate to life satisfaction in either age group.",
+        "It could offer resources to the young–old but create demands, such as longer indoor walks, for the old–old."
       ],
-      "answer": "넓은 공간은 전기노인에게 환경 풍부함이지만 후기노인에게 더 긴 실내 이동거리를 요구하는 환경압박일 수 있다",
-      "explanation": "연구진은 제3기의 높은 역량과 제4기의 제한된 역량이 같은 공간의 의미를 바꿀 것으로 보았다.",
+      "answer": "It could offer resources to the young–old but create demands, such as longer indoor walks, for the old–old.",
+      "explanation": "Higher competence may support proactive use of environmental richness, whereas restricted mobility can turn the same space into environmental demands. This is a theoretical interpretation of how resources and capacities fit. It does not establish that reducing apartment size improves an individual's well-being.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Framework: resources and environmental demands",
       "difficulty": "medium"
     },
     {
-      "prompt": "표본 추출과 조사방식을 올바르게 설명한 것은?",
+      "prompt": "How were participants sampled and primarily surveyed?",
       "options": [
-        "지역 요양시설 명부에서 연령별 전수표본을 뽑아 방문면접을 실시했다",
-        "병원 외래 자원자를 성별로 할당해 종단 전화면접을 실시했다",
-        "지역 통계기관이 연령·성별로 층화한 무작위표본에 우편설문을 실시했다",
-        "주택소유자 중 독거인만 편의표집해 온라인 설문을 실시했다"
+        "All residents on local nursing-home lists were sampled by age and interviewed during repeated home visits.",
+        "Hospital outpatients volunteered for sex-based quotas and completed annual telephone follow-up interviews.",
+        "The local statistics bureau drew an age- and sex-stratified random sample, and questionnaires were mailed.",
+        "Homeowners living alone were recruited by convenience and completed an online survey about relocation."
       ],
-      "answer": "지역 통계기관이 연령·성별로 층화한 무작위표본에 우편설문을 실시했다",
-      "explanation": "지역 통계기관이 연령과 성별로 층화해 무작위로 추출한 지역사회 주민에게 설문지를 우편 발송했다.",
+      "answer": "The local statistics bureau drew an age- and sex-stratified random sample, and questionnaires were mailed.",
+      "explanation": "The study sampled community residents in a district of Darmstadt, Germany. Questionnaires went by mail to 773 potential participants; telephone reminders sought to improve response, and three participants completed the questionnaire by phone. After 21 exclusions for missing data, the analytic sample was 381: 226 aged 65–79 and 155 aged 80–94. Regression sample sizes were smaller after further listwise deletion.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Participants: sampling and data collection",
       "difficulty": "medium"
     },
     {
-      "prompt": "연구진이 더 세분화된 주거·근린 척도를 사용하지 않은 이유는?",
+      "prompt": "Why did the researchers use relatively simple housing and neighborhood measures?",
       "options": [
-        "정교한 환경척도는 두 연령집단에서 신뢰도가 전혀 없다고 이미 확인했기 때문에",
-        "참여자가 집에서 혼자 작성하는 설문의 노력과 복잡성을 줄여야 했기 때문에",
-        "모든 주거·근린 변수가 행정자료에 같은 단위로 기록되어 있었기 때문에",
-        "환경은 분석대상이 아니고 기능능력만 결과변수로 측정하려 했기 때문에"
+        "They had already shown that detailed environmental scales had no reliability in either age group.",
+        "The questionnaire had to be manageable for participants completing it alone at home.",
+        "All environmental characteristics were already available in administrative records using identical units.",
+        "Environmental conditions were outside the study, which measured functional capacity as its sole outcome."
       ],
-      "answer": "참여자가 집에서 혼자 작성하는 설문의 노력과 복잡성을 줄여야 했기 때문에",
-      "explanation": "참여자가 집에서 혼자 작성하는 설문의 노력과 복잡성을 낮추기 위해 더 정교한 환경측정을 사용하지 않았다.",
+      "answer": "The questionnaire had to be manageable for participants completing it alone at home.",
+      "explanation": "The authors reduced assessment effort and complexity for a self-administered survey. This practical choice limited the detail of environmental measurement. It does not mean that more elaborate or observer-based assessments are invalid or unnecessary.",
       "evidence_segment_id": "CONCEPTS-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Measures: feasibility of the questionnaire",
       "difficulty": "medium"
     },
     {
-      "prompt": "사회적 주거환경에 실제로 포함된 세 영역은?",
+      "prompt": "Which three areas were included in the social housing measures?",
       "options": [
-        "배우자 만족도, 성인자녀 부양시간, 공식 돌봄서비스 이용량",
-        "가족갈등, 친구관계의 질, 종교모임 참여빈도와 사회활동량",
-        "가구소득, 주택소유, 같은 장소의 거주기간과 주택유형",
-        "동거, 사회적 근린의 질, 근처 친구·친척"
+        "Marital satisfaction, time spent caring for adult children, and hours of formal care received.",
+        "Family conflict, quality of all friendships, and frequency of religious and social activities.",
+        "Household income, ownership status, and the type and duration of the current housing tenure.",
+        "Living with others, perceived social neighborhood quality, and nearby friends or relatives."
       ],
-      "answer": "동거, 사회적 근린의 질, 근처 친구·친척",
-      "explanation": "연구의 사회변수는 일반 사회관계망 전체가 아니라 집과 근린에 결부된 세 영역이었다.",
+      "answer": "Living with others, perceived social neighborhood quality, and nearby friends or relatives.",
+      "explanation": "The social measures were specifically tied to home and neighborhood: household composition, a friendly local atmosphere and satisfying contacts, and social partners nearby. They were not a comprehensive assessment of all social relationships or support exchanges.",
       "evidence_segment_id": "SOCIAL-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Social environment: measured domains",
       "difficulty": "easy"
     },
     {
-      "prompt": "연구 전에 세운 사회적 주거환경의 연령별 예측은?",
+      "prompt": "Which age-specific expectations about the social environment preceded the analysis?",
       "options": [
-        "동거는 특히 전기노인에게, 가까운 지인과 사회적 근린의 질은 후기노인에게 자원일 것이다",
-        "동거는 후기노인에게만, 가까운 지인과 사회적 근린의 질은 전기노인에게만 자원일 것이다",
-        "세 사회적 지표는 전기노인에게만 자원이고 후기노인에게는 모두 위험일 것이다",
-        "동거·가까운 지인·사회적 근린의 질은 연령과 무관하게 같은 효과를 낼 것이다"
+        "Living with others would matter especially for the young–old; nearby social partners and local social quality for the old–old.",
+        "Living with others would help only the old–old; nearby social partners and local social quality would help only the young–old.",
+        "Every social indicator would benefit the young–old while posing a comparable risk to life satisfaction in the old–old group.",
+        "Household composition, nearby contacts, and local social quality would have identical associations regardless of age group."
       ],
-      "answer": "동거는 특히 전기노인에게, 가까운 지인과 사회적 근린의 질은 후기노인에게 자원일 것이다",
-      "explanation": "가구구성과 근린의 사회적 자원이 노년단계에 따라 다르게 중요할 것이라는 사전 예측이었다.",
+      "answer": "Living with others would matter especially for the young–old; nearby social partners and local social quality for the old–old.",
+      "explanation": "These were predictions based on possible differences in spouses, social resources, and adaptation in later life. They should not be confused with the results: the expected independent associations of local social indicators in the old–old were not supported in the simultaneous models.",
       "evidence_segment_id": "AIMS-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Aims: social-environment hypotheses",
       "difficulty": "medium"
     },
     {
-      "prompt": "표 2의 영차 상관에서 추가로 나타난 연령집단 차이는?",
+      "prompt": "Which additional group difference appeared in the reported zero-order correlations?",
       "options": [
-        "쾌적성과 삶의 만족도의 관계가 후기노인에서만 정적으로 나타났다",
-        "동거와 삶의 만족도의 관계가 후기노인에서만 정적으로 나타났다",
-        "접근성과 IADL의 관계가 후기노인에서만 강했다",
-        "쾌적성과 동거의 관계가 전기노인보다 후기노인에서 더 컸다"
+        "Housing comfort was positively correlated with life satisfaction only in the old–old group.",
+        "Living with others was positively correlated with life satisfaction only in the old–old group.",
+        "Perceived accessibility was strongly correlated with IADL functioning only in the old–old group.",
+        "The correlation between housing comfort and living with others was larger in the old–old group."
       ],
-      "answer": "쾌적성과 동거의 관계가 전기노인보다 후기노인에서 더 컸다",
-      "explanation": "주거 쾌적성과 타인과의 동거 사이의 상관은 후기노인 집단에서 더 컸다.",
+      "answer": "The correlation between housing comfort and living with others was larger in the old–old group.",
+      "explanation": "Table 2 and its accompanying text show a larger comfort–co-residence correlation in the old–old than in the young–old group. This is a zero-order association between two predictors, not the adjusted effect of either on life satisfaction or evidence that moving in together improves housing comfort.",
       "evidence_segment_id": "CORRELATIONS-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Correlations: comfort and household composition",
       "difficulty": "hard"
     },
     {
-      "prompt": "연령집단 차이가 다른 변수보다 가장 컸던 영역은?",
+      "prompt": "Which domain showed the largest age-group differences relative to the other study variables?",
       "options": [
-        "기본 주거 접근성, 특히 현관까지의 무계단 접근 여부",
-        "기능능력, 그중에서도 도구적 일상생활활동 IADL",
-        "사회적 근린의 질, 특히 이웃과 나눈 만족스러운 접촉",
-        "교육수준과 자가소유 여부, 특히 고등교육 비율"
+        "Basic home accessibility, particularly whether the front entrance could be reached without stairs.",
+        "Functional capacity, especially instrumental activities of daily living, or IADL.",
+        "Perceived social neighborhood quality, particularly satisfying contact with people living nearby.",
+        "Educational attainment and homeownership, particularly the proportion with higher education."
       ],
-      "answer": "기능능력, 그중에서도 도구적 일상생활활동 IADL",
-      "explanation": "연령집단 차이는 기능능력에서 가장 컸고 특히 IADL 차이가 두드러졌다.",
+      "answer": "Functional capacity, especially instrumental activities of daily living, or IADL.",
+      "explanation": "Age-group differences were strongest for functional capacity, especially IADL. The young–old also reported higher life satisfaction. These are cross-sectional group differences, not observed losses in functioning as the same participants aged.",
       "evidence_segment_id": "AGE-DIFF-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Age-group differences: functional capacity",
       "difficulty": "medium"
     },
     {
-      "prompt": "전체표본 동시 회귀에서 유의한 관련성의 조합은?",
+      "prompt": "Which pattern describes the simultaneous regression for the total sample?",
       "options": [
-        "ADL·근린의 질·장소애착은 정적, 연령은 부적이었고 실내·사회 지표는 유의하지 않았다",
-        "주거면적·접근성·쾌적성은 모두 정적이었고 근린과 기능능력 지표는 통제 뒤 유의하지 않았다",
-        "동거·근처 지인·사회적 근린의 질만 정적이었고 ADL은 회귀에서 제외되었다",
-        "연령은 정적, 근린의 질은 부적이었고 장소애착은 다른 변수 통제 뒤 사라졌다"
+        "ADL, neighborhood quality, and attachment were positive predictors; age was negative, with indoor and social indicators nonsignificant.",
+        "Apartment size, accessibility, and comfort were all positive predictors; neighborhood and health indicators were nonsignificant after adjustment.",
+        "Living with others, nearby contacts, and local social quality were the only positive predictors; ADL was excluded from the model entirely.",
+        "Age was positive and neighborhood quality negative; outdoor place attachment lost its association once the remaining variables entered."
       ],
-      "answer": "ADL·근린의 질·장소애착은 정적, 연령은 부적이었고 실내·사회 지표는 유의하지 않았다",
-      "explanation": "전체표본에서는 건강 통제와 근린 관련 지표가 독립적으로 관련됐지만 실내·사회 지표는 그렇지 않았다.",
+      "answer": "ADL, neighborhood quality, and attachment were positive predictors; age was negative, with indoor and social indicators nonsignificant.",
+      "explanation": "The full-sample model explained 29% of variance. ADL functioning, neighborhood quality, and outdoor attachment were positively associated with life satisfaction, while age was negatively associated. The apartment-size associations emerged in the separate age-group analyses, not as a significant full-sample coefficient. IADL, rather than ADL, was excluded because of multicollinearity.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Regression: total sample",
       "difficulty": "hard"
     },
     {
-      "prompt": "전기노인의 삶의 만족도 회귀양상은?",
+      "prompt": "Which environmental associations were found in the young–old regression?",
       "options": [
-        "작은 집·독거·낮은 장소애착이 정적이었고 근린의 질은 유의하지 않았다",
-        "접근성·쾌적성·근처 지인이 정적이었고 주거면적은 유의하지 않았다",
-        "큰 집·좋은 근린·강한 장소애착·동거가 정적으로 관련됐다",
-        "근처 지인만 정적이었고 ADL은 유의하지 않았다"
+        "Smaller apartments, living alone, and weaker attachment were positive; neighborhood quality was nonsignificant.",
+        "Accessibility, comfort, and nearby social partners were positive; apartment size was nonsignificant.",
+        "Larger apartments, better neighborhood quality, stronger outdoor attachment, and living with others were positive.",
+        "Nearby social partners were the only positive environmental predictor, while ADL had no significant association."
       ],
-      "answer": "큰 집·좋은 근린·강한 장소애착·동거가 정적으로 관련됐다",
-      "explanation": "전기노인에서는 주거면적과 동거가 근린의 질·장소애착과 함께 독립적으로 관련됐다.",
+      "answer": "Larger apartments, better neighborhood quality, stronger outdoor attachment, and living with others were positive.",
+      "explanation": "For adults aged 65–79, apartment size and living with others had positive adjusted associations alongside neighborhood quality and outdoor attachment. ADL also remained important. Accessibility, comfort, local social quality, and nearby social partners were not significant in the simultaneous model. Association does not establish an effect of moving to a larger home or changing household composition.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Regression: young–old group",
       "difficulty": "medium"
     },
     {
-      "prompt": "후기노인의 삶의 만족도 회귀양상은?",
+      "prompt": "Which environmental associations were found in the old–old regression?",
       "options": [
-        "큰 집·동거는 정적이었고 근린의 질·장소애착은 유의하지 않았다",
-        "작은 집·좋은 근린·강한 장소애착은 정적이었고 사회지표는 유의하지 않았다",
-        "접근성·쾌적성은 정적이었고 주거면적·근린의 질은 유의하지 않았다",
-        "근처 지인·사회적 근린의 질은 정적이었고 ADL은 유의하지 않았다"
+        "Larger apartments and living with others were positive; neighborhood quality and attachment were nonsignificant.",
+        "Smaller apartments, better neighborhood quality, and stronger attachment were positive; social indicators were nonsignificant.",
+        "Accessibility and comfort were positive; apartment size and neighborhood quality were nonsignificant after adjustment.",
+        "Nearby contacts and social neighborhood quality were positive; ADL functioning had no significant association."
       ],
-      "answer": "작은 집·좋은 근린·강한 장소애착은 정적이었고 사회지표는 유의하지 않았다",
-      "explanation": "후기노인에서는 주거면적이 부적이었고 두 근린지표는 정적이었으며 사회적 주거지표는 유의하지 않았다.",
+      "answer": "Smaller apartments, better neighborhood quality, and stronger attachment were positive; social indicators were nonsignificant.",
+      "explanation": "Among adults aged 80–94, apartment size had a negative coefficient, while neighborhood quality and outdoor attachment had positive coefficients. The social housing measures were nonsignificant. ADL was the strongest predictor by unique variance. The smaller-apartment association does not demonstrate that downsizing would improve well-being.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Regression: old–old group",
       "difficulty": "medium"
     },
     {
-      "prompt": "근린변수 블록의 연령별 고유기여를 맞게 비교한 것은?",
+      "prompt": "How did the neighborhood block's unique contribution differ between age groups?",
       "options": [
-        "전기 5%, 후기 11%로 후기에서 두 배 이상 컸다",
-        "전기노인 11%, 후기노인 5%로 전기노인에서 두 배 이상 컸다",
-        "두 집단 모두 8%로 같았고 연령상호작용도 유의하지 않았다",
-        "전기노인 27%, 후기노인 39%로 각 모형의 전체 R²와 동일했다"
+        "It was 5% in the young–old and 11% in the old–old, more than twice as large in the latter group.",
+        "It was 11% in the young–old and 5% in the old–old, more than twice as large in the former group.",
+        "It was 8% in both groups, with no reported age interactions for the individual neighborhood predictors.",
+        "It was 27% in the young–old and 39% in the old–old, equal to each model's total explained variance."
       ],
-      "answer": "전기 5%, 후기 11%로 후기에서 두 배 이상 컸다",
-      "explanation": "근린의 질과 장소애착의 개별 고유기여도 후기노인 5%·3%, 전기노인 3%·2%였다.",
+      "answer": "It was 5% in the young–old and 11% in the old–old, more than twice as large in the latter group.",
+      "explanation": "The neighborhood block contributed 5% and 11% uniquely, distinct from total R² values of .27 and .39. Separately reported unique contributions were 3% versus 5% for neighborhood quality and 2% versus 3% for attachment. A block's contribution need not equal the sum of the individual unique contributions because predictors share explanatory variance. Follow-up age-by-predictor tests supported differential patterns for both neighborhood measures and apartment size.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Regression: unique and total explained variance",
       "difficulty": "hard"
     },
     {
-      "prompt": "접근성의 비유의 결과를 가장 적절히 해석한 것은?",
+      "prompt": "How did the authors interpret the nonsignificant accessibility result?",
       "options": [
-        "정교한 객관적 접근성 연구와 완전히 같은 결과여서 측정방식의 영향은 배제되었다",
-        "접근성이 후기노인에게 부적이어서 무장벽 주택을 위험요인으로 해석했다",
-        "접근성이 장소애착과 중복되어 다중공선성 때문에 회귀에서 제외되었다",
-        "기존의 객관적 접근성 연구와 다른 측정방식이 관계 부재에 기여했을 수 있다"
+        "It exactly replicated extensive objective assessments, ruling out any role for how accessibility was measured.",
+        "It established a harmful effect of barrier-free homes on life satisfaction among the old–old participants.",
+        "It arose because accessibility overlapped with attachment and was therefore removed from all regression models.",
+        "Differences from the detailed objective measures used elsewhere could help explain the missing association."
       ],
-      "answer": "기존의 객관적 접근성 연구와 다른 측정방식이 관계 부재에 기여했을 수 있다",
-      "explanation": "저자들은 정교한 객관적 측정을 쓴 선행연구와 결과가 달랐고 측정방식 차이가 가능한 설명이라고 보았다.",
+      "answer": "Differences from the detailed objective measures used elsewhere could help explain the missing association.",
+      "explanation": "The authors contrasted their brief self-reported accessibility measure with earlier, extensive objective assessments. Measurement differences were a possible explanation for the null result. No observer-based home or neighborhood assessment occurred here; reported square meters were described as relatively quasi-objective. The result does not establish that accessibility is irrelevant or harmful.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Discussion: interpreting measurement-related limits",
       "difficulty": "hard"
     },
     {
-      "prompt": "후기노인에서 사회적 주거지표의 관련성이 약했던 결과에 저자들이 제시한 해석은?",
+      "prompt": "What possible interpretation did the authors offer for weak social-housing associations among the old–old?",
       "options": [
-        "후기노인이 사회관계를 모두 잃어 가족·이웃과 접촉하지 않았기 때문이다",
-        "사회적 주거변수가 객관적 환경변수여서 삶의 만족도와 함께 분석할 수 없었기 때문이다",
-        "배우자 상실과 독거처럼 바꾸기 어려운 상황에 성공적으로 적응했을 가능성이 있다",
-        "후기노인의 사회적 주거지표를 조사하지 않아 통계적 관련성을 계산할 수 없었기 때문이다"
+        "These participants had lost every social relationship and no longer had any contact with family or neighbors.",
+        "The social measures were objective characteristics that could not be analyzed together with life satisfaction.",
+        "Some may have adapted to difficult-to-change circumstances, such as widowhood and living alone.",
+        "The researchers had omitted social housing questions for the old–old, making all relevant estimates unavailable."
       ],
-      "answer": "배우자 상실과 독거처럼 바꾸기 어려운 상황에 성공적으로 적응했을 가능성이 있다",
-      "explanation": "저자들은 후기노인의 약한 사회적 관련성을 배우자 상실과 독거에 대한 적응 가능성으로 해석했다.",
+      "answer": "Some may have adapted to difficult-to-change circumstances, such as widowhood and living alone.",
+      "explanation": "Successful adaptation to circumstances such as losing a partner and living alone was offered as a possible interpretation. It was not directly measured or demonstrated over time. Moreover, the social measures covered limited housing-related domains, so weak associations do not show that social relationships generally cease to matter in very old age.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Oswald et al. (2010)",
+      "source": "Discussion: adaptation as a possible explanation",
       "difficulty": "hard"
     }
-  ]
+  ],
+  "language": "en"
 }

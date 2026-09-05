@@ -1,178 +1,210 @@
 {
-  "title": "Meier et al. (2016) 단답형 퀴즈",
-  "instructions": "질문마다 핵심 용어·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "title": "Meier et al. (2016): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Theme percentages describe the articles in each perspective group, rather than the percentage of all individual patients, relatives, or professionals.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "문헌검색에 사용한 두 서지 데이터베이스는?",
+      "question": "Which two databases were searched for this review?",
       "accepted_answers": [
-        "PubMed와 PsycINFO",
-        "PubMed, PsycINFO"
+        "PubMed and PsycINFO",
+        "PsycINFO and PubMed",
+        "PubMed, PsycINFO",
+        "PsycINFO, PubMed"
       ],
-      "answer_type": "term",
-      "explanation": "저자들은 PubMed와 PsycINFO를 개설 시점부터 정해진 종료시점까지 검색했다.",
+      "answer_type": "short_phrase",
+      "explanation": "The search extended from database inception through November 2015. The authors also examined relevant reference lists, and restricted inclusion to English-language peer-reviewed empirical articles.",
       "evidence_segment_id": "METHOD-DATA-001",
-      "source": "Meier et al. (2016)"
+      "source": "Search sources"
     },
     {
-      "question": "제목·초록 선별 뒤 전문검토 대상으로 남은 논문 수는?",
+      "question": "What central construct did an eligible empirical article have to define or measure as a main aim or outcome?",
       "accepted_answers": [
-        "392편",
-        "392"
-      ],
-      "answer_type": "number",
-      "explanation": "최초 검색결과에서 주제와 무관한 문헌 등을 제외한 뒤 392편의 전문을 검토했다.",
-      "evidence_segment_id": "METHOD-SELECTION-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "합의 절차가 시작될 때 마련된 초기 주제 수는?",
-      "accepted_answers": [
-        "38개",
-        "38"
-      ],
-      "answer_type": "number",
-      "explanation": "코더들은 처음 38개 주제에서 출발해 세 저자의 합의로 11개 핵심주제로 좁혔다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "최종 코딩틀을 만들기 전에 두 코더가 연 합의회의 횟수는?",
-      "accepted_answers": [
-        "4회",
-        "네 차례",
-        "4차례"
-      ],
-      "answer_type": "number",
-      "explanation": "두 코더는 불일치를 해결하며 네 차례 합의회의를 거쳐 최종 코딩틀을 만들었다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "독립 평정자 간 신뢰도로 보고된 카파 계수는?",
-      "accepted_answers": [
-        "0.896"
-      ],
-      "answer_type": "number",
-      "explanation": "두 독립 코더의 일치도는 kappa = 0.896으로 보고됐다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "PRISMA 전문검토에서 중복 논문으로 제외된 건수는?",
-      "accepted_answers": [
-        "51편",
-        "51건",
-        "51"
-      ],
-      "answer_type": "number",
-      "explanation": "전문검토 제외 사유 중 duplicate articles는 51건으로 인쇄돼 있다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "환자·가족·HCP 관점에 기여한 논문 수를 순서대로 쓰면?",
-      "accepted_answers": [
-        "20·10·18편",
-        "20, 10, 18",
-        "20편, 10편, 18편"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "관점별 분모는 환자 20편, 사별 전후 가족 10편, HCP 18편이며 한 논문이 여러 관점에 기여할 수 있다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "둘 이상의 관점집단에 기여한 고유 논문은 몇 편인가?",
-      "accepted_answers": [
-        "7편",
-        "7"
-      ],
-      "answer_type": "number",
-      "explanation": "두 관점에 기여한 2편과 세 관점 모두에 기여한 5편을 합친 고유 논문 수다.",
-      "evidence_segment_id": "METHOD-CODING-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "질적·양적·혼합방법 연구 수를 순서대로 쓰면?",
-      "accepted_answers": [
-        "27·5·4편",
-        "27, 5, 4",
-        "27편, 5편, 4편"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "최종 36편은 질적 27편, 양적 5편, 혼합방법 4편으로 구성됐다.",
-      "evidence_segment_id": "METHOD-SELECTION-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "양적·혼합방법 연구에서 표준도구와 자체도구를 쓴 논문 수는 각각?",
-      "accepted_answers": [
-        "3편과 6편",
-        "3·6편",
-        "3, 6"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "해당 9편 중 3편은 표준화 도구를, 6편은 자체 개발 도구를 사용했다.",
-      "evidence_segment_id": "METHOD-SELECTION-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "최종 포함 연구가 출판된 연도 범위는?",
-      "accepted_answers": [
-        "1996–2015년",
-        "1996-2015년",
-        "1996년부터 2015년"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "포함된 36편의 출판연도는 1996년부터 2015년까지였다.",
-      "evidence_segment_id": "RESULTS-SAMPLE-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "각 핵심주제를 구성한 하위주제 수의 범위는?",
-      "accepted_answers": [
-        "2–4개",
-        "2-4개",
-        "2개에서 4개"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "11개 핵심주제는 각각 2개에서 4개의 하위주제로 구성됐다.",
-      "evidence_segment_id": "RESULTS-THEMES-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "환자 관점 논문 중 60세 초과자를 포함한 논문의 비율은?",
-      "accepted_answers": [
-        "50%",
-        "절반"
-      ],
-      "answer_type": "short_phrase",
-      "explanation": "이 값은 전체 개인 중 고령자 비율이 아니라 환자 관점 논문 20편을 분모로 한 논문 수준 비율이다.",
-      "evidence_segment_id": "RESULTS-SAMPLE-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "가족 관점에서 지지율 70% 이상이었던 핵심주제는 몇 개인가?",
-      "accepted_answers": [
-        "8개",
-        "8"
-      ],
-      "answer_type": "number",
-      "explanation": "가족 관점 논문에서는 11개 핵심주제 중 8개가 70% 이상이었다.",
-      "evidence_segment_id": "RESULTS-THEMES-001",
-      "source": "Meier et al. (2016)"
-    },
-    {
-      "question": "각 논문의 구체적 정보를 저장한 프로그램은?",
-      "accepted_answers": [
-        "Excel",
-        "엑셀"
+        "a good death",
+        "good death",
+        "successful dying"
       ],
       "answer_type": "term",
-      "explanation": "선정된 각 논문의 구체적 정보는 Excel 데이터베이스에 저장했다.",
+      "explanation": "A study focused only on improving end-of-life care did not qualify unless it also had the required definitional aim. The final review contained 36 articles using qualitative, quantitative, or mixed methods.",
       "evidence_segment_id": "METHOD-SELECTION-001",
-      "source": "Meier et al. (2016)"
+      "source": "Eligibility and purpose"
+    },
+    {
+      "question": "Which qualitative research tradition informed the consensus, co-occurrence, and comparison coding approach?",
+      "accepted_answers": [
+        "grounded theory"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors generated themes, refined the coding scheme through discussion, and independently coded definitions. Disagreements were discussed, with a third author consulted when needed.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Coding approach"
+    },
+    {
+      "question": "Which core theme included respect for someone as an individual and maintaining independence?",
+      "accepted_answers": [
+        "dignity"
+      ],
+      "answer_type": "term",
+      "explanation": "These were the subthemes used in this review. The discussion cautions that related concerns can be expressed under other themes, so article frequencies do not directly establish how much an individual values this concept.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Respect and personhood"
+    },
+    {
+      "question": "What kappa value did the authors report for agreement between the independent coders?",
+      "accepted_answers": [
+        "0.896",
+        ".896",
+        "kappa = 0.896",
+        "kappa .896"
+      ],
+      "answer_type": "number",
+      "explanation": "The reported coefficient indicates agreement beyond chance under this measure. It does not establish the validity of a universal definition; the malformed p-value in the stored source is not used in this question.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Coding reliability"
+    },
+    {
+      "question": "How were studies treated with respect to sample-size weighting when their theme frequencies were summarized?",
+      "accepted_answers": [
+        "unweighted",
+        "not weighted",
+        "no weighting",
+        "without weighting",
+        "without sample-size weighting"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors did not apply weighting because they combined qualitative and quantitative work. These descriptive summaries should not be interpreted as pooled population preference estimates.",
+      "evidence_segment_id": "METHOD-ANALYSES-001",
+      "source": "Descriptive synthesis"
+    },
+    {
+      "question": "Which three stakeholder perspectives organized the definitions in this review?",
+      "accepted_answers": [
+        "patients, family members, and healthcare providers",
+        "patients, families, and HCPs",
+        "patients, relatives, and healthcare providers",
+        "patients, family members, and HCPs",
+        "patients, healthcare providers, and family members",
+        "family members, patients, and healthcare providers",
+        "healthcare providers, family members, and patients",
+        "patients, HCPs, and family members",
+        "family members, patients, and HCPs",
+        "family members, HCPs, and patients",
+        "HCPs, patients, and family members",
+        "HCPs, family members, and patients",
+        "family members, healthcare providers, and patients",
+        "healthcare providers, patients, and family members"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "The groups contained 20 patient-perspective, 10 family-perspective, and 18 HCP-perspective articles. Some articles contributed to several groups, and the patient-perspective category included varied populations rather than only hospitalized dying patients.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Perspectives represented"
+    },
+    {
+      "question": "Why do the three perspective-group counts add to more than the 36 unique articles?",
+      "accepted_answers": [
+        "overlapping groups",
+        "overlapping perspective groups",
+        "multiple perspectives per article",
+        "some articles represented multiple groups",
+        "multi-perspective articles",
+        "articles could represent multiple groups"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "Seven articles contributed to more than one perspective group. The groups are therefore not three mutually exclusive sets of unique studies.",
+      "evidence_segment_id": "METHOD-CODING-001",
+      "source": "Understanding the denominator"
+    },
+    {
+      "question": "What feature of the studies' methods and reporting prevented a formal meta-analysis?",
+      "accepted_answers": [
+        "methodological heterogeneity",
+        "heterogeneity",
+        "heterogeneity in methods and reporting",
+        "differences in methods and reporting",
+        "inconsistent methods and reporting"
+      ],
+      "answer_type": "term",
+      "explanation": "Studies differed in assessment methods, depth of information, and reporting of participant characteristics. Descriptive aggregation does not remove these limitations or establish statistically significant differences between stakeholder groups.",
+      "evidence_segment_id": "METHOD-ANALYSES-001",
+      "source": "Limits to quantitative pooling"
+    },
+    {
+      "question": "Which core theme combined freedom from suffering with pain and symptom management?",
+      "accepted_answers": [
+        "pain-free status",
+        "pain free status",
+        "being pain-free",
+        "being pain free"
+      ],
+      "answer_type": "term",
+      "explanation": "This was a commonly reported theme. The results section and later discussion give conflicting broad frequency statements, so this question tests the theme rather than a disputed percentage.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Comfort and symptoms"
+    },
+    {
+      "question": "Which broad theme included how, where, when, and with whom death occurs, as well as preparation for death?",
+      "accepted_answers": [
+        "preferences for dying process",
+        "preferences for the dying process",
+        "dying-process preferences",
+        "dying process preferences"
+      ],
+      "answer_type": "term",
+      "explanation": "It also included dying during sleep. Its frequent appearance across articles does not imply that everyone wants the same scene or preparation; the content concerns preferences.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Preferences surrounding death"
+    },
+    {
+      "question": "Which theme included saying goodbye, feeling that life was well lived, and accepting death?",
+      "accepted_answers": [
+        "life completion",
+        "completion of life"
+      ],
+      "answer_type": "term",
+      "explanation": "The authors identified this as one of the themes appearing across all three stakeholder groups. A shared category can still contain different personal meanings and priorities.",
+      "evidence_segment_id": "RESULTS-THEMES-001",
+      "source": "Completing a life"
+    },
+    {
+      "question": "Which theme appeared in 70% of family-perspective articles, 35% of patient-perspective articles, and 22% of HCP-perspective articles?",
+      "accepted_answers": [
+        "quality of life",
+        "QoL",
+        "life quality"
+      ],
+      "answer_type": "term",
+      "explanation": "This was the largest descriptive difference between groups in reported theme frequency. The denominators are articles in each perspective group; the pattern is not a measured percentage of individual people or proof that patients value it less.",
+      "evidence_segment_id": "RESULTS-STAKEHOLDERS-001",
+      "source": "Differences across perspectives"
+    },
+    {
+      "question": "What interval was generally unreported even though preferences might change as death approaches?",
+      "accepted_answers": [
+        "time between interview and death",
+        "time from interview to death",
+        "interview-to-death interval",
+        "time between survey and death",
+        "time from assessment to death"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "The authors identify the timing of interviews or surveys relative to death as a limitation. Without it, comparisons cannot adequately address how wishes may evolve near the end of life.",
+      "evidence_segment_id": "DISCUSSION-LIMITATIONS-001",
+      "source": "Timing and changing preferences"
+    },
+    {
+      "question": "Which family perspective was poorly represented because most family studies took place after the death?",
+      "accepted_answers": [
+        "prebereavement family perspectives",
+        "prebereaved family members",
+        "pre-bereaved family members",
+        "family members before bereavement",
+        "prebereavement perspectives",
+        "pre-bereavement family perspectives"
+      ],
+      "answer_type": "term",
+      "explanation": "Most family articles involved bereaved relatives recalling a death. Their accounts should not automatically be treated as identical to the patient's own wishes or to family views before the loss.",
+      "evidence_segment_id": "DISCUSSION-LIMITATIONS-001",
+      "source": "An underrepresented perspective"
     }
-  ]
+  ],
+  "language": "en"
 }

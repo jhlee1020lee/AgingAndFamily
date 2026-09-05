@@ -1,217 +1,218 @@
 {
-  "title": "Bangerter & Waldron (2014) 객관식 퀴즈",
-  "instructions": "가장 정확한 답을 하나 고르세요. 정답 뒤에는 해당 원문 세그먼트에 근거한 설명이 제시됩니다.",
+  "title": "Bangerter & Waldron (2014): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Explanations refer to the linked source segment. Interpret the findings as retrospective accounts from grandparents. Where the retained text and figures disagree, use the stated scope and preserve the uncertainty.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "논문 초록에 제시된 질적 분석과 RIT의 결과 조합으로 가장 정확한 것은?",
+      "prompt": "Which combination of findings is reported in the abstract?",
       "options": [
-        "전환점 85개를 여덟 사건 범주로, RIT 그래프를 다섯 친밀감 궤적으로 분류했다.",
-        "전환점 100개를 다섯 사건 범주로, RIT 그래프를 여덟 친밀감 궤적으로 분류했다.",
-        "전환점 100개, 사건 범주 8개, 친밀감 궤적 5개",
-        "전환점 30개, 사건 범주 8개, 궤적 2개"
+        "85 turning points, eight event categories, and five relationship trajectories.",
+        "100 turning points, five event categories, and eight relationship trajectories.",
+        "100 turning points, eight event categories, and five relationship trajectories.",
+        "30 turning points, eight event categories, and two relationship trajectories."
       ],
-      "answer": "전환점 100개, 사건 범주 8개, 친밀감 궤적 5개",
-      "explanation": "초록은 조부모 면접의 질적 분석에서 고유한 전환점 100개와 여덟 범주를, RIT에서 다섯 관계 궤적을 도출했다고 요약한다.",
+      "answer": "100 turning points, eight event categories, and five relationship trajectories.",
+      "explanation": "The abstract reports 100 unique turning points grouped into eight categories and five trajectories of relational closeness derived from retrospective interviews and graphs. These are different units of analysis. The results and Table 1 also report 100 events; the discussion uses the different phrase \"more than 100,\" so the question is specifically about the abstract.",
       "evidence_segment_id": "META-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Abstract: categories and trajectories",
       "difficulty": "easy"
     },
     {
-      "prompt": "방법 절에 보고된 표본 흐름을 가장 정확하게 설명한 것은?",
+      "prompt": "Which statement accurately describes the sample reported in the methods?",
       "options": [
-        "면접 35건 중 5건은 전사 불가였고, 기술통계는 30명이다.",
-        "35명이 자격심사를 통과했지만 장거리 기준에 맞지 않은 5명은 면접 전에 제외됐다.",
-        "30명을 면접한 뒤 자료가 부족한 5명에게 추가 면접을 실시해 총 35건을 얻었다.",
-        "35명의 면접을 전부 전사했지만 인구학적 질문에 답하지 않은 5명만 분석에서 뺐다."
+        "Of 35 interviews, five could not be transcribed; the demographic figures describe 30 participants.",
+        "Of 35 eligible volunteers, five failed the distance criterion and were excluded before interviewing.",
+        "After interviewing 30 participants, the researchers conducted five additional interviews to fill gaps.",
+        "All 35 interviews were transcribed, but five participants were excluded for missing demographic answers."
       ],
-      "answer": "면접 35건 중 5건은 전사 불가였고, 기술통계는 30명이다.",
-      "explanation": "면접 참여자는 35명이었고 5건은 전사 불가였다. 성별·혼인상태·인종 등의 제시 수치는 각각 합계 30명이다.",
+      "answer": "Of 35 interviews, five could not be transcribed; the demographic figures describe 30 participants.",
+      "explanation": "The authors interviewed 35 grandparents, but five interviews could not be transcribed. The reported demographic counts describe 30 participants. This is a loss of interview material, not a reported failure to meet the eligibility criteria.",
       "evidence_segment_id": "METHOD-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Methods: interview sample",
       "difficulty": "medium"
     },
     {
-      "prompt": "절차 절에 적힌 RIT 그래프의 축과 회고 구간을 옳게 연결한 것은?",
+      "prompt": "How did the RIT graph organize participants' recollections?",
       "options": [
-        "y축은 손자녀 연령, x축은 친밀감이며 출생부터 현재까지 표시한다.",
-        "y축 친밀감은 1이 가장 멀고 5가 가장 가까우며 12세부터 시작한다.",
-        "y축은 접촉 빈도, x축은 전환점 수이며 최근 5년만 표시한다.",
-        "y축 친밀감은 1이 가장 가깝고 5가 가장 멀며, x축 연령은 5세부터 현재까지다."
+        "Grandchild age was vertical and closeness horizontal, covering birth to the present.",
+        "Closeness was vertical and interview date horizontal, covering repeated annual interviews.",
+        "Contact frequency was vertical and event count horizontal, covering only the past five years.",
+        "Closeness was vertical and grandchild age horizontal, covering age five to the current age."
       ],
-      "answer": "y축 친밀감은 1이 가장 가깝고 5가 가장 멀며, x축 연령은 5세부터 현재까지다.",
-      "explanation": "절차에서는 y축을 친밀감 수준 1=가장 가까움, 5=가장 멂으로, x축을 손자녀 연령으로 두고 5세부터 현재까지 그리게 했다고 명시한다.",
+      "answer": "Closeness was vertical and grandchild age horizontal, covering age five to the current age.",
+      "explanation": "Participants recalled changes from the grandchild's age five to the current age and plotted perceived closeness against age. These are retrospective reconstructions. The question does not assign a numeric direction to closeness: the procedure's scale description and the retained figures disagree about that direction.",
       "evidence_segment_id": "PROCEDURE-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Procedure: retrospective graph",
       "difficulty": "medium"
     },
     {
-      "prompt": "지속적 비교분석 과정에 관한 설명으로 가장 정확한 것은?",
+      "prompt": "Which description matches the constant comparative analysis?",
       "options": [
-        "자료의 75%에서 포화에 이르자 남은 25%는 범주 코딩에서 제외했다.",
-        "초기 범주를 논의해 다듬고 전체 자료에 다시 적용하면서 부정적 사례를 찾았다.",
-        "독립된 두 코더의 일치도를 계산해 기준값 아래인 범주를 모두 삭제했다.",
-        "선행연구의 여덟 범주를 확정한 뒤 새 범주가 생기지 않도록 연역적으로 코딩했다."
+        "Coding stopped at apparent saturation, leaving the final quarter of the material unexamined.",
+        "Refined categories were reapplied to all data, including a search for negative cases.",
+        "Two independent coders calculated agreement and removed every category below a preset threshold.",
+        "Eight categories from earlier research were fixed in advance and new categories were prohibited."
       ],
-      "answer": "초기 범주를 논의해 다듬고 전체 자료에 다시 적용하면서 부정적 사례를 찾았다.",
-      "explanation": "제1저자의 초기 범주를 제2저자와 여러 조부모의 논의로 다듬고, 전체 자료에 재적용하며 부정적 사례를 찾았다. 75%에서 포화로 보였어도 전 자료를 코딩했다.",
+      "answer": "Refined categories were reapplied to all data, including a search for negative cases.",
+      "explanation": "The first author developed initial categories, discussed definitions and examples with the second author and several grandparents, and then reapplied the refined system to the whole data set while searching for negative cases. Apparent saturation after roughly 75% of the material did not end coding; the entire data set was coded.",
       "evidence_segment_id": "ANALYSIS-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Analysis: category development",
       "difficulty": "medium"
     },
     {
-      "prompt": "다섯 관계 궤적의 빈도를 감소·일관·최소 변화·다차원 변화·증가 순으로 옳게 나열한 것은?",
+      "prompt": "In the order marked decrease, consistent closeness, minimal change, multidimensional change, and marked increase, which counts describe the five trajectories?",
       "options": [
-        "8·10·5·5·2: 일관형 10개",
-        "10·8·2·5·5: 최소 변화 2개",
-        "10·8·5·5·2: 증가 2개",
-        "10·5·8·5·2: 최소 변화 8개"
+        "8, 10, 5, 5, and 2 graphs.",
+        "10, 8, 2, 5, and 5 graphs.",
+        "10, 8, 5, 5, and 2 graphs.",
+        "10, 5, 8, 5, and 2 graphs."
       ],
-      "answer": "10·8·5·5·2: 증가 2개",
-      "explanation": "뚜렷한 감소 10개, 일관된 친밀감 8개, 최소 변화 5개, 다차원적 변화 5개, 뚜렷한 증가 2개로 합계 30개다.",
+      "answer": "10, 8, 5, 5, and 2 graphs.",
+      "explanation": "The five reported categories contain 10, 8, 5, 5, and 2 graphs, respectively, totaling 30. Marked decline was the largest category but represented only one third of the graphs, so it was not the experience of a majority.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Results: trajectory categories",
       "difficulty": "easy"
     },
     {
-      "prompt": "결과 본문과 그림 접근성 설명 사이의 불일치를 가장 정확하게 기술한 것은?",
+      "prompt": "How should the disagreement between the numeric scale description and the figure labels be handled?",
       "options": [
-        "본문은 수준 5를 먼 관계로 설명하고, 그림 1의 4–5→1–4도 같은 척도에 따른 친밀감 감소로 일관되게 해석한다.",
-        "본문은 수준 5를 먼 관계로 설명하지만, 그림 1·5의 증가·감소 방향은 그 설명과 충돌한다.",
-        "본문은 수준 1을 먼 관계로 설명하며, 그림 5의 1→5 이동을 친밀감 감소의 사례로 분류한다.",
-        "그림에는 수준값이 없어 본문과 비교할 수 없다."
+        "Treat every downward numeric line as increasing closeness and reverse the authors' category labels.",
+        "Use the named trajectory categories and descriptions while treating the numeric direction as unresolved.",
+        "Treat every upward numeric line as increasing closeness and disregard the contradictory prose.",
+        "Discard all trajectory categories because the graphs contain no usable information about change."
       ],
-      "answer": "본문은 수준 5를 먼 관계로 설명하지만, 그림 1·5의 증가·감소 방향은 그 설명과 충돌한다.",
-      "explanation": "결과 본문은 5를 먼 관계로 설명하지만 그림 1은 4–5에서 1–4로 가는 것을 감소로, 그림 5는 1에서 5로 가는 것을 증가로 기술해 본문 설명과 충돌한다.",
+      "answer": "Use the named trajectory categories and descriptions while treating the numeric direction as unresolved.",
+      "explanation": "The results text calls level 5 distant, yet Figure 1 labels falling numeric values as decreasing closeness and Figure 5 labels rising values as increasing closeness. The retained figure images show the same patterns as their accessibility descriptions. The source material therefore does not support teaching one numeric direction as settled. The reported category names and qualitative descriptions can still be studied.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Results: interpreting a text–figure discrepancy",
       "difficulty": "hard"
     },
     {
-      "prompt": "표 1의 범주별 빈도와 방향을 옳게 연결한 것은?",
+      "prompt": "Which category and event counts agree with Table 1?",
       "options": [
-        "함께 시간 보내기: 22건, 긍정 22건, 부정 0건",
-        "가족관계 역동: 17건, 긍정 12건, 부정 5건으로 긍정 우세",
-        "기술 사용: 12건, 긍정 11건, 부정 1건",
-        "독립성 증대: 8건, 긍정 1건, 부정 7건"
+        "Spending Time Together: 22 events, all positive and none negative.",
+        "Family Relational Dynamics: 17 events, 12 positive and five negative.",
+        "Use of Technology: 12 events, 11 positive and one negative.",
+        "Grandchild Gaining Independence: eight events, one positive and seven negative."
       ],
-      "answer": "함께 시간 보내기: 22건, 긍정 22건, 부정 0건",
-      "explanation": "표는 함께 시간 보내기를 빈도 22, 긍정 22, 부정 0으로 제시한다. 나머지 선택지는 실제 수나 방향을 조금씩 바꾼 것이다.",
+      "answer": "Spending Time Together: 22 events, all positive and none negative.",
+      "explanation": "Table 1 lists 22 positive events for Spending Time Together. Family Relational Dynamics has five positive and 12 negative events; Use of Technology has 11 positive and no negative events; Grandchild Gaining Independence has one positive and six negative events. These counts describe coded events, not the proportion of families who would benefit from an intervention.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Table 1: frequency and relational impact",
       "difficulty": "medium"
     },
     {
-      "prompt": "전환점이 없었다고 보고한 8명에 관해 결과가 허용하는 해석은?",
+      "prompt": "What can be concluded about the eight participants who reported no turning points?",
       "options": [
-        "이들은 일관된 친밀감 궤적의 8명과 같은 사람들로 확인됐다.",
-        "이들은 친밀감이 낮았기 때문에 궤적 분석에서 제외된 사람들이다.",
-        "이들은 각각 관계 변화를 10개씩 보고했지만 방향을 정하지 못했다.",
-        "두 집단은 각각 8명이지만 동일인인지는 제시되지 않았다."
+        "They were explicitly identified as the same eight participants in the consistent-closeness category.",
+        "They were omitted from trajectory analysis because their relationships were consistently distant.",
+        "They each described ten changes but could not decide whether the changes were positive or negative.",
+        "Both groups numbered eight, but the results do not explicitly say they were the same people."
       ],
-      "answer": "두 집단은 각각 8명이지만 동일인인지는 제시되지 않았다.",
-      "explanation": "결과는 전환점이 없었던 참여자 8명과 일관된 궤적 8명을 각각 보고할 뿐, 두 집단의 구성원이 일치한다고 밝히지 않는다.",
+      "answer": "Both groups numbered eight, but the results do not explicitly say they were the same people.",
+      "explanation": "The results separately report eight participants with no turning points and eight graphs with consistent closeness. Matching counts alone do not establish that the two groups contain exactly the same individuals. The text does not provide that explicit cross-identification.",
       "evidence_segment_id": "TRAJECTORY-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Results: counts and participant identity",
       "difficulty": "hard"
     },
     {
-      "prompt": "함께 시간 보내기·가족관계 역동·지리적 거리의 방향성을 가장 정확하게 비교한 것은?",
+      "prompt": "How did the reported effects of Spending Time Together, Family Relational Dynamics, and Geographic Distance compare?",
       "options": [
-        "함께 시간 보내기는 혼합, 가족관계 역동은 긍정, 지리적 거리는 부정이었다.",
-        "함께 시간 보내기는 부정, 가족관계 역동은 혼합, 지리적 거리는 긍정이었다.",
-        "함께 시간 보내기는 긍정, 가족관계 역동은 혼합, 지리적 거리는 부정이었다.",
-        "세 범주는 관계 맥락에 따라 긍정과 부정이 같은 비율로 나타났다."
+        "Shared time was mixed, family dynamics positive, and geographic distance negative.",
+        "Shared time was negative, family dynamics mixed, and geographic distance positive.",
+        "Shared time was positive, family dynamics mixed, and geographic distance negative.",
+        "Each category contained equal numbers of positive and negative relationship events."
       ],
-      "answer": "함께 시간 보내기는 긍정, 가족관계 역동은 혼합, 지리적 거리는 부정이었다.",
-      "explanation": "함께 시간 보내기는 전원이 긍정적으로 평가했고 가족관계 역동은 부정 사례가 많지만 긍정 사례도 있었다. 지리적 거리는 부정적 전환점이었다.",
+      "answer": "Shared time was positive, family dynamics mixed, and geographic distance negative.",
+      "explanation": "Spending Time Together was unanimously positive in the coded accounts. Family Relational Dynamics included both positive and negative events, with negative events more common. Geographic Distance was reported as a negative turning point. These are participants' accounts of particular events, not universal effects of every visit, family change, or move.",
       "evidence_segment_id": "TURNING-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Turning points: time, family, and distance",
       "difficulty": "medium"
     },
     {
-      "prompt": "400마일을 운전한 뒤 손녀의 반응에 상처받은 사례가 속한 범주와 그 핵심은?",
+      "prompt": "Why was the grandfather's disappointment after driving 400 miles classified as Lack of Relational Investment?",
       "options": [
-        "관계 투자 부족 — 호응 없는 노력으로 관계가 일방적으로 느껴짐",
-        "지리적 거리 — 이동 시간이 길수록 대면 접촉 횟수가 자동으로 줄어듦",
-        "여가시간 부족 — 손녀와 조부모의 일정이 우연히 한 번 겹치지 않음",
-        "기술 사용 — 방문 대신 문자메시지를 택해 심리적 거리가 커짐"
+        "He felt that his effort was one-sided because his granddaughter showed little interest in their relationship.",
+        "The researchers used a fixed travel-distance cutoff to classify every visit involving more than 300 miles.",
+        "A single scheduling clash prevented a planned meeting, despite equal interest from both generations.",
+        "His granddaughter replaced the visit with text messages, which the authors classified as harmful technology use."
       ],
-      "answer": "관계 투자 부족 — 호응 없는 노력으로 관계가 일방적으로 느껴짐",
-      "explanation": "400마일은 인용 속 배경이지만, 사례는 손녀가 관계에 관심을 보이지 않고 조부모의 노력에 화답하지 않아 일방성과 소외감을 느낀 관계 투자 부족으로 제시된다.",
+      "answer": "He felt that his effort was one-sided because his granddaughter showed little interest in their relationship.",
+      "explanation": "The distance traveled is background to the example. The grandfather described his granddaughter leaving to see friends and showing little interest in his life, making his own effort feel unreciprocated. The category concerns perceived one-sided effort. The study does not independently establish how the granddaughter understood the same encounter.",
       "evidence_segment_id": "TURNING-002",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Turning points: lack of relational investment",
       "difficulty": "hard"
     },
     {
-      "prompt": "관계 투자 범주의 사례만으로 묶인 것은?",
+      "prompt": "Which set consists of examples reported under Relational Investment?",
       "options": [
-        "가족 이혼 뒤 동거하기, 다른 주로 이사하기, 명절에 함께 식사하기",
-        "숙제를 도와주기, 손자가 먼저 전화하기, 손녀가 혼자 방문할 시간을 만들기",
-        "Facebook 게시물 보기, Skype로 방을 둘러보기, 문자메시지 배우기",
-        "무용과 학교로 바빠지기, 친구 활동이 늘기, 사생활을 원하기"
+        "Sharing a home after divorce, moving to another state, and gathering for a holiday.",
+        "Helping with homework, a grandson initiating calls, and arranging visits with a granddaughter alone.",
+        "Viewing Facebook posts, taking a Skype room tour, and learning to exchange text messages.",
+        "Becoming busy with dance, spending more time with peers, and wanting greater personal privacy."
       ],
-      "answer": "숙제를 도와주기, 손자가 먼저 전화하기, 손녀가 혼자 방문할 시간을 만들기",
-      "explanation": "해당 세 사례는 조부모 또는 손자녀가 접촉을 시작하고 친밀감을 유지하려고 노력한 관계 투자 사례다.",
+      "answer": "Helping with homework, a grandson initiating calls, and arranging visits with a granddaughter alone.",
+      "explanation": "These examples describe either generation initiating contact or making deliberate efforts to maintain closeness. The other options combine examples from different reported categories, including family dynamics, distance, technology, limited time, and growing independence.",
       "evidence_segment_id": "TURNING-003",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Turning points: relational investment",
       "difficulty": "medium"
     },
     {
-      "prompt": "여가시간 부족과 손자녀의 독립성 증대를 구분한 설명으로 가장 정확한 것은?",
+      "prompt": "Which distinction between Lack of Free Time and Grandchild Gaining Independence fits the accounts?",
       "options": [
-        "여가시간 부족은 상대의 무관심, 독립성 증대는 이사로 인한 접촉 감소를 뜻한다.",
-        "여가시간 부족은 바쁜 일정, 독립성 증대는 모든 사례의 영구적 단절을 뜻한다.",
-        "여가시간 부족은 바쁜 일정의 제약이고, 독립성 증대는 사생활 요구와 성숙을 포함하며 긍정 사례도 한 건 있었다.",
-        "두 범주는 같은 사례를 연구자가 서로 다른 이름으로 중복 코딩한 것이다."
+        "Limited free time meant personal indifference, while growing independence meant moving farther away.",
+        "Limited free time meant competing activities, while growing independence always meant permanent estrangement.",
+        "Busy schedules limited free time; privacy and maturation marked independence, with one positive example.",
+        "Both labels described the same coded events; the authors retained them only to separate grandparents by age."
       ],
-      "answer": "여가시간 부족은 바쁜 일정의 제약이고, 독립성 증대는 사생활 요구와 성숙을 포함하며 긍정 사례도 한 건 있었다.",
-      "explanation": "여가시간 부족은 양쪽의 바쁜 일정 때문에 만남이 줄어드는 상황이다. 독립성 증대는 십대의 사생활과 성숙에 관한 범주로, 대부분 부정적이지만 한 긍정 사례도 있었다.",
+      "answer": "Busy schedules limited free time; privacy and maturation marked independence, with one positive example.",
+      "explanation": "Limited time could reflect the active schedules of grandparents as well as grandchildren. Growing independence involved adolescent privacy, developmental changes, and maturing into adulthood. Most examples in the latter category were negative, but one grandparent described a positive opportunity to advocate for a granddaughter.",
       "evidence_segment_id": "TURNING-004",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Turning points: time constraints and independence",
       "difficulty": "medium"
     },
     {
-      "prompt": "결과와 논의의 수치 표현 및 변화 해석을 바르게 연결한 것은?",
+      "prompt": "Which interpretation of relationship change is supported by the discussion?",
       "options": [
-        "논의는 30명이 정확히 100건을 보고했고 모든 궤적에서 청소년기 친밀감 감소를 경험했다고 정리한다.",
-        "논의는 22명이 100건보다 적게 보고했으며 안정적 관계는 분석하지 않았다고 밝힌다.",
-        "논의는 8명이 100건을 넘게 보고했고 감소 궤적이 표본의 과반이었다고 설명한다.",
-        "논의는 22명의 보고에서 100건이 넘는 사건을 언급하며, 감소와 함께 안정성도 해석한다."
+        "Decline was universal, so maintaining stability during adolescence was outside the study's findings.",
+        "Stable relationships were excluded, so every retained account demonstrated a substantive turning point.",
+        "Grandchildren's activities explained all changes; changes in grandparents' own lives contributed nothing.",
+        "Both decline and stability occurred, supporting study of how bonds are maintained as well as changed."
       ],
-      "answer": "논의는 22명의 보고에서 100건이 넘는 사건을 언급하며, 감소와 함께 안정성도 해석한다.",
-      "explanation": "논의는 참여자 22명에게서 실질적 변화 사건 100개가 넘게 나왔다고 쓰고, 8명의 무변화 보고와 의도적 교류를 통한 안정성도 함께 다룬다.",
+      "answer": "Both decline and stability occurred, supporting study of how bonds are maintained as well as changed.",
+      "explanation": "The discussion rejects inevitable decline. Some grandparents perceived no change, while others described intentional efforts to sustain relationships; changes in both generations' lives could matter. The discussion says \"more than 100\" events from 22 participants, whereas the results and Table 1 report 100 unique events. This wording discrepancy remains unresolved and is not used to determine the answer.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Discussion: stability and change",
       "difficulty": "hard"
     },
     {
-      "prompt": "RQ1 결과에 대한 논의에서 저자들이 제시한 해석으로 가장 적절한 것은?",
+      "prompt": "How did the authors interpret technology in their discussion of the first research question?",
       "options": [
-        "감소 가능성을 인정하지만 기술은 소통과 생활 파악의 기회를 넓힐 수 있다.",
-        "지리적 거리는 과거보다 더 큰 장벽이 되었고 소셜미디어 사용은 관계를 불안정하게 만들었다.",
-        "면접 결과만으로 기술 사용이 가까운 관계 유지의 독립적이고 보편적인 원인임을 확정했다.",
-        "기술이 대면의 의미를 없앴다고 보았다."
+        "Some decline remained possible, but technology could create opportunities for direct contact and awareness of everyday life.",
+        "Geographic distance had become a stronger barrier because social media generally destabilized the relationships described.",
+        "The interviews isolated a universal causal effect of technology, independent of prior closeness and relational effort.",
+        "Electronic contact made physical presence irrelevant, so shared visits no longer offered opportunities to build closeness."
       ],
-      "answer": "감소 가능성을 인정하지만 기술은 소통과 생활 파악의 기회를 넓힐 수 있다.",
-      "explanation": "논의는 어느 정도의 감소 가능성을 인정하면서도 거리가 과거만큼 큰 장벽은 아닐 수 있고, 기술이 직접 소통과 생활 파악의 기회를 준다고 해석한다.",
+      "answer": "Some decline remained possible, but technology could create opportunities for direct contact and awareness of everyday life.",
+      "explanation": "Writing in 2014, the authors interpreted cell phones and social media as possible opportunities to communicate and follow grandchildren's lives. Their interview material suggested that technology users might sustain closeness, but did not establish an independent causal effect. The discussion also retained the value of shared time and physical presence.",
       "evidence_segment_id": "DISCUSSION-002",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Discussion: communication opportunities",
       "difficulty": "medium"
     },
     {
-      "prompt": "연구의 한계와 저자가 제시한 실천적 함의를 옳게 연결한 것은?",
+      "prompt": "Which pairing of limitations and practical implications matches the authors' conclusion?",
       "options": [
-        "친밀감이 객관적으로 측정됐으므로 방문과 기술의 효과를 모든 문화권에 적용할 수 있다.",
-        "주관적 친밀감·제한된 문화 다양성·부분적 궤적을 지적하고, 방문·기술·기대 조정을 실천 방안으로 제시한다.",
-        "5세 이전과 청소년기 이후를 모두 추적했으므로 궤적은 생애 전체를 대표한다.",
-        "문화적 다양성이 제한됐으므로 문화규범은 후속 연구에서 더 다룰 필요가 없다고 본다."
+        "Objective closeness measures supported universal effects, so every cultural group should adopt the same communication practices.",
+        "Closeness was subjective, cultural diversity limited, and trajectories partial; visits, technology, and adjusted expectations may help.",
+        "Complete life-course follow-up supported lasting intervention effects, so later research need not examine early childhood or adulthood.",
+        "Cultural diversity was limited but irrelevant to expectations, so subsequent work should focus only on choosing the most effective device."
       ],
-      "answer": "주관적 친밀감·제한된 문화 다양성·부분적 궤적을 지적하고, 방문·기술·기대 조정을 실천 방안으로 제시한다.",
-      "explanation": "저자들은 친밀감의 주관성, 제한된 문화 다양성, 5세 이전과 일부 후기 사건을 놓친 부분적 궤적을 한계로 들고 방문·기술·기대 조정을 실천적 함의로 제안한다.",
+      "answer": "Closeness was subjective, cultural diversity limited, and trajectories partial; visits, technology, and adjusted expectations may help.",
+      "explanation": "Grandparents may interpret closeness differently, the sample had limited cultural diversity, and the recalled trajectories omitted events before age five and some later events. The suggested practices are implications of the accounts, not tested treatments with guaranteed effects. The authors call for further research on technology, expectations, and cultural context.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "source": "Bangerter & Waldron (2014)",
+      "source": "Limitations and practical implications",
       "difficulty": "hard"
     }
-  ]
+  ],
+  "language": "en"
 }

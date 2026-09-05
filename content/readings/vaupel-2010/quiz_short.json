@@ -1,127 +1,195 @@
 {
-  "title": "Vaupel (2010) 단답형 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 허용 정답 범위 안에서 용어와 수치를 짧고 정확하게 답하세요.",
+  "title": "Vaupel (2010): Short Answers",
+  "instructions": "Answer with a precise English term or brief phrase. Use the requested units for numerical answers.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "question": "잔여 기대수명이 각각 5년과 10년이 되는 두 기준연령을 무엇이라 표기하는가?",
-      "accepted_answers": ["X5와 X10", "X5·X10", "X5, X10"],
+      "question": "What symbols denote the ages at which remaining life expectancy is five and ten years, respectively?",
+      "accepted_answers": [
+        "X5 and X10",
+        "X5, X10",
+        "X5 X10",
+        "X5 / X10",
+        "X₅ and X₁₀"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "그림 1은 두 기준연령의 역사적 이동을 이용해 사망과 노쇠의 지연을 보여 준다.",
+      "explanation": "Figure 1 uses the historical movement of these threshold ages to illustrate postponed mortality.",
       "evidence_segment_id": "MORT-001",
-      "source": "그림 1 지표"
+      "source": "Figure 1 indicators"
     },
     {
-      "question": "1950년 이후 스웨덴 여성에서 잔여 기대수명 10년 기준연령은 얼마나 상승했는가?",
-      "accepted_answers": ["약 8년", "8년"],
+      "question": "By approximately how many years had the ten-year remaining-life-expectancy threshold risen for Swedish women since 1950?",
+      "accepted_answers": [
+        "8",
+        "8 years",
+        "about 8 years",
+        "approximately 8 years"
+      ],
       "answer_type": "number",
-      "explanation": "스웨덴 여성의 X10 상승폭은 논문이 제시한 노쇠 지연의 대표적 수치다.",
+      "explanation": "The reported rise in Swedish women's X10 is one numerical example of postponement.",
       "evidence_segment_id": "MORT-001",
-      "source": "스웨덴 X10"
+      "source": "Swedish X10"
     },
     {
-      "question": "1950년 이후 일본 여성에서 잔여 기대수명 10년 기준연령은 얼마나 상승했는가?",
-      "accepted_answers": ["약 12년", "12년"],
+      "question": "By approximately how many years had the corresponding threshold risen for Japanese women since 1950?",
+      "accepted_answers": [
+        "12",
+        "12 years",
+        "about 12 years",
+        "approximately 12 years"
+      ],
       "answer_type": "number",
-      "explanation": "일본 여성의 X10은 약 12년 상승해 스웨덴보다 더 큰 이동을 보였다.",
+      "explanation": "The rise of about 12 years in Japanese women's X10 was greater than the corresponding Swedish increase.",
       "evidence_segment_id": "MORT-001",
-      "source": "일본 X10"
+      "source": "Japanese X10"
     },
     {
-      "question": "덴마크 쌍둥이 연구에서 개인 간 성인 수명 차이 중 유전적 변이와 관련된 비율은?",
-      "accepted_answers": ["약 25%", "25%"],
+      "question": "Approximately what percentage of adult lifespan variation did the Danish twin studies attribute to genetic variation between individuals?",
+      "accepted_answers": [
+        "25",
+        "25%",
+        "25 percent",
+        "about 25%",
+        "approximately 25%"
+      ],
       "answer_type": "number",
-      "explanation": "이 비율은 집단 내 수명 변이에 관한 추정이며 개인 수명의 고정된 몫을 뜻하지 않는다.",
+      "explanation": "This is an estimate of between-person variation in a population, not a fixed genetic share of each person's life.",
       "evidence_segment_id": "MORT-002",
-      "source": "수명의 유전적 변이"
+      "source": "Genetic variation in lifespan"
     },
     {
-      "question": "일부 종의 성인기에서 나이가 들수록 사망률이 낮아지고 건강이 좋아지는 양상을 부르는 용어는?",
-      "accepted_answers": ["역노쇠", "inverse senescence"],
+      "question": "What term describes declining mortality and improving health with increasing age over some species' adult lives?",
+      "accepted_answers": [
+        "inverse senescence"
+      ],
       "answer_type": "term",
-      "explanation": "생물인구학은 진화이론이 이러한 다양한 노화 궤적도 허용하도록 확장되어야 한다고 제안한다.",
+      "explanation": "The review argues that evolutionary accounts should allow a wider range of aging trajectories, including this pattern.",
       "evidence_segment_id": "MORT-003",
-      "source": "진화생물인구학"
+      "source": "Evolutionary biodemography"
     },
     {
-      "question": "현재 건강 조건에서 기대할 수 있는 건강한 삶의 연수를 나타내는 지표는?",
-      "accepted_answers": ["건강기대수명", "health expectancy"],
+      "question": "Which measure describes the expected number of healthy years under current health conditions?",
+      "accepted_answers": [
+        "health expectancy",
+        "healthy life expectancy",
+        "health expectancies"
+      ],
       "answer_type": "term",
-      "explanation": "건강기대수명은 총수명과 달리 건강하게 지낼 것으로 예상되는 연수에 초점을 둔다.",
+      "explanation": "Unlike total lifespan alone, this measure concerns years expected to be lived in health.",
       "evidence_segment_id": "DEBILITY-001",
-      "source": "건강 지표"
+      "source": "Health measurement"
     },
     {
-      "question": "옷 입기·목욕하기·장보기 같은 일상생활활동의 자기보고 제약으로 주로 측정하는 것은?",
-      "accepted_answers": ["장애", "disability"],
+      "question": "What is commonly measured using self-reported limitations in activities such as dressing, bathing, and shopping?",
+      "accepted_answers": [
+        "disability"
+      ],
       "answer_type": "term",
-      "explanation": "논문은 질병을 지닌 이환과 일상 기능이 제한되는 장애를 구분한다.",
+      "explanation": "The review distinguishes functional limitations from morbidity: a person can have a chronic illness while retaining the ability to function.",
       "evidence_segment_id": "DEBILITY-001",
-      "source": "장애 측정"
+      "source": "Measuring functional limitations"
     },
     {
-      "question": "고령 남성이 더 건강해 보이지만 여성보다 먼저 사망하는 현상의 이름은?",
-      "accepted_answers": ["건강–생존 역설", "건강-생존 역설", "health-survival paradox"],
+      "question": "What paradox describes older men appearing healthier on several measures while dying younger than women?",
+      "accepted_answers": [
+        "health-survival paradox",
+        "health–survival paradox",
+        "health survival paradox",
+        "male-female health-survival paradox"
+      ],
       "answer_type": "term",
-      "explanation": "건강과 생존의 성별 차이가 반대 방향으로 나타나며 구체적 기제의 상대적 중요성은 충분히 밝혀지지 않았다.",
+      "explanation": "The review discusses interacting social and biological explanations, while noting uncertainty about their relative importance.",
       "evidence_segment_id": "DEBILITY-003",
-      "source": "성별 차이"
+      "source": "Gender differences"
     },
     {
-      "question": "논문에서 110세 이상인 사람을 가리키는 용어는?",
-      "accepted_answers": ["초장수인", "supercentenarian", "supercentenarians"],
+      "question": "What term names a person aged 110 or older?",
+      "accepted_answers": [
+        "supercentenarian",
+        "supercentenarians",
+        "a supercentenarian"
+      ],
       "answer_type": "term",
-      "explanation": "정확한 출생기록을 통해 연령이 검증된 초장수인 자료가 Box 1의 논의를 뒷받침한다.",
+      "explanation": "Age-validated observations at these very advanced ages inform the discussion of mortality plateaus and heterogeneity.",
       "evidence_segment_id": "DELAY-001",
-      "source": "초고령 연령 범주"
+      "source": "Very old age"
     },
     {
-      "question": "검증된 110세부터 114세 사이에서 관찰된 한 해 사망확률은?",
-      "accepted_answers": ["약 50%", "50%", "연 50%"],
+      "question": "What annual death probability was reported for validated ages 110–114, expressed as a percentage?",
+      "accepted_answers": [
+        "50",
+        "50%",
+        "50 percent",
+        "about 50%",
+        "50% per year"
+      ],
       "answer_type": "number",
-      "explanation": "이 값은 해당 연령대의 연간 사망확률이며 114세 이후에는 관측치가 매우 적다.",
+      "explanation": "The reported probability was approximately constant over these ages; observations after 114 were much sparser.",
       "evidence_segment_id": "DELAY-001",
-      "source": "초장수인 사망률"
+      "source": "Supercentenarian mortality"
     },
     {
-      "question": "노쇠 지연에 기여하는 두 가지 주요 요인으로 제시된 것은?",
-      "accepted_answers": ["번영과 의학", "의학과 번영", "prosperity and medicine"],
+      "question": "Which two main factors does Vaupel identify as contributing to the postponement of senescence?",
+      "accepted_answers": [
+        "prosperity and medicine",
+        "medicine and prosperity"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "두 요인은 서로 상호작용하므로 어느 한쪽이 더 중요하다고 확정할 수 없다고 논문은 덧붙인다.",
+      "explanation": "The factors interact, so the article does not identify either one as definitively more important.",
       "evidence_segment_id": "CAUSES-001",
-      "source": "지연의 원인"
+      "source": "Causes of postponement"
     },
     {
-      "question": "높은 기대수명 국가에서 오늘날 아동의 절반이 도달할 수도 있다고 전망한 연령은?",
-      "accepted_answers": ["100세", "100살", "age 100"],
+      "question": "Under continued historical mortality improvement, what birthday might most children born since 2000 in high-life-expectancy countries reach?",
+      "accepted_answers": [
+        "100",
+        "100th",
+        "100th birthday",
+        "one hundredth birthday",
+        "age 100"
+      ],
       "answer_type": "number",
-      "explanation": "이 전망은 사망률 감소가 과거와 같은 속도로 계속된다는 조건을 전제로 한다.",
+      "explanation": "The projection is conditional on continued mortality improvement, whose future pace the article describes as debated.",
       "evidence_segment_id": "OPEN-001",
-      "source": "100세 도달 전망"
+      "source": "Conditional centenarian projection"
     },
     {
-      "question": "지난 170년간 최고 기대수명 국가에서 10년마다 늘어난 기대수명은?",
-      "accepted_answers": ["2.5년", "약 2.5년"],
+      "question": "Over the preceding 170 years, by how many years per decade had record life expectancy increased?",
+      "accepted_answers": [
+        "2.5",
+        "2.5 years",
+        "about 2.5 years",
+        "2.5 years per decade"
+      ],
       "answer_type": "number",
-      "explanation": "같은 속도를 하루 단위로 환산하면 기대수명이 하루마다 약 6시간 늘어난 셈이다.",
+      "explanation": "The article expresses the same long-term pace as approximately six hours of additional life expectancy per day.",
       "evidence_segment_id": "FORECAST-001",
-      "source": "장기 기대수명 추세"
+      "source": "Long-term life-expectancy trend"
     },
     {
-      "question": "당시 스웨덴 여성의 50세 이후 노화 속도를 절반으로 낮춘 반사실적 계산에서 기대사망연령은?",
-      "accepted_answers": ["118세", "age 118"],
+      "question": "In the Swedish female counterfactual, what was the expected age at death if the rate of aging after 50 were halved?",
+      "accepted_answers": [
+        "118",
+        "118 years",
+        "age 118"
+      ],
       "answer_type": "number",
-      "explanation": "연간 사망확률을 절반으로 낮추는 경우의 90세와 달리, 기울기 자체를 절반으로 낮추는 가정은 118세를 낳는다.",
+      "explanation": "The calculation differs from halving annual death probabilities, which increased the expected age at death to 90 rather than 118.",
       "evidence_segment_id": "FORECAST-001",
-      "source": "감속의 반사실적 효과"
+      "source": "Counterfactual deceleration"
     },
     {
-      "question": "저자가 21세기의 특징이 될 가능성이 크다고 전망한 재분배 대상은?",
-      "accepted_answers": ["노동", "일", "work"],
+      "question": "What does Vaupel suggest may be redistributed across the life course in the twenty-first century?",
+      "accepted_answers": [
+        "work",
+        "employment",
+        "paid work"
+      ],
       "answer_type": "term",
-      "explanation": "더 오랜 기간 일하되 주당 시간을 줄여 교육·일·자녀양육·여가를 생애에 걸쳐 다시 배치하는 제안이다.",
+      "explanation": "The proposal combines a longer working life with fewer weekly hours, allowing education, work, childrearing, and leisure to be mixed across more years.",
       "evidence_segment_id": "FORECAST-002",
-      "source": "생애시간 재배치"
+      "source": "Reallocating lifetime activities"
     }
-  ]
+  ],
+  "language": "en"
 }

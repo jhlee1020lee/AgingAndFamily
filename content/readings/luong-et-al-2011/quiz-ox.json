@@ -1,127 +1,128 @@
 {
-  "title": "Luong et al. (2011) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. O 또는 X를 고른 뒤 설명에서 근거 범위와 예외를 확인하세요.",
+  "title": "Luong et al. (2011): True or False",
+  "instructions": "Choose True or False, then use the explanation and source passage to check the scope of the evidence and its exceptions.",
+  "language": "en",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "노년 성인은 젊은 성인보다 사회관계 만족과 긍정적 경험을 더 높게 보고하는 경향이 있다.",
+      "prompt": "Older adults tend to report greater satisfaction and more positive experiences in their social relationships than younger adults do.",
       "answer": "O",
-      "explanation": "여러 연구에서 노년 성인은 더 좋은 자녀관계·결혼·우정, 더 높은 긍정 정서와 더 적은 부정 경험을 보고했다. 이는 평균적 보고 양상이지 모든 개인의 보편적 결과는 아니다.",
+      "explanation": "The review describes reports of better-quality ties with children, more positive marriages, closer friendships, and fewer negative social experiences among older adults. These are general patterns in the findings, not a claim that every individual has the same experience.",
       "evidence_segment_id": "POSREL-001",
-      "source": "연령 관련 관계 긍정성",
-      "difficulty": "기본"
+      "source": "Age-related positivity in social relationships",
+      "difficulty": "Core"
     },
     {
-      "prompt": "논문은 노년기의 작은 사회적 관계망이 주로 친구와 가족의 사망으로 생긴다고 결론 내린다.",
+      "prompt": "The article concludes that smaller social networks in later life arise primarily because friends and family members die.",
       "answer": "X",
-      "explanation": "상실은 실제로 일어나지만, 저자들은 주요 연령 차이가 덜 가까운 유대를 줄이고 가까운 관계를 유지하는 노년 성인의 선제적 노력에서 생긴다고 설명한다.",
+      "explanation": "The authors attribute the main age differences in network composition to proactive efforts to reduce less-close ties and maintain close relationships. They do not identify deaths of social partners as the primary explanation for those differences.",
       "evidence_segment_id": "SST-001",
-      "source": "관계망 재구성",
-      "difficulty": "기본"
+      "source": "Restructuring social networks",
+      "difficulty": "Core"
     },
     {
-      "prompt": "SST에서는 달력상의 나이가 사회적 목표를 직접 결정하며 남은 시간에 대한 지각은 중요하지 않다.",
+      "prompt": "In SST, chronological age directly determines social goals, and perceptions of remaining time are unimportant.",
       "answer": "X",
-      "explanation": "SST의 핵심 변수는 시간지평이다. 나이는 제한된 시간지평의 규범적 단서일 수 있지만, 목표전환을 설명하는 직접 기제는 남은 시간의 지각이다.",
+      "explanation": "SST emphasizes temporal horizons: how people perceive the time left in their lives. These perceptions shape motivational goals at all ages; age is associated with a shorter horizon but is not a substitute for the proposed time-perspective mechanism.",
       "evidence_segment_id": "SST-001",
-      "source": "SST 기제",
-      "difficulty": "응용"
+      "source": "The time-perspective mechanism in SST",
+      "difficulty": "Application"
     },
     {
-      "prompt": "검토된 연구에서 노년 성인의 긍정성 편향과 같은 양상은 젊은 성인에게 관찰되지 않았다.",
+      "prompt": "In the research discussed in the review, the same positivity bias described among older adults was not observed among younger adults.",
       "answer": "O",
-      "explanation": "논문은 긍정적 정보에 주의를 두고 부정적 경험을 피하는 편향이 노년 성인에게 나타났지만 젊은 성인에게는 같은 편향이 관찰되지 않았다고 서술한다.",
+      "explanation": "The article describes older adults' tendency to attend to positive experiences and avoid negative ones as a positivity bias. It explicitly states that the same bias was not observed in younger adults in the cited research.",
       "evidence_segment_id": "APPRAISAL-001",
-      "source": "긍정성 편향",
-      "difficulty": "기본"
+      "source": "Positivity bias",
+      "difficulty": "Core"
     },
     {
-      "prompt": "사회활동 수준이 높은 젊은 성인도 노년 성인과 비슷한 특성 진단적 판단을 했다는 결과는 사회경험의 기여 가능성을 지지한다.",
+      "prompt": "The finding that highly socially active younger adults made trait-diagnostic judgments similar to older adults supports a possible contribution of social experience.",
       "answer": "O",
-      "explanation": "이 결과는 사회적 전문성을 연령 자체의 자동 효과로만 볼 수 없고 축적된 사회경험과 함께 해석해야 함을 보여 준다.",
+      "explanation": "The authors interpret this finding as evidence that social experiences contribute to judgments about potential partners. It supports considering accumulated experience when explaining social expertise, rather than treating chronological age alone as the explanation.",
       "evidence_segment_id": "EXPERTISE-001",
-      "source": "사회적 전문성",
-      "difficulty": "응용"
+      "source": "Social expertise and experience",
+      "difficulty": "Application"
     },
     {
-      "prompt": "젊은 성인과 노년 성인이 같은 방식으로 말다툼을 피했을 때, 노년 성인만 더 낮은 정서적 반응성을 보고했다.",
+      "prompt": "When younger and older adults used the same strategy to avoid an argument, only older adults reported reduced emotional reactivity.",
       "answer": "O",
-      "explanation": "말다툼에 직접 참여할 때 두 집단의 반응성은 비슷했지만, 같은 회피 전략을 사용한 경우에는 노년 성인만 낮은 반응성을 보고했다.",
+      "explanation": "The two age groups were equally emotionally reactive when they engaged in arguments. When they used the same avoidance strategy, however, only older adults reported less reactivity, showing that the benefit depended on the response to the conflict.",
       "evidence_segment_id": "BEHAVIOR-001",
-      "source": "갈등회피의 조건부 효과",
-      "difficulty": "응용"
+      "source": "Conditional benefits of conflict avoidance",
+      "difficulty": "Application"
     },
     {
-      "prompt": "은퇴와 빈 둥지는 직장·자녀돌봄의 대인 요구를 줄여 노년 성인의 사회 환경을 바꿀 수 있다.",
+      "prompt": "Retirement and an empty nest can change older adults' social environments by reducing interpersonal demands associated with work and childcare.",
       "answer": "O",
-      "explanation": "논문은 은퇴 뒤 파트너와 여가 선택의 자유, 전일제 고용과 자녀돌봄에서 벗어나는 변화를 대인 스트레스 감소의 가능한 구조적 경로로 제시한다.",
+      "explanation": "The article identifies greater freedom to choose partners and leisure activities after retirement, along with reduced full-time employment and childcare demands, as possible structural paths to fewer interpersonal stressors. These possibilities depend on social roles and living arrangements.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "source": "사회 환경",
-      "difficulty": "기본"
+      "source": "Structural changes in the social environment",
+      "difficulty": "Core"
     },
     {
-      "prompt": "SIM은 노년 성인의 개인적 정서조절만 설명하며 사회적 파트너의 반응은 모형에 포함하지 않는다.",
+      "prompt": "SIM explains only older adults' individual emotion regulation and excludes the responses of their social partners.",
       "answer": "X",
-      "explanation": "SIM은 노년 성인의 행동과 파트너의 더 친절하고 긴장을 낮추는 반응이 서로 호응하는 역동적·호혜적 과정을 중심에 둔다.",
+      "explanation": "The Social Input Model emphasizes dynamic, reciprocal interactions. Older adults may enhance the positive qualities of relationships, and their partners may reciprocate with kindness and responses that reduce tension.",
       "evidence_segment_id": "SIM-001",
-      "source": "사회적 입력 모형",
-      "difficulty": "기본"
+      "source": "The Social Input Model",
+      "difficulty": "Core"
     },
     {
-      "prompt": "같은 사회적 결례를 노년 성인이 저질렀을 때 사람들은 젊은 성인에게보다 직접 대립 전략을 더 많이 선택했다.",
+      "prompt": "For the same social faux pas, respondents endorsed more direct confrontation when the offender was an older adult than when the offender was a younger adult.",
       "answer": "X",
-      "explanation": "규범 위반자가 노년 성인일 때에는 피해 인물이 관여를 중단하고 갈등을 피할 것이라는 응답이 더 많았고, 젊은 성인일 때 직접 대화와 대립이 더 많이 선택되었다.",
+      "explanation": "In the vignette study, respondents were more likely to predict disengagement and conflict avoidance toward an older offender. They endorsed more direct communication or confrontation toward a younger offender. These were judgments about hypothetical responses.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "source": "연령별 우대",
-      "difficulty": "기본"
+      "source": "Age-related preferential treatment",
+      "difficulty": "Core"
     },
     {
-      "prompt": "20–87세 성인이 실제 받은 연말연시 카드를 제출한 연구에서 노년 성인의 카드에는 더 개인적이고 감상적인 메시지가 나타났다.",
+      "prompt": "In a naturalistic study in which adults aged 20 to 87 submitted holiday cards they had received, older adults' cards contained more personal and sentimental messages.",
       "answer": "O",
-      "explanation": "자연 관찰 연구의 결과이며, 생일 카드 선택 연구에서도 노년 대상에게 더 감상적인 카드를 고르는 경향이 보고되었다.",
+      "explanation": "The holiday-card study examined cards people actually received. Separate birthday-card selection research similarly found a greater tendency to choose personal or sentimental messages for older recipients.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "source": "카드 연구",
-      "difficulty": "기본"
+      "source": "Holiday-card and birthday-card studies",
+      "difficulty": "Core"
     },
     {
-      "prompt": "사회적 파트너와 함께할 시간이 제한된다고 상상한 참가자들은 말다툼을 피하는 쪽을 선택했다.",
+      "prompt": "Participants who imagined that their remaining time with a social partner was limited chose to avoid arguments with that partner.",
       "answer": "O",
-      "explanation": "가까운 젊은·노년 파트너와의 시간이 줄어드는 가상 상황에서 참가자들은 갈등을 피했고, 시간이 많이 남은 젊은 파트너에게는 더 직접적인 전략을 택했다.",
+      "explanation": "In hypothetical situations that shortened time with close younger or older partners, participants reported that they would avoid arguments. They endorsed more direct confrontation with younger partners who were not moving away and with whom more time remained.",
       "evidence_segment_id": "FORGIVENESS-001",
-      "source": "관계 시간 관점",
-      "difficulty": "응용"
+      "source": "Time perspective within relationships",
+      "difficulty": "Application"
     },
     {
-      "prompt": "노화에 관한 부정적 고정관념은 언제나 더 가혹한 처벌과 낮은 동정으로 이어졌다.",
+      "prompt": "Negative stereotypes about aging always led to harsher punishment and less sympathy for older adults.",
       "answer": "X",
-      "explanation": "건망증과 느린 처리속도 고정관념은 노년 대상의 의도성과 책임을 낮게 판단하게 하여 처벌을 줄이거나 동정을 높이는 역설적 결과를 낳을 수 있었다.",
+      "explanation": "When an older woman's intentions were ambiguous, a stereotype of forgetfulness was associated with less blame and punishment. In another study, stereotypes of slowing in later life could evoke greater sympathy for older workers. The review therefore describes cases in which negative stereotypes accompanied more favorable treatment.",
       "evidence_segment_id": "STEREOTYPE-001",
-      "source": "고정관념의 역설",
-      "difficulty": "응용"
+      "source": "Paradoxical effects of aging stereotypes",
+      "difficulty": "Application"
     },
     {
-      "prompt": "미국 연구에서는 잘못을 저지른 노년 파트너를 존중할수록 그를 더 호의적으로 대하는 관계가 일관되게 나타났다.",
+      "prompt": "U.S. studies consistently found that greater respect for an older partner who committed a social transgression was associated with more favorable treatment of that partner.",
       "answer": "X",
-      "explanation": "미국 자료에서 잘못을 저지른 노년 파트너에 대한 존중은 더 호의적인 대우와 관련되지 않았으며, 문화집단에 따른 결과도 구분해야 한다.",
+      "explanation": "The review describes less consistent U.S. findings and reports that respect for the older offending partner was not related to more favorable treatment. It separately discusses cultural settings in which respect and filial piety may contribute to deference toward older adults.",
       "evidence_segment_id": "STEREOTYPE-001",
-      "source": "존중과 문화",
-      "difficulty": "심화"
+      "source": "Respect and cultural context",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "사회적 관계망이 작아도 정서적 안녕에는 어떤 경우에도 문제가 생기지 않는다고 저자들은 주장한다.",
+      "prompt": "The authors argue that small social networks can never create problems for emotional well-being in later life.",
       "answer": "X",
-      "explanation": "관계망이 사회적 욕구를 충족하지 못할 정도로 작아지면 문제가 된다. 가까운 파트너가 3명 미만인 노년 성인은 낮은 사회적 통합감·만족과 높은 외로움을 보고했다.",
+      "explanation": "Problems can arise when a network becomes too small to meet social needs. Older adults reporting fewer than three close partners also reported less social embeddedness and satisfaction, and greater loneliness. The review does not treat every small network as equally adequate.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "관계망의 하한",
-      "difficulty": "응용"
+      "source": "When networks become too small",
+      "difficulty": "Application"
     },
     {
-      "prompt": "저자들은 감상적 카드와 SIM을 지지하는 일부 결과에서 코호트 효과를 배제할 수 없다고 밝혔다.",
+      "prompt": "The authors state that cohort effects cannot be ruled out for the sentimental-card findings and some other evidence supporting SIM.",
       "answer": "O",
-      "explanation": "과거 세대가 더 사려 깊은 카드를 보내던 규범 때문에 노년 성인이 더 감상적인 카드를 받을 가능성이 있으며, 저자들은 이를 향후 연구에서 분리해야 한다고 했다.",
+      "explanation": "Earlier generations may have had stronger norms of sending thoughtful cards, which could help explain why older recipients received more sentimental messages. The authors call for further research to separate cohort explanations from the processes proposed by SIM.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "코호트 한계",
-      "difficulty": "심화"
+      "source": "Limits involving cohort effects",
+      "difficulty": "Advanced"
     }
   ]
 }

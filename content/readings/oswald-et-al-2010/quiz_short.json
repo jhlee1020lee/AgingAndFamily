@@ -1,127 +1,203 @@
 {
-  "title": "Oswald et al. (2010) 단답형 퀴즈",
-  "instructions": "질문마다 핵심 용어·수치를 짧게 쓰세요. 허용 정답은 모두 7단어 이하입니다.",
+  "title": "Oswald et al. (2010): Short-answer practice",
+  "instructions": "Answer in English with a concise concept or number. Distinguish age-group comparisons, total and unique variance, and participants' reports from independent environmental assessments.",
   "question_set_type": "단답형 퀴즈",
   "items": [
     {
-      "question": "연구 자료가 수집된 독일 도시는?",
-      "accepted_answers": ["다름슈타트", "Darmstadt"],
+      "question": "In which German city was the study district located?",
+      "accepted_answers": [
+        "Darmstadt"
+      ],
       "answer_type": "term",
-      "explanation": "자료는 독일 다름슈타트의 한 도시구역에서 수집됐다.",
+      "explanation": "Participants were community-dwelling residents of one urban district. The analysis contrasted ages 65–79 with ages 80–94, rather than representing all residential settings.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Study setting"
     },
     {
-      "question": "야외 장소애착 설명에서 강조한 두 유대 차원은?",
-      "accepted_answers": ["정서적·인지적 유대", "인지적·정서적 유대"],
+      "question": "Which two kinds of bonds did the outdoor place-attachment explanation emphasize?",
+      "accepted_answers": [
+        "affective and cognitive bonds",
+        "cognitive and affective bonds",
+        "emotional and cognitive bonds",
+        "cognitive and emotional bonds",
+        "affective and cognitive",
+        "emotional and cognitive"
+      ],
       "answer_type": "short_phrase",
-      "explanation": "참여자는 근린에 대한 정서적·인지적 유대를 숙고한 뒤 장소애착을 평정했다.",
+      "explanation": "Participants considered their feelings about and mental connection to the neighborhood. Attachment was assessed separately from physical and infrastructural quality indicators.",
       "evidence_segment_id": "NEIGHBORHOOD-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Attachment to place"
     },
     {
-      "question": "전체표본 회귀모형의 총 설명력 R²는?",
-      "accepted_answers": ["29%", "0.29", ".29"],
+      "question": "What proportion of variance in life satisfaction did the full-sample regression explain, expressed as R-squared or a percentage?",
+      "accepted_answers": [
+        "0.29",
+        ".29",
+        "29%",
+        "29 percent",
+        "29 per cent"
+      ],
       "answer_type": "number",
-      "explanation": "전체 모형은 삶의 만족도 개인차의 29%를 설명했다.",
+      "explanation": "The full-sample R-squared was .29, compared with .27 for the young–old and .39 for the old–old group. These are total model values, not the unique contributions of individual predictors.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Overall model explanation"
     },
     {
-      "question": "연령집단 평균 비교에 사용한 SPSS 분산분석 절차명은?",
-      "accepted_answers": ["ONEWAY", "SPSS ONEWAY"],
+      "question": "Which statistical procedure compared mean levels between the two age groups?",
+      "accepted_answers": [
+        "analysis of variance",
+        "ANOVA",
+        "one-way ANOVA",
+        "one-way analysis of variance"
+      ],
       "answer_type": "term",
-      "explanation": "평균 차이는 SPSS의 ONEWAY 절차를 이용한 분산분석으로 검정했다.",
+      "explanation": "The authors used the SPSS ONEWAY procedure for mean comparisons and chi-square tests for frequencies. These comparisons are distinct from the later regression and interaction analyses.",
       "evidence_segment_id": "ANALYTIC-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Comparing groups"
     },
     {
-      "question": "우편설문의 보고된 응답률은?",
-      "accepted_answers": ["52%", "0.52"],
+      "question": "What percentage response rate was reported for the mailed survey?",
+      "accepted_answers": [
+        "52%",
+        "52 percent",
+        "52 per cent",
+        "52",
+        "0.52"
+      ],
       "answer_type": "number",
-      "explanation": "연령과 성별로 층화해 추출한 대상자에게 우편설문을 보내 52%의 응답률을 얻었다.",
+      "explanation": "The random sample was stratified by age and gender, and nonresponders received telephone reminders. A 52% response rate and follow-up efforts do not eliminate possible selection bias.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Survey response"
     },
     {
-      "question": "지각된 사회적 근린의 질을 구성한 문항 수는?",
-      "accepted_answers": ["2개", "2"],
-      "answer_type": "number",
-      "explanation": "건물의 우호적 분위기와 근린의 만족스러운 접촉을 합산했다.",
+      "question": "Which construct combined a friendly atmosphere in the building with satisfying contacts among nearby residents?",
+      "accepted_answers": [
+        "perceived social neighborhood quality",
+        "social neighborhood quality",
+        "perceived social neighbourhood quality",
+        "social neighbourhood quality"
+      ],
+      "answer_type": "term",
+      "explanation": "The two-item score captured a specific aspect of the immediate social environment. Its limited association with life satisfaction does not show that all social relationships are unimportant.",
       "evidence_segment_id": "SOCIAL-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Social environment measure"
     },
     {
-      "question": "회귀표본이 기술표본보다 줄어든 결측자료 처리 방식은?",
-      "accepted_answers": ["목록별 삭제", "listwise deletion"],
+      "question": "Which missing-data procedure reduced the regression sample by excluding cases with incomplete predictor information?",
+      "accepted_answers": [
+        "listwise deletion",
+        "complete-case analysis",
+        "complete case analysis"
+      ],
       "answer_type": "term",
-      "explanation": "Table 3의 회귀표본은 결측값에 목록별 삭제를 적용해 줄어들었다.",
+      "explanation": "The descriptive sample contained 381 participants, while the regression used 345: 207 young–old and 138 old–old participants. These different denominators should not be interchanged.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Regression sample"
     },
     {
-      "question": "근린의 질 합계점수를 구성한 문항 수는?",
-      "accepted_answers": ["7개", "7"],
-      "answer_type": "number",
-      "explanation": "안전·정숙성·교통·서비스·의료·청결·문화기회의 일곱 문항이다.",
+      "question": "Which seven-item environmental measure covered safety, quietness, transport, shops, medical care, cleanliness, and cultural opportunities?",
+      "accepted_answers": [
+        "neighborhood quality",
+        "perceived neighborhood quality",
+        "neighbourhood quality",
+        "perceived neighbourhood quality"
+      ],
+      "answer_type": "term",
+      "explanation": "The items were yes/no reports from participants. Although the authors discuss objective environmental characteristics, the study did not independently audit these conditions.",
       "evidence_segment_id": "NEIGHBORHOOD-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Physical and infrastructural environment"
     },
     {
-      "question": "전체표본에서 ADL이 설명한 고유분산은?",
-      "accepted_answers": ["10%", "0.10", ".10"],
+      "question": "What proportion of total life-satisfaction variance was uniquely explained by ADL capacity in the full-sample model?",
+      "accepted_answers": [
+        "10%",
+        "10 percent",
+        "10 per cent",
+        "0.10",
+        ".10",
+        "0.1"
+      ],
       "answer_type": "number",
-      "explanation": "건강 통제변수인 ADL은 전체표본에서 10%의 고유분산을 설명했다.",
+      "explanation": "ADL capacity uniquely explained .10 of the total variance, while the whole model explained .29. The .10 is not 10% of the already-explained portion, and health controls must be distinguished from environmental predictors.",
       "evidence_segment_id": "EXPLANATION-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Unique health contribution"
     },
     {
-      "question": "비응답자 한 명에게 시도한 전화 연락의 최대 횟수는?",
-      "accepted_answers": ["8회", "여덟 차례", "8"],
-      "answer_type": "number",
-      "explanation": "응답률을 높이고 선택효과를 줄이기 위해 비응답자에게 최대 여덟 차례 전화했다.",
-      "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Oswald et al. (2010)"
-    },
-    {
-      "question": "저자들이 삶의 만족도를 추가로 설명할 수 있다고 예시한 미측정 요인은?",
-      "accepted_answers": ["재정", "재정상태", "finances"],
+      "question": "What study-design term explains why the age-group comparisons cannot demonstrate how the same individuals change as they grow older?",
+      "accepted_answers": [
+        "cross-sectional",
+        "cross sectional",
+        "cross-sectional design",
+        "cross-sectional study",
+        "cross sectional design"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 분석에 포함하지 않은 추가 설명요인의 예로 재정을 들었다.",
-      "evidence_segment_id": "DISCUSSION-001",
-      "source": "Oswald et al. (2010)"
-    },
-    {
-      "question": "표본의 일반화 범위에서 빠진 두 거주집단은?",
-      "accepted_answers": ["농촌·시설 거주 노인", "농촌과 시설 거주 노인"],
-      "answer_type": "short_phrase",
-      "explanation": "도시 지역사회 거주자만 포함되어 농촌과 시설 거주 노인을 포괄하지 못했다.",
+      "explanation": "The authors identify the single-time design as a limitation. Longitudinal data would be needed to examine within-person developmental changes and strengthen temporal interpretation.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Limits of age comparisons"
     },
     {
-      "question": "저자들이 응답자가 보고한 제곱미터 면적에 붙인 측정 성격은?",
-      "accepted_answers": ["준객관적 측정", "준객관적 지표", "quasi-objective measure"],
+      "question": "Which domain of personal resources did the authors give as an example of an additional predictor omitted from the life-satisfaction models?",
+      "accepted_answers": [
+        "finances",
+        "financial resources",
+        "financial situation",
+        "financial circumstances",
+        "financial status"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 해석 여지가 비교적 적은 보고 제곱미터를 준객관적 측정으로 보았다.",
+      "explanation": "The discussion notes that factors beyond the modeled environmental indicators may explain additional variance. This concerns omission from those models, not a claim that the survey collected no income information.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Unmodeled resources"
     },
     {
-      "question": "저자들이 적응되고 접근 가능한 주거계획에 연결한 설계 원칙은?",
-      "accepted_answers": ["유니버설 디자인", "universal design"],
+      "question": "Which two residential populations were outside the urban community-dwelling sample's coverage?",
+      "accepted_answers": [
+        "rural and institutional residents",
+        "rural and institutionalized older adults",
+        "rural and institutionalised older adults",
+        "rural older adults and institutionalized older adults",
+        "rural and institutional populations"
+      ],
+      "answer_type": "short_phrase",
+      "explanation": "The sample does not represent older adults in rural areas or institutions. Applying its age-group patterns to these settings requires additional evidence.",
+      "evidence_segment_id": "LIMITATIONS-001",
+      "source": "Generalizability"
+    },
+    {
+      "question": "What measurement label did the authors apply to participants' reports of apartment size in square meters?",
+      "accepted_answers": [
+        "quasi-objective measure",
+        "quasi objective measure",
+        "quasi-objective",
+        "quasi objective"
+      ],
       "answer_type": "term",
-      "explanation": "저자들은 제자리 거주와 지원주거 모두에서 유니버설 디자인 원칙을 고려한 계획을 제안했다.",
+      "explanation": "Reported area allows less subjective interpretation than ratings of comfort or accessibility. It was nevertheless reported by participants, not measured independently during a home visit.",
+      "evidence_segment_id": "DISCUSSION-001",
+      "source": "Measurement status"
+    },
+    {
+      "question": "Which design principle did the authors connect to accessible, well-adapted residential planning?",
+      "accepted_answers": [
+        "universal design"
+      ],
+      "answer_type": "term",
+      "explanation": "They proposed planning that considers both supportive homes and meaningful neighborhood environments. This is an applied implication, not an intervention effect established by the cross-sectional study.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Planning implication"
     },
     {
-      "question": "예측변수 블록의 고유분산을 분리한 분석법은?",
-      "accepted_answers": ["공통성 분석", "commonality analysis"],
+      "question": "Which analysis separated the independent variance contributions of predictors and predictor blocks?",
+      "accepted_answers": [
+        "commonality analysis",
+        "commonality analyses"
+      ],
       "answer_type": "term",
-      "explanation": "예측변수와 블록의 투입순서를 바꾸어 독립 기여분을 계산했다.",
+      "explanation": "The authors varied predictor and block order to assess unique contributions. Separate follow-up age-by-predictor interactions tested whether apparent group differences were statistically reliable.",
       "evidence_segment_id": "ANALYTIC-001",
-      "source": "Oswald et al. (2010)"
+      "source": "Partitioning model explanation"
     }
-  ]
+  ],
+  "language": "en"
 }

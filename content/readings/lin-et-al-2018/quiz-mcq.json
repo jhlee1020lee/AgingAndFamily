@@ -1,217 +1,218 @@
 {
-  "title": "Lin et al. (2018) 객관식 퀴즈",
-  "instructions": "가장 정확한 답 하나를 고르세요. 이변량과 다변량, 시간순서와 인과성, 위험률과 누적확률을 구분해야 합니다.",
+  "title": "Lin et al. (2018): Multiple Choice",
+  "instructions": "Choose the answer that best preserves the study design and model-specific findings. Distinguish odds, interval hazards, cumulative probabilities, and causal claims.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "이 논문의 황혼이혼 정의로 가장 정확한 것은?",
+      "prompt": "How is gray divorce defined for the couples studied?",
       "options": [
-        "현재 결혼이 50년 이상 지속되고 두 배우자가 모두 은퇴한 뒤 일어난 이혼",
-        "두 배우자가 모두 50세를 넘고 적어도 한 명이 재혼 중일 때 일어난 이혼",
-        "배우자 가운데 적어도 한 명이 50세 이상일 때 발생한 이혼",
-        "배우자 중 한 명이 65세 이상이며 초혼일 때 일어난 이혼"
+        "Divorce after at least 50 years of marriage and after both spouses have retired",
+        "Divorce only when both spouses are over 50 and at least one has remarried",
+        "Divorce when at least one spouse is aged 50 or older",
+        "Divorce only in a first marriage when at least one spouse is 65 or older"
       ],
-      "answer": "배우자 가운데 적어도 한 명이 50세 이상일 때 발생한 이혼",
-      "explanation": "연구는 배우자 가운데 적어도 한 명이 50세 이상일 때 발생한 이혼을 황혼이혼으로 정의했다.",
+      "answer": "Divorce when at least one spouse is aged 50 or older",
+      "explanation": "The study examines married couples with at least one spouse aged 50 or older. Neither a 50-year marriage nor retirement is required.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Lin et al. (2018)",
+      "source": "Definition and study eligibility",
       "difficulty": "easy"
     },
     {
-      "prompt": "1990–2010년 미국 이혼 추세를 가장 정확히 요약한 것은?",
+      "prompt": "Which statement accurately describes the U.S. trend from 1990 to 2010?",
       "options": [
-        "전체 이혼율은 비교적 안정적이었지만 50세 이상 기혼자의 이혼율은 1,000명당 5명에서 10명으로 두 배가 됐다",
-        "전체 이혼율은 두 배로 늘었지만 50세 이상 이혼율은 거의 변하지 않았다",
-        "50–64세 이혼율은 늘었지만 65세 이상 이혼율은 4.8명에서 1.8명으로 감소했다",
-        "50세 이상 이혼율과 전체 이혼율은 같은 기간 비슷한 폭으로 감소했다"
+        "The rate for married people aged 50+ doubled from 5 to 10 per 1,000 while the overall rate was fairly stable",
+        "The overall divorce rate doubled while the rate among married adults aged 50+ barely changed",
+        "The rate at ages 50-64 rose, but the rate at ages 65+ fell from 4.8 to 1.8 per 1,000",
+        "The overall and age-50-plus rates both declined by similar amounts during the same period"
       ],
-      "answer": "전체 이혼율은 비교적 안정적이었지만 50세 이상 기혼자의 이혼율은 1,000명당 5명에서 10명으로 두 배가 됐다",
-      "explanation": "황혼이혼율의 상승은 전체 이혼율이 상당히 안정적이었던 같은 기간에 나타났다는 점에서 두드러진다.",
+      "answer": "The rate for married people aged 50+ doubled from 5 to 10 per 1,000 while the overall rate was fairly stable",
+      "explanation": "These are historical annual rates among married people, not cumulative divorce probabilities. The rise in gray divorce occurred while the overall divorce rate remained comparatively stable.",
       "evidence_segment_id": "BACKGROUND-001",
-      "source": "Lin et al. (2018)",
+      "source": "Historical rate trends",
       "difficulty": "easy"
     },
     {
-      "prompt": "생애과정 관점이 연구설계에 반영된 방식이 아닌 것은?",
+      "prompt": "Which description is inconsistent with the study's life-course approach?",
       "options": [
-        "빈 둥지·은퇴·건강 악화를 부부관계와 결혼 안정성을 재조직할 수 있는 잠재적 전환점으로 각각 검토했다",
-        "결혼차수·결혼기간·십대 결혼·비공유 자녀로 앞선 결혼경로를 함께 고려했다",
-        "아내와 남편의 은퇴·질병·결혼의 질을 따로 측정하고 두 사람의 공동 경제자원도 부부 단위로 포함했다",
-        "노년기 전환만 현재 사건으로 보고 결혼이력과 배우자 특성은 모형에서 제외했다"
+        "Examining empty nest, retirement, and poor health as possible turning points in a marriage",
+        "Including marriage order, duration, teen marriage, and non-shared children as marital biography",
+        "Considering characteristics of both spouses together with their shared economic resources",
+        "Examining current transitions while excluding earlier marital history and both spouses' characteristics"
       ],
-      "answer": "노년기 전환만 현재 사건으로 보고 결혼이력과 배우자 특성은 모형에서 제외했다",
-      "explanation": "연구는 세 전환뿐 아니라 결혼이력·행위주체성·연결된 삶에 따라 부부 양쪽의 특성과 공동 자원을 함께 분석했다.",
+      "answer": "Examining current transitions while excluding earlier marital history and both spouses' characteristics",
+      "explanation": "The approach combines later-life events with earlier trajectories, human agency, and linked lives. It uses couple-level information rather than treating current transitions in isolation.",
       "evidence_segment_id": "CURRENT-001",
-      "source": "Lin et al. (2018)",
+      "source": "How life-course ideas inform the design",
       "difficulty": "medium"
     },
     {
-      "prompt": "최종 분석표본과 관측치의 짝으로 맞는 것은?",
+      "prompt": "Which pair gives the final sample and repeated observation count reported in the article?",
       "options": [
-        "부부 5,566쌍 / 반복된 부부-면접-연도 관측치 29,286개",
-        "최종 부부 5,331쌍 / 반복된 부부-면접-연도 관측치 29,286개",
-        "부부 296쌍 / 결혼을 유지한 부부-면접-연도 관측치 5,035개",
-        "최종 부부 5,331쌍 / 표본 제외 전 기혼부부-면접-연도 관측치 5,566개"
+        "5,566 couples and 29,286 couple-interview-year observations",
+        "5,331 couples and 29,286 couple-interview-year observations",
+        "296 couples and 5,035 couple-interview-year observations",
+        "5,331 couples and 5,566 couple-interview-year observations"
       ],
-      "answer": "최종 부부 5,331쌍 / 반복된 부부-면접-연도 관측치 29,286개",
-      "explanation": "5,331쌍과 29,286개는 출판 원문의 최종 보고값이다. 원문이 앞서 제시한 5,566과 네 제외수는 단순 차감으로 일치하지 않으므로 완결된 산술 흐름으로 재구성하지 않는다.",
+      "answer": "5,331 couples and 29,286 couple-interview-year observations",
+      "explanation": "These are the article's reported final counts. The initial 5,566 and the four listed exclusion counts do not reconcile by simple subtraction, so the text does not provide a complete, arithmetically consistent sample flow.",
       "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)",
+      "source": "Reported sample counts and the accounting limitation",
       "difficulty": "easy"
     },
     {
-      "prompt": "표본에서 218건을 제외한 이유는?",
+      "prompt": "Why were 218 remarriages to new spouses excluded?",
       "options": [
-        "기초선 표본가중치가 0으로 기록되어 가중분석에서 제외된 부부가 218쌍이었기 때문에",
-        "동성부부로 분류되어 연구의 이성 부부 표본 정의와 맞지 않은 사례가 218쌍이었기 때문에",
-        "한 차례 자료수집 시점에서만 관찰되어 종단분석에 쓸 수 없는 부부가 218쌍이었기 때문에",
-        "한 응답자가 이혼 뒤 새 배우자와 이룬 결혼까지 다시 기여하지 않게 하기 위해"
+        "All 218 couples had zero baseline weights and could not enter weighted estimates",
+        "All 218 were same-sex couples outside the study's selected population",
+        "All 218 were observed at only one wave and therefore lacked follow-up",
+        "To prevent a respondent from contributing another marriage after divorcing"
       ],
-      "answer": "한 응답자가 이혼 뒤 새 배우자와 이룬 결혼까지 다시 기여하지 않게 하기 위해",
-      "explanation": "각 응답자가 표본에 하나의 결혼만 기여하도록 이혼 뒤 새 배우자와 이루어진 218건의 재혼을 제외했다.",
+      "answer": "To prevent a respondent from contributing another marriage after divorcing",
+      "explanation": "The restriction allowed each respondent to contribute only one marriage. Exclusions for same-sex couples, one-wave observations, and zero weights were listed separately.",
       "evidence_segment_id": "METHOD-001",
-      "source": "Lin et al. (2018)",
+      "source": "One marriage per respondent",
       "difficulty": "medium"
     },
     {
-      "prompt": "노년기 전환변수의 측정을 가장 정확히 설명한 것은?",
+      "prompt": "How were the later-life transition variables coded for the analysis?",
       "options": [
-        "전환이 발생한 면접에만 1을 주고 다음 면접부터 다시 0으로 바꾸었다",
-        "t 시점 이혼을 예측할 때 한 면접차수 뒤인 t+2 시점에 보고한 전환 상태를 사용했다",
-        "발생 뒤 남은 관찰기간에 1로 유지하고 이혼보다 2년 앞선 값을 사용했다",
-        "기초선의 전환 상태를 한 번 측정해 분석기간 내내 시간불변으로 처리했다"
+        "They equaled one only at the onset interview and returned to zero at the next wave",
+        "They used the status reported two years after the divorce interval being predicted",
+        "They stayed at one after onset and were lagged one interview wave before divorce",
+        "They were measured only at baseline and treated as fixed throughout follow-up"
       ],
-      "answer": "발생 뒤 남은 관찰기간에 1로 유지하고 이혼보다 2년 앞선 값을 사용했다",
-      "explanation": "빈 둥지, 배우자별 은퇴와 만성질환은 흡수형 시간가변 변수로 만들고 한 면접차수 시차를 뒀다.",
+      "answer": "They stayed at one after onset and were lagged one interview wave before divorce",
+      "explanation": "Empty nest, each spouse's retirement, and each spouse's chronic-condition status were time-varying indicators that remained one after onset. A two-year lag established measured temporal ordering without proving causation.",
       "evidence_segment_id": "MEASURE-001",
-      "source": "Lin et al. (2018)",
+      "source": "Absorbing transition indicators and timing",
       "difficulty": "medium"
     },
     {
-      "prompt": "결혼의 질 측정에 관한 설명으로 맞는 것은?",
+      "prompt": "How was marital quality measured?",
       "options": [
-        "함께 보내는 시간과 그 시간의 즐거움을 합산·역코딩해 배우자별 2–6점으로 만들었다",
-        "아내와 남편의 두 응답을 평균해 하나의 부부점수로 만들고 면접마다 갱신했다",
-        "함께 보내는 시간과 갈등빈도를 합산해 배우자별 2–6점 기초선 지표로 만들었다",
-        "함께 보낸 시간의 즐거움만 배우자별 1–4점 시간가변 지표로 사용했다"
+        "Time together and enjoyment were combined and reverse-coded into separate spouse scores of 2-6",
+        "The spouses' responses were averaged into one couple score that was updated at every interview",
+        "Time together and conflict frequency formed separate baseline scores ranging from 2 to 6",
+        "Enjoyment alone was a time-varying 1-4 score without any measure of shared time"
       ],
-      "answer": "함께 보내는 시간과 그 시간의 즐거움을 합산·역코딩해 배우자별 2–6점으로 만들었다",
-      "explanation": "아내와 남편의 지표를 따로 계산했지만 최초 면접에서만 물었기 때문에 시간불변 공변량으로 처리했다.",
+      "answer": "Time together and enjoyment were combined and reverse-coded into separate spouse scores of 2-6",
+      "explanation": "Higher scores represented more positive marital interaction. The questions were asked only at the couple's first interview, so wife and husband measures were entered separately as time-invariant covariates.",
       "evidence_segment_id": "MEASURE-002",
-      "source": "Lin et al. (2018)",
+      "source": "The marital-quality measure",
       "difficulty": "medium"
     },
     {
-      "prompt": "이산시간 사건사 모형이 이 연구에 적합한 이유는?",
+      "prompt": "Why was discrete-time event-history analysis appropriate?",
       "options": [
-        "정확한 이혼 날짜를 일 단위로 관찰해 중도절단을 포함한 연속시간 Cox 위험률을 추정할 수 있었기 때문에",
-        "이미 이혼한 부부도 이후의 모든 면접 위험집단에 계속 남겨 결혼기간별 누적확률을 반복 회귀하기 위해",
-        "면접 간격별 사건, 시간가변 공변량, 아직 이혼하지 않은 위험집단과 중도절단을 다루기 위해",
-        "각 면접의 무조건 이혼확률을 추정하고 사망·관찰종료 사례를 비이혼으로 처리하기 위해"
+        "Exact daily divorce dates allowed continuous-time Cox hazards without interval information",
+        "Divorced couples remained in all subsequent risk sets to estimate repeated unconditional probabilities",
+        "It handles interval-observed events, changing covariates, risk sets, and censoring",
+        "It treats deaths and the end of follow-up as proof that a couple will never divorce"
       ],
-      "answer": "면접 간격별 사건, 시간가변 공변량, 아직 이혼하지 않은 위험집단과 중도절단을 다루기 위해",
-      "explanation": "모형은 t 이전까지 이혼하지 않은 부부가 t에 이혼할 조건부확률을 추정하고 시간가변 정보를 포함한다.",
+      "answer": "It handles interval-observed events, changing covariates, risk sets, and censoring",
+      "explanation": "The model estimates the probability of divorce in an interval conditional on no prior divorce. Observation can end before a future event occurs; the analysis is not simply a regression of lifetime cumulative probabilities.",
       "evidence_segment_id": "ANALYTIC-001",
-      "source": "Lin et al. (2018)",
+      "source": "Conditional risk over observed intervals",
       "difficulty": "hard"
     },
     {
-      "prompt": "Figure 1의 결과를 가장 정확히 읽은 것은?",
+      "prompt": "Which interpretation matches Figure 1?",
       "options": [
-        "결혼기간 40년 무렵에는 초혼과 재혼의 누적 이혼확률이 모두 약 .058로 사실상 수렴했다",
-        "재혼의 누적확률은 더 일찍 상승했고 40년 이상에서도 초혼의 거의 세 배였다",
-        "재혼 곡선의 약 .095는 한 면접구간의 조건부 이혼위험률을 뜻했다",
-        "초혼 곡선은 재혼 곡선보다 일찍 상승했고 약 .095의 누적확률에 도달했다"
+        "After 40 years, cumulative probabilities for first marriages and remarriages converged at about .058",
+        "Remarriage probabilities rose earlier and remained nearly triple those of first marriages after 40 years",
+        "The remarriage value near .095 is the conditional hazard for a single interview interval",
+        "First-marriage probabilities rose earlier than remarriage probabilities and reached about .095"
       ],
-      "answer": "재혼의 누적확률은 더 일찍 상승했고 40년 이상에서도 초혼의 거의 세 배였다",
-      "explanation": "재혼 곡선은 약 .095까지 상승했고, 긴 결혼기간이 결혼차수 차이를 없앨 것이라는 예상은 지지되지 않았다.",
+      "answer": "Remarriage probabilities rose earlier and remained nearly triple those of first marriages after 40 years",
+      "explanation": "The figure concerns cumulative gray-divorce probabilities. The near-zero early first-marriage curve partly reflects eligibility: many first marriages must last years before a spouse reaches 50. Long duration did not eliminate the marriage-order difference.",
       "evidence_segment_id": "RESULT-001",
-      "source": "Lin et al. (2018)",
+      "source": "Cumulative probability and the observation design",
       "difficulty": "medium"
     },
     {
-      "prompt": "아내의 은퇴와 황혼이혼 결과를 올바르게 설명한 것은?",
+      "prompt": "What happened to the association between the wife's retirement and gray divorce across the two models?",
       "options": [
-        "모형 1에서 이혼 승산을 약 43% 높였지만 모형 2에서는 유의하지 않았다",
-        "모형 1에서는 관련이 없었지만 모형 2에서 약 43% 낮은 승산이 나타났다",
-        "모형 1에서 약 43% 낮았고 모형 2에서는 부적 관련성이 더 강해졌다",
-        "모형 1의 약 43% 낮은 승산은 모형 2에서 비유의가 됐다"
+        "It indicated about 43% higher odds in Model 1 and became nonsignificant in Model 2",
+        "It was absent in Model 1 but indicated about 43% lower odds after controls were added",
+        "It indicated lower odds in Model 1 and grew more strongly negative in Model 2",
+        "About 43% lower odds in Model 1 became nonsignificant in Model 2"
       ],
-      "answer": "모형 1의 약 43% 낮은 승산은 모형 2에서 비유의가 됐다",
-      "explanation": "부분모형의 부적 관련이 완전 모형에서 유지되지 않았으므로 아내의 은퇴를 독립적인 보호요인으로 확정할 수 없다.",
+      "answer": "About 43% lower odds in Model 1 became nonsignificant in Model 2",
+      "explanation": "The association did not persist after marital biography, marital quality, and sociodemographic factors were included. The result does not establish the wife's retirement as an independent causal protection against divorce.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "source": "Lin et al. (2018)",
+      "source": "Comparing Model 1 and Model 2",
       "difficulty": "medium"
     },
     {
-      "prompt": "재혼과 결혼기간의 다변량 결과로 맞는 것은?",
+      "prompt": "Which statement matches the multivariate findings for remarriage and duration?",
       "options": [
-        "두 변수는 r = −0.69였고 함께 넣으면 결혼기간만 유의했으며 기간을 빼면 재혼이 유의했다",
-        "두 변수는 r = −0.69였고 함께 넣은 모형에서도 재혼과 결혼기간이 각각 유의했다",
-        "두 변수는 r = 0.69였고 함께 넣으면 재혼만 유의하며 결혼기간은 관련되지 않았다",
-        "두 변수는 r = 0.79였고 함께 넣으면 둘 다 유의하지 않은 것으로 나타났다"
+        "They correlated at -.69; only duration was significant jointly, while remarriage was significant without duration",
+        "They correlated at -.69 and both retained separate significant associations in the joint model",
+        "They correlated at +.69 and only remarriage was significant after both were included",
+        "They correlated at +.79 and neither was significant when examined in any model"
       ],
-      "answer": "두 변수는 r = −0.69였고 함께 넣으면 결혼기간만 유의했으며 기간을 빼면 재혼이 유의했다",
-      "explanation": "재혼의 평균 결혼기간이 짧아 두 지표가 강하게 얽혀 있으므로 독립효과와 전체 차이를 구분해야 한다.",
+      "answer": "They correlated at -.69; only duration was significant jointly, while remarriage was significant without duration",
+      "explanation": "Remarriages tend to be shorter, so the variables are strongly related. The joint model and the model omitting duration address different adjusted comparisons; the .79 correlation concerns non-shared children and remarriage.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "source": "Lin et al. (2018)",
+      "source": "Interrelated dimensions of marital biography",
       "difficulty": "hard"
     },
     {
-      "prompt": "배우자 이질혼 결과를 정확히 설명한 것은?",
+      "prompt": "Which statement accurately describes the heterogamy findings?",
       "options": [
-        "연령차만 황혼이혼과 유의하게 관련됐고 인종과 교육의 차이는 측정됐지만 비유의였다",
-        "인종 이질혼의 승산은 1.76배였지만 연령과 교육 이질혼은 유의하지 않았다",
-        "인종 이질혼의 승산은 1.76배였고 연령차도 유의한 정적 관련을 보였지만 교육차는 비유의였다",
-        "교육차만 황혼이혼과 유의하게 관련됐고 인종 이질혼의 승산은 높지 않았다"
+        "Only age difference was significant; racial and educational differences were unrelated to divorce",
+        "The interracial-couple odds ratio was 1.76; age and educational differences were not significant",
+        "The interracial odds ratio was 1.76 and age difference also had a significant positive association",
+        "Only educational difference was significant, while interracial couples did not have higher odds"
       ],
-      "answer": "인종 이질혼의 승산은 1.76배였지만 연령과 교육 이질혼은 유의하지 않았다",
-      "explanation": "인종이 다른 부부만 인종이 같은 부부보다 높은 이혼 승산을 보였고 다른 두 차이는 유의하지 않았다.",
+      "answer": "The interracial-couple odds ratio was 1.76; age and educational differences were not significant",
+      "explanation": "Table 2 and the measurement definitions identify couples in which both spouses were White as the reference for the 1.76 odds ratio. This is more specific than comparing with all same-race couples, and an odds ratio is not a probability ratio.",
       "evidence_segment_id": "MULTIVARIATE-001",
-      "source": "Lin et al. (2018)",
+      "source": "Heterogamy and the actual reference category",
       "difficulty": "medium"
     },
     {
-      "prompt": "경제자원 결과를 과장하지 않은 설명은?",
+      "prompt": "Which account preserves the scope of the economic-resource findings?",
       "options": [
-        "주택과 자산은 낮은 이혼 승산과 관련돼 이혼 장벽으로 해석됐다",
-        "주택 소유는 낮은 이혼 승산과 관련됐지만 자산 범주 사이에는 차이가 나타나지 않았다",
-        "높은 자산은 낮은 이혼 승산과 관련됐지만 주택 소유는 오히려 높은 승산과 관련됐다",
-        "부채 여부만 이혼과 관련됐고 주택 소유와 자산은 모형에서 관련되지 않았다"
+        "Home ownership and wealth were associated with lower divorce odds and interpreted as barriers to separation",
+        "Home ownership predicted lower odds, but the wealth categories showed no differences",
+        "Wealth predicted lower odds while home ownership predicted higher odds",
+        "Debt alone was relevant; home ownership and wealth had no association in the models"
       ],
-      "answer": "주택과 자산은 낮은 이혼 승산과 관련돼 이혼 장벽으로 해석됐다",
-      "explanation": "저자들은 주택 소유와 자산이 황혼이혼의 장벽으로 작용해 경제적 안정이 보호요인이라고 해석했다.",
+      "answer": "Home ownership and wealth were associated with lower divorce odds and interpreted as barriers to separation",
+      "explanation": "The authors interpret economic security as a potential barrier to divorce. The observational associations do not prove that acquiring a house or assets would prevent divorce for a particular couple.",
       "evidence_segment_id": "DISCUSSION-002",
-      "source": "Lin et al. (2018)",
+      "source": "Economic resources and interpretation",
       "difficulty": "hard"
     },
     {
-      "prompt": "유의하지 않은 상호작용을 해석할 때 확인할 핵심 한계는?",
+      "prompt": "Which limitation matters when interpreting the nonsignificant marital-quality interactions?",
       "options": [
-        "결혼의 질을 매 면접에서 갱신해 전환 전후의 단기변화만 포착하고 장기 수준을 측정하지 못했다",
-        "아내의 결혼의 질만 최초 면접에서 측정하고 남편의 관계경험은 수집하지 못했다",
-        "결혼의 질은 최초 면접에서만 측정되어 많은 부부에서 전환보다 여러 해 앞섰고 직전·직후 변화와 맞추지 못했다",
-        "결혼의 질과 노년기 전환을 같은 최초 면접에서 측정해 시간순서를 구분하기 어려웠다"
+        "Marital quality was updated so frequently that only immediate changes and no longer-term patterns were measured",
+        "Only wives answered the marital-quality questions, leaving husbands' experiences unavailable",
+        "Quality was measured only at the first interview, often years before a transition",
+        "Quality and every life transition were measured together at baseline with no later observations"
       ],
-      "answer": "결혼의 질은 최초 면접에서만 측정되어 많은 부부에서 전환보다 여러 해 앞섰고 직전·직후 변화와 맞추지 못했다",
-      "explanation": "시간불변으로 처리한 기초선 결혼의 질은 생애전환 주변의 관계변화를 포착하지 못해 조절효과 검정에 한계를 남긴다.",
+      "answer": "Quality was measured only at the first interview, often years before a transition",
+      "explanation": "The fixed quality measure may miss changes shortly before or after empty nest, retirement, or illness. Absence of a significant interaction therefore does not establish that evolving relationship quality can never matter.",
       "evidence_segment_id": "DISCUSSION-001",
-      "source": "Lin et al. (2018)",
+      "source": "Limits of the moderation tests",
       "difficulty": "hard"
     },
     {
-      "prompt": "논문의 결론과 후속연구 범위를 가장 정확히 설명한 것은?",
+      "prompt": "Which summary best captures the findings and proposed next steps?",
       "options": [
-        "세 노년기 전환이 핵심 위험요인이었고 결혼이력과 결혼의 질은 노년기에는 관련되지 않았다",
-        "아내의 은퇴만 안정적인 보호요인이었고 이혼 이후 당사자의 결과는 연구할 필요가 없다고 보았다",
-        "경제자원만 황혼이혼을 설명했으며 성인자녀의 안녕은 현재 자료에서 이미 직접 검정했다",
-        "전통적 결혼·경제 요인의 중요성을 보였고 당사자와 성인자녀에 대한 이혼결과 연구를 요청했다"
+        "The three transitions were the main risk factors, while marital history and quality were irrelevant",
+        "The wife's retirement remained an independent protective factor, ending the need for follow-up research",
+        "Only economic resources mattered, and adult children's post-divorce well-being was directly tested",
+        "Marital and economic factors mattered; consequences for divorcees and adult children remain research questions"
       ],
-      "answer": "전통적 결혼·경제 요인의 중요성을 보였고 당사자와 성인자녀에 대한 이혼결과 연구를 요청했다",
-      "explanation": "저자들은 세 전환의 역할이 미미한 대신 결혼이력·질·경제자원이 중요하다고 결론 내리고 이혼 이후의 안녕을 후속과제로 남겼다.",
+      "answer": "Marital and economic factors mattered; consequences for divorcees and adult children remain research questions",
+      "explanation": "The fully adjusted findings gave little support to the three proposed turning points. The authors emphasize marital biography, quality, and resources and call for research on consequences, while acknowledging attrition, limited cohorts, and unmeasured marital processes.",
       "evidence_segment_id": "LIMIT-001",
-      "source": "Lin et al. (2018)",
+      "source": "Conclusions and future research",
       "difficulty": "medium"
     }
-  ]
+  ],
+  "language": "en"
 }

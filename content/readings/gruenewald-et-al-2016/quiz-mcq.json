@@ -1,217 +1,218 @@
 {
-  "title": "Gruenewald et al. (2016) 객관식 퀴즈",
-  "instructions": "가장 정확한 답 하나를 고르세요. 선택지의 범위와 인과 해석을 원문 근거에 맞춰 판단해야 합니다.",
+  "title": "Gruenewald et al. (2016): Multiple-Choice Quiz",
+  "instructions": "Choose the single best answer. Distinguish randomized assignment, actual program exposure, and self-perceived outcomes. CACE conclusions depend on assumptions; where the retained text and tables differ, explanations preserve that uncertainty.",
   "question_set_type": "객관식 퀴즈",
   "items": [
     {
-      "prompt": "이 연구가 직접 검증한 중심 질문으로 가장 정확한 것은?",
+      "prompt": "Which question was directly addressed by this analysis of the Experience Corps trial?",
       "options": [
-        "EC가 생성감 욕구에는 영향을 주지만 생성감 성취에는 영향을 주지 않는가",
-        "EC 배정이 통상적 자원봉사를 포함한 전체 봉사 참여율을 높이는가",
-        "EC 참여가 노인의 생성감 욕구와 성취에 대한 자기지각을 높이는가",
-        "기초선 생성감 수준이 24개월 평가 완료 여부를 예측하는가"
+        "Whether the program changed generative desire while necessarily leaving perceived achievement unaffected.",
+        "Whether assignment increased every form of volunteering, regardless of its purpose or intergenerational content.",
+        "Whether assignment to Experience Corps improved older adults' generative desire and perceived achievement.",
+        "Whether baseline generativity alone could determine which participants would complete the final evaluation."
       ],
-      "answer": "EC 참여가 노인의 생성감 욕구와 성취에 대한 자기지각을 높이는가",
-      "explanation": "초록은 세대 간 시민참여 프로그램 참여가 노인의 생성감 자기지각에 도움이 되는지를 2년 무작위시험으로 평가한다고 명시한다.",
+      "answer": "Whether assignment to Experience Corps improved older adults' generative desire and perceived achievement.",
+      "explanation": "The analysis examined older adults' self-perceptions of generative desire and achievement over two years. The randomized comparison was EC assignment versus usual volunteer opportunities. These outcomes are distinct from direct observation of social contributions, children's achievement, or a demonstrated health pathway through generativity.",
       "evidence_segment_id": "ABS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Abstract: outcomes of the trial analysis",
       "difficulty": "easy"
     },
     {
-      "prompt": "저자들이 말하는 구조적 지체를 가장 잘 설명한 것은?",
+      "prompt": "What does structural lag mean in the introduction?",
       "options": [
-        "건강수명과 노인의 기여 잠재력은 늘었지만 이를 활용할 사회제도의 발전이 뒤처진 상태",
-        "노인이 다음 세대보다 새로운 기술을 늦게 배우는 개인차",
-        "중년기의 발달과업이 모든 사람에게 같은 나이에 시작되는 현상",
-        "세대 간 프로그램에서 아동의 학업성적 자료가 연구진에게 너무 늦게 전달되어 분석시점이 지연된 절차상 문제"
+        "Longer healthy lives and greater potential to contribute have outpaced institutions providing meaningful roles for older adults.",
+        "Older adults necessarily learn every new technology more slowly than children because of an unchanging individual deficit.",
+        "The developmental tasks of midlife begin at exactly the same chronological age for everyone, regardless of social circumstances.",
+        "Delayed delivery of children's school records postponed the analysis and prevented measurement of older adults' generativity."
       ],
-      "answer": "건강수명과 노인의 기여 잠재력은 늘었지만 이를 활용할 사회제도의 발전이 뒤처진 상태",
-      "explanation": "서론은 노인의 생성적 잠재력을 살릴 사회체계가 건강수명 증가를 따라가지 못한 상태를 구조적 지체로 제시한다.",
+      "answer": "Longer healthy lives and greater potential to contribute have outpaced institutions providing meaningful roles for older adults.",
+      "explanation": "The authors describe a mismatch between older adults' capacity to contribute and the opportunities created by social institutions. EC is presented as one attempt to provide such roles. Structural lag therefore concerns institutions and opportunities, rather than merely an individual learning-speed difference.",
       "evidence_segment_id": "INTRO-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Introduction: structural lag",
       "difficulty": "medium"
     },
     {
-      "prompt": "Experience Corps의 설계를 가장 정확히 설명한 것은?",
+      "prompt": "How was Experience Corps designed to connect the two generations?",
       "options": [
-        "노인이 교실활동을 관찰하되 아동 지도에는 참여하지 않는 저강도 학교방문 프로그램",
-        "노인이 또래 노인에게 건강교육을 제공하고 아동은 비교집단으로만 두는 지역사회 프로그램",
-        "전문 교사가 읽기·수학을 지원하고 노인은 학교 밖 홍보와 모금만 맡는 프로그램",
-        "노인이 초등학생의 학업·행동발달을 돕고 자신도 생성적·사회적·인지적·신체적 활동기회를 얻는 프로그램"
+        "Older adults observed lessons without assisting children, while the program deliberately avoided sustained volunteering.",
+        "Older volunteers taught health classes only to their peers, with elementary-school children serving solely as controls.",
+        "Professional teachers provided all direct help, while older volunteers performed only fundraising and publicity duties.",
+        "Older adults supported pupils' learning and behavior while gaining generative, social, cognitive, and physical activity opportunities."
       ],
-      "answer": "노인이 초등학생의 학업·행동발달을 돕고 자신도 생성적·사회적·인지적·신체적 활동기회를 얻는 프로그램",
-      "explanation": "EC는 학교의 미충족 욕구와 노인의 생성감 및 건강 관련 활동기회를 함께 연결하는 세대 간 상생 프로그램이다.",
+      "answer": "Older adults supported pupils' learning and behavior while gaining generative, social, cognitive, and physical activity opportunities.",
+      "explanation": "EC connects unmet school needs, such as literacy, mathematics, attention, and guidance, with opportunities for older adults to contribute. The wider trial addressed several possible benefits; the present paper directly analyzes the older volunteers' self-perceptions of generativity. The target of 15 hours weekly describes the program, not a proven optimal dose.",
       "evidence_segment_id": "EC-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Experience Corps: program design",
       "difficulty": "easy"
     },
     {
-      "prompt": "생성감 욕구와 생성감 성취의 관계에 대한 저자들의 설명은?",
+      "prompt": "How were generative desire and perceived generative achievement conceptualized?",
       "options": [
-        "욕구와 성취는 이론적으로도 측정상으로도 완전히 같아서 연구에서 하나의 총점으로만 처리해야 한다",
-        "서로 구별되지만 욕구가 활동을 촉진하고 성취가 다시 욕구를 높일 수 있다",
-        "성취는 아동의 객관적 시험점수이고 욕구는 노인이 실제로 기록한 자원봉사 누적시간을 뜻한다",
-        "욕구는 중년기에만 나타났다가 사라지고 성취는 노년기에 처음 생기는 서로 무관한 발달단계다"
+        "They were identical constructs that could be analyzed only as a single undifferentiated total score.",
+        "They were distinct but could reinforce each other through engagement and a sense of contribution.",
+        "Achievement meant children's objective test scores, while desire meant recorded cumulative volunteer hours.",
+        "Desire ended permanently after midlife and achievement first appeared in old age as an unrelated process."
       ],
-      "answer": "서로 구별되지만 욕구가 활동을 촉진하고 성취가 다시 욕구를 높일 수 있다",
-      "explanation": "두 구성요소는 분리되지만 상호 강화할 수 있으며, 연구진은 EC가 둘 모두를 높일 것으로 가정했다.",
+      "answer": "They were distinct but could reinforce each other through engagement and a sense of contribution.",
+      "explanation": "Desire may encourage generative engagement, which can support perceived achievement; perceived achievement may then sustain further desire. These are proposed reciprocal links between distinct components. The study assessed whether both perceptions could change with EC assignment, not the exact causal order between the two components.",
       "evidence_segment_id": "ENHANCING-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Concepts: desire and perceived achievement",
       "difficulty": "medium"
     },
     {
-      "prompt": "시험 참여자격에 포함되지 않은 것은?",
+      "prompt": "Which was not an eligibility requirement?",
       "options": [
-        "60세 이상이고 무작위배정에 동의할 것",
-        "6학년 수준 이상의 기능적 문해력을 갖출 것",
-        "MMSE 24점 이상일 것",
-        "시험 등록 전에 이미 2년간 EC 학교봉사를 완료했을 것"
+        "Being at least 60 years old and accepting random assignment to either trial condition.",
+        "Having functional literacy at sixth-grade level or above according to the screening test.",
+        "Scoring at least 24 on the MMSE as part of screening for appropriate cognitive functioning.",
+        "Having already completed two years of EC school service before enrolling in the trial."
       ],
-      "answer": "시험 등록 전에 이미 2년간 EC 학교봉사를 완료했을 것",
-      "explanation": "참여자는 EC군 배정 시 적어도 한 학년도 동안 주당 15시간 이상 활동하는 데 동의해야 했지만 사전 EC 완료는 자격요건이 아니었다.",
+      "answer": "Having already completed two years of EC school service before enrolling in the trial.",
+      "explanation": "Participants agreed that, if assigned to EC, they would volunteer at least 15 hours weekly for at least one school year, with two years encouraged. Prior completion of the program was not required. School travel, background checks, and appropriate conduct were additional conditions for placement.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Participants: eligibility",
       "difficulty": "medium"
     },
     {
-      "prompt": "참여자 흐름을 정확히 짝지은 것은?",
+      "prompt": "Which sequence correctly distinguishes randomization, EC assignment, and actual intervention receipt?",
       "options": [
-        "무작위배정 2,675명, EC군 702명, 실제 중재 352명",
-        "무작위배정 799명, EC군 350명, 중재 284명",
-        "무작위배정 702명, EC군 352명, 실제 중재 284명",
-        "무작위배정 702명, EC군 284명, 실제 중재 68명"
+        "2,675 randomized; 702 assigned to EC; 352 received the intervention.",
+        "799 randomized; 350 assigned to EC; 284 received the intervention.",
+        "702 randomized; 352 assigned to EC; 284 received the intervention.",
+        "702 randomized; 284 assigned to EC; 68 received the intervention."
       ],
-      "answer": "무작위배정 702명, EC군 352명, 실제 중재 284명",
-      "explanation": "2,675명은 최초 선별인원이고 EC군 352명 중 68명이 직책에 진입하지 않아 284명이 중재를 받았다.",
+      "answer": "702 randomized; 352 assigned to EC; 284 received the intervention.",
+      "explanation": "The trial screened 2,675 people and randomized 702: 352 to EC and 350 to control. Sixty-eight people assigned to EC did not proceed to a school position, leaving 284 who received the intervention. These figures distinguish assignment from exposure; the 68 remain relevant to an intention-to-treat comparison.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Participants: trial flow",
       "difficulty": "easy"
     },
     {
-      "prompt": "대조조건에 대한 설명으로 맞는 것은?",
+      "prompt": "What was the intended control condition?",
       "options": [
-        "CARE가 EC를 제외한 통상적인 자원봉사 기회를 안내했다",
-        "CARE가 EC와 같은 강도의 학교 봉사를 다른 명칭으로 안내했다",
-        "CARE가 자원봉사 목록을 제공했지만 시험기간의 실제 신청은 제한했다",
-        "대조군은 24개월 뒤 EC를 제공받는 대기목록 조건으로 운영됐다"
+        "CARE offered referrals to usual volunteering opportunities, excluding EC during the trial.",
+        "CARE referred controls to the same high-intensity school service under a different program name.",
+        "CARE supplied a list of opportunities but prohibited controls from actually volunteering.",
+        "Controls were guaranteed EC after 24 months as part of a formal wait-list comparison."
       ],
-      "answer": "CARE가 EC를 제외한 통상적인 자원봉사 기회를 안내했다",
-      "explanation": "대조군은 무처치가 아니며 통상적인 자원봉사 기회를 소개받았고 시험기간에는 EC만 제외됐다.",
+      "answer": "CARE offered referrals to usual volunteering opportunities, excluding EC during the trial.",
+      "explanation": "Controls could pursue usual volunteer opportunities, so the contrast was not EC versus a ban on volunteering. CARE referrals excluded EC, and other opportunities were often, but not always, less intensive. The retained flowchart nevertheless reports 11 control-to-intervention crossovers, which conflicts with the assumptions text's claim that controls could not access EC; this remains unresolved.",
       "evidence_segment_id": "PARTICIPANTS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Participants: intended control condition",
       "difficulty": "easy"
     },
     {
-      "prompt": "생성감 척도에 관한 설명으로 가장 정확한 것은?",
+      "prompt": "Which description matches the generativity measures?",
       "options": [
-        "욕구 6문항과 성취 7문항을 1–6점으로 평정하고 두 하위척도를 따로 계산했다",
-        "욕구 7문항과 성취 6문항을 0–5점으로 평정하고 두 하위척도를 따로 계산했다",
-        "욕구 7문항과 성취 6문항을 1–6점으로 평정하고 두 하위척도 점수를 따로 계산했다",
-        "욕구 7문항과 성취 6문항을 1–6점으로 평정한 뒤 하나의 생성감 총점만 계산했다"
+        "Six desire items and seven achievement items were rated 1–6 and averaged as separate subscales.",
+        "Seven desire items and six achievement items were rated 0–5 and averaged as separate subscales.",
+        "Seven desire items and six achievement items were rated 1–6 and averaged as separate subscales.",
+        "Seven desire items and six achievement items were rated 1–6 and combined into one total score."
       ],
-      "answer": "욕구 7문항과 성취 6문항을 1–6점으로 평정하고 두 하위척도 점수를 따로 계산했다",
-      "explanation": "요인분석은 서로 구별되지만 상관된 두 요인을 지지했고 각 문항군의 평균으로 별도 하위척도를 산출했다.",
+      "answer": "Seven desire items and six achievement items were rated 1–6 and averaged as separate subscales.",
+      "explanation": "Maximum-likelihood factor analysis supported two distinct, moderately correlated factors. The authors averaged each item set separately. The achievement scale concerns perceived current contribution, not an independent audit of what participants achieved. Internal consistency does not by itself establish objective outcome validity.",
       "evidence_segment_id": "MEASURES-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Measures: two generativity subscales",
       "difficulty": "medium"
     },
     {
-      "prompt": "ITT 분석의 핵심 특징은?",
+      "prompt": "What defines the intention-to-treat comparison?",
       "options": [
-        "대조군에서 EC에 참여했을 잠재 순응자만 추정한다",
-        "실제 중재노출과 무관하게 최초 무작위배정 집단을 비교한다",
-        "봉사시간이 가장 긴 사람만 남겨 사후 비교한다",
-        "비순응자를 모두 대조군으로 옮겨 분석한다"
+        "It estimates only which controls would have complied if assigned to the intervention.",
+        "It compares original randomized groups regardless of how much intervention they received.",
+        "It retains only the volunteers with the longest service hours and compares them afterward.",
+        "It transfers intervention noncompliers into the control group before estimating the effect."
       ],
-      "answer": "실제 중재노출과 무관하게 최초 무작위배정 집단을 비교한다",
-      "explanation": "ITT는 중재군의 순응자와 비순응자를 모두 최초 배정에 따라 포함해 배정효과를 추정한다.",
+      "answer": "It compares original randomized groups regardless of how much intervention they received.",
+      "explanation": "ITT estimates the effect of assignment while retaining both compliers and noncompliers in their assigned groups. It answers a different question from an effect among those who would comply. Nonreceipt may reduce the average assignment contrast without invalidating that estimand or justifying reassignment of participants.",
       "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Analysis: intention to treat",
       "difficulty": "medium"
     },
     {
-      "prompt": "CACE 분석을 가장 정확히 설명한 것은?",
+      "prompt": "What does the CACE approach attempt to estimate here?",
       "options": [
-        "무작위배정 정보를 사용하지 않고 전체 표본에서 참여시간과 결과의 단순 상관만 계산해 인과효과로 해석한다",
-        "중재군 비순응자를 대조군 순응자로 간주해 집단을 바꾼다",
-        "모든 참여자가 실제로 받은 시간을 동일하다고 가정한다",
-        "중재군의 관찰 순응자와 대조군에서 추정한 잠재 순응자의 효과를 비교한다"
+        "A causal effect obtained by ignoring assignment and correlating service hours with outcomes across the entire sample.",
+        "An effect after moving all intervention noncompliers into the control group and treating them as known control compliers.",
+        "A common effect based on assuming every randomized participant received exactly the same amount of program exposure.",
+        "An effect among compliers, using observed intervention compliance and modeled potential compliance in controls."
       ],
-      "answer": "중재군의 관찰 순응자와 대조군에서 추정한 잠재 순응자의 효과를 비교한다",
-      "explanation": "대조군의 순응상태는 관찰되지 않으므로 연구진은 Mplus 잠재계층 혼합모형으로 이를 추정했다.",
+      "answer": "An effect among compliers, using observed intervention compliance and modeled potential compliance in controls.",
+      "explanation": "The authors used a latent-class mixture model in Mplus because controls' potential compliance under EC assignment was not observed. CACE is not a simple comparison of actual high-hour volunteers with everyone else. Its causal interpretation depends on additional assumptions about compliance, treatment, and outcomes, with qualifications discussed in the paper.",
       "evidence_segment_id": "ANALYTIC-ITT-CACE-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Analysis: complier average causal effect",
       "difficulty": "hard"
     },
     {
-      "prompt": "용량–반응을 살펴보기 위해 사용한 순응 정의는?",
+      "prompt": "According to the analysis text, how were the graded compliance thresholds defined?",
       "options": [
-        "시점별 누적 봉사시간 분포의 20·40·60·80백분위수 절단점",
-        "모든 추적시점과 모든 참여자에게 똑같이 적용한 주당 1시간이라는 하나의 고정 절단점",
-        "참여자가 자신의 참여를 높음 또는 낮음으로 주관적으로 선택해 보고한 두 범주의 자기평가",
-        "기초선 생성감 점수의 평균 이상 여부"
+        "By the 20th, 40th, 60th, and 80th percentiles of cumulative service hours at each evaluation.",
+        "By one fixed threshold of a single volunteer hour per week, unchanged across all evaluations.",
+        "By participants choosing either a high or low rating of engagement without recorded service hours.",
+        "By whether each participant's baseline generativity score exceeded the overall sample mean."
       ],
-      "answer": "시점별 누적 봉사시간 분포의 20·40·60·80백분위수 절단점",
-      "explanation": "노출수준이 높을수록 혜택이 커지는지 보기 위해 각 결과시점에 네 가지 노출기준의 CACE 모형을 사용했다.",
+      "answer": "By the 20th, 40th, 60th, and 80th percentiles of cumulative service hours at each evaluation.",
+      "explanation": "The analysis text and table headings specify these four percentiles, producing separate CACE models for each outcome and time point. Table 3's footnote instead labels the third threshold as the 65th percentile at 12 and 24 months; that source discrepancy is unresolved. The question is scoped to the analysis text. Actual dose was not randomly assigned, so threshold comparisons do not identify an optimal service prescription.",
       "evidence_segment_id": "ANALYTIC-EXPOSURE-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Analysis: graded exposure definitions",
       "difficulty": "medium"
     },
     {
-      "prompt": "추적평가와 결측처리에 대한 설명으로 맞는 것은?",
+      "prompt": "How were missing outcome data handled in the two analysis strategies?",
       "options": [
-        "결과 결측은 CACE에서 다중대치하고 ITT에서는 모형 안에서 직접 처리했다",
-        "결과 결측은 CACE에서 직접 모형화하고 ITT에서는 다중대치로 처리했다",
-        "CACE와 ITT 모두 결과 결측을 같은 완전정보최대우도 절차로 처리했다",
-        "CACE는 완전사례만 사용하고 ITT는 마지막 관측값을 이후 시점에 이월했다"
+        "CACE used multiple imputation, whereas ITT modeled missing outcomes directly within its latent-class models.",
+        "CACE modeled missing outcomes directly, whereas ITT used multiple imputation in SPSS.",
+        "Both approaches used an identical complete-information maximum-likelihood procedure without imputation.",
+        "CACE included complete cases only, whereas ITT carried each participant's last observed outcome forward."
       ],
-      "answer": "결과 결측은 CACE에서 직접 모형화하고 ITT에서는 다중대치로 처리했다",
-      "explanation": "4·12·24개월 완료율은 각각 84.5%, 79.5%, 79.8%였고 분석전략별로 종속변수 결측을 다르게 처리했다.",
+      "answer": "CACE modeled missing outcomes directly, whereas ITT used multiple imputation in SPSS.",
+      "explanation": "Outcome missingness was directly modeled in CACE and handled with multiple imputation for ITT. This is separate from the single regression-based imputation used for the small amount of missing baseline covariate data. Follow-up completion was 84.5%, 79.5%, and 79.8% at 4, 12, and 24 months; imputation does not eliminate the need to consider attrition assumptions.",
       "evidence_segment_id": "ANALYTIC-EXPOSURE-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Analysis: missing outcomes and covariates",
       "difficulty": "hard"
     },
     {
-      "prompt": "표 3의 결과를 가장 정확히 요약한 것은?",
+      "prompt": "Which summary of the modeled findings preserves their limits?",
       "options": [
-        "ITT에서는 차이가 없고 CACE 한 모형에서만 효과가 있었다",
-        "생성감 욕구만 높아지고 성취는 모든 시점에서 낮아졌다",
-        "ITT에서는 두 결과가 세 시점 모두 높았고 CACE에서는 높은 노출기준일수록 효과크기가 커졌다",
-        "효과는 4개월에만 나타났고 12·24개월에는 완전히 사라졌다"
+        "ITT showed no differences, while one isolated CACE estimate established the entire claimed benefit.",
+        "Generative desire increased, but perceived achievement was lower in the EC group at every follow-up.",
+        "Both ITT outcomes were higher at all three follow-ups; CACE generally showed larger effects at higher thresholds.",
+        "Effects appeared only at four months and had completely disappeared in both outcomes by the later assessments."
       ],
-      "answer": "ITT에서는 두 결과가 세 시점 모두 높았고 CACE에서는 높은 노출기준일수록 효과크기가 커졌다",
-      "explanation": "EC군의 욕구와 성취는 4·12·24개월 모두 유의하게 높았고, CACE 효과크기는 더 높은 노출수준에서 커지는 양상을 보였다.",
+      "answer": "Both ITT outcomes were higher at all three follow-ups; CACE generally showed larger effects at higher thresholds.",
+      "explanation": "The ITT comparisons favored EC significantly for both outcomes at 4, 12, and 24 months. Higher CACE thresholds generally produced larger effect sizes, but not every adjacent step increased and not every CACE estimate was significant. Several models had assumption warnings. The results text inconsistently refers to four listed models and then three, and a table cell also has an inconsistent significance mark; the broad pattern should not be turned into a claim about every cell or an independently randomized dose effect.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Results: ITT findings and qualified CACE pattern",
       "difficulty": "medium"
     },
     {
-      "prompt": "저자들이 제시한 한계의 조합으로 맞는 것은?",
+      "prompt": "Which set of limitations did the authors identify?",
       "options": [
-        "높은 기초선 생성감·추적탈락·여성 85%이자 주로 소수인종인 표본의 일반화 범위",
-        "남성 85%인 표본·기초선 생성감의 바닥효과·4개월 이후 50%가 넘는 추적탈락",
-        "대조군이 시험기간에 EC를 정규 제공받아 중재 대비가 약해진 교차오염",
-        "생성감 척도가 24개월에만 처음 측정되어 기초선 차이를 통제하지 못한 점"
+        "High baseline generativity, follow-up attrition, and a predominantly African American sample that was 85% female.",
+        "A sample that was 85% male, floor effects in generativity, and more than 50% attrition after the first follow-up.",
+        "Routine EC provision as the intended control condition, eliminating any intervention contrast from the outset.",
+        "No baseline generativity measures, making it impossible to adjust any outcome model for initial differences."
       ],
-      "answer": "높은 기초선 생성감·추적탈락·여성 85%이자 주로 소수인종인 표본의 일반화 범위",
-      "explanation": "저자들은 천장효과 가능성, 약 15%–20% 추적탈락, 표본구성에 따른 외적 타당도 한계를 명시했다.",
+      "answer": "High baseline generativity, follow-up attrition, and a predominantly African American sample that was 85% female.",
+      "explanation": "High initial scores may limit the room for improvement. Approximately 15–20% loss to follow-up and the sample composition constrain interpretation and generalization. Other volunteering was common in both groups, so a specifically intergenerational mechanism still requires comparison with other forms of high-intensity service. Recruiting older minority adults was also a strength.",
       "evidence_segment_id": "LIMITATIONS-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Limitations: ceiling, attrition, and generalization",
       "difficulty": "medium"
     },
     {
-      "prompt": "논문의 결론을 과장하지 않은 설명은?",
+      "prompt": "Which conclusion stays within what this analysis established?",
       "options": [
-        "EC는 생성감 욕구에는 효과가 있었지만 생성감 성취에는 효과가 없었다",
-        "높은 노출기준의 효과가 커서 주당 15시간이 모든 노인의 최적 처방으로 확정됐다",
-        "생성감 변화가 건강·인지·신체기능을 매개하는 경로를 24개월에 확정했다",
-        "세대 간 시민참여가 노인의 생성적 기여지각을 높일 수 있고 공중보건 프로그램으로서 가능성을 지닌다"
+        "EC improved generative desire but had no effect on perceived generative achievement at any evaluation.",
+        "The larger high-exposure estimates prove that exactly 15 hours weekly is the optimal dose for every older adult.",
+        "The analysis demonstrated that generativity changes mediated gains in cognition, physical function, and longevity.",
+        "Intergenerational civic engagement can improve perceived generative contribution and warrants further public-health investigation."
       ],
-      "answer": "세대 간 시민참여가 노인의 생성적 기여지각을 높일 수 있고 공중보건 프로그램으로서 가능성을 지닌다",
-      "explanation": "결론은 노인이 다른 사람을 도우면서 자신의 생성적 기여지각도 높일 수 있다는 실험 근거와 프로그램 가능성을 제시한다.",
+      "answer": "Intergenerational civic engagement can improve perceived generative contribution and warrants further public-health investigation.",
+      "explanation": "The trial provides experimental evidence about self-perceptions of generativity. Possible additional mental and physical health benefits are supported by prior observational associations and remain topics for further analysis. The program's public-health promise does not establish a completed health-mediation pathway or a universal optimal dose.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "Gruenewald et al. (2016)",
+      "source": "Conclusion: experimental evidence and future implications",
       "difficulty": "medium"
     }
-  ]
+  ],
+  "language": "en"
 }

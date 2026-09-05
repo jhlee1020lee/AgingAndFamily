@@ -1,166 +1,167 @@
 {
-  "title": "Martinson & Berridge (2015) 교수님 질문 대비",
-  "instructions": "결론을 먼저 말하고 453→67의 선정, 네 비판범주와 서로 다른 처방, 수치의 분모, 비판자의 귀속과 저자의 유보를 30초 안에 연결하는 연습용입니다.",
+  "title": "Martinson & Berridge (2015): Professor Question Preparation",
+  "instructions": "State the conclusion first, then briefly connect the review scope, the four categories and their different remedies, relevant denominators, and the distinction between critics' arguments and the reviewers' conclusions.",
   "question_set_type": "교수 스타일 예상문제",
   "cards": [
     {
       "card_id": "martinson-prep-01",
-      "title": "이 논문의 질문과 결론을 한 번에 말해 보세요.",
-      "answer_30s": "이 체계적 문헌고찰은 사회노년학 문헌에 나타난 성공적 노화 모델의 비판과 개선안을 분석했습니다. 453편의 검색 풀에서 기준을 충족한 67편을 질적으로 검토해 추가하고 섞기, 누락된 목소리, 통렬한 비판, 새로운 틀과 명칭의 네 범주를 찾았습니다. 방대한 추가 기준 자체가 규범적 모델의 배제성을 드러내므로 성공적 노화와 다른 규범모델의 사용을 더 성찰해야 한다는 결론입니다.",
+      "title": "What question does this review ask, and what does it conclude?",
+      "answer_30s": "The review examines critiques of successful aging models and proposed improvements in social gerontology. From a search pool of 453 articles, the authors qualitatively analyze 67 that meet their criteria. They identify four groups: Add and Stir, Missing Voices, Hard Hitting Critiques, and New Frames and Names. The reviewers argue that the expanding list of proposed criteria reveals the exclusion built into normative models and calls for greater reflection on how gerontology uses them. This is an interpretive synthesis, not a pooled test of an intervention.",
       "evidence_segment_id": "ABS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-02",
-      "title": "Rowe–Kahn 모델이 왜 영향력과 비판을 함께 받았나요?",
-      "answer_30s": "Rowe와 Kahn은 성공적 노화를 질병·장애의 회피, 인지·신체 기능의 유지, 사회적 참여로 구체화해 예방적이고 낙관적인 노화연구를 촉진했습니다. 그러나 Matilda Riley는 이 모델이 개인의 성공에만 초점을 맞추고 노화에 영향을 주는 구조적·사회적 요인을 무시해 심각하게 불완전하다고 비판했습니다. 이후 비판은 작은 수정부터 내재한 이데올로기의 근본 비판까지 넓어졌습니다.",
+      "title": "Why did the Rowe-Kahn model become both influential and contested?",
+      "answer_30s": "Rowe and Kahn specified avoidance of disease and disability, maintenance of cognitive and physical function, and social engagement. The review credits the model with encouraging preventive and optimistic approaches to aging research. Matilda Riley, however, criticized its focus on individual success and neglect of the social and structural conditions of aging. Later critiques ranged from modest revisions to challenges to the model's underlying ideology. These are distinct assessments of its contribution and limitations.",
       "evidence_segment_id": "INTRO-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-03",
-      "title": "453편이 67편이 된 선정범위를 설명해 보세요.",
-      "answer_30s": "저자들은 1987년 1월부터 2013년 12월까지 ASG에 수록된 동료심사 논문을 검색했습니다. 제목이나 전체 본문에 successful aging 또는 ageing이 있는 453편에서, 모델 비판이 논문의 핵심 요소인 자료를 골라 67편을 남겼습니다. 최종 자료에는 경험연구뿐 아니라 이론적 분석과 사설도 포함됐습니다.",
+      "title": "How did the search pool of 453 articles become a review of 67?",
+      "answer_30s": "The authors searched Abstracts in Social Gerontology, or ASG, for peer-reviewed articles published from January 1987 through December 2013 with successful aging or ageing in the title or full text. Of the 453 retrieved articles, 67 had a critique of successful aging models as a central component. The final set included empirical studies, theoretical analyses, and editorials. The review therefore synthesizes different kinds of contributions rather than treating all 67 articles as empirical effect estimates.",
       "evidence_segment_id": "METHODS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-04",
-      "title": "비판이 겹치는데 네 범주는 어떻게 구분했나요?",
-      "answer_30s": "논문들은 생리적 초점, 문화편향, 장애·질병이 있는 사람의 폄하 같은 비판을 공유할 수 있었습니다. 저자들은 비판의 소재가 아니라 그 결점을 해결하기 위해 제안한 권고를 기준으로 논문을 구별되는 범주에 배치했습니다. 마지막에는 네 범주를 종합해 사회노년학과 성공적 노화의 관계가 무엇을 시사하는지 설명했습니다.",
+      "title": "How were four categories distinguished when critiques overlapped?",
+      "answer_30s": "Articles could share concerns about physiological emphasis, cultural bias, or the devaluation of people with illness or disabilities. The authors distinguished categories by the remedies proposed for these problems, rather than requiring each category to criticize a different issue. They then synthesized the categories to interpret social gerontology's relationship with successful aging. Shared criticisms therefore do not imply shared recommendations.",
       "evidence_segment_id": "METHODS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-05",
-      "title": "‘추가하고 섞기’가 제안한 두 해결책은 무엇인가요?",
-      "answer_30s": "이 범주의 16편은 성공적 노화 모델 자체는 유지했습니다. 기존 기준으로 성공적 노화의 유병률이 매우 낮다는 점을 고려해 문턱을 완화하는 것과, 모델에 빠진 기준을 추가해 다차원적으로 확장하는 것이 두 해결책이었습니다. 즉 토대를 폐기하기보다 공백을 더 많은 요소로 채우는 접근입니다.",
+      "title": "What two remedies did Add and Stir propose?",
+      "answer_30s": "The 16 articles in this category retained successful aging as the basic model. One remedy was to relax thresholds because few people met existing criteria. The other was to expand the model by adding missing dimensions. Both approaches tried to repair gaps while keeping the model's foundation, rather than rejecting the idea of successful aging itself.",
       "evidence_segment_id": "ADD-STIR-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-06",
-      "title": "객관적 기준과 주관적 평가를 한 모델에 어떻게 넣었나요?",
-      "answer_30s": "Pruchno와 동료들은 두 부분으로 된 모델을 제안했습니다. 객관적 부분에는 만성질환이 거의 없음, 기능능력 유지, 통증을 거의 경험하지 않음이 들어갔습니다. 주관적 부분에는 자신이 얼마나 성공적으로 나이 들었는지, 얼마나 잘 나이 들고 있는지, 요즘 삶을 어떻게 평가하는지가 포함됐습니다.",
+      "title": "How did Pruchno and colleagues combine objective and subjective assessments?",
+      "answer_30s": "They proposed a two-part model. Its objective component included having few chronic conditions, maintaining functional ability, and experiencing little pain. Its subjective component asked how successfully people thought they had aged, how well they were aging, and how they rated their lives at present. This proposal responds to differences between externally specified criteria and older adults' own assessments; it does not make those assessments interchangeable.",
       "evidence_segment_id": "COMPARE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-07",
-      "title": "Torres의 문화내적 접근이 기존 문화비교를 어떻게 넓혔나요?",
-      "answer_30s": "Torres는 스웨덴으로 이주한 이란계 노인의 가치지향을 연구하며 문화 간 차이뿐 아니라 문화 내부의 차이도 보았습니다. 문화적 가치는 좋은 노년을 이해하는 방식을 이끌 수 있지만 모든 사람을 한 가지 성공적 노화 정의로 이끌지는 않습니다. 따라서 문화별로 고정된 척도를 하나 만드는 방식도 충분하지 않으며 문화 안의 정의 과정까지 살펴야 합니다.",
+      "title": "How did Torres extend cross-cultural accounts of successful aging?",
+      "answer_30s": "Torres studied value orientations among older Iranians who had migrated to Sweden and found differences within cultures as well as between them. People varied both in how they defined successful aging and in how they arrived at those definitions. Cultural values can guide understandings of a good old age without producing one uniform definition. Her findings therefore challenge fixed, culture-specific scales and encourage attention to the processes through which people construct meanings.",
       "evidence_segment_id": "CULTURE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-08",
-      "title": "‘통렬한 비판’은 무엇을 근본적으로 문제 삼았나요?",
-      "answer_30s": "14편의 통렬한 비판은 비판적 노년학, 여성주의 장애학, 서사노년학, 비판적 담론분석 등에서 나왔습니다. 이들은 개인주의, 내포된 연령주의와 비장애 중심주의, 신자유주의적 맥락, 사회와 노인의 삶에 대한 부정적 영향, 사회정의를 핵심 우려로 제시했습니다. 그래서 성공적이라는 관념을 더 넓게 거부하고 대안 틀을 요구했습니다.",
+      "title": "What did the Hard Hitting Critiques challenge at a fundamental level?",
+      "answer_30s": "The 14 articles drew on approaches including critical gerontology, feminist disability studies, narrative gerontology, and critical discourse analysis. They shared one or more concerns about individualism, ageism and ableism, neoliberal contexts, effects on older people's lives, and social justice. They questioned the broader idea of successful aging and called for alternative frameworks. The category summarizes arguments across articles; it does not mean every article made every criticism or used the same empirical method.",
       "evidence_segment_id": "HARD-HITTING-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-09",
-      "title": "개인주의 비판에서 구조적 맥락은 무엇을 뜻하나요?",
-      "answer_30s": "비판자들은 개인의 행동과 태도로 신체·인지 건강을 통제할 수 있다는 서사가 계급·젠더·인종·능력에 따른 생애기회의 불평등을 가린다고 보았습니다. 교육, 고용, 질 좋은 주거, 건강한 음식과 여가 접근은 특권집단에 더 유리합니다. 이 조건을 지우면 노화는 폭넓은 생물사회적 과정이 아니라 개인이 이기거나 지는 게임처럼 잘못 구성됩니다.",
+      "title": "What does structural context mean in the critique of individualism?",
+      "answer_30s": "The critics argue that presenting physical and cognitive health as controllable through individual behaviors and attitudes overlooks unequal life chances associated with class, gender, race, ability, and their intersections. Access to education, employment, safe and good-quality housing, healthy food, and recreation is unequally distributed. Ignoring those conditions can turn aging into an individual contest of success or failure instead of a broader biosocial process. This is the critique's interpretation, not a claim that personal actions never matter.",
       "evidence_segment_id": "INDIVIDUALISM-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-10",
-      "title": "성공적 노화가 어떻게 연령주의와 비장애 중심주의를 만들 수 있나요?",
-      "answer_30s": "질병과 장애의 회피를 이상적인 좋은 노화로 정하면 통상적 변화와 장애가 있는 몸은 실패한 노화가 됩니다. 규범적 용어에는 비교적·양자택일적·위계적 차원이 있어 능력 있는 몸은 높이고 장애는 폄하합니다. 그 결과 질병·장애가 있는 노인이 자신의 상태에 책임이 있는 사람처럼 도덕적 판단에 노출될 수 있습니다.",
+      "title": "How do critics connect successful aging with ageism and ableism?",
+      "answer_30s": "They argue that defining avoidance of disease and disability as ideal aging places people with illness or disabilities outside the category of success. The language creates a hierarchy in which physical and cognitive ability are valued while disability is devalued. Critics warn that this can expose older people to blame and moral judgment for their conditions. The claim concerns the consequences of the model's normative classification; it does not endorse describing anyone's life as a failure.",
       "evidence_segment_id": "AGEISM-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-11",
-      "title": "신자유주의 비판을 인과확정 없이 설명해 보세요.",
-      "answer_30s": "포함 문헌의 비판자들은 신체·인지 기능 유지의 책임을 개인에게 집중하는 담론이 사회지원과 구조적 불평등을 다룰 국가책임을 제한하는 흐름과 맞닿는다고 보았습니다. Dillaway와 Byrnes는 성공적·생산적 노화가 부상한 1980–1990년대의 보수주의 맥락을 강조했습니다. 다만 원문은 이 모델이 정부의 불안을 촉진하고 강화했을 수 있다고 유보하므로 직접 인과효과로 단정하면 안 됩니다.",
+      "title": "How can the neoliberal critique be explained without claiming proven causation?",
+      "answer_30s": "Critics argue that emphasizing personal responsibility for physical and cognitive function aligns with efforts to limit state responsibility for support and structural inequalities. Dillaway and Byrnes connect the rise of successful and productive aging in the 1980s and 1990s with a conservative political context. Their account suggests that these models may have strengthened concerns about the costs of population aging. That historical and ideological interpretation should not be presented as a directly estimated causal effect on government policy.",
       "evidence_segment_id": "NEOLIBERAL-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-12",
-      "title": "학술모델의 가치가 일상 정체성으로 옮겨가는 과정을 설명해 보세요.",
-      "answer_30s": "성공/실패의 도덕적 위계는 신문에서 젊음·건강·생산성을 시민의 의무처럼 그리는 서사와 항노화 산업의 목표로 이동했습니다. 유방암의 ‘씩씩한 생존자’ 서사는 긍정적 사고와 허약함을 인정하지 말라는 규범을 만들 수 있었습니다. 사람들은 이런 이상을 내면화하거나 통합하기도 하지만 때로 저항하며 자신의 노화 정체성을 협상합니다.",
+      "title": "How can values in an academic model enter public narratives and personal identities?",
+      "answer_30s": "The reviewed studies describe success-and-failure hierarchies in newspaper accounts that emphasize youthfulness, health, productivity, and individual responsibility, and in the stated goals of antiaging medicine. Research with women who had breast cancer also identified pressure to think positively and avoid identifying with frailty, which could leave little room for fear or discomfort. People may internalize, integrate, or resist these ideals as they negotiate aging identities. These are findings and interpretations from particular studies, not a universal response shared by all older adults.",
       "evidence_segment_id": "INFLUENCES-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-13",
-      "title": "사회정의 지향 대안은 개인과 구조를 어떻게 함께 다루나요?",
-      "answer_30s": "대안은 장애와 죽음을 인간 경험의 일부로 받아들이고 모든 사람의 상호의존성과 자기결정을 인정합니다. 노인의 삶의 경험을 반영하는 질적·지역사회 참여연구를 요구하는 동시에 경제적 안정, 안전한 주거와 지역사회, 차별 방지, 존엄과 정체성 보호를 위한 정책·제도·지역사회 전략을 찾습니다. 개인 역량과 구조적 조건을 함께 강화하는 접근입니다.",
+      "title": "How do social-justice alternatives address both individuals and structures?",
+      "answer_30s": "The cited scholars call for frameworks that include disability, illness, and death within human experience and recognize interdependence and self-determination. They recommend research informed by older adults' lived experiences, including qualitative and community-based participatory work. They also seek policies, institutions, and community strategies that strengthen economic security, safe housing and neighborhoods, protection from discrimination, dignity, and identity. These are recommendations for more inclusive conditions, not evidence that a particular policy has already produced those outcomes.",
       "evidence_segment_id": "SOCIAL-JUSTICE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-14",
-      "title": "새로운 틀과 명칭의 가능성과 남은 문제는 무엇인가요?",
-      "answer_30s": "7편은 성공적 노화의 기본 원칙을 거부하고 균형 잡힌·조화로운·회복탄력적 노화 같은 대안을 제시했습니다. 이 모델들은 상실, 의미, 정체성, 영성과 상호의존을 더 많이 포함했고 일부는 사회구조·권력불평등·숨겨진 지역자원까지 포착했습니다. 그러나 전체적으로는 더 전체론적이어도 대체로 이상적인 개인에 초점을 유지했다는 문제가 남습니다.",
+      "title": "What do New Frames and Names offer, and what concern remains?",
+      "answer_30s": "The seven articles reject basic assumptions of successful aging and propose alternatives such as balanced, harmonious, or resilient aging. These models give more space to loss, meaning, identity, spirituality, and interdependence. Some go further: Wild and colleagues include power inequalities, social structures, and overlooked community resources. Nevertheless, the reviewers observe that many alternatives still center an ideal individual, even when that ideal is more holistic. Renaming a model therefore does not automatically remove the problem of normative ideals.",
       "evidence_segment_id": "NEW-FRAMES-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "martinson-prep-15",
-      "title": "네 처방과 저자들이 제기한 윤리적 딜레마를 연결해 보세요.",
-      "answer_30s": "네 범주는 성공적 노화를 확장하기, 개인화하기, 폐기하기, 새 틀과 이름으로 바꾸기라는 서로 다른 처방을 냈습니다. 기준을 계속 완화하고 더하면 성공 범위는 넓어져도 개념은 흐려지고 구조적 기회 부족이 남습니다. 저자들은 성공/실패와 쇠퇴/긍정의 이분법 모두가 가치판단을 만들 수 있는데도 오랫동안 투자한 이 패러다임을 왜 유지하는지 윤리적 질문을 던집니다.",
+      "title": "How do the four remedies lead to the reviewers' ethical dilemma?",
+      "answer_30s": "The four broad recommendations are to expand successful aging, personalize it, discard it, or reframe and rename it. Adding dimensions or relaxing criteria can include more people while making the concept less clear and leaving structural opportunities inadequately addressed. The reviewers question both success-versus-failure and decline-versus-positive-aging dichotomies because they can carry value judgments. Their ethical question is why the field remains committed to a paradigm whose exclusions and possible harms it has repeatedly identified.",
       "evidence_segment_id": "DISCUSSION-001",
       "question_type": "교수 스타일 예상문제"
     }
   ],
   "reading_response": {
-    "title": "“어떻게 읽었어요?” 답변 준비",
-    "instructions": "개인적 인상을 말하되 논문의 검색범위, 비판자의 귀속, 주관적 평가와 객관적 기준, 권고와 검증된 인과효과를 구분하는 연습입니다.",
+    "title": "Preparing a Reading Response",
+    "instructions": "Explain your response to the reading while distinguishing the search scope, critics' arguments, subjective assessments, external criteria, and recommendations from demonstrated causal effects. Use the assigned evidence segment.",
     "cards": [
       {
         "card_id": "martinson-reading-01",
-        "title": "30초 기본 답변",
-        "answer_30s": "저는 이 논문을 성공적 노화의 기준을 더 잘 만드는 글보다 규범적 채점표 자체를 성찰하는 글로 읽었습니다. 노년학자들이 불평등을 반영하려고 기준을 계속 추가했지만, 그 방대한 목록이 오히려 규범모델의 배제 문제를 보여 줍니다. 성공적 노화 연구와 비판적 담론이 평행우주로 남지 않도록 경험연구·해석·비판·성찰을 하나의 대화로 모으자는 결론이 인상적이었습니다.",
+        "title": "Give a brief overall response to the article.",
+        "answer_30s": "I read this article as a challenge to the normative scorecard itself. The reviewers argue that the many criteria added to account for health and social inequalities reveal the difficulty of applying one ideal to a diverse older population. I found their call to bring empirical research, interpretation, criticism, and reflection into the same conversation especially important. Otherwise, critical discussions can continue alongside successful aging research without changing its assumptions.",
         "evidence_segment_id": "CONCLUSION-001",
         "response_angle": "overall",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "martinson-reading-02",
-        "title": "가장 반직관적인 결과를 물으면",
-        "answer_30s": "기준에 따라 성공적 노화 비율이 16–24%, 11.9% 이하, 완화된 기준에서는 3.3–33.5%로 크게 달라진 점이 반직관적이었습니다. 이 숫자는 성공한 노인이 실제로 얼마나 있는지에 대한 하나의 안정된 사실보다, 어떤 기준을 쓰느냐가 성공 범주를 만든다는 점을 보여 줍니다. 그래서 연구자들은 문턱 완화와 개인의 기회를 지원하는 정책을 함께 제안했습니다.",
+        "title": "Which result seemed most counterintuitive?",
+        "answer_30s": "I was struck by how much estimated prevalence depended on the criteria. A British study reported 16-24% across models; an HRS study found no more than 11.9% at any of four time points; a follow-up using increasingly relaxed criteria reported 3.3-33.5%. These figures come from different studies and definitions, not one shared denominator. They show why classification choices matter. The reviewed researchers proposed both broader thresholds and policies supporting people's opportunities, rather than treating one rate as a stable measure of how many people have succeeded.",
         "evidence_segment_id": "PREVALENCE-001",
         "response_angle": "surprise",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "martinson-reading-03",
-        "title": "방법론에서 인상적인 점을 물으면",
-        "answer_30s": "각 논문의 비판과 개선안을 초기 코딩하고, 축코딩으로 더 높은 수준의 연결을 귀납적으로 만든 점이 인상적이었습니다. 두 저자가 15편을 각각 코딩해 비교했고, 비판이 겹칠 때도 해결 권고를 기준으로 범주를 나눴습니다. 이 방식은 67편의 서로 다른 논의를 네 처방으로 조직하는 데 적합했습니다.",
+        "title": "What was most interesting about the method?",
+        "answer_30s": "I found the configurative approach useful for organizing a varied literature. Initial coding identified each article's criticisms and proposed improvements, and axial coding developed broader connections inductively. The two authors independently coded a subset of 15 articles and discussed their analyses, also comparing theme assignments. They organized overlapping criticisms by the remedies proposed. This supports an interpretive synthesis of 67 articles; the paper does not report a numerical agreement coefficient or a pooled effect size.",
         "evidence_segment_id": "METHODS-001",
         "response_angle": "method",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "martinson-reading-04",
-        "title": "가족과 독립성의 의미를 보는 제 관점이 어떻게 달라졌나요?",
-        "answer_30s": "저는 성공적 노화의 가족·독립성 기준이 문화마다 같은 뜻일 거라는 가정을 버리게 됐습니다. 한국 저소득 노인은 성인 자녀의 성공을 자신의 성공적 노화에 포함했고, 일본계 미국인의 독립성은 자신의 욕구를 조정해 집단 조화를 지키는 뜻을 가질 수 있었습니다. 그래서 가족관계를 객관적 체크항목으로 넣기보다 당사자가 그 관계에 부여한 의미부터 물어야 한다고 읽었습니다.",
+        "title": "How did the article change your view of family and independence?",
+        "answer_30s": "It made me question whether apparently similar criteria carry the same meaning across contexts. In a study of low-income older South Koreans, adult children's success formed part of successful aging. In a Japanese American study, independence could mean adjusting personal needs to maintain group harmony. I would therefore ask what family relationships mean to participants before treating them as checklist items. Torres' findings also remind me to expect variation within a cultural group rather than assuming that one example defines everyone in it.",
         "evidence_segment_id": "CULTURE-001",
         "response_angle": "family-implication",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "martinson-reading-05",
-        "title": "가장 중요한 한계를 물으면",
-        "answer_30s": "저는 ASG 한 데이터베이스와 영어 논문에 제한한 점을 가장 중요하게 봤습니다. 가장 비판적인 기여가 단행본이나 ASG 밖의 의료사회학·인류학 학술지에 있을 수 있고, 덜 개인주의적인 삶과 노년관을 가진 언어권의 비판도 빠졌을 수 있습니다. 따라서 네 범주는 유용한 지도지만 모든 학문과 문화의 완전한 목록은 아닙니다.",
+        "title": "Which limitation matters most?",
+        "answer_30s": "The restriction to ASG and English-language articles matters most to me. Some especially critical work may appear in books or in medical sociology and anthropology journals outside that database. Critiques in other languages, including those from settings with less individualistic views of life and aging, may also be absent. I therefore regard the four categories as a useful organization of the included literature, not a complete inventory of every discipline or culture.",
         "evidence_segment_id": "LIMITATIONS-001",
         "response_angle": "limitation",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "martinson-reading-06",
-        "title": "이 비판을 제 연구 관점에 어떻게 적용하고 싶나요?",
-        "answer_30s": "저는 노인을 생산적이고 독립적이며 장애가 없어야 성공한다고 채점하는 연구에서 벗어나고 싶습니다. 이 글은 비생산성·상호의존·장애·사회적 책임에도 가치를 두고, 하나의 새 이상형을 만드는 대신 사람들이 자기 방식대로 번영할 조건을 조성하자고 제안합니다. 그래서 개인의 성공 여부보다 선택을 제한하거나 가능하게 하는 사회적 조건을 먼저 묻는 데 적용하겠습니다.",
+        "title": "How would you apply this critique to your own research?",
+        "answer_30s": "I would reconsider studies that classify older people as successful only if they are productive, independent, and free of disability. The reviewers propose valuing interdependence, disability, social responsibility, and lives outside productivity ideals, while creating conditions in which people can thrive on their own terms. My proposed application is to ask first which social conditions enable or restrict people's choices. That is a research orientation drawn from their argument, not an intervention effect demonstrated by this review.",
         "evidence_segment_id": "DISCUSSION-002",
         "response_angle": "application",
         "style_basis": "course-question-pattern"
       }
     ]
-  }
+  },
+  "language": "en"
 }

@@ -1,12 +1,12 @@
 {
-  "title": "Settersten & Godlewski (2016) 교수님 질문 대비",
-  "instructions": "교수 스타일 예상문제입니다. 결론을 먼저 말하고 근거, 구분 또는 한계, 가족·정책 적용을 30초 안에 붙이는 연습용입니다.",
+  "title": "Settersten & Godlewski (2016): Discussion Preparation",
+  "instructions": "Practice a concise response: give a conclusion, article evidence, a distinction or limitation, and any family or policy application as an inference.",
   "question_set_type": "교수 스타일 예상문제",
   "cards": [
     {
       "card_id": "settersten-prep-01",
-      "title": "이 논문의 핵심 역설을 설명해 보세요.",
-      "answer_30s": "개인적 노화에서는 생활연령이 변화의 직접 원인이라기보다 측정하지 않은 과정을 대신하는 경우가 많습니다. 반면 사회적 삶에서는 연령이 학교·노동·은퇴·권리·관계를 조직하므로 생각보다 훨씬 중요합니다. 따라서 연령을 무조건 넣거나 빼는 것이 아니라, 어느 수준에서 어떤 메커니즘으로 관련되거나 무관한지를 이론화해야 한다는 것이 핵심입니다.",
+      "title": "Explain the chapter's central paradox.",
+      "answer_30s": "For many individual outcomes, chronological age may stand in for unmeasured processes rather than act as a direct cause. In social life, however, age organizes institutions, roles, rights, and relationships. The task is to explain when age matters, at what level, and through which mechanisms, including how social forces influence individual aging.",
       "evidence_segment_id": "INTRO-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -14,8 +14,8 @@
     },
     {
       "card_id": "settersten-prep-02",
-      "title": "왜 생활연령을 ‘내용이 빈’ 변수라고 하나요?",
-      "answer_30s": "생활연령 자체가 인지나 건강 변화를 일으키는 메커니즘은 아니기 때문입니다. 실제로는 정서적 성숙, 사회적 역할, 생물학적 위치, 기능능력처럼 연령과 함께 변하지만 측정하지 않은 것을 대신할 수 있습니다. 생활연령은 편리하고 보편적이라는 장점이 있지만, 연구자는 무엇을 대신하는지 밝히고 가능하면 그 과정을 직접 측정해야 합니다.",
+      "title": "Why call chronological age an empty variable?",
+      "answer_30s": "The number of years since birth does not identify the mechanism producing a health or cognitive outcome. It may index emotional maturity, social roles, biological position, or functional ability. Age is convenient and universal, but the authors ask researchers to specify what it represents and, where possible, measure that process directly.",
       "evidence_segment_id": "INDIVIDUAL-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -23,8 +23,8 @@
     },
     {
       "card_id": "settersten-prep-03",
-      "title": "상대시간 관점을 가족 사례로 설명해 보세요.",
-      "answer_30s": "연령은 출생 뒤 지난 연수만이 아니라 사건까지 남은 시간과 관계 속 기간으로 경험됩니다. 예를 들어 부모는 자녀의 졸업 때 자신의 나이, 돌봄역할을 몇 년 수행했는지, 가족과 함께할 시간이 얼마나 남았는지를 생각할 수 있습니다. 이런 경험은 같은 생활연령에서도 달라지며, 미래시간조망은 남은 시간의 지각이 목표·행동·정서를 형성한다고 설명합니다.",
+      "title": "Explain relative time using a family example.",
+      "answer_30s": "Age is experienced through time to events, time spent in roles, and intervals between experiences. A parent might think about their age at a child's graduation or the time left with loved ones. These experiences differ even among people of the same chronological age. Future time perspective concerns how perceived remaining time shapes goals and behavior.",
       "evidence_segment_id": "RELATIVE-TIME-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -32,8 +32,8 @@
     },
     {
       "card_id": "settersten-prep-04",
-      "title": "주관적 연령이 왜 사회적 현상인가요?",
-      "answer_30s": "몇 살처럼 느끼는지는 개인 마음속 숫자만이 아니라 과거의 자신, 또래, 더 젊거나 나이 많은 사람과의 비교에서 생깁니다. 타인이 나를 몇 살로 보고 어떻게 반응하는지, 내가 타인의 노화에 어떻게 반응하는지도 포함됩니다. 그래서 주관적 연령은 개인적 경험처럼 보이지만 본질적으로 대인적이며 가족관계와 문화의 평가를 함께 봐야 합니다.",
+      "title": "Why is subjective age a social phenomenon?",
+      "answer_30s": "How old people feel emerges partly through comparisons with their younger selves and with other people. It also involves how others perceive and respond to them, and how they respond to others' aging. Subjective age may feel personal, but the chapter argues that these interpersonal processes make it inherently social.",
       "evidence_segment_id": "SUBJECTIVE-AGE-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -41,8 +41,8 @@
     },
     {
       "card_id": "settersten-prep-05",
-      "title": "연령효과와 코호트효과를 어떻게 구분하나요?",
-      "answer_30s": "연령에 기초한 설명은 성숙 변화에 관한 것이고 코호트에 기초한 설명은 역사적 사건과 사회변동에 관한 것입니다. 둘 다 단순한 시간 지표라서 연령집단 비교에서는 쉽게 혼입됩니다. 같은 나이 차이를 보더라도 실제 개인 변화인지 서로 다른 시대를 살아온 집단 차이인지 이론과 종단설계로 구분해야 하며, 가족 세대갈등도 이 두 층을 섞지 않아야 합니다.",
+      "title": "How would you distinguish age and cohort explanations?",
+      "answer_30s": "Age-based explanations concern maturation, while cohort-based explanations concern historical events and social change. Both age and cohort are simple indicators, so an observed age-group difference does not identify the process by itself. I would use theory and appropriate designs to examine competing explanations rather than read a cross-sectional contrast as an individual aging trajectory.",
       "evidence_segment_id": "MULTIPLE-TIMES-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -50,8 +50,8 @@
     },
     {
       "card_id": "settersten-prep-06",
-      "title": "일–가족 갈등을 시간체계로 설명해 보세요.",
-      "answer_30s": "노동과 행정은 예측 가능하고 목표지향적인 선형 시계시간에 따라 움직이지만, 가족은 질병·출산·양육처럼 몸과 타인의 필요 때문에 계획하기 어려운 시간을 따릅니다. 두 영역의 시간논리가 다르기 때문에 일정을 통합할 때 시간의 속박이 생깁니다. 정책적으로는 가족 돌봄을 단순한 개인 시간관리 실패가 아니라 서로 다른 제도적 시간체계의 충돌로 볼 필요가 있습니다.",
+      "title": "Explain work–family conflict through different kinds of time.",
+      "answer_30s": "Economic and political institutions tend to use predictable, goal-oriented clock time. Family life also responds to illness, childbirth, and other people's needs, which constrain planning. The chapter uses this difference to explain some work–family time binds. My policy inference is to consider institutional scheduling conflicts rather than attribute every difficulty to poor personal time management.",
       "evidence_segment_id": "SOCIAL-ORG-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -59,8 +59,8 @@
     },
     {
       "card_id": "settersten-prep-07",
-      "title": "젊은 노인과 고령 노인을 숫자로 나누면 왜 문제인가요?",
-      "answer_30s": "후대 연구는 흔히 65–74세와 75세 이상으로 나누었지만 Neugarten의 원뜻은 연령 숫자가 아니었습니다. 같은 나이에도 건강하고 부유하며 활동적인 사람과 그렇지 않은 사람의 차이가 크다는 점을 드러내려는 구분이었습니다. 정책 편의상 연령기준이 필요할 수 있어도, 연구와 서비스에서는 기능·자원·필요를 직접 측정해야 이질성을 가리지 않습니다.",
+      "title": "Why can fixed age bands distort the young-old/old-old distinction?",
+      "answer_30s": "Neugarten originally distinguished relative health, affluence, and activity regardless of chronological age. Later labels such as 65–74 and 75+ can hide the heterogeneity the concepts were meant to reveal. My application is to assess functioning, resources, and needs directly when designing research or services, even when administration still requires an age threshold.",
       "evidence_segment_id": "LIFE-PHASES-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -68,8 +68,8 @@
     },
     {
       "card_id": "settersten-prep-08",
-      "title": "긍정적 노인 이미지는 연령주의의 해답인가요?",
-      "answer_30s": "긍정적 이미지는 사회적 이점을 줄 수 있지만 단순한 해답은 아닙니다. 지혜롭고 활력 넘치고 성공적으로 늙는 모습만 정상으로 만들면 질병·장애·자원제약이 있는 많은 사람에게 도달 불가능한 기준이 됩니다. 부정적 이미지를 긍정적 이미지로 교체하는 데 그치지 말고, 노인의 다양성과 고정관념 각각의 근원·메커니즘·결과를 살펴야 합니다.",
+      "title": "Are positive images of older people a complete answer to ageism?",
+      "answer_30s": "They can provide social advantages, but the chapter warns against simply substituting positive stereotypes for negative ones. Uniform images of wisdom, vitality, or successful aging may create standards many people cannot meet. I would attend to diverse circumstances and examine whether positive and negative stereotypes have different sources, mechanisms, and consequences.",
       "evidence_segment_id": "AGEISM-002",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -77,8 +77,8 @@
     },
     {
       "card_id": "settersten-prep-09",
-      "title": "연령규범은 개인에게 좋은가요, 나쁜가요?",
-      "answer_30s": "연령규범은 졸업·취업·결혼·출산·은퇴의 예상 시기를 알려 주어 질서와 예측 가능성을 제공합니다. 동시에 ‘제때’라는 기준에서 벗어난 사람에게 사회적 제재와 준비되지 않았다는 감각을 줄 수 있습니다. 생애가 탈표준화되어도 정상생애의 오래된 이상은 남을 수 있으므로, 가족은 다양한 전환 시기를 인정하면서 필요한 준비정보는 제공하는 균형이 필요합니다.",
+      "title": "Are age norms helpful or harmful?",
+      "answer_30s": "Age norms can provide order and predictability by organizing expectations about major transitions. They can also expose people to sanctions or feelings of being off time. Even as life courses become less standardized, older ideals may persist. My family-life application is to offer useful preparation while recognizing that people may follow different schedules.",
       "evidence_segment_id": "ROLE-TIMING-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -86,8 +86,8 @@
     },
     {
       "card_id": "settersten-prep-10",
-      "title": "세대통합 프로그램이 항상 좋은가요?",
-      "answer_30s": "항상 그렇다고 논문은 말하지 않습니다. 연령다양 관계망은 세대이익을 넘어선 협력을 만들 수 있지만 서로 다른 경험과 세계관이 부딪칠 기회도 늘립니다. 반대로 연령제한 공동체는 젊은 세대 접촉을 줄이지만 또래 관계와 건강지원이라는 편익을 줄 수 있습니다. 따라서 프로그램은 접촉 횟수보다 공동목표·권력관계·자발성 같은 조건과 비용·혜택을 함께 평가해야 합니다.",
+      "title": "Are intergenerational programs always beneficial?",
+      "answer_30s": "The chapter does not assume uniformly positive effects from age integration. Age-diverse networks can support cooperation but also create opportunities for conflict. Age-restricted communities may offer peer relationships and support while limiting younger contacts. My evaluation approach would therefore consider program conditions, participants' choices, and both costs and benefits rather than contact alone.",
       "evidence_segment_id": "AGE-INTEGRATION-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -95,8 +95,8 @@
     },
     {
       "card_id": "settersten-prep-11",
-      "title": "왜 국가는 권리와 혜택에 연령을 사용하나요?",
-      "answer_30s": "생활연령은 객관적이고 행정하기 쉬워 운전·투표·혼인 같은 성인 권리와 연금·사회보험 자격의 기준이 됩니다. 생애 초·말기의 프로그램은 위험과 의존에 관한 가정 아래 아동에게 투자·보호를, 노인에게 안전과 은퇴 가능성을 제공합니다. 다만 같은 나이 안의 능력과 필요 차이를 가릴 수 있으므로 편의성과 형평성의 긴장을 검토해야 합니다.",
+      "title": "Why do states use age to allocate rights and benefits?",
+      "answer_30s": "Age rules organize rights such as voting and eligibility for pensions or social services. The chapter describes US programs concentrated in early and later life as resting on assumptions about risk and dependence: investment and protection for children, and security and retirement possibilities for older adults. My application is to examine how such thresholds interact with differences in individual need.",
       "evidence_segment_id": "AGE-RIGHTS-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -104,8 +104,8 @@
     },
     {
       "card_id": "settersten-prep-12",
-      "title": "연령과 젠더를 함께 봐야 하는 이유는?",
-      "answer_30s": "현실에는 성별 없는 보편적 노인이 아니라 노인 남성과 노인 여성이 있고, 연령의 의미와 평가가 다릅니다. 노화의 신체징후가 남성의 사회자본은 높이고 여성의 사회자본은 낮추는 이중기준이 대표적입니다. 계층·인종에 따른 의료·교육·주거 접근도 생애에 누적되므로 가족과 정책은 연령 하나로 동일한 노인집단을 가정하면 안 됩니다.",
+      "title": "Why must theories consider age together with gender?",
+      "answer_30s": "Age carries different expectations and evaluations for men and women. The chapter illustrates this with a double standard under which visible aging can add to men's social capital while diminishing women's. Class and race also shape access to resources and accumulating opportunities or risks. An age-only account can conceal these intersecting inequalities.",
       "evidence_segment_id": "GENDER-CULTURE-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -113,8 +113,8 @@
     },
     {
       "card_id": "settersten-prep-13",
-      "title": "Project AGE가 이론 발전에 주는 의미는?",
-      "answer_30s": "Project AGE는 7개 문화에서 연령범주의 인지적 의미, 연령에 부여한 평가, 연령 간 사회참여 규범을 비교했습니다. 노년기는 모든 환경에서 가장 덜 바람직했지만 부정성의 정도와 상호작용 경계는 달랐습니다. 따라서 연령과 젠더의 의미는 문화가 부여하며, 한 사회의 단계와 규범을 보편적 노화모형으로 일반화하면 안 됩니다.",
+      "title": "What does Project AGE contribute to theory development?",
+      "answer_30s": "Project AGE compared cognitive, evaluative, and social-participation meanings of age in seven cultural contexts. Old age was the least desirable life period in all of them, but evaluations and interaction boundaries varied. The study therefore encourages researchers to explain how culture shapes aging instead of assuming that one society's age categories and norms are universal.",
       "evidence_segment_id": "GENDER-CULTURE-002",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -122,8 +122,8 @@
     },
     {
       "card_id": "settersten-prep-14",
-      "title": "연령집단 비교 연구를 어떻게 개선하겠습니까?",
-      "answer_30s": "먼저 연령차이를 만들 것으로 예상하는 생물·심리·사회 과정을 이론으로 명시하고 직접 측정하겠습니다. 횡단 연령집단 차이를 개인의 성숙곡선처럼 쌓지 않고 코호트와 역사시간의 대안 설명을 검토하겠습니다. 종단·다수준 자료와 이론기반 실험으로 개인 변화와 집단평균을 분리하되, 연령을 넣었다는 사실 자체를 설명으로 삼지 않는 것이 핵심입니다.",
+      "title": "How would you improve a study based on age-group comparisons?",
+      "answer_30s": "I would begin by specifying the processes expected to produce an age difference and measuring them directly where possible. I would examine cohort and historical-time explanations rather than build an artificial growth curve from cross-sectional groups. The chapter also supports theory-based experiments and methods that distinguish individual trajectories from group averages.",
       "evidence_segment_id": "CONCLUSION-001",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -131,8 +131,8 @@
     },
     {
       "card_id": "settersten-prep-15",
-      "title": "이 논문의 가장 큰 기여와 남은 과제를 함께 말해 보세요.",
-      "answer_30s": "가장 큰 기여는 연령을 개인의 대리변수와 사회조직의 구조적 기준이라는 두 얼굴로 묶어, 언제 관련되고 무관한지를 묻게 한 점입니다. 다만 이 장은 개념·이론 리뷰이므로 하나의 통합모형을 직접 실증한 연구는 아닙니다. 남은 과제는 제도와 문화의 연령구조가 개인 노화에 미치는 직접·간접 경로를 다수준·초학제 연구로 검증하는 것입니다.",
+      "title": "What is the chapter's main contribution and remaining task?",
+      "answer_30s": "The chapter links criticism of age as an unexplained individual-level indicator with attention to age as a principle of social organization. It is a conceptual synthesis, not a single empirical test of an integrated model. A central remaining task is to examine direct and indirect connections between age-related institutions and individual aging across levels of analysis.",
       "evidence_segment_id": "CONCLUSION-002",
       "question_type": "교수 스타일 예상문제",
       "style_basis": "prior-course-pattern",
@@ -140,57 +140,58 @@
     }
   ],
   "reading_response": {
-    "title": "“어떻게 읽었어요?” 답변 준비",
-    "instructions": "성발노 수업에서 반복된 ‘무엇이 새로웠는지 → 왜 그렇게 느꼈는지 → 논문 근거가 무엇인지 → 한계나 적용은 무엇인지’ 흐름에 맞춘 답변 각도입니다. 외운 문장처럼 읽기보다 자기 경험에 맞는 한 가지 각도를 골라 말하세요.",
+    "title": "Preparing Your Response to the Reading",
+    "instructions": "Choose a response angle that reflects your own reading. Explain what stood out, why it mattered, what supports it, and what remains uncertain.",
     "cards": [
       {
         "card_id": "settersten-reading-01",
-        "title": "30초 기본 답변",
-        "answer_30s": "저는 이 글을 연령에는 두 얼굴이 있다는 주장으로 읽었습니다. 개인의 변화에서 생활연령은 실제 원인을 대신하는 빈 대리변수일 수 있지만, 사회에서는 학교·노동·은퇴·권리와 가족역할을 조직하는 강한 기준입니다. 그래서 연령을 무조건 통제하거나 설명으로 쓰지 말고, 어느 수준에서 어떤 과정 때문에 중요하거나 무관한지를 밝혀야 한다는 것이 핵심이었습니다.",
+        "title": "Give a concise overall response to the reading.",
+        "answer_30s": "I read the chapter as showing that age has different meanings at different analytical levels. Chronological age may be a proxy for the processes behind individual change, yet age organizes powerful social rules and opportunities. I took away the need to explain why age matters, rather than automatically using it as either a control or an explanation.",
         "evidence_segment_id": "INTRO-001",
         "response_angle": "overall",
         "style_basis": "prior-course-stt-pattern"
       },
       {
         "card_id": "settersten-reading-02",
-        "title": "나이를 보는 방식에서 무엇이 새로웠나요?",
-        "answer_30s": "저는 나이를 출생 뒤 흐른 햇수 하나가 아니라 관계와 사건 속에서 경험하는 시간으로 보게 됐습니다. 딸의 졸업까지 남은 시간, 교수 역할을 수행한 기간, 두 출산 사이의 간격처럼 같은 생활연령도 무엇을 기준으로 삼느냐에 따라 의미가 달라집니다. 그래서 숫자만 비교하기보다 현재를 어떤 과거와 미래에 연결하는지를 묻고 싶어졌습니다.",
+        "title": "What was new in the chapter's account of time?",
+        "answer_30s": "I began to see age as time experienced through relationships and events, not only years since birth. The examples of time to a daughter's graduation, years in a professional role, and intervals between births show how reference points change its meaning. I would now ask how people connect their present to particular pasts and anticipated futures.",
         "evidence_segment_id": "RELATIVE-TIME-001",
         "response_angle": "surprise",
         "style_basis": "prior-course-stt-pattern"
       },
       {
         "card_id": "settersten-reading-03",
-        "title": "기존 생각과 무엇이 달라졌냐고 물으면",
-        "answer_30s": "전에는 연령을 연구대상을 나누는 비교적 중립적인 숫자로 생각했습니다. 이 글을 읽고서는 법과 제도, 조직이 특정 나이에 권리와 의무를 배분하면서 연령의 의미 자체를 만든다는 점을 보게 됐습니다. 연령은 개인 변화의 직접 원인이 아닐 수 있지만 사회적 삶에서는 실제 기회와 관계를 구조화한다는 역설이 가장 크게 관점을 바꿨습니다.",
+        "title": "How did the reading change your previous view?",
+        "answer_30s": "I had thought of age as a fairly neutral way to classify people. The chapter's discussion of rights and eligibility showed how states actively use and create age categories that organize opportunities. My changed view is that a convenient measurement can also become a consequential social rule, and those two uses deserve separate scrutiny.",
         "evidence_segment_id": "AGE-RIGHTS-001",
         "response_angle": "changed-view",
         "style_basis": "prior-course-stt-pattern"
       },
       {
         "card_id": "settersten-reading-04",
-        "title": "사회가 만든 ‘정상 시간표’를 어떻게 읽었나요?",
-        "answer_30s": "저는 취업·결혼·부모 되기·은퇴의 적정 시기가 개인의 자연스러운 시간표라기보다 사회가 만든 연령규범일 수 있다는 점을 주의 깊게 읽었습니다. 이런 각본은 삶에 질서와 예측 가능성을 주지만, 궤도에서 벗어난 사람에게 지연이나 실패라는 판단도 부과합니다. 그래서 전환의 시기를 평가할 때 개인 선택뿐 아니라 제도와 사회적 제재도 함께 보게 됐습니다.",
+        "title": "How did you interpret a normal life timetable?",
+        "answer_30s": "I read expected ages for leaving home, employment, partnership, parenthood, or retirement as social norms rather than simply natural schedules. These expectations can provide order while also producing sanctions against people whose transitions occur early, late, or not at all. The chapter made me more attentive to institutions and social judgments when interpreting individual timing.",
         "evidence_segment_id": "ROLE-TIMING-001",
         "response_angle": "example",
         "style_basis": "prior-course-stt-pattern"
       },
       {
         "card_id": "settersten-reading-05",
-        "title": "이 장을 읽으며 가장 경계한 이분법은 무엇인가요?",
-        "answer_30s": "저는 개인 수준에서 생활연령이 직접 원인이 아닐 수 있다는 말을 사회 수준에서도 연령이 중요하지 않다는 뜻으로 읽지 않으려 했습니다. 결론은 오히려 제도·정책·프로그램·역할 배분·상호작용에서 연령이 큰 결과를 낳는다고 강조합니다. 따라서 연령이 중요하다거나 중요하지 않다고 먼저 결론 내리기보다 분석 수준과 작동 경로를 묻는 것이 이 장에서 얻은 독법입니다.",
+        "title": "Which oversimplification did you try to avoid?",
+        "answer_30s": "I tried to avoid turning the criticism of chronological age into a claim that age does not matter socially. The conclusion emphasizes age-based institutions, policies, roles, and interactions. My main lesson was to ask about the analytical level and mechanism before declaring age either important or irrelevant.",
         "evidence_segment_id": "CONCLUSION-002",
         "response_angle": "limitation",
         "style_basis": "prior-course-stt-pattern"
       },
       {
         "card_id": "settersten-reading-06",
-        "title": "가족이나 한국 사회에 연결해 보라고 하면",
-        "answer_30s": "한국 가족에서는 취업·결혼·출산·부모부양의 ‘적정 나이’가 개인 선택처럼 보여도 가족 기대와 주거·노동·복지제도에 의해 함께 만들어진다고 연결했습니다. 같은 연령의 사람도 부모의 건강, 자녀 유무, 경제자원에 따라 역할과 시간압박이 다릅니다. 따라서 연령만으로 정상·지연을 판단하기보다 관계와 제도 속 타이밍을 봐야 합니다.",
+        "title": "How would you apply the chapter to families in South Korea?",
+        "answer_30s": "My application is to ask how expectations about the right age for employment, marriage, parenthood, or care interact with family and institutional conditions. People of the same age may face different responsibilities and constraints. This is an extension of the age-norm framework, not a South Korean finding established by the chapter itself.",
         "evidence_segment_id": "ROLE-TIMING-001",
         "response_angle": "family-application",
         "style_basis": "prior-course-stt-pattern"
       }
     ]
-  }
+  },
+  "language": "en"
 }

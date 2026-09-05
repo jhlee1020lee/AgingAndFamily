@@ -1,217 +1,218 @@
 {
-  "title": "Luong et al. (2011) 객관식 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 가장 정확한 선택지를 고르고 설명에서 기제와 한계를 함께 확인하세요.",
+  "title": "Luong et al. (2011): Multiple Choice",
+  "instructions": "Choose the answer that best reflects the review's mechanisms, research designs, and limits.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "이 리뷰의 중심 설명으로 가장 정확한 것은?",
+      "prompt": "Which account best captures the review's explanation of more positive relationships in later life?",
       "options": [
-        "노년기의 관계망은 모든 사람에게 일관되게 커지므로 그 크기 증가만으로 관계 만족도 향상이 설명된다",
-        "개인의 조절, 사회환경, 파트너 반응이 함께 긍정적 관계에 기여할 수 있다",
-        "사회적 파트너의 친절이나 회피 행동만이 개인의 목표·평가·행동과 무관하게 노년기 관계 질을 결정한다",
-        "관계 만족도 증가는 정서 목표나 관계 조절과 무관하며 오직 신체기능 향상의 직접 결과로 설명된다"
+        "Larger networks alone account for higher satisfaction among all older adults",
+        "Personal regulation, social circumstances, and partners' responses work together",
+        "Partners' kindness determines relationship quality independently of older adults' own behavior",
+        "Improved physical functioning directly explains satisfaction without any role for social goals"
       ],
-      "answer": "개인의 조절, 사회환경, 파트너 반응이 함께 긍정적 관계에 기여할 수 있다",
-      "explanation": "논문은 SST, 평가와 사회적 전문성, 갈등관리, 역할환경과 SIM을 통합한다. 어느 하나를 단독 원인이나 모든 개인의 확정 결과로 제시하지 않는다.",
+      "answer": "Personal regulation, social circumstances, and partners' responses work together",
+      "explanation": "The review integrates motivation, appraisal, social expertise, conflict management, roles, and reciprocal social input. It does not identify a single exclusive cause or promise the same outcome for every individual.",
       "evidence_segment_id": "CONCLUSION-001",
-      "source": "통합 결론",
-      "difficulty": "기본"
+      "source": "The integrated account",
+      "difficulty": "Core"
     },
     {
-      "prompt": "SST가 제한된 시간지평에서 예측하는 목표전환은?",
+      "prompt": "According to SST, which shift in priorities follows a more limited perceived time horizon?",
       "options": [
-        "현재의 정서적 의미를 낮추고 먼 미래에 쓸 정보와 새로운 인맥의 확대를 더 우선한다",
-        "가까운 관계와 주변 관계를 구분하지 않고 기존 관계망 전체를 같은 강도로 유지한다",
-        "모든 사회적 목표를 포기한다",
-        "미래 정보 획득보다 현재의 관계 만족과 정서적 조화를 우선한다"
+        "Prioritizing distant information gains while reducing the value of emotional meaning",
+        "Maintaining every peripheral and close relationship with exactly equal investment",
+        "Abandoning all social goals and withdrawing from every relationship",
+        "Giving present relationship satisfaction greater priority than future information gains"
       ],
-      "answer": "미래 정보 획득보다 현재의 관계 만족과 정서적 조화를 우선한다",
-      "explanation": "시간이 넓다고 느낄 때 미래 정보와 인맥이 중요하지만, 시간이 짧다고 느끼면 현재 지향적 정서 목표의 우선순위가 높아진다.",
+      "answer": "Giving present relationship satisfaction greater priority than future information gains",
+      "explanation": "Expansive time favors knowledge and contacts useful for the future. As perceived time shortens, present-oriented emotional goals receive greater priority.",
       "evidence_segment_id": "SST-001",
-      "source": "시간지평과 목표",
-      "difficulty": "기본"
+      "source": "Time horizons and social goals",
+      "difficulty": "Core"
     },
     {
-      "prompt": "노년기의 작은 사회적 관계망을 가장 정확하게 해석한 것은?",
+      "prompt": "How does the review interpret smaller social networks in later life?",
       "options": [
-        "주변 유대를 줄이고 가까운 관계를 지키는 능동적 재구성이 상당 부분을 설명한다",
-        "가족과 친구를 포함한 모든 관계 구성원이 노년기에 사망해서 비자발적으로 생긴 결과만을 뜻한다",
-        "사회적 지지와 가까운 관계도 같은 비율로 사라진다는 뜻이다",
-        "관계망은 작을수록 언제나 정서적으로 유리하다"
+        "Proactive reduction of peripheral ties helps preserve meaningful close relationships",
+        "Every reduction follows the death of a partner and therefore reflects only involuntary loss",
+        "Close support disappears in exactly the same proportion as peripheral social contacts",
+        "A smaller network necessarily produces better emotional outcomes in every circumstance"
       ],
-      "answer": "주변 유대를 줄이고 가까운 관계를 지키는 능동적 재구성이 상당 부분을 설명한다",
-      "explanation": "상실이 없다는 뜻은 아니지만 저자들은 주요 연령 차이를 선제적 선택으로 설명한다.",
+      "answer": "Proactive reduction of peripheral ties helps preserve meaningful close relationships",
+      "explanation": "The authors emphasize active restructuring of networks and relative preservation of intimate ties. This account does not deny bereavement or the problems of having too few close partners.",
       "evidence_segment_id": "SST-001",
-      "source": "관계망 재구성",
-      "difficulty": "기본"
+      "source": "Selective network restructuring",
+      "difficulty": "Core"
     },
     {
-      "prompt": "긍정성 편향 연구를 바르게 해석한 것은?",
+      "prompt": "What is a defensible interpretation of the positivity-bias evidence reviewed?",
       "options": [
-        "노년 성인은 사회적 갈등을 전혀 경험하지 않는다",
-        "노년 성인의 평가는 객관적 코더보다 언제나 더 정확하다",
-        "노년 성인은 긍정적 경험에 더 주의를 두고 부정적 정보에서 주의를 거두며 파트너를 덜 부정적으로 평가할 수 있다",
-        "젊은 성인과 노년 성인에게 같은 편향이 동일하게 관찰되었다"
+        "Older adults experience no actual interpersonal conflict",
+        "Older adults' appraisals are invariably more accurate than independent observations",
+        "Attention and appraisal can make older adults' accounts of difficult relationships more positive",
+        "The reviewed studies found the identical attentional bias in younger and older adults"
       ],
-      "answer": "노년 성인은 긍정적 경험에 더 주의를 두고 부정적 정보에서 주의를 거두며 파트너를 덜 부정적으로 평가할 수 있다",
-      "explanation": "배우자 갈등 회상과 부정적 발언 녹음 연구는 평가와 주의의 연령 차이를 보여 주지만 객관적 갈등의 부재를 입증하지 않는다.",
+      "answer": "Attention and appraisal can make older adults' accounts of difficult relationships more positive",
+      "explanation": "Older spouses evaluated interactions more positively than observers, and older participants focused less on hypothetical negative comments. These findings concern appraisal and attention; they do not establish the absence of conflict.",
       "evidence_segment_id": "APPRAISAL-001",
-      "source": "평가와 주의",
-      "difficulty": "응용"
+      "source": "Attention and appraisal",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Hess 등의 특성 판단 연구가 사회적 전문성의 근거가 되는 이유는?",
+      "prompt": "Why did Hess and colleagues interpret their impression-updating findings as evidence of social expertise?",
       "options": [
-        "관계에 해로운 안정적 특성 정보에 선택적으로 반응했기 때문이다",
-        "노년 성인이 새로 제시된 단일 행동과 반복되는 특성 정보를 구분하지 않고 인물에 관한 어떤 정보도 받아들이지 않았기 때문이다",
-        "젊은 성인이 부정직한 특성을 더 정확히 식별했기 때문이다",
-        "연구가 실제 장기 관계의 파탄을 무작위로 배정했기 때문이다"
+        "Older adults responded selectively to stable traits harmful to relationships",
+        "Older adults rejected all new information, whether it described one act or a stable pattern",
+        "Younger adults were uniquely able to recognize repeated dishonesty in potential partners",
+        "Participants were randomly assigned to experience the breakdown of a real long-term relationship"
       ],
-      "answer": "관계에 해로운 안정적 특성 정보에 선택적으로 반응했기 때문이다",
-      "explanation": "노년 성인은 한 번의 모순 행동보다 반복적 부정직성 같은 특성 진단적 정보에서 인상을 바꿨다. 다만 사회활동이 많은 젊은 성인의 유사 결과는 경험의 역할을 시사한다.",
+      "answer": "Older adults responded selectively to stable traits harmful to relationships",
+      "explanation": "Older adults updated impressions in response to trait-diagnostic information such as repeated dishonesty, rather than any contradictory act. Similar judgments among socially active younger adults suggest a contribution from social experience.",
       "evidence_segment_id": "EXPERTISE-001",
-      "source": "특성 진단성",
-      "difficulty": "응용"
+      "source": "Trait-diagnostic judgments",
+      "difficulty": "Application"
     },
     {
-      "prompt": "말다툼과 회피 전략 연구의 결과 조합으로 맞는 것은?",
+      "prompt": "Which combination matches the findings on arguments and avoidance?",
       "options": [
-        "말다툼 상황에서는 노년 성인에게서만 정서 반응이 나타났고 회피 상황에서는 두 연령집단의 반응성이 완전히 같았다",
-        "말다툼과 회피를 포함한 모든 갈등 상황에서 노년 성인의 정서 반응성이 젊은 성인보다 일관되게 더 낮았다",
-        "모든 상황에서 젊은 층만 반응성이 낮았다",
-        "말다툼에서는 연령차가 없었지만, 같은 회피 전략에는 노년층만 반응성이 낮았다"
+        "Only older adults reacted emotionally during arguments; avoidance equalized the age groups",
+        "Older adults were consistently less reactive during both arguments and avoided arguments",
+        "Younger adults alone showed reduced reactivity in every type of conflict situation",
+        "Argument reactivity was similar; avoidance brought reduced reactivity only for older adults"
       ],
-      "answer": "말다툼에서는 연령차가 없었지만, 같은 회피 전략에는 노년층만 반응성이 낮았다",
-      "explanation": "회피의 정서적 이점은 연령에 따라 달랐지만, 이 결과가 모든 문제에서 회피가 최선이라는 뜻은 아니다.",
+      "answer": "Argument reactivity was similar; avoidance brought reduced reactivity only for older adults",
+      "explanation": "When younger and older adults argued, their increases in distress were similar. When both used the same avoidance strategy, only older adults reported reduced reactivity. This conditional benefit does not establish avoidance as the best response to every problem.",
       "evidence_segment_id": "BEHAVIOR-001",
-      "source": "갈등관리의 조건",
-      "difficulty": "응용"
+      "source": "Conditions of conflict-management benefits",
+      "difficulty": "Application"
     },
     {
-      "prompt": "노년기의 대인 스트레스 감소를 사회 환경으로 설명하는 사례는?",
+      "prompt": "Which example illustrates how changing roles may reduce interpersonal stress?",
       "options": [
-        "나이가 들면 가족·친구·배우자 사이의 모든 갈등이 사회적 맥락과 무관하게 생물학적으로 완전히 사라진다",
-        "은퇴와 빈 둥지가 대인 요구를 줄이고 파트너 선택 여지를 늘릴 수 있다",
-        "노년 성인은 문화·주거형태·건강상태와 무관하게 가족과 함께 살거나 접촉하는 일이 전혀 없다",
-        "배우자 돌봄과 사별은 개인차 없이 항상 관계의 질과 정서적 안녕을 자동으로 높인다"
+        "All family and marital conflicts disappear biologically at a particular chronological age",
+        "Retirement and an empty nest can reduce demands and increase choice of partners",
+        "Older adults cease all family contact regardless of culture, housing, or health",
+        "Caregiving and bereavement automatically improve every older adult's relationship satisfaction"
       ],
-      "answer": "은퇴와 빈 둥지가 대인 요구를 줄이고 파트너 선택 여지를 늘릴 수 있다",
-      "explanation": "논문은 역할 감소의 가능한 이점과 함께 배우자 돌봄과 사별이 큰 스트레스와 고통을 만들 수 있다는 반대 맥락도 제시한다.",
+      "answer": "Retirement and an empty nest can reduce demands and increase choice of partners",
+      "explanation": "Leaving work and full-time childcare may remove difficult demands. The review also discusses substantial distress from spousal caregiving and bereavement, so favorable role changes are not universal.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "source": "생애과정의 역할환경",
-      "difficulty": "기본"
+      "source": "Roles and social circumstances",
+      "difficulty": "Core"
     },
     {
-      "prompt": "SIM의 핵심 메커니즘은?",
+      "prompt": "What reciprocal process is proposed by the Social Input Model (SIM)?",
       "options": [
-        "사회적 파트너의 수가 자동으로 늘어나는 과정",
-        "노년 성인의 생물학적 정서반응만 변화하는 과정",
-        "노년 성인의 긍정적 관계조절과 파트너의 친절·갈등회피가 호혜적으로 강화되는 과정",
-        "모든 세대가 노년 성인과의 접촉을 중단하는 과정"
+        "Network size increases automatically without any changes in social behavior",
+        "Biological changes in one person alone produce all improvements in relationships",
+        "Older adults' positive regulation and partners' kind responses reinforce each other",
+        "Younger generations withdraw completely from relationships with older people"
       ],
-      "answer": "노년 성인의 긍정적 관계조절과 파트너의 친절·갈등회피가 호혜적으로 강화되는 과정",
-      "explanation": "SIM은 관계의 질을 한 사람의 속성보다 두 사람 사이의 역동적이고 상호적인 반응으로 설명한다.",
+      "answer": "Older adults' positive regulation and partners' kind responses reinforce each other",
+      "explanation": "SIM describes dynamic influence between partners. Older adults may cultivate positive interactions, while others reciprocate through kindness, reduced blame, forgiveness, and efforts to avoid conflict.",
       "evidence_segment_id": "SIM-001",
-      "source": "사회적 입력 모형",
-      "difficulty": "기본"
+      "source": "Reciprocal social input",
+      "difficulty": "Core"
     },
     {
-      "prompt": "같은 사회적 결례의 주인공 나이를 바꾼 연구에서 나타난 반응은?",
+      "prompt": "What happened when a vignette kept the social transgression constant but changed the offender's age?",
       "options": [
-        "같은 결례여도 노년 규범 위반자에게만 더 강하고 직접적인 대립과 공개적 비난을 선택했다",
-        "주인공 나이는 반응에 아무 차이를 만들지 않았다",
-        "젊은 규범 위반자에게 관여 중단만 선택되었다",
-        "노년 위반자에는 회피를, 젊은 위반자에는 직접 대화를 더 많이 택했다"
+        "Respondents predicted stronger confrontation and public blame only for the older offender",
+        "Offender age made no difference to the responses participants expected",
+        "Respondents predicted disengagement only when the offender was younger",
+        "Respondents predicted more avoidance toward older offenders and more direct responses toward younger ones"
       ],
-      "answer": "노년 위반자에는 회피를, 젊은 위반자에는 직접 대화를 더 많이 택했다",
-      "explanation": "이 결과는 파트너가 노년 성인에게 우대를 제공하는 SIM의 근거지만, 그 반응이 언제나 존중에서 나온다고 단정할 수는 없다.",
+      "answer": "Respondents predicted more avoidance toward older offenders and more direct responses toward younger ones",
+      "explanation": "Participants reported what they thought the offended character would do. The age-varying vignette supports differential treatment, but does not show that the treatment necessarily arose from respect.",
       "evidence_segment_id": "PREFERENTIAL-001",
-      "source": "가상 결례 연구",
-      "difficulty": "응용"
+      "source": "Age manipulation in social-transgression vignettes",
+      "difficulty": "Application"
     },
     {
-      "prompt": "관계에 남은 시간이 제한되어 있다고 느낄 때의 반응으로 논문이 제안하는 것은?",
+      "prompt": "What response may follow the perception that little time remains in a relationship?",
       "options": [
-        "남은 시간이 짧으면 조화·회피·용서를 더 우선할 수 있다",
-        "남은 관계 시간과 무관하게 미래 정보를 더 얻기 위해 갈등 빈도와 대립 강도를 의도적으로 늘린다",
-        "상대의 나이·관계 유형·문제의 성격과 무관하게 시간 제한을 느끼는 즉시 반드시 관계를 끝낸다",
-        "남은 시간은 용서와 무관하다"
+        "Greater priority for harmony, avoidance of arguments, and forgiveness",
+        "More confrontation solely to maximize information for a distant shared future",
+        "Immediate termination of every relationship regardless of the problem or partner",
+        "The complete disappearance of any connection between time perspective and forgiveness"
       ],
-      "answer": "남은 시간이 짧으면 조화·회피·용서를 더 우선할 수 있다",
-      "explanation": "가상 시간제한 연구와 홍콩 실험은 이 경로를 지지하지만, 저자들은 가능성과 조건을 나타내는 표현으로 서술한다.",
+      "answer": "Greater priority for harmony, avoidance of arguments, and forgiveness",
+      "explanation": "Imagined constraints on contact and the reviewed forgiveness studies support a possible role for relationship time horizons. The authors retain conditional language, and avoidance without forgiveness can leave resentment unresolved.",
       "evidence_segment_id": "FORGIVENESS-001",
-      "source": "관계 시간 관점",
-      "difficulty": "응용"
+      "source": "Time remaining with a partner",
+      "difficulty": "Application"
     },
     {
-      "prompt": "노화에 관한 부정적 고정관념이 더 나은 대우로 이어진 사례의 해석은?",
+      "prompt": "How can a negative age stereotype produce more favorable treatment in the studies reviewed?",
       "options": [
-        "이 사례는 노화에 관한 부정적 고정관념이 과학적으로 정확하고 실제 집단차를 편견 없이 반영한다는 뜻이다",
-        "노년 성인은 예외 없이 모든 잘못을 기억하지 못하며 따라서 어떤 결례도 의도적으로 저지를 수 없다는 뜻이다",
-        "건망증 고정관념이 의도·책임 판단을 낮춰 처벌 감소나 동정을 낳을 수 있다",
-        "건망증이나 처리속도에 관한 고정관념은 의도성·책임·처벌 판단에 어떤 방식으로도 영향을 주지 않았다"
+        "It proves that the stereotype accurately describes every older person's abilities",
+        "It establishes that older adults cannot intentionally commit a social transgression",
+        "Attributing conduct to forgetfulness can reduce perceived intent, blame, and punishment",
+        "It leaves judgments of intent and responsibility unchanged but eliminates every age difference"
       ],
-      "answer": "건망증 고정관념이 의도·책임 판단을 낮춰 처벌 감소나 동정을 낳을 수 있다",
-      "explanation": "행동 결과는 더 친절할 수 있지만 그 반응이 부정적 고정관념에서 나올 수 있으므로, 이를 노년에 대한 긍정적 인식이나 고정관념의 정당성으로 해석하면 안 된다.",
+      "answer": "Attributing conduct to forgetfulness can reduce perceived intent, blame, and punishment",
+      "explanation": "In the ambiguous unpaid-hat vignette, older women were more often judged forgetful and punished less. Kinder treatment can arise from a negative assumption; it does not validate the stereotype or establish uniformly respectful attitudes.",
       "evidence_segment_id": "STEREOTYPE-001",
-      "source": "고정관념의 역설",
-      "difficulty": "심화"
+      "source": "Stereotypes and responsibility judgments",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "13–96세 일본인·미국인 비교에서 일본 노년 성인이 성인 자녀 관계 문제를 더 보고한 차이를 설명한 요인은?",
+      "prompt": "What explained Japanese older adults' greater reported difficulties with grown children in the cross-cultural study?",
       "options": [
-        "일본 표본의 연령이 모두 96세였기 때문",
-        "성인 자녀와 동거하는 비율에서 나타난 두 문화의 차이",
-        "일본 참가자의 사회적 관계망이 더 컸기 때문",
-        "연말연시 카드 규범의 차이"
+        "Every Japanese participant was 96 years old",
+        "Differences in living with adult children",
+        "The universal superiority of larger American social networks",
+        "Different conventions for selecting holiday greeting cards"
       ],
-      "answer": "성인 자녀와 동거하는 비율에서 나타난 두 문화의 차이",
-      "explanation": "이 결과는 연령만이 아니라 가족의 주거형태와 문화적 맥락이 문제적 유대에 영향을 줄 수 있음을 보여 준다.",
+      "answer": "Differences in living with adult children",
+      "explanation": "The study included Japanese and U.S. participants aged 13 to 96. The difference in problems with grown children was explained by co-residence, highlighting household arrangements as part of the cultural context.",
       "evidence_segment_id": "ENVIRONMENT-001",
-      "source": "문화 간 맥락",
-      "difficulty": "응용"
+      "source": "Co-residence and relationship demands",
+      "difficulty": "Application"
     },
     {
-      "prompt": "관계망이 지나치게 작아지는 위험을 가장 정확히 나타낸 결과는?",
+      "prompt": "Which finding shows a possible limit to the benefits of a small close network?",
       "options": [
-        "가까운 파트너가 3명 미만일 때 통합감·만족은 낮고 외로움은 높았다",
-        "관계망에서 가까운 파트너가 한 명 줄어들 때마다 연령·건강·맥락과 무관하게 임상적 우울증이 반드시 발생했다",
-        "가까운 파트너 수와 사회적 욕구는 관련이 없었다",
-        "큰 관계망은 모든 연령에서 관계 만족을 낮췄다"
+        "Having fewer than three close partners was linked to loneliness and lower satisfaction",
+        "Each lost partner invariably caused a clinical disorder in every older adult",
+        "The number of close partners had no relationship with unmet social needs",
+        "Larger networks reduced satisfaction by the same amount at every adult age"
       ],
-      "answer": "가까운 파트너가 3명 미만일 때 통합감·만족은 낮고 외로움은 높았다",
-      "explanation": "선택적으로 가까운 관계에 집중하는 것과 사회적 욕구를 충족하지 못하는 고립을 구분해야 한다. 외로움은 노년기 우울증의 위험요인으로도 언급된다.",
+      "answer": "Having fewer than three close partners was linked to loneliness and lower satisfaction",
+      "explanation": "Older adults reporting fewer than three close partners also reported less social embeddedness, more loneliness, and lower satisfaction. This study finding distinguishes selective closeness from unmet social needs; it is not a universal numerical requirement.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "관계망 하한",
-      "difficulty": "기본"
+      "source": "When a network becomes too small",
+      "difficulty": "Core"
     },
     {
-      "prompt": "저자들이 직접 밝힌 향후 연구상의 한계는?",
+      "prompt": "Which alternative explanation do the authors explicitly retain for sentimental-card findings?",
       "options": [
-        "노년 성인의 관계 만족이나 긍정적 관계 경험을 측정한 선행연구가 문헌 전체에 단 한 건도 존재하지 않는다는 점",
-        "감상적 카드·SIM 결과의 코호트 가능성과 노화 맥락을 더 살펴야 한다는 점",
-        "검토된 실증연구가 국가·문화·관계 유형의 차이 없이 모두 하나의 동일한 문화권 표본에서만 수행되었다는 점",
-        "관계망 규모를 측정할 수 없다는 점"
+        "No previous study has ever measured older adults' satisfaction with social relationships",
+        "Earlier generations' card-giving norms may produce a cohort effect",
+        "All reviewed studies used one identical sample without cultural or relationship variation",
+        "The number of social partners cannot be measured by any research method"
       ],
-      "answer": "감상적 카드·SIM 결과의 코호트 가능성과 노화 맥락을 더 살펴야 한다는 점",
-      "explanation": "과거 세대의 카드 규범, 관계망의 하한, 일정 통제와 배우자 사회통제 같은 상황을 분리하는 연구가 필요하다고 제안한다.",
+      "answer": "Earlier generations' card-giving norms may produce a cohort effect",
+      "explanation": "More sentimental cards for older recipients may reflect generational norms. The authors call for studies distinguishing cohort explanations from mechanisms proposed by SIM.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "코호트와 맥락 한계",
-      "difficulty": "심화"
+      "source": "Cohort alternatives",
+      "difficulty": "Advanced"
     },
     {
-      "prompt": "저자들이 제시한 향후 연구 범위를 가장 잘 지킨 결론은?",
+      "prompt": "Which conclusion respects the review's proposed research agenda?",
       "options": [
-        "모든 사람은 나이 들면 동일한 관계 개선을 경험한다",
-        "검토된 사회적 기제가 임상적 건강과 신체기능을 직접 향상한다고 확정됐다",
-        "노년기의 더 긍정적인 관계가 보고됐지만 일부 결과의 코호트 효과를 배제할 수 없고 관계망 크기와 노화 맥락에 따라 문제가 생길 수 있다",
-        "자기보고 연구는 모두 인과효과를 증명한다"
+        "Aging guarantees the same improvement in relationships for every individual",
+        "The reviewed mechanisms establish direct improvements in physical health and functioning",
+        "Relationships may improve, with limits related to cohort, network adequacy, and circumstances",
+        "Self-reported age differences establish the causal effect of aging on relationship quality"
       ],
-      "answer": "노년기의 더 긍정적인 관계가 보고됐지만 일부 결과의 코호트 효과를 배제할 수 없고 관계망 크기와 노화 맥락에 따라 문제가 생길 수 있다",
-      "explanation": "저자들은 감상적 카드 결과의 코호트 가능성, 가까운 관계망이 지나치게 작을 때의 위험, 일정 통제와 질병 상황을 향후 연구에서 구분해야 한다고 제안한다.",
+      "answer": "Relationships may improve, with limits related to cohort, network adequacy, and circumstances",
+      "explanation": "The authors call for attention to overly small networks, greater freedom over schedules, and illness-related social control by spouses, as well as cohort alternatives. These conditions may facilitate or undermine relationship quality.",
       "evidence_segment_id": "FUTURE-001",
-      "source": "근거 범위",
-      "difficulty": "심화"
+      "source": "Scope and contextual limits",
+      "difficulty": "Advanced"
     }
-  ]
+  ],
+  "language": "en"
 }

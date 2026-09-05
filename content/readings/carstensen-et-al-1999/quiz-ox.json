@@ -1,124 +1,125 @@
 {
-  "title": "Carstensen et al. (1999) OX 퀴즈",
-  "instructions": "문장을 읽고 O 또는 X를 고르세요. 정답 뒤에는 해당 원문 세그먼트에 근거한 이유가 제시됩니다.",
+  "title": "Carstensen et al. (1999): True or False",
+  "instructions": "Read each statement and choose True or False. Check the explanation against the linked source passage, paying attention to time perspective, study design, and the limits of each finding.",
+  "language": "en",
   "question_set_type": "OX 퀴즈",
   "items": [
     {
-      "prompt": "SST에서는 미래가 개방되어 있다고 지각할 때 지식 관련 목표가, 제한되어 있다고 지각할 때 정서적 목표가 우선된다.",
+      "prompt": "In SST, knowledge-related goals take priority when the future is perceived as open-ended, whereas emotional goals take priority when time is perceived as limited.",
       "answer": "O",
-      "explanation": "초록은 지각된 시간이 사회적 목표 선택의 핵심이며, 개방된 시간은 지식 습득을, 제한된 시간은 정서 조절을 우선시한다고 명시한다.",
+      "explanation": "The abstract identifies perceived time as fundamental to the selection of social goals. An open-ended future favors knowledge acquisition, while limited time gives emotion-related goals primacy.",
       "evidence_segment_id": "ABS-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "easy"
     },
     {
-      "prompt": "SST에서 지식 목표와 정서 목표의 구분은 행동이 정서적인지 비정서적인지를 판별하는 분류로 쓰인다.",
+      "prompt": "SST distinguishes knowledge-related and emotional goals in order to classify behavior as either emotional or nonemotional.",
       "answer": "X",
-      "explanation": "두 목표는 모두 필수적이고 상호배타적이지 않다. 범주명은 행동에 정서가 있는지를 가르는 것이 아니라 상대적으로 우세한 동기를 표시한다.",
+      "explanation": "Both classes of goals are essential and overlap. The distinction concerns the primary motive, such as gaining knowledge or satisfying emotional needs; information seeking can involve emotion, and emotional goals can involve information seeking.",
       "evidence_segment_id": "TENETS-002",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "논문이 검토한 조사에서는 노인이 더 현재 지향적이었고, 과거 지향과 연령의 관련성은 일관되지 않았다.",
+      "prompt": "The research discussed in the article described older adults as more present-oriented, while the association between age and a focus on the past was not reliable.",
       "answer": "O",
-      "explanation": "저자들은 노인의 현재 지향을 보고하고, 과거 지향의 연령 관련 결과는 일관되지 않았다고 구분한다.",
+      "explanation": "The authors emphasize older adults' focus on the here and now, rather than a distant future. They explicitly note that age is not reliably associated with past orientation.",
       "evidence_segment_id": "TIMEDEV-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "우연기억 연구의 연령차는 기억한 전체 내용 가운데 정서적 내용이 차지한 비율에서 나타났다.",
+      "prompt": "In the incidental-memory study, age differences appeared in the proportion of recalled material that concerned emotional aspects of the situation.",
       "answer": "O",
-      "explanation": "저자들은 일반적 기억 차이 때문에 정서 항목의 절대 회상량을 예측하지 않고, 전체 회상 중 정서 내용의 비율이 연령과 함께 커지는지를 보았다.",
+      "explanation": "Because overall memory performance differs with age, the authors did not predict that older adults would recall more emotional information in absolute terms. They predicted, and found, that emotional material made up a larger proportion of recall with increasing age.",
       "evidence_segment_id": "MEMORY-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "HIV 하위집단 연구에서 유증상 집단의 정서 차원 비중은 그 집단의 더 높은 평균연령으로 설명되었다.",
+      "prompt": "In the HIV subgroup study, the symptomatic group's greater emphasis on emotional dimensions was explained by its higher average age.",
       "answer": "X",
-      "explanation": "HIV 음성, 양성 무증상, 양성 유증상/AIDS 하위집단은 모두 남성이며 평균연령이 37세였다. 설계는 연령을 비슷하게 두고 기대수명 차이를 살피려 했다.",
+      "explanation": "The HIV-negative, HIV-positive asymptomatic, and HIV-positive symptomatic/AIDS subgroups were all male and each had an average age of 37. The design held age comparable while examining differences related to life expectancy.",
       "evidence_segment_id": "PARTNER-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "easy"
     },
     {
-      "prompt": "정서유발 실험에서 노인은 젊은 사람보다 주관적으로 훨씬 약한 정서 강도를 보고했다.",
+      "prompt": "In the laboratory mood-induction studies reviewed, older adults reported much weaker subjective emotional intensity than younger adults.",
       "answer": "X",
-      "explanation": "검토된 실험에서 젊은 사람과 노인이 보고한 주관적 정서 강도는 비슷했다. 노년기의 생리활동과 부정 정서 통제에 관한 결과와 구분해야 한다.",
+      "explanation": "Younger and older adults reported comparably intense subjective experiences. This finding is distinct from reports of better control over negative emotions and lower physiological activity among older adults.",
       "evidence_segment_id": "EMOREG-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "경험표집 연구는 18~95세 참가자를 일주일 동안 무작위로 35번 호출해 19가지 정서를 보고하게 했다.",
+      "prompt": "The experience-sampling study paged participants aged 18 to 95 at 35 random times over one week and asked them to report on 19 emotional states.",
       "answer": "O",
-      "explanation": "원문은 낮과 저녁의 무작위 시점에 일주일 동안 총 35회 호출하여 19가지 정서를 기록하게 한 절차를 제시한다.",
+      "explanation": "Participants carried electronic pagers and were signaled at random times during the day and evening. At each of the 35 signals, they recorded which of 19 emotional states they were experiencing and how intensely they felt them.",
       "evidence_segment_id": "EMOREG-002",
       "source": "Carstensen et al. (1999)",
       "difficulty": "easy"
     },
     {
-      "prompt": "경험표집에서 부정 정서는 나이가 들수록 빈도와 강도가 함께 낮아졌다.",
+      "prompt": "In the experience-sampling findings, both the frequency and intensity of negative emotions decreased with age.",
       "answer": "X",
-      "explanation": "부정 정서 빈도는 대체로 감소하다 초고령기에 다소 다시 늘었지만 젊은 성인기보다 높지는 않았다. 경험할 때의 강도는 감소하지 않았고 지속 가능성도 별도 결과다.",
+      "explanation": "Negative emotions generally declined in frequency, but not in intensity when experienced. Frequency rose somewhat again in very old age without exceeding young-adult levels. Shorter duration of negative emotions, estimated from conditional probabilities, was a separate finding.",
       "evidence_segment_id": "EMOREG-002",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "Child Guidance Study에서는 지인 관계가 줄어드는 동안 배우자·부모·형제자매 관계가 유지되거나 증가했다.",
+      "prompt": "In the Child Guidance Study, interaction with spouses, parents, and siblings was maintained or increased while interaction with acquaintances declined.",
       "answer": "O",
-      "explanation": "같은 사람을 18·30·40·50세에 면담한 결과, 지인과의 상호작용 비중과 만족은 줄었지만 가까운 가족관계는 유지되거나 늘었다.",
+      "explanation": "Participants were interviewed at ages 18, 30, 40, and 50. Interaction rates with acquaintances and satisfaction with those contacts declined, while interaction rates with spouses, parents, and siblings remained stable or increased.",
       "evidence_segment_id": "NETWORK-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "Berlin Aging Study는 같은 참가자를 장기간 추적해 개인별 연결망 축소를 확인한 종단연구였다.",
+      "prompt": "The Berlin Aging Study analysis described in the article established individual network shrinkage by following the same participants over many years.",
       "answer": "X",
-      "explanation": "Berlin 연구는 69~104세의 횡단 표본이었다. 친밀한 내적 원의 보존은 관찰했지만 그 자료만으로 개인 내 발달변화를 결론 낼 수 없다.",
+      "explanation": "The reported analysis was a cross-sectional comparison of adults aged 69 to 104. It found fewer peripheral partners among the oldest adults but similar numbers of emotionally close partners; the design does not establish within-person developmental change.",
       "evidence_segment_id": "NETWORK-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "hard"
     },
     {
-      "prompt": "곧 이사한다고 상상한 제한시간 조건에서는 젊은 참가자의 상대 선호가 노인의 전형적 선호와 구분되지 않았다.",
+      "prompt": "When participants imagined an approaching geographical move, younger adults' social-partner preferences became indistinguishable from older adults' preferences.",
       "answer": "O",
-      "explanation": "기본조건의 젊은이는 친숙한 상대를 특별히 선호하지 않았지만, 이사 조건에서는 노인처럼 친숙한 상대를 선호했다.",
+      "explanation": "Younger adults showed no preference for familiar partners in the baseline condition. When the imagined move constrained time, they favored familiar partners, as older adults did in both conditions.",
       "evidence_segment_id": "PREFER-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "약 20년의 생명 연장을 상상한 조건에서는 노인의 친숙한 상대 선호가 사라져 젊은이와의 차이가 없어졌다.",
+      "prompt": "Imagining a medical breakthrough that would likely add 20 years to life eliminated older adults' preference for familiar partners, leaving them no more likely than younger adults to prefer those partners.",
       "answer": "O",
-      "explanation": "연장된 시간 관점은 젊은이의 선택에는 영향을 주지 않았지만 노인의 기본적인 친숙한 상대 우세를 없앴다.",
+      "explanation": "Younger adults' preferences were stable across conditions. Older adults favored familiar partners at baseline, but that bias disappeared when they imagined an expanded future.",
       "evidence_segment_id": "PREFER-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "medium"
     },
     {
-      "prompt": "홍콩 반환 1년 뒤에도 젊은이와 노인 모두의 친숙한 상대 선호가 반환 직전과 같은 수준으로 유지되었다.",
+      "prompt": "One year after Hong Kong's handover, younger and older adults continued to show the same shared preference for familiar partners observed shortly before the handover.",
       "answer": "X",
-      "explanation": "반환 약 4개월 전에는 전 연령의 친숙한 상대 선호가 나타났지만, 1년 뒤 연령과 선호의 관련성은 앞서 관찰된 일반 양상으로 돌아왔다.",
+      "explanation": "Four months before the handover, both younger and older adults preferred familiar partners. One year afterward, the association between age and partner preference again resembled the pattern observed one year before the handover.",
       "evidence_segment_id": "PREFER-002",
       "source": "Carstensen et al. (1999)",
       "difficulty": "hard"
     },
     {
-      "prompt": "저자들은 SST가 SOC를 대체하기보다, 사회·정서 영역에서 선택되는 목표를 특정함으로써 SOC를 보완한다고 본다.",
+      "prompt": "The authors describe SST as complementing SOC by specifying which goals are selected in social and emotional domains.",
       "answer": "O",
-      "explanation": "SOC가 선택·최적화·보상의 일반 과정을 설명한다면 SST는 제한시간에 정서 목표와 의미 있는 관계가 선택된다는 내용을 구체화한다.",
+      "explanation": "SOC describes the general processes of selection, optimization, and compensation without prescribing specific developmental goals. SST supplies predictions about prioritizing emotional goals and selecting meaningful social partners when time is limited.",
       "evidence_segment_id": "LIFESPAN-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "hard"
     },
     {
-      "prompt": "임상 논의는 현재초점이 생애 말기 우울을 치료한다는 효과시험 결과를 제시했다.",
+      "prompt": "The clinical discussion presents an efficacy trial demonstrating that a present-focused approach treats depression near the end of life.",
       "answer": "X",
-      "explanation": "저자들은 현재초점이 도움이 될 가능성을 명시적으로 추측이라 불렀다. 해당 논의는 치료시험이나 검증된 임상 권고가 아니다.",
+      "explanation": "The authors explicitly describe this therapeutic possibility as conjecture. They suggest that a present focus may help some distressed people approaching the end of life, but do not present a treatment trial establishing its efficacy.",
       "evidence_segment_id": "CLINICAL-001",
       "source": "Carstensen et al. (1999)",
       "difficulty": "hard"

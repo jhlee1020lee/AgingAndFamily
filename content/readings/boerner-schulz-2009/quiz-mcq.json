@@ -1,142 +1,218 @@
 {
-  "title": "Boerner & Schulz (2009) 객관식 퀴즈",
-  "instructions": "논문의 주장과 근거에 가장 정확히 부합하는 답을 고르세요.",
+  "title": "Boerner and Schulz (2009): Multiple-choice practice",
+  "instructions": "Choose the best answer about caregiving, bereavement, and the studies reviewed. Read diagnostic proposals and treatment claims in their stated historical and research context.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "누적 스트레스 관점이 예측하는 사별 결과는 무엇인가?",
-      "options": ["죽음이 돌봄 부담을 끝내 즉시 정상화된다", "장례정보만 있으면 정서적 고통이 사라진다", "고갈된 대처 자원으로 적응이 더 어려워진다", "돌봄 여부와 사별 과정은 서로 무관하다"],
-      "answer": "고갈된 대처 자원으로 적응이 더 어려워진다",
-      "explanation": "마모 가설은 돌봄 스트레스와 죽음의 결합이 대처 자원을 소진시킨다고 본다.",
+      "prompt": "What does the cumulative stress, or wear-and-tear, perspective predict after bereavement?",
+      "options": [
+        "The end of caregiving removes strain and leads to better adjustment than among non-caregivers.",
+        "Expecting the death permits emotional processing that helps the caregiver adjust after the loss.",
+        "Caregiving stress and the death combine to deplete coping resources and make adjustment harder.",
+        "The experience of providing care has little relevance to how people adjust after the death."
+      ],
+      "answer": "Caregiving stress and the death combine to deplete coping resources and make adjustment harder.",
+      "explanation": "The cumulative stress perspective emphasizes depletion through the combined demands of caregiving and loss. Relief and anticipatory preparation are different perspectives. The authors argue that these processes can coexist or differ across caregivers rather than one prediction describing everyone.",
       "evidence_segment_id": "CAREGIVING-001",
-      "source": "누적 스트레스 관점",
-      "difficulty": "하"
+      "source": "Caregiving: cumulative stress perspective",
+      "difficulty": "easy"
     },
     {
-      "prompt": "세 관점에 대한 저자들의 최종 종합으로 가장 적절한 것은?",
-      "options": ["소진·안도·예기가 사람별로 결합할 수 있다", "마모 가설만 모든 집단에 적용된다", "스트레스 감소와 예기는 같은 개념이다", "어떤 돌봄제공자도 죽음 전에 준비할 수 없다"],
-      "answer": "소진·안도·예기가 사람별로 결합할 수 있다",
-      "explanation": "저자들은 하나의 관점을 승자로 정하지 않고 세 효과의 혼합과 하위집단 차이를 강조한다.",
+      "prompt": "How do the authors synthesize the three perspectives on caregiving and bereavement?",
+      "options": [
+        "Depletion, relief, and anticipation can combine differently across caregivers.",
+        "Resource depletion explains adjustment equally well in every caregiver subgroup.",
+        "Relief from strain and preparation for death are interchangeable descriptions.",
+        "Anticipatory preparation rules out exhaustion once the expected death occurs."
+      ],
+      "answer": "Depletion, relief, and anticipation can combine differently across caregivers.",
+      "explanation": "A caregiver can feel exhausted, relieved that suffering has ended, and partly prepared for life after the death. The authors emphasize the coexistence of these processes and variation among subgroups instead of declaring one perspective universally correct.",
       "evidence_segment_id": "CAREGIVING-001",
-      "source": "세 관점의 종합",
-      "difficulty": "중"
+      "source": "Caregiving: integrating three perspectives",
+      "difficulty": "medium"
     },
     {
-      "prompt": "논문이 제시한 사별 돌봄제공자의 전반적 궤적을 정확히 요약한 것은?",
-      "options": ["모든 돌봄제공자는 사망 뒤 1년이 지나도 심한 증상을 그대로 유지한다", "모두 사망 직후부터 어려움 없이 적응한다", "치매 돌봄 연구의 30%를 모든 사별 돌봄제공자의 평균으로 적용한다", "다수는 호전되지만 약 10–20%는 높은 어려움이 지속된다"],
-      "answer": "다수는 호전되지만 약 10–20%는 높은 어려움이 지속된다",
-      "explanation": "대다수의 증상 감소와 적지 않은 고위험 소수는 동시에 보고된 결과이다.",
+      "prompt": "Which statement best captures the range of outcomes described in the 2009 review?",
+      "options": [
+        "Severe depression and grief persist unchanged for almost every former caregiver.",
+        "Relief following the death means that caregivers seldom need further support.",
+        "The dementia-caregiver study supplies one rate applicable to all bereaved people.",
+        "Many improve, while a substantial minority continues to experience difficulties."
+      ],
+      "answer": "Many improve, while a substantial minority continues to experience difficulties.",
+      "explanation": "The review describes symptom improvement for many caregivers and estimates that roughly 10–20% continue to experience high stress or psychiatric problems. It separately reports findings from the authors' dementia-caregiver research. Different samples and outcomes should not be treated as one universal rate.",
       "evidence_segment_id": "CAREGIVING-001",
-      "source": "사별 궤적의 이질성",
-      "difficulty": "중"
+      "source": "Caregiving: heterogeneous outcomes",
+      "difficulty": "medium"
     },
     {
-      "prompt": "저자들의 치매 돌봄제공자 연구 수치를 바르게 연결한 것은?",
-      "options": ["사망 직후 우울 위험 10%, 복합성 애도 30%", "우울 위험 30%, 복합성 애도 20%", "사망 6개월 뒤 우울 위험 20%, 복합성 애도 10%", "사망 1년 뒤 우울 위험 20%, 복합성 애도 30%"],
-      "answer": "우울 위험 30%, 복합성 애도 20%",
-      "explanation": "사망 1년 뒤 30%가 임상적 우울 위험에 있었고 20%가 복합성 애도를 경험했다.",
+      "prompt": "What is essential when interpreting the estimates from the authors' own dementia-caregiver research?",
+      "options": [
+        "Treating depression risk as a confirmed diagnosis for every affected respondent.",
+        "Keeping the specific caregiver sample and the two measured outcomes distinct.",
+        "Applying the estimates to all bereaved adults regardless of prior caregiving.",
+        "Adding the percentages to estimate two mutually exclusive diagnostic groups."
+      ],
+      "answer": "Keeping the specific caregiver sample and the two measured outcomes distinct.",
+      "explanation": "The authors report that 30% were at risk for clinical depression one year after death and that 20% experienced complicated grief in their dementia-caregiver research. Risk of depression is not synonymous with a confirmed diagnosis. The article does not establish that the two groups are mutually exclusive or representative of all bereaved people.",
       "evidence_segment_id": "CAREGIVING-001",
-      "source": "치매 돌봄제공자 연구",
-      "difficulty": "하"
+      "source": "Caregiving: scope of the dementia-caregiver estimates",
+      "difficulty": "easy"
     },
     {
-      "prompt": "이 글이 복합성 애도의 핵심 특징으로 제시한 것은?",
-      "options": ["고인을 향한 강렬한 갈망과 지속적 기능 곤란", "죽음 직후 나타나는 모든 슬픔과 눈물", "장례 계획을 세우지 못한 현실적 불편", "돌봄 부담이 끝난 뒤 느끼는 일시적 안도"],
-      "answer": "고인을 향한 강렬한 갈망과 지속적 기능 곤란",
-      "explanation": "강렬한 그리움, 침투적 고통, 관계와 활동 재참여의 어려움이 정의의 중심이다.",
+      "prompt": "Which feature is central to the description of complicated grief in this 2009 article?",
+      "options": [
+        "Intense yearning accompanied by persistent difficulties in functioning.",
+        "Any sadness or crying that appears in the immediate aftermath of a death.",
+        "Practical inconvenience caused by incomplete funeral arrangements alone.",
+        "Temporary relief when the strain of intensive caregiving finally ends."
+      ],
+      "answer": "Intense yearning accompanied by persistent difficulties in functioning.",
+      "explanation": "The article emphasizes intense longing, intrusive distress, and difficulty reengaging in relationships and rewarding activities. It does not define every expression of grief or temporary relief as a disorder. Its discussion of diagnostic criteria concerns proposals described in 2009.",
       "evidence_segment_id": "COMPLICATED-001",
-      "source": "복합성 애도의 정의",
-      "difficulty": "하"
+      "source": "Complicated grief: description in the 2009 article",
+      "difficulty": "easy"
     },
     {
-      "prompt": "2009년 글이 소개한 당시 제안 기준의 조합으로 옳은 것은?",
-      "options": ["핵심 갈망, 증상 2개, 3개월, 기능손상이 없어도 된다는 조합", "핵심 갈망 없이 증상 8개만 있으면 충족", "우울 진단만 있으면 기간과 기능을 묻지 않음", "핵심 갈망, 8개 중 4개, 6개월, 현저한 기능손상"],
-      "answer": "핵심 갈망, 8개 중 4개, 6개월, 현저한 기능손상",
-      "explanation": "핵심 갈망과 추가 증상 문턱, 지속기간, 기능손상이 모두 포함된 당시의 제안이다.",
+      "prompt": "Which combination belongs to the proposed criteria described in the 2009 article?",
+      "options": [
+        "Persistent yearning plus two of eight symptoms for three months, without requiring functional impairment.",
+        "All eight listed symptoms without persistent yearning, with no minimum duration or impairment requirement.",
+        "A diagnosis of depression alone, without separately assessing yearning, duration, or impaired functioning.",
+        "Persistent yearning plus four of eight symptoms, at least six months of distress, and significant impairment."
+      ],
+      "answer": "Persistent yearning plus four of eight symptoms, at least six months of distress, and significant impairment.",
+      "explanation": "The article presents these as proposed criteria for inclusion in DSM-V. The additional symptoms must occur several times daily and/or be severely distressing; duration and important functional impairment are also required. This question tests the historical proposal discussed by the authors, not a claim about current diagnostic criteria.",
       "evidence_segment_id": "COMPLICATED-001",
-      "source": "당시 제안된 진단기준",
-      "difficulty": "중"
+      "source": "Complicated grief: historical diagnostic proposal",
+      "difficulty": "medium"
     },
     {
-      "prompt": "복합성 애도와 주요우울장애·PTSD의 관계에 관한 저자들의 설명은?",
-      "options": ["함께 나타날 수 없으므로 감별할 필요가 없다", "동반될 수 있지만 별개의 상태로 간주된다", "복합성 애도는 우울의 비공식 별칭일 뿐이다", "PTSD가 있으면 복합성 애도는 자동 배제된다"],
-      "answer": "동반될 수 있지만 별개의 상태로 간주된다",
-      "explanation": "공존 가능성을 인정하면서도 상이한 치료전략이 필요하다고 설명한다.",
+      "prompt": "How does the article relate complicated grief to major depression and PTSD?",
+      "options": [
+        "It excludes their coexistence and therefore makes differential assessment unnecessary.",
+        "They may co-occur, but complicated grief is regarded as distinct and needing different treatment.",
+        "It treats complicated grief as an informal synonym for bereavement-related depression.",
+        "It assumes that a PTSD diagnosis automatically rules out any additional grief disorder."
+      ],
+      "answer": "They may co-occur, but complicated grief is regarded as distinct and needing different treatment.",
+      "explanation": "The authors describe co-occurrence with depression and PTSD while arguing that complicated grief warrants distinct treatment strategies. Association or overlap does not make the conditions identical. This is the conceptual distinction made in the 2009 review.",
       "evidence_segment_id": "COMPLICATED-001",
-      "source": "동반질환과 구분",
-      "difficulty": "중"
+      "source": "Complicated grief: overlap and distinction",
+      "difficulty": "medium"
     },
     {
-      "prompt": "다음 중 논문이 부정적 사별 결과와 관련된 위험표지로 제시하지 않은 것은?",
-      "options": ["죽음 전에 경험한 우울과 불안 같은 정신적 고통", "높은 수준의 돌봄 부담과 탈진·과부하", "사망자의 정확한 출생순위", "가족과 친구에게서 받는 사회적 지원의 부족"],
-      "answer": "사망자의 정확한 출생순위",
-      "explanation": "본문은 심리적 고통, 부담·탈진, 지원 부족과 사회경제적 자원 등을 다루지만 출생순위는 제시하지 않는다.",
+      "prompt": "Which interpretation of the risk factors reviewed in the article is most defensible?",
+      "options": [
+        "High burden guarantees a grief disorder after the death, regardless of other resources.",
+        "Low income demonstrates an inherent inability to cope independently of life circumstances.",
+        "Preloss distress, burden, and limited support are associated with poorer adjustment.",
+        "Absence of reported burden rules out later difficulties even when the care role was central."
+      ],
+      "answer": "Preloss distress, burden, and limited support are associated with poorer adjustment.",
+      "explanation": "The article identifies preloss depression and anxiety, exhaustion, high burden, inadequate support, and socioeconomic disadvantage as risk markers. It interprets disadvantage partly through constrained resources. These associations do not make an individual outcome inevitable or establish a single causal pathway.",
       "evidence_segment_id": "RISK-001",
-      "source": "위험요인",
-      "difficulty": "하"
+      "source": "Risk: associations and resource constraints",
+      "difficulty": "easy"
     },
     {
-      "prompt": "긍정적으로 평가된 돌봄 경험이 위험과 연결될 수 있는 이유는?",
-      "options": ["긍정적 평가가 항상 실제 부담을 숨기기 때문에", "장기간 돌보면 누구나 가족과 친구의 사회적 지원을 거부하게 되어서", "긍정적 돌봄 경험은 모든 사람에게 임상적 우울을 반드시 유발해서", "돌봄 역할이나 관계가 삶의 핵심 의미였을 수 있어서"],
-      "answer": "돌봄 역할이나 관계가 삶의 핵심 의미였을 수 있어서",
-      "explanation": "죽음은 고인뿐 아니라 중심적 역할과 의미 원천의 상실도 가져올 수 있다.",
+      "prompt": "Why might someone who valued caregiving highly still struggle after the death?",
+      "options": [
+        "A positive appraisal necessarily conceals severe burden that the caregiver refuses to disclose.",
+        "Long-term caregiving inevitably causes people to reject support from family and friends.",
+        "Finding care rewarding causes clinical depression in all caregivers once their duties end.",
+        "The death may remove a central relationship and a caregiving role that gave the person purpose."
+      ],
+      "answer": "The death may remove a central relationship and a caregiving role that gave the person purpose.",
+      "explanation": "The authors propose that losing a meaningful caregiving role or a person central to one's life can help explain difficulties after positively valued care. Positive and negative features can coexist. These are possible interpretations of the observed findings, not proof that rewarding caregiving itself causes complicated grief.",
       "evidence_segment_id": "RISK-001",
-      "source": "긍정적 돌봄의 양면성",
-      "difficulty": "중"
+      "source": "Risk: loss of a valued role and relationship",
+      "difficulty": "medium"
     },
     {
-      "prompt": "정서적·현실적·정보적 준비도에 관한 설명으로 맞는 것은?",
-      "options": ["한 차원에 준비되어도 다른 차원은 부족할 수 있다", "세 차원은 항상 같은 수준으로 움직인다", "정서적 준비는 장례 비용 계산만을 뜻한다", "정보적 준비는 고인과의 관계 만족도이다"],
-      "answer": "한 차원에 준비되어도 다른 차원은 부족할 수 있다",
-      "explanation": "정보와 현실 면에서 준비되어도 정서적으로 전혀 준비되지 않을 수 있다는 예가 제시된다.",
+      "prompt": "What does the article emphasize about emotional, pragmatic, and informational preparedness?",
+      "options": [
+        "Preparation in one dimension need not mean preparation in the others.",
+        "Preparation in each dimension necessarily increases at the same rate.",
+        "Emotional preparation is adequately captured by calculating funeral costs.",
+        "Informational preparation means satisfaction with the caregiving relationship."
+      ],
+      "answer": "Preparation in one dimension need not mean preparation in the others.",
+      "explanation": "The framework arose from caregiver focus groups. A person may understand medical information and have practical arrangements in place yet remain emotionally unprepared. The dimensions should therefore be considered separately rather than reduced to a single checklist of completed tasks.",
       "evidence_segment_id": "RISK-001",
-      "source": "다차원적 준비도",
-      "difficulty": "하"
+      "source": "Risk: dimensions of preparedness",
+      "difficulty": "easy"
     },
     {
-      "prompt": "오랜 고강도 돌봄과 죽음의 확실성에 대해 논문이 내린 결론은?",
-      "options": ["두 조건이면 정서적 준비가 완성된다", "오랜 돌봄은 현실적 계획을 불필요하게 만든다", "두 조건만으로 실제 준비를 보장할 수 없다", "죽음을 예상하면 사별 증상은 생기지 않는다"],
-      "answer": "두 조건만으로 실제 준비를 보장할 수 없다",
-      "explanation": "수년간 돌봤어도 준비되지 않았다고 보고했으며, 상대적 확실성이 준비로 자동 전환되지 않았다.",
+      "prompt": "What follows from the evidence on prolonged caregiving and an expected death?",
+      "options": [
+        "Years of intensive care ensure complete emotional preparation for the loss.",
+        "A predictable death removes the need to discuss practical arrangements.",
+        "Long experience and expectation alone do not guarantee preparedness.",
+        "Anticipating death prevents later depression, anxiety, and grief symptoms."
+      ],
+      "answer": "Long experience and expectation alone do not guarantee preparedness.",
+      "explanation": "Many caregivers reported being unprepared despite years of intensive care. The authors distinguish knowing that death is likely from being emotionally, pragmatically, and informationally prepared for it. They describe the preparedness research as still developing at the time.",
       "evidence_segment_id": "RISK-001",
-      "source": "예상과 준비의 구분",
-      "difficulty": "중"
+      "source": "Risk: expectation versus preparedness",
+      "difficulty": "medium"
     },
     {
-      "prompt": "저자들이 제안한 죽음 전후 대화 질문에 포함되지 않은 것은?",
-      "options": ["죽음 전후의 돌봄 스트레스가 얼마나 컸는가", "돌봄제공자의 정치적 선호는 무엇인가", "가족과 친구의 사회적 지원은 충분했는가", "돌봄 상황에 긍정적인 측면도 있었는가"],
-      "answer": "돌봄제공자의 정치적 선호는 무엇인가",
-      "explanation": "본문의 대화 주제는 부담, 지원, 우울·불안, 긍정적 측면, 삶에 미친 영향이다.",
+      "prompt": "Which conversational approach best reflects the authors' suggestions for professional support?",
+      "options": [
+        "Ask about burden alone and end the discussion if the person describes positive experiences.",
+        "Explore stress, support, distress, positive experiences, and caregiving's meaning.",
+        "Focus only on symptoms after the death because preloss experiences are no longer relevant.",
+        "Assume that practical arrangements reveal emotional readiness without asking about it."
+      ],
+      "answer": "Explore stress, support, distress, positive experiences, and caregiving's meaning.",
+      "explanation": "The suggested conversations address burden, available support, depression and anxiety, positive experiences, and effects on life. They can occur before and after the death. A positive account does not automatically exclude risk, especially when caregiving supplied a defining purpose.",
       "evidence_segment_id": "PRACTICE-001",
-      "source": "도움이 되는 대화",
-      "difficulty": "하"
+      "source": "Practice: conversations about the caregiving experience",
+      "difficulty": "easy"
     },
     {
-      "prompt": "저자들이 죽음 전 부담 감소 중재에서 보고한 추가 이점은?",
-      "options": ["사망 뒤 복합성 애도 예방", "모든 정신질환의 영구적 제거", "재정 부담 완전 해소", "모든 돌봄제공자의 즉각적 정상화"],
-      "answer": "사망 뒤 복합성 애도 예방",
-      "explanation": "치매 돌봄제공자의 부담과 고통을 낮춘 중재는 사별 이후에도 추가 이점을 보였다.",
+      "prompt": "What additional benefit did the authors report from their trial aimed at reducing dementia-caregiver burden and distress?",
+      "options": [
+        "Prevention of complicated grief after bereavement in that trial.",
+        "Permanent elimination of all psychiatric problems in every caregiver.",
+        "Complete removal of financial pressures throughout the caregiving period.",
+        "Immediate recovery without grief symptoms for every trial participant."
+      ],
+      "answer": "Prevention of complicated grief after bereavement in that trial.",
+      "explanation": "The review reports an added preventive benefit for complicated grief from the cited randomized psychosocial–behavioral intervention trial. It does not supply an effect size here or claim universal prevention. This specific trial result is stronger evidence than an untested general recommendation, but its scope should be preserved.",
       "evidence_segment_id": "PRACTICE-001",
-      "source": "상실 전 중재",
-      "difficulty": "중"
+      "source": "Practice: reported benefit of the cited intervention trial",
+      "difficulty": "medium"
     },
     {
-      "prompt": "돌봄 역할이 삶의 주된 의미였던 사람에게 논문이 제안하는 도움은?",
-      "options": ["돌봄 경험을 더는 말하지 못하게 한다", "모든 관계를 고인과의 관계로 대체한다", "새로운 목표와 의미 원천을 찾도록 돕는다", "위험을 진단으로 확정하고 대화를 끝낸다"],
-      "answer": "새로운 목표와 의미 원천을 찾도록 돕는다",
-      "explanation": "역할과 관계의 중심성을 확인한 뒤 새로운 삶의 목적을 정립하거나 발전시키는 지원을 제안한다.",
+      "prompt": "What support do the authors suggest when caregiving supplied the person's main purpose in life?",
+      "options": [
+        "Discourage discussion of care to prevent any further reflection on its meaning.",
+        "Assume that relief from practical duties removes the need for emotional support.",
+        "Help the person identify or develop new goals and sources of meaning after losing the care role.",
+        "Treat the loss of a valued role as enough evidence to establish a diagnosis."
+      ],
+      "answer": "Help the person identify or develop new goals and sources of meaning after losing the care role.",
+      "explanation": "Professionals can help the person recognize the importance of the lost role or relationship and explore new purposes. This is a suggested way to address meaning, not a requirement to abandon the deceased or a diagnosis based solely on having valued caregiving.",
       "evidence_segment_id": "PRACTICE-001",
-      "source": "역할·의미 재구성",
-      "difficulty": "중"
+      "source": "Practice: goals and meaning after the caregiving role",
+      "difficulty": "medium"
     },
     {
-      "prompt": "인용된 상실 초점 인지행동치료의 구성요소로 옳은 것은?",
-      "options": ["상실과 관련된 이야기를 오랫동안 전부 회피하기", "죽음 이야기 재진술과 회피 상황 직면", "고인 관련 기억과 감정 억제", "오직 약물치료만 시행하기"],
-      "answer": "죽음 이야기 재진술과 회피 상황 직면",
-      "explanation": "반복적 죽음 이야기, 고인과의 상상 대화, 회피 상황에 맞서는 작업이 제시되었다.",
+      "prompt": "Which components does the review describe in the loss-focused treatment studied by Shear and colleagues?",
+      "options": [
+        "Avoiding the death narrative and postponing discussion of any associated memories.",
+        "Retelling the death, imagined dialogue, and confronting avoided situations.",
+        "Suppressing memories and feelings while limiting contact with reminders of the loss.",
+        "Using medication alone without addressing grief-related thoughts or avoided situations."
+      ],
+      "answer": "Retelling the death, imagined dialogue, and confronting avoided situations.",
+      "explanation": "The cited study compared these loss-focused cognitive-behavioral techniques with a standard interpersonal therapy approach used for depression and reported higher and faster improvement in complicated grief. This describes that study and its comparator, not proof that one approach outperforms every possible treatment or is indicated for every bereaved person.",
       "evidence_segment_id": "PRACTICE-001",
-      "source": "상실 초점 치료 구성요소",
-      "difficulty": "중"
+      "source": "Practice: components and comparator in the cited treatment study",
+      "difficulty": "medium"
     }
-  ]
+  ],
+  "language": "en"
 }

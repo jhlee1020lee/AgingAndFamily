@@ -1,124 +1,125 @@
 {
-  "title": "Lin et al. (2018) OX 퀴즈",
-  "instructions": "문장을 읽고 O 또는 X를 고르세요. 해설은 지정된 원문 세그먼트 한 곳에서 직접 확인할 수 있습니다.",
+  "title": "Lin et al. (2018) True/False Quiz",
+  "instructions": "Choose True or False for each statement. Check the explanation against its linked source segment, paying attention to the study population, measurement timing, and limits of observational evidence.",
+  "language": "en",
   "question_set_type": "OX 퀴즈",
   "items": [
     {
-      "prompt": "1990년에는 전체 이혼자의 10명 중 1명 미만이 50세 이상이었지만, 2010년에는 그 비중이 4명 중 1명을 넘었다.",
+      "prompt": "In the United States, fewer than one in ten people getting divorced were aged 50 or older in 1990, but that share exceeded one in four by 2010.",
       "answer": "O",
-      "explanation": "황혼이혼율의 상승과 인구고령화가 겹치면서 이혼을 경험하는 사람 중 생애후반기 인구의 몫이 크게 커졌다.",
+      "explanation": "The rising gray divorce rate and population aging increased older adults' share of all people getting divorced. These figures describe the age composition of divorcees, not the probability that an older married person will divorce.",
       "evidence_segment_id": "INTRO-001",
       "source": "Lin et al. (2018)",
       "difficulty": "easy"
     },
     {
-      "prompt": "Karraker와 Latham의 선행연구는 건강상태와 무관하게 모든 기혼노인을 대표하는 표본을 사용했다.",
+      "prompt": "The earlier study by Karraker and Latham used a sample representative of all married older adults, regardless of their initial health.",
       "answer": "X",
-      "explanation": "그 선행연구는 시작 시점에 신체적으로 건강한 부부만을 택한 선별표본이어서 모든 기혼노인에게 일반화하기 어려웠다.",
+      "explanation": "That study selected couples who were physically healthy at the outset. Its findings therefore could not be generalized to all married older adults at risk of gray divorce.",
       "evidence_segment_id": "INTRO-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "기대수명의 연장은 결혼이 사망으로 끝날 가능성을 낮추고 이혼 위험에 노출되는 기간을 늘리는 황혼이혼 증가 요인으로 제시됐다.",
+      "prompt": "Longer life expectancy was proposed as one explanation for rising gray divorce because it lowers the chance that marriage ends through death and extends exposure to the risk of divorce.",
       "answer": "O",
-      "explanation": "Uhlenberg와 Myers가 제시한 네 설명 중 하나로, 더 오래 사는 만큼 결혼이 이혼 위험에 놓이는 기간도 길어진다는 논리다.",
+      "explanation": "This was one of the explanations proposed by Uhlenberg and Myers: longer lives leave marriages exposed to divorce risk for longer. It is a proposed demographic explanation, not a causal effect established by this study.",
       "evidence_segment_id": "BACKGROUND-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "건강한 중년부부를 분석한 선행연구에서는 남편의 질병 발생만 이혼과 정적으로 관련되고 아내의 질병은 관련되지 않았다.",
+      "prompt": "In the earlier study of initially healthy middle-aged couples summarized in the article, only the husband's illness onset was positively associated with divorce; the wife's illness onset was unrelated to it.",
       "answer": "X",
-      "explanation": "방향이 반대다. 선행연구에서는 아내의 질병 발생이 이혼과 정적으로 관련됐고 남편의 질병은 관련되지 않았다.",
+      "explanation": "The article summarizes the opposite pattern from Karraker and Latham: the wife's illness onset was positively associated with divorce, whereas the husband's was unrelated to divorce risk. This describes the cited study, not the adjusted findings of Lin and colleagues.",
       "evidence_segment_id": "TURNING-001",
       "source": "Lin et al. (2018)",
       "difficulty": "easy"
     },
     {
-      "prompt": "AHEAD와 CODA 코호트는 연구 진입 시점부터 모두 50–64세였기 때문에 최종 분석에 유지됐다.",
+      "prompt": "The AHEAD and CODA cohorts were retained in the final analysis because their members were aged 50–64 when they entered the study.",
       "answer": "X",
-      "explanation": "두 코호트는 HRS에 들어올 때 이미 68세 이상이었고 황혼이혼이 주로 50–64세에 발생한다는 이유로 제외됐다.",
+      "explanation": "These cohorts entered the HRS at age 68 or older. They were excluded because gray divorce most often occurs between ages 50 and 64; the analysis focused on the HRS and War Baby cohorts.",
       "evidence_segment_id": "METHOD-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "빈 둥지는 가사·양육 부담을 줄일 수도 있지만, 자녀라는 이혼 장벽을 없애 관계 긴장을 드러낼 수도 있다.",
+      "prompt": "An empty nest may reduce household burdens, but it may also remove the barrier to divorce provided by resident children and expose relationship strains.",
       "answer": "O",
-      "explanation": "저자들은 같은 전환이 함께할 시간을 늘리는 자원이거나 관계 균열을 드러내는 위험일 수 있다는 양면 경로를 제시했다.",
+      "explanation": "The authors outline two possible pathways: more time together with fewer burdens, or greater exposure of marital strains without resident children as a buffer. These are competing expectations, not a finding that the transition inevitably causes divorce.",
       "evidence_segment_id": "TURNING-001",
       "source": "Lin et al. (2018)",
       "difficulty": "easy"
     },
     {
-      "prompt": "분석 가중치는 흑인·히스패닉·플로리다 거주자의 불균등 추출뿐 아니라 무응답과 표본탈락도 보정했다.",
+      "prompt": "The sampling weights adjusted for unequal selection probabilities for Black and Hispanic respondents and Florida residents, as well as nonresponse and sample attrition.",
       "answer": "O",
-      "explanation": "저자들은 표본선정확률의 차이와 비응답·탈락을 함께 조정하도록 HRS 표본가중치를 사용했다.",
+      "explanation": "The authors used HRS sampling weights to account for unequal selection, nonresponse, and attrition. Weighting does not mean every possible source of selection bias has been eliminated.",
       "evidence_segment_id": "METHOD-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "부부 중 한 사람만 면접에 응답했거나 두 배우자의 보고가 드물게 불일치하면 그 부부는 모두 분석에서 제외됐다.",
+      "prompt": "Couples were always excluded if only one spouse was interviewed or if the spouses' reports differed.",
       "answer": "X",
-      "explanation": "한 사람만 응답하면 면접한 배우자의 보고를 썼고, 드문 불일치에는 아내의 정보를 사용했다.",
+      "explanation": "When only one spouse responded, the researchers used that spouse's report. In rare cases of inconsistent reports, they used the wife's information.",
       "evidence_segment_id": "METHOD-001",
       "source": "Lin et al. (2018)",
       "difficulty": "easy"
     },
     {
-      "prompt": "십대 결혼은 현재 결혼을 시작할 때 아내나 남편 가운데 한 명이라도 20세 미만이었던 경우로 코딩됐다.",
+      "prompt": "Teen marriage was coded when either the wife or the husband was under age 20 at the start of the current marriage.",
       "answer": "O",
-      "explanation": "어느 한 배우자라도 혼인 당시 20세 미만이면 1인 시간불변 결혼이력 지표다.",
+      "explanation": "This time-invariant marital biography indicator was coded 1 if either spouse was younger than 20 when the couple married.",
       "evidence_segment_id": "MEASURE-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "배우자 연령 동질성은 남편의 나이에서 아내의 나이를 뺀 값으로 정의했고 시간불변으로 처리했다.",
+      "prompt": "The couple's age homogamy measure was defined as the husband's age minus the wife's age and treated as time invariant.",
       "answer": "O",
-      "explanation": "남편의 나이 자체는 시간가변이지만 두 배우자의 연령차는 시간불변 공변량이었다.",
+      "explanation": "The husband's age itself varied over time, whereas the age difference between spouses was treated as a time-invariant covariate.",
       "evidence_segment_id": "MEASURE-002",
       "source": "Lin et al. (2018)",
       "difficulty": "hard"
     },
     {
-      "prompt": "주택 소유와 자산은 최초 면접에서 한 번만 측정한 시간불변 변수이며 이혼과 같은 면접차수의 값을 투입했다.",
+      "prompt": "Home ownership and assets were time-invariant variables measured only at the first interview, and their values were entered from the same interview wave as divorce.",
       "answer": "X",
-      "explanation": "두 경제지표는 시간가변 변수였고 이혼보다 한 면접차수, 즉 2년 앞선 값을 사용했다.",
+      "explanation": "Both economic measures were time varying and lagged by one interview wave, or two years, to place them before divorce. Establishing this temporal order does not by itself establish causation.",
       "evidence_segment_id": "MEASURE-002",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "이변량 추정치는 가중했고 다변량 추정치는 가중하지 않아 두 분석의 모집단 기준이 달랐다.",
+      "prompt": "The bivariate estimates were weighted but the multivariate estimates were unweighted, so the two analyses used different population weighting.",
       "answer": "X",
-      "explanation": "저자들은 이변량 추정치와 다변량 추정치 모두에 기초선 표본가중치를 적용했다.",
+      "explanation": "The authors applied baseline sampling weights to both the bivariate and multivariate estimates.",
       "evidence_segment_id": "ANALYTIC-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "모든 사건사 모형에는 조사시기의 효과를 통제하기 위한 면접연도 더미변수가 포함됐다.",
+      "prompt": "All event-history models included interview-year dummy variables to account for period effects.",
       "answer": "O",
-      "explanation": "황혼이혼이 과거보다 흔해진 시간추세를 고려하기 위해 각 모형에 면접연도 지표를 넣었다.",
+      "explanation": "Each model included interview-year indicators to account for changes over calendar time, given that gray divorce had become more common than in earlier decades.",
       "evidence_segment_id": "ANALYTIC-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"
     },
     {
-      "prompt": "연구진은 결혼차수를 구분하지 않고 전체 부부만 합쳐 결혼기간별 생존확률을 추정했다.",
+      "prompt": "The researchers estimated survival probabilities by marital duration only for all couples pooled together, without distinguishing first marriages from remarriages.",
       "answer": "X",
-      "explanation": "결혼차수와 결혼기간의 상호작용 가능성을 보기 위해 초혼과 재혼을 나누어 생존확률을 추정했다.",
+      "explanation": "They estimated survival probabilities separately for first marriages and remarriages to assess a possible interaction between marriage order and duration. This analytic choice alone does not establish that an interaction exists.",
       "evidence_segment_id": "ANALYTIC-001",
       "source": "Lin et al. (2018)",
       "difficulty": "hard"
     },
     {
-      "prompt": "HRS는 직전 차수에서 추적에 실패한 응답자도 다음 차수에 다시 접촉했고, 복귀한 일부 부부를 분석에 포함했다.",
+      "prompt": "The HRS attempted to contact respondents again after a missed wave, and the researchers included some couples who returned in later waves.",
       "answer": "O",
-      "explanation": "저자들은 차등탈락 가능성을 한계로 인정하면서도 재접촉으로 후속 차수에 돌아온 부부의 자료는 사용할 수 있었다고 설명했다.",
+      "explanation": "Recontact allowed the researchers to use data from some returning couples. They still acknowledged that couples who divorced might have been more likely to drop out, potentially biasing the findings.",
       "evidence_segment_id": "LIMIT-001",
       "source": "Lin et al. (2018)",
       "difficulty": "medium"

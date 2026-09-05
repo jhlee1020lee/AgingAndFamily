@@ -1,217 +1,218 @@
 {
-  "title": "Utz et al. (2002) 객관식 퀴즈",
-  "instructions": "설계·결과·이론 해석을 비교해 가장 정확한 답을 고르세요.",
+  "title": "Utz et al. (2002): Multiple-choice practice",
+  "instructions": "Choose the best answer about the design, findings, and interpretation. Distinguish observed associations from mechanisms and proposed support strategies.",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "연구진이 사회참여를 공식적·비공식적 차원으로 분리한 가장 직접적인 이유는?",
+      "prompt": "Why did the researchers distinguish formal from informal social participation?",
       "options": [
-        "참여유형에 따라 사별 전 회고오차의 방향이 달랐기 때문에",
-        "성별에 따라 척도 문항을 달리하려고",
-        "사별 효과가 참여유형마다 다를 수 있어서",
-        "두 집단의 기초 참여평균을 맞추려고"
+        "Recall errors had already been shown to run in opposite directions for these activities.",
+        "Men and women needed different outcome items to permit a comparison of their scores.",
+        "Bereavement could relate differently to different types of participation.",
+        "The two groups needed identical baseline means before any comparison could be made."
       ],
-      "answer": "사별 효과가 참여유형마다 다를 수 있어서",
-      "explanation": "서로 다른 활동을 합치면 배우자 사별이 특정 참여유형에만 미치는 영향을 놓칠 수 있다는 것이 선행문헌 불일치에 대한 첫 설명이었다.",
+      "answer": "Bereavement could relate differently to different types of participation.",
+      "explanation": "Combining diverse activities can conceal changes specific to one type of participation. The authors identify this measurement issue as one possible explanation for inconsistent findings in earlier research.",
       "evidence_segment_id": "PRIOR-001",
-      "source": "참여유형 분리의 논리",
-      "difficulty": "하"
+      "source": "Prior research: distinguishing activity domains",
+      "difficulty": "easy"
     },
     {
-      "prompt": "혼인을 계속 유지한 대응 대조군의 핵심 역할은?",
+      "prompt": "What was the main analytical purpose of the continuously married comparison group?",
       "options": [
-        "공식활동 조사시점을 맞추는 것",
-        "사별자의 과거 기억을 현재 면접자료로 교체하기 위한 것",
-        "사별 효과와 노화·시간 경과 효과를 구분하는 것",
-        "배우자 건강상태를 분석모형의 예측변수에서 제거하기 위한 것"
+        "To standardize formal activity scores without measuring their change over time.",
+        "To replace the bereaved respondents' baseline interviews with later recollections.",
+        "To distinguish widowhood-related change from aging and the passage of time.",
+        "To remove the need to consider either spouse's health in the statistical models."
       ],
-      "answer": "사별 효과와 노화·시간 경과 효과를 구분하는 것",
-      "explanation": "대응 대조군은 사별자에게 나타난 변화를 일반적인 연령 증가나 시간의 흐름과 비교할 기준을 제공했다.",
+      "answer": "To distinguish widowhood-related change from aging and the passage of time.",
+      "explanation": "The comparison group provides a reference for changes that might occur with aging or time even without spousal loss. The prospective observational design improves this comparison but does not randomly assign widowhood or eliminate every potential confounder.",
       "evidence_segment_id": "PRIOR-001",
-      "source": "대조군의 기능",
-      "difficulty": "중"
+      "source": "Prior research: role of the comparison group",
+      "difficulty": "medium"
     },
     {
-      "prompt": "연구진이 OLS 계수로 세 가설을 판정한 방식으로 옳은 것은?",
+      "prompt": "Which coefficient patterns did the researchers initially specify as evidence relevant to the three hypotheses?",
       "options": [
-        "사별 정적은 활동, 사별 부적은 이탈, 기초참여 정적은 지속성",
-        "사별 정적은 이탈, 사별 부적은 지속성, 기초참여 정적은 활동으로 판정",
-        "사별 비유의는 활동, 기초참여 부적은 이탈, 성별 정적은 지속성",
-        "기초참여 정적은 이탈, 사별 부적은 활동"
+        "Positive widowhood: activity; negative widowhood: disengagement; positive baseline participation: continuity.",
+        "Positive widowhood: disengagement; negative widowhood: continuity; positive baseline participation: activity.",
+        "Nonsignificant widowhood: activity; negative baseline participation: disengagement; positive sex coefficient: continuity.",
+        "Positive baseline participation: disengagement; negative widowhood: activity; positive widowhood: continuity."
       ],
-      "answer": "사별 정적은 활동, 사별 부적은 이탈, 기초참여 정적은 지속성",
-      "explanation": "각 이론은 사별 계수의 방향 또는 기초참여의 예측력이라는 서로 다른 경험적 기준에 연결되었다.",
+      "answer": "Positive widowhood: activity; negative widowhood: disengagement; positive baseline participation: continuity.",
+      "explanation": "The analysis plan linked the activity and disengagement hypotheses to opposite widowhood-coefficient signs and continuity to the predictive value of baseline participation. These operational tests do not by themselves demonstrate the mechanisms proposed by a theory.",
       "evidence_segment_id": "METHOD-ANALYSIS-001",
-      "source": "이론가설의 회귀 판정",
-      "difficulty": "중"
+      "source": "Methods: operational tests of the theories",
+      "difficulty": "medium"
     },
     {
-      "prompt": "원표본에서 대조군을 개인별로 대응시킨 세 특성은?",
+      "prompt": "On which three characteristics were continuously married controls individually matched?",
       "options": [
-        "소득·교육·주택",
-        "연령·인종·성별",
-        "건강·우울·성격",
-        "취업·운전·자녀"
+        "Income, education, and homeownership.",
+        "Age, race, and sex.",
+        "Health, depression, and personality.",
+        "Employment, driving, and children."
       ],
-      "answer": "연령·인종·성별",
-      "explanation": "사별자와 비교 가능한 시점에 재면접한 대조군은 연령, 인종, 성별을 기준으로 개인별 대응되었다.",
+      "answer": "Age, race, and sex.",
+      "explanation": "Controls were individually matched on age, race, and sex and reinterviewed at times comparable to the bereaved respondents. The original eligibility rule required the husband to be at least 65; it did not require every wife to be at least 65.",
       "evidence_segment_id": "METHOD-SAMPLE-001",
-      "source": "대조군 대응 기준",
-      "difficulty": "하"
+      "source": "Methods: matched comparison sample",
+      "difficulty": "easy"
     },
     {
-      "prompt": "그림 1의 기초시점부터 1차 조사까지 평균변화를 정확히 설명한 것은?",
+      "prompt": "Which statement describes the unadjusted mean changes in Figure 1 from baseline to Wave 1?",
       "options": [
-        "두 집단 모두 공식·비공식 참여가 같은 폭으로 상승했다",
-        "사별자는 두 참여가 감소했고 대조군은 일정했다",
-        "사별자는 공식 참여만 상승하고 비공식 참여는 감소했다",
-        "대조군은 두 참여가 감소했고 사별자는 비교적 일정했다"
+        "Both groups increased equally in formal and informal participation.",
+        "Bereaved respondents declined in both domains, while controls stayed stable.",
+        "Bereaved respondents increased formally but declined informally.",
+        "Controls declined in both domains; bereaved respondents were relatively stable."
       ],
-      "answer": "대조군은 두 참여가 감소했고 사별자는 비교적 일정했다",
-      "explanation": "반복측정 검정에서 대조군의 비공식·공식 참여는 유의하게 감소했지만 사별자의 두 평균은 시간에 따라 비교적 안정적이었다.",
+      "answer": "Controls declined in both domains; bereaved respondents were relatively stable.",
+      "explanation": "The repeated-measures comparisons showed significant declines in both outcomes among controls and relatively stable means among bereaved respondents. This descriptive pattern is distinct from the positive adjusted widowhood coefficient for informal participation in the later regression models.",
       "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
-      "source": "그림 1의 평균변화",
-      "difficulty": "중"
+      "source": "Results: Figure 1 and descriptive change",
+      "difficulty": "medium"
     },
     {
-      "prompt": "표 1에서 사별자가 대조군보다 유의하게 높은 수준 또는 비율을 보인 특성의 묶음은?",
+      "prompt": "Which characteristics were significantly higher among bereaved respondents than controls in Table 1?",
       "options": [
-        "교육연수, 가구소득, 자동차 운전",
-        "우울, 배우자 돌봄, 나쁨·보통인 배우자 건강",
-        "주택소유, 유급취업, 생존 자녀",
-        "공식 참여, 개인의 좋은 건강, 외향성"
+        "Years of schooling, household income, and ability to drive.",
+        "Depression, spousal caregiving, and poor or fair spousal health.",
+        "Homeownership, paid employment, and having surviving children.",
+        "Formal participation, good personal health, and extraversion."
       ],
-      "answer": "우울, 배우자 돌봄, 나쁨·보통인 배우자 건강",
-      "explanation": "두 집단은 주요 인구학적 특성이 비슷했지만 사별자는 우울이 더 높고, 기초시점 배우자 돌봄과 배우자의 나쁨·보통 건강을 보고할 가능성이 더 컸다.",
+      "answer": "Depression, spousal caregiving, and poor or fair spousal health.",
+      "explanation": "Depression was measured at Wave 1, whereas caregiving and spousal health referred to baseline. The groups were otherwise similar on many major demographic characteristics. The different measurement times matter when interpreting these comparisons.",
       "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
-      "source": "표 1의 집단 차이",
-      "difficulty": "중"
+      "source": "Results: Table 1 group differences",
+      "difficulty": "medium"
     },
     {
-      "prompt": "기초참여를 모형 3에 추가했을 때 조정 R² 변화로 맞는 것은?",
+      "prompt": "What happened to model fit when baseline participation was added in Model 3?",
       "options": [
-        "공식 .13→.46, 비공식 .16→.29",
-        "공식 .16→.29, 비공식 .13→.46으로 반전",
-        "공식 .29→.16, 비공식 .46→.13으로 감소",
-        "공식 .13→.29, 비공식 .16→.46으로 이동"
+        "It improved for both outcomes, with the larger gain for formal participation.",
+        "It improved for informal participation but worsened for formal participation.",
+        "It worsened for both outcomes after earlier participation was controlled.",
+        "It remained unchanged because current participation was unrelated to baseline."
       ],
-      "answer": "공식 .13→.46, 비공식 .16→.29",
-      "explanation": "기초시점 참여를 포함하면서 두 결과모형의 설명력이 높아졌고, 특히 공식 참여모형의 증가가 컸다.",
+      "answer": "It improved for both outcomes, with the larger gain for formal participation.",
+      "explanation": "Adjusted R² increased from .13 to .46 for formal participation and from .16 to .29 for informal participation. Earlier participation strongly predicted later participation in the same domain. This supports stability over the observed interval, not unchanging networks throughout life.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "모형 적합도 개선",
-      "difficulty": "중"
+      "source": "Results: contribution of baseline participation",
+      "difficulty": "medium"
     },
     {
-      "prompt": "외향성과 우울의 1차 조사 사회참여 관계를 바르게 서술한 것은?",
+      "prompt": "Which directions describe the Model 2 associations reported for extraversion and depression?",
       "options": [
-        "외향성은 두 참여에 정적이고 우울은 비공식 참여에 부적이었다",
-        "외향성은 공식 참여에만 부적이고 우울은 비공식 참여에 정적이었다",
-        "외향성과 우울이 모두 두 참여유형에서 부적인 계수를 보였다",
-        "외향성은 비공식 참여에만 정적이고 우울은 공식 참여에만 부적이었다"
+        "Extraversion was positive in both domains; depression was negative informally.",
+        "Extraversion was negative formally; depression was positive informally.",
+        "Extraversion and depression were both negative in both participation domains.",
+        "Extraversion was positive only informally; depression was negative only formally."
       ],
-      "answer": "외향성은 두 참여에 정적이고 우울은 비공식 참여에 부적이었다",
-      "explanation": "외향성 계수는 공식 .09와 비공식 .11로 정적이었고, 우울은 비공식 참여에서 −.09였다. 세 계수는 p ≤ .05였다.",
+      "answer": "Extraversion was positive in both domains; depression was negative informally.",
+      "explanation": "The reported Model 2 coefficients were .09 and .11 for extraversion in formal and informal participation, and −.09 for depression in informal participation. These directions are specific to Model 2. The prose assigns p ≤ .05 to formal extraversion, but the retained Table 3 marks .09 with an interaction footnote rather than a significance star; that marking discrepancy remains unresolved.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "성격·우울의 예측방향",
-      "difficulty": "중"
+      "source": "Results: Model 2 coefficient directions",
+      "difficulty": "medium"
     },
     {
-      "prompt": "평균적인 사별 효과 안에서 특히 낮은 사회참여와 연결된 조건은?",
+      "prompt": "Which circumstances were associated with particularly low participation among bereaved respondents?",
       "options": [
-        "높은 소득, 높은 교육, 성인자녀와의 동거",
-        "백인, 주택소유, 유급취업",
-        "높은 외향성, 운전 가능, 좋은 배우자 건강",
-        "낮은 사회경제적 지위, 아프리카계 미국인, 무자녀"
+        "Higher income, more education, and greater access to private transportation.",
+        "White racial identification, homeownership, and continued paid employment.",
+        "Higher extraversion, being able to drive, and good baseline spousal health.",
+        "Lower socioeconomic resources, African American identity, or childlessness."
       ],
-      "answer": "낮은 사회경제적 지위, 아프리카계 미국인, 무자녀",
-      "explanation": "사별은 소득·교육·인종과 상호작용했고, 사회경제적 자원이 낮거나 아프리카계 미국인이거나 자녀가 없는 사별자가 더 취약했다.",
+      "answer": "Lower socioeconomic resources, African American identity, or childlessness.",
+      "explanation": "The authors report widowhood interactions with income, education, and race and identify childless bereaved respondents as another vulnerable group. These findings concern unequal material and interpersonal resources in this sample. They do not establish an inherent racial trait or identical circumstances for every person in a category.",
       "evidence_segment_id": "RESULTS-MODELS-001",
-      "source": "자원별 사별 효과",
-      "difficulty": "중"
+      "source": "Results: variation by available resources",
+      "difficulty": "medium"
     },
     {
-      "prompt": "그림 2를 토대로 비공식 참여 증가의 경로를 가장 신중하게 해석한 것은?",
+      "prompt": "Which interpretation of Figure 2 most cautiously explains the higher informal participation after bereavement?",
       "options": [
-        "생존 배우자가 결혼 중 관계를 끊고 새 조직에 가입했다",
-        "남성만 배우자의 사회활동 조정 역할을 직접 대신했다",
-        "친구와 친척이 걱정하며 먼저 접촉했을 가능성이 있다",
-        "지역단체가 정기 모임 참여를 먼저 권했을 가능성이 있다"
+        "Survivors replaced their marital networks by joining unfamiliar organizations.",
+        "Men alone took over the social coordination previously performed by spouses.",
+        "Friends and relatives may have initiated additional contact and support.",
+        "Community organizations increased attendance by enrolling survivors in meetings."
       ],
-      "answer": "친구와 친척이 걱정하며 먼저 접촉했을 가능성이 있다",
-      "explanation": "본인의 관심 증가보다 주변인의 관심 증가가 더 흔해, 관찰된 변화가 추가 지원을 받은 결과일 가능성을 제시했다.",
+      "answer": "Friends and relatives may have initiated additional contact and support.",
+      "explanation": "More respondents reported increased interest from others than increased interest of their own: 35% versus 17%, while 71% reported unchanged personal interest. These are the survivors' perceptions, not independent reports from their contacts. They suggest a possible support process rather than establish who caused every increase in contact.",
       "evidence_segment_id": "RESULTS-MOTIVES-001",
-      "source": "수동적 지원 경로",
-      "difficulty": "중"
+      "source": "Results: reported interest in contact",
+      "difficulty": "medium"
     },
     {
-      "prompt": "논의에서 말하는 ‘과정으로서의 사별’을 가장 잘 나타내는 설명은?",
+      "prompt": "What does the discussion mean by treating widowhood as a process?",
       "options": [
-        "배우자 사망일을 기준으로 상태 전환이 완료된다고 보는 관점이다",
-        "배우자 질병기의 참여 감소부터 사망 뒤 조정까지 이어진다",
-        "사망일 직후의 장례기간을 중심으로 변화가 충분히 설명된다고 본다",
-        "사별 전 자료 없이도 선택특성과 사별 효과를 분리할 수 있다고 본다"
+        "The transition is completed when the spouse dies and marital status changes.",
+        "Adjustment can begin during spousal illness and continue after the death.",
+        "The funeral period provides a sufficient account of the entire adjustment.",
+        "Preloss observations are unnecessary for distinguishing selection from change."
       ],
-      "answer": "배우자 질병기의 참여 감소부터 사망 뒤 조정까지 이어진다",
-      "explanation": "전향자료는 적응이 실제 사망 전에 시작되고 초기 애도기간을 넘어 계속되는 시간적 흐름임을 보여 주었다.",
+      "answer": "Adjustment can begin during spousal illness and continue after the death.",
+      "explanation": "Lower preloss participation among future widowed respondents and those with ill spouses suggests that adjustment may start before death. The authors interpret postloss changes as part of a continuing process shaped by multiple people and resources, rather than a single uniform event.",
       "evidence_segment_id": "DISCUSSION-SUMMARY-001",
-      "source": "사별의 과정적 성격",
-      "difficulty": "하"
+      "source": "Discussion: the process of bereavement",
+      "difficulty": "easy"
     },
     {
-      "prompt": "지속성이론이 생애 전체에서 입증됐다고 단정하기 어려운 이유는?",
+      "prompt": "Why do these findings not establish continuity of social networks throughout the entire life course?",
       "options": [
-        "기초시점 참여를 회귀모형에 입력하지 않았기 때문에",
-        "사별자의 접촉 선호를 질문하지 않았기 때문에",
-        "공식 참여와 비공식 참여를 하나의 척도로 합쳤기 때문에",
-        "65세 이전의 선택적 연결망 축소를 관찰하지 못했기 때문에"
+        "The models excluded baseline participation and therefore had no earlier comparison.",
+        "Respondents were never asked whether they preferred more or less contact after loss.",
+        "Formal and informal participation were combined into one undifferentiated outcome.",
+        "Earlier-life network selection was not observed; two-wave stability is more limited."
       ],
-      "answer": "65세 이전의 선택적 연결망 축소를 관찰하지 못했기 때문에",
-      "explanation": "분석대상이 65세 초과라 관찰된 것은 생애 전체의 불변성이라기보다 두 자료수집 차수 사이의 안정성일 수 있다.",
+      "answer": "Earlier-life network selection was not observed; two-wave stability is more limited.",
+      "explanation": "The discussion asks whether apparent continuity simply reflects stability between the observed waves after earlier network selection. Its wording that all participants were older than 65 is broader than the methods' eligibility rule, which specified husbands aged at least 65. The question therefore concerns the unobserved life-course history without assuming every respondent met that age threshold.",
       "evidence_segment_id": "DISCUSSION-THEORY-001",
-      "source": "지속성이론 해석의 범위",
-      "difficulty": "중"
+      "source": "Discussion: limits of the continuity interpretation",
+      "difficulty": "medium"
     },
     {
-      "prompt": "사회정서선택이론이 설명하는 노년기 사회연결망은?",
+      "prompt": "How does the discussion characterize social networks in socioemotional selectivity theory?",
       "options": [
-        "전환기의 스트레스 속에서 정체성과 지원을 제공하는 엄선된 동반자 집단",
-        "생애에 걸쳐 이득을 키우고 위험을 줄이도록 선택된 연결망",
-        "상실한 역할을 새 활동으로 보상한 관계망",
-        "과거 참여습관을 안정적으로 유지한 관계망"
+        "Selected companions provide identity and support during stressful transitions.",
+        "Life-course selections favor emotional and social gains while limiting risks.",
+        "New activities replace every lost role to compensate for reduced involvement.",
+        "Established participation habits persist unchanged despite every life transition."
       ],
-      "answer": "생애에 걸쳐 이득을 키우고 위험을 줄이도록 선택된 연결망",
-      "explanation": "이 관점은 사회적·정서적 이득을 극대화하고 위험을 최소화하는 전략적 선택의 누적으로 노년기 연결망을 설명한다.",
+      "answer": "Life-course selections favor emotional and social gains while limiting risks.",
+      "explanation": "Socioemotional selectivity emphasizes strategic partner selection across the life course. The first option instead describes the social convoy model. The authors suggest these developmental perspectives may be useful; this paper does not comprehensively validate either theory.",
       "evidence_segment_id": "DISCUSSION-THEORY-001",
-      "source": "사회정서선택이론",
-      "difficulty": "중"
+      "source": "Discussion: socioemotional selectivity and social convoys",
+      "difficulty": "medium"
     },
     {
-      "prompt": "접촉 빈도가 포착하지 못한다고 지적한 요소를 보완하려면 무엇을 함께 측정해야 하나요?",
+      "prompt": "Which additional measurement would address what contact frequency alone may miss?",
       "options": [
-        "활동의 주관적 의미와 정서적 질을 함께 측정한다",
-        "활동에 참여하기 위해 이동한 거리와 소요시간",
-        "접촉한 사람의 수와 전체 연결망의 규모",
-        "공식·비공식 활동의 월별 참여빈도를 다시 측정한다"
+        "The subjective meaning and emotional quality of each activity.",
+        "The travel distance and time required to attend each activity.",
+        "The total number of contacts and the size of the wider network.",
+        "The monthly frequency of formal and informal activities again."
       ],
-      "answer": "활동의 주관적 의미와 정서적 질을 함께 측정한다",
-      "explanation": "접촉 빈도만으로는 관계나 활동의 정서적 질을 알 수 없으므로, 각 활동의 의미와 가치가 역할 채택·포기에 미치는 영향을 살필 필요가 있다.",
+      "answer": "The subjective meaning and emotional quality of each activity.",
+      "explanation": "Frequent contact need not reveal how meaningful or emotionally rewarding an activity is. The authors recommend studying those qualities and perceived stress associated with role changes, as well as the couple-level context of participation.",
       "evidence_segment_id": "DISCUSSION-LIMITS-001",
-      "source": "사회참여 측정의 한계",
-      "difficulty": "중"
+      "source": "Discussion: limitations of frequency measures",
+      "difficulty": "medium"
     },
     {
-      "prompt": "연구결과에 가장 부합하는 사별 지원의 설계 원칙은?",
+      "prompt": "Which support principle best reflects the authors' practical recommendations?",
       "options": [
-        "새 활동과 새 지인의 수를 우선적으로 확대해 참여량을 높이는 프로그램",
-        "공식기관 참여를 가족·이웃 접촉보다 먼저 의무화하는 방식",
-        "기존의 의미 있는 관계와 일상역할의 단절을 줄이는 지원",
-        "최근 사별자의 공식활동 확대에 지원 우선순위를 두는 접근"
+        "Prioritize the number of new activities and acquaintances available to survivors.",
+        "Require formal organizational participation before supporting family contact.",
+        "Reduce disruption of meaningful existing relationships and daily roles.",
+        "Direct support mainly toward expanding formal activities immediately after loss."
       ],
-      "answer": "기존의 의미 있는 관계와 일상역할의 단절을 줄이는 지원",
-      "explanation": "저자들은 활동 그 자체보다 평생의 의미 있는 관계와 활동을 유지하게 하고 교통·통신으로 연속성을 돕는 개입을 권했다.",
+      "answer": "Reduce disruption of meaningful existing relationships and daily roles.",
+      "explanation": "The authors propose helping survivors sustain valued relationships through options such as flexible transport and communication, with attention to limited resources and preloss caregiving. They caution against activity for its own sake. These are practice recommendations from observational findings, not a trial demonstrating the comparative effectiveness of particular programs.",
       "evidence_segment_id": "DISCUSSION-PRACTICE-001",
-      "source": "개입의 우선 원칙",
-      "difficulty": "중"
+      "source": "Discussion: proposed support strategies",
+      "difficulty": "medium"
     }
-  ]
+  ],
+  "language": "en"
 }

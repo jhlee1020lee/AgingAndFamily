@@ -1,162 +1,163 @@
 {
-  "title": "Carstensen et al. (1999) 교수님 질문 대비",
-  "instructions": "결론을 먼저 말하고 시간 관점, 목표, 근거의 설계와 한계를 30초 안에 연결하세요. 이론·관찰·실험·추측의 층위를 구분합니다.",
+  "title": "Carstensen et al. (1999): Professor Question Practice",
+  "language": "en",
+  "instructions": "State your conclusion first, then connect time perspective, goals, study design, and limitations in a 30-second answer. Distinguish theoretical claims, observations, experiments, and conjectures.",
   "question_set_type": "교수 스타일 예상문제",
   "cards": [
     {
       "card_id": "carstensen-prep-01",
-      "title": "사회정서선택이론의 핵심 주장을 한 문장으로 말해 보세요.",
-      "answer_30s": "사회정서선택이론은 사회적 목표를 조직하는 핵심 변수가 지각된 미래 시간이라고 봅니다. 시간이 개방되어 있다고 느끼면 지식 습득 목표를, 제한되어 있다고 느끼면 정서 조절 목표를 우선합니다. 연령은 남은 시간과 연관되지만 시간 관점은 변화할 수 있어서 시간 제약이 생기면 젊은 사람과 노인 모두의 목표가 달라질 수 있습니다.",
+      "title": "State the central claim of socioemotional selectivity theory in one sentence.",
+      "answer_30s": "Socioemotional selectivity theory proposes that perceived future time organizes social goals: an open-ended future favors knowledge acquisition, whereas limited time favors emotion regulation. Age is associated with time remaining, but time perspective can change. Imposing time constraints can therefore shift the goals of both younger and older people.",
       "evidence_segment_id": "ABS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-02",
-      "title": "SST의 세 가정과 두 목표 범주를 설명해 보세요.",
-      "answer_30s": "SST는 사회적 상호작용이 생존에 핵심이고, 인간은 목표를 추구하는 행위자이며, 여러 목표가 충돌할 수 있어 선택이 행동에 앞선다고 가정합니다. 사회적 목표는 기능상 지식 습득과 정서 조절로 나뉩니다. 전자는 사회·물리적 세계와 자신을 배우는 것이고, 후자는 정서 상태·삶의 의미·친밀감·사회적 연결감을 조절하는 것입니다.",
+      "title": "Explain the three assumptions and two goal categories of SST.",
+      "answer_30s": "SST assumes that social interaction is central to survival, people actively pursue goals, and goal selection precedes action because multiple goals can conflict. It distinguishes knowledge acquisition from emotion regulation by their function. The former involves learning about the social and physical world and oneself; the latter includes managing feelings, finding meaning, gaining intimacy, and feeling socially connected.",
       "evidence_segment_id": "TENETS-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-03",
-      "title": "지식 목표와 정서 목표를 양자택일로 보면 왜 틀리나요?",
-      "answer_30s": "두 목표는 모두 필수적이고 함께 존재할 수 있으며 절대적·상호배타적이지 않습니다. 미래가 개방되면 장기 보상을 위한 지식 목표가 상대적으로 앞서고, 제한되면 현재의 의미와 만족을 위한 정서 목표가 앞섭니다. ‘지식’과 ‘정서’는 행동에 감정이 있느냐를 가르는 말이 아니라 그 선택의 우세한 동기를 표시하는 휴리스틱입니다.",
+      "title": "Why is it wrong to treat knowledge and emotional goals as mutually exclusive?",
+      "answer_30s": "Both goal classes are essential and can coexist. An expansive future gives relatively greater priority to knowledge for later rewards, whereas limited time favors present emotional meaning and satisfaction. The labels describe the main motive for a choice, rather than whether the behavior involves feelings. Information seeking can be emotional, and emotionally motivated contact can also provide information.",
       "evidence_segment_id": "TENETS-002",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-04",
-      "title": "연령 자체와 남은 시간의 지각을 어떻게 구분해야 하나요?",
-      "answer_30s": "조사상 나이가 들수록 미래를 더 제한적으로 보지만, SST에서 연령은 기제가 아니라 남은 시간을 나타내는 강한 지표입니다. 저자들은 종결이 다가오면 정서 조절과 친숙한 상대가 중요해진다고 예측하고, 자연 하위집단과 시간 조작으로 연령과 시간을 분리하려 했습니다. Figure 1의 목표 궤적도 실측 종단자료가 아니라 이상화된 이론 도식입니다.",
+      "title": "How should we distinguish chronological age from perceived time remaining?",
+      "answer_30s": "Older respondents generally describe a more limited future, but SST treats age as a proxy for time remaining rather than the explanatory mechanism itself. The authors predict greater emphasis on emotional goals and familiar partners near endings, and use natural subgroups and time manipulations to separate age from time. Figure 1 presents idealized theoretical trajectories, rather than measured longitudinal trajectories.",
       "evidence_segment_id": "TIMEDEV-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-05",
-      "title": "사회적 상대 분류와 HIV 하위집단 연구가 무엇을 보여 주나요?",
-      "answer_30s": "참가자는 18개 상대 카드를 예상 느낌의 유사성에 따라 묶었고, 분석에서는 정서적 잠재력·미래 접촉·정보 추구 차원이 나왔습니다. 모두 남성이며 평균연령 37세인 HIV 음성, 양성 무증상, 양성 유증상/AIDS 집단 중 유증상 집단은 거의 전적으로 정서 차원에 비중을 두어 최고령 집단과 비슷했습니다. 같은 연령대에서 생애 말기 근접성을 비교한 자연집단 근거입니다.",
+      "title": "What do the social-partner sorting and HIV-subgroup studies show?",
+      "answer_30s": "Participants sorted 18 partner cards by similarity of anticipated feelings. Analyses identified affective potential, future contact, and information seeking. Three male HIV-status groups each averaged 37 years: HIV-negative, positive but asymptomatic, and positive with AIDS symptoms. The symptomatic group weighted affective potential almost exclusively, resembling the oldest age group. This compares naturally occurring groups near different life endings; HIV status was not randomly assigned.",
       "evidence_segment_id": "PARTNER-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-06",
-      "title": "우연기억 결과를 절대 회상량과 구분해 설명해 보세요.",
-      "answer_30s": "20~83세 참가자는 두 쪽짜리 사회적 장면을 읽고 약 한 시간 뒤 예고되지 않은 회상을 했습니다. 예측은 노인이 정서 항목을 절대적으로 더 많이 기억한다는 것이 아니라, 기억한 전체 내용 중 정서 내용의 비율이 더 크다는 것이었습니다. 그 비율은 20~29세 .20에서 70~83세 .34로 높아졌습니다.",
+      "title": "Explain the incidental-memory finding without confusing proportions with absolute recall.",
+      "answer_30s": "Participants aged 20 to 83 read a two-page social scene and unexpectedly recalled it about an hour later. The prediction concerned a larger emotional share of what older adults remembered, rather than a greater absolute amount of emotional recall than younger adults. The reported emotional proportion rose from .20 among ages 20 to 29 to .34 among ages 70 to 83.",
       "evidence_segment_id": "MEMORY-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-07",
-      "title": "정서조절 향상에 관한 근거와 당시의 한계는 무엇인가요?",
-      "answer_30s": "정서유발 실험에서 젊은 사람과 노인의 주관적 강도는 비슷했지만, 여러 횡단 표본에서 노인은 정서 변동성과 긴박감이 낮고 부정 정서를 더 잘 통제한다고 보고했습니다. 다양한 문화·집단에서 비슷한 결과가 있었고 생리활동도 더 낮았습니다. 그러나 당시에는 정서조절의 종단연구가 없어 코호트 대안을 배제할 수 없었습니다.",
+      "title": "What supported better emotion regulation, and what limitation remained in 1999?",
+      "answer_30s": "Laboratory emotion inductions produced similarly intense subjective feelings in younger and older adults. Across several samples, older adults reported less emotional lability and surgency and better control of negative emotions; physiological activity was also lower. Similar reports across diverse cultural and social groups strengthened the pattern. However, the article reported no longitudinal emotion-regulation studies at that time, so cohort differences remained a possible explanation.",
       "evidence_segment_id": "EMOREG-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-08",
-      "title": "경험표집에서 정서의 빈도·강도·지속은 어떻게 달랐나요?",
-      "answer_30s": "18~95세에게 일주일 동안 무작위로 35번 19가지 정서를 보고하게 했습니다. 긍정 정서의 빈도와 강도는 유지됐습니다. 부정 정서 빈도는 대체로 줄다가 초고령기에 다소 다시 늘었지만 젊은 성인기보다 높지는 않았고, 강도는 줄지 않았습니다. 부정 정서의 지속 가능성은 노년층에서 더 낮았고 저자들은 결과를 예비적이라고 했습니다.",
+      "title": "How did emotional frequency, intensity, and persistence differ in experience sampling?",
+      "answer_30s": "Adults aged 18 to 95 reported 19 emotions at 35 random prompts over one week. Positive-emotion frequency and intensity were maintained. Negative emotions generally became less frequent, with a modest rise at very old ages that did not exceed young-adult levels; their intensity did not decline. Negative emotions were less likely to persist to the next prompt in older adults. The authors called these findings preliminary.",
       "evidence_segment_id": "EMOREG-002",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-09",
-      "title": "연결망 축소를 왜 상실만으로 설명하면 안 되나요?",
-      "answer_30s": "Child Guidance Study에서는 같은 사람을 18·30·40·50세에 보았을 때 지인과의 접촉은 줄었지만 배우자·부모·형제자매 관계는 유지되거나 늘었고, 이 선택은 광범위한 노화 상실 전에 시작됐습니다. Berlin 표본도 최고령층의 주변 관계는 적지만 친밀한 내적 원은 거의 보존됐습니다. 저자들은 상실을 인정하면서 선제적 가지치기도 함께 해석합니다.",
+      "title": "Why should shrinking social networks not be explained by loss alone?",
+      "answer_30s": "The Child Guidance Study followed the same people at ages 18, 30, 40, and 50. Acquaintance contact declined, while contact with spouses, parents, and siblings remained stable or increased, beginning before widespread age-related losses. In the cross-sectional Berlin sample, the oldest adults had fewer peripheral partners but a similar close inner circle. The authors acknowledge loss while interpreting selective reductions as also consistent with proactive pruning.",
       "evidence_segment_id": "NETWORK-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-10",
-      "title": "이사와 생명 연장 상상 실험은 어떤 연령차를 바꿨나요?",
-      "answer_30s": "11~92세에게 직계가족, 공통 관심사의 최근 지인, 책 저자 중 30분을 보낼 상대를 고르게 했습니다. 곧 이사한다고 상상한 제한조건에서는 젊은이도 노인처럼 친숙한 상대를 선호했습니다. 의사가 약 20년 더 살 가능성을 알린다고 상상한 연장조건에서는 노인의 친숙한 상대 우세가 사라졌고, 젊은이의 선호는 안정적이었습니다.",
+      "title": "Which age differences changed in the imagined-moving and life-extension experiments?",
+      "answer_30s": "In the first study, participants aged 11 to 92 chose a partner for 30 minutes: immediate family, a recent acquaintance with shared interests, or a book author. Imagining an approaching move made younger people prefer familiar partners as older people did. In a later study, imagining a medical breakthrough likely to add 20 years removed older adults' familiar-partner bias, while younger adults' preferences remained stable.",
       "evidence_segment_id": "PREFER-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-11",
-      "title": "홍콩 반환 전후 결과와 해석의 한계를 말해 보세요.",
-      "answer_30s": "홍콩의 8~90세 표본에서 이민을 상상한 젊은이도 친숙한 상대를 선호했습니다. 1997년 반환 약 4개월 전에는 실제 종결이 가까워 젊은이와 노인 모두 친숙한 상대를 선호했고, 1년 뒤에는 연령-선호 관련성이 앞선 일반 양상으로 돌아왔습니다. 반환은 연구자가 배정한 실험이 아니라 역사적 맥락이므로 자연 관찰로 해석해야 합니다.",
+      "title": "Describe the Hong Kong findings and their interpretive limits.",
+      "answer_30s": "In a Hong Kong sample aged 8 to 90, imagining emigration led younger people to favor familiar partners too. About four months before the 1997 handover, younger and older people both preferred familiar partners amid an anticipated historical ending. One year later, the usual age-related preference pattern returned. The handover observations concern a naturally occurring historical context, distinct from randomly assigning people to an ending.",
       "evidence_segment_id": "PREFER-002",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-12",
-      "title": "SST와 SOC는 어떤 관계인가요?",
-      "answer_30s": "저자들은 SST를 보상을 수반한 선택적 최적화, 즉 SOC를 보완하는 이론으로 봅니다. SOC는 생애 적응에서 선택·최적화·보상의 일반 과정을 설명하지만 어떤 목표가 선택되는지는 특정하지 않습니다. SST는 시간이 제한될 때 사회·정서 영역에서 정서 목표와 의미 있는 상대가 선택되고, 관계 범위를 줄여 자원을 보상·최적화한다고 구체화합니다.",
+      "title": "How does SST relate to selective optimization with compensation?",
+      "answer_30s": "The authors present SST as complementary to selective optimization with compensation, or SOC. SOC describes general processes of selection, optimization, and compensation in adaptation, but does not specify which goals people select. SST specifies that limited time prioritizes emotional goals and meaningful partners in social life. Selecting a smaller range of partners may optimize emotional experience and compensate for reduced physical or cognitive resources.",
       "evidence_segment_id": "LIFESPAN-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-13",
-      "title": "문화적 보편성과 문화차를 어떻게 함께 말해야 하나요?",
-      "answer_30s": "저자들은 사회적 유대의 기본 능력과 연령-죽음의 관계 때문에 SST의 핵심 예측이 문화 전반에 나타날 가능성을 제안합니다. 동시에 관계의 의미, 사회적 목표, 죽음에 대한 믿음은 문화마다 다르고 같은 조작도 다른 의미가 될 수 있다고 한정합니다. 예를 들어 이동이 일상적이거나 귀환이 예상되는 문화에서는 이사 상상이 종결로 작동하지 않을 수 있습니다.",
+      "title": "How can cultural universality and cultural differences both matter?",
+      "answer_30s": "The authors suggest that core predictions may extend across cultures because social bonding, time perception, and the association between age and mortality are widely shared. They also stress cultural variation in relationships, social goals, and beliefs about death. The same manipulation can therefore have different meanings: imagining a move may not imply an ending in a nomadic culture where return is expected.",
       "evidence_segment_id": "CULTURE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-14",
-      "title": "인지심리학에 대한 함의를 과장하지 않고 설명해 보세요.",
-      "answer_30s": "일부 출처기억 연구에서 노인은 감각·시각·공간 정보는 덜 기억하지만 자신의 생각과 느낌은 더 기억했고, 사실 또는 정서에 초점을 맞추라는 지시가 연령차를 바꾸었습니다. 저자들은 동기적 초점이 일부 인지 연령차에 기여할 가능성을 제시합니다. 다만 생물학적 인지저하를 부정하지 않고 동기와 탈억제 설명 중 어느 것도 확정하지 않습니다.",
+      "title": "Explain the implications for cognitive psychology without overstating them.",
+      "answer_30s": "Some source-memory studies found that older adults recalled less sensory, visual, and spatial information but more of their own thoughts and feelings. Instructions to focus on facts or feelings altered age differences. The authors propose that motivational focus may contribute to some cognitive age differences. They do not dispute biological declines in cognitive resources, and do not settle the competing motivational and disinhibition explanations.",
       "evidence_segment_id": "COGNITIVE-001",
       "question_type": "교수 스타일 예상문제"
     },
     {
       "card_id": "carstensen-prep-15",
-      "title": "임상적 함의를 현재 치료조언으로 바꾸면 왜 안 되나요?",
-      "answer_30s": "저자들은 생의 종결이 반드시 부정 정서를 높이지 않는다는 관찰을 바탕으로, 생애 말기에 괴로워하는 사람에게 현재초점을 장려하는 일이 도움이 될 가능성을 제안합니다. 그러나 이를 직접 ‘우리의 추측’이라고 부르며 치료시험 결과로 제시하지 않았습니다. 따라서 1999년의 이론적 가설이지 검증된 치료법이나 개인에게 적용할 현재 임상 권고가 아닙니다.",
+      "title": "Why should the clinical implications not be presented as established treatment advice?",
+      "answer_30s": "Observations that endings do not necessarily increase negative emotion led the authors to suggest that encouraging present focus might help people distressed near the end of life. They explicitly describe this as conjecture, rather than a treatment-trial finding. It is a theoretical research proposal from 1999, so this article does not establish an effective treatment or a current recommendation for an individual.",
       "evidence_segment_id": "CLINICAL-001",
       "question_type": "교수 스타일 예상문제"
     }
   ],
   "reading_response": {
-    "title": "“어떻게 읽었어요?” 답변 준비",
-    "instructions": "개인적 반응을 말하되 해당 세그먼트가 직접 뒷받침하는 근거와 한계를 함께 붙이세요.",
+    "title": "Practice Answering: How Did You Read This Paper?",
+    "instructions": "Give your personal response, then connect it to evidence and limitations directly supported by the linked source segment.",
     "cards": [
       {
         "card_id": "carstensen-reading-01",
-        "title": "30초 기본 답변",
-        "answer_30s": "저는 이 논문을 ‘노인은 원래 정서적이다’라는 연령 설명을 시간 관점의 동기이론으로 바꾼 글로 읽었습니다. 미래가 열려 있으면 지식 목표가, 제한되면 정서 목표가 우선되고, 시간 제약이 주어지면 젊은 사람과 노인 모두 달라질 수 있습니다. 그래서 연령차를 고정된 성향보다 변화 가능한 시간 지각과 연결한 점이 핵심이라고 생각했습니다.",
+        "title": "A 30-second overall response",
+        "answer_30s": "I read this paper as replacing a fixed age-based account of emotional priorities with a motivational account centered on time perspective. An open future favors knowledge goals, whereas limited time favors emotional goals; imposed time constraints can change younger and older people alike. For me, the key contribution was linking age differences to a changeable perception of time rather than a fixed disposition.",
         "evidence_segment_id": "ABS-001",
         "response_angle": "overall",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "carstensen-reading-02",
-        "title": "나이보다 남은 시간이 중요하다는 대목이 왜 설득력 있었나요?",
-        "answer_30s": "저는 평균연령이 모두 37세인데도 AIDS 증상이 있는 집단이 사회적 상대를 거의 전적으로 정서적 잠재력에 따라 본 결과에서 생활연령과 남은 시간이 같은 것이 아니라는 점을 실감했습니다. 연령을 맞춘 비교라는 점은 설득력을 높였지만 무작위 조작이 아니고 건강상태도 함께 달랐습니다. 그래서 시간 관점의 강한 단서이지 단독 인과증명으로 읽지는 않았습니다.",
+        "title": "Why did the distinction between age and time remaining persuade you?",
+        "answer_30s": "The three HIV-status groups all averaged 37 years, yet men with AIDS symptoms represented partners almost entirely through affective potential. That made chronological age and proximity to the end of life seem meaningfully different to me. Comparable ages strengthen the comparison, but health status also differed and was not randomly assigned. I read it as an important clue about time perspective, rather than conclusive causal proof.",
         "evidence_segment_id": "PARTNER-001",
         "response_angle": "surprise",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "carstensen-reading-03",
-        "title": "기존 생각이 어떻게 바뀌었냐고 물으면",
-        "answer_30s": "전에는 노년기 연결망 축소를 주로 상실이나 고립으로 생각했습니다. 그런데 같은 사람을 18·30·40·50세에 본 자료에서는 지인 관계가 줄어도 배우자·부모·형제자매 관계는 유지되거나 늘었고, 광범위한 노화 상실보다 먼저 변화가 시작됐습니다. 그래서 주변 관계의 감소가 의미 있는 관계에 집중하는 선제적 선택일 수도 있다고 보게 됐습니다.",
+        "title": "How did the paper change your previous view?",
+        "answer_30s": "I had mainly associated smaller networks in later life with loss or isolation. In the same people followed at ages 18, 30, 40, and 50, acquaintance contact declined while contact with spouses, parents, and siblings stayed stable or increased. Because this pattern began before widespread age-related loss, I came to see that reducing peripheral contact can also reflect an active choice to concentrate on meaningful relationships.",
         "evidence_segment_id": "NETWORK-001",
         "response_angle": "changed-view",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "carstensen-reading-04",
-        "title": "시간을 조작한 실험이 제 연령관을 어떻게 바꿨나요?",
-        "answer_30s": "저는 친숙한 사람을 선호하는 것이 노인의 고정된 성향은 아닐 수 있다고 보게 됐습니다. 곧 이사한다고 상상한 젊은 사람은 노인처럼 친숙한 상대를 골랐고, 수명이 20년 늘어난다고 상상한 노인에게서는 그 선호가 사라졌습니다. 반대 방향의 조작이 모두 연령차를 줄였다는 점은 강하지만, 상상 상황의 효과가 일상에서 얼마나 지속되는지는 별도 질문으로 남겼습니다.",
+        "title": "How did the time-manipulation experiments change your view of age?",
+        "answer_30s": "I became less inclined to view familiar-partner preferences as fixed traits of older adults. Imagining an approaching move made younger people prefer familiar partners, while imagining 20 additional years removed that bias among older adults. Manipulations in opposite directions both reduced age differences, which I found persuasive. Whether such imagined changes produce lasting effects in everyday life remains a separate question.",
         "evidence_segment_id": "PREFER-001",
         "response_angle": "evidence",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "carstensen-reading-05",
-        "title": "정서가 ‘좋아진다’는 말을 어떻게 더 세밀하게 읽었나요?",
-        "answer_30s": "저는 노년기에 부정정서가 단순히 약해진다고 읽기보다 빈도·강도·지속시간·복합성을 나누어 보게 됐습니다. 일주일 경험표집에서 긍정정서의 빈도와 강도는 유지되고 부정정서는 강도가 아니라 빈도와 지속시간이 줄었으며 혼합정서는 늘었습니다. 다만 저자도 예비 결과라고 했으므로 이를 확정된 개인 내 발달법칙으로 일반화하지 않겠습니다.",
+        "title": "How did you unpack the claim that emotional functioning improves?",
+        "answer_30s": "I separated frequency, intensity, persistence, and complexity rather than assuming that negative feelings simply become weaker. The one-week study found stable positive frequency and intensity; negative feelings generally became less frequent and persistent, but not less intense, with some frequency rebound at very old ages. Mixed emotional experience increased with age. Because the authors called the findings preliminary, I would not treat them as an established law of within-person development.",
         "evidence_segment_id": "EMOREG-002",
         "response_angle": "method",
         "style_basis": "course-question-pattern"
       },
       {
         "card_id": "carstensen-reading-06",
-        "title": "임상 함의를 비판적으로 읽어 보라고 하면",
-        "answer_30s": "종결이 반드시 부정 정서를 높이지 않으며 현재초점이 생애 말기 불안이나 우울에 도움 될 수 있다는 발상은 흥미롭습니다. 하지만 논문은 이를 직접 추측이라고 부르고 치료효과를 시험하지 않았습니다. 저는 이를 개인에게 적용할 조언이 아니라 SST가 임상심리학에 던진 1999년의 연구질문으로 읽어야 한다고 생각했습니다.",
+        "title": "How would you read the clinical implications critically?",
+        "answer_30s": "I found the idea that present focus might help people distressed near an ending interesting, especially because endings do not necessarily increase negative emotion. But the authors explicitly call the proposal conjecture and do not test a treatment effect. I read it as a research question that SST posed for clinical psychology in 1999, rather than advice that this paper establishes for an individual.",
         "evidence_segment_id": "CLINICAL-001",
         "response_angle": "critical-implication",
         "style_basis": "course-question-pattern"

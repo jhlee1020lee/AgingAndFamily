@@ -1,127 +1,128 @@
 {
-  "title": "Underwood (2014) OX 퀴즈",
-  "instructions": "논문 근거 학습문제입니다. 수치의 지시대상과 상관·예측·인과의 차이를 확인한 뒤 O 또는 X를 고르세요.",
+  "title": "Underwood (2014): True or False",
+  "instructions": "Check what each number refers to and distinguish association, prediction, and causation. Use the article to choose True or False.",
+  "language": "en",
   "question_set_type": "논문 근거 학습문제",
   "items": [
     {
-      "prompt": "1947년 6월 4일 스코틀랜드의 11세 아동 70,000명 이상이 같은 지능검사를 치렀다.",
+      "prompt": "On 4 June 1947, more than 70,000 11-year-old children in Scotland took the same intelligence test.",
       "answer": "O",
-      "explanation": "이는 같은 연령 코호트 전체의 지능을 측정하려 한 초기 전국 조사 가운데 하나였다.",
+      "explanation": "The Scottish Mental Surveys were among the first efforts to measure intelligence across an entire national age cohort. The article describes Sheila McGowan and more than 70,000 other 11-year-olds taking the test that day.",
       "evidence_segment_id": "OPEN-001",
       "source": "Scottish Mental Surveys",
-      "difficulty": "기본"
+      "difficulty": "Core"
     },
     {
-      "prompt": "Scottish Mental Surveys는 처음부터 노년기 치매의 유전자를 찾기 위해 설계되었다.",
+      "prompt": "The Scottish Mental Surveys were originally designed to identify genes responsible for dementia in old age.",
       "answer": "X",
-      "explanation": "원래 목적은 당시 학교교육의 혜택을 받기 어렵다고 분류된 아동의 수를 파악하고, 전문직 가정의 저출산에 따른 평균지능 저하 우려를 조사하는 것이었다.",
+      "explanation": "The original aims were to count children then considered unable to benefit from schooling and to investigate fears that average intelligence was falling as professional families had fewer children. The later cognitive-aging research made new use of these historical records.",
       "evidence_segment_id": "OPEN-001",
-      "source": "조사의 역사적 목적",
-      "difficulty": "기본"
+      "source": "Historical aims of the surveys",
+      "difficulty": "Core"
     },
     {
-      "prompt": "기사에 나온 약 160,000명은 2014년 당시 생존해 있던 후속연구 참여자의 수다.",
+      "prompt": "The roughly 160,000 people mentioned in the article were surviving participants in the follow-up study in 2014.",
       "answer": "X",
-      "explanation": "약 160,000명은 1932년과 1947년 조사에서 검사를 치른 아동 규모이며, 그 모든 생존자에게 재접촉하기 어려웠다는 뜻이다.",
+      "explanation": "Roughly 160,000 children took the original surveys in 1932 and 1947. Financial constraints made it impractical to recontact all surviving members of that original population; the number does not describe enrollment in the later follow-up.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "표본 모집",
-      "difficulty": "함정"
+      "source": "Recruitment from the original surveys",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "두 Lothian 코호트의 노년기 후속연구에는 최종적으로 1,641명이 참여했다.",
+      "prompt": "The later-life follow-up ultimately enrolled 1,641 participants from the two Lothian cohorts.",
       "answer": "O",
-      "explanation": "연구진은 로디언 지역 약 5,000명에게 연락했고 두 코호트에서 최종 1,641명을 등록했다.",
+      "explanation": "The researchers reached out to nearly 5,000 people in the Lothian region near Edinburgh. The two cohorts ultimately contributed 1,641 participants, who repeated the original intelligence assessment and completed additional tests.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "연구 설계",
-      "difficulty": "기본"
+      "source": "Follow-up study design",
+      "difficulty": "Core"
     },
     {
-      "prompt": "11세 점수가 77세 IQ 분산의 약 50%를 예측했다는 결과는 모든 개인의 지능 절반이 11세에 확정됐다는 뜻이다.",
+      "prompt": "The finding that age-11 scores predicted about 50% of the variance in IQ at age 77 means that half of every individual's intelligence was permanently fixed at age 11.",
       "answer": "X",
-      "explanation": "50%는 집단 내 77세 IQ 개인차 가운데 예측된 분산의 비율이지 개인별 운명의 고정 비율이 아니다.",
+      "explanation": "The 50% refers to the proportion of between-person variation in IQ at age 77 predicted by childhood scores. It is not a fixed share of each person's intelligence or a statement that individual cognitive development is predetermined.",
       "evidence_segment_id": "DESIGN-001",
-      "source": "50% 분산",
-      "difficulty": "함정"
+      "source": "Interpreting the 50% variance estimate",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "아동기 IQ를 통제하자 소량 음주와 노년기 인지 사이에서 보였던 이익이 사라졌다.",
+      "prompt": "The apparent cognitive benefit associated with modest alcohol consumption disappeared after childhood IQ was taken into account.",
       "answer": "O",
-      "explanation": "와인이 인지를 높였다기보다 원래 인지능력이 높은 사람이 더 마셨을 가능성을 보여 주는 선택효과 사례다.",
+      "explanation": "Deary initially observed an association between alcohol consumption and cognitive performance, but it dissolved after adjustment for childhood IQ. The article interprets this as a case in which those who drank more were already likely to have higher cognitive ability, rather than evidence that wine improved cognition.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "음주와 교란",
-      "difficulty": "응용"
+      "source": "Alcohol consumption and childhood-IQ adjustment",
+      "difficulty": "Application"
     },
     {
-      "prompt": "기사에 따르면 식단과 사회활동의 상관이 사라졌으므로 모든 생활방식 개입은 효과가 없다고 확정할 수 있다.",
+      "prompt": "Because associations involving diet and social activity disappeared in the analyses reported in the article, all lifestyle interventions can be considered ineffective.",
       "answer": "X",
-      "explanation": "Lothian 자료에서 초기 인지능력을 고려했을 때 일부 상관이 사라졌다는 결과이며 모든 개입의 보편적 무효를 직접 시험한 것은 아니다.",
+      "explanation": "Some associations disappeared after childhood intelligence was considered in the Lothian data. This does not directly test every possible intervention, and Greenwood explicitly cautions against concluding that later-life mental function is foreordained or cannot benefit from intervention.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "상관의 해석",
-      "difficulty": "응용"
+      "source": "Interpreting associations and intervention possibilities",
+      "difficulty": "Application"
     },
     {
-      "prompt": "Lothian 연구는 아동기 IQ가 설명하지 못하는 나머지 약 50%의 노년기 지능 개인차가 남는다고 시사한다.",
+      "prompt": "The Lothian findings suggest that roughly 50% of the variation in later-life intelligence remains unaccounted for by childhood IQ.",
       "answer": "O",
-      "explanation": "비흡연, 신체적 건강, 이중언어, 교육과 유전·환경 요인이 이후 차이에 관여할 가능성이 함께 제시된다.",
+      "explanation": "Childhood IQ accounted for about half the variation. Nonsmoking, physical fitness, bilingualism, and more education were associated with slightly better later scores than childhood scores predicted, and the article also identifies other genetic and environmental factors as possible contributors.",
       "evidence_segment_id": "FINDINGS-001",
-      "source": "남은 변이",
-      "difficulty": "기본"
+      "source": "Variation not accounted for by childhood IQ",
+      "difficulty": "Core"
     },
     {
-      "prompt": "반복검사에서 기억과 지식은 비교적 유지된 반면 추상적 문제해결과 처리속도 관련 능력은 평균적으로 저하했다.",
+      "prompt": "Across repeated testing, memory and knowledge performance held up relatively well, while abstract problem-solving and abilities involving fast thinking and reaction times showed age-related declines.",
       "answer": "O",
-      "explanation": "문단 이야기 기억과 단어 발음은 유지되었지만 빠른 사고와 반응시간을 요구하는 과제에서는 연령 저하가 나타났다.",
+      "explanation": "Both cohorts performed relatively well on tasks such as remembering a short story and pronouncing words, possibly partly because they became familiar with the tests. Performance on abstract problem-solving, fast-thinking, and reaction-time tasks declined relative to earlier testing.",
       "evidence_segment_id": "CHANGE-001",
-      "source": "인지영역별 변화",
-      "difficulty": "기본"
+      "source": "Changes across cognitive domains",
+      "difficulty": "Core"
     },
     {
-      "prompt": "코호트 평균이 저하했으므로 모든 참여자의 인지점수는 같은 방향과 크기로 변했다.",
+      "prompt": "Because cohort averages declined, every participant's cognitive scores changed in the same direction and by the same amount.",
       "answer": "X",
-      "explanation": "점수는 70대와 80대에 부채처럼 벌어졌고 Deary는 평균이 전체 이야기를 말하지 않는 개인별 분화를 강조했다.",
+      "explanation": "Scores spread out as participants entered their 70s and 80s, with many people diverging substantially from the average. Deary emphasizes that the mean does not describe the full pattern of individual change.",
       "evidence_segment_id": "CHANGE-001",
-      "source": "개인별 분화",
-      "difficulty": "함정"
+      "source": "Individual divergence in cognitive change",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "확산텐서영상 결과에서 백질 신경 연결의 온전성은 일반 인지기능 차이의 약 10%와 관련되었다.",
+      "prompt": "Diffusion tensor imaging findings linked the integrity of white-matter connections to roughly 10% of the differences in general cognitive function among Lothian participants.",
       "answer": "O",
-      "explanation": "물분자의 이동을 추적하는 확산텐서영상으로 백질 연결상태와 인지의 관련성을 평가했다.",
+      "explanation": "Diffusion tensor imaging tracks the movement of water molecules through white-matter tracts. The researchers used it to relate the integrity of neuronal connections to differences in cognitive function.",
       "evidence_segment_id": "NEURO-001",
-      "source": "뇌영상",
-      "difficulty": "기본"
+      "source": "Brain imaging and neuronal connections",
+      "difficulty": "Core"
     },
     {
-      "prompt": "백질 고신호강도 병변의 원인은 높은 코르티솔 하나로 이미 확정되었다.",
+      "prompt": "High cortisol levels had already been established as the sole cause of white-matter hyperintensities.",
       "answer": "X",
-      "explanation": "원인은 아직 충분히 밝혀지지 않았으며 높은 코르티솔과 상당히 밀접하게 관련된다는 관찰이 제시되었다.",
+      "explanation": "The article says the causes of hyperintensities were still poorly understood. It reports a close link with high cortisol levels, not proof that cortisol alone causes them.",
       "evidence_segment_id": "NEURO-001",
-      "source": "백질 고신호강도 병변",
-      "difficulty": "함정"
+      "source": "White-matter hyperintensities and cortisol",
+      "difficulty": "Common trap"
     },
     {
-      "prompt": "노년기의 얇은 피질은 반드시 노화 과정에서 회백질을 많이 잃었다는 뜻은 아니다.",
+      "prompt": "A relatively thin cerebral cortex in old age does not necessarily mean that a person has lost a large amount of gray matter during aging.",
       "answer": "O",
-      "explanation": "노년기 피질이 얇은 사람이 아동기에도 IQ가 낮았다는 결과는 애초의 회백질 개인차 가능성을 제기한다.",
+      "explanation": "People with a relatively thinner cortex in old age also had lower IQ scores in childhood. Karama interprets this as suggesting that some may have started with less gray matter; the finding does not establish how much tissue each person lost over time.",
       "evidence_segment_id": "NEURO-001",
-      "source": "피질 두께 해석",
-      "difficulty": "응용"
+      "source": "Interpreting cortical thickness",
+      "difficulty": "Application"
     },
     {
-      "prompt": "물탱크 가설은 초기의 유전자뿐 아니라 어느 정도 유리한 초기 환경도 인지예비력에 기여할 수 있다고 본다.",
+      "prompt": "The water tank hypothesis allows favorable early-life environments, to some extent, as well as genes to contribute to cognitive reserve.",
       "answer": "O",
-      "explanation": "더 잘 구성된 뇌로 시작하면 신경퇴행으로 잃을 수 있는 예비력이 더 많다는 비유이며 유전자와 초기 환경을 함께 언급한다.",
+      "explanation": "The metaphor proposes that a better-organized brain early in life provides more reserve to draw down during neurodegeneration. The account explicitly mentions good genes and, to some extent, a favorable early-life environment.",
       "evidence_segment_id": "RESERVE-001",
-      "source": "물탱크 가설",
-      "difficulty": "기본"
+      "source": "The water tank hypothesis",
+      "difficulty": "Core"
     },
     {
-      "prompt": "기사 당시 ENIGMA에는 70개국의 33개 기관이 참여하고 있었다.",
+      "prompt": "At the time described in the article, ENIGMA included 33 institutions in 70 countries.",
       "answer": "X",
-      "explanation": "수치의 지시대상이 바뀌었다. 기사에는 33개국의 70개 기관이 참여한다고 제시된다.",
+      "explanation": "The numbers are reversed. The article describes a consortium of 70 institutions in 33 countries, which the Lothian studies joined in 2009.",
       "evidence_segment_id": "RESERVE-001",
       "source": "ENIGMA",
-      "difficulty": "기본"
+      "difficulty": "Core"
     }
   ]
 }

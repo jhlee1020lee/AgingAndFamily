@@ -1,5 +1,6 @@
 ﻿const fs=require("fs");
 const path=require("path");
+const crypto=require("node:crypto");
 
 const {PAGE_STATUS,READING_STATUS,buildValidationSnapshot,mergeValidationFields}=require("./validate_content");
 const {writeApprovalStatusReport}=require("./approval_status");
@@ -53,30 +54,6 @@ const PROFESSOR_STYLE={
   prefers:["질문에서 묻는 핵심을 먼저 한 문장으로 바로 답하기","핵심 개념을 자기 말로 분명하게 정의하기","비슷한 개념과 무엇이 다른지 구분하기","추상어 대신 읽기의 연구설계·변수·결과를 근거로 들기","가족 또는 한국 사회에 적용할 때는 구체적으로 연결하기","반론이나 한계를 짧게 인정하고 다시 핵심으로 돌아오기"],
   avoids:["흥미롭다, 복잡하다, 다양하다처럼 내용 없는 형용사만 반복하기","질문과 다른 이야기로 새어나가기","읽기 근거 없이 교과서식 정의만 길게 말하기","무조건 '상황에 따라 다르다'고 끝내기","AI 문장처럼 균일하고 밋밋한 표현만 늘어놓기"]
 };
-const SYLLABUS_HOME_ORDER=[
-  "2 Levy, 2009.pdf",
-  "2 Settersten and Godlewski, 2016.pdf",
-  "3 Hagestad and Settersten, 2017.pdf",
-  "3 Vaupel, 2010.pdf",
-  "4 Stine Morrow, 2007.pdf",
-  "4 Underwood, 2014.pdf",
-  "6 Carstensen et al., 1999.pdf",
-  "6 Luong et al., 2011.pdf",
-  "7 Huxhold et al., 2014.pdf",
-  "7 Cotten, 2021.pdf",
-  "8 Kim et al., 2015.pdf",
-  "8 Lin et al., 2018.pdf",
-  "9 Bangerter and Waldron, 2014.pdf",
-  "9 Kalmijn and Leopold, 2019.pdf",
-  "11 Oswald et al., 2010.pdf",
-  "11 Smith et al., 2007.pdf",
-  "12 Gruenewald et al., 2016.pdf",
-  "12 Lee and Yeung, 2021.pdf",
-  "13 Martinson and Berridge, 2015.pdf",
-  "13 Utz et al., 2002.pdf",
-  "14 Boerner and Schulz, 2009.pdf",
-  "14 Meier et al., 2016.pdf"
-];
 const PREP_EXTRA_VARIANTS=["importance","korea","limit","evidence"];
 const PREP_TARGET_CARD_COUNT=12;
 
@@ -612,7 +589,10 @@ function loadQuiz(page,filePath){
   if(!payload)return null;
   const items=Array.isArray(payload.items)?payload.items:[];
   if(!items.length)return null;
+  const segments=loadJson(path.join(path.dirname(filePath),"source_segments.json"))?.segments||[];
   const normalizeEvidence=(item)=>({
+    language:payload.language||"ko",
+    evidence_segment:segments.find((segment)=>segment.segment_id===item.evidence_segment_id)||null,
     source:toText(item.source),
     evidence_segment_id:toText(item.evidence_segment_id),
     difficulty:toText(item.difficulty),
@@ -665,6 +645,7 @@ function loadProfessorPrep(filePath){
   const responsePayload=payload.reading_response&&typeof payload.reading_response==="object"?payload.reading_response:{};
   const responseCards=normalizeProfessorPrepCards(responsePayload.cards,filePath,"reading_response.cards");
   return{
+    language:payload.language||"ko",
     title:toText(payload.title)||"읽기 답변 준비",
     instructions:toText(payload.instructions)||"교수님이 바로 이어 물을 수 있는 질문에 30초 안으로 답하는 연습입니다.",
     cards,
@@ -710,7 +691,6 @@ function cardMetaLabel(reading){
   }
   return [reading.type_label,reading.language_label,reading.year?reading.year_label:null].filter(Boolean).join(" · ");
 }
-function syllabusOrderIndex(reading){const index=SYLLABUS_HOME_ORDER.indexOf(reading.source_filename||"");return index===-1?Number.MAX_SAFE_INTEGER:index;}
 function statusKeyForPage(pageKey){return pageKey.replace(/-/g,"_");}
 function isReadyStatus(status){return status===PAGE_STATUS.SCHEMA_PASS||status===PAGE_STATUS.APPROVED;}
 function validationStatusForPage(snapshot,pageKey,available){const key=statusKeyForPage(pageKey);const status=snapshot?.content_status?.[key];if(status)return status;return available?PAGE_STATUS.SCHEMA_PASS:PAGE_STATUS.MISSING;}
@@ -753,7 +733,7 @@ function pageByKey(reading,pageKey){return Array.isArray(reading.pages)?reading.
 function hasAvailablePage(reading,pageKey){const page=pageByKey(reading,pageKey);return Boolean(page&&page.available);}
 function hasApprovedSourcePage(reading,pageKey){const page=pageByKey(reading,pageKey);return Boolean(page&&isApprovedStatus(page.source_validation_status));}
 function localTodayIsoDate(){const now=new Date();const month=String(now.getMonth()+1).padStart(2,"0");const day=String(now.getDate()).padStart(2,"0");return `${now.getFullYear()}-${month}-${day}`;}
-function currentReadingSlug(readings,today=localTodayIsoDate(),publishCutoff=""){const all=(Array.isArray(readings)?readings:[]).filter((reading)=>toText(reading.class_date)&&(!publishCutoff||reading.class_date<=publishCutoff));const upcoming=all.filter((reading)=>reading.class_date>=today).sort((a,b)=>a.class_date.localeCompare(b.class_date)||a.sequence-b.sequence);if(upcoming.length)return upcoming[0].slug;const referenceDate=publishCutoff&&publishCutoff<today?publishCutoff:today;const candidates=all.filter((reading)=>reading.class_date<=referenceDate).sort((a,b)=>b.class_date.localeCompare(a.class_date)||b.sequence-a.sequence);return candidates[0]?.slug||"";}
+function currentReadingSlug(readings,today=localTodayIsoDate(),publishCutoff=""){const upcoming=(Array.isArray(readings)?readings:[]).filter((reading)=>toText(reading.class_date)&&reading.class_date>=today&&(!publishCutoff||reading.class_date<=publishCutoff)).sort((a,b)=>a.class_date.localeCompare(b.class_date)||a.sequence-b.sequence);return upcoming[0]?.slug||"";}
 function readingFilterGroup(reading){if(reading.type==="chapter")return"chapter";if(reading.type==="article")return"article";return"paper";}
 function readingProgress(reading){const read=Boolean(["summary","full","translation"].some((pageKey)=>hasAvailablePage(reading,pageKey)))?1:0;const concepts=hasAvailablePage(reading,"concepts")?1:0;const quizAvailableCount=["quiz-ox","quiz-short","quiz-mcq"].filter((pageKey)=>hasAvailablePage(reading,pageKey)).length;const prep=hasAvailablePage(reading,"professor-prep")?1:0;return{read,concepts,quiz:quizAvailableCount/3,prep,quiz_available_count:quizAvailableCount};}
 function completedProgressStageCount(progress){return["read","concepts","quiz","prep"].filter((key)=>Number(progress?.[key]||0)>=1).length;}
@@ -764,7 +744,7 @@ function approvedPageTarget(reading,pageKey){return hasApprovedSourcePage(readin
 function reviewReadyProfessorPrepTarget(reading){const page=pageByKey(reading,"professor-prep");return page&&page.available&&isReadyStatus(page.source_validation_status)?page.filename||"":"";}
 function firstApprovedPageTarget(reading,pageKeys){for(const pageKey of pageKeys){const target=approvedPageTarget(reading,pageKey);if(target)return target;}return"";}
 function readingStartTarget(reading){return firstApprovedPageTarget(reading,["full","translation","summary","concepts","pitfalls","review-sheet"])||readingOverviewTarget(reading);}
-function quizOverviewTarget(reading){return firstApprovedPageTarget(reading,["quiz-ox","quiz-short","quiz-mcq"]);}
+function quizOverviewTarget(reading){return firstApprovedPageTarget(reading,["quiz-ox","quiz-short","quiz-mcq"])?"quiz.html":"";}
 function prepTarget(reading){return approvedPageTarget(reading,"professor-prep")||reviewReadyProfessorPrepTarget(reading);}
 function readingGateMessage(reading){if(isReleaseLockedReading(reading))return toText(reading.publish_cutoff_note)||"다시 점검한 뒤 공개합니다.";if(reading.metadata_status!=="complete")return"메타데이터 확인 후 공개합니다.";if(isBlockedReading(reading))return"이 읽기는 전체 승인 전이라 아직 공개되지 않습니다.";if(!isAccessibleReading(reading))return"준비중입니다.";return"준비중입니다.";}
 function metadataStatusHtml(status){return status==="complete"?'<span class="status ready">메타데이터 확인됨</span>':'<span class="status placeholder">메타데이터 확인 필요</span>';}
@@ -773,7 +753,7 @@ function readingPageLabel(reading,page){
   if(page.key==="translation")return "번역본 읽기";
   return page.label;
 }
-function normalizeReading(reading,sequence,siteMeta={}){const supplemental=loadReadingMeta(reading.content_dir);const language=reading.language||"unknown";const type=detectType(reading);const rawTags=Array.isArray(reading.tags)&&reading.tags.length?reading.tags:["Metadata incomplete"];const source_filename=reading.source_filename||path.basename(reading.source_pdf);const sortDate=effectiveSortDate(reading);const classroom_points=(Array.isArray(reading.classroom_points)?reading.classroom_points:[]).map((item)=>translateCommonText(item)).filter(Boolean);const shared_page_keys=(Array.isArray(reading.shared_page_keys)?reading.shared_page_keys:Array.isArray(supplemental.shared_page_keys)?supplemental.shared_page_keys:[]).map((item)=>toText(item)).filter(Boolean);const enabled_page_keys=normalizeEnabledPageKeys(reading.enabled_page_keys||supplemental.enabled_page_keys,language);const pdf_visibility=readingPdfVisibility(reading,supplemental);const translation_original_reveal=normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal||supplemental.translation_original_reveal);const cutoffDate=publishCutoffDate(siteMeta);const cutoffNote=publishCutoffNote(siteMeta);return{...reading,sequence,subtitle:translateCommonText(reading.subtitle||"Filename-derived placeholder metadata."),authors:reading.authors||[],authors_label:authorsLabel(reading.authors||[]),year_label:yearLabel(reading.year),language,language_label:languageLabel(language),kind:reading.kind||`${type} pdf`,kind_label:kindLabel(reading.kind||`${type} pdf`,type),type,type_label:typeLabel(type),source_filename,tags:rawTags.map(translateTag),description:translateCommonText(reading.description||"Placeholder record created from the source filename only."),metadata_status:reading.metadata_status||"incomplete",metadata_notes:(reading.metadata_notes||[]).map(translateCommonText),class_date:reading.class_date??null,reading_date:reading.reading_date??null,sort_date:reading.sort_date??null,display_date_label:reading.display_date_label??null,effective_sort_date:sortDate,display_date:displayDateLabel(reading),translation_required:language==="en"&&enabled_page_keys.includes("translation"),home_order_index:syllabusOrderIndex({source_filename}),pdf_visibility,public_pdf:toText(reading.public_pdf)||"",overview_hook:translateCommonText(reading.overview_hook||""),classroom_points,shared_page_bundle:toText(reading.shared_page_bundle||supplemental.shared_page_bundle||""),shared_page_keys,enabled_page_keys,translation_original_reveal,publish_cutoff_date:cutoffDate,publish_cutoff_note:cutoffNote,release_locked:isReleaseLockedByCutoff(sortDate,cutoffDate)};}
+function normalizeReading(reading,sequence,siteMeta={}){const supplemental=loadReadingMeta(reading.content_dir);const language=reading.language||"unknown";const type=detectType(reading);const rawTags=Array.isArray(reading.tags)&&reading.tags.length?reading.tags:["Metadata incomplete"];const source_filename=reading.source_filename||path.basename(reading.source_pdf);const sortDate=effectiveSortDate(reading);const classroom_points=(Array.isArray(reading.classroom_points)?reading.classroom_points:[]).map((item)=>translateCommonText(item)).filter(Boolean);const shared_page_keys=(Array.isArray(reading.shared_page_keys)?reading.shared_page_keys:Array.isArray(supplemental.shared_page_keys)?supplemental.shared_page_keys:[]).map((item)=>toText(item)).filter(Boolean);const enabled_page_keys=normalizeEnabledPageKeys(reading.enabled_page_keys||supplemental.enabled_page_keys,language);const pdf_visibility=readingPdfVisibility(reading,supplemental);const translation_original_reveal=normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal||supplemental.translation_original_reveal);const cutoffDate=publishCutoffDate(siteMeta);const cutoffNote=publishCutoffNote(siteMeta);return{...reading,sequence,subtitle:translateCommonText(reading.subtitle||"Filename-derived placeholder metadata."),authors:reading.authors||[],authors_label:authorsLabel(reading.authors||[]),year_label:yearLabel(reading.year),language,language_label:languageLabel(language),kind:reading.kind||`${type} pdf`,kind_label:kindLabel(reading.kind||`${type} pdf`,type),type,type_label:typeLabel(type),source_filename,tags:rawTags.map(translateTag),description:translateCommonText(reading.description||"Placeholder record created from the source filename only."),metadata_status:reading.metadata_status||"incomplete",metadata_notes:(reading.metadata_notes||[]).map(translateCommonText),class_date:reading.class_date??null,reading_date:reading.reading_date??null,sort_date:reading.sort_date??null,display_date_label:reading.display_date_label??null,effective_sort_date:sortDate,display_date:displayDateLabel(reading),translation_required:language==="en"&&enabled_page_keys.includes("translation"),pdf_visibility,public_pdf:toText(reading.public_pdf)||"",overview_hook:translateCommonText(reading.overview_hook||""),classroom_points,shared_page_bundle:toText(reading.shared_page_bundle||supplemental.shared_page_bundle||""),shared_page_keys,enabled_page_keys,translation_original_reveal,publish_cutoff_date:cutoffDate,publish_cutoff_note:cutoffNote,release_locked:isReleaseLockedByCutoff(sortDate,cutoffDate)};}
 function buildContentStatus(reading,existingMeta={},options={}){return buildValidationSnapshot(rootDir,reading,existingMeta,options).content_status;}
 function ensureContentPlaceholders(manifest,siteMeta={},slugFilter=null){manifest.readings.forEach((rawReading,index)=>{const reading=normalizeReading(rawReading,index+1,siteMeta);if(slugFilter&&reading.slug!==slugFilter)return;const contentDir=path.join(rootDir,reading.content_dir);fs.mkdirSync(contentDir,{recursive:true});const metaPath=path.join(contentDir,"meta.json");let existing={};if(fs.existsSync(metaPath)){try{existing=JSON.parse(readText(metaPath));}catch(error){existing={};}}const validationOptions={requireBuiltArtifacts:Boolean(existing.validation_status?.require_built_artifacts)};const snapshot=buildValidationSnapshot(rootDir,reading,existing,validationOptions);const payload=mergeValidationFields({...existing,slug:reading.slug,source_filename:reading.source_filename,source_pdf:reading.source_pdf,content_dir:reading.content_dir,title:reading.title,subtitle:reading.subtitle,authors:reading.authors,year:reading.year??null,language:reading.language,type:reading.type,kind:reading.kind,class_date:reading.class_date,reading_date:reading.reading_date,sort_date:reading.sort_date,display_date_label:reading.display_date_label,description:reading.description,metadata_status:reading.metadata_status,metadata_notes:reading.metadata_notes,pdf_visibility:reading.pdf_visibility||"none",public_pdf:reading.public_pdf||null,overview_hook:reading.overview_hook||null,classroom_points:reading.classroom_points||[],shared_page_bundle:reading.shared_page_bundle||null,shared_page_keys:reading.shared_page_keys||[],enabled_page_keys:reading.enabled_page_keys||null,content_status:buildContentStatus(reading,existing,validationOptions)},snapshot);writeText(metaPath,`${JSON.stringify(payload,null,2)}\n`);});}
 function prepareReadings(manifest,siteMeta={}){
@@ -813,7 +793,7 @@ function prepareReadings(manifest,siteMeta={}){
     };
   });
 }
-function compareReadings(a,b,mode){if(mode==="chronological"){const aHasDate=Boolean(a.effective_sort_date);const bHasDate=Boolean(b.effective_sort_date);if(aHasDate&&bHasDate&&a.effective_sort_date!==b.effective_sort_date)return a.effective_sort_date.localeCompare(b.effective_sort_date);if(aHasDate!==bHasDate)return aHasDate?-1:1;if(a.home_order_index!==b.home_order_index)return a.home_order_index-b.home_order_index;}return a.sequence-b.sequence;}
+function compareReadings(a,b){return a.sequence-b.sequence;}
 function searchBlob(reading){return[reading.slug,reading.title,reading.subtitle,reading.source_filename,reading.language,reading.type,reading.kind,reading.year_label,reading.display_date,...(reading.authors||[]),...(reading.tags||[]),...(reading.metadata_notes||[])].filter(Boolean).join(" ");}
 function buildTagOptions(readings){return Array.from(new Set(readings.flatMap((reading)=>reading.tags||[]).filter(Boolean))).sort((a,b)=>a.localeCompare(b,"ko"));}
 function readingSequenceLabel(sequence){return `읽기 ${String(sequence).padStart(2,"0")}`;}
@@ -933,15 +913,15 @@ function pageTabs(outputPath,reading,activeKey){
   if(pageByKey(reading,"full"))tabs.push({key:"full",label:"본문 읽기",target:path.join(base,"full.html"),status:pageByKey(reading,"full")?.validation_status,sourceStatus:pageByKey(reading,"full")?.source_validation_status});
   if(pageByKey(reading,"translation"))tabs.push({key:"translation",label:"번역본 읽기",target:path.join(base,"translation.html"),status:pageByKey(reading,"translation")?.validation_status,sourceStatus:pageByKey(reading,"translation")?.source_validation_status});
   if(pageByKey(reading,"professor-prep"))tabs.push({key:"professor-prep",label:"교수님 답변 대비",target:path.join(base,"professor-prep.html"),status:pageByKey(reading,"professor-prep")?.validation_status,sourceStatus:pageByKey(reading,"professor-prep")?.source_validation_status});
+  if(reading.pages.some((page)=>page.type==="quiz"))tabs.push({key:"quiz",label:"퀴즈 풀기",target:path.join(base,"quiz.html"),sourceStatus:quizOverviewTarget(reading)?PAGE_STATUS.APPROVED:null});
   const hiddenTabs=reading.pages
-    .filter((page)=>!["professor-prep","full","translation"].includes(page.key))
+    .filter((page)=>page.type!=="quiz"&&!["professor-prep","full","translation"].includes(page.key))
     .map((page)=>({key:page.key,label:page.label,target:path.join(base,page.filename),status:page.validation_status,sourceStatus:page.source_validation_status}));
   const hiddenActive=hiddenTabs.find((tab)=>tab.key===activeKey)||null;
   const isActiveTab=(tab)=>tab.key===activeKey||(tab.key==="quiz"&&["quiz-ox","quiz-short","quiz-mcq"].includes(activeKey));
   const renderTab=(tab)=>{
     if(blocked||!accessible)return renderGatedTab(tab.label,isActiveTab(tab),readingGateMessage(reading));
-    if(tab.key==="index"||tab.key==="quiz")return renderActiveTab(outputPath,tab,isActiveTab(tab));
-    if(tab.key==="professor-prep"&&isReadyStatus(tab.sourceStatus))return renderActiveTab(outputPath,tab,isActiveTab(tab));
+    if(tab.key==="index"&&(isApprovedStatus(tab.sourceStatus)||(allowDraftPreview&&isReadyStatus(tab.sourceStatus))))return renderActiveTab(outputPath,tab,isActiveTab(tab));
     return isApprovedStatus(tab.sourceStatus)?renderActiveTab(outputPath,tab,isActiveTab(tab)):renderGatedTab(tab.label,isActiveTab(tab),"이 탭은 아직 공개되지 않았습니다.");
   };
   const hiddenMarkup=!hiddenTabs.length?"":`<details class="tab-more${hiddenActive?" has-active":""}" data-tab-more><summary class="tab-more-toggle" data-tab-more-toggle>더보기</summary><div class="tab-more-list" data-tab-more-list>${hiddenTabs.map((tab)=>renderTab(tab).replace("data-tab-link","data-tab-link data-tab-more-link")).join("")}</div></details>`;
@@ -971,12 +951,12 @@ function renderHomeCard(outputPath,reading,thumbnailHref=""){
   const clickable=Boolean(target);
   const tag=`${clickable?"a":"button"}`;
   const attrs=clickable?`class="card-link rcard${reading.state==="locked"?" is-locked":""}${reading.state==="current"?" is-current":""}" href="${escapeHtml(readingPageHref(outputPath,reading,target))}"`:`class="card-link rcard is-locked" type="button" data-gated-link data-gated-message="${escapeHtml(readingGateMessage(reading))}"`;
-  const stateLabel=reading.state==="current"?"이번 주":reading.state==="ready"?"공개됨":"잠금";
+  const stateLabel=reading.state==="current"?"다음 읽기":reading.state==="ready"?"공개됨":"잠금";
   const thumbnailSrc=thumbnailHref?resolveSiteAssetHref(outputPath,thumbnailHref):"";
   const thumbnailVisualClass=path.posix.extname(thumbnailHref).toLowerCase()===".png"?" is-sticker":" is-photo";
   const imageLoading=reading.state==="current"?"eager":"lazy";
   const imagePriority=reading.state==="current"?' fetchpriority="high"':"";
-  const mobileState=reading.state==="current"?'<span class="rcard-mobile-state current">이번 주</span>':reading.state==="locked"?'<span class="rcard-mobile-state locked">잠금</span>':"";
+  const mobileState=reading.state==="current"?'<span class="rcard-mobile-state current">다음 읽기</span>':reading.state==="locked"?'<span class="rcard-mobile-state locked">잠금</span>':"";
   const mobileEyebrow=`<p class="rcard-mobile-eyebrow"><time datetime="${escapeHtml(reading.class_date||"")}">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</time>${mobileState}</p>`;
   const thumbnailMarkup=thumbnailSrc?`<div class="rcard-thumb${thumbnailVisualClass}"><img src="${escapeHtml(thumbnailSrc)}" alt="" width="360" height="360" loading="${imageLoading}" decoding="async"${imagePriority} /><span class="rcard-status ${escapeHtml(reading.state)}">${escapeHtml(stateLabel)}</span><span class="rcard-date card-date">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span></div>`:`<div class="rcard-thumb rcard-thumb-fallback"><span class="rcard-status ${escapeHtml(reading.state)}">${escapeHtml(stateLabel)}</span><span class="rcard-date card-date">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span></div>`;
   return `<article class="reading-card-shell" data-reading-card data-reading-slug="${escapeHtml(reading.slug)}" data-week="${escapeHtml(String(reading.week||""))}" data-card-state="${escapeHtml(reading.state)}" data-card-base-state="${escapeHtml(reading.state==="locked"?"locked":"ready")}" data-search="${escapeHtml(searchBlob(reading))}" data-type="${escapeHtml(reading.type)}" data-filter-group="${escapeHtml(reading.filter_group)}" data-tags="${escapeHtml(reading.tags.map((tag)=>tag.toLowerCase()).join("||"))}" data-sort-date="${escapeHtml(reading.effective_sort_date||"")}" data-sequence="${reading.sequence}"><${tag} ${attrs}>${thumbnailMarkup}<div class="rcard-content">${mobileEyebrow}<p class="rcard-week">${escapeHtml(reading.week?`${reading.week}주차 · ${reading.topic||""}`:reading.topic||"")}</p><h2 class="rcard-title title">${escapeHtml(reading.title)}</h2><p class="rcard-meta card-meta">${escapeHtml([reading.type_label,reading.language_label,reading.authors_display].filter(Boolean).join(" · "))}</p><p class="rcard-sub card-subtitle">${escapeHtml(reading.subtitle)}</p><div class="rcard-foot"><span class="rcard-arrow" aria-hidden="true">→</span></div></div></${tag}></article>`;
@@ -1080,6 +1060,11 @@ function renderPilotReaderAside(outputPath,reading,page,tocHtml){return `
   </section>
 </aside>
 `;}
+function renderReaderTools(){return `<section class="reader-tools" aria-label="읽기 도구">
+  <div class="reader-tool-actions"><span>글자 크기</span><button class="btn-ghost" type="button" data-font-action="decrease" aria-label="글자 작게">A−</button><button class="btn-ghost" type="button" data-font-action="reset">기본</button><button class="btn-ghost" type="button" data-font-action="increase" aria-label="글자 크게">A+</button><button class="btn-ghost" type="button" data-page-bookmark aria-pressed="false">북마크</button><button class="btn-ghost" type="button" data-resume-position hidden>읽던 위치로</button></div>
+  <p class="meta" data-reading-status role="status" aria-live="polite"></p>
+  <details class="reader-important"><summary>중요 표시한 부분</summary><div data-important-list></div></details>
+</section>`;}
 function renderReadingContentAside(outputPath,reading,page,tocHtml){return `<aside class="rpanel-side reader-detail-side sticky-toc" aria-label="${escapeHtml(page.label)} navigation"><section class="panel detail-side-panel reader-toc-panel"><p class="section-kicker">목차</p><h2>${escapeHtml(page.label)}</h2><div class="toc-list">${tocHtml||'<p class="meta">본문 목차가 아직 없습니다.</p>'}</div></section>${reading.tags&&reading.tags.length?`<section class="panel detail-side-panel key-concept-callout"><p class="section-kicker">태그</p><h2>읽기 키워드</h2>${renderChipRow(reading.tags.map((tag)=>`# ${tag}`),"chip-row reading-tag-row")}</section>`:""}</aside>`;}
 function renderList(items){return `<ul>${items.map((item)=>`<li>${renderInline(item)}</li>`).join("")}</ul>`;}
 function renderChipRow(items,className="chip-row"){return `<div class="${escapeHtml(className)}">${items.map((item)=>`<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>`;}
@@ -1098,12 +1083,13 @@ function renderProfessorPrepPanel(config){const hidden=config.active?"":' hidden
     ${config.draftNote}
   </section>
   <section class="prep-card-list">
-    ${config.deck.map((card,index)=>renderProfessorPrepCard(card,index,{label:config.cardLabel})).join("")}
+    ${config.deck.map((card,index)=>renderProfessorPrepCard(card,index,{label:config.cardLabel,language:config.language,reading:config.reading})).join("")}
   </section>
 </section>
 `;}
 function renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,options={}){
   const draft=options.draft===true;
+  const en=prep.language==="en";
   const draftBadge=draft?'<p><span class="status warning">평가용 초안</span></p>':"";
   const draftNote=draft?'<p class="meta">이 페이지는 아직 최종 승인본이 아닙니다. 직접 링크로만 확인하는 평가용 프리뷰입니다.</p>':"";
   const hasReadingResponses=readingResponseDeck.length>0;
@@ -1112,13 +1098,13 @@ function renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,op
   const responseTabId="prep-tab-reading-response";
   const responsePanelId="prep-panel-reading-response";
   return `
-<section class="prep-workspace" data-prep-root>
-  <div class="prep-mode-tabs" role="tablist" aria-label="교수님 답변 대비 방식">
-    <button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>즉석 질문</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>
-    ${hasReadingResponses?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>어떻게 읽었나요?</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
+<section class="prep-workspace" data-prep-root data-prep-language="${en?"en":"ko"}" lang="${en?"en":"ko"}">
+  <div class="prep-mode-tabs" role="tablist" aria-label="${en?"Discussion practice mode":"교수님 답변 대비 방식"}">
+    <button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>${en?"Cold-call questions":"즉석 질문"}</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>
+    ${hasReadingResponses?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>${en?"Reading response":"어떻게 읽었나요?"}</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
   </div>
-  ${renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,kicker:"교수님이 바로 이어 물을 때",title:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:"즉석 답변"})}
-  ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:false,draftBadge,draftNote,kicker:"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:"읽기 답변"}):""}
+  ${renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,language:prep.language,reading:options.reading,kicker:en?"SPEAK WITH EVIDENCE":"교수님이 바로 이어 물을 때",title:en?`${coldCallDeck.length} cold-call questions`:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:en?"Discussion question":"즉석 답변"})}
+  ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:false,draftBadge,draftNote,language:prep.language,reading:options.reading,kicker:en?"IN YOUR OWN WORDS":"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:en?"Reading response":"읽기 답변"}):""}
 </section>
 `;}
 function writePlaceholderSvg(reading,svgPath){const slug=escapeHtml(reading.slug);const title=escapeHtml(reading.title||reading.slug);const subtitle=escapeHtml(reading.subtitle||"파일명 기준으로 만든 임시 메타데이터입니다.");const dateLabel=escapeHtml(displayDateLabel(reading));const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
@@ -1149,15 +1135,15 @@ ${siteHeader(siteMeta,outputPath)}
     <section id="readings">
       <div class="section-head">
         <h3>주차별 읽기</h3>
-        <span class="count">${sortedReadings.length}개</span>
+        <span class="count" data-filter-result-count role="status" aria-live="polite">${sortedReadings.length}개</span>
       </div>
       <div class="filter-row" data-home-controls>
         <input class="filter-search" type="search" aria-label="제목, 저자 또는 태그로 읽기 검색" placeholder="제목, 저자, 태그 검색" data-reading-search />
         <div class="filter-chip-row" role="group" aria-label="읽기 유형 필터">
-          <button class="filter-chip is-active" type="button" data-filter-chip data-filter-value="">전체</button>
-          <button class="filter-chip" type="button" data-filter-chip data-filter-value="paper">논문</button>
-          <button class="filter-chip" type="button" data-filter-chip data-filter-value="chapter">핸드북 장</button>
-          <button class="filter-chip" type="button" data-filter-chip data-filter-value="article">기사</button>
+          <button class="filter-chip is-active" type="button" aria-pressed="true" data-filter-chip data-filter-value="">전체</button>
+          <button class="filter-chip" type="button" aria-pressed="false" data-filter-chip data-filter-value="paper">논문</button>
+          <button class="filter-chip" type="button" aria-pressed="false" data-filter-chip data-filter-value="chapter">핸드북 장</button>
+          <button class="filter-chip" type="button" aria-pressed="false" data-filter-chip data-filter-value="article">기사</button>
         </div>
       </div>
       <div class="reading-grid" data-reading-grid>${cards}</div>
@@ -1167,7 +1153,7 @@ ${siteHeader(siteMeta,outputPath)}
 </main>
 ${renderHomeReadingDataScript(siteMeta,sortedReadings)}
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,siteMeta.title,body,siteMeta.tagline||siteMeta.title,'data-page-kind="home"',"ko"));}
-function buildLanding(siteMeta,reading){const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const overviewSection=renderOverviewComic(outputPath,reading);if(!overviewSection)throw new Error(`Missing or invalid overview_comic.json for ${reading.slug}`);const body=`
+function buildLanding(siteMeta,reading){buildQuizPlayer(siteMeta,reading);const outputPath=path.join(siteDir,"readings",reading.slug,"index.html");const overviewSection=isAccessibleReading(reading)&&(isApprovedStatus(landingStatus(reading))||(allowDraftPreview&&isReadyStatus(landingStatus(reading))))?renderOverviewComic(outputPath,reading):pendingUploadHtml(reading,LANDING_TAB_LABEL);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell" data-reading-slug="${escapeHtml(reading.slug)}">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:"index"})}
@@ -1190,13 +1176,14 @@ function buildArticle(siteMeta,reading,page){
   const progressHtml=readingLayout?`<div class="reading-progress" aria-hidden="true"><span data-reading-progress-bar></span></div>`:"";
   const body=`
 ${siteHeader(siteMeta,outputPath)}
-<main class="reading-shell reading-detail-shell">
+<main class="reading-shell reading-detail-shell"${readingLayout?' data-reader-root':''}>
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:page.label})}
   ${progressHtml}
+  ${readingLayout?renderReaderTools():""}
   <div class="rpanel">
     <section class="rpanel-main">
       <section class="panel detail-block detail-content-block section-block">
-        <section class="article-body detail-article-body${readingLayout?" article-body-pilot":""}" data-reading-article-body>${content}</section>
+        <section class="article-body detail-article-body${readingLayout?" article-body-pilot":""}" data-reading-article-body${readingLayout?' data-article-body':''}>${content}</section>
       </section>
     </section>
     ${readingLayout?renderReadingContentAside(outputPath,reading,page,tocHtml):renderReadingDetailAside(outputPath,reading)}
@@ -1207,36 +1194,50 @@ ${siteHeader(siteMeta,outputPath)}
   writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,bodyAttrs,page.key==="full"&&reading.language==="en"?"en":"ko"));
 }
 function writePublicPdf(reading){if(reading.pdf_visibility!=="public"||!reading.public_pdf)return false;const sourcePath=path.join(rootDir,reading.source_pdf);if(!fs.existsSync(sourcePath))return false;const targetPath=publicPdfTargetPath(reading);fs.mkdirSync(path.dirname(targetPath),{recursive:true});fs.copyFileSync(sourcePath,targetPath);return true;}
-function renderQuizEvidence(item){const evidence=item.evidence_segment_id?`<span class="quiz-evidence-segment">${escapeHtml(item.evidence_segment_id)}</span>`:"";const source=item.source?`<span>${renderInline(item.source)}</span>`:"";const difficulty=item.difficulty?`<span>${escapeHtml(item.difficulty)}</span>`:"";const misconception=item.misconception_targeted?`<span>${renderInline(item.misconception_targeted)}</span>`:"";const bits=[evidence,source,difficulty,misconception].filter(Boolean);return bits.length?`<p class="quiz-evidence"><strong>근거:</strong> ${bits.join(" · ")}</p>`:"";}
-function renderQuizFeedback(item,answerLabel){const evidenceHtml=renderQuizEvidence(item);return `<section class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"><p class="quiz-result" data-quiz-result></p><p><strong>${escapeHtml(answerLabel)}:</strong> ${renderInline(item.answer||item.accepted_answers.join(" / "))}</p><p><strong>해설:</strong> ${renderInline(item.explanation)}</p>${evidenceHtml}</section>`;}
+function renderQuizEvidence(item){
+  const en=item.language==="en";
+  const evidence=toText(item.evidence_segment_id);
+  const segment=item.evidence_segment;
+  const bits=[evidence?`<span class="quiz-evidence-segment">${escapeHtml(evidence)}</span>`:"",item.source?renderInline(item.source):""].filter(Boolean);
+  if(!bits.length)return"";
+  const excerpt=segment?.original_text?`<details class="quiz-evidence-detail"><summary>${en?"Read the source passage":"원문 근거 읽기"}</summary><blockquote lang="en"><p>${escapeHtml(segment.original_text).replace(/\n\n/g,"</p><p>")}</p></blockquote><p class="meta">${escapeHtml([segment.section,segment.source_location].filter(Boolean).join(" · "))} · <a href="full.html">${en?"Open the full reading":"본문 읽기"}</a></p></details>`:"";
+  return `<div class="quiz-evidence"><p><strong>${en?"Evidence":"근거"}:</strong> ${bits.join(" · ")}</p>${excerpt}</div>`;
+}
+function renderQuizFeedback(item,answerLabel){
+  const en=item.language==="en";
+  const answer=item.answer||(item.accepted_answers||[]).join(" / ");
+  const shown=en&&["O","X"].includes(answer)?(answer==="O"?"True":"False"):answer;
+  return `<section class="quiz-feedback" data-quiz-feedback hidden aria-live="polite"><p class="quiz-result" data-quiz-result></p><p><strong>${escapeHtml(answerLabel)}:</strong> ${renderInline(shown)}</p><p><strong>${en?"Explanation":"해설"}:</strong> ${renderInline(item.explanation)}</p>${renderQuizEvidence(item)}</section>`;
+}
 function renderStandardQuizCard(item,index,pageKey){
+  const en=item.language==="en";
   const isOx=pageKey==="quiz-ox";
   const options=isOx?["O","X"]:item.options;
   const inputName=`${pageKey}-q${String(index+1).padStart(2,"0")}`;
-  const optionsHtml=`<fieldset class="quiz-options" aria-labelledby="${escapeHtml(inputName)}-prompt"><legend class="sr-only">답 선택</legend>${options.map((option,optionIndex)=>`<label class="quiz-choice"><input type="radio" name="${escapeHtml(inputName)}" value="${escapeHtml(option)}" data-quiz-input /><span class="quiz-choice-marker" aria-hidden="true">${isOx?escapeHtml(option):String.fromCharCode(65+optionIndex)}</span><span>${isOx?escapeHtml(option==="O"?"맞다":"틀리다"):renderInline(option)}</span></label>`).join("")}</fieldset>`;
-  return `
-<article class="quiz-card quiz-entry-card" data-quiz-item data-quiz-kind="${isOx?"ox":"mcq"}" data-correct-answer="${escapeHtml(item.answer)}">
+  const optionsHtml=`<fieldset class="quiz-options" aria-labelledby="${escapeHtml(inputName)}-prompt"><legend class="sr-only">${en?"Choose your answer":"답 선택"}</legend>${options.map((option,optionIndex)=>`<label class="quiz-choice"><input type="radio" name="${escapeHtml(inputName)}" value="${escapeHtml(option)}" data-quiz-input /><span class="quiz-choice-marker" aria-hidden="true">${isOx?(en?(option==="O"?"T":"F"):escapeHtml(option)):String.fromCharCode(65+optionIndex)}</span><span>${isOx?(en?(option==="O"?"True":"False"):(option==="O"?"맞다":"틀리다")):renderInline(option)}</span></label>`).join("")}</fieldset>`;
+  return `<article class="quiz-card quiz-entry-card" data-quiz-item data-quiz-language="${en?"en":"ko"}" lang="${en?"en":"ko"}" data-quiz-kind="${isOx?"ox":"mcq"}" data-correct-answer="${escapeHtml(item.answer)}">
   <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3 id="${escapeHtml(inputName)}-prompt">${renderInline(item.prompt)}</h3></div>
   ${optionsHtml}
-  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>이 문제 채점</button></div>
-  ${renderQuizFeedback(item,"정답")}
-</article>
-`;}
+  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>${en?"Check answer":"이 문제 채점"}</button></div>
+  ${renderQuizFeedback(item,en?"Answer":"정답")}
+</article>`;
+}
 function renderShortAnswerQuizCard(item,index,pageKey){
+  const en=item.language==="en";
   const inputId=`${pageKey}-q${String(index+1).padStart(2,"0")}`;
-  const acceptedJson=JSON.stringify(item.accepted_answers);
-  return `
-<article class="quiz-card quiz-entry-card short-answer-card" data-quiz-item data-quiz-kind="short" data-accepted-answers="${escapeHtml(acceptedJson)}">
+  const typeLabel=({term:"a term",person:"a name",number:"a number",short_phrase:"a short phrase"})[item.answer_type];
+  return `<article class="quiz-card quiz-entry-card short-answer-card" data-quiz-item data-quiz-language="${en?"en":"ko"}" lang="${en?"en":"ko"}" data-quiz-kind="short" data-accepted-answers="${escapeHtml(JSON.stringify(item.accepted_answers))}">
   <div class="quiz-card-head"><span class="quiz-number">${String(index+1).padStart(2,"0")}</span><h3 id="${escapeHtml(inputId)}-prompt">${renderInline(item.question)}</h3></div>
-  <label class="short-answer-input-wrap" for="${escapeHtml(inputId)}"><span>${escapeHtml(SHORT_ANSWER_TYPE_LABELS[item.answer_type]||item.answer_type)}로 답하기</span><input class="short-answer-input" id="${escapeHtml(inputId)}" type="text" data-quiz-input autocomplete="off" spellcheck="false" aria-describedby="${escapeHtml(inputId)}-hint" /><small id="${escapeHtml(inputId)}-hint">띄어쓰기와 영문 대소문자는 채점에 영향을 주지 않습니다.</small></label>
-  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>이 문제 채점</button></div>
-  ${renderQuizFeedback(item,"허용 정답")}
-</article>
-`;}
+  <label class="short-answer-input-wrap" for="${escapeHtml(inputId)}"><span>${en?`Answer in English using ${typeLabel}`:`${escapeHtml(SHORT_ANSWER_TYPE_LABELS[item.answer_type]||item.answer_type)}로 답하기`}</span><input class="short-answer-input" id="${escapeHtml(inputId)}" type="text" data-quiz-input autocomplete="off" spellcheck="true" lang="${en?"en":"ko"}" aria-describedby="${escapeHtml(inputId)}-hint" /><small id="${escapeHtml(inputId)}-hint">${en?"Capitalization and spacing between words do not affect grading. Keep the correct numbers and units.":"영문 대소문자와 단어 사이 공백은 무시합니다. 숫자와 단위는 정확히 입력해 주세요."}</small></label>
+  <div class="quiz-item-actions"><button class="btn-ghost quiz-check-one" type="button" data-quiz-check>${en?"Check answer":"이 문제 채점"}</button></div>
+  ${renderQuizFeedback(item,en?"Accepted answers":"허용 정답")}
+</article>`;
+}
 function renderInteractiveQuiz(quiz,page){
-  const intro=`<section class="quiz-intro">${quiz.title?`<h2>${renderInline(quiz.title)}</h2>`:""}${quiz.instructions?`<p>${renderInline(quiz.instructions)}</p>`:""}<p class="quiz-instruction-note">답을 고른 뒤 문항별로 확인하거나, 맨 아래에서 한꺼번에 채점할 수 있습니다.</p></section>`;
+  const en=quiz.language==="en";
+  const intro=`<section class="quiz-intro">${quiz.title?`<h2>${renderInline(quiz.title)}</h2>`:""}${quiz.instructions?`<p>${renderInline(quiz.instructions)}</p>`:""}<p class="quiz-instruction-note">${en?"Check each answer as you go, or grade all answers at the end.":"답을 고른 뒤 문항별로 확인하거나, 맨 아래에서 한꺼번에 채점할 수 있습니다."}</p></section>`;
   const cards=quiz.items.map((item,index)=>page.key==="quiz-short"?renderShortAnswerQuizCard(item,index,page.key):renderStandardQuizCard(item,index,page.key)).join("");
-  return `${intro}<form class="interactive-quiz" data-quiz-root data-quiz-type="${escapeHtml(page.key)}" novalidate><section class="quiz-list">${cards}</section><div class="quiz-toolbar"><p class="quiz-score" data-quiz-score role="status" aria-live="polite" tabindex="-1">아직 채점하지 않았습니다.</p><div class="quiz-toolbar-actions"><button class="btn-primary" type="submit" data-quiz-submit>전체 채점</button><button class="btn-ghost" type="reset" data-quiz-reset>다시 풀기</button></div></div></form>`;
+  return `<div lang="${en?"en":"ko"}">${intro}<form class="interactive-quiz" data-quiz-root data-quiz-language="${en?"en":"ko"}" data-quiz-type="${escapeHtml(page.key)}" novalidate><section class="quiz-list">${cards}</section><div class="quiz-toolbar"><p class="quiz-score" data-quiz-score role="status" aria-live="polite" tabindex="-1">${en?"Not graded yet.":"아직 채점하지 않았습니다."}</p><div class="quiz-toolbar-actions"><button class="btn-primary" type="submit" data-quiz-submit>${en?"Grade all answers":"전체 채점"}</button><button class="btn-ghost" type="reset" data-quiz-reset>${en?"Start again":"다시 풀기"}</button></div></div></form></div>`;
 }
 function buildQuiz(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const quiz=loadQuiz(page,page.sourcePath);let content="";if(isBlockedReading(reading)){content=pendingReadingHtml(reading,page.label);}else if(isReleaseLockedReading(reading)){content=pendingReleaseHtml(reading,page.label);}else if(!canRenderPageContent(reading,page)){content=pendingUploadHtml(reading,page.label);}else if(!quiz){content=placeholderQuizHtml(page,page.sourcePath);}else{content=renderInteractiveQuiz(quiz,page);}const body=`
 ${siteHeader(siteMeta,outputPath)}
@@ -1245,30 +1246,86 @@ ${siteHeader(siteMeta,outputPath)}
   <div class="rpanel">
     <section class="rpanel-main">
       <section class="panel detail-block detail-content-block">
-        <section class="article-body detail-article-body">${content}</section>
+        <section class="article-body detail-article-body"><p><a class="sub-link" href="quiz.html">한 문제씩 풀 수 있는 통합 퀴즈로 이동 →</a></p>${content}</section>
       </section>
     </section>
     ${renderReadingDetailAside(outputPath,reading)}
   </div>
 </main>
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="quiz" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function renderProfessorPrepCard(card,index,options={}){const label=toText(options.label)||"모델 답변";const evidence=toText(card.evidence_segment_id);return `
-<article class="panel prep-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}">
-  <div class="prep-card-head">
-    <div>
-      <p class="section-kicker">${escapeHtml(label)} ${String(index+1).padStart(2,"0")}</p>
-      <h3 data-prep-title>${renderInline(card.title)}</h3>
-    </div>
-    <button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>표시</button>
-  </div>
-  <section class="prep-block prep-answer-block">
-    <h4>30초 모델 답변</h4>
-    <p class="prep-answer-copy">${renderInline(card.answer_30s)}</p>
-    ${evidence?`<p class="prep-evidence"><strong>논문 근거</strong> <span class="quiz-evidence-segment">${escapeHtml(evidence)}</span></p>`:""}
-  </section>
-</article>
-`;}
-function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):prep?(canRenderPageContent(reading,page)?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck):renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{draft:true})):canRenderPageContent(reading,page)?placeholderProfessorPrepHtml(page,page.sourcePath):pendingUploadHtml(reading,page.label);const body=`
+function renderQuizPlayer(reading){
+  const sets=reading.pages.filter((page)=>page.type==="quiz"&&canRenderPageContent(reading,page))
+    .map((page)=>({page,quiz:loadQuiz(page,page.sourcePath)})).filter(({quiz})=>quiz);
+  const total=sets.reduce((sum,{quiz})=>sum+quiz.items.length,0);
+  if(!total)return pendingUploadHtml(reading,"퀴즈 풀기");
+  const language=sets.every(({quiz})=>quiz.language==="en")?"en":"ko";
+  const version=crypto.createHash("sha256").update(JSON.stringify(sets.map(({page,quiz})=>({key:page.key,quiz})))).digest("hex");
+  const templates=sets.map(({page,quiz})=>quiz.items.map((item,index)=>{
+    const card=page.key==="quiz-short"?renderShortAnswerQuizCard(item,index,page.key):renderStandardQuizCard(item,index,page.key);
+    return `<template data-player-question="${escapeHtml(page.key)}-${index+1}" data-kind="${escapeHtml(page.key.replace("quiz-",""))}">${card}</template>`;
+  }).join("")).join("");
+  const types=sets.map(({page,quiz})=>`<option value="${escapeHtml(page.key.replace("quiz-",""))}">${({"quiz-ox":"True / False","quiz-short":"Short answer","quiz-mcq":"Multiple choice"})[page.key]} · ${quiz.items.length} questions</option>`).join("");
+  return `<section class="quiz-player" data-quiz-player data-quiz-language="${language}" data-question-bank-version="${version}" lang="en" aria-label="Practice quiz">
+    <section data-player-setup>
+      <p class="section-kicker">CHECK YOUR UNDERSTANDING</p>
+      <h2 tabindex="-1" data-player-setup-title>Practice quiz</h2>
+      <p class="player-intro">Practice with ${total} questions from this reading. Answer in English, then check the explanation and source passage.</p>
+      <form data-player-settings>
+        <div class="player-settings-grid">
+          <label for="player-kind">Question type<select id="player-kind" name="kind"><option value="all">Mixed · ${total} questions</option>${types}</select></label>
+          <label for="player-count">Quiz length<select id="player-count" name="count"><option value="5">5 questions</option><option value="10" selected>10 questions</option><option value="all">All questions</option></select></label>
+        </div>
+        <p class="player-note" data-player-selection aria-live="polite"></p>
+        <button class="btn-primary player-start" type="submit" data-player-start disabled>Start quiz</button>
+      </form>
+      <p class="player-note" data-player-saved-note role="status" aria-live="polite"></p>
+      <div class="player-saved-actions"><button class="btn-ghost" type="button" data-player-resume hidden>Resume saved quiz</button><button class="btn-ghost" type="button" data-player-reset-saved hidden>Clear saved quiz</button></div>
+      <noscript><p>Enable JavaScript to answer one question at a time. You can also open the complete question sets below.</p>${sets.map(({page})=>`<a class="sub-link" href="${escapeHtml(page.filename)}">${escapeHtml(page.label)}</a>`).join(" · ")}</noscript>
+    </section>
+    <section data-player-round hidden>
+      <div class="player-round-head"><span class="chip" data-player-kind></span><span class="player-counter" data-player-counter></span><button class="btn-ghost" type="button" data-player-exit>Finish early</button></div>
+      <progress class="player-progress" data-player-progress value="0" max="10" aria-label="Quiz progress"></progress>
+      <form data-player-answer novalidate>
+        <div data-player-card></div>
+        <p class="player-note" data-player-message role="status"></p>
+        <div class="player-actions"><button class="btn-ghost" type="button" data-player-skip>Skip</button><button class="btn-primary" type="submit" data-player-check>Check answer</button><button class="btn-primary" type="button" data-player-next hidden>Next question</button></div>
+      </form>
+    </section>
+    <section data-player-results hidden>
+      <p class="section-kicker">YOUR RESULTS</p>
+      <h2 class="player-result-title" tabindex="-1" data-player-result-title></h2>
+      <p class="player-result-score" data-player-result-score></p>
+      <p class="player-note" data-player-result-note></p>
+      <div class="player-actions"><button class="btn-primary" type="button" data-player-retry>Retry missed questions</button><button class="btn-ghost" type="button" data-player-again>New quiz</button><button class="btn-ghost" type="button" data-player-configure>Change settings</button></div>
+      <div class="player-review" data-player-review></div>
+    </section>
+    ${templates}
+  </section>`;
+}
+function buildQuizPlayer(siteMeta,reading){
+  if(!reading.pages.some((page)=>page.type==="quiz"))return;
+  const outputPath=path.join(siteDir,"readings",reading.slug,"quiz.html");
+  const content=isBlockedReading(reading)?pendingReadingHtml(reading,"퀴즈 풀기"):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,"퀴즈 풀기"):renderQuizPlayer(reading);
+  const body=`${siteHeader(siteMeta,outputPath)}
+<main class="reading-shell reading-detail-shell quiz-player-shell">
+  ${renderArticleHeader(outputPath,reading,{activeKey:"quiz",label:"퀴즈 풀기",includePdf:false})}
+  <div class="rpanel"><section class="rpanel-main"><section class="panel detail-block player-panel">${content}</section></section></div>
+</main>`;
+  writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - 퀴즈 풀기`,body,"OX·단답형·객관식을 한 문제씩 풀고 논문 근거와 해설을 확인하세요.",`data-page-kind="quiz-player" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="quiz"`));
+}
+function renderProfessorPrepCard(card,index,options={}){
+  const en=options.language==="en";
+  const label=toText(options.label)||(en?"Model answer":"모델 답변");
+  const segment=options.reading?loadJson(path.join(rootDir,options.reading.content_dir,"source_segments.json"))?.segments?.find((item)=>item.segment_id===card.evidence_segment_id):null;
+  const evidence={language:options.language,evidence_segment_id:card.evidence_segment_id,evidence_segment:segment};
+  const inputId=`practice-${card.card_id}`;
+  return `<article class="panel prep-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}">
+  <div class="prep-card-head"><div><p class="section-kicker">${escapeHtml(label)} ${String(index+1).padStart(2,"0")}</p><h3 data-prep-title>${renderInline(card.title)}</h3></div><button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>${en?"Mark for practice":"표시"}</button></div>
+  <section class="prep-block prep-practice-block"><label for="${escapeHtml(inputId)}">${en?"Your answer in English":"내 답변 연습"}</label><textarea id="${escapeHtml(inputId)}" data-prep-practice lang="${en?"en":"ko"}" rows="4" placeholder="${en?"Try a 30-second response. State your point, give evidence, and note a limitation where relevant.":"먼저 자기 말로 답해 보세요."}"></textarea><p class="meta">${en?"Saved in this browser. Compare your reasoning with the model answer; this response is not automatically graded.":"답변은 이 브라우저에 저장됩니다. 모델 답변과 직접 비교해 보세요."}</p></section>
+  <details class="prep-block prep-answer-block" data-prep-model><summary>${en?"Compare with a 30-second model answer":"30초 모델 답변 보기"}</summary><p class="prep-answer-copy">${renderInline(card.answer_30s)}</p>${renderQuizEvidence(evidence)}</details>
+</article>`;
+}
+function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(prep?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{reading,draft:!isApprovedStatus(page.source_validation_status)}):placeholderProfessorPrepHtml(page,page.sourcePath)):pendingUploadHtml(reading,page.label);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:"교수님 답변 대비"})}
@@ -1290,7 +1347,19 @@ function cliValue(flag){const index=process.argv.indexOf(flag);return index!==-1
 function parseArgs(){const slug=cliValue("--slug");const previewLocked=process.argv.includes("--preview-locked");return{slug:slug||null,homeOnly:process.argv.includes("--home-only"),previewLocked,previewDraft:process.argv.includes("--preview-draft"),outputDir:cliValue("--output-dir")||null};}
 function buildPage(siteMeta,reading,page){if(page.type==="article"){buildArticle(siteMeta,reading,page);return;}if(page.type==="professor-prep"){buildProfessorPrep(siteMeta,reading,page);return;}buildQuiz(siteMeta,reading,page);}
 function buildHomeOutputs(siteMeta,manifest,readings){fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);}
-function resolvePreviewSiteDir(outputDir){const candidate=path.resolve(rootDir,outputDir||path.join("tmp","site-preview"));const relative=path.relative(rootDir,candidate);if(!relative||relative.startsWith("..")||path.isAbsolute(relative))throw new Error("Preview output must be a non-root directory inside the project.");if(candidate===path.join(rootDir,"docs"))throw new Error("Preview output cannot overwrite docs; omit --output-dir to use tmp/site-preview.");return candidate;}
-function buildSite(options={}){if(options.previewDraft&&!options.previewLocked)throw new Error("--preview-draft requires --preview-locked so draft content cannot be written to public docs");allowDraftPreview=Boolean(options.previewLocked&&options.previewDraft);const manifest=loadManifest();if(options.previewLocked){siteDir=resolvePreviewSiteDir(options.outputDir);const siteMeta={...manifest.site,publish_cutoff_date:"",publish_cutoff_note:""};const readings=prepareReadings(manifest,siteMeta);if(options.homeOnly){buildHomeOutputs(siteMeta,manifest,readings);}else if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);}else{buildFullOutputs(siteMeta,manifest,readings);}return{siteMeta,readings,siteDir,preview:true};}const siteMeta=manifest.site;if(options.homeOnly){const readings=prepareReadings(manifest,siteMeta);buildHomeOutputs(siteMeta,manifest,readings);return{siteMeta,readings};}let readings=refreshReadings(manifest,siteMeta,options.slug||null);if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);readings=refreshReadings(manifest,siteMeta,options.slug);buildSlugOutputs(siteMeta,manifest,readings,options.slug);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}buildFullOutputs(siteMeta,manifest,readings);readings=refreshReadings(manifest,siteMeta);buildFullOutputs(siteMeta,manifest,readings);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}
+function resolvePreviewSiteDir(outputDir){
+  const tmpDir=path.join(rootDir,"tmp");
+  const candidate=path.resolve(rootDir,outputDir||path.join("tmp","site-preview"));
+  if(!path.relative(path.join(rootDir,"docs"),candidate))throw new Error("Preview output cannot overwrite docs; omit --output-dir to use tmp/site-preview.");
+  const isSubdirectory=(base,target)=>{const relative=path.relative(base,target);return Boolean(relative)&&relative!==".."&&!relative.startsWith(`..${path.sep}`)&&!path.isAbsolute(relative);};
+  if(!isSubdirectory(tmpDir,candidate))throw new Error("Preview output must be a non-root directory inside project tmp.");
+  fs.mkdirSync(tmpDir,{recursive:true});
+  let existing=candidate;
+  while(!fs.existsSync(existing))existing=path.dirname(existing);
+  const resolvedTarget=path.resolve(fs.realpathSync(existing),path.relative(existing,candidate));
+  if(!isSubdirectory(fs.realpathSync(tmpDir),resolvedTarget))throw new Error("Preview output must remain inside project tmp after resolving directory links.");
+  return resolvedTarget;
+}
+function buildSite(options={}){siteDir=path.join(rootDir,"docs");if(options.previewDraft&&!options.previewLocked)throw new Error("--preview-draft requires --preview-locked so draft content cannot be written to public docs");allowDraftPreview=Boolean(options.previewLocked&&options.previewDraft);const manifest=loadManifest();if(options.previewLocked){siteDir=resolvePreviewSiteDir(options.outputDir);const siteMeta={...manifest.site,publish_cutoff_date:"",publish_cutoff_note:""};const readings=prepareReadings(manifest,siteMeta);if(options.homeOnly){buildHomeOutputs(siteMeta,manifest,readings);}else if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);}else{buildFullOutputs(siteMeta,manifest,readings);}return{siteMeta,readings,siteDir,preview:true};}const siteMeta=manifest.site;if(options.homeOnly){const readings=prepareReadings(manifest,siteMeta);buildHomeOutputs(siteMeta,manifest,readings);return{siteMeta,readings};}let readings=refreshReadings(manifest,siteMeta,options.slug||null);if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);readings=refreshReadings(manifest,siteMeta,options.slug);buildSlugOutputs(siteMeta,manifest,readings,options.slug);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}buildFullOutputs(siteMeta,manifest,readings);readings=refreshReadings(manifest,siteMeta);buildFullOutputs(siteMeta,manifest,readings);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}
 module.exports={buildSite};
 if(require.main===module){const options=parseArgs();const result=buildSite(options);console.log(options.previewLocked?`[built] locked-content preview ${path.relative(rootDir,result.siteDir)}`:options.homeOnly?"[built] home":options.slug?`[built] reading ${options.slug} + home`:"[built] docs" );}
