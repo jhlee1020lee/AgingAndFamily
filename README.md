@@ -2,6 +2,8 @@
 
 2026년 2학기 `고령화와 가족` 강의의 영문 읽기자료를 주차 순서대로 공부하기 위한 정적 사이트입니다.
 
+[공개 사이트 열기](https://jhlee1020lee.github.io/AgingAndFamily/)
+
 ## 현재 범위
 
 - 강의계획서에 명시된 읽기자료 22편을 `manifest/readings.json`에 등록했습니다.

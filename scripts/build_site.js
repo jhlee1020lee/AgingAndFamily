@@ -64,6 +64,7 @@ function snapshotPreservedDocMarkdown(){return PRESERVED_DOC_MARKDOWN_DIRS.flatM
 function restorePreservedDocMarkdown(snapshot){(Array.isArray(snapshot)?snapshot:[]).forEach((entry)=>writeText(path.join(siteDir,entry.relativePath),entry.content));}
 function loadManifest(){return JSON.parse(readText(manifestPath));}
 function relHref(fromPath,toPath){return path.relative(path.dirname(fromPath),toPath).split(path.sep).join("/");}
+function versionedAssetHref(outputPath,filename){const assetPath=path.join(siteDir,"assets",filename);const version=crypto.createHash("sha256").update(fs.readFileSync(assetPath)).digest("hex").slice(0,12);return `${relHref(outputPath,assetPath)}?v=${version}`;}
 function escapeHtml(value){return String(value).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;").replace(/'/g,"&#39;");}
 function renderInline(text){return escapeHtml(text).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>").replace(/(?<!\*)\*([^*]+)\*(?!\*)/g,"<em>$1</em>");}
 function slugifyHeading(value){return String(value||"").toLowerCase().trim().replace(/[^a-z0-9\uac00-\ud7a3\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||"section";}
@@ -876,7 +877,7 @@ function renderCloudflareWebAnalytics(siteMeta){
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${token}"}'></script>
 <!-- End Cloudflare Web Analytics -->`;
 }
-function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts=""){const cssHref=relHref(outputPath,path.join(siteDir,"assets","styles.css"));const jsHref=relHref(outputPath,path.join(siteDir,"assets","app.js"));const bodyHtml=String(body||"").trim();const analyticsHtml=renderCloudflareWebAnalytics(siteMeta);return `<!DOCTYPE html>
+function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts=""){const cssHref=versionedAssetHref(outputPath,"styles.css");const jsHref=versionedAssetHref(outputPath,"app.js");const bodyHtml=String(body||"").trim();const analyticsHtml=renderCloudflareWebAnalytics(siteMeta);return `<!DOCTYPE html>
 <html lang="${escapeHtml(lang)}">
 <head>
   <meta charset="utf-8" />
@@ -1339,7 +1340,7 @@ ${siteHeader(siteMeta,outputPath)}
   </div>
 </main>
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource));writeText(path.join(siteDir,"assets","app.js"),readText(appSource));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}
+function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource).replace(/\r\n?/g,"\n"));writeText(path.join(siteDir,"assets","app.js"),readText(appSource).replace(/\r\n?/g,"\n"));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}
 function refreshReadings(manifest,siteMeta={},slugFilter=null){ensureContentPlaceholders(manifest,siteMeta,slugFilter);return prepareReadings(manifest,siteMeta);}
 function buildSlugOutputs(siteMeta,manifest,readings,slug){const target=readings.find((reading)=>reading.slug===slug);if(!target)throw new Error(`Unknown slug: ${slug}`);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest,target.slug);writeAssets();buildIndex(siteMeta,readings,thumbnails);writePublicPdf(target);const readingDir=path.join(siteDir,"readings",target.slug);const readingAssetDir=path.join(siteDir,"assets","readings",target.slug);if(fs.existsSync(readingDir))fs.rmSync(readingDir,{recursive:true,force:true});if(fs.existsSync(readingAssetDir))fs.rmSync(readingAssetDir,{recursive:true,force:true});copyReadingAssets(target);buildLanding(siteMeta,target);for(const page of target.pages){buildPage(siteMeta,target,page);}return target;}
 function buildFullOutputs(siteMeta,manifest,readings){const preservedMarkdown=snapshotPreservedDocMarkdown();if(fs.existsSync(siteDir))fs.rmSync(siteDir,{recursive:true,force:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);for(const reading of readings){writePublicPdf(reading);copyReadingAssets(reading);buildLanding(siteMeta,reading);for(const page of reading.pages){buildPage(siteMeta,reading,page);}}restorePreservedDocMarkdown(preservedMarkdown);}

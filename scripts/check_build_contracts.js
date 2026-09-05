@@ -57,6 +57,50 @@ try {
     assert.deepEqual(cards, readings.map((reading) => reading.slug));
     assert.deepEqual(rail, readings.map((reading) => reading.slug));
   });
+  const assetUrls = () => {
+    const html = fs.readFileSync(path.join(fixture, "docs", "index.html"), "utf8");
+    return Object.fromEntries(["styles.css", "app.js"].map((filename) => {
+      const url = [...html.matchAll(/\b(?:href|src)="([^"]+)"/g)].map((match) => match[1]).find((value) => value.startsWith(`assets/${filename}?v=`));
+      assert(url, `Missing versioned ${filename} URL`);
+      return [filename, url];
+    }));
+  };
+  const initialAssetUrls = assetUrls();
+  verify("asset versions match the first 12 SHA256 digits of written bytes", () => {
+    for (const filename of ["styles.css", "app.js"]) assert.equal(initialAssetUrls[filename], `assets/${filename}?v=${digest(path.join(fixture, "docs", "assets", filename)).slice(0, 12)}`);
+    const nested = sitePage("docs", first, "professor-prep.html");
+    for (const url of Object.values(initialAssetUrls)) assert(nested.includes(`../../${url}`));
+  });
+  run(["scripts/build_site.js", "--home-only"]);
+  verify("unchanged builds retain stable asset URLs", () => assert.deepEqual(assetUrls(), initialAssetUrls));
+  const assetSources = { "styles.css": "site_styles.css", "app.js": "site_app.js" };
+  const originalAssets = Object.fromEntries(Object.entries(assetSources).map(([filename, source]) => [filename, fs.readFileSync(path.join(fixture, "scripts", source))]));
+  try {
+    for (const [filename, source] of Object.entries(assetSources)) fs.writeFileSync(path.join(fixture, "scripts", source), originalAssets[filename].toString("utf8").replace(/\r\n?/g, "\n").replace(/\n/g, "\r\n"));
+    run(["scripts/build_site.js", "--home-only"]);
+    verify("CRLF sources produce identical asset bytes and versions", () => {
+      assert.deepEqual(assetUrls(), initialAssetUrls);
+      for (const filename of Object.keys(assetSources)) {
+        const target = path.join(fixture, "docs", "assets", filename);
+        assert(!fs.readFileSync(target, "utf8").includes("\r"));
+        assert.equal(`assets/${filename}?v=${digest(target).slice(0, 12)}`, initialAssetUrls[filename]);
+      }
+    });
+    for (const [filename, source] of Object.entries(assetSources)) {
+      for (const [other, otherSource] of Object.entries(assetSources)) fs.writeFileSync(path.join(fixture, "scripts", otherSource), originalAssets[other]);
+      fs.appendFileSync(path.join(fixture, "scripts", source), "\n/* Asset version regression probe. */\n");
+      run(["scripts/build_site.js", "--home-only"]);
+      verify(`changing ${filename} updates only its content-based URL`, () => {
+        const changed = assetUrls();
+        assert.notEqual(changed[filename], initialAssetUrls[filename]);
+        assert.equal(changed[filename], `assets/${filename}?v=${digest(path.join(fixture, "docs", "assets", filename)).slice(0, 12)}`);
+        for (const other of Object.keys(assetSources).filter((value) => value !== filename)) assert.equal(changed[other], initialAssetUrls[other]);
+      });
+    }
+  } finally {
+    for (const [filename, source] of Object.entries(assetSources)) fs.writeFileSync(path.join(fixture, "scripts", source), originalAssets[filename]);
+  }
+  run(["scripts/build_site.js", "--home-only"]);
   verify("normal output hides schema-pass overview and discussion drafts", () => {
     const meta = readJson(path.join(firstContent, "meta.json"));
     const source = buildValidationSnapshot(fixture, first, meta, { requireBuiltArtifacts: false });
@@ -128,6 +172,7 @@ try {
   verify("English and legacy interaction contracts pass on fresh fixture output", () => run(["scripts/check_interactions.js"]));
   verify("quiz player preserves English answers, evidence and resume controls", () => run(["scripts/check_quiz_player.js"]));
   verify("fresh explicit approvals pass all generated artifact gates", () => run(["scripts/validate_content.js", "--publish-gate"]));
+  verify("site link validation resolves versioned asset query strings", () => run(["scripts/check_site_links.js", "--site-dir", "docs"]));
   verify("approval report follows the same manifest order as the home page", () => assert.deepEqual(collectApprovalRows(fixture).map((row) => row.slug), readings.map((reading) => reading.slug)));
   console.log(`PASS build contracts (${checks} regression checks)`);
 } finally {
