@@ -16,9 +16,9 @@ const playerHtml=`<section data-quiz-player data-quiz-language="en" data-questio
   ${template("ox-1","ox",radios("ox-1"))}${template("short-1","short",'<label>Years<input type="text" data-quiz-input></label>')}${template("mcq-1","mcq",radios("mcq-1"))}
 </section>`;
 
-async function boot(html,entries={},prepare=()=>{}){
+async function boot(html,entries={},prepare=()=>{},pageUrl=URL){
   const documentHtml=/<!doctype\s+html/i.test(html)?html:`<!doctype html><html lang="en"><body>${html}</body></html>`;
-  const dom=new JSDOM(documentHtml,{url:URL,runScripts:"outside-only",pretendToBeVisual:true});
+  const dom=new JSDOM(documentHtml,{url:pageUrl,runScripts:"outside-only",pretendToBeVisual:true});
   await new Promise((resolve)=>dom.window.addEventListener("load",resolve,{once:true}));
   const {window}=dom;
   window.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
@@ -27,6 +27,9 @@ async function boot(html,entries={},prepare=()=>{}){
   window.scrollTo=({top})=>{window.scrollY=top;};
   for(const [key,value] of Object.entries(entries))window.localStorage.setItem(key,value);
   prepare(window);
+  for(const script of window.document.querySelectorAll("script:not([src])")){
+    if(!script.type||/^(?:text|application)\/javascript$/.test(script.type))window.eval(script.textContent);
+  }
   window.eval(APP);
   window.document.dispatchEvent(new window.Event("DOMContentLoaded"));
   return dom;
@@ -114,7 +117,8 @@ async function checkPlayer(){
 }
 
 async function checkReader(){
-  const html=`<main data-reader-root data-page-path="reader-fixture"><div data-reading-status></div><button data-page-bookmark></button><button data-resume-position hidden>Resume</button><button data-font-action="increase">Larger</button><button data-font-action="reset">Reset</button><div data-important-list></div><nav><a href="#first" data-reader-toc-link>First</a><a href="#second" data-reader-toc-link>Second</a></nav><div data-reading-progress-bar></div><article data-article-body data-reading-article-body><h2 id="first">First</h2><p>Long section</p><h2 id="second">Second</h2></article></main>`;
+  const html=`<main><nav><a href="#first" data-reader-toc-link>First</a><a href="#second" data-reader-toc-link>Second</a></nav><div data-reading-progress-bar></div><article data-reading-article-body><h2 id="first">First</h2><p>Long section</p><h2 id="second">Second</h2></article></main>`;
+  const legacy=legacyReaderEntries("/readings/fixture/quiz.html");
   const prepare=(window)=>{
     const first=window.document.getElementById("first"),second=window.document.getElementById("second");
     first.getBoundingClientRect=()=>({top:100-window.scrollY});
@@ -124,44 +128,53 @@ async function checkReader(){
     Object.defineProperty(article,"scrollHeight",{value:3500});
     Object.defineProperty(window.document.documentElement,"scrollHeight",{value:3600});
   };
-  let dom=await boot(html,{},prepare);
+  let dom=await boot(html,legacy,prepare);
   const {window}=dom;
+  assert.equal(window.document.documentElement.style.getPropertyValue("--reader-font-scale"),"","old font preferences must not change the reading layout");
+  assert.equal(window.scrollY,0,"old reading positions must not restore automatically");
+  assert.equal(window.document.querySelector(".mark-btn, [data-resume-position], [data-page-bookmark], [data-font-action]"),null);
   window.scrollY=700;
   window.dispatchEvent(new window.Event("scroll"));
   assert.equal(window.document.querySelector('[data-reader-toc-link][aria-current="true"]').getAttribute("href"),"#first","a heading below the viewport must not become the active section");
-  window.document.querySelector("[data-page-bookmark]").click();
-  window.document.querySelector("[data-font-action=increase]").click();
-  window.document.querySelector("#first .mark-btn").click();
+  const progress=parseFloat(window.document.querySelector("[data-reading-progress-bar]").style.width);
+  assert(progress>0&&progress<100,"reading progress must continue updating without persistence tools");
   window.dispatchEvent(new window.Event("pagehide"));
-  const saved=snapshot(dom);
-  assert.equal(JSON.parse(saved["aaf-scroll:reader-fixture"]).headingId,"first");
+  for(const [key,value] of Object.entries(legacy))assert.equal(window.localStorage.getItem(key),value,"retired reading state must not be rewritten");
   dom.window.close();
-  dom=await boot(html,saved,(window)=>{
+  dom=await boot(html,legacy,(window)=>{
     prepare(window);
-    // The layout changed (for example the font size or viewport changed).
     window.document.getElementById("first").getBoundingClientRect=()=>({top:300-window.scrollY});
   });
-  assert.equal(dom.window.document.querySelector("[data-page-bookmark]").getAttribute("aria-pressed"),"true");
-  assert.equal(dom.window.document.querySelector("#first .mark-btn").getAttribute("aria-pressed"),"true");
-  assert.equal(dom.window.document.documentElement.style.getPropertyValue("--reader-font-scale"),"1.05");
-  dom.window.document.querySelector("[data-resume-position]").click();
-  assert.equal(dom.window.scrollY,900,"resume must use the saved heading and relative offset after reflow");
+  assert.equal(dom.window.document.documentElement.style.getPropertyValue("--reader-font-scale"),"");
+  assert.equal(dom.window.scrollY,0,"reload must not restore an old reading position after reflow");
   dom.window.close();
 }
 
+function legacyReaderEntries(pagePath){
+  return{
+    "aaf-font-scale":"1.35",
+    [`aaf-scroll:${pagePath}`]:JSON.stringify({y:2100,t:1,headingId:"first",offset:600}),
+    [`aaf-marks:${pagePath}`]:JSON.stringify(["first"]),
+    "aaf-bookmarked-pages":JSON.stringify([pagePath]),
+  };
+}
+
 async function checkPrepAndFilters(){
-  const prep=`<section data-prep-root data-prep-language="en"><button data-prep-tab="talk" aria-selected="true">Talk</button><div data-prep-panel="talk"><article data-prep-card data-card-id="stable-card"><h3 data-prep-title>Question</h3><button data-prep-difficult>Mark</button><label>Your answer<textarea data-prep-practice></textarea></label><details data-prep-model><summary>Model response</summary>Model answer</details></article></div></section>`;
-  let dom=await boot(prep);
-  const textarea=dom.window.document.querySelector("textarea");
-  textarea.value="This paper proposes four components.";
-  textarea.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
+  const prep=`<section data-prep-root data-prep-language="en"><button data-prep-tab="talk" aria-selected="true">Talk</button><button data-prep-tab="response" aria-selected="false">Response</button><div data-prep-panel="talk"><article data-prep-card data-card-id="stable-card"><h3 data-prep-title>Question</h3><button data-prep-difficult>Mark</button><section data-prep-answer><h4 class="prep-answer-label">Model answer</h4><p class="prep-answer-copy">This paper proposes four components.</p></section></article></div><div data-prep-panel="response" hidden><article data-prep-card data-card-id="response-card"><h3 data-prep-title>Reading response</h3><section data-prep-answer><h4 class="prep-answer-label">Model answer</h4><p class="prep-answer-copy">The argument connects individual and social processes.</p></section></article></div></section>`;
+  const key="aaf-prep:/readings/fixture/quiz.html";
+  let dom=await boot(prep,{[key]:JSON.stringify({activeTab:"talk",difficultIds:[],drafts:{"stable-card":"Obsolete saved draft"}})});
+  assert.equal(dom.window.document.querySelector("textarea, [data-prep-practice], [data-prep-model]"),null);
+  assert.equal(dom.window.document.querySelector(".prep-answer-copy").closest("details, [hidden]"),null,"active-tab model answers must be displayed immediately");
   dom.window.document.querySelector("[data-prep-difficult]").click();
-  assert.equal(dom.window.document.querySelector("[data-prep-model]").open,false);
+  dom.window.document.querySelector('[data-prep-tab="response"]').click();
+  assert.equal(dom.window.document.querySelector('[data-prep-panel="response"] .prep-answer-copy').closest("details, [hidden]"),null);
   const entries=snapshot(dom);dom.window.close();
+  assert.equal(JSON.parse(entries[key]).drafts,undefined,"only tabs and review marks should be persisted");
   dom=await boot(prep,entries);
-  assert.equal(dom.window.document.querySelector("textarea").value,"This paper proposes four components.");
   assert.equal(dom.window.document.querySelector("[data-prep-difficult]").getAttribute("aria-pressed"),"true");
-  assert.match(dom.window.document.querySelector("[data-prep-practice-status]").textContent,/Draft saved/);
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="response"]').getAttribute("aria-selected"),"true");
+  assert.equal(dom.window.document.querySelector('[data-prep-panel="response"] .prep-answer-copy').closest("details, [hidden]"),null);
+  assert(!dom.window.document.body.textContent.includes("Obsolete saved draft"));
   dom.window.close();
   const filters=`<section data-home-controls><input data-reading-search><button class="is-active" data-filter-chip data-filter-value="">All</button><button data-filter-chip data-filter-value="article">Articles</button></section><p data-filter-result-count></p><div data-reading-grid><article data-reading-card data-search="Levy" data-filter-group="paper"></article><article data-reading-card data-search="Underwood" data-filter-group="article"></article></div><p data-empty-state hidden>Empty</p>`;
   dom=await boot(filters);
@@ -178,6 +191,8 @@ async function checkPrepAndFilters(){
 
 async function checkGeneratedPages(){
   let count=0;
+  let prepAnswerCount=0;
+  let readingPageCount=0;
   const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,"..","manifest","readings.json"),"utf8"));
   const requested=process.argv.flatMap((arg,index)=>arg==="--slug"?[process.argv[index+1]]:[]);
   const readings=manifest.readings.filter((reading)=>!requested.length||requested.includes(reading.slug));
@@ -227,31 +242,54 @@ async function checkGeneratedPages(){
     assert.match(legacy.querySelector("[data-quiz-score]").textContent,/No answers graded/);
     dom.window.close();
     dom=await boot(read("professor-prep"));
-    assert.equal(dom.window.document.querySelector("[data-prep-root]").dataset.prepLanguage,"en");
-    const textarea=dom.window.document.querySelector("textarea[data-prep-practice]");
-    assert(textarea,`${slug}: practice textarea contract`);
-    textarea.value="My practice response.";
-    textarea.dispatchEvent(new dom.window.Event("input",{bubbles:true}));
-    assert.match(textarea.closest("[data-prep-card]").querySelector("[data-prep-practice-status]").textContent,/Draft saved/);
-    assert.equal(dom.window.document.querySelector("[data-prep-model]").open,false);
+    const prepRoot=dom.window.document.querySelector("[data-prep-root]");
+    assert.equal(prepRoot.dataset.prepLanguage,"en");
+    assert.equal(prepRoot.querySelector("textarea, [data-prep-practice], [data-prep-model], [data-prep-practice-status]"),null,`${slug}: removed prep inputs and disclosures must stay absent`);
+    const cards=Array.from(prepRoot.querySelectorAll("[data-prep-card]"));
+    const seenCards=new Set();
+    for(const tab of prepRoot.querySelectorAll("[data-prep-tab]")){
+      tab.click();
+      const panel=Array.from(prepRoot.querySelectorAll("[data-prep-panel]")).find((item)=>item.dataset.prepPanel===tab.dataset.prepTab);
+      assert(panel&&!panel.hidden,`${slug}: selecting a prep tab must reveal its panel`);
+      for(const card of panel.querySelectorAll("[data-prep-card]")){
+        const answer=card.querySelector("section[data-prep-answer] > p.prep-answer-copy");
+        assert(answer?.textContent.trim(),`${slug}: ${card.dataset.cardId} needs a direct model answer`);
+        assert(card.querySelector("section[data-prep-answer] > h4.prep-answer-label")?.textContent.trim(),`${slug}: answer label is missing`);
+        assert.equal(answer.closest("details, [hidden]"),null,`${slug}: model answers must be visible within the selected tab`);
+        assert(card.querySelector("[data-prep-answer] .quiz-evidence"),`${slug}: direct answers must retain source evidence`);
+        seenCards.add(card);
+        prepAnswerCount++;
+      }
+    }
+    assert.equal(seenCards.size,cards.length,`${slug}: every prep card must be accessible through its tab`);
+    const mark=prepRoot.querySelector("[data-prep-panel]:not([hidden]) [data-prep-difficult]");
+    assert(mark,`${slug}: mark for review remains available`);
+    mark.click();
+    assert.equal(mark.getAttribute("aria-pressed"),"true");
     dom.window.close();
-    dom=await boot(read("translation"));
-    const reader=dom.window.document.querySelector("[data-reader-root]");
-    assert(reader,`${slug}: reader root contract`);
-    assert(reader.querySelector("[data-article-body] .mark-btn"),`${slug}: stable headings are markable`);
-    reader.querySelector("[data-page-bookmark]").click();
-    assert.equal(reader.querySelector("[data-page-bookmark]").getAttribute("aria-pressed"),"true");
-    reader.querySelector("[data-font-action=increase]").click();
-    assert.equal(dom.window.document.documentElement.style.getPropertyValue("--reader-font-scale"),"1.05");
-    dom.window.close();
+    for(const page of ["full","translation"]){
+      const pagePath=`/readings/${slug}/${page}.html`;
+      const oldState=legacyReaderEntries(pagePath);
+      dom=await boot(read(page),oldState,()=>{},`https://example.test${pagePath}`);
+      const doc=dom.window.document;
+      assert(doc.querySelector("[data-reading-article-body]"),`${slug}/${page}: readable article remains`);
+      assert.equal(doc.querySelector("[data-reader-root], .reader-tools, [data-font-action], [data-page-bookmark], [data-resume-position], [data-important-list], .mark-btn"),null,`${slug}/${page}: retired reader controls must stay absent`);
+      assert(doc.querySelector("[data-reader-toc-link]")&&doc.querySelector("[data-reading-progress-bar]"),`${slug}/${page}: contents navigation and progress remain`);
+      assert.equal(doc.documentElement.style.getPropertyValue("--reader-font-scale"),"",`${slug}/${page}: old font scale must not be applied, including by inline bootstrap`);
+      assert.equal(dom.window.scrollY,0,`${slug}/${page}: old saved position must not change initial scroll`);
+      dom.window.dispatchEvent(new dom.window.Event("pagehide"));
+      for(const [key,value] of Object.entries(oldState))assert.equal(dom.window.localStorage.getItem(key),value,`${slug}/${page}: removed reading preferences must not be updated`);
+      dom.window.close();
+      readingPageCount++;
+    }
   }
-  return count;
+  return{renderedQuestions:count,prepAnswerCount,readingPageCount};
 }
 
 (async()=>{
   await checkPlayer();
   await checkReader();
   await checkPrepAndFilters();
-  const renderedQuestions=await checkGeneratedPages();
-  console.log(`PASS app behaviors (real DOM quiz rounds, grading, English input, reload/resume, mistakes, bank invalidation, reader persistence/TOC, prep drafts and filters; ${renderedQuestions} generated questions)`);
+  const {renderedQuestions,prepAnswerCount,readingPageCount}=await checkGeneratedPages();
+  console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, direct prep answers with tabs/review marks, and filters; ${renderedQuestions} generated questions, ${prepAnswerCount} directly displayed prep answers, ${readingPageCount} reading pages)`);
 })().catch((error)=>{console.error(error);process.exitCode=1;});

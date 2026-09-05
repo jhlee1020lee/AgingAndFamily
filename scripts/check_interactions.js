@@ -84,13 +84,22 @@ function checkProfessorPrep(reading, errors) {
   expect(count(html, /\bdata-prep-card(?:\s|>)/g) === source.cards.length + source.reading_response.cards.length, `${prefix}: prep card count mismatch`, errors);
   const expectedCards = source.cards.length + source.reading_response.cards.length;
   expect(html.includes(source.language === "en" ? "Reading response" : "어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
-  expect(count(html, /\bdata-prep-practice(?:\s|>)/g) === expectedCards, `${prefix}: each question needs a practice field`, errors);
-  expect(count(html, /\bdata-prep-model(?:\s|>)/g) === expectedCards, `${prefix}: each question needs a model-answer disclosure`, errors);
-  expect(!/<details\b[^>]*data-prep-model[^>]*\bopen\b|<details\b[^>]*\bopen\b[^>]*data-prep-model/.test(html), `${prefix}: model answers should start collapsed`, errors);
+  expect(!/<textarea\b|\bdata-prep-(?:practice|model)\b/.test(html), `${prefix}: removed response inputs or model-answer disclosures remain`, errors);
+  expect(count(html, /<section\b[^>]*\bdata-prep-answer(?:\s|>)/g) === expectedCards, `${prefix}: each card needs an immediately displayed answer section`, errors);
+  expect(count(html, /<h4\b[^>]*class="[^"]*\bprep-answer-label\b[^"]*"[^>]*>[^<]+<\/h4>/g) === expectedCards, `${prefix}: each answer needs a visible label`, errors);
+  expect(count(html, /class="prep-answer-copy"/g) === expectedCards, `${prefix}: model answer count mismatch`, errors);
+  expect(count(html, /class="quiz-evidence-detail"/g) === expectedCards, `${prefix}: answer evidence disclosures must remain available`, errors);
   if (source.language === "en") {
     expect(html.includes('data-prep-language="en"'), `${prefix}: English workspace marker missing`, errors);
-    expect(html.includes("Your answer in English"), `${prefix}: English practice prompt missing`, errors);
   }
+}
+
+function checkReadingPage(reading, pageKey, errors) {
+  const html = readText(path.join(ROOT_DIR, "docs", "readings", reading.slug, `${pageKey}.html`));
+  const prefix = `${reading.slug}/${pageKey}`;
+  expect(!/\bdata-(?:reader-root|font-action|page-bookmark|resume-position|important-list|generated-toc|reading-status)\b|\breader-tools\b|\bmark-btn\b/.test(html), `${prefix}: removed reading tools remain`, errors);
+  expect(!/aaf-font-scale/.test(html), `${prefix}: saved font scaling must not be restored by inline scripts`, errors);
+  expect(html.includes("data-reading-article-body") && html.includes("data-reader-toc-link") && html.includes("data-reading-progress-bar"), `${prefix}: article, contents navigation, and progress must remain`, errors);
 }
 
 function checkHomeRail(manifest, errors) {
@@ -200,12 +209,13 @@ function main() {
   readings.forEach((reading) => {
     QUIZ_PAGES.forEach((pageKey) => checkQuizPage(reading, pageKey, errors));
     checkProfessorPrep(reading, errors);
+    ["full", "translation"].forEach((pageKey) => checkReadingPage(reading, pageKey, errors));
   });
   checkHomeRail(manifest, errors);
   checkClientLogic(errors);
   checkChatbotExcluded(readings, errors);
   if (errors.length) throw new Error(`Interaction checks failed\n  ${errors.join("\n  ")}`);
-  console.log(`PASS interactions (${readings.length * QUIZ_PAGES.length} quizzes, ${readings.length} prep pages, ${manifest.readings.length} rail items, chatbot excluded)`);
+  console.log(`PASS interactions (${readings.length * QUIZ_PAGES.length} quizzes, ${readings.length} prep pages with direct answers, ${readings.length * 2} reading pages without retired tools, ${manifest.readings.length} rail items, chatbot excluded)`);
 }
 
 if (require.main === module) main();

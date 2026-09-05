@@ -17,19 +17,9 @@ const storage={
 
 const STORAGE_PREFIX="aaf";
 const THEME_KEY=`${STORAGE_PREFIX}-theme`;
-const FONT_KEY=`${STORAGE_PREFIX}-font-scale`;
 const UI_TEXT={
   darkMode:"다크 모드",
   lightMode:"라이트 모드",
-  bookmark:"북마크",
-  bookmarked:"북마크됨",
-  resume:"이어서 보기",
-  savedResume:"마지막 읽은 위치를 이 기기에 저장했습니다.",
-  savedPosition:"읽던 위치를 저장했습니다.",
-  noHeadings:"표시할 제목이 아직 없습니다.",
-  noImportant:"중요 표시한 제목이 여기에 모입니다.",
-  noHeadingList:"제목이 아직 없습니다.",
-  mark:"중요",
   prepDifficult:"표시",
   prepDifficultActive:"표시됨",
   prepNoDifficult:"표시한 답변 카드가 여기에 모입니다."
@@ -308,157 +298,12 @@ function initTabMenus(){
   });
 }
 
-function slugify(value){
-  return value.toLowerCase().trim().replace(/[^a-z0-9\uac00-\ud7a3\s-]/g,"").replace(/\s+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"")||"section";
-}
-
 function escapeUiText(value){
   return String(value??"").replace(/[&<>"']/g,(character)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[character]));
 }
 
-function cleanHeadingText(text){
-  return String(text||"").replace(/\s*중요\s*$/," ").trim();
-}
-
 function isReaderHeading(heading){
   return Boolean(heading)&&heading.dataset?.readerToc!=="false";
-}
-
-function setFontScale(scale){
-  const numeric=Number(scale);
-  const clamped=Math.min(1.35,Math.max(0.9,Number((Number.isFinite(numeric)?numeric:1).toFixed(2))));
-  document.documentElement.style.setProperty("--reader-font-scale",String(clamped));
-  try{localStorage.setItem(FONT_KEY,String(clamped));}catch(error){}
-  return clamped;
-}
-
-function initReader(){
-  const root=document.querySelector("[data-reader-root]");
-  if(!root)return;
-  const articleBody=root.querySelector("[data-article-body]");
-  if(!articleBody)return;
-
-  const pagePath=root.dataset.pagePath||window.location.pathname;
-  const scrollKey=`${STORAGE_PREFIX}-scroll:${pagePath}`;
-  const marksKey=`${STORAGE_PREFIX}-marks:${pagePath}`;
-  const bookmarksKey=`${STORAGE_PREFIX}-bookmarked-pages`;
-  const note=root.querySelector("[data-reading-status]");
-  const resume=root.querySelector("[data-resume-position]");
-  const bookmarkButton=root.querySelector("[data-page-bookmark]");
-  const importantList=root.querySelector("[data-important-list]");
-  const toc=root.querySelector("[data-generated-toc]");
-  const savedMarks=storage.get(marksKey,[]);
-  const marked=new Set(Array.isArray(savedMarks)?savedMarks:[]);
-  const savedScale=Number((()=>{try{return localStorage.getItem(FONT_KEY);}catch(error){return 1;}})()||1);
-
-  setFontScale(savedScale||1);
-  root.querySelectorAll("[data-font-action]").forEach((button)=>{
-    button.addEventListener("click",()=>{
-      const action=button.dataset.fontAction;
-      const current=Number(getComputedStyle(document.documentElement).getPropertyValue("--reader-font-scale")||1);
-      if(action==="decrease")setFontScale(current-0.05);
-      if(action==="increase")setFontScale(current+0.05);
-      if(action==="reset")setFontScale(1);
-    });
-  });
-
-  const savedBookmarks=storage.get(bookmarksKey,[]);
-  const bookmarked=new Set(Array.isArray(savedBookmarks)?savedBookmarks:[]);
-  const updateBookmark=()=>{
-    const active=bookmarked.has(pagePath);
-    if(bookmarkButton){
-      bookmarkButton.textContent=active?UI_TEXT.bookmarked:UI_TEXT.bookmark;
-      bookmarkButton.classList.toggle("is-active",active);
-      bookmarkButton.setAttribute("aria-pressed",String(active));
-    }
-  };
-
-  if(bookmarkButton){
-    bookmarkButton.addEventListener("click",()=>{
-      if(bookmarked.has(pagePath))bookmarked.delete(pagePath);
-      else bookmarked.add(pagePath);
-      storage.set(bookmarksKey,Array.from(bookmarked));
-      updateBookmark();
-    });
-    updateBookmark();
-  }
-
-  const headings=Array.from(articleBody.querySelectorAll("h2,h3,h4")).filter(isReaderHeading);
-  const renderImportantList=()=>{
-    if(!importantList)return;
-    if(!headings.length){
-      importantList.innerHTML=`<p class="meta">${UI_TEXT.noHeadingList}</p>`;
-      return;
-    }
-    const markedHeadings=headings.filter((heading)=>marked.has(heading.id));
-    importantList.innerHTML=markedHeadings.length
-      ? markedHeadings.map((heading)=>`<a class="important-link" href="#${escapeUiText(heading.id)}">${escapeUiText(cleanHeadingText(heading.textContent))}</a>`).join("")
-      : `<p class="meta">${UI_TEXT.noImportant}</p>`;
-  };
-
-  if(!headings.length&&toc)toc.innerHTML=`<p class="meta">${UI_TEXT.noHeadings}</p>`;
-  const tocLinks=headings.map((heading,index)=>{
-    if(!heading.id)heading.id=`${slugify(heading.textContent)}-${index+1}`;
-    heading.classList.add("markable-heading");
-    let marker=heading.querySelector(".mark-btn");
-    if(!marker){
-      marker=document.createElement("button");
-      marker.type="button";
-      marker.className="mark-btn";
-      marker.textContent=UI_TEXT.mark;
-      heading.appendChild(marker);
-    }
-
-    const syncMarker=()=>{
-      const active=marked.has(heading.id);
-      marker.classList.toggle("is-active",active);
-      marker.setAttribute("aria-pressed",String(active));
-    };
-
-    marker.addEventListener("click",()=>{
-      if(marked.has(heading.id))marked.delete(heading.id);
-      else marked.add(heading.id);
-      storage.set(marksKey,Array.from(marked));
-      syncMarker();
-      renderImportantList();
-      if(toc){
-        const tocLink=toc.querySelector(`[href="#${heading.id}"]`);
-        tocLink&&tocLink.classList.toggle("is-important",marked.has(heading.id));
-      }
-    });
-
-    syncMarker();
-    return `<a class="toc-link toc-${heading.tagName.toLowerCase()} ${marked.has(heading.id)?"is-important":""}" href="#${escapeUiText(heading.id)}" data-reader-toc-link>${escapeUiText(cleanHeadingText(heading.textContent))}</a>`;
-  });
-
-  if(toc&&tocLinks.length)toc.innerHTML=tocLinks.join("");
-  renderImportantList();
-
-  const saved=storage.get(scrollKey,null);
-  if(saved&&typeof saved.y==="number"&&saved.y>120&&resume){
-    resume.hidden=false;
-    resume.addEventListener("click",()=>{
-      const heading=saved.headingId?document.getElementById(saved.headingId):null;
-      const top=heading&&articleBody.contains(heading)
-        ?window.scrollY+heading.getBoundingClientRect().top+(Number(saved.offset)||0):saved.y;
-      window.scrollTo({top:Math.max(0,top),behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
-    });
-    if(note)note.textContent=UI_TEXT.savedResume;
-  }
-
-  let saveTimer=null;
-  const saveScroll=()=>{
-    const heading=headings.reduce((current,item)=>item.getBoundingClientRect().top<=160?item:current,null);
-    const savedOk=storage.set(scrollKey,{y:window.scrollY,t:Date.now(),headingId:heading?.id||null,offset:heading?-heading.getBoundingClientRect().top:0});
-    if(note)note.textContent=savedOk?UI_TEXT.savedPosition:"이 브라우저에서 읽던 위치를 저장할 수 없습니다.";
-  };
-
-  window.addEventListener("scroll",()=>{
-    window.clearTimeout(saveTimer);
-    saveTimer=window.setTimeout(saveScroll,160);
-  },{passive:true});
-  window.addEventListener("beforeunload",saveScroll);
-  window.addEventListener("pagehide",saveScroll);
 }
 
 function initTranslationSentenceReveals(){
@@ -958,8 +803,7 @@ function initQuizPlayers(){
 function initProfessorPrep(){
   const root=document.querySelector("[data-prep-root]");
   if(!root)return;
-  const readerRoot=root.closest("[data-reader-root]");
-  const pagePath=readerRoot?.dataset.pagePath||window.location.pathname;
+  const pagePath=window.location.pathname;
   const stateKey=`${STORAGE_PREFIX}-prep:${pagePath}`;
   const stored=storage.get(stateKey,{});
   const saved=stored&&typeof stored==="object"?stored:{};
@@ -970,8 +814,7 @@ function initProfessorPrep(){
   const initialTab=availableTabKeys.includes(saved.activeTab)?saved.activeTab:(availableTabKeys[0]||"");
   const state={
     activeTab:initialTab,
-    difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[]),
-    drafts:saved.drafts&&typeof saved.drafts==="object"&&!Array.isArray(saved.drafts)?saved.drafts:{}
+    difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])
   };
   const difficultList=document.querySelector("[data-prep-difficult-list]");
 
@@ -987,7 +830,7 @@ function initProfessorPrep(){
   });
 
   const persist=()=>{
-    return storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds),drafts:state.drafts});
+    return storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds)});
   };
 
   const activateTab=(key,options={})=>{
@@ -1053,32 +896,6 @@ function initProfessorPrep(){
   };
 
   cards.forEach((card)=>{
-    const practice=card.card.querySelector("textarea[data-prep-practice], [data-prep-practice] textarea");
-    if(practice){
-      practice.value=typeof state.drafts[card.id]==="string"?state.drafts[card.id]:"";
-      let status=card.card.querySelector("[data-prep-practice-status]");
-      if(!status){
-        status=document.createElement("p");
-        status.className="prep-practice-status";
-        status.setAttribute("data-prep-practice-status","");
-        status.setAttribute("role","status");
-        practice.insertAdjacentElement("afterend",status);
-      }
-      const updateStatus=(savedOk=true)=>{
-        status.textContent=!savedOk
-          ?(english?"This browser could not save your draft.":"이 브라우저에서 연습 답안을 저장할 수 없습니다.")
-          :english&&containsKorean(practice.value)
-            ?"Please practice your answer in English. Your draft is saved; it is not graded."
-            :practice.value.trim()
-              ?(english?"Draft saved in this browser. Compare the key points and practice speaking aloud.":"연습 답안을 이 브라우저에 저장했습니다. 모델 답변과 비교하고 소리 내어 말해 보세요.")
-              :(english?"Write or say your answer before opening the model response.":"모델 답변을 열기 전에 자신의 답을 적거나 말해 보세요.");
-      };
-      practice.addEventListener("input",()=>{
-        state.drafts[card.id]=practice.value;
-        updateStatus(persist());
-      });
-      updateStatus();
-    }
     if(card.difficultButton){
       card.difficultButton.addEventListener("click",()=>{
         if(state.difficultIds.has(card.id))state.difficultIds.delete(card.id);
@@ -1148,7 +965,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   initHomeFilters();
   initTabMenus();
   initMobileTabs();
-  initReader();
   initTranslationSentenceReveals();
   initInteractiveQuizzes();
   initQuizPlayers();

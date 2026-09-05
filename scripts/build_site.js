@@ -889,8 +889,6 @@ function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",
       try {
         const theme=localStorage.getItem("aaf-theme");
         if(theme) document.documentElement.dataset.theme=theme;
-        const fontScale=localStorage.getItem("aaf-font-scale");
-        if(fontScale) document.documentElement.style.setProperty("--reader-font-scale",fontScale);
       } catch (error) {}
     })();
   </script>
@@ -1061,11 +1059,6 @@ function renderPilotReaderAside(outputPath,reading,page,tocHtml){return `
   </section>
 </aside>
 `;}
-function renderReaderTools(){return `<section class="reader-tools" aria-label="읽기 도구">
-  <div class="reader-tool-actions"><span>글자 크기</span><button class="btn-ghost" type="button" data-font-action="decrease" aria-label="글자 작게">A−</button><button class="btn-ghost" type="button" data-font-action="reset">기본</button><button class="btn-ghost" type="button" data-font-action="increase" aria-label="글자 크게">A+</button><button class="btn-ghost" type="button" data-page-bookmark aria-pressed="false">북마크</button><button class="btn-ghost" type="button" data-resume-position hidden>읽던 위치로</button></div>
-  <p class="meta" data-reading-status role="status" aria-live="polite"></p>
-  <details class="reader-important"><summary>중요 표시한 부분</summary><div data-important-list></div></details>
-</section>`;}
 function renderReadingContentAside(outputPath,reading,page,tocHtml){return `<aside class="rpanel-side reader-detail-side sticky-toc" aria-label="${escapeHtml(page.label)} navigation"><section class="panel detail-side-panel reader-toc-panel"><p class="section-kicker">목차</p><h2>${escapeHtml(page.label)}</h2><div class="toc-list">${tocHtml||'<p class="meta">본문 목차가 아직 없습니다.</p>'}</div></section>${reading.tags&&reading.tags.length?`<section class="panel detail-side-panel key-concept-callout"><p class="section-kicker">태그</p><h2>읽기 키워드</h2>${renderChipRow(reading.tags.map((tag)=>`# ${tag}`),"chip-row reading-tag-row")}</section>`:""}</aside>`;}
 function renderList(items){return `<ul>${items.map((item)=>`<li>${renderInline(item)}</li>`).join("")}</ul>`;}
 function renderChipRow(items,className="chip-row"){return `<div class="${escapeHtml(className)}">${items.map((item)=>`<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>`;}
@@ -1177,10 +1170,9 @@ function buildArticle(siteMeta,reading,page){
   const progressHtml=readingLayout?`<div class="reading-progress" aria-hidden="true"><span data-reading-progress-bar></span></div>`:"";
   const body=`
 ${siteHeader(siteMeta,outputPath)}
-<main class="reading-shell reading-detail-shell"${readingLayout?' data-reader-root':''}>
+<main class="reading-shell reading-detail-shell">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:page.label})}
   ${progressHtml}
-  ${readingLayout?renderReaderTools():""}
   <div class="rpanel">
     <section class="rpanel-main">
       <section class="panel detail-block detail-content-block section-block">
@@ -1319,11 +1311,9 @@ function renderProfessorPrepCard(card,index,options={}){
   const label=toText(options.label)||(en?"Model answer":"모델 답변");
   const segment=options.reading?loadJson(path.join(rootDir,options.reading.content_dir,"source_segments.json"))?.segments?.find((item)=>item.segment_id===card.evidence_segment_id):null;
   const evidence={language:options.language,evidence_segment_id:card.evidence_segment_id,evidence_segment:segment};
-  const inputId=`practice-${card.card_id}`;
   return `<article class="panel prep-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}">
   <div class="prep-card-head"><div><p class="section-kicker">${escapeHtml(label)} ${String(index+1).padStart(2,"0")}</p><h3 data-prep-title>${renderInline(card.title)}</h3></div><button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>${en?"Mark for practice":"표시"}</button></div>
-  <section class="prep-block prep-practice-block"><label for="${escapeHtml(inputId)}">${en?"Your answer in English":"내 답변 연습"}</label><textarea id="${escapeHtml(inputId)}" data-prep-practice lang="${en?"en":"ko"}" rows="4" placeholder="${en?"Try a 30-second response. State your point, give evidence, and note a limitation where relevant.":"먼저 자기 말로 답해 보세요."}"></textarea><p class="meta">${en?"Saved in this browser. Compare your reasoning with the model answer; this response is not automatically graded.":"답변은 이 브라우저에 저장됩니다. 모델 답변과 직접 비교해 보세요."}</p></section>
-  <details class="prep-block prep-answer-block" data-prep-model><summary>${en?"Compare with a 30-second model answer":"30초 모델 답변 보기"}</summary><p class="prep-answer-copy">${renderInline(card.answer_30s)}</p>${renderQuizEvidence(evidence)}</details>
+  <section class="prep-block prep-answer-block" data-prep-answer><h4 class="prep-answer-label">${en?"30-second answer":"30초 답변"}</h4><p class="prep-answer-copy">${renderInline(card.answer_30s)}</p>${renderQuizEvidence(evidence)}</section>
 </article>`;
 }
 function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(prep?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{reading,draft:!isApprovedStatus(page.source_validation_status)}):placeholderProfessorPrepHtml(page,page.sourcePath)):pendingUploadHtml(reading,page.label);const body=`

@@ -166,7 +166,7 @@ function checkCss(widths,errors){
   contractRule(block,".overview-comic-panel",[/flex:\s*0 0 calc\(100% - 2\.75rem\)/,/scroll-snap-align:\s*center/,/scroll-snap-stop:\s*always/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-detail-side',[/order:\s*-1/],errors);
   contractRule(block,'body[data-reading-layout="reader-v2"] .reader-toc-panel .toc-list',[/max-height:\s*10rem/,/overflow-y:\s*auto/],errors);
-  contractRule(block,'body[data-reading-layout="reader-v2"] .article-body',[/font-size:\s*calc\(1rem\s*\*\s*var\(--reader-font-scale\)\)/],errors);
+  contractRule(block,'body[data-reading-layout="reader-v2"] .article-body',[/font-size:\s*1rem(?:\s*;|\s*$)/],errors);
 
   for(const width of widths){
     expect(Number.isFinite(width)&&width>=320&&width<=560,`unsupported contract width: ${width}`,errors);
