@@ -3570,7 +3570,7 @@ body{
 
 /* Pipeline quality upgrade: long-form reading shell and segment evidence UI */
 body[data-reading-layout="reader-v2"] .reading-detail-shell{
-  background:linear-gradient(180deg,#f8f6f1 0%,var(--bg) 18rem);
+  background:var(--bg);
 }
 
 .reading-progress{
@@ -4230,7 +4230,7 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
 
 /* Editorial reading header: the selected ivory and serif design. */
 .reading-detail-header.reading-header-editorial{
-  --header-paper:#fcfaf6;
+  --header-paper:var(--bg);
   --header-ink:#242321;
   --header-muted:#67635c;
   --header-rule:#c9c4bb;
@@ -4358,7 +4358,6 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
 }
 
 :root[data-theme="dark"] .reading-detail-header.reading-header-editorial{
-  --header-paper:#24221f;
   --header-ink:#f3eee5;
   --header-muted:#c4bdb2;
   --header-rule:#514b42;
