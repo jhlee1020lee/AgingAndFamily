@@ -190,3 +190,5 @@ try {
   if (!relative || relative.startsWith("..") || path.isAbsolute(relative)) throw new Error("Refusing to remove a fixture outside project tmp");
   fs.rmSync(fixture, { recursive: true, force: true });
 }
+
+require("./check_weekly_connections").run().catch((error)=>{console.error(error);process.exitCode=1;});

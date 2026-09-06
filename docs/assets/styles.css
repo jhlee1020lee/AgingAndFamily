@@ -4425,6 +4425,13 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
   }
 }
 
+.weekly-entry{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 1.1rem;margin:0 0 1.4rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);text-decoration:none;min-height:64px;}
+.weekly-entry>span:first-child{display:grid;gap:.3rem;min-width:0;}
+.weekly-entry strong{font-size:1rem;line-height:1.6;}
+.weekly-entry>span:first-child>span{font-size:.85rem;color:var(--muted);line-height:1.6;}
+.weekly-entry:hover{border-color:var(--muted);}
+.weekly-entry:focus-visible{outline:2px solid var(--brand);outline-offset:4px;}
+
 /* mobile-contract:start
    Final <=560px layer. Keep this block last so the mobile course-feed layout
    wins over the legacy and redesign responsive rules above. */

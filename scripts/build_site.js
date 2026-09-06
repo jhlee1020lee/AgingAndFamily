@@ -7,11 +7,13 @@ const {writeApprovalStatusReport}=require("./approval_status");
 const {normalizeTranslationOriginalRevealConfig,parseMarkdownDocument,resolveTranslationAlignment}=require("./translation_original_reveal");
 const {validateSentencePairs}=require("./sentence_alignment");
 const {collectOriginalTranslationRenderUnits}=require("./original_translation_reveal");
+const {loadWeeklyConnections,selectAvailableWeeks,renderWeeklyEntry,refreshWeeklyEntryHtml,renderWeeklyBody}=require("./weekly_connections");
 
 const rootDir=path.resolve(__dirname,"..");
 const manifestPath=path.join(rootDir,"manifest","readings.json");
 let siteDir=path.join(rootDir,"docs");
 let allowDraftPreview=false;
+let weeklyConnections=[];
 const styleSource=path.join(__dirname,"site_styles.css");
 const appSource=path.join(__dirname,"site_app.js");
 const brandLogoSource=path.join(__dirname,"assets","branding","snu.png");
@@ -912,7 +914,7 @@ function renderCloudflareWebAnalytics(siteMeta){
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"${token}"}'></script>
 <!-- End Cloudflare Web Analytics -->`;
 }
-function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts=""){const cssHref=versionedAssetHref(outputPath,"styles.css");const jsHref=versionedAssetHref(outputPath,"app.js");const bodyHtml=String(body||"").trim();const analyticsHtml=renderCloudflareWebAnalytics(siteMeta);return `<!DOCTYPE html>
+function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",lang="ko",extraScripts="",extraHead=""){const cssHref=versionedAssetHref(outputPath,"styles.css");const jsHref=versionedAssetHref(outputPath,"app.js");const bodyHtml=String(body||"").trim();const analyticsHtml=renderCloudflareWebAnalytics(siteMeta);return `<!DOCTYPE html>
 <html lang="${escapeHtml(lang)}">
 <head>
   <meta charset="utf-8" />
@@ -928,6 +930,7 @@ function renderDocument(siteMeta,outputPath,title,body,description,bodyAttrs="",
     })();
   </script>
   <link rel="stylesheet" href="${escapeHtml(cssHref)}" />
+  ${extraHead}
 </head>
 <body ${bodyAttrs}>
 ${bodyHtml}
@@ -1182,6 +1185,7 @@ ${siteHeader(siteMeta,outputPath)}
     </div>
   </details>
   <div class="home-main">
+    ${weeklyConnections.map((week)=>renderWeeklyEntry(week,relHref(outputPath,path.join(siteDir,"weeks",week.id,"index.html")))).join("")}
     <section id="readings">
       <div class="section-head">
         <h3>주차별 읽기</h3>
@@ -1384,6 +1388,7 @@ ${siteHeader(siteMeta,outputPath)}
   <div class="rpanel">
     <section class="rpanel-main">
       <section class="panel detail-block detail-content-block">
+        ${weeklyEntryForReading(outputPath,reading)}
         <section class="article-body prep-body detail-article-body">${content}</section>
       </section>
     </section>
@@ -1391,14 +1396,32 @@ ${siteHeader(siteMeta,outputPath)}
   </div>
 </main>
 `;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource).replace(/\r\n?/g,"\n"));writeText(path.join(siteDir,"assets","app.js"),readText(appSource).replace(/\r\n?/g,"\n"));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}
+function weeklyEntryForReading(outputPath,reading){const week=weeklyConnections.find((item)=>item.pair.some((source)=>source.slug===reading.slug));return week?renderWeeklyEntry(week,relHref(outputPath,path.join(siteDir,"weeks",week.id,"index.html"))):"";}
+function prepareWeeklyOutputs(manifest,readings){weeklyConnections=selectAvailableWeeks(loadWeeklyConnections(rootDir,manifest),readings);}
+function buildWeeklyOutputs(siteMeta,refreshEntriesFor=[]){
+  const weeklyDir=path.resolve(siteDir,"weeks");
+  if(path.dirname(weeklyDir)!==path.resolve(siteDir))throw new Error("Weekly output must stay within site directory");
+  if(fs.existsSync(weeklyDir))fs.rmSync(weeklyDir,{recursive:true,force:true});
+  for(const week of weeklyConnections){
+    const outputPath=path.join(weeklyDir,week.id,"index.html");
+    const body=siteHeader(siteMeta,outputPath)+renderWeeklyBody(rootDir,week,{homeHref:relHref(outputPath,path.join(siteDir,"index.html")),readingHref:(reading,filename)=>readingPageHref(outputPath,reading,filename)});
+    const script=`<script src="${escapeHtml(versionedAssetHref(outputPath,"weekly.js"))}" defer></script>`;
+    const head=`<link rel="stylesheet" href="${escapeHtml(versionedAssetHref(outputPath,"weekly.css"))}" />`;
+    writeText(outputPath,renderDocument(siteMeta,outputPath,`${week.week}주차 · ${week.title.ko}`,body,week.introduction.ko,'data-page-kind="weekly-prep"',"ko",script,head));
+  }
+  for(const reading of refreshEntriesFor){
+    const outputPath=path.join(siteDir,"readings",reading.slug,"professor-prep.html");
+    if(fs.existsSync(outputPath))writeText(outputPath,refreshWeeklyEntryHtml(readText(outputPath),weeklyEntryForReading(outputPath,reading)));
+  }
+}
+function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource).replace(/\r\n?/g,"\n"));writeText(path.join(siteDir,"assets","app.js"),readText(appSource).replace(/\r\n?/g,"\n"));for(const [source,target]of[["weekly_connections.css","weekly.css"],["weekly_connections_app.js","weekly.js"]])writeText(path.join(siteDir,"assets",target),readText(path.join(__dirname,source)).replace(/\r\n?/g,"\n"));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}
 function refreshReadings(manifest,siteMeta={},slugFilter=null){ensureContentPlaceholders(manifest,siteMeta,slugFilter);return prepareReadings(manifest,siteMeta);}
-function buildSlugOutputs(siteMeta,manifest,readings,slug){const target=readings.find((reading)=>reading.slug===slug);if(!target)throw new Error(`Unknown slug: ${slug}`);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest,target.slug);writeAssets();buildIndex(siteMeta,readings,thumbnails);writePublicPdf(target);const readingDir=path.join(siteDir,"readings",target.slug);const readingAssetDir=path.join(siteDir,"assets","readings",target.slug);if(fs.existsSync(readingDir))fs.rmSync(readingDir,{recursive:true,force:true});if(fs.existsSync(readingAssetDir))fs.rmSync(readingAssetDir,{recursive:true,force:true});copyReadingAssets(target);buildLanding(siteMeta,target);for(const page of target.pages){buildPage(siteMeta,target,page);}return target;}
-function buildFullOutputs(siteMeta,manifest,readings){const preservedMarkdown=snapshotPreservedDocMarkdown();if(fs.existsSync(siteDir))fs.rmSync(siteDir,{recursive:true,force:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);for(const reading of readings){writePublicPdf(reading);copyReadingAssets(reading);buildLanding(siteMeta,reading);for(const page of reading.pages){buildPage(siteMeta,reading,page);}}restorePreservedDocMarkdown(preservedMarkdown);}
+function buildSlugOutputs(siteMeta,manifest,readings,slug){prepareWeeklyOutputs(manifest,readings);const target=readings.find((reading)=>reading.slug===slug);if(!target)throw new Error(`Unknown slug: ${slug}`);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest,target.slug);writeAssets();buildIndex(siteMeta,readings,thumbnails);writePublicPdf(target);const readingDir=path.join(siteDir,"readings",target.slug);const readingAssetDir=path.join(siteDir,"assets","readings",target.slug);if(fs.existsSync(readingDir))fs.rmSync(readingDir,{recursive:true,force:true});if(fs.existsSync(readingAssetDir))fs.rmSync(readingAssetDir,{recursive:true,force:true});copyReadingAssets(target);buildLanding(siteMeta,target);for(const page of target.pages){buildPage(siteMeta,target,page);}buildWeeklyOutputs(siteMeta,readings);return target;}
+function buildFullOutputs(siteMeta,manifest,readings){prepareWeeklyOutputs(manifest,readings);const preservedMarkdown=snapshotPreservedDocMarkdown();if(fs.existsSync(siteDir))fs.rmSync(siteDir,{recursive:true,force:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);for(const reading of readings){writePublicPdf(reading);copyReadingAssets(reading);buildLanding(siteMeta,reading);for(const page of reading.pages){buildPage(siteMeta,reading,page);}}buildWeeklyOutputs(siteMeta);restorePreservedDocMarkdown(preservedMarkdown);}
 function cliValue(flag){const index=process.argv.indexOf(flag);return index!==-1?process.argv[index+1]||"":"";}
 function parseArgs(){const slug=cliValue("--slug");const previewLocked=process.argv.includes("--preview-locked");return{slug:slug||null,homeOnly:process.argv.includes("--home-only"),previewLocked,previewDraft:process.argv.includes("--preview-draft"),outputDir:cliValue("--output-dir")||null};}
 function buildPage(siteMeta,reading,page){if(page.type==="article"){buildArticle(siteMeta,reading,page);return;}if(page.type==="professor-prep"){buildProfessorPrep(siteMeta,reading,page);return;}buildQuiz(siteMeta,reading,page);}
-function buildHomeOutputs(siteMeta,manifest,readings){fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);}
+function buildHomeOutputs(siteMeta,manifest,readings){prepareWeeklyOutputs(manifest,readings);fs.mkdirSync(siteDir,{recursive:true});const thumbnails=buildThumbnails(manifest);writeAssets();buildIndex(siteMeta,readings,thumbnails);buildWeeklyOutputs(siteMeta,readings);}
 function resolvePreviewSiteDir(outputDir){
   const tmpDir=path.join(rootDir,"tmp");
   const candidate=path.resolve(rootDir,outputDir||path.join("tmp","site-preview"));
