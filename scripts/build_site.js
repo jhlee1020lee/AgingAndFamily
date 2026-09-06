@@ -1028,7 +1028,23 @@ function renderOverviewComic(outputPath,reading){
   </section>`;
 }
 function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다.")];return `<div class="sub-link-list">${links.join("")}</div>`;}
-function renderReadingDetailHeader(outputPath,reading,options={}){const activeKey=options.activeKey||"index";const currentLabel=options.currentLabel!==undefined?options.currentLabel:(activeKey==="index"?"":"");return `<header class="article-header reading-detail-header"><div class="article-header-top reading-detail-top">${renderBreadcrumbs(outputPath,reading,currentLabel||"")}<p class="section-kicker">${escapeHtml(readingSequenceLabel(reading.sequence))}</p><div class="rdp-kicker"><span class="chip brand">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><span class="chip strong">${escapeHtml(reading.type_label)}</span><span class="chip">${escapeHtml(reading.language_label)}</span></div><h1 class="rdp-title">${escapeHtml(reading.title)}</h1><p class="rdp-authors">${escapeHtml([reading.authors_label,reading.year?String(reading.year):""].filter(Boolean).join(" · "))}</p>${reading.overview_hook?`<p class="rdp-hook">${escapeHtml(reading.overview_hook)}</p>`:""}<div class="hero-cta-row">${renderActionLinkOrGate(outputPath,reading,"읽기",readingStartTarget(reading),"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")}</div></div>${pageTabs(outputPath,reading,activeKey)}</header>`;}
+function renderReadingDetailHeader(outputPath,reading,options={}){
+  const activeKey=options.activeKey||"index";
+  const metadata=[
+    readingSequenceLabel(reading.sequence),
+    reading.display_date_label||displayDateLabel(reading),
+    [reading.type_label,reading.language_label].filter(Boolean).join(" · "),
+  ];
+  return `<header class="article-header reading-detail-header reading-header-editorial">
+    <div class="reading-header-content">
+      <p class="reading-header-meta">${metadata.map((value)=>`<span>${escapeHtml(value)}</span>`).join("")}</p>
+      <h1 class="rdp-title">${escapeHtml(reading.title)}</h1>
+      <p class="rdp-authors">${escapeHtml([reading.authors_label,reading.year?String(reading.year):""].filter(Boolean).join(" · "))}</p>
+      <div class="reading-header-actions">${renderActionLinkOrGate(outputPath,reading,"읽기",readingStartTarget(reading),"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")}</div>
+    </div>
+    ${pageTabs(outputPath,reading,activeKey)}
+  </header>`;
+}
 function renderReadingDetailAside(outputPath,reading){
   if(!(reading.tags&&reading.tags.length))return "";
   return `<aside class="rpanel-side"><section class="panel detail-side-panel"><p class="section-kicker">태그</p><h2>읽기 키워드</h2>${renderChipRow(reading.tags.map((tag)=>`# ${tag}`),"chip-row reading-tag-row")}</section></aside>`;
