@@ -79,8 +79,9 @@ function checkProfessorPrep(reading, errors) {
   const source = readJson(path.join(ROOT_DIR, reading.content_dir, "professor_prep.json"));
   const html = readText(path.join(ROOT_DIR, "docs", "readings", reading.slug, "professor-prep.html"));
   const prefix = `${reading.slug}/professor-prep`;
-  expect(count(html, /\bdata-prep-tab=/g) === 2, `${prefix}: two prep tabs are required`, errors);
-  expect(count(html, /\bdata-prep-panel=/g) === 2, `${prefix}: two prep panels are required`, errors);
+  const expectedTabs=html.includes("data-weekly-root")?3:2;
+  expect(count(html, /\bdata-prep-tab=/g) === expectedTabs, `${prefix}: prep tabs must include the available weekly practice`, errors);
+  expect(count(html, /\bdata-prep-panel=/g) === expectedTabs, `${prefix}: each prep tab needs its own panel`, errors);
   expect(count(html, /\bdata-prep-card(?:\s|>)/g) === source.cards.length + source.reading_response.cards.length, `${prefix}: prep card count mismatch`, errors);
   const expectedCards = source.cards.length + source.reading_response.cards.length;
   expect(html.includes(source.language === "en" ? "Reading response" : "어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
@@ -103,7 +104,7 @@ function checkProfessorPrep(reading, errors) {
         const spans = [...html.matchAll(new RegExp(`<span\\b[^>]*\\bdata-prep-${control}-language="${language}"[^>]*>`, "g"))];
         expect(spans.length === expectedCards, `${prefix}: ${language} ${control} variant count mismatch`, errors);
         expect(spans.every(([tag]) => tag.includes(`lang="${language}"`)), `${prefix}: ${control} variants need matching lang attributes`, errors);
-        expect(spans.every(([tag]) => /\bhidden(?:\s|>|=)/.test(tag) === (language === "ko")), `${prefix}: ${control} variants must default to English visible and Korean hidden`, errors);
+        expect(spans.every(([tag]) => /\bhidden(?:\s|>|=)/.test(tag) === (language === "en")), `${prefix}: ${control} variants must default to Korean visible and English hidden`, errors);
       }
     }
   } else {

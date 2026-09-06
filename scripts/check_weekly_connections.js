@@ -8,7 +8,6 @@ const {
   weeklyReviewDigest,
   loadWeeklyConnections,
   selectAvailableWeeks,
-  refreshWeeklyEntryHtml,
   renderWeeklyBody,
 }=require("./weekly_connections");
 
@@ -65,55 +64,52 @@ function publicationReadings(root,manifest,weeks){
   });
 }
 
-function checkEntryRefresh(verify){
-  const oldEntry='<a class="weekly-entry" href="../../weeks/week-02/index.html"><span><strong>Old weekly entry</strong><span>Old description</span></span><span aria-hidden="true">→</span></a>';
-  const newEntry='<a class="weekly-entry" href="../../weeks/week-03/index.html"><span><strong>New weekly entry</strong><span>New description</span></span><span aria-hidden="true">→</span></a>';
-  const article='<section class="article-body prep-body detail-article-body"><p>Existing per-reading answer.</p><a href="full.html#evidence">Existing source evidence</a></section>';
-  const page=`<main><section><a href="../../index.html">Unrelated navigation</a>${oldEntry}${article}</section></main>`;
-  const inspect=(html,callback)=>{const dom=new JSDOM(html);try{callback(dom.window.document);}finally{dom.window.close();}};
-  const preserved=(doc)=>{
-    assert.equal(doc.querySelector(".article-body").outerHTML,article,"refresh preserves the existing reading answer and evidence link");
-    assert.equal(doc.querySelector('a[href="../../index.html"]').textContent,"Unrelated navigation");
-  };
-  verify("withdrawing a weekly entry removes its stale link and preserves reading content",()=>inspect(refreshWeeklyEntryHtml(page,""),(doc)=>{
-    assert.equal(doc.querySelector(".weekly-entry"),null);preserved(doc);
-  }));
-  verify("updating a weekly entry replaces the old destination beside existing reading content",()=>inspect(refreshWeeklyEntryHtml(page,newEntry),(doc)=>{
-    assert.equal(doc.querySelectorAll(".weekly-entry").length,1);
-    assert.equal(doc.querySelector(".weekly-entry").getAttribute("href"),"../../weeks/week-03/index.html");
-    assert.equal(doc.querySelector(".article-body").previousElementSibling,doc.querySelector(".weekly-entry"));
-    assert(!doc.body.textContent.includes("Old weekly entry"));preserved(doc);
-  }));
-  verify("repeated weekly refresh repairs duplicate entries without creating new duplicates",()=>{
-    const duplicated=page.replace(oldEntry,oldEntry+oldEntry);
-    const once=refreshWeeklyEntryHtml(duplicated,newEntry);
-    inspect(refreshWeeklyEntryHtml(once,newEntry),(doc)=>{assert.equal(doc.querySelectorAll(".weekly-entry").length,1);preserved(doc);});
-    inspect(refreshWeeklyEntryHtml(once,""),(doc)=>{assert.equal(doc.querySelector(".weekly-entry"),null);preserved(doc);});
-  });
-}
-
 function checkPublicationEntries(root,manifest,weeks,verify){
   const site=path.join(root,"docs");
   const weeklyDir=path.join(site,"weeks");
-  const expected=weeks.map((week)=>week.id);
   const directories=fs.existsSync(weeklyDir)?fs.readdirSync(weeklyDir,{withFileTypes:true}).filter((entry)=>entry.isDirectory()).map((entry)=>entry.name):[];
-  verify("built weekly directories contain exactly the currently publishable weeks",()=>assert.deepEqual(directories.sort(),[...expected].sort()));
-  const entryPaths=(file,base)=>{
-    const dom=new JSDOM(fs.readFileSync(file,"utf8"),{url:`https://example.test${base}`});
-    try{return[...dom.window.document.querySelectorAll("a.weekly-entry")].map((entry)=>new URL(entry.getAttribute("href"),dom.window.location.href).pathname);}
-    finally{dom.window.close();}
-  };
-  verify("home weekly entries include approved available weeks and exclude withdrawn weeks",()=>{
-    assert.deepEqual(entryPaths(path.join(site,"index.html"),"/index.html"),weeks.map((week)=>`/weeks/${week.id}/index.html`));
-  });
-  verify("every existing reading preparation page has current weekly entries without stale links",()=>{
-    for(const reading of manifest.readings){
-      const file=path.join(site,"readings",reading.slug,"professor-prep.html");
-      if(!fs.existsSync(file))continue;
-      const expectedWeeks=weeks.filter((week)=>week.pair.some((source)=>source.slug===reading.slug));
-      assert.deepEqual(entryPaths(file,`/readings/${reading.slug}/professor-prep.html`),expectedWeeks.map((week)=>`/weeks/${week.id}/index.html`),`${reading.slug}: entry links follow current weekly publication gates`);
-    }
-  });
+  verify("built weekly directories contain exactly the currently publishable weeks",()=>assert.deepEqual(directories.sort(),weeks.map((week)=>week.id).sort()));
+  const home=new JSDOM(fs.readFileSync(path.join(site,"index.html"),"utf8"));
+  try{verify("home has one compact shortcut into an available weekly tab",()=>{
+    const entries=[...home.window.document.querySelectorAll("a.weekly-entry")];
+    assert.equal(entries.length,weeks.length?1:0);
+    if(entries.length)assert(weeks.some((week)=>entries[0].getAttribute("href")===`readings/${week.pair[0].slug}/professor-prep.html#prep-panel-weekly`));
+  });}finally{home.window.close();}
+  for(const reading of manifest.readings){
+    const file=path.join(site,"readings",reading.slug,"professor-prep.html");
+    if(!fs.existsSync(file))continue;
+    const week=weeks.find((item)=>item.pair.some((source)=>source.slug===reading.slug));
+    const dom=new JSDOM(fs.readFileSync(file,"utf8"));
+    try{verify(`${reading.slug}: reviewed weekly practice appears in a third tab with Korean defaults`,()=>{
+      const doc=dom.window.document;
+      assert.equal(doc.querySelector(".weekly-entry"),null);
+      const tab=doc.querySelector('[data-prep-tab="weekly"]');
+      const panel=doc.querySelector('[data-prep-panel="weekly"]');
+      assert.equal(Boolean(tab),Boolean(week));assert.equal(Boolean(panel),Boolean(week));
+      if(!week)return;
+      assert.equal(doc.querySelectorAll("main").length,1);
+      assert.equal(doc.querySelectorAll("h1").length,1);
+      assert.equal(doc.querySelectorAll("[data-prep-tab]").length,3);
+      assert.equal(doc.getElementById(tab.getAttribute("aria-controls")),panel);
+      assert.equal(panel.getAttribute("aria-labelledby"),tab.id);
+      assert.equal(panel.hidden,true);
+      assert.equal(panel.querySelector("[data-weekly-root]").dataset.weeklyId,week.id);
+      assert.equal(panel.querySelector("[data-weekly-root]").dataset.weeklyVersion,week.revision);
+      assert.equal(panel.querySelectorAll("[data-weekly-card]").length,week.cards.length);
+      assert.equal(doc.querySelectorAll('select[aria-label="질문 언어"]').length,1);
+      assert.equal(doc.querySelectorAll('select[aria-label="답변 언어"]').length,1);
+      assertLanguages(doc,"ko","ko");
+      for(const card of week.cards){
+        const built=doc.getElementById(card.id);
+        assert.equal(built.querySelector('.weekly-answer [lang="ko"]').textContent,card.answer.ko);
+        assert.equal(built.querySelector('.weekly-answer [lang="en"]').textContent,card.answer.en);
+        assert.equal(built.querySelectorAll('.weekly-evidence a').length,card.evidence.length);
+      }
+      for(const asset of ["weekly.js","weekly.css"]){
+        assert(doc.querySelector(`[src*="${asset}?"], [href*="${asset}?"]`));
+      }
+    });}finally{dom.window.close();}
+  }
 }
 
 async function boot(html,script,entries={},options={}){
@@ -122,6 +118,7 @@ async function boot(html,script,entries={},options={}){
     runScripts:"outside-only",pretendToBeVisual:true,
   });
   await new Promise((resolve)=>dom.window.addEventListener("load",resolve,{once:true}));
+  dom.window.matchMedia=()=>({matches:false,addEventListener(){},addListener(){}});
   for(const [key,value] of Object.entries(entries))dom.window.localStorage.setItem(key,value);
   if(options.storageFailure){
     const fail=()=>{throw new dom.window.DOMException("Storage unavailable","SecurityError");};
@@ -165,20 +162,21 @@ async function checkApp(root,week,verify){
   const staticDom=new JSDOM(render());
   verify("weekly answers remain readable without JavaScript",()=>{
     assert.equal(staticDom.window.document.querySelector(".weekly-controls").hidden,true);
+    assertLanguages(staticDom.window.document,"ko","ko");
     assert([...staticDom.window.document.querySelectorAll("[data-weekly-answer]")].every((answer)=>answer.open));
   });
   staticDom.window.close();
-  let dom=await boot(render(),script);
+  let dom=await boot(render(),script,{"aaf-weekly-languages":JSON.stringify({question:"en",answer:"en"})});
   let doc=dom.window.document;
   try{
     verify("weekly question and answer languages change independently",()=>{
       assert.equal(doc.querySelector(".weekly-controls").hidden,false);
-      assertLanguages(doc,"en","en");
-      change(dom,"[data-weekly-question-select]","ko");
-      assertLanguages(doc,"ko","en");
-      change(dom,"[data-weekly-answer-select]","ko");
       assertLanguages(doc,"ko","ko");
       change(dom,"[data-weekly-question-select]","en");
+      assertLanguages(doc,"en","ko");
+      change(dom,"[data-weekly-answer-select]","en");
+      assertLanguages(doc,"en","en");
+      change(dom,"[data-weekly-answer-select]","ko");
       assertLanguages(doc,"en","ko");
     });
     const state=savedState(dom);
@@ -251,6 +249,49 @@ async function checkApp(root,week,verify){
       change(dom,"[data-weekly-hide-answers]",true);
       assert([...doc.querySelectorAll("[data-weekly-answer]")].every((answer)=>!answer.open));
       assert.match(doc.querySelector("[data-weekly-status]").textContent,/저장.*방문/);
+    });
+  }finally{dom.window.close();}
+}
+
+async function checkEmbeddedApp(root,week,verify){
+  const app=fs.readFileSync(path.join(ROOT,"scripts","site_app.js"),"utf8");
+  const weeklyApp=fs.readFileSync(path.join(ROOT,"scripts","weekly_connections_app.js"),"utf8");
+  const script=`${app}\ndocument.dispatchEvent(new Event("DOMContentLoaded"));\n${weeklyApp}`;
+  const select=(kind)=>`<select data-prep-${kind}-select><option value="ko">한국어</option><option value="en">English</option></select>`;
+  const tabs=["cold-call","reading-response","weekly"].map((key)=>`<button data-prep-tab="${key}" role="tab">${key}</button>`).join("");
+  const question='<article data-prep-card data-card-id="individual"><h3 data-prep-title><span data-prep-question-language="ko">개별 질문</span><span data-prep-question-language="en" hidden>Individual question</span></h3><button data-prep-difficult>표시</button></article>';
+  const html=`<section data-prep-root>${select("question")}${select("answer")}${tabs}<section data-prep-panel="cold-call">${question}</section><section data-prep-panel="reading-response" hidden></section><section id="prep-panel-weekly" data-prep-panel="weekly" hidden>${renderWeeklyBody(root,week,{...helpers,embedded:true})}</section></section>`;
+  let dom=await boot(html,script);
+  try{
+    let doc=dom.window.document;
+    verify("embedded practice shares both language controls and retains the active tab",()=>{
+      assertLanguages(doc,"ko","ko");
+      const tab=doc.querySelector('[data-prep-tab="weekly"]');tab.click();
+      assert.equal(doc.querySelector('[data-prep-panel="weekly"]').hidden,false);
+      change(dom,"[data-prep-question-select]","en");
+      assertLanguages(doc,"en","ko");
+      assert.equal(doc.querySelector('[data-prep-question-language="en"]').hidden,false);
+      change(dom,"[data-prep-answer-select]","en");
+      assertLanguages(doc,"en","en");
+      assert.equal(tab.getAttribute("aria-selected"),"true");
+      tab.dispatchEvent(new dom.window.KeyboardEvent("keydown",{key:"ArrowRight",bubbles:true}));
+      assert.equal(doc.querySelector('[data-prep-tab="cold-call"]').getAttribute("aria-selected"),"true");
+      doc.activeElement.dispatchEvent(new dom.window.KeyboardEvent("keydown",{key:"End",bubbles:true}));
+      assert.equal(doc.activeElement,tab);
+    });
+    doc.querySelector('[data-weekly-mark]').click();
+    const state=savedState(dom);
+    dom.window.close();dom=await boot(renderWeeklyBody(root,week,helpers),weeklyApp,state);doc=dom.window.document;
+    verify("standalone weekly pages share explicit language choices and practice marks with both reading tabs",()=>{
+      assertLanguages(doc,"en","en");
+      assert.equal(doc.querySelector('[data-weekly-mark]').getAttribute("aria-pressed"),"true");
+    });
+    dom.window.close();dom=await boot(html,script,state,{hash:`#${week.cards[1].id}`});doc=dom.window.document;
+    verify("a direct weekly question link opens its containing third tab",()=>{
+      assert.equal(doc.querySelector('[data-prep-tab="weekly"]').getAttribute("aria-selected"),"true");
+      assert.equal(doc.getElementById(week.cards[1].id).closest('[data-prep-panel]').hidden,false);
+      assert.equal(doc.querySelectorAll('[data-prep-card]').length,1);
+      assert.equal(doc.querySelectorAll('[data-weekly-card]').length,week.cards.length);
     });
   }finally{dom.window.close();}
 }
@@ -333,7 +374,6 @@ async function run(options={}){
   const tmp=path.join(root,"tmp");fs.mkdirSync(tmp,{recursive:true});
   const fixture=fs.mkdtempSync(path.join(tmp,"weekly-connections-check-"));
   try{
-    checkEntryRefresh(verify);
     const {manifest,data}=makeFixture(fixture);
     verify("valid weekly cards use both manifest readings",()=>assert.deepEqual(validateWeeklyData(fixture,manifest,data).map((reading)=>reading.slug),["first","second"]));
     const invalid=[
@@ -403,6 +443,7 @@ async function run(options={}){
     }
     verify("a missing source reading blocks weekly publication",()=>assert.deepEqual(selectAvailableWeeks(weeks,sources.slice(0,1)),[]));
     await checkApp(fixture,weeks[0],verify);
+    await checkEmbeddedApp(fixture,weeks[0],verify);
   }finally{
     const relative=path.relative(tmp,path.resolve(fixture));
     if(!relative||relative.startsWith("..")||path.isAbsolute(relative))throw new Error("Refusing to remove a fixture outside project tmp");

@@ -811,10 +811,11 @@ function initProfessorPrep(){
   const difficultList=document.querySelector("[data-prep-difficult-list]");
   const questionSelect=root.querySelector("[data-prep-question-select]");
   const answerSelect=root.querySelector("[data-prep-answer-select]");
-  const languageKey=`${STORAGE_PREFIX}-prep-languages`;
+  // Version the shared preference so the new Korean default also reaches returning readers.
+  const languageKey=`${STORAGE_PREFIX}-practice-languages-v2`;
   const storedLanguages=questionSelect||answerSelect?storage.get(languageKey,{}):{};
   const savedLanguages=storedLanguages&&typeof storedLanguages==="object"?storedLanguages:{};
-  const validLanguage=(value)=>value==="ko"||value==="en"?value:"en";
+  const validLanguage=(value)=>value==="ko"||value==="en"?value:"ko";
   const languages={
     questionLanguage:validLanguage(savedLanguages.questionLanguage),
     answerLanguage:validLanguage(savedLanguages.answerLanguage)

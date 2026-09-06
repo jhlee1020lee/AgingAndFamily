@@ -1,15 +1,16 @@
 (() => {
   "use strict";
 
-  const LANGUAGE_KEY = "aaf-weekly-languages";
+  const LANGUAGE_KEY = "aaf-practice-languages-v2";
   const isLanguage = (value) => value === "en" || value === "ko";
 
   function initWeeklyPage(root) {
     if (root.dataset.weeklyInitialized === "true") return;
 
     const controls = root.querySelector(".weekly-controls");
-    const questionSelect = root.querySelector("[data-weekly-question-select]");
-    const answerSelect = root.querySelector("[data-weekly-answer-select]");
+    const prepRoot = root.closest("[data-prep-root]");
+    const questionSelect = prepRoot?.querySelector("[data-prep-question-select]") || root.querySelector("[data-weekly-question-select]");
+    const answerSelect = prepRoot?.querySelector("[data-prep-answer-select]") || root.querySelector("[data-weekly-answer-select]");
     const hideAnswers = root.querySelector("[data-weekly-hide-answers]");
     const markedOnly = root.querySelector("[data-weekly-marked-only]");
     const status = root.querySelector("[data-weekly-status]");
@@ -53,8 +54,8 @@
         .filter((id) => typeof id === "string" && cardIds.has(id))
     );
 
-    questionSelect.value = isLanguage(languages.question) ? languages.question : "en";
-    answerSelect.value = isLanguage(languages.answer) ? languages.answer : "en";
+    questionSelect.value = isLanguage(languages.questionLanguage) ? languages.questionLanguage : "ko";
+    answerSelect.value = isLanguage(languages.answerLanguage) ? languages.answerLanguage : "ko";
     markedOnly.checked = practice.markedOnly === true;
     hideAnswers.checked = false;
 
@@ -101,7 +102,7 @@
     [questionSelect, answerSelect].forEach((select) => {
       select.addEventListener("change", () => {
         updateLanguages();
-        save(LANGUAGE_KEY, { question: questionSelect.value, answer: answerSelect.value });
+        save(LANGUAGE_KEY, { questionLanguage: questionSelect.value, answerLanguage: answerSelect.value });
         updateStatus();
       });
     });

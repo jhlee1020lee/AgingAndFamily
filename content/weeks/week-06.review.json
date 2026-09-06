@@ -1,0 +1,7 @@
+{
+  "status": "approved",
+  "sha256": "39fcd8e72b70c791b3c37d5ea3587ccac9f9993466482374fe3988c09c175656",
+  "reviewed_at": "2026-09-06T05:47:34.461Z",
+  "reviewer": "Codex (author review and independent cross-review)",
+  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-06.review-notes.md. Existing per-reading approvals remain unchanged."
+}

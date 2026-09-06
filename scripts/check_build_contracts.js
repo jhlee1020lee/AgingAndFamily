@@ -184,6 +184,36 @@ try {
     assert.equal((html.match(/aria-current="date"/g) || []).length, 2);
     assert.match(html, /읽기 2편<\/span>/);
   });
+  const {weeklyReviewDigest}=require("./weekly_connections");
+  const weekly=readJson(path.join(ROOT,"content","weeks","week-02.json"));
+  const weeklyDir=path.join(fixture,"content","weeks");
+  fs.mkdirSync(weeklyDir,{recursive:true});
+  writeJson(path.join(weeklyDir,"week-02.json"),weekly);
+  const weeklyReview={status:"approved",sha256:weeklyReviewDigest(fixture,manifest,weekly),reviewer:"build-contract-fixture",reviewed_at:new Date().toISOString(),scope:"Temporary two-source publication fixture."};
+  const reviewPath=path.join(weeklyDir,"week-02.review.json");
+  const assertWeeklyTabs=(present)=>{
+    for(const reading of readings){
+      const html=sitePage("docs",reading,"professor-prep.html");
+      assert.equal(html.includes('data-prep-tab="weekly"'),present,`${reading.slug}: weekly tab gate`);
+      assert.equal(html.includes('data-weekly-card'),present,`${reading.slug}: embedded weekly answer gate`);
+    }
+    assert.equal(fs.existsSync(path.join(fixture,"docs","weeks","week-02","index.html")),present);
+  };
+  writeJson(reviewPath,weeklyReview);
+  run(["scripts/build_site.js","--home-only"]);
+  verify("home-only builds add a reviewed third tab to both existing preparation pages",()=>assertWeeklyTabs(true));
+  writeJson(reviewPath,{...weeklyReview,status:"pending"});
+  run(["scripts/build_site.js","--home-only"]);
+  verify("withdrawing a weekly review removes both tabs and the standalone page",()=>assertWeeklyTabs(false));
+  writeJson(reviewPath,weeklyReview);
+  run(["scripts/build_site.js","--slug",first.slug]);
+  verify("a single-reading build restores its partner's reviewed weekly tab as well",()=>assertWeeklyTabs(true));
+  const partnerMetaPath=path.join(fixture,readings[1].content_dir,"meta.json");
+  const partnerMeta=readJson(partnerMetaPath);
+  partnerMeta.manual_review={approved_pages:[],approved_page_hashes:{}};
+  writeJson(partnerMetaPath,partnerMeta);
+  run(["scripts/build_site.js","--home-only"]);
+  verify("withdrawing either source approval removes both embedded copies on a partial build",()=>assertWeeklyTabs(false));
   console.log(`PASS build contracts (${checks} regression checks)`);
 } finally {
   const relative = path.relative(TMP, path.resolve(fixture));

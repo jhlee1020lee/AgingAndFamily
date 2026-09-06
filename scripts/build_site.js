@@ -7,7 +7,7 @@ const {writeApprovalStatusReport}=require("./approval_status");
 const {normalizeTranslationOriginalRevealConfig,parseMarkdownDocument,resolveTranslationAlignment}=require("./translation_original_reveal");
 const {validateSentencePairs}=require("./sentence_alignment");
 const {collectOriginalTranslationRenderUnits}=require("./original_translation_reveal");
-const {loadWeeklyConnections,selectAvailableWeeks,renderWeeklyEntry,refreshWeeklyEntryHtml,renderWeeklyBody}=require("./weekly_connections");
+const {loadWeeklyConnections,selectAvailableWeeks,renderWeeklyEntry,renderWeeklyBody}=require("./weekly_connections");
 
 const rootDir=path.resolve(__dirname,"..");
 const manifestPath=path.join(rootDir,"manifest","readings.json");
@@ -1123,7 +1123,7 @@ function prepFollowupAnswer(card,tokens){return card.followup_answers.find((entr
 function buildProfessorPrepDeck(cards,prefix){return cards.map((card,index)=>({...card,card_id:toText(card.card_id)||`${prefix}-${String(index+1).padStart(2,"0")}`}));}
 function renderProfessorPrepPanel(config){const hidden=config.active?"":' hidden';return `
 <section class="prep-mode-panel" id="${escapeHtml(config.panelId)}" role="tabpanel" aria-labelledby="${escapeHtml(config.tabId)}" data-prep-panel="${escapeHtml(config.key)}"${hidden}>
-  <section class="panel prep-intro">
+  <section class="panel prep-intro" lang="${config.language}">
     ${config.draftBadge}
     <p class="section-kicker">${escapeHtml(config.kicker)}</p>
     <h2>${escapeHtml(config.title)}</h2>
@@ -1147,17 +1147,19 @@ function renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,op
   const responseTabId="prep-tab-reading-response";
   const responsePanelId="prep-panel-reading-response";
   return `
-<section class="prep-workspace" data-prep-root data-prep-language="${en?"en":"ko"}" lang="${en?"en":"ko"}">
+<section class="prep-workspace" data-prep-root data-prep-language="${en?"en":"ko"}" lang="${bilingual?"ko":prep.language}">
   ${bilingual?`<div class="prep-language-controls" role="group" aria-label="질문과 답변 언어 선택" lang="ko">
-    <label class="prep-language-field"><span>질문 언어</span><select data-prep-question-select aria-label="질문 언어"><option value="en" lang="en">English</option><option value="ko" lang="ko">한국어</option></select></label>
-    <label class="prep-language-field"><span>답변 언어</span><select data-prep-answer-select aria-label="답변 언어"><option value="en" lang="en">English</option><option value="ko" lang="ko">한국어</option></select></label>
+    <label class="prep-language-field"><span>질문 언어</span><select data-prep-question-select aria-label="질문 언어"><option value="ko" lang="ko">한국어</option><option value="en" lang="en">English</option></select></label>
+    <label class="prep-language-field"><span>답변 언어</span><select data-prep-answer-select aria-label="답변 언어"><option value="ko" lang="ko">한국어</option><option value="en" lang="en">English</option></select></label>
   </div>`:""}
   <div class="prep-mode-tabs" role="tablist" aria-label="${en?"Discussion practice mode":"교수님 답변 대비 방식"}">
     <button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>${en?"Cold-call questions":"즉석 질문"}</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>
     ${hasReadingResponses?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>${en?"Reading response":"어떻게 읽었나요?"}</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
+    ${options.week?`<button class="prep-mode-tab" id="prep-tab-weekly" type="button" role="tab" aria-selected="false" aria-controls="prep-panel-weekly" tabindex="-1" data-prep-tab="weekly"><span>두 편 연결</span><span class="prep-tab-count">${options.week.cards.length}</span></button>`:""}
   </div>
   ${renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,language:prep.language,reading:options.reading,bilingual,kicker:en?"SPEAK WITH EVIDENCE":"교수님이 바로 이어 물을 때",title:en?`${coldCallDeck.length} cold-call questions`:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:en?"Discussion question":"즉석 답변"})}
   ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:false,draftBadge,draftNote,language:prep.language,reading:options.reading,bilingual,kicker:en?"IN YOUR OWN WORDS":"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:en?"Reading response":"읽기 답변"}):""}
+  ${options.week?`<section class="prep-mode-panel" id="prep-panel-weekly" role="tabpanel" aria-labelledby="prep-tab-weekly" data-prep-panel="weekly" hidden>${renderWeeklyBody(rootDir,options.week,{embedded:true,sharedLanguages:bilingual,homeHref:relHref(options.outputPath,path.join(siteDir,"index.html")),readingHref:(reading,filename)=>readingPageHref(options.outputPath,reading,filename)})}</section>`:""}
 </section>
 `;}
 function writePlaceholderSvg(reading,svgPath){const slug=escapeHtml(reading.slug);const title=escapeHtml(reading.title||reading.slug);const subtitle=escapeHtml(reading.subtitle||"파일명 기준으로 만든 임시 메타데이터입니다.");const dateLabel=escapeHtml(displayDateLabel(reading));const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
@@ -1185,7 +1187,7 @@ ${siteHeader(siteMeta,outputPath)}
     </div>
   </details>
   <div class="home-main">
-    ${weeklyConnections.map((week)=>renderWeeklyEntry(week,relHref(outputPath,path.join(siteDir,"weeks",week.id,"index.html")))).join("")}
+    ${(()=>{const week=weeklyConnections.find((item)=>item.week===currentReading?.week)||weeklyConnections[0];return week?renderWeeklyEntry(week,readingPageHref(outputPath,week.pair[0],"professor-prep.html")+"#prep-panel-weekly"):"";})()}
     <section id="readings">
       <div class="section-head">
         <h3>주차별 읽기</h3>
@@ -1369,34 +1371,32 @@ function buildQuizPlayer(siteMeta,reading){
 }
 function renderProfessorPrepCard(card,index,options={}){
   const en=options.language==="en";
-  const language=en?"en":"ko";
   const bilingual=options.bilingual===true;
-  const question=bilingual?`<span data-prep-question-language="en" lang="en">${renderInline(card.title)}</span><span data-prep-question-language="ko" lang="ko" hidden>${renderInline(card.title_ko)}</span>`:renderInline(card.title);
-  const answer=bilingual?`<span data-prep-answer-language="en" lang="en">${renderInline(card.answer_30s)}</span><span data-prep-answer-language="ko" lang="ko" hidden>${renderInline(card.answer_30s_ko)}</span>`:renderInline(card.answer_30s);
+  const language=bilingual?"ko":en?"en":"ko";
+  const question=bilingual?`<span data-prep-question-language="en" lang="en" hidden>${renderInline(card.title)}</span><span data-prep-question-language="ko" lang="ko">${renderInline(card.title_ko)}</span>`:renderInline(card.title);
+  const answer=bilingual?`<span data-prep-answer-language="en" lang="en" hidden>${renderInline(card.answer_30s)}</span><span data-prep-answer-language="ko" lang="ko">${renderInline(card.answer_30s_ko)}</span>`:renderInline(card.answer_30s);
   const label=toText(options.label)||(en?"Model answer":"모델 답변");
   const segment=options.reading?loadJson(path.join(rootDir,options.reading.content_dir,"source_segments.json"))?.segments?.find((item)=>item.segment_id===card.evidence_segment_id):null;
   const evidence={language:options.language,evidence_segment_id:card.evidence_segment_id,evidence_segment:segment};
   return `<article class="panel prep-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}">
   <div class="prep-card-head"><div><p class="section-kicker">${escapeHtml(label)} ${String(index+1).padStart(2,"0")}</p><h3 data-prep-title lang="${language}">${question}</h3></div><button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>${en?"Mark for practice":"표시"}</button></div>
-  <section class="prep-block prep-answer-block" data-prep-answer><h4 class="prep-answer-label" data-prep-answer-label lang="${language}">${en?"30-second answer":"30초 답변"}</h4><p class="prep-answer-copy" lang="${language}">${answer}</p>${renderQuizEvidence(evidence)}</section>
+  <section class="prep-block prep-answer-block" data-prep-answer><h4 class="prep-answer-label" data-prep-answer-label lang="${language}">${language==="en"?"30-second answer":"30초 답변"}</h4><p class="prep-answer-copy" lang="${language}">${answer}</p>${renderQuizEvidence(evidence)}</section>
 </article>`;
 }
-function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(prep?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{reading,draft:!isApprovedStatus(page.source_validation_status)}):placeholderProfessorPrepHtml(page,page.sourcePath)):pendingUploadHtml(reading,page.label);const body=`
+function buildProfessorPrep(siteMeta,reading,page){const outputPath=path.join(siteDir,"readings",reading.slug,page.filename);const week=weeklyConnections.find((item)=>item.pair.some((source)=>source.slug===reading.slug));const prep=loadProfessorPrep(page.sourcePath);const coldCallDeck=prep?buildProfessorPrepDeck(prep.cards,"prep-cold-call"):null;const readingResponseDeck=prep?buildProfessorPrepDeck(prep.reading_response.cards,"prep-reading-response"):null;const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(prep?renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,{reading,week,outputPath,draft:!isApprovedStatus(page.source_validation_status)}):placeholderProfessorPrepHtml(page,page.sourcePath)):pendingUploadHtml(reading,page.label);const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="reading-shell reading-detail-shell">
   ${renderReadingDetailHeader(outputPath,reading,{activeKey:page.key,currentLabel:"교수님 답변 대비"})}
   <div class="rpanel">
     <section class="rpanel-main">
       <section class="panel detail-block detail-content-block">
-        ${weeklyEntryForReading(outputPath,reading)}
         <section class="article-body prep-body detail-article-body">${content}</section>
       </section>
     </section>
     ${renderReadingDetailAside(outputPath,reading)}
   </div>
 </main>
-`;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko"));}
-function weeklyEntryForReading(outputPath,reading){const week=weeklyConnections.find((item)=>item.pair.some((source)=>source.slug===reading.slug));return week?renderWeeklyEntry(week,relHref(outputPath,path.join(siteDir,"weeks",week.id,"index.html"))):"";}
+`;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko",week?`<script src="${escapeHtml(versionedAssetHref(outputPath,"weekly.js"))}" defer></script>`:"",week?`<link rel="stylesheet" href="${escapeHtml(versionedAssetHref(outputPath,"weekly.css"))}" />`:""));}
 function prepareWeeklyOutputs(manifest,readings){weeklyConnections=selectAvailableWeeks(loadWeeklyConnections(rootDir,manifest),readings);}
 function buildWeeklyOutputs(siteMeta,refreshEntriesFor=[]){
   const weeklyDir=path.resolve(siteDir,"weeks");
@@ -1411,7 +1411,8 @@ function buildWeeklyOutputs(siteMeta,refreshEntriesFor=[]){
   }
   for(const reading of refreshEntriesFor){
     const outputPath=path.join(siteDir,"readings",reading.slug,"professor-prep.html");
-    if(fs.existsSync(outputPath))writeText(outputPath,refreshWeeklyEntryHtml(readText(outputPath),weeklyEntryForReading(outputPath,reading)));
+    const page=reading.pages.find((item)=>item.key==="professor-prep");
+    if(page&&fs.existsSync(outputPath))buildProfessorPrep(siteMeta,reading,page);
   }
 }
 function writeAssets(){writeText(path.join(siteDir,"assets","styles.css"),readText(styleSource).replace(/\r\n?/g,"\n"));writeText(path.join(siteDir,"assets","app.js"),readText(appSource).replace(/\r\n?/g,"\n"));for(const [source,target]of[["weekly_connections.css","weekly.css"],["weekly_connections_app.js","weekly.js"]])writeText(path.join(siteDir,"assets",target),readText(path.join(__dirname,source)).replace(/\r\n?/g,"\n"));if(fs.existsSync(brandLogoSource)){const target=path.join(siteDir,"assets","branding","snu.png");fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(brandLogoSource,target);}}

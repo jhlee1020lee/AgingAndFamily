@@ -5,7 +5,7 @@ const crypto=require("node:crypto");
 const readJson=(file)=>JSON.parse(fs.readFileSync(file,"utf8").replace(/^\uFEFF/,""));
 const escape=(value)=>String(value??"").replace(/[&<>"']/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const weekId=(week)=>`week-${String(week).padStart(2,"0")}`;
-const bilingual=(value,kind="answer")=>`<span lang="en" data-weekly-${kind}-language="en">${escape(value.en)}</span><span lang="ko" data-weekly-${kind}-language="ko" hidden>${escape(value.ko)}</span>`;
+const bilingual=(value,kind="answer")=>`<span lang="en" data-weekly-${kind}-language="en" hidden>${escape(value.en)}</span><span lang="ko" data-weekly-${kind}-language="ko">${escape(value.ko)}</span>`;
 
 function pairForWeek(manifest,week){
   const pair=manifest.readings.filter((reading)=>reading.week===week);
@@ -105,29 +105,26 @@ function renderWeeklyEntry(week,href){
   return `<a class="weekly-entry" href="${escape(href)}"><span><strong>${week.week}주차 · 두 편 연결해서 답하기</strong><span>같은 주의 두 자료를 엮은 질문 ${week.cards.length}개와 답변</span></span><span aria-hidden="true">→</span></a>`;
 }
 
-function refreshWeeklyEntryHtml(html,entry){
-  const cleaned=html.replace(/\s*<a class="weekly-entry"[^>]*>[\s\S]*?<\/a>\s*/g,"\n");
-  return entry?cleaned.replace('<section class="article-body prep-body detail-article-body">',`${entry}\n<section class="article-body prep-body detail-article-body">`):cleaned;
-}
-
 function renderWeeklyBody(root,week,helpers){
-  const {homeHref,readingHref}=helpers;
+  const {homeHref,readingHref,embedded=false,sharedLanguages=embedded}=helpers;
+  const shellTag=embedded?"section":"main";
+  const titleTag=embedded?"h2":"h1";
   const readingLabel=(reading)=>`${reading.authors.map((name)=>name.trim().replace(/,?\s+(Jr\.?|Sr\.?|II|III|IV)$/i,"").split(/\s+/).at(-1)).join(" & ")} · ${reading.year}`;
   const evidenceHtml=(item)=>{
     const reading=week.pair.find((source)=>source.slug===item.slug);
     const segment=readJson(path.join(root,reading.content_dir,"source_segments.json")).segments.find((source)=>source.segment_id===item.segment_id);
     return `<li><h4>${escape(readingLabel(reading))}</h4><p>${bilingual(item.note)}</p><a href="${escape(readingHref(reading,"full.html")+(item.anchor?`#${item.anchor}`:""))}">원문에서 확인 <span lang="en">· ${escape(segment.source_location)}</span> →</a></li>`;
   };
-  return `<main class="weekly-shell" data-weekly-root data-weekly-id="${week.id}" data-weekly-version="${week.revision}">
+  return `<${shellTag} class="weekly-shell${embedded?" weekly-embedded":""}" lang="ko" data-weekly-root data-weekly-id="${week.id}" data-weekly-version="${week.revision}">
   <header class="weekly-hero">
-    <a class="weekly-back" href="${escape(homeHref)}">← 전체 읽기</a>
+    ${embedded?"":`<a class="weekly-back" href="${escape(homeHref)}">← 전체 읽기</a>`}
     <p class="weekly-eyebrow">${escape(week.pair[0].display_date_label||`${week.week}주차 · ${week.pair[0].class_date}`)} · 두 읽기 연결</p>
-    <h1>${escape(week.title.ko)}</h1>
+    <${titleTag}>${escape(week.title.ko)}</${titleTag}>
     <p class="weekly-intro">${escape(week.introduction.ko)}</p>
   </header>
   <div class="weekly-controls" hidden>
-    <label>질문 언어<select data-weekly-question-select aria-label="질문 언어"><option value="en">English</option><option value="ko">한국어</option></select></label>
-    <label>답변 언어<select data-weekly-answer-select aria-label="답변 언어"><option value="en">English</option><option value="ko">한국어</option></select></label>
+    ${sharedLanguages?"":`<label>질문 언어<select data-weekly-question-select aria-label="질문 언어"><option value="ko">한국어</option><option value="en">English</option></select></label>
+    <label>답변 언어<select data-weekly-answer-select aria-label="답변 언어"><option value="ko">한국어</option><option value="en">English</option></select></label>`}
     <label><input type="checkbox" data-weekly-hide-answers />답변 가리고 연습</label>
     <label><input type="checkbox" data-weekly-marked-only />표시한 질문만</label>
     <p data-weekly-status role="status" aria-live="polite"></p>
@@ -144,7 +141,7 @@ function renderWeeklyBody(root,week,helpers){
     <details class="weekly-followup"><summary>꼬리 질문</summary><h3>${bilingual(card.followup.question,"question")}</h3><p>${bilingual(card.followup.answer)}</p></details>
   </article>`).join("")}</section>
   <footer class="weekly-footer"><p>두 자료를 함께 읽고 구성한 연습 질문과 답변입니다. 실제 수업 질문이나 저자들의 공동 결론을 뜻하지 않습니다.</p><a href="${escape(homeHref)}">전체 읽기로 돌아가기 →</a></footer>
-</main>`;
+</${shellTag}>`;
 }
 
-module.exports={pairForWeek,validateWeeklyData,weeklyReviewDigest,loadWeeklyConnections,selectAvailableWeeks,renderWeeklyEntry,refreshWeeklyEntryHtml,renderWeeklyBody};
+module.exports={pairForWeek,validateWeeklyData,weeklyReviewDigest,loadWeeklyConnections,selectAvailableWeeks,renderWeeklyEntry,renderWeeklyBody};

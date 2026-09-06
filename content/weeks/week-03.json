@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "week": 3,
+  "title": {
+    "en": "Longer lives, interdependent lives",
+    "ko": "길어진 수명, 서로 연결된 삶"
+  },
+  "introduction": {
+    "en": "Connect population change with the relationships through which aging is experienced. State a conclusion, distinguish the evidence in each reading, and explain where their connection stops.",
+    "ko": "인구의 변화와 관계 속에서 경험하는 노화를 연결해 답하는 연습입니다. 결론을 먼저 말하고 각 글의 근거를 구분한 뒤, 연결점과 설명의 한계를 덧붙여 보세요."
+  },
+  "connection": {
+    "thesis": {
+      "en": "Postponed mortality changes the time available for living, while relationships, historical experiences, and institutions shape what people can do with that time.",
+      "ko": "사망의 지연은 살아갈 수 있는 시간을 바꾸고, 관계·역사적 경험·제도는 그 시간을 어떻게 살아갈 수 있는지에 관여합니다."
+    },
+    "roles": [
+      {
+        "slug": "hagestad-settersten-2017",
+        "description": {
+          "en": "An autobiographical and theoretical reflection on social mirrors, interdependence, historical experience, and the precariousness of aging.",
+          "ko": "사회적 거울, 상호의존, 역사적 경험, 노화의 불확실성을 다루는 자전적·이론적 성찰입니다."
+        }
+      },
+      {
+        "slug": "vaupel-2010",
+        "description": {
+          "en": "A biodemographic review of mortality postponement, the less settled evidence on disability, and possible consequences of longer lives.",
+          "ko": "사망 지연, 아직 혼재된 장애 관련 근거, 장수의 가능한 사회적 결과를 검토하는 생물인구학 리뷰입니다."
+        }
+      }
+    ],
+    "distinction": {
+      "en": "The population evidence does not test the autobiographical explanations, and two life histories cannot establish a population mortality trend. Their connection is between demographic conditions and lived experience.",
+      "ko": "인구자료가 자전적 설명을 검증하는 것은 아니며, 두 사람의 생애사가 인구 사망률의 추세를 입증할 수도 없습니다. 두 글은 인구학적 조건과 실제 삶의 경험을 연결하는 데 함께 쓰입니다."
+    }
+  },
+  "cards": [
+    {
+      "id": "week-03-01",
+      "topic": {
+        "en": "What longer life changes",
+        "ko": "수명 연장이 바꾸는 것"
+      },
+      "question": {
+        "en": "Why is a longer life expectancy not a complete account of how aging has changed?",
+        "ko": "기대수명이 길어졌다는 사실만으로 노화의 변화를 충분히 설명할 수 없는 이유는 무엇인가요?"
+      },
+      "answer": {
+        "en": "Vaupel establishes that mortality at older ages has been postponed, giving populations a different survival timetable. Hagestad and Settersten ask what living within such a timetable means. Their autobiographical reflections show that identity and continuity depend partly on people who remember our histories, recognize our roles, and share our lives. Longer survival can create opportunities for relationships across generations, but illness, loss, and unequal support can still make later life uncertain. I would therefore connect the readings by separating additional years from the social conditions of those years. Mortality statistics describe changes in survival; interpersonal analysis helps us ask how those changes are experienced without assuming that longer life automatically means security or belonging.",
+        "ko": "Vaupel은 고령기 사망이 지연되어 인구의 생존 시간표가 달라졌다는 근거를 제시합니다. Hagestad와 Settersten은 그런 시간표 속에서 산다는 것이 무엇을 의미하는지 묻습니다. 이들의 자전적 성찰은 정체성과 연속성이 자신의 과거를 기억하고 역할을 인정하며 삶을 함께하는 사람들에게 부분적으로 의존한다는 점을 보여 줍니다. 더 오래 사는 것은 여러 세대와 관계를 맺을 기회를 만들 수 있지만, 질병·상실·불평등한 지원 때문에 노년의 불확실성은 여전히 남을 수 있습니다. 따라서 저는 늘어난 연수와 그 시간을 살아가는 사회적 조건을 구분하며 두 글을 연결하겠습니다. 사망 통계는 생존의 변화를 설명하고, 대인관계적 분석은 장수가 곧 안정이나 소속감을 뜻한다고 가정하지 않으면서 그 변화가 어떻게 경험되는지 묻게 합니다."
+      },
+      "takeaway": {
+        "en": "Vaupel explains a changing survival timetable; Hagestad and Settersten show why relationships and social conditions matter for the experience of the extra years.",
+        "ko": "Vaupel이 생존 시간표의 변화를 설명한다면, Hagestad와 Settersten은 늘어난 시간을 경험하는 데 관계와 사회적 조건이 왜 중요한지 보여 줍니다."
+      },
+      "connection": {
+        "en": "Link the duration of life to its interpersonal conditions while preserving the different questions and methods.",
+        "ko": "생명의 길이와 삶의 대인관계적 조건을 연결하되, 각 글의 질문과 방법을 구분합니다."
+      },
+      "caution": {
+        "en": "The essay illustrates mechanisms and meanings through two biographies; it does not estimate how much social relationships extend lifespan.",
+        "ko": "이 성찰문은 두 생애사를 통해 과정과 의미를 보여 주며, 사회관계가 수명을 얼마나 늘리는지 추정하지 않습니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "MORT-001",
+          "anchor": "the-postponement-of-mortality",
+          "note": {
+            "en": "Mortality records show the postponement of ages associated with specified remaining life expectancies.",
+            "ko": "사망자료로 특정 잔여기대수명에 도달하는 연령이 늦춰졌음을 보여 줍니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "CHICAGO-001",
+          "anchor": "inspiration-from-the-chicago-school",
+          "note": {
+            "en": "Longstanding relationships help maintain identity and biographical continuity.",
+            "ko": "오랜 관계가 정체성과 생애사의 연속성을 유지하는 데 관여합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-INTERDEPENDENCE-001",
+          "anchor": "interdependent-lives",
+          "note": {
+            "en": "Interdependence can provide continuity but also creates risks and contingencies.",
+            "ko": "상호의존은 연속성을 제공하면서 위험과 조건부 불확실성도 만듭니다."
+          }
+        },
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "CAUSES-001",
+          "anchor": "causes-of-past-and-future-postponement",
+          "note": {
+            "en": "The contribution of family structure and social networks to longevity remains incompletely understood.",
+            "ko": "가족구조와 사회관계망이 장수에 기여하는 방식은 충분히 밝혀지지 않았다고 설명합니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "Do these readings demonstrate that close relationships cause longevity?",
+          "ko": "두 글이 친밀한 관계가 장수의 원인임을 입증하나요?"
+        },
+        "answer": {
+          "en": "No. Vaupel notes uncertainty about social networks' contribution to longevity, and the essay is not a causal test. The connection helps formulate questions about support and survival.",
+          "ko": "아닙니다. Vaupel은 사회관계망이 장수에 기여하는 방식에 불확실성이 남아 있다고 보고, 성찰문도 인과 검증이 아닙니다. 두 글의 연결은 지원과 생존에 관한 질문을 만드는 데 도움이 됩니다."
+        }
+      }
+    },
+    {
+      "id": "week-03-02",
+      "topic": {
+        "en": "Postponement is not slower aging",
+        "ko": "사망 지연과 노화 속도의 구분"
+      },
+      "question": {
+        "en": "What does Vaupel mean by delayed rather than slower aging, and how should we connect that claim to personal experience?",
+        "ko": "Vaupel이 노화가 느려진 것이 아니라 지연되었다고 말하는 뜻은 무엇이며, 이를 개인의 경험과 어떻게 연결해야 하나요?"
+      },
+      "answer": {
+        "en": "Vaupel distinguishes reaching a given mortality level later from having mortality rise more slowly with age. In Figure 1, X5 and X10 are the ages at which remaining life expectancy is five and ten years. Their broadly parallel upward movement supports postponement, rather than a widening interval between these mortality milestones. This is not a claim that every individual gains an identical number of healthy years. Hagestad and Settersten's accounts remind us that illness, family histories, and others' responses can disrupt personal timetables. I would use the demographic finding to describe changing population conditions, then investigate the particular biography instead of using the population trend to predict someone's own pace or experience of aging.",
+        "ko": "Vaupel은 특정 사망 수준에 더 늦게 도달하는 것과 연령에 따른 사망률 상승 속도가 느려지는 것을 구분합니다. 그림 1의 X5와 X10은 잔여기대수명이 각각 5년과 10년이 되는 연령입니다. 두 지표가 대체로 나란히 상승한다는 것은 이 사망 관련 이정표 사이의 간격이 늘어났다기보다 도달 시점이 늦춰졌음을 뒷받침합니다. 모든 개인이 똑같은 연수만큼 건강한 삶을 더 얻는다는 주장은 아닙니다. Hagestad와 Settersten의 이야기는 질병, 가족의 역사, 타인의 반응이 개인의 시간표를 흔들 수 있음을 상기시킵니다. 저는 인구학적 결과로 인구 차원의 조건 변화를 설명한 뒤 구체적인 생애사를 살펴보겠습니다. 인구 추세로 한 사람의 노화 속도나 경험을 예측하지는 않겠습니다."
+      },
+      "takeaway": {
+        "en": "Reaching the same mortality level at a later age differs from a slower increase in mortality, and neither directly describes one person's lived aging trajectory.",
+        "ko": "같은 사망 수준에 더 늦게 도달하는 것과 사망률이 더 천천히 높아지는 것은 다르며, 어느 지표도 한 사람의 노화 경험을 그대로 설명하지는 않습니다."
+      },
+      "connection": {
+        "en": "Demographic time and biographical time answer different questions about when aging occurs and how it becomes meaningful.",
+        "ko": "인구학적 시간과 생애사적 시간은 노화가 언제 나타나고 어떤 의미를 갖는지에 관한 서로 다른 질문에 답합니다."
+      },
+      "caution": {
+        "en": "A population mortality plateau at very high ages does not mean individuals stop aging. Vaupel uses heterogeneity and selective survival to explain why aggregate and individual trajectories can differ.",
+        "ko": "초고령 인구의 사망률 평탄화가 개인의 노화 중단을 뜻하지는 않습니다. Vaupel은 이질성과 선택적 생존으로 집단과 개인의 궤적이 다를 수 있음을 설명합니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "MORT-001",
+          "anchor": "the-postponement-of-mortality",
+          "note": {
+            "en": "Defines X5 and X10 and describes their roughly stable separation in Figure 1.",
+            "ko": "X5·X10을 정의하고 그림 1에서 두 지표의 간격이 대체로 일정함을 설명합니다."
+          }
+        },
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "DELAY-001",
+          "anchor": "box-1-dynamics-of-heterogeneous-populations",
+          "note": {
+            "en": "Box 1 distinguishes population mortality from constituent trajectories and presents a hypothesis requiring testing.",
+            "ko": "상자 1은 인구 사망률과 구성집단의 궤적을 구분하며, 검증이 필요한 가설을 제시합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "GOH-ILLNESS-001",
+          "anchor": "g-o-hagestad-goh",
+          "note": {
+            "en": "Severe illness disrupts expected timing, roles, and participation in Hagestad's account.",
+            "ko": "Hagestad의 이야기에서 중병은 기대된 시간표, 역할, 참여를 흔듭니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "Can we say that old age now begins exactly ten years later for everyone?",
+          "ko": "이제 모든 사람의 노년이 정확히 10년 늦게 시작한다고 말해도 되나요?"
+        },
+        "answer": {
+          "en": "No. The approximate delay summarizes particular mortality patterns, not a universal personal threshold. Countries, indicators, histories, and capacities differ.",
+          "ko": "아닙니다. 대략적인 지연은 특정 사망 패턴을 요약한 것이며, 모든 개인에게 적용되는 경계가 아닙니다. 국가, 지표, 생애사, 능력은 서로 다릅니다."
+        }
+      }
+    },
+    {
+      "id": "week-03-03",
+      "topic": {
+        "en": "Longer survival and care needs",
+        "ko": "생존 연장과 돌봄 필요"
+      },
+      "question": {
+        "en": "Does postponing death mean that people will spend fewer years needing help?",
+        "ko": "사망이 늦춰지면 도움이 필요한 기간도 짧아진다는 뜻인가요?"
+      },
+      "answer": {
+        "en": "Not automatically. Vaupel finds mortality evidence clearer than evidence on disability and health expectancy, especially after age eighty-five. More people living with disease can reflect improved survival or earlier diagnosis, while rehabilitation can reduce disability without eliminating disease. Hagestad and Settersten add that needing assistance is experienced within relationships and social expectations. Labeling someone simply dependent may hide remaining capacities and restrict participation. Together, the readings lead me to separate survival, disease, functioning, and the organization of support. My synthesis is that planning for longer lives requires asking both what assistance is needed and how it can preserve meaningful participation, without promising that all additional years will be free of limitations.",
+        "ko": "반드시 그렇지는 않습니다. Vaupel은 사망에 관한 근거가 장애와 건강수명에 관한 근거보다 명확하며, 특히 85세 이후에는 후자의 근거가 제한적이라고 봅니다. 질병을 가진 사람이 많아지는 것은 생존 개선이나 조기 진단을 반영할 수 있고, 재활은 질병 자체를 없애지 않으면서 장애를 줄일 수 있습니다. Hagestad와 Settersten은 도움이 필요한 경험이 관계와 사회적 기대 속에서 이루어진다는 점을 더합니다. 누군가를 단순히 의존적인 사람으로 규정하면 남아 있는 능력을 가리고 참여를 제한할 수 있습니다. 두 글을 함께 보면 생존, 질병, 기능, 지원의 조직 방식을 구분하게 됩니다. 제가 도출하는 결론은, 늘어난 모든 시간이 제약 없이 건강할 것이라고 약속하지 않으면서 어떤 지원이 필요하고 그것이 의미 있는 참여를 어떻게 지킬지 함께 물어야 한다는 것입니다."
+      },
+      "takeaway": {
+        "en": "Longer survival does not automatically mean less disability; care planning must distinguish disease from functioning and protect participation alongside providing necessary help.",
+        "ko": "생존이 길어진다고 장애가 반드시 줄어드는 것은 아니므로, 돌봄 계획은 질병과 기능을 구분하고 필요한 도움과 함께 참여의 기회를 지켜야 합니다."
+      },
+      "connection": {
+        "en": "Vaupel separates health states; the essay shows why social labels and support arrangements also matter for living with limitations.",
+        "ko": "Vaupel은 건강 상태를 구분하고, 성찰문은 제약과 함께 살아갈 때 사회적 규정과 지원 방식도 중요함을 보여 줍니다."
+      },
+      "caution": {
+        "en": "The participation recommendation is a synthesis, not a tested care intervention. These historical readings do not establish current disability rates or an individual's care prognosis.",
+        "ko": "참여에 관한 제안은 두 글의 종합이며 검증된 돌봄 개입이 아닙니다. 과거의 두 읽기로 현재 장애율이나 개인의 돌봄 전망을 확정할 수는 없습니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "DEBILITY-001",
+          "anchor": "progress-in-delaying-debility",
+          "note": {
+            "en": "Health and disability trends are mixed and evidence above age 85 is limited.",
+            "ko": "건강·장애 추세는 혼재되어 있고 85세 이후 근거는 제한적입니다."
+          }
+        },
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "DEBILITY-002",
+          "anchor": "progress-in-delaying-debility",
+          "note": {
+            "en": "Distinguishes survival with illness, disability, diagnosis, and rehabilitation.",
+            "ko": "질병을 가진 생존, 장애, 진단, 재활을 구분합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-PRECARIOUSNESS-001",
+          "anchor": "aging-and-precariousness",
+          "note": {
+            "en": "Critiques either-or classifications that obscure capacities and restrict social participation.",
+            "ko": "남은 능력을 가리고 사회참여를 제한하는 양자택일식 분류를 비판합니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "How could illness prevalence rise while circumstances improve?",
+          "ko": "상황이 개선되는데도 질병 유병률이 높아질 수 있나요?"
+        },
+        "answer": {
+          "en": "Yes. Better treatment may keep people with illness alive, and improved screening may identify more cases. Neither change alone proves that disability has increased; we need separate measures.",
+          "ko": "그럴 수 있습니다. 더 나은 치료가 환자의 생존을 늘리고 개선된 검진이 더 많은 사례를 발견할 수 있습니다. 어느 변화도 그 자체로 장애 증가를 입증하지 않으므로 별도의 지표가 필요합니다."
+        }
+      }
+    },
+    {
+      "id": "week-03-04",
+      "topic": {
+        "en": "History across linked generations",
+        "ko": "연결된 세대를 통해 전해지는 역사"
+      },
+      "question": {
+        "en": "Why should a life-course explanation include both early conditions and later changes?",
+        "ko": "생애과정 설명에서 초기 조건과 이후의 변화를 모두 살펴봐야 하는 이유는 무엇인가요?"
+      },
+      "answer": {
+        "en": "Vaupel reviews evidence that early conditions can matter for later health, but he does not make childhood destiny. He also emphasizes adult smoking, medical progress, and economic changes later in life; mortality convergence after German reunification illustrates the relevance of changing conditions. Hagestad and Settersten widen the historical lens further. Their accounts show that parents' and grandparents' experiences can shape meanings, expectations, and relationships across generations, beyond a person's own cohort location. I would therefore ask when an exposure occurred, what changed afterward, and whose history enters the person's life. This connects demographic and interpersonal accounts without assuming that a remembered family experience directly caused a particular disease or mortality outcome.",
+        "ko": "Vaupel은 초기 조건이 이후 건강에 중요할 수 있다는 근거를 검토하지만, 아동기를 운명으로 보지는 않습니다. 성인기의 흡연, 의학적 진전, 생애 후반의 경제적 변화도 강조하며, 독일 통일 이후 사망률이 수렴한 사례는 조건 변화의 중요성을 보여 줍니다. Hagestad와 Settersten은 역사적 시야를 더 넓힙니다. 이들의 이야기는 부모와 조부모의 경험이 개인 자신의 코호트 위치를 넘어 여러 세대의 의미, 기대, 관계를 형성할 수 있음을 보여 줍니다. 따라서 저는 노출이 언제 일어났고 그 뒤 무엇이 달라졌으며 누구의 역사가 그 사람의 삶에 들어오는지 묻겠습니다. 이는 기억되는 가족 경험이 특정 질병이나 사망 결과를 직접 일으켰다고 가정하지 않으면서 인구학적 설명과 대인관계적 설명을 연결하는 방식입니다."
+      },
+      "takeaway": {
+        "en": "Early conditions matter within changing lives, and linked generations transmit histories that extend beyond the individual's own cohort without making later outcomes inevitable.",
+        "ko": "초기 조건은 변화하는 삶 속에서 작용하며, 연결된 세대는 개인의 코호트를 넘어 역사를 전달하지만 이후 결과를 필연적으로 결정하지는 않습니다."
+      },
+      "connection": {
+        "en": "Vaupel weighs conditions at different life stages; Hagestad and Settersten trace history through intergenerational relationships and shared meanings.",
+        "ko": "Vaupel은 여러 생애 단계의 조건을 검토하고, Hagestad와 Settersten은 세대 간 관계와 공유된 의미를 통해 역사가 전달되는 과정을 살핍니다."
+      },
+      "caution": {
+        "en": "The East–West German comparison is historical evidence discussed in a review, not a randomized intervention. Autobiographical transmission of meanings is not direct evidence of a biological inheritance mechanism.",
+        "ko": "동서독 비교는 리뷰가 다루는 역사적 근거이며 무작위 개입이 아닙니다. 자전적 이야기의 의미 전달이 생물학적 유전 기제를 직접 입증하는 것도 아닙니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "CAUSES-001",
+          "anchor": "causes-of-past-and-future-postponement",
+          "note": {
+            "en": "Considers mixed early-life evidence, adult exposures, and later changes including German reunification.",
+            "ko": "혼재된 초기 생애 근거, 성인기 노출, 독일 통일을 포함한 후기 조건 변화를 검토합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-HISTORY-001",
+          "anchor": "the-importance-of-historical-awareness",
+          "note": {
+            "en": "Argues that significant others' cohort histories also shape a person's life.",
+            "ko": "중요한 타인의 코호트 역사도 개인의 삶에 영향을 준다고 주장합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "GOH-FAMILY-001",
+          "anchor": "g-o-hagestad-goh",
+          "note": {
+            "en": "Family accounts illustrate inherited meanings of uncertainty, home, curiosity, and security.",
+            "ko": "가족 이야기는 불확실성·가정·호기심·안정의 의미가 전달되는 모습을 보여 줍니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "What would you ask in a hypothetical family interview?",
+          "ko": "가상의 가족 면담에서는 무엇을 물어보겠어요?"
+        },
+        "answer": {
+          "en": "I would ask how earlier generations' experiences shaped expectations about health, care, and security, and which later opportunities changed those expectations. That is a suggested inquiry, not a causal finding.",
+          "ko": "이전 세대의 경험이 건강·돌봄·안정에 대한 기대를 어떻게 형성했으며, 이후 어떤 기회가 그 기대를 바꾸었는지 묻겠습니다. 이는 제안하는 탐구 방식이며 인과적 연구 결과는 아닙니다."
+        }
+      }
+    },
+    {
+      "id": "week-03-05",
+      "topic": {
+        "en": "Gender, survival, and relationships",
+        "ko": "젠더·생존·관계의 교차"
+      },
+      "question": {
+        "en": "Why might longer survival coexist with more illness and different relational burdens for women?",
+        "ko": "여성에게 더 긴 생존이 더 많은 질병 및 다른 관계적 부담과 함께 나타날 수 있는 이유는 무엇인가요?"
+      },
+      "answer": {
+        "en": "Vaupel describes a health–survival paradox: older women often survive longer despite poorer health on several measures, while men can appear healthier yet die earlier. He stresses interacting social and biological factors rather than one settled explanation. Hagestad and Settersten consider how gendered histories of caregiving and relationship investment shape later-life interdependence. Longer lives and enduring ties can mean more available support and shared memories, but also exposure to loss and obligations. Reading them together, I would distinguish a population pattern of survival and morbidity from an account of how relationships distribute its consequences. Neither pattern means that all women provide care, all men lack support, or any individual follows the average.",
+        "ko": "Vaupel은 여러 지표에서 고령 여성이 건강 상태가 더 나쁜데도 더 오래 생존하고, 남성은 더 건강해 보이면서 더 일찍 사망할 수 있는 건강–생존 역설을 설명합니다. 하나의 확정된 설명 대신 사회적·생물학적 요인의 상호작용을 강조합니다. Hagestad와 Settersten은 돌봄과 관계에 대한 투자가 젠더에 따라 달랐던 역사가 노년의 상호의존을 어떻게 형성하는지 살펴봅니다. 긴 삶과 오래 지속된 유대는 더 많은 지원과 공유된 기억을 뜻할 수 있지만, 상실과 의무에 노출되는 경험도 동반할 수 있습니다. 두 글을 함께 읽으며 저는 생존·질병의 인구 패턴과 관계가 그 결과를 어떻게 분배하는지에 관한 설명을 구분하겠습니다. 어느 패턴도 모든 여성이 돌봄을 제공하거나 모든 남성이 지원이 부족하며, 모든 개인이 평균을 따른다는 뜻은 아닙니다."
+      },
+      "takeaway": {
+        "en": "The health–survival paradox describes population differences, while gendered relationship histories help explain why longer lives can contain both support and additional interpersonal demands.",
+        "ko": "건강–생존 역설은 인구 차이를 설명하고, 젠더화된 관계의 역사는 긴 삶에 지원과 추가적인 관계적 요구가 함께 있을 수 있음을 이해하게 합니다."
+      },
+      "connection": {
+        "en": "Bring sex differences in mortality and morbidity into conversation with gendered social roles, while avoiding a single untested causal chain.",
+        "ko": "사망·질병의 성별 차이와 젠더화된 사회적 역할을 함께 논의하되, 검증되지 않은 하나의 인과사슬로 묶지 않습니다."
+      },
+      "caution": {
+        "en": "The readings discuss context-dependent patterns and selected biographies. They do not identify caregiving as the sole cause of the health–survival paradox.",
+        "ko": "두 읽기는 맥락에 따른 패턴과 선택된 생애사를 다룹니다. 돌봄을 건강–생존 역설의 유일한 원인으로 밝혀낸 것은 아닙니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "DEBILITY-003",
+          "anchor": "progress-in-delaying-debility",
+          "note": {
+            "en": "Names the health–survival paradox and emphasizes interacting mechanisms whose relative importance is uncertain.",
+            "ko": "건강–생존 역설을 제시하고 상대적 중요성이 불확실한 여러 기제의 상호작용을 강조합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-VANGUARDS-001",
+          "anchor": "demographic-shifts-and-their-consequences",
+          "note": {
+            "en": "Discusses gender differences in morbidity, survival, and long-duration relationships.",
+            "ko": "질병·생존과 오래 지속되는 관계의 젠더 차이를 다룹니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-INTERDEPENDENCE-001",
+          "anchor": "interdependent-lives",
+          "note": {
+            "en": "Explains how relationships can offer resources while increasing contingencies and obligations.",
+            "ko": "관계가 자원을 제공하면서 조건부 불확실성과 의무도 늘릴 수 있음을 설명합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "RAS-FINITUDE-001",
+          "anchor": "r-a-settersten-jr-ras",
+          "note": {
+            "en": "A caregiving father anticipates both relational resources and possible emotional losses, complicating simple gender assumptions.",
+            "ko": "돌보는 아버지가 관계적 자원과 정서적 상실을 함께 전망하여 단순한 젠더 가정에 의문을 제기합니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "Would more relationships necessarily make aging easier?",
+          "ko": "관계가 많으면 노화가 반드시 더 수월해지나요?"
+        },
+        "answer": {
+          "en": "No. Their reliability and meaning matter, and interdependence includes exposure to others' needs and losses. Counting ties alone cannot establish whether they provide support or create additional demands.",
+          "ko": "아닙니다. 관계의 신뢰성과 의미가 중요하고, 상호의존에는 타인의 필요와 상실에 함께 노출되는 측면도 있습니다. 관계 수만으로 지원인지 추가 요구인지 판단할 수 없습니다."
+        }
+      }
+    },
+    {
+      "id": "week-03-06",
+      "topic": {
+        "en": "Reorganizing work and care",
+        "ko": "일과 돌봄의 생애 재배치"
+      },
+      "question": {
+        "en": "How could a longer-life society reorganize work without simply requiring everyone to work longer?",
+        "ko": "장수사회는 모두에게 더 오래 일하라고 요구하는 것 이상으로 노동을 어떻게 재구성할 수 있을까요?"
+      },
+      "answer": {
+        "en": "Vaupel proposes spreading work across more years while reducing weekly hours, leaving more room for education, childrearing, and leisure throughout life. His German illustration compares a 2005 baseline with a hypothetical 2025 arrangement; it is not a report that such a reform occurred. Hagestad and Settersten show why the relational consequences deserve attention: care responsibilities connect family members, and leave or pension rules can support one role while penalizing another. My synthesis is to evaluate working-time reforms alongside care rights, income security, and unequal capacities to remain employed. Longer survival creates a reason to reconsider timetables, but demographic averages alone cannot tell us which individuals can fairly bear additional work.",
+        "ko": "Vaupel은 더 많은 연수에 걸쳐 일하되 주당 노동시간을 줄여, 생애 전반에 교육·자녀 양육·여가를 위한 여지를 늘리는 방안을 제안합니다. 독일의 예시는 2005년 기준선과 가상의 2025년 구성을 비교한 것이며, 그런 개혁이 실제로 이루어졌다는 보고는 아닙니다. Hagestad와 Settersten은 관계적 결과에 주목해야 하는 이유를 보여 줍니다. 돌봄 책임은 가족 구성원을 연결하고, 휴가나 연금 규칙은 한 역할을 지원하면서 다른 역할에는 불이익을 줄 수 있습니다. 제가 종합한 제안은 노동시간 개혁을 돌봄 권리, 소득 안정, 계속 취업할 능력의 불평등과 함께 평가하자는 것입니다. 생존 연장은 시간표를 다시 생각할 이유가 되지만, 인구 평균만으로 누가 추가 노동을 공정하게 감당할 수 있는지 판단할 수는 없습니다."
+      },
+      "takeaway": {
+        "en": "A longer-life society can redistribute work across the life course, but any proposal must account for care, income security, and unequal opportunities to stay employed.",
+        "ko": "장수사회는 생애에 걸쳐 일을 재배치할 수 있지만, 어떤 제안도 돌봄·소득 안정·계속 일할 기회의 불평등을 고려해야 합니다."
+      },
+      "connection": {
+        "en": "Connect Vaupel's working-time scenario with the essay's account of policies organizing interdependent rights and obligations.",
+        "ko": "Vaupel의 노동시간 시나리오와 정책이 상호의존적인 권리·의무를 조직한다는 성찰문의 설명을 연결합니다."
+      },
+      "caution": {
+        "en": "This is a policy interpretation of historical readings, not a verified current policy or an estimate of reform effects. Figure 4 distinguishes hours per person from hours per worker.",
+        "ko": "과거 읽기를 바탕으로 한 정책적 해석이며, 확인된 현행 정책이나 개혁 효과의 추정치가 아닙니다. 그림 4는 인구 1인당 시간과 취업자 1인당 시간을 구분합니다."
+      },
+      "evidence": [
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "FORECAST-002",
+          "anchor": "forecasts-and-consequences-of-longer-lives",
+          "note": {
+            "en": "Proposes more years of work with fewer weekly hours instead of merely extending intensive working lives.",
+            "ko": "집중적인 노동생애를 단순 연장하는 대신 더 많은 연수와 더 적은 주당 시간을 제안합니다."
+          }
+        },
+        {
+          "slug": "vaupel-2010",
+          "segment_id": "FORECAST-003",
+          "anchor": "forecasts-and-consequences-of-longer-lives",
+          "note": {
+            "en": "Figure 4 describes a hypothetical scenario and separates population and worker denominators.",
+            "ko": "그림 4는 가상 시나리오이며 인구와 취업자의 분모를 구분합니다."
+          }
+        },
+        {
+          "slug": "hagestad-settersten-2017",
+          "segment_id": "THEMES-INTERDEPENDENCE-001",
+          "anchor": "interdependent-lives",
+          "note": {
+            "en": "Care leave and pension examples illustrate interactions between rights and obligations.",
+            "ko": "돌봄 휴가와 연금의 예시로 권리와 의무가 맞물리는 방식을 보여 줍니다."
+          }
+        }
+      ],
+      "followup": {
+        "question": {
+          "en": "What should we preserve when citing the hours in Figure 4?",
+          "ko": "그림 4의 노동시간 수치를 인용할 때 무엇을 구분해야 하나요?"
+        },
+        "answer": {
+          "en": "In the hypothetical arrangement, ages 20–65 average about 25 weekly hours per person, while the 90% who work average about 28 hours per worker. These denominators and the scenario status must remain explicit.",
+          "ko": "가상 구성에서 20~65세 전체는 1인당 주당 약 25시간, 그중 일하는 90%는 취업자 1인당 약 28시간입니다. 두 분모와 가상 시나리오라는 성격을 명시해야 합니다."
+        }
+      }
+    }
+  ]
+}

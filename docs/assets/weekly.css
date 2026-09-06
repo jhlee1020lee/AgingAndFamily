@@ -10,6 +10,12 @@
 }
 
 .weekly-shell [hidden]{display:none !important;}
+.weekly-shell.weekly-embedded{width:100%;margin:0;padding:.5rem 0 1rem;background:transparent;}
+.weekly-embedded .weekly-hero{padding-bottom:1.5rem;}
+.weekly-embedded .weekly-hero h2{margin:0;font-size:1.65rem;line-height:1.45;letter-spacing:-.035em;}
+.weekly-embedded .weekly-pair{gap:1.25rem;}
+.weekly-embedded .weekly-reading + .weekly-reading{padding-left:1.25rem;}
+.weekly-embedded .weekly-reading h2{font-size:1.2rem;}
 .weekly-shell :where(h1,h2,h3,p){margin-top:0;}
 .weekly-shell :where(h1,h2,h3){color:var(--text);}
 .weekly-shell :where(a,button,input,select,summary):focus-visible{
@@ -299,6 +305,7 @@
     border-top:1px solid var(--line);
     border-left:0;
   }
+  .weekly-embedded .weekly-reading + .weekly-reading{padding-left:0;}
   .weekly-reading h2{font-size:1.3rem;}
   .weekly-synthesis{padding-top:1.8rem;}
   .weekly-card{padding:2rem 0;}
