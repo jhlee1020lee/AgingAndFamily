@@ -174,6 +174,16 @@ try {
   verify("fresh explicit approvals pass all generated artifact gates", () => run(["scripts/validate_content.js", "--publish-gate"]));
   verify("site link validation resolves versioned asset query strings", () => run(["scripts/check_site_links.js", "--site-dir", "docs"]));
   verify("approval report follows the same manifest order as the home page", () => assert.deepEqual(collectApprovalRows(fixture).map((row) => row.slug), readings.map((reading) => reading.slug)));
+  verify("static home highlights both readings on the next class date before JavaScript runs", () => {
+    const today = `${readings[0].class_date}T12:00:00+09:00`;
+    run(["-e", `const NativeDate=Date; global.Date=class extends NativeDate{constructor(...args){super(...(args.length?args:[${JSON.stringify(today)}]));}}; require('./scripts/build_site').buildSite({homeOnly:true});`]);
+    const html = fs.readFileSync(path.join(fixture, "docs", "index.html"), "utf8");
+    const currentCards = [...html.matchAll(/\bdata-reading-card\s+data-reading-slug="([^"]+)"[^>]*data-card-state="current"/g)].map((match) => match[1]);
+    assert.deepEqual(currentCards, readings.map((reading) => reading.slug));
+    assert.equal((html.match(/class="rcard-mobile-state current"/g) || []).length, 2);
+    assert.equal((html.match(/aria-current="date"/g) || []).length, 2);
+    assert.match(html, /읽기 2편<\/span>/);
+  });
   console.log(`PASS build contracts (${checks} regression checks)`);
 } finally {
   const relative = path.relative(TMP, path.resolve(fixture));

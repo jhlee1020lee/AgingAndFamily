@@ -105,9 +105,10 @@ function checkHome(html,manifest,errors){
   expect(count(html,/data-home-rail-item(?:="")?/g)===expected,`home: expected ${expected} rail items`,errors);
   expect(count(html,/class="rcard-mobile-eyebrow"/g)===expected,`home: expected ${expected} mobile card eyebrows`,errors);
   expect(count(html,/<img\b[^>]*width="360"[^>]*height="360"[^>]*loading="(?:eager|lazy)"[^>]*decoding="async"/g)===expected,`home: responsive thumbnail attributes`,errors);
-  expect(count(html,/loading="eager"/g)===1,"home: exactly one eager thumbnail",errors);
-  expect(count(html,/fetchpriority="high"/g)===1,"home: exactly one high-priority thumbnail",errors);
-  expect(count(html,/loading="lazy"/g)===Math.max(0,expected-1),"home: remaining thumbnails must be lazy",errors);
+  const currentCount=count(html,/data-card-state="current"/g);
+  expect(count(html,/loading="eager"/g)===currentCount,"home: next-class thumbnails must be eager",errors);
+  expect(count(html,/fetchpriority="high"/g)===currentCount,"home: next-class thumbnails must have high priority",errors);
+  expect(count(html,/loading="lazy"/g)===expected-currentCount,"home: remaining thumbnails must be lazy",errors);
   expect(/<h1 class="sr-only">[^<]+<\/h1>/.test(html),"home: page h1 missing",errors);
   expect(/class="filter-chip-row" role="group" aria-label="읽기 유형 필터"/.test(html),"home: filter chip group missing",errors);
   expect(/type="search" aria-label="[^"]+"/.test(html),"home: search accessible name missing",errors);

@@ -224,25 +224,13 @@
         {
           "id": "settersten-tr-004-s07",
           "status": "verified",
-          "ko_text": "개인은 다른 사람을 평가할 때도 같은 방식으로 연령을 사용한다(“두 분은 동갑이지만 우리 부모님들은 이보다 더 다를 수 없을 정도야.",
-          "source_text": "Individuals also use age to make the same kinds of assessments of other people (“They’re the same age, but our parents couldn’t be more different; mine are so active and yours are couch potatoes”)."
-        },
-        {
-          "id": "settersten-tr-004-s08",
-          "status": "verified",
-          "ko_text": "우리 부모님은 매우 활동적인데 너희 부모님은 늘 소파에만 계셔”).",
+          "ko_text": "개인은 다른 사람을 평가할 때도 같은 방식으로 연령을 사용한다(“두 분은 동갑이지만 우리 부모님들은 이보다 더 다를 수 없을 정도야. 우리 부모님은 매우 활동적인데 너희 부모님은 늘 소파에만 계셔”).",
           "source_text": "Individuals also use age to make the same kinds of assessments of other people (“They’re the same age, but our parents couldn’t be more different; mine are so active and yours are couch potatoes”)."
         },
         {
           "id": "settersten-tr-004-s09",
           "status": "verified",
-          "ko_text": "연령은 기간으로도 이해할 수 있다.",
-          "source_text": "Age can similarly be understood as duration in that it may be used to estimate time to an event (“I will be 53 when my daughter graduates high school, just 2 years from now”), time in a role (“I retired at 67 after being a professor for 40 years”), or time between experiences (“I had my daughter at 26 but waited 3 years before I had my son”)."
-        },
-        {
-          "id": "settersten-tr-004-s10",
-          "status": "verified",
-          "ko_text": "사건까지 남은 시간(“딸이 고등학교를 졸업할 때 나는 53살이고, 이제 2년밖에 남지 않았다”), 한 역할에 머문 시간(“나는 40년 동안 교수로 일한 뒤 67살에 은퇴했다”), 또는 경험과 경험 사이의 시간(“나는 26살에 딸을 낳았지만 아들을 낳기 전 3년을 기다렸다”)을 추산하는 데 연령을 사용할 수 있기 때문이다.",
+          "ko_text": "연령은 기간으로도 이해할 수 있다. 사건까지 남은 시간(“딸이 고등학교를 졸업할 때 나는 53살이고, 이제 2년밖에 남지 않았다”), 한 역할에 머문 시간(“나는 40년 동안 교수로 일한 뒤 67살에 은퇴했다”), 또는 경험과 경험 사이의 시간(“나는 26살에 딸을 낳았지만 아들을 낳기 전 3년을 기다렸다”)을 추산하는 데 연령을 사용할 수 있기 때문이다.",
           "source_text": "Age can similarly be understood as duration in that it may be used to estimate time to an event (“I will be 53 when my daughter graduates high school, just 2 years from now”), time in a role (“I retired at 67 after being a professor for 40 years”), or time between experiences (“I had my daughter at 26 but waited 3 years before I had my son”)."
         },
         {
@@ -254,13 +242,7 @@
         {
           "id": "settersten-tr-004-s12",
           "status": "verified",
-          "ko_text": "이 통찰은 ‘미래시간조망’에 관한 활발한 연구 분야를 촉발했다(예: Carstensen, 2006).",
-          "source_text": "This insight propelled a vibrant field of inquiry on “future time perspective” (e.g., Carstensen, 2006), in which the goals, behaviors, and emotions of people of any age are understood to be shaped by how much time they think they have left (see also Chapter 12 by Ngo, Sands, & Isaacowitz)."
-        },
-        {
-          "id": "settersten-tr-004-s13",
-          "status": "verified",
-          "ko_text": "여기서는 나이에 상관없이 사람의 목표·행동·정서가 자신에게 시간이 얼마나 남았다고 생각하는지에 의해 형성된다고 본다(Ngo, Sands, & Isaacowitz의 Chapter 12도 참조).",
+          "ko_text": "이 통찰은 ‘미래시간조망’에 관한 활발한 연구 분야를 촉발했다(예: Carstensen, 2006). 여기서는 나이에 상관없이 사람의 목표·행동·정서가 자신에게 시간이 얼마나 남았다고 생각하는지에 의해 형성된다고 본다(Ngo, Sands, & Isaacowitz의 Chapter 12도 참조).",
           "source_text": "This insight propelled a vibrant field of inquiry on “future time perspective” (e.g., Carstensen, 2006), in which the goals, behaviors, and emotions of people of any age are understood to be shaped by how much time they think they have left (see also Chapter 12 by Ngo, Sands, & Isaacowitz)."
         },
         {
@@ -312,13 +294,7 @@
         {
           "id": "settersten-tr-005-s04",
           "status": "verified",
-          "ko_text": "그럼에도 사람들의 실제 생활연령과, 사람들이 다양한 차원에서 제시하는 연령을 자주 비교한다.",
-          "source_text": "It does, however, often make comparisons between the actual chronological ages of people versus those they give for a variety of dimensions: such as physical appearance (look age), activity level or types of behaviors (act age), how old one feels (feel age) or would like to be (desired age), or the ages other people would give them (assigned age) (for a review, see Settersten & Gannon, 2006)."
-        },
-        {
-          "id": "settersten-tr-005-s05",
-          "status": "verified",
-          "ko_text": "그런 차원에는 신체적 외모(보이는 나이), 활동 수준이나 행동 유형(행동하는 나이), 스스로 느끼는 나이(느끼는 나이)나 되고 싶은 나이(희망 나이), 또는 다른 사람들이 그 사람에게 부여할 나이(부여된 나이)가 있다(검토는 Settersten & Gannon, 2006 참조).",
+          "ko_text": "그럼에도 사람들의 실제 생활연령과, 사람들이 다양한 차원에서 제시하는 연령을 자주 비교한다. 그런 차원에는 신체적 외모(보이는 나이), 활동 수준이나 행동 유형(행동하는 나이), 스스로 느끼는 나이(느끼는 나이)나 되고 싶은 나이(희망 나이), 또는 다른 사람들이 그 사람에게 부여할 나이(부여된 나이)가 있다(검토는 Settersten & Gannon, 2006 참조).",
           "source_text": "It does, however, often make comparisons between the actual chronological ages of people versus those they give for a variety of dimensions: such as physical appearance (look age), activity level or types of behaviors (act age), how old one feels (feel age) or would like to be (desired age), or the ages other people would give them (assigned age) (for a review, see Settersten & Gannon, 2006)."
         },
         {
@@ -436,13 +412,7 @@
         {
           "id": "settersten-tr-006-s11",
           "status": "verified",
-          "ko_text": "의료기관에서 경험하는 리듬도 시계를 따라 움직인다.",
-          "source_text": "The rhythm of experiences in medical institutions marches to the clock, as stays are time bound, patients and treatments are scheduled, and rounds are made."
-        },
-        {
-          "id": "settersten-tr-006-s12",
-          "status": "verified",
-          "ko_text": "입원기간에는 한계가 있고 환자와 치료에는 일정이 잡히며 회진이 이루어진다.",
+          "ko_text": "의료기관에서 경험하는 리듬도 시계를 따라 움직인다. 입원기간에는 한계가 있고 환자와 치료에는 일정이 잡히며 회진이 이루어진다.",
           "source_text": "The rhythm of experiences in medical institutions marches to the clock, as stays are time bound, patients and treatments are scheduled, and rounds are made."
         },
         {
@@ -484,13 +454,7 @@
         {
           "id": "settersten-tr-006-s19",
           "status": "verified",
-          "ko_text": "Joe Hendricks와 Calvin Peters(1986)의 표현인 이 ‘우리 삶의 시간들’은 인간 노화의 역동적이고 연결된 성격에 주목하게 한다.",
-          "source_text": "These “times of our lives,” to use Joe Hendricks and Calvin Peters’s (1986) phrase, call attention to the dynamic and linked nature of human aging—as individuals and groups move through the age strata of the population, generations within their families, social settings and institutions, and the course of history."
-        },
-        {
-          "id": "settersten-tr-006-s20",
-          "status": "verified",
-          "ko_text": "개인과 집단은 인구의 연령층, 가족 내 세대, 사회적 환경과 제도, 역사의 흐름을 통과해 이동한다.",
+          "ko_text": "Joe Hendricks와 Calvin Peters(1986)의 표현인 이 ‘우리 삶의 시간들’은 인간 노화의 역동적이고 연결된 성격에 주목하게 한다. 개인과 집단은 인구의 연령층, 가족 내 세대, 사회적 환경과 제도, 역사의 흐름을 통과해 이동한다.",
           "source_text": "These “times of our lives,” to use Joe Hendricks and Calvin Peters’s (1986) phrase, call attention to the dynamic and linked nature of human aging—as individuals and groups move through the age strata of the population, generations within their families, social settings and institutions, and the course of history."
         },
         {
@@ -560,13 +524,7 @@
         {
           "id": "settersten-tr-007-s07",
           "status": "verified",
-          "ko_text": "앞서 언급한 생활연령의 성질은 Max Weber(1904–1905)까지 거슬러 올라가는 사회학자들이 ‘합리화’라고 부르는 역사적 과정에서 그것을 매력적이고 유용하게 만들었다.",
-          "source_text": "The qualities of chronological age noted earlier have made it appealing and useful in a historical process of what sociologists, dating back to Max Weber (1904–1905), call “rationalization”—a process in which human action has increasingly been subject to administrative calculation and control in order to help society and its systems run more efficiently."
-        },
-        {
-          "id": "settersten-tr-007-s08",
-          "status": "verified",
-          "ko_text": "합리화란 사회와 그 체계가 더 효율적으로 운영되도록 인간 행동이 점차 행정적 계산과 통제의 대상이 되는 과정이다.",
+          "ko_text": "앞서 언급한 생활연령의 성질은 Max Weber(1904–1905)까지 거슬러 올라가는 사회학자들이 ‘합리화’라고 부르는 역사적 과정에서 그것을 매력적이고 유용하게 만들었다. 합리화란 사회와 그 체계가 더 효율적으로 운영되도록 인간 행동이 점차 행정적 계산과 통제의 대상이 되는 과정이다.",
           "source_text": "The qualities of chronological age noted earlier have made it appealing and useful in a historical process of what sociologists, dating back to Max Weber (1904–1905), call “rationalization”—a process in which human action has increasingly been subject to administrative calculation and control in order to help society and its systems run more efficiently."
         },
         {
@@ -590,13 +548,7 @@
         {
           "id": "settersten-tr-007-s12",
           "status": "verified",
-          "ko_text": "하지만 사망률과 이환율의 극적인 변화는 가족구성원 사이의 만성질환 및 사망 양상을 더 예측 가능하게 만들기도 했다.",
-          "source_text": "However, dramatic changes in mortality and morbidity have also made patterns of chronic illness and death among family members more predictable—that is, they are generally confined to old age."
-        },
-        {
-          "id": "settersten-tr-007-s13",
-          "status": "verified",
-          "ko_text": "즉, 대체로 노년에 한정되게 했다.",
+          "ko_text": "하지만 사망률과 이환율의 극적인 변화는 가족구성원 사이의 만성질환 및 사망 양상을 더 예측 가능하게 만들기도 했다. 즉, 대체로 노년에 한정되게 했다.",
           "source_text": "However, dramatic changes in mortality and morbidity have also made patterns of chronic illness and death among family members more predictable—that is, they are generally confined to old age."
         },
         {
@@ -654,19 +606,7 @@
         {
           "id": "settersten-tr-008-s06",
           "status": "verified",
-          "ko_text": "아동기는 마침내 ‘유아기’, ‘중기 아동기’, ‘청소년기’로 분화되었다.",
-          "source_text": "Childhood was eventually differentiated into “early childhood,” “middle childhood,” and “youth and adolescence.” Adulthood was segmented into “early adulthood,” “midlife,” and “old age.” As the phase immediately preceding old age, midlife has grown to be of special interest to research on aging (see Lachman, 2015)."
-        },
-        {
-          "id": "settersten-tr-008-s07",
-          "status": "verified",
-          "ko_text": "성인기는 ‘초기 성인기’, ‘중년기’, ‘노년기’로 구분되었다.",
-          "source_text": "Childhood was eventually differentiated into “early childhood,” “middle childhood,” and “youth and adolescence.” Adulthood was segmented into “early adulthood,” “midlife,” and “old age.” As the phase immediately preceding old age, midlife has grown to be of special interest to research on aging (see Lachman, 2015)."
-        },
-        {
-          "id": "settersten-tr-008-s08",
-          "status": "verified",
-          "ko_text": "노년기 바로 앞 단계인 중년기는 노화 연구에서 특별한 관심대상으로 성장했다(Lachman, 2015 참조).",
+          "ko_text": "아동기는 마침내 ‘유아기’, ‘중기 아동기’, ‘청소년기’로 분화되었다. 성인기는 ‘초기 성인기’, ‘중년기’, ‘노년기’로 구분되었다. 노년기 바로 앞 단계인 중년기는 노화 연구에서 특별한 관심대상으로 성장했다(Lachman, 2015 참조).",
           "source_text": "Childhood was eventually differentiated into “early childhood,” “middle childhood,” and “youth and adolescence.” Adulthood was segmented into “early adulthood,” “midlife,” and “old age.” As the phase immediately preceding old age, midlife has grown to be of special interest to research on aging (see Lachman, 2015)."
         },
         {
@@ -726,13 +666,7 @@
         {
           "id": "settersten-tr-008-s18",
           "status": "verified",
-          "ko_text": "같은 정신에서 Leonard Cain(2003, p. 301)은 ‘노인’ 또는 ‘고령자’로 여겨지는 사람들의 연구를 과학적·정책적 목적 모두를 위해 ‘거침없이 활동하는 사람(go-go)’, ‘느리게 활동하는 사람(slow-go)’, ‘활동하지 못하는 사람(no-go)’으로, 또는 ‘활기찬 사람(frisky)’, ‘쇠약한 사람(frail)’, ‘취약한 사람(fragile)’으로 구분해야 한다고 주장했다.",
-          "source_text": "It is this same spirit that drove Leonard Cain (2003, p. 301) to argue that the study of those who are considered “elderly” or “senior” should be differentiated for both scientific and policy purposes into the “go-go,” the “slow-go,” and the “no-go,” or into the “frisky,” the “frail,” and the “fragile.” The traditional starting point for defining “old age” is also a cultural and historical property in that it is tied to eligibility thresholds for social security and other government programs."
-        },
-        {
-          "id": "settersten-tr-008-s19",
-          "status": "verified",
-          "ko_text": "‘노년기’를 정의하는 전통적 출발점 또한 사회보장제도와 그 밖의 정부 프로그램 수급자격 기준에 묶여 있다는 점에서 문화적·역사적 속성이다.",
+          "ko_text": "같은 정신에서 Leonard Cain(2003, p. 301)은 ‘노인’ 또는 ‘고령자’로 여겨지는 사람들의 연구를 과학적·정책적 목적 모두를 위해 ‘거침없이 활동하는 사람(go-go)’, ‘느리게 활동하는 사람(slow-go)’, ‘활동하지 못하는 사람(no-go)’으로, 또는 ‘활기찬 사람(frisky)’, ‘쇠약한 사람(frail)’, ‘취약한 사람(fragile)’으로 구분해야 한다고 주장했다. ‘노년기’를 정의하는 전통적 출발점 또한 사회보장제도와 그 밖의 정부 프로그램 수급자격 기준에 묶여 있다는 점에서 문화적·역사적 속성이다.",
           "source_text": "It is this same spirit that drove Leonard Cain (2003, p. 301) to argue that the study of those who are considered “elderly” or “senior” should be differentiated for both scientific and policy purposes into the “go-go,” the “slow-go,” and the “no-go,” or into the “frisky,” the “frail,” and the “fragile.” The traditional starting point for defining “old age” is also a cultural and historical property in that it is tied to eligibility thresholds for social security and other government programs."
         },
         {
@@ -790,25 +724,13 @@
         {
           "id": "settersten-tr-009-s03",
           "status": "verified",
-          "ko_text": "Boyd와 Dowd(1988)의 표현을 빌리면 연령은 ‘확산적 지위특성’이다.",
-          "source_text": "Age is, to use Boyd and Dowd’s (1988) phrase, a “diffuse status characteristic.” Individuals use cues about others’ ages to make assumptions about their attributes and abilities, a practice which seems especially likely when little else besides other “master status” characteristics, like sex or race, are known."
-        },
-        {
-          "id": "settersten-tr-009-s04",
-          "status": "verified",
-          "ko_text": "개인은 다른 사람의 연령에 관한 단서를 사용해 그 사람의 특성과 능력을 추정하며, 성별이나 인종 같은 다른 ‘지배적 지위’ 특성 외에는 알려진 것이 거의 없을 때 이런 관행이 특히 나타나기 쉬워 보인다.",
+          "ko_text": "Boyd와 Dowd(1988)의 표현을 빌리면 연령은 ‘확산적 지위특성’이다. 개인은 다른 사람의 연령에 관한 단서를 사용해 그 사람의 특성과 능력을 추정하며, 성별이나 인종 같은 다른 ‘지배적 지위’ 특성 외에는 알려진 것이 거의 없을 때 이런 관행이 특히 나타나기 쉬워 보인다.",
           "source_text": "Age is, to use Boyd and Dowd’s (1988) phrase, a “diffuse status characteristic.” Individuals use cues about others’ ages to make assumptions about their attributes and abilities, a practice which seems especially likely when little else besides other “master status” characteristics, like sex or race, are known."
         },
         {
           "id": "settersten-tr-009-s05",
           "status": "verified",
-          "ko_text": "이런 다른 특성처럼 연령은 이동 가능하다.",
-          "source_text": "Like these other characteristics, age is portable—it always accompanies the individual."
-        },
-        {
-          "id": "settersten-tr-009-s06",
-          "status": "verified",
-          "ko_text": "즉, 늘 개인을 따라다닌다.",
+          "ko_text": "이런 다른 특성처럼 연령은 이동 가능하다. 즉, 늘 개인을 따라다닌다.",
           "source_text": "Like these other characteristics, age is portable—it always accompanies the individual."
         },
         {
@@ -856,13 +778,7 @@
         {
           "id": "settersten-tr-009-s14",
           "status": "verified",
-          "ko_text": "SET는 연령주의를 성차별주의와 인종차별주의에 견준 Robert Butler(1969)의 논의를 암묵적으로 발전시킨다.",
-          "source_text": "SET implicitly builds on Robert Butler’s (1969) comparison of ageism to sexism and racism, in which age represents an accumulation of exposure to negative stereotypes, thereby increasing the likelihood of internalization."
-        },
-        {
-          "id": "settersten-tr-009-s15",
-          "status": "verified",
-          "ko_text": "여기서 연령은 부정적 고정관념에 노출된 경험의 축적을 뜻하고, 그 결과 내면화 가능성이 커진다.",
+          "ko_text": "SET는 연령주의를 성차별주의와 인종차별주의에 견준 Robert Butler(1969)의 논의를 암묵적으로 발전시킨다. 여기서 연령은 부정적 고정관념에 노출된 경험의 축적을 뜻하고, 그 결과 내면화 가능성이 커진다.",
           "source_text": "SET implicitly builds on Robert Butler’s (1969) comparison of ageism to sexism and racism, in which age represents an accumulation of exposure to negative stereotypes, thereby increasing the likelihood of internalization."
         }
       ]
@@ -908,13 +824,7 @@
         {
           "id": "settersten-tr-010-s05",
           "status": "verified",
-          "ko_text": "이러한 긍정적 고정관념은 많은 노년학자가 ‘연령주의적’이라고 여기는 부정적 고정관념의 중요한 짝이다.",
-          "source_text": "These positive stereotypes are important counterparts to the negative stereotypes that many gerontologists deem as “ageist.” Theories of ageism must probe the positive end of the continuum, as age stereotypes can also provide social advantages, not just disadvantages."
-        },
-        {
-          "id": "settersten-tr-010-s06",
-          "status": "verified",
-          "ko_text": "연령 고정관념은 사회적 불이익만이 아니라 이점도 줄 수 있으므로, 연령주의 이론은 연속선의 긍정적 끝도 탐구해야 한다.",
+          "ko_text": "이러한 긍정적 고정관념은 많은 노년학자가 ‘연령주의적’이라고 여기는 부정적 고정관념의 중요한 짝이다. 연령 고정관념은 사회적 불이익만이 아니라 이점도 줄 수 있으므로, 연령주의 이론은 연속선의 긍정적 끝도 탐구해야 한다.",
           "source_text": "These positive stereotypes are important counterparts to the negative stereotypes that many gerontologists deem as “ageist.” Theories of ageism must probe the positive end of the continuum, as age stereotypes can also provide social advantages, not just disadvantages."
         },
         {
@@ -932,13 +842,7 @@
         {
           "id": "settersten-tr-010-s09",
           "status": "verified",
-          "ko_text": "연령주의는 다른 종류의 ‘주의(ism)’에 견주어 상대적으로 보이지 않기도 한다.",
-          "source_text": "Ageism is also relatively invisible relative to other kinds of “isms.” Individuals are often unaware of ageism in their attitudes or behavior, or of when they tacitly support the ageist attitudes and behaviors of others."
-        },
-        {
-          "id": "settersten-tr-010-s10",
-          "status": "verified",
-          "ko_text": "개인은 자신의 태도나 행동에 있는 연령주의를, 또는 타인의 연령주의적 태도와 행동을 암묵적으로 지지하는 순간을 흔히 알아차리지 못한다.",
+          "ko_text": "연령주의는 다른 종류의 ‘주의(ism)’에 견주어 상대적으로 보이지 않기도 한다. 개인은 자신의 태도나 행동에 있는 연령주의를, 또는 타인의 연령주의적 태도와 행동을 암묵적으로 지지하는 순간을 흔히 알아차리지 못한다.",
           "source_text": "Ageism is also relatively invisible relative to other kinds of “isms.” Individuals are often unaware of ageism in their attitudes or behavior, or of when they tacitly support the ageist attitudes and behaviors of others."
         },
         {
@@ -1038,25 +942,13 @@
         {
           "id": "settersten-tr-011-s07",
           "status": "verified",
-          "ko_text": "생애궤적은 연령과 연결된 일련의 역할전환에 의해 조정되는 것으로 개념화된다.",
-          "source_text": "Life trajectories are conceptualized as being calibrated by a sequence of age-linked role transitions: times when social personae change; when new rights, duties, and resources are encountered; and when identities are in flux."
-        },
-        {
-          "id": "settersten-tr-011-s08",
-          "status": "verified",
-          "ko_text": "역할전환은 사회적 인격이 바뀌고, 새로운 권리·의무·자원을 만나며, 정체성이 유동하는 시점이다.",
+          "ko_text": "생애궤적은 연령과 연결된 일련의 역할전환에 의해 조정되는 것으로 개념화된다. 역할전환은 사회적 인격이 바뀌고, 새로운 권리·의무·자원을 만나며, 정체성이 유동하는 시점이다.",
           "source_text": "Life trajectories are conceptualized as being calibrated by a sequence of age-linked role transitions: times when social personae change; when new rights, duties, and resources are encountered; and when identities are in flux."
         },
         {
           "id": "settersten-tr-011-s09",
           "status": "verified",
-          "ko_text": "집단구성원들은 Neugarten(1969)의 표현인 ‘정상적이고 기대 가능한 삶’에 관한 비공식적 관념을 공유한다.",
-          "source_text": "Members of groups share informal notions about the “normal, expectable life,” to use Neugarten’s (1969) phrase: social and cultural expectations—“age norms”—for the timing and sequencing of major life transitions such as leaving home, finishing school, finding full-time work, partnering and parenting, or retiring (for a review, see Settersten, 2003)."
-        },
-        {
-          "id": "settersten-tr-011-s10",
-          "status": "verified",
-          "ko_text": "이는 집을 떠나기, 학교 마치기, 정규직 찾기, 동반관계 맺기와 부모 되기, 은퇴하기 같은 주요 생애전환의 시기와 순서에 관한 사회문화적 기대, 곧 ‘연령규범’이다(검토는 Settersten, 2003 참조).",
+          "ko_text": "집단구성원들은 Neugarten(1969)의 표현인 ‘정상적이고 기대 가능한 삶’에 관한 비공식적 관념을 공유한다. 이는 집을 떠나기, 학교 마치기, 정규직 찾기, 동반관계 맺기와 부모 되기, 은퇴하기 같은 주요 생애전환의 시기와 순서에 관한 사회문화적 기대, 곧 ‘연령규범’이다(검토는 Settersten, 2003 참조).",
           "source_text": "Members of groups share informal notions about the “normal, expectable life,” to use Neugarten’s (1969) phrase: social and cultural expectations—“age norms”—for the timing and sequencing of major life transitions such as leaving home, finishing school, finding full-time work, partnering and parenting, or retiring (for a review, see Settersten, 2003)."
         },
         {
@@ -1092,13 +984,7 @@
         {
           "id": "settersten-tr-011-s16",
           "status": "verified",
-          "ko_text": "연령규범은 많은 사회학 이론에서도 마찬가지로 핵심이다.",
-          "source_text": "Age norms are similarly central to many sociological theories because adherence to these expectations is taken to be important for maintaining social order and the division of labor in society, and for allocating resources."
-        },
-        {
-          "id": "settersten-tr-011-s17",
-          "status": "verified",
-          "ko_text": "이런 기대를 따르는 것이 사회질서와 사회적 분업을 유지하고 자원을 배분하는 데 중요하다고 보기 때문이다.",
+          "ko_text": "연령규범은 많은 사회학 이론에서도 마찬가지로 핵심이다. 이런 기대를 따르는 것이 사회질서와 사회적 분업을 유지하고 자원을 배분하는 데 중요하다고 보기 때문이다.",
           "source_text": "Age norms are similarly central to many sociological theories because adherence to these expectations is taken to be important for maintaining social order and the division of labor in society, and for allocating resources."
         },
         {
@@ -1326,13 +1212,7 @@
         {
           "id": "settersten-tr-014-s05",
           "status": "verified",
-          "ko_text": "대부분의 나라에서 ‘성인’ 지위의 권리와 책임을 정하는 일은 생활연령에 의해 명시적으로 구조화된다.",
-          "source_text": "In most countries, determining the rights and responsibilities of “adult” status are explicitly structured by chronological age—for example, regulations regarding compulsory schooling, driving, drinking, voting, consensual sex, working, marrying, or seeking public offices."
-        },
-        {
-          "id": "settersten-tr-014-s06",
-          "status": "verified",
-          "ko_text": "예를 들면 의무교육, 운전, 음주, 투표, 합의된 성관계, 노동, 결혼, 공직 출마에 관한 규정이 그렇다.",
+          "ko_text": "대부분의 나라에서 ‘성인’ 지위의 권리와 책임을 정하는 일은 생활연령에 의해 명시적으로 구조화된다. 예를 들면 의무교육, 운전, 음주, 투표, 합의된 성관계, 노동, 결혼, 공직 출마에 관한 규정이 그렇다.",
           "source_text": "In most countries, determining the rights and responsibilities of “adult” status are explicitly structured by chronological age—for example, regulations regarding compulsory schooling, driving, drinking, voting, consensual sex, working, marrying, or seeking public offices."
         },
         {
@@ -1432,25 +1312,13 @@
         {
           "id": "settersten-tr-015-s07",
           "status": "verified",
-          "ko_text": "가령 노화하는 몸과 관련해 강력하고 지속적인 문화적 차이가 있는데, 여기에는 남성과 여성에게 적용되는 노화의 ‘이중기준’이 포함된다.",
-          "source_text": "For instance, there are strong and persistent cultural differences related to aging bodies, including the “double standard” of aging for men and women—that the physical signs of aging often accentuate a man’s social capital but for women take it away (Bell, 1970; Sontag, 1972)."
-        },
-        {
-          "id": "settersten-tr-015-s08",
-          "status": "verified",
-          "ko_text": "즉, 노화의 신체적 징후는 흔히 남성의 사회자본을 늘리지만 여성의 사회자본은 빼앗는다(Bell, 1970; Sontag, 1972).",
+          "ko_text": "가령 노화하는 몸과 관련해 강력하고 지속적인 문화적 차이가 있는데, 여기에는 남성과 여성에게 적용되는 노화의 ‘이중기준’이 포함된다. 즉, 노화의 신체적 징후는 흔히 남성의 사회자본을 늘리지만 여성의 사회자본은 빼앗는다(Bell, 1970; Sontag, 1972).",
           "source_text": "For instance, there are strong and persistent cultural differences related to aging bodies, including the “double standard” of aging for men and women—that the physical signs of aging often accentuate a man’s social capital but for women take it away (Bell, 1970; Sontag, 1972)."
         },
         {
           "id": "settersten-tr-015-s09",
           "status": "verified",
-          "ko_text": "이와 비슷하게 일부는 남성과 여성이 예측 가능성과 질서에 대해 서로 다른 필요를 가질 수 있고 서로 다른 종류의 시간을 경험할 수 있다고 제안했다.",
-          "source_text": "Similarly, some have suggested that men and women may have different needs for predictability and order, and that they may experience different kinds of time—with the rhythms of men’s lives being more linear (and therefore more regulated by chronological age), and women’s being more nonlinear (and therefore less regulated by chronological age)."
-        },
-        {
-          "id": "settersten-tr-015-s10",
-          "status": "verified",
-          "ko_text": "남성 삶의 리듬은 더 선형적이어서 생활연령에 의해 더 규제되고, 여성 삶의 리듬은 더 비선형적이어서 생활연령에 의해 덜 규제된다는 것이다.",
+          "ko_text": "이와 비슷하게 일부는 남성과 여성이 예측 가능성과 질서에 대해 서로 다른 필요를 가질 수 있고 서로 다른 종류의 시간을 경험할 수 있다고 제안했다. 남성 삶의 리듬은 더 선형적이어서 생활연령에 의해 더 규제되고, 여성 삶의 리듬은 더 비선형적이어서 생활연령에 의해 덜 규제된다는 것이다.",
           "source_text": "Similarly, some have suggested that men and women may have different needs for predictability and order, and that they may experience different kinds of time—with the rhythms of men’s lives being more linear (and therefore more regulated by chronological age), and women’s being more nonlinear (and therefore less regulated by chronological age)."
         },
         {
@@ -1580,13 +1448,7 @@
         {
           "id": "settersten-tr-016-s02",
           "status": "verified",
-          "ko_text": "여기서도 연구자들은 상호작용과 행동을 둘러싼 연령 ‘경계’에 공동체 간 상당한 변이가 있음을 밝혔다.",
-          "source_text": "Here, too, investigators unveiled significant variability across communities in the age “borders” on interaction and behavior, ranging from sites where it was difficult to find any situation in which people of only one age category are present, to tight and fine-grained social boundaries that separate people into distinct age-graded social contexts."
-        },
-        {
-          "id": "settersten-tr-016-s03",
-          "status": "verified",
-          "ko_text": "한 연령범주의 사람만 있는 상황을 찾기 어려운 곳부터 사람들을 서로 구별되는 연령등급화된 사회적 맥락으로 나누는 촘촘하고 세분된 사회적 경계가 있는 곳까지 다양했다.",
+          "ko_text": "여기서도 연구자들은 상호작용과 행동을 둘러싼 연령 ‘경계’에 공동체 간 상당한 변이가 있음을 밝혔다. 한 연령범주의 사람만 있는 상황을 찾기 어려운 곳부터 사람들을 서로 구별되는 연령등급화된 사회적 맥락으로 나누는 촘촘하고 세분된 사회적 경계가 있는 곳까지 다양했다.",
           "source_text": "Here, too, investigators unveiled significant variability across communities in the age “borders” on interaction and behavior, ranging from sites where it was difficult to find any situation in which people of only one age category are present, to tight and fine-grained social boundaries that separate people into distinct age-graded social contexts."
         },
         {
@@ -1842,13 +1704,7 @@
         {
           "id": "settersten-tr-018-s08",
           "status": "verified",
-          "ko_text": "노화에 관한 학술지들을 30년에 걸쳐 검토한 최근 연구(Settersten & Angel, 2011)는 여기서 특히 관련되는 연령의 언어에 관해 한 가지 관찰을 제시했다.",
-          "source_text": "A recent 30-year review of scientific journals on aging (Settersten & Angel, 2011) included an observation related to the language of age that is particularly relevant here: that terms such as “old people,” “old age,” and “elderly,” which were once so prevalent, have virtually vanished and have been replaced by neutral language intentionally meant to avoid the sense of becoming “old.”"
-        },
-        {
-          "id": "settersten-tr-018-s09",
-          "status": "verified",
-          "ko_text": "한때 널리 쓰였던 ‘늙은 사람’, ‘노년’, ‘노인’ 같은 용어가 사실상 사라지고, ‘늙어 간다’는 느낌을 피하려고 의도한 중립적 언어로 대체되었다는 것이다.",
+          "ko_text": "노화에 관한 학술지들을 30년에 걸쳐 검토한 최근 연구(Settersten & Angel, 2011)는 여기서 특히 관련되는 연령의 언어에 관해 한 가지 관찰을 제시했다. 한때 널리 쓰였던 ‘늙은 사람’, ‘노년’, ‘노인’ 같은 용어가 사실상 사라지고, ‘늙어 간다’는 느낌을 피하려고 의도한 중립적 언어로 대체되었다는 것이다.",
           "source_text": "A recent 30-year review of scientific journals on aging (Settersten & Angel, 2011) included an observation related to the language of age that is particularly relevant here: that terms such as “old people,” “old age,” and “elderly,” which were once so prevalent, have virtually vanished and have been replaced by neutral language intentionally meant to avoid the sense of becoming “old.”"
         },
         {
@@ -1884,13 +1740,7 @@
         {
           "id": "settersten-tr-018-s15",
           "status": "verified",
-          "ko_text": "이 분야는 연령과 노화의 잠재력을 찬양하면서 초기에 관심을 끌었던 노화의 사회문제, 그리고 사회문제로서의 노화를 덜 강조하게 되었다.",
-          "source_text": "In lauding the potentials of age and aging, the field has deemphasized the social problems of aging—and aging as a social problem—that early captured the attention of the field, problems that researchers of aging are uniquely positioned to help solve."
-        },
-        {
-          "id": "settersten-tr-018-s16",
-          "status": "verified",
-          "ko_text": "그러나 노화 연구자는 바로 이런 문제 해결을 돕기에 독특하게 적합한 위치에 있다.",
+          "ko_text": "이 분야는 연령과 노화의 잠재력을 찬양하면서 초기에 관심을 끌었던 노화의 사회문제, 그리고 사회문제로서의 노화를 덜 강조하게 되었다. 그러나 노화 연구자는 바로 이런 문제 해결을 돕기에 독특하게 적합한 위치에 있다.",
           "source_text": "In lauding the potentials of age and aging, the field has deemphasized the social problems of aging—and aging as a social problem—that early captured the attention of the field, problems that researchers of aging are uniquely positioned to help solve."
         },
         {

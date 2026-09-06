@@ -734,12 +734,17 @@ function pageByKey(reading,pageKey){return Array.isArray(reading.pages)?reading.
 function hasAvailablePage(reading,pageKey){const page=pageByKey(reading,pageKey);return Boolean(page&&page.available);}
 function hasApprovedSourcePage(reading,pageKey){const page=pageByKey(reading,pageKey);return Boolean(page&&isApprovedStatus(page.source_validation_status));}
 function localTodayIsoDate(){const now=new Date();const month=String(now.getMonth()+1).padStart(2,"0");const day=String(now.getDate()).padStart(2,"0");return `${now.getFullYear()}-${month}-${day}`;}
-function currentReadingSlug(readings,today=localTodayIsoDate(),publishCutoff=""){const upcoming=(Array.isArray(readings)?readings:[]).filter((reading)=>toText(reading.class_date)&&reading.class_date>=today&&(!publishCutoff||reading.class_date<=publishCutoff)).sort((a,b)=>a.class_date.localeCompare(b.class_date)||a.sequence-b.sequence);return upcoming[0]?.slug||"";}
+function currentReadingSlugs(readings,today=localTodayIsoDate(),publishCutoff=""){
+  const upcoming=(Array.isArray(readings)?readings:[])
+    .filter((reading)=>toText(reading.class_date)&&reading.class_date>=today&&(!publishCutoff||reading.class_date<=publishCutoff))
+    .sort((a,b)=>a.class_date.localeCompare(b.class_date)||a.sequence-b.sequence);
+  return upcoming.filter((reading)=>reading.class_date===upcoming[0].class_date).map((reading)=>reading.slug);
+}
 function readingFilterGroup(reading){if(reading.type==="chapter")return"chapter";if(reading.type==="article")return"article";return"paper";}
 function readingProgress(reading){const read=Boolean(["summary","full","translation"].some((pageKey)=>hasAvailablePage(reading,pageKey)))?1:0;const concepts=hasAvailablePage(reading,"concepts")?1:0;const quizAvailableCount=["quiz-ox","quiz-short","quiz-mcq"].filter((pageKey)=>hasAvailablePage(reading,pageKey)).length;const prep=hasAvailablePage(reading,"professor-prep")?1:0;return{read,concepts,quiz:quizAvailableCount/3,prep,quiz_available_count:quizAvailableCount};}
 function completedProgressStageCount(progress){return["read","concepts","quiz","prep"].filter((key)=>Number(progress?.[key]||0)>=1).length;}
 function readingAuthorsDisplay(reading){return cardAuthorLabel(reading)||reading.authors_label;}
-function homeReadingState(reading,currentSlug){if(reading.metadata_status!=="complete"||isReleaseLockedReading(reading)||!isAccessibleReading(reading))return"locked";if(reading.slug===currentSlug)return"current";return"ready";}
+function homeReadingState(reading,currentSlugs){if(reading.metadata_status!=="complete"||isReleaseLockedReading(reading)||!isAccessibleReading(reading))return"locked";if(currentSlugs.includes(reading.slug))return"current";return"ready";}
 function readingOverviewTarget(reading){return isAccessibleReading(reading)?"index.html":"";}
 function approvedPageTarget(reading,pageKey){return hasApprovedSourcePage(reading,pageKey)?pageByKey(reading,pageKey)?.filename||"":"";}
 function reviewReadyProfessorPrepTarget(reading){const page=pageByKey(reading,"professor-prep");return page&&page.available&&isReadyStatus(page.source_validation_status)?page.filename||"":"";}
@@ -779,17 +784,17 @@ function prepareReadings(manifest,siteMeta={}){
       pages
     };
   });
-  const currentSlug=currentReadingSlug(prepared,localTodayIsoDate(),publishCutoffDate(siteMeta));
+  const currentSlugs=currentReadingSlugs(prepared,localTodayIsoDate(),publishCutoffDate(siteMeta));
   return prepared.map((reading)=>{
     const progress=readingProgress(reading);
-    const state=homeReadingState(reading,currentSlug);
+    const state=homeReadingState(reading,currentSlugs);
     return{
       ...reading,
       authors_display:readingAuthorsDisplay(reading),
       filter_group:readingFilterGroup(reading),
       progress,
       progress_stage_count:completedProgressStageCount(progress),
-      current_candidate:reading.slug===currentSlug,
+      current_candidate:currentSlugs.includes(reading.slug),
       state
     };
   });
@@ -802,11 +807,9 @@ function studyOrderText(reading){const labelsByKey=new Map(PAGE_DEFS.map((page)=
 function actionIntroText(reading){const enabled=new Set(enabledPageKeys(reading));if(reading.language==="en"&&enabled.has("full")&&enabled.has("translation")&&!enabled.has("summary"))return"이 글은 원문 읽기와 번역본 읽기를 오가며 원문 구조와 핵심 표현을 차근차근 확인하는 방식이 가장 안정적입니다.";if(reading.translation_required)return"이 글은 핵심 요약으로 큰 흐름을 먼저 잡고, 원문 읽기와 번역본 읽기를 오가며 원문 구조와 핵심 용어를 다시 확인하면 가장 안정적으로 읽힙니다.";if(!enabled.has("summary")&&enabled.has("full"))return"이 글은 본문 읽기를 따라가며 구조와 핵심 개념을 차근차근 확인하는 방식이 가장 안정적입니다.";if(reading.type==="paper")return"이 글은 핵심 요약으로 큰 흐름을 먼저 잡고, 본문 읽기를 따라가며 논문의 질문, 방법, 결과를 다시 확인하면 가장 안정적으로 읽힙니다.";return"이 글은 핵심 요약으로 큰 흐름을 먼저 잡고, 본문 읽기를 따라가며 장의 구조와 핵심 개념을 다시 확인하면 가장 안정적으로 읽힙니다.";}
 function publicPdfTargetPath(reading){if(!reading.public_pdf)return"";return path.join(siteDir,...reading.public_pdf.split("/"));}
 function pdfHref(outputPath,reading){if(reading.pdf_visibility!=="public"||!reading.public_pdf)return"";return relHref(outputPath,publicPdfTargetPath(reading));}
-function pdfStatusText(reading){if(reading.pdf_visibility==="public"&&reading.public_pdf&&fs.existsSync(path.join(rootDir,reading.source_pdf)))return"배포용 원문 PDF를 바로 열거나 내려받을 수 있습니다.";return"배포용 원문 PDF가 공개되지 않았습니다.";}
-function renderPdfActions(outputPath,reading,className="pdf-actions"){const href=pdfHref(outputPath,reading);if(!href)return"";return`<div class="${escapeHtml(className)}"><a class="ghost-btn link-btn pdf-btn" href="${escapeHtml(href)}" target="_blank" rel="noopener">원문 PDF 보기</a><a class="ghost-btn link-btn pdf-btn" href="${escapeHtml(href)}" download>PDF 다운로드</a></div>`;}
+function renderPdfActions(outputPath,reading,className="pdf-actions"){const href=pdfHref(outputPath,reading);if(!href)return"";return`<div class="${escapeHtml(className)}"><a class="ghost-btn link-btn pdf-btn" href="${escapeHtml(href)}" target="_blank" rel="noopener">원문 PDF 보기</a></div>`;}
 function readingPageHref(outputPath,reading,targetFilename){return relHref(outputPath,path.join(siteDir,"readings",reading.slug,targetFilename));}
 function renderActionLinkOrGate(outputPath,reading,label,targetFilename,className,message){if(targetFilename){return `<a class="${escapeHtml(className)}" href="${escapeHtml(readingPageHref(outputPath,reading,targetFilename))}">${escapeHtml(label)}</a>`;}return `<button class="${escapeHtml(`${className} is-disabled`)}" type="button" data-gated-link data-gated-message="${escapeHtml(message||readingGateMessage(reading))}">${escapeHtml(label)}</button>`;}
-function renderPdfDownloadAction(outputPath,reading,label,className="btn-ghost"){const href=pdfHref(outputPath,reading);if(href)return `<a class="${escapeHtml(className)}" href="${escapeHtml(href)}" download>${escapeHtml(label)}</a>`;return `<button class="${escapeHtml(`${className} is-disabled`)}" type="button" data-gated-link data-gated-message="${escapeHtml(pdfStatusText(reading))}">${escapeHtml(label)}</button>`;}
 function progressSummaryItems(reading){return[{label:"읽기",value:reading.progress.read,detail:reading.progress.read>=1?"준비됨":"대기"},{label:"개념",value:reading.progress.concepts,detail:reading.progress.concepts>=1?"준비됨":"대기"},{label:"퀴즈",value:reading.progress.quiz,detail:`${reading.progress.quiz_available_count}/3 세트`},{label:"답변 대비",value:reading.progress.prep,detail:reading.progress.prep>=1?"준비됨":"대기"}];}
 function renderProgressGrid(reading){return `<div class="progress-grid">${progressSummaryItems(reading).map((item)=>`<article class="prog-item"><p class="k">${escapeHtml(item.label)}</p><div class="prog-bar${item.value<1&&item.value>0?" pale":""}"><span style="width:${escapeHtml(String(Math.max(0,Math.min(100,Math.round(item.value*100)))))}%"></span></div><p class="v">${escapeHtml(item.detail)}</p></article>`).join("")}</div>`;}
 function jsonScriptContent(value){return JSON.stringify(value).replace(/</g,"\\u003c").replace(/>/g,"\\u003e").replace(/&/g,"\\u0026").replace(/\u2028/g,"\\u2028").replace(/\u2029/g,"\\u2029");}
@@ -992,8 +995,8 @@ function renderOverviewComic(outputPath,reading){
     <ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">${panels}</ol>
   </section>`;
 }
-function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다."),renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","sub-link")];return `<div class="sub-link-list">${links.join("")}</div>`;}
-function renderReadingDetailHeader(outputPath,reading,options={}){const activeKey=options.activeKey||"index";const currentLabel=options.currentLabel!==undefined?options.currentLabel:(activeKey==="index"?"":"");return `<header class="article-header reading-detail-header"><div class="article-header-top reading-detail-top">${renderBreadcrumbs(outputPath,reading,currentLabel||"")}<p class="section-kicker">${escapeHtml(readingSequenceLabel(reading.sequence))}</p><div class="rdp-kicker"><span class="chip brand">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><span class="chip strong">${escapeHtml(reading.type_label)}</span><span class="chip">${escapeHtml(reading.language_label)}</span></div><h1 class="rdp-title">${escapeHtml(reading.title)}</h1><p class="rdp-authors">${escapeHtml([reading.authors_label,reading.year?String(reading.year):""].filter(Boolean).join(" · "))}</p>${reading.overview_hook?`<p class="rdp-hook">${escapeHtml(reading.overview_hook)}</p>`:""}<div class="hero-cta-row">${renderActionLinkOrGate(outputPath,reading,"읽기",readingStartTarget(reading),"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")} ${renderPdfDownloadAction(outputPath,reading,"PDF 다운로드","btn-ghost")}</div></div>${pageTabs(outputPath,reading,activeKey)}</header>`;}
+function renderOverviewQuickLinks(outputPath,reading){const links=[renderActionLinkOrGate(outputPath,reading,"본문 읽기",readingStartTarget(reading),"sub-link"),renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"sub-link","읽기 답변 준비는 아직 공개되지 않았습니다."),renderActionLinkOrGate(outputPath,reading,"퀴즈 풀기",quizOverviewTarget(reading),"sub-link","퀴즈는 아직 공개되지 않았습니다.")];return `<div class="sub-link-list">${links.join("")}</div>`;}
+function renderReadingDetailHeader(outputPath,reading,options={}){const activeKey=options.activeKey||"index";const currentLabel=options.currentLabel!==undefined?options.currentLabel:(activeKey==="index"?"":"");return `<header class="article-header reading-detail-header"><div class="article-header-top reading-detail-top">${renderBreadcrumbs(outputPath,reading,currentLabel||"")}<p class="section-kicker">${escapeHtml(readingSequenceLabel(reading.sequence))}</p><div class="rdp-kicker"><span class="chip brand">${escapeHtml(reading.display_date_label||displayDateLabel(reading))}</span><span class="chip strong">${escapeHtml(reading.type_label)}</span><span class="chip">${escapeHtml(reading.language_label)}</span></div><h1 class="rdp-title">${escapeHtml(reading.title)}</h1><p class="rdp-authors">${escapeHtml([reading.authors_label,reading.year?String(reading.year):""].filter(Boolean).join(" · "))}</p>${reading.overview_hook?`<p class="rdp-hook">${escapeHtml(reading.overview_hook)}</p>`:""}<div class="hero-cta-row">${renderActionLinkOrGate(outputPath,reading,"읽기",readingStartTarget(reading),"btn-primary")} ${renderActionLinkOrGate(outputPath,reading,"교수님 답변 대비",prepTarget(reading),"btn-ghost","읽기 답변 준비는 아직 공개되지 않았습니다.")}</div></div>${pageTabs(outputPath,reading,activeKey)}</header>`;}
 function renderReadingDetailAside(outputPath,reading){
   if(!(reading.tags&&reading.tags.length))return "";
   return `<aside class="rpanel-side"><section class="panel detail-side-panel"><p class="section-kicker">태그</p><h2>읽기 키워드</h2>${renderChipRow(reading.tags.map((tag)=>`# ${tag}`),"chip-row reading-tag-row")}</section></aside>`;
@@ -1119,7 +1122,7 @@ function writePlaceholderSvg(reading,svgPath){const slug=escapeHtml(reading.slug
 </svg>
 `;writeText(svgPath,svg);}
 function buildThumbnails(manifest,slugFilter=null){const thumbnailDir=path.join(siteDir,"assets","thumbnails");fs.mkdirSync(thumbnailDir,{recursive:true});const results={};for(const reading of manifest.readings){const sourceThumbnail=detectReadingThumbnailSource(reading.content_dir);if(sourceThumbnail){const extension=path.extname(sourceThumbnail).toLowerCase();const targetPath=path.join(thumbnailDir,`${reading.slug}${extension}`);fs.copyFileSync(sourceThumbnail,targetPath);results[reading.slug]=path.posix.join("assets","thumbnails",path.basename(targetPath));continue;}const svgPath=path.join(thumbnailDir,`${reading.slug}.svg`);if(!slugFilter||reading.slug===slugFilter||!fs.existsSync(svgPath))writePlaceholderSvg(reading,svgPath);results[reading.slug]=path.posix.join("assets","thumbnails",`${reading.slug}.svg`);}return results;}
-function buildIndex(siteMeta,readings,thumbnails){const outputPath=path.join(siteDir,"index.html");const sortedReadings=[...readings].sort((a,b)=>compareReadings(a,b,"chronological"));const currentReading=sortedReadings.find((reading)=>reading.current_candidate)||null;const cards=sortedReadings.map((reading)=>renderHomeCard(outputPath,reading,thumbnails?.[reading.slug]||"")).join("");const railItems=sortedReadings.map((reading)=>renderHomeRailItem(outputPath,reading)).join("");const railToggleMeta=currentReading?`${currentReading.display_date_label||displayDateLabel(currentReading)} · ${currentReading.type_label}`:`총 ${sortedReadings.length}개`;const body=`
+function buildIndex(siteMeta,readings,thumbnails){const outputPath=path.join(siteDir,"index.html");const sortedReadings=[...readings].sort((a,b)=>compareReadings(a,b,"chronological"));const currentReadings=sortedReadings.filter((reading)=>reading.current_candidate);const currentReading=currentReadings[0];const cards=sortedReadings.map((reading)=>renderHomeCard(outputPath,reading,thumbnails?.[reading.slug]||"")).join("");const railItems=sortedReadings.map((reading)=>renderHomeRailItem(outputPath,reading)).join("");const railToggleMeta=currentReading?`${currentReading.display_date_label||displayDateLabel(currentReading)} · 읽기 ${currentReadings.length}편`:`총 ${sortedReadings.length}개`;const body=`
 ${siteHeader(siteMeta,outputPath)}
 <main class="home-shell home-dashboard" data-page-kind="home">
   <h1 class="sr-only">${escapeHtml(siteMeta.title)}</h1>

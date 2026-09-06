@@ -63,7 +63,6 @@
     "approved_pages": [
       "index",
       "full",
-      "translation",
       "summary",
       "concepts",
       "pitfalls",
@@ -71,12 +70,12 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep"
+      "professor-prep",
+      "translation"
     ],
     "approved_page_hashes": {
       "index": "v2:749cc9430b8f513333af24fb1846a5f52608d269af514726e18c8226abd07e22",
       "full": "v2:2d0ec6512f03bee68c834695bf65120980e3814b0d26be9d08a7ae398d5578c7",
-      "translation": "v2:1235203cde5519ce1f65cede4a9b30b1b1db3cc4e8383b0ea61d04b5725842da",
       "summary": "v2:ba4904ade5cb2bbc437208e00895e9b2fb72883ac8ca398066d3489a51bb45d6",
       "concepts": "v2:d1d7dcd7505c615f08ce7f10685eb3264d668665bbf6a39a84ab08c8b376df1f",
       "pitfalls": "v2:c4f8d0f2fbc5a413d569e4f0eb59ff73180c9f14e5c25354434d8290a53620a8",
@@ -84,10 +83,11 @@
       "quiz-ox": "v2:acb73a236b8680087078ccbcc22ad20e236abb22094af5bc6c8994c1cc01d348",
       "quiz-short": "v2:655cc5c2a182fcfc8e0e00d3850509f9e624207ac65e3a3e3f7e686feb297e26",
       "quiz-mcq": "v2:c99c2c8e48e6df97b36ccb27dc9b2aa108bc6c559a06ca3fc96a8aafdeb25ee2",
-      "professor-prep": "v2:0a739500617c6653116d93395468dfdb0daed910c1c0b25c5b6c49b08d92ad1b"
+      "professor-prep": "v2:0a739500617c6653116d93395468dfdb0daed910c1c0b25c5b6c49b08d92ad1b",
+      "translation": "v2:5ddb11bfc4adf937380f0e4134f3ab403b52395bb83147e134356bbce5a1d209"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T03:52:00.996Z",
+    "reviewed_at": "2026-09-06T00:06:15.365Z",
     "notes": [
       "생성된 문장별 원문, 채점 퀴즈, 교수 대비 탭과 근거를 재검수함.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
@@ -96,12 +96,13 @@
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable.",
-      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
+      "Reviewed lossless consolidation of adjacent verified click pairs sharing English source; Korean text/order and complete source coverage preserved. See stage2_reveal_group_review.md."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T08:13:05.812Z",
+    "updated_at": "2026-09-06T00:06:16.606Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -177,7 +178,7 @@
           "translation_reference_ratio": 1,
           "original_reveal_enabled": true,
           "reveal_entry_count": 86,
-          "sentence_reveal_pair_count": 340
+          "sentence_reveal_pair_count": 315
         }
       },
       "summary": {
@@ -312,7 +313,7 @@
       },
       "translation": {
         "status": "approved",
-        "source_hash": "v2:1235203cde5519ce1f65cede4a9b30b1b1db3cc4e8383b0ea61d04b5725842da",
+        "source_hash": "v2:5ddb11bfc4adf937380f0e4134f3ab403b52395bb83147e134356bbce5a1d209",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -340,7 +341,7 @@
           "translation_reference_ratio": 1,
           "original_reveal_enabled": true,
           "reveal_entry_count": 86,
-          "sentence_reveal_pair_count": 340
+          "sentence_reveal_pair_count": 315
         }
       },
       "summary": {

@@ -98,19 +98,19 @@ function todayIsoDateForZone(timeZone){
   return `${now.getFullYear()}-${month}-${day}`;
 }
 
-function selectHomeCurrentReading(readings,today,publishCutoffDate){
+function selectHomeCurrentReadings(readings,today,publishCutoffDate){
   const published=(Array.isArray(readings)?readings:[])
     .filter((reading)=>reading?.classDate&&(!publishCutoffDate||reading.classDate<=publishCutoffDate));
   const byDateThenSequence=(a,b)=>String(a.classDate).localeCompare(String(b.classDate))||(Number(a.sequence)||0)-(Number(b.sequence)||0);
   const upcoming=published
     .filter((reading)=>reading.classDate>=today)
     .sort(byDateThenSequence);
-  return upcoming[0]||null;
+  return upcoming.filter((reading)=>reading.classDate===upcoming[0].classDate);
 }
 
-function homeReadingState(reading,currentSlug){
+function homeReadingState(reading,currentSlugs){
   if(!reading||reading.baseState==="locked")return"locked";
-  return reading.slug===currentSlug?"current":"ready";
+  return currentSlugs.includes(reading.slug)?"current":"ready";
 }
 
 function syncHomeCardState(card,state){
@@ -157,20 +157,21 @@ function initHomeCurrentReading(){
   const payload=parseHomeReadingData();
   if(!payload)return;
   const today=todayIsoDateForZone(payload.dateTimeZone||"Asia/Seoul");
-  const current=selectHomeCurrentReading(payload.readings,today,String(payload.publishCutoffDate||"").trim());
-  const currentSlug=current?.slug||"";
+  const currentReadings=selectHomeCurrentReadings(payload.readings,today,String(payload.publishCutoffDate||"").trim());
+  const currentSlugs=currentReadings.map((reading)=>reading.slug);
   document.querySelectorAll("[data-reading-card]").forEach((card)=>{
     const reading=payload.readings.find((item)=>item.slug===card.dataset.readingSlug);
-    syncHomeCardState(card,homeReadingState(reading,currentSlug));
+    syncHomeCardState(card,homeReadingState(reading,currentSlugs));
   });
 
   document.querySelectorAll("[data-home-rail-item]").forEach((item)=>{
     const reading=payload.readings.find((entry)=>entry.slug===item.dataset.readingSlug);
-    syncHomeRailState(item,homeReadingState(reading,currentSlug),reading?.slug===currentSlug);
+    syncHomeRailState(item,homeReadingState(reading,currentSlugs),currentSlugs.includes(reading?.slug));
   });
 
   const railMeta=document.querySelector(".home-dashboard .rail-toggle-meta");
-  if(railMeta&&current)railMeta.textContent=`${current.displayDateLabel||current.classDate} · ${current.typeLabel||"읽기"}`;
+  const current=currentReadings[0];
+  if(railMeta)railMeta.textContent=current?`${current.displayDateLabel||current.classDate} · 읽기 ${currentReadings.length}편`:`총 ${payload.readings.length}개`;
 }
 
 function initGatedLinks(){

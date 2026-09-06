@@ -71,7 +71,7 @@ function renderedSentencePairs(html, id) {
   );
   const sectionMatch = html.match(sectionPattern);
   if (!sectionMatch) return [];
-  return [...sectionMatch[1].matchAll(/<button\b([^>]*)\bdata-source-sentence(?:="")?([^>]*)>/g)].map((match) => {
+  return [...sectionMatch[1].matchAll(/<button\b([^>]*)\bdata-source-sentence(?:="")?([^>]*)>([\s\S]*?)<\/button><span\b[^>]*data-source-popover[^>]*>([\s\S]*?)<\/span>/g)].map((match) => {
     const attrs = `${match[1]} ${match[2]}`;
     const value = (name) => {
       const attrMatch = attrs.match(new RegExp(`\\b${escapeRegExp(name)}="([^"]*)"`));
@@ -82,6 +82,8 @@ function renderedSentencePairs(html, id) {
       status: "verified",
       ko_text: value("data-translation-text"),
       source_text: value("data-source-text"),
+      visible_ko_text: normalize(decodeHtmlText(match[3])),
+      visible_source_text: normalize(decodeHtmlText(match[4])),
     };
   });
 }
@@ -157,6 +159,8 @@ function checkSlug(slug, options = {}) {
         if (normalize(actual.id) !== normalize(pair.id)) errors.push(`${entry.id}: rendered pair ${index + 1} id mismatch`);
         if (normalize(actual.ko_text) !== normalize(pair.ko_text)) errors.push(`${entry.id}: rendered pair ${index + 1} Korean text mismatch`);
         if (normalize(actual.source_text) !== normalize(pair.source_text)) errors.push(`${entry.id}: rendered pair ${index + 1} source text mismatch`);
+        if (actual.visible_ko_text !== normalizeRenderedExpectation(pair.ko_text)) errors.push(`${entry.id}: rendered pair ${index + 1} visible Korean text mismatch`);
+        if (actual.visible_source_text !== normalizeRenderedExpectation(pair.source_text)) errors.push(`${entry.id}: rendered pair ${index + 1} visible source text mismatch`);
       });
       errors.push(...validateSentencePairs({
         id: `${entry.id} rendered`,

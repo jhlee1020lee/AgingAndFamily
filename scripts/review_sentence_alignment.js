@@ -6,7 +6,7 @@ const {
   resolveTranslationAlignment,
   sentenceSplitSourceText,
 } = require("./translation_original_reveal");
-const { normalizeSentenceText, validateSentencePairs } = require("./sentence_alignment");
+const { mergeAdjacentSourcePairs, normalizeSentenceText, validateSentencePairs } = require("./sentence_alignment");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 
@@ -190,6 +190,7 @@ function reviewSlug(slug, reviewer) {
   const errors = [];
   resolved.entries.forEach((entry) => {
     const rawEntry = context.rawById.get(entry.id);
+    rawEntry.sentence_pairs = mergeAdjacentSourcePairs(rawEntry.sentence_pairs, { sourceText: entry.sourceText });
     errors.push(...validateSentencePairs({
       id: entry.id,
       translationText: entry.translationBlock?.text || entry.translationBlock?.plainText || "",

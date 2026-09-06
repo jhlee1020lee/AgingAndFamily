@@ -119,19 +119,37 @@ function buildSentencePairs(translationText, sourceText, blockId, status = "gene
     }));
   }
   const groups = alignSentenceGroups(koreanSentences, sourceSentences);
-  const pairs = [];
-  groups.forEach((group) => {
-    const sourceGroup = normalizeSentenceText(group.source.join(" "));
-    group.korean.forEach((koreanSentence) => {
-      pairs.push({
-        id: `${blockId}-s${String(pairs.length + 1).padStart(2, "0")}`,
-        status,
-        ko_text: normalizeSentenceText(koreanSentence),
-        source_text: sourceGroup,
-      });
-    });
+  const pairs = groups.map((group, index) => ({
+    id: `${blockId}-s${String(index + 1).padStart(2, "0")}`,
+    status,
+    ko_text: normalizeSentenceText(group.korean.join(" ")),
+    source_text: normalizeSentenceText(group.source.join(" ")),
+  }));
+  return mergeAdjacentSourcePairs(pairs, { sourceText: normalizedSource });
+}
+
+function mergeAdjacentSourcePairs(pairs, options = {}) {
+  const originals = (Array.isArray(pairs) ? pairs : []).map((pair) => ({ ...pair }));
+  const sourceCoverage = (items) => normalizeSentenceText(items.map((pair) => pair.source_text).join(" "));
+  const hasSourceText = options.sourceText !== undefined;
+  const sourceText = normalizeSentenceText(options.sourceText);
+  // A real repetition in the original is already covered once per occurrence.
+  if (hasSourceText && sourceCoverage(originals) === sourceText) return originals;
+  const merged = [];
+  originals.forEach((pair) => {
+    const previous = merged[merged.length - 1];
+    const source = normalizeSentenceText(pair.source_text);
+    if (source && previous && source === normalizeSentenceText(previous.source_text)
+      && pair.status === previous.status) {
+      previous.ko_text = normalizeSentenceText(`${previous.ko_text} ${pair.ko_text}`);
+    } else {
+      merged.push(pair);
+    }
   });
-  return pairs;
+  if (hasSourceText && sourceCoverage(merged) !== sourceText) {
+    throw new Error("Cannot merge sentence pairs without changing source coverage; review the mapping first.");
+  }
+  return merged;
 }
 
 function collapseRepeatedSourceGroups(pairs) {
@@ -177,9 +195,9 @@ function validateSentencePairs(entry, options = {}) {
   if (joinedKorean !== translationText) {
     errors.push(`${id}: sentence_pairs do not cover the complete Korean translation block`);
   }
-  const joinedSource = normalizeSentenceText(collapseRepeatedSourceGroups(pairs).join(" "));
+  const joinedSource = normalizeSentenceText(pairs.map((pair) => pair.source_text).join(" "));
   if (joinedSource !== sourceText) {
-    errors.push(`${id}: sentence_pairs do not cover the complete source block in order`);
+    errors.push(`${id}: sentence_pairs must cover the complete source block once, in order, without repeated reveal groups`);
   }
   return errors;
 }
@@ -188,6 +206,7 @@ module.exports = {
   alignSentenceGroups,
   buildSentencePairs,
   collapseRepeatedSourceGroups,
+  mergeAdjacentSourcePairs,
   normalizeSentenceText,
   validateSentencePairs,
 };

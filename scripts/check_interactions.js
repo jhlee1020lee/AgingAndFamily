@@ -144,9 +144,18 @@ function checkClientLogic(errors) {
   const schedule = [
     { slug: "second", sequence: 2, classDate: "2026-09-14" },
     { slug: "first", sequence: 1, classDate: "2026-09-14" },
+    { slug: "later", sequence: 3, classDate: "2026-09-21" },
+    { slug: "past", sequence: 4, classDate: "2026-09-01" },
   ];
-  expect(context.selectHomeCurrentReading(schedule, "2026-09-05", "")?.slug === "first", "home: next reading must respect manifest order for the same date", errors);
-  expect(context.selectHomeCurrentReading(schedule, "2026-12-31", "") === null, "home: completed readings cannot be labeled next reading", errors);
+  const nextSlugs = (today, cutoff = "") => context.selectHomeCurrentReadings(schedule, today, cutoff).map((reading) => reading.slug).join(",");
+  expect(nextSlugs("2026-09-05") === "first,second", "home: every reading on the next class date must be selected in manifest order", errors);
+  expect(nextSlugs("2026-09-14", "2026-09-14") === "first,second", "home: the full group stays current on the class date and inclusive publish cutoff", errors);
+  expect(nextSlugs("2026-09-15") === "later", "home: advance to the next class after the current class date", errors);
+  expect(nextSlugs("2026-09-15", "2026-09-14") === "", "home: readings beyond the publish cutoff must not be selected", errors);
+  expect(nextSlugs("2026-12-31") === "", "home: completed readings cannot be labeled next reading", errors);
+  expect(context.selectHomeCurrentReadings([], "2026-09-05", "").length === 0, "home: an empty schedule has no next readings", errors);
+  expect(context.homeReadingState({slug:"second",baseState:"ready"}, ["first","second"]) === "current", "home: the second reading also needs the next-reading badge", errors);
+  expect(context.homeReadingState({slug:"second",baseState:"locked"}, ["first","second"]) === "locked", "home: current readings must retain their approval gate", errors);
   expect(typeof context.normalizeQuizAnswer === "function", "client: normalizeQuizAnswer is unavailable", errors);
   if (typeof context.normalizeQuizAnswer === "function") {
     expect(context.normalizeQuizAnswer("  SELF–RELEVANCE. ") === "self–relevance", "client: answer normalization failed", errors);

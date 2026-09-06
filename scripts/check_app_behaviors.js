@@ -471,12 +471,44 @@ async function checkGeneratedPages(){
   return{renderedQuestions:count,prepAnswerCount,readingPageCount,translationSentenceCount};
 }
 
+async function checkHomeSchedule(){
+  const html=fs.readFileSync(path.join(__dirname,"..","docs","index.html"),"utf8");
+  const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,"..","manifest","readings.json"),"utf8"));
+  const dates=[...new Set(manifest.readings.map((reading)=>reading.class_date).filter(Boolean))].sort();
+  const nextDay=new Date(`${dates[0]}T12:00:00Z`);
+  nextDay.setUTCDate(nextDay.getUTCDate()+1);
+  const cases=[
+    [dates[0],dates[0]],
+    [nextDay.toISOString().slice(0,10),dates[1]],
+    ["2099-12-31",null]
+  ];
+  for(const [today,currentDate] of cases){
+    const dom=await boot(html,{},(window)=>{
+      const NativeDate=window.Date;
+      window.Date=class extends NativeDate{
+        constructor(...args){super(...(args.length?args:[`${today}T12:00:00+09:00`]));}
+      };
+    },"https://example.test/");
+    const doc=dom.window.document;
+    const expected=manifest.readings.filter((reading)=>reading.class_date===currentDate).map((reading)=>reading.slug);
+    const slugs=(selector)=>Array.from(doc.querySelectorAll(selector),(element)=>element.dataset.readingSlug);
+    assert.deepEqual(slugs('[data-reading-card][data-card-state="current"]'),expected,`${today}: every reading in the next class must be highlighted`);
+    assert.deepEqual(slugs('[data-home-rail-item].is-current'),expected,`${today}: schedule and cards must highlight the same group`);
+    assert.equal(doc.querySelectorAll('.rail-reading[aria-current="date"]').length,expected.length);
+    assert.equal(doc.querySelectorAll('.rcard-status.current').length,expected.length);
+    assert.equal(doc.querySelectorAll('.rcard-mobile-state.current').length,expected.length,`${today}: mobile badges must include the full group`);
+    assert.match(doc.querySelector('.rail-toggle-meta').textContent,expected.length?new RegExp(`읽기 ${expected.length}편$`):/^총 \d+개$/);
+    dom.window.close();
+  }
+}
+
 (async()=>{
   await checkPlayer();
   await checkReader();
   await checkTranslationSentenceReveals();
   await checkPrepAndFilters();
   await checkPrepLanguages();
+  if(!process.argv.includes("--fixture-only"))await checkHomeSchedule();
   const counts=process.argv.includes("--fixture-only")?null:await checkGeneratedPages();
   console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, click-to-expand translation sources, direct bilingual prep answers with independent languages/tabs/review marks, and filters; ${counts?`${counts.renderedQuestions} generated questions, ${counts.prepAnswerCount} bilingual prep answers, ${counts.readingPageCount} reading pages, ${counts.translationSentenceCount} sentence disclosures`:"fixtures only"})`);
 })().catch((error)=>{console.error(error);process.exitCode=1;});
