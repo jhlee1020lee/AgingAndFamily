@@ -62,16 +62,84 @@ try {
   alter(path.join(reading.content_dir, "translation_segments.json"), (target, before) => {
     const data = JSON.parse(before); data.translations[0].ko_translation += " 검토용 문장."; writeJson(target, data);
     verify("translation segment edits revoke translation approval", () => assert.notEqual(snapshot().content_status.translation, "approved"));
+    verify("translation segment edits revoke original-reading approval", () => {
+      const changed = snapshot();
+      assert.notEqual(changed.content_status.full, "approved");
+      assert.notEqual(changed.validation_status.source_page_results.full.source_hash, JSON.parse(approvedMeta).manual_review.approved_page_hashes.full);
+    });
+  });
+  alter(path.join(reading.content_dir, "translation.md"), (target, before) => {
+    // Keep the aligned body intact so this tests dependency approval rather than
+    // merely rejecting an invalid sentence mapping.
+    fs.writeFileSync(target, String(before).replace(/^(# [^\r\n]+)/m, "$1 검토용 제목"));
+    verify("Korean Markdown edits revoke original-reading approval", () => {
+      const changed = snapshot();
+      assert.equal(changed.content_status.full, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
+      assert.notEqual(changed.validation_status.source_page_results.full.source_hash, JSON.parse(approvedMeta).manual_review.approved_page_hashes.full);
+    });
   });
   alter(path.join(reading.content_dir, "translation_alignment.json"), (target, before) => {
     const data = JSON.parse(before); const entry = data.entries.find((item) => item.sentence_pairs?.length > 1);
     entry.sentence_pairs = [{ id: entry.sentence_pairs[0].id, status: "verified", ko_text: entry.sentence_pairs.map((pair) => pair.ko_text).join(" "), source_text: entry.source_text }];
     writeJson(target, data);
     verify("structurally valid changed sentence mappings require review", () => {
-      assert.equal(snapshot().content_status.translation, "schema_pass");
-      assert.ok(!snapshot().manual_review.approved_pages.includes("translation"));
+      const changed = snapshot();
+      assert.equal(changed.content_status.translation, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("translation"));
+      assert.equal(changed.content_status.full, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
     });
   });
+  const supplementPath = path.join(contentDir, "original_translation_alignment.json");
+  const originalSupplement = fs.existsSync(supplementPath) ? fs.readFileSync(supplementPath) : null;
+  try {
+    if (fs.existsSync(supplementPath)) fs.unlinkSync(supplementPath);
+    verify("a fully aligned original body allows an absent optional supplement", () => assert.equal(snapshot().content_status.full, "approved"));
+    const supplement = { version: 1, reading_slug: reading.slug, entries: [], review_note: "Temporary reverse disclosure dependency fixture." };
+    writeJson(supplementPath, supplement);
+    verify("adding an optional reverse supplement revokes only dependent approval", () => {
+      const changed = snapshot();
+      assert.equal(changed.content_status.full, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
+      assert.equal(changed.content_status.summary, "approved");
+      assert.equal(changed.content_status.translation, "approved");
+    });
+    approveReading({ slug: reading.slug, pages: ["full"], reviewer: "reverse-dependency-fixture", note: "Temporary optional reverse supplement approval test only.", requireBuiltArtifacts: false }, fixture);
+    verify("reviewed optional reverse supplement can be approved", () => assert.equal(snapshot().content_status.full, "approved"));
+    const approvedSupplementMeta = fs.readFileSync(metaPath);
+    writeJson(supplementPath, { ...supplement, review_note: "The reverse supplement was edited after approval." });
+    verify("editing an optional reverse supplement revokes original-reading approval", () => {
+      const changed = snapshot();
+      assert.equal(changed.content_status.full, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
+      assert.equal(changed.content_status.summary, "approved");
+      assert.equal(changed.content_status.translation, "approved");
+    });
+    writeJson(supplementPath, supplement);
+    fs.writeFileSync(metaPath, approvedSupplementMeta);
+    fs.unlinkSync(supplementPath);
+    verify("deleting an approved optional reverse supplement requires review", () => {
+      const changed = snapshot();
+      assert.equal(changed.content_status.full, "schema_pass");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
+      assert.equal(changed.content_status.summary, "approved");
+      assert.equal(changed.content_status.translation, "approved");
+    });
+    fs.writeFileSync(metaPath, approvedMeta);
+    writeJson(supplementPath, { version: 1, reading_slug: reading.slug, entries: "invalid entries" });
+    verify("a malformed reverse supplement fails original-reading source validation", () => {
+      const changed = snapshot();
+      assert.equal(changed.content_status.full, "schema_fail");
+      assert.ok(!changed.manual_review.approved_pages.includes("full"));
+      assert.equal(changed.content_status.summary, "approved");
+    });
+  } finally {
+    fs.writeFileSync(metaPath, approvedMeta);
+    if (originalSupplement === null) {
+      if (fs.existsSync(supplementPath)) fs.unlinkSync(supplementPath);
+    } else fs.writeFileSync(supplementPath, originalSupplement);
+  }
   const comic = readJson(path.join(contentDir, "overview_comic.json"));
   const panelPath = path.join(reading.content_dir, comic.panels[0].image);
   alter(panelPath, (target, before) => {

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "reading_slug": "lin-et-al-2018",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "lin-et-al-2018-original-quote-048",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "source_text": "Pᵢₜ = 1 / [1 + exp(−αₜ − β′xᵢₜ)]",
+      "ko_text": "Pᵢₜ = 1 / [1 + exp(−αₜ − β′xᵢₜ)]",
+      "evidence": {
+        "segment_id": "ANALYTIC-001",
+        "source_location": "PDF pp. 1026–1027",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "lin-et-al-2018-tr-031",
+        "next_entry_id": "lin-et-al-2018-tr-032"
+      },
+      "notes": "The stored translation is intentionally the identical equation; preserve its content."
+    }
+  ]
+}

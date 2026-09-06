@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "reading_slug": "hagestad-settersten-2017",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "hagestad-settersten-2017-original-quote-006",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 6,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 6,
+        "block_type": "quote"
+      },
+      "source_text": "Those of us who study aging have the unique opportunity to live their subject matter. As social gerontologists, we have been quick to assert that broad social currents carry persons to the doorstep of old age and beyond, but we have been far less reflective about our own journey.",
+      "ko_text": "노화를 연구하는 우리는 자신이 연구하는 주제를 몸소 살아갈 특별한 기회를 갖는다. 사회노년학자로서 우리는 거대한 사회적 흐름이 사람들을 노년의 문턱과 그 너머로 데려간다고 재빨리 주장해 왔지만, 정작 우리 자신의 여정에 대해서는 훨씬 덜 성찰해 왔다.",
+      "evidence": {
+        "segment_id": "PERSPECTIVE-001",
+        "source_location": "pp. 136-137",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "hagestad-settersten-2017-tr-004",
+        "next_entry_id": "hagestad-settersten-2017-tr-005"
+      },
+      "notes": ""
+    }
+  ]
+}

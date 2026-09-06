@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { normalizeTranslationOriginalRevealConfig, parseMarkdownDocument, resolveTranslationAlignment } = require("./translation_original_reveal");
 const { validateSentencePairs } = require("./sentence_alignment");
+const { collectOriginalTranslationRenderUnits } = require("./original_translation_reveal");
 const { checkReading: checkSegmentAlignment } = require("./check_alignment");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
@@ -1125,6 +1126,16 @@ function approvalDependenciesForPage(rootDir, reading, pageKey, existingMeta = {
   const sourcePath = pageKey === "index" ? path.join(contentDir, "overview_comic.json") : contentPathForPage(rootDir, reading, pageKey);
   files.add(sourcePath);
   const metadata = { version: 2, slug: reading.slug, page: pageKey, language: reading.language };
+  const reverseConfig = normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal || existingMeta.translation_original_reveal);
+  if (pageKey === "full" && reading.language === "en" && reverseConfig.enabled) {
+    const translationPath = contentPathForPage(rootDir, reading, "translation");
+    metadata.original_translation_reveal = { version: 1, config: reverseConfig };
+    files.add(translationPath);
+    files.add(path.join(contentDir, "translation_segments.json"));
+    files.add(path.join(path.dirname(translationPath), reverseConfig.alignment_file));
+    // Hash the missing-file sentinel too, so adding a supplement revokes approval.
+    files.add(path.join(contentDir, "original_translation_alignment.json"));
+  }
   if (pageKey === "translation") {
     files.add(path.join(contentDir, "translation_segments.json"));
     files.add(contentPathForPage(rootDir, reading, "full"));
@@ -1226,6 +1237,23 @@ function validatePage(rootDir, reading, pageKey, existingMeta = {}) {
       result = validateTranslationMarkdown(rootDir, reading, existingMeta, text, fullText);
     } else {
       result = validateFullMarkdown(text);
+      const config = normalizeTranslationOriginalRevealConfig(reading.translation_original_reveal || existingMeta.translation_original_reveal);
+      if (reading.language === "en" && config.enabled && text) {
+        try {
+          const translationPath = contentPathForPage(rootDir, reading, "translation");
+          const supplementPath = path.join(path.dirname(sourcePath), "original_translation_alignment.json");
+          const supplement = fs.existsSync(supplementPath) ? JSON.parse(readText(supplementPath)) : null;
+          const units = collectOriginalTranslationRenderUnits({
+            fullText: text,
+            translationText: readText(translationPath),
+            alignment: loadJson(path.join(path.dirname(translationPath), config.alignment_file)),
+            supplement,
+          });
+          result.metrics.translation_reveal_pair_count = units.reduce((sum, unit) => sum + unit.pairs.length, 0);
+        } catch (error) {
+          result = applyArtifactErrorsToPageResult(result, [`original translation reveal: ${error.message}`]);
+        }
+      }
     }
     return { ...result, source_hash: sourceHash };
   }

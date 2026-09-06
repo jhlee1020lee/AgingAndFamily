@@ -6,6 +6,7 @@ const {PAGE_STATUS,READING_STATUS,buildValidationSnapshot,mergeValidationFields}
 const {writeApprovalStatusReport}=require("./approval_status");
 const {normalizeTranslationOriginalRevealConfig,parseMarkdownDocument,resolveTranslationAlignment}=require("./translation_original_reveal");
 const {validateSentencePairs}=require("./sentence_alignment");
+const {collectOriginalTranslationRenderUnits}=require("./original_translation_reveal");
 
 const rootDir=path.resolve(__dirname,"..");
 const manifestPath=path.join(rootDir,"manifest","readings.json");
@@ -101,6 +102,9 @@ function shouldUseTranslationOriginalReveal(reading,page){
     &&config.enabled
     &&hasApprovedPageSourceStatus(reading,"full")
     &&hasApprovedPageSourceStatus(reading,"translation");
+}
+function shouldUseOriginalTranslationReveal(reading,page){
+  return page.key==="full"&&shouldUseTranslationOriginalReveal(reading,{key:"translation"});
 }
 function revealSummaryLabel(reveal){
   if(reveal?.unit==="sentence_group")return "이 문단의 전체 원문 보기";
@@ -333,10 +337,11 @@ function markdownToHtml(text,options={}){
     }
     parts.push(html);
   };
-  const flushParagraph=()=>{if(paragraph.length){pushBlock(`<p>${renderInline(paragraph.join(" ").trim())}</p>`,true);paragraph=[];}};
-  const flushList=()=>{if(listItems.length){const start=listKind==="ol"&&orderedListStart!==1?` start="${orderedListStart}"`:"";pushBlock(`<${listKind}${start}>${listItems.map((item)=>`<li>${renderInline(item)}</li>`).join("")}</${listKind}>`,true);listItems=[];listKind="ul";orderedListStart=1;}};
+  const renderTextUnit=(kind,value)=>options.renderTextUnit?options.renderTextUnit(kind,value):renderInline(value);
+  const flushParagraph=()=>{if(paragraph.length){pushBlock(`<p>${renderTextUnit("p",paragraph.join(" ").trim())}</p>`,true);paragraph=[];}};
+  const flushList=()=>{if(listItems.length){const start=listKind==="ol"&&orderedListStart!==1?` start="${orderedListStart}"`:"";pushBlock(`<${listKind}${start}>${listItems.map((item)=>`<li>${renderTextUnit(listKind,item)}</li>`).join("")}</${listKind}>`,true);listItems=[];listKind="ul";orderedListStart=1;}};
   const appendListItem=(kind,item,start=1)=>{if(listItems.length&&listKind!==kind)flushList();if(!listItems.length){listKind=kind;orderedListStart=start;}listItems.push(item);};
-  const flushQuote=()=>{if(quoteLines.length){pushBlock(`<blockquote>${renderInline(quoteLines.join(" ").trim())}</blockquote>`,true);quoteLines=[];}};
+  const flushQuote=()=>{if(quoteLines.length){pushBlock(`<blockquote>${renderTextUnit("quote",quoteLines.join(" ").trim())}</blockquote>`,true);quoteLines=[];}};
   const flushCode=()=>{if(codeLines){pushBlock(`<pre><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`,true);codeLines=null;}};
   const parseTableRow=(value)=>{
     const trimmed=toText(value);
@@ -446,6 +451,33 @@ function markdownToHtml(text,options={}){
 
   flushParagraph();flushList();flushQuote();flushCode();
   return(frontmatterParts.length?[`<div class="article-frontmatter">${frontmatterParts.join("\n")}</div>`,...parts]:parts).join("\n");
+}
+function buildOriginalTranslationRevealHtml(reading,page,outputPath,text){
+  const translationPath=contentPath(reading,{key:"translation",type:"article"});
+  const units=collectOriginalTranslationRenderUnits({
+    fullText:text,
+    translationText:loadMarkdown(translationPath),
+    alignment:loadJson(translationOriginalRevealPath(reading)),
+    supplement:loadJson(path.join(path.dirname(page.sourcePath),"original_translation_alignment.json")),
+  });
+  // Keep occurrence-specific units, including metadata: identical English can
+  // have different translations at different positions in the same reading.
+  const key=(kind,value)=>`${kind}:${String(value).replace(/\s+/g," ").trim()}`;
+  const buckets=new Map();
+  units.forEach((unit)=>{const unitKey=key(unit.kind,unit.text);if(!buckets.has(unitKey))buckets.set(unitKey,[]);buckets.get(unitKey).push(unit);});
+  const renderTextUnit=(kind,value)=>{
+    const unit=buckets.get(key(kind,value))?.shift();
+    if(!unit?.pairs?.length)return renderInline(value);
+    return unit.pairs.map((pair)=>{
+      const popoverId=`${pair.id}-translation`;
+      return `<span class="translation-sentence-pair" data-sentence-pair><button class="translation-sentence" type="button" aria-expanded="false" aria-controls="${escapeHtml(popoverId)}" data-source-sentence data-pair-id="${escapeHtml(pair.id)}" data-translation-text="${escapeHtml(pair.ko_text)}" data-source-text="${escapeHtml(pair.source_text)}">${renderInline(pair.source_text)}</button><span class="sentence-source-popover" id="${escapeHtml(popoverId)}" role="region" aria-label="한국어 번역" lang="ko" data-source-popover hidden>${renderInline(pair.ko_text)}</span></span>`;
+    }).join(" ");
+  };
+  const html=markdownToHtml(text,{outputPath,reading,sourcePath:page.sourcePath,skipFirstTitleHeading:true,collectFrontmatter:true,renderTextUnit});
+  const unused=[...buckets.values()].flat().filter((unit)=>unit.pairs?.length);
+  if(unused.length)throw new Error(`[invalid] ${reading.slug}: ${unused.length} original translation units were not rendered`);
+  const hint=`<aside class="translation-sentence-hint" lang="ko" aria-label="문장별 번역 사용법" data-original-translation-hint><strong>문장별 번역</strong><span>영어 문장을 클릭하거나 누르면 바로 아래에 한국어 번역이 펼쳐집니다. 다시 누르거나 Esc 키를 누르면 닫힙니다. 키보드에서는 Tab으로 문장을 선택한 뒤 Enter 또는 Space를 누르세요. 여러 문장을 함께 옮긴 부분은 묶어서 표시됩니다.</span></aside>`;
+  return `${hint}\n${html}`;
 }
 function renderArticleBlock(block,options={}){
   if(!block||typeof block!=="object")return"";
@@ -1172,8 +1204,9 @@ function buildArticle(siteMeta,reading,page){
   const text=loadMarkdown(page.sourcePath);
   const readingLayout=usesReadingLayout(page);
   const originalReveal=shouldUseTranslationOriginalReveal(reading,page);
+  const translationReveal=shouldUseOriginalTranslationReveal(reading,page);
   const renderText=text&&!originalReveal?normalizeWrappedMarkdownForRender(text,reading,page):text;
-  const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(text?(originalReveal?buildTranslationOriginalRevealHtml(reading,page,outputPath,text):markdownToHtml(renderText,{outputPath,reading,sourcePath:page.sourcePath,skipFirstTitleHeading:readingLayout,collectFrontmatter:readingLayout,suppressFigureCaptions:readingLayout&&page.key==="translation"})):placeholderArticleHtml(reading,page,page.sourcePath)):pendingUploadHtml(reading,page.label);
+  const content=isBlockedReading(reading)?pendingReadingHtml(reading,page.label):isReleaseLockedReading(reading)?pendingReleaseHtml(reading,page.label):canRenderPageContent(reading,page)?(text?(originalReveal?buildTranslationOriginalRevealHtml(reading,page,outputPath,text):translationReveal?buildOriginalTranslationRevealHtml(reading,page,outputPath,text):markdownToHtml(renderText,{outputPath,reading,sourcePath:page.sourcePath,skipFirstTitleHeading:readingLayout,collectFrontmatter:readingLayout,suppressFigureCaptions:readingLayout&&page.key==="translation"})):placeholderArticleHtml(reading,page,page.sourcePath)):pendingUploadHtml(reading,page.label);
   const tocHtml=readingLayout?renderReaderToc(content):"";
   const progressHtml=readingLayout?`<div class="reading-progress" aria-hidden="true"><span data-reading-progress-bar></span></div>`:"";
   const body=`
@@ -1191,7 +1224,7 @@ ${siteHeader(siteMeta,outputPath)}
   </div>
 </main>
 `;
-  const bodyAttrs=`data-page-kind="article" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"${readingLayout?' data-reading-layout="reader-v2"':''}${originalReveal?' data-original-reveal="enabled"':''}`;
+  const bodyAttrs=`data-page-kind="article" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"${readingLayout?' data-reading-layout="reader-v2"':''}${originalReveal?' data-original-reveal="enabled"':''}${translationReveal?' data-translation-reveal="enabled"':''}`;
   writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,bodyAttrs,page.key==="full"&&reading.language==="en"?"en":"ko"));
 }
 function writePublicPdf(reading){if(reading.pdf_visibility!=="public"||!reading.public_pdf)return false;const sourcePath=path.join(rootDir,reading.source_pdf);if(!fs.existsSync(sourcePath))return false;const targetPath=publicPdfTargetPath(reading);fs.mkdirSync(path.dirname(targetPath),{recursive:true});fs.copyFileSync(sourcePath,targetPath);return true;}
@@ -1364,5 +1397,5 @@ function resolvePreviewSiteDir(outputDir){
   return resolvedTarget;
 }
 function buildSite(options={}){siteDir=path.join(rootDir,"docs");if(options.previewDraft&&!options.previewLocked)throw new Error("--preview-draft requires --preview-locked so draft content cannot be written to public docs");allowDraftPreview=Boolean(options.previewLocked&&options.previewDraft);const manifest=loadManifest();if(options.previewLocked){siteDir=resolvePreviewSiteDir(options.outputDir);const siteMeta={...manifest.site,publish_cutoff_date:"",publish_cutoff_note:""};const readings=prepareReadings(manifest,siteMeta);if(options.homeOnly){buildHomeOutputs(siteMeta,manifest,readings);}else if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);}else{buildFullOutputs(siteMeta,manifest,readings);}return{siteMeta,readings,siteDir,preview:true};}const siteMeta=manifest.site;if(options.homeOnly){const readings=prepareReadings(manifest,siteMeta);buildHomeOutputs(siteMeta,manifest,readings);return{siteMeta,readings};}let readings=refreshReadings(manifest,siteMeta,options.slug||null);if(options.slug){buildSlugOutputs(siteMeta,manifest,readings,options.slug);readings=refreshReadings(manifest,siteMeta,options.slug);buildSlugOutputs(siteMeta,manifest,readings,options.slug);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}buildFullOutputs(siteMeta,manifest,readings);readings=refreshReadings(manifest,siteMeta);buildFullOutputs(siteMeta,manifest,readings);writeApprovalStatusReport(rootDir);return{siteMeta,readings};}
-module.exports={buildSite};
+module.exports={buildSite,markdownToHtml,renderInline};
 if(require.main===module){const options=parseArgs();const result=buildSite(options);console.log(options.previewLocked?`[built] locked-content preview ${path.relative(rootDir,result.siteDir)}`:options.homeOnly?"[built] home":options.slug?`[built] reading ${options.slug} + home`:"[built] docs" );}

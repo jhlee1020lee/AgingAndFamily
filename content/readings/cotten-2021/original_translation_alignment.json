@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "reading_slug": "cotten-2021",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "cotten-2021-original-quote-001",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 1,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 1,
+        "block_type": "quote"
+      },
+      "source_text": "Technology use among older adults (p. 373) Defining technology: information and communication technologies and emerging technologies (p. 374) Variations in information and communication technologies use (p. 374) The digital divide (p. 378) Gaps in knowledge and data (p. 378) Impacts of technology use for older adults (p. 379) Psychosocial outcomes (p. 381) Physical health outcomes (p. 382) Unanticipated outcomes (p. 383) Gaps in knowledge (p. 384) Emerging technologies and the future of aging (p. 384) Robotics (p. 385) Internet of things (p. 385) Telehealth (p. 385) Driving and vehicle advances (p. 386) Future research and conclusions (p. 387) References (p. 388) Further reading (p. 392)",
+      "ko_text": "노년 성인의 기술 사용 (p. 373) 기술의 정의: 정보통신기술과 신흥기술 (p. 374) 정보통신기술 사용의 차이 (p. 374) 디지털 격차 (p. 378) 지식과 자료의 공백 (p. 378) 기술 사용이 노년 성인에게 미치는 영향 (p. 379) 심리사회적 결과 (p. 381) 신체건강 결과 (p. 382) 예상하지 못한 결과 (p. 383) 지식의 공백 (p. 384) 신흥기술과 노화의 미래 (p. 384) 로봇공학 (p. 385) 사물인터넷 (p. 385) 원격보건 (p. 385) 운전 및 차량 기술의 발전 (p. 386) 향후 연구와 결론 (p. 387) 참고문헌 (p. 388) 더 읽을거리 (p. 392)",
+      "evidence": {
+        "segment_id": "OUTLINE-001",
+        "source_location": "PDF p. 373",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 1,
+        "translation_paragraph_count": 1,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": null,
+        "next_entry_id": "cotten-2021-tr-001"
+      },
+      "notes": ""
+    }
+  ]
+}

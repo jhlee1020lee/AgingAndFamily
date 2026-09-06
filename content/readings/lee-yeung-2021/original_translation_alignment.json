@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "reading_slug": "lee-yeung-2021",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "lee-yeung-2021-original-quote-045",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 45,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 45,
+        "block_type": "quote"
+      },
+      "source_text": "ln [pᵃᵢₜ / 1 − pᵃᵢₜ] = αᵃDᵢₜ + βᵃXᵢ + δᵃYᵢₜ + γᵃZᵢₜ + uᵃᵢ + eᵃᵢₜ",
+      "ko_text": "ln [pᵃᵢₜ / 1 − pᵃᵢₜ] = αᵃDᵢₜ + βᵃXᵢ + δᵃYᵢₜ + γᵃZᵢₜ + uᵃᵢ + eᵃᵢₜ",
+      "evidence": {
+        "segment_id": "ANALYSIS-001",
+        "source_location": "PDF p. 647",
+        "segment_paragraph_index": 3,
+        "source_paragraph_count": 6,
+        "translation_paragraph_count": 6,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "lee-yeung-2021-tr-035",
+        "next_entry_id": "lee-yeung-2021-tr-036"
+      },
+      "notes": "The stored translation is intentionally the identical equation; preserve its content."
+    },
+    {
+      "id": "lee-yeung-2021-original-quote-046",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 46,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 46,
+        "block_type": "quote"
+      },
+      "source_text": "ln [pᵇᵢₜ / 1 − pᵇᵢₜ] = αᵇDᵢₜ + βᵇXᵢ + δᵇYᵢₜ + γᵇZᵢₜ + uᵇᵢ + eᵇᵢₜ",
+      "ko_text": "ln [pᵇᵢₜ / 1 − pᵇᵢₜ] = αᵇDᵢₜ + βᵇXᵢ + δᵇYᵢₜ + γᵇZᵢₜ + uᵇᵢ + eᵇᵢₜ",
+      "evidence": {
+        "segment_id": "ANALYSIS-001",
+        "source_location": "PDF p. 647",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 6,
+        "translation_paragraph_count": 6,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "lee-yeung-2021-tr-035",
+        "next_entry_id": "lee-yeung-2021-tr-036"
+      },
+      "notes": "The stored translation is intentionally the identical equation; preserve its content."
+    }
+  ]
+}

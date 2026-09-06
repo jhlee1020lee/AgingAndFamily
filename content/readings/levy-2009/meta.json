@@ -61,7 +61,6 @@
   "manual_review": {
     "approved_pages": [
       "index",
-      "full",
       "summary",
       "concepts",
       "pitfalls",
@@ -70,11 +69,11 @@
       "quiz-short",
       "quiz-mcq",
       "professor-prep",
-      "translation"
+      "translation",
+      "full"
     ],
     "approved_page_hashes": {
       "index": "v2:6c15c9eeb6e73e596424d0313a17f1a507cae9c38051965ca0054215263c0558",
-      "full": "v2:2de4363cb0e0a51ba0469b771c5f906304e667c7893f418a05587f223870899a",
       "summary": "v2:19c6dbca5dafbafa002215d86036b98632f415359cdcccc07c38dced9340fdfd",
       "concepts": "v2:247469d2b9b5fa6d3734b5e17f8ded2f804d603b840e4107fdda58f18d2d14d7",
       "pitfalls": "v2:de217ac6b09d7ffe41d8e9fb9aea679da1c9ea90b6e7ffbdd31be7ac70bea51f",
@@ -83,10 +82,11 @@
       "quiz-short": "v2:2ed9698e77f73c8570e7aa7fb48b496435194bf2874634b8d70683ecd796a76b",
       "quiz-mcq": "v2:ac29966cb88f6b0b7365f79d6fc2a982d9de712b6707f0ec42751babe7910c3c",
       "professor-prep": "v2:9c5502e7f03702bd415dd0b2e21ab5ad19c8d81aacf1a30c9aa58b80a8b78fe4",
-      "translation": "v2:83844c8d4cad8491858a834203e52a24c5f358f4daa7682c1cc325927c871e7a"
+      "translation": "v2:83844c8d4cad8491858a834203e52a24c5f358f4daa7682c1cc325927c871e7a",
+      "full": "v2:4a3cf1fb9b4803cae739a44b1c9a2fd445992eb5a8d12a348b551ce09f954016"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:05:43.538Z",
+    "reviewed_at": "2026-09-06T00:53:45.825Z",
     "notes": [
       "생성된 문장별 원문, 채점 퀴즈, 교수 대비 탭과 근거를 재검수함.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
@@ -96,12 +96,13 @@
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed lossless consolidation of adjacent verified click pairs sharing English source; Korean text/order and complete source coverage preserved. See stage2_reveal_group_review.md."
+      "Reviewed lossless consolidation of adjacent verified click pairs sharing English source; Korean text/order and complete source coverage preserved. See stage2_reveal_group_review.md.",
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:05:44.677Z",
+    "updated_at": "2026-09-06T00:56:22.031Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -145,7 +146,8 @@
           "level2_section_count": 7,
           "empty_level2_sections": [],
           "last_level2_title": "References",
-          "figure_label_line_count": 2
+          "figure_label_line_count": 2,
+          "translation_reveal_pair_count": 137
         }
       },
       "translation": {
@@ -290,7 +292,7 @@
       },
       "full": {
         "status": "approved",
-        "source_hash": "v2:2de4363cb0e0a51ba0469b771c5f906304e667c7893f418a05587f223870899a",
+        "source_hash": "v2:4a3cf1fb9b4803cae739a44b1c9a2fd445992eb5a8d12a348b551ce09f954016",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -306,7 +308,8 @@
           "level2_section_count": 7,
           "empty_level2_sections": [],
           "last_level2_title": "References",
-          "figure_label_line_count": 2
+          "figure_label_line_count": 2,
+          "translation_reveal_pair_count": 137
         }
       },
       "translation": {

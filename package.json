@@ -12,7 +12,7 @@
     "build:pilot": "node scripts/build_site.js --slug levy-2009 && node scripts/build_site.js --slug settersten-godlewski-2016",
     "check:alignment": "node scripts/check_alignment.js --strict",
     "check:alignment:pilot": "node scripts/check-alignment.js --slug levy-2009 --strict --write-report && node scripts/check-alignment.js --slug settersten-godlewski-2016 --strict --write-report",
-    "check:reveals": "node scripts/check_sentence_alignment.js && node scripts/check_rendered_reveals.js",
+    "check:reveals": "node scripts/check_sentence_alignment.js && node scripts/check_original_alignment.js && node scripts/check_rendered_reveals.js && node scripts/check_original_reveals.js",
     "check:reveals:pilot": "node scripts/check_rendered_reveals.js --slug levy-2009 --slug settersten-godlewski-2016",
     "check:app": "node scripts/check_app_behaviors.js",
     "check:validation": "node scripts/check_validation_gates.js",

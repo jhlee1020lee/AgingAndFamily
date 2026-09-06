@@ -1,0 +1,761 @@
+{
+  "version": 1,
+  "reading_slug": "smith-et-al-2007",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "smith-et-al-2007-original-quote-036",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 36,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 36,
+        "block_type": "quote"
+      },
+      "source_text": "I've spoken to a few people that I know that have got diabetes. They think that their legs are going to fall off, and that they're going to go blind and all this. You know, thinking that their life has ended. I've always said ‘take control of the diabetes and don't let the diabetes take control of you'. (Conrad, aged 63)",
+      "ko_text": "내가 아는 당뇨병 환자 몇 명과 이야기해 봤어요. 그 사람들은 다리가 떨어져 나가고 눈이 멀고 그런 일이 생길 거라고 생각하죠. 자기 인생이 끝났다고 생각하는 거예요. 나는 늘 ‘당뇨병을 통제하고, 당뇨병이 당신을 통제하게 두지 마라’고 말했어요. (Conrad, 63세)",
+      "evidence": {
+        "segment_id": "FINDINGS-OPEN-001",
+        "source_location": "PDF pp. 329–330",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-022",
+        "next_entry_id": "smith-et-al-2007-tr-023"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-038",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 38,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 38,
+        "block_type": "quote"
+      },
+      "source_text": "You just have to try and be as strong as you can, to live through the situation, if you know what I mean. Just carry on with your life. You don't have to seek help all of the time. (Harry, aged 68)",
+      "ko_text": "무슨 말인지 아시겠지만, 그 상황을 견뎌 내기 위해 가능한 한 강해지려고 노력해야 해요. 그냥 자기 삶을 계속 살아가는 거죠. 언제나 도움을 요청할 필요는 없어요. (Harry, 68세)",
+      "evidence": {
+        "segment_id": "FINDINGS-OPEN-001",
+        "source_location": "PDF pp. 329–330",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-023",
+        "next_entry_id": "smith-et-al-2007-tr-024"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-040",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 40,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 40,
+        "block_type": "quote"
+      },
+      "source_text": "I'm not one to seek help straight away. I like to figure things out for myself. But if she (wife) thinks I'm not doing the right thing, she'll certainly let me know! (Sam, aged 74)",
+      "ko_text": "나는 곧바로 도움을 요청하는 사람이 아니에요. 내 힘으로 해결해 보는 걸 좋아하죠. 하지만 아내가 내가 제대로 하고 있지 않다고 생각하면, 분명 나한테 말해 줄 겁니다! (Sam, 74세)",
+      "evidence": {
+        "segment_id": "MASCULINE-HELP-001",
+        "source_location": "PDF p. 330",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-024",
+        "next_entry_id": "smith-et-al-2007-tr-025"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-042",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 42,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 42,
+        "block_type": "quote"
+      },
+      "source_text": "I can tell you what my wife thinks. She thinks I'm pigheaded and stubborn…I'm pretty independent, I'll acknowledge that. I don't like relying on other people. But sometimes you have to. (Ben, aged 74)",
+      "ko_text": "내 아내가 어떻게 생각하는지는 말해 줄 수 있어요. 아내는 내가 막무가내고 고집스럽다고 생각하죠…나는 꽤 독립적이라는 걸 인정해요. 다른 사람에게 의지하는 걸 좋아하지 않아요. 하지만 가끔은 그래야 하죠. (Ben, 74세)",
+      "evidence": {
+        "segment_id": "MASCULINE-HELP-001",
+        "source_location": "PDF p. 330",
+        "segment_paragraph_index": 3,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-025",
+        "next_entry_id": "smith-et-al-2007-tr-026"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-044",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 44,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 44,
+        "block_type": "quote"
+      },
+      "source_text": "I had a fall in the bathroom — in the toilet. Olivia was home. She was in bed, and I could have called her, you know. But I didn't. You tend, I suppose, to think that you're a load on other people or something. (Arnold, aged 76)",
+      "ko_text": "욕실에서, 화장실에서 넘어졌어요. Olivia가 집에 있었죠. 침대에 있었고, 내가 부를 수도 있었어요. 알잖아요. 하지만 부르지 않았어요. 아마 다른 사람에게 짐이 된다고 생각하게 되는 것 같아요. (Arnold, 76세)",
+      "evidence": {
+        "segment_id": "MASCULINE-HELP-001",
+        "source_location": "PDF p. 330",
+        "segment_paragraph_index": 5,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-026",
+        "next_entry_id": "smith-et-al-2007-tr-027"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-046",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 46,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 46,
+        "block_type": "quote"
+      },
+      "source_text": "I've told them not to, because I'm silly and stubborn, and I'm pigheaded.",
+      "ko_text": "오지 말라고 했어요. 내가 어리석고 완고하고 막무가내라서요.",
+      "evidence": {
+        "segment_id": "MASCULINE-MAX-001",
+        "source_location": "PDF pp. 330–331",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-027",
+        "next_entry_id": "smith-et-al-2007-tr-028"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-047",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 47,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 47,
+        "block_type": "quote"
+      },
+      "source_text": "Why is that?",
+      "ko_text": "왜 그런가요?",
+      "evidence": {
+        "segment_id": "MASCULINE-MAX-001",
+        "source_location": "PDF pp. 330–331",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-027",
+        "next_entry_id": "smith-et-al-2007-tr-028"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-048",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "source_text": "It's just my way. It's not until I'm lying flat on the floor until I will ask for help.",
+      "ko_text": "그냥 내 방식이에요. 내가 바닥에 완전히 쓰러지기 전까지는 도움을 요청하지 않을 겁니다.",
+      "evidence": {
+        "segment_id": "MASCULINE-MAX-001",
+        "source_location": "PDF pp. 330–331",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-027",
+        "next_entry_id": "smith-et-al-2007-tr-028"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-049",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 49,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 49,
+        "block_type": "quote"
+      },
+      "source_text": "Why do you think that is?",
+      "ko_text": "왜 그렇다고 생각하세요?",
+      "evidence": {
+        "segment_id": "MASCULINE-MAX-001",
+        "source_location": "PDF pp. 330–331",
+        "segment_paragraph_index": 3,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-027",
+        "next_entry_id": "smith-et-al-2007-tr-028"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-050",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 50,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 50,
+        "block_type": "quote"
+      },
+      "source_text": "Because I've been independent for too long. I suppose this may be coming back to what we were talking about before. That is, I've had to look after myself for so long and that if it starts to get to the stage where I can't… (pause)…I might then give up altogether. But until such time that I can, even if it's only roughly, I'll continue to do so. I've been independent for so damn long! (Max, aged 70)",
+      "ko_text": "너무 오랫동안 독립적으로 살아왔기 때문이죠. 아마 전에 우리가 이야기하던 문제로 돌아가는 것 같아요. 그러니까 나는 너무 오랫동안 나 자신을 돌봐야 했고, 내가 그럴 수 없는 단계가 되기 시작하면… (멈춤)…그때는 아예 포기할지도 몰라요. 하지만 내가 할 수 있는 동안에는, 비록 대충 해내는 정도라도 계속 그렇게 할 겁니다. 나는 지독할 만큼 오랫동안 독립적으로 살아왔어요! (Max, 70세)",
+      "evidence": {
+        "segment_id": "MASCULINE-MAX-001",
+        "source_location": "PDF pp. 330–331",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 7,
+        "translation_paragraph_count": 7,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-027",
+        "next_entry_id": "smith-et-al-2007-tr-028"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-055",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 55,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 55,
+        "block_type": "quote"
+      },
+      "source_text": "I'm getting to the stage where I need to consider that I need to keep healthy to live as full a life as I can—quality of life too. Not just the length but how long you'll be able to look after yourself and do the things I want to do. (David, aged 52)",
+      "ko_text": "이제는 가능한 한 충만한 삶을 살려면 건강을 유지해야 한다는 점을 생각해야 할 단계에 이르고 있어요. 삶의 질도 그렇고요. 단순히 얼마나 오래 사느냐가 아니라, 얼마나 오래 자신을 돌보고 내가 하고 싶은 일을 할 수 있느냐는 거죠. (David, 52세)",
+      "evidence": {
+        "segment_id": "SUCCESS-DAILY-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 6,
+        "translation_paragraph_count": 6,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-030",
+        "next_entry_id": "smith-et-al-2007-tr-031"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-058",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 58,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 58,
+        "block_type": "quote"
+      },
+      "source_text": "Um, I suppose um, to keep good health really. I suppose being able to function independently. You know physically, cognitively and all those things. (Bob, aged 51)",
+      "ko_text": "음, 글쎄요, 건강을 잘 유지하는 거죠. 아마 독립적으로 기능할 수 있는 것 같아요. 신체적으로, 인지적으로, 그런 모든 면에서요. (Bob, 51세)",
+      "evidence": {
+        "segment_id": "SUCCESS-DAILY-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 6,
+        "translation_paragraph_count": 6,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-032",
+        "next_entry_id": "smith-et-al-2007-tr-033"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-060",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 60,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 60,
+        "block_type": "quote"
+      },
+      "source_text": "My eyesight. It's the one thing I worry about. Coz once that goes, that's it.",
+      "ko_text": "내 시력이요. 그게 내가 걱정하는 한 가지예요. 그걸 잃으면, 그걸로 끝이니까요.",
+      "evidence": {
+        "segment_id": "SUCCESS-RISK-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-033",
+        "next_entry_id": "smith-et-al-2007-tr-034"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-061",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 61,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 61,
+        "block_type": "quote"
+      },
+      "source_text": "When you say that's it, what do you mean?",
+      "ko_text": "그걸로 끝이라고 하셨는데, 무슨 뜻인가요?",
+      "evidence": {
+        "segment_id": "SUCCESS-RISK-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-033",
+        "next_entry_id": "smith-et-al-2007-tr-034"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-062",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 62,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 62,
+        "block_type": "quote"
+      },
+      "source_text": "Well it's like, I like to read and I like to drive the car. You know what I mean. But if I can't read that's it. (Wayne, aged 79)",
+      "ko_text": "그러니까, 나는 책 읽는 걸 좋아하고 차 운전하는 것도 좋아해요. 무슨 말인지 알죠. 하지만 읽을 수 없으면 그걸로 끝이에요. (Wayne, 79세)",
+      "evidence": {
+        "segment_id": "SUCCESS-RISK-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-033",
+        "next_entry_id": "smith-et-al-2007-tr-034"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-065",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 65,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 65,
+        "block_type": "quote"
+      },
+      "source_text": "When you look down the barrel and someone has the finger on the trigger — you start to worry. I just don't want to have a stroke where I'm left with someone feeding me, assisting me with my ablutions, where I sit like a vegetable and be a nuisance for everyone, especially if I don't have the capacity to say switch it [respirator] off. (Roger, aged 70)",
+      "ko_text": "총구를 들여다보고 있는데 누군가 방아쇠에 손가락을 대고 있으면 걱정하기 시작하죠. 나는 뇌졸중에 걸려 다른 사람이 나에게 밥을 먹여 주고 용변과 몸 씻는 일을 도와주며, 내가 식물인간처럼 앉아 모두에게 성가신 존재가 되는 건 정말 원하지 않아요. 특히 [인공호흡기를] 꺼 달라고 말할 능력조차 없다면요. (Roger, 70세)",
+      "evidence": {
+        "segment_id": "SUCCESS-RISK-001",
+        "source_location": "PDF p. 331",
+        "segment_paragraph_index": 5,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-035",
+        "next_entry_id": "smith-et-al-2007-tr-036"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-068",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 68,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 68,
+        "block_type": "quote"
+      },
+      "source_text": "Almost 12 months ago now, I lost my licence. And the doctor's reason for that was waning cognitive ability.",
+      "ko_text": "이제 거의 12개월 전인데, 운전면허를 잃었어요. 의사가 든 이유는 인지능력이 감퇴하고 있다는 것이었죠.",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-069",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 69,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 69,
+        "block_type": "quote"
+      },
+      "source_text": "Ok",
+      "ko_text": "네.",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": "The Korean response repeats at two quote positions; preserve this specific English response and local occurrence."
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-070",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 70,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 70,
+        "block_type": "quote"
+      },
+      "source_text": "My interpretation of that is that there seems to be a partial open circuit between my eyes and my brain. I don't know if that's what it really means, but that's my interpretation of it.",
+      "ko_text": "내가 이해하기로는 눈과 뇌 사이의 회로가 부분적으로 끊어진 것 같다는 뜻이에요. 그게 정말 그런 의미인지는 모르겠지만, 나는 그렇게 이해해요.",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-071",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 71,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 71,
+        "block_type": "quote"
+      },
+      "source_text": "Was it the doctor who had to make that decision?",
+      "ko_text": "그 결정을 내려야 했던 사람이 의사였나요?",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 3,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-072",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 72,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 72,
+        "block_type": "quote"
+      },
+      "source_text": "Yes.",
+      "ko_text": "네.",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": "The Korean response repeats at two quote positions; preserve this specific English response and local occurrence."
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-073",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 73,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 73,
+        "block_type": "quote"
+      },
+      "source_text": "Um, and how did you find that?",
+      "ko_text": "음, 그 일을 어떻게 받아들이셨나요?",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 5,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-074",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 74,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 74,
+        "block_type": "quote"
+      },
+      "source_text": "Oh, terrible. It ruined my life! For a couple months I didn't care whether I lived or died. It leaves me feeling so remote. The train and bus transport is a fair way from my home. You cannot put gophers on buses. But losing the driver's license made a hell of a difference to my life. It's made me very despondent. And I still am to some extent…unless you're living, and REALLY living, there's not a lot of point in being alive. And I think those people that are surviving or existing, but not enjoying life are not really getting anything out of it. I know a lady who's been fed and breathing out a hole in her throat for 25 years. To me that's ridiculous. If I ever got to that stage I would rather be given a [bullet], the painless way and that's the problem ended. And those sort of thoughts have come about a lot since I lost my driver's license…I feel now that if I can't look after myself that I'd rather be euthanized than go into a nursing home. I wouldn't like it from my children's point of view, or my grandchildren's point of view. But from my own selfish point of view, I think that's the way I'd rather go. (Michael, aged 73)",
+      "ko_text": "아, 끔찍했어요. 내 인생을 망쳐 놓았죠! 두어 달 동안은 살든 죽든 상관하지 않았어요. 아주 고립된 기분이 들어요. 기차와 버스를 타는 곳은 집에서 꽤 멀어요. 전동 이동 스쿠터(gopher)는 버스에 실을 수 없고요. 하지만 운전면허를 잃은 건 내 삶에 엄청난 차이를 만들었어요. 나를 몹시 낙담하게 했죠. 지금도 어느 정도 그래요…살아 있는 것, 정말로 살아가는 것이 아니라면 살아 있어 봐야 큰 의미가 없어요. 그저 생존하거나 존재할 뿐 삶을 즐기지 못하는 사람은 삶에서 아무것도 얻지 못한다고 생각해요. 25년 동안 누군가가 먹여 주고 목의 구멍으로 숨을 쉬며 살아온 여성을 알아요. 내가 보기에는 터무니없는 일이죠. 내가 그런 단계에 이른다면 차라리 고통 없이 [총알]을 받아 문제를 끝내고 싶어요. 운전면허를 잃은 뒤로 그런 생각을 많이 하게 되었어요…이제는 내가 나 자신을 돌볼 수 없다면 요양원에 들어가기보다 안락사되기를 원한다고 생각해요. 내 자녀나 손주들의 관점에서는 내가 그렇게 하는 것을 원치 않겠죠. 하지만 내 이기적인 관점에서는 그렇게 떠나는 편을 택할 것 같아요. (Michael, 73세)",
+      "evidence": {
+        "segment_id": "SUCCESS-MICHAEL-001",
+        "source_location": "PDF pp. 331–332",
+        "segment_paragraph_index": 6,
+        "source_paragraph_count": 8,
+        "translation_paragraph_count": 8,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-037",
+        "next_entry_id": "smith-et-al-2007-tr-038"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-076",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 76,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 76,
+        "block_type": "quote"
+      },
+      "source_text": "I can't walk now. I can walk from here [kitchen table] from the back door and back, and that's about it. But the other day, last month I think, I brought myself an electric scooter, which I can get around in. It takes me down to the corner shop, chemist, post office, hotel, or whatever. I don't go very far on it. I get down there in about 5 minutes. It's real good.",
+      "ko_text": "이제는 걸을 수 없어요. 여기 [식탁]에서 뒷문까지 갔다가 돌아오는 정도는 걸을 수 있고, 그게 전부예요. 그런데 저번에, 지난달이었던 것 같은데, 타고 다닐 수 있는 전동 스쿠터를 하나 샀어요. 그걸 타고 모퉁이 가게, 약국, 우체국, 호텔 같은 곳에 갈 수 있죠. 멀리 가지는 않아요. 거기까지 약 5분이면 가요. 정말 좋아요.",
+      "evidence": {
+        "segment_id": "SUCCESS-SCOOTER-001",
+        "source_location": "PDF p. 332",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-038",
+        "next_entry_id": "smith-et-al-2007-tr-039"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-077",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 77,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 77,
+        "block_type": "quote"
+      },
+      "source_text": "So that gives you a little bit more independence then?",
+      "ko_text": "그러면 독립성이 조금 더 생기는군요?",
+      "evidence": {
+        "segment_id": "SUCCESS-SCOOTER-001",
+        "source_location": "PDF p. 332",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-038",
+        "next_entry_id": "smith-et-al-2007-tr-039"
+      },
+      "notes": ""
+    },
+    {
+      "id": "smith-et-al-2007-original-quote-078",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 78,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 78,
+        "block_type": "quote"
+      },
+      "source_text": "That's right. I can go about 40 km on this thing, but I don't try to do that. I just, well, to go to the doctor. He's next door to the [local] hotel. That is perhaps about 3 bus stops away. And I go up there on my own. (Arnold, aged 76)",
+      "ko_text": "그렇죠. 이걸로 약 40 km를 갈 수 있지만 그렇게 하지는 않아요. 그냥, 글쎄요, 의사에게 가는 데 쓰죠. 의사 진료실은 [동네] 호텔 옆에 있어요. 버스로 약 3정거장 떨어진 곳이죠. 나는 혼자 그곳에 갑니다. (Arnold, 76세)",
+      "evidence": {
+        "segment_id": "SUCCESS-SCOOTER-001",
+        "source_location": "PDF p. 332",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "smith-et-al-2007-tr-038",
+        "next_entry_id": "smith-et-al-2007-tr-039"
+      },
+      "notes": ""
+    }
+  ]
+}

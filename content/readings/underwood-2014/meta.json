@@ -64,7 +64,6 @@
   "manual_review": {
     "approved_pages": [
       "index",
-      "full",
       "summary",
       "concepts",
       "pitfalls",
@@ -73,11 +72,11 @@
       "quiz-short",
       "quiz-mcq",
       "professor-prep",
-      "translation"
+      "translation",
+      "full"
     ],
     "approved_page_hashes": {
       "index": "v2:a6735ff5b3c1b2169a5c55336ec8e8f7baeff9b285a2b7e5fa8faf84cbb4667b",
-      "full": "v2:41e1cb1684c9b0c01bdfaedd383b0d727b92596390089561ae39c7e2ffc0c1bc",
       "summary": "v2:cba01f98569e52a70aede8e9930bc43c9a3406aea8851d97ff52b23453f8932e",
       "concepts": "v2:78ff57c6d6aecf581dbcb27a7819c7468cef568faaa755eb644417910ffacb86",
       "pitfalls": "v2:cfef9dc19d0fd4eb91748b5dc772c01a83a01a302ad090075a6a359dd9f5d1bd",
@@ -86,10 +85,11 @@
       "quiz-short": "v2:ff0a7f8865f212654e61d694df2fe7d6656661be0aff04fab64ca797669d611e",
       "quiz-mcq": "v2:86e2be0b3b5e1af433fa97cfab4985af4b5ffdc589305082e42452542486b85b",
       "professor-prep": "v2:1a1752ab282bae238190b24066751db561254b656651b750c66121b0f160b972",
-      "translation": "v2:2c10c0c89c4ea001309ef5c1667f6f5315a603de4382503b521be9c8c4959b1f"
+      "translation": "v2:2c10c0c89c4ea001309ef5c1667f6f5315a603de4382503b521be9c8c4959b1f",
+      "full": "v2:c9280196761698685262d12fe9ffd7cf6fef991b6952fd8e343ce9a6a0d8b808"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:06:39.125Z",
+    "reviewed_at": "2026-09-06T00:54:14.927Z",
     "notes": [
       "Stage 1: 4-page source, columns, quantitative anchors, captions, and sidebar checked against rendered PDF.",
       "Stage 1: all four pages, reading order, quantitative anchors, captions, sidebar studies, and source-block coverage independently checked after heading normalization.",
@@ -101,12 +101,13 @@
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed lossless consolidation of adjacent verified click pairs sharing English source; Korean text/order and complete source coverage preserved. See stage2_reveal_group_review.md."
+      "Reviewed lossless consolidation of adjacent verified click pairs sharing English source; Korean text/order and complete source coverage preserved. See stage2_reveal_group_review.md.",
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:06:40.285Z",
+    "updated_at": "2026-09-06T00:56:22.563Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -150,7 +151,8 @@
           "level2_section_count": 4,
           "empty_level2_sections": [],
           "last_level2_title": "This Spring, When Deary Spoke",
-          "figure_label_line_count": 0
+          "figure_label_line_count": 0,
+          "translation_reveal_pair_count": 105
         }
       },
       "translation": {
@@ -293,7 +295,7 @@
       },
       "full": {
         "status": "approved",
-        "source_hash": "v2:41e1cb1684c9b0c01bdfaedd383b0d727b92596390089561ae39c7e2ffc0c1bc",
+        "source_hash": "v2:c9280196761698685262d12fe9ffd7cf6fef991b6952fd8e343ce9a6a0d8b808",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -309,7 +311,8 @@
           "level2_section_count": 4,
           "empty_level2_sections": [],
           "last_level2_title": "This Spring, When Deary Spoke",
-          "figure_label_line_count": 0
+          "figure_label_line_count": 0,
+          "translation_reveal_pair_count": 105
         }
       },
       "translation": {

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "reading_slug": "kalmijn-leopold-2019",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "kalmijn-leopold-2019-original-quote-020",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 20,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 20,
+        "block_type": "quote"
+      },
+      "source_text": "As Umberson (2003, p. 172) observed in a large-scale quantitative and qualitative study of parental death, a sense of shared grief and loss often occurs in relationships with family members, especially siblings, who knew and loved the unique person who died. A sense of shared loss facilitates empathy; it helps siblings to understand the depth of one another’s pain.",
+      "ko_text": "Umberson(2003, p. 172)이 부모 사망에 관한 대규모 양적·질적 연구에서 관찰했듯이, 세상을 떠난 그 특별한 사람을 알고 사랑했던 가족 구성원, 특히 형제자매와의 관계에서는 흔히 슬픔과 상실을 공유한다는 감각이 생긴다. 상실을 공유한다는 감각은 공감을 촉진하며, 형제자매가 서로의 고통이 얼마나 깊은지 이해하도록 돕는다.",
+      "evidence": {
+        "segment_id": "THEORY-001",
+        "source_location": "PDF pp. 100–101",
+        "segment_paragraph_index": 4,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "kalmijn-leopold-2019-tr-015",
+        "next_entry_id": "kalmijn-leopold-2019-tr-016"
+      },
+      "notes": ""
+    }
+  ]
+}

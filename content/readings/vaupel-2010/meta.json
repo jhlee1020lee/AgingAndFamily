@@ -46,7 +46,6 @@
   "manual_review": {
     "approved_pages": [
       "index",
-      "full",
       "translation",
       "summary",
       "concepts",
@@ -55,11 +54,11 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep"
+      "professor-prep",
+      "full"
     ],
     "approved_page_hashes": {
       "index": "v2:694b751868efb45dbc9b070bdbb29575b1d3f57dbad0faf3e504d887b550915a",
-      "full": "v2:3a709e530bcb9691108dc585d77cee4e5a9600b9226e043ce44c8f285916462a",
       "translation": "v2:92a20c49afb53cc7a9cff7f78b6d8ff1f063f7232fddf89a0f52d4bb21f68be0",
       "summary": "v2:f705c1254718dd8e7a8365a5ac5ea403db8dd241e1ed49ff38bce923a9b28960",
       "concepts": "v2:00692955ab3c4fef787f9626221640107819c0a4c97de32c8f6419f3b234091f",
@@ -68,10 +67,11 @@
       "quiz-ox": "v2:30306e0cd28a4b4b716c1a8ddbbee39da7c2ff468bd43252f5828402b23a63d9",
       "quiz-short": "v2:ae1e95db1eb862d017b67e89a293c3c4c49c65690e367465dcb5c008158fec3b",
       "quiz-mcq": "v2:3c0aca85dce4ba652d7bf5093ac956b66b6ad15547bce2d5b776f474cb5780ed",
-      "professor-prep": "v2:9b2abc762757a271b83eded415b63204a7b5626c9fe8d35140eca39b08a73be2"
+      "professor-prep": "v2:9b2abc762757a271b83eded415b63204a7b5626c9fe8d35140eca39b08a73be2",
+      "full": "v2:26b233022ddbe01ff0830e88ec72a6726246d04dbbc7647610e1426723c68801"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T03:52:01.165Z",
+    "reviewed_at": "2026-09-06T00:54:03.618Z",
     "notes": [
       "Stage 1 source reconstruction completed; independent manual approval pending.",
       "Stage 1: seven rendered pages, 156 content blocks, Box 1, Figures 1–4, quantitative anchors, and references 1–100 independently cross-checked with no source defects found.",
@@ -81,7 +81,8 @@
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments; prior source and Korean translation preserved; composite approval dependencies reviewed. Original PDF unavailable.",
-      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
     ],
     "blocked_reason": ""
   },
@@ -99,7 +100,7 @@
     "quiz_mcq": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-09-05T08:13:05.910Z",
+    "updated_at": "2026-09-06T00:56:22.381Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -143,7 +144,8 @@
           "level2_section_count": 10,
           "empty_level2_sections": [],
           "last_level2_title": "Author Information",
-          "figure_label_line_count": 4
+          "figure_label_line_count": 4,
+          "translation_reveal_pair_count": 356
         }
       },
       "translation": {
@@ -289,7 +291,7 @@
       },
       "full": {
         "status": "approved",
-        "source_hash": "v2:3a709e530bcb9691108dc585d77cee4e5a9600b9226e043ce44c8f285916462a",
+        "source_hash": "v2:26b233022ddbe01ff0830e88ec72a6726246d04dbbc7647610e1426723c68801",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -305,7 +307,8 @@
           "level2_section_count": 10,
           "empty_level2_sections": [],
           "last_level2_title": "Author Information",
-          "figure_label_line_count": 4
+          "figure_label_line_count": 4,
+          "translation_reveal_pair_count": 356
         }
       },
       "translation": {

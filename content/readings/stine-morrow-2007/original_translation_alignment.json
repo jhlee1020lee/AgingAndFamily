@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "reading_slug": "stine-morrow-2007",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "stine-morrow-2007-original-list-028-item-01",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 0
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 0
+      },
+      "source_text": "Ill-defined “long term” problems for which solutions are developed through team-based collaboration that provides a substantively complex environment (Schooler & Mulatu, 2001)",
+      "ko_text": "실질적 복잡성이 높은 환경을 제공하는 팀 기반 협업을 통해 해결책을 개발하는 비구조화된 “장기” 문제(Schooler & Mulatu, 2001)",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 0,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    },
+    {
+      "id": "stine-morrow-2007-original-list-028-item-02",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 1
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 1
+      },
+      "source_text": "Fast paced “spontaneous” problems of different types (“brainteasers”) that exercise component fluid abilities (e.g., reasoning, working memory, visual-spatial processing, fluency, speed of processing) to support problem-solving skills",
+      "ko_text": "문제해결 기술을 뒷받침하기 위해 유동성 능력의 구성 요소(예: 추론, 작업기억, 시공간 처리, 유창성, 처리속도)를 연습시키는 여러 유형의 빠르게 진행되는 “즉석” 문제(“두뇌 퍼즐”)",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 1,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    },
+    {
+      "id": "stine-morrow-2007-original-list-028-item-03",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 2
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 2
+      },
+      "source_text": "Opportunities for creativity to stimulate self-initiated use of component skills as needed",
+      "ko_text": "필요할 때 요소 기술을 자기주도적으로 사용하도록 자극하는 창의성 발휘 기회",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 2,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    },
+    {
+      "id": "stine-morrow-2007-original-list-028-item-04",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 3
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 3
+      },
+      "source_text": "Friendly competition among teams with awards for performance, so that there are consequences for effective solutions",
+      "ko_text": "효과적인 해결책에 실질적 결과가 따르도록 수행에 상을 주는 팀 간의 우호적 경쟁",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 3,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    },
+    {
+      "id": "stine-morrow-2007-original-list-028-item-05",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 4
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 4
+      },
+      "source_text": "Choice of activities",
+      "ko_text": "활동 선택권",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 4,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    },
+    {
+      "id": "stine-morrow-2007-original-list-028-item-06",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "list_item",
+      "en_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 5
+      },
+      "ko_anchor": {
+        "flat_index": 28,
+        "block_type": "list",
+        "item_index": 5
+      },
+      "source_text": "Collaboration with an established educational program for children and young adults, Odyssey of the Mind (www.odysseyofthemind.org), so as to build on existing social structures, enhance the potential for scaling up the program, and promote age integration (Riley & Riley, 2000)",
+      "ko_text": "기존 사회구조를 활용하고 프로그램의 규모 확대 가능성을 높이며 연령통합을 촉진하기 위해, 아동과 청년을 위한 기존 교육 프로그램 Odyssey of the Mind(www.odysseyofthemind.org)와 협력(Riley & Riley, 2000)",
+      "evidence": {
+        "segment_id": "ACTIVITY-002",
+        "source_location": "pp. 298-299",
+        "item_index": 5,
+        "method": "Exact six-item source/translation bullet list correspondence, manually checked bilingual meaning and order."
+      },
+      "context": {
+        "previous_entry_id": "stine-morrow-2007-tr-020",
+        "next_entry_id": "stine-morrow-2007-tr-021"
+      },
+      "notes": ""
+    }
+  ]
+}

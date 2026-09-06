@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "reading_slug": "martinson-berridge-2015",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "martinson-berridge-2015-original-quote-044",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 44,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 44,
+        "block_type": "quote"
+      },
+      "source_text": "Policies promoting increased Medicare coverage for home modifications and assistive devices, as well as increased Supplemental Social Security Income payments that would bring elderly and disabled recipients above the poverty line, may well suffer at the hands of a populace and a legislature that has bought the stereotypes of a new breed of successfully aging seniors who no longer need much in the way of government support. (p. 793)",
+      "ko_text": "주택 개조와 보조기기에 대한 Medicare 보장 확대, 그리고 노인·장애인 수급자를 빈곤선 위로 끌어올릴 Supplemental Social Security Income 급여 인상 정책은, 정부 지원이 더는 별로 필요하지 않은 새로운 부류의 성공적으로 노화하는 노인이라는 고정관념을 받아들인 대중과 입법부 때문에 큰 타격을 받을 수 있다. (p. 793)",
+      "evidence": {
+        "segment_id": "NEOLIBERAL-001",
+        "source_location": "PDF p. 63",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 3,
+        "translation_paragraph_count": 3,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "martinson-berridge-2015-tr-029",
+        "next_entry_id": "martinson-berridge-2015-tr-030"
+      },
+      "notes": ""
+    },
+    {
+      "id": "martinson-berridge-2015-original-quote-048",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 48,
+        "block_type": "quote"
+      },
+      "source_text": "[T]he newspaper texts highlight individuals’ public duty to age successfully…and bring a morally-laden message that an ideal aging citizen is someone who chooses to age successfully, that remains youthful as long as possible, contributes to the economy as a smart consumer and as an active participant in productive activities, and stays healthy to avoid accessing healthcare and other public services. (p. 220)",
+      "ko_text": "신문 텍스트는 성공적으로 노화해야 할 개인의 공적 의무를 강조하고… 이상적인 노화 시민은 성공적으로 노화하기를 선택하고, 가능한 한 오래 젊음을 유지하며, 현명한 소비자이자 생산적 활동의 적극적인 참여자로서 경제에 기여하고, 의료 및 기타 공공서비스의 이용을 피하도록 건강을 유지하는 사람이라는 도덕적 메시지를 전달한다. (p. 220)",
+      "evidence": {
+        "segment_id": "INFLUENCES-001",
+        "source_location": "PDF pp. 63–64",
+        "segment_paragraph_index": 1,
+        "source_paragraph_count": 5,
+        "translation_paragraph_count": 5,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "martinson-berridge-2015-tr-031",
+        "next_entry_id": "martinson-berridge-2015-tr-032"
+      },
+      "notes": ""
+    }
+  ]
+}

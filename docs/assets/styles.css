@@ -3646,6 +3646,11 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
   background:#f6f2ea;
 }
 
+body[data-reading-layout="reader-v2"] .article-body blockquote,
+body[data-reading-layout="reader-v2"] .article-frontmatter p{
+  color:#4a443d;
+}
+
 .reader-toc-panel .toc-link{
   border-left:3px solid transparent;
   border-radius:8px;
@@ -3842,7 +3847,7 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
   padding:.8rem .95rem;
   border:1px solid color-mix(in srgb,var(--primary) 20%,var(--line));
   border-radius:10px;
-  background:var(--tint-lavender);
+  background:color-mix(in srgb,var(--primary) 8%,var(--surface));
   color:var(--text);
   font-size:.88rem;
   line-height:1.55;
@@ -3890,6 +3895,10 @@ body[data-reading-layout="reader-v2"] .article-frontmatter{
 
 .translation-sentence:focus-visible{
   box-shadow:0 0 0 2px color-mix(in srgb,var(--primary) 52%,transparent);
+}
+
+.article-body li .translation-sentence{
+  vertical-align:top;
 }
 
 .sentence-source-popover{

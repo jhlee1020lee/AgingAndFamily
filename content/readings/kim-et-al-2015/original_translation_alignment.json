@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "reading_slug": "kim-et-al-2015",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "kim-et-al-2015-original-frontmatter-04",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "en_anchor": {
+        "frontmatter_index": 4,
+        "block_type": "paragraph"
+      },
+      "ko_anchor": {
+        "frontmatter_index": 4,
+        "block_type": "paragraph"
+      },
+      "source_text": "A paradox exists in many Asian nations between traditional expectations for assisting parents versus actual assistance when it comes to aging parent-adult child relationships. As described elsewhere in the chapter, adults in Asian nations typically harbor strong beliefs regarding respect and obligation to assist parents. Indeed, a study of undergraduate students at Beijing Normal University revealed that supporting parents is part of the basic feature of entry into adulthood (Nelson, Badger, & Wu, 2004). When asked to indicate the criteria that are “necessary for adulthood,” 89 % of students endorsed a statement regarding providing financial support to parents. Support of parents was endorsed by a slightly greater number of students than being able to support one’s own children (86 %). In other words, in order to truly view oneself as an adult, an individual must support his or her parents. By contrast, in Western countries, the predominant expectation is that parents will support their children at least through the young adult years. This expectation is demonstrated in empirical findings that show that support typically flows from parents to children, until the very final years of life (Albertini, Kohli, & Vogel, 2007; Fingerman et al., 2011).",
+      "ko_text": "노화하는 부모와 성인 자녀의 관계를 살펴보면, 아시아의 많은 나라에는 부모를 도와야 한다는 전통적 기대와 실제 지원 사이에 역설이 존재한다. 이 장의 다른 부분에서 설명하듯이, 아시아 국가의 성인은 일반적으로 부모를 존중하고 도와야 한다는 의무에 대해 강한 신념을 지닌다. 실제로 베이징사범대학교 학부생을 대상으로 한 연구는 부모를 부양하는 것이 성인기 진입의 기본 요소 가운데 하나임을 보여 주었다(Nelson, Badger, & Wu, 2004). “성인이 되는 데 필요하다”고 여기는 기준을 고르게 했을 때 학생의 89 %가 부모에게 재정 지원을 제공한다는 진술에 동의했다. 부모 부양에 동의한 학생은 자신의 자녀를 부양할 수 있어야 한다고 동의한 학생(86 %)보다 약간 더 많았다. 다시 말해 자신을 진정한 성인으로 여기려면 자신의 부모를 부양해야 한다. 이와 대조적으로 서구 국가에서는 부모가 적어도 자녀의 청년기까지는 자녀를 지원할 것이라는 기대가 지배적이다. 이러한 기대는 대체로 생애의 맨 마지막 시기에 이르기 전까지 지원이 부모에게서 자녀에게로 흐른다는 경험적 결과에서 확인된다(Albertini, Kohli, & Vogel, 2007; Fingerman et al., 2011).",
+      "sentence_pairs": [
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s01",
+          "status": "verified",
+          "source_text": "A paradox exists in many Asian nations between traditional expectations for assisting parents versus actual assistance when it comes to aging parent-adult child relationships.",
+          "ko_text": "노화하는 부모와 성인 자녀의 관계를 살펴보면, 아시아의 많은 나라에는 부모를 도와야 한다는 전통적 기대와 실제 지원 사이에 역설이 존재한다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s02",
+          "status": "verified",
+          "source_text": "As described elsewhere in the chapter, adults in Asian nations typically harbor strong beliefs regarding respect and obligation to assist parents.",
+          "ko_text": "이 장의 다른 부분에서 설명하듯이, 아시아 국가의 성인은 일반적으로 부모를 존중하고 도와야 한다는 의무에 대해 강한 신념을 지닌다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s03",
+          "status": "verified",
+          "source_text": "Indeed, a study of undergraduate students at Beijing Normal University revealed that supporting parents is part of the basic feature of entry into adulthood (Nelson, Badger, & Wu, 2004).",
+          "ko_text": "실제로 베이징사범대학교 학부생을 대상으로 한 연구는 부모를 부양하는 것이 성인기 진입의 기본 요소 가운데 하나임을 보여 주었다(Nelson, Badger, & Wu, 2004)."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s04",
+          "status": "verified",
+          "source_text": "When asked to indicate the criteria that are “necessary for adulthood,” 89 % of students endorsed a statement regarding providing financial support to parents.",
+          "ko_text": "“성인이 되는 데 필요하다”고 여기는 기준을 고르게 했을 때 학생의 89 %가 부모에게 재정 지원을 제공한다는 진술에 동의했다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s05",
+          "status": "verified",
+          "source_text": "Support of parents was endorsed by a slightly greater number of students than being able to support one’s own children (86 %).",
+          "ko_text": "부모 부양에 동의한 학생은 자신의 자녀를 부양할 수 있어야 한다고 동의한 학생(86 %)보다 약간 더 많았다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s06",
+          "status": "verified",
+          "source_text": "In other words, in order to truly view oneself as an adult, an individual must support his or her parents.",
+          "ko_text": "다시 말해 자신을 진정한 성인으로 여기려면 자신의 부모를 부양해야 한다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s07",
+          "status": "verified",
+          "source_text": "By contrast, in Western countries, the predominant expectation is that parents will support their children at least through the young adult years.",
+          "ko_text": "이와 대조적으로 서구 국가에서는 부모가 적어도 자녀의 청년기까지는 자녀를 지원할 것이라는 기대가 지배적이다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-04-s08",
+          "status": "verified",
+          "source_text": "This expectation is demonstrated in empirical findings that show that support typically flows from parents to children, until the very final years of life (Albertini, Kohli, & Vogel, 2007; Fingerman et al., 2011).",
+          "ko_text": "이러한 기대는 대체로 생애의 맨 마지막 시기에 이르기 전까지 지원이 부모에게서 자녀에게로 흐른다는 경험적 결과에서 확인된다(Albertini, Kohli, & Vogel, 2007; Fingerman et al., 2011)."
+        }
+      ],
+      "evidence": {
+        "segment_id": "INTRO-001",
+        "method": "Existing source and translation introductory segment contains both full blocks, with sentence pairs manually checked."
+      },
+      "notes": "All pairs manually reviewed against bilingual introductory context. Explicitly reviewed the sentence boundary before the Korean opening quotation mark; eight source sentences map to eight Korean sentences."
+    },
+    {
+      "id": "kim-et-al-2015-original-frontmatter-05",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "en_anchor": {
+        "frontmatter_index": 5,
+        "block_type": "paragraph"
+      },
+      "ko_anchor": {
+        "frontmatter_index": 5,
+        "block_type": "paragraph"
+      },
+      "source_text": "Yet it would be an over-simplification to assume that commitment to parents is the sole value dictating parent-child relationships in Asia. For example, in that same study in Beijing, 80 % of college students endorsed the statement, “not deeply tied to parents emotionally” also was indicative of entry to adulthood. Moreover, actual behaviors may not be consistent with beliefs; the People’s Republic of China recently amended a law mandating that individuals visit their parents (The Associated Press, 2012). The motivation for this law stems from frequent reports about elderly parents being abandoned or ignored by their adult children. A recent survey found 33 % of Chinese adults reported they only saw their parents once a year and another 12 % had not been to visit their parents in many years (Tatlow, 2012). Although 16 % of Chinese adults see their parents every week, these reports are lower than expected and lower than rates of contact between adults and parents in most Western countries, including the United States (Fingerman & Birditt, 2011; Fingerman, Cheng, Tighe, Birditt, & Zarit, 2012). Of course, grown children may maintain other forms of contact through telephone calls, videoconferencing, or other communication technologies. Nonetheless, the amended law in China brings to light the paradox of parent-child relationships in Asia today. The belief that adults should be attentive, respectful and supportive of parents are still widely endorsed and viewed as core concepts in being an adult. The behaviors that would accompany those beliefs, however, are in flux.",
+      "ko_text": "그렇지만 부모에 대한 헌신만이 아시아의 부모-자녀 관계를 좌우하는 유일한 가치라고 가정하면 지나친 단순화가 된다. 예를 들어 베이징에서 시행된 같은 연구에서는 대학생의 80 %가 “부모와 정서적으로 깊이 얽매이지 않는 것”도 성인기 진입을 나타낸다는 진술에 동의했다. 더욱이 실제 행동은 신념과 일치하지 않을 수 있는데, 중화인민공화국은 최근 개인이 부모를 방문하도록 의무화하는 법을 개정했다(The Associated Press, 2012). 이 법의 동기는 노부모가 성인 자녀에게 버려지거나 외면당했다는 빈번한 보도에서 비롯되었다. 최근 조사에서는 중국 성인의 33 %가 부모를 1년에 한 번만 본다고 답했고, 또 다른 12 %는 여러 해 동안 부모를 방문하지 않았다고 답했다(Tatlow, 2012). 중국 성인의 16 %는 매주 부모를 만나지만, 이 수치는 기대보다 낮고 미국을 비롯한 대부분의 서구 국가에서 성인 자녀와 부모가 접촉하는 비율보다도 낮다(Fingerman & Birditt, 2011; Fingerman, Cheng, Tighe, Birditt, & Zarit, 2012). 물론 성인 자녀는 전화, 화상회의 또는 다른 통신기술을 통해 다른 형태의 접촉을 유지할 수 있다. 그럼에도 중국의 개정법은 오늘날 아시아 부모-자녀 관계의 역설을 드러낸다. 성인은 부모에게 관심을 기울이고 존중하며 지원해야 한다는 신념이 여전히 널리 지지되고 성인이 되는 것의 핵심 개념으로 여겨진다. 그러나 그러한 신념에 수반되어야 할 행동은 변화하는 중이다.",
+      "sentence_pairs": [
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s01",
+          "status": "verified",
+          "source_text": "Yet it would be an over-simplification to assume that commitment to parents is the sole value dictating parent-child relationships in Asia.",
+          "ko_text": "그렇지만 부모에 대한 헌신만이 아시아의 부모-자녀 관계를 좌우하는 유일한 가치라고 가정하면 지나친 단순화가 된다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s02",
+          "status": "verified",
+          "source_text": "For example, in that same study in Beijing, 80 % of college students endorsed the statement, “not deeply tied to parents emotionally” also was indicative of entry to adulthood.",
+          "ko_text": "예를 들어 베이징에서 시행된 같은 연구에서는 대학생의 80 %가 “부모와 정서적으로 깊이 얽매이지 않는 것”도 성인기 진입을 나타낸다는 진술에 동의했다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s03",
+          "status": "verified",
+          "source_text": "Moreover, actual behaviors may not be consistent with beliefs; the People’s Republic of China recently amended a law mandating that individuals visit their parents (The Associated Press, 2012).",
+          "ko_text": "더욱이 실제 행동은 신념과 일치하지 않을 수 있는데, 중화인민공화국은 최근 개인이 부모를 방문하도록 의무화하는 법을 개정했다(The Associated Press, 2012)."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s04",
+          "status": "verified",
+          "source_text": "The motivation for this law stems from frequent reports about elderly parents being abandoned or ignored by their adult children.",
+          "ko_text": "이 법의 동기는 노부모가 성인 자녀에게 버려지거나 외면당했다는 빈번한 보도에서 비롯되었다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s05",
+          "status": "verified",
+          "source_text": "A recent survey found 33 % of Chinese adults reported they only saw their parents once a year and another 12 % had not been to visit their parents in many years (Tatlow, 2012).",
+          "ko_text": "최근 조사에서는 중국 성인의 33 %가 부모를 1년에 한 번만 본다고 답했고, 또 다른 12 %는 여러 해 동안 부모를 방문하지 않았다고 답했다(Tatlow, 2012)."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s06",
+          "status": "verified",
+          "source_text": "Although 16 % of Chinese adults see their parents every week, these reports are lower than expected and lower than rates of contact between adults and parents in most Western countries, including the United States (Fingerman & Birditt, 2011; Fingerman, Cheng, Tighe, Birditt, & Zarit, 2012).",
+          "ko_text": "중국 성인의 16 %는 매주 부모를 만나지만, 이 수치는 기대보다 낮고 미국을 비롯한 대부분의 서구 국가에서 성인 자녀와 부모가 접촉하는 비율보다도 낮다(Fingerman & Birditt, 2011; Fingerman, Cheng, Tighe, Birditt, & Zarit, 2012)."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s07",
+          "status": "verified",
+          "source_text": "Of course, grown children may maintain other forms of contact through telephone calls, videoconferencing, or other communication technologies.",
+          "ko_text": "물론 성인 자녀는 전화, 화상회의 또는 다른 통신기술을 통해 다른 형태의 접촉을 유지할 수 있다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s08",
+          "status": "verified",
+          "source_text": "Nonetheless, the amended law in China brings to light the paradox of parent-child relationships in Asia today.",
+          "ko_text": "그럼에도 중국의 개정법은 오늘날 아시아 부모-자녀 관계의 역설을 드러낸다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s09",
+          "status": "verified",
+          "source_text": "The belief that adults should be attentive, respectful and supportive of parents are still widely endorsed and viewed as core concepts in being an adult.",
+          "ko_text": "성인은 부모에게 관심을 기울이고 존중하며 지원해야 한다는 신념이 여전히 널리 지지되고 성인이 되는 것의 핵심 개념으로 여겨진다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-05-s10",
+          "status": "verified",
+          "source_text": "The behaviors that would accompany those beliefs, however, are in flux.",
+          "ko_text": "그러나 그러한 신념에 수반되어야 할 행동은 변화하는 중이다."
+        }
+      ],
+      "evidence": {
+        "segment_id": "INTRO-001",
+        "method": "Existing source and translation introductory segment contains both full blocks, with sentence pairs manually checked."
+      },
+      "notes": "All pairs manually reviewed against bilingual introductory context."
+    },
+    {
+      "id": "kim-et-al-2015-original-frontmatter-06",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "en_anchor": {
+        "frontmatter_index": 6,
+        "block_type": "paragraph"
+      },
+      "ko_anchor": {
+        "frontmatter_index": 6,
+        "block_type": "paragraph"
+      },
+      "source_text": "This chapter discusses relationships between adults and parents as an important element of successful aging in Asia. First, we discuss filial piety and beliefs about family that lay the foundation of parent-child relationships, including differences between Asian and Western cultures and recent changes in these beliefs. Second, regarding actual behaviors in parent-child relationships, we consider living arrangements and provision of support, and review how these patterns of intergenerational exchanges impact the well-being of the elderly parents. Lastly, our discussion includes emotional aspects of parent-child relationships.",
+      "ko_text": "이 장은 아시아의 성공적 노화에서 중요한 요소로서 성인 자녀와 부모의 관계를 논한다. 먼저 아시아와 서구 문화의 차이 및 최근의 신념 변화를 포함하여 부모-자녀 관계의 토대를 이루는 효와 가족에 관한 신념을 논한다. 둘째, 부모-자녀 관계의 실제 행동과 관련하여 거주 형태와 지원 제공을 살펴보고, 이러한 세대 간 교환 양상이 노부모의 안녕에 어떤 영향을 미치는지 검토한다. 마지막으로 부모-자녀 관계의 정서적 측면을 논의한다.",
+      "sentence_pairs": [
+        {
+          "id": "kim-et-al-2015-original-frontmatter-06-s01",
+          "status": "verified",
+          "source_text": "This chapter discusses relationships between adults and parents as an important element of successful aging in Asia.",
+          "ko_text": "이 장은 아시아의 성공적 노화에서 중요한 요소로서 성인 자녀와 부모의 관계를 논한다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-06-s02",
+          "status": "verified",
+          "source_text": "First, we discuss filial piety and beliefs about family that lay the foundation of parent-child relationships, including differences between Asian and Western cultures and recent changes in these beliefs.",
+          "ko_text": "먼저 아시아와 서구 문화의 차이 및 최근의 신념 변화를 포함하여 부모-자녀 관계의 토대를 이루는 효와 가족에 관한 신념을 논한다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-06-s03",
+          "status": "verified",
+          "source_text": "Second, regarding actual behaviors in parent-child relationships, we consider living arrangements and provision of support, and review how these patterns of intergenerational exchanges impact the well-being of the elderly parents.",
+          "ko_text": "둘째, 부모-자녀 관계의 실제 행동과 관련하여 거주 형태와 지원 제공을 살펴보고, 이러한 세대 간 교환 양상이 노부모의 안녕에 어떤 영향을 미치는지 검토한다."
+        },
+        {
+          "id": "kim-et-al-2015-original-frontmatter-06-s04",
+          "status": "verified",
+          "source_text": "Lastly, our discussion includes emotional aspects of parent-child relationships.",
+          "ko_text": "마지막으로 부모-자녀 관계의 정서적 측면을 논의한다."
+        }
+      ],
+      "evidence": {
+        "segment_id": "INTRO-001",
+        "method": "Existing source and translation introductory segment contains both full blocks, with sentence pairs manually checked."
+      },
+      "notes": "All pairs manually reviewed against bilingual introductory context."
+    }
+  ]
+}

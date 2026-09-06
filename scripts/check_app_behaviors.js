@@ -159,20 +159,25 @@ function legacyReaderEntries(pagePath){
   };
 }
 
-function assertSentenceState(button,open,message){
+function assertSentenceState(button,open,message,expectedText){
   const pair=button.closest("[data-sentence-pair]");
   const source=pair.querySelector("[data-source-popover]");
   assert.equal(button.getAttribute("aria-expanded"),String(open),`${message}: expanded state`);
   assert.equal(source.hidden,!open,`${message}: source visibility`);
   assert.equal(pair.classList.contains("is-source-open"),open,`${message}: open sentence state`);
-  assert.equal(button.closest("[hidden]"),null,`${message}: Korean text must remain visible`);
+  assert.equal(button.closest("[hidden]"),null,`${message}: clicked sentence must remain visible`);
+  if(expectedText!==undefined)assert.equal(button.textContent,expectedText,`${message}: clicked sentence text must remain unchanged`);
 }
 
 async function checkTranslationSentenceReveals(){
-  const pair=(id)=>`<span data-sentence-pair><button type="button" data-source-sentence aria-expanded="false" aria-controls="${id}-source">한국어 문장 ${id}</button><span id="${id}-source" data-source-popover role="region" aria-label="영어 원문" lang="en" hidden>English source ${id} <a href="#source-note">Source note</a></span></span>`;
+  for(const targetLanguage of ["en","ko"]){
+  const visibleLabel=targetLanguage==="en"?"한국어 문장":"English sentence";
+  const revealedLabel=targetLanguage==="en"?"영어 원문":"한국어 번역";
+  const revealedText=targetLanguage==="en"?"English source":"한국어 번역문";
+  const pair=(id)=>`<span data-sentence-pair><button type="button" data-source-sentence aria-expanded="false" aria-controls="${id}-source">${visibleLabel} ${id}</button><span id="${id}-source" data-source-popover role="region" aria-label="${revealedLabel}" lang="${targetLanguage}" hidden>${revealedText} ${id} <a href="#source-note">Source note</a></span></span>`;
   const html=`<main><p>${pair("first")} ${pair("second")}</p><button id="outside" type="button">Outside</button><p id="source-note">Note</p></main>`;
   for(const finePointer of [true,false]){
-    const mode=finePointer?"desktop":"touch";
+    const mode=`${targetLanguage} reveal / ${finePointer?"desktop":"touch"}`;
     const dom=await boot(html,{},(window)=>{
       window.matchMedia=(query)=>({matches:query.includes("hover: hover")&&finePointer,addEventListener(){},addListener(){}});
     });
@@ -180,6 +185,7 @@ async function checkTranslationSentenceReveals(){
     const [first,second]=window.document.querySelectorAll("[data-source-sentence]");
     const outside=window.document.getElementById("outside");
     const source=first.closest("[data-sentence-pair]").querySelector("[data-source-popover]");
+    const originalText=first.textContent;
     const settle=()=>new Promise((resolve)=>window.setTimeout(resolve,0));
     const mouseClick=(button)=>button.dispatchEvent(new window.MouseEvent("click",{bubbles:true,cancelable:true,detail:1}));
     assertSentenceState(first,false,`${mode}: initial sentence`);
@@ -188,13 +194,13 @@ async function checkTranslationSentenceReveals(){
     await settle();
     assertSentenceState(first,false,`${mode}: hovering or focusing alone must not open the source`);
     mouseClick(first);
-    assertSentenceState(first,true,`${mode}: pointer click opens the source`);
+    assertSentenceState(first,true,`${mode}: pointer click opens the source`,originalText);
     first.closest("[data-sentence-pair]").dispatchEvent(new window.Event("pointerleave"));
     outside.focus();
     await settle();
     assertSentenceState(first,true,`${mode}: leaving or blurring must keep the chosen source open`);
     source.querySelector("a").click();
-    assertSentenceState(first,true,`${mode}: clicking inside the English source must keep it open`);
+    assertSentenceState(first,true,`${mode}: clicking inside the revealed text must keep it open`,originalText);
     mouseClick(first);
     assertSentenceState(first,false,`${mode}: repeated pointer click closes the source`);
     // JSDOM does not synthesize button activation from keyboard events. A native
@@ -214,7 +220,7 @@ async function checkTranslationSentenceReveals(){
     sourceLink.dispatchEvent(escape);
     await settle();
     assertSentenceState(first,false,`${mode}: Escape from within the source closes it without reopening on focus`);
-    assert.equal(window.document.activeElement,first,`${mode}: Escape restores focus to the Korean sentence`);
+    assert.equal(window.document.activeElement,first,`${mode}: Escape restores focus to the clicked sentence`);
     assert.equal(escape.defaultPrevented,true,`${mode}: closing handles Escape`);
     first.click();
     outside.click();
@@ -227,36 +233,57 @@ async function checkTranslationSentenceReveals(){
     assert.equal(window.document.activeElement,outside,`${mode}: Escape must not steal focus from another control`);
     dom.window.close();
   }
+  }
 }
 
-function checkGeneratedTranslationReveals(dom,slug){
+function checkGeneratedTranslationReveals(dom,slug,page){
   const doc=dom.window.document;
+  const label=`${slug}/${page}`;
+  const targetLanguage=page==="full"?"ko":"en";
+  const accessibleLabel=targetLanguage==="ko"?"한국어 번역":"영어 원문";
   const buttons=Array.from(doc.querySelectorAll("[data-source-sentence]"));
-  assert(buttons.length>=2,`${slug}: translated sentences must retain their source controls`);
+  assert(buttons.length>=2,`${label}: reading sentences must retain their disclosure controls`);
+  assert.equal(doc.querySelectorAll("[data-source-popover]").length,buttons.length,`${label}: every revealed region needs exactly one sentence control`);
+  const documentIdCounts=new Map();
+  for(const element of doc.querySelectorAll("[id]"))documentIdCounts.set(element.id,(documentIdCounts.get(element.id)||0)+1);
   const controlledIds=new Set();
   for(const button of buttons){
-    assert.equal(button.tagName,"BUTTON",`${slug}: translated sentences must support native keyboard activation`);
+    assert.equal(button.tagName,"BUTTON",`${label}: reading sentences must support native keyboard activation`);
     assert.equal(button.type,"button");
-    assert.equal(button.getAttribute("aria-describedby"),null,`${slug}: hidden English must not be a tooltip description of the Korean sentence`);
+    assert.equal(button.getAttribute("aria-describedby"),null,`${label}: hidden text must not be a tooltip description of the clicked sentence`);
     const sourceId=button.getAttribute("aria-controls");
-    assert(sourceId&&!controlledIds.has(sourceId),`${slug}: each sentence needs a unique controlled source region`);
+    assert(sourceId&&!controlledIds.has(sourceId),`${label}: each sentence needs a unique controlled region`);
     controlledIds.add(sourceId);
+    assert.equal(documentIdCounts.get(sourceId),1,`${label}: controlled region ID ${sourceId} must appear exactly once in the document`);
     const source=doc.getElementById(sourceId);
-    assert.equal(source,button.closest("[data-sentence-pair]").querySelector("[data-source-popover]"),`${slug}: each button must control its own adjacent source`);
-    assert.equal(button.nextElementSibling,source,`${slug}: English source must immediately follow its Korean sentence`);
-    assert.equal(source.getAttribute("role"),"region",`${slug}: clicked source must use disclosure region semantics`);
-    assert.equal(source.getAttribute("aria-label"),"영어 원문",`${slug}: English source region needs its accessible name`);
-    assert.equal(source.lang,"en");
-    assert(source.textContent.trim(),`${slug}: English source text must remain present`);
-    assertSentenceState(button,false,`${slug}: initial translated sentence`);
+    assert.equal(source,button.closest("[data-sentence-pair]").querySelector("[data-source-popover]"),`${label}: each button must control its own adjacent region`);
+    assert.equal(button.nextElementSibling,source,`${label}: revealed text must immediately follow its clicked sentence`);
+    assert.equal(source.getAttribute("role"),"region",`${label}: clicked text must use disclosure region semantics`);
+    assert.equal(source.getAttribute("aria-label"),accessibleLabel,`${label}: revealed region needs its accessible name`);
+    assert.equal(source.lang,targetLanguage,`${label}: revealed text must declare its language`);
+    assert(source.textContent.trim(),`${label}: revealed text must remain present`);
+    assert(button.textContent.trim(),`${label}: clickable sentence text must remain present`);
+    assertSentenceState(button,false,`${label}: initial reading sentence`);
   }
+  const firstText=buttons[0].textContent;
+  const secondText=buttons[1].textContent;
   buttons[0].dispatchEvent(new dom.window.MouseEvent("click",{bubbles:true,detail:1}));
-  assertSentenceState(buttons[0],true,`${slug}: generated translation opens on mouse click`);
+  assertSentenceState(buttons[0],true,`${label}: generated disclosure opens on mouse click`,firstText);
   buttons[1].click();
-  assertSentenceState(buttons[0],false,`${slug}: generated translation closes its previous source`);
-  assertSentenceState(buttons[1],true,`${slug}: generated translation opens the next source`);
+  assertSentenceState(buttons[0],false,`${label}: generated disclosure closes its previous region`,firstText);
+  assertSentenceState(buttons[1],true,`${label}: generated disclosure opens the next region`,secondText);
   buttons[1].click();
-  assertSentenceState(buttons[1],false,`${slug}: generated translation closes on repeated click`);
+  assertSentenceState(buttons[1],false,`${label}: generated disclosure closes on repeated click`,secondText);
+  buttons[0].focus();
+  buttons[0].click();
+  const escape=new dom.window.KeyboardEvent("keydown",{key:"Escape",bubbles:true,cancelable:true});
+  buttons[0].dispatchEvent(escape);
+  assertSentenceState(buttons[0],false,`${label}: generated disclosure closes on Escape`,firstText);
+  assert.equal(doc.activeElement,buttons[0],`${label}: Escape keeps focus on the clicked sentence`);
+  assert.equal(escape.defaultPrevented,true,`${label}: closing handles Escape`);
+  buttons[0].click();
+  doc.querySelector("[data-reading-article-body]").click();
+  assertSentenceState(buttons[0],false,`${label}: outside click closes the generated disclosure`,firstText);
   return buttons.length;
 }
 
@@ -372,6 +399,7 @@ async function checkGeneratedPages(){
   let prepAnswerCount=0;
   let readingPageCount=0;
   let translationSentenceCount=0;
+  let originalSentenceCount=0;
   const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,"..","manifest","readings.json"),"utf8"));
   const requested=process.argv.flatMap((arg,index)=>arg==="--slug"?[process.argv[index+1]]:[]);
   const readings=manifest.readings.filter((reading)=>!requested.length||requested.includes(reading.slug));
@@ -461,14 +489,16 @@ async function checkGeneratedPages(){
       assert(doc.querySelector("[data-reader-toc-link]")&&doc.querySelector("[data-reading-progress-bar]"),`${slug}/${page}: contents navigation and progress remain`);
       assert.equal(doc.documentElement.style.getPropertyValue("--reader-font-scale"),"",`${slug}/${page}: old font scale must not be applied, including by inline bootstrap`);
       assert.equal(dom.window.scrollY,0,`${slug}/${page}: old saved position must not change initial scroll`);
-      if(page==="translation")translationSentenceCount+=checkGeneratedTranslationReveals(dom,slug);
+      const sentenceCount=checkGeneratedTranslationReveals(dom,slug,page);
+      if(page==="translation")translationSentenceCount+=sentenceCount;
+      else originalSentenceCount+=sentenceCount;
       dom.window.dispatchEvent(new dom.window.Event("pagehide"));
       for(const [key,value] of Object.entries(oldState))assert.equal(dom.window.localStorage.getItem(key),value,`${slug}/${page}: removed reading preferences must not be updated`);
       dom.window.close();
       readingPageCount++;
     }
   }
-  return{renderedQuestions:count,prepAnswerCount,readingPageCount,translationSentenceCount};
+  return{renderedQuestions:count,prepAnswerCount,readingPageCount,translationSentenceCount,originalSentenceCount};
 }
 
 async function checkHomeSchedule(){
@@ -510,5 +540,5 @@ async function checkHomeSchedule(){
   await checkPrepLanguages();
   if(!process.argv.includes("--fixture-only"))await checkHomeSchedule();
   const counts=process.argv.includes("--fixture-only")?null:await checkGeneratedPages();
-  console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, click-to-expand translation sources, direct bilingual prep answers with independent languages/tabs/review marks, and filters; ${counts?`${counts.renderedQuestions} generated questions, ${counts.prepAnswerCount} bilingual prep answers, ${counts.readingPageCount} reading pages, ${counts.translationSentenceCount} sentence disclosures`:"fixtures only"})`);
+  console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, bidirectional sentence disclosures, direct bilingual prep answers with independent languages/tabs/review marks, and filters; ${counts?`${counts.renderedQuestions} generated questions, ${counts.prepAnswerCount} bilingual prep answers, ${counts.readingPageCount} reading pages, ${counts.translationSentenceCount} English disclosures, ${counts.originalSentenceCount} Korean disclosures`:"fixtures only"})`);
 })().catch((error)=>{console.error(error);process.exitCode=1;});

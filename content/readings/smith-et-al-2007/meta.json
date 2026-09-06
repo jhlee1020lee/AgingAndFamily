@@ -62,7 +62,6 @@
   "manual_review": {
     "approved_pages": [
       "index",
-      "full",
       "translation",
       "summary",
       "concepts",
@@ -71,11 +70,11 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep"
+      "professor-prep",
+      "full"
     ],
     "approved_page_hashes": {
       "index": "v2:946a1d524c41c086ab0f90e8eabcc9a32d5d35a21573e35bf05dda2e9ea26ccf",
-      "full": "v2:9dc6d29b63dd7092819a588085c376f11090725d664216f94d2878f1d97ce528",
       "translation": "v2:30be61db15718f5f33d6f0d3bb7836db8f2bf868fa99e962ef0824d0465b2ddc",
       "summary": "v2:1a49386e21b24f415d8817d7a9112c05692ce17bf7a961dbd422a3d6febcd2bf",
       "concepts": "v2:ca73535bbc981b6ab8b44e0cbec27761b51d883832b269a208474bdc51d9180b",
@@ -84,10 +83,11 @@
       "quiz-ox": "v2:6bdaf3402d59e60a03e6cefa5da191a3f78c2dae993cf780da8b6c498069330a",
       "quiz-short": "v2:728729098987b9866f264cc0e2f5f912145212992dca58789125a07b81fc1ddf",
       "quiz-mcq": "v2:6d3d3cd666b465c143c3a3932caaa8c992c3c1e0f21b16b2a9898ee0b0b7488c",
-      "professor-prep": "v2:f197d0f0f3b8f6e40f40d9abceb58da59d6f5c6c72e442129ecbc3d81c660991"
+      "professor-prep": "v2:f197d0f0f3b8f6e40f40d9abceb58da59d6f5c6c72e442129ecbc3d81c660991",
+      "full": "v2:7ef3fa5190cec28f7bb1840c4195bd3d39605dc46de077595f6707fb15e47255"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-05T03:52:02.128Z",
+    "reviewed_at": "2026-09-06T00:55:15.836Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent final audit PASS after correcting one minor overstatement in Sam's spouse/help wording; Critical 0, Major 0, Minor 0; all 66 evidence-linked records, isolated full-preview links/reveals/privacy/chatbot checks passed.",
@@ -96,12 +96,13 @@
       "Reading-response cards independently re-audited after user-requested revision; fit, factual scope, and evidence links verified.",
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments; source and translation preserved; composite dependencies reviewed. Seven participant-name questions replaced by case interpretation; sampling and qualitative design distinguished from the parent cohort. Original PDF unavailable.",
-      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval."
+      "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-05T08:13:06.546Z",
+    "updated_at": "2026-09-06T00:56:23.905Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -145,7 +146,8 @@
           "level2_section_count": 8,
           "empty_level2_sections": [],
           "last_level2_title": "References",
-          "figure_label_line_count": 3
+          "figure_label_line_count": 3,
+          "translation_reveal_pair_count": 277
         }
       },
       "translation": {
@@ -291,7 +293,7 @@
       },
       "full": {
         "status": "approved",
-        "source_hash": "v2:9dc6d29b63dd7092819a588085c376f11090725d664216f94d2878f1d97ce528",
+        "source_hash": "v2:7ef3fa5190cec28f7bb1840c4195bd3d39605dc46de077595f6707fb15e47255",
         "errors": [],
         "warnings": [],
         "metrics": {
@@ -307,7 +309,8 @@
           "level2_section_count": 8,
           "empty_level2_sections": [],
           "last_level2_title": "References",
-          "figure_label_line_count": 3
+          "figure_label_line_count": 3,
+          "translation_reveal_pair_count": 277
         }
       },
       "translation": {

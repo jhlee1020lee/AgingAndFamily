@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "reading_slug": "underwood-2014",
+  "review_note": "Existing bilingual text reviewed against matching block positions, surrounding paragraphs, and stored evidence segments. Quote groups preserve the complete existing translation.",
+  "entries": [
+    {
+      "id": "underwood-2014-original-quote-007",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 7,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 7,
+        "block_type": "quote"
+      },
+      "source_text": "In April, psychologist Ian Deary (front, center) gathered surviving members of the Lothian Birth Cohorts to hear about how their brains are aging.",
+      "ko_text": "4월, 심리학자 Ian Deary(앞줄 중앙)가 Lothian Birth Cohorts의 생존 참여자들을 모아 그들의 뇌가 어떻게 노화하고 있는지를 설명했다.",
+      "evidence": {
+        "segment_id": "COHORT-001",
+        "source_location": "Page 569",
+        "segment_paragraph_index": 0,
+        "source_paragraph_count": 6,
+        "translation_paragraph_count": 6,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "underwood-2014-tr-006",
+        "next_entry_id": "underwood-2014-tr-007"
+      },
+      "notes": ""
+    },
+    {
+      "id": "underwood-2014-original-quote-040",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "unit": "quote_group",
+      "en_anchor": {
+        "flat_index": 40,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "flat_index": 40,
+        "block_type": "quote"
+      },
+      "source_text": "After taking an intelligence exam at age 11, Margaret Lawson is now among the 1641 Scots being studied for clues to how the brain ages.",
+      "ko_text": "11세에 지능검사를 치렀던 Margaret Lawson은 현재 뇌가 어떻게 노화하는지에 관한 단서를 찾는 연구에 참여한 스코틀랜드인 1,641명 가운데 한 사람이다.",
+      "evidence": {
+        "segment_id": "CHANGE-001",
+        "source_location": "Pages 570-571",
+        "segment_paragraph_index": 2,
+        "source_paragraph_count": 4,
+        "translation_paragraph_count": 4,
+        "method": "Exact existing source/translation segment paragraph correspondence; bilingual meaning and same quote occurrence in surrounding paragraph anchors manually checked."
+      },
+      "context": {
+        "previous_entry_id": "underwood-2014-tr-029",
+        "next_entry_id": "underwood-2014-tr-030"
+      },
+      "notes": ""
+    },
+    {
+      "id": "underwood-2014-original-frontmatter-00",
+      "status": "verified-existing-text",
+      "confidence": "high",
+      "en_anchor": {
+        "frontmatter_index": 0,
+        "block_type": "quote"
+      },
+      "ko_anchor": {
+        "frontmatter_index": 0,
+        "block_type": "quote"
+      },
+      "source_text": "Decades-old IQ test records from Scottish children have opened a unique window on how the brain ages",
+      "ko_text": "스코틀랜드 아동의 수십 년 된 IQ 검사 기록은 뇌가 어떻게 노화하는지를 들여다볼 독특한 창을 열었다",
+      "sentence_pairs": [
+        {
+          "id": "underwood-2014-original-frontmatter-00-s01",
+          "status": "verified",
+          "source_text": "Decades-old IQ test records from Scottish children have opened a unique window on how the brain ages",
+          "ko_text": "스코틀랜드 아동의 수십 년 된 IQ 검사 기록은 뇌가 어떻게 노화하는지를 들여다볼 독특한 창을 열었다"
+        }
+      ],
+      "evidence": {
+        "method": "Exact approved full.md/translation.md article deck; bilingual meaning reviewed.",
+        "source_location": "Article subtitle before byline"
+      },
+      "notes": "All pairs manually reviewed against bilingual introductory context."
+    }
+  ]
+}
