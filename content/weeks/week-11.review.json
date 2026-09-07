@@ -1,7 +1,7 @@
 {
   "status": "approved",
-  "sha256": "364b4e829173925f84d220866d4b272797c5f0f54fe5f2c2a189528e08ffd126",
-  "reviewed_at": "2026-09-06T05:43:56.933Z",
-  "reviewer": "Codex (author review and independent cross-review)",
-  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-11.review-notes.md. Existing per-reading approvals remain unchanged."
+  "sha256": "b2b621b19430dec0c0835dd7e95a14d039a48571d9c9323bba262ec3af86b8db",
+  "reviewed_at": "2026-09-07T01:10:37.576Z",
+  "reviewer": "Codex",
+  "scope": "# 11주차 첫 발언과 꼬리 문답 검토\n\nOswald 외의 INTRO, PARTICIPANTS, INDOOR, EXPLANATION, LIMITATIONS, CONCLUSION을 먼저 읽고 Smith 외의 METHOD-CONTEXT/INTERVIEW, MASCULINE-HELP/MAX, SUCCESS-MICHAEL/SCOOTER를 대조했다. 새 영한 첫 발언과 문답 및 재사용 영한 답변을 검토했다.\n\n6개 발언은 독립성의 의미, 이용 가능한 자원, 도움 거절, 조건/의미, 제한된 측정, 운전 중단의 가상 상황을 연결한다. 넓은 집의 65–79/80–94세별 반대 관련은 횡단 비교이지 개인의 80세 전환이나 이사 효과가 아니다. 스쿠터 진술은 개입시험·보편 처방이 아니며, 다른 당사자의 조건을 별도로 살피도록 했다. 도움 거절을 단순 완고함으로 환원하거나 장소애착에서 돌봄 거절로 이어지는 미검증 경로를 확정하지 않았다.\n\nOswald 조사381명과 Smith 면담36명(65세 이상12명), 상위 FAMAS1,195명을 구분했다. 주거 접근성의 자기보고 두 문항과 가구구성이 지원의 모든 의미를 측정하지 않음을 유지했고, 비유의 계수를 효과 없음으로 읽거나 질적 사례로 인과 추정치를 대체하지 않았다. 원래 근거 ID·앵커와 제한된 일반화 범위를 보존했다."
 }

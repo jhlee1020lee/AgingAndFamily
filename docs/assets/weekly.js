@@ -16,6 +16,7 @@
     const status = root.querySelector("[data-weekly-status]");
     const empty = root.querySelector(".weekly-empty");
     const cards = Array.from(root.querySelectorAll("[data-weekly-card]"));
+    const reflection = root.dataset.weeklyFormat === "reflection-followups-v1";
     if (!controls || !questionSelect || !answerSelect || !hideAnswers || !markedOnly || !status || !empty) return;
 
     root.dataset.weeklyInitialized = "true";
@@ -71,9 +72,9 @@
     function updateStatus() {
       const visibleCount = markedOnly.checked ? marked.size : cards.length;
       const count = markedOnly.checked
-        ? `표시한 질문 ${visibleCount}개 · 전체 ${cards.length}개`
+        ? `표시한 ${reflection ? "관점" : "질문"} ${visibleCount}개 · 전체 ${cards.length}개`
         : `전체 ${cards.length}개 · 다시 연습 ${marked.size}개`;
-      const mode = hideAnswers.checked ? " · 답변을 가리고 연습 중" : "";
+      const mode = hideAnswers.checked ? ` · ${reflection ? "첫 발언" : "답변"}을 가리고 연습 중` : "";
       const storageNote = storageFailed
         ? " 이 브라우저에 저장할 수 없어 변경 사항은 이번 방문에만 유지됩니다."
         : "";

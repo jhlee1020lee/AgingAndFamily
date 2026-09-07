@@ -1,7 +1,7 @@
 {
   "status": "approved",
-  "sha256": "f41cb127fe61348b14cfc56191be63bda4c3842cd6aa54090ade36646f35e17e",
-  "reviewed_at": "2026-09-06T05:43:56.978Z",
-  "reviewer": "Codex (author review and independent cross-review)",
-  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-12.review-notes.md. Existing per-reading approvals remain unchanged."
+  "sha256": "3e0701e0a789d2659cb0cdde2deece36983403f30ff5608de0f63f9dc9b87853",
+  "reviewed_at": "2026-09-07T01:13:27.641Z",
+  "reviewer": "Codex",
+  "scope": "# 12주차 첫 발언과 꼬리 문답 검토\n\nGruenewald 외의 INTRO, PARTICIPANTS, MEASURES, ANALYTIC-ITT-CACE/EXPOSURE, RESULTS-MODELS, DISCUSSION, LIMITATIONS를 읽은 뒤 Lee와 Yeung의 DATA, MEASURES, RESULTS-WOMEN/MEN, DISCUSSION1–2, IMPLICATIONS를 대조했다. 새 영한 발언과 문답 및 기존 영한 답변을 검토했다.\n\n6개 발언은 기회/필요, 배정/참여, 역할/생성감, 참여 여건의 차이, 노출량, 거절 가능한 기회를 연결한다. EC 352명 배정/284명 실제 참여/대조350명, 전체702명과 한국2,600명/26,520인년의 단위를 유지했다. 대조군은 통상적 봉사 기회를 이용했으며 무활동 집단이 아니다. 욕구7/성취6문항, 두 요인의 구별과 자기지각 결과를 건강·수명·취업과 혼동하지 않았다.\n\nCACE의 노출 기준을 무작위 용량이나 최적 시간표로 해석하지 않았고 일부 가정 문제를 보존했다. 한국의 재진입/이탈과 성별 조건부 결과를 구분하고 금전지원의 여성 결과를 남성에 일반화하지 않았다. EC 여성85% 표본과 참여 자격(15시간 약속, 문해·인지·이동 등)을 고려했다. 한국의 소득보장·선택권 제안은 적용이며 평가된 개입으로 쓰지 않았다. 근거 ID와 앵커는 보존했다."
 }

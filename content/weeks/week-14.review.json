@@ -1,7 +1,7 @@
 {
   "status": "approved",
-  "sha256": "e14c1e24877e2c26496b0ab5cea5c9a14fd01db5979d4745bd13f384446eab6e",
-  "reviewed_at": "2026-09-06T05:48:09.496Z",
-  "reviewer": "Codex (author review and independent cross-review)",
-  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-14.review-notes.md. Existing per-reading approvals remain unchanged."
+  "sha256": "97f713725cd65f1ce09b409a29c3d0a705bcf06c3438ff92d2b38a293932be08",
+  "reviewed_at": "2026-09-07T01:20:15.175Z",
+  "reviewer": "Codex",
+  "scope": "# 14주차 첫 발언과 꼬리 문답 검토\n\nBoerner와 Schulz의 ABS, CAREGIVING, COMPLICATED, RISK, PRACTICE를 먼저 읽고 Meier 외의 METHOD-SELECTION/CODING/ANALYSES, RESULTS-SAMPLE/THEMES/STAKEHOLDERS, DISCUSSION-LIMITATIONS/DIGNITY, FUTURE를 대조했다. Meier ABS도 환자 연령 범위의 분모를 확인하는 데 사용했다. 새 영한 첫 발언·꼬리 문답과 기존 영한 답변을 검토했다.\n\n6개 발언은 임종/사별 적응, 주제 빈도/효과, 여러 준비, 환자/가족 관점, 의미 있는 역할의 상실, 반복 대화를 연결한다. 94/81/64%는 보고서의 주제 등장률이며 환자 비율이나 인과 효과가 아니다. 36편(질적27/양적5/혼합4), 중복되는 관점20/10/18, 가족 관점10편 중 사별 후9편을 구분했다. 환자 관점 논문의50%가60세 초과인 사람을 포함한다는 분모와 존엄 표현의 해석을 원문으로 재확인하고 두 근거 링크를 추가했다.\n\n환자의 뜻을 존중한 임종을 어려움 없는 애도의 보장으로 쓰지 않았다. 안도·소진·예상 가능성, 정서/실무/정보의 차이, 관계와 역할의 의미를 보존했다. 긍정적인 돌봄을 복합비애의 단순 원인으로 단정하지 않고 2009년의 제안된 진단 기준을 현재 기준이나 사례 진단에 사용하지 않았다. 돌봄 개입시험의 특정 근거와 새 대화 예시의 미검증 상태를 구분했다. 기존 근거 ID·앵커는 유지하고 추가 출처도 확인했다."
 }

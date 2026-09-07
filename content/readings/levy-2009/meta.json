@@ -107,7 +107,7 @@
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T08:28:58.582Z",
+    "updated_at": "2026-09-07T01:21:58.230Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -240,6 +240,9 @@
           "card_count": 15,
           "reading_response_card_count": 6,
           "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
           "practice_format": "reflection-followups-v1",
           "followup_count": 18
         }
@@ -410,6 +413,9 @@
           "card_count": 15,
           "reading_response_card_count": 6,
           "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
           "practice_format": "reflection-followups-v1",
           "followup_count": 18
         }

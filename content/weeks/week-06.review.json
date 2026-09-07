@@ -1,7 +1,7 @@
 {
   "status": "approved",
-  "sha256": "39fcd8e72b70c791b3c37d5ea3587ccac9f9993466482374fe3988c09c175656",
-  "reviewed_at": "2026-09-06T05:47:34.461Z",
-  "reviewer": "Codex (author review and independent cross-review)",
-  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-06.review-notes.md. Existing per-reading approvals remain unchanged."
+  "sha256": "1138c11721044b2e71d90b4db08812ce03ae23c049b4117fe43c0317fa8dcdf1",
+  "reviewed_at": "2026-09-07T00:54:27.713Z",
+  "reviewer": "Codex",
+  "scope": "# 6주차 첫 발언과 꼬리 문답 검토\n\nCarstensen 외의 TENETS2, EMOREG2, NETWORK, PREFER1–2, CULTURE를 검토한 뒤 Luong 외의 WHY, SST, BEHAVIOR, ENVIRONMENT, SIM, FORGIVENESS, STEREOTYPE, FUTURE를 대조했다.\n\n6개 영한 첫 발언과 18개 꼬리 문답은 개인 목표/상대의 반응, 시간지평/나이, 선택적 관계망/필요 미충족, 회피/관여, 친절/고정관념, 가족 접촉/여건을 각각 흥미와 관점 변화로 연결한다. SST를 순전히 개인 내적인 설명으로 나누지 않으며 SIM을 추가적인 초점으로 설명했다.\n\n이사·20년 연장 시나리오는 상상 조건, 홍콩 반환은 역사적 비교로 구분했다. 정서 목표와 지식 목표는 상대적 우선순위이며 학습동기 소멸이 아니다. 3명 미만은 인용 연구의 관련성이지 보편 처방이 아니다. 감정의 빈도/강도, 갈등 회피/미해결 문제, 관대한 판단/당사자의 존중 경험을 구분했다. 시나리오를 실제 수명 변화나 모든 관계의 인과 증거로 확장하지 않았다. 문화·젠더·가족 사례의 비보편성과 가상 적용의 성격을 유지했다. 근거 세그먼트와 앵커를 보존했다."
 }

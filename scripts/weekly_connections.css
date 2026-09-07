@@ -318,6 +318,41 @@
   .weekly-question-nav{gap:.15rem 1rem;}
 }
 
+/* Reflection practice starts with the reader's statement, then visible questions. */
+.weekly-reflection .weekly-hero{padding-bottom:1rem;}
+.weekly-reflection .weekly-hero .weekly-intro{margin:.7rem 0 0;font-size:.95rem;}
+.weekly-reflection .weekly-context,
+.weekly-reflection .weekly-topic-menu{border-bottom:1px solid var(--line);}
+.weekly-reflection .weekly-context > summary,
+.weekly-reflection .weekly-topic-menu > summary{min-height:44px;padding:.6rem 0;font-size:.9rem;font-weight:500;line-height:1.6;cursor:pointer;}
+.weekly-reflection .weekly-question-nav{padding:.5rem 0 1rem;}
+.weekly-reflection .weekly-card{margin:1rem 0;padding:1.2rem;border:1px solid var(--line);border-radius:10px;background:var(--surface);}
+.weekly-reflection .weekly-card-head{flex-direction:row;align-items:flex-start;gap:.7rem;margin:0 0 .55rem;}
+.weekly-reflection .weekly-card-head .weekly-eyebrow{margin:0 0 .3rem;letter-spacing:0;font-size:.78rem;}
+.weekly-reflection .weekly-card-head h3{margin:0;font-size:1.16rem;line-height:1.5;letter-spacing:-.025em;}
+.weekly-reflection .weekly-card [data-weekly-mark]{padding:.5rem .6rem;white-space:nowrap;font-size:.78rem;}
+.weekly-reflection .weekly-response > summary{color:var(--muted);font-size:.86rem;}
+.weekly-reflection .weekly-answer{margin:.3rem 0 .7rem;font-size:1.02rem;line-height:1.85;}
+.weekly-reflection .weekly-evidence > summary{font-size:.85rem;font-weight:400;color:var(--muted);}
+.weekly-reflection .weekly-followups{margin-top:.5rem;}
+.weekly-reflection .weekly-followups > h4{display:flex;justify-content:space-between;gap:.5rem;margin:0;padding:.65rem 0;font-size:.85rem;line-height:1.6;}
+.weekly-reflection .weekly-followups > h4 span{color:var(--muted);font-weight:400;white-space:nowrap;}
+.weekly-reflection .weekly-followup > summary{padding:.8rem 0;font-size:1rem;line-height:1.65;}
+.weekly-reflection .weekly-followup-answer{margin:.2rem 0 .9rem;font-size:1.02rem;line-height:1.85;}
+.weekly-reflection .weekly-controls{gap:.25rem 1rem;padding:.5rem 0;}
+.weekly-reflection .weekly-controls [data-weekly-status]{font-size:.76rem;}
+@media (max-width:560px){
+  .weekly-shell.weekly-reflection{width:calc(100% - 1.6rem);padding-top:1rem;}
+  .weekly-shell.weekly-reflection.weekly-embedded{width:100%;padding-top:.2rem;}
+  .weekly-reflection.weekly-embedded .weekly-hero h2{font-size:1.3rem;line-height:1.5;}
+  .weekly-reflection .weekly-card{margin:.8rem 0;padding:.85rem;}
+  .weekly-reflection .weekly-card-head h3{font-size:1.08rem;}
+  .weekly-reflection .weekly-controls{column-gap:.65rem;}
+  .weekly-reflection .weekly-controls label{font-size:.81rem;}
+  .weekly-reflection .weekly-pair{padding:1.2rem 0;}
+  .weekly-reflection .weekly-synthesis{padding:1.2rem 0;}
+}
+
 @media (prefers-reduced-motion:reduce){
   .weekly-shell,
   .weekly-shell *{scroll-behavior:auto;transition:none;animation:none;}

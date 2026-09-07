@@ -101,8 +101,10 @@ function checkPublicationEntries(root,manifest,weeks,verify){
       assertLanguages(doc,"ko","ko");
       for(const card of week.cards){
         const built=doc.getElementById(card.id);
-        assert.equal(built.querySelector('.weekly-answer [lang="ko"]').textContent,card.answer.ko);
-        assert.equal(built.querySelector('.weekly-answer [lang="en"]').textContent,card.answer.en);
+        if(week.schema_version===2)assertReflectionCard(built,card);
+        const opening=week.schema_version===2?card.first_response:card.answer;
+        assert.equal(built.querySelector('.weekly-answer [lang="ko"]').textContent,opening.ko);
+        assert.equal(built.querySelector('.weekly-answer [lang="en"]').textContent,opening.en);
         assert.equal(built.querySelectorAll('.weekly-evidence a').length,card.evidence.length);
       }
       for(const asset of ["weekly.js","weekly.css"]){
@@ -296,6 +298,64 @@ async function checkEmbeddedApp(root,week,verify){
   }finally{dom.window.close();}
 }
 
+function assertReflectionCard(rendered,card){
+  assert(rendered,`${card.id}: reflection card is rendered`);
+  const first=rendered.querySelector('[data-weekly-first-response]');
+  assert(first&&first.closest('details').open,`${card.id}: the reader's first statement starts open`);
+  assert.equal(rendered.querySelector('.weekly-card-head h2'),null,`${card.id}: no teacher question leads the card`);
+  assert.equal(rendered.querySelector('.weekly-analysis, .weekly-takeaway'),null,`${card.id}: detailed explanation belongs under followups`);
+  const group=rendered.querySelector('.weekly-followups');
+  assert(group&&(first.compareDocumentPosition(group)&4),`${card.id}: followups follow the first statement`);
+  assert.equal(group.closest('details'),null,`${card.id}: question list is not collapsed`);
+  const questions=[...group.querySelectorAll('.weekly-followup')];
+  assert.equal(questions.length,card.followups.length);
+  card.followups.forEach((followup,index)=>{
+    const detail=questions[index];
+    assert.equal(detail.id,followup.id);
+    assert.equal(detail.open,false,`${followup.id}: answer starts closed`);
+    for(const language of ['ko','en']){
+      assert.equal(detail.querySelector(`summary [lang="${language}"]`)?.textContent,followup.question[language]);
+      assert.equal(detail.querySelector(`.weekly-followup-answer [lang="${language}"]`)?.textContent,followup.answer[language]);
+    }
+  });
+}
+
+async function checkReflectionFixture(root,manifest,legacy,verify){
+  const reflection={...clone(legacy),schema_version:2,practice_format:'reflection-followups-v1'};
+  reflection.cards=legacy.cards.map(card=>({id:card.id,topic:card.topic,evidence:card.evidence,
+    first_response:bilingual('I found the connection between social expectations and individual choices interesting. Reading the two accounts together changed the questions I would ask about an everyday decision. I now want to understand both the available opportunities and the meaning of the decision for the person involved.','저는 사회적 기대와 개인의 선택이 연결된다는 점이 흥미로웠습니다. 두 글을 읽으며 일상의 선택에 관해 묻고 싶은 것이 달라졌습니다. 어떤 기회가 있었는지와 그 선택이 당사자에게 어떤 의미였는지를 함께 살펴보고 싶습니다.'),
+    followups:[{question:card.question,answer:card.answer},card.followup,{question:bilingual('What would you need to know before applying that idea?','그 생각을 적용하기 전에 무엇을 확인해야 하나요?'),answer:card.caution}].map((item,index)=>({id:`${card.id}-followup-0${index+1}`,...item}))
+  }));
+  verify('reflection data requires a first statement followed by three bilingual replies',()=>validateWeeklyData(root,manifest,reflection));
+  for(const [label,mutate] of [
+    ['missing first statement',copy=>{delete copy.cards[0].first_response;}],
+    ['missing Korean first statement',copy=>{copy.cards[0].first_response.ko='';}],
+    ['missing followups',copy=>{copy.cards[0].followups.pop();}],
+    ['duplicate followup IDs',copy=>{copy.cards[0].followups[1].id=copy.cards[0].followups[0].id;}],
+    ['missing Korean followup question',copy=>{copy.cards[0].followups[1].question.ko='';}],
+    ['missing English followup answer',copy=>{copy.cards[0].followups[1].answer.en='';}],
+    ['a teacher question still at the top level',copy=>{copy.cards[0].question=legacy.cards[0].question;}]
+  ]){const changed=clone(reflection);mutate(changed);verify(`reflection rejects ${label}`,()=>assert.throws(()=>validateWeeklyData(root,manifest,changed),/\[weekly\]/));}
+  const week={...reflection,pair:manifest.readings,id:'week-02',revision:'reflection-fixture'};
+  const html=renderWeeklyBody(root,week,helpers);
+  const dom=await boot(html,fs.readFileSync(path.join(ROOT,'scripts/weekly_connections_app.js'),'utf8'));
+  try{
+    const doc=dom.window.document;
+    verify('reflection opens first statements and exposes all questions with answers closed',()=>week.cards.forEach(card=>assertReflectionCard(doc.getElementById(card.id),card)));
+    verify('opening one followup keeps the other replies and background closed',()=>{
+      const details=[...doc.querySelectorAll('.weekly-followup')];
+      details[0].querySelector('summary').click();assert(details[0].open);
+      assert(details.slice(1).every(detail=>!detail.open));
+      assert(!doc.querySelector('.weekly-context').open);
+      change(dom,'[data-weekly-question-select]','en');assertLanguages(doc,'en','ko');
+      change(dom,'[data-weekly-hide-answers]',true);assert(details[0].open,'first-statement practice does not reset a chosen reply');
+      assert(doc.querySelectorAll('.weekly-followup summary').length===9,'questions stay available');
+    });
+  }finally{dom.window.close();}
+  await checkApp(root,week,verify);
+  await checkEmbeddedApp(root,week,verify);
+}
+
 function checkBuilt(root,weeks,verify){
   const site=path.join(root,"docs");
   const sourceDocuments=new Map();
@@ -329,12 +389,14 @@ function checkBuilt(root,weeks,verify){
           for(const card of week.cards){
             const rendered=doc.getElementById(card.id);
             assert(rendered,`${card.id}: question is reachable by its stable anchor`);
-            for(const [selector,value] of [["h2 [data-weekly-question-language]",card.question],[".weekly-answer [data-weekly-answer-language]",card.answer]]){
+            const fields=week.schema_version===2?[["h3 [data-weekly-question-language]",card.topic],[".weekly-answer [data-weekly-answer-language]",card.first_response]]:[["h2 [data-weekly-question-language]",card.question],[".weekly-answer [data-weekly-answer-language]",card.answer]];
+            for(const [selector,value] of fields){
               for(const language of ["en","ko"]){
                 const node=[...rendered.querySelectorAll(selector)].find((element)=>element.lang===language);
                 assert.equal(node?.textContent,value[language],`${card.id}: ${language} text matches reviewed content`);
               }
             }
+            if(week.schema_version===2)assertReflectionCard(rendered,card);
             const links=[...rendered.querySelectorAll(".weekly-evidence a[href]")];
             assert.equal(links.length,card.evidence.length);
             card.evidence.forEach((evidence,index)=>{
@@ -444,6 +506,7 @@ async function run(options={}){
     verify("a missing source reading blocks weekly publication",()=>assert.deepEqual(selectAvailableWeeks(weeks,sources.slice(0,1)),[]));
     await checkApp(fixture,weeks[0],verify);
     await checkEmbeddedApp(fixture,weeks[0],verify);
+    await checkReflectionFixture(fixture,manifest,data,verify);
   }finally{
     const relative=path.relative(tmp,path.resolve(fixture));
     if(!relative||relative.startsWith("..")||path.isAbsolute(relative))throw new Error("Refusing to remove a fixture outside project tmp");
@@ -464,4 +527,4 @@ async function run(options={}){
 }
 
 if(require.main===module)run({fixtureOnly:process.argv.includes("--fixture-only")}).catch((error)=>{console.error(error);process.exitCode=1;});
-module.exports={run};
+module.exports={run,assertReflectionCard};

@@ -1,13 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "week": 6,
   "title": {
     "en": "Time, choice, and how others respond",
     "ko": "시간·관계 선택·상대방의 반응"
   },
   "introduction": {
-    "en": "Explain relationship changes through both personal goals and responses from other people. Connect the two readings while distinguishing preferences, interaction strategies, and the conditions that make relationships satisfying.",
-    "ko": "관계의 변화를 개인의 목표와 상대방의 반응으로 함께 설명하는 연습입니다. 두 글을 연결하면서 관계 선호, 상호작용 전략, 만족을 가능하게 하는 조건을 구분해 보세요."
+    "en": "Start with what interested you when you read the two texts together. The questions below anticipate how your professor might respond; open each one to prepare your reply.",
+    "ko": "두 편을 함께 읽으며 흥미로웠던 점부터 말해 보세요. 그 말에 이어질 교수님의 질문을 보고, 눌러서 답변을 확인할 수 있습니다."
   },
   "connection": {
     "thesis": {
@@ -39,28 +39,12 @@
     {
       "id": "week-06-01",
       "topic": {
-        "en": "From goals to interactions",
-        "ko": "목표에서 상호작용으로"
+        "en": "Relationship quality takes more than one person",
+        "ko": "좋은 관계를 혼자 만드는 것은 아니라는 점"
       },
-      "question": {
-        "en": "How does Luong and colleagues' review extend socioemotional selectivity theory?",
-        "ko": "Luong과 동료들의 리뷰는 사회정서선택이론을 어떻게 확장하나요?"
-      },
-      "answer": {
-        "en": "Carstensen and colleagues explain how perceived time helps prioritize social goals: limited time increases the importance of present emotional meaning, which can shape partner selection and interaction. Luong and colleagues incorporate that explanation but ask what else produces more satisfying relationships. They consider appraisals, social expertise, changing roles, and the partner's behavior. In the Social Input Model, other people may respond more kindly, avoid confrontation, or forgive older adults, contributing to the relationship's emotional climate. I would therefore connect motivation with reciprocal interaction. The older person helps shape the social world, but does not create relationship quality alone; both partners and their circumstances matter, and positive experiences remain conditional rather than guaranteed.",
-        "ko": "Carstensen과 동료들은 지각된 시간이 사회적 목표의 우선순위를 어떻게 정하는지 설명합니다. 제한된 시간은 현재의 정서적 의미를 더 중요하게 만들어 상대 선택과 상호작용에 영향을 줄 수 있습니다. Luong과 동료들은 이 설명을 포함하면서 만족스러운 관계를 만드는 다른 요인도 묻습니다. 평가, 사회적 전문성, 역할 변화, 상대방의 행동을 고려합니다. 사회적 입력 모형에서는 다른 사람들이 노인에게 더 친절하게 반응하고 대립을 피하거나 용서하여 관계의 정서적 분위기에 기여할 수 있습니다. 따라서 저는 동기와 상호적인 상호작용을 연결하겠습니다. 노인은 자신의 사회적 세계를 형성하는 데 기여하지만 관계의 질을 혼자 만들지는 않습니다. 양쪽 사람과 그 여건이 중요하며, 긍정적 경험은 보장되는 것이 아니라 조건에 따라 달라집니다."
-      },
-      "takeaway": {
-        "en": "SST explains changing social priorities, while Luong and colleagues show how partners' responses and social circumstances also help produce the quality of older adults' relationships.",
-        "ko": "SST가 사회적 우선순위의 변화를 설명한다면, Luong과 동료들은 상대의 반응과 사회적 여건도 노인의 관계의 질을 함께 만든다는 점을 보여 줍니다."
-      },
-      "connection": {
-        "en": "Move from why a person values emotional meaning to how both partners sustain or undermine it in interaction.",
-        "ko": "개인이 정서적 의미를 중시하는 이유에서 출발해, 상호작용 속에서 양쪽이 그것을 어떻게 유지하거나 약화하는지로 나아갑니다."
-      },
-      "caution": {
-        "en": "SST already includes social interaction and is not purely intrapsychic. SIM adds a focused account of social inputs; the review does not establish one universal causal pathway.",
-        "ko": "SST도 이미 사회적 상호작용을 포함하며 순전히 개인 내적인 이론이 아닙니다. SIM은 사회적 입력에 초점을 맞춘 설명을 더하고, 리뷰가 보편적인 단일 인과경로를 확정하는 것은 아닙니다."
+      "first_response": {
+        "en": "I found it interesting that a satisfying relationship involves more than one person's priorities. Carstensen and colleagues helped me follow how perceived time shapes social goals, while Luong and colleagues drew my attention to how other people respond to an older partner. Together they made me think about the interaction itself. I wanted to understand how a person's choices and the treatment they receive work together in making a relationship feel good.",
+        "ko": "저는 만족스러운 관계가 한 사람의 우선순위만으로 만들어지지 않는다는 점이 흥미로웠습니다. Carstensen과 동료들은 지각된 시간이 사회적 목표를 바꾸는 과정을 보게 했고, Luong과 동료들은 상대가 노인에게 어떻게 반응하는지도 보게 했습니다. 두 글을 함께 읽으니 개인의 선택과 받는 대우가 상호작용 속에서 어떻게 맞물리는지 궁금해졌습니다."
       },
       "evidence": [
         {
@@ -100,42 +84,51 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "Whose time perspective matters in a relationship?",
-          "ko": "관계에서는 누구의 시간관점이 중요한가요?"
+      "followups": [
+        {
+          "id": "week-06-01-followup-01",
+          "question": {
+            "en": "How does Luong and colleagues' review extend socioemotional selectivity theory?",
+            "ko": "Luong과 동료들의 리뷰는 사회정서선택이론을 어떻게 확장하나요?"
+          },
+          "answer": {
+            "en": "Carstensen and colleagues explain how perceived time helps prioritize social goals: limited time increases the importance of present emotional meaning, which can shape partner selection and interaction. Luong and colleagues incorporate that explanation but ask what else produces more satisfying relationships. They consider appraisals, social expertise, changing roles, and the partner's behavior. In the Social Input Model, other people may respond more kindly, avoid confrontation, or forgive older adults, contributing to the relationship's emotional climate. I would therefore connect motivation with reciprocal interaction. The older person helps shape the social world, but does not create relationship quality alone; both partners and their circumstances matter, and positive experiences remain conditional rather than guaranteed.",
+            "ko": "Carstensen과 동료들은 지각된 시간이 사회적 목표의 우선순위를 어떻게 정하는지 설명합니다. 제한된 시간은 현재의 정서적 의미를 더 중요하게 만들어 상대 선택과 상호작용에 영향을 줄 수 있습니다. Luong과 동료들은 이 설명을 포함하면서 만족스러운 관계를 만드는 다른 요인도 묻습니다. 평가, 사회적 전문성, 역할 변화, 상대방의 행동을 고려합니다. 사회적 입력 모형에서는 다른 사람들이 노인에게 더 친절하게 반응하고 대립을 피하거나 용서하여 관계의 정서적 분위기에 기여할 수 있습니다. 따라서 저는 동기와 상호적인 상호작용을 연결하겠습니다. 노인은 자신의 사회적 세계를 형성하는 데 기여하지만 관계의 질을 혼자 만들지는 않습니다. 양쪽 사람과 그 여건이 중요하며, 긍정적 경험은 보장되는 것이 아니라 조건에 따라 달라집니다."
+          }
         },
-        "answer": {
-          "en": "Both a person's own future and the time partners believe they have together can matter. Luong and colleagues use relationship time to explain why another person may prioritize harmony with an older partner.",
-          "ko": "개인 자신의 미래와 상대들이 함께 남아 있다고 생각하는 시간이 모두 중요할 수 있습니다. Luong과 동료들은 관계에 남은 시간으로 상대가 노인과의 조화를 우선할 수 있는 이유를 설명합니다."
+        {
+          "id": "week-06-01-followup-02",
+          "question": {
+            "en": "Whose time perspective matters in a relationship?",
+            "ko": "관계에서는 누구의 시간관점이 중요한가요?"
+          },
+          "answer": {
+            "en": "Both a person's own future and the time partners believe they have together can matter. Luong and colleagues use relationship time to explain why another person may prioritize harmony with an older partner.",
+            "ko": "개인 자신의 미래와 상대들이 함께 남아 있다고 생각하는 시간이 모두 중요할 수 있습니다. Luong과 동료들은 관계에 남은 시간으로 상대가 노인과의 조화를 우선할 수 있는 이유를 설명합니다."
+          }
+        },
+        {
+          "id": "week-06-01-followup-03",
+          "question": {
+            "en": "Are you saying SST ignores interaction with other people?",
+            "ko": "그러면 SST는 타인과의 상호작용을 무시한다는 뜻인가요?"
+          },
+          "answer": {
+            "en": "No. SST already concerns social choices and the way people navigate interactions. Luong and colleagues include that account, then focus attention on additional inputs from partners and changing social environments. I see a difference in explanatory emphasis, not a division between a purely internal theory and a purely social one. Neither review establishes one pathway that guarantees a satisfying relationship.",
+            "ko": "아닙니다. SST도 사회적 선택과 상호작용을 이끌어 가는 방식을 다룹니다. Luong과 동료들은 그 설명을 포함하면서 상대방의 반응과 달라지는 사회환경을 더 살펴봅니다. 저는 설명의 초점이 다르다고 읽었지, 순전히 개인 내부인 이론과 순전히 사회적인 이론으로 나누지는 않았습니다. 어느 리뷰도 만족스러운 관계를 보장하는 단일 경로를 확정하지 않습니다."
+          }
         }
-      }
+      ]
     },
     {
       "id": "week-06-02",
       "topic": {
-        "en": "Time horizon versus age",
-        "ko": "시간지평과 나이의 구분"
+        "en": "The same age, a different sense of time",
+        "ko": "나이는 그대로인데 남은 시간이 달라지면"
       },
-      "question": {
-        "en": "What evidence suggests that social preferences depend on perceived time rather than age alone?",
-        "ko": "사회적 선호가 나이뿐 아니라 지각된 시간에 달려 있음을 어떤 근거가 보여 주나요?"
-      },
-      "answer": {
-        "en": "Carstensen and colleagues report imagined scenarios that change time while leaving participants' ages unchanged. When an approaching move limited future contact, younger participants preferred familiar partners more like older participants did. When older adults imagined a medical breakthrough adding twenty years, their usual preference for familiar partners disappeared. Luong and colleagues extend this logic to responses within relationships: imagined limits on future contact could encourage avoiding arguments with younger as well as older partners. Together, these findings support time perspective as a mechanism beyond chronological age. But the outcomes are choices or intended responses under specified scenarios, not proof that an imagined extension changes actual lifespan or permanently transforms someone's real social network.",
-        "ko": "Carstensen과 동료들은 참여자의 나이를 바꾸지 않고 시간을 달리하는 상상 시나리오를 보고합니다. 다가오는 이사가 향후 접촉을 제한하면 젊은 참여자도 고령 참여자처럼 친숙한 상대를 더 선호했습니다. 노인에게 의학적 진전으로 20년을 더 산다고 상상하게 하자, 평소의 친숙한 상대 선호가 사라졌습니다. Luong과 동료들은 이 논리를 관계 안의 반응으로 확장합니다. 향후 접촉이 제한된다고 상상하면 고령 상대뿐 아니라 젊은 상대와도 논쟁을 피하려 할 수 있었습니다. 이 결과들은 연대기적 연령을 넘어 시간관점이 작동한다는 설명을 뒷받침합니다. 그러나 결과는 특정 시나리오의 선택이나 의도된 반응입니다. 상상의 수명 연장이 실제 수명을 바꾸거나 현실의 관계망을 영구적으로 바꾼다는 증명은 아닙니다."
-      },
-      "takeaway": {
-        "en": "Changing imagined time can change preferences without changing age, and perceived time within a relationship can also influence how partners respond to conflict.",
-        "ko": "상상 속 시간을 바꾸면 나이를 바꾸지 않고도 선호가 달라질 수 있으며, 관계에 남은 시간의 지각도 갈등에 대한 상대의 반응에 관여할 수 있습니다."
-      },
-      "connection": {
-        "en": "Connect experiments on selecting partners with studies of responding to partners, preserving their different outcome measures.",
-        "ko": "상대를 선택하는 실험과 상대에게 반응하는 연구를 연결하되, 서로 다른 결과 지표를 유지합니다."
-      },
-      "caution": {
-        "en": "The Hong Kong handover comparison is a historical comparison, distinct from randomized or controlled imagined scenarios. It cannot isolate time perspective from every concurrent social change.",
-        "ko": "홍콩 반환 전후 비교는 역사적 비교이며 무작위 또는 통제된 상상 시나리오와 다릅니다. 동시에 일어난 모든 사회적 변화에서 시간관점만을 분리하지는 못합니다."
+      "first_response": {
+        "en": "I was struck by the imagined-time studies because the participants' ages stayed the same while their preferences could change. Carstensen and colleagues examine whom people want to meet, and Luong and colleagues examine intended responses when time with a partner feels limited. I found that connection more interesting than a simple age difference. It made me ask what ending someone anticipates, not just how old they are.",
+        "ko": "저는 참여자의 나이는 그대로인데 상상하는 시간이 달라지면 선호가 바뀔 수 있다는 점이 인상적이었습니다. Carstensen과 동료들은 누구를 만나고 싶은지 살펴보고, Luong과 동료들은 상대와 함께할 시간이 제한될 때 어떻게 반응하려 하는지 살펴봅니다. 두 글을 함께 읽으니 단순한 연령 차이보다 그 사람이 어떤 끝을 예상하고 있는지가 궁금해졌습니다."
       },
       "evidence": [
         {
@@ -175,42 +168,51 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "Does SST predict that older adults stop wanting information?",
-          "ko": "SST는 노인이 정보를 원하지 않게 된다고 예측하나요?"
+      "followups": [
+        {
+          "id": "week-06-02-followup-01",
+          "question": {
+            "en": "What evidence suggests that social preferences depend on perceived time rather than age alone?",
+            "ko": "사회적 선호가 나이뿐 아니라 지각된 시간에 달려 있음을 어떤 근거가 보여 주나요?"
+          },
+          "answer": {
+            "en": "Carstensen and colleagues report imagined scenarios that change time while leaving participants' ages unchanged. When an approaching move limited future contact, younger participants preferred familiar partners more like older participants did. When older adults imagined a medical breakthrough adding twenty years, their usual preference for familiar partners disappeared. Luong and colleagues extend this logic to responses within relationships: imagined limits on future contact could encourage avoiding arguments with younger as well as older partners. Together, these findings support time perspective as a mechanism beyond chronological age. But the outcomes are choices or intended responses under specified scenarios, not proof that an imagined extension changes actual lifespan or permanently transforms someone's real social network.",
+            "ko": "Carstensen과 동료들은 참여자의 나이를 바꾸지 않고 시간을 달리하는 상상 시나리오를 보고합니다. 다가오는 이사가 향후 접촉을 제한하면 젊은 참여자도 고령 참여자처럼 친숙한 상대를 더 선호했습니다. 노인에게 의학적 진전으로 20년을 더 산다고 상상하게 하자, 평소의 친숙한 상대 선호가 사라졌습니다. Luong과 동료들은 이 논리를 관계 안의 반응으로 확장합니다. 향후 접촉이 제한된다고 상상하면 고령 상대뿐 아니라 젊은 상대와도 논쟁을 피하려 할 수 있었습니다. 이 결과들은 연대기적 연령을 넘어 시간관점이 작동한다는 설명을 뒷받침합니다. 그러나 결과는 특정 시나리오의 선택이나 의도된 반응입니다. 상상의 수명 연장이 실제 수명을 바꾸거나 현실의 관계망을 영구적으로 바꾼다는 증명은 아닙니다."
+          }
         },
-        "answer": {
-          "en": "No. Knowledge and emotional goals overlap, and immediately relevant information can still be sought when time feels limited. The theory concerns relative priorities, not the disappearance of learning motives.",
-          "ko": "아닙니다. 지식 목표와 정서 목표는 겹치며, 시간이 제한되어도 당장 필요한 정보는 찾을 수 있습니다. 이론은 학습 동기의 소멸이 아니라 상대적 우선순위에 관한 것입니다."
+        {
+          "id": "week-06-02-followup-02",
+          "question": {
+            "en": "Does SST predict that older adults stop wanting information?",
+            "ko": "SST는 노인이 정보를 원하지 않게 된다고 예측하나요?"
+          },
+          "answer": {
+            "en": "No. Knowledge and emotional goals overlap, and immediately relevant information can still be sought when time feels limited. The theory concerns relative priorities, not the disappearance of learning motives.",
+            "ko": "아닙니다. 지식 목표와 정서 목표는 겹치며, 시간이 제한되어도 당장 필요한 정보는 찾을 수 있습니다. 이론은 학습 동기의 소멸이 아니라 상대적 우선순위에 관한 것입니다."
+          }
+        },
+        {
+          "id": "week-06-02-followup-03",
+          "question": {
+            "en": "Was this also examined outside an imagined scenario?",
+            "ko": "상상 시나리오 밖에서도 그런 변화가 확인됐나요?"
+          },
+          "answer": {
+            "en": "Carstensen and colleagues discuss social preferences around the Hong Kong handover: preferences shifted near the anticipated ending and later resembled the earlier age pattern. That supports asking about real-world endings, but the historical comparison differs from a controlled scenario. It cannot isolate perceived time from every other change occurring then, so I would keep the designs separate when describing the evidence.",
+            "ko": "Carstensen과 동료들은 홍콩 반환 전후의 사회적 선호를 다룹니다. 예상된 끝이 가까울 때 선호가 달라졌다가 이후에는 이전의 연령 패턴과 비슷해졌습니다. 현실의 끝을 물을 근거가 되지만, 역사적 비교는 통제된 시나리오와 다릅니다. 당시의 다른 변화에서 시간관점만을 완전히 분리할 수 없으므로 근거를 설명할 때 설계를 구분하겠습니다."
+          }
         }
-      }
+      ]
     },
     {
       "id": "week-06-03",
       "topic": {
-        "en": "Small networks and unmet needs",
-        "ko": "작은 관계망과 충족되지 않는 필요"
+        "en": "Fewer ties can mean different things",
+        "ko": "관계가 줄었다는 말만으로 알 수 없는 것"
       },
-      "question": {
-        "en": "When does a smaller social network reflect selectivity, and when might it signal a problem?",
-        "ko": "작은 관계망은 언제 선택성을 반영하고, 언제 문제가 있다는 신호가 될 수 있나요?"
-      },
-      "answer": {
-        "en": "The composition and adequacy of the network matter more than size alone. Carstensen and colleagues describe reductions in peripheral contacts alongside maintenance of emotionally close ties, consistent with selective investment rather than universal withdrawal. Luong and colleagues review similarly satisfying close relationships, but explicitly warn that networks can become too small to meet social needs. I would therefore ask which ties disappeared, whether the change was wanted, and whether dependable companionship and support remain available. This is an application of both readings, not a diagnosis based on a contact count. Loss, barriers, and personal preference can coexist, so a small network is neither automatically evidence of successful selection nor automatically evidence of loneliness.",
-        "ko": "크기만이 아니라 관계망의 구성과 필요를 충족하는 정도가 중요합니다. Carstensen과 동료들은 주변적 접촉이 줄어드는 가운데 정서적으로 가까운 유대는 유지되는 모습을 설명합니다. 이는 보편적인 철회보다 선택적 투자에 부합합니다. Luong과 동료들도 만족스러운 가까운 관계를 검토하지만, 관계망이 사회적 필요를 충족하지 못할 정도로 작아질 수 있음을 명시적으로 경고합니다. 따라서 저는 어떤 유대가 사라졌고 그 변화가 본인이 원한 것인지, 믿을 만한 동반자와 지원이 여전히 있는지 묻겠습니다. 이는 두 읽기의 적용이며 접촉 수를 기준으로 한 진단은 아닙니다. 상실, 장벽, 개인적 선호는 함께 존재할 수 있으므로 작은 관계망이 자동으로 성공적인 선택이나 외로움의 증거가 되지는 않습니다."
-      },
-      "takeaway": {
-        "en": "A smaller network can preserve meaningful ties, but its value depends on wanted relationships and adequate support, not on having fewer contacts in itself.",
-        "ko": "작은 관계망에서도 의미 있는 유대가 유지될 수 있지만, 그 가치는 접촉 수의 감소 자체가 아니라 원하는 관계와 충분한 지원에 달려 있습니다."
-      },
-      "connection": {
-        "en": "Combine SST's distinction between peripheral and close ties with Luong's warning about unmet social needs.",
-        "ko": "SST의 주변부·친밀한 유대 구분에 Luong의 충족되지 않는 사회적 필요에 대한 경고를 결합합니다."
-      },
-      "caution": {
-        "en": "A reported association involving fewer than three close partners is not a universal cutoff or a prescription to maintain exactly three relationships. Needs and circumstances differ.",
-        "ko": "가까운 상대가 3명 미만일 때의 보고된 관련성은 보편적인 경계나 정확히 3개 관계를 유지하라는 처방이 아닙니다. 필요와 여건은 서로 다릅니다."
+      "first_response": {
+        "en": "I found the two readings useful for slowing down my judgment of a smaller network. Carstensen and colleagues describe selective investment in close ties, while Luong and colleagues warn about networks becoming too small to meet social needs. That made the meaning of the change more interesting than the count. I would want to hear which relationships remain, whether the change was wanted, and whether the person has the contact they need.",
+        "ko": "저는 두 글을 읽으며 관계망이 작아졌다는 사실만으로 판단하기를 멈추게 됐습니다. Carstensen과 동료들은 가까운 관계에 선택적으로 투자하는 모습을 설명하고, Luong과 동료들은 필요를 충족하지 못할 만큼 작아질 수도 있다고 경고합니다. 관계 수보다 변화의 의미가 흥미로워졌습니다. 누가 남아 있는지, 원한 변화인지, 필요한 접촉이 가능한지 듣고 싶습니다."
       },
       "evidence": [
         {
@@ -241,42 +243,51 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "Would you automatically enroll an older relative in more social activities?",
-          "ko": "고령 가족에게 사회활동을 무조건 더 많이 권하겠어요?"
+      "followups": [
+        {
+          "id": "week-06-03-followup-01",
+          "question": {
+            "en": "When does a smaller social network reflect selectivity, and when might it signal a problem?",
+            "ko": "작은 관계망은 언제 선택성을 반영하고, 언제 문제가 있다는 신호가 될 수 있나요?"
+          },
+          "answer": {
+            "en": "The composition and adequacy of the network matter more than size alone. Carstensen and colleagues describe reductions in peripheral contacts alongside maintenance of emotionally close ties, consistent with selective investment rather than universal withdrawal. Luong and colleagues review similarly satisfying close relationships, but explicitly warn that networks can become too small to meet social needs. I would therefore ask which ties disappeared, whether the change was wanted, and whether dependable companionship and support remain available. This is an application of both readings, not a diagnosis based on a contact count. Loss, barriers, and personal preference can coexist, so a small network is neither automatically evidence of successful selection nor automatically evidence of loneliness.",
+            "ko": "크기만이 아니라 관계망의 구성과 필요를 충족하는 정도가 중요합니다. Carstensen과 동료들은 주변적 접촉이 줄어드는 가운데 정서적으로 가까운 유대는 유지되는 모습을 설명합니다. 이는 보편적인 철회보다 선택적 투자에 부합합니다. Luong과 동료들도 만족스러운 가까운 관계를 검토하지만, 관계망이 사회적 필요를 충족하지 못할 정도로 작아질 수 있음을 명시적으로 경고합니다. 따라서 저는 어떤 유대가 사라졌고 그 변화가 본인이 원한 것인지, 믿을 만한 동반자와 지원이 여전히 있는지 묻겠습니다. 이는 두 읽기의 적용이며 접촉 수를 기준으로 한 진단은 아닙니다. 상실, 장벽, 개인적 선호는 함께 존재할 수 있으므로 작은 관계망이 자동으로 성공적인 선택이나 외로움의 증거가 되지는 않습니다."
+          }
         },
-        "answer": {
-          "en": "No. In a hypothetical case, I would first ask what contact they want and whether practical barriers prevent it. Increasing activity counts may miss the need for one dependable, meaningful relationship.",
-          "ko": "아닙니다. 가상 사례라면 먼저 어떤 접촉을 원하는지, 현실적인 장벽이 막고 있는지 묻겠습니다. 활동 수를 늘리려다 믿을 만하고 의미 있는 한 관계가 필요하다는 점을 놓칠 수 있습니다."
+        {
+          "id": "week-06-03-followup-02",
+          "question": {
+            "en": "Would you automatically enroll an older relative in more social activities?",
+            "ko": "고령 가족에게 사회활동을 무조건 더 많이 권하겠어요?"
+          },
+          "answer": {
+            "en": "No. In a hypothetical case, I would first ask what contact they want and whether practical barriers prevent it. Increasing activity counts may miss the need for one dependable, meaningful relationship.",
+            "ko": "아닙니다. 가상 사례라면 먼저 어떤 접촉을 원하는지, 현실적인 장벽이 막고 있는지 묻겠습니다. 활동 수를 늘리려다 믿을 만하고 의미 있는 한 관계가 필요하다는 점을 놓칠 수 있습니다."
+          }
+        },
+        {
+          "id": "week-06-03-followup-03",
+          "question": {
+            "en": "Does the finding about three close partners give us a minimum target?",
+            "ko": "가까운 상대가 3명은 있어야 한다는 기준으로 쓰면 될까요?"
+          },
+          "answer": {
+            "en": "No. Luong and colleagues report an association involving fewer than three close partners in a cited study, not a universal threshold for a good network. Needs, reliability, and opportunities differ. I would use that result as a reason to examine unmet needs, while avoiding a prescription that everyone needs exactly three ties or that any smaller network must be inadequate.",
+            "ko": "아닙니다. Luong과 동료들은 인용한 연구에서 가까운 상대가 3명 미만인 경우의 관련성을 보고합니다. 좋은 관계망의 보편적인 경계가 아닙니다. 필요와 관계의 신뢰성, 접촉 기회는 다릅니다. 충족되지 않은 필요를 살펴볼 이유로 삼되, 누구에게나 정확히 3명이 필요하다거나 더 작은 관계망은 모두 부족하다고 처방하지 않겠습니다."
+          }
         }
-      }
+      ]
     },
     {
       "id": "week-06-04",
       "topic": {
-        "en": "Avoiding conflict and regulating emotion",
-        "ko": "갈등 회피와 정서조절"
+        "en": "Not arguing can still involve emotion",
+        "ko": "논쟁을 피하는 것도 정서적 관여일 수 있음"
       },
-      "question": {
-        "en": "Does avoiding arguments mean that older adults are less emotionally engaged?",
-        "ko": "논쟁을 피한다는 것은 노인이 정서적으로 덜 관여한다는 뜻인가요?"
-      },
-      "answer": {
-        "en": "Not necessarily. Carstensen and colleagues describe older couples expressing affection while discussing disagreements, which is different from emotional withdrawal. Their daily-life evidence also distinguishes how often negative feelings occur from how intensely they are felt. Luong and colleagues explain that avoiding a conflict can protect emotional well-being in some situations, especially when preserving the relationship matters more than changing the partner. But avoidance may also leave problems unresolved, and older adults can be just as reactive when arguments actually occur. Together, the readings suggest evaluating the goal, context, and consequences of a strategy. Less confrontation can reflect active regulation, but it does not prove that the problem disappeared or that silence is always beneficial.",
-        "ko": "반드시 그렇지는 않습니다. Carstensen과 동료들은 고령 부부가 의견 차이를 논의하면서도 애정을 표현하는 모습을 설명하며, 이는 정서적 철회와 다릅니다. 일상생활 근거에서도 부정적 감정이 얼마나 자주 발생하는지와 얼마나 강하게 느끼는지를 구분합니다. Luong과 동료들은 일부 상황에서, 특히 상대를 바꾸는 것보다 관계 유지가 더 중요할 때 갈등 회피가 정서적 안녕을 지킬 수 있다고 설명합니다. 그러나 회피는 문제를 미해결로 남길 수 있고, 실제 논쟁이 일어나면 노인도 똑같이 크게 반응할 수 있습니다. 따라서 두 읽기는 전략의 목표·맥락·결과를 평가하게 합니다. 대립이 적은 것은 능동적 조절일 수 있지만, 문제가 사라졌거나 침묵이 늘 이롭다는 증거는 아닙니다."
-      },
-      "takeaway": {
-        "en": "Avoiding an argument can be active emotion regulation, but its value depends on context and consequences; fewer confrontations do not establish that underlying problems are resolved.",
-        "ko": "논쟁 회피는 능동적 정서조절일 수 있지만 그 가치는 맥락과 결과에 달려 있으며, 대립이 적다고 근본 문제가 해결되었다고 볼 수는 없습니다."
-      },
-      "connection": {
-        "en": "SST supplies the priority given to emotional meaning; Luong's review examines when particular conflict strategies help and what they may leave unresolved.",
-        "ko": "SST는 정서적 의미의 우선순위를 설명하고, Luong의 리뷰는 구체적인 갈등 전략이 언제 도움이 되며 무엇을 미해결로 남기는지 검토합니다."
-      },
-      "caution": {
-        "en": "Do not merge frequency, intensity, and relationship satisfaction into one measure. Avoidance is not a universal recommendation for serious or ongoing interpersonal problems.",
-        "ko": "빈도·강도·관계 만족을 하나의 지표로 합치면 안 됩니다. 회피는 심각하거나 지속되는 대인관계 문제에 대한 보편적인 권고가 아닙니다."
+      "first_response": {
+        "en": "I found it interesting that less confrontation need not mean less emotional involvement. Carstensen and colleagues describe affection within disagreements, and Luong and colleagues discuss avoiding conflict to preserve harmony. Together they made me think about what a person is trying to protect when they let something pass. I would be more interested in the goal and the consequences than in labelling a quiet response as simple withdrawal.",
+        "ko": "저는 대립이 적다고 정서적 관여도 적은 것은 아니라는 점이 흥미로웠습니다. Carstensen과 동료들은 의견이 다른 순간에도 애정이 나타나는 모습을 보여 주고, Luong과 동료들은 조화를 지키기 위한 갈등 회피를 다룹니다. 두 글을 읽으니 그냥 넘어가는 사람이 무엇을 지키려 하는지 궁금해졌습니다. 조용한 반응을 곧 철회라고 하기보다 그 목표와 결과를 보고 싶습니다."
       },
       "evidence": [
         {
@@ -307,42 +318,51 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "Could positive feelings and negative feelings coexist during a disagreement?",
-          "ko": "의견이 다를 때 긍정적인 감정과 부정적인 감정이 함께 있을 수 있나요?"
+      "followups": [
+        {
+          "id": "week-06-04-followup-01",
+          "question": {
+            "en": "Does avoiding arguments mean that older adults are less emotionally engaged?",
+            "ko": "논쟁을 피한다는 것은 노인이 정서적으로 덜 관여한다는 뜻인가요?"
+          },
+          "answer": {
+            "en": "Not necessarily. Carstensen and colleagues describe older couples expressing affection while discussing disagreements, which is different from emotional withdrawal. Their daily-life evidence also distinguishes how often negative feelings occur from how intensely they are felt. Luong and colleagues explain that avoiding a conflict can protect emotional well-being in some situations, especially when preserving the relationship matters more than changing the partner. But avoidance may also leave problems unresolved, and older adults can be just as reactive when arguments actually occur. Together, the readings suggest evaluating the goal, context, and consequences of a strategy. Less confrontation can reflect active regulation, but it does not prove that the problem disappeared or that silence is always beneficial.",
+            "ko": "반드시 그렇지는 않습니다. Carstensen과 동료들은 고령 부부가 의견 차이를 논의하면서도 애정을 표현하는 모습을 설명하며, 이는 정서적 철회와 다릅니다. 일상생활 근거에서도 부정적 감정이 얼마나 자주 발생하는지와 얼마나 강하게 느끼는지를 구분합니다. Luong과 동료들은 일부 상황에서, 특히 상대를 바꾸는 것보다 관계 유지가 더 중요할 때 갈등 회피가 정서적 안녕을 지킬 수 있다고 설명합니다. 그러나 회피는 문제를 미해결로 남길 수 있고, 실제 논쟁이 일어나면 노인도 똑같이 크게 반응할 수 있습니다. 따라서 두 읽기는 전략의 목표·맥락·결과를 평가하게 합니다. 대립이 적은 것은 능동적 조절일 수 있지만, 문제가 사라졌거나 침묵이 늘 이롭다는 증거는 아닙니다."
+          }
         },
-        "answer": {
-          "en": "Yes. The older-couple observations include affection alongside discontent, and the daily-life findings suggest more mixed emotional experience with age. Greater emotional meaning does not require the absence of all negative feeling.",
-          "ko": "그럴 수 있습니다. 고령 부부 관찰에는 불만과 함께 애정이 나타나고, 일상자료는 나이가 들수록 더 혼합된 정서 경험을 시사합니다. 정서적 의미가 크려면 부정적 감정이 전혀 없어야 하는 것은 아닙니다."
+        {
+          "id": "week-06-04-followup-02",
+          "question": {
+            "en": "Could positive feelings and negative feelings coexist during a disagreement?",
+            "ko": "의견이 다를 때 긍정적인 감정과 부정적인 감정이 함께 있을 수 있나요?"
+          },
+          "answer": {
+            "en": "Yes. The older-couple observations include affection alongside discontent, and the daily-life findings suggest more mixed emotional experience with age. Greater emotional meaning does not require the absence of all negative feeling.",
+            "ko": "그럴 수 있습니다. 고령 부부 관찰에는 불만과 함께 애정이 나타나고, 일상자료는 나이가 들수록 더 혼합된 정서 경험을 시사합니다. 정서적 의미가 크려면 부정적 감정이 전혀 없어야 하는 것은 아닙니다."
+          }
+        },
+        {
+          "id": "week-06-04-followup-03",
+          "question": {
+            "en": "Then is avoiding conflict always better for the relationship?",
+            "ko": "그럼 갈등을 피하는 게 관계에는 늘 더 좋은가요?"
+          },
+          "answer": {
+            "en": "No. Avoidance can reduce distress in some circumstances while leaving an issue unresolved. Luong and colleagues also report that when an argument occurs, older adults may be just as emotionally reactive. Carstensen and colleagues distinguish how often negative emotions occur from how intensely they are felt. Fewer arguments, weaker feelings, and greater satisfaction are therefore not interchangeable outcomes.",
+            "ko": "아닙니다. 회피는 어떤 상황에서 고통을 줄이면서도 문제를 해결하지 않은 채 남길 수 있습니다. Luong과 동료들은 실제 논쟁이 일어나면 노인도 정서적으로 똑같이 크게 반응할 수 있다고 보고합니다. Carstensen과 동료들은 부정적 감정의 발생 빈도와 느끼는 강도를 구분합니다. 따라서 논쟁이 적음, 감정이 약함, 만족이 높음은 같은 결과가 아닙니다."
+          }
         }
-      }
+      ]
     },
     {
       "id": "week-06-05",
       "topic": {
-        "en": "Kindness and age stereotypes",
-        "ko": "친절한 대우와 연령 고정관념"
+        "en": "A kind response can have an unkind assumption",
+        "ko": "친절한 반응의 출발점이 궁금했던 이유"
       },
-      "question": {
-        "en": "Can kinder treatment of older adults still be based on a negative age stereotype?",
-        "ko": "노인에게 더 친절하게 대하는 행동도 부정적 연령 고정관념에 기초할 수 있나요?"
-      },
-      "answer": {
-        "en": "Yes. Luong and colleagues describe vignette findings in which an older woman's failure to pay was more often attributed to forgetfulness, with less blame, than the same behavior by a younger woman. The treatment was more lenient, but the explanation could still rely on a negative assumption about memory. Carstensen and colleagues offer another possible route to gentler interaction: people who perceive limited time may prioritize emotional harmony. Together, the readings show that similar outward behavior can arise from different processes. I would distinguish respecting someone's goals from excusing them because of presumed incapacity. That distinction is my interpretation; neither kindness nor reduced blame by itself establishes that the person is being understood accurately.",
-        "ko": "그럴 수 있습니다. Luong과 동료들이 소개한 시나리오 결과에서는 고령 여성이 계산하지 않은 행동을 젊은 여성의 같은 행동보다 건망증으로 보는 경우가 더 많았고 비난도 적었습니다. 대우는 더 관대했지만 설명은 여전히 기억에 대한 부정적 가정에 기초할 수 있습니다. Carstensen과 동료들은 더 부드러운 상호작용의 또 다른 경로를 제시합니다. 시간이 제한되었다고 지각하면 정서적 조화를 우선할 수 있습니다. 두 글은 겉으로 비슷한 행동이 서로 다른 과정에서 나올 수 있음을 보여 줍니다. 저는 당사자의 목표를 존중하는 것과 능력이 부족하다고 가정하여 잘못을 눈감아 주는 것을 구분하겠습니다. 이 구분은 제 해석이며, 친절이나 적은 비난만으로 상대를 정확히 이해하고 있다고 확정할 수는 없습니다."
-      },
-      "takeaway": {
-        "en": "Kind treatment can reflect concern for emotional harmony or stereotyped assumptions, so the same outward behavior does not identify its motive or establish respect for the individual.",
-        "ko": "친절한 대우는 정서적 조화에 대한 관심이나 고정관념적 가정을 반영할 수 있으므로, 겉으로 같은 행동만으로 동기나 개인에 대한 존중을 확정할 수 없습니다."
-      },
-      "connection": {
-        "en": "Compare time-based motivation with stereotype-based attributions as possible explanations for favorable social inputs.",
-        "ko": "호의적인 사회적 입력의 가능한 설명으로 시간에 기초한 동기와 고정관념에 기초한 귀인을 비교합니다."
-      },
-      "caution": {
-        "en": "The vignette evidence concerns judgments of described situations. It does not justify promoting stereotypes or establish how every older person experiences leniency.",
-        "ko": "시나리오 근거는 묘사된 상황에 대한 판단을 다룹니다. 고정관념을 조장할 근거도, 모든 노인이 관대함을 어떻게 경험하는지 밝힌 결과도 아닙니다."
+      "first_response": {
+        "en": "Luong and colleagues' example of greater leniency toward an older person stayed with me because it could rest on an assumption of forgetfulness. Carstensen and colleagues offered another reason for seeking harmony: perceived limits on time. I found it interesting that similar gentle responses could come from quite different interpretations. Reading the two together made me want to ask what the kindness assumes about the person receiving it.",
+        "ko": "저는 Luong과 동료들이 소개한 관대한 반응이 건망증에 대한 가정에서 나올 수 있다는 점이 인상적이었습니다. Carstensen과 동료들은 남은 시간이 제한돼 보일 때 조화를 중시하는 또 다른 이유를 제시합니다. 비슷하게 부드러운 반응도 출발점은 다를 수 있다는 점이 흥미로웠습니다. 두 글을 읽으며 그 친절이 상대를 어떤 사람으로 보고 있는지 묻게 됐습니다."
       },
       "evidence": [
         {
@@ -373,42 +393,51 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "What would you ask in a hypothetical family example?",
-          "ko": "가상의 가족 사례에서는 무엇을 물어보겠어요?"
+      "followups": [
+        {
+          "id": "week-06-05-followup-01",
+          "question": {
+            "en": "Can kinder treatment of older adults still be based on a negative age stereotype?",
+            "ko": "노인에게 더 친절하게 대하는 행동도 부정적 연령 고정관념에 기초할 수 있나요?"
+          },
+          "answer": {
+            "en": "Yes. Luong and colleagues describe vignette findings in which an older woman's failure to pay was more often attributed to forgetfulness, with less blame, than the same behavior by a younger woman. The treatment was more lenient, but the explanation could still rely on a negative assumption about memory. Carstensen and colleagues offer another possible route to gentler interaction: people who perceive limited time may prioritize emotional harmony. Together, the readings show that similar outward behavior can arise from different processes. I would distinguish respecting someone's goals from excusing them because of presumed incapacity. That distinction is my interpretation; neither kindness nor reduced blame by itself establishes that the person is being understood accurately.",
+            "ko": "그럴 수 있습니다. Luong과 동료들이 소개한 시나리오 결과에서는 고령 여성이 계산하지 않은 행동을 젊은 여성의 같은 행동보다 건망증으로 보는 경우가 더 많았고 비난도 적었습니다. 대우는 더 관대했지만 설명은 여전히 기억에 대한 부정적 가정에 기초할 수 있습니다. Carstensen과 동료들은 더 부드러운 상호작용의 또 다른 경로를 제시합니다. 시간이 제한되었다고 지각하면 정서적 조화를 우선할 수 있습니다. 두 글은 겉으로 비슷한 행동이 서로 다른 과정에서 나올 수 있음을 보여 줍니다. 저는 당사자의 목표를 존중하는 것과 능력이 부족하다고 가정하여 잘못을 눈감아 주는 것을 구분하겠습니다. 이 구분은 제 해석이며, 친절이나 적은 비난만으로 상대를 정확히 이해하고 있다고 확정할 수는 없습니다."
+          }
         },
-        "answer": {
-          "en": "I would ask whether a gentle response follows the person's actual wishes and behavior or an automatic assumption that age makes them incapable. This is a practical distinction inferred from the readings, not a tested intervention.",
-          "ko": "부드러운 반응이 당사자의 실제 바람과 행동을 반영하는지, 나이가 많아 능력이 부족하다는 자동적인 가정에 따른 것인지 묻겠습니다. 이는 읽기에서 추론한 실천적 구분이며 검증된 개입이 아닙니다."
+        {
+          "id": "week-06-05-followup-02",
+          "question": {
+            "en": "What would you ask in a hypothetical family example?",
+            "ko": "가상의 가족 사례에서는 무엇을 물어보겠어요?"
+          },
+          "answer": {
+            "en": "I would ask whether a gentle response follows the person's actual wishes and behavior or an automatic assumption that age makes them incapable. This is a practical distinction inferred from the readings, not a tested intervention.",
+            "ko": "부드러운 반응이 당사자의 실제 바람과 행동을 반영하는지, 나이가 많아 능력이 부족하다는 자동적인 가정에 따른 것인지 묻겠습니다. 이는 읽기에서 추론한 실천적 구분이며 검증된 개입이 아닙니다."
+          }
+        },
+        {
+          "id": "week-06-05-followup-03",
+          "question": {
+            "en": "Would that justify encouraging negative stereotypes if they produce kindness?",
+            "ko": "친절을 낳는다면 부정적 고정관념도 권장할 만한가요?"
+          },
+          "answer": {
+            "en": "I would not make that recommendation. The vignette findings concern judgments about described situations, not proof that stereotypes improve the recipient's overall experience. Less blame can still rest on an inaccurate assumption about ability. The distinction I draw from the readings is to examine the reason for the response and the person's own wishes, rather than equate preferential treatment with respect.",
+            "ko": "그런 권고를 하지는 않겠습니다. 시나리오 결과는 묘사된 상황에 대한 판단이며, 고정관념이 당사자의 전체 경험을 개선한다는 증명이 아닙니다. 비난이 적어도 능력에 관한 부정확한 가정이 깔려 있을 수 있습니다. 저는 우대하는 행동을 곧 존중이라고 보기보다 반응의 이유와 당사자의 바람을 함께 살펴봐야 한다고 읽었습니다."
+          }
         }
-      }
+      ]
     },
     {
       "id": "week-06-06",
       "topic": {
-        "en": "Roles, culture, and family contexts",
-        "ko": "역할·문화·가족 맥락"
+        "en": "More family time does not explain its quality",
+        "ko": "함께하는 시간과 좋은 시간의 차이"
       },
-      "question": {
-        "en": "Would retirement and more time with family necessarily improve an older person's relationships?",
-        "ko": "은퇴하고 가족과 보내는 시간이 늘면 노인의 관계가 반드시 좋아질까요?"
-      },
-      "answer": {
-        "en": "I would not assume that. Carstensen and colleagues predict that time perspective affects which relationships people value, but valuing closeness does not guarantee that every close interaction is pleasant. Luong and colleagues show that social environments also change: retirement may remove unavoidable work tensions, while co-residence can bring both support and conflict, and caregiving can create substantial distress. In a hypothetical family case, I would ask whether retirement increased choice, altered daily demands, or intensified contact that someone finds difficult. The combined explanation treats motives and opportunities as interacting conditions. It does not infer relationship quality from age, retirement status, or family contact alone, and it leaves room for cultural and cohort differences.",
-        "ko": "저는 그렇다고 가정하지 않겠습니다. Carstensen과 동료들은 시간관점이 어떤 관계를 중시하는지에 영향을 준다고 예측하지만, 친밀함을 중시한다고 모든 가까운 상호작용이 즐거운 것은 아닙니다. Luong과 동료들은 사회적 환경도 변함을 보여 줍니다. 은퇴는 피하기 어려운 직장 긴장을 줄일 수 있지만, 동거는 지원과 갈등을 함께 가져올 수 있고 돌봄은 상당한 고통을 만들 수 있습니다. 가상의 가족 사례에서는 은퇴가 선택권을 늘렸는지, 일상적인 요구를 바꾸었는지, 누군가 어렵게 느끼는 접촉을 더 잦게 만들었는지 묻겠습니다. 종합된 설명에서는 동기와 기회를 상호작용하는 조건으로 봅니다. 나이, 은퇴 여부, 가족 접촉만으로 관계의 질을 추론하지 않으며 문화와 코호트 차이도 고려합니다."
-      },
-      "takeaway": {
-        "en": "Retirement may create more choice, but family contact also brings demands; relationship outcomes depend on goals, living arrangements, and circumstances rather than age or contact alone.",
-        "ko": "은퇴는 선택권을 늘릴 수 있지만 가족 접촉에는 요구도 따르므로, 관계 결과는 나이나 접촉 자체보다 목표·거주 형태·여건에 달려 있습니다."
-      },
-      "connection": {
-        "en": "Place SST's motivational predictions within the social-role and household conditions reviewed by Luong and colleagues.",
-        "ko": "SST의 동기적 예측을 Luong과 동료들이 검토하는 사회적 역할과 가구 조건 안에 놓습니다."
-      },
-      "caution": {
-        "en": "Neither review tests this hypothetical family or guarantees benefits from retirement or co-residence. Cultural examples cannot be turned into fixed traits of all people in a country.",
-        "ko": "어느 리뷰도 이 가상 가족을 검증하거나 은퇴·동거의 이점을 보장하지 않습니다. 문화적 예시를 한 나라 모든 사람의 고정된 특성으로 바꾸면 안 됩니다."
+      "first_response": {
+        "en": "I found it useful to separate wanting meaningful contact from having circumstances that make it satisfying. Carstensen and colleagues explain why close ties may become a priority, while Luong and colleagues show how retirement, co-residence, and care can change everyday demands. Together they made me curious about what more time with family actually contains. I would ask about each person's choices and constraints before assuming that more contact means a better relationship.",
+        "ko": "저는 의미 있는 접촉을 원한다는 것과 그것을 만족스럽게 할 여건이 있다는 것을 구분하게 됐습니다. Carstensen과 동료들은 가까운 관계가 중요해지는 이유를 설명하고, Luong과 동료들은 은퇴·동거·돌봄이 일상의 요구를 바꾸는 모습을 보여 줍니다. 두 글을 읽으며 가족과 더 많은 시간을 보낸다는 말 안에 어떤 경험이 있는지가 궁금해졌습니다."
       },
       "evidence": [
         {
@@ -448,16 +477,42 @@
           }
         }
       ],
-      "followup": {
-        "question": {
-          "en": "What would make a family application more careful?",
-          "ko": "가족 사례에 더 신중하게 적용하려면 어떻게 해야 할까요?"
+      "followups": [
+        {
+          "id": "week-06-06-followup-01",
+          "question": {
+            "en": "Would retirement and more time with family necessarily improve an older person's relationships?",
+            "ko": "은퇴하고 가족과 보내는 시간이 늘면 노인의 관계가 반드시 좋아질까요?"
+          },
+          "answer": {
+            "en": "I would not assume that. Carstensen and colleagues predict that time perspective affects which relationships people value, but valuing closeness does not guarantee that every close interaction is pleasant. Luong and colleagues show that social environments also change: retirement may remove unavoidable work tensions, while co-residence can bring both support and conflict, and caregiving can create substantial distress. In a hypothetical family case, I would ask whether retirement increased choice, altered daily demands, or intensified contact that someone finds difficult. The combined explanation treats motives and opportunities as interacting conditions. It does not infer relationship quality from age, retirement status, or family contact alone, and it leaves room for cultural and cohort differences.",
+            "ko": "저는 그렇다고 가정하지 않겠습니다. Carstensen과 동료들은 시간관점이 어떤 관계를 중시하는지에 영향을 준다고 예측하지만, 친밀함을 중시한다고 모든 가까운 상호작용이 즐거운 것은 아닙니다. Luong과 동료들은 사회적 환경도 변함을 보여 줍니다. 은퇴는 피하기 어려운 직장 긴장을 줄일 수 있지만, 동거는 지원과 갈등을 함께 가져올 수 있고 돌봄은 상당한 고통을 만들 수 있습니다. 가상의 가족 사례에서는 은퇴가 선택권을 늘렸는지, 일상적인 요구를 바꾸었는지, 누군가 어렵게 느끼는 접촉을 더 잦게 만들었는지 묻겠습니다. 종합된 설명에서는 동기와 기회를 상호작용하는 조건으로 봅니다. 나이, 은퇴 여부, 가족 접촉만으로 관계의 질을 추론하지 않으며 문화와 코호트 차이도 고려합니다."
+          }
         },
-        "answer": {
-          "en": "Ask each person's goals and constraints instead of assuming shared preferences. More time together may be welcome to one member and burdensome to another; this is an application question, not a conclusion about all families.",
-          "ko": "선호가 같다고 가정하지 말고 각자의 목표와 제약을 물어야 합니다. 함께하는 시간의 증가가 한 사람에게는 반갑고 다른 사람에게는 부담일 수 있습니다. 이는 적용을 위한 질문이며 모든 가족에 관한 결론은 아닙니다."
+        {
+          "id": "week-06-06-followup-02",
+          "question": {
+            "en": "What would make a family application more careful?",
+            "ko": "가족 사례에 더 신중하게 적용하려면 어떻게 해야 할까요?"
+          },
+          "answer": {
+            "en": "Ask each person's goals and constraints instead of assuming shared preferences. More time together may be welcome to one member and burdensome to another; this is an application question, not a conclusion about all families.",
+            "ko": "선호가 같다고 가정하지 말고 각자의 목표와 제약을 물어야 합니다. 함께하는 시간의 증가가 한 사람에게는 반갑고 다른 사람에게는 부담일 수 있습니다. 이는 적용을 위한 질문이며 모든 가족에 관한 결론은 아닙니다."
+          }
+        },
+        {
+          "id": "week-06-06-followup-03",
+          "question": {
+            "en": "Can cultural examples tell us that family co-residence is good or bad?",
+            "ko": "문화 비교를 보면 가족 동거가 좋은지 나쁜지 정할 수 있나요?"
+          },
+          "answer": {
+            "en": "Not in that general form. The reviews discuss settings in which co-residence, roles, and expectations differ, not fixed traits shared by everyone in a country. A closer tie can provide meaning and support while also involving demands. I would use the examples to ask about those arrangements in a particular family, not to guarantee benefits from living together or prescribe separation.",
+            "ko": "그렇게 일반적으로 정할 수는 없습니다. 리뷰는 동거와 역할, 기대가 다른 맥락을 다루지 한 나라 모든 사람의 고정된 특성을 설명하지 않습니다. 가까운 관계는 의미와 지원을 주면서 요구도 동반할 수 있습니다. 저는 구체적인 가족의 생활 구성을 묻는 데 예시를 쓰고, 동거의 이점을 보장하거나 따로 살라고 처방하지 않겠습니다."
+          }
         }
-      }
+      ]
     }
-  ]
+  ],
+  "practice_format": "reflection-followups-v1"
 }

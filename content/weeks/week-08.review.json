@@ -1,7 +1,7 @@
 {
   "status": "approved",
-  "sha256": "14725d90729b20d85eb8054f7f92c1987e71653c7b1d7ae9c90b87fc515d7355",
-  "reviewed_at": "2026-09-06T05:46:52.097Z",
-  "reviewer": "Codex (author review and independent cross-review)",
-  "scope": "Reviewed each source separately, then checked all six bilingual connection answers, follow-ups, limitations, segment IDs and source heading links. Independent findings are recorded in week-08.review-notes.md. Existing per-reading approvals remain unchanged."
+  "sha256": "d1f03256dd5059c26f80ac4fbfb1853fc8d20783b6c21cd5bfbb73b8aec39394",
+  "reviewed_at": "2026-09-07T01:05:06.251Z",
+  "reviewer": "Codex",
+  "scope": "# 8주차 첫 발언과 꼬리 문답 검토\n\nKim 외의 MEASURE, DFPM, CHANGE1–2, LIVING1–3, SUPPORT, EMOTION, AMBIVALENCE, CONCLUSION을 읽은 뒤 Lin 외의 METHOD, MEASURE1–2, MULTIVARIATE, LIMIT를 대조했다. 기존 영한 문답과 새 영한 첫 발언·세 번째 문답을 검토했다.\n\n6개 발언은 가족 변화, 분가 이후 교류, 구조/정서적 질, 자원/선택지, 이혼한 부모를 둔 자녀의 가상 상황, 관계 양쪽의 보고를 연결한다. 아시아 세대관계 검토와 미국 부부 이혼 분석은 같은 결과의 증거가 아님을 명시했다. 효의 믿음·동기·행동을 구분하고 상호적/권위주의적 차원과 맥락·성별 기대의 차이를 유지했다. 동거와 혼인 지속을 좋은 돌봄·행복·안전의 대리 지표로 단정하지 않았다.\n\n완전모형의 비유의 결과와 아내 은퇴의 초기모형 결과를 혼동하지 않았다. 빈 둥지의 발생 후 유지 및 2년 시차, 결혼의 질 최초 측정 한계, 자원과 동거의 혼재된 방향을 유지했다. 이혼 이전 자원과 이혼 이후 결과를 구별했다. 5,331쌍과 29,286개 반복 관측치를 구분하고 표본 제외 범위를 설명했다. 성인자녀 지원의 가상 적용은 두 글이 검증한 결과로 쓰지 않았다. 원래 근거 ID와 앵커를 보존했다."
 }
