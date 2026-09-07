@@ -556,114 +556,6 @@ code{font-family:"Cascadia Mono","Consolas",monospace;}
   padding-bottom:0;
 }
 
-.tab-more{
-  position:relative;
-}
-
-.tab-more-toggle{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:.48rem;
-  white-space:nowrap;
-  padding:.62rem 1.05rem;
-  border:1px solid rgba(37,99,235,.28);
-  border-radius:999px;
-  background:linear-gradient(180deg, rgba(37,99,235,.14), rgba(37,99,235,.08));
-  color:var(--brand-2);
-  box-shadow:0 10px 24px rgba(37,99,235,.12);
-  font:600 .88rem var(--display);
-  cursor:pointer;
-  list-style:none;
-  transition:border-color .18s ease,background-color .18s ease,color .18s ease,box-shadow .18s ease;
-}
-
-.tab-more-toggle:hover{
-  border-color:rgba(37,99,235,.4);
-  background:linear-gradient(180deg, rgba(37,99,235,.18), rgba(37,99,235,.1));
-}
-
-.tab-more-toggle::after{
-  content:"v";
-  font-size:.78rem;
-  line-height:1;
-  transition:transform .18s ease;
-}
-
-.tab-more-toggle::-webkit-details-marker{
-  display:none;
-}
-
-.tab-more[open] .tab-more-toggle::after{
-  transform:rotate(180deg);
-}
-
-.tab-more.has-active .tab-more-toggle,
-.tab-more[open] .tab-more-toggle{
-  border-color:rgba(37,99,235,.38);
-  background:linear-gradient(180deg, rgba(37,99,235,.2), rgba(37,99,235,.12));
-  color:var(--brand-2);
-}
-
-:root[data-theme="dark"] .tab-more-toggle{
-  border-color:rgba(147,197,253,.34);
-  background:linear-gradient(180deg, rgba(59,130,246,.28), rgba(30,64,175,.18));
-  color:#dbeafe;
-  box-shadow:none;
-}
-
-:root[data-theme="dark"] .tab-more-toggle:hover{
-  border-color:rgba(191,219,254,.48);
-  background:linear-gradient(180deg, rgba(96,165,250,.34), rgba(37,99,235,.2));
-}
-
-:root[data-theme="dark"] .tab-more.has-active .tab-more-toggle,
-:root[data-theme="dark"] .tab-more[open] .tab-more-toggle{
-  border-color:rgba(191,219,254,.52);
-  background:linear-gradient(180deg, rgba(96,165,250,.4), rgba(37,99,235,.24));
-  color:#eff6ff;
-}
-
-.tab-more-list{
-  position:absolute;
-  top:calc(100% + .55rem);
-  left:0;
-  z-index:20;
-  display:grid;
-  gap:.55rem;
-  min-width:15rem;
-  padding:.7rem;
-  border:1px solid rgba(37,99,235,.16);
-  border-radius:18px;
-  background:var(--surface);
-  box-shadow:0 20px 45px rgba(15,23,42,.14);
-}
-
-.tab-more[open] .tab-more-list{
-  animation:tab-more-in .16s ease-out;
-}
-
-.tab-more-list .tab{
-  width:100%;
-  justify-content:flex-start;
-}
-
-:root[data-theme="dark"] .tab-more-list{
-  border-color:rgba(147,197,253,.22);
-  box-shadow:none;
-}
-
-@keyframes tab-more-in{
-  from{
-    opacity:0;
-    transform:translateY(-4px) scale(.98);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0) scale(1);
-  }
-}
-
 .tab{
   display:inline-flex;
   align-items:center;
@@ -1644,25 +1536,6 @@ body[data-reading-layout="reader-v2"] .article-backmatter-heading{
     width:100%;
     white-space:normal;
     text-align:center;
-  }
-
-  .tab-more{
-    width:100%;
-  }
-
-  body[data-reading-layout="reader-v2"] .tab-more{
-    grid-column:1/-1;
-  }
-
-  .tab-more-toggle{
-    width:100%;
-    justify-content:center;
-  }
-
-  .tab-more-list{
-    position:static;
-    min-width:0;
-    margin-top:.7rem;
   }
 
   .metric{min-width:0;}
@@ -3326,19 +3199,6 @@ body{
   background:var(--primary);
 }
 
-.tab-more-toggle{
-  border-radius:8px;
-  border-color:var(--line);
-  background:var(--surface);
-  color:var(--text);
-  box-shadow:none;
-}
-
-.tab-more-list{
-  border-radius:12px;
-  border-color:var(--line);
-}
-
 .detail-block,
 .detail-side-panel,
 .points-list li,
@@ -3504,8 +3364,7 @@ body{
   .chip,
   .btn-primary,
   .btn-ghost,
-  .tab,
-  .tab-more-toggle{
+  .tab{
     min-width:0;
     max-width:100%;
     overflow-wrap:anywhere;
@@ -4219,7 +4078,7 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;}
-  .reading-progress span,.tab-more[open] .tab-more-list{transition:none;animation:none;}
+  .reading-progress span{transition:none;animation:none;}
 }
 
 /* Editorial reading header: the selected ivory and serif design. */
@@ -4326,16 +4185,9 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
   border-color:var(--header-rule);
 }
 
-.reading-detail-header.reading-header-editorial .tab,
-.reading-detail-header.reading-header-editorial .tab-more-toggle{
+.reading-detail-header.reading-header-editorial .tab{
   color:var(--header-ink);
   font-weight:500;
-}
-
-.reading-detail-header.reading-header-editorial .tab-more-toggle{
-  margin-top:.13rem;
-  border-color:transparent;
-  background:transparent;
 }
 
 .reading-detail-header.reading-header-editorial .tab.active{

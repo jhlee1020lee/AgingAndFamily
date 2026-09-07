@@ -255,50 +255,6 @@ function initHomeRail(){
   }
 }
 
-function initTabMenus(){
-  const menus=Array.from(document.querySelectorAll("[data-tab-more]"));
-  if(!menus.length)return;
-
-  const closeMenu=(menu)=>{
-    if(menu?.open)menu.open=false;
-  };
-
-  const closeAll=(except=null)=>{
-    menus.forEach((menu)=>{
-      if(menu!==except)closeMenu(menu);
-    });
-  };
-
-  menus.forEach((menu)=>{
-    const links=Array.from(menu.querySelectorAll("[data-tab-more-link]"));
-    menu.addEventListener("toggle",()=>{
-      if(menu.open)closeAll(menu);
-    });
-    links.forEach((link)=>{
-      link.addEventListener("click",()=>{
-        closeMenu(menu);
-      });
-    });
-  });
-
-  document.querySelectorAll("[data-tab-link]").forEach((link)=>{
-    link.addEventListener("click",()=>{
-      closeAll();
-    });
-  });
-
-  document.addEventListener("click",(event)=>{
-    menus.forEach((menu)=>{
-      if(menu.open&&!menu.contains(event.target))closeMenu(menu);
-    });
-  });
-
-  document.addEventListener("keydown",(event)=>{
-    if(event.key!=="Escape")return;
-    closeAll();
-  });
-}
-
 function escapeUiText(value){
   return String(value??"").replace(/[&<>"']/g,(character)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[character]));
 }
@@ -1055,7 +1011,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   initGatedLinks();
   initHomeRail();
   initHomeFilters();
-  initTabMenus();
   initMobileTabs();
   initTranslationSentenceReveals();
   initInteractiveQuizzes();

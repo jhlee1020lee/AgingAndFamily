@@ -953,19 +953,14 @@ function pageTabs(outputPath,reading,activeKey){
   if(pageByKey(reading,"translation"))tabs.push({key:"translation",label:"번역본 읽기",target:path.join(base,"translation.html"),status:pageByKey(reading,"translation")?.validation_status,sourceStatus:pageByKey(reading,"translation")?.source_validation_status});
   if(pageByKey(reading,"professor-prep"))tabs.push({key:"professor-prep",label:"교수님 답변 대비",target:path.join(base,"professor-prep.html"),status:pageByKey(reading,"professor-prep")?.validation_status,sourceStatus:pageByKey(reading,"professor-prep")?.source_validation_status});
   if(reading.pages.some((page)=>page.type==="quiz"))tabs.push({key:"quiz",label:"퀴즈 풀기",target:path.join(base,"quiz.html"),sourceStatus:quizOverviewTarget(reading)?PAGE_STATUS.APPROVED:null});
-  const hiddenTabs=reading.pages
-    .filter((page)=>page.type!=="quiz"&&!["professor-prep","full","translation"].includes(page.key))
-    .map((page)=>({key:page.key,label:page.label,target:path.join(base,page.filename),status:page.validation_status,sourceStatus:page.source_validation_status}));
-  const hiddenActive=hiddenTabs.find((tab)=>tab.key===activeKey)||null;
   const isActiveTab=(tab)=>tab.key===activeKey||(tab.key==="quiz"&&["quiz-ox","quiz-short","quiz-mcq"].includes(activeKey));
   const renderTab=(tab)=>{
     if(blocked||!accessible)return renderGatedTab(tab.label,isActiveTab(tab),readingGateMessage(reading));
     if(tab.key==="index"&&(isApprovedStatus(tab.sourceStatus)||(allowDraftPreview&&isReadyStatus(tab.sourceStatus))))return renderActiveTab(outputPath,tab,isActiveTab(tab));
     return isApprovedStatus(tab.sourceStatus)?renderActiveTab(outputPath,tab,isActiveTab(tab)):renderGatedTab(tab.label,isActiveTab(tab),"이 탭은 아직 공개되지 않았습니다.");
   };
-  const hiddenMarkup=!hiddenTabs.length?"":`<details class="tab-more${hiddenActive?" has-active":""}" data-tab-more><summary class="tab-more-toggle" data-tab-more-toggle>더보기</summary><div class="tab-more-list" data-tab-more-list>${hiddenTabs.map((tab)=>renderTab(tab).replace("data-tab-link","data-tab-link data-tab-more-link")).join("")}</div></details>`;
-  const mobileMarkup=[...tabs,...hiddenTabs].map((tab)=>renderTab(tab)).join("");
-  return `<nav class="tab-row" aria-label="읽기 페이지 메뉴" data-tab-row>${tabs.map((tab)=>renderTab(tab)).join("")}${hiddenMarkup}</nav><nav class="mobile-tab-row" aria-label="읽기 페이지 메뉴" data-mobile-tab-row>${mobileMarkup}</nav>`;
+  const markup=tabs.map((tab)=>renderTab(tab)).join("");
+  return `<nav class="tab-row" aria-label="읽기 페이지 메뉴" data-tab-row>${markup}</nav><nav class="mobile-tab-row" aria-label="읽기 페이지 메뉴" data-mobile-tab-row>${markup}</nav>`;
 }
 function renderBreadcrumbs(outputPath,reading,currentLabel=""){const homeHref=relHref(outputPath,path.join(siteDir,"index.html"));const overviewHref=relHref(outputPath,path.join(siteDir,"readings",reading.slug,"index.html"));const crumbs=[`<a href="${escapeHtml(homeHref)}">홈</a>`];if(currentLabel){crumbs.push(`<a href="${escapeHtml(overviewHref)}">${escapeHtml(reading.title)}</a>`);crumbs.push(`<span aria-current="page">${escapeHtml(currentLabel)}</span>`);}else{crumbs.push(`<span aria-current="page">${escapeHtml(reading.title)}</span>`);}return `<nav class="breadcrumbs" aria-label="breadcrumb">${crumbs.map((item,index)=>`${index?'<span class="crumb-sep">/</span>':""}${item}`).join("")}</nav>`;}
 function renderArticleMeta(reading,options={}){const bits=[options.pageLabel||"",reading.display_date,reading.type_label,options.includeLanguage?reading.language_label:"",reading.authors_label].filter(Boolean);return `<div class="article-meta-row">${bits.map((bit)=>`<span>${escapeHtml(bit)}</span>`).join("")}</div>`;}
