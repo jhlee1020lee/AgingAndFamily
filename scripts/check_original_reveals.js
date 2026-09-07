@@ -19,7 +19,7 @@ function visibleInlineText(text) {
 
 function stripTranslationControls(body) {
   const clean = body.cloneNode(true);
-  clean.querySelectorAll("[data-original-translation-hint], [data-source-popover]").forEach((node) => node.remove());
+  clean.querySelectorAll("[data-source-popover]").forEach((node) => node.remove());
   clean.querySelectorAll("button[data-source-sentence]").forEach((node) => node.replaceWith(...node.childNodes));
   clean.querySelectorAll("span[data-sentence-pair]").forEach((node) => node.replaceWith(...node.childNodes));
   clean.normalize();
@@ -106,8 +106,8 @@ function validateRenderedOriginal(html, baselineHtml, units) {
     });
     for (const id of expectedById.keys()) expect(seenPairs.has(id), `${id}: expected original control is missing`);
 
-    expect(body.querySelectorAll("[data-original-translation-hint]").length === 1,
-      "original page must include one instruction for revealing Korean translations");
+    expect(body.querySelectorAll(".translation-sentence-hint, [data-original-translation-hint]").length === 0,
+      "original page must not include retired sentence instructions");
     const stripped = stripTranslationControls(body);
     const expectedBody = baseline.window.document.querySelector("[data-baseline]");
     expectedBody.normalize();
@@ -160,7 +160,7 @@ function checkMutationFixtures() {
   const units = [{ pairs }];
   const baseline = '<h2 id="results">Results</h2><ol start="3"><li>A <strong>bold</strong> finding.</li><li>A second result.</li></ol><figure><img src="figure.png" alt="Original figure"></figure>';
   // Deliberately literal HTML; fixtures must not inherit a renderer defect.
-  const html = '<section data-reading-article-body><p data-original-translation-hint>영어 문장을 누르면 한국어 번역이 펼쳐집니다.</p><h2 id="results">Results</h2><ol start="3"><li><span data-sentence-pair><button type="button" aria-expanded="false" aria-controls="fixture-first-translation" data-source-sentence data-pair-id="fixture-first" data-source-text="A **bold** finding." data-translation-text="중요한 발견이다.">A <strong>bold</strong> finding.</button><span data-source-popover id="fixture-first-translation" role="region" aria-label="한국어 번역" lang="ko" hidden>중요한 발견이다.</span></span></li><li><span data-sentence-pair><button type="button" aria-expanded="false" aria-controls="fixture-second-translation" data-source-sentence data-pair-id="fixture-second" data-source-text="A second result." data-translation-text="두 번째 결과다.">A second result.</button><span data-source-popover id="fixture-second-translation" role="region" aria-label="한국어 번역" lang="ko" hidden>두 번째 결과다.</span></span></li></ol><figure><img src="figure.png" alt="Original figure"></figure></section>';
+  const html = '<section data-reading-article-body><h2 id="results">Results</h2><ol start="3"><li><span data-sentence-pair><button type="button" aria-expanded="false" aria-controls="fixture-first-translation" data-source-sentence data-pair-id="fixture-first" data-source-text="A **bold** finding." data-translation-text="중요한 발견이다.">A <strong>bold</strong> finding.</button><span data-source-popover id="fixture-first-translation" role="region" aria-label="한국어 번역" lang="ko" hidden>중요한 발견이다.</span></span></li><li><span data-sentence-pair><button type="button" aria-expanded="false" aria-controls="fixture-second-translation" data-source-sentence data-pair-id="fixture-second" data-source-text="A second result." data-translation-text="두 번째 결과다.">A second result.</button><span data-source-popover id="fixture-second-translation" role="region" aria-label="한국어 번역" lang="ko" hidden>두 번째 결과다.</span></span></li></ol><figure><img src="figure.png" alt="Original figure"></figure></section>';
   assert.deepEqual(validateRenderedOriginal(html, baseline, units).errors, []);
   const mutations = [
     ["wrong Korean text", (body) => { body.querySelector("[data-source-popover]").textContent = "잘못된 번역이다."; }, /visible Korean translation mismatch/],

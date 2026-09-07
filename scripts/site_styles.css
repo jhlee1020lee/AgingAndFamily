@@ -3679,26 +3679,6 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
   outline-offset:2px;
 }
 
-.translation-sentence-hint{
-  display:flex;
-  align-items:flex-start;
-  gap:.65rem;
-  max-width:68ch;
-  margin:0 auto 1.2rem;
-  padding:.8rem .95rem;
-  border:1px solid color-mix(in srgb,var(--primary) 20%,var(--line));
-  border-radius:10px;
-  background:color-mix(in srgb,var(--primary) 8%,var(--surface));
-  color:var(--text);
-  font-size:.88rem;
-  line-height:1.55;
-}
-
-.translation-sentence-hint strong{
-  flex:0 0 auto;
-  color:var(--primary-pressed);
-}
-
 .translation-sentence-paragraph{
   position:relative;
 }
@@ -3961,11 +3941,6 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
     color:var(--text);
     box-shadow:none;
     font-size:.9rem;
-  }
-
-  .translation-sentence-hint{
-    display:grid;
-    gap:.2rem;
   }
 
   .quiz-toolbar{

@@ -478,8 +478,7 @@ function buildOriginalTranslationRevealHtml(reading,page,outputPath,text){
   const html=markdownToHtml(text,{outputPath,reading,sourcePath:page.sourcePath,skipFirstTitleHeading:true,collectFrontmatter:true,renderTextUnit});
   const unused=[...buckets.values()].flat().filter((unit)=>unit.pairs?.length);
   if(unused.length)throw new Error(`[invalid] ${reading.slug}: ${unused.length} original translation units were not rendered`);
-  const hint=`<aside class="translation-sentence-hint" lang="ko" aria-label="문장별 번역 사용법" data-original-translation-hint><strong>문장별 번역</strong><span>영어 문장을 클릭하거나 누르면 바로 아래에 한국어 번역이 펼쳐집니다. 다시 누르거나 Esc 키를 누르면 닫힙니다. 키보드에서는 Tab으로 문장을 선택한 뒤 Enter 또는 Space를 누르세요. 여러 문장을 함께 옮긴 부분은 묶어서 표시됩니다.</span></aside>`;
-  return `${hint}\n${html}`;
+  return html;
 }
 function renderArticleBlock(block,options={}){
   if(!block||typeof block!=="object")return"";
@@ -532,8 +531,7 @@ function renderParsedArticleDocument(document,options={}){
     const sentenceHtml=Array.isArray(reveal.sentencePairs)&&reveal.sentencePairs.length?`<p class="translation-sentence-paragraph">${renderTranslationSentencePairs(reveal)}</p>`:blockHtml;
     return `<section class="translation-segment original-translation-pair source-segment-anchor" id="${escapeHtml(reveal.id)}" data-segment-id="${escapeHtml(reveal.id)}" data-reveal-unit="${escapeHtml(reveal.unit||"paragraph")}">${sentenceHtml}<details class="source-reveal original-toggle"><summary class="source-reveal-summary">${escapeHtml(revealSummaryLabel(reveal))}</summary><div class="source-reveal-body" lang="en">${renderRevealSourceHtml(reveal.sourceText)}</div></details></section>`;
   }).join("\n");
-  const sentenceHint=revealByFlatIndex.size?`<aside class="translation-sentence-hint" aria-label="문장별 원문 사용법"><strong>문장별 원문</strong><span>한국어 문장을 클릭하거나 누르면 바로 아래에 영어 원문이 펼쳐집니다. 다시 누르거나 Esc 키를 누르면 닫힙니다. 키보드에서는 Tab으로 문장을 선택한 뒤 Enter 또는 Space를 누르세요.</span></aside>`:"";
-  return[sentenceHint,frontmatterHtml,contentHtml].filter(Boolean).join("\n");
+  return[frontmatterHtml,contentHtml].filter(Boolean).join("\n");
 }
 function buildTranslationOriginalRevealHtml(reading,page,outputPath,text){
   const alignmentPath=translationOriginalRevealPath(reading);
