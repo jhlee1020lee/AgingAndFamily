@@ -4179,7 +4179,8 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
 }
 
 .reading-detail-header.reading-header-editorial .tab-row{
-  justify-content:space-between;
+  justify-content:flex-start;
+  gap:.25rem;
   margin:0;
   padding:.3rem 1rem 0;
   border-color:var(--header-rule);
