@@ -99,10 +99,8 @@ function runSelfTests(){
   assert(baselineReading,"A manifest reading is required for the schema fixture");
   const baselineDir=path.join(ROOT,baselineReading.content_dir);
   const baseline=Object.fromEntries([...REQUIRED_PAGES.map((page)=>page.file),"source_segments.json"].map((file)=>[file,readJson(path.join(baselineDir,file))]));
-  [...baseline["professor_prep.json"].cards,...baseline["professor_prep.json"].reading_response.cards].forEach((card,index)=>{
-    card.title_ko=`검증용 질문 ${index+1}`;
-    card.answer_30s_ko=`원문 근거를 설명하는 검증용 답변 ${index+1}입니다.`;
-  });
+  // Preserve the validated bilingual text, including synchronized experience slots.
+  // Generic Korean replacements would invalidate reflection cards before a scenario runs.
   const temporaryRoot=fs.mkdtempSync(path.join(os.tmpdir(),"aaf-english-learning-"));
   const fixtureReading={...baselineReading,slug:"english-gate-fixture",content_dir:"content/fixture",translation_original_reveal:{enabled:false}};
   const fixtureDir=path.join(temporaryRoot,fixtureReading.content_dir);
