@@ -67,8 +67,8 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep",
-      "full"
+      "full",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:287ea1f3da017438933b70817953b733538a81ca6bbde3a5f248f6935e2ff675",
@@ -80,11 +80,11 @@
       "quiz-ox": "v2:4d458b224e1066e69d6bbda103cfc967f37aff144ff262a6499207234f6d3c26",
       "quiz-short": "v2:5ab7991df09307c26ed4f3a8b85957d9b1aa62b317518c457be2da68c3482246",
       "quiz-mcq": "v2:9c56361ea44d9e6ad496f78ea3abf315668acba2017aa4a94695fd9f85755098",
-      "professor-prep": "v2:ed57c9cb7bcf2fc74b9b33dd8ee90a83328b4180a5c2b637cb0ad90add820d53",
-      "full": "v2:8eac7ba0d0cb2845ff45266708eeda2c1d046ea7e602371f035c5e5bb79d903c"
+      "full": "v2:8eac7ba0d0cb2845ff45266708eeda2c1d046ea7e602371f035c5e5bb79d903c",
+      "professor-prep": "v2:c3cee87288ba1be345f8801b2c322cbc6d47a481e2eba75d7ef6d431afb39547"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:54:39.379Z",
+    "reviewed_at": "2026-09-06T10:39:44.762Z",
     "notes": [
       "Stage 1 source reconstruction independently re-audited against the chapter PDF; 14,998 words, 132 references plus 2 further readings, 203 blocks, figures and table verified.",
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
@@ -92,12 +92,13 @@
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments. Source and Korean translation preserved; composite dependencies reviewed. Historical technology and policy context retained; ambiguous driving statistics excluded. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed.",
+      "Independently reviewed all 18 body segments and six bilingual reflection cards with 18 follow-ups and 18 fictional examples; dated technology claims, purpose-specific pathways, selection versus causation, specific telehealth evidence, and maintenance limits checked."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:56:23.108Z",
+    "updated_at": "2026-09-06T10:39:54.876Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -229,7 +230,12 @@
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {
@@ -392,13 +398,18 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:ed57c9cb7bcf2fc74b9b33dd8ee90a83328b4180a5c2b637cb0ad90add820d53",
+        "source_hash": "v2:c3cee87288ba1be345f8801b2c322cbc6d47a481e2eba75d7ef6d431afb39547",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {

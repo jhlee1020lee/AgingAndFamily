@@ -141,69 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Practice Answering: How Did You Read This Paper?",
-    "instructions": "Explain what changed your perspective, connect it to a specific study and its limits, and label family or policy applications as your own inferences.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "luong-reading-01",
-        "title": "Relationship quality is produced by more than one person",
-        "answer_30s": "I read this review as reframing smaller networks in later life through selection and interaction, rather than decline alone. Older adults may prioritize meaningful contact as time seems shorter, draw on experience to avoid conflict, and receive kinder responses from partners. What stood out to me was that relationship quality reflects both a person's regulation and other people's responses.",
-        "evidence_segment_id": "CONCLUSION-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "관계의 질은 한 사람만으로 만들어지지 않습니다.",
-        "answer_30s_ko": "저는 이 종설이 노년기의 작은 관계망을 쇠퇴만으로 보지 않고 선택과 상호작용을 통해 다시 설명한다고 읽었습니다. 노인은 남은 시간이 짧게 느껴지면서 의미 있는 접촉을 우선하고, 경험을 활용해 갈등을 피하며, 상대에게서 더 친절한 반응을 받을 수 있습니다. 제게 눈에 띈 점은 관계의 질에 개인의 조절과 다른 사람의 반응이 모두 반영된다는 것이었습니다."
+        "card_id": "luong-et-al-2011-reflection-01",
+        "entry_type": "reading",
+        "topic": "Relationships shaped by both partners",
+        "topic_ko": "상대가 만드는 관계",
+        "title": "What interested you about the partner's contribution?",
+        "title_ko": "상대의 반응이 왜 흥미로웠나요?",
+        "answer_30s": "I found it interesting that better relationships in later life cannot be explained solely by an older person's coping abilities. The Social Input Model describes how partners' kindness and reduced blame for mistakes also contribute to older adults' social experiences. It led me to read a comfortable relationship as something shaped by exchanges between people, rather than simply as evidence of one person's maturity.",
+        "answer_30s_ko": "나이가 들수록 관계가 좋아지는 이유를 당사자의 대처 능력만으로 설명할 수 없다는 점이 흥미로웠습니다. 사회적 입력 모형(SIM)은 노인의 행동에 더해, 상대가 더 친절하게 대하고 실수를 덜 비난하는 반응도 관계 경험을 만든다고 봅니다. 저는 편안한 관계를 한 사람의 성숙함으로 평가하기보다 두 사람이 주고받는 반응의 결과로 읽게 됐습니다.",
+        "evidence_segment_id": "SIM-001",
+        "response_angle": "partner-inputs-and-reciprocal-social-experiences",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-01-followup-01",
+            "question": "Which study shows expectations about partners' reactions?",
+            "question_ko": "상대의 반응에 대한 기대는 어떻게 살폈나요?",
+            "answer": "In one vignette study, the social misstep stayed the same while the offender's age differed across respondents. Respondents predicted how the offended character would react: they expected more avoidance toward an older offender and more direct communication or confrontation toward a younger one. This tests expectations about a third person's response, not respondents' own observed behavior. It supports a role for age information in judgments without demonstrating that real conflicts always unfold that way.",
+            "answer_ko": "한 시나리오 연구는 같은 실수에서 잘못한 사람의 나이만 응답자에 따라 다르게 제시했습니다. 응답자는 피해를 본 등장인물이 어떻게 반응할지 예상했는데, 고령자에게는 회피를, 젊은 사람에게는 직접적인 소통이나 문제 제기를 더 예상했습니다. 이는 제3자의 반응에 대한 기대를 살핀 것으로, 응답자 본인의 실제 행동을 관찰한 것이 아닙니다. 연령 정보가 판단에 관여함을 뒷받침하지만 실제 갈등이 언제나 그렇게 전개됨을 입증하지는 않습니다.",
+            "evidence_segment_id": "PREFERENTIAL-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-01-followup-02",
+            "question": "Could a relationship feel positive even when the older person behaves poorly?",
+            "question_ko": "노인이 잘못해도 관계는 편안할 수 있나요?",
+            "answer": "Yes, that is part of what the model asks us to consider. A partner may give an older person the benefit of the doubt or soften a response even after an offense, reducing overt tension. Therefore, a positive relationship experience alone does not demonstrate superior coping by the older person. I would examine what each partner did and how the other responded before attributing the outcome to either person's abilities.",
+            "answer_ko": "그렇습니다. 이 모형이 살피려는 대목 중 하나입니다. 노인이 상대를 불쾌하게 했더라도 상대가 사정을 좋게 해석하거나 반응을 누그러뜨리면 겉으로 드러나는 긴장이 줄 수 있습니다. 따라서 긍정적인 관계 경험만으로 노인의 대처 능력이 더 뛰어나다고 입증되지는 않습니다. 저는 결과를 어느 한 사람의 능력에 돌리기 전에 각자가 무엇을 했고 상대가 어떻게 반응했는지 살피겠습니다.",
+            "evidence_segment_id": "SIM-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-01-followup-03",
+            "question": "Does this establish that aging itself improves all relationships?",
+            "question_ko": "나이 들면 누구나 관계가 좋아진다는 뜻인가요?",
+            "answer": "No. This 2011 review brings together several kinds of research rather than reporting one experiment that establishes the whole explanation. It explicitly leaves cohort effects open: older adults receiving more sentimental greeting cards might partly reflect earlier generations' card-giving norms. Partner responses are an important explanatory route, but the findings do not establish a universal improvement caused by aging itself.",
+            "answer_ko": "아닙니다. 이 2011년 리뷰는 전체 설명을 입증한 한 실험이 아니라 여러 종류의 연구를 종합합니다. 저자들은 코호트 효과를 배제하지 못한다고 명시하며, 고령자가 더 정감 어린 카드를 받는 현상에도 이전 세대의 카드 교환 규범이 작용했을 가능성을 듭니다. 상대의 반응은 중요한 설명 경로이지만, 나이 듦 자체가 모든 사람의 관계를 좋아지게 한다고 확정한 결과는 아닙니다.",
+            "evidence_segment_id": "FUTURE-001"
+          }
+        ]
       },
       {
-        "card_id": "luong-reading-02",
-        "title": "What was most surprising to you?",
-        "answer_30s": "I was struck by the argument that a smaller network need not mean social deterioration. Older adults can reduce peripheral ties while retaining close family and friends in an inner circle, so fewer contacts can coexist with a higher proportion of intimate partners. The review's emphasis on active network restructuring, rather than deaths alone, changed how I interpreted network size.",
-        "evidence_segment_id": "SST-001",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "무엇이 가장 놀라웠나요?",
-        "answer_30s_ko": "작은 관계망이 반드시 사회적 관계의 악화를 뜻하지는 않는다는 논지가 인상적이었습니다. 노인은 가까운 가족과 친구를 핵심 관계망에 유지하면서 주변적 관계를 줄일 수 있으므로, 접촉하는 사람이 줄어도 친밀한 상대의 비율은 높아질 수 있습니다. 이 종설이 사망만이 아니라 능동적인 관계망 재구성을 강조한다는 점은 관계망 크기에 대한 제 해석을 바꿨습니다."
+        "card_id": "luong-et-al-2011-reflection-02",
+        "entry_type": "reading",
+        "topic": "Avoidance as emotion regulation",
+        "topic_ko": "회피도 조절일까",
+        "title": "What interested you about avoiding conflict?",
+        "title_ko": "갈등 회피에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that avoiding an argument need not indicate passivity or incompetence. This review describes how older adults can reduce emotional distress through strategies suited to the situation, such as avoiding a contentious topic. However, when people did engage in arguments, younger and older adults showed similar emotional reactivity. I would therefore ask under which conditions avoidance helped and what outcome improved, while distinguishing reduced distress from resolution of the problem.",
+        "answer_30s_ko": "말다툼을 피하는 행동을 무조건 수동적이거나 무능한 반응으로 보지 않는 점이 흥미로웠습니다. 이 리뷰에서는 노년층이 갈등 주제를 피하는 등 상황에 맞는 전략으로 정서적 불편을 줄일 수 있다고 설명합니다. 다만 논쟁에 들어갔을 때는 젊은층과 노년층의 정서 반응이 비슷했습니다. 따라서 회피의 이점은 어떤 상황에서 무엇을 줄였는지 따져야 하며, 문제가 해결됐다는 뜻과도 구분해야 합니다.",
+        "evidence_segment_id": "BEHAVIOR-001",
+        "response_angle": "context-sensitive-avoidance-distress-and-resolution",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-02-followup-01",
+            "question": "Were older adults also less reactive when they argued?",
+            "question_ko": "논쟁할 때도 노년층의 반응이 작았나요?",
+            "answer": "No. In the Charles and colleagues study from 2009 summarized here, younger and older adults who chose to argue showed similar increases in distress. When both age groups used the same strategy to avoid an argument, only older adults reported less emotional reactivity. The advantage was therefore conditional on how the interaction unfolded, rather than evidence that older adults were always less affected. This review summary does not establish a randomly assigned effect of avoidance or predict every individual's response.",
+            "answer_ko": "아닙니다. 여기서 소개한 Charles 등의 2009년 연구에서는 논쟁을 선택했을 때 젊은층과 노년층의 불편 증가가 비슷했습니다. 두 연령집단이 같은 전략으로 논쟁을 피했을 때는 노년층에서만 더 낮은 정서 반응이 보고됐습니다. 따라서 이점은 상호작용이 어떻게 진행됐는지에 따라 달랐으며, 노년층이 언제나 덜 영향을 받는다는 뜻은 아닙니다. 이 리뷰의 요약만으로 회피를 무작위로 배정한 효과나 모든 개인의 반응을 확정할 수는 없습니다.",
+            "evidence_segment_id": "BEHAVIOR-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-02-followup-02",
+            "question": "Does less distress mean that the conflict has been resolved?",
+            "question_ko": "불편이 줄면 갈등도 해결된 건가요?",
+            "answer": "Not necessarily. The review acknowledges that avoidance can leave issues unresolved over time, even when it reduces immediate emotional distress. It also describes studies in which participants selected responses to hypothetical interpersonal problems and researchers judged passive strategies to be effective in those situations. Such judgments support considering the context; they are not evidence that every avoided real-world conflict was settled in the long run. Emotional relief and resolution therefore need to be assessed separately.",
+            "answer_ko": "꼭 그렇지는 않습니다. 리뷰는 회피가 당장의 정서적 불편을 줄여도 문제를 오랫동안 미해결 상태로 남길 수 있음을 인정합니다. 또 가상의 대인관계 문제에 참여자가 대응을 고르고, 연구자들이 해당 상황에서 수동적인 전략을 효과적이라고 평가한 연구들을 소개합니다. 이는 상황을 살펴볼 근거이지, 실제 생활에서 피한 모든 갈등이 장기적으로 해결됐다는 증거는 아닙니다. 정서적 안도와 문제 해결은 따로 확인해야 합니다.",
+            "evidence_segment_id": "BEHAVIOR-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-02-followup-03",
+            "question": "Can experience in judging people also help?",
+            "question_ko": "사람을 판단하는 경험도 도움이 되나요?",
+            "answer": "The review presents social expertise as another possible contribution. In the Hess and colleagues vignette study from 1999, older adults revised impressions in response to information about stable traits, especially harmful traits such as dishonesty, rather than simply any new contradictory information. The authors interpreted this as expertise relevant to avoiding problematic partners. A separate 2005 study found similar trait judgments among highly socially active younger adults. This points to a possible contribution of social experience, not a guarantee that age alone makes someone a better judge.",
+            "answer_ko": "리뷰는 사회적 전문성도 별도의 설명으로 제시합니다. Hess 등의 1999년 가상 인물 연구에서 노년층은 단순히 앞선 정보와 모순되는 새 정보보다 안정적인 특성, 특히 부정직함처럼 관계에 해로운 특성의 정보에 따라 인상을 바꿨습니다. 연구자들은 이를 문제를 일으킬 상대를 피하는 데 관련된 전문성으로 해석했습니다. 별도의 2005년 연구에서는 사회활동이 많은 젊은층도 비슷한 특성 판단을 보였습니다. 이는 사회적 경험의 가능한 기여를 시사하며, 나이만으로 사람을 더 잘 판단한다고 보증하지는 않습니다.",
+            "evidence_segment_id": "EXPERTISE-001"
+          }
+        ]
       },
       {
-        "card_id": "luong-reading-03",
-        "title": "How did your previous view change?",
-        "answer_30s": "I had mainly attributed less conflict in later life to older adults becoming more agreeable. The review explains that retirement and an empty nest can reduce unavoidable workplace tensions and full-time childcare demands while increasing choice over partners and leisure. This broadened my view: emotional regulation matters, but work, living arrangements, and family-care responsibilities also shape the available social choices.",
+        "card_id": "luong-et-al-2011-reflection-03",
+        "entry_type": "reading",
+        "topic": "Social roles and room for choice",
+        "topic_ko": "역할과 만남의 선택권",
+        "title": "What interested you about the conditions of social contact?",
+        "title_ko": "만남의 조건에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that the review looks beyond personal maturity to the conditions of social contact when explaining more comfortable relationships with age. Retirement may reduce hard-to-avoid workplace ties and allow more choice about whom to spend time with. I would ask both whether someone became more tolerant and whether obligations to endure difficult encounters changed. A reduction in roles does not guarantee better relationships for everyone.",
+        "answer_30s_ko": "나이 들며 관계가 편안해지는 이유를 성격의 성숙뿐 아니라 만남의 조건에서도 찾는 점이 흥미로웠습니다. 글은 은퇴로 피하기 어려운 직장 관계가 줄고 누구와 시간을 보낼지 고를 여지가 커질 수 있다고 설명합니다. 저는 같은 사람이 더 너그러워진 것인지, 불편한 만남을 감수해야 할 의무가 달라진 것인지 함께 묻게 됐습니다. 다만 역할이 줄면 누구나 관계가 좋아진다는 뜻은 아닙니다.",
         "evidence_segment_id": "ENVIRONMENT-001",
-        "response_angle": "changed-view",
-        "style_basis": "course-question-pattern",
-        "title_ko": "기존의 관점이 어떻게 바뀌었나요?",
-        "answer_30s_ko": "저는 노년기의 갈등 감소를 주로 노인이 더 원만해지기 때문이라고 생각했습니다. 이 종설은 은퇴와 자녀 독립이 피하기 어려운 직장 내 긴장과 상시적인 자녀 돌봄 요구를 줄이는 한편, 교류 상대와 여가를 선택할 여지를 늘릴 수 있다고 설명합니다. 이를 통해 관점이 넓어졌습니다. 정서조절도 중요하지만 일, 거주 형태, 가족 돌봄 책임 역시 가능한 사회적 선택을 형성합니다."
+        "response_angle": "structural-roles-and-opportunities-beyond-maturity",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-03-followup-01",
+            "question": "What does retirement change in this explanation?",
+            "question_ko": "이 설명에서 은퇴는 무엇을 바꾸나요?",
+            "answer": "The review describes the workplace as a major source of interpersonal problems that can be hard to avoid, while retirees report more freedom to select partners and leisure activities. That changes exposure to demanding encounters and the opportunity to choose. The section draws on several studies; it is not a single retirement experiment establishing that leaving work causes kindness or that everyone benefits equally.",
+            "answer_ko": "리뷰는 직장을 피하기 어려운 대인관계 문제가 생기는 주요 환경으로 다루며, 은퇴자들이 만날 사람과 여가를 고를 자유가 더 크다고 보고한다고 설명합니다. 부담스러운 만남에 놓이는 정도와 선택 기회가 달라지는 것입니다. 여러 연구를 종합한 대목이지, 일을 그만두면 친절해진다는 인과효과나 모두에게 같은 이점이 생긴다는 사실을 확인한 단일 은퇴 실험은 아닙니다.",
+            "evidence_segment_id": "ENVIRONMENT-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-03-followup-02",
+            "question": "What did the U.S.–Japan comparison add?",
+            "question_ko": "미국과 일본 비교에서는 무엇이 달랐나요?",
+            "answer": "A study with nationally representative Japanese and American samples aged 13 to 96 found fewer problematic ties with age. Older Japanese adults nevertheless reported problems with grown children that Americans did not, a difference linked to living together. This points to household arrangements as relevant context. It was not an experiment assigning co-residence, and it does not show that Japanese families are inherently less harmonious or that living apart always improves ties.",
+            "answer_ko": "13~96세의 일본·미국 전국을 대표하는 표본을 포함한 연구에서는 나이가 많을수록 문제가 있는 관계가 줄었습니다. 그러나 일본 노년층은 미국에서 나타나지 않은 성인 자녀와의 문제를 보고했고, 그 차이는 동거와 연결됐습니다. 동거를 배정한 실험은 아니므로 일본 가족이 본래 덜 화목하다거나 따로 살면 반드시 관계가 좋아진다는 뜻이 아닙니다. 생활 구조를 함께 볼 근거입니다.",
+            "evidence_segment_id": "ENVIRONMENT-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-03-followup-03",
+            "question": "When might greater freedom fail to materialize?",
+            "question_ko": "어떤 경우에는 선택권이 늘지 않나요?",
+            "answer": "Spousal caregiving and bereavement can bring serious distress rather than release from demands. The review's future directions also contrast control over one's schedule with illness that increases a spouse's social control. I would therefore examine the actual obligations, available support, and opportunities for needed contact. Age or retirement status alone cannot tell me whether someone has the resources and freedom to shape satisfying relationships.",
+            "answer_ko": "배우자 돌봄이나 사별은 부담에서 벗어나는 대신 큰 고통을 가져올 수 있습니다. 향후 과제에서도 일정 통제권이 커지는 경우와 질병으로 배우자의 사회적 통제가 늘어나는 경우를 대비합니다. 그래서 실제 의무, 이용할 수 있는 도움, 필요한 만남의 기회를 살펴보겠습니다. 나이나 은퇴 여부만으로 만족스러운 관계를 꾸릴 자원과 자유가 있는지 알 수는 없습니다.",
+            "evidence_segment_id": "FUTURE-001"
+          }
+        ]
       },
       {
-        "card_id": "luong-reading-04",
-        "title": "How do other people help shape relationships in later life?",
-        "answer_30s": "I found it important that positive relationships cannot be explained only by older adults' abilities. When the same social transgression was attributed to an older offender, respondents more often expected the offended person to disengage and avoid conflict rather than confront the offender. I read this as evidence that responses to a partner's age also matter, while recognizing that these were predictions about vignettes rather than observed conflicts.",
-        "evidence_segment_id": "PREFERENTIAL-001",
-        "response_angle": "evidence",
-        "style_basis": "course-question-pattern",
-        "title_ko": "다른 사람들은 노년기 관계를 형성하는 데 어떤 역할을 하나요?",
-        "answer_30s_ko": "긍정적인 관계를 노인의 능력만으로 설명할 수는 없다는 점이 중요하게 다가왔습니다. 동일한 사회적 잘못을 나이 든 사람이 저질렀다고 제시하면, 응답자들은 피해를 본 사람이 가해자와 맞서기보다 상황에서 물러나 갈등을 피할 것이라고 더 자주 예상했습니다. 저는 이를 상대의 나이에 대한 반응도 중요하다는 근거로 읽었지만, 실제 갈등을 관찰한 것이 아니라 가상 사례에 대한 예측이었다는 점도 인식했습니다."
+        "card_id": "luong-et-al-2011-reflection-04",
+        "entry_type": "experience",
+        "topic": "What a gentler response means",
+        "topic_ko": "부드러운 반응의 이유",
+        "title": "How did you respond to a close older person's mistake?",
+        "title_ko": "연세 든 상대의 실수에는 어땠나요?",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to your own experience.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 자신의 실제 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} What interested me in the article was that my response also shapes the other person's social experience. I began to distinguish valuing our remaining time together from lowering my expectations of their abilities. A gentle response alone does not establish that I showed respect.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 글에서 흥미로웠던 점은 제 반응도 상대의 관계 경험을 만든다는 것입니다. 저는 남은 시간을 아끼는 마음과 능력에 대한 낮은 기대를 구분해 보게 됐습니다. 부드럽게 말했다는 사실만으로 존중했다고 단정하지는 않겠습니다.",
+        "evidence_segment_id": "SIM-001",
+        "response_angle": "gentle-responses-remaining-relationship-time-and-lowered-expectations",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-04-followup-01",
+            "question": "What assumption might lie behind that remark?",
+            "question_ko": "그 말에는 어떤 생각이 담겼나요?",
+            "answer": "{{age_cue}} I would ask whether I was valuing limited time with this person, assuming they could no longer do better, or following a rule about deference. The review proposes that perceived time left in a relationship can promote harmony. Applying that idea here does not make it the only possible explanation for my gentler response.",
+            "answer_ko": "{{age_cue}} 저는 함께할 시간을 아끼려는 마음인지, 상대가 더 잘할 수 없다고 가정한 것인지, 연장자에게 공손해야 한다는 생각인지 묻겠습니다. 이 리뷰는 관계에 남은 시간이 제한돼 있다고 느끼면 화합을 더 중시할 수 있다고 설명합니다. 이를 적용하더라도 제 부드러운 반응을 설명하는 유일한 이유라고 단정할 수는 없습니다.",
+            "evidence_segment_id": "FORGIVENESS-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-followup-02",
+            "question": "How did researchers test time left in a relationship?",
+            "question_ko": "관계에 남은 시간은 어떻게 시험했나요?",
+            "answer": "One study asked people to imagine a close younger partner joining a long overseas immersion program that prevented contact, or a close older partner retiring to a distant island where contact would be difficult. Respondents reported how they would react to that partner's transgressions. With contact time limited, they favored avoiding arguments; they favored more direct confrontation with a younger partner who was not moving away. These were responses to imagined circumstances, not observations of actual separations or proof that avoiding an argument meant forgiving.",
+            "answer_ko": "한 연구에서는 친한 젊은 상대가 장기간 해외 문화 체험을 떠나 연락할 수 없거나, 친한 고령 상대가 먼 섬으로 은퇴해 연락이 어려워진다고 상상하게 했습니다. 응답자는 그 상대가 잘못했을 때 자신이 어떻게 반응할지 답했습니다. 만날 시간이 제한된 조건에서는 말다툼 회피를, 떠나지 않는 젊은 상대에게는 더 직접적인 문제 제기를 선호했습니다. 실제 이별을 관찰한 것이 아니며, 다투지 않는 것이 곧 용서라는 입증도 아닙니다.",
+            "evidence_segment_id": "FORGIVENESS-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-followup-03",
+            "question": "Does kinder treatment necessarily mean respect?",
+            "question_ko": "부드러운 대우가 곧 존중인가요?",
+            "answer": "Not necessarily: in a vignette about leaving a shop without paying for a hat for unclear reasons, respondents more often attributed an older woman's act to forgetfulness and endorsed less punishment. This measured judgments, not the woman's memory. The review also notes inconsistent U.S. findings linking respect to favorable treatment. I would distinguish reduced blame based on assumed incapacity from listening to the person's account and respecting their choices.",
+            "answer_ko": "그렇다고 단정할 수는 없습니다. 이유가 모호한 채 모자 값을 내지 않고 가게를 나간 시나리오에서 응답자들은 고령 여성의 행동을 건망증 탓으로 더 많이 돌리고 가벼운 처벌을 더 지지했는데, 이는 판단을 살핀 것이지 그 여성의 기억력을 측정한 결과가 아닙니다. 미국 연구에서 존중과 호의적 대우의 관계도 일관되지 않았습니다. 저는 능력이 부족하다고 가정해 비난을 줄이는 것과, 상대의 설명을 듣고 선택을 존중하는 것을 구분하겠습니다.",
+            "evidence_segment_id": "STEREOTYPE-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "luong-et-al-2011-reflection-04-example-01",
+            "label": "A grandfather arriving late",
+            "label_ko": "늦게 온 할아버지",
+            "values": {
+              "scene": {
+                "en": "I remembered speaking more gently when my grandfather arrived late for lunch than when a friend did.",
+                "ko": "할아버지가 식사 약속에 늦었을 때 친구가 늦었을 때보다 부드럽게 말했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said that, at his age, I did not want to spend our remaining time together arguing.",
+                "ko": "저는 할아버지 연세를 생각하면 함께할 시간을 다투는 데 쓰기 싫다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought I was simply being polite.",
+                "ko": "그저 예의를 지킨 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-example-02",
+            "label": "A grandmother forgetting a book",
+            "label_ko": "책 반납을 잊은 할머니",
+            "values": {
+              "scene": {
+                "en": "I remembered responding more gently when my grandmother forgot to return a borrowed book than when a friend did.",
+                "ko": "할머니가 빌린 책을 돌려주는 것을 잊었을 때 친구 때보다 부드럽게 반응했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said that forgetting was understandable at her age.",
+                "ko": "저는 할머니 연세에는 잊을 수도 있다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought I was only being considerate.",
+                "ko": "배려한 것이라고만 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-example-03",
+            "label": "An older colleague sending the wrong file",
+            "label_ko": "파일을 잘못 보낸 동료",
+            "values": {
+              "scene": {
+                "en": "I remembered responding more gently to the wrong attachment from a close older colleague than from a younger colleague.",
+                "ko": "친한 연장자 동료가 첨부파일을 잘못 보냈을 때 젊은 동료 때보다 부드럽게 말했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said that the new system could be confusing at their age.",
+                "ko": "저는 그 연세에는 새 방식이 헷갈릴 수 있다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought I was making the person feel comfortable.",
+                "ko": "상대를 편하게 해드린 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-example-04",
+            "label": "An older neighbor spilling a drink",
+            "label_ko": "음료를 쏟은 이웃",
+            "values": {
+              "scene": {
+                "en": "I remembered responding more gently when a close older neighbor spilled a drink on my table than when a friend did.",
+                "ko": "친하게 지내는 연세 든 이웃이 제 식탁에 음료를 쏟았을 때 친구 때보다 부드럽게 반응했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said I should not speak sharply to someone of that age.",
+                "ko": "저는 연세 많은 분께 날카롭게 말하면 안 된다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought speaking gently was itself a sign of respect.",
+                "ko": "부드럽게 말하는 것 자체가 존중이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-example-05",
+            "label": "An aunt forgetting a promised call",
+            "label_ko": "전화를 잊은 고모",
+            "values": {
+              "scene": {
+                "en": "I remembered responding more gently when my older aunt forgot a promised call than when a friend did.",
+                "ko": "연세 든 고모가 약속한 전화를 잊었을 때 친구 때보다 부드럽게 반응했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said that, at her age, I wanted to enjoy the time we still had together.",
+                "ko": "저는 고모 연세를 생각하면 남은 만남을 기분 좋게 보내고 싶다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought letting the matter pass was simply the kind thing to do.",
+                "ko": "그냥 넘어가는 것이 친절이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-04-example-06",
+            "label": "An older friend getting a meeting time wrong",
+            "label_ko": "모임 시간을 잘못 안 지인",
+            "values": {
+              "scene": {
+                "en": "I remembered responding more gently to a mistaken meeting time from a close older friend than from a friend my age.",
+                "ko": "친하게 지내는 연세 든 지인이 모임 시간을 잘못 알았을 때 또래 친구 때보다 부드럽게 말했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I said it was understandable to get times mixed up at that age.",
+                "ko": "저는 그 연세에는 시간을 혼동할 수도 있다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought lowering my expectations was a form of consideration.",
+                "ko": "기대를 낮추는 것도 배려라고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "luong-reading-05",
-        "title": "What limitation stood out to you?",
-        "answer_30s": "Cohort effects remain a possible explanation for sentimental-card findings: older adults may receive more thoughtful cards because of earlier generations' card-giving norms, rather than age itself. The authors also call for research on networks too small to meet social needs and on circumstances such as schedule control and illness. I therefore read the positive relationship pattern as conditional, with important unanswered questions.",
-        "evidence_segment_id": "FUTURE-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 한계가 눈에 띄었나요?",
-        "answer_30s_ko": "정서적인 카드에 관한 결과에는 코호트 효과라는 설명이 여전히 가능합니다. 노인이 더 정성 어린 카드를 받는 것은 나이 자체가 아니라 이전 세대의 카드 주고받기 규범 때문일 수 있습니다. 저자들은 사회적 욕구를 충족하기에 너무 작은 관계망과 일정 통제권, 질병 같은 상황도 연구할 필요가 있다고 합니다. 따라서 저는 긍정적인 관계 양상이 조건에 따라 달라지며 중요한 미해결 질문이 남아 있다고 읽었습니다."
+        "card_id": "luong-et-al-2011-reflection-05",
+        "entry_type": "experience",
+        "topic": "Less tension, but is the issue settled?",
+        "topic_ko": "편해짐과 해결의 차이",
+        "title": "Have you reconsidered a moment when someone stepped away from an argument?",
+        "title_ko": "말다툼을 피한 장면이 다르게 보였나요?",
+        "experience_prompt": "These are fictional scenes involving minor disagreements. Choose another example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "사소한 말다툼을 가정한 가상 예시입니다. 다른 예시를 고르거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At first, {{prior_view}} I found it interesting that avoidance can, depending on the situation, be a strategy for regulating emotional distress. I would now distinguish feeling less uncomfortable from having resolved the issue that prompted the argument.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 그때는 {{prior_view}} 이 글에서 회피가 상황에 따라 정서적 불편을 줄이는 조절 전략일 수 있다는 점이 흥미로웠습니다. 이제는 덜 불편해진 것과 말다툼의 쟁점이 해결된 것을 나누어 보겠습니다.",
+        "evidence_segment_id": "BEHAVIOR-001",
+        "response_angle": "everyday-avoidance-emotional-relief-versus-unresolved-issues",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-05-followup-01",
+            "question": "Which part of that scene would you look at again?",
+            "question_ko": "그 장면에서 무엇을 다시 살펴보겠나요?",
+            "answer": "I would look again at this observation: {{age_cue}} It suggests that the immediate tension may have eased, which is the kind of emotional outcome discussed in the review. However, a calmer appearance does not directly measure distress, and it does not show that the disagreement was resolved. I would distinguish what I saw, how the person said they felt, and whether anything about the original issue had actually changed.",
+            "answer_ko": "이 모습을 다시 보겠습니다. {{age_cue}} 당장의 긴장이 줄었을 수 있다는 단서이며, 리뷰가 다루는 정서적 결과와 연결됩니다. 다만 차분해 보이는 모습이 불편을 직접 측정한 것은 아니고, 의견 차이가 해결됐음을 보여 주지도 않습니다. 제가 본 모습, 당사자가 말하는 기분, 원래 쟁점에서 실제로 달라진 점을 구분해 살펴보겠습니다.",
+            "evidence_segment_id": "BEHAVIOR-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-followup-02",
+            "question": "What if they argued about the same issue the next day?",
+            "question_ko": "다음 날 같은 문제로 다시 다툰다면요?",
+            "answer": "Then the issue may have remained unresolved even if stepping away reduced tension at the earlier moment. The review explicitly raises that possibility for avoidant strategies. In applying the reading, I would ask whether a practical decision was still pending and whether the people involved later had a chance to discuss it. Those are follow-up questions about this fictional scene, not a claim that the cited studies established one universally best way to settle every disagreement.",
+            "answer_ko": "앞선 순간에 잠시 물러나 긴장이 줄었어도 쟁점은 미해결 상태로 남아 있었을 수 있습니다. 리뷰도 회피 전략에 대해 이 가능성을 명시합니다. 읽기를 적용한다면 실제로 정해야 할 일이 남았는지, 이후에 당사자들이 이를 이야기할 기회가 있었는지 묻겠습니다. 이는 가상 장면을 더 살펴보기 위한 질문이지, 인용 연구들이 모든 의견 차이를 해결하는 최선의 방법 하나를 확정했다는 뜻은 아닙니다.",
+            "evidence_segment_id": "BEHAVIOR-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-followup-03",
+            "question": "Does this example provide evidence of an age difference?",
+            "question_ko": "이 예시가 연령 차이의 증거가 되나요?",
+            "answer": "No. It is a fictional scene for interpreting a reading, with neither comparison groups nor measurements of distress. The review's cited 2009 study distinguished arguing, when age groups reacted similarly, from avoiding an argument, when only older adults reported lower emotional reactivity. I can use that distinction to ask better questions about the scene, but I cannot treat one apparent moment of calm as proof of an age effect or promise the same benefit to anyone who avoids conflict.",
+            "answer_ko": "아닙니다. 읽기를 해석하기 위한 가상 장면이며 비교 집단도 불편의 측정도 없습니다. 리뷰가 인용한 2009년 연구는 연령집단의 반응이 비슷했던 논쟁 상황과 노년층에서만 더 낮은 정서 반응이 보고된 회피 상황을 구분했습니다. 그 구분으로 이 장면에 더 나은 질문을 할 수는 있지만, 차분해 보이는 한순간을 연령 효과의 증거로 삼거나 누구든 갈등을 피하면 같은 이점이 있다고 약속할 수는 없습니다.",
+            "evidence_segment_id": "BEHAVIOR-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "luong-et-al-2011-reflection-05-example-01",
+            "label": "A change of topic at a family meal",
+            "label_ko": "식사 중 바뀐 화제",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother changing the subject to the garden when a relative kept criticizing the seasoning at a family meal.",
+                "ko": "가족 식사에서 친척이 음식 간을 자꾸 지적하자 어머니가 정원 이야기로 화제를 바꾸셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "As the conversation continued, my mother's tense expression seemed to relax a little.",
+                "ko": "대화가 이어지는 동안 굳어 있던 어머니의 표정이 조금 편안해 보였습니다."
+              },
+              "prior_view": {
+                "en": "I thought she was simply putting up with the comments because she could not speak her mind.",
+                "ko": "할 말을 못하고 그냥 참으시는 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-example-02",
+            "label": "Stepping away from a television disagreement",
+            "label_ko": "텔레비전 앞의 잠깐 휴식",
+            "values": {
+              "scene": {
+                "en": "I remembered my father stepping out onto the balcony when a disagreement over which television program to watch began to get heated.",
+                "ko": "어떤 텔레비전 프로그램을 볼지 말다툼이 커지려 하자 아버지가 잠깐 베란다로 나가셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "When he came back, his voice sounded calmer than it had before the break.",
+                "ko": "돌아오신 뒤에는 아버지의 목소리가 잠깐 쉬기 전보다 차분하게 들렸습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that ending the uncomfortable exchange had also settled the disagreement.",
+                "ko": "불편한 대화가 끝났으니 문제도 해결된 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-example-03",
+            "label": "From an outing disagreement to photographs",
+            "label_ko": "나들이 이야기와 사진",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt bringing out photographs when talk about a past outing's restaurant choice started turning into an argument.",
+                "ko": "지난 나들이의 식당 선택을 두고 말다툼이 시작되려 하자 이모가 함께 찍은 사진을 꺼내셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "While looking through the photographs, my aunt began speaking with a more relaxed expression.",
+                "ko": "사진을 함께 보는 동안 이모는 한결 편안해진 표정으로 이야기를 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I took the change of topic to mean that she could not handle the disagreement.",
+                "ko": "말다툼을 감당하지 못해 주제를 바꾸신 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-example-04",
+            "label": "A pause during a board game",
+            "label_ko": "보드게임 중의 차 한 잔",
+            "values": {
+              "scene": {
+                "en": "I remembered an older family friend suggesting a tea break when the rules of a board game became a source of argument.",
+                "ko": "보드게임 규칙 때문에 말다툼이 날 것 같자 가족과 가까운 어른이 잠깐 차를 마시자고 하셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "During the break, the tightness in the person's voice seemed to ease.",
+                "ko": "차를 마시는 동안 그분의 목소리에서 느껴지던 긴장이 조금 누그러졌습니다."
+              },
+              "prior_view": {
+                "en": "I thought the person had avoided the discussion because they lacked confidence in explaining the rules.",
+                "ko": "규칙을 설명할 자신이 없어 대화를 피하신 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-example-05",
+            "label": "A neighborhood disagreement and a different topic",
+            "label_ko": "화분 배치와 다른 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered an older neighbor turning to another topic when a discussion about arranging flowerpots at a gathering became tense.",
+                "ko": "동네 모임에서 화분 배치를 두고 말이 날카로워지자 연세 든 이웃이 다른 이야기를 꺼내셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Later in the conversation, the neighbor appeared less tense and began smiling again.",
+                "ko": "대화가 이어지자 그 이웃은 전보다 긴장이 풀린 모습으로 다시 웃으셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that smiling again meant everyone had come to agree about the arrangement.",
+                "ko": "다시 웃으셨으니 배치에 대한 생각도 같아진 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-05-example-06",
+            "label": "Taking a break from choosing music",
+            "label_ko": "음악 선택을 잠시 멈춘 때",
+            "values": {
+              "scene": {
+                "en": "I remembered suggesting a short break when my friend and I began arguing about what music to play at a gathering.",
+                "ko": "모임에서 틀 음악을 고르다가 친구와 말다툼이 시작되자 제가 잠깐 쉬었다 이야기하자고 한 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "When we returned to the conversation, I felt less irritated than I had before the pause.",
+                "ko": "잠깐 쉰 뒤 다시 대화할 때는 제 기분이 아까보다 덜 날카롭다고 느꼈습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that feeling calmer meant there was nothing left for us to work out.",
+                "ko": "마음이 가라앉았으니 더 조정할 일도 없다고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "luong-reading-06",
-        "title": "How would you connect the review to families or policy?",
-        "answer_30s": "My inference is that relationship support should go beyond increasing contact numbers. The review links fewer than three close partners with loneliness and lower satisfaction, and proposes that schedule freedom may support relationships while illness-related spousal control may undermine them. I would therefore consider meaningful ties, control over time, and how partners respond to illness. These are implications to examine, rather than policies whose effects the review tested.",
-        "evidence_segment_id": "FUTURE-001",
-        "response_angle": "family-policy",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 종설을 가족이나 정책과 어떻게 연결하겠나요?",
-        "answer_30s_ko": "제 추론은 관계 지원이 접촉하는 사람 수를 늘리는 데서 더 나아가야 한다는 것입니다. 이 종설은 가까운 상대가 세 명 미만인 경우를 외로움과 낮은 만족도에 연결하며, 일정의 자유는 관계에 도움이 될 수 있지만 질병과 관련한 배우자의 통제는 관계를 해칠 수 있다고 제안합니다. 따라서 저는 의미 있는 관계, 시간에 대한 통제권, 상대가 질병에 반응하는 방식을 고려하겠습니다. 이는 검토할 함의이지, 이 종설에서 정책 효과를 검증한 결과는 아닙니다."
+        "card_id": "luong-et-al-2011-reflection-06",
+        "entry_type": "experience",
+        "topic": "Changed duties and easier relationships",
+        "topic_ko": "의무가 달라진 뒤의 관계",
+        "title": "Did a role change make a relationship seem easier?",
+        "title_ko": "역할이 바뀐 뒤 관계가 편안해 보였나요?",
+        "experience_prompt": "These are fictional changes in work, living, and care arrangements. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "근무·동거·돌봄 변화의 가상 예시입니다. 예시를 고르거나 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that easier relationships may reflect roles and room for choice as well as personality. I would now ask what the person was no longer obliged to do and how much choice they had about whom to meet.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 그때는 {{prior_view}} 관계가 편안해 보이는 이유에 성격뿐 아니라 역할과 선택권도 들어간다는 점이 흥미로웠습니다. 이제는 그 사람이 무엇을 덜 의무적으로 하게 됐고 누구를 만날지 얼마나 고를 수 있는지 묻겠습니다.",
+        "evidence_segment_id": "ENVIRONMENT-001",
+        "response_angle": "changed-obligations-and-contact-choice-in-everyday-roles",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "luong-et-al-2011-reflection-06-followup-01",
+            "question": "Which obligation or opportunity changed?",
+            "question_ko": "구체적으로 어떤 의무나 선택권이 달라졌나요?",
+            "answer": "{{age_cue}} I would check which encounters became optional, which responsibilities were shared, or which timing could now be chosen. The review makes such structural conditions relevant to relationship quality. In this fictional scene, an easier conversation is a clue to investigate, not proof that the role change caused an improvement or that the person's disposition stayed exactly the same.",
+            "answer_ko": "{{age_cue}} 어떤 만남을 선택할 수 있게 됐는지, 어떤 책임을 나눴는지, 시간을 얼마나 고를 수 있는지 확인하겠습니다. 리뷰는 이런 구조적 조건도 관계의 질에 중요하다고 봅니다. 가상 장면의 편안한 대화는 더 살펴볼 단서이지, 역할 변화가 관계를 개선했다거나 당사자의 성향은 전혀 달라지지 않았다는 증거는 아닙니다.",
+            "evidence_segment_id": "ENVIRONMENT-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-followup-02",
+            "question": "Would the same change help everyone?",
+            "question_ko": "같은 역할 변화가 누구에게나 도움이 될까요?",
+            "answer": "No. The review describes advantages associated with freedom from work and full-time childcare, but also serious stress around caring for a spouse or losing someone close. A role can carry rewards as well as demands. I would ask what was lost, what remained, and whether desired contact was still possible, rather than assume that fewer duties or separate households necessarily mean a better social life.",
+            "answer_ko": "아닙니다. 리뷰는 일이나 전일 돌봄에서 벗어날 때의 이점을 설명하지만, 배우자 돌봄이나 가까운 사람의 상실에 따른 큰 스트레스도 다룹니다. 역할에는 부담과 보람이 함께 있을 수 있습니다. 무엇을 잃고 무엇이 남았으며 원하는 만남이 가능한지 묻겠고, 의무가 줄거나 따로 산다는 사실만으로 사회생활이 좋아졌다고 보지는 않겠습니다.",
+            "evidence_segment_id": "ENVIRONMENT-001"
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-followup-03",
+            "question": "How would you distinguish freedom from restricted contact?",
+            "question_ko": "자유로워진 것과 만남이 막힌 것은 어떻게 나누나요?",
+            "answer": "I would ask whether the person can choose a schedule and reach the people or support they want, rather than count free hours alone. The review notes that circumstances can facilitate or undermine relationship quality, including illness that increases a spouse's control. This is an application of that contextual question, not a claim that any spouse's involvement is restrictive or that declining contact always reflects a free choice.",
+            "answer_ko": "빈 시간만 세기보다 일정을 선택하고 원하는 사람이나 도움에 접근할 수 있는지 묻겠습니다. 리뷰는 상황에 따라 관계의 질이 좋아지거나 나빠질 수 있으며, 질병이 배우자의 통제를 늘리는 경우도 듭니다. 이는 맥락을 묻는 질문을 적용한 것이지, 배우자가 관여하면 모두 제약이라거나 만남이 줄면 언제나 자발적 선택이라는 뜻은 아닙니다.",
+            "evidence_segment_id": "FUTURE-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "luong-et-al-2011-reflection-06-example-01",
+            "label": "Meeting coworkers after retirement",
+            "label_ko": "은퇴 뒤 동료 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered my father saying that meeting former coworkers felt easier after retirement.",
+                "ko": "아버지가 은퇴 뒤 예전 동료들과 만나는 일이 더 편하다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He no longer had to work with everyone daily and could choose which gatherings to attend.",
+                "ko": "매일 모두와 일할 의무가 없어졌고 어느 모임에 나갈지도 고를 수 있었습니다."
+              },
+              "prior_view": {
+                "en": "I thought he had simply become more tolerant with age.",
+                "ko": "나이가 들어 그저 더 너그러워진 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-example-02",
+            "label": "Working three days a week",
+            "label_ko": "주 사흘 근무로 바뀐 뒤",
+            "values": {
+              "scene": {
+                "en": "I remembered an aunt enjoying meetings with friends after reducing her work to three days a week.",
+                "ko": "이모가 주 사흘 근무로 바꾼 뒤 친구들과의 모임을 즐긴다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She could select meeting times instead of squeezing every visit between work shifts.",
+                "ko": "근무 틈마다 약속을 끼워 넣는 대신 만날 시간을 직접 고를 수 있었습니다."
+              },
+              "prior_view": {
+                "en": "I attributed the change mainly to her becoming more easygoing.",
+                "ko": "주로 성격이 여유로워진 덕분이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-example-03",
+            "label": "An adult child moving out",
+            "label_ko": "성인 자녀가 분가한 뒤",
+            "values": {
+              "scene": {
+                "en": "I remembered a mother and her adult son saying their meals together felt more relaxed after he moved out.",
+                "ko": "성인 아들이 분가한 뒤 어머니와 아들이 함께 먹는 식사가 더 편하다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They no longer coordinated chores every day and arranged visits at mutually convenient times.",
+                "ko": "매일 집안일을 조정하지 않아도 됐고 서로 편한 시간에 방문을 정했습니다."
+              },
+              "prior_view": {
+                "en": "I thought both had simply learned to be more understanding.",
+                "ko": "두 사람이 그저 서로를 더 이해하게 된 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-example-04",
+            "label": "Sharing grandchild care",
+            "label_ko": "손주 돌봄을 나눈 뒤",
+            "values": {
+              "scene": {
+                "en": "I remembered a grandmother saying that visits from her family felt more enjoyable after childcare was shared.",
+                "ko": "할머니가 손주 돌봄을 나눈 뒤 가족의 방문이 더 즐겁다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She no longer had to provide care every weekday and could decide which afternoons to spend together.",
+                "ko": "평일마다 돌봐야 할 의무가 줄었고 어느 오후를 함께 보낼지 고를 수 있었습니다."
+              },
+              "prior_view": {
+                "en": "I thought she had simply become more patient with the family.",
+                "ko": "가족을 대하는 태도가 그저 더 너그러워졌다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-example-05",
+            "label": "Getting help with a spouse's care",
+            "label_ko": "배우자 돌봄에 도움을 받으며",
+            "values": {
+              "scene": {
+                "en": "I remembered an older acquaintance saying that calls with relatives felt easier after he received help caring for his spouse.",
+                "ko": "연세 든 지인이 배우자 돌봄에 도움을 받은 뒤 친척들과의 통화가 더 편하다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone could cover part of the care, so he could choose a quieter time to call.",
+                "ko": "다른 사람이 돌봄의 일부를 맡아 주어 여유 있는 통화 시간을 고를 수 있었습니다."
+              },
+              "prior_view": {
+                "en": "I thought he had simply become better at handling difficult feelings.",
+                "ko": "힘든 감정을 다루는 데 그저 더 능숙해진 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "luong-et-al-2011-reflection-06-example-06",
+            "label": "A change in shift schedules",
+            "label_ko": "교대근무 시간이 바뀐 뒤",
+            "values": {
+              "scene": {
+                "en": "I remembered a couple saying that dinner together felt more comfortable after their shifts became more predictable.",
+                "ko": "교대근무 시간을 미리 알 수 있게 된 뒤 부부가 함께하는 저녁이 더 편하다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They spent less time negotiating last-minute meal and household arrangements.",
+                "ko": "식사 시간과 집안일을 직전에 바꾸며 맞춰야 하는 일이 줄었습니다."
+              },
+              "prior_view": {
+                "en": "I explained the change mainly as the couple growing more mature together.",
+                "ko": "두 사람이 함께 살아오며 더 성숙해진 것으로 주로 설명했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

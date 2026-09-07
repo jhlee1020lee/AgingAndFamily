@@ -728,6 +728,10 @@ function validateEvidenceId(value, label, knownIds, errors) {
   else if (!knownIds.has(id)) errors.push(`${label} references unknown evidence_segment_id ${id}`);
 }
 
+const PREP_EXPERIENCE_SLOTS = ["scene", "age_cue", "prior_view"];
+const experienceSlots = (value) => [...toText(value).matchAll(/\{\{([^{}]*)\}\}/g)].map((match) => match[1]);
+const fillExperienceTemplate = (value, example, language) => toText(value).replace(/\{\{([^{}]*)\}\}/g, (token, slot) => example?.values?.[slot]?.[language] === undefined ? token : `[${example.values[slot][language]}]`);
+
 function validateProfessorPrepJson(payload, knownIds = new Set()) {
   if (!payload) {
     return missingResult();
@@ -743,6 +747,13 @@ function validateProfessorPrepJson(payload, knownIds = new Set()) {
     card_count: cards.length,
     reading_response_card_count: readingResponseCards.length,
   };
+  const reflectionPractice = payload.practice_format === "reflection-followups-v1";
+  if (payload.practice_format !== undefined && !reflectionPractice) {
+    errors.push("professor-prep has an unsupported practice_format");
+  }
+  if (reflectionPractice && payload.default_tab !== "reading-response") {
+    errors.push("reflection practice default_tab must be reading-response");
+  }
   const allCards = [...cards, ...readingResponseCards];
   const hasKoreanFields = (card) => card && typeof card === "object" && ["title_ko", "answer_30s_ko"].some((field) => Object.prototype.hasOwnProperty.call(card, field));
   metrics.korean_card_count = allCards.filter(hasKoreanFields).length;
@@ -751,7 +762,7 @@ function validateProfessorPrepJson(payload, knownIds = new Set()) {
   }
   if (payload.language === "en") {
     for (const field of ["title", "instructions"]) validateEnglishText(payload[field], `professor-prep ${field}`, errors);
-    for (const field of ["title", "instructions"]) validateEnglishText(readingResponse?.[field], `reading_response ${field}`, errors);
+    if (!reflectionPractice) for (const field of ["title", "instructions"]) validateEnglishText(readingResponse?.[field], `reading_response ${field}`, errors);
   }
   if (cards.length < 15) {
     errors.push("professor-prep needs at least 15 cards");
@@ -797,21 +808,205 @@ function validateProfessorPrepJson(payload, knownIds = new Set()) {
         }
       }
       if (requireEvidence) validateEvidenceId(card.evidence_segment_id, `${label} ${index + 1}`, knownIds, errors);
-      if (hasKoreanFields(card)) {
+      if (hasKoreanFields(card) || reflectionPractice) {
         for (const field of ["title_ko", "answer_30s_ko"]) {
           if (!/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(toText(card[field]))) {
             errors.push(`${label} ${index + 1} ${field} must contain non-empty Korean text`);
           }
         }
       }
-      if (payload.language === "en") {
+      if (payload.language === "en" || reflectionPractice) {
         for (const field of ["title", "answer_30s", "source"]) validateEnglishText(card[field], `${label} ${index + 1} ${field}`, errors);
       }
     });
   };
   validateCards(cards, "card", true);
   validateCards(readingResponseCards, "reading_response card", true);
+  if (reflectionPractice) {
+    metrics.reading_entry_count = readingResponseCards.filter((card) => card?.entry_type === "reading").length;
+    metrics.experience_entry_count = readingResponseCards.filter((card) => card?.entry_type === "experience").length;
+    metrics.experience_example_count = 0;
+    for (const type of ["reading", "experience"]) {
+      if (metrics[`${type}_entry_count`] < 3) errors.push(`reflection practice needs at least 3 ${type} entries`);
+    }
+    for (const field of ["title", "instructions"]) {
+      if (!/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(toText(readingResponse?.[field]))) errors.push(`reflection practice reading_response ${field} must contain Korean text`);
+    }
+    const bilingualText = (item, englishField, koreanField, label) => {
+      if (typeof item[englishField] !== "string" || !item[englishField].trim()) {
+        errors.push(`${label} is missing ${englishField}`);
+      } else {
+        validateEnglishText(item[englishField], `${label} ${englishField}`, errors);
+      }
+      if (typeof item[koreanField] !== "string" || !/[\u1100-\u11ff\u3130-\u318f\uac00-\ud7af]/.test(item[koreanField]) || /\uFFFD|\?{2,}/.test(item[koreanField])) {
+        errors.push(`${label} ${koreanField} must contain non-empty, undamaged Korean text`);
+      }
+    };
+    metrics.practice_format = payload.practice_format;
+    metrics.followup_count = 0;
+    allCards.forEach((card, index) => {
+      if (!card || typeof card !== "object") return;
+      if (!/^[A-Za-z][A-Za-z0-9_-]*$/.test(toText(card.card_id))) errors.push(`practice card ${index + 1} has invalid card_id`);
+      bilingualText(card, "title", "title_ko", `practice card ${index + 1}`);
+      bilingualText(card, "answer_30s", "answer_30s_ko", `practice card ${index + 1}`);
+    });
+    readingResponseCards.forEach((card, index) => {
+      if (!card || typeof card !== "object" || Array.isArray(card)) return;
+      const label = `reading_response card ${index + 1}`;
+      if (!["reading", "experience"].includes(card.entry_type)) errors.push(`${label} has invalid entry_type`);
+      bilingualText(card, "topic", "topic_ko", label);
+      if (card.entry_type === "experience") bilingualText(card, "experience_prompt", "experience_prompt_ko", label);
+      const answerPairs = [[card.answer_30s, card.answer_30s_ko], ...(Array.isArray(card.followups) ? card.followups.filter(Boolean).map((followup) => [followup.answer, followup.answer_ko]) : [])];
+      if (card.entry_type === "experience") {
+        const examples = card.experience_examples;
+        if (!Array.isArray(examples) || examples.length < 6) errors.push(`${label} needs at least 6 experience_examples`);
+        metrics.experience_example_count += Array.isArray(examples) ? examples.length : 0;
+        const exampleIds = new Set();
+        const exampleValues = new Set();
+        (Array.isArray(examples) ? examples : []).forEach((example, exampleIndex) => {
+          const exampleLabel = `${label} experience example ${exampleIndex + 1}`;
+          if (!example || typeof example !== "object" || Array.isArray(example)) { errors.push(`${exampleLabel} is not an object`); return; }
+          const id = toText(example.id);
+          if (!/^[A-Za-z][A-Za-z0-9_-]*$/.test(id)) errors.push(`${exampleLabel} has invalid id`);
+          else if (exampleIds.has(id)) errors.push(`${exampleLabel} has duplicate example id ${id}`);
+          else exampleIds.add(id);
+          bilingualText(example, "label", "label_ko", exampleLabel);
+          if (!example.values || typeof example.values !== "object" || Array.isArray(example.values)) errors.push(`${exampleLabel} needs slot values`);
+          for (const slot of PREP_EXPERIENCE_SLOTS) {
+            const value = example.values?.[slot] || {};
+            bilingualText(value, "en", "ko", `${exampleLabel} ${slot}`);
+            if (/\{\{|\}\}|\[[^\]\r\n]+\]/.test(`${value.en || ""} ${value.ko || ""}`)) errors.push(`${exampleLabel} ${slot} contains an unresolved placeholder`);
+          }
+          if (Object.keys(example.values || {}).some((slot) => !PREP_EXPERIENCE_SLOTS.includes(slot))) errors.push(`${exampleLabel} contains unknown slot values`);
+          const signature = JSON.stringify(PREP_EXPERIENCE_SLOTS.map((slot) => ["en", "ko"].map((language) => toText(example.values?.[slot]?.[language]).replace(/\s+/g, " ").trim())));
+          if (exampleValues.has(signature)) errors.push(`${exampleLabel} duplicates another example's slot values`);
+          exampleValues.add(signature);
+        });
+        const usedSlots = new Set();
+        answerPairs.forEach(([english, korean], answerIndex) => {
+          const pairs = [experienceSlots(english), experienceSlots(korean)];
+          for (const [languageIndex, value] of [english, korean].entries()) {
+            const slots = pairs[languageIndex];
+            if (slots.some((slot) => !PREP_EXPERIENCE_SLOTS.includes(slot))) errors.push(`${label} answer ${answerIndex + 1} contains an unknown experience slot`);
+            if (/\{\{|\}\}|\[[^\]\r\n]+\]/.test(toText(value).replace(/\{\{[^{}]*\}\}/g, ""))) errors.push(`${label} answer ${answerIndex + 1} contains an unresolved placeholder`);
+            slots.forEach((slot) => usedSlots.add(slot));
+          }
+          if (pairs[0].slice().sort().join("|") !== pairs[1].slice().sort().join("|")) errors.push(`${label} answer ${answerIndex + 1} has mismatched English and Korean experience slots`);
+          if (answerIndex === 0 && !pairs[0].length) errors.push(`${label} first answer must use experience slots`);
+        });
+        if (PREP_EXPERIENCE_SLOTS.some((slot) => !usedSlots.has(slot))) errors.push(`${label} must use all three experience slots across its answers`);
+      } else if (answerPairs.some((pair) => pair.some((value) => /\{\{|\}\}/.test(toText(value))))) {
+        errors.push(`${label} only experience entries may use experience slots`);
+      }
+      if (!Array.isArray(card.followups) || card.followups.length < 3) errors.push(`${label} needs at least 3 followups`);
+      if (!Array.isArray(card.followups)) return;
+      card.followups.forEach((followup, followupIndex) => {
+        const followupLabel = `${label} followup ${followupIndex + 1}`;
+        if (!followup || typeof followup !== "object" || Array.isArray(followup)) {
+          errors.push(`${followupLabel} is not an object`);
+          return;
+        }
+        const id = toText(followup.id);
+        if (!/^[A-Za-z][A-Za-z0-9_-]*$/.test(id)) errors.push(`${followupLabel} has invalid id`);
+        else if (ids.has(id)) errors.push(`${followupLabel} has duplicate id ${id}`);
+        else ids.add(id);
+        bilingualText(followup, "question", "question_ko", followupLabel);
+        bilingualText(followup, "answer", "answer_ko", followupLabel);
+        validateEvidenceId(followup.evidence_segment_id, followupLabel, knownIds, errors);
+        metrics.followup_count += 1;
+      });
+    });
+  }
   return makeResult(errors.length ? PAGE_STATUS.SCHEMA_FAIL : PAGE_STATUS.SCHEMA_PASS, errors, warnings, metrics);
+}
+
+function validateReflectionPrepArtifacts(payload, html) {
+  if (payload?.practice_format !== "reflection-followups-v1") return [];
+  const { JSDOM } = require("jsdom");
+  const dom = new JSDOM(html);
+  const document = dom.window.document;
+  const errors = [];
+  const normalize = (value) => toText(value).replace(/[*`]/g, "").replace(/\s+/g, " ");
+  const checkText = (container, selector, expected, label) => {
+    const nodes = container?.querySelectorAll(selector) || [];
+    if (nodes.length !== 1 || normalize(nodes[0]?.textContent) !== normalize(expected)) errors.push(`built reflection ${label} differs`);
+  };
+  const checkPair = (container, kind, english, korean, label, example = null) => {
+    for (const [language, value] of [["en", english], ["ko", korean]]) {
+      const selector = `[data-prep-${kind}-language="${language}"][lang="${language}"]`;
+      checkText(container, selector, example ? fillExperienceTemplate(value, example, language) : value, `${label} ${language === "en" ? "English" : "Korean"}`);
+      const variant = container?.querySelector(selector);
+      if (!variant || variant.hidden !== (language === "en")) errors.push(`built reflection ${label} must default to Korean visible and English hidden`);
+      if (example) {
+        const expectedSlots = experienceSlots(value);
+        const nodes = [...(container?.querySelector(selector)?.querySelectorAll("[data-prep-experience-slot]") || [])];
+        if (nodes.length !== expectedSlots.length || nodes.some((node, index) => node.dataset.prepExperienceSlot !== expectedSlots[index] || node.dataset.prepExperienceLanguage !== language || node.textContent !== example.values?.[expectedSlots[index]]?.[language])) errors.push(`built reflection ${label} ${language} experience slots differ`);
+      }
+    }
+  };
+  const checkEvidence = (container, expected, label) => checkText(container, ".quiz-evidence-segment", expected, `${label} evidence`);
+  try {
+    const root = document.querySelector('[data-prep-format="reflection-followups-v1"]');
+    if (!root || root.dataset.prepDefaultTab !== "reading-response") errors.push("built reflection practice markers differ");
+    for (const control of ["question", "answer"]) {
+      const selectors = root?.querySelectorAll(`[data-prep-${control}-select]`) || [];
+      if (selectors.length !== 1 || selectors[0].value !== "ko") errors.push(`built reflection ${control} selector must default to Korean`);
+    }
+    if (document.querySelector('[data-prep-tab="cold-call"], [data-prep-panel="cold-call"]')) errors.push("built reflection cold-call tab and panel must be absent");
+    const tabs = [...(root?.querySelectorAll("[data-prep-tab]") || [])];
+    const panels = [...(root?.querySelectorAll("[data-prep-panel]") || [])];
+    const expectedTabs = root?.querySelector("[data-weekly-root]") ? ["reading-response", "weekly"] : ["reading-response"];
+    if (tabs.map((tab) => tab.dataset.prepTab).join("|") !== expectedTabs.join("|") || panels.length !== expectedTabs.length || expectedTabs.some((key) => panels.filter((panel) => panel.dataset.prepPanel === key).length !== 1)) errors.push("built reflection tabs and panels differ");
+    const firstTab = tabs[0]?.cloneNode(true);
+    firstTab?.querySelectorAll(".prep-tab-count").forEach((count) => count.remove());
+    if (firstTab?.textContent.trim() !== "이 읽기 답변 준비") errors.push("built reflection first tab label differs");
+    if (expectedTabs.includes("weekly")) {
+      const weeklyTab = tabs.find((tab) => tab.dataset.prepTab === "weekly")?.cloneNode(true);
+      weeklyTab?.querySelectorAll(".prep-tab-count").forEach((count) => count.remove());
+      if (weeklyTab?.textContent.trim() !== "두 편 연결") errors.push("built reflection weekly tab label differs");
+    }
+    if (tabs.filter((tab) => tab.getAttribute("aria-selected") === "true").length !== 1 || tabs[0]?.getAttribute("aria-selected") !== "true" || tabs[0]?.getAttribute("tabindex") !== "0") errors.push("built reflection first tab must start selected");
+    const visiblePanels = panels.filter((panel) => !panel.hidden);
+    if (visiblePanels.length !== 1 || visiblePanels[0].dataset.prepPanel !== "reading-response") errors.push("built reflection reading-response panel must start visible");
+    const allCards = payload.reading_response?.cards || [];
+    const builtCards = [...document.querySelectorAll("[data-prep-card][data-card-id]")];
+    if (builtCards.length !== allCards.length) errors.push("built reflection card count differs");
+    allCards.forEach((card) => {
+      const matches = builtCards.filter((node) => node.dataset.cardId === card.card_id);
+      const node = matches[0];
+      if (matches.length !== 1) { errors.push(`built reflection card ${card.card_id} is missing or duplicated`); return; }
+      if (node.closest("[data-prep-panel]")?.dataset.prepPanel !== "reading-response") errors.push(`built reflection ${card.card_id} must be in the reading-response panel`);
+      const example = card.entry_type === "experience" ? card.experience_examples?.[0] : null;
+      checkPair(node.querySelector(".prep-reflection-question"), "question", card.title, card.title_ko, `${card.card_id} question`);
+      checkPair(node.querySelector(".prep-answer-copy"), "answer", card.answer_30s, card.answer_30s_ko, `${card.card_id} first answer`, example);
+      checkEvidence(node.querySelector("[data-prep-answer]"), card.evidence_segment_id, `${card.card_id} first answer`);
+      if (node.dataset.entryType !== card.entry_type) errors.push(`built reflection ${card.card_id} entry_type differs`);
+      checkPair(node.querySelector(".prep-reflection-topic"), "question", card.topic, card.topic_ko, `${card.card_id} topic`);
+      const groups = node.querySelectorAll("details.prep-followups");
+      if (groups.length !== 1 || !groups[0].open) errors.push(`built reflection ${card.card_id} followup group must start open`);
+      if (card.entry_type === "experience") {
+        checkPair(node.querySelector(".prep-experience-prompt"), "answer", card.experience_prompt, card.experience_prompt_ko, `${card.card_id} experience prompt`);
+        const scripts = node.querySelectorAll('script[type="application/json"][data-prep-experience-data]');
+        let examples;
+        try { examples = scripts.length === 1 ? JSON.parse(scripts[0].textContent) : null; } catch { examples = null; }
+        if (JSON.stringify(examples) !== JSON.stringify(card.experience_examples)) errors.push(`built reflection ${card.card_id} experience data differs`);
+        checkText(node, "[data-prep-experience-label]", example?.label_ko, `${card.card_id} experience label`);
+        const counter = node.querySelector("[data-prep-experience-counter]");
+        if (toText(counter?.textContent).replace(/\s/g, "") !== `1/${card.experience_examples?.length}`) errors.push(`built reflection ${card.card_id} experience counter differs`);
+      }
+      const followups = [...node.querySelectorAll("details.prep-followup")];
+      if (followups.length !== card.followups.length) errors.push(`built reflection ${card.card_id} followup count differs`);
+      card.followups.forEach((followup) => {
+        const matches = followups.filter((detail) => detail.id === followup.id);
+        if (matches.length !== 1) { errors.push(`built reflection followup ${followup.id} is missing or duplicated`); return; }
+        if (matches[0].open) errors.push(`built reflection ${followup.id} answer must start closed`);
+        checkPair(matches[0].querySelector("summary"), "question", followup.question, followup.question_ko, `${followup.id} question`);
+        checkPair(matches[0].querySelector(".prep-followup-copy"), "answer", followup.answer, followup.answer_ko, `${followup.id} answer`, example);
+        checkEvidence(matches[0], followup.evidence_segment_id, followup.id);
+      });
+    });
+    return errors;
+  } finally { dom.window.close(); }
 }
 
 function validateQuizPayload(pageKey, payload, knownIds = new Set()) {
@@ -1411,7 +1606,10 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
     }
     if (QUIZ_PAGE_KEYS.has(pageKey) || pageKey === "professor-prep") {
       const payload = loadJson(contentPathForPage(rootDir, reading, pageKey));
-      if (payload?.language === "en") {
+      if (pageKey === "professor-prep") {
+        errors.push(...validateReflectionPrepArtifacts(payload, html).map((error) => `${error}: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`));
+      }
+      if (payload?.language === "en" && !(pageKey === "professor-prep" && payload.practice_format === "reflection-followups-v1")) {
         // Strip markup before decoding entities so displayed inequalities cannot become HTML tags.
         const text = html.replace(/<[^>]*>/g, " ").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ");
         const cards = pageKey === "professor-prep" ? [...(payload.cards || []), ...(payload.reading_response?.cards || [])] : payload.items || [];
@@ -1422,7 +1620,7 @@ function validateBuildArtifacts(rootDir, reading, existingMeta = {}, pageResults
             if (expected && !text.includes(expected)) errors.push(`built English content differs at item ${index + 1}: docs/readings/${reading.slug}/${builtPageFilename(pageKey)}`);
           });
         });
-        if (pageKey === "professor-prep" && cards.some((card) => card.title_ko !== undefined || card.answer_30s_ko !== undefined)) {
+        if (pageKey === "professor-prep" && payload.practice_format !== "reflection-followups-v1" && cards.some((card) => card.title_ko !== undefined || card.answer_30s_ko !== undefined)) {
           for (const [field, attribute] of [["title_ko", "data-prep-question-language"], ["answer_30s_ko", "data-prep-answer-language"]]) {
             const pattern = new RegExp(`<span\\b(?=[^>]*\\b${attribute}="ko")(?=[^>]*\\blang="ko")[^>]*>([\\s\\S]*?)<\\/span>`, "g");
             const translated = [...html.matchAll(pattern)].map((match) => match[1].replace(/<[^>]*>/g, "").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim());
@@ -1669,6 +1867,7 @@ module.exports = {
   sourceHashForPage,
   validateQuizPayload,
   validateProfessorPrepJson,
+  validateReflectionPrepArtifacts,
 };
 
 if (require.main === module) {

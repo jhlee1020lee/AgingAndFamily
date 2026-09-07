@@ -141,69 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Practice Answering: How Did You Read This Paper?",
-    "instructions": "Explain your reaction and connection to the course in your own words. Distinguish cross-sectional associations from causal effects, age-group differences from individual development, and theoretical interpretations from directly tested mechanisms.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "oswald-reading-01",
-        "title": "A 30-second overall response",
-        "answer_30s": "I read this paper as suggesting that the same environment can be experienced as a resource or a challenge depending on capacities and age-related circumstances. Neighborhood quality and attachment mattered, while apartment size had opposite associations in the two groups. I would therefore consider both home and neighborhood rather than assume that remaining in a familiar place is always beneficial. The study does not test that causal claim.",
-        "evidence_segment_id": "ABS-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
-        "answer_30s_ko": "저는 이 논문이 같은 환경도 개인의 역량과 연령에 따른 상황에 따라 자원이나 도전으로 경험될 수 있음을 시사한다고 읽었습니다. 근린환경의 질과 장소애착은 중요했고, 주택 크기는 두 집단에서 반대 방향의 관계를 보였습니다. 따라서 익숙한 곳에 계속 사는 것이 언제나 이롭다고 가정하기보다 주택과 근린환경을 함께 고려하겠습니다. 이 연구가 그런 인과적 주장을 검증한 것은 아닙니다."
-      },
-      {
-        "card_id": "oswald-reading-02",
-        "title": "What was most counterintuitive?",
-        "answer_30s": "The finding that a larger home was not uniformly favorable surprised me. Apartment size had a positive association among young-old adults and a negative association among old-old adults, with unique contributions of 2% and 3%. The follow-up interaction supported a group difference. I would interpret that as a reason to examine person-environment fit, rather than recommend downsizing on the basis of this cross-sectional result alone.",
+        "card_id": "oswald-et-al-2010-reflection-01",
+        "entry_type": "reading",
+        "topic": "Living space and person–environment fit",
+        "topic_ko": "집의 넓이와 사람의 조건",
+        "title": "What interested you about living space and life satisfaction?",
+        "title_ko": "집의 넓이에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that more living space was not associated with higher life satisfaction in both age groups. The association was positive among people aged 65–79 and negative among those aged 80–94. From a person–environment perspective, extra space might offer opportunities to one person while creating demands for another. I took this as a reason to ask how space fits the person using it.",
+        "answer_30s_ko": "집이 넓을수록 삶에 더 만족한다는 관계가 두 연령집단에서 같지 않았던 점이 흥미로웠습니다. 65~79세에서는 면적과 만족도가 정적으로, 80~94세에서는 부적으로 관련됐습니다. 사람과 환경의 적합이라는 관점에서 보면 같은 공간도 누군가에게는 활동의 기회이고 다른 사람에게는 부담일 수 있겠습니다. 그래서 넓이보다 그 공간을 쓰는 사람의 조건을 함께 봐야겠다고 생각했습니다.",
         "evidence_segment_id": "EXPLANATION-001",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "무엇이 가장 직관에 어긋났나요?",
-        "answer_30s_ko": "더 큰 집이 한결같이 유리하지는 않다는 결과가 놀라웠습니다. 주택 크기는 전기노인에게서는 정적 관계를, 후기노인에게서는 부적 관계를 보였으며 고유 기여도는 각각 2%와 3%였습니다. 후속 상호작용 검정도 집단 차이를 뒷받침했습니다. 저는 이 횡단적 결과만으로 주거 규모를 줄이라고 권하기보다, 개인과 환경의 적합성을 살펴봐야 할 이유로 해석하겠습니다."
+        "response_angle": "interpreting-age-group-differences-in-living-space-through-person-environment-fit",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-01-followup-01",
+            "question": "How clearly did the association differ between the age groups?",
+            "question_ko": "두 연령집단의 차이는 얼마나 뚜렷했나요?",
+            "answer": "In the final regressions, the standardized coefficient for apartment size was +.26 among 207 participants aged 65–79 and −.26 among 138 participants aged 80–94; both were statistically significant. The authors also tested age-by-predictor interactions rather than relying only on the two signs and reported reliable age differences for apartment size. In the combined sample of 345, however, the apartment-size coefficient was not significant. The text reports that size alone explained 2% and 3% of unique variance in the two age groups. Those figures are not the 2% and 6% contributions of the broader indoor-space block, which also includes number of rooms. None of these values gives a recommended floor area for an individual.",
+            "answer_ko": "최종 회귀에서 면적의 표준화 계수는 65~79세 207명에서 +.26, 80~94세 138명에서 −.26으로 모두 유의했습니다. 저자들은 부호만 비교하지 않고 연령과 예측변수의 상호작용도 검토해 면적의 연령 차이를 확인했습니다. 다만 전체 345명을 합친 모형에서는 면적이 유의하지 않았습니다. 본문에서 면적만의 독립 설명분산은 두 집단 각각 2%, 3%였습니다. 이는 방 수까지 묶은 실내 공간 지표 전체의 2%, 6%와 구분해야 합니다. 어느 수치도 한 개인에게 권할 주거 면적을 알려 주는 것은 아닙니다.",
+            "evidence_segment_id": "EXPLANATION-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-01-followup-02",
+            "question": "Why could the same amount of space be a resource or a demand?",
+            "question_ko": "같은 공간이 왜 자원도 부담도 될까요?",
+            "answer": "The person–environment account considers both what the environment offers and the person's ability to use it. The introduction gives the example of a larger home providing room for varied activities, while also requiring longer walks within the home when mobility is restricted. This helps explain why square meters cannot be judged as uniformly beneficial in isolation. But it is an interpretation of the association: the study did not directly demonstrate that longer indoor walking distances caused lower life satisfaction. Apartment size was reported by participants, and researchers did not visit homes to map the actual routes or assess environmental demands. Age is therefore a context for the group comparison, not a substitute for knowing a particular person's abilities and routines.",
+            "answer_ko": "사람–환경 관점은 환경이 제공하는 기회와 그것을 활용할 수 있는 사람의 능력을 함께 봅니다. 서론은 넓은 집이 다양한 활동 공간을 제공하지만, 이동에 제약이 있으면 집 안에서 더 오래 걸어야 하는 부담도 생길 수 있다고 설명합니다. 넓이를 다른 조건과 떼어 놓고 늘 좋다고 보기 어려운 이유입니다. 다만 이는 관련성을 해석하는 설명이지, 긴 실내 이동거리가 만족도를 낮추는 과정을 직접 입증한 것은 아닙니다. 면적은 참여자가 보고했고 연구자가 방문해 동선이나 환경의 요구를 조사하지도 않았습니다. 연령은 집단 비교의 맥락이지 개인의 능력과 일상을 대신하는 정보는 아닙니다.",
+            "evidence_segment_id": "INTRO-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-01-followup-03",
+            "question": "Does the finding mean people should move to smaller homes as they age?",
+            "question_ko": "나이가 들면 작은 집으로 옮겨야 하나요?",
+            "answer": "That does not follow from this study. It was a cross-sectional survey of older people living in an urban district of Darmstadt, Germany, rather than a study of the same people before and after downsizing. The models considered age, daily functioning, and other housing and neighborhood indicators, but adjustment does not establish what a move would do to one person's life satisfaction. The outcome was a single self-rating of life satisfaction, not a test of an optimal home size. I would use the finding to ask about desired activities, usable space, and demands in someone's current home. It cannot tell every person in the older age group to move or establish the age at which a move would help.",
+            "answer_ko": "그런 결론은 나오지 않습니다. 독일 다름슈타트의 도시 지역에 사는 고령자를 한 시점에 조사했으며, 같은 사람이 작은 집으로 옮기기 전후를 살핀 연구가 아닙니다. 모형에서 연령, 일상생활 기능, 다른 주거·근린 지표를 고려했어도 이사가 한 사람의 삶의 만족도를 어떻게 바꿀지 확인한 것은 아닙니다. 결과변수도 삶에 대한 단일 문항 자기평가였지 최적 주거 면적을 찾는 검사가 아니었습니다. 저는 하고 싶은 활동, 실제로 쓸 수 있는 공간, 현재 집에서의 부담을 묻는 데 활용하겠습니다. 고령집단 모두에게 이사를 권하거나 이사가 도움이 되는 나이를 정할 근거는 아닙니다.",
+            "evidence_segment_id": "LIMITATIONS-001"
+          }
+        ]
       },
       {
-        "card_id": "oswald-reading-03",
-        "title": "What methodological feature stood out?",
-        "answer_30s": "I appreciated that the researchers did more than compare separate regression coefficients visually. Commonality analyses examined unique contributions, while age-by-predictor tests assessed differences for apartment size, neighborhood quality, and place attachment. They also excluded IADL because of multicollinearity. That helped me separate a suggestive group pattern from a tested interaction and distinguish shared explanatory information from unique variance.",
-        "evidence_segment_id": "ANALYTIC-001",
-        "response_angle": "method",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 방법론적 특징이 눈에 띄었나요?",
-        "answer_30s_ko": "연구자들이 별도의 회귀계수를 눈으로 비교하는 데 그치지 않았다는 점이 좋았습니다. 공통성 분석으로 고유 기여도를 살펴보고, 연령과 예측변수의 상호작용 검정으로 주택 크기, 근린환경의 질, 장소애착의 차이를 평가했습니다. 다중공선성 때문에 IADL을 제외하기도 했습니다. 이를 통해 시사적인 집단 양상과 검정된 상호작용을 구별하고, 서로 공유하는 설명 정보와 고유 분산을 구분할 수 있었습니다."
-      },
-      {
-        "card_id": "oswald-reading-04",
-        "title": "How did your view of the neighborhood change?",
-        "answer_30s": "I had expected indoor housing features to dominate, so the neighborhood block's unique contribution of 11% among old-old adults versus 5% among young-old adults changed my emphasis. I became more interested in how people evaluate and feel attached to the surrounding area. These figures describe explained cross-sectional variation; they do not show that neighborhood interventions would produce equivalent gains in an individual's satisfaction.",
+        "card_id": "oswald-et-al-2010-reflection-02",
+        "entry_type": "reading",
+        "topic": "Neighborhood conditions and attachment",
+        "topic_ko": "동네의 여건과 장소애착",
+        "title": "What interested you about neighborhood quality and attachment?",
+        "title_ko": "동네 환경에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that the study distinguished evaluations of neighborhood conditions from attachment to the place. Both were associated with life satisfaction in the young–old and old–old groups, with greater explanatory value in the old–old group. The groups did not differ significantly in their average neighborhood evaluations, so average ratings and the strength of their association with life satisfaction were different questions. I would ask both how well a neighborhood serves everyday needs and what living there means to the person.",
+        "answer_30s_ko": "동네의 생활 여건에 대한 평가와 그곳에 느끼는 애착을 구분한 점이 흥미로웠습니다. 둘 다 전기·후기 노인 집단의 삶의 만족도와 관련됐고, 후기 노인 집단에서 설명력이 더 컸습니다. 동네 평가의 평균에는 유의한 집단 차이가 없어서, 평균 평가와 삶의 만족도에 연결되는 정도는 다른 질문이라는 점도 눈에 들어왔습니다. 그래서 동네가 생활하기 편한지와 그곳이 자신에게 어떤 의미인지 함께 묻고 싶습니다.",
         "evidence_segment_id": "EXPLANATION-001",
-        "response_angle": "evidence",
-        "style_basis": "course-question-pattern",
-        "title_ko": "근린환경에 대한 관점이 어떻게 바뀌었나요?",
-        "answer_30s_ko": "저는 주택 내부 특성이 가장 큰 역할을 할 것이라고 예상했기 때문에, 근린환경 변수 묶음의 고유 기여도가 후기노인에서는 11%, 전기노인에서는 5%라는 결과를 보고 관심의 무게중심이 바뀌었습니다. 사람들이 주변 지역을 어떻게 평가하고 어떤 애착을 느끼는지에 더 관심을 갖게 되었습니다. 이 수치는 횡단적 변이의 설명 정도를 나타내며, 근린환경 개입이 개인의 만족도를 그만큼 높일 것임을 보여 주지는 않습니다."
+        "response_angle": "separating-neighborhood-evaluation-attachment-and-age-group-associations",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-02-followup-01",
+            "question": "How were neighborhood quality and attachment measured?",
+            "question_ko": "동네의 질과 애착은 어떻게 측정했나요?",
+            "answer": "Neighborhood quality was a sum of seven yes-or-no items: safety, quietness, public transport, shops and services, nearby medical care, clean sidewalks and streets, and cultural options. Although the methods call this an objective neighborhood-quality indicator, the answers were participants' reports about those conditions. The study did not conduct neighborhood audits. Outdoor place attachment was assessed separately with a single rating from 0, not at all attached, to 10, fully attached. The researchers first explained the concept and gave examples of emotional and cognitive bonds to the neighborhood. Thus, reported conditions and attachment were distinct measures, and neither should be mistaken for an expert's inspection of the area.",
+            "answer_ko": "근린환경의 질은 안전, 조용함, 대중교통, 상점·서비스, 가까운 의료서비스, 깨끗한 보도·도로, 문화적 선택지의 7개 예·아니요 항목을 합쳤습니다. 방법에서는 객관적 근린환경의 질 지표라고 불렀지만, 실제 값은 그 여건에 관한 참여자의 보고였습니다. 연구진이 동네를 현장 점검한 것은 아닙니다. 옥외 장소애착은 별도로 0점인 ‘전혀 애착이 없음’부터 10점인 ‘완전히 애착이 있음’까지 단일 문항으로 평가했습니다. 먼저 동네와의 정서적·인지적 유대를 설명하고 예를 제시했습니다. 따라서 보고된 생활 여건과 장소애착은 서로 다른 측정이며, 어느 쪽도 전문가의 현장 평가와 같지는 않습니다.",
+            "evidence_segment_id": "NEIGHBORHOOD-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-02-followup-02",
+            "question": "How much did the neighborhood measures explain in each age group?",
+            "question_ko": "동네 요인의 설명력은 얼마나 달랐나요?",
+            "answer": "After accounting for other variables, including age and ADL functioning, the neighborhood block contributed 8% unique variance in life satisfaction in the full sample, 5% in the young–old group, and 11% in the old–old group. This block included neighborhood quality and outdoor place attachment. Both measures were positively and significantly associated with life satisfaction in each age group. Follow-up tests of age-by-predictor interactions supported differences in their explanatory value across the groups. The percentages concern variance in life satisfaction between participants. They do not mean that improving a neighborhood raises an individual's satisfaction by 5% or 11%, and they are not the proportion explained by the entire regression model.",
+            "answer_ko": "연령과 ADL 기능을 포함한 다른 변수를 고려했을 때, 근린환경 블록은 삶의 만족도 분산의 고유한 부분을 전체 표본에서 8%, 전기 노인 집단에서 5%, 후기 노인 집단에서 11% 설명했습니다. 이 블록에는 근린환경의 질과 옥외 장소애착이 포함됐습니다. 두 변수는 각 연령집단에서 삶의 만족도와 유의한 정적 관련성을 보였습니다. 연령과 예측변수의 상호작용을 검정한 후속 분석도 설명력의 집단 차이를 뒷받침했습니다. 이 비율은 참여자 간 삶의 만족도 차이를 설명한 분산입니다. 동네를 개선하면 개인의 만족도가 5%나 11% 높아진다는 뜻이나 회귀모형 전체의 설명률은 아닙니다.",
+            "evidence_segment_id": "EXPLANATION-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-02-followup-03",
+            "question": "Did the old–old group also give higher neighborhood ratings?",
+            "question_ko": "후기 노인은 동네 평가도 더 높았나요?",
+            "answer": "The mean comparisons did not show significant age-group differences in neighborhood evaluations. That differs from asking how strongly those evaluations were associated with life satisfaction within a group. Two groups can give similar average ratings while the relationship between those ratings and another variable differs. In this study, the young–old group had higher average life satisfaction, whereas neighborhood quality and attachment had greater explanatory value for life satisfaction in the old–old group. I would therefore distinguish the level of an evaluation from its association with life satisfaction, rather than conclude that the older group necessarily liked its neighborhood more.",
+            "answer_ko": "평균 비교에서는 근린환경 평가에 유의한 연령집단 차이가 나타나지 않았습니다. 이는 각 집단 안에서 그 평가가 삶의 만족도와 얼마나 강하게 관련되는지를 묻는 것과 다릅니다. 두 집단의 평균 평가가 비슷해도 그 평가와 다른 변수의 관계는 다를 수 있습니다. 이 연구에서는 삶의 만족도 평균은 전기 노인이 더 높았지만, 근린환경의 질과 애착이 삶의 만족도를 설명하는 정도는 후기 노인 집단에서 더 컸습니다. 따라서 평가 수준과 삶의 만족도와의 관련성을 구분하겠습니다. 나이가 더 많은 집단이 동네를 더 좋아했다고 바꿔 말할 수는 없습니다.",
+            "evidence_segment_id": "AGE-DIFF-001"
+          }
+        ]
       },
       {
-        "card_id": "oswald-reading-05",
-        "title": "Which limitation mattered most?",
-        "answer_30s": "The cross-sectional design matters most to me. Differences between adults aged 65 to 79 and those aged 80 to 94 are not observations of the same people developing over time. The study also cannot establish whether neighborhood quality preceded life satisfaction. Longitudinal evidence would be needed to examine temporal ordering and whether the associations change as people grow older.",
-        "evidence_segment_id": "LIMITATIONS-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 한계가 가장 중요했나요?",
-        "answer_30s_ko": "제게는 횡단연구 설계가 가장 중요합니다. 65~79세와 80~94세 성인 사이의 차이는 동일한 사람들이 시간에 따라 변화하는 모습을 관찰한 것이 아닙니다. 또한 근린환경의 질이 삶의 만족도에 앞서 있었는지도 이 연구로는 입증할 수 없습니다. 시간적 순서와 사람들이 나이 들면서 관계가 달라지는지를 살펴보려면 종단적 근거가 필요합니다."
+        "card_id": "oswald-et-al-2010-reflection-03",
+        "entry_type": "reading",
+        "topic": "Living arrangements and social relationships",
+        "topic_ko": "동거와 사회적 관계",
+        "title": "What interested you about living arrangements and relationships?",
+        "title_ko": "동거와 관계에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that knowing whether someone lives with others does not settle how satisfied they are with life. Living with others was positively associated with life satisfaction in the younger group, but the association was not significant in the older group. The neighborhood social measures also made no significant contribution in either group. I would read this as a result about particular measures in this study and distinguish living arrangements from the wider social relationships that the measures do not capture.",
+        "answer_30s_ko": "누군가와 함께 사는지만으로 삶에 얼마나 만족하는지 알 수 없다는 점이 흥미로웠습니다. 동거는 전기 노인 집단에서 삶의 만족도와 양의 관련이 있었지만, 후기 노인 집단에서는 유의한 관련이 없었습니다. 이웃 관계 지표도 두 집단에서 유의한 설명을 더하지 못했습니다. 그래서 이를 이 연구의 제한된 지표에 관한 결과로 읽고, 동거 여부와 그 지표에 담기지 않은 폭넓은 사회적 관계를 구분해야겠다고 느꼈습니다.",
+        "evidence_segment_id": "EXPLANATION-001",
+        "response_angle": "distinguishing-household-composition-from-social-relationships-and-life-satisfaction",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-03-followup-01",
+            "question": "How were the social aspects of housing measured?",
+            "question_ko": "사회적 주거환경은 어떻게 측정했나요?",
+            "answer": "There were three areas. Household composition was whether a person lived with others, coded yes or no; it was not restricted to living with a spouse. Perceived social neighborhood quality combined two yes-or-no items: a friendly atmosphere in the building or among coinhabitants, and satisfying neighborhood contacts. The third measure asked whether friends and relatives lived nearby. These indicators separate co-residence, perceived local social conditions, and the presence of nearby social partners. They do not provide a full account of loneliness, the quality of every relationship, or how much support people actually exchange. I would keep those unmeasured aspects open when interpreting the results.",
+            "answer_ko": "세 영역으로 나눴습니다. 가구 구성은 다른 사람과 사는지를 예·아니요로 물었으며 배우자와의 동거만 뜻하지 않습니다. 지각된 사회적 근린의 질은 건물이나 함께 사는 사람들 사이의 우호적인 분위기, 근린에서의 만족스러운 교류라는 두 예·아니요 문항을 합쳤습니다. 세 번째는 친구와 친척이 가까이 사는지였습니다. 동거, 주변의 사회적 분위기와 교류에 대한 평가, 가까운 관계자의 존재를 구분한 것입니다. 외로움이나 모든 관계의 질, 실제로 주고받는 지원의 양까지 충분히 측정한 지표는 아닙니다. 결과를 해석할 때 측정되지 않은 관계의 모습도 열어 두겠습니다.",
+            "evidence_segment_id": "SOCIAL-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-03-followup-02",
+            "question": "Does a nonsignificant association mean social relationships do not matter?",
+            "question_ko": "유의하지 않으면 사회관계는 덜 중요한가요?",
+            "answer": "That would go beyond these results. In the regression models, living with others was positively associated with life satisfaction only in the 65–79 group; the 80–94 group and the full sample did not show a significant association. The other two social indicators were not significant in either age group. That concerns their additional explanatory contribution alongside the other variables, not the value of social relationships as a whole. Also, significance in one group and nonsignificance in another do not by themselves establish a significant difference between groups. The reported follow-up tests of age differences concerned apartment size, neighborhood quality, and attachment, so I would not claim that they also established an age interaction for living with others.",
+            "answer_ko": "그렇게 말하면 결과의 범위를 넘어섭니다. 회귀모형에서 동거는 65~79세 집단에서만 삶의 만족도와 유의한 양의 관련이 있었고, 80~94세 집단과 전체 표본에서는 유의하지 않았습니다. 다른 두 사회적 지표도 두 연령집단에서 유의하지 않았습니다. 이는 다른 변수들을 함께 고려한 추가 설명에 관한 결과이며 사회적 관계 전체의 가치에 대한 판단은 아닙니다. 한 집단에서 유의하고 다른 집단에서 유의하지 않다고 두 집단의 차이 자체가 유의한 것도 아닙니다. 보고된 연령차이 후속 검정은 면적, 근린의 질, 애착에 관한 것이므로 동거의 연령 상호작용도 입증했다고 말하지 않겠습니다.",
+            "evidence_segment_id": "EXPLANATION-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-03-followup-03",
+            "question": "How should we interpret the model's explained variance?",
+            "question_ko": "설명력이라는 수치는 어떻게 읽어야 하나요?",
+            "answer": "After listwise deletion, the regression samples were 345 people overall, 207 in the younger group, and 138 in the older group. Their models explained 29%, 27%, and 39% of the variation in life satisfaction, respectively. These are proportions of differences between participants accounted for by the combined variables, including age and functional capacity in activities of daily living. They are not environmental effects alone, percentages of people made satisfied, or an individual's probability of a good life. In the younger group, the paper reports a 3% unique contribution associated with living with others. That does not mean moving in with someone raises a person's satisfaction by 3%. The numbers describe statistical explanation in these samples.",
+            "answer_ko": "결측이 있는 사례를 제외한 회귀 표본은 전체 345명, 전기 노인 207명, 후기 노인 138명이었고, 모형의 설명력은 각각 29%, 27%, 39%였습니다. 연령과 일상생활 수행능력인 ADL까지 포함한 변수들이 참여자 사이 삶의 만족도 차이를 어느 정도 설명했는지를 뜻합니다. 환경만의 효과나 만족하게 된 사람의 비율, 개인이 좋은 삶을 살 확률이 아닙니다. 전기 노인 집단에서 동거의 고유 설명 기여는 3%로 보고되었습니다. 이 역시 누군가와 함께 살기 시작하면 개인의 만족도가 3% 오른다는 뜻은 아닙니다. 이 표본에서의 통계적 설명 범위를 나타내는 수치로 읽겠습니다.",
+            "evidence_segment_id": "EXPLANATION-001"
+          }
+        ]
       },
       {
-        "card_id": "oswald-reading-06",
-        "title": "What did you learn to question about living with family?",
-        "answer_30s": "I would not assume that living with others is a universal source of greater life satisfaction. It had an independent association only in the young-old model. The authors suggest that some old-old adults may have adapted to circumstances such as widowhood and living alone, but adaptation was an interpretation rather than a measured causal mechanism. I would keep age-group context and the limited social measures in view.",
-        "evidence_segment_id": "DISCUSSION-001",
-        "response_angle": "family-implication",
-        "style_basis": "course-question-pattern",
-        "title_ko": "가족과 함께 사는 것에 대해 어떤 의문을 갖게 되었나요?",
-        "answer_30s_ko": "저는 다른 사람과 함께 사는 것이 누구에게나 더 높은 삶의 만족도를 가져온다고 가정하지 않겠습니다. 독립적인 관계는 전기노인 모형에서만 나타났습니다. 저자들은 일부 후기노인이 사별이나 독거 같은 상황에 적응했을 수 있다고 제안하지만, 적응은 측정한 인과적 기제가 아니라 해석이었습니다. 저는 연령집단의 맥락과 제한적인 사회적 측정을 함께 고려하겠습니다."
+        "card_id": "oswald-et-al-2010-reflection-04",
+        "entry_type": "experience",
+        "topic": "How relatives actually used their homes",
+        "topic_ko": "넓이와 실제 공간 사용",
+        "title": "What interested you when recalling how a relative used their home?",
+        "title_ko": "가족의 집을 떠올리면 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional everyday examples. Adapt one to something you actually observed in a parent's or relative's home.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 부모님이나 친척의 집에서 실제로 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the association between home size and life satisfaction differed between the two age groups. I would now ask how the person actually used the space and what felt comfortable or demanding. I would not use their age alone to decide how large their home should be.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 논문에서 집의 면적과 삶의 만족도의 관계가 연령집단마다 달랐던 점이 흥미로웠습니다. 이제는 그분이 공간을 어떻게 쓰고 무엇을 편안하게 또는 부담스럽게 느꼈는지 함께 묻고 싶습니다. 나이만으로 그분에게 맞는 집의 넓이를 정하지는 않겠습니다.",
+        "evidence_segment_id": "EXPLANATION-001",
+        "response_angle": "reconsidering-home-size-assumptions-through-a-relative-s-activities-and-capacities",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-04-followup-01",
+            "question": "What would you look at besides the size of the home?",
+            "question_ko": "그 집의 넓이 말고 무엇을 살펴볼까요?",
+            "answer": "{{age_cue}} I would ask which spaces the person used for things they valued, how they moved between those spaces, and which parts of that routine felt easy or demanding. The paper's person–environment perspective suggests that extra space can provide opportunities while also making demands, depending on the person using it. Those questions apply that idea to the memory. They do not mean I observed a mechanism the study proved, nor that a particular activity or difficulty tells me the person's overall life satisfaction. I would listen to how the person described the home rather than infer their needs from age or floor area alone.",
+            "answer_ko": "{{age_cue}} 그분이 중요하게 여기는 일에 어떤 공간을 쓰셨는지, 그 사이를 어떻게 오가셨는지, 일상에서 무엇이 수월하거나 버거웠는지 묻겠습니다. 논문의 사람–환경 관점에서는 여분의 공간이 기회가 되면서도, 사용하는 사람에 따라 요구와 부담이 될 수 있습니다. 이 질문들은 그 관점을 기억에 적용한 것입니다. 제가 연구에서 입증된 기제를 직접 본 것도 아니고, 특정 활동이나 어려움 하나로 그분의 삶 전체에 대한 만족도를 아는 것도 아닙니다. 나이나 면적만 보고 필요를 추측하기보다 그분이 집을 어떻게 설명하시는지 듣겠습니다.",
+            "evidence_segment_id": "INTRO-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-followup-02",
+            "question": "How would the age-group findings change your earlier assumption?",
+            "question_ko": "연령집단의 결과로 어떤 생각을 바꿀까요?",
+            "answer": "At the time, {{prior_view}} I would replace that general rule with a question about fit. In the study, larger homes were associated with higher life satisfaction at ages 65–79 and lower life satisfaction at ages 80–94, after the other measured factors were considered. Those were patterns across people within each age group. They do not require every person to fit the average, and do not show that the same person's response to space reverses as they turn 80. If the memory seems unlike the reported pattern, I would use it to ask about individual circumstances rather than treat one family observation as either proof or disproof of the study.",
+            "answer_ko": "당시에는 {{prior_view}} 이제는 그 일반적인 판단을 그분에게 공간이 맞는지 묻는 질문으로 바꾸겠습니다. 연구에서는 다른 측정 요인을 함께 고려했을 때 넓은 집이 65~79세의 높은 만족도, 80~94세의 낮은 만족도와 관련됐습니다. 이는 각 연령집단 안의 사람들 사이에서 나타난 패턴입니다. 모두가 평균에 맞아야 하는 것도 아니고, 같은 사람이 80세가 되면 넓이에 대한 반응이 뒤집힌다는 뜻도 아닙니다. 기억이 연구의 패턴과 달라 보이더라도 그분의 조건을 더 묻겠습니다. 가족 관찰 하나로 연구를 입증하거나 반박하지는 않겠습니다.",
+            "evidence_segment_id": "LIMITATIONS-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-followup-03",
+            "question": "How could this reading help with a conversation about housing choices?",
+            "question_ko": "주거 선택 이야기에는 어떻게 쓸 수 있나요?",
+            "answer": "I would use it to make the conversation more specific: which activities matter to the person, which spaces are actually useful, and which everyday demands they would like to change. The conclusion encourages reflecting on individual housing needs and future plans. It does not supply a square-meter threshold or show that making a home smaller necessarily improves well-being. Also, home size in this study came from participants' reports; there was no home visit assessing every room or route. The person's description can therefore guide further questions, but the reading does not replace a close look at that home or the person's own preferences.",
+            "answer_ko": "그분에게 중요한 활동, 실제로 유용한 공간, 바꾸고 싶은 일상의 부담을 구체적으로 묻는 데 쓰겠습니다. 결론도 개인의 주거 필요와 앞으로의 계획을 돌아보는 데 의미를 둡니다. 일정한 면적 기준을 제시하거나 집을 줄이면 반드시 더 잘 살게 된다는 결과를 낸 것은 아닙니다. 또 연구의 면적도 참여자의 보고였으며, 연구자가 집을 방문해 방과 동선을 하나씩 평가하지는 않았습니다. 그분의 설명을 바탕으로 더 구체적인 질문을 할 수는 있지만, 이 읽기가 실제 집을 살펴보는 일이나 그분의 선호를 대신하지는 않겠습니다.",
+            "evidence_segment_id": "CONCLUSION-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-01",
+            "label": "A spare room used for crafts",
+            "label_ko": "취미에 쓰던 여분의 방",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting my mother and seeing her keep craft materials in a spare room.",
+                "ko": "어머니 집에 갔다가 여분의 방에 취미 재료를 펼쳐 두신 모습을 떠올렸습니다."
+              },
+              "age_cue": {
+                "en": "She was in her late sixties and liked being able to leave her work laid out between sessions.",
+                "ko": "60대 후반이셨던 어머니는 하던 작업을 치우지 않아도 되어 좋다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought an extra room would be useful in the same way to anyone.",
+                "ko": "방이 하나 더 있으면 누구에게나 똑같이 유용할 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-02",
+            "label": "A long route between rooms",
+            "label_ko": "방 사이를 오가는 긴 동선",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative describing the long walk from the bedroom to the kitchen at home.",
+                "ko": "친척 어른이 집에서 침실과 부엌 사이를 오가는 길이 길다고 하신 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "They were in their early eighties and said walking that route sometimes felt tiring.",
+                "ko": "80대 초반이셨고, 그 길을 오갈 때 가끔 힘이 든다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that a spacious home meant a comfortable daily routine.",
+                "ko": "집이 널찍하면 일상도 당연히 편할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-03",
+            "label": "Useful spaces in a small home",
+            "label_ko": "작은 집에서 잘 쓰던 공간",
+            "values": {
+              "scene": {
+                "en": "I remembered my father showing me how he used a small table and the nearby bookshelves at home.",
+                "ko": "아버지가 집의 작은 책상과 가까운 책장을 어떻게 쓰시는지 보여 주신 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "He was in his early seventies and said the space was enough for the reading he enjoyed.",
+                "ko": "70대 초반이셨고, 좋아하는 책을 읽기에는 이 공간이면 충분하다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought a small home would necessarily feel limiting at his age.",
+                "ko": "그 나이에는 집이 작으면 꼭 답답할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-04",
+            "label": "A large room still used with pleasure",
+            "label_ko": "여전히 즐겨 쓰던 넓은 방",
+            "values": {
+              "scene": {
+                "en": "I remembered an older female relative telling me how she used a large room at home for painting.",
+                "ko": "친척 할머니가 집의 넓은 방에서 그림을 그리는 이야기를 하셨던 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "She was in her mid-eighties and said she still enjoyed having space to spread out her work.",
+                "ko": "80대 중반이셨고, 작업을 펼쳐 놓을 공간을 여전히 즐겨 쓰신다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought a large home would only be a burden once someone was over eighty.",
+                "ko": "80세가 넘으면 넓은 집은 부담만 될 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-05",
+            "label": "Similar-sized homes used differently",
+            "label_ko": "넓이는 비슷해도 다른 쓰임",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting two relatives whose homes seemed similar in size but were used differently.",
+                "ko": "넓이가 비슷한 두 친척 집에 갔는데 공간의 쓰임이 달랐던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A relative around seventy used several rooms, while one in their mid-eighties mostly used a single room.",
+                "ko": "일흔 무렵인 분은 여러 방을 쓰셨고, 여든 중반인 분은 주로 한 방에서 지내셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed similar floor areas would offer similar usefulness.",
+                "ko": "면적이 비슷하면 공간의 쓸모도 비슷할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-04-example-06",
+            "label": "An easier route without adding space",
+            "label_ko": "넓히지 않고 달라진 동선",
+            "values": {
+              "scene": {
+                "en": "I remembered my father moving a table to make the route across his living room easier to use.",
+                "ko": "아버지가 거실을 오가기 편하도록 탁자 위치를 바꾸셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He was in his early seventies and said it felt easier to pass through, although the home was no larger.",
+                "ko": "70대 초반이셨고, 집을 넓히지는 않았지만 지나다니기가 편해졌다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought more floor space was needed to make a home easier to use.",
+                "ko": "집을 편하게 쓰려면 면적부터 늘려야 한다고 생각했습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "oswald-et-al-2010-reflection-05",
+        "entry_type": "experience",
+        "topic": "Familiar places and everyday conditions",
+        "topic_ko": "익숙한 동네와 이용 여건",
+        "title": "What interested you when recalling a familiar neighborhood?",
+        "title_ko": "익숙한 동네에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of everyday memories. Adapt one to an experience you had or something you observed or heard.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 회상 예시입니다. 자신의 경험이나 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the paper examined evaluations of everyday conditions separately from attachment to a neighborhood. I would now ask both what a familiar place means to the person and how well conditions such as transport and shops fit their everyday life.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문이 생활 여건에 대한 평가와 동네에 느끼는 애착을 따로 살핀 점이 흥미로웠습니다. 이제는 익숙한 장소가 어떤 의미인지와 교통·상점 같은 여건이 실제 생활에 맞는지를 함께 묻겠습니다.",
+        "evidence_segment_id": "NEIGHBORHOOD-001",
+        "response_angle": "reconsidering-familiarity-and-practical-neighborhood-conditions-in-family-memories",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-05-followup-01",
+            "question": "What would you ask about separately in that scene?",
+            "question_ko": "그 장면에서 무엇을 나누어 묻겠나요?",
+            "answer": "I would reconsider this detail: {{age_cue}} I would ask how the person experienced transport, shops, quietness, or other neighborhood conditions, and separately what made the place feel familiar or meaningful. The paper's neighborhood-quality measure covered seven reported conditions, while outdoor place attachment was a separate 0–10 rating of the bond to the area. Hearing that someone likes a place does not tell me whether travel is convenient, and seeing nearby shops does not tell me how attached that person feels. The reading gives me two lines of questioning; I would listen to the person's own account of each.",
+            "answer_ko": "이 단서를 다시 생각해 보겠습니다. {{age_cue}} 교통·상점·조용함 같은 동네 여건을 어떻게 느끼는지와 그곳이 왜 익숙하거나 의미 있는지를 나누어 묻겠습니다. 논문은 근린환경의 질을 7개 여건에 대한 보고로 측정했고, 옥외 장소애착은 그 지역과의 유대를 0~10점으로 따로 평가했습니다. 동네를 좋아한다는 말만으로 이동도 편리하다고 알 수 없고, 가까이 가게가 보인다고 그 사람의 애착을 알 수도 없습니다. 읽기를 통해 두 방향으로 질문하고, 각각에 대한 당사자의 설명을 듣겠습니다.",
+            "evidence_segment_id": "NEIGHBORHOOD-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-followup-02",
+            "question": "Does attachment mean the person should continue living there?",
+            "question_ko": "애착이 있으면 계속 살아야 할까요?",
+            "answer": "Attachment is one consideration to understand, rather than a decision I can make for the person. I would ask which places and routines matter to them and what environmental conditions would support the life they want. The conclusion calls for deliberate housing and neighborhood planning that considers resources, risks, and perceived meanings. It discusses both remaining in a residence and living in a well-adapted assisted setting. The point is to consider supportive and meaningful surroundings in future plans. It does not turn a bond with the current neighborhood into an obligation to stay, nor show that a move must remove all possibility of attachment.",
+            "answer_ko": "애착은 당사자에게 물어볼 중요한 요소이며, 제가 거주 결정을 대신 내릴 근거는 아닙니다. 어떤 장소와 일상이 소중한지, 원하는 생활을 하려면 어떤 환경이 필요한지 묻겠습니다. 논문의 결론도 자원과 위험, 주관적 의미를 함께 고려한 구체적인 주거·근린환경 계획을 제안합니다. 현재 거주지에 머무는 경우와 잘 갖추어진 지원주거에서 사는 경우를 모두 다룹니다. 앞으로의 계획에서 생활을 돕고 의미도 있는 주변 환경을 고려하자는 것입니다. 지금 동네에 정이 들었다고 반드시 계속 살아야 한다거나, 이사하면 애착을 느낄 가능성이 사라진다는 결론은 아닙니다.",
+            "evidence_segment_id": "CONCLUSION-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-followup-03",
+            "question": "Would the same observation mean the same thing for relatives of different ages?",
+            "question_ko": "나이가 다른 가족에게도 같은 뜻일까요?",
+            "answer": "I would not infer that from age alone. The paper compared different people in the young–old and old–old groups at one point in time. It did not follow the same person's attachment or neighborhood evaluations as they grew older. The authors specifically caution that age-group differences are not developmental changes and that longitudinal data would be needed to examine change over time. The participants also lived in an urban community, so the findings do not cover the full range of rural or institutional settings. In this memory, I would ask each relative about their present routines, needs, and meanings instead of treating their age as a forecast of what the neighborhood will mean to them.",
+            "answer_ko": "나이만으로 그렇게 판단하지는 않겠습니다. 논문은 한 시점에 전기·후기 노인 집단의 서로 다른 사람들을 비교했습니다. 같은 사람이 나이 들면서 동네 평가나 애착이 어떻게 달라지는지 추적한 것은 아닙니다. 저자들도 연령집단 차이를 발달적 변화로 읽지 말아야 하며, 시간에 따른 변화를 보려면 종단자료가 필요하다고 설명합니다. 참여자가 도시의 지역사회 거주자여서 농촌이나 시설 거주의 다양한 상황까지 포괄하지도 못합니다. 이 기억에서는 각 가족에게 현재의 일상, 필요한 여건, 장소의 의미를 묻겠습니다. 나이를 그 동네가 앞으로 어떤 의미를 가질지 예측하는 기준으로 삼지는 않겠습니다.",
+            "evidence_segment_id": "LIMITATIONS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-01",
+            "label": "Taking a familiar lane to the market",
+            "label_ko": "시장으로 가는 익숙한 골목",
+            "values": {
+              "scene": {
+                "en": "I remembered taking a familiar lane with my grandmother on the way to her neighborhood market.",
+                "ko": "할머니와 동네 시장에 가다가 익숙한 골목으로 돌아갔던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said she felt comfortable on the route she had used for years.",
+                "ko": "할머니는 오래 다닌 길이 마음이 편하다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought a shorter route would always be the better choice.",
+                "ko": "가까운 길이 있으면 그쪽이 무조건 낫다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-02",
+            "label": "A familiar neighborhood after a bus route changed",
+            "label_ko": "버스 노선이 바뀐 동네",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather talking about a change to a bus route in his neighborhood.",
+                "ko": "할아버지가 버스 노선이 바뀐 동네 이야기를 하시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said he was attached to the area, but taking the bus to the hospital had become less convenient.",
+                "ko": "동네에는 정이 들었지만 병원에 가는 버스가 불편해졌다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought liking a neighborhood meant everyday life there could not be very inconvenient.",
+                "ko": "동네를 좋아하면 생활도 큰 불편이 없을 거라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-03",
+            "label": "An aunt's familiar walking route",
+            "label_ko": "이모의 오래된 산책길",
+            "values": {
+              "scene": {
+                "en": "I remembered hearing my retired aunt talk about her neighborhood as we walked through a park near her home.",
+                "ko": "은퇴한 이모와 집 근처 공원을 걸으며 동네 이야기를 들었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said the facilities were not new, but she liked the route she had walked for years.",
+                "ko": "이모는 시설이 새롭지는 않아도 오래 다닌 산책길이 좋다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought having more new facilities would make people like a neighborhood more.",
+                "ko": "새 시설이 많을수록 그 동네도 더 좋아할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-04",
+            "label": "Convenient shops in an unfamiliar area",
+            "label_ko": "편리하지만 아직 낯선 동네",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother showing me the shops in the neighborhood she had recently moved to.",
+                "ko": "외할머니가 새로 이사한 동네의 상점들을 알려 주시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said the nearby shops were convenient, but the area still felt unfamiliar.",
+                "ko": "가게는 가까워 편하지만 아직 동네가 낯설다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought convenient everyday life would make attachment to a neighborhood immediate.",
+                "ko": "생활이 편리하면 동네에도 바로 정이 들 거라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-05",
+            "label": "Memories outside a neighborhood library",
+            "label_ko": "도서관 앞에서 들은 기억",
+            "values": {
+              "scene": {
+                "en": "I remembered passing a library my grandfather used to visit while walking with him through his neighborhood.",
+                "ko": "할아버지와 예전에 자주 가셨다는 동네 도서관 앞을 지난 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He spent a while telling me about the books he had borrowed there.",
+                "ko": "할아버지는 그곳에서 책을 빌리던 이야기를 한참 들려주셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought knowing whether a facility was available to use was enough.",
+                "ko": "시설을 이용할 수 있는지만 알면 충분하다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-05-example-06",
+            "label": "Two accounts of an aunt's neighborhood",
+            "label_ko": "고모 동네에 관한 두 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered talking with my mother after visiting the neighborhood where my aunt, in her seventies, lived.",
+                "ko": "칠십 대 고모가 사는 동네에 다녀온 뒤 어머니와 이야기했던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother said the area was quiet, while my aunt said buses were infrequent in the evening.",
+                "ko": "어머니는 조용하다고 하셨고 고모는 저녁에는 버스가 드물다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought a neighborhood one person liked would be just as good for another person.",
+                "ko": "한 사람이 좋다고 한 동네는 다른 사람에게도 같을 거라고 여겼습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "oswald-et-al-2010-reflection-06",
+        "entry_type": "experience",
+        "topic": "Looking beyond who lives together",
+        "topic_ko": "동거 여부 너머의 생활",
+        "title": "What interested you when recalling how relatives lived?",
+        "title_ko": "친척들의 거주 모습에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are brief fictional examples of everyday observations. Adapt one to something you have actually seen or heard from family or relatives.",
+        "experience_prompt_ko": "일상에서 있을 법한 짧은 가상 예시입니다. 가족이나 친척에게서 실제로 보고 들은 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the study asked separately about living with others and neighborhood relationships. I would now listen to how the person feels about daily life and what social contact they actually have, rather than infer their life from whether they live alone.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문이 동거 여부와 이웃 관계를 나누어 물었다는 점이 흥미로웠습니다. 이제는 혼자 사는지부터 보고 삶을 짐작하기보다, 본인이 지금의 생활을 어떻게 느끼는지와 실제로 어떤 교류를 하는지도 듣겠습니다.",
+        "evidence_segment_id": "SOCIAL-001",
+        "response_angle": "reconsidering-everyday-assumptions-about-living-alone-and-co-residence",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "oswald-et-al-2010-reflection-06-followup-01",
+            "question": "What would you ask about the person's actual social life?",
+            "question_ko": "그분의 실제 교류는 어떻게 더 알아볼까요?",
+            "answer": "{{age_cue}} I would distinguish who shares the home, who lives nearby, and how the person experiences those relationships. The study separately asked about co-residence, friendly local social conditions and satisfying contacts, and nearby friends or relatives. A person living alone can still have social partners nearby, while co-residence does not tell us whether daily interaction is satisfying. I would also ask whom the person actually talks with or asks for help. Those are questions I am applying to the scene; the study's brief indicators did not document every interaction or support exchange. The person's own account would matter more than my impression.",
+            "answer_ko": "{{age_cue}} 같은 집에 사는 사람, 가까이 사는 사람, 그 관계를 본인이 어떻게 느끼는지를 나누어 보겠습니다. 연구도 동거 여부, 우호적인 사회적 분위기와 만족스러운 교류, 근처의 친구·친척을 구분해 물었습니다. 혼자 살아도 가까이 교류할 사람이 있을 수 있고, 함께 산다고 일상 교류가 만족스러운지는 알 수 없습니다. 실제로 누구와 이야기하고 누구에게 도움을 청하는지도 묻고 싶습니다. 이는 이 장면에 적용한 질문이며 연구의 짧은 지표가 모든 교류나 지원 교환을 기록한 것은 아닙니다. 제가 받은 인상보다 그분 자신의 설명을 듣겠습니다.",
+            "evidence_segment_id": "SOCIAL-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-followup-02",
+            "question": "What exactly did the study mean by life satisfaction?",
+            "question_ko": "논문에서 말한 삶의 만족도는 무엇인가요?",
+            "answer": "It was the person's cognitive evaluation of life, measured with one self-rating from 0, totally unsatisfied, to 10, totally satisfied. It was the study's outcome, not a rating of the home alone. In my remembered scene, enjoying a conversation or liking a living arrangement would not directly tell me that overall rating. Likewise, living alone would not supply a score. I would ask how the person evaluates life more broadly instead of turning a visible mood or a household characteristic into the study's life-satisfaction measure. The single item gives a person's overall evaluation; it is not a separate assessment of every aspect of well-being.",
+            "answer_ko": "본인이 삶을 어떻게 평가하는지에 관한 인지적 차원으로, 0점인 ‘전혀 만족하지 않음’부터 10점인 ‘완전히 만족함’까지 한 문항으로 응답했습니다. 연구의 결과변수이며 집 자체에 대한 만족도만 물은 것은 아닙니다. 제가 떠올린 장면에서 대화를 즐기거나 거주 방식을 마음에 들어 한다고 그 전체 평가를 바로 알 수는 없습니다. 혼자 산다는 사실도 점수를 알려 주지 않습니다. 눈에 보이는 기분이나 가구 특성을 논문의 삶의 만족도로 바꾸기보다, 그분이 삶을 전반적으로 어떻게 평가하는지 묻겠습니다. 한 문항의 전체 평가가 안녕의 모든 측면을 각각 측정한 것은 아닙니다.",
+            "evidence_segment_id": "SATISFACTION-001"
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-followup-03",
+            "question": "Can this study tell us which living arrangement would suit that person?",
+            "question_ko": "이 연구로 그분의 거주 방식을 정해도 될까요?",
+            "answer": "{{prior_view}} I can reconsider that assumption, but the study cannot decide an individual's housing arrangement. It compared different people at one point in time. Age-group differences therefore do not show how the same person changes with age or what would happen if they moved in with someone. The data came from self-reports by older urban community residents, and the authors note limits in applying them to rural or institutional settings. The brief measures and single life-satisfaction item also leave room for measurement error and omitted aspects of life. I would use the reading to ask about the person's circumstances and preferences, not to predict satisfaction or prescribe living alone or together.",
+            "answer_ko": "{{prior_view}} 그 생각을 다시 살펴볼 수는 있지만, 연구로 개인의 거주 방식을 정할 수는 없습니다. 한 시점에 서로 다른 사람을 비교한 자료이므로 연령집단 차이가 같은 사람이 나이 들며 겪는 변화나 동거를 시작했을 때의 결과를 보여 주지는 않습니다. 도시의 지역사회 거주 노인들이 자기보고한 자료여서 농촌이나 시설 거주자에게 적용하는 데도 한계가 있습니다. 짧은 지표와 삶의 만족도 한 문항에는 측정오차와 충분히 담지 못한 생활 측면도 남습니다. 그분의 상황과 선호를 더 묻는 데 읽기를 활용하되, 만족도를 예측하거나 혼자 또는 함께 살라고 처방하지 않겠습니다.",
+            "evidence_segment_id": "LIMITATIONS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-01",
+            "label": "Visiting a grandmother who lived alone",
+            "label_ko": "혼자 사시는 할머니를 방문한 일",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting my grandmother, who lived alone in her seventies, when I was at university.",
+                "ko": "대학생 때 혼자 사시던 70대 할머니 댁에 방문했던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Grandma told me that she often chatted with a familiar neighbor after breakfast.",
+                "ko": "할머니는 아침 식사 뒤 이웃과 자주 이야기를 나눈다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that living alone meant spending most days without anyone to talk with.",
+                "ko": "혼자 살면 대화할 사람 없이 지내는 날이 많을 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-02",
+            "label": "A shared home with different daily schedules",
+            "label_ko": "함께 살아도 다른 생활 시간",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting my grandfather, who lived with my aunt's family in his eighties, when I was in high school.",
+                "ko": "고등학생 때 고모 가족과 함께 사시던 80대 할아버지를 찾아뵌 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Grandpa said that daytime schedules differed, so he sometimes called friends while at home.",
+                "ko": "할아버지는 낮에는 가족의 일정이 달라 집에서 친구에게 전화하곤 한다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that sharing a home meant always having family available to talk with.",
+                "ko": "함께 살면 늘 가족과 이야기하며 지내실 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-03",
+            "label": "A nearby friend and occasional meetings",
+            "label_ko": "친구가 가까이 살아도 가끔 만남",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt, then in her late sixties, telling me about a friend who lived nearby.",
+                "ko": "60대 후반이던 이모가 가까이 사는 친구 이야기를 들려주셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My aunt said that their schedules differed, so they usually arranged to meet about once a month.",
+                "ko": "이모는 서로 일정이 달라 한 달에 한 번쯤 약속을 잡아 만난다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that having a friend nearby meant meeting often and easily getting help.",
+                "ko": "친구가 가까우면 자주 만나고 도움도 쉽게 받을 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-04",
+            "label": "An older relative choosing time alone and with others",
+            "label_ko": "혼자 쉬는 시간과 함께하는 시간",
+            "values": {
+              "scene": {
+                "en": "I remembered an eighty-something relative who lived with an adult child describing an ordinary week during a family visit.",
+                "ko": "가족 방문 때 자녀와 함께 사는 80대 친척이 평소 일주일을 이야기해 주셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The relative said they enjoyed resting alone and also looked forward to a weekly walk with a neighbor.",
+                "ko": "그분은 혼자 쉬는 시간을 좋아하면서 이웃과 매주 걷는 날도 기다린다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that how they spent their time would be clear from knowing they lived with family.",
+                "ko": "가족과 사는지만 알면 하루를 어떻게 보내는지도 짐작할 수 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-05",
+            "label": "Friendly greetings in a relative's building",
+            "label_ko": "친척의 건물에서 나눈 인사",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting a relative in their seventies and seeing neighbors warmly greet them in the building.",
+                "ko": "70대 친척을 방문했을 때 건물 이웃들이 반갑게 인사를 나누던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The relative said the atmosphere was friendly, but I had not asked whom they turned to for help.",
+                "ko": "그분은 분위기가 좋다고 하셨지만 누구에게 도움을 청하는지는 듣지 못했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that a friendly atmosphere meant reliable support would always be available.",
+                "ko": "분위기가 좋으면 필요할 때 도와줄 사람도 늘 있을 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "oswald-et-al-2010-reflection-06-example-06",
+            "label": "A cheerful visit and an unanswered question about daily life",
+            "label_ko": "즐거운 방문과 평소 생활의 차이",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting an eighty-something relative who lived alone and warmly welcomed our family.",
+                "ko": "혼자 사시는 80대 친척이 찾아간 가족을 반갑게 맞아주셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "We laughed together, but I did not ask how the relative felt about daily life overall.",
+                "ko": "함께 웃으며 시간을 보냈지만 평소 생활 전반을 어떻게 느끼는지는 묻지 못했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that enjoying our visit told me they were satisfied with life as a whole.",
+                "ko": "방문을 즐거워하시면 삶 전반에도 만족하고 계실 것이라고 여겼습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

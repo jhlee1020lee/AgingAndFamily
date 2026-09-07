@@ -141,69 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Reading Response: How Did You Read the Article?",
-    "instructions": "Use your own words to connect what was new, how your view changed, specific evidence, and limitations. Keep your claims within the article's evidence and identify personal applications as inferences.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "stine-reading-01",
-        "title": "Give your basic 30-second response to the article.",
-        "answer_30s": "I read this as a proposal that effort allocation and choices of intellectual environments may provide additional routes to cognitive vitality while senescence and capacity constraints still matter. It is not a claim that willpower alone determines performance. The interaction between attentional engagement in selected tasks and habitual activity engagement still requires empirical examination.",
-        "evidence_segment_id": "CONCLUSION-001",
-        "response_angle": "overall",
-        "style_basis": "reading-grounded",
-        "title_ko": "이 논문에 대한 기본적인 생각을 30초 안에 말해 보세요.",
-        "answer_30s_ko": "저는 이 글을 노화와 능력의 제약이 여전히 중요하지만, 노력의 배분과 지적 환경의 선택도 인지적 활력을 유지하는 추가적인 경로가 될 수 있다는 제안으로 읽었습니다. 의지력만으로 수행이 결정된다는 주장은 아닙니다. 선택한 과제에서의 주의 관여와 습관적인 활동 관여가 어떻게 상호작용하는지는 여전히 실증적으로 검토해야 합니다."
+        "card_id": "stine-morrow-2007-reflection-01",
+        "entry_type": "reading",
+        "topic": "Choice and two forms of engagement",
+        "topic_ko": "선택과 두 가지 관여",
+        "title": "What interested you about the Dumbledore hypothesis?",
+        "title_ko": "덤블도어 가설에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found the strong hypothesis interesting: choices to engage intellectual challenges may contribute more to cognitive vitality than senescence itself. I read this as a proposal to test how we direct attention within tasks and which activities we choose, rather than a conclusion that willpower defeats aging. Actual limits in ability and available opportunities also need to remain part of the explanation.",
+        "answer_30s_ko": "인지적 활력에는 노화 과정 자체보다 지적 도전을 선택하고 관여하는 방식이 더 크게 기여할 수 있다는 강한 가설이 흥미로웠습니다. 저는 이를 의지로 노화를 이긴다는 결론보다, 과제 안에서 주의를 어떻게 쓰고 어떤 활동을 고르는지 검증하자는 제안으로 읽었습니다. 실제 능력의 제약과 활동할 기회도 함께 봐야 한다고 생각했습니다.",
+        "evidence_segment_id": "OPENING-001",
+        "response_angle": "choice-attentional-and-activity-engagement",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "question": "How do the two forms of engagement differ?",
+            "question_ko": "두 가지 관여는 어떻게 다른가요?",
+            "answer": "Attentional engagement means implementing the processes needed within a task, such as spending effort to integrate ideas while reading. Activity engagement means habitually choosing intellectually stimulating contexts. The distinction is between how I use attention in what I am doing and which activities create occasions for using and potentially developing my abilities; choosing an activity is not the same as carrying out its processes effectively.",
+            "answer_ko": "주의 관여(attentional engagement)는 글을 읽으며 생각들을 통합하는 데 노력을 들이는 것처럼, 과제 안에서 필요한 처리를 수행하는 것입니다. 활동 관여(activity engagement)는 지적으로 자극적인 환경을 평소에 선택하는 것입니다. 지금 하는 일에 주의를 어떻게 쓰는지와 어떤 활동이 능력을 쓰고 발달시킬 기회를 만드는지를 구분하므로, 활동을 골랐다는 사실과 그 안의 처리를 효과적으로 했다는 것은 같지 않습니다.",
+            "evidence_segment_id": "ATTENTION-001",
+            "id": "stine-morrow-2007-reflection-01-followup-01"
+          },
+          {
+            "question": "Does choice make actual ability unimportant?",
+            "question_ko": "그렇다면 실제 능력은 중요하지 않나요?",
+            "answer": "No. The article explicitly acknowledges that working memory and processing speed strongly contribute to complex performance and even everyday activities. The hypothesis adds choices about engagement to that account; it does not remove the constraints of available capacity. I would ask both what the person can currently manage and how their effort is allocated, rather than infer ability from willingness alone.",
+            "answer_ko": "아닙니다. 이 글은 작업기억과 처리속도가 복잡한 수행뿐 아니라 일상 활동에도 크게 기여한다고 분명히 인정합니다. 가설은 그 설명에 참여를 둘러싼 선택을 더하는 것이지, 실제 능력의 제약을 없애는 것이 아닙니다. 저는 의욕만으로 능력을 짐작하지 않고, 현재 무엇을 감당할 수 있는지와 노력을 어떻게 배분하는지를 함께 묻겠습니다.",
+            "evidence_segment_id": "ACTIVITY-001",
+            "id": "stine-morrow-2007-reflection-01-followup-02"
+          },
+          {
+            "question": "How far has the hypothesis been established?",
+            "question_ko": "가설은 어디까지 확인되었나요?",
+            "answer": "The conclusion draws on evidence connecting resource allocation to performance while recognizing that experience-related gains can be narrow. Whether an engaged lifestyle supports broader cognitive vitality, and how activity engagement interacts with attentional engagement, still require investigation. I would present these as supported ideas and open questions within a hypothesis, not as proof that making better choices prevents cognitive decline.",
+            "answer_ko": "결론은 자원 배분과 수행의 관계를 보여 주는 근거를 바탕으로 하면서도, 경험을 통한 향상의 범위가 좁을 수 있음을 인정합니다. 참여하는 생활이 더 폭넓은 인지적 활력을 돕는지, 활동 관여와 주의 관여가 어떻게 상호작용하는지는 추가 검토가 필요합니다. 저는 이를 가설 안에서 근거가 있는 부분과 남은 질문으로 설명하며, 더 좋은 선택을 하면 인지 저하를 막는다는 증명으로 제시하지 않겠습니다.",
+            "evidence_segment_id": "CONCLUSION-001",
+            "id": "stine-morrow-2007-reflection-01-followup-03"
+          }
+        ]
       },
       {
-        "card_id": "stine-reading-02",
-        "title": "What finding stood out most to you?",
-        "answer_30s": "The finding that younger readers adjusted their reading time more strongly than older readers when accurate recall was required stood out to me. Working memory explained part of the difference, but so did beliefs about being able to influence memory outcomes. I found it useful to distinguish available capacity from beliefs that may affect whether people recruit their resources.",
+        "card_id": "stine-morrow-2007-reflection-02",
+        "entry_type": "reading",
+        "topic": "Where reading time goes",
+        "topic_ko": "시간을 어디에 쓸까",
+        "title": "What surprised you about the accuracy instruction?",
+        "title_ko": "정확히 읽으라는 지시에서 무엇이 의외였나요?",
+        "answer_30s": "I found it interesting that younger readers adjusted their time allocation more to the accuracy goal, although older readers might have needed disproportionately more time. SRLP directs attention to how resources support the construction and integration of meaning, rather than simply to total reading time. Working-memory capacity and memory self-efficacy partly accounted for age differences in responsiveness, but this was not a test showing that experimentally raising confidence caused that response to change.",
+        "answer_30s_ko": "정확성을 강조하면 시간이 더 필요할 것 같은 고령층보다 젊은층의 읽기시간 배분이 더 민감하게 달라졌다는 점이 흥미로웠습니다. SRLP는 단순히 오래 읽는지보다 의미를 만들고 통합하는 데 주의를 어떻게 배분하는지 봅니다. 지시에 대한 반응의 연령 차이는 작업기억과 기억 자기효능감으로 일부 설명됐지만, 자신감을 높이면 반응이 달라진다는 인과효과를 시험한 것은 아닙니다.",
         "evidence_segment_id": "ATTENTION-002",
-        "response_angle": "surprise",
-        "style_basis": "reading-grounded",
-        "title_ko": "어떤 결과가 가장 눈에 띄었나요?",
-        "answer_30s_ko": "정확한 회상이 요구되었을 때 젊은 독자가 나이 든 독자보다 읽기 시간을 더 크게 조정했다는 결과가 눈에 띄었습니다. 작업기억이 그 차이의 일부를 설명했지만, 기억 결과에 자신이 영향을 줄 수 있다는 믿음도 차이를 설명했습니다. 이용할 수 있는 능력과, 사람들이 자신의 자원을 동원할지에 영향을 줄 수 있는 믿음을 구분하는 것이 유용했습니다."
+        "response_angle": "reading-goals-capacity-beliefs-and-allocation",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "stine-morrow-2007-reflection-02-followup-01",
+            "question": "Where does SRLP locate the extra effort in reading?",
+            "question_ko": "SRLP에서 시간을 더 쓰는 지점은 어디인가요?",
+            "answer": "SRLP distinguishes representations of words, the ideas expressed, and the situation described. Readers allocate extra time to new concepts and to clause or sentence endings, where meanings are integrated. The research examines relative changes in reading time associated with text features, controlling surface features such as word length and frequency. It therefore characterizes where effort goes rather than treating a long total reading time as sufficient evidence of good engagement.",
+            "answer_ko": "SRLP는 단어, 글이 표현한 생각, 글이 묘사한 상황의 표상을 구분합니다. 독자는 새 개념이나 뜻을 통합하는 절·문장 끝에 시간을 더 씁니다. 연구는 단어 길이와 빈도 같은 표면적 특성을 통제하면서 글의 특성에 따른 읽기시간의 상대적 변화를 봅니다. 따라서 총시간이 길다는 사실만으로 충분한 주의 관여라고 판단하지 않고 노력이 어디에 배분됐는지를 설명합니다.",
+            "evidence_segment_id": "ATTENTION-001"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-02-followup-02",
+            "question": "How did working memory differ from memory self-efficacy here?",
+            "question_ko": "작업기억과 자기효능감은 어떻게 달랐나요?",
+            "answer": "Working-memory capacity concerns available cognitive capacity, whereas memory self-efficacy concerns believing that one can influence memory outcomes; the latter was assessed with a paper-and-pencil measure. Both partly accounted for age differences in responding to the accuracy goal. The manipulated contrast was the reading instruction, not an intervention to raise self-efficacy, so these results do not isolate a causal effect of confidence or show that confidence substitutes for capacity.",
+            "answer_ko": "작업기억 용량은 인지적 능력에, 기억 자기효능감은 기억의 결과를 자신이 바꿀 수 있다는 믿음에 관한 것이며 후자는 지필식 척도로 측정했습니다. 둘 다 정확성 목표에 대한 반응의 연령 차이를 일부 설명했습니다. 바꾼 조건은 읽기 지시였지 자기효능감을 높이는 처치가 아니므로, 자신감의 인과효과나 자신감이 능력을 대신한다는 점을 따로 입증하지는 않았습니다.",
+            "evidence_segment_id": "ATTENTION-002"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-02-followup-03",
+            "question": "Did reading for efficiency mean reading carelessly?",
+            "question_ko": "효율적으로 읽기는 대충 읽기인가요?",
+            "answer": "No. Figure 2 defines efficiency as getting the main idea quickly and contrasts it with reading for accurate memory. Compared with the efficiency condition, younger readers allocated more time under the accuracy instruction, particularly as informational density increased. The comparison concerns responsiveness to different goals. I would not turn it into a rule that every text should be read slowly or that choosing a main-idea goal is inherently poor reading.",
+            "answer_ko": "아닙니다. 그림 2에서 효율성은 요점을 빨리 파악하는 것이며, 정확하게 기억하려는 읽기와 대비됩니다. 젊은층은 효율성 조건보다 정확성 조건에서, 특히 정보 밀도가 높아질수록 시간을 더 배분했습니다. 이 비교는 서로 다른 목표에 얼마나 반응했는지를 다룹니다. 모든 글을 천천히 읽어야 한다거나 요점 파악을 목표로 삼으면 나쁜 읽기라는 규칙으로 바꾸지는 않겠습니다.",
+            "evidence_segment_id": "ACTIVITY-001"
+          }
+        ]
       },
       {
-        "card_id": "stine-reading-03",
-        "title": "How did the article change your previous understanding?",
-        "answer_30s": "I had tended to interpret better cognition among intellectually active people as evidence that activity was protective. The article separates the possibility that initially more vital people select and sustain participation from the possibility that several indicators share an underlying aging process. I now look for selection effects and common causes before interpreting an observational association causally.",
+        "card_id": "stine-morrow-2007-reflection-03",
+        "entry_type": "reading",
+        "topic": "Lasting effects and limited transfer",
+        "topic_ko": "오래 남는 효과의 범위",
+        "title": "What stood out about the limits of cognitive training?",
+        "title_ko": "인지훈련의 효과에서 무엇이 눈에 띄었나요?",
+        "answer_30s": "I found it interesting that an effect lasting over time is different from its spreading across abilities. The article describes effects of ten ACTIVE training sessions being retained for up to five years, while improvements were largely specific to the trained abilities. This made me ask what was practiced and which outcomes changed before concluding that brain training helps generally. Whether novel challenges in everyday life produce broader effects needs separate examination.",
+        "answer_30s_ko": "효과가 오래 남는다는 것과 여러 능력으로 퍼진다는 것이 다르다는 점이 흥미로웠습니다. 글은 ACTIVE의 10회 훈련 효과가 최대 5년까지 유지됐지만, 향상은 주로 훈련한 능력에 한정됐다고 설명합니다. 그래서 ‘두뇌 훈련이 좋다’는 결론보다 무엇을 연습했고 어떤 결과에서 변화가 확인됐는지 먼저 묻게 됐습니다. 새로운 생활 속 도전이 더 넓은 효과를 낼지는 별도로 확인해야 합니다.",
         "evidence_segment_id": "ACTIVITY-001",
-        "response_angle": "changed-view",
-        "style_basis": "reading-grounded",
-        "title_ko": "논문을 읽고 기존의 이해가 어떻게 바뀌었나요?",
-        "answer_30s_ko": "저는 지적으로 활동적인 사람의 인지 기능이 더 좋으면 활동이 보호 효과를 낸다는 근거로 해석하는 경향이 있었습니다. 이 논문은 처음부터 활력이 더 높은 사람이 참여를 선택하고 유지할 가능성과, 여러 지표가 공통된 기저 노화 과정을 반영할 가능성을 구분합니다. 이제 저는 관찰된 관계를 인과적으로 해석하기 전에 선택 효과와 공통 원인을 살펴봅니다."
+        "response_angle": "training-retention-versus-transfer-and-preliminary-engagement-evidence",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "stine-morrow-2007-reflection-03-followup-01",
+            "question": "What did ACTIVE compare and find?",
+            "question_ko": "ACTIVE는 무엇을 비교해 확인했나요?",
+            "answer": "As summarized here, ACTIVE was a randomized trial comparing ten sessions of memory, processing-speed, or reasoning training with a no-contact control group. Training effects were retained for up to five years. Their specificity matters: processing-speed training improved speeded tasks without transferring to memory or reasoning. The duration of a benefit therefore does not establish that all cognitive abilities improved.",
+            "answer_ko": "이 글이 소개한 ACTIVE는 기억·처리속도·추론 중 한 능력을 10회 훈련한 집단을 비접촉 대조군과 비교한 무작위 시험입니다. 훈련 효과는 최대 5년까지 유지됐지만, 처리속도 훈련의 효과는 속도 과제에 한정되고 기억이나 추론으로 전이되지 않았습니다. 따라서 효과의 지속 기간만으로 모든 인지능력이 좋아졌다고 할 수는 없습니다.",
+            "evidence_segment_id": "ACTIVITY-001"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-03-followup-02",
+            "question": "Was transfer to everyday functioning demonstrated?",
+            "question_ko": "일상 기능으로의 전이도 확인됐나요?",
+            "answer": "The article says transfer to everyday analogues of the trained abilities had not been demonstrated. It also reports that reasoning-training participants described greater ease with instrumental activities of daily living. Those are distinct claims: a favorable self-report is relevant, but should not be turned into demonstrated transfer on everyday analogue tasks or a benefit shared by every training group.",
+            "answer_ko": "글은 훈련한 능력의 일상적 유사 과제로의 전이가 입증되지 않았다고 설명합니다. 동시에 추론훈련을 받은 사람들은 도구적 일상생활 활동을 더 수월하게 한다고 보고했다고 덧붙입니다. 긍정적인 자기보고도 관련 근거이지만, 이를 일상적 유사 과제에서 확인된 전이나 모든 훈련 집단의 이점으로 바꾸어 말해서는 안 됩니다.",
+            "evidence_segment_id": "ACTIVITY-001"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-03-followup-03",
+            "question": "How strong was the Senior Odyssey evidence?",
+            "question_ko": "Senior Odyssey의 근거는 어느 정도인가요?",
+            "answer": "These were preliminary findings against wait-list controls, not ACTIVE's no-contact comparison. Participants improved in processing speed and, marginally, in divergent thinking. Relative increases in mindfulness and need for cognition were also reported. The article explicitly leaves open whether the program produces broad improvements in cognitive function, so the pilot results should not be described as firm evidence of general cognitive protection.",
+            "answer_ko": "대기명단 대조군과 비교한 예비결과이며, ACTIVE의 비접촉 대조 비교와 구분해야 합니다. 처리속도는 향상됐고 확산적 사고의 향상은 경계적 수준이었으며, 마음챙김과 인지욕구도 상대적으로 증가했습니다. 그러나 이 프로그램이 폭넓은 인지기능 향상을 낳는지는 아직 확인할 과제로 남겼으므로, 일반적인 인지 보호가 입증됐다고 설명하지는 않겠습니다.",
+            "evidence_segment_id": "ACTIVITY-002"
+          }
+        ]
       },
       {
-        "card_id": "stine-reading-04",
-        "title": "How did ACTIVE change the way you think about brain training?",
-        "answer_30s": "I now ask what was trained and where benefits transferred, rather than asking only whether training works. In ACTIVE, effects of 10 training sessions persisted for up to five years, but speed-training benefits did not extend to memory or reasoning, and everyday transfer had not been demonstrated. I would distinguish improvement in a specific ability from broad cognitive vitality.",
-        "evidence_segment_id": "ACTIVITY-001",
-        "response_angle": "evidence",
-        "style_basis": "reading-grounded",
-        "title_ko": "ACTIVE 연구는 두뇌 훈련에 대한 생각을 어떻게 바꿨나요?",
-        "answer_30s_ko": "이제 저는 훈련이 효과가 있는지만 묻지 않고, 무엇을 훈련했고 그 이점이 어디로 전이되었는지도 묻습니다. ACTIVE에서는 10회 훈련의 효과가 최대 5년까지 지속되었지만, 처리속도 훈련의 이점이 기억이나 추론으로 확장되지는 않았고 일상생활로의 전이는 입증되지 않았습니다. 저는 특정 능력의 향상과 폭넓은 인지적 활력을 구분하겠습니다."
+        "card_id": "stine-morrow-2007-reflection-04",
+        "entry_type": "experience",
+        "topic": "Hesitating before a new challenge",
+        "topic_ko": "도전 앞의 망설임",
+        "title": "What scene of hesitating over a new challenge came to mind?",
+        "title_ko": "새로운 도전을 망설인 장면이 떠올랐나요?",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to your own experience.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 자신의 실제 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} What interested me in this article was that engagement involves expectations and opportunities as well as ability. I would now ask what was difficult and what conditions for participation were available, rather than simply assume a lack of interest. Choosing to participate does not guarantee prevention of cognitive decline.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 글을 읽고 흥미로웠던 점은 참여 여부에 능력뿐 아니라 기대와 기회도 얽힌다는 것입니다. 이제는 관심이 없다고 단정하기보다 무엇이 어렵고 어떤 참여 여건이 있었는지 묻겠습니다. 참여를 선택했다고 인지 저하를 막을 수 있다는 뜻은 아닙니다.",
+        "evidence_segment_id": "OPENING-001",
+        "response_angle": "age-expectations-and-opportunities-for-challenge",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "question": "What expectation does that remark reveal?",
+            "question_ko": "그 말에서 어떤 기대가 드러나나요?",
+            "answer": "This is the remark I would examine: {{age_cue}} It can be read alongside the article's account of cultural expectations that intellectual capacity is fixed and difficult to change through effort. But a remark about age and learning does not measure the person's actual ability or demonstrate cognitive decline.",
+            "answer_ko": "살펴볼 말은 이것입니다. {{age_cue}} 이는 지적 능력이 고정되어 노력으로 바꾸기 어렵다고 보는 문화적 기대와 연결해 읽을 수 있습니다. 다만 나이와 배움에 관한 이 말이 실제 능력을 측정하거나 인지 저하를 확인한 것은 아닙니다.",
+            "evidence_segment_id": "OPENING-001",
+            "id": "stine-morrow-2007-reflection-04-followup-01"
+          },
+          {
+            "question": "How would you distinguish reasons for not participating?",
+            "question_ko": "참여하지 않는 이유를 어떻게 구분하나요?",
+            "answer": "I would ask what the person found difficult and whether a meaningful opportunity to learn was actually available. The article recognizes real cognitive difficulties as well as restricted opportunities for intellectual activity. My application would be to consider the task's pace and available explanation or support alongside the person's abilities, rather than attribute withdrawal only to attitude.",
+            "answer_ko": "당사자가 무엇을 어렵게 느꼈는지와 의미 있게 배울 기회가 실제로 있었는지를 묻겠습니다. 이 글은 실제 인지적 어려움과 지적 활동 기회의 제한을 모두 인정합니다. 저는 과제의 속도나 설명·지원 여건을 당사자의 능력과 함께 살펴보겠으며, 참여하지 않는 일을 태도만으로 설명하지 않겠습니다.",
+            "evidence_segment_id": "OPENING-001",
+            "id": "stine-morrow-2007-reflection-04-followup-02"
+          },
+          {
+            "question": "Would taking part prevent cognitive decline?",
+            "question_ko": "참여하면 인지 저하를 막을 수 있나요?",
+            "answer": "The article treats that claim as unsettled. People who already have greater cognitive vitality may be more likely to seek out and sustain challenging activities, so an association does not settle causation. Training studies also show gains that are specific to the abilities trained. I would not turn a decision to participate in this fictional scene into a promise of broad cognitive protection.",
+            "answer_ko": "이 글은 그 주장을 아직 확정되지 않은 것으로 다룹니다. 원래 인지적 활력이 높은 사람이 도전적인 활동을 찾고 유지하기 쉬울 수 있어, 관련성이 곧 인과관계를 확정하지는 않습니다. 훈련 연구의 향상도 훈련한 능력에 한정되는 양상을 보입니다. 따라서 이 가상 장면에서 참여를 선택했다고 폭넓은 인지 보호가 보장된다고 하지는 않겠습니다.",
+            "evidence_segment_id": "ACTIVITY-001",
+            "id": "stine-morrow-2007-reflection-04-followup-03"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "stine-morrow-2007-reflection-04-example-01",
+            "label": "A new phone feature",
+            "label_ko": "새 휴대전화 기능",
+            "values": {
+              "scene": {
+                "en": "I remembered my father hesitating to learn a new phone feature.",
+                "ko": "새 휴대전화 기능을 배울지 망설이던 아버지가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said that at his age, he would immediately forget whatever he learned.",
+                "ko": "아버지는 이 나이에는 배워도 금방 잊어버린다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed he had no wish to learn.",
+                "ko": "배울 뜻이 없으신 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-04-example-02",
+            "label": "Fast-paced software training",
+            "label_ko": "빠른 업무 프로그램 교육",
+            "values": {
+              "scene": {
+                "en": "I remembered an older colleague hesitating over a fast-paced course on new work software.",
+                "ko": "진도가 빠른 새 업무 프로그램 교육을 망설이던 나이 든 동료가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The colleague said learning new software was beyond someone their age.",
+                "ko": "그 동료는 자기 나이에 새 프로그램을 익히는 건 무리라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought the colleague simply disliked change.",
+                "ko": "그저 변화를 싫어한다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-04-example-03",
+            "label": "Photo editing without a beginner class",
+            "label_ko": "초보반 없는 사진 편집",
+            "values": {
+              "scene": {
+                "en": "I remembered an older neighbor considering a photo-editing course with no beginner group.",
+                "ko": "초보반이 없는 사진 편집 강좌를 알아보던 나이 든 이웃이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The neighbor said learning this technology at that age was pointless.",
+                "ko": "그 이웃은 그 나이에 이런 기술을 배워도 소용없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed the hobby did not interest them much.",
+                "ko": "그 취미에 별 관심이 없는 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-04-example-04",
+            "label": "A language group moving quickly",
+            "label_ko": "빠르게 진행되는 외국어 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother hesitating to join a language group whose explanations moved quickly.",
+                "ko": "설명이 빠른 외국어 모임에 나갈지 망설이던 어머니가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said people her age could no longer learn new words.",
+                "ko": "어머니는 자기 나이에는 새 단어를 더 배울 수 없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought she simply did not feel like studying.",
+                "ko": "그저 공부할 마음이 없으신 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-04-example-05",
+            "label": "A demanding book discussion",
+            "label_ko": "어려운 책 토론",
+            "values": {
+              "scene": {
+                "en": "I remembered an older acquaintance hesitating over a demanding book-club discussion.",
+                "ko": "어려운 책을 토론하는 독서 모임을 망설이던 나이 든 지인이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The acquaintance said following a complicated argument would be difficult at that age.",
+                "ko": "그 지인은 그 나이에 복잡한 주장을 따라가기는 어렵다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed the book's subject was unappealing.",
+                "ko": "책의 주제에 흥미가 없는 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-04-example-06",
+            "label": "Learning to guide museum visitors",
+            "label_ko": "박물관 해설 배우기",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative considering training as a volunteer museum guide.",
+                "ko": "박물관 해설 봉사를 배울지 고민하던 나이 든 친척이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The relative said that at that age, learning so much new information was impossible.",
+                "ko": "그 친척은 그 나이에 새로운 내용을 많이 익히는 건 불가능하다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought the volunteering role simply did not appeal.",
+                "ko": "그 봉사 역할이 별로 내키지 않는 줄 알았습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "stine-reading-05",
-        "title": "What question or limitation remained for you?",
-        "answer_30s": "Senior Odyssey showed preliminary changes in processing speed and engagement-related dispositions, but broad cognitive improvement remained unestablished. I would like to know which components of an intervention resembling everyday life matter, and whether benefits extend to untrained abilities and everyday performance. I read the results within the stated context of ongoing program development and evaluation.",
+        "card_id": "stine-morrow-2007-reflection-05",
+        "entry_type": "experience",
+        "topic": "Connecting meaning while reading",
+        "topic_ko": "뜻을 연결하며 읽기",
+        "title": "Have you focused only on how quickly you read?",
+        "title_ko": "읽는 속도만 신경 쓴 적 있나요?",
+        "experience_prompt": "These are fictional everyday reading scenes. Choose another example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상의 독서를 가정한 가상 예시입니다. 다른 예시를 고르거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} Before I began reading, {{prior_view}} {{age_cue}} I found it interesting that reading depends not only on speed but also on how time is allocated to building and integrating meaning. I would now consider what I connected, alongside how much I read.",
+        "answer_30s_ko": "{{scene}} 그 글을 읽기 전에는 {{prior_view}} {{age_cue}} 이 글에서 읽는 속도만이 아니라 새 개념과 문장들의 뜻을 연결하는 데 시간을 어떻게 쓰는지가 중요하다는 점이 흥미로웠습니다. 이제는 읽은 양과 함께 어떤 내용을 서로 연결했는지도 살펴보겠습니다.",
+        "evidence_segment_id": "ATTENTION-001",
+        "response_angle": "reading-time-for-new-concepts-and-integration",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "stine-morrow-2007-reflection-05-followup-01",
+            "question": "Where did you need to allocate time in that scene?",
+            "question_ko": "어느 대목에 시간을 쓴 건가요?",
+            "answer": "The relevant part of the scene is this: {{age_cue}} The article describes extra time at new concepts and at clause or sentence endings, where meanings are integrated. I would examine whether my pause served such processing rather than count the pause itself as success. This fictional scene is a way to identify a possible allocation of attention, not a measurement of what actually improved comprehension.",
+            "answer_ko": "해당하는 대목은 이 장면입니다. {{age_cue}} 논문은 새 개념과 의미가 통합되는 절·문장 끝에 시간을 더 쓰는 양상을 설명합니다. 잠시 멈췄다는 사실을 성공으로 세기보다 그 시간이 그런 처리에 쓰였는지 살펴보겠습니다. 이 가상 장면은 가능한 주의 배분을 짚는 예이지, 무엇이 이해를 높였는지 측정한 결과는 아닙니다.",
+            "evidence_segment_id": "ATTENTION-001"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-followup-02",
+            "question": "Would simply reading more slowly always help?",
+            "question_ko": "천천히 읽으면 다 도움이 되나요?",
+            "answer": "Not necessarily. The article links memory and comprehension to particular allocations of effort, including conceptual integration and elaborating the situation described. A longer reading time alone does not establish that those processes occurred. I would ask what the reading goal was and which meanings were connected, rather than assume that adding minutes to any reading task must improve the result.",
+            "answer_ko": "반드시 그렇지는 않습니다. 논문은 개념을 통합하고 글이 묘사한 상황을 정교하게 구성하는 데 노력을 배분하는 양상을 기억·이해와 연결합니다. 시간이 길어졌다는 사실만으로 그런 처리가 일어났다고 볼 수는 없습니다. 어떤 목표로 읽고 어떤 뜻을 연결했는지 묻겠으며, 어느 읽기 과제든 시간을 늘리면 결과가 좋아진다고 가정하지 않겠습니다.",
+            "evidence_segment_id": "ATTENTION-002"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-followup-03",
+            "question": "Does this reading habit also improve overall cognitive abilities?",
+            "question_ko": "이 습관이 전반적인 인지능력도 높이나요?",
+            "answer": "That would be a different claim. The conclusion distinguishes engagement with a specific task from broader cognitive vitality and notes the narrow effects found in studies of cognitive plasticity. How attentional and activity engagement interact still requires examination. My example concerns approaching a reading task; it does not demonstrate a lasting gain across cognitive abilities or show that spending longer reading prevents cognitive ageing.",
+            "answer_ko": "그것은 다른 주장입니다. 결론은 특정 과제에 주의를 기울이는 것과 폭넓은 인지적 활력을 구분하고, 인지 가소성 연구에서 경험의 효과가 좁게 나타난다는 점을 짚습니다. 주의 관여와 활동 관여가 어떻게 상호작용하는지는 더 검토해야 합니다. 제 예시는 읽기 과제에 접근하는 방식이며, 전반적 인지능력이 지속해서 좋아지거나 오래 읽으면 인지노화를 막는다는 증거는 아닙니다.",
+            "evidence_segment_id": "CONCLUSION-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "stine-morrow-2007-reflection-05-example-01",
+            "label": "A new app's instructions",
+            "label_ko": "새 앱의 설명서",
+            "values": {
+              "scene": {
+                "en": "I remembered opening the instructions for a new app before trying it for the first time.",
+                "ko": "처음 쓰는 앱을 실행하기 전에 사용설명서를 펼쳐 보던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought finishing the instructions quickly would show that I had understood them.",
+                "ko": "설명서를 빨리 끝까지 읽으면 이해도 끝난 것이라고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "At the end of a sentence, I paused to distinguish the newly introduced ideas of backup and synchronization.",
+                "ko": "읽다가 문장 끝에서 멈춰 새로 나온 백업과 동기화가 각각 무슨 뜻인지 구분해 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-example-02",
+            "label": "An unfamiliar recipe",
+            "label_ko": "낯선 요리법",
+            "values": {
+              "scene": {
+                "en": "I remembered reading a recipe for an unfamiliar dish before preparing its ingredients.",
+                "ko": "처음 만드는 음식의 재료를 준비하기 전에 요리법을 읽던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought recognizing every word would be enough to get through the instructions quickly.",
+                "ko": "아는 단어로 쓰였으니 빠르게 훑어도 충분하겠다고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "I paused at a sentence ending to connect the instruction about lowering the heat with the next step.",
+                "ko": "문장 끝에서 잠시 멈춰 불을 줄이라는 앞의 설명이 다음 순서와 어떻게 이어지는지 살펴보았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-example-03",
+            "label": "A museum's exhibition text",
+            "label_ko": "전시장 설명문",
+            "values": {
+              "scene": {
+                "en": "I remembered reading an exhibition text about an artist whose work I had not seen before.",
+                "ko": "작품을 처음 접한 작가에 관한 전시장 설명문을 읽던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought moving rapidly from one sentence to the next was a sign of reading well.",
+                "ko": "문장에서 다음 문장으로 빨리 넘어가야 잘 읽는다고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "At the end of a sentence, I went back to connect a pronoun with the person introduced earlier.",
+                "ko": "문장 끝에서 앞부분을 다시 보며 대명사가 앞서 등장한 누구를 가리키는지 연결해 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-example-04",
+            "label": "An explanatory news article",
+            "label_ko": "용어를 설명한 기사",
+            "values": {
+              "scene": {
+                "en": "I remembered reading an explanatory article that introduced unfamiliar ways of describing change.",
+                "ko": "변화를 설명하는 낯선 용어들이 나온 해설 기사를 읽던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought covering more lines each minute would help me take in more information.",
+                "ko": "같은 시간에 더 많은 줄을 읽어야 정보를 많이 얻는다고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "I paused after a sentence to connect its account of a proportion with the next sentence about its change.",
+                "ko": "한 문장을 읽고 멈춰 비율을 설명한 내용과 그 비율의 변화를 다룬 다음 문장을 연결해 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-example-05",
+            "label": "New characters in a novel",
+            "label_ko": "소설의 새 인물들",
+            "values": {
+              "scene": {
+                "en": "I remembered starting a novel in which several unfamiliar characters appeared close together.",
+                "ko": "낯선 인물들이 잇달아 등장하는 소설의 첫 부분을 읽던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought finishing more pages would matter more than pausing over the relationships.",
+                "ko": "인물 관계에 멈춰 있기보다 페이지를 많이 넘기는 게 중요하다고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "I paused at a sentence ending to connect a newly named character with the people already introduced.",
+                "ko": "문장 끝에서 잠시 멈춰 새 인물이 앞서 나온 사람들과 어떤 관계인지 묶어서 생각해 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-05-example-06",
+            "label": "An argument and its counterexample",
+            "label_ko": "주장과 반례 읽기",
+            "values": {
+              "scene": {
+                "en": "I remembered reading a course text that introduced a claim and then a counterexample.",
+                "ko": "수업 자료에서 어떤 주장 뒤에 반례가 이어지는 대목을 읽던 장면이 떠올랐습니다."
+              },
+              "prior_view": {
+                "en": "I thought reading each sentence quickly and recognizing its words would be sufficient.",
+                "ko": "각 문장을 빨리 읽고 단어를 알아보면 충분하다고 생각했습니다."
+              },
+              "age_cue": {
+                "en": "I paused after the counterexample to connect it with the earlier claim and consider which part it challenged.",
+                "ko": "반례를 읽고 멈춰 앞의 주장과 연결한 뒤, 그중 어떤 부분을 문제 삼는지 생각해 보았습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "stine-morrow-2007-reflection-06",
+        "entry_type": "experience",
+        "topic": "Practice and self-directed challenges",
+        "topic_ko": "반복 연습과 새로운 도전",
+        "title": "What helped you distinguish practice from an unfamiliar challenge?",
+        "title_ko": "반복과 새로운 도전의 차이를 느낀 적 있나요?",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "가상의 일상 장면입니다. 예시를 고르거나 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} What interested me was that activity engagement includes not only practicing defined skills, but also deciding what the problem is and how to approach it in unfamiliar situations. I would now examine the judgments and adjustments an activity requires, alongside how much practice it involves.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 그때는 {{prior_view}} 흥미로웠던 건, 글이 말하는 활동 관여에는 정해진 기술의 반복뿐 아니라 낯선 상황에서 문제와 해결 방법을 스스로 정하는 일이 포함된다는 점입니다. 이제는 연습량과 함께 어떤 판단과 조정이 필요했는지 살펴보겠습니다.",
         "evidence_segment_id": "ACTIVITY-002",
-        "response_angle": "limitation",
-        "style_basis": "reading-grounded",
-        "title_ko": "어떤 질문이나 한계가 남았나요?",
-        "answer_30s_ko": "Senior Odyssey에서는 처리속도와 관여 관련 성향의 예비적 변화가 나타났지만, 광범위한 인지 향상은 아직 입증되지 않았습니다. 저는 일상생활과 유사한 개입에서 어떤 구성요소가 중요한지, 그리고 이점이 훈련하지 않은 능력과 일상적 수행에도 확장되는지 알고 싶습니다. 프로그램의 개발과 평가가 진행 중이라는 논문의 맥락 안에서 이 결과를 읽었습니다."
-      },
-      {
-        "card_id": "stine-reading-06",
-        "title": "How would you connect the article to family life?",
-        "answer_30s": "My application would be for families to support older adults in choosing meaningful new activities and giving the necessary processes sufficient attention, rather than treating a slower response as proof of inability. This is my interpretation of the article's self-regulation perspective. The article does not directly establish that a particular form of family support prevents cognitive decline.",
-        "evidence_segment_id": "CONCLUSION-001",
-        "response_angle": "family-application",
-        "style_basis": "reading-grounded",
-        "title_ko": "이 논문을 가족생활과 어떻게 연결하겠나요?",
-        "answer_30s_ko": "제가 도출한 적용은 가족이 느린 반응을 무능력의 증거로 받아들이기보다, 노인이 의미 있는 새로운 활동을 선택하고 필요한 과정에 충분히 주의를 기울이도록 지원하는 것입니다. 이는 논문의 자기조절 관점을 제가 해석한 것입니다. 이 논문이 특정한 가족 지원 방식으로 인지 저하를 예방할 수 있음을 직접 입증한 것은 아닙니다."
+        "response_angle": "novelty-self-direction-and-open-ended-everyday-problems",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "stine-morrow-2007-reflection-06-followup-01",
+            "question": "What required you to make your own decisions?",
+            "question_ko": "어떤 점에서 스스로 판단해야 했나요?",
+            "answer": "{{age_cue}} There was no single prescribed route to follow: I had to choose priorities, structure the problem, or reorganize resources. These are the features the article emphasizes in self-directed engagement with unfamiliar, ill-defined challenges. I am applying that distinction to this fictional scene, not claiming that the activity has been tested or that doing it improved a particular cognitive ability.",
+            "answer_ko": "{{age_cue}} 정해진 순서만 따르면 되는 것이 아니라 우선순위를 고르고, 문제를 정리하거나 자원을 다시 배치해야 하는 대목입니다. 글은 낯설고 답이 정해지지 않은 도전에 자기주도적으로 참여할 때 이런 선택을 강조합니다. 저는 그 구분을 가상 장면에 적용한 것이며, 이 활동이 검증됐거나 특정 인지능력을 높였다고 주장하는 것은 아닙니다.",
+            "evidence_segment_id": "ACTIVITY-002"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-followup-02",
+            "question": "Does that make puzzles pointless?",
+            "question_ko": "그렇다면 퍼즐은 의미가 없다는 건가요?",
+            "answer": "No. Senior Odyssey itself includes quick brainteasers intended to exercise component abilities, alongside open-ended teamwork, creativity, and choices of activity. The distinction is not simply between puzzles and everything else. I would ask how a task is structured, whether it is new to the person, and what decisions it requires, without assuming that either routine practice or novelty has universal benefits.",
+            "answer_ko": "아닙니다. Senior Odyssey에도 개별 능력을 연습하도록 마련한 짧은 두뇌 문제가 있고, 여기에 답이 정해지지 않은 팀 과제와 창의성, 활동 선택이 함께 들어갑니다. 따라서 퍼즐인지 아닌지만으로 나눌 수는 없습니다. 활동의 구성, 당사자에게 새로운 정도, 필요한 판단을 살펴보되 반복이나 새로움 어느 쪽에도 보편적인 이점을 가정하지 않겠습니다.",
+            "evidence_segment_id": "ACTIVITY-002"
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-followup-03",
+            "question": "Would such challenges prevent future cognitive decline?",
+            "question_ko": "이런 도전이 인지저하를 막아 줄까요?",
+            "answer": "The article does not establish that promise. Its conclusion identifies unanswered questions about which conditions sustain engagement, how attentional and activity engagement interact, and which psychosocial mechanisms are involved. A meaningful new activity is a way to explore the proposal, but a single experience cannot demonstrate lasting cognitive protection, and the article does not show that these activities prevent dementia.",
+            "answer_ko": "이 글은 그런 보장을 입증하지 않습니다. 결론은 어떤 조건이 관여를 유지시키는지, 주의 관여와 활동 관여가 어떻게 상호작용하는지, 어떤 심리사회적 기제가 작용하는지를 미해결 질문으로 남깁니다. 의미 있는 새 활동으로 제안을 생각해 볼 수는 있지만, 한 경험이 장기적인 인지 보호를 확인해 주거나 이 글이 이런 활동의 치매 예방을 입증한 것은 아닙니다.",
+            "evidence_segment_id": "CONCLUSION-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "stine-morrow-2007-reflection-06-example-01",
+            "label": "A puzzle and a family outing",
+            "label_ko": "퍼즐과 가족 나들이",
+            "values": {
+              "scene": {
+                "en": "I remembered planning a family outing after doing my usual crossword puzzle.",
+                "ko": "늘 풀던 낱말 퍼즐을 마친 뒤 가족 나들이를 계획하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I had to weigh everyone's wishes and change the route to fit the time available.",
+                "ko": "각자 원하는 일을 비교하고 남은 시간에 맞춰 동선을 바꿔야 했습니다."
+              },
+              "prior_view": {
+                "en": "I regarded only solving the puzzle as mental exercise.",
+                "ko": "퍼즐을 푸는 시간만 머리를 쓰는 연습이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-example-02",
+            "label": "Number puzzles and a newsletter",
+            "label_ko": "숫자 퍼즐과 모임 소식지",
+            "values": {
+              "scene": {
+                "en": "I remembered volunteering to make a group newsletter after regularly doing number puzzles.",
+                "ko": "숫자 퍼즐을 꾸준히 풀다가 모임 소식지를 처음 맡았던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I had to decide which stories mattered and organize different members' accounts.",
+                "ko": "어떤 소식이 중요한지 고르고 여러 회원의 이야기를 정리해야 했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed practice with puzzles would make every kind of task easier.",
+                "ko": "퍼즐을 연습하면 다른 일도 모두 수월해질 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-example-03",
+            "label": "An unfamiliar group meal",
+            "label_ko": "처음 준비하는 모임 식사",
+            "values": {
+              "scene": {
+                "en": "I remembered preparing a meal for a group after repeatedly cooking the same familiar dishes.",
+                "ko": "익숙한 요리만 반복하다가 여러 사람의 모임 식사를 준비했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I had to rethink the menu and order of cooking around different preferences and a limited budget.",
+                "ko": "서로 다른 취향과 한정된 예산에 맞춰 메뉴와 조리 순서를 다시 정해야 했습니다."
+              },
+              "prior_view": {
+                "en": "I thought the main challenge was repeating the familiar steps faster.",
+                "ko": "익숙한 순서를 더 빨리 반복하는 것이 핵심이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-example-04",
+            "label": "From a pattern to a repair",
+            "label_ko": "도안 따라 하기와 가방 수선",
+            "values": {
+              "scene": {
+                "en": "I remembered repairing an old bag after getting used to following sewing patterns.",
+                "ko": "바느질 도안을 따라 하는 데 익숙해진 뒤 낡은 가방을 수선했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Without a pattern, I had to work out which parts to reinforce with the materials I had.",
+                "ko": "도안 없이 가진 재료로 어느 부분을 어떻게 보강할지 정해야 했습니다."
+              },
+              "prior_view": {
+                "en": "I thought familiar stitching practice would be enough to solve the problem.",
+                "ko": "익숙한 바느질을 연습한 것으로 충분히 해결되리라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-example-05",
+            "label": "Practiced phrases and a real visit",
+            "label_ko": "외국어 반복과 손님 안내",
+            "values": {
+              "scene": {
+                "en": "I remembered guiding a visitor after repeatedly practicing foreign-language phrases in an app.",
+                "ko": "앱에서 외국어 문장을 반복 연습하다가 방문객을 안내했던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I had to understand unexpected questions and choose a different way to explain when needed.",
+                "ko": "예상하지 못한 질문을 이해하고 필요하면 다른 설명 방법을 골라야 했습니다."
+              },
+              "prior_view": {
+                "en": "I expected accurate repetition of the phrases to be enough for the conversation.",
+                "ko": "문장을 정확히 반복하면 대화에도 충분하리라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "stine-morrow-2007-reflection-06-example-06",
+            "label": "A board game and a group event",
+            "label_ko": "보드게임과 동네 행사",
+            "values": {
+              "scene": {
+                "en": "I remembered helping organize a neighborhood event after regularly playing the same board game.",
+                "ko": "같은 보드게임을 즐기다가 동네 행사 준비를 맡았던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I had to choose priorities and rearrange people's roles when the venue changed.",
+                "ko": "장소가 바뀌자 우선순위를 고르고 사람들의 역할도 다시 나눠야 했습니다."
+              },
+              "prior_view": {
+                "en": "I expected the strategy I used in the game to work here as well.",
+                "ko": "게임에서 쓰던 전략이 이 상황에도 그대로 통하리라 생각했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

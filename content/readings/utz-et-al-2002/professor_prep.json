@@ -140,70 +140,600 @@
     }
   ],
   "reading_response": {
-    "title": "Preparing a Reading Response",
-    "instructions": "Explain your reaction and evaluation in your own words, using the assigned source segment. Distinguish measured associations, the authors' interpretations, and your proposed applications.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "utz-reading-01",
-        "title": "Give a brief overall response to the paper.",
-        "answer_30s": "I read the paper as showing that widowhood does not relate to every kind of social activity in the same way. Widowed people had higher informal participation than married controls, while formal participation was comparable. The authors connect lower preloss participation with a spouse's poor health and higher postloss participation with support from friends and relatives. This made me view widowhood as a process unfolding over time, while keeping those explanations distinct from directly demonstrated causal mechanisms.",
-        "evidence_segment_id": "ABS-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 논문에 대한 전반적인 생각을 간단히 말해 보세요.",
-        "answer_30s_ko": "저는 배우자 사별이 모든 종류의 사회활동과 같은 방식으로 연결되는 것은 아니라는 점을 보여 주는 논문으로 읽었습니다. 사별한 사람은 기혼 대조군보다 비공식 참여가 높았지만 공식 참여는 비슷했습니다. 저자들은 사별 전의 낮은 참여를 배우자의 나쁜 건강과, 사별 후의 높은 참여를 친구와 친척의 지원과 연결합니다. 이를 통해 배우자 사별을 시간에 따라 전개되는 과정으로 보게 되었으며, 이런 설명과 직접 입증된 인과적 기제는 구분했습니다."
-      },
-      {
-        "card_id": "utz-reading-02",
-        "title": "Which result made you consider change and continuity together?",
-        "answer_30s": "I would not read the 0.44-standard-deviation estimate as a general rise in all social activity after widowhood. In Model 3 it is the adjusted difference in informal participation between widowed people and controls; the formal-participation difference is not significant. At the same time, baseline participation predicts follow-up participation, with coefficients of .58 for formal and .31 for informal activity. I therefore see a transition-related difference alongside substantial continuity in prior patterns.",
+        "card_id": "utz-et-al-2002-reflection-01",
+        "entry_type": "reading",
+        "topic": "Different patterns in formal and informal participation",
+        "topic_ko": "모임과 일상의 연락",
+        "title": "What interested you about the two forms of participation after widowhood?",
+        "title_ko": "사별 뒤 두 참여 양상에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that organized activities and everyday contact showed different patterns after widowhood. After accounting for earlier participation and other conditions, widowed people had higher informal participation, such as calls and visits, than continuously married people. Formal participation through organizations, religion, and volunteering showed no significant difference. This made me want to notice ordinary calls and visits as well as attendance at organized activities when thinking about how relationships continue.",
+        "answer_30s_ko": "공식 모임과 일상의 연락이 사별 뒤 서로 다른 양상을 보였다는 점이 흥미로웠습니다. 이전 참여와 다른 조건을 고려한 분석에서, 사별자는 계속 혼인을 유지한 사람보다 전화와 만남 같은 비공식 참여가 높았습니다. 단체·종교·봉사 같은 공식 참여에서는 유의한 차이가 없었습니다. 그래서 관계가 이어지는 모습을 이해할 때 새 모임에 나가는지만 보지 않고, 평소의 전화와 방문도 함께 살피고 싶었습니다.",
         "evidence_segment_id": "RESULTS-MODELS-001",
-        "response_angle": "evidence",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 결과를 보고 변화와 연속성을 함께 생각하게 되었나요?",
-        "answer_30s_ko": "저는 0.44표준편차라는 추정치를 사별 후 모든 사회활동이 전반적으로 증가한 것으로 읽지 않겠습니다. 모형 3에서 이 값은 사별한 사람과 대조군 사이의 보정된 비공식 참여 차이이며, 공식 참여 차이는 유의하지 않습니다. 동시에 기초시점 참여는 추적 시점의 참여를 예측하며 계수는 공식 활동 .58, 비공식 활동 .31입니다. 따라서 저는 전환에 따른 차이와 함께 이전 양상의 상당한 연속성도 봅니다."
+        "response_angle": "distinguishing-organized-participation-from-everyday-contact-after-widowhood",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-01-followup-01",
+            "question": "How did the study distinguish formal from informal participation?",
+            "question_ko": "공식 참여와 비공식 참여는 어떻게 나눴나요?",
+            "answer": "Formal participation covered volunteer work, attendance at meetings or programs of groups and organizations, and religious services. Informal participation covered getting together with friends, neighbors, or relatives and telephone contact with them. The distinction concerns the form of interaction, not whether the people are important or whether the activity is worthwhile. For example, attending a religious service belongs to the formal measure, while a personal telephone conversation with a friend from that community would fit the informal measure. Someone can therefore have little change in organized participation while maintaining or changing everyday contact. Combining everything into a single idea of being socially active would make that difference harder to see.",
+            "answer_ko": "공식 참여에는 자원봉사, 집단이나 조직의 모임·프로그램 참석, 종교의식 참석이 포함됐습니다. 비공식 참여는 친구·이웃·친척과 만나거나 전화로 이야기하는 것이었습니다. 중요한 사람인지, 가치 있는 활동인지에 따른 구분이 아니라 상호작용의 형태를 나눈 것입니다. 예를 들어 종교의식에 참석하는 것은 공식 참여이고, 그 공동체에서 알게 된 친구와 개인적으로 통화하는 것은 비공식 참여에 해당할 수 있습니다. 따라서 단체활동에 큰 변화가 없어도 일상의 연락은 유지되거나 달라질 수 있습니다. 이를 모두 사회적으로 활발한지라는 하나의 말로 묶으면 그런 차이가 잘 보이지 않습니다.",
+            "evidence_segment_id": "METHOD-MEASURES-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-01-followup-02",
+            "question": "Does higher informal participation mean every widowed person became more active?",
+            "question_ko": "비공식 참여가 높으면 모두 더 활발해진 건가요?",
+            "answer": "No. The result concerns an adjusted comparison with continuously married people, not a claim that every widowed person's activity increased from their own earlier level. In the descriptive comparison, the widowed group's average participation stayed relatively stable between baseline and follow-up, while the married comparison group's averages declined. The regression models then considered earlier participation and other characteristics when comparing the groups. Those are different ways of describing the data. I would retain the finding of higher adjusted informal participation without turning it into a universal before-and-after increase. Likewise, no significant difference in formal participation does not mean every person's organized activities stayed exactly the same.",
+            "answer_ko": "그렇지는 않습니다. 계속 혼인을 유지한 사람들과 조건을 고려해 비교한 결과이지, 사별자 모두가 자신의 이전 수준보다 활동을 늘렸다는 뜻은 아닙니다. 기술적 비교에서 사별집단의 평균 참여는 기초조사와 추적조사 사이에 비교적 일정했고, 기혼 비교집단의 평균은 줄었습니다. 회귀모형은 이전 참여와 다른 특성까지 고려해 두 집단을 비교했습니다. 자료를 설명하는 방식이 서로 다른 것입니다. 따라서 조정된 비공식 참여가 더 높다는 결과를 모든 사별자의 실제 활동 증가로 바꾸어 읽지 않겠습니다. 공식 참여에 유의한 집단 차이가 없었다고 해서 각자의 단체활동이 모두 정확히 그대로였다는 뜻도 아닙니다.",
+            "evidence_segment_id": "RESULTS-DESCRIPTIVE-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-01-followup-03",
+            "question": "Can more contact tell us that grief has eased?",
+            "question_ko": "연락이 많아지면 슬픔이 줄었다고 볼 수 있나요?",
+            "answer": "Contact frequency alone cannot tell us that. The study examined participation, and the authors note that frequency may not capture the emotional quality or subjective meaning of a relationship or activity. More calls could coexist with considerable grief, and similar contact levels could carry different meanings for different people. The authors recommend that future research examine those meanings and the stress associated with behavioral changes. I would therefore describe the observed pattern of contact separately from how a bereaved person is feeling. Neither frequent contact nor attendance at organized activities is a stand-alone measure of recovery, and the study does not establish one required pattern that everyone should follow after losing a spouse.",
+            "answer_ko": "연락 빈도만으로는 알 수 없습니다. 이 연구는 참여를 살폈고, 저자들도 빈도가 관계나 활동의 정서적 질과 주관적 의미를 담지 못할 수 있다고 지적합니다. 전화가 많아도 슬픔이 클 수 있고, 연락 횟수가 비슷해도 사람마다 그 의미는 다를 수 있습니다. 저자들은 향후 연구에서 그런 의미와 행동변화에 따르는 스트레스를 살펴야 한다고 제안합니다. 따라서 관찰된 연락의 모습과 사별한 사람의 마음을 구분해 말하겠습니다. 잦은 연락이나 공식 모임 참석만으로 회복을 판단할 수 없으며, 이 연구가 배우자를 잃은 모든 사람이 따라야 할 참여 양상을 정해 준 것도 아닙니다.",
+            "evidence_segment_id": "DISCUSSION-LIMITS-001"
+          }
+        ]
       },
       {
-        "card_id": "utz-reading-03",
-        "title": "What was most valuable about the design?",
-        "answer_30s": "I appreciated the prospective baseline data and age-matched controls. They allow prior participation to be considered without relying entirely on recollection after a loss and improve the separation of widowhood-related differences from aging and time. Separate formal and informal scales and inclusion of women and men also address reasons earlier findings may have differed. These are strengths of an observational design, not proof that all selection or confounding has disappeared.",
-        "evidence_segment_id": "PRIOR-001",
-        "response_angle": "method",
-        "style_basis": "course-question-pattern",
-        "title_ko": "설계에서 무엇이 가장 가치 있었나요?",
-        "answer_30s_ko": "전향적인 기초자료와 연령을 맞춘 대조군이 좋았습니다. 이를 통해 사별 뒤의 회상에 전적으로 의존하지 않고 이전 참여를 고려할 수 있으며, 사별과 관련한 차이를 노화와 시간의 영향에서 더 잘 구분할 수 있습니다. 공식·비공식 척도를 별도로 사용하고 여성과 남성을 모두 포함한 점도 기존 결과가 달랐을 수 있는 이유를 다룹니다. 이는 관찰연구 설계의 강점이지 모든 선택이나 교란이 사라졌다는 증거는 아닙니다."
+        "card_id": "utz-et-al-2002-reflection-02",
+        "entry_type": "reading",
+        "topic": "Looking at life before spousal loss",
+        "topic_ko": "사별 전부터 달랐던 일상",
+        "title": "What interested you about participation before spousal loss?",
+        "title_ko": "사별 전의 일상에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that understanding life after spousal loss required looking at life while the spouse was still alive. Those who later became widowed had less contact with friends and relatives at baseline, and poorer spousal health was also associated with less contact. I had thought of the death as the starting point of change, but opportunities to meet others could already have differed beforehand. When listening to a relative's account, I would also ask how their spouse's health and everyday arrangements had fitted together.",
+        "answer_30s_ko": "사별 뒤의 생활을 이해하려면 배우자가 살아 계실 때의 일상부터 살펴야 한다는 점이 흥미로웠습니다. 나중에 사별한 사람들은 기초시점에 친구나 친척과의 교류가 적었고, 배우자의 좋지 않은 건강도 낮은 교류와 관련됐습니다. 저는 사별일을 변화의 시작으로 생각했는데, 그 전부터 만남의 여건이 달랐을 수 있겠다고 느꼈습니다. 가족의 이야기를 들을 때 배우자의 건강과 일상이 어떻게 맞물려 있었는지도 묻고 싶습니다.",
+        "evidence_segment_id": "RESULTS-DESCRIPTIVE-001",
+        "response_angle": "preloss-spousal-health-and-opportunities-to-maintain-social-contact",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-02-followup-01",
+            "question": "What did the preloss observations show?",
+            "question_ko": "사별 전 자료에서 무엇을 확인했나요?",
+            "answer": "Before the loss, respondents who later became widowed had lower informal participation than those who remained married. Table 2 then considered health and personality alongside demographic controls. Reporting a spouse's health as poor or fair was associated with lower baseline informal participation, while the difference attached to later widowhood was no longer statistically significant in that fuller model. This makes the earlier family circumstances important to interpretation. It is not a record of a steadily declining participation score immediately before every death. Baseline timing varied, and the comparison does not establish that anticipation of death caused people to withdraw from others.",
+            "answer_ko": "상실 전에는 나중에 사별한 응답자들이 혼인을 유지한 응답자들보다 비공식적 참여가 낮았습니다. 표 2는 인구학적 조건에 더해 건강과 성격도 고려했습니다. 배우자의 건강이 나쁨 또는 보통이라는 보고는 낮은 기초시점 비공식적 참여와 관련됐고, 변수를 추가한 모형에서 이후 사별 여부에 따른 차이는 더 이상 유의하지 않았습니다. 사별 이전의 가족 사정을 함께 살펴야 하는 이유입니다. 다만 모든 사망 직전에 참여가 계속 줄어드는 모습을 기록한 자료는 아닙니다. 기초조사와 사망 사이의 간격은 사람마다 달랐고, 죽음을 예상했기 때문에 만남을 줄였다는 인과를 확정한 것도 아닙니다.",
+            "evidence_segment_id": "RESULTS-DESCRIPTIVE-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-02-followup-02",
+            "question": "Did the study establish an independent effect of caring for a spouse?",
+            "question_ko": "배우자 돌봄의 영향도 입증된 건가요?",
+            "answer": "The study measured spousal health and care provision separately. A baseline caregiver was someone providing at least one hour of in-home care for the spouse per week. In Table 2, the care indicator was not statistically significant for either form of preloss participation, while poor or fair spousal health was significant for informal participation. The authors suggested that people with ill spouses might devote time and energy to them, leaving less opportunity for other contact. I would present that as a possible explanation of the pattern, without turning it into a separately demonstrated causal effect of caregiving. The care indicator also did not describe every person's responsibilities or how demanding they felt.",
+            "answer_ko": "연구는 배우자의 건강과 돌봄 제공을 따로 측정했습니다. 기초시점 돌봄제공자는 배우자에게 주당 한 시간 이상 가정 내 돌봄을 제공한 사람이었습니다. 표 2에서 돌봄 여부는 사별 전 두 참여 유형 모두와 유의하게 관련되지 않았고, 배우자의 나쁨·보통 건강은 비공식적 참여와 유의하게 관련됐습니다. 저자들은 아픈 배우자에게 시간과 에너지를 쓰면서 다른 사람을 만날 기회가 줄었을 수 있다고 설명했습니다. 이는 가능한 해석으로 소개하되, 돌봄의 독립적인 인과효과가 입증됐다는 뜻으로 바꾸지는 않겠습니다. 돌봄 여부 지표만으로 각자가 맡은 일이나 느낀 부담을 모두 알 수도 없습니다.",
+            "evidence_segment_id": "METHOD-CONFOUNDERS-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-02-followup-03",
+            "question": "Did everyone have the same resources for maintaining relationships?",
+            "question_ko": "관계를 이어 갈 여건도 같았을까요?",
+            "answer": "The authors emphasize differences in the material and interpersonal resources available to survivors. Income, family networks, and transportation could shape the opportunities to stay connected, so similar wishes did not imply similar opportunities. The analyses reported particularly limited participation for some bereaved groups, including those with fewer socioeconomic resources or no children. I would keep this within the study's group comparisons rather than conclude that every childless person lacks support. The practical discussion proposes flexible transport and ways of maintaining familiar contacts. These are implications to consider with the person, not proof that one service will work for everyone or that low participation shows insufficient effort.",
+            "answer_ko": "저자들은 생존 배우자가 이용할 수 있는 물질적·대인적 자원이 서로 다르다고 강조했습니다. 소득이나 가족관계, 이동수단이 관계를 이어 갈 기회와 연결될 수 있으므로 같은 바람이 있어도 여건은 같지 않을 수 있습니다. 분석에서는 사회경제적 자원이 적거나 자녀가 없는 사별자 등 일부 집단의 참여가 특히 제한적이라고 보고했습니다. 이를 연구의 집단 비교 범위에서 읽고, 자녀 없는 사람은 모두 지원이 없다고 단정하지 않겠습니다. 실천 논의는 유연한 교통수단과 익숙한 연락을 이어 갈 방법을 제안합니다. 이는 당사자와 검토할 함의이며, 한 서비스가 모두에게 효과적이거나 참여가 적으면 노력이 부족하다는 증거는 아닙니다.",
+            "evidence_segment_id": "DISCUSSION-SUMMARY-001"
+          }
+        ]
       },
       {
-        "card_id": "utz-reading-04",
-        "title": "What surprised you most?",
-        "answer_30s": "I was surprised that greater contact may have reflected other people reaching out rather than bereaved people actively searching for new activity. Seventy-one percent reported unchanged personal interest in contact, while 35% reported increased interest from friends and relatives. Separately, 87% said they tried keeping busy or becoming involved to cope, and those reporting this tended to be younger and better resourced. Trying to keep busy does not necessarily mean increased interest in contact or a measured increase in the participation scales.",
+        "card_id": "utz-et-al-2002-reflection-03",
+        "entry_type": "reading",
+        "topic": "Different meanings behind participation",
+        "topic_ko": "참여 변화에 담긴 여러 뜻",
+        "title": "What interested you about why participation changes after bereavement?",
+        "title_ko": "참여 변화의 이유에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that more social contact after losing a spouse need not mean deliberately seeking new activities. It may also reflect other people reaching out or an effort to keep familiar relationships going. The paper made me distinguish wanting contact from trying to stay occupied as a way of coping. I would ask who initiated the contact and what the person hoped to preserve, alongside how often they participated.",
+        "answer_30s_ko": "사별 뒤 사람을 더 자주 만나는 일이 꼭 새 활동을 적극적으로 찾은 결과는 아닐 수 있다는 점이 흥미로웠습니다. 주변에서 먼저 연락했을 수도 있고, 익숙한 관계를 계속 이어 가려는 과정일 수도 있습니다. 논문을 읽으며 사람을 만나고 싶은 마음과 바쁘게 지내며 대처하려는 시도도 나누어 보게 됐습니다. 참여 횟수와 함께 누가 먼저 연락했고 그분은 무엇을 이어 가고 싶었는지 묻고 싶습니다.",
         "evidence_segment_id": "RESULTS-MOTIVES-001",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "무엇이 가장 놀라웠나요?",
-        "answer_30s_ko": "접촉 증가가 사별한 사람이 적극적으로 새로운 활동을 찾은 결과보다 다른 사람이 먼저 다가온 결과일 수 있다는 점이 놀라웠습니다. 71%는 본인의 접촉 관심이 그대로라고 했고, 35%는 친구와 친척의 관심이 늘었다고 보고했습니다. 별도로 87%는 대처를 위해 바쁘게 지내거나 활동에 참여하려 했다고 했으며, 그렇게 답한 사람은 더 젊고 자원이 더 많은 경향이 있었습니다. 바쁘게 지내려는 시도가 반드시 접촉 관심의 증가나 참여 척도에서 측정된 증가를 뜻하지는 않습니다."
+        "response_angle": "distinguishing-contact-motives-and-efforts-to-preserve-continuity",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-03-followup-01",
+            "question": "What suggests that others may have initiated more contact?",
+            "question_ko": "주변에서 먼저 다가왔다는 근거는 무엇인가요?",
+            "answer": "In Figure 2, 71% of widowed respondents said their own interest in contact with friends and relatives was the same as when their spouse was alive. Meanwhile, 35% said friends and relatives showed more interest in contacting them. Both answers came from the bereaved respondent; friends and relatives were not separately interviewed for these percentages. They concern perceived interest, not a direct record of who placed each call or arranged each visit. The authors therefore suggested that increased contact might reflect others reaching out with support. They did not establish that every increase was initiated by others, or that bereaved people themselves had no active role.",
+            "answer_ko": "그림 2에서 사별 응답자의 71%는 친구·친척과 접촉하고 싶은 본인의 관심이 배우자 생전과 같다고 했습니다. 35%는 친구·친척이 자신과 접촉하려는 관심을 더 보였다고 답했습니다. 둘 다 사별 당사자의 응답이며, 친구나 친척을 별도로 조사해 얻은 비율은 아닙니다. 지각된 관심을 묻는 문항이지 누가 매번 전화하거나 방문을 제안했는지를 직접 기록한 자료도 아닙니다. 저자들은 그래서 주변이 먼저 지원하려 다가온 것이 접촉 증가의 한 설명일 수 있다고 해석했습니다. 모든 증가가 타인의 주도로 생겼거나 사별자의 능동적 역할이 없었다고 확정한 것은 아닙니다.",
+            "evidence_segment_id": "RESULTS-MOTIVES-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-03-followup-02",
+            "question": "How should the 87% who tried to stay busy be understood?",
+            "question_ko": "바쁘게 지내려 했다는 87%는 무슨 뜻인가요?",
+            "answer": "Figure 3 asked whether, at any time since the spouse's death, respondents had tried to keep busy or become involved in an activity to cope with grief, loneliness, or missing their spouse. Eighty-seven percent answered yes. This is a report of a coping attempt. It does not show that all of those people actually increased their measured participation or that the activity relieved their distress. Nor does it contradict the 71% reporting unchanged interest in contact: preserving an existing relationship or routine can itself be a way of staying occupied. The questions address different things—interest in contact and an attempt to cope—so their percentages should not be treated as opposing accounts of the same measured change.",
+            "answer_ko": "그림 3은 배우자 사망 뒤 어느 때든 슬픔·외로움·그리움에 대처하려고 바쁘게 지내거나 어떤 활동에 참여하려 한 적이 있는지를 물었고, 87%가 그렇다고 답했습니다. 이는 대처를 시도했다는 자기보고입니다. 그들 모두의 측정된 참여량이 실제로 늘었거나 활동으로 고통이 줄었다는 뜻은 아닙니다. 접촉 관심이 같았다는 71%와도 모순되지 않습니다. 기존 관계나 익숙한 일상을 이어 가는 일도 바쁘게 지내는 방식일 수 있기 때문입니다. 두 질문은 접촉에 대한 관심과 대처 시도라는 서로 다른 내용을 묻기 때문에, 같은 변화에 대한 상반된 응답으로 읽지 않겠습니다.",
+            "evidence_segment_id": "RESULTS-MOTIVES-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-03-followup-03",
+            "question": "What did continuity theory explain, and where did it fall short?",
+            "question_ko": "지속성이론은 어디까지 설명해 주었나요?",
+            "answer": "Of the three theories examined, the authors found continuity theory most applicable: people with higher participation before bereavement tended to remain relatively more involved later, and many preferred similar contact with friends and relatives. This is continuity in relative participation and preferences, not proof that every activity remained unchanged. The authors also questioned whether stability across two interviews demonstrates continuity across an entire life course. An increase alone provided limited support for activity theory because that theory assumes active replacement of lost roles, while receiving support may also increase contact. No theory was wholly supported or refuted. The authors proposed that life-course approaches, including socioemotional selectivity and social convoy perspectives, might better explain diverse relationships and adjustments.",
+            "answer_ko": "비교한 세 이론 중 저자들은 지속성이론이 가장 적합하다고 봤습니다. 사별 전 참여가 높았던 사람은 이후에도 상대적으로 높은 참여를 보였고, 많은 사람이 친구·친척과 비슷한 접촉을 원했습니다. 이는 참여 수준과 선호의 지속성이며, 모든 활동이 그대로였다는 증거는 아닙니다. 저자들도 두 면접 사이의 안정성이 전 생애의 지속성을 뜻하는지 물었습니다. 활동이론은 잃은 역할을 능동적으로 대체한다고 보지만, 주변의 지원을 받는 것만으로 접촉이 늘 수도 있어 증가 방향만으로는 지지가 제한적이었습니다. 어느 이론도 전적으로 지지되거나 반박되지 않았습니다. 다양한 관계와 적응을 설명할 후속 관점으로 사회정서선택이론과 사회적 호송모형 등 생애과정 접근을 제안했습니다.",
+            "evidence_segment_id": "DISCUSSION-THEORY-001"
+          }
+        ]
       },
       {
-        "card_id": "utz-reading-05",
-        "title": "Which limitation matters most?",
-        "answer_30s": "Contact frequency does not reveal a relationship's emotional quality or an activity's subjective meaning. Formal and informal participation also remain broad categories that can conceal differences between particular activities. The authors propose measuring those meanings, the stress associated with behavioral changes, and couple-level characteristics such as both partners' health. I think those additions could clarify why the same apparent change in activity has different implications for different people; that is a research proposal, not a finding already tested here.",
-        "evidence_segment_id": "DISCUSSION-LIMITS-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 한계가 가장 중요한가요?",
-        "answer_30s_ko": "접촉 빈도만으로는 관계의 정서적 질이나 활동의 주관적 의미를 알 수 없습니다. 공식·비공식 참여 역시 넓은 범주여서 구체적인 활동 간 차이를 가릴 수 있습니다. 저자들은 그런 의미, 행동 변화에 따르는 스트레스, 두 배우자의 건강 같은 부부 단위 특성을 측정하자고 제안합니다. 저는 이런 추가 측정이 겉으로 같은 활동 변화가 사람마다 왜 다른 함의를 갖는지 밝히는 데 도움이 될 수 있다고 생각합니다. 이는 연구 제안이지 여기서 이미 검증된 결과는 아닙니다."
+        "card_id": "utz-et-al-2002-reflection-04",
+        "entry_type": "experience",
+        "topic": "Noticing everyday contact around a bereaved relative",
+        "topic_ko": "가족에게 이어진 연락",
+        "title": "What interested you when recalling contact with a bereaved relative?",
+        "title_ko": "가족의 연락을 떠올리며 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional everyday examples. Adapt one to something you actually observed or heard from a parent or relative.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 부모님이나 친척에게서 실제로 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that organized activities and everyday contact were distinct forms of participation in the paper. I would now notice relationships sustained through calls and visits as well as meeting attendance, without assuming that frequent contact meant the person was feeling better.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 논문에서 단체활동과 일상의 연락이 서로 다른 참여라는 점이 흥미로웠습니다. 이제는 모임에 나가는 횟수만 보지 않고 전화나 방문으로 이어지는 관계도 함께 살피고, 연락이 많다는 이유로 마음까지 괜찮아졌다고 짐작하지 않겠습니다.",
+        "evidence_segment_id": "METHOD-MEASURES-001",
+        "response_angle": "recognizing-informal-contact-without-reading-it-as-recovery-from-grief",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-04-followup-01",
+            "question": "What everyday contact would you notice more carefully now?",
+            "question_ko": "어떤 일상의 연락을 더 주의 깊게 보겠어요?",
+            "answer": "{{age_cue}} I would notice personal calls, visits at home, and time spent with familiar people, alongside any organized activities. The informal measure in the study includes telephone conversations and getting together with friends, neighbors, or relatives. Those interactions can be easy to overlook if I count only clubs, volunteering, or religious attendance. I would distinguish the form of each interaction without ranking formal and informal participation as better or worse. The memory could help me see which connections continued in everyday life. It would not tell me everything about the person's social world, so I would also leave room for contact that I had not seen or heard about.",
+            "answer_ko": "{{age_cue}} 단체활동과 함께 개인적인 전화, 집에서의 방문, 익숙한 사람과 보내는 시간도 살피겠습니다. 연구의 비공식 참여에는 친구·이웃·친척과 통화하거나 만나는 일이 포함됩니다. 동호회나 봉사, 종교의식 참석만 세면 이런 교류를 놓치기 쉽습니다. 공식과 비공식 가운데 어느 쪽이 더 좋다고 순위를 매기지 않고 각 교류의 형태를 구분하겠습니다. 그 기억을 통해 일상에서 어떤 관계가 이어졌는지 볼 수 있습니다. 다만 그것이 그분의 사회관계 전부는 아니므로, 제가 보거나 듣지 못한 연락도 있었을 가능성을 남겨 두겠습니다.",
+            "evidence_segment_id": "METHOD-MEASURES-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-followup-02",
+            "question": "How would you reconsider your earlier view of participation?",
+            "question_ko": "그때의 참여 판단을 어떻게 다시 보겠어요?",
+            "answer": "At the time, {{prior_view}} I would now ask which form of participation I had been using as my yardstick. The study found an adjusted difference in informal participation between widowed and continuously married people, while formal participation did not show a significant difference. This helped me see why looking only for new organized activities could miss contact within established relationships. It does not mean I can infer the same pattern for my relative from one memory. I would describe what I actually knew about calls, visits, or attendance and avoid filling in an overall story of isolation or recovery from a single visible part of the person's life.",
+            "answer_ko": "당시에는 {{prior_view}} 이제는 제가 어떤 형태의 참여를 기준으로 삼았는지 돌아보겠습니다. 연구에서는 조건을 고려한 사별자와 기혼자의 비교에서 비공식 참여의 차이가 있었고, 공식 참여에는 유의한 차이가 없었습니다. 그래서 새로운 단체활동만 찾으면 기존 관계 안에서 이어지는 연락을 놓칠 수 있음을 알게 됐습니다. 그렇다고 한 가지 기억으로 제 가족도 같은 양상을 보였다고 짐작할 수는 없습니다. 전화와 방문, 참석에 대해 실제로 아는 것을 말하고, 눈에 보인 생활의 일부만으로 고립이나 회복에 관한 전체 이야기를 만들지 않겠습니다.",
+            "evidence_segment_id": "RESULTS-MODELS-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-followup-03",
+            "question": "What can this memory tell you, and what would remain unknown?",
+            "question_ko": "이 기억으로 알 수 있는 것은 어디까지인가요?",
+            "answer": "The memory can tell me that a particular conversation or visit occurred, or that someone described a pattern of contact. It cannot tell me how comforting, tiring, or meaningful all of that contact felt. The paper explicitly notes that contact frequency may miss the emotional quality of relationships and recommends examining the meaning of activities. I would therefore leave the person's feelings for them to describe if they wished. I would not count calls as proof that grief had ended, or treat fewer meetings as proof that support had disappeared. This distinction also keeps me from assuming that simply increasing the number of activities would be the right response for every bereaved person.",
+            "answer_ko": "이 기억으로는 특정 통화나 방문이 있었거나, 누군가 연락의 모습을 이야기했다는 것을 알 수 있습니다. 그 모든 연락이 얼마나 편안했고 힘들었으며 의미 있었는지까지 알 수는 없습니다. 논문도 접촉 빈도가 관계의 정서적 질을 놓칠 수 있다고 지적하며 활동의 의미를 살펴야 한다고 제안합니다. 따라서 그분의 마음은 원하실 때 직접 설명하실 여지를 두겠습니다. 전화 횟수를 슬픔이 끝났다는 증거로 삼거나, 모임이 적다는 이유로 지지가 사라졌다고 단정하지 않겠습니다. 이 구분은 모든 사별자에게 활동 수를 늘리는 것이 적절한 대응이라고 짐작하지 않게도 해 줍니다.",
+            "evidence_segment_id": "DISCUSSION-LIMITS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "utz-et-al-2002-reflection-04-example-01",
+            "label": "Calls to a bereaved aunt",
+            "label_ko": "이모에게 안부 전화",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother often calling my aunt after my aunt's husband died.",
+                "ko": "어머니가 배우자와 사별한 이모에게 자주 전화하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My aunt was in her seventies and had not joined any new groups.",
+                "ko": "이모는 70대이셨고, 새로운 모임에는 나가지 않고 계셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that without group activities she had little contact with others.",
+                "ko": "모임에 안 나가시면 다른 사람과 거의 어울리지 않는다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-example-02",
+            "label": "An old friend's visits",
+            "label_ko": "오랜 친구의 방문",
+            "values": {
+              "scene": {
+                "en": "I remembered my uncle mentioning visits from an old friend after his wife died.",
+                "ko": "삼촌이 사별 뒤 오랜 친구가 집에 들르곤 했다고 말씀하신 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "He was in his late sixties and had kept his usual schedule of group meetings.",
+                "ko": "60대 후반이셨고, 단체 모임에 나가는 횟수는 이전과 비슷했습니다."
+              },
+              "prior_view": {
+                "en": "I thought unchanged meeting attendance meant his social contact had not changed.",
+                "ko": "모임 참석이 그대로면 사람들과의 교류도 달라지지 않았다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-example-03",
+            "label": "Personal calls alongside religious attendance",
+            "label_ko": "예배와 개인 통화",
+            "values": {
+              "scene": {
+                "en": "I remembered hearing that a bereaved female relative often spoke by phone with friends from church.",
+                "ko": "사별한 친척 어른이 교회 친구들과 자주 통화하신다고 들었던 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "She was in her seventies and attended services about as often as before.",
+                "ko": "70대이셨고, 예배에 참석하는 횟수는 전과 크게 다르지 않았습니다."
+              },
+              "prior_view": {
+                "en": "I counted those connections only in terms of how often she attended church.",
+                "ko": "그 관계를 교회에 얼마나 자주 나가시는지만으로 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-example-04",
+            "label": "A neighbor stopping by",
+            "label_ko": "이웃과 집에서 만남",
+            "values": {
+              "scene": {
+                "en": "I remembered a neighbor stopping by my grandmother's home after my grandfather died.",
+                "ko": "할아버지가 돌아가신 뒤 이웃이 할머니 댁에 들르던 모습을 떠올렸습니다."
+              },
+              "age_cue": {
+                "en": "My grandmother was in her seventies and did not go out to many organized activities.",
+                "ko": "할머니는 70대이셨고, 밖에서 하는 단체활동은 많지 않았습니다."
+              },
+              "prior_view": {
+                "en": "I thought spending more time at home meant being apart from other people.",
+                "ko": "집에 계시는 시간이 많으면 사람들과 떨어져 지내는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-example-05",
+            "label": "Calls from relatives",
+            "label_ko": "친척들의 안부 연락",
+            "values": {
+              "scene": {
+                "en": "I remembered my father telling me that his bereaved sister was getting frequent calls from relatives.",
+                "ko": "아버지가 사별한 고모에게 친척들의 전화가 자주 온다고 말씀하신 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "She was in her late sixties and still had few plans to go out.",
+                "ko": "고모는 60대 후반이셨고, 밖에 나갈 약속은 여전히 많지 않았습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that receiving many calls meant she was already feeling much better.",
+                "ko": "전화가 많이 오면 마음도 이미 한결 괜찮아졌을 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-04-example-06",
+            "label": "Walking with a sibling",
+            "label_ko": "형제와 동네 산책",
+            "values": {
+              "scene": {
+                "en": "I remembered a bereaved male relative saying he sometimes walked around the neighborhood with his brother.",
+                "ko": "사별한 친척 어른이 형제와 가끔 동네를 걷는다고 하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He was in his seventies and had not started any new volunteer commitments.",
+                "ko": "70대이셨고, 새로 시작한 봉사활동은 따로 없으셨습니다."
+              },
+              "prior_view": {
+                "en": "I treated starting a new organized activity as the main sign of renewed contact.",
+                "ko": "새 단체활동을 시작해야 사람들과 다시 어울리는 것이라고 여겼습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "utz-reading-06",
-        "title": "How would you connect the findings to family support or policy?",
-        "answer_30s": "I would focus support on maintaining valued relationships and daily routines, rather than treating the number of new activities as the main goal. Families, friends, and neighbors could help sustain contact, while transport and communication tools could reduce practical barriers. The authors suggest attention to people with fewer socioeconomic resources or no children, as well as couples with an ill spouse before bereavement occurs. I see this as a direction for support that still requires intervention evaluation, not an established comparison of which program works best.",
-        "evidence_segment_id": "DISCUSSION-PRACTICE-001",
-        "response_angle": "family-policy",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 결과를 가족 지원이나 정책과 어떻게 연결하겠나요?",
-        "answer_30s_ko": "저는 새 활동의 수를 주된 목표로 삼기보다, 가치 있는 관계와 일상을 유지하도록 지원하는 데 초점을 맞추겠습니다. 가족, 친구, 이웃은 접촉을 지속하도록 돕고 교통수단과 의사소통 도구는 실질적 장벽을 줄일 수 있습니다. 저자들은 사회경제적 자원이 적거나 자녀가 없는 사람, 그리고 사별이 일어나기 전부터 배우자가 아픈 부부에 주의를 기울이자고 제안합니다. 저는 이를 여전히 개입 평가가 필요한 지원 방향으로 보며, 어떤 프로그램이 가장 잘 작동하는지 비교해 확립된 결과로 보지는 않습니다."
+        "card_id": "utz-et-al-2002-reflection-05",
+        "entry_type": "experience",
+        "topic": "Remembering the circumstances before a loss",
+        "topic_ko": "그전의 생활까지 듣기",
+        "title": "What interested you when recalling a relative's changing opportunities for contact?",
+        "title_ko": "가족의 만남에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These fictional examples recall plausible family observations around illness and spousal loss. Adapt one to something you actually saw or heard from relatives or someone you know.",
+        "experience_prompt_ko": "질병과 배우자 상실 무렵에 있을 법한 가족의 모습을 돌아보는 가상 예시입니다. 친척이나 지인에게 실제로 보고 들은 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the paper considered spousal health and everyday circumstances before the loss. Looking back, I felt that understanding the person meant hearing which relationships they had maintained and how their opportunities for contact had changed over time, as well as noticing life after the death.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 사별 전의 배우자 건강과 생활 여건까지 살폈다는 점이 논문에서 흥미로웠습니다. 돌아보니 사별 뒤의 모습만으로 판단하기보다, 어떤 관계를 이어 왔고 시기마다 만남의 여건이 어땠는지 함께 들어야겠다고 느꼈습니다.",
+        "evidence_segment_id": "DISCUSSION-SUMMARY-001",
+        "response_angle": "revisiting-contact-through-preloss-family-circumstances-and-available-opportunities",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-05-followup-01",
+            "question": "What would you want to hear about the person's earlier daily life?",
+            "question_ko": "이전의 생활에서 무엇을 더 듣겠나요?",
+            "answer": "I would begin with what I had heard: {{age_cue}} The paper made me want to ask what an ordinary day had looked like while the spouse was still alive, which contacts the person had kept, and which had become hard to arrange. The preloss findings concerned spousal health and participation, while the authors interpreted time and energy devoted to an ill spouse as a possible connection. I would not assume that this explanation applied exactly to my relative. I wanted to hear their own account of what had changed and what they had still wanted to continue. That could make the later scene more understandable without treating the date of death as the beginning of every difficulty.",
+            "answer_ko": "들었던 말에서 시작하겠습니다. {{age_cue}} 논문을 읽고 배우자가 살아 계실 때 평소 하루는 어땠는지, 어떤 연락을 이어 왔고 어떤 만남을 잡기 어려워졌는지 묻고 싶었습니다. 사별 전 결과는 배우자 건강과 참여의 관련성이었고, 저자들은 아픈 배우자에게 시간과 에너지를 쓴다는 점을 가능한 연결로 해석했습니다. 이 설명이 제 가족에게도 그대로 들어맞는다고 가정하지는 않겠습니다. 무엇이 달라졌고 어떤 관계는 계속 이어 가고 싶었는지 그분의 설명을 듣겠습니다. 그러면 모든 어려움이 사망일부터 시작됐다고 생각하지 않으면서 이후의 장면도 더 잘 이해할 수 있을 것입니다.",
+            "evidence_segment_id": "DISCUSSION-SUMMARY-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-followup-02",
+            "question": "How would you reconsider why meeting others had become difficult?",
+            "question_ko": "만남이 어려웠던 이유를 어떻게 살필까요?",
+            "answer": "I reconsidered my earlier view: {{prior_view}} I would ask about the practical arrangements behind a meeting, such as transport, timing, and whether someone else could help with a task at home. These are questions suggested by the paper's attention to opportunities and constraints, not facts I could infer about the family. The practical discussion proposes supporting familiar relationships and making transport or communication more accessible. It does not test a particular support service. I would therefore listen to which contact the person wanted and what help they would welcome, leaving room for a shorter visit, a call, or time alone rather than setting a target for more outings.",
+            "answer_ko": "이전 생각을 다시 돌아봤습니다. {{prior_view}} 이동수단이나 시간, 집에서 맡은 일을 누군가 도울 수 있었는지처럼 만남이 이루어지는 여건을 묻겠습니다. 이는 논문이 기회와 제약에 주목한 데서 얻은 질문이지, 제가 가족의 사정을 이미 안다는 뜻은 아닙니다. 실천 논의는 익숙한 관계를 이어 가도록 돕고 이동이나 연락의 접근성을 높이는 방안을 제안하지만, 특정 지원서비스를 시험한 결과는 아닙니다. 그래서 어떤 연락을 원하고 어떤 도움이 반가울지 듣겠습니다. 외출 횟수의 목표를 정하기보다 짧은 방문이나 전화, 혼자 있을 시간도 선택할 여지를 두겠습니다.",
+            "evidence_segment_id": "DISCUSSION-PRACTICE-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-followup-03",
+            "question": "When would it be useful to pay attention to support needs?",
+            "question_ko": "지원은 언제부터 살펴보면 좋을까요?",
+            "answer": "This was the scene I had in mind: {{scene}} The paper's practical discussion suggests that people living with an ailing spouse may need support as well as those already bereaved. That encouraged me to notice difficult arrangements earlier, while asking what help the person wanted. It would not justify predicting an impending death from reduced contact or assuming that everyone was following the same course of grief. My family memory also could not show that more contact improved adjustment. I would keep checking how the person experienced the support as circumstances changed, including whether the form or timing of a visit still suited them.",
+            "answer_ko": "떠올린 것은 이런 장면이었습니다. {{scene}} 논문의 실천 논의는 이미 사별한 사람뿐 아니라 아픈 배우자와 생활하는 사람도 지원이 필요할 수 있다고 제안했습니다. 이를 읽고 어려운 생활 여건을 더 일찍 알아차리되, 어떤 도움을 원하는지 당사자에게 물어야겠다고 느꼈습니다. 연락이 줄었다고 죽음이 임박했다고 예측하거나 누구나 같은 애도 과정을 겪는다고 볼 수는 없습니다. 이 가족 기억이 만남을 늘리면 적응이 좋아진다는 증거도 아닙니다. 사정이 달라지면서 방문 방식이나 시간이 여전히 편한지 등 지원을 어떻게 느끼는지 계속 듣겠습니다.",
+            "evidence_segment_id": "DISCUSSION-PRACTICE-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "utz-et-al-2002-reflection-05-example-01",
+            "label": "A grandmother rearranging plans during her spouse's illness",
+            "label_ko": "진료 일정과 만남",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother in her seventies postponing plans before my grandfather died.",
+                "ko": "할아버지가 돌아가시기 전 70대 할머니가 약속을 미루시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Grandma said she had wanted to see people but had found it hard to fit visits around his medical appointments.",
+                "ko": "할머니는 사람들을 만나고 싶었지만 할아버지 진료 일정에 맞추다 보니 약속을 잡기 어려웠다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had thought she had become less interested in meeting people.",
+                "ko": "사람들을 만나는 데 관심이 줄어드신 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-example-02",
+            "label": "A grandfather recalling contact before his wife's death",
+            "label_ko": "그전부터 뜸했던 약속",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather, in his seventies, talking about contact with friends after my grandmother died.",
+                "ko": "할머니가 돌아가신 뒤 70대 할아버지가 친구들과의 연락을 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said that meetings had already become infrequent while Grandma was ill, although he had still wanted to see his friends.",
+                "ko": "할아버지는 친구들이 보고 싶었어도 할머니가 아프실 때부터 만남이 뜸해졌다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that contact had become less frequent only after the death.",
+                "ko": "사별한 뒤에야 연락이 줄어든 것으로 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-example-03",
+            "label": "An aunt arranging transport after her husband's death",
+            "label_ko": "달라진 외출 교통편",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt in her sixties checking how to get to a gathering after her husband died.",
+                "ko": "남편과 사별한 60대 이모가 모임에 갈 교통편을 알아보시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Her husband had previously driven them, and she said she now needed to check bus times before making plans.",
+                "ko": "예전에는 이모부가 차로 데려다주셨고 이제는 약속 전에 버스 시간을 확인해야 한다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had thought that deciding to go was enough to make a meeting possible.",
+                "ko": "나가겠다는 마음만 정하면 만남이 가능할 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-example-04",
+            "label": "An uncle keeping visits short while caring for his wife",
+            "label_ko": "짧아진 친척 방문",
+            "values": {
+              "scene": {
+                "en": "I remembered my uncle in his seventies making shorter visits while my aunt was ill before her death.",
+                "ko": "큰어머니가 돌아가시기 전 편찮으실 때 70대 큰아버지의 방문이 짧아졌던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said that coming home at the agreed time helped him fit the visit around looking after his wife.",
+                "ko": "큰아버지는 정한 시간에 집으로 돌아가야 큰어머니를 돌보는 일과 방문을 함께할 수 있다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had wondered whether he no longer wanted to spend much time with relatives.",
+                "ko": "친척들과 오래 있고 싶지 않으신가 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-example-05",
+            "label": "A mother recalling why earlier invitations were difficult",
+            "label_ko": "예전 초대를 돌아보기",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother in her sixties talking with a visiting relative after my father died.",
+                "ko": "아버지가 돌아가신 뒤 60대 어머니가 찾아온 친척과 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Mom said that earlier she had found it hard to accept invitations while coordinating Dad's care schedule.",
+                "ko": "어머니는 그전에는 아버지 돌봄 일정을 맞추느라 초대를 받아도 시간을 내기 어려웠다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had focused only on the fact that someone was visiting after the loss.",
+                "ko": "사별 후에 찾아오는 사람이 있다는 사실에만 주목했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-05-example-06",
+            "label": "An aunt recalling the timing of calls during illness",
+            "label_ko": "통화 시간을 맞추던 날",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt in her seventies recalling phone calls she had received while her husband was ill before his death.",
+                "ko": "고모부가 돌아가신 뒤 70대 고모가 남편이 아프던 때의 통화를 돌아보셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said that she had sometimes postponed calls while attending to him, even though she had welcomed the contact.",
+                "ko": "고모는 연락은 반가웠지만 남편을 살피는 시간과 겹치면 통화를 미루기도 했다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that not answering meant she wanted to be left alone.",
+                "ko": "전화를 못 받으면 혼자 있고 싶으신 줄로만 생각했습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "utz-et-al-2002-reflection-06",
+        "entry_type": "experience",
+        "topic": "Listening to the meaning of familiar contact",
+        "topic_ko": "익숙한 만남의 의미 듣기",
+        "title": "What interested you when recalling a relative's social contact?",
+        "title_ko": "가족의 만남에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of everyday memories. Adapt one to something you experienced or saw or heard among family or relatives.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 회상 예시입니다. 자신이 경험하거나 가족·친척에게서 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that this paper examined both changes in contact and efforts to keep familiar relationships going. I would now ask who reached out, what the person wanted to continue, and how they felt during those interactions, alongside the number of occasions.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문이 접촉의 변화와 익숙한 관계를 이어 가려는 마음을 함께 살핀 점이 흥미로웠습니다. 이제는 연락하거나 만난 횟수와 함께 누가 먼저 다가왔는지, 그분은 무엇을 이어 가고 싶었고 어떤 마음이었는지 더 듣겠습니다.",
+        "evidence_segment_id": "DISCUSSION-SUMMARY-001",
+        "response_angle": "revisiting-visible-contact-through-motives-continuity-and-felt-meaning",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "utz-et-al-2002-reflection-06-followup-01",
+            "question": "What would you ask about the meaning of that contact?",
+            "question_ko": "그 교류의 의미를 어떻게 더 듣겠나요?",
+            "answer": "I would start with this detail: {{age_cue}} I would ask whether this was a familiar relationship, who initiated contact, and what the person valued about it. I would also ask whether the contact felt welcome, tiring, comforting, or different on different days. The paper distinguished the wish for contact from attempts to stay busy and acknowledged that contact frequency may miss emotional quality. That gives me a way to listen more carefully to this memory. Keeping a relationship going, accepting another person's invitation, and seeking activity to cope can overlap; the visible contact alone does not tell me which mattered most or whether grief had ended.",
+            "answer_ko": "이 단서부터 더 듣겠습니다. {{age_cue}} 전부터 익숙한 관계였는지, 누가 연락하거나 만나자고 했는지, 그분은 그 관계에서 무엇을 소중히 여겼는지 묻겠습니다. 그 시간이 반가웠는지, 피곤했는지, 위로가 됐는지, 날마다 마음이 달랐는지도 듣겠습니다. 논문은 접촉을 원하는 마음과 바쁘게 지내려는 시도를 나눠 살폈고, 접촉 빈도만으로 정서적 질을 알기 어렵다고 했습니다. 익숙한 관계를 이어 가기, 타인의 초대를 받아들이기, 활동으로 대처하기는 함께 나타날 수 있습니다. 겉으로 보이는 교류만으로 무엇이 가장 중요했거나 애도가 끝났는지를 판단하지 않겠습니다.",
+            "evidence_segment_id": "DISCUSSION-LIMITS-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-followup-02",
+            "question": "How was the study stronger than asking people to remember the past?",
+            "question_ko": "기억을 묻는 것과 전향 조사는 어떻게 다른가요?",
+            "answer": "CLOC recorded participation at a 1987–1988 baseline while respondents were married, then compared those later widowed with continuously married controls. The main follow-up was six months after the spouse's death, not six months after baseline; the analyses adjusted for the interval between interviews. This makes the baseline participation measure different from asking a bereaved person to reconstruct it afterward. The study drew on noninstitutionalized, English-speaking married couples in Detroit whose husbands were at least 65; it did not require every wife to be 65 or older. The weighted analytic counts were 297, comprising 210 widowed and 87 controls; the actual unweighted sample was 333, comprising 249 and 84. Controls were matched on age, race, and sex, but this remained an observational comparison. Baseline data and controls improve interpretation without removing every possible selection difference.",
+            "answer_ko": "CLOC는 기혼 상태였던 1987~1988년 기초조사에서 참여를 기록한 뒤, 이후 사별한 사람과 계속 기혼인 비교군을 살폈습니다. 주요 후속조사는 기초조사로부터가 아니라 배우자 사망으로부터 6개월 뒤였고, 면접 간격을 분석에서 보정했습니다. 따라서 사별 뒤 기억으로 이전 참여를 재구성하게 한 자료와 다릅니다. 표본은 디트로이트의 비시설 거주 영어 사용 부부로, 남편이 65세 이상이어야 했습니다. 모든 아내도 65세 이상이어야 한 것은 아닙니다. 가중 분석 인원은 297명, 사별 210명·기혼 87명이지만 실제 비가중 표본은 333명, 각각 249명·84명이었습니다. 비교군은 연령·인종·성별을 맞췄지만 관찰 비교입니다. 기초자료와 비교군이 해석을 돕더라도 모든 선택 차이를 제거하지는 않습니다.",
+            "evidence_segment_id": "METHOD-SAMPLE-001"
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-followup-03",
+            "question": "What remains uncertain about contact and emotional adjustment?",
+            "question_ko": "참여량으로 마음의 적응까지 알 수 있나요?",
+            "answer": "The participation measures covered frequency or amount, while the authors called for future measures of the subjective meaning, emotional quality, and stress associated with each activity. The informal participation index had only two items and an alpha of .52, which also calls for care in treating it as a precise, comprehensive measure. Retrospective answers about interest or trying to stay busy add respondents' perspectives, but they are not the same as prospectively recorded changes in participation. The analysis did not randomly assign activities or test whether a prescribed increase in meetings caused recovery. More meetings, a stable routine, and continuing grief can therefore coexist. The authors specifically cautioned against assuming that activity for its own sake is the best support.",
+            "answer_ko": "참여 측정은 빈도나 양을 중심으로 했고, 저자들은 활동마다 주관적 의미·정서적 질·관련 스트레스를 더 측정해야 한다고 했습니다. 비공식적 참여 지표는 두 문항이며 알파가 .52여서, 정밀하고 포괄적인 척도로 받아들이는 데도 신중해야 합니다. 관심이나 바쁘게 지내려 했다는 회고 응답은 당사자의 관점을 더해 주지만, 전향적으로 기록한 참여 변화와 같은 자료는 아닙니다. 이 분석은 활동을 무작위로 배정하거나 만남을 일정량 늘리면 회복되는지를 시험하지 않았습니다. 만남이 늘거나 익숙한 일상이 이어져도 슬픔은 함께 남아 있을 수 있습니다. 저자들 역시 활동 자체를 위한 활동이 가장 효과적인 지원이라고 가정하지 말라고 했습니다.",
+            "evidence_segment_id": "DISCUSSION-LIMITS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "utz-et-al-2002-reflection-06-example-01",
+            "label": "Calls with a long-standing friend",
+            "label_ko": "오랜 친구와 이어 간 통화",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother continuing to call a long-standing friend after her husband died.",
+                "ko": "할머니가 사별 뒤에도 오랜 친구와 통화를 이어 가시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said the amount of contact she wanted was much the same as before.",
+                "ko": "친구와 이야기하고 싶은 마음은 예전과 크게 다르지 않다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought coping after bereavement mainly meant beginning new activities.",
+                "ko": "사별에 대처하려면 주로 새로운 활동을 시작하게 될 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-example-02",
+            "label": "Returning to a familiar board-game gathering",
+            "label_ko": "익숙한 바둑 모임에 간 날",
+            "values": {
+              "scene": {
+                "en": "I remembered my widowed uncle telling us that he had gone to his familiar go-playing group.",
+                "ko": "배우자와 사별한 삼촌이 익숙한 바둑 모임에 다녀왔다고 하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said seeing the people he had known for years was what mattered to him.",
+                "ko": "오래 알고 지낸 사람들의 얼굴을 보는 일이 중요했다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought the main purpose of going out was to add something new to his routine.",
+                "ko": "밖에 나가는 목적은 일상에 새로운 일을 더하는 데 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-example-03",
+            "label": "Visitors who suggested meeting first",
+            "label_ko": "먼저 찾아온 친구들",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother sharing news of an aunt who had lost her spouse.",
+                "ko": "어머니에게 배우자를 먼저 떠나보낸 이모의 근황을 들었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said the aunt was seeing friends more often because they had been suggesting visits.",
+                "ko": "친구들이 먼저 찾아오겠다고 해서 만나는 일이 늘었다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought more meetings meant my aunt had actively sought out more company.",
+                "ko": "만남이 늘면 이모가 사람을 더 만나려고 적극적으로 나선 결과라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-example-04",
+            "label": "An invitation to the usual walk",
+            "label_ko": "친구가 먼저 권한 산책",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather describing a walk with a friend after he had been widowed.",
+                "ko": "할아버지가 사별 뒤 친구와 산책한 이야기를 들려주시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "His friend had invited him to walk their usual route, and he had accepted.",
+                "ko": "친구가 늘 걷던 길을 함께 걷자고 먼저 불러서 나갔다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought accepting an invitation was different from doing something to cope.",
+                "ko": "다른 사람의 초대에 응한 일은 대처하려는 노력과 별개라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-example-05",
+            "label": "Remembering a busy period after bereavement",
+            "label_ko": "바쁘게 지냈다는 회상",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative saying that they had kept busy after losing their spouse.",
+                "ko": "친척 어른이 사별 뒤 바쁘게 지냈다고 말씀하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They explained that this meant keeping up familiar meetings more than starting new activities.",
+                "ko": "새 활동을 시작하기보다 전부터 이어 온 만남을 챙겼다고 설명하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought saying they had kept busy meant their total activity must have increased.",
+                "ko": "바쁘게 지냈다는 말은 실제 활동량이 반드시 늘었다는 뜻으로 받아들였습니다."
+              }
+            }
+          },
+          {
+            "id": "utz-et-al-2002-reflection-06-example-06",
+            "label": "Lunch with others and feelings that remained",
+            "label_ko": "점심 약속과 남아 있던 마음",
+            "values": {
+              "scene": {
+                "en": "I remembered my father talking about a widowed acquaintance who had lunch with neighbors.",
+                "ko": "아버지에게 사별한 지인이 이웃과 점심을 먹는다는 이야기를 들었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said the acquaintance still sometimes felt an emptiness even on days with company.",
+                "ko": "사람들과 함께한 날에도 허전한 마음이 들 때가 있다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought regularly seeing people showed that grief had already passed.",
+                "ko": "사람을 꾸준히 만나면 슬픔도 이미 지나간 것으로 보면 된다고 생각했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
   },
-  "language": "en"
+  "language": "en",
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

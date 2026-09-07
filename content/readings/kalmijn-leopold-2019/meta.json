@@ -68,8 +68,8 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep",
-      "full"
+      "full",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:7b345ae386ad5e141f97ba0cd23a31575a546ac6d077e082b6800c1bfb722e05",
@@ -81,23 +81,24 @@
       "quiz-ox": "v2:53cede84fdd4e8f4e3b042d60ac38e4005884908ffb1ca1193501cb22960068a",
       "quiz-short": "v2:105ea32bf86451019ec05cf985db44bbe3714c1f4961342fd4e66841876e6909",
       "quiz-mcq": "v2:9428aed42a351c434b39e06210c9d34f9e91b77077158b72d3443f2cca3ab3f8",
-      "professor-prep": "v2:e157905950dccfd48d935fddab50f4d0279a611d02de599200a7f7b656447cf3",
-      "full": "v2:24700a8c1e28cfe25c30e47451555714db9ac71a48d178fc7b064e396f1ad01d"
+      "full": "v2:24700a8c1e28cfe25c30e47451555714db9ac71a48d178fc7b064e396f1ad01d",
+      "professor-prep": "v2:34d67bb1e16b3bc1fffb3d553281c65937faf212075916f28dedb4baacc5e848"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:55:03.890Z",
+    "reviewed_at": "2026-09-06T11:57:47.766Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "정답 내용과 근거를 유지한 채 예측 가능한 배열만 재배치해 검수함.",
       "렌더 산출물까지 확인하고 정답 배열 재배치를 승인함.",
       "English learning materials reviewed against stored source segments; source and translation preserved; composite dependencies reviewed. First/second deaths, transition/duration, contact/conflict and approximate log-coefficient interpretations distinguished. Source hypothesis and duration-label inconsistencies not repeated as settled facts. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed.",
+      "Reviewed all six bilingual reflection cards against the current article: first versus last parental death, partial mediation, nonsignificant initial conflict changes, measurement periods, fixed-effects limits, and all eighteen fictional examples."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:56:23.650Z",
+    "updated_at": "2026-09-06T11:58:00.796Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -229,7 +230,12 @@
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {
@@ -392,13 +398,18 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:e157905950dccfd48d935fddab50f4d0279a611d02de599200a7f7b656447cf3",
+        "source_hash": "v2:34d67bb1e16b3bc1fffb3d553281c65937faf212075916f28dedb4baacc5e848",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {

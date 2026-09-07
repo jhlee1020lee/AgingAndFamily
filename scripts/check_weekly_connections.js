@@ -80,7 +80,7 @@ function checkPublicationEntries(root,manifest,weeks,verify){
     if(!fs.existsSync(file))continue;
     const week=weeks.find((item)=>item.pair.some((source)=>source.slug===reading.slug));
     const dom=new JSDOM(fs.readFileSync(file,"utf8"));
-    try{verify(`${reading.slug}: reviewed weekly practice appears in a third tab with Korean defaults`,()=>{
+    try{verify(`${reading.slug}: reviewed weekly practice shares a tab with Korean defaults`,()=>{
       const doc=dom.window.document;
       assert.equal(doc.querySelector(".weekly-entry"),null);
       const tab=doc.querySelector('[data-prep-tab="weekly"]');
@@ -89,7 +89,7 @@ function checkPublicationEntries(root,manifest,weeks,verify){
       if(!week)return;
       assert.equal(doc.querySelectorAll("main").length,1);
       assert.equal(doc.querySelectorAll("h1").length,1);
-      assert.equal(doc.querySelectorAll("[data-prep-tab]").length,3);
+      assert.equal(doc.querySelectorAll("[data-prep-tab]").length,doc.querySelector('[data-prep-format="reflection-followups-v1"]')?2:3);
       assert.equal(doc.getElementById(tab.getAttribute("aria-controls")),panel);
       assert.equal(panel.getAttribute("aria-labelledby"),tab.id);
       assert.equal(panel.hidden,true);

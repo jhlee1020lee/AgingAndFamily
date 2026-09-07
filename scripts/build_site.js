@@ -681,6 +681,8 @@ function loadProfessorPrep(filePath){
   const responseCards=normalizeProfessorPrepCards(responsePayload.cards,filePath,"reading_response.cards");
   return{
     language:payload.language||"ko",
+    practice_format:toText(payload.practice_format),
+    default_tab:toText(payload.default_tab),
     title:toText(payload.title)||"읽기 답변 준비",
     instructions:toText(payload.instructions)||"교수님이 바로 이어 물을 수 있는 질문에 30초 안으로 답하는 연습입니다.",
     cards,
@@ -1131,7 +1133,7 @@ function renderProfessorPrepPanel(config){const hidden=config.active?"":' hidden
     ${config.draftNote}
   </section>
   <section class="prep-card-list">
-    ${config.deck.map((card,index)=>renderProfessorPrepCard(card,index,{label:config.cardLabel,language:config.language,reading:config.reading,bilingual:config.bilingual})).join("")}
+    ${config.deck.map((card,index)=>renderProfessorPrepCard(card,index,{label:config.cardLabel,language:config.language,reading:config.reading,bilingual:config.bilingual,reflection:config.reflection})).join("")}
   </section>
 </section>
 `;}
@@ -1142,23 +1144,26 @@ function renderProfessorPrepDeckSection(prep,coldCallDeck,readingResponseDeck,op
   const draftBadge=draft?'<p><span class="status warning">평가용 초안</span></p>':"";
   const draftNote=draft?'<p class="meta">이 페이지는 아직 최종 승인본이 아닙니다. 직접 링크로만 확인하는 평가용 프리뷰입니다.</p>':"";
   const hasReadingResponses=readingResponseDeck.length>0;
+  const reflection=prep.practice_format==="reflection-followups-v1";
+  const responseFirst=reflection&&hasReadingResponses&&prep.default_tab==="reading-response";
   const coldTabId="prep-tab-cold-call";
   const coldPanelId="prep-panel-cold-call";
   const responseTabId="prep-tab-reading-response";
   const responsePanelId="prep-panel-reading-response";
   return `
-<section class="prep-workspace" data-prep-root data-prep-language="${en?"en":"ko"}" lang="${bilingual?"ko":prep.language}">
+<section class="prep-workspace" data-prep-root data-prep-language="${en?"en":"ko"}"${reflection?` data-prep-format="reflection-followups-v1" data-prep-default-tab="${responseFirst?"reading-response":"cold-call"}"`:""} lang="${bilingual?"ko":prep.language}">
   ${bilingual?`<div class="prep-language-controls" role="group" aria-label="질문과 답변 언어 선택" lang="ko">
     <label class="prep-language-field"><span>질문 언어</span><select data-prep-question-select aria-label="질문 언어"><option value="ko" lang="ko">한국어</option><option value="en" lang="en">English</option></select></label>
     <label class="prep-language-field"><span>답변 언어</span><select data-prep-answer-select aria-label="답변 언어"><option value="ko" lang="ko">한국어</option><option value="en" lang="en">English</option></select></label>
   </div>`:""}
-  <div class="prep-mode-tabs" role="tablist" aria-label="${en?"Discussion practice mode":"교수님 답변 대비 방식"}">
-    <button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>${en?"Cold-call questions":"즉석 질문"}</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>
-    ${hasReadingResponses?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>${en?"Reading response":"어떻게 읽었나요?"}</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
+  <div class="prep-mode-tabs" role="tablist" aria-label="${!reflection&&en?"Discussion practice mode":"교수님 답변 대비 방식"}">
+    ${responseFirst?`<button class="prep-mode-tab is-active" id="${responseTabId}" type="button" role="tab" aria-selected="true" aria-controls="${responsePanelId}" tabindex="0" data-prep-tab="reading-response"><span>이 읽기 답변 준비</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
+    ${!reflection?`<button class="prep-mode-tab is-active" id="${coldTabId}" type="button" role="tab" aria-selected="true" aria-controls="${coldPanelId}" tabindex="0" data-prep-tab="cold-call"><span>${en?"Cold-call questions":"즉석 질문"}</span><span class="prep-tab-count">${coldCallDeck.length}</span></button>`:""}
+    ${hasReadingResponses&&!responseFirst?`<button class="prep-mode-tab" id="${responseTabId}" type="button" role="tab" aria-selected="false" aria-controls="${responsePanelId}" tabindex="-1" data-prep-tab="reading-response"><span>${reflection?"읽고 든 생각":en?"Reading response":"어떻게 읽었나요?"}</span><span class="prep-tab-count">${readingResponseDeck.length}</span></button>`:""}
     ${options.week?`<button class="prep-mode-tab" id="prep-tab-weekly" type="button" role="tab" aria-selected="false" aria-controls="prep-panel-weekly" tabindex="-1" data-prep-tab="weekly"><span>두 편 연결</span><span class="prep-tab-count">${options.week.cards.length}</span></button>`:""}
   </div>
-  ${renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,language:prep.language,reading:options.reading,bilingual,kicker:en?"SPEAK WITH EVIDENCE":"교수님이 바로 이어 물을 때",title:en?`${coldCallDeck.length} cold-call questions`:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:en?"Discussion question":"즉석 답변"})}
-  ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:false,draftBadge,draftNote,language:prep.language,reading:options.reading,bilingual,kicker:en?"IN YOUR OWN WORDS":"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:en?"Reading response":"읽기 답변"}):""}
+  ${!reflection?renderProfessorPrepPanel({key:"cold-call",tabId:coldTabId,panelId:coldPanelId,active:true,draftBadge,draftNote,language:prep.language,reading:options.reading,bilingual,kicker:en?"SPEAK WITH EVIDENCE":"교수님이 바로 이어 물을 때",title:en?`${coldCallDeck.length} cold-call questions`:`${coldCallDeck.length}개 즉석 질문${draft?" 초안":""}`,instructions:prep.instructions||"",deck:coldCallDeck,cardLabel:en?"Discussion question":"즉석 답변"}):""}
+  ${hasReadingResponses?renderProfessorPrepPanel({key:"reading-response",tabId:responseTabId,panelId:responsePanelId,active:responseFirst,draftBadge,draftNote,language:reflection?"ko":prep.language,reading:options.reading,bilingual,reflection,kicker:reflection?"수업 첫 질문에 자기 말로":en?"IN YOUR OWN WORDS":"수업 첫 질문에 자기 말로",title:prep.reading_response.title,instructions:prep.reading_response.instructions,deck:readingResponseDeck,cardLabel:en?"Reading response":"읽기 답변"}):""}
   ${options.week?`<section class="prep-mode-panel" id="prep-panel-weekly" role="tabpanel" aria-labelledby="prep-tab-weekly" data-prep-panel="weekly" hidden>${renderWeeklyBody(rootDir,options.week,{embedded:true,sharedLanguages:bilingual,homeHref:relHref(options.outputPath,path.join(siteDir,"index.html")),readingHref:(reading,filename)=>readingPageHref(options.outputPath,reading,filename)})}</section>`:""}
 </section>
 `;}
@@ -1369,7 +1374,43 @@ function buildQuizPlayer(siteMeta,reading){
 </main>`;
   writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - 퀴즈 풀기`,body,"OX·단답형·객관식을 한 문제씩 풀고 논문 근거와 해설을 확인하세요.",`data-page-kind="quiz-player" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="quiz"`));
 }
+function renderPrepVariant(english,korean,kind,options){
+  const render=(value,language)=>{
+    if(!options.experienceExample)return renderInline(value);
+    return toText(value).split(/(\{\{[a-z_]+\}\})/g).map((part)=>{
+      const slot=part.match(/^\{\{([a-z_]+)\}\}$/)?.[1];
+      if(!slot)return renderInline(part);
+      const replacement=options.experienceExample.values?.[slot]?.[language];
+      if(typeof replacement!=="string")throw new Error(`Missing experience slot: ${slot} (${language})`);
+      return `[<span data-prep-experience-slot="${slot}" data-prep-experience-language="${language}">${escapeHtml(replacement)}</span>]`;
+    }).join("");
+  };
+  if(options.bilingual)return `<span data-prep-${kind}-language="en" lang="en" hidden>${render(english,"en")}</span><span data-prep-${kind}-language="ko" lang="ko">${render(korean,"ko")}</span>`;
+  return render(options.language==="en"?english:korean||english,options.language==="en"?"en":"ko");
+}
+function renderReflectionPrepCard(card,index,options){
+  const segments=loadJson(path.join(rootDir,options.reading.content_dir,"source_segments.json"))?.segments||[];
+  const evidence=(id)=>renderQuizEvidence({language:"ko",evidence_segment_id:id,evidence_segment:segments.find((segment)=>segment.segment_id===id)});
+  const examples=card.experience_examples||[];
+  const variant=(english,korean,kind)=>renderPrepVariant(english,korean,kind,{...options,experienceExample:examples[0]});
+  const followups=card.followups||[];
+  const experience=card.entry_type==="experience";
+  return `<article class="panel prep-card prep-reflection-card" id="${escapeHtml(card.card_id)}" data-prep-card data-card-id="${escapeHtml(card.card_id)}" data-entry-type="${escapeHtml(card.entry_type)}">
+  <div class="prep-card-head"><div><p class="prep-reflection-route">${experience?"경험에서 출발":"논문에서 출발"} · ${String(index+1).padStart(2,"0")}</p><h3 class="prep-reflection-topic" data-prep-title lang="ko">${variant(card.topic,card.topic_ko,"question")}</h3></div><button class="btn-ghost prep-difficult-btn" type="button" aria-pressed="false" data-prep-difficult>연습 표시</button></div>
+  <p class="prep-reflection-question" lang="ko">${variant(card.title,card.title_ko,"question")}</p>
+  <section class="prep-reflection-first-answer" data-prep-answer><h4 class="prep-answer-label" data-prep-answer-label="first" lang="ko">${experience?"가상 경험으로 말하기":"첫 답변"}</h4>
+    ${experience?`<div class="prep-experience-controls"><div><p class="prep-experience-notice" id="${escapeHtml(card.card_id)}-experience-note">가상 경험 예시 · <span data-prep-experience-counter>1 / ${examples.length}</span></p><p class="prep-experience-label" data-prep-experience-label lang="ko" aria-live="polite">${escapeHtml(examples[0].label_ko)}</p></div><button class="btn-ghost" type="button" data-prep-experience-next aria-describedby="${escapeHtml(card.card_id)}-experience-note">경험 바꾸기</button></div><script type="application/json" data-prep-experience-data>${JSON.stringify(examples).replace(/</g,"\\u003c")}</script>`:""}
+    <p class="prep-answer-copy" lang="ko">${variant(card.answer_30s,card.answer_30s_ko,"answer")}</p>
+    ${experience?`<p class="prep-experience-prompt" lang="ko">${variant(card.experience_prompt,card.experience_prompt_ko,"answer")}</p>`:""}
+    ${evidence(card.evidence_segment_id)}
+  </section>
+  <details class="prep-followups" open><summary><span>이 답변에 대한 꼬리 질문 대비</span><span class="prep-followup-count">${followups.length}개</span></summary><div class="prep-followup-list">
+    ${followups.map((followup)=>`<details class="prep-followup" id="${escapeHtml(followup.id)}"><summary lang="ko">${variant(followup.question,followup.question_ko,"question")}</summary><div class="prep-followup-answer"><p class="prep-followup-copy" lang="ko">${variant(followup.answer,followup.answer_ko,"answer")}</p>${evidence(followup.evidence_segment_id)}</div></details>`).join("")}
+  </div></details>
+</article>`;
+}
 function renderProfessorPrepCard(card,index,options={}){
+  if(options.reflection)return renderReflectionPrepCard(card,index,options);
   const en=options.language==="en";
   const bilingual=options.bilingual===true;
   const language=bilingual?"ko":en?"en":"ko";
@@ -1396,7 +1437,7 @@ ${siteHeader(siteMeta,outputPath)}
     ${renderReadingDetailAside(outputPath,reading)}
   </div>
 </main>
-`;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"`,"ko",week?`<script src="${escapeHtml(versionedAssetHref(outputPath,"weekly.js"))}" defer></script>`:"",week?`<link rel="stylesheet" href="${escapeHtml(versionedAssetHref(outputPath,"weekly.css"))}" />`:""));}
+`;writeText(outputPath,renderDocument(siteMeta,outputPath,`${reading.title} - ${page.label}`,body,reading.description,`data-page-kind="prep" data-reading-slug="${escapeHtml(reading.slug)}" data-reading-page="${escapeHtml(page.key)}"${prep?.practice_format==="reflection-followups-v1"?' data-prep-layout="reflection"':""}`,"ko",week?`<script src="${escapeHtml(versionedAssetHref(outputPath,"weekly.js"))}" defer></script>`:"",week?`<link rel="stylesheet" href="${escapeHtml(versionedAssetHref(outputPath,"weekly.css"))}" />`:""));}
 function prepareWeeklyOutputs(manifest,readings){weeklyConnections=selectAvailableWeeks(loadWeeklyConnections(rootDir,manifest),readings);}
 function buildWeeklyOutputs(siteMeta,refreshEntriesFor=[]){
   const weeklyDir=path.resolve(siteDir,"weeks");

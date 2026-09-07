@@ -140,70 +140,600 @@
     }
   ],
   "reading_response": {
-    "title": "Preparing a Reading Response",
-    "instructions": "Explain your response to the reading while distinguishing the search scope, critics' arguments, subjective assessments, external criteria, and recommendations from demonstrated causal effects. Use the assigned evidence segment.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "martinson-reading-01",
-        "title": "Give a brief overall response to the article.",
-        "answer_30s": "I read this article as a challenge to the normative scorecard itself. The reviewers argue that the many criteria added to account for health and social inequalities reveal the difficulty of applying one ideal to a diverse older population. I found their call to bring empirical research, interpretation, criticism, and reflection into the same conversation especially important. Otherwise, critical discussions can continue alongside successful aging research without changing its assumptions.",
-        "evidence_segment_id": "CONCLUSION-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 논문에 대한 전반적인 생각을 간단히 말해 보세요.",
-        "answer_30s_ko": "저는 이 논문을 규범적인 평가표 자체에 대한 문제 제기로 읽었습니다. 종설 저자들은 건강과 사회적 불평등을 반영하려고 많은 기준을 추가했다는 사실이, 다양한 노인 인구에 하나의 이상을 적용하기 어렵다는 점을 드러낸다고 주장합니다. 실증연구, 해석, 비판, 성찰을 같은 논의 안으로 가져오자는 제안이 특히 중요하게 다가왔습니다. 그렇지 않으면 비판적 논의가 성공적 노화 연구와 나란히 계속되면서도 그 가정은 바꾸지 못할 수 있습니다."
+        "card_id": "martinson-berridge-2015-reflection-01",
+        "entry_type": "reading",
+        "topic": "What happens when success criteria keep expanding",
+        "topic_ko": "성공 기준을 넓히기",
+        "title": "What interested you about expanding successful aging criteria?",
+        "title_ko": "성공 기준의 확장에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that proposals to broaden successful aging also exposed the limits of its criteria. The Add and Stir critiques kept the model while seeking to relax thresholds or include dimensions such as leisure and relationships. This could accommodate more lives, but continual additions could also make the meaning of success less clear. I began to wonder whether adding criteria helped explain aging more fully or mainly made the framework for evaluating it more complicated.",
+        "answer_30s_ko": "성공적 노화의 기준을 넓히려는 제안 자체가 기존 기준의 한계를 드러낸다는 점이 흥미로웠습니다. ‘추가하고 섞기’에 속한 비판들은 모델을 유지하면서 기준을 완화하거나 여가와 관계 같은 요소를 더하려 했습니다. 더 많은 삶을 담을 수 있지만, 기준이 계속 늘면 무엇을 성공이라고 부르는지도 흐려질 수 있습니다. 그래서 항목을 보태는 일이 노화를 더 잘 설명하는지, 평가의 틀만 복잡하게 만드는지 생각해 보게 됐습니다.",
+        "evidence_segment_id": "DISCUSSION-001",
+        "response_angle": "weighing-inclusion-and-conceptual-clarity-in-add-and-stir-critiques",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-01-followup-01",
+            "question": "What makes a critique part of the Add and Stir group?",
+            "question_ko": "어떤 제안을 ‘추가하고 섞기’로 묶었나요?",
+            "answer": "These critiques accepted successful aging as a model while identifying gaps in its existing versions. They offered two kinds of remedy: relax criteria because few older adults met them, or add dimensions that the model had left out. Their shared position was to retain successful aging as the starting point and repair it through modification. The review grouped articles by the recommendations they made, so the label describes an approach in the literature, not a type of older adult. It also does not mean that all of these scholars endorsed one identical list of added criteria. What connects them is their effort to improve the existing model rather than a single agreed replacement definition.",
+            "answer_ko": "이 비판들은 성공적 노화가 모델로 쓰일 수 있다는 생각을 받아들이면서 기존 모델의 공백을 지적했습니다. 해결책은 크게 두 가지였습니다. 기준을 충족하는 노인이 적으니 문턱을 낮추거나, 모델이 놓친 차원을 더하는 것입니다. 성공적 노화를 출발점으로 유지하면서 수정해 보완한다는 입장을 공유합니다. 이 고찰은 논문들이 제시한 개선책을 기준으로 범주를 나눴으므로, 이 명칭은 노인의 유형이 아니라 문헌 속 접근방식을 가리킵니다. 이 학자들이 모두 같은 추가 항목에 동의했다는 뜻도 아닙니다. 하나의 새로운 정의에 합의했다기보다 기존 모델을 고쳐 쓰려 했다는 점에서 묶인 것입니다.",
+            "evidence_segment_id": "ADD-STIR-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-01-followup-02",
+            "question": "Which proposed additions made the limits of the original criteria clearer?",
+            "question_ko": "어떤 추가 요소가 기존 기준의 한계를 보여 줬나요?",
+            "answer": "The review describes proposals to include spirituality, marital quality, leisure, and broader psychological and social dimensions. One example is Young and colleagues' graded approach, which included ways of adapting physically and socially so that well-being, life quality, and fulfillment could be considered even alongside illness or disability. Villar also proposed a broader concept of generativity, arguing that gains can coexist with losses. I found these examples useful because they show what a narrow focus can leave out. They are proposals reported by this review, not interventions that Martinson and Berridge tested. Nor do the examples establish a universal checklist that every older adult must satisfy.",
+            "answer_ko": "고찰에는 영성, 결혼의 질, 여가, 더 폭넓은 심리·사회적 차원을 포함하자는 제안이 나옵니다. 예를 들어 Young과 동료들은 신체적·사회적으로 적응하는 방식을 포함해, 질병이나 장애가 있어도 안녕감과 삶의 질, 성취감을 살필 수 있는 단계적 접근을 제시했습니다. Villar는 이득과 손실이 공존할 수 있다며 생성감도 더 폭넓게 포함하자고 했습니다. 이런 예시는 좁은 초점에서 무엇이 빠지는지 보여 준다는 점에서 유용했습니다. 다만 고찰이 소개한 제안이지 Martinson과 Berridge가 직접 효과를 시험한 중재는 아닙니다. 모든 노인이 충족해야 할 보편적 점검표로 확정된 것도 아닙니다.",
+            "evidence_segment_id": "CRITERIA-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-01-followup-03",
+            "question": "Does a higher prevalence after relaxing criteria mean people aged better?",
+            "question_ko": "기준을 낮춰 비율이 높아지면 노화가 좋아진 건가요?",
+            "answer": "A change in classification is not itself a change in people's lives. In the studies discussed here, estimates of successful aging varied when researchers used different models or increasingly relaxed criteria. Those comparisons raised a concern that a demanding definition could limit the population counted as aging successfully to people with nearly perfect health. Relaxing a threshold can bring more people within the definition, but it does not show that their health or circumstances improved because the threshold changed. I would therefore ask what was measured and how the definition changed before comparing the percentages. The review uses those findings to examine a problem with the criteria, not to report an intervention that improved individual aging.",
+            "answer_ko": "분류가 달라졌다는 사실만으로 사람들의 삶이 달라졌다고 할 수는 없습니다. 여기서 검토한 연구들은 모델을 바꾸거나 기준을 점차 완화했을 때 성공적 노화로 분류되는 비율이 달라지는 모습을 보여 줬습니다. 이를 바탕으로 기준이 엄격하면 거의 완벽하게 건강한 사람만 성공의 범위에 들어갈 수 있다는 우려가 제기됐습니다. 문턱을 낮추면 더 많은 사람이 정의에 포함되지만, 기준을 바꿨기 때문에 그들의 건강이나 생활 여건이 좋아졌다는 뜻은 아닙니다. 따라서 비율을 비교하기 전에 무엇을 측정했고 정의를 어떻게 바꿨는지 살펴야 합니다. 이 고찰은 그 결과로 기준의 문제를 검토하며, 개인의 노화를 개선한 중재를 보고하지는 않습니다.",
+            "evidence_segment_id": "PREVALENCE-001"
+          }
+        ]
       },
       {
-        "card_id": "martinson-reading-02",
-        "title": "Which result seemed most counterintuitive?",
-        "answer_30s": "I was struck by how much estimated prevalence depended on the criteria. A British study reported 16-24% across models; an HRS study found no more than 11.9% at any of four time points; a follow-up using increasingly relaxed criteria reported 3.3-33.5%. These figures come from different studies and definitions, not one shared denominator. They show why classification choices matter. The reviewed researchers proposed both broader thresholds and policies supporting people's opportunities, rather than treating one rate as a stable measure of how many people have succeeded.",
-        "evidence_segment_id": "PREVALENCE-001",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 결과가 가장 직관에 어긋났나요?",
-        "answer_30s_ko": "추정 비율이 기준에 얼마나 크게 좌우되는지가 인상적이었습니다. 영국 연구는 모형에 따라 16~24%를 보고했고, HRS 연구는 네 시점 어느 때에도 11.9%를 넘지 않았으며, 기준을 점차 완화한 후속 연구는 3.3~33.5%를 보고했습니다. 이 수치는 동일한 분모에서 나온 것이 아니라 서로 다른 연구와 정의에서 나온 것입니다. 분류 선택이 왜 중요한지 보여 줍니다. 검토된 연구자들은 어느 한 비율을 성공한 사람 수의 안정적인 척도로 보기보다, 더 폭넓은 기준과 사람들의 기회를 지원하는 정책을 모두 제안했습니다."
+        "card_id": "martinson-berridge-2015-reflection-02",
+        "entry_type": "reading",
+        "topic": "Hearing older adults' own evaluations",
+        "topic_ko": "당사자가 말하는 노년",
+        "title": "What interested you about older adults' own accounts of aging?",
+        "title_ko": "당사자의 목소리에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that researchers' criteria and older adults' evaluations of their own lives could differ. Studies discussed in this review included people who felt they were aging well while living with disability or chronic illness. I had thought I could tell how someone was doing from the outside, but the paper made me want to hear what that person considered important. When asking an older relative how they are, I would also ask how they feel about their life these days.",
+        "answer_30s_ko": "연구자가 정한 기준과 당사자가 자기 삶을 평가하는 방식 사이에 차이가 있다는 점이 흥미로웠습니다. 검토된 연구에서는 장애나 만성질환이 있어도 스스로 잘 나이 들고 있다고 여기는 사람들이 있었습니다. 저는 잘 지내는지를 바깥에서 확인할 수 있다고 생각했는데, 그분이 무엇을 중요하게 보는지도 들어야겠다고 느꼈습니다. 가족의 근황을 물을 때도 요즘 자신의 삶을 어떻게 느끼는지 함께 묻고 싶습니다.",
+        "evidence_segment_id": "COMPARE-001",
+        "response_angle": "distinguishing-researcher-defined-criteria-from-elders-own-evaluations",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-02-followup-01",
+            "question": "How different were self-evaluations and the established criteria?",
+            "question_ko": "두 평가는 얼마나 다르게 나타났나요?",
+            "answer": "The review describes Strawbridge and colleagues' 2002 study, in which 50.3% rated themselves as aging successfully, while 18.8% met Rowe and Kahn's criteria. Those are findings from one earlier study, not a new survey conducted by the review authors or a pooled rate across the reviewed articles. Other studies also reported differences between subjective and researcher-defined evaluations. This made me ask what each measure captured and what the participants meant by aging well. It does not show that illness or functional difficulty is unimportant; rather, a classification based on those conditions may not fully represent a person's evaluation of their life.",
+            "answer_ko": "고찰이 소개한 Strawbridge 등(2002)의 연구에서는 자신이 성공적으로 나이 든다고 평가한 비율이 50.3%였고, Rowe와 Kahn의 기준을 충족한 비율은 18.8%였습니다. 이는 한 선행연구의 결과이지, 고찰 저자들이 새로 조사한 수치나 여러 논문의 통합 비율은 아닙니다. 다른 연구들도 자기평가와 연구자가 정한 평가 사이의 차이를 보고했습니다. 저는 각 측정이 무엇을 담았고 참여자가 잘 나이 든다는 말을 어떤 뜻으로 썼는지 묻게 됐습니다. 질환이나 기능상의 어려움이 중요하지 않다는 결과는 아닙니다. 다만 그런 상태에 따른 분류만으로는 자신의 삶에 대한 평가를 충분히 담지 못할 수 있습니다.",
+            "evidence_segment_id": "COMPARE-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-02-followup-02",
+            "question": "Can culture tell us in advance what aging well means to someone?",
+            "question_ko": "문화에 따라 의미를 미리 정해도 될까요?",
+            "answer": "The cultural studies in the review show why a person's background deserves attention, while also challenging the idea of one fixed meaning per culture. A study of low-income older adults in South Korea led researchers to propose criteria including adult children's success and a positive attitude toward life. That does not make those priorities universal among Korean older adults. Torres's work with Iranian migrants in Sweden found variation within the group, including how people arrived at their definitions of aging well. I would therefore ask how someone came to value family relationships, independence, or another part of life, rather than predict their answer from nationality or treat one family's priorities as a cultural rule.",
+            "answer_ko": "고찰에 나온 문화 연구들은 개인의 배경에 주목하게 하면서도 문화마다 고정된 뜻이 하나씩 있다는 생각을 흔듭니다. 한국 저소득 노인을 다룬 한 연구에서는 성인 자녀의 성공과 삶에 대한 긍정적 태도 등을 기준에 넣자는 제안이 나왔습니다. 이를 모든 한국 노인의 우선순위로 볼 수는 없습니다. 스웨덴으로 이주한 이란계 사람들을 연구한 Torres는 같은 집단 안에서도 잘 나이 듦의 정의와 그 정의에 이르는 방식이 다양함을 확인했습니다. 그래서 가족관계나 독립성 등 무엇을 왜 중요하게 여기게 됐는지 묻겠습니다. 국적만으로 답을 예상하거나 한 가족의 우선순위를 문화 전체의 규칙으로 만들지는 않겠습니다.",
+            "evidence_segment_id": "CULTURE-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-02-followup-03",
+            "question": "Did the review conclude that adding older adults' views was enough?",
+            "question_ko": "당사자 의견을 더하면 충분하다고 했나요?",
+            "answer": "The Missing Voices articles called for criteria derived from older adults' perspectives, and largely retained successful aging as an ideal. The review authors distinguished that proposal from their own broader concern: an ideal model can still exclude people even after more voices and criteria are added. I would keep these positions separate when explaining the paper. Listening to older adults matters, but their words need not become another checklist that everyone must satisfy. In a conversation with a relative, I would leave room for a mixed or uncertain evaluation of life, rather than expect them to offer a positive account that proves they are aging successfully.",
+            "answer_ko": "‘누락된 목소리’에 속한 논문들은 노인의 관점에서 나온 기준을 더하자고 제안했고, 성공적 노화라는 이상은 대체로 유지했습니다. 고찰 저자들은 이 제안과 더 근본적인 우려를 구분했습니다. 목소리와 기준을 늘려도 이상적 모델은 여전히 누군가를 배제할 수 있다는 것입니다. 논문을 설명할 때 이 두 입장을 나눠 보겠습니다. 당사자의 이야기를 듣는 일은 중요하지만, 그 말을 모두가 충족해야 할 새 점검표로 만들 필요는 없습니다. 가족과 이야기할 때도 성공적으로 나이 들고 있음을 증명할 긍정적인 답을 기대하기보다, 만족과 어려움이 섞이거나 아직 정리되지 않은 생각도 들을 여지를 두겠습니다.",
+            "evidence_segment_id": "DISCUSSION-001"
+          }
+        ]
       },
       {
-        "card_id": "martinson-reading-03",
-        "title": "What was most interesting about the method?",
-        "answer_30s": "I found the configurative approach useful for organizing a varied literature. Initial coding identified each article's criticisms and proposed improvements, and axial coding developed broader connections inductively. The two authors independently coded a subset of 15 articles and discussed their analyses, also comparing theme assignments. They organized overlapping criticisms by the remedies proposed. This supports an interpretive synthesis of 67 articles; the paper does not report a numerical agreement coefficient or a pooled effect size.",
-        "evidence_segment_id": "METHODS-001",
-        "response_angle": "method",
-        "style_basis": "course-question-pattern",
-        "title_ko": "방법에서 무엇이 가장 흥미로웠나요?",
-        "answer_30s_ko": "구성적 접근은 다양한 문헌을 정리하는 데 유용했습니다. 초기 코딩에서는 각 논문의 비판과 개선 제안을 파악하고, 축코딩에서는 더 넓은 연결을 귀납적으로 발전시켰습니다. 두 저자는 15편의 부분집합을 독립적으로 코딩한 뒤 분석을 논의하고 주제 배정도 비교했습니다. 이들은 겹치는 비판을 제안된 개선 방향에 따라 정리했습니다. 이는 67편에 대한 해석적 종합을 뒷받침하며, 논문은 수치로 된 일치도 계수나 통합 효과크기를 보고하지 않습니다."
+        "card_id": "martinson-berridge-2015-reflection-03",
+        "entry_type": "reading",
+        "topic": "Responsibility and unequal opportunities",
+        "topic_ko": "개인 책임과 다른 출발점",
+        "title": "What interested you about the critique of personal responsibility?",
+        "title_ko": "개인 책임 비판에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that encouragement to age well could also become a judgment about who had tried hard enough. The review's Hard Hitting Critiques argued that treating health and activity as personal achievements can hide unequal access to housing, education, and recreation. This made me reconsider how easily an unmet standard can be read as an individual's failure. I would pay attention to the opportunities people have and the support they need, alongside what they choose to do.",
+        "answer_30s_ko": "잘 나이 들라는 격려가 누가 충분히 노력했는지를 따지는 말이 될 수도 있다는 비판이 흥미로웠습니다. 이 고찰의 ‘통렬한 비판’은 건강과 활동을 개인의 성취로만 보면 주거·교육·여가 기회의 불평등이 가려질 수 있다고 지적했습니다. 기준에 못 미친 상태를 곧 개인의 실패로 읽는 방식도 다시 생각하게 됐습니다. 무엇을 선택했는지와 함께 어떤 기회가 있었고 어떤 지원이 필요한지를 살펴보고 싶습니다.",
+        "evidence_segment_id": "INDIVIDUALISM-001",
+        "response_angle": "questioning-personal-blame-through-structural-opportunities",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-03-followup-01",
+            "question": "What makes the Hard Hitting Critiques different?",
+            "question_ko": "통렬한 비판은 무엇을 근본적으로 묻나요?",
+            "answer": "The review placed 14 of its 67 articles in this category. These critics questioned the assumptions, uses, and continued legitimacy of successful aging, and called for alternative frameworks. They argued that presenting physical and cognitive health as individually controllable overlooks unequal life chances associated with class, gender, race, disability, and their intersections. Access to education, employment, good housing, healthy food, and recreation can make the same ideal much easier for privileged groups to meet. The issue is how opportunities and responsibility are distributed. The review authors also acknowledged that successful-aging research had helped identify behaviors related to good health, so this criticism does not make every personal action meaningless.",
+            "answer_ko": "고찰 대상 67편 중 14편이 이 범주에 들어갔습니다. 이 비판자들은 성공적 노화의 가정과 활용, 계속 사용할 정당성을 묻고 대안 틀을 요구했습니다. 신체·인지 건강을 개인이 통제할 수 있는 것으로 제시하면 계급·젠더·인종·장애와 그 교차에 따른 생애기회 차이를 놓친다고 봤습니다. 교육·고용·좋은 주거·건강한 음식·여가에 접근하기 쉬운 집단은 같은 이상에 도달하기도 유리하다는 것입니다. 핵심은 기회와 책임을 어떻게 나누느냐입니다. 고찰 저자들도 성공적 노화 연구가 좋은 건강에 관련된 행동을 이해하는 데 기여했다고 인정하므로, 이 비판을 개인의 모든 행동이 무의미하다는 뜻으로 읽지는 않겠습니다.",
+            "evidence_segment_id": "HARD-HITTING-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-03-followup-02",
+            "question": "How can an ideal become stigma or weaken support?",
+            "question_ko": "좋은 노화의 이상이 어떻게 낙인이 되나요?",
+            "answer": "The reviewed critics argued that defining success through avoidance of disease and disability also places people with these conditions on the unsuccessful side of a hierarchy. They connected this to intertwined ageism and ableism: a health condition can become a judgment about moral responsibility. The review also described studies of how people with illness encountered these ideals in everyday life, including pressure to appear positive and little room to express fear. A further argument concerned public support. If the ideal older person is portrayed as self-sufficient, this can make assistance appear unnecessary and shift responsibility away from the state. Those are critiques and findings synthesized from the literature; this review did not experimentally estimate how much a particular slogan reduced benefits or caused stigma.",
+            "answer_ko": "고찰에 포함된 비판자들은 질병과 장애를 피하는 것을 성공으로 정하면, 그런 상태에 있는 사람은 위계의 반대편에 놓인다고 주장했습니다. 연령주의와 비장애 중심주의가 얽히면서 건강 상태가 도덕적 책임을 평가하는 근거가 된다는 것입니다. 고찰에는 질병이 있는 사람들이 긍정적으로 보여야 한다는 압박을 받고 두려움을 말할 여지가 줄어드는 경험을 다룬 연구도 소개됩니다. 공적 지원에 대한 비판도 이어집니다. 이상적인 노인을 자족적인 사람으로 그리면 지원이 불필요해 보이고 국가의 책임이 개인에게 옮겨 갈 수 있다는 주장입니다. 이는 문헌의 비판과 연구 결과를 종합한 내용이며, 특정 구호가 급여를 얼마나 줄이거나 낙인을 얼마나 늘렸는지를 실험한 결과는 아닙니다.",
+            "evidence_segment_id": "AGEISM-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-03-followup-03",
+            "question": "Would replacing successful aging with a new ideal solve the problem?",
+            "question_ko": "다른 노화 모델로 바꾸면 문제가 풀릴까요?",
+            "answer": "The alternatives differ. Social-justice critiques called for valuing interdependence, including illness and disability, and improving economic security, safe housing, neighborhoods, and protection from discrimination. The seven New Frames and Names articles offered models such as balanced, resilient, and harmonious aging. These often retained an individual ideal, although Wild and colleagues' resilience framework extended to social structures, power inequalities, and community resources. The review authors therefore did not simply endorse a new label. Their concluding position was to move away from successful-aging terminology and the search for a single ideal way to be old, and instead create conditions in which people can thrive on their own terms. A replacement model should also be examined for whom it includes, excludes, or makes responsible.",
+            "answer_ko": "대안의 방향도 서로 다릅니다. 사회정의 관점의 비판은 상호의존을 인정하고 질병·장애를 포용하며, 경제적 안정과 안전한 주거·지역사회, 차별 방지를 강화하자고 했습니다. ‘새로운 틀과 명칭’ 7편은 균형 잡힌 노화, 회복탄력적 노화, 조화로운 노화 등을 제안했습니다. 이들은 개인의 이상을 유지하는 경우가 많았지만, Wild 등의 회복탄력성 틀은 사회구조·권력불평등·지역사회 자원까지 넓혔습니다. 고찰 저자들의 결론도 이름만 바꾸자는 것이 아닙니다. 성공적 노화라는 용어와 단 하나의 이상적인 노년을 찾는 방식에서 벗어나, 사람들이 자기 방식대로 살아갈 조건을 만들자는 입장입니다. 대안도 누구를 포용하거나 배제하고 누구에게 책임을 지우는지 살펴야 합니다.",
+            "evidence_segment_id": "NEW-FRAMES-001"
+          }
+        ]
       },
       {
-        "card_id": "martinson-reading-04",
-        "title": "How did the article change your view of family and independence?",
-        "answer_30s": "It made me question whether apparently similar criteria carry the same meaning across contexts. In a study of low-income older South Koreans, adult children's success formed part of successful aging. In a Japanese American study, independence could mean adjusting personal needs to maintain group harmony. I would therefore ask what family relationships mean to participants before treating them as checklist items. Torres' findings also remind me to expect variation within a cultural group rather than assuming that one example defines everyone in it.",
-        "evidence_segment_id": "CULTURE-001",
-        "response_angle": "family-implication",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 논문은 가족과 독립성에 대한 관점을 어떻게 바꿨나요?",
-        "answer_30s_ko": "겉으로 비슷한 기준도 맥락이 다르면 같은 의미를 갖는지 의문이 생겼습니다. 한국의 저소득 노인을 대상으로 한 연구에서는 성인 자녀의 성공이 성공적 노화의 일부였습니다. 일본계 미국인 연구에서는 독립성이 집단의 조화를 유지하도록 개인의 필요를 조정하는 것을 뜻할 수 있었습니다. 따라서 저는 가족 관계를 점검표 항목으로 취급하기 전에 참여자에게 어떤 의미인지 묻겠습니다. Torres의 결과도 하나의 사례가 문화집단 전체를 규정한다고 가정하지 말고 집단 내부의 다양성을 예상해야 함을 일깨웁니다."
+        "card_id": "martinson-berridge-2015-reflection-04",
+        "entry_type": "experience",
+        "topic": "Reconsidering the criteria used to judge a relative",
+        "topic_ko": "가족을 보던 성공 기준",
+        "title": "What interested you when recalling how you judged a relative's aging?",
+        "title_ko": "가족의 노화를 떠올리며 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional everyday examples. Adapt one to something you actually observed or heard from a parent or relative.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 부모님이나 친척에게서 실제로 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that attempts to broaden success criteria could still retain a framework for judging aging. Before finding another strength that would let me call the person successful, I would now reconsider how narrowly my own criteria had framed their everyday life.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 논문에서 성공 기준을 넓히려는 시도에도 평가의 틀이 남는다는 점이 흥미로웠습니다. 이제는 다른 장점을 찾아 성공이라고 판정하기 전에, 제가 정한 기준이 그분의 일상을 얼마나 좁게 보고 있었는지 먼저 돌아보고 싶습니다.",
+        "evidence_segment_id": "DISCUSSION-001",
+        "response_angle": "examining-personal-success-criteria-without-replacing-them-with-another-checklist",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-04-followup-01",
+            "question": "Which part of your earlier judgment would you examine first?",
+            "question_ko": "당시 판단의 어떤 기준부터 돌아보겠어요?",
+            "answer": "At the time, {{prior_view}} I would ask why that one feature had become enough for me to judge the whole experience of aging. The review describes repeated efforts to expand criteria because existing versions left so much out. That makes me notice the distance between observing a particular change and declaring a life successful or unsuccessful. I do not have to dismiss the importance of the change to question that overall judgment. I would separate what I had actually noticed from the standard I had applied, and consider what remained outside it. Finding an additional positive feature would not by itself resolve why I felt the need to grade the person's aging.",
+            "answer_ko": "당시에는 {{prior_view}} 왜 그 한 가지 모습으로 그분의 노화 전체를 판단할 수 있다고 생각했는지 돌아보겠습니다. 고찰은 기존 기준이 많은 것을 놓쳤기 때문에 기준을 넓히려는 시도가 이어졌다고 설명합니다. 이를 읽으니 특정 변화를 관찰한 일과 그 삶을 성공이나 실패로 판정하는 일 사이의 차이가 보였습니다. 그 변화가 중요하지 않다고 해야만 전체적인 판단에 의문을 품을 수 있는 것은 아닙니다. 실제로 본 일과 제가 적용한 기준을 나누고, 그 밖에 무엇이 남았는지 생각하겠습니다. 다른 장점을 하나 발견해도 왜 노화에 점수를 매기려 했는지에 대한 질문은 남습니다.",
+            "evidence_segment_id": "DISCUSSION-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-followup-02",
+            "question": "Would adding a different positive criterion solve the problem?",
+            "question_ko": "다른 장점을 기준에 더하면 해결될까요?",
+            "answer": "{{age_cue}} I might try to compensate for the feature I had judged negatively by finding a different strength and adding it to my definition of success. That resembles the Add and Stir strategy of keeping the model while filling its gaps. It could help me notice more of the person's life, but it could also leave the person waiting to qualify under a revised set of rules. The authors ask whether continually adding dimensions makes the concept clearer and more useful. I would keep the broader attention while reconsidering the need for a pass-or-fail conclusion. The aim of recalling the scene is to understand the experience, not to invent enough criteria to make a relative pass.",
+            "answer_ko": "{{age_cue}} 제가 부정적으로 본 모습을 만회하려고 다른 장점을 찾아 성공의 정의에 더하고 싶을 수도 있습니다. 모델을 유지하면서 빈 부분을 채우는 ‘추가하고 섞기’와 닮은 방식입니다. 그분의 삶을 더 많이 보게 할 수 있지만, 바뀐 규칙에도 다시 자격을 갖춰야 하는 사람으로 남겨 둘 수 있습니다. 저자들은 차원을 계속 더하는 일이 개념을 더 명료하고 유용하게 만드는지 묻습니다. 저는 시야를 넓히는 일은 이어 가면서도 합격이나 불합격의 결론이 필요한지는 다시 생각하겠습니다. 장면을 돌아보는 목적은 경험을 이해하는 것이지, 가족을 통과시키기에 충분한 기준을 만드는 것이 아닙니다.",
+            "evidence_segment_id": "DISCUSSION-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-followup-03",
+            "question": "Can you value health and activity without making them a verdict?",
+            "question_ko": "건강과 활동을 중요하게 보면서도 달리 볼 수 있나요?",
+            "answer": "I can care about a relative's comfort, health, or valued activities without using those features to deliver a verdict on their whole life. The additions described in the review show efforts to include psychological and social dimensions, adaptation, and gains alongside losses. They helped me see that what one criterion misses may still matter. I would not turn this into a demand that the person display resilience, satisfaction, or a new achievement whenever something becomes difficult. Those would become further requirements to meet. For this memory, I would describe the particular change and what it involved, leaving the person's worth outside the question of whether any successful aging model would classify them as a success.",
+            "answer_ko": "가족의 편안함과 건강, 소중한 활동에 관심을 두면서도 그것으로 삶 전체를 판정하지 않을 수 있습니다. 고찰이 소개한 추가 요소들은 심리·사회적 차원과 적응, 손실과 함께 있는 이득을 포함하려는 시도를 보여 줍니다. 한 기준에서 빠진 부분도 중요할 수 있다는 생각을 하게 됐습니다. 그렇다고 어려움이 생길 때마다 회복력이나 만족감, 새로운 성취를 보여 달라고 요구하지는 않겠습니다. 그것도 충족해야 할 조건이 늘어나는 일이기 때문입니다. 이 기억에서는 어떤 변화가 있었고 무엇이 달라졌는지를 구체적으로 말하되, 성공적 노화 모델의 분류에 그분의 가치를 맡기지는 않겠습니다.",
+            "evidence_segment_id": "CRITERIA-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-01",
+            "label": "Shorter walks and time with plants",
+            "label_ko": "산책을 줄인 어머니",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother reducing the amount of walking she did.",
+                "ko": "어머니가 예전보다 산책하는 시간을 줄이셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She was in her late sixties and spent more time tending plants on her balcony.",
+                "ko": "60대 후반이셨고, 베란다 화분을 돌보는 시간이 늘었습니다."
+              },
+              "prior_view": {
+                "en": "I took walking less as a sign that she was no longer aging well.",
+                "ko": "걷는 시간이 줄면 잘 나이 들지 못하는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-02",
+            "label": "Accepting help with grocery shopping",
+            "label_ko": "장보기 도움 받기",
+            "values": {
+              "scene": {
+                "en": "I remembered my father accepting help with his grocery shopping.",
+                "ko": "아버지가 장을 볼 때 가족의 도움을 받기 시작하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He was in his seventies and still chose what he wanted to buy himself.",
+                "ko": "70대이셨고, 무엇을 살지는 여전히 직접 고르셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that aging well meant being able to handle every task alone.",
+                "ko": "무슨 일이든 혼자 해내야 잘 나이 드는 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-03",
+            "label": "Reducing the number of social gatherings",
+            "label_ko": "모임을 줄인 이모",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt deciding to attend fewer regular gatherings.",
+                "ko": "이모가 정기적으로 다니던 모임을 줄이겠다고 하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She was in her sixties and said she wanted more time to read at home.",
+                "ko": "60대이셨고, 집에서 책을 읽을 시간을 더 갖고 싶다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought having a busy social calendar was a clear sign of aging well.",
+                "ko": "밖에서 만날 사람이 많고 바빠야 잘 나이 드는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-04",
+            "label": "Resting after retirement",
+            "label_ko": "퇴직 뒤 쉬는 시간",
+            "values": {
+              "scene": {
+                "en": "I remembered my uncle saying he wanted to rest for a while after retiring.",
+                "ko": "삼촌이 퇴직한 뒤에는 한동안 쉬고 싶다고 말씀하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He was in his early sixties and had no immediate plans for a new activity.",
+                "ko": "60대 초반이셨고, 당장 새로운 활동을 시작할 계획은 없으셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought he needed to find a productive activity to be aging successfully.",
+                "ko": "무언가 생산적인 일을 찾아야 성공적으로 나이 드는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-05",
+            "label": "Getting help to make a video call",
+            "label_ko": "영상통화를 함께 걸기",
+            "values": {
+              "scene": {
+                "en": "I remembered helping my grandmother set up a video call with a relative.",
+                "ko": "할머니가 친척과 영상통화를 하실 때 제가 옆에서 도왔던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She was in her seventies and sometimes asked me to help with unfamiliar controls.",
+                "ko": "70대이셨고, 낯선 조작은 가끔 제게 부탁하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought keeping up with new devices without help was a standard of aging well.",
+                "ko": "새 기기도 도움 없이 잘 써야 잘 나이 드는 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-04-example-06",
+            "label": "Family meals alongside regular clinic visits",
+            "label_ko": "통원 중 가족 식사",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather continuing to join family meals while making regular clinic visits.",
+                "ko": "할아버지가 정기적으로 병원에 다니면서도 가족 식사에 오셨던 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "He was in his seventies and sometimes talked about looking forward to those meals.",
+                "ko": "70대이셨고, 함께 밥 먹는 날을 기다린다고 말씀하시곤 했습니다."
+              },
+              "prior_view": {
+                "en": "I thought frequent clinic visits put someone outside the picture of aging well.",
+                "ko": "병원에 자주 다니면 잘 나이 드는 모습과는 거리가 있다고 여겼습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "martinson-reading-05",
-        "title": "Which limitation matters most?",
-        "answer_30s": "The restriction to ASG and English-language articles matters most to me. Some especially critical work may appear in books or in medical sociology and anthropology journals outside that database. Critiques in other languages, including those from settings with less individualistic views of life and aging, may also be absent. I therefore regard the four categories as a useful organization of the included literature, not a complete inventory of every discipline or culture.",
-        "evidence_segment_id": "LIMITATIONS-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 한계가 가장 중요한가요?",
-        "answer_30s_ko": "제게는 ASG와 영어 논문으로 제한했다는 점이 가장 중요합니다. 특히 비판적인 일부 작업은 해당 데이터베이스 밖의 책이나 의료사회학·인류학 학술지에 실릴 수 있습니다. 삶과 노화를 덜 개인주의적으로 바라보는 환경에서 나온 비판을 포함해 다른 언어의 비판도 빠졌을 수 있습니다. 따라서 저는 네 범주를 포함된 문헌을 유용하게 정리한 것으로 보며, 모든 학문이나 문화의 비판을 빠짐없이 목록화한 것으로 보지는 않습니다."
+        "card_id": "martinson-berridge-2015-reflection-05",
+        "entry_type": "experience",
+        "topic": "What a relative valued in everyday life",
+        "topic_ko": "그분에게 소중한 일상",
+        "title": "What interested you when recalling what mattered to an older relative?",
+        "title_ko": "가족의 일상에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These fictional examples recall plausible everyday observations. Adapt one to something you actually saw or heard from a parent, relative, or someone you know.",
+        "experience_prompt_ko": "일상에서 있을 법한 관찰을 돌아보는 가상 예시입니다. 부모님이나 친척, 지인에게 실제로 보고 들은 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the paper described how older adults' own evaluations could differ from researchers' criteria. Looking back, I wanted to distinguish what I had noticed from what my relative valued, and begin by asking how they felt about their life these days.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 논문에서 당사자의 자기평가가 연구자의 기준과 다를 수 있다는 점이 흥미로웠습니다. 돌아보니 제가 겉으로 본 모습과 그분이 소중하게 여긴 경험을 구분하고, 요즘 삶을 어떻게 느끼는지 먼저 물어보고 싶어졌습니다.",
+        "evidence_segment_id": "COMPARE-001",
+        "response_angle": "reconsidering-an-outsiders-impression-through-a-relatives-own-meaning",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-05-followup-01",
+            "question": "Which part of your relative's account would you want to hear more about?",
+            "question_ko": "그분의 말에서 무엇을 더 듣고 싶었나요?",
+            "answer": "I wanted to return to what the person had said: {{age_cue}} The review describes studies in which older adults' meanings included emotional care, self-acceptance, and other dimensions that established criteria did not fully capture. That gave me a reason to ask why this particular experience mattered to my relative and how it fitted into the rest of their life. I could not infer their overall satisfaction from a single pleasant moment. I would also leave room for what had been difficult or disappointing. The question was how they experienced their life, with its different parts, rather than whether I could award them a positive label after hearing one story.",
+            "answer_ko": "그분이 하셨던 말로 돌아가고 싶었습니다. {{age_cue}} 고찰은 기존 기준이 충분히 담지 못한 정서적 돌봄이나 자기수용 등 여러 의미를 노인들의 관점에서 찾은 연구들을 소개했습니다. 이를 읽고 그 경험이 왜 중요했고 생활의 다른 부분과는 어떻게 이어졌는지 더 듣고 싶었습니다. 한 번의 기분 좋은 순간만으로 삶 전반에 만족한다고 추론할 수는 없었습니다. 힘들거나 아쉬웠던 부분도 이야기할 여지를 두겠습니다. 묻고 싶은 것은 여러 면이 함께 있는 삶을 그분이 어떻게 경험했는지였습니다. 한 이야기를 듣고 제가 긍정적인 이름을 붙여 주는 일로 끝내지는 않겠습니다.",
+            "evidence_segment_id": "COMPARE-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-followup-02",
+            "question": "Could you explain the relative's priorities simply through their culture?",
+            "question_ko": "그분의 생각을 문화 하나로 설명할까요?",
+            "answer": "I reconsidered my earlier impression: {{prior_view}} The review's cultural discussion made me cautious about replacing one quick assumption with another. Torres's studies of Iranian migrants in Sweden found different understandings of aging well within the same cultural group, as well as differences in how people reached them. My relative's priorities could also have a personal history that I had not heard. I would ask what experiences had made a relationship, a routine, or time alone important to them. I would not describe their answer as what all older people from that background want. Even relatives who share a language and family history can value different ways of spending later life.",
+            "answer_ko": "이전의 인상도 돌아봤습니다. {{prior_view}} 고찰의 문화 논의를 읽고 섣부른 생각을 또 다른 단정으로 바꾸지 않아야겠다고 느꼈습니다. 이란에서 스웨덴으로 이주한 사람들을 다룬 Torres의 연구에서는 같은 문화집단 안에서도 잘 나이 듦의 이해와 그 이해에 이르는 과정이 달랐습니다. 그분의 우선순위에도 제가 아직 듣지 못한 개인의 역사가 있을 수 있었습니다. 어떤 경험 때문에 관계나 일상, 혼자 보내는 시간이 중요해졌는지 묻겠습니다. 그 답을 같은 배경의 노인이 모두 원하는 것으로 설명하지는 않겠습니다. 언어와 가족의 역사를 공유하는 친척끼리도 노년에 소중히 여기는 생활은 다를 수 있습니다.",
+            "evidence_segment_id": "CULTURE-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-followup-03",
+            "question": "Would hearing that life felt good mean that support was no longer needed?",
+            "question_ko": "잘 지낸다는 말이면 도움은 필요 없을까요?",
+            "answer": "I could revisit this memory: {{scene}} But one account of something meaningful would not tell me whether the person needed practical help, companionship, or support with a difficulty. The studies discussed in the review show that a positive self-evaluation can coexist with illness or disability. I would therefore hear both how the person valued their life and what they found difficult, without making one cancel out the other. My observation was not a health assessment or a test of a successful-aging model. It prompted me to ask what kind of support the relative wanted, while allowing them to define what mattered and to say that some parts of life were going well and others were not.",
+            "answer_ko": "이 기억을 다시 살펴볼 수 있었습니다. {{scene}} 그러나 의미 있는 경험 하나를 들었다고 생활의 도움이나 말벗, 어려움에 대한 지원이 필요한지까지 알 수는 없었습니다. 고찰에 소개된 연구들은 긍정적인 자기평가가 질환이나 장애와 함께 있을 수 있음을 보여 줬습니다. 그래서 자신의 삶에서 소중히 여기는 것과 어려운 것을 모두 듣고, 한쪽이 다른 쪽을 지우게 하지 않겠습니다. 제 관찰은 건강평가나 성공적 노화 모델을 검증한 자료가 아니었습니다. 어떤 지원을 원하는지 묻되, 무엇이 중요한지는 그분이 정하고 잘되는 부분과 그렇지 않은 부분을 함께 말할 수 있게 하고 싶었습니다.",
+            "evidence_segment_id": "COMPARE-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-01",
+            "label": "A grandmother valuing an evening conversation",
+            "label_ko": "저녁의 가족 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting my grandmother in her seventies when knee discomfort had reduced her outings.",
+                "ko": "무릎이 불편해 외출이 줄었던 70대 할머니를 찾아뵌 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Grandma said that talking with the family over dinner had been a welcome part of her day.",
+                "ko": "할머니는 저녁에 가족과 밥을 먹으며 이야기하는 시간이 하루의 반가운 부분이라고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that fewer outings meant her days had become unsatisfying.",
+                "ko": "외출이 줄었으니 하루가 만족스럽지 않으실 거라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-02",
+            "label": "A father keeping in touch by phone",
+            "label_ko": "친구와 나누는 통화",
+            "values": {
+              "scene": {
+                "en": "I remembered my father in his seventies talking about his days after he began going to fewer gatherings.",
+                "ko": "모임에 나가는 횟수가 줄어든 70대 아버지와 근황을 나눴던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Dad said he felt at ease when he occasionally phoned an old friend and talked about everyday life.",
+                "ko": "아버지는 가끔 오래된 친구에게 전화해 사는 이야기를 나눌 때 마음이 편하다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had thought that the number of gatherings showed how well his social life was going.",
+                "ko": "모임 횟수를 보면 사람들과 잘 지내시는지 알 수 있다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-03",
+            "label": "An aunt enjoying quiet reading time",
+            "label_ko": "조용히 책 읽는 시간",
+            "values": {
+              "scene": {
+                "en": "I remembered suggesting a new group to my aunt after she retired in her sixties.",
+                "ko": "60대에 퇴직한 이모에게 새로운 모임을 권했던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said she was enjoying quiet afternoons with books she had long wanted to read.",
+                "ko": "이모는 읽고 싶었던 책을 펼쳐 놓고 조용히 보내는 오후가 요즘 좋다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had assumed that filling her schedule with new activities would make life more satisfying.",
+                "ko": "새 활동으로 일정을 채우면 더 만족스럽게 지내실 거라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-04",
+            "label": "An uncle hearing from his adult children",
+            "label_ko": "자녀에게서 온 소식",
+            "values": {
+              "scene": {
+                "en": "I remembered my uncle in his sixties telling me about messages from his adult children.",
+                "ko": "60대 외삼촌이 성인 자녀들에게 온 연락을 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said that hearing they were getting along in daily life gave him peace of mind.",
+                "ko": "외삼촌은 자녀들이 각자의 일상을 잘 지낸다는 소식을 들으면 마음이 놓인다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had expected him to describe satisfaction mainly through his own hobbies or health.",
+                "ko": "본인의 취미나 건강 이야기에서 만족감이 드러날 거라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-05",
+            "label": "A grandfather sharing a meal with help",
+            "label_ko": "도움을 받아 차린 식사",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather in his eighties getting help carrying groceries for a meal.",
+                "ko": "80대 할아버지가 식사를 준비하며 장본 물건을 옮기는 도움을 받으셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Grandpa said he had enjoyed choosing what to eat and sharing the meal with the family.",
+                "ko": "할아버지는 먹을 것을 고르고 가족과 함께 먹을 수 있어서 좋았다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had focused on the help he needed and assumed that he would feel disappointed.",
+                "ko": "도움이 필요해진 모습에 주목하며 아쉬움이 크실 거라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-05-example-06",
+            "label": "A mother finding meaning in family photographs",
+            "label_ko": "사진을 정리하는 오후",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother in her sixties spending an afternoon arranging family photographs.",
+                "ko": "60대 어머니가 가족 사진을 정리하며 오후를 보내시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Mom said looking back on people and times she cared about made the afternoon feel worthwhile.",
+                "ko": "어머니는 소중한 사람들과 지나온 시간을 떠올리는 것만으로도 뜻깊은 오후였다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had seen it simply as a way to pass time at home.",
+                "ko": "집에서 시간을 보내려고 하는 일 정도로만 여겼습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "martinson-reading-06",
-        "title": "How would you apply this critique to your own research?",
-        "answer_30s": "I would reconsider studies that classify older people as successful only if they are productive, independent, and free of disability. The reviewers propose valuing interdependence, disability, social responsibility, and lives outside productivity ideals, while creating conditions in which people can thrive on their own terms. My proposed application is to ask first which social conditions enable or restrict people's choices. That is a research orientation drawn from their argument, not an intervention effect demonstrated by this review.",
-        "evidence_segment_id": "DISCUSSION-002",
-        "response_angle": "application",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 비판을 자신의 연구에 어떻게 적용하겠나요?",
-        "answer_30s_ko": "저는 노인이 생산적이고 독립적이며 장애가 없을 때만 성공적이라고 분류하는 연구를 다시 생각하겠습니다. 종설 저자들은 사람들이 자기 방식대로 잘 살아갈 조건을 만들면서, 상호의존, 장애, 사회적 책임, 생산성의 이상 밖에 있는 삶을 가치 있게 보자고 제안합니다. 제가 제안하는 적용은 어떤 사회적 조건이 사람들의 선택을 가능하게 하거나 제한하는지 먼저 묻는 것입니다. 이는 저자들의 논지에서 도출한 연구 방향이지 이 종설이 입증한 개입 효과는 아닙니다."
+        "card_id": "martinson-berridge-2015-reflection-06",
+        "entry_type": "experience",
+        "topic": "Looking beyond individual effort",
+        "topic_ko": "노력 뒤의 생활 여건 보기",
+        "title": "What interested you when recalling a relative's daily circumstances?",
+        "title_ko": "가족의 생활에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of everyday memories. Adapt one to something you experienced or saw or heard among family or relatives.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 회상 예시입니다. 자신이 경험하거나 가족·친척에게서 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the paper reviewed criticism of judging aging through personal effort while overlooking unequal living conditions. I would now ask what the person wanted to do and what resources or surroundings helped or hindered them before making a judgment.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문에서 개인의 노력만으로 노화를 평가하면 서로 다른 생활 여건이 가려질 수 있다고 비판한 점이 흥미로웠습니다. 이제는 그분이 원하는 일과 이를 돕거나 막는 자원·환경을 함께 듣고 판단하겠습니다.",
+        "evidence_segment_id": "INDIVIDUALISM-001",
+        "response_angle": "reconsidering-effort-judgments-through-everyday-opportunities-and-support",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "martinson-berridge-2015-reflection-06-followup-01",
+            "question": "What would you ask before judging the person's effort?",
+            "question_ko": "그분의 노력과 무엇을 함께 살피겠나요?",
+            "answer": "I would start with this detail: {{age_cue}} I would ask what the person wanted, what options were available, and how costs, surroundings, and help from others affected those options. The reviewed critics named unequal access to housing, employment, healthy food, and recreation, and also called for recognizing interdependence. That gives me questions to ask about this memory; it does not establish the cause of this relative's behavior. I would listen to what the person tried as well as the conditions around those efforts. The point is to understand which opportunities or supports might make their own wishes more attainable, without treating the amount of activity as a measure of personal worth.",
+            "answer_ko": "이 단서부터 살펴보겠습니다. {{age_cue}} 그분이 원한 일은 무엇이고 어떤 선택지가 있었는지, 비용과 주변 환경, 다른 사람의 도움이 그 선택에 어떤 영향을 줬는지 묻겠습니다. 고찰 속 비판자들은 주거·고용·건강한 음식·여가에 대한 접근의 불평등을 짚고 상호의존도 인정하자고 했습니다. 이 관점은 기억을 더 살필 질문을 주지만 그분의 행동 원인을 확정해 주지는 않습니다. 그분이 시도한 일과 그 시도를 둘러싼 여건을 함께 듣겠습니다. 활동량으로 사람의 가치를 평가하기보다 본인이 바라는 일을 더 가능하게 할 기회나 지원을 이해하고 싶습니다.",
+            "evidence_segment_id": "SOCIAL-JUSTICE-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-followup-02",
+            "question": "How did the authors put together this body of criticism?",
+            "question_ko": "이런 비판들은 어떤 방법으로 모았나요?",
+            "answer": "This was a qualitative systematic literature review. The authors searched Abstracts in Social Gerontology for peer-reviewed articles published from January 1987 to December 2013 that contained successful aging or ageing in the title or text. The search returned 453 articles; 67 had criticism of successful-aging models as a key component and were included. These encompassed empirical studies, theoretical analyses, and editorials. Initial coding identified criticisms and proposed remedies, and axial coding developed themes and connections. The two authors independently coded a subset of 15 articles, discussed their analyses and shared codes, and also compared how articles were grouped. Categories were distinguished by their recommendations even when their criticisms overlapped. The 67 articles were the review's material, not 67 people recruited for an experiment.",
+            "answer_ko": "질적 체계적 문헌고찰입니다. 저자들은 Abstracts in Social Gerontology에서 1987년 1월부터 2013년 12월까지 출판된 동료심사 논문 중 제목이나 본문에 successful aging 또는 ageing이 있는 자료를 검색했습니다. 검색된 453편 가운데 성공적 노화 모델 비판을 핵심 내용으로 다룬 67편을 포함했고, 경험연구·이론분석·논설이 함께 들어갔습니다. 초기 코딩으로 비판과 개선안을 찾고, 축 코딩으로 주제와 연결을 구성했습니다. 두 저자는 일부인 15편을 독립적으로 코딩한 뒤 분석과 공통 코드를 논의했고, 범주 배치도 비교했습니다. 비판이 겹쳐도 권고하는 해결책에 따라 범주를 나눴습니다. 67편은 분석한 문헌의 수이며 실험에 모집한 사람 수가 아닙니다.",
+            "evidence_segment_id": "METHODS-001"
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-followup-03",
+            "question": "What does this review leave uncertain?",
+            "question_ko": "이 고찰만으로는 무엇을 알기 어렵나요?",
+            "answer": "The search covered one database and English-language articles. The authors explicitly noted that critiques in books, journals outside ASG, medical sociology, anthropology, and other languages could be missing. They selected articles in which criticism was central, so the four categories describe this critical literature rather than the balance of all researchers' opinions about successful aging. The review combined meanings and arguments instead of pooling an intervention effect. It cannot tell us how often a particular judgment harms people or prove that one social barrier caused the relative's experience. It does make the assumptions behind such judgments visible and identifies questions about opportunities, support, and dignity that a closer account should investigate.",
+            "answer_ko": "검색은 한 데이터베이스와 영어 논문에 한정됐습니다. 저자들은 단행본, ASG에 없는 학술지, 의료사회학·인류학 분야, 다른 언어의 비판을 놓쳤을 수 있다고 밝혔습니다. 비판이 핵심인 논문을 골랐으므로 네 범주는 이 비판 문헌의 내용을 보여 주며, 성공적 노화에 대한 전체 연구자의 찬반 분포는 아닙니다. 개입 효과를 합산하기보다 의미와 주장을 종합한 고찰이어서, 특정 평가가 얼마나 자주 해를 주는지나 어떤 사회적 장벽이 이 가족의 경험을 일으켰는지는 확정할 수 없습니다. 다만 그런 평가에 깔린 가정을 드러내고, 경험을 더 자세히 들을 때 기회·지원·존엄에 관해 무엇을 물을지 알려 줍니다.",
+            "evidence_segment_id": "LIMITATIONS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-01",
+            "label": "A class that became harder to afford",
+            "label_ko": "부담이 커진 동네 수업료",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt stopping her visits to a neighborhood class she had enjoyed.",
+                "ko": "이모가 즐겨 다니던 동네 수업에 더는 나가지 않으시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said the higher fee had become difficult to fit into her monthly budget.",
+                "ko": "수업료가 올라 매달 내기에는 생활비가 빠듯하다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought continued participation mainly depended on how motivated someone was.",
+                "ko": "꾸준히 참여하는지는 주로 본인의 의욕에 달렸다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-02",
+            "label": "A difficult route for an evening walk",
+            "label_ko": "걷기 불편했던 동네 길",
+            "values": {
+              "scene": {
+                "en": "I remembered my father saying he had been taking fewer evening walks.",
+                "ko": "아버지가 저녁에 동네를 걷는 일이 줄었다고 말씀하시던 때가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said the poorly lit route and uneven pavement made the walk uncomfortable.",
+                "ko": "길이 어둡고 보도가 울퉁불퉁해서 걷기 불편하다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought anyone could keep walking regularly if they made enough effort.",
+                "ko": "누구나 마음먹고 노력하면 걷는 습관을 계속 지킬 수 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-03",
+            "label": "Stairs at a regular meeting place",
+            "label_ko": "모임 장소 앞의 계단",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother attending her neighborhood gathering less often.",
+                "ko": "할머니가 동네 모임에 나가는 횟수를 줄이시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said she still wanted to see everyone, but the stairs at the venue were difficult for her.",
+                "ko": "사람들은 만나고 싶지만 모임 장소의 계단을 오르기 어렵다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought fewer visits meant she was becoming less willing to stay socially active.",
+                "ko": "모임에 덜 나가면 사람들과 어울리려는 의지도 줄어든 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-04",
+            "label": "Choosing food within a tight budget",
+            "label_ko": "생활비에 맞춰 고른 식재료",
+            "values": {
+              "scene": {
+                "en": "I remembered talking with my mother about the food she bought each week.",
+                "ko": "어머니와 한 주에 장보는 식재료에 관해 이야기했던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She explained that fresh ingredients she wanted were expensive at the shops near home.",
+                "ko": "집 근처 가게에서는 원하는 신선한 식재료가 비싸다고 설명하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought food choices reflected how carefully a person managed their health.",
+                "ko": "무엇을 먹는지는 본인이 건강을 얼마나 잘 관리하느냐의 문제라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-05",
+            "label": "Paid work during a neighborhood outing",
+            "label_ko": "동네 나들이와 겹친 일",
+            "values": {
+              "scene": {
+                "en": "I remembered hearing why my uncle had missed a neighborhood outing.",
+                "ko": "삼촌이 동네 나들이에 함께 가지 못한 이유를 들었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said he had to keep his paid shift that day to cover living expenses.",
+                "ko": "생활비를 마련하려면 그날 임금을 받는 일을 빠지기 어렵다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought making time for an outing simply depended on wanting to join.",
+                "ko": "함께 나갈 시간을 내는 일은 참여하고 싶은 마음에 달렸다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "martinson-berridge-2015-reflection-06-example-06",
+            "label": "Shopping with help from family and neighbors",
+            "label_ko": "도움을 주고받은 장보기",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother telling me that relatives and neighbors sometimes helped with her shopping.",
+                "ko": "할머니가 친척과 이웃의 도움으로 장을 보기도 한다고 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said she chose what she needed, and they shared the task of carrying it home.",
+                "ko": "필요한 물건은 직접 고르고 집까지 나르는 일을 서로 나눴다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought needing help meant someone was no longer managing later life well.",
+                "ko": "도움을 받게 되면 노년의 생활을 스스로 잘 꾸리지 못하는 것이라고 여겼습니다."
+              }
+            }
+          }
+        ]
       }
     ]
   },
-  "language": "en"
+  "language": "en",
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

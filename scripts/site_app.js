@@ -800,10 +800,12 @@ function initProfessorPrep(){
   const stored=storage.get(stateKey,{});
   const saved=stored&&typeof stored==="object"?stored:{};
   const english=root.dataset.prepLanguage==="en";
+  const format=root.dataset.prepFormat||"";
   const tabs=Array.from(root.querySelectorAll("[data-prep-tab]"));
   const panels=Array.from(root.querySelectorAll("[data-prep-panel]"));
   const availableTabKeys=tabs.map((tab)=>tab.dataset.prepTab).filter(Boolean);
-  const initialTab=availableTabKeys.includes(saved.activeTab)?saved.activeTab:(availableTabKeys[0]||"");
+  const defaultTab=availableTabKeys.includes(root.dataset.prepDefaultTab)?root.dataset.prepDefaultTab:(availableTabKeys[0]||"");
+  const initialTab=(!format||saved.format===format)&&availableTabKeys.includes(saved.activeTab)?saved.activeTab:defaultTab;
   const state={
     activeTab:initialTab,
     difficultIds:new Set(Array.isArray(saved.difficultIds)?saved.difficultIds:[])
@@ -826,17 +828,40 @@ function initProfessorPrep(){
     const titleElement=card.querySelector("[data-prep-title]")||card.querySelector("h3, h2");
     const visibleTitle=titleElement?.querySelector("[data-prep-question-language]:not([hidden])");
     const title=(visibleTitle?.textContent||titleElement?.textContent||id).trim();
+    let experienceExamples=[];
+    try{
+      const data=JSON.parse(card.querySelector("[data-prep-experience-data]")?.textContent||"[]");
+      if(Array.isArray(data))experienceExamples=data.filter((example)=>example&&typeof example.id==="string"&&example.values);
+    }catch(error){}
+    const savedExperienceId=saved.experienceIds?.[id];
     return{
       id,
       card,
       titleElement,
       title,
+      experienceExamples,
+      experienceIndex:Math.max(0,experienceExamples.findIndex((example)=>example.id===savedExperienceId)),
+      experienceButton:card.querySelector("[data-prep-experience-next]"),
       difficultButton:card.querySelector("[data-prep-difficult]")
     };
   });
 
   const persist=()=>{
-    return storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds)});
+    const experienceIds=Object.fromEntries(cards.filter((card)=>card.experienceExamples.length).map((card)=>[card.id,card.experienceExamples[card.experienceIndex].id]));
+    return storage.set(stateKey,{activeTab:state.activeTab,difficultIds:Array.from(state.difficultIds),...(format?{format}:{}),...(Object.keys(experienceIds).length?{experienceIds}:{})});
+  };
+
+  const renderExperience=(card)=>{
+    const example=card.experienceExamples[card.experienceIndex];
+    if(!example)return;
+    card.card.querySelectorAll("[data-prep-experience-slot]").forEach((slot)=>{
+      const value=example.values[slot.dataset.prepExperienceSlot]?.[slot.dataset.prepExperienceLanguage];
+      if(typeof value==="string")slot.textContent=value;
+    });
+    const counter=card.card.querySelector("[data-prep-experience-counter]");
+    if(counter)counter.textContent=`${card.experienceIndex+1} / ${card.experienceExamples.length}`;
+    const label=card.card.querySelector("[data-prep-experience-label]");
+    if(label){label.textContent=languages.answerLanguage==="en"?example.label:example.label_ko;label.lang=languages.answerLanguage;}
   };
 
   const activateTab=(key,options={})=>{
@@ -879,6 +904,8 @@ function initProfessorPrep(){
     const panel=target?.closest("[data-prep-panel]");
     if(!panel)return false;
     activateTab(panel.dataset.prepPanel,{persist:false});
+    let detail=target.closest("details");
+    while(detail){detail.open=true;detail=detail.parentElement?.closest("details");}
     return true;
   };
 
@@ -887,7 +914,7 @@ function initProfessorPrep(){
       const active=state.difficultIds.has(card.id);
       card.card.classList.toggle("is-difficult",active);
       if(card.difficultButton){
-        card.difficultButton.textContent=english?(active?"Marked":"Mark for review"):(active?UI_TEXT.prepDifficultActive:UI_TEXT.prepDifficult);
+        card.difficultButton.textContent=format?(active?"표시됨":"연습 표시"):english?(active?"Marked":"Mark for review"):(active?UI_TEXT.prepDifficultActive:UI_TEXT.prepDifficult);
         card.difficultButton.classList.toggle("is-active",active);
         card.difficultButton.setAttribute("aria-pressed",String(active));
       }
@@ -905,6 +932,11 @@ function initProfessorPrep(){
     if(questionSelect){
       questionSelect.value=languages.questionLanguage;
       root.dataset.prepQuestionLanguage=languages.questionLanguage;
+      root.querySelectorAll("[data-prep-question-language]").forEach((variant)=>{
+        variant.hidden=variant.dataset.prepQuestionLanguage!==languages.questionLanguage;
+        variant.lang=variant.dataset.prepQuestionLanguage;
+        variant.parentElement.lang=languages.questionLanguage;
+      });
       cards.forEach((card)=>{
         const variants=Array.from(card.titleElement?.querySelectorAll("[data-prep-question-language]")||[]);
         if(!variants.length)return;
@@ -923,14 +955,17 @@ function initProfessorPrep(){
       root.querySelectorAll("[data-prep-answer-language]").forEach((variant)=>{
         variant.hidden=variant.dataset.prepAnswerLanguage!==languages.answerLanguage;
         variant.lang=variant.dataset.prepAnswerLanguage;
-        const copy=variant.closest(".prep-answer-copy");
+        const copy=variant.closest(".prep-answer-copy, .prep-followup-copy, .prep-experience-prompt");
         if(copy)copy.lang=languages.answerLanguage;
       });
       root.querySelectorAll("[data-prep-answer-label]").forEach((label)=>{
-        label.textContent=languages.answerLanguage==="ko"?"30초 답변":"30-second answer";
+        const first=label.dataset.prepAnswerLabel==="first";
+        const experience=label.closest('[data-entry-type="experience"]');
+        label.textContent=first?(languages.answerLanguage==="ko"?(experience?"가상 경험으로 말하기":"첫 답변"):(experience?"Practice with an example":"Opening answer")):(languages.answerLanguage==="ko"?"30초 답변":"30-second answer");
         label.lang=languages.answerLanguage;
       });
     }
+    cards.forEach(renderExperience);
     renderDifficult();
   };
 
@@ -944,6 +979,15 @@ function initProfessorPrep(){
   });
 
   cards.forEach((card)=>{
+    if(card.experienceButton){
+      card.experienceButton.disabled=card.experienceExamples.length<2;
+      card.experienceButton.addEventListener("click",()=>{
+        if(card.experienceExamples.length<2)return;
+        card.experienceIndex=(card.experienceIndex+1)%card.experienceExamples.length;
+        renderExperience(card);
+        persist();
+      });
+    }
     if(card.difficultButton){
       card.difficultButton.addEventListener("click",()=>{
         if(state.difficultIds.has(card.id))state.difficultIds.delete(card.id);

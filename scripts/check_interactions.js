@@ -79,21 +79,24 @@ function checkProfessorPrep(reading, errors) {
   const source = readJson(path.join(ROOT_DIR, reading.content_dir, "professor_prep.json"));
   const html = readText(path.join(ROOT_DIR, "docs", "readings", reading.slug, "professor-prep.html"));
   const prefix = `${reading.slug}/professor-prep`;
-  const expectedTabs=html.includes("data-weekly-root")?3:2;
+  const reflection = source.practice_format === "reflection-followups-v1";
+  const expectedTabs=(reflection ? 1 : 2) + (html.includes("data-weekly-root") ? 1 : 0);
   expect(count(html, /\bdata-prep-tab=/g) === expectedTabs, `${prefix}: prep tabs must include the available weekly practice`, errors);
   expect(count(html, /\bdata-prep-panel=/g) === expectedTabs, `${prefix}: each prep tab needs its own panel`, errors);
-  expect(count(html, /\bdata-prep-card(?:\s|>)/g) === source.cards.length + source.reading_response.cards.length, `${prefix}: prep card count mismatch`, errors);
-  const expectedCards = source.cards.length + source.reading_response.cards.length;
-  expect(html.includes(source.language === "en" ? "Reading response" : "어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
+  const expectedCards = (reflection ? 0 : source.cards.length) + source.reading_response.cards.length;
+  expect(count(html, /\bdata-prep-card(?:\s|>)/g) === expectedCards, `${prefix}: prep card count mismatch`, errors);
+  const expectedFollowups = reflection ? source.reading_response.cards.reduce((sum, card) => sum + card.followups.length, 0) : 0;
+  const expectedExperiences = reflection ? source.reading_response.cards.filter((card) => card.entry_type === "experience").length : 0;
+  expect(html.includes(reflection ? "이 읽기 답변 준비" : source.language === "en" ? "Reading response" : "어떻게 읽었나요?"), `${prefix}: reading-response tab label is missing`, errors);
   expect(!/<textarea\b|\bdata-prep-(?:practice|model)\b/.test(html), `${prefix}: removed response inputs or model-answer disclosures remain`, errors);
   expect(count(html, /<section\b[^>]*\bdata-prep-answer(?:\s|>)/g) === expectedCards, `${prefix}: each card needs an immediately displayed answer section`, errors);
   expect(count(html, /<h4\b[^>]*class="[^"]*\bprep-answer-label\b[^"]*"[^>]*>[^<]+<\/h4>/g) === expectedCards, `${prefix}: each answer needs a visible label`, errors);
   expect(count(html, /class="prep-answer-copy"/g) === expectedCards, `${prefix}: model answer count mismatch`, errors);
-  expect(count(html, /class="quiz-evidence-detail"/g) === expectedCards, `${prefix}: answer evidence disclosures must remain available`, errors);
+  expect(count(html, /class="quiz-evidence-detail"/g) === expectedCards + expectedFollowups, `${prefix}: answer evidence disclosures must remain available`, errors);
   if (source.language === "en") {
     expect(html.includes('data-prep-language="en"'), `${prefix}: English workspace marker missing`, errors);
   }
-  const cards = [...source.cards, ...source.reading_response.cards];
+  const cards = [...(reflection ? [] : source.cards), ...source.reading_response.cards];
   const bilingual = source.language === "en" && cards.every((card) => card.title_ko && card.answer_30s_ko);
   if (bilingual) {
     for (const control of ["question", "answer"]) {
@@ -102,13 +105,57 @@ function checkProfessorPrep(reading, errors) {
       expect(selects[0] && count(selects[0][1], /<option\b[^>]*value="(?:en|ko)"/g) === 2, `${prefix}: ${control} selector must offer English and Korean`, errors);
       for (const language of ["en", "ko"]) {
         const spans = [...html.matchAll(new RegExp(`<span\\b[^>]*\\bdata-prep-${control}-language="${language}"[^>]*>`, "g"))];
-        expect(spans.length === expectedCards, `${prefix}: ${language} ${control} variant count mismatch`, errors);
+        const expectedVariants = expectedCards + expectedFollowups + (reflection ? control === "question" ? source.reading_response.cards.length : expectedExperiences : 0);
+        expect(spans.length === expectedVariants, `${prefix}: ${language} ${control} variant count mismatch`, errors);
         expect(spans.every(([tag]) => tag.includes(`lang="${language}"`)), `${prefix}: ${control} variants need matching lang attributes`, errors);
         expect(spans.every(([tag]) => /\bhidden(?:\s|>|=)/.test(tag) === (language === "en")), `${prefix}: ${control} variants must default to Korean visible and English hidden`, errors);
       }
     }
   } else {
     expect(!/\bdata-prep-(?:question|answer)-select\b/.test(html), `${prefix}: legacy prep must retain its single-language fallback`, errors);
+  }
+  if (reflection) {
+    const { JSDOM } = require("jsdom");
+    const dom = new JSDOM(html);
+    const document = dom.window.document;
+    const root = document.querySelector("[data-prep-root]");
+    expect(root?.dataset.prepFormat === source.practice_format && root?.dataset.prepDefaultTab === "reading-response", `${prefix}: reflection format and default tab markers are required`, errors);
+    expect(!document.querySelector('[data-prep-tab="cold-call"], [data-prep-panel="cold-call"]'), `${prefix}: reflection practice must omit the cold-call tab and panel`, errors);
+    const tabs = [...document.querySelectorAll("[data-prep-tab]")];
+    const firstLabel = tabs[0]?.cloneNode(true);
+    firstLabel?.querySelectorAll(".prep-tab-count").forEach((node) => node.remove());
+    expect(tabs[0]?.dataset.prepTab === "reading-response" && firstLabel?.textContent.trim() === "이 읽기 답변 준비", `${prefix}: the first tab must be 이 읽기 답변 준비`, errors);
+    expect(tabs.map((tab) => tab.dataset.prepTab).join("|") === (document.querySelector("[data-weekly-root]") ? "reading-response|weekly" : "reading-response"), `${prefix}: only reading preparation and available weekly connection tabs may be shown`, errors);
+    const activeTabs = [...document.querySelectorAll('[data-prep-tab][aria-selected="true"]')];
+    expect(activeTabs.length === 1 && activeTabs[0].dataset.prepTab === "reading-response", `${prefix}: reflection practice must initially select reading-response`, errors);
+    const activePanels = [...document.querySelectorAll("[data-prep-panel]")].filter((panel) => !panel.hidden);
+    expect(activePanels.length === 1 && activePanels[0].dataset.prepPanel === "reading-response", `${prefix}: the initial panel must match the selected tab`, errors);
+    const reflectionCards = [...document.querySelectorAll("article.prep-reflection-card")];
+    expect(reflectionCards.length === source.reading_response.cards.length, `${prefix}: reflection card count mismatch`, errors);
+    const ids = [...document.querySelectorAll("[id]")].map((node) => node.id);
+    expect(new Set(ids).size === ids.length, `${prefix}: followup and card IDs must remain unique`, errors);
+    source.reading_response.cards.forEach((card) => {
+      const node = reflectionCards.find((candidate) => candidate.dataset.cardId === card.card_id);
+      expect(node?.dataset.entryType === card.entry_type, `${prefix}: ${card.card_id} entry type differs`, errors);
+      const first = node?.querySelector("section.prep-reflection-first-answer[data-prep-answer]");
+      expect(first && !first.hidden && !first.closest("details"), `${prefix}: ${card.card_id} first answer must be visible in its panel`, errors);
+      const prompts = node?.querySelectorAll(".prep-experience-prompt") || [];
+      expect(prompts.length === (card.entry_type === "experience" ? 1 : 0), `${prefix}: ${card.card_id} experience guidance differs`, errors);
+      if (card.entry_type === "experience") {
+        const next = node?.querySelector("button[data-prep-experience-next]");
+        expect(next && next.type === "button" && !next.disabled && next.textContent.includes("경험 바꾸기"), `${prefix}: ${card.card_id} needs an enabled experience switch`, errors);
+        expect(node?.querySelectorAll('[type="application/json"][data-prep-experience-data]').length === 1, `${prefix}: ${card.card_id} needs one experience data block`, errors);
+        const copy = node?.cloneNode(true);
+        copy?.querySelectorAll("script").forEach((script) => script.remove());
+        expect(copy?.textContent.includes("가상 경험 예시"), `${prefix}: ${card.card_id} examples must be identified as hypothetical`, errors);
+        expect(!/\{\{|\}\}/.test(copy?.textContent || ""), `${prefix}: ${card.card_id} must not display unresolved slots`, errors);
+      }
+      const group = node?.querySelector("details.prep-followups");
+      const followups = [...(group?.querySelectorAll("details.prep-followup") || [])];
+      expect(group && group.open && followups.length === card.followups.length, `${prefix}: ${card.card_id} needs one initially open followup group`, errors);
+      expect(followups.every((detail) => !detail.open && detail.querySelector("summary") && detail.querySelector(".prep-followup-answer .quiz-evidence-detail")), `${prefix}: ${card.card_id} followups need closed answers and expandable source passages`, errors);
+    });
+    dom.window.close();
   }
 }
 

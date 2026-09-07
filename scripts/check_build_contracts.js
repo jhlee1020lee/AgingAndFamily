@@ -45,7 +45,8 @@ try {
   writeJson(comicPath, comic);
   const prepPath = path.join(firstContent, "professor_prep.json");
   const prep = readJson(prepPath);
-  prep.cards[0].answer_30s += " ResponseDraftBoundaryProbe.";
+  const visiblePrepCards = prep.practice_format === "reflection-followups-v1" ? prep.reading_response.cards : prep.cards;
+  visiblePrepCards[0].answer_30s += " ResponseDraftBoundaryProbe.";
   writeJson(prepPath, prep);
 
   run(["scripts/build_site.js"]);
@@ -201,7 +202,7 @@ try {
   };
   writeJson(reviewPath,weeklyReview);
   run(["scripts/build_site.js","--home-only"]);
-  verify("home-only builds add a reviewed third tab to both existing preparation pages",()=>assertWeeklyTabs(true));
+  verify("home-only builds add a reviewed weekly tab to both existing preparation pages",()=>assertWeeklyTabs(true));
   writeJson(reviewPath,{...weeklyReview,status:"pending"});
   run(["scripts/build_site.js","--home-only"]);
   verify("withdrawing a weekly review removes both tabs and the standalone page",()=>assertWeeklyTabs(false));

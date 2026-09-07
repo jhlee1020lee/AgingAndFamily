@@ -75,8 +75,8 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep",
-      "full"
+      "full",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:511bcd8c20a2c38ba5dcba3df0c47ce105d3b617e2f985e97dacc9d3a29fda46",
@@ -88,11 +88,11 @@
       "quiz-ox": "v2:c76bbd456afaebe0be1fb541a4db15e256a96160717ac37a065067c50b201bd5",
       "quiz-short": "v2:6757cc88662e043bf5ba33e1fbac95cdc2a17aab77d48b807debb6d25f2293aa",
       "quiz-mcq": "v2:b4ce4292465ff869d161a71cb1ba85c74db6ef8c264f184f87c62972f662b599",
-      "professor-prep": "v2:4cd7948fa8622764eac26ba4050dfcd8f18e3ccf97e88a3e676624d8009a46e1",
-      "full": "v2:8fc337248d36c2e2400b4cdcf274cac022c4344693749c415876b136a3aae814"
+      "full": "v2:8fc337248d36c2e2400b4cdcf274cac022c4344693749c415876b136a3aae814",
+      "professor-prep": "v2:29a606395b54d49fda2f01f1c8e25bdbcacf851d6d9aff56418eb6d86e04bee8"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:55:09.878Z",
+    "reviewed_at": "2026-09-06T12:08:14.938Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent correction audit PASS: Critical 0, Major 0, Minor 0; 66/66 single-segment evidence, quiz separation, schema, strict alignment, isolated render, links, reveals, privacy and no-chatbot verified.",
@@ -102,12 +102,13 @@
       "Rendered professor-prep output rechecked after rebuild; revised reading-response cards approved.",
       "English learning materials reviewed against stored source segments and retained tables; source and translation preserved; composite dependencies reviewed. Cross-sectional group comparisons, self-report, model samples, total and unique variance distinguished. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed.",
+      "Independently reviewed current source and Table 3, all bilingual reflections and eighteen examples: opposing age-group associations, self-report measures, unique versus total variance, nonsignificance and interaction limits, cross-sectional inference."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:56:23.777Z",
+    "updated_at": "2026-09-06T12:08:22.294Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -239,7 +240,12 @@
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {
@@ -402,13 +408,18 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:4cd7948fa8622764eac26ba4050dfcd8f18e3ccf97e88a3e676624d8009a46e1",
+        "source_hash": "v2:29a606395b54d49fda2f01f1c8e25bdbcacf851d6d9aff56418eb6d86e04bee8",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {

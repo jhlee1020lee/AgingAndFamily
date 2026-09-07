@@ -170,70 +170,600 @@
     }
   ],
   "reading_response": {
-    "title": "Preparing Your Response to the Reading",
-    "instructions": "Choose a response angle that reflects your own reading. Explain what stood out, why it mattered, what supports it, and what remains uncertain.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "settersten-reading-01",
-        "title": "Give a concise overall response to the reading.",
-        "answer_30s": "I read the chapter as showing that age has different meanings at different analytical levels. Chronological age may be a proxy for the processes behind individual change, yet age organizes powerful social rules and opportunities. I took away the need to explain why age matters, rather than automatically using it as either a control or an explanation.",
+        "entry_type": "reading",
+        "topic": "Age as an indicator and a social rule",
+        "topic_ko": "설명 변수와 사회적 기준",
+        "title": "What did you find interesting about the chapter's two uses of age?",
+        "title_ko": "이 글이 나이를 두 가지 수준에서 다룬다는 점에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that age can explain too little about a person while doing a great deal in society. A birthday does not tell us which process changed someone's abilities, yet age rules can determine access to roles and resources. That distinction made me ask two separate questions: what does age represent, and what does using age actually do?",
+        "answer_30s_ko": "나이가 한 사람을 설명하는 데는 부족할 수 있지만, 사회에서는 아주 많은 일을 한다는 점이 흥미로웠습니다. 생일이 지났다는 사실만으로 능력이 달라진 과정을 알 수는 없지만, 나이 기준은 역할과 자원에 접근할 수 있는지를 정하기도 합니다. 그래서 나이가 무엇을 대신 나타내는지와, 나이를 기준으로 삼으면 실제로 어떤 일이 생기는지를 나누어 묻게 됐습니다.",
         "evidence_segment_id": "INTRO-001",
-        "response_angle": "overall",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "이 읽기 자료에 대한 전반적인 생각을 간단히 말해 보세요.",
-        "answer_30s_ko": "저는 이 장이 분석 수준에 따라 연령의 의미가 달라진다는 점을 보여 준다고 읽었습니다. 역연령은 개인의 변화 이면에 있는 과정을 대신 나타내는 지표일 수 있지만, 연령은 강력한 사회적 규칙과 기회를 조직하기도 합니다. 연령을 자동으로 통제변수나 설명으로 사용하기보다 왜 연령이 중요한지 설명해야 한다는 점을 배웠습니다."
+        "response_angle": "individual-proxy-and-social-organization",
+        "followups": [
+          {
+            "question": "What would you measure instead of just someone's age?",
+            "question_ko": "그렇다면 나이만 확인하는 대신 무엇을 측정하겠나요?",
+            "answer": "It depends on what I want to explain. For difficulty with everyday tasks, I would examine functional ability and the demands of the task. If age is standing in for experience or social responsibilities, I would measure those. The chapter asks us to identify the process behind the age indicator, not to replace age with one universal alternative.",
+            "answer_ko": "무엇을 설명하려는지에 따라 다릅니다. 일상 과제의 어려움이라면 기능적 능력과 과제가 요구하는 것을 살펴보겠습니다. 나이가 경험이나 사회적 책임을 대신 나타낸다면 그것을 직접 측정하겠습니다. 이 글의 요구는 나이를 하나의 만능 변수로 대체하라는 것이 아니라, 나이 지표 뒤에 있는 과정을 밝히라는 것입니다.",
+            "evidence_segment_id": "INDIVIDUAL-001",
+            "id": "settersten-godlewski-2016-reflection-01-followup-01"
+          },
+          {
+            "question": "If older and younger groups differ, isn't that already evidence of aging?",
+            "question_ko": "나이 든 집단과 젊은 집단이 다르면 이미 노화의 근거가 되는 것 아닌가요?",
+            "answer": "It shows an age-group difference, but does not by itself show how individuals change as they age. The groups may have experienced different historical conditions. The authors warn against turning cross-sectional groups into an artificial growth curve. I would specify the proposed process and choose evidence that can distinguish developmental change from competing historical explanations.",
+            "answer_ko": "연령집단 사이의 차이를 보여 주지만, 그것만으로 개인이 나이 들면서 어떻게 변하는지 알 수는 없습니다. 두 집단이 서로 다른 역사적 조건을 겪었을 수 있습니다. 저자들은 횡단면 집단들을 이어 인위적인 성장곡선처럼 해석하는 것을 경계합니다. 어떤 과정을 생각하는지 먼저 밝히고, 발달적 변화와 역사적 조건에 의한 설명을 구분할 수 있는 근거를 찾겠습니다.",
+            "evidence_segment_id": "CONCLUSION-001",
+            "id": "settersten-godlewski-2016-reflection-01-followup-02"
+          },
+          {
+            "question": "Did the authors test how social age rules change individual aging?",
+            "question_ko": "저자들이 사회의 나이 규칙이 개인의 노화를 바꾸는 과정을 직접 검증했나요?",
+            "answer": "This is a conceptual chapter that organizes theories and selected research, rather than one study testing an integrated causal model. It argues that individual and social levels need to be connected. To investigate such a connection, I would need evidence about the particular rule, the opportunities it changes, and the individual process involved; that is a research proposal, not this chapter's demonstrated result.",
+            "answer_ko": "이 글은 통합된 인과모형을 한 연구에서 검증한 것이 아니라, 이론과 선별한 연구를 정리한 개념적 논의입니다. 개인 수준과 사회 수준을 연결해야 한다고 주장합니다. 그 연결을 조사한다면 어떤 규칙이 어떤 기회를 바꾸고, 그것이 개인의 어떤 과정과 관련되는지 근거가 필요합니다. 이는 제가 제안하는 연구 방향이지, 이 장에서 입증한 결과는 아닙니다.",
+            "evidence_segment_id": "INTRO-001",
+            "id": "settersten-godlewski-2016-reflection-01-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-01",
+        "style_basis": "reading-grounded-reflection"
       },
       {
-        "card_id": "settersten-reading-02",
-        "title": "What was new in the chapter's account of time?",
-        "answer_30s": "I began to see age as time experienced through relationships and events, not only years since birth. The examples of time to a daughter's graduation, years in a professional role, and intervals between births show how reference points change its meaning. I would now ask how people connect their present to particular pasts and anticipated futures.",
-        "evidence_segment_id": "RELATIVE-TIME-001",
-        "response_angle": "surprise",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "이 장에서 시간을 설명한 방식 중 무엇이 새로웠나요?",
-        "answer_30s_ko": "저는 연령을 출생 이후 흐른 연수만이 아니라 관계와 사건을 통해 경험하는 시간으로 보기 시작했습니다. 딸이 졸업할 때까지 남은 시간, 특정 직업 역할을 맡은 기간, 출산 사이의 간격이라는 예시는 기준점에 따라 시간의 의미가 달라진다는 점을 보여 줍니다. 이제는 사람들이 현재를 특정한 과거와 예상하는 미래에 어떻게 연결하는지 묻고 싶습니다."
+        "entry_type": "reading",
+        "topic": "What an age label leaves out",
+        "topic_ko": "같은 연령 범주 안의 차이",
+        "title": "Which distinction changed how you think about the category 'older people'?",
+        "title_ko": "‘노인’이라는 범주를 생각하는 방식을 바꾼 구분이 있었나요?",
+        "answer_30s": "I was surprised that the original young-old and old-old distinction concerned health, resources, and activity regardless of chronological age. I had expected two numerical age bands. The chapter made the distinction interesting as a warning: a label intended to reveal diversity can hide it when we turn it into a fixed birthday cutoff. I would first ask what the category is supposed to describe.",
+        "answer_30s_ko": "전기노인과 후기노인의 원래 구분이 역연령과 관계없이 건강, 자원, 활동을 중심으로 했다는 점이 의외였습니다. 저는 두 개의 숫자 구간을 떠올렸습니다. 다양성을 드러내려던 구분도 특정 생일을 기준으로 고정하면 오히려 차이를 가릴 수 있다는 경고로 읽혀 흥미로웠습니다. 그래서 그 범주로 무엇을 설명하려는지부터 물어보고 싶습니다.",
+        "evidence_segment_id": "LIFE-PHASES-001",
+        "response_angle": "age-categories-and-within-group-diversity",
+        "followups": [
+          {
+            "question": "Does that mean age categories have no practical use?",
+            "question_ko": "그렇다면 연령 범주는 실용적인 쓸모가 없다는 뜻인가요?",
+            "answer": "No. Chronological categories can help administer programs, but they should not be mistaken for a complete description of people's circumstances. The chapter criticizes fixed age bands when they obscure the health, resources, and activity the original distinction addressed. My application would be to assess those dimensions alongside any administrative age category.",
+            "answer_ko": "그렇지는 않습니다. 역연령 범주는 제도를 운영하는 데 도움이 되지만, 사람들의 처지를 온전히 설명한다고 받아들여서는 안 됩니다. 이 글은 고정된 나이 구간이 원래 구분하려던 건강, 자원, 활동의 차이를 가리는 문제를 지적합니다. 저는 행정상 연령 범주를 쓰더라도 그 차원들을 함께 살펴보는 방식으로 적용하겠습니다.",
+            "evidence_segment_id": "LIFE-PHASES-001",
+            "id": "settersten-godlewski-2016-reflection-02-followup-01"
+          },
+          {
+            "question": "Would asking how old someone feels solve the problem?",
+            "question_ko": "자신을 몇 살처럼 느끼는지 물으면 그 문제가 해결될까요?",
+            "answer": "That adds an important dimension, but feeling age is not the same as functional ability or material resources. The chapter also distinguishes felt, desired, perceived, and other aspects of subjective age. These judgments involve comparisons with one's earlier self and with other people. I would ask which aspect I am measuring rather than treat one subjective number as a complete replacement.",
+            "answer_ko": "중요한 차원을 더할 수 있지만, 느끼는 나이가 기능적 능력이나 물질적 자원과 같은 것은 아닙니다. 이 글은 느끼는 나이, 원하는 나이, 남에게 인식되는 나이 등 주관적 연령의 여러 측면도 구분합니다. 이런 판단에는 과거의 자신이나 다른 사람과의 비교가 들어갑니다. 주관적인 숫자 하나로 전부 대체하기보다 어떤 측면을 측정하는지 확인하겠습니다.",
+            "evidence_segment_id": "SUBJECTIVE-AGE-001",
+            "id": "settersten-godlewski-2016-reflection-02-followup-02"
+          },
+          {
+            "question": "Can we assume an age label has the same meaning across cultures?",
+            "question_ko": "같은 연령 범주라면 문화가 달라도 의미가 같다고 봐도 되나요?",
+            "answer": "The chapter's account of Project AGE suggests otherwise. Across seven cultural contexts, researchers examined how age categories were understood, evaluated, and used in social participation. Old age was the least desirable period in all seven, yet evaluations and boundaries between age groups varied. That finding supports investigating cultural meanings; it does not make those seven settings representative of every culture.",
+            "answer_ko": "이 장이 소개하는 Project AGE를 보면 그렇게 가정하기 어렵습니다. 연구자들은 일곱 문화적 맥락에서 연령 범주를 어떻게 이해하고 평가하며 사회참여에 사용하는지 살펴봤습니다. 일곱 곳 모두 노년기가 가장 선호하지 않는 시기였지만, 평가와 연령집단 사이의 경계는 달랐습니다. 이는 문화적 의미를 조사할 필요를 뒷받침하며, 일곱 곳이 모든 문화를 대표한다는 뜻은 아닙니다.",
+            "evidence_segment_id": "GENDER-CULTURE-002",
+            "id": "settersten-godlewski-2016-reflection-02-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-02",
+        "style_basis": "reading-grounded-reflection"
       },
       {
-        "card_id": "settersten-reading-03",
-        "title": "How did the reading change your previous view?",
-        "answer_30s": "I had thought of age as a fairly neutral way to classify people. The chapter's discussion of rights and eligibility showed how states actively use and create age categories that organize opportunities. My changed view is that a convenient measurement can also become a consequential social rule, and those two uses deserve separate scrutiny.",
-        "evidence_segment_id": "AGE-RIGHTS-001",
-        "response_angle": "changed-view",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "이 글을 읽고 이전의 생각이 어떻게 달라졌나요?",
-        "answer_30s_ko": "저는 연령을 사람들을 분류하는 비교적 중립적인 기준으로 생각했습니다. 이 장의 권리와 자격에 관한 논의는 국가가 기회를 조직하는 연령 범주를 적극적으로 활용하고 만들어 낸다는 점을 보여 주었습니다. 편리한 측정 기준이 중요한 영향을 미치는 사회적 규칙이 될 수도 있으며, 이 두 가지 쓰임을 각각 검토해야 한다는 쪽으로 생각이 바뀌었습니다."
+        "entry_type": "reading",
+        "topic": "The limits of positive aging images",
+        "topic_ko": "긍정적 노화 이미지의 한계",
+        "title": "What made the discussion of positive stereotypes worth thinking about?",
+        "title_ko": "긍정적 고정관념에 관한 논의에서 생각해 볼 만했던 점은 무엇인가요?",
+        "answer_30s": "I found the warning about overly positive images interesting because I had assumed that reversing a negative image was enough. Images of wise, active older people can offer social advantages, but they can also become standards that many people cannot meet. The issue is therefore not simply whether an image sounds encouraging, but whose circumstances it recognizes and whose it leaves out.",
+        "answer_30s_ko": "부정적인 이미지를 뒤집으면 충분하다고 생각했기 때문에 지나치게 긍정적인 이미지에 대한 경고가 흥미로웠습니다. 지혜롭고 활동적인 노인이라는 이미지는 사회적 이점을 줄 수 있지만, 많은 사람이 충족하지 못하는 기준이 될 수도 있습니다. 그래서 듣기에 격려가 되는지만이 아니라 누구의 처지를 인정하고 누구를 빠뜨리는지도 살펴봐야겠다고 생각했습니다.",
+        "evidence_segment_id": "AGEISM-002",
+        "response_angle": "positive-images-and-unattainable-standards",
+        "followups": [
+          {
+            "question": "Are you saying we should stop presenting positive examples of aging?",
+            "question_ko": "그러면 노화의 긍정적인 사례를 보여 주지 말아야 한다는 건가요?",
+            "answer": "No. The chapter explicitly recognizes that positive stereotypes can bring advantages. The concern is treating one favorable image as a standard everyone should meet. I would present an active older person's life as one possibility while also recognizing people with illness or fewer resources, rather than imply that they have failed to age properly.",
+            "answer_ko": "아닙니다. 이 글도 긍정적 고정관념이 이점을 줄 수 있다고 분명히 인정합니다. 문제는 하나의 좋은 이미지를 모두가 따라야 할 기준으로 만드는 것입니다. 저는 활동적인 노인의 삶을 하나의 가능성으로 소개하되, 질병이 있거나 자원이 부족한 사람도 인정하겠습니다. 그들이 제대로 나이 들지 못했다고 암시하지 않는 방식입니다.",
+            "evidence_segment_id": "AGEISM-002",
+            "id": "settersten-godlewski-2016-reflection-03-followup-01"
+          },
+          {
+            "question": "Why wouldn't changing a negative stereotype into its opposite have the opposite effect?",
+            "question_ko": "부정적인 고정관념을 정반대로 바꾸면 효과도 반대가 되는 것 아닌가요?",
+            "answer": "The authors caution that positive and negative stereotypes may have different sources, mechanisms, and consequences. We cannot assume that they operate as mirror images or that a favorable message produces an equal benefit. That is a reason to study what a particular message does in a particular setting, rather than infer its effect from its positive wording.",
+            "answer_ko": "저자들은 긍정적 고정관념과 부정적 고정관념의 발생 원천, 작동 기제, 결과가 다를 수 있다고 경고합니다. 거울상처럼 작동하거나 좋은 메시지가 같은 크기의 이익을 낸다고 가정할 수는 없습니다. 긍정적인 문구라는 이유로 효과를 추정하기보다, 특정한 상황에서 그 메시지가 어떤 일을 하는지 조사해야 하는 이유입니다.",
+            "evidence_segment_id": "AGEISM-002",
+            "id": "settersten-godlewski-2016-reflection-03-followup-02"
+          },
+          {
+            "question": "How does that concern connect to the chapter's wider argument about society?",
+            "question_ko": "그 우려가 사회에 관한 이 글의 더 큰 주장과는 어떻게 연결되나요?",
+            "answer": "The conclusion argues that celebrating the potential of aging can divert attention from social problems and create pressure to defy age. My reading is that changing an image should not replace examining institutions, resources, and unequal circumstances. Respectful representation matters, but it does not by itself show that the conditions shaping people's aging have improved.",
+            "answer_ko": "결론은 노화의 가능성을 칭찬하는 일이 사회문제에 대한 관심을 줄이고 나이에 맞서야 한다는 압력을 만들 수 있다고 지적합니다. 저는 이미지를 바꾸는 일이 제도, 자원, 불평등한 처지를 살피는 일을 대신해서는 안 된다는 뜻으로 읽었습니다. 존중하는 표현은 중요하지만, 그것만으로 사람들의 노화를 형성하는 조건까지 나아졌다고 볼 수는 없습니다.",
+            "evidence_segment_id": "CONCLUSION-002",
+            "id": "settersten-godlewski-2016-reflection-03-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-03",
+        "style_basis": "reading-grounded-reflection"
       },
       {
-        "card_id": "settersten-reading-04",
-        "title": "How did you interpret a normal life timetable?",
-        "answer_30s": "I read expected ages for leaving home, employment, partnership, parenthood, or retirement as social norms rather than simply natural schedules. These expectations can provide order while also producing sanctions against people whose transitions occur early, late, or not at all. The chapter made me more attentive to institutions and social judgments when interpreting individual timing.",
+        "entry_type": "experience",
+        "topic": "Feeling on time or off time",
+        "topic_ko": "‘그 나이에는’이라는 시간표",
+        "title": "What everyday scene helps you explain an age norm?",
+        "title_ko": "연령 규범을 어떤 일상 장면과 연결해 설명해 볼 수 있나요?",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} The chapter made this interesting as an age norm: an expected timetable can shape how we judge another person's life. I would now separate the person's actual circumstances from the idea that a transition must happen at a particular age.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 글을 읽으니 기대되는 시간표가 다른 사람의 삶을 평가하는 기준이 된다는 점에서 연령 규범의 사례로 흥미로웠습니다. 이제는 당사자의 실제 처지와 특정 나이에 어떤 전환을 해야 한다는 생각을 나누어 보겠습니다.",
         "evidence_segment_id": "ROLE-TIMING-001",
-        "response_angle": "example",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "‘정상적인’ 생애 시간표를 어떻게 해석했나요?",
-        "answer_30s_ko": "저는 집을 떠나고, 취업하고, 파트너 관계를 맺고, 부모가 되고, 은퇴할 것으로 기대되는 나이를 단순히 자연적인 일정이 아니라 사회적 규범으로 읽었습니다. 이러한 기대는 질서를 제공할 수 있지만, 전환을 일찍 또는 늦게 겪거나 아예 겪지 않는 사람들에게 제재를 가할 수도 있습니다. 이 장을 읽고 개인이 전환을 겪는 시기를 해석할 때 제도와 사회적 판단에 더 주의를 기울이게 되었습니다."
+        "response_angle": "age-norms-and-transition-timing",
+        "followups": [
+          {
+            "question": "What makes that remark an age norm rather than ordinary advice?",
+            "question_ko": "그 말이 평범한 조언을 넘어 연령 규범이라고 볼 수 있는 이유는 뭔가요?",
+            "answer": "The age-linked expectation appears here: {{age_cue}} It connects a role or transition to when a person is supposed to reach it. That matches the chapter's account of prescriptions about timing. I would still need the context and the person's response before saying that the remark produced pressure or changed a decision.",
+            "answer_ko": "나이에 따른 기대가 드러나는 대목은 이 말입니다. {{age_cue}} 어떤 역할이나 전환을 마땅히 도달해야 하는 시기와 연결합니다. 이는 전환 시기에 관한 규범이라는 이 글의 설명에 맞습니다. 다만 그 말이 압박을 주거나 결정을 바꿨다고 하려면 대화의 맥락과 당사자의 반응을 더 확인해야 합니다.",
+            "evidence_segment_id": "ROLE-TIMING-001",
+            "id": "settersten-godlewski-2016-reflection-04-followup-01"
+          },
+          {
+            "question": "Would removing all expectations about timing make life easier?",
+            "question_ko": "그러면 시기에 관한 기대를 모두 없애는 편이 더 편할까요?",
+            "answer": "Not necessarily. Age norms can provide order and predictability, helping people anticipate transitions. They can also make someone feel late or expose them to disapproval. I would distinguish useful preparation from a rigid deadline, and ask whether the expectation still fits the person's options instead of assuming that every shared timetable is harmful.",
+            "answer_ko": "반드시 그렇지는 않습니다. 연령 규범은 질서와 예측 가능성을 제공하여 전환을 미리 준비하게 할 수 있습니다. 동시에 뒤처졌다는 느낌을 주거나 비난에 노출시킬 수도 있습니다. 모든 공통 시간표가 해롭다고 보기보다, 유용한 준비와 경직된 마감 시한을 구분하고 그 기대가 당사자에게 가능한 선택들과 맞는지 묻겠습니다.",
+            "evidence_segment_id": "ROLE-TIMING-001",
+            "id": "settersten-godlewski-2016-reflection-04-followup-02"
+          },
+          {
+            "question": "Would the same expectation affect everyone of that age in the same way?",
+            "question_ko": "같은 나이라면 그 기대의 영향도 같을까요?",
+            "answer": "I would not assume that. The chapter explains that age works together with gender, class, and race, which shape expectations and access to resources. For this scene, I would ask about the person's responsibilities and available options. Those are questions for applying the framework; the scene alone does not establish which inequality, if any, determined the outcome.",
+            "answer_ko": "그렇게 가정하지 않겠습니다. 이 글은 연령이 성별, 계급, 인종과 함께 작용하며 기대와 자원 접근을 형성한다고 설명합니다. 이 장면에서는 당사자가 맡은 책임과 가능한 선택을 더 물어보겠습니다. 이는 이 틀을 적용하기 위한 질문이지, 이 장면만으로 어떤 불평등이 결과를 결정했다고 밝힌 것은 아닙니다.",
+            "evidence_segment_id": "GENDER-CULTURE-001",
+            "id": "settersten-godlewski-2016-reflection-04-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-04",
+        "style_basis": "reading-grounded-experience-template",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 다른 예시를 골라 보거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "experience_examples": [
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-01",
+            "label": "Finishing university later",
+            "label_ko": "늦어진 대학 졸업",
+            "values": {
+              "scene": {
+                "en": "I remembered a friend explaining why graduation would take another year.",
+                "ko": "친구가 대학을 졸업하려면 일 년이 더 필요하다고 설명하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+              "en": "Someone said that at twenty-seven, my friend should already have a permanent job.",
+                "ko": "한 지인은 스물일곱이면 이미 정규직으로 일하고 있어야 한다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought the comment was simply realistic career advice.",
+                "ko": "그저 현실적인 취업 조언이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-02",
+            "label": "Questions about marriage",
+            "label_ko": "결혼 시기를 묻는 말",
+            "values": {
+              "scene": {
+                "en": "I remembered a thirty-five-year-old friend discussing plans for the coming year.",
+                "ko": "서른다섯 살 친구가 다음 해 계획을 이야기하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A relative said that by that age, marriage should come before other plans.",
+                "ko": "한 친척은 그 나이면 다른 계획보다 결혼이 먼저라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I understood it as concern about planning ahead.",
+                "ko": "앞날을 준비하라는 걱정이라고 받아들였습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-03",
+            "label": "Changing careers",
+            "label_ko": "중년의 직업 전환",
+            "values": {
+              "scene": {
+                "en": "I remembered a colleague considering a different career at forty-five.",
+                "ko": "마흔다섯 살 동료가 다른 직업으로 옮길지 고민하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Another colleague said that people our age should be settled rather than starting again.",
+                "ko": "다른 동료는 우리 나이면 새로 시작하기보다 자리를 잡고 있어야 한다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I treated staying in one career as the normal next step.",
+                "ko": "한 직업에 계속 머무는 것이 자연스러운 다음 단계라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-04",
+            "label": "Returning to study",
+            "label_ko": "다시 공부하기",
+            "values": {
+              "scene": {
+                "en": "I remembered a neighbor considering university study in her fifties.",
+                "ko": "오십 대 이웃이 대학에서 공부할지 고민하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "An acquaintance said that her age was for enjoying the results of work, not returning to school.",
+                "ko": "한 지인은 그 나이면 학교에 돌아갈 때가 아니라 일한 결실을 누릴 때라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought studying belonged earlier in life.",
+                "ko": "공부는 인생의 더 앞선 시기에 하는 일이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-05",
+            "label": "Moving out",
+            "label_ko": "독립해서 살기",
+            "values": {
+              "scene": {
+                "en": "I remembered a thirty-two-year-old acquaintance weighing the cost of moving out.",
+                "ko": "서른두 살 지인이 독립해서 사는 데 드는 비용을 따져 보던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A friend said that someone that age should already be living away from their parents.",
+                "ko": "한 친구는 그 나이면 이미 부모님과 따로 살고 있어야 한다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I saw the decision mainly as a test of independence.",
+                "ko": "그 결정을 주로 자립심의 문제로 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-04-example-06",
+            "label": "When to retire",
+            "label_ko": "은퇴할 때라는 말",
+            "values": {
+              "scene": {
+                "en": "I remembered an older colleague saying she wanted to continue working after sixty.",
+                "ko": "나이 든 동료가 예순 이후에도 일을 계속하고 싶다고 말하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone replied that at that age, she should be moving into a life of leisure.",
+                "ko": "누군가는 그 나이면 여가를 즐기는 삶으로 넘어가야 한다고 답했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed retirement naturally followed that birthday.",
+                "ko": "그 생일을 지나면 자연스럽게 은퇴하는 것이라고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "settersten-reading-05",
-        "title": "Which oversimplification did you try to avoid?",
-        "answer_30s": "I tried to avoid turning the criticism of chronological age into a claim that age does not matter socially. The conclusion emphasizes age-based institutions, policies, roles, and interactions. My main lesson was to ask about the analytical level and mechanism before declaring age either important or irrelevant.",
-        "evidence_segment_id": "CONCLUSION-002",
-        "response_angle": "limitation",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "어떤 지나친 단순화를 피하려고 했나요?",
-        "answer_30s_ko": "저는 역연령에 대한 비판을 연령이 사회적으로 중요하지 않다는 주장으로 바꾸지 않으려고 했습니다. 결론은 연령에 기반한 제도, 정책, 역할, 상호작용을 강조합니다. 제가 배운 핵심은 연령이 중요하다거나 중요하지 않다고 단정하기 전에 분석 수준과 작동 과정을 묻는 것입니다."
+        "entry_type": "experience",
+        "topic": "Different clocks at the same age",
+        "topic_ko": "같은 나이, 다른 시간",
+        "title": "What scene helps you distinguish chronological age from other kinds of time?",
+        "title_ko": "역연령과 다른 종류의 시간을 구분하는 데 어떤 장면을 연결할 수 있나요?",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found the chapter's different kinds of time useful: people the same age can occupy different family or organizational positions. I would ask about role histories and linked responsibilities before using age to explain the difference.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 같은 나이라도 가족이나 조직 안의 위치는 다를 수 있다는 점에서 이 글의 여러 시간 개념이 유용했습니다. 나이로 차이를 설명하기 전에, 역할을 맡아 온 시간과 서로 얽힌 책임을 묻겠습니다.",
+        "evidence_segment_id": "MULTIPLE-TIMES-001",
+        "response_angle": "linked-family-and-organizational-time",
+        "followups": [
+          {
+            "question": "What would you ask to identify the different clocks in that scene?",
+            "question_ko": "그 장면에서 어떤 시간이 다르게 흐르는지 알려면 무엇을 묻겠나요?",
+            "answer": "I would ask when each person entered the relevant role, what family events changed their responsibilities, and which institutional schedules they must follow. Family time concerns linked lives and changing generational positions; organizational time includes work or education schedules. These questions give the same-age comparison content instead of assuming that the birthday tells us the situation.",
+            "answer_ko": "각자 언제 그 역할을 맡았는지, 어떤 가족 사건으로 책임이 달라졌는지, 어떤 제도의 일정을 따라야 하는지 묻겠습니다. 가족 시간에는 서로 연결된 삶과 세대적 위치의 변화가, 조직 시간에는 일이나 교육의 일정이 포함됩니다. 생일만으로 상황을 안다고 여기지 않고, 같은 나이라는 비교에 구체적인 내용을 채우는 질문들입니다.",
+            "evidence_segment_id": "MULTIPLE-TIMES-001",
+            "id": "settersten-godlewski-2016-reflection-05-followup-01"
+          },
+          {
+            "question": "If those schedules clash, is that mainly poor personal time management?",
+            "question_ko": "그 시간표들이 충돌한다면 주로 개인의 시간 관리가 부족해서일까요?",
+            "answer": "The chapter offers another explanation: institutions often run on predictable, goal-oriented clock time, while family needs can be difficult to schedule. A clash can therefore involve how work and care are organized. My application would be to examine the actual deadlines and care arrangements, not to conclude from one scene that either the individual or the institution caused everything.",
+            "answer_ko": "이 글은 다른 설명을 제시합니다. 제도는 예측 가능하고 목표 지향적인 시계 시간을 따르는 경우가 많지만, 가족의 필요는 일정대로 맞추기 어려울 수 있습니다. 따라서 충돌에는 일과 돌봄이 조직된 방식도 관련될 수 있습니다. 실제 마감 시한과 돌봄 여건을 살펴보겠다는 것이 제 적용이며, 한 장면으로 개인이나 제도 어느 한쪽이 전부 원인이라고 결론 내리지는 않겠습니다.",
+            "evidence_segment_id": "SOCIAL-ORG-001",
+            "id": "settersten-godlewski-2016-reflection-05-followup-02"
+          },
+          {
+            "question": "What would a cohort explanation add to this comparison?",
+            "question_ko": "이 비교에 코호트에 의한 설명을 더한다면 무엇이 달라지나요?",
+            "answer": "It would direct attention to historical events and social changes rather than just time since birth. But the chapter warns that a cohort label can be as empty as an age label. I would identify a relevant event and examine differences in exposure and timing. Simply naming a generation would not explain why two people of the same age have different circumstances.",
+            "answer_ko": "태어난 뒤 흐른 시간뿐 아니라 역사적 사건과 사회변동에 주목하게 됩니다. 다만 이 글은 코호트라는 이름도 나이라는 이름만큼 내용이 비어 있을 수 있다고 경고합니다. 관련된 사건을 정하고 누가 어떤 시기에 어떻게 겪었는지 살펴보겠습니다. 세대 이름만 붙여서는 같은 나이인 두 사람의 처지가 왜 다른지 설명할 수 없습니다.",
+            "evidence_segment_id": "MULTIPLE-TIMES-001",
+            "id": "settersten-godlewski-2016-reflection-05-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-05",
+        "style_basis": "reading-grounded-experience-template",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 다른 예시를 골라 보거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "experience_examples": [
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-01",
+            "label": "Different stages of parenting",
+            "label_ko": "서로 다른 자녀의 성장 단계",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age friends comparing their children's schedules: one had a preschooler and the other an adult child.",
+                "ko": "동갑인 두 친구가 자녀 일정을 비교하던 장면이 떠올랐습니다. 한 명의 자녀는 미취학 아동이고 다른 한 명의 자녀는 성인이었습니다."
+              },
+              "age_cue": {
+                "en": "I said that parents our age should have similar amounts of free time.",
+                "ko": "저는 우리 나이의 부모라면 자유로운 시간이 비슷하겠다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I used the parents' age to picture their daily routines.",
+                "ko": "부모의 나이를 기준으로 일상을 그려 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-02",
+            "label": "Care and a work deadline",
+            "label_ko": "돌봄과 업무 마감",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age colleagues facing the same deadline while one also arranged care for a parent.",
+                "ko": "동갑인 두 동료가 같은 마감을 앞두고 있는데 한 명은 부모님 돌봄도 조정하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "I remarked that people the same age should be equally able to make time for work.",
+                "ko": "저는 같은 나이라면 업무 시간을 내는 여건도 비슷하겠다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I focused on their shared deadline rather than their different responsibilities.",
+                "ko": "서로 다른 책임보다 공통된 마감 시한에 주목했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-03",
+            "label": "Different lengths of service",
+            "label_ko": "다른 근무 경력",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age coworkers comparing plans: one had just joined the organization, while the other had worked there for twenty years.",
+                "ko": "동갑인 두 동료가 계획을 비교하던 장면이 떠올랐습니다. 한 명은 막 입사했고 다른 한 명은 그곳에서 이십 년 동안 일했습니다."
+              },
+              "age_cue": {
+              "en": "Someone said that being the same age must put them at the same career stage.",
+              "ko": "누군가는 동갑이니 직장에서도 같은 단계에 있을 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I paid more attention to their birthdays than to their work histories.",
+                "ko": "근무 이력보다 두 사람의 나이에 더 주목했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-04",
+            "label": "Becoming grandparents at different times",
+            "label_ko": "조부모가 된 시기의 차이",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age neighbors discussing grandchildren: one had just become a grandparent, while the other's grandchild was in high school.",
+                "ko": "동갑인 두 이웃이 손주 이야기를 하던 장면이 떠올랐습니다. 한 명은 막 조부모가 되었고 다른 한 명의 손주는 고등학생이었습니다."
+              },
+              "age_cue": {
+                "en": "I said that grandparents of the same age probably had similar family routines.",
+                "ko": "저는 같은 나이의 조부모라면 가족과 보내는 일상도 비슷하겠다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I treated being a grandparent as one fixed stage.",
+                "ko": "조부모라는 역할을 하나의 고정된 단계로 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-05",
+            "label": "A return to education",
+            "label_ko": "다시 학생이 된 시간",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age friends arranging a weekday meeting: one had returned to college and the other worked rotating shifts.",
+                "ko": "동갑인 두 친구가 평일 약속을 잡던 장면이 떠올랐습니다. 한 명은 대학에 다시 다니고 다른 한 명은 교대근무를 했습니다."
+              },
+              "age_cue": {
+              "en": "I said that at our age, we would all follow roughly the same weekly timetable.",
+              "ko": "저는 우리 나이면 한 주의 시간표가 대체로 비슷할 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I saw finding a meeting time as a matter of personal flexibility.",
+                "ko": "약속 시간을 맞추는 일을 개인이 얼마나 융통성을 내느냐의 문제로 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-05-example-06",
+            "label": "The same event at different life stages",
+            "label_ko": "같은 사건을 겪은 다른 위치",
+            "values": {
+              "scene": {
+                "en": "I remembered two same-age friends discussing a local company closure: one was job-hunting then, while the other was still studying.",
+                "ko": "동갑인 두 친구가 지역 회사의 폐업을 이야기하던 장면이 떠올랐습니다. 당시 한 명은 구직 중이었고 다른 한 명은 아직 공부하고 있었습니다."
+              },
+              "age_cue": {
+                "en": "I said people our age must have experienced that closure in the same way.",
+                "ko": "저는 우리 나이라면 그 폐업을 같은 방식으로 겪었을 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed a shared birth year meant a shared experience.",
+                "ko": "태어난 해가 같으면 경험도 같을 것이라고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "settersten-reading-06",
-        "title": "How would you apply the chapter to families in South Korea?",
-        "answer_30s": "My application is to ask how expectations about the right age for employment, marriage, parenthood, or care interact with family and institutional conditions. People of the same age may face different responsibilities and constraints. This is an extension of the age-norm framework, not a South Korean finding established by the chapter itself.",
-        "evidence_segment_id": "ROLE-TIMING-001",
-        "response_angle": "family-application",
-        "style_basis": "prior-course-stt-pattern",
-        "title_ko": "이 장의 논의를 한국의 가족에 어떻게 적용하겠나요?",
-        "answer_30s_ko": "저는 취업, 결혼, 부모 됨 또는 돌봄에 적절한 나이가 있다는 기대가 가족과 제도적 조건에 어떻게 맞물리는지 묻는 데 적용하고 싶습니다. 같은 나이의 사람도 서로 다른 책임과 제약에 직면할 수 있습니다. 이는 연령 규범 틀을 확장해 적용한 것이며, 이 장 자체가 한국에 대해 밝혀낸 연구 결과는 아닙니다."
+        "entry_type": "experience",
+        "topic": "Separating or mixing age groups",
+        "topic_ko": "나이별로 모이기, 함께 모이기",
+        "title": "What everyday arrangement helps you think about age segregation and integration?",
+        "title_ko": "연령 분리와 통합을 생각해 볼 수 있는 일상의 모임이나 공간이 있나요?",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found the chapter's caution useful: age separation can support peer ties while limiting cross-age contact, and mixing ages does not guarantee cooperation. I would ask what participants want and how the activity is organized before deciding which arrangement works better.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 그런데 이 글은 나이별로 나누면 또래 관계를 돕는 동시에 다른 나이와의 접촉을 줄일 수 있고, 함께 모인다고 협력이 보장되지는 않는다고 짚어 유용했습니다. 어느 방식이 나은지 판단하기 전에 참여자들이 무엇을 원하는지와 활동을 어떻게 운영하는지 묻겠습니다.",
+        "evidence_segment_id": "AGE-INTEGRATION-001",
+        "response_angle": "age-integration-choice-and-tradeoffs",
+        "followups": [
+          {
+            "question": "What might people gain from an age-separated setting?",
+            "question_ko": "나이별로 나눈 환경에서는 어떤 이점을 얻을 수 있나요?",
+            "answer": "The chapter describes age-restricted communities that people may actively choose for peer relationships, amenities, and support. Such benefits can coexist with fewer contacts across ages. I would ask what this particular group offers rather than assume either that everyone chose the separation or that a mixed-age alternative would preserve the same benefits.",
+            "answer_ko": "이 글은 사람들이 또래 관계, 편의시설, 지원을 위해 연령을 제한한 공동체를 적극적으로 선택하기도 한다고 설명합니다. 그런 이점과 다른 나이와의 접촉 감소가 함께 나타날 수 있습니다. 모두가 분리를 선택했다고 가정하거나 통합하면 같은 이점이 그대로 유지된다고 보기보다, 이 모임이 실제로 무엇을 제공하는지 묻겠습니다.",
+            "evidence_segment_id": "AGE-INTEGRATION-001",
+            "id": "settersten-godlewski-2016-reflection-06-followup-01"
+          },
+          {
+            "question": "How would you tell whether mixing the ages helped?",
+            "question_ko": "여러 연령을 함께 모았을 때 도움이 됐는지는 어떻게 알아보겠나요?",
+            "answer": "I would examine relationships, participation, cooperation, and conflict, including whose experience improved or worsened. The chapter presents cooperation through integration as an assumption that needs examination and notes that mixed-age networks can also create opportunities for conflict. My evaluation would therefore go beyond counting contact, and a single successful meeting would not establish a lasting effect.",
+            "answer_ko": "누구의 경험이 좋아지거나 나빠졌는지를 포함해 관계, 참여, 협력, 갈등을 살펴보겠습니다. 이 글은 통합이 협력으로 이어진다는 생각을 검토가 필요한 가정으로 다루며, 여러 연령이 섞인 연결망이 갈등의 기회도 만들 수 있다고 지적합니다. 따라서 접촉 횟수 이상을 평가하겠으며, 한 번의 성공적인 모임으로 지속적인 효과를 입증했다고 하지는 않겠습니다.",
+            "evidence_segment_id": "AGE-INTEGRATION-001",
+            "id": "settersten-godlewski-2016-reflection-06-followup-02"
+          },
+          {
+            "question": "Does concern about separation mean every age-based eligibility rule is unfair?",
+            "question_ko": "분리를 걱정한다면 나이로 자격을 정하는 기준은 모두 불공정한가요?",
+            "answer": "No. The chapter explains that age-based benefits can protect people facing health or economic risks and help make retirement possible. Those purposes need to be distinguished from how well a particular threshold fits individual needs. My application would be to examine the rule's purpose and who gains or loses access, rather than judge fairness from the presence of an age cutoff alone.",
+            "answer_ko": "아닙니다. 이 글은 연령에 따른 혜택이 건강이나 경제적 위험에 놓인 사람을 보호하고 은퇴할 수 있는 여건을 만들기도 한다고 설명합니다. 그런 목적과 특정 기준이 개인의 필요에 얼마나 맞는지는 구분해야 합니다. 나이 기준이 있다는 사실만으로 공정성을 판단하기보다, 그 목적과 누가 접근 기회를 얻거나 잃는지를 살펴보겠습니다.",
+            "evidence_segment_id": "AGE-RIGHTS-001",
+            "id": "settersten-godlewski-2016-reflection-06-followup-03"
+          }
+        ],
+        "card_id": "settersten-godlewski-2016-reflection-06",
+        "style_basis": "reading-grounded-experience-template",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 다른 예시를 골라 보거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "experience_examples": [
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-01",
+            "label": "A neighborhood reading group",
+            "label_ko": "동네 독서 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered a reading group considering separate meetings for younger and older adults.",
+                "ko": "동네 독서 모임이 젊은 성인과 나이 든 성인의 모임을 따로 열지 논의하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The organizer said people of similar ages would find it easier to talk.",
+                "ko": "운영자는 나이가 비슷한 사람끼리 모이면 이야기하기 편할 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed separating the groups could only reduce understanding.",
+                "ko": "모임을 나누면 서로를 이해할 기회가 줄기만 할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-02",
+            "label": "Teams at a community garden",
+            "label_ko": "공동 텃밭의 작업 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered neighbors discussing whether community-garden teams should mix ages.",
+                "ko": "이웃들이 공동 텃밭의 작업 모임에 여러 연령을 섞을지 의논하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One neighbor said that simply putting young and old together would make them cooperate.",
+                "ko": "한 이웃은 젊은 사람과 나이 든 사람을 함께 두기만 하면 협력할 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I also expected a mixed-age team to get along automatically.",
+                "ko": "저도 여러 연령을 섞으면 저절로 잘 어울릴 것이라고 기대했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-03",
+            "label": "A volunteer group",
+            "label_ko": "봉사 모임의 연령별 팀",
+            "values": {
+              "scene": {
+                "en": "I remembered a volunteer group discussing separate teams for students and retirees.",
+                "ko": "한 봉사 모임이 학생 팀과 은퇴자 팀을 따로 꾸릴지 논의하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A member said that different age groups should work separately because their schedules differed.",
+                "ko": "한 회원은 연령대마다 일정이 다르니 따로 일하는 편이 좋다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed age separation meant the members disliked one another.",
+                "ko": "나이별로 나누자는 것은 서로를 좋아하지 않기 때문이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-04",
+            "label": "A residents' common room",
+            "label_ko": "주민 공동 공간",
+            "values": {
+              "scene": {
+                "en": "I remembered an apartment meeting about a common-room session reserved for older residents.",
+                "ko": "아파트 회의에서 나이 든 주민만 이용하는 공동 공간 시간을 논의하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One resident said that older people needed a time to meet others their own age.",
+                "ko": "한 주민은 나이 든 사람들에게 또래끼리 만날 시간이 필요하다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought every age-specific session was necessarily exclusionary.",
+                "ko": "특정 연령만을 위한 시간은 반드시 배타적이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-05",
+            "label": "A choir rehearsal",
+            "label_ko": "합창단 연습",
+            "values": {
+              "scene": {
+                "en": "I remembered a community choir considering one rehearsal for singers of all ages.",
+                "ko": "지역 합창단이 모든 연령의 단원이 한 번에 모여 연습할지 논의하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone said that mixing generations would automatically remove misunderstandings between young and old.",
+                "ko": "누군가는 세대를 섞으면 젊은 사람과 나이 든 사람 사이의 오해가 저절로 사라질 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I saw shared attendance as enough to create a closer group.",
+                "ko": "같은 자리에 참석하면 모임이 더 가까워지기에 충분하다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "settersten-godlewski-2016-reflection-06-example-06",
+            "label": "Choosing a housing community",
+            "label_ko": "주거 공동체 선택",
+            "values": {
+              "scene": {
+                "en": "I remembered an older neighbor comparing a community for older residents with a mixed-age neighborhood.",
+                "ko": "나이 든 이웃이 고령자 중심의 주거 공동체와 여러 연령이 사는 동네를 비교하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The neighbor said living with people of a similar age might offer more companionship.",
+                "ko": "그 이웃은 나이가 비슷한 사람들과 살면 함께 어울릴 기회가 더 많을 수 있다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I viewed an age-separated community only as a loss of social contact.",
+                "ko": "연령별로 나뉜 공동체를 사회적 접촉이 줄어드는 곳으로만 보았습니다."
+              }
+            }
+          }
+        ]
       }
     ]
   },
-  "language": "en"
+  "language": "en",
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

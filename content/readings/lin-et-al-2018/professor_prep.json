@@ -141,69 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Practice Answering: How Did You Read This Paper?",
-    "instructions": "Explain your impression, a method or surprising finding, and a family implication in your own words. Separate bivariate from adjusted findings, associations from causation, and proposed follow-up research from established results.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "lin-reading-01",
-        "title": "A 30-second overall response",
-        "answer_30s": "I read the paper as placing gray divorce within accumulated marital histories and relationship quality rather than explaining it through a single later-life event. Empty nest, retirement, and illness were not significant in the full model; the descriptive remarriage difference was intertwined with duration. Each spouse's reported marital quality was negatively associated with divorce. That encouraged me to distinguish life transitions from the relationship histories around them.",
-        "evidence_segment_id": "DISCUSSION-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
-        "answer_30s_ko": "저는 이 논문이 황혼이혼을 하나의 노년기 사건으로 설명하기보다 축적된 혼인 이력과 관계의 질 속에 놓고 살펴본다고 읽었습니다. 자녀 독립, 은퇴, 질병은 전체 모형에서 유의하지 않았고, 재혼 여부에 따른 기술적 차이는 혼인 기간과 얽혀 있었습니다. 배우자 각각이 보고한 혼인의 질은 이혼과 부적 관계를 보였습니다. 이를 통해 생애 전환과 그 전환을 둘러싼 관계의 이력을 구분하게 되었습니다."
+        "card_id": "lin-et-al-2018-reflection-01",
+        "entry_type": "reading",
+        "topic": "Life transitions and an unexpected result",
+        "topic_ko": "전환점과 예상 밖 결과",
+        "title": "What interested you about the findings on later-life transitions?",
+        "title_ko": "생애 전환점의 결과가 왜 흥미로웠나요?",
+        "answer_30s": "I found it interesting that the transitions expected to explain gray divorce did not show significant associations in the fully adjusted analysis. Retirement, an empty nest, and chronic illness can change daily life, but that does not establish that they lead to divorce. This study of American couples made me distinguish a plausible story about a life change from the outcome actually measured. I would ask which association was supported and under what conditions, instead of using the event alone to explain a marriage ending.",
+        "answer_30s_ko": "황혼이혼을 설명할 것으로 예상한 전환점들이 전체 조정 분석에서는 유의한 관련성을 보이지 않았다는 점이 흥미로웠습니다. 은퇴·빈 둥지·만성질환은 일상을 바꾸지만, 그것이 이혼으로 이어진다고 입증한 것은 아닙니다. 이 미국 부부 연구를 읽으며 생활 변화에 관한 그럴듯한 이야기와 실제로 측정한 결과를 구분하게 됐습니다. 사건 하나로 이혼을 설명하기보다 어떤 조건에서 어떤 관련성이 확인됐는지 묻겠습니다.",
+        "evidence_segment_id": "MULTIVARIATE-001",
+        "response_angle": "distinguishing-plausible-transition-stories-from-adjusted-findings",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-01-followup-01",
+            "question": "Were all transition findings the same before and after adjustment?",
+            "question_ko": "조정 전후의 결과는 모두 같았나요?",
+            "answer": "There was one relevant change. In Model 1, which included the later-life transition indicators and interview year, the wife's retirement was associated with about 43% lower odds of divorce. That is a difference in odds, not a 43-percentage-point reduction in probability. After marital biography, marital quality, demographic characteristics, and economic resources were added in Model 2, this association was no longer statistically significant. The other transitions were not significantly associated with divorce in the fully adjusted model either. The additional interaction analyses also found no significant differences in transition associations by marital quality, remarriage, or marital duration. These results did not support the proposed pattern of transition-related divorce risk.",
+            "answer_ko": "한 가지 중요한 변화가 있었습니다. 전환점 지표와 조사연도를 넣은 모형 1에서는 아내의 은퇴가 약 43% 낮은 이혼 승산과 관련됐습니다. 이는 오즈의 차이이며 이혼 확률이 43퍼센트포인트 줄었다는 뜻이 아닙니다. 결혼이력·결혼의 질·인구학적 특성·경제적 자원을 추가한 모형 2에서는 이 관련성이 통계적으로 유의하지 않게 됐습니다. 다른 전환점도 전체 조정모형에서 유의하지 않았습니다. 추가 분석에서도 전환점과 이혼의 관계가 결혼의 질·재혼 여부·결혼기간에 따라 달라지는 유의한 상호작용이 없었습니다. 따라서 예상했던 전환점과 이혼 위험의 관련 양상은 지지되지 않았습니다.",
+            "evidence_segment_id": "MULTIVARIATE-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-01-followup-02",
+            "question": "How were the transitions measured?",
+            "question_ko": "전환점을 구체적으로 어떻게 측정했나요?",
+            "answer": "An empty nest was recorded when the couple's children left home; retirement included reporting partial retirement. Chronic conditions meant a reported doctor's diagnosis of heart disease, cancer, lung disease, or stroke, with separate indicators for wives and husbands. Once a transition was coded 1, it stayed 1 for the remaining observed periods. The indicators were lagged by one interview wave, or two years, before the divorce outcome. Thus, this was not a measure only of the immediate aftermath of each transition, nor a complete measure of every health problem or reason for retirement. Knowing the coding helps specify what the reported absence of a significant association applies to.",
+            "answer_ko": "빈 둥지는 자녀가 집을 떠났을 때, 은퇴는 부분 은퇴를 포함해 은퇴했다고 보고했을 때 기록했습니다. 만성질환은 의사에게 심장질환·암·폐질환·뇌졸중을 진단받았다는 보고이며 아내와 남편을 따로 측정했습니다. 전환점이 한 번 1로 코딩되면 이후 관찰 기간에도 계속 1로 유지했고, 이혼보다 한 조사파동인 2년 앞선 값을 사용했습니다. 따라서 각 전환 직후만 측정한 것이 아니며, 모든 건강 문제나 은퇴 이유를 포괄한 지표도 아닙니다. 이 코딩을 알아야 유의한 관련성이 없었다는 결과가 어떤 측정에 관한 것인지 설명할 수 있습니다.",
+            "evidence_segment_id": "MEASURE-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-01-followup-03",
+            "question": "Does a nonsignificant association mean transitions never matter?",
+            "question_ko": "유의하지 않으면 전환점은 중요하지 않나요?",
+            "answer": "That would go beyond the result. The outcome here was divorce, so changes in routines or marital quality need not be the same as a marriage ending. The authors discuss varied reasons for retirement, including financial constraints and involuntary retirement, that the analysis could not distinguish. Marital quality was measured only at the couple's initial interview, limiting assessment of changes around a transition. They also note possible selective attrition and omitted relationship processes. The findings narrow the support for these particular predictors in this study; they do not demonstrate a zero effect for every couple or settle what happens in other countries and cohorts.",
+            "answer_ko": "그렇게 말하면 결과의 범위를 넘어갑니다. 여기서 결과변수는 이혼이므로 생활 방식이나 결혼의 질이 달라지는 것과 결혼이 끝나는 것은 구분해야 합니다. 저자들은 경제적 제약이나 비자발적 은퇴처럼 서로 다른 은퇴 이유를 분석에서 구분하지 못했다고 설명합니다. 결혼의 질도 최초 면접 때만 측정해 전환점 전후 변화를 살피는 데 한계가 있습니다. 선택적 표본 이탈과 빠진 관계 과정도 고려해야 합니다. 이 연구에서 해당 예측 요인에 대한 지지가 제한됐다는 결과이지, 모든 부부에서 효과가 0이거나 다른 국가·코호트에서도 같다는 증명은 아닙니다.",
+            "evidence_segment_id": "LIMIT-001"
+          }
+        ]
       },
       {
-        "card_id": "lin-reading-02",
-        "title": "What was most counterintuitive?",
-        "answer_30s": "It seemed intuitive that empty nest, retirement, or poor health might destabilize marriage, so their lack of significant full-model associations surprised me. The authors discuss varied retirement circumstances and differences between selected healthy samples and their broader national sample. I took this as a reason to examine context and prior marital history, rather than proof that these transitions have no consequences for any couple.",
+        "card_id": "lin-et-al-2018-reflection-02",
+        "entry_type": "reading",
+        "topic": "Marriage duration and marital quality",
+        "topic_ko": "결혼기간과 결혼의 질",
+        "title": "What interested you about marriage duration and marital quality?",
+        "title_ko": "결혼기간과 결혼의 질에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting to distinguish how long a couple has stayed married from how each spouse experiences the relationship. In this study, longer marriage duration and higher marital quality reported separately by wives and husbands were associated with a lower subsequent likelihood of divorce. Remarriage was no longer significantly associated with divorce when duration was included. I would therefore look beyond years of marriage or remarriage status and consider how both people experience the time they spend together.",
+        "answer_30s_ko": "오래 결혼 생활을 이어왔다는 사실과 부부가 그 관계를 어떻게 느끼는지는 따로 봐야 한다는 점이 흥미로웠습니다. 이 연구에서는 결혼기간이 길수록, 아내와 남편이 각각 보고한 결혼의 질이 높을수록 이후 이혼 가능성이 낮았습니다. 재혼의 관련성은 결혼기간을 함께 고려하자 유의하지 않았습니다. 그래서 결혼연수나 재혼 여부만으로 부부를 판단하기보다, 두 사람이 함께하는 시간을 어떻게 경험하는지 살펴보고 싶습니다.",
+        "evidence_segment_id": "MULTIVARIATE-001",
+        "response_angle": "marital-duration-remarriage-and-separate-spousal-quality-reports",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-02-followup-01",
+            "question": "What changed in the remarriage finding after accounting for duration?",
+            "question_ko": "결혼기간을 고려하면 재혼의 결과가 달라지나요?",
+            "answer": "Yes. Remarriages were more common among couples who divorced in the bivariate comparison. In the multivariate model, remarriage and current marriage duration were strongly correlated, at r = −0.69. When both were included, only duration was significantly associated with divorce, with longer duration related to lower odds. When duration was omitted, remarriage had a significant positive association with divorce, a result the authors report without showing the model. They interpret the overlap in terms of remarriages being shorter on average. Thus, the adjusted result does not mean remarriage history is irrelevant; it means its association was not statistically distinct from duration and the other covariates in that model. These findings concern observed couples in the 1998–2012 HRS, not an assigned change in marriage history.",
+            "answer_ko": "달라집니다. 이혼한 부부에는 재혼 부부의 비중이 더 높았지만, 다변량모형에서 재혼과 현재 결혼기간은 r = −0.69로 강하게 관련돼 있었습니다. 둘을 함께 넣으면 결혼기간만 유의했고, 기간이 길수록 이혼의 승산이 낮았습니다. 기간을 빼면 재혼은 이혼과 유의한 정적 관련성을 보였다고 저자들이 별도로 보고합니다. 이 추가 모형 자체는 제시되지 않았습니다. 저자들은 재혼의 기간이 평균적으로 짧다는 점으로 두 변수의 겹침을 설명합니다. 따라서 조정 뒤 결과는 재혼 이력이 무의미하다는 뜻이 아니라, 해당 모형에서 기간과 다른 공변량을 고려한 독립적 관련성이 유의하지 않았다는 뜻입니다. 이는 1998∼2012년 HRS 부부 관찰자료의 결과입니다.",
+            "evidence_segment_id": "MULTIVARIATE-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-02-followup-02",
+            "question": "How was marital quality measured for the two spouses?",
+            "question_ko": "결혼의 질은 무엇으로 측정했나요?",
+            "answer": "Wives and husbands each answered two questions: how much of their free time they spent together and how enjoyable that time was. The two least positive enjoyment categories were combined, the two items were summed, and the direction was reversed so that each spouse's score ranged from 2 to 6, with higher scores indicating more positive interaction. The wife's and husband's scores entered separately. These questions were asked only when a couple was first interviewed, so the scores were held constant rather than updated at every wave. For a couple first interviewed in 1992 and still married in 1998, the score came from 1992, six years before analysis began. The measure therefore captures particular aspects of an earlier interaction, not every aspect of current relationship quality.",
+            "answer_ko": "아내와 남편에게 각각 여가를 얼마나 함께 보내는지, 함께하는 시간이 얼마나 즐거운지 두 문항을 물었습니다. 즐거움의 낮은 두 응답 범주를 합친 뒤 두 문항을 합산하고 방향을 뒤집어, 각 배우자가 2∼6점을 갖고 높을수록 더 긍정적인 상호작용을 뜻하게 했습니다. 아내와 남편의 점수는 따로 모형에 넣었습니다. 이 질문은 부부의 최초 인터뷰에서만 물어 매 파동 갱신하지 않고 고정값으로 사용했습니다. 1992년 처음 조사받고 1998년에도 혼인을 유지한 부부는 분석 시작보다 6년 앞선 1992년 점수였습니다. 따라서 과거 상호작용의 특정 측면을 측정한 값이며, 현재 관계의 모든 측면을 온전히 보여 주지는 않습니다.",
+            "evidence_segment_id": "MEASURE-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-02-followup-03",
+            "question": "Why does the divorce curve rise even though longer duration predicts lower odds?",
+            "question_ko": "결혼기간 그래프는 어떻게 읽어야 하나요?",
+            "answer": "Figure 1 shows cumulative divorce probability, so the curve can rise as divorces accumulate even when the conditional odds at a particular observation interval are lower at longer durations. It is a different quantity from the adjusted association in the event-history model. The near-zero part of the first-marriage curve during roughly the first twenty years also reflects the design: a couple entered the analysis only when at least one spouse was 50 or older, so many first marriages had already lasted a long time before entry. That curve does not show that the first twenty years of marriage carry no divorce risk in the general population. I would distinguish accumulated events, risk during an interval, and who could enter this later-life sample.",
+            "answer_ko": "그림 1은 누적 이혼 확률이므로, 이혼이 시간에 따라 쌓이면 특정 관찰구간의 조건부 승산이 결혼기간과 부적으로 관련돼 있어도 곡선은 올라갈 수 있습니다. 사건사 분석 모형의 조정된 관련성과는 다른 양입니다. 초혼 곡선의 처음 약 20년이 거의 0인 것도 연구 설계를 반영합니다. 적어도 한 배우자가 50세 이상이어야 분석에 들어오므로 많은 초혼 부부는 그때 이미 오랫동안 결혼을 유지한 상태였습니다. 일반 인구에서 결혼 후 20년까지는 이혼 위험이 없다는 뜻이 아닙니다. 누적된 사건, 구간별 위험, 이 중·노년기 표본에 들어올 수 있었던 사람을 나눠 읽겠습니다.",
+            "evidence_segment_id": "RESULT-001"
+          }
+        ]
+      },
+      {
+        "card_id": "lin-et-al-2018-reflection-03",
+        "entry_type": "reading",
+        "topic": "Economic resources before divorce",
+        "topic_ko": "이혼 이전의 경제 자원",
+        "title": "What interested you about the findings on economic resources?",
+        "title_ko": "경제적 자원에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that the study examined couples' housing and assets before divorce. In the US longitudinal analysis, home ownership and greater assets were associated with lower divorce odds. This made me distinguish current income from accumulated assets when discussing economic circumstances. The findings do not mean that buying a home stabilizes a marriage or that divorce caused assets to decline. I would not use them to predict an individual couple's choice.",
+        "answer_30s_ko": "이혼 전에 부부가 가진 주택과 자산을 살핀 점이 흥미로웠습니다. 미국 부부를 추적한 분석에서 주택 소유와 높은 자산은 낮은 이혼 승산(오즈)과 연결됐습니다. 그래서 경제 여건을 말할 때 현재 들어오는 소득과 쌓인 자산을 구분하게 됐습니다. 다만 이 결과는 집을 사면 결혼이 안정된다거나 이혼 때문에 자산이 줄었다는 뜻은 아닙니다. 개인의 선택을 예상하는 근거로도 쓰지 않겠습니다.",
+        "evidence_segment_id": "MULTIVARIATE-001",
+        "response_angle": "distinguishing-prior-housing-and-assets-from-income-and-post-divorce-outcomes",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-03-followup-01",
+            "question": "How should the housing and asset results be interpreted?",
+            "question_ko": "주택과 자산 결과는 어떻게 읽어야 하나요?",
+            "answer": "In the adjusted model, home ownership was associated with lower divorce odds. Couples with more than $250,000 in assets had roughly 38% lower odds than couples with $0–$50,000, corresponding to an odds ratio of about 0.62. Odds are the probability of an event divided by the probability of no event; a 38% reduction in odds is not a 38-percentage-point drop or necessarily a 38% reduction in probability. These are adjusted associations across couples in the study. They do not show that acquiring a home or adding assets would itself prevent divorce.",
+            "answer_ko": "다른 변수들을 고려한 모형에서 주택 소유는 낮은 이혼 오즈와 관련됐습니다. 자산 25만 달러 초과 집단은 0~5만 달러 집단보다 오즈가 약 38% 낮아 승산비(오즈비)는 약 0.62였습니다. 오즈는 사건이 일어날 확률을 일어나지 않을 확률로 나눈 값입니다. 따라서 오즈가 38% 낮다는 말을 확률이 38%포인트 낮다거나 확률 자체가 38% 줄었다고 바꿀 수는 없습니다. 연구에 포함된 부부 집단 사이의 조정된 연관이며, 집을 사거나 자산을 늘리면 그 자체로 이혼을 막는다는 뜻은 아닙니다.",
+            "evidence_segment_id": "MULTIVARIATE-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-03-followup-02",
+            "question": "Can income and employment be treated as the same resource measures?",
+            "question_ko": "소득과 고용도 같은 자원 지표인가요?",
+            "answer": "No. The economic resource measures reported here are home ownership and asset categories, not a separate income measure. Home ownership indicates whether the couple owned the home at that interview; it does not by itself describe property value, spending needs, or cash available. Both housing and assets varied over time and were lagged one interview wave, or two years, before divorce. The study also measured the transition to retirement, including partial retirement. That indicator should not be read as unemployment or a complete employment history. I would keep income, accumulated resources, and retirement status distinct rather than add variables the paper did not report.",
+            "answer_ko": "같은 지표로 볼 수는 없습니다. 여기서 보고한 경제 자원 변수는 주택 소유 여부와 자산 범주이며, 별도의 소득 변수는 아닙니다. 주택 소유는 해당 조사 때 집을 소유했는지를 나타내므로 집값·지출 필요·당장 쓸 현금까지 설명하지는 않습니다. 주택과 자산은 시간에 따라 달라지는 변수로, 이혼보다 한 조사차수인 2년 앞선 값을 사용했습니다. 또 부분 은퇴를 포함한 은퇴 전환을 측정했지만, 이를 실업 여부나 고용 이력 전체로 읽어서는 안 됩니다. 논문에 보고하지 않은 변수를 덧붙이지 않고 소득·축적된 자원·은퇴 상태를 구분하겠습니다.",
+            "evidence_segment_id": "MEASURE-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-03-followup-03",
+            "question": "Does this study show what divorce does to a couple's assets?",
+            "question_ko": "이혼이 자산을 줄인다는 연구인가요?",
+            "answer": "It examines antecedents of divorce, not changes in assets caused by divorce. The analysis used 1998–2012 HRS data on 5,331 US couples, with at least one spouse aged 50 or older when observed at risk. There were 29,286 couple-interview-year observations and 296 divorces. Discrete-time logistic event-history models related prior characteristics to subsequent divorce. Lagging resources clarifies temporal order, but does not remove all unmeasured differences. The sample used selected HRS cohorts, and selective attrition could bias the findings. The authors call for research on post-divorce consequences; their results do not establish those consequences or provide a forecast for present-day couples in another country.",
+            "answer_ko": "이혼 때문에 자산이 어떻게 변했는지가 아니라 이혼에 앞선 조건을 살핀 연구입니다. 1998~2012년 미국 HRS의 5,331쌍을 분석했고, 관찰 시 적어도 한 배우자가 50세 이상인 부부였습니다. 부부·조사연도 관측은 29,286건, 이혼은 296건이었습니다. 이산시간 로지스틱 사건사 모형으로 앞선 특성과 이후 이혼을 연결했습니다. 자원을 먼저 측정해 시간 순서를 확보했지만 측정하지 않은 차이가 모두 사라지는 것은 아닙니다. 일부 HRS 코호트를 사용했고 선택적 탈락의 편향 가능성도 있습니다. 이혼 후 결과는 저자들이 제시한 후속 연구 과제이며, 현재 다른 나라의 부부에게 그대로 적용할 예측값은 아닙니다.",
+            "evidence_segment_id": "METHOD-001"
+          }
+        ]
+      },
+      {
+        "card_id": "lin-et-al-2018-reflection-04",
+        "entry_type": "experience",
+        "topic": "Looking beyond an event to the couple's experience",
+        "topic_ko": "사건 뒤의 부부 일상",
+        "title": "What interested you when recalling a change in a couple's daily life?",
+        "title_ko": "부부의 생활 변화에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional everyday examples. You may adapt one to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 자신의 실제 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the transitions were not significantly associated with gray divorce in the fully adjusted analysis. I would now ask how each spouse experienced the change, distinguishing a changed routine from the relationship they described and from an actual divorce.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 전체 조정 분석에서 전환점과 황혼이혼의 관련성이 유의하지 않았던 점이 흥미로웠습니다. 이제는 부부가 그 변화를 각각 어떻게 겪었는지 묻고, 달라진 일상과 당사자가 설명하는 관계, 실제 이혼을 나누어 생각하겠습니다.",
         "evidence_segment_id": "DISCUSSION-002",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "무엇이 가장 직관에 어긋났나요?",
-        "answer_30s_ko": "자녀 독립, 은퇴, 나쁜 건강이 혼인을 불안정하게 할 수 있다는 생각은 직관적이었기에, 전체 모형에서 유의한 관계가 없었다는 점이 놀라웠습니다. 저자들은 다양한 은퇴 상황과, 건강한 사람을 선별한 표본과 더 폭넓은 전국 표본 사이의 차이를 논의합니다. 저는 이를 어떤 부부에게도 이런 전환의 결과가 없다는 증거가 아니라, 맥락과 이전 혼인 이력을 살펴봐야 할 이유로 받아들였습니다."
+        "response_angle": "reconsidering-event-based-assumptions-about-a-couples-future",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-04-followup-01",
+            "question": "What would you ask before interpreting this change?",
+            "question_ko": "그 변화를 해석하기 전에 무엇을 묻겠나요?",
+            "answer": "{{age_cue}} I would ask what changed in each person's routine, which changes they welcomed, and which they found difficult. I would also ask what their relationship was like before the event rather than assume that every new disagreement began with it. The paper discusses both opportunities and strains surrounding later-life transitions, but its adjusted analysis did not find significant associations with divorce. These questions apply that distinction to the scene. A difference in schedules or one conversation is not enough to establish the quality or future of the whole marriage.",
+            "answer_ko": "{{age_cue}} 각자의 일상에서 무엇이 바뀌었고 어떤 변화는 반가웠으며 무엇이 어려웠는지 묻겠습니다. 새로 생긴 의견 차이가 모두 그 사건에서 시작됐다고 가정하기보다 이전의 관계도 살펴야 합니다. 논문은 생애 전환점 주변의 기회와 부담을 함께 논의하지만, 조정 분석에서는 이혼과의 유의한 관련성을 찾지 못했습니다. 이 질문들은 그 구분을 장면에 적용한 것입니다. 일정 차이나 대화 한 번만으로 결혼 전체의 질이나 미래를 알 수는 없습니다.",
+            "evidence_segment_id": "TURNING-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-followup-02",
+            "question": "How would you connect this scene to the study without overgeneralizing?",
+            "question_ko": "이 장면과 연구 결과를 어떻게 연결하나요?",
+            "answer": "I would use the scene to explain why I had found an event-based story plausible, then compare that expectation with the adjusted findings. The study did not establish that an empty nest, retirement, or the specified chronic conditions increased gray-divorce risk. It also did not establish that no couple ever finds these transitions difficult. The scene is a fictional illustration of a question to ask, not an observation from the HRS or a test of the paper's result. I would keep what the event changed, what the people felt, and whether a divorce occurred as separate claims requiring their own evidence.",
+            "answer_ko": "어떤 사건 하나로 관계를 설명하는 이야기가 왜 그럴듯하게 들렸는지 이 장면으로 말한 뒤, 그 예상과 조정 분석의 결과를 비교하겠습니다. 이 연구는 빈 둥지·은퇴·측정한 만성질환이 황혼이혼 위험을 높인다고 입증하지 않았습니다. 그렇다고 어떤 부부도 그 전환을 힘들어하지 않는다고 밝힌 것은 아닙니다. 장면은 질문을 만들기 위한 가상 예시이며 HRS의 관찰 사례나 논문 결과의 검증 자료가 아닙니다. 사건으로 바뀐 것, 당사자가 느낀 것, 이혼이 일어난 것은 각각 근거가 필요한 다른 주장으로 두겠습니다.",
+            "evidence_segment_id": "DISCUSSION-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-followup-03",
+            "question": "How did the study establish that a transition came before divorce?",
+            "question_ko": "전환점이 이혼보다 먼저였는지는 어떻게 봤나요?",
+            "answer": "The researchers used prospective couple-level data from the 1998–2012 HRS and lagged the transition indicators by one interview wave, or two years. They modeled divorce during an interval among couples who had not already divorced, while considering the end of observation and changing covariates. That is stronger evidence about temporal order than reconstructing a cause from one later recollection. It is still an observational analysis: a two-year lag does not randomly assign a transition or remove every unmeasured difference. It also does not capture every immediate change after the event. I would describe the temporal design without calling it proof of causation.",
+            "answer_ko": "연구진은 1998–2012년 HRS의 전향적 부부 자료를 사용하고 전환점 지표를 한 조사파동인 2년 지연했습니다. 아직 이혼하지 않은 부부가 해당 구간에 이혼하는지를 분석하면서 관찰 종료와 시간에 따라 바뀌는 변수를 고려했습니다. 나중의 회상 하나로 원인을 정하는 것보다 시간 순서를 살필 근거가 있습니다. 하지만 관찰연구이므로 2년 지연이 전환점을 무작위로 배정하거나 측정하지 않은 차이를 모두 제거하지는 않습니다. 사건 직후의 모든 변화도 포착하지 못합니다. 시간 순서를 확보한 설계라는 점과 인과관계를 증명했다는 주장을 구분하겠습니다.",
+            "evidence_segment_id": "ANALYTIC-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "lin-et-al-2018-reflection-04-example-01",
+            "label": "Different plans after retirement",
+            "label_ko": "은퇴 뒤 달라진 하루",
+            "values": {
+              "scene": {
+                "en": "I remembered my father discussing his daily routine after retirement.",
+                "ko": "아버지가 은퇴한 뒤 하루 일과를 이야기하시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He wanted more shared outings, while my mother wanted to keep her own appointments.",
+                "ko": "아버지는 함께 외출하고 싶어 하셨지만 어머니는 원래의 약속을 이어가고 싶어 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought different plans after retirement might make a couple grow further apart.",
+                "ko": "은퇴 뒤 계획이 다르면 부부가 멀어질 가능성도 커질 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-example-02",
+            "label": "A child's room after moving out",
+            "label_ko": "자녀가 떠난 빈방",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt and uncle discussing a room after their last child moved out.",
+                "ko": "마지막 자녀가 독립한 뒤 이모 부부가 빈방을 어떻게 쓸지 의논하던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One wanted to keep it as it was, while the other wanted a space for a hobby.",
+                "ko": "한 분은 그대로 두고 싶어 하셨고 다른 분은 취미 공간으로 바꾸자고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that an empty nest would expose differences that made the marriage hard to sustain.",
+                "ko": "자녀가 떠나면 차이가 드러나 결혼을 유지하기 어려워질 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-example-03",
+            "label": "Retiring at different times",
+            "label_ko": "서로 다른 은퇴 시기",
+            "values": {
+              "scene": {
+                "en": "I remembered a friend's father retiring while the friend's mother continued working.",
+                "ko": "친구의 아버지가 은퇴하고 어머니는 계속 일하시던 때가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My friend said they were still working out when to share meals and household tasks.",
+                "ko": "친구는 부모님이 식사 시간과 집안일 분담을 다시 맞추는 중이라고 했습니다."
+              },
+              "prior_view": {
+                "en": "I thought retiring at different times might make the marriage less stable.",
+                "ko": "은퇴 시기가 다르면 결혼이 더 불안정해질 수 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-example-04",
+            "label": "Routines after a diagnosis",
+            "label_ko": "진단 뒤 바뀐 일과",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandparents adjusting their routine after my grandfather was diagnosed with heart disease.",
+                "ko": "할아버지가 심장질환 진단을 받은 뒤 두 분의 일과가 달라지던 때가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My grandmother accompanied him to appointments and talked about changing her own schedule.",
+                "ko": "할머니는 진료에 동행하면서 자신의 일정도 조정해야 한다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought added caregiving demands might make it harder to sustain their marriage.",
+                "ko": "돌봄이 늘면 부부관계를 유지하기도 더 어려워질 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-example-05",
+            "label": "A quieter dinner after the children left",
+            "label_ko": "둘만 남은 저녁 식사",
+            "values": {
+              "scene": {
+                "en": "I remembered my parents talking about quieter evenings after all their children moved out.",
+                "ko": "자녀들이 모두 독립한 뒤 부모님이 조용해진 저녁을 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They said they now had fewer conversations about the children's schedules during dinner.",
+                "ko": "두 분은 식사 중에 자녀 일정에 관해 나눌 이야기가 줄었다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought fewer shared topics might mean they would grow further apart.",
+                "ko": "함께 나눌 이야기가 줄면 사이가 더 멀어질 수 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-04-example-06",
+            "label": "Different hopes for retirement",
+            "label_ko": "은퇴 후 여행 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered my uncle and aunt discussing travel after they both retired.",
+                "ko": "삼촌 부부가 모두 은퇴한 뒤 여행 계획을 이야기하시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One wanted a long trip, while the other preferred short outings close to home.",
+                "ko": "한 분은 긴 여행을 원하셨고 다른 분은 집 근처에서 짧게 다녀오고 싶어 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought differences that emerged after retirement might increase the likelihood of divorce.",
+                "ko": "은퇴 뒤 드러나는 차이가 이혼 가능성을 높일 것이라고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "lin-reading-03",
-        "title": "What methodological feature stood out?",
-        "answer_30s": "I found the conversion from individual records to linked couple histories valuable because it used both spouses' information. When only one responded, that report was used; rare inconsistencies were resolved using the wife's report. The paper reports 5,331 couples and 29,286 observations, but its initial count and four listed exclusions do not reconcile arithmetically. I would preserve the reported totals while making that inconsistency visible.",
-        "evidence_segment_id": "METHOD-001",
-        "response_angle": "method",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 방법론적 특징이 눈에 띄었나요?",
-        "answer_30s_ko": "개인 기록을 서로 연결된 부부의 이력으로 전환해 두 배우자의 정보를 모두 활용한 점이 유용했습니다. 한 명만 응답하면 그 보고를 사용했고, 드물게 응답이 불일치하면 아내의 보고를 기준으로 처리했습니다. 논문은 5,331쌍과 관측치 29,286개를 보고하지만, 최초 수와 나열된 네 가지 제외 수는 산술적으로 맞지 않습니다. 저는 보고된 총수를 유지하면서 이 불일치도 드러내겠습니다."
+        "card_id": "lin-et-al-2018-reflection-05",
+        "entry_type": "experience",
+        "topic": "Looking beyond the outward appearance of a marriage",
+        "topic_ko": "겉모습과 부부의 경험",
+        "title": "What interested you when recalling a couple's everyday interactions?",
+        "title_ko": "부부의 일상 장면에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of everyday situations. Feel free to adapt one to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 자신의 실제 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At first, {{prior_view}} I found it interesting to distinguish years of marriage and outward appearances from how both people experience their relationship. I would now ask separately about time spent together and how enjoyable it feels, while avoiding an assumption about one person's experience based only on what the other person says.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 처음에는 {{prior_view}} 결혼연수나 겉으로 보이는 모습과 두 사람이 경험하는 결혼의 질을 나눠 본다는 점이 흥미로웠습니다. 이제는 함께 보내는 시간의 양과 즐거움을 각각 묻고, 한 사람의 말로 다른 사람의 마음까지 짐작하지 않으려 합니다.",
+        "evidence_segment_id": "MEASURE-002",
+        "response_angle": "everyday-observations-versus-both-spouses-experiences-of-marriage",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-05-followup-01",
+            "question": "What would you reconsider in that scene?",
+            "question_ko": "그 장면에서 무엇을 다시 살펴보겠나요?",
+            "answer": "I would reconsider this detail: {{age_cue}} It tells me something about an interaction, but I would still need each person's account of how they spent their time and how they experienced it. The study obtained separate reports from wives and husbands about time together and enjoyment. A photograph, a quiet meal, or a shared activity is not that measurement. I could use the questions to reflect more carefully on the scene, but I could not assign the couple a marital-quality score or predict divorce from it. I would distinguish what I noticed, what each spouse actually said, and what remains unknown.",
+            "answer_ko": "이 단서를 다시 살펴보겠습니다. {{age_cue}} 상호작용의 한 모습은 알 수 있지만, 시간을 어떻게 보내고 어떻게 느꼈는지는 각자의 설명이 더 필요합니다. 연구는 함께하는 시간과 즐거움을 아내와 남편에게 따로 물었습니다. 사진 한 장이나 조용한 식사, 함께한 활동이 그 측정에 해당하지는 않습니다. 그 질문을 활용해 장면을 더 자세히 생각할 수는 있어도, 제가 이 부부에게 결혼의 질 점수를 매기거나 이혼을 예측할 수는 없습니다. 제가 본 것, 각 배우자가 실제로 말한 것, 아직 알 수 없는 것을 구분하겠습니다.",
+            "evidence_segment_id": "MEASURE-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-followup-02",
+            "question": "Can a long marriage tell us that a particular couple will stay together?",
+            "question_ko": "오래 산 부부는 이혼하지 않을 거라고 볼까요?",
+            "answer": "The study found that longer current marriage duration was associated with lower odds of divorce after other measured characteristics were considered. That is a pattern across couples, not a forecast for a particular family. Remarriage was significantly associated with divorce when duration was left out, but not when both were included, so even that label cannot be interpreted without its context. In the everyday example, years together tell me about the length of the marriage. They do not tell me how each spouse feels now or what either person will decide later. The study's outcome was whether divorce occurred, which is also different from measuring whether the relationship was satisfying in every respect.",
+            "answer_ko": "연구에서는 측정한 다른 특성을 고려했을 때 현재 결혼기간이 길수록 이혼의 승산이 낮았습니다. 이는 여러 부부에 걸친 양상이며 특정 가정에 대한 예측은 아닙니다. 재혼도 기간을 빼면 이혼과 유의하게 관련됐지만 둘을 함께 넣으면 유의하지 않아, 그 이름만으로 맥락 없이 해석할 수 없습니다. 일상 예시에서 함께 지낸 연수는 결혼의 길이를 알려 줍니다. 지금 각자가 어떻게 느끼는지, 이후 어떤 결정을 내릴지까지 알려 주지는 않습니다. 연구의 결과변수인 이혼 여부도 모든 면에서 만족스러운 관계인지를 측정하는 것과는 다릅니다.",
+            "evidence_segment_id": "MULTIVARIATE-001"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-followup-03",
+            "question": "Should we combine different accounts from the two spouses?",
+            "question_ko": "두 사람의 답이 달라도 합쳐서 보면 될까요?",
+            "answer": "I would first preserve each person's account. The study included wives' and husbands' marital-quality scores separately, and both were negatively associated with divorce. Their scores did not have a significant interaction, but that does not mean the two people necessarily experienced the marriage in the same way. The researchers also found no significant moderation of later-life transitions by marital quality and noted that quality had been measured only at the first interview, sometimes years earlier. They could not follow changes in these reports at every wave. In this example, I would therefore listen to both accounts as experiences at that moment, without treating them as interchangeable or as a complete history of the relationship.",
+            "answer_ko": "우선 각자의 설명을 남겨 두겠습니다. 연구는 아내와 남편의 결혼의 질 점수를 따로 넣었고, 둘 다 이혼과 부적으로 관련됐습니다. 두 점수의 상호작용은 유의하지 않았지만, 이것이 두 사람이 결혼을 똑같이 경험했다는 뜻은 아닙니다. 결혼의 질이 노년기 전환점의 관련성을 조절하는 결과도 유의하지 않았으며, 연구진은 결혼의 질이 때로는 수년 전 최초 인터뷰에서만 측정됐다는 점을 지적했습니다. 매 파동 두 사람의 평가 변화를 추적한 것은 아닙니다. 따라서 이 예시에서는 그 순간의 경험으로 두 설명을 듣고, 서로 대신할 수 있는 답이나 관계 전체의 역사로 취급하지 않겠습니다.",
+            "evidence_segment_id": "DISCUSSION-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "lin-et-al-2018-reflection-05-example-01",
+            "label": "Memories at a wedding anniversary",
+            "label_ko": "결혼기념일의 옛 사진",
+            "values": {
+              "scene": {
+                "en": "I remembered my parents looking through old photographs together on their wedding anniversary.",
+                "ko": "부모님이 결혼기념일에 옛 사진을 함께 보시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My father first recalled trips together, while my mother recalled conversations that helped them understand each other.",
+                "ko": "아버지는 함께한 여행을, 어머니는 서로를 이해하게 된 대화를 먼저 이야기하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that many years together meant they felt equally satisfied with the marriage.",
+                "ko": "함께 산 세월이 길면 두 사람의 만족도도 비슷할 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-example-02",
+            "label": "Different hobbies and a shared evening",
+            "label_ko": "각자의 취미와 저녁 대화",
+            "values": {
+              "scene": {
+                "en": "I remembered a couple among my relatives spending a weekend afternoon on separate hobbies.",
+                "ko": "친척 부부가 주말 오후에 각자 다른 취미를 즐기시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They later ate dinner together and asked each other what they had done that afternoon.",
+                "ko": "저녁에는 함께 식사하면서 그날 무엇을 했는지 서로에게 물으셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought spending much of their time separately meant they had grown distant.",
+                "ko": "각자 보내는 시간이 많으면 관계도 멀어진 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-example-03",
+            "label": "Shopping together as part of a routine",
+            "label_ko": "함께 장보는 일상",
+            "values": {
+              "scene": {
+                "en": "I remembered a couple I knew in the neighborhood regularly going grocery shopping together.",
+                "ko": "동네에서 아는 부부가 늘 함께 장을 보러 다니시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "While moving through the shop together, they discussed who would handle their next errands.",
+                "ko": "두 분은 함께 움직이면서 다음 심부름을 누가 맡을지 의논하고 계셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that always going places together meant they enjoyed all the time they shared.",
+                "ko": "언제나 동행하면 함께하는 시간도 늘 즐거우실 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-example-04",
+            "label": "Two accounts of the same outing",
+            "label_ko": "같은 나들이의 다른 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered a couple among my relatives describing an outing they had taken together.",
+                "ko": "친척 부부가 함께 다녀온 나들이 이야기를 들려주시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One said it was good to spend time together, while the other wished there had been more time to rest.",
+                "ko": "한 분은 함께해서 좋았다고, 다른 분은 쉴 시간이 부족해 아쉬웠다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that enjoying the same outing was an experience both spouses necessarily shared.",
+                "ko": "같은 나들이였으니 즐거웠다는 경험도 두 분이 같을 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-example-05",
+            "label": "A remarried couple planning a walk",
+            "label_ko": "재혼한 친척의 산책 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered a remarried relative and their spouse talking about a weekend walk.",
+                "ko": "재혼한 친척 부부가 주말 산책에 대해 이야기하시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They discussed a pace comfortable for each of them and where they would stop along the way.",
+                "ko": "서로에게 편한 걸음 속도와 중간에 쉬어 갈 곳을 함께 의논하고 계셨습니다."
+              },
+              "prior_view": {
+                "en": "I had thought knowing that it was a remarriage already told me what their relationship was like.",
+                "ko": "재혼이라는 사실을 알면 그 부부의 관계도 어느 정도 짐작할 수 있다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-05-example-06",
+            "label": "A quiet meal with a familiar couple",
+            "label_ko": "말수가 적었던 식사 자리",
+            "values": {
+              "scene": {
+                "en": "I remembered a couple who were family friends saying little during a meal together.",
+                "ko": "가족과 가까운 지인 부부가 식사 자리에서 말씀이 적으시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "One quietly passed an extra plate, and the other accepted it with a nod.",
+                "ko": "한 분이 조용히 앞접시를 건네자 다른 분은 고개를 끄덕이며 받으셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that little conversation meant they did not enjoy the time together.",
+                "ko": "대화가 적으면 함께 보내는 시간도 즐겁지 않을 것이라고 생각했습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "lin-reading-04",
-        "title": "Why did you stop grouping all spousal differences together?",
-        "answer_30s": "The paper made me ask which difference was being measured. The adjusted model showed higher odds for different-race couples relative to its both-White reference group, but no significant association for age or education differences. I would not generalize one category's result into a rule that all spousal differences are risky, or treat the association as an intrinsic causal effect of race.",
-        "evidence_segment_id": "DISCUSSION-002",
-        "response_angle": "evidence",
-        "style_basis": "course-question-pattern",
-        "title_ko": "배우자 간의 모든 차이를 한데 묶어 보지 않게 된 이유는 무엇인가요?",
-        "answer_30s_ko": "이 논문을 읽고 어떤 차이를 측정했는지 묻게 되었습니다. 보정된 모형에서 인종이 다른 부부는 두 사람 모두 백인인 기준집단보다 이혼 오즈가 높았지만, 나이나 교육 수준의 차이는 유의한 관계를 보이지 않았습니다. 저는 한 범주의 결과를 모든 배우자 간 차이가 위험하다는 규칙으로 일반화하거나, 이 관계를 인종에 내재한 인과적 효과로 취급하지 않겠습니다."
-      },
-      {
-        "card_id": "lin-reading-05",
-        "title": "Which limitation mattered most to you?",
-        "answer_30s": "The one-time measurement of marital quality seemed especially important. The authors expected quality to condition transitions, but could not align repeated quality measures with the periods immediately before and after those events. Other relationship processes, including conflict dynamics, violence, substance use, and infidelity, were also unavailable. That limits how confidently I would interpret the absence of moderation or identify the processes behind divorce.",
-        "evidence_segment_id": "LIMIT-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 한계가 가장 중요했나요?",
-        "answer_30s_ko": "혼인의 질을 한 번만 측정했다는 점이 특히 중요했습니다. 저자들은 혼인의 질에 따라 전환의 영향이 달라질 것으로 예상했지만, 반복 측정한 관계의 질을 사건 직전과 직후 시기에 맞춰 분석할 수 없었습니다. 갈등의 역동, 폭력, 물질 사용, 외도를 포함한 다른 관계 과정의 자료도 없었습니다. 따라서 조절효과가 나타나지 않았다는 점을 해석하거나 이혼의 배경 과정을 규명할 때 얼마나 확신할 수 있는지에는 한계가 있습니다."
-      },
-      {
-        "card_id": "lin-reading-06",
-        "title": "What family question remained after reading?",
-        "answer_30s": "The paper studies antecedents of gray divorce but highlights how little was known then about consequences for older divorcees and their adult children. My follow-up question would track both generations before and after divorce to examine changes in well-being and support. That is a research proposal prompted by the paper, rather than a claim that its antecedent models establish those family consequences.",
-        "evidence_segment_id": "LIMIT-001",
-        "response_angle": "family-implication",
-        "style_basis": "course-question-pattern",
-        "title_ko": "읽은 뒤 가족에 관해 어떤 질문이 남았나요?",
-        "answer_30s_ko": "이 논문은 황혼이혼의 선행요인을 연구하지만, 당시에는 나이 들어 이혼한 사람과 그 성인 자녀에게 어떤 결과가 생기는지 알려진 것이 적다는 점도 강조합니다. 제가 이어서 제기할 질문은 이혼 전후에 두 세대를 모두 추적해 안녕감과 지원의 변화를 살펴보는 것입니다. 이는 논문에서 촉발된 연구 제안이지, 선행요인 모형이 그런 가족의 결과까지 입증했다는 주장은 아닙니다."
+        "card_id": "lin-et-al-2018-reflection-06",
+        "entry_type": "experience",
+        "topic": "Different sides of a household's resources",
+        "topic_ko": "수입과 쌓인 자원",
+        "title": "What interested you when recalling a conversation about household finances?",
+        "title_ko": "가족의 경제 이야기에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of situations that could occur in everyday life. You may adapt them to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 자신의 실제 경험에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that the study measured economic resources through home ownership and assets. I would now ask separately about home ownership, savings, and debt, and about when those circumstances were observed. I would not judge the couple's marriage from finances alone.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 그때는 {{prior_view}} 이 논문이 경제 여건을 주택 소유와 자산으로 측정한 점이 흥미로웠습니다. 이제는 주택 소유·저축·빚을 나누어 묻고, 경제 여건이 언제의 모습인지도 살피겠습니다. 그 부부의 결혼생활을 경제 사정만으로 판단하지는 않겠습니다.",
+        "evidence_segment_id": "MEASURE-002",
+        "response_angle": "distinguishing-everyday-income-assets-and-timing-without-predicting-divorce",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "lin-et-al-2018-reflection-06-followup-01",
+            "question": "Which parts of the financial situation would you distinguish?",
+            "question_ko": "그 경제 여건에서 무엇을 나눠 보겠나요?",
+            "answer": "{{age_cue}} I would separate recurring income, assets already held, debts, and money needed for current expenses. Those are questions I am applying to the scene. The paper itself used home ownership and asset categories as economic resource measures, not a separate income variable or a detailed account of each household's cash flow. Owning a home therefore should not lead me to assume that ready cash is plentiful, and a similar monthly income does not tell me that two households have the same accumulated resources.",
+            "answer_ko": "{{age_cue}} 정기적으로 들어오는 소득, 이미 가진 자산, 빚, 당장 지출할 돈을 구분하겠습니다. 이는 이 장면에 적용해 묻는 질문입니다. 논문이 실제로 사용한 경제 자원 지표는 주택 소유와 자산 범주이며, 별도 소득 변수나 가구별 현금 흐름을 상세히 분석한 것은 아닙니다. 따라서 집을 소유했다고 당장 쓸 돈이 넉넉하다고 가정할 수 없고, 월수입이 비슷하다고 두 가구가 축적한 자원도 같다고 볼 수는 없습니다.",
+            "evidence_segment_id": "MEASURE-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-followup-02",
+            "question": "Why would the timing of the financial information matter?",
+            "question_ko": "경제 여건을 본 시점은 왜 중요할까요?",
+            "answer": "{{prior_view}} I would now ask whether the information described circumstances before a major expense or change, or a balance remaining afterward. In the study, home ownership and assets were measured one interview wave before the divorce outcome to establish their temporal order. I am applying that distinction between prior conditions and later outcomes to this everyday account. A financial snapshot after an event cannot simply be treated as the resources that existed before it, and a sequence in time does not by itself prove causation.",
+            "answer_ko": "{{prior_view}} 이제는 그 정보가 큰 지출이나 변화 이전의 형편인지, 그 뒤에 남은 잔액인지 묻겠습니다. 연구는 주택 소유와 자산에 이혼보다 한 조사차수 앞선 값을 사용해 시간 순서를 구분했습니다. 그 선행 조건과 이후 결과의 구분을 일상 이야기에 적용한 것입니다. 어떤 일 뒤에 본 경제 사정을 그전부터 있던 자원으로 취급할 수는 없고, 시간 순서가 있다고 그 자체로 원인이 증명되는 것도 아닙니다.",
+            "evidence_segment_id": "MEASURE-002"
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-followup-03",
+            "question": "Can these observations predict what will happen to the marriage?",
+            "question_ko": "이 관찰로 부부의 미래를 예상할 수 있나요?",
+            "answer": "I would not use this conversation as an individual divorce prediction. The study estimated associations between prior resources and divorce odds among US couples during 1998–2012, while considering other measured characteristics. An everyday account does not reproduce that model or supply all of those variables, and even the model leaves unmeasured relationship processes and possible attrition bias. I can use the reading to ask more precise questions about resources and timing. It does not let me conclude that financial pressure means a couple will divorce, or that substantial assets guarantee they will stay together.",
+            "answer_ko": "이 대화를 개인의 이혼 예측에 쓰지는 않겠습니다. 연구는 다른 측정 특성을 고려하면서 1998~2012년 미국 부부의 선행 자원과 이혼 승산(오즈) 사이의 연관을 추정했습니다. 일상 이야기가 그 모형을 재현하거나 모든 변수를 알려 주는 것은 아니고, 연구에도 측정하지 않은 관계 과정과 탈락 편향 가능성이 남습니다. 읽기를 통해 자원과 시점을 더 정확히 물을 수는 있습니다. 경제적 압박이 있으니 이혼한다거나 자산이 많으니 반드시 함께 산다고 결론 내릴 수는 없습니다.",
+            "evidence_segment_id": "LIMIT-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "lin-et-al-2018-reflection-06-example-01",
+            "label": "The same income after a rent increase",
+            "label_ko": "수입은 같고 집세는 올라",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt and uncle revising their budget after their rent rose while their income stayed the same.",
+                "ko": "이모와 이모부가 수입은 그대로인데 집세가 올라 지출을 다시 짜던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They said there was less left each month, so they were putting less into savings.",
+                "ko": "두 분은 매달 남는 돈이 줄어 저축하는 금액도 줄이고 있다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that an unchanged income meant unchanged financial room.",
+                "ko": "수입이 같으면 경제적인 여유도 같을 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-example-02",
+            "label": "Owning a home while facing repair costs",
+            "label_ko": "집은 있어도 수리비 고민",
+            "values": {
+              "scene": {
+                "en": "I remembered my parents discussing which savings they could use for a repair to the home they owned.",
+                "ko": "부모님이 소유한 집의 수리비를 어느 저축에서 꺼낼지 의논하셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They had a home, but said that paying the whole repair bill immediately would be difficult.",
+                "ko": "집은 있지만 수리비를 한꺼번에 내는 것은 부담스럽다고 말씀하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that owning a home meant having enough money readily available.",
+                "ko": "집이 있으면 당장 필요한 돈도 충분할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-example-03",
+            "label": "Higher income alongside loan repayments",
+            "label_ko": "늘어난 수입과 대출 상환",
+            "values": {
+              "scene": {
+                "en": "I remembered an acquaintance and their spouse saying their income had risen but their loan repayments were still substantial.",
+                "ko": "지인 부부가 수입은 늘었지만 대출 상환에 드는 돈도 크다고 이야기하던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They explained that the higher income had not yet allowed them to build much savings.",
+                "ko": "수입이 늘어난 만큼 저축이 곧바로 쌓이는 것은 아니라고 설명했습니다."
+              },
+              "prior_view": {
+                "en": "I thought that higher earnings meant their accumulated resources had also risen substantially.",
+                "ko": "버는 돈이 많아지면 쌓인 자원도 크게 늘었을 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-example-04",
+            "label": "Planning a trip using previous savings",
+            "label_ko": "여행비와 모아 둔 저축",
+            "values": {
+              "scene": {
+                "en": "I remembered relatives planning a trip together and discussing how much to take from their existing savings.",
+                "ko": "친척 부부가 함께 여행을 계획하며 모아 둔 저축을 얼마나 쓸지 의논하던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They said their monthly income had hardly changed, but they had saved for the trip over several years.",
+                "ko": "월수입은 크게 달라지지 않았지만 몇 년 동안 여행비를 따로 모았다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that monthly income alone would tell me whether the trip was possible.",
+                "ko": "월수입만 알면 여행할 여유가 있는지도 알 수 있다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-example-05",
+            "label": "Housing payments after buying a home",
+            "label_ko": "집을 산 뒤에도 남은 지출",
+            "values": {
+              "scene": {
+                "en": "I remembered relatives describing how their monthly housing expenses changed after they bought a home together.",
+                "ko": "친척 부부가 집을 산 뒤 매달 주거비가 어떻게 달라졌는지 말하던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They no longer paid rent, but loan repayments and maintenance costs still took up money each month.",
+                "ko": "집세는 없어졌지만 대출 상환과 집을 유지하는 데는 매달 돈이 든다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that buying a home would remove most of the strain of housing expenses.",
+                "ko": "집을 사면 주거비에 대한 부담은 대부분 끝나는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "lin-et-al-2018-reflection-06-example-06",
+            "label": "Comparing savings before and after a large expense",
+            "label_ko": "큰 지출 전후의 저축",
+            "values": {
+              "scene": {
+                "en": "I remembered my parents taking out an old household ledger to compare their savings then with the current balance.",
+                "ko": "부모님이 예전 가계부를 꺼내 당시 저축과 지금 잔액을 비교하셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They explained that the balance fell after a large expense, rather than having always been that low.",
+                "ko": "큰 지출을 한 뒤 잔액이 줄었으며 예전부터 그만큼 적었던 것은 아니라고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that the current balance also described their circumstances before that expense.",
+                "ko": "지금 잔액만 보면 지출 전의 경제 사정도 알 수 있다고 생각했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

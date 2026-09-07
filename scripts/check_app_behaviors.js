@@ -330,6 +330,94 @@ function setPrepLanguage(dom,kind,language){
   select.dispatchEvent(new dom.window.Event("change",{bubbles:true}));
 }
 
+async function checkReflectionPrep(){
+  const format="reflection-followups-v1";
+  const pageUrl="https://example.test/readings/levy-2009/professor-prep.html";
+  const stateKey="aaf-prep:/readings/levy-2009/professor-prep.html";
+  const variants=(kind)=>`<span data-prep-${kind}-language="en" lang="en" hidden>Follow-up ${kind}</span><span data-prep-${kind}-language="ko" lang="ko">꼬리 ${kind==="question"?"질문":"답변"}</span>`;
+  const followup=`<details class="prep-followups" open><summary>꼬리 질문 대비</summary><details class="prep-followup" id="followup-target"><summary>${variants("question")}</summary><div class="prep-followup-answer"><p class="prep-followup-copy">${variants("answer")}</p></div></details></details>`;
+  const html=bilingualPrepFixture().replace('data-prep-root','data-prep-root data-prep-format="reflection-followups-v1" data-prep-default-tab="response"').replace('<div data-prep-difficult-list>',`${followup}<div data-prep-difficult-list>`);
+  const prepare=(window)=>{
+    const card=window.document.querySelector('[data-card-id="response"]');
+    card.append(window.document.querySelector('.prep-followups'));
+    card.dataset.entryType="experience";
+    card.querySelector('[data-prep-answer-label]').dataset.prepAnswerLabel="first";
+  };
+  let dom=await boot(html,{[stateKey]:JSON.stringify({activeTab:"talk",difficultIds:["response"]})},prepare,pageUrl);
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="response"]').getAttribute('aria-selected'),'true','the new format starts with reflection despite an old saved tab');
+  assert.equal(dom.window.document.querySelector('[data-card-id="response"] [data-prep-difficult]').getAttribute('aria-pressed'),'true','existing review marks survive the new format');
+  assert.equal(dom.window.document.querySelectorAll('.prep-followups[open]').length,1,'follow-up questions are visible immediately');
+  assert.equal(dom.window.document.querySelectorAll('.prep-followup[open]').length,0,'individual answers stay closed');
+  assert.equal(dom.window.document.querySelector('[data-card-id="response"] .prep-answer-copy').closest('details, [hidden]'),null);
+  setPrepLanguage(dom,"question","en");
+  assert.equal(dom.window.document.querySelector('.prep-followup [data-prep-question-language="en"]').hidden,false);
+  assert.equal(dom.window.document.querySelector('.prep-followup [data-prep-answer-language="ko"]').hidden,false,'question language must not change the follow-up answer');
+  setPrepLanguage(dom,"answer","en");
+  assert.equal(dom.window.document.querySelector('.prep-followup-copy').lang,"en");
+  assert.equal(dom.window.document.querySelector('.prep-followup [data-prep-answer-language="en"]').hidden,false);
+  assert.equal(dom.window.document.querySelector('[data-card-id="response"] [data-prep-answer-label]').textContent,'Practice with an example');
+  dom.window.document.querySelector('[data-prep-tab="talk"]').click();
+  const saved=snapshot(dom);
+  assert.equal(JSON.parse(saved[stateKey]).format,format);
+  dom.window.close();
+  dom=await boot(html,saved,prepare,pageUrl);
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="talk"]').getAttribute('aria-selected'),'true','later choices within the new format persist');
+  dom.window.close();
+  dom=await boot(html,saved,prepare,`${pageUrl}#followup-target`);
+  assert.equal(dom.window.document.querySelector('[data-prep-tab="response"]').getAttribute('aria-selected'),'true');
+  assert.equal(dom.window.document.querySelectorAll('.prep-followups[open], .prep-followup[open]').length,2,'a deep link reveals its tab and both disclosure ancestors');
+  dom.window.close();
+}
+
+async function checkExperiencePrep(){
+  const stateKey="aaf-prep:/readings/fixture/quiz.html";
+  const examples=Array.from({length:3},(_,index)=>({id:`example-${index}`,label:`Example ${index}`,label_ko:`경험 ${index}`,values:Object.fromEntries(["scene","age_cue","prior_view"].map((slot)=>[slot,{en:`${slot} English ${index}`,ko:`${slot} 한국어 ${index}`}]))}));
+  examples[2].values.scene.ko='<img src="missing" onerror="alert(1)">';
+  const html=bilingualPrepFixture();
+  const prepare=(window)=>{
+    for(const card of window.document.querySelectorAll('[data-prep-card]')){
+      card.dataset.entryType="experience";
+      const script=window.document.createElement('script');script.type="application/json";script.dataset.prepExperienceData="";script.textContent=JSON.stringify(examples);card.append(script);
+      const slot=(key,lang)=>`[<span data-prep-experience-slot="${key}" data-prep-experience-language="${lang}"></span>]`;
+      card.querySelector('.prep-answer-copy').innerHTML=['en','ko'].map((lang)=>`<span data-prep-answer-language="${lang}">${slot('scene',lang)} ${slot('age_cue',lang)} ${slot('prior_view',lang)} Fixed article interpretation.</span>`).join('');
+      card.insertAdjacentHTML('beforeend',`<p data-prep-experience-label></p><span data-prep-experience-counter></span><button data-prep-experience-next>경험 바꾸기</button><details class="prep-followups" open><summary>질문 목록</summary><details class="prep-followup"><summary>꼬리 질문</summary><p>${slot('age_cue','ko')} Fixed follow-up interpretation.</p><a href="full.html#source">Evidence</a></details></details>`);
+    }
+  };
+  let dom=await boot(html,{},prepare);
+  let card=dom.window.document.querySelector('[data-card-id="cold"]');
+  const assertExample=(index)=>{
+    for(const slot of card.querySelectorAll('[data-prep-experience-slot]'))assert.equal(slot.textContent,examples[index].values[slot.dataset.prepExperienceSlot][slot.dataset.prepExperienceLanguage]);
+    assert.equal(card.querySelector('[data-prep-experience-counter]').textContent,`${index+1} / 3`);
+  };
+  assertExample(0);
+  const fixedMarkup=()=>{const clone=card.cloneNode(true);clone.querySelectorAll('[data-prep-experience-slot], [data-prep-experience-label], [data-prep-experience-counter]').forEach((node)=>node.textContent='');return clone.innerHTML;};
+  const unchanged=fixedMarkup();
+  const sibling=dom.window.document.querySelector('[data-card-id="response"]').innerHTML;
+  card.querySelector('[data-prep-experience-next]').click();assertExample(1);
+  assert.equal(fixedMarkup(),unchanged,'switching an example changes only example text, label and counter');
+  assert.equal(dom.window.document.querySelector('[data-card-id="response"]').innerHTML,sibling,'other cards remain unchanged');
+  assert.equal(card.querySelector('.prep-followup').open,false);
+  card.querySelector('.prep-followup').open=true;
+  setPrepLanguage(dom,'answer','en');assertExample(1);
+  assert.equal(card.querySelector('[data-prep-experience-label]').textContent,'Example 1');
+  setPrepLanguage(dom,'question','ko');assertExample(1);
+  card.querySelector('[data-prep-experience-next]').click();assertExample(2);
+  assert.equal(card.querySelectorAll('img').length,0,'experience values remain literal text');
+  assert.equal(card.querySelector('.prep-followup').open,true,'switching keeps the current answer open');
+  card.querySelector('[data-prep-experience-next]').click();assertExample(0);
+  card.querySelector('[data-prep-experience-next]').click();
+  card.querySelector('[data-prep-difficult]').click();
+  const saved=snapshot(dom);dom.window.close();
+  assert.equal(JSON.parse(saved[stateKey]).experienceIds.cold,'example-1');
+  dom=await boot(html,saved,prepare);card=dom.window.document.querySelector('[data-card-id="cold"]');assertExample(1);
+  assert.equal(card.querySelector('[data-prep-difficult]').getAttribute('aria-pressed'),'true');
+  dom.window.close();
+  const stale={...saved,[stateKey]:JSON.stringify({experienceIds:{cold:'removed-example'}})};
+  dom=await boot(html,stale,prepare);card=dom.window.document.querySelector('[data-card-id="cold"]');assertExample(0);dom.window.close();
+  dom=await boot(html,{},(window)=>{prepare(window);Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage blocked');}});});
+  card=dom.window.document.querySelector('[data-card-id="cold"]');card.querySelector('[data-prep-experience-next]').click();assertExample(1);dom.window.close();
+}
+
 function assertPrepLanguages(dom,questionLanguage,answerLanguage){
   const root=dom.window.document.querySelector("[data-prep-root]");
   assert.equal(root.querySelector("[data-prep-question-select]").value,questionLanguage);
@@ -404,7 +492,7 @@ async function checkGeneratedPages(){
   const requested=process.argv.flatMap((arg,index)=>arg==="--slug"?[process.argv[index+1]]:[]);
   const readings=manifest.readings.filter((reading)=>!requested.length||requested.includes(reading.slug));
   assert(readings.length,"No matching readings for generated DOM checks");
-  for(const {slug} of readings){
+  for(const {slug,content_dir} of readings){
     const read=(page)=>fs.readFileSync(path.join(__dirname,"..","docs","readings",slug,`${page}.html`),"utf8");
     let dom=await boot(read("quiz"));
     const root=dom.window.document.querySelector("[data-quiz-player]");
@@ -450,9 +538,28 @@ async function checkGeneratedPages(){
     dom.window.close();
     dom=await boot(read("professor-prep"));
     const prepRoot=dom.window.document.querySelector("[data-prep-root]");
+    const prepSource=JSON.parse(fs.readFileSync(path.join(__dirname,"..",content_dir,"professor_prep.json"),"utf8"));
+    const reflection=prepRoot.dataset.prepFormat==="reflection-followups-v1";
     assert.equal(prepRoot.dataset.prepLanguage,"en");
     assert.equal(prepRoot.querySelector("textarea, [data-prep-practice], [data-prep-model], [data-prep-practice-status]"),null,`${slug}: removed prep inputs and disclosures must stay absent`);
     const cards=Array.from(prepRoot.querySelectorAll("[data-prep-card]"));
+    if(reflection){
+      assert.equal(cards.length,prepSource.reading_response.cards.length,`${slug}: only this reading's reflection openings are shown`);
+      assert(cards.length>=6,`${slug}: this reading retains at least six reflection openings`);
+      assert.equal(prepRoot.querySelector('[data-prep-tab="cold-call"], [data-prep-panel="cold-call"]'),null);
+      assert.match(prepRoot.querySelector('[data-prep-tab="reading-response"]').textContent,/이 읽기 답변 준비/);
+      for(const sourceCard of prepSource.reading_response.cards.filter((card)=>card.entry_type==="experience")){
+        const node=dom.window.document.getElementById(sourceCard.card_id);
+        assert(sourceCard.experience_examples.length>=6,`${slug}: each experience card needs at least six examples`);
+        for(const [index,example] of sourceCard.experience_examples.entries()){
+          assert.equal(node.querySelector('[data-prep-experience-counter]').textContent,`${index+1} / ${sourceCard.experience_examples.length}`);
+          assert.equal(node.querySelector('[data-prep-experience-label]').textContent,example.label_ko);
+          for(const slot of node.querySelectorAll('[data-prep-experience-slot]'))assert.equal(slot.textContent,example.values[slot.dataset.prepExperienceSlot][slot.dataset.prepExperienceLanguage],`${slug}: each example must update every bilingual slot and linked followup`);
+          node.querySelector('[data-prep-experience-next]').click();
+        }
+        assert.equal(node.querySelector('[data-prep-experience-counter]').textContent,`1 / ${sourceCard.experience_examples.length}`,`${slug}: experience examples wrap to the first choice`);
+      }
+    }
     assertPrepLanguages(dom,"ko","ko");
     for(const [questionLanguage,answerLanguage] of [["ko","en"],["ko","ko"],["en","ko"],["en","en"]]){
       setPrepLanguage(dom,"question",questionLanguage);setPrepLanguage(dom,"answer",answerLanguage);
@@ -480,6 +587,23 @@ async function checkGeneratedPages(){
     mark.click();
     assert.equal(mark.getAttribute("aria-pressed"),"true");
     dom.window.close();
+    if(reflection){
+      const prepPath=`/readings/${slug}/professor-prep.html`;
+      const experience=prepSource.reading_response.cards.find((card)=>card.entry_type==="experience");
+      const saved={activeTab:"cold-call",format:"reflection-followups-v1",difficultIds:[prepSource.cards[0].card_id,experience.card_id],experienceIds:{[experience.card_id]:experience.experience_examples[3].id}};
+      dom=await boot(read("professor-prep"),{[`aaf-prep:${prepPath}`]:JSON.stringify(saved)},()=>{},`https://example.test${prepPath}#prep-panel-cold-call`);
+      const root=dom.window.document.querySelector('[data-prep-root]');
+      assert.equal(root.querySelector('[aria-selected="true"]').dataset.prepTab,'reading-response','removed saved tabs and old panel links fall back to the single-reading preparation');
+      const experienceNode=dom.window.document.getElementById(experience.card_id);
+      assert.equal(experienceNode.querySelector('[data-prep-difficult]').getAttribute('aria-pressed'),'true','remaining review marks survive the tab removal');
+      assert.match(experienceNode.querySelector('[data-prep-experience-counter]').textContent,/^4 \/ /,'saved experience choices survive the tab removal');
+      const weekly=root.querySelector('[data-prep-tab="weekly"]');
+      if(weekly){
+        root.querySelector('[data-prep-tab="reading-response"]').dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));
+        assert.equal(weekly.getAttribute('aria-selected'),'true','keyboard navigation reaches the shared weekly tab directly');
+      }
+      dom.window.close();
+    }
     for(const page of ["full","translation"]){
       const pagePath=`/readings/${slug}/${page}.html`;
       const oldState=legacyReaderEntries(pagePath);
@@ -539,6 +663,8 @@ async function checkHomeSchedule(){
   await checkTranslationSentenceReveals();
   await checkPrepAndFilters();
   await checkPrepLanguages();
+  await checkReflectionPrep();
+  await checkExperiencePrep();
   if(!process.argv.includes("--fixture-only"))await checkHomeSchedule();
   const counts=process.argv.includes("--fixture-only")?null:await checkGeneratedPages();
   console.log(`PASS app behaviors (quiz grading/resume/mistakes unchanged; TOC/progress without retired reader state, bidirectional sentence disclosures, direct bilingual prep answers with independent languages/tabs/review marks, and filters; ${counts?`${counts.renderedQuestions} generated questions, ${counts.prepAnswerCount} bilingual prep answers, ${counts.readingPageCount} reading pages, ${counts.translationSentenceCount} English disclosures, ${counts.originalSentenceCount} Korean disclosures`:"fixtures only"})`);

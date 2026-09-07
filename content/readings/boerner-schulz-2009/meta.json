@@ -68,8 +68,8 @@
       "quiz-ox",
       "quiz-short",
       "quiz-mcq",
-      "professor-prep",
-      "full"
+      "full",
+      "professor-prep"
     ],
     "approved_page_hashes": {
       "index": "v2:8c971afd60f10a0192e0d7d5004ee6abc364145c8b0ec869b777191ca2307d40",
@@ -81,22 +81,23 @@
       "quiz-ox": "v2:5869852ce44fd45d86b1c484be4371e9092a209b05d85fa7ba9ae1072add50e5",
       "quiz-short": "v2:8e55fc957a799f898bde392b0a016d3a2097c304bb5d7264e7b548351515bf64",
       "quiz-mcq": "v2:a43c2b24190c31086634ab23f333400f33d207b4cae44b05957a654b82cc878a",
-      "professor-prep": "v2:d9d7cd04597ef8bab628e56329dbe067b5f808d720b576cccf9e2f55fc87b92c",
-      "full": "v2:4c66a95f0ede7efa15b5fd5e9bd3d812a26c0445b0e49b5d550208258cbbe124"
+      "full": "v2:4c66a95f0ede7efa15b5fd5e9bd3d812a26c0445b0e49b5d550208258cbbe124",
+      "professor-prep": "v2:3fcb690aa22ad3210da9a0502e234ee3025280905b8976fac2ddd9716eaafec8"
     },
     "reviewer": "codex",
-    "reviewed_at": "2026-09-06T00:55:46.132Z",
+    "reviewed_at": "2026-09-06T13:17:56.172Z",
     "notes": [
       "Source, alignment, learning assets, and rendered artifacts reviewed.",
       "Stage 3 independent final audit PASS: Critical 0, Major 0, Minor 0; all 66 evidence-linked records and all concepts rechecked; isolated full-preview links/reveals/privacy/chatbot checks passed.",
       "English learning materials and composite dependencies reviewed against the complete stored source. Source and translation preserved. Historical 2009 proposed diagnostic criteria, caregiver heterogeneity, study-specific risk estimates, preparedness dimensions and cited trial scope distinguished. Original PDF unavailable.",
       "Reviewed Korean translations of every preparation question and complete answer against the unchanged English: claims, numbers, negation, limitations, and application attribution preserved. Independent semantic review matched the exact source bytes before renewing professor-prep approval.",
-      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed."
+      "Reviewed English-to-Korean sentence disclosures using existing bilingual alignment and separately checked quote/list/introduction mappings. Original article DOM, headings, numbered lists, figures and source text preserved; exact rendered control validation passed.",
+      "Reviewed all current source and bilingual cards/examples; preserved coexisting caregiving responses, noncausal meaning/resource associations, multidimensional preparedness, historical 2009 criteria and prior-study boundaries."
     ],
     "blocked_reason": ""
   },
   "validation_status": {
-    "updated_at": "2026-09-06T00:56:24.497Z",
+    "updated_at": "2026-09-06T13:18:02.959Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
@@ -228,7 +229,12 @@
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {
@@ -391,13 +397,18 @@
       },
       "professor_prep": {
         "status": "approved",
-        "source_hash": "v2:d9d7cd04597ef8bab628e56329dbe067b5f808d720b576cccf9e2f55fc87b92c",
+        "source_hash": "v2:3fcb690aa22ad3210da9a0502e234ee3025280905b8976fac2ddd9716eaafec8",
         "errors": [],
         "warnings": [],
         "metrics": {
           "card_count": 15,
           "reading_response_card_count": 6,
-          "korean_card_count": 21
+          "korean_card_count": 21,
+          "reading_entry_count": 3,
+          "experience_entry_count": 3,
+          "experience_example_count": 18,
+          "practice_format": "reflection-followups-v1",
+          "followup_count": 18
         }
       },
       "quiz_ox": {

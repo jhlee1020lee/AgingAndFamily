@@ -141,69 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Reading Response: How Did You Read the Review?",
-    "instructions": "Respond in your own words: explain what was new to you, why it mattered, which evidence supports your view, and a limitation or family application. Distinguish your interpretation from the review's findings.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "vaupel-reading-01",
-        "title": "What central tension did you see in the review?",
-        "answer_30s": "I read the gains in longevity as the postponement of death because people reach old age in better health, rather than proof that aging has already slowed. The author treats a potentially invariant rate of increase in mortality with age as a hypothesis requiring testing. I therefore distinguish the observed postponement of mortality from the proposed biological constant.",
-        "evidence_segment_id": "PERSPECTIVES-001",
-        "response_angle": "overall",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 종설에서 어떤 핵심적인 긴장 관계를 보았나요?",
-        "answer_30s_ko": "저는 수명 증가를 노화가 이미 느려졌다는 증거라기보다, 사람들이 더 건강한 상태로 노년기에 이르기 때문에 사망이 뒤로 미뤄진 것으로 읽었습니다. 저자는 나이에 따른 사망률 증가 속도가 일정할 가능성을 검증이 필요한 가설로 다룹니다. 따라서 저는 관찰된 사망의 지연과 제안된 생물학적 상수를 구분합니다."
+        "card_id": "vaupel-2010-reflection-01",
+        "entry_type": "reading",
+        "topic": "Delay versus slower aging",
+        "topic_ko": "지연과 속도 감소",
+        "title": "What interested you about delayed aging?",
+        "title_ko": "노화 지연에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that living longer does not necessarily mean aging more slowly. Vaupel distinguishes reaching a given mortality level at a later age from reducing the rate at which mortality rises with age. I read the central finding as death being postponed because people reach old age in better health, rather than the process of deterioration being stretched out.",
+        "answer_30s_ko": "사람이 더 오래 산다는 사실이 곧 노화의 속도가 느려졌다는 뜻은 아니라는 점이 흥미로웠습니다. Vaupel은 비슷한 사망 수준에 도달하는 나이가 더 뒤로 밀린 것과, 나이에 따라 사망률이 높아지는 속도가 줄어든 것을 구분합니다. 저는 이 글의 핵심을 노화 과정이 길게 늘어났다는 설명보다, 더 나은 건강 상태로 고령에 도달하면서 사망이 늦춰졌다는 설명으로 읽었습니다.",
+        "evidence_segment_id": "DEBILITY-003",
+        "response_angle": "postponement-versus-deceleration",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "question": "What do X5 and X10 measure?",
+            "question_ko": "X5와 X10은 무엇을 재나요?",
+            "answer": "X5 is the age at which remaining life expectancy is five years; X10 is the age at which it is ten years. They locate ages on a population's mortality schedule. An increase means reaching that remaining-life-expectancy threshold at a later age, not that a particular person has exactly five or ten years left.",
+            "answer_ko": "X5는 잔여기대수명이 5년이 되는 나이이고, X10은 10년이 되는 나이입니다. 두 지표는 인구의 연령별 사망 양상에서 특정 지점에 해당하는 나이를 나타냅니다. 지표가 높아졌다는 것은 그 잔여기대수명에 더 늦은 나이에 도달한다는 뜻이지, 특정 개인에게 정확히 5년이나 10년이 남았다는 뜻은 아닙니다.",
+            "evidence_segment_id": "MORT-001",
+            "id": "vaupel-2010-reflection-01-followup-01"
+          },
+          {
+            "question": "How does Figure 1 support delay rather than slowing?",
+            "question_ko": "그림 1은 지연을 어떻게 뒷받침하나요?",
+            "answer": "In Figure 1's historical series since 1950, X10 rises by about eight years for Swedish women and twelve for Japanese women. X5 follows a similar path, staying roughly a decade of age above X10 in all three countries shown. Both thresholds move later without that age interval stretching out, supporting postponement rather than a slower progression between them.",
+            "answer_ko": "그림 1의 1950년 이후 자료에서 여성의 X10은 스웨덴에서 약 8년, 일본에서 약 12년 높아집니다. 그림에 나온 세 나라 모두 X5는 X10보다 대략 10세 높은 간격을 유지하며 비슷하게 움직입니다. 두 지점 사이의 연령 간격이 늘어나기보다 함께 뒤로 이동하므로, 그 사이의 진행이 느려졌다기보다 지연됐다는 해석을 뒷받침합니다.",
+            "evidence_segment_id": "MORT-001",
+            "id": "vaupel-2010-reflection-01-followup-02"
+          },
+          {
+            "question": "Does everyone therefore age at the same rate?",
+            "question_ko": "모두 같은 속도로 늙는다는 뜻인가요?",
+            "answer": "Vaupel proposes a hypothesis of similar mortality increases with age among older people, apart from accelerated-aging disorders. One observation is an annual death probability staying near 50% at validated ages 110–114; evidence after 114 is sparse. But the changing mix of survivors can flatten a population curve while individual mortality keeps rising. This is not direct measurement showing that everyone ages identically, and he calls for the hypothesis to be tested.",
+            "answer_ko": "Vaupel은 가속 노화 질환을 제외한 고령자들의 사망률 증가 속도가 비슷할 수 있다는 가설을 제안합니다. 근거 중 하나는 연령이 확인된 110~114세에서 연간 사망확률이 약 50%로 일정했다는 관찰이며, 114세 이후 자료는 희소합니다. 하지만 개인의 사망률이 계속 높아져도 살아남은 집단의 구성이 바뀌면 집단 곡선은 평평해질 수 있습니다. 모두 똑같이 늙는다는 것을 직접 측정한 결과는 아니며, 저자도 가설의 검증을 요구합니다.",
+            "evidence_segment_id": "DELAY-001",
+            "id": "vaupel-2010-reflection-01-followup-03"
+          }
+        ]
       },
       {
-        "card_id": "vaupel-reading-02",
-        "title": "What surprised you most?",
-        "answer_30s": "I was most surprised by the finding of an annual death probability of about 50% at validated ages 110–114. Box 1 made it more interesting: a population curve can flatten as more vulnerable subgroups die out first, without individuals stopping their aging process. It made the distinction between population patterns and individual trajectories especially clear to me.",
-        "evidence_segment_id": "DELAY-001",
-        "response_angle": "surprise",
-        "style_basis": "course-question-pattern",
-        "title_ko": "무엇이 가장 놀라웠나요?",
-        "answer_30s_ko": "연령이 검증된 110~114세에서 연간 사망확률이 약 50%라는 결과가 가장 놀라웠습니다. 상자글 1은 이를 더 흥미롭게 했습니다. 개인의 노화 과정이 멈추지 않더라도, 더 취약한 하위집단이 먼저 사망하면 인구 수준의 곡선은 평탄해질 수 있습니다. 이를 통해 인구 수준의 양상과 개인의 변화 경로를 구분하는 것이 특히 분명해졌습니다."
-      },
-      {
-        "card_id": "vaupel-reading-03",
-        "title": "How did the review change your previous understanding?",
-        "answer_30s": "I previously assumed that increasing disease prevalence among older people meant worsening health. The review helped me see that treatment can delay death and rehabilitation can reduce disability, leaving more people alive and functioning with disease. Prevalence may then rise. I now distinguish incidence, prevalence, disability, and survival instead of treating them as interchangeable indicators.",
-        "evidence_segment_id": "DEBILITY-002",
-        "response_angle": "changed-view",
-        "style_basis": "course-question-pattern",
-        "title_ko": "종설을 읽고 기존의 이해가 어떻게 바뀌었나요?",
-        "answer_30s_ko": "이전에는 노인의 질병 유병률 증가가 건강 악화를 뜻한다고 생각했습니다. 이 종설을 통해 치료는 사망을 늦추고 재활은 장애를 줄여, 질병이 있어도 생존하며 기능을 유지하는 사람이 더 많아질 수 있음을 알게 되었습니다. 그러면 유병률은 높아질 수 있습니다. 이제 저는 발생률, 유병률, 장애, 생존을 서로 바꿔 쓸 수 있는 지표로 취급하지 않고 구분합니다."
-      },
-      {
-        "card_id": "vaupel-reading-04",
-        "title": "How did Figure 1 change your interpretation of longevity?",
-        "answer_30s": "I had been inclined to assume that longer lives would simply mean a longer period of senescence. Seeing X5 and X10 shift together while remaining roughly ten years apart challenged that assumption. The rise in X10 among Swedish and Japanese women supports postponement rather than lengthening as measured by these indicators. Mortality measures alone, however, cannot settle every question about people's experience of health.",
-        "evidence_segment_id": "MORT-001",
-        "response_angle": "evidence",
-        "style_basis": "course-question-pattern",
-        "title_ko": "그림 1은 수명 증가에 대한 해석을 어떻게 바꿨나요?",
-        "answer_30s_ko": "저는 더 오래 살면 단순히 노화 기간도 더 길어질 것이라고 생각하는 편이었습니다. X5와 X10이 약 10년의 간격을 유지한 채 함께 이동하는 모습은 그 가정에 의문을 갖게 했습니다. 스웨덴과 일본 여성의 X10 상승은 이 지표들로 측정했을 때 노화 기간의 연장보다는 지연을 뒷받침합니다. 다만 사망 지표만으로 사람들이 경험하는 건강에 관한 모든 문제를 해결할 수는 없습니다."
-      },
-      {
-        "card_id": "vaupel-reading-05",
-        "title": "What question or limitation remained for you?",
-        "answer_30s": "The evidence for postponed mortality is strong, but conclusions about postponed debility depend on how health is defined and measured. Sick people participate less in surveys, data after age 85 and on cognition are limited, and disability trends differ across studies. I would not assume that gains in lifespan establish equally large gains in healthy life expectancy.",
+        "card_id": "vaupel-2010-reflection-02",
+        "entry_type": "reading",
+        "topic": "More survivors, similar functioning",
+        "topic_ko": "더 오래, 더 건강하게?",
+        "title": "What suggests that debility is also being delayed?",
+        "title_ko": "기능 저하도 늦춰졌다는 근거는 뭔가요?",
+        "answer_30s": "The Danish comparison of centenarians born in 1895–1896 and 1905 interested me: the later group was 50% larger, yet physical disability and cognitive impairment were comparable, with slightly better health among the later cohort's women. More survivors did not necessarily mean worse functioning in that comparison. However, comparing survivors from different birth cohorts does not directly measure how far an individual's decline was postponed.",
+        "answer_30s_ko": "덴마크의 1895~1896년생과 1905년생 백세인을 비교했을 때, 뒤 집단이 50% 더 커도 신체적 장애와 인지 손상은 비슷하고 뒤 코호트 여성은 조금 더 건강했다는 점이 흥미로웠습니다. 이 비교에서는 더 많이 살아남아도 기능 상태가 반드시 나빠지지는 않았습니다. 다만 서로 다른 코호트의 생존자를 비교한 결과여서, 한 사람의 기능 저하가 얼마나 늦춰졌는지를 직접 측정한 것은 아닙니다.",
         "evidence_segment_id": "DEBILITY-001",
-        "response_angle": "limitation",
-        "style_basis": "course-question-pattern",
-        "title_ko": "어떤 질문이나 한계가 남았나요?",
-        "answer_30s_ko": "사망이 지연된다는 근거는 강하지만, 쇠약의 지연에 관한 결론은 건강을 어떻게 정의하고 측정하느냐에 달려 있습니다. 아픈 사람은 조사에 덜 참여하고, 85세 이후와 인지에 관한 자료는 제한적이며, 장애 추세는 연구마다 다릅니다. 수명이 늘어났다는 사실만으로 건강수명도 똑같이 크게 늘었다고 가정하지는 않겠습니다."
+        "response_angle": "debility-evidence-cohort-comparison-and-selection",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "vaupel-2010-reflection-02-followup-01",
+            "question": "What exactly increased by 50%?",
+            "question_ko": "50%는 무엇이 늘었다는 뜻인가요?",
+            "answer": "It was the size of the later centenarian cohort, not a 50% improvement in health or a 50% reduction in disability. Vaupel attributes the larger group mainly to improved survival between ages 80 and 100. The health comparison concerns people reaching 100 from two different birth cohorts; it is not a comparison of the same people's functioning ten years apart.",
+            "answer_ko": "뒤 코호트의 백세인 수가 50% 더 많았다는 뜻이지, 건강이 50% 좋아지거나 장애가 50% 줄었다는 뜻은 아닙니다. Vaupel은 주로 80세에서 100세까지 생존할 가능성이 높아진 결과라고 설명합니다. 건강 비교의 대상도 두 출생 코호트에서 100세가 된 사람들이며, 같은 사람들의 기능을 10년 간격으로 비교한 것이 아닙니다.",
+            "evidence_segment_id": "DEBILITY-001"
+          },
+          {
+            "id": "vaupel-2010-reflection-02-followup-02",
+            "question": "Why is this evidence less decisive than mortality data?",
+            "question_ko": "왜 사망 자료보다 근거가 덜 확실한가요?",
+            "answer": "Vaupel notes that health is harder to measure and surveys often have low participation, particularly among sick people. For a comparison at age 100, I would also examine who survived to that age as survival improved. The reported cohort comparison is encouraging, but I would need comparable measures and information about participation and survival before treating it as decisive evidence of delayed functional decline.",
+            "answer_ko": "Vaupel은 건강은 측정이 어렵고, 조사 참여율도 특히 아픈 사람들에게 낮다고 지적합니다. 100세 집단을 비교할 때는 생존 가능성이 높아지면서 누가 그 나이까지 살아남았는지도 살펴보겠습니다. 보고된 비교는 고무적이지만, 기능 저하 지연의 확실한 증거로 삼으려면 측정 방식이 비교 가능한지와 조사 참여·생존의 구성을 더 확인해야 합니다.",
+            "evidence_segment_id": "DEBILITY-001"
+          },
+          {
+            "id": "vaupel-2010-reflection-02-followup-03",
+            "question": "Can falling mortality tell us that functioning improved?",
+            "question_ko": "사망률이 낮아지면 기능도 좋아진 건가요?",
+            "answer": "It offers an indirect argument, not a sufficient test. Vaupel reasons that continued survival gains at advanced ages may require better health, but says conclusive evidence is lacking. In the short term, saving lives and improving health can move the prevalence of illness or disability in different directions. I would therefore check the functional measure itself rather than substitute a mortality trend for it.",
+            "answer_ko": "간접적인 논거는 되지만 충분한 검증은 아닙니다. Vaupel은 고령에서 생존 개선이 계속되려면 건강 개선이 필요할 수 있다고 보면서도 확정적 근거는 부족하다고 말합니다. 단기에는 생존 연장과 건강 개선이 질병이나 장애의 유병률을 서로 다른 방향으로 움직일 수 있습니다. 그래서 사망 추세로 대신하지 않고 기능 지표 자체를 확인하겠습니다.",
+            "evidence_segment_id": "DEBILITY-002"
+          }
+        ]
       },
       {
-        "card_id": "vaupel-reading-06",
-        "title": "How would you connect the review to family life or policy?",
-        "answer_30s": "I would question the assumption that people must work hardest while raising children and then retire completely when daily child care has diminished. The review proposes mixing education, work, child rearing, and leisure across more years, with longer working lives but shorter working weeks. My application would be to discuss institutions that redistribute time for family care and employment across the life course.",
-        "evidence_segment_id": "FORECAST-002",
-        "response_angle": "family-application",
-        "style_basis": "course-question-pattern",
-        "title_ko": "이 종설을 가족생활이나 정책과 어떻게 연결하겠나요?",
-        "answer_30s_ko": "저는 자녀를 키울 때 가장 열심히 일하고, 일상적인 자녀 돌봄이 줄어들면 완전히 은퇴해야 한다는 가정에 의문을 제기하겠습니다. 이 종설은 교육, 일, 자녀 양육, 여가를 더 긴 기간에 걸쳐 함께 배치하되, 일하는 생애는 늘리고 주당 근로시간은 줄이자고 제안합니다. 제가 도출한 적용은 생애 전반에 걸쳐 가족 돌봄과 고용에 쓰는 시간을 재분배하는 제도를 논의하는 것입니다."
+        "card_id": "vaupel-2010-reflection-03",
+        "entry_type": "reading",
+        "topic": "Preparing for longer lives",
+        "topic_ko": "장수 전망과 미래 준비",
+        "title": "What did the longevity forecasts make you reconsider?",
+        "title_ko": "장수 전망을 읽고 무엇을 다시 생각했나요?",
+        "answer_30s": "I found it interesting to read longevity forecasts as assumptions that invite us to rethink life's structure, rather than promises about an individual's lifespan. In this 2010 review, Vaupel describes record life expectancy increasing by 2.5 years per decade in the leading countries. While examining the assumption that the trend continues, I wanted to ask whether a longer life would still require education, work, and family care to follow their familiar sequence.",
+        "answer_30s_ko": "장수 전망을 개인의 수명 약속보다 삶의 틀을 다시 생각하게 하는 가정으로 읽은 점이 흥미로웠습니다. Vaupel은 2010년 글에서 기대수명이 가장 긴 국가들의 기록이 10년마다 2.5년씩 늘어난 추세를 설명합니다. 저는 이 추세가 계속된다는 조건을 살펴보면서, 더 긴 삶이 가능하다면 교육·일·가족 돌봄을 지금과 같은 순서로 배치해야 하는지도 묻고 싶어졌습니다.",
+        "evidence_segment_id": "FORECAST-001",
+        "response_angle": "conditional-longevity-forecasts-and-life-organization",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "vaupel-2010-reflection-03-followup-01",
+            "question": "What kind of claim is the forecast of reaching 100?",
+            "question_ko": "100세 전망은 어떤 종류의 주장인가요?",
+            "answer": "The 2010 review suggests that 50,000 or 60,000 people born in Sweden in 2007, more than half that birth cohort, might reach 100 in 2107. This is a projection based on extending mortality trends, not an observed outcome or a promise to every child. I would keep the country, birth cohort, future date, and dependence on continued progress attached to the number.",
+            "answer_ko": "2010년 글은 스웨덴의 2007년 출생 코호트 중 절반이 넘는 5만~6만 명이 2107년에 100세가 될 가능성을 제시합니다. 사망률 추세를 미래로 연장한 전망이지, 관찰이 끝난 결과나 모든 아이에 대한 약속은 아닙니다. 저는 이 숫자를 말할 때 국가, 출생 코호트, 미래 시점과 진전이 계속된다는 전제를 함께 밝히겠습니다.",
+            "evidence_segment_id": "FORECAST-001"
+          },
+          {
+            "id": "vaupel-2010-reflection-03-followup-02",
+            "question": "Does the past trend guarantee future progress?",
+            "question_ko": "과거 추세가 미래의 진전도 보장하나요?",
+            "answer": "No. Vaupel notes that disasters and breakthroughs did not change the long-term rise in record life expectancy over the preceding 170 years, despite their occurrence. That history supports using a trend as a forecasting basis, but does not remove future uncertainty. I would distinguish a sustained historical pattern from a guarantee that epidemics, wars, economic crises, or new discoveries cannot alter what follows.",
+            "answer_ko": "아닙니다. Vaupel은 앞선 170년 동안 재난과 획기적 발전이 있었어도 기대수명 기록의 장기 상승 추세는 바뀌지 않았다고 설명합니다. 그 역사는 추세를 전망의 근거로 쓸 이유가 되지만, 미래의 불확실성을 없애지는 않습니다. 지속된 과거의 양상과 앞으로 전염병·전쟁·경제위기나 새로운 발견이 결과를 바꾸지 못한다는 보장은 구분하겠습니다.",
+            "evidence_segment_id": "FORECAST-001"
+          },
+          {
+            "id": "vaupel-2010-reflection-03-followup-03",
+            "question": "What does this change about preparing for the future?",
+            "question_ko": "미래 준비에서는 무엇을 달리 볼 수 있나요?",
+            "answer": "Vaupel asks how people might arrange life if they expected to pass 100 and retain good cognitive and physical abilities for 90 or 95 years. He considers mixing education, work, child rearing, and leisure across more years, including working more years but fewer hours per week. I take this as a conditional proposal for reorganizing time, not a demonstrated healthy lifespan or a requirement that everyone work longer.",
+            "answer_ko": "Vaupel은 100세를 넘겨 살고 그중 90~95년 동안 양호한 인지·신체 능력을 유지할 것으로 예상한다면 삶을 어떻게 배치할지 묻습니다. 교육·일·양육·여가를 더 긴 기간에 섞고, 더 여러 해 일하되 주당 시간을 줄이는 방안도 생각합니다. 저는 이를 건강수명이 입증됐다는 말이나 모두 더 오래 일해야 한다는 의무가 아니라, 시간 배치를 바꾸는 조건부 제안으로 읽었습니다.",
+            "evidence_segment_id": "FORECAST-002"
+          }
+        ]
+      },
+      {
+        "card_id": "vaupel-2010-reflection-04",
+        "entry_type": "experience",
+        "topic": "Questioning age as a dead end",
+        "topic_ko": "나이 탓으로 끝내기",
+        "title": "What scene made you question an age-based assumption?",
+        "title_ko": "나이 탓으로 넘긴 어떤 장면이 떠올랐나요?",
+        "experience_prompt": "These are fictional everyday scenes. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 다른 예시를 골라 보거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that mortality at advanced ages has been postponed. The review made me consider living conditions and access to care instead of ending the explanation with age. Population progress does not, however, guarantee better health or a longer life for this person.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 글에서 흥미로웠던 점은 고령의 사망도 늦춰져 왔다는 사실입니다. 저는 나이로 이야기를 끝내기보다 생활 여건과 의료 접근을 함께 보게 됐습니다. 다만 인구의 개선 추세만으로 이 사람도 건강해지거나 더 오래 살 것이라고 보장할 수는 없습니다.",
+        "evidence_segment_id": "MORT-002",
+        "response_angle": "late-life-improvement-without-individual-guarantees",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "question": "Which assumption in the remark would you question?",
+            "question_ko": "그 말의 어떤 전제를 다시 보겠나요?",
+            "answer": "This is the remark I would reconsider: {{age_cue}} Vaupel reviews evidence against treating deaths at advanced ages as unchangeable. That does not establish that the difficulty in this scene is reversible; it means that chronological age alone is not enough to conclude that no improvement is possible.",
+            "answer_ko": "다시 생각해 볼 말은 이것입니다. {{age_cue}} Vaupel은 고령의 사망을 바꿀 수 없는 것으로 보는 생각에 반하는 근거를 검토합니다. 이것이 이 장면의 어려움을 되돌릴 수 있다고 입증하지는 않지만, 나이만으로 개선의 여지가 없다고 결론 낼 수는 없다는 뜻입니다.",
+            "evidence_segment_id": "MORT-002",
+            "id": "vaupel-2010-reflection-04-followup-01"
+          },
+          {
+            "question": "What conditions does the review connect to improvement?",
+            "question_ko": "개선은 어떤 조건과 연결되나요?",
+            "answer": "Vaupel identifies prosperity and medicine as major contributors, including housing, food, education, treatment, and public health. He stresses that these factors interact and that their relative importance is uncertain. I would use that account to ask about conditions beyond age, not claim that changing one feature of this fictional scene would cause a particular health outcome.",
+            "answer_ko": "Vaupel은 주거, 음식, 교육, 치료, 공중보건을 포함한 생활 수준의 향상과 의학을 주요 요인으로 봅니다. 이 요인들이 상호작용하며 어느 쪽이 더 중요한지는 불확실하다고 강조합니다. 저는 이를 나이 이외의 조건을 묻는 데 사용하겠으며, 가상 장면의 한 요소를 바꾸면 특정 건강 결과가 생긴다고 주장하지는 않겠습니다.",
+            "evidence_segment_id": "CAUSES-001",
+            "id": "vaupel-2010-reflection-04-followup-02"
+          },
+          {
+            "question": "Can you predict improved health for this person?",
+            "question_ko": "이 사람의 건강 개선도 예측할 수 있나요?",
+            "answer": "No. The review describes population trends, and its evidence on health is less clear than its evidence on mortality. Disease prevalence, disability, and self-rated health need not move together. I would keep the possibility of improvement separate from a claim about this person's future health or survival.",
+            "answer_ko": "그렇게 예측할 수는 없습니다. 이 글은 인구의 추세를 다루며, 건강에 관한 근거는 사망에 관한 근거보다 덜 명확합니다. 질병 유병률, 장애, 스스로 평가한 건강은 같은 방향으로 움직이지 않을 수 있습니다. 개선의 가능성과 이 사람의 미래 건강이나 생존에 관한 단정은 구분하겠습니다.",
+            "evidence_segment_id": "DEBILITY-001",
+            "id": "vaupel-2010-reflection-04-followup-03"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "vaupel-2010-reflection-04-example-01",
+            "label": "A cold home",
+            "label_ko": "난방이 약한 집",
+            "values": {
+              "scene": {
+                "en": "I remembered an older neighbor living in a poorly heated home.",
+                "ko": "난방이 약한 집에서 지내던 나이 든 이웃이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "An acquaintance said feeling cold at that age was unavoidable.",
+                "ko": "한 지인은 그 연세에는 추운 게 어쩔 수 없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I attributed the discomfort to age.",
+                "ko": "불편함을 나이 탓으로만 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-04-example-02",
+            "label": "A distant clinic",
+            "label_ko": "멀리 있는 진료소",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather discussing the long trip to his clinic.",
+                "ko": "할아버지가 진료소까지 가는 먼 길을 이야기하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A relative said that at his age, things would be difficult regardless.",
+                "ko": "한 친척은 그 연세에는 어차피 힘든 게 당연하다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I treated the travel problem as part of growing old.",
+                "ko": "이동의 어려움을 나이 들면 겪는 일로 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-04-example-03",
+            "label": "A dark hallway",
+            "label_ko": "어두운 공동 복도",
+            "values": {
+              "scene": {
+                "en": "I remembered an older resident finding our dim hallway difficult to navigate.",
+                "ko": "어두운 공동 복도를 다니기 불편해하던 나이 든 주민이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Another resident said that at that age, getting around was bound to be difficult.",
+                "ko": "다른 주민은 그 나이면 다니기 불편한 게 어쩔 수 없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I overlooked the conditions in the building.",
+                "ko": "건물의 환경을 미처 생각하지 못했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-04-example-04",
+            "label": "Preparing meals alone",
+            "label_ko": "혼자 준비하는 식사",
+            "values": {
+              "scene": {
+                "en": "I remembered an older acquaintance finding meal preparation burdensome while living alone.",
+                "ko": "혼자 살며 식사 준비를 부담스러워하던 나이 든 지인이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone said that at that age, difficulties with eating were inevitable.",
+                "ko": "누군가는 그 나이면 먹는 일도 힘들어지는 게 당연하다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I paid little attention to the person's living arrangements.",
+                "ko": "그 사람의 생활 여건에 별로 주목하지 않았습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-04-example-05",
+            "label": "Waiting for an appointment",
+            "label_ko": "진료 예약 기다리기",
+            "values": {
+              "scene": {
+                "en": "I remembered a retired colleague discussing a long wait for an appointment.",
+                "ko": "퇴직한 동료가 진료 예약을 오래 기다린다고 하던 때가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "An acquaintance said that at that age, there was little point in doing more.",
+                "ko": "한 지인은 그 나이면 더 해 봐야 별 소용이 없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I accepted the dismissal without much thought.",
+                "ko": "별생각 없이 그 말을 받아들였습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-04-example-06",
+            "label": "An uneven park path",
+            "label_ko": "고르지 않은 공원 길",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother finding an uneven park path difficult to use.",
+                "ko": "할머니가 바닥이 고르지 않은 공원 길을 불편해하시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone said that at her age, difficulties walking outside were unavoidable.",
+                "ko": "누군가는 그 연세에는 밖에서 걷기 힘든 게 어쩔 수 없다고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I focused on her age rather than the path.",
+                "ko": "길의 상태보다 할머니의 나이에 주목했습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "vaupel-2010-reflection-05",
+        "entry_type": "experience",
+        "topic": "Illness and everyday functioning",
+        "topic_ko": "병명과 일상활동",
+        "title": "Have you viewed a diagnosis differently from everyday functioning?",
+        "title_ko": "병명과 일상활동을 다르게 본 적 있나요?",
+        "experience_prompt": "These are fictional everyday scenes. Choose another example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 예시입니다. 다른 예시를 고르거나 자신의 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} Before reading this review, {{prior_view}} I found the distinction between living with an illness while still functioning and being limited in everyday activities interesting. I would now look beyond the diagnosis to what the person does and the treatment, rehabilitation, or assistance involved.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 이 글을 읽기 전에는 {{prior_view}} 이 글에서 질병이 있어도 일상활동을 할 수 있는 상태와 기능장애를 구분한 점이 흥미로웠습니다. 이제는 병명만으로 판단하지 않고 실제로 하는 일과 치료·재활이나 도움을 받는 조건을 함께 살펴보겠습니다.",
+        "evidence_segment_id": "DEBILITY-002",
+        "response_angle": "morbidity-functioning-and-conditions-of-activity",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "vaupel-2010-reflection-05-followup-01",
+            "question": "Why is a diagnosis insufficient to judge everyday functioning?",
+            "question_ko": "병명만으로 활동을 판단할 수 있나요?",
+            "answer": "The activity to examine is this: {{age_cue}} Vaupel distinguishes having a chronic illness while functioning from being disabled. Illness prevalence and limitations in everyday activities therefore provide different information. In this fictional scene, I would describe the activity and any assistance separately from the diagnosis, without assuming that completing one task means the person has no other difficulties.",
+            "answer_ko": "살펴볼 활동은 이 장면에 나옵니다. {{age_cue}} Vaupel은 만성질환이 있지만 기능을 유지하는 상태와 장애가 있는 상태를 구분합니다. 따라서 질병의 유병과 일상활동의 제한은 서로 다른 정보입니다. 이 가상 장면에서도 병명과 별도로 활동과 도움의 정도를 설명하되, 한 가지 일을 했다고 다른 어려움까지 없다고 보지는 않겠습니다.",
+            "evidence_segment_id": "DEBILITY-002"
+          },
+          {
+            "id": "vaupel-2010-reflection-05-followup-02",
+            "question": "Does the scene show that assistance caused the improvement?",
+            "question_ko": "도움이 효과를 냈다고 말할 수 있나요?",
+            "answer": "No. The essay explains that effective rehabilitation can reduce disability without reducing morbidity, but my fictional scene does not isolate an effect. I would need evidence comparing functioning and the relevant conditions, including other changes over time. Seeing a task performed with assistance describes functioning in that situation; it does not establish that the assistance caused recovery or slowed ageing.",
+            "answer_ko": "아닙니다. 논문은 효과적인 재활이 질병 유병을 줄이지 않고도 장애를 줄일 수 있다고 설명하지만, 제 가상 장면은 효과를 따로 가려내지 않습니다. 시간에 따른 다른 변화도 포함해 기능과 관련 조건을 비교한 근거가 필요합니다. 도움을 받아 활동하는 모습을 본 것은 그 상황의 기능을 설명할 뿐, 그 도움 때문에 회복되거나 노화가 느려졌다고 입증하지는 않습니다.",
+            "evidence_segment_id": "DEBILITY-002"
+          },
+          {
+            "id": "vaupel-2010-reflection-05-followup-03",
+            "question": "How would you ask about limitations in everyday activities?",
+            "question_ko": "활동의 제한은 어떻게 확인하겠나요?",
+            "answer": "I would ask about specific tasks such as dressing, bathing, and shopping, which the review identifies as common disability measures. I would make clear whether an answer includes assistance and use comparable questions. Vaupel also warns about unreliable health reports and low survey participation among sick people, so the accounts of the people easiest to interview should not stand for everyone.",
+            "answer_ko": "이 리뷰가 흔한 장애 지표로 드는 옷 입기, 목욕, 장보기처럼 구체적인 활동을 묻겠습니다. 답변에 도움을 받은 경우가 포함되는지 분명히 하고 비교 가능한 질문을 쓰겠습니다. Vaupel은 건강 보고의 신뢰성과 아픈 사람의 낮은 조사 참여도 지적하므로, 만나기 쉬운 사람의 답만으로 모두의 상태를 대신하지 않겠습니다.",
+            "evidence_segment_id": "DEBILITY-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "vaupel-2010-reflection-05-example-01",
+            "label": "Getting dressed during rehabilitation",
+            "label_ko": "재활 중 옷 입기",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandfather choosing clothes while continuing rehabilitation after a stroke.",
+                "ko": "뇌졸중 뒤 재활을 이어가는 할아버지가 외출할 옷을 고르시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He dressed himself with clothes placed within reach, although fastening some buttons still required help.",
+                "ko": "손이 닿는 곳에 둔 옷은 직접 입으셨지만, 일부 단추를 잠글 때는 여전히 도움이 필요했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed the diagnosis meant that someone else had to do every daily task for him.",
+                "ko": "병이 있으니 모든 일상을 대신 해드려야 한다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-05-example-02",
+            "label": "Shopping with arthritis",
+            "label_ko": "관절염이 있어도 장보기",
+            "values": {
+              "scene": {
+                "en": "I remembered my grandmother going to the local shops while still receiving treatment for arthritis.",
+                "ko": "관절염 치료를 계속 받는 할머니가 동네 가게에 장을 보러 가시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She selected groceries herself, used a small trolley, and stopped to rest along the way.",
+                "ko": "할머니는 물건을 직접 고르셨고 작은 수레를 이용하면서 가는 길에 잠시씩 쉬셨습니다."
+              },
+              "prior_view": {
+                "en": "I took continuing treatment to mean that shopping was no longer possible.",
+                "ko": "치료 중이면 장보기는 이제 불가능하겠다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-05-example-03",
+            "label": "Cooking while treating an arrhythmia",
+            "label_ko": "부정맥 치료와 요리",
+            "values": {
+              "scene": {
+                "en": "I remembered my father preparing a weekend meal while continuing treatment for an arrhythmia.",
+                "ko": "부정맥 치료를 받는 아버지가 주말 식사를 준비하려고 재료를 꺼내시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He prepared the ingredients and cooked, while another family member carried a heavy pot for him.",
+                "ko": "아버지는 재료를 손질하고 요리하셨고, 무거운 냄비를 옮기는 일은 다른 가족이 도왔습니다."
+              },
+              "prior_view": {
+                "en": "I thought that still having a heart condition meant he could do little in daily life.",
+                "ko": "심장 질환이 남아 있으면 일상에서 할 수 있는 일이 적다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-05-example-04",
+            "label": "A diagnosis and the same daily routine",
+            "label_ko": "진단 전후의 일상",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother receiving a diabetes diagnosis after a checkup and discussing her daily routine.",
+                "ko": "검진에서 당뇨병 진단을 받은 어머니가 평소 일상을 이야기하시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She was receiving care but continued dressing, shopping, and preparing meals as she had before the diagnosis.",
+                "ko": "진료를 받으면서도 옷 입기와 장보기, 식사 준비는 진단 이전처럼 계속 하고 계셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed a new diagnosis must also mean a new limitation in daily activities.",
+                "ko": "새 진단을 받았으니 일상활동에도 새 제한이 생겼겠다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-05-example-05",
+            "label": "Bathing with some assistance",
+            "label_ko": "일부 도움을 받는 목욕",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative discussing bathing at home while continuing treatment for cancer.",
+                "ko": "암 치료를 이어가는 연세 든 친척이 집에서 목욕하는 일을 설명하시던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The relative washed while seated, with a family member helping only when entering and leaving the bathroom.",
+                "ko": "앉아서 몸을 씻으셨고 욕실에 들어가거나 나올 때만 가족의 도움을 받는다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought receiving help meant being unable to perform any part of the activity.",
+                "ko": "도움을 받는다면 그 활동을 전혀 못 하는 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-05-example-06",
+            "label": "Choosing groceries with help carrying them",
+            "label_ko": "고르기와 나르기의 차이",
+            "values": {
+              "scene": {
+                "en": "I remembered going shopping with an older neighbor who was still being treated for heart disease.",
+                "ko": "심장 질환으로 치료 중인 연세 든 이웃과 함께 장을 보러 갔던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "The neighbor chose and paid for the groceries, while I carried the heavier bags on the way home.",
+                "ko": "이웃은 물건을 고르고 계산하셨으며 집으로 돌아오는 길에는 제가 무거운 짐을 들었습니다."
+              },
+              "prior_view": {
+                "en": "I used the fact that I helped to conclude that the neighbor could no longer shop.",
+                "ko": "제가 도왔다는 이유로 그분은 이제 장을 못 본다고 생각했습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "vaupel-2010-reflection-06",
+        "entry_type": "experience",
+        "topic": "Family longevity as a prediction",
+        "topic_ko": "가족의 장수와 나의 미래",
+        "title": "Did you ever read your own future in a relative's longevity?",
+        "title_ko": "가족의 장수에서 내 미래를 예상한 적 있나요?",
+        "experience_prompt": "These are fictional family conversations. Choose an example, or adapt it to an experience you actually had.",
+        "experience_prompt_ko": "가상의 가족 대화입니다. 예시를 고르거나 실제 경험에 맞게 바꿔 말해 보세요.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} What interested me was that the roughly 25% genetic contribution concerns differences in adult lifespans across people, not a portion of one person's lifespan. I would now consider living conditions and historical circumstances alongside family longevity or health, rather than turn them into my own predicted fate.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 그때는 {{prior_view}} 흥미로웠던 건 유전 기여 약 25%가 개인 수명의 몫이 아니라 사람들 사이의 성인 수명 차이에 관한 추정이라는 점입니다. 이제는 가족의 장수나 건강을 제 운명으로 옮기기보다, 살아온 환경과 시대의 조건도 함께 보겠습니다.",
+        "evidence_segment_id": "MORT-002",
+        "response_angle": "lifespan-variation-without-genetic-destiny",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "vaupel-2010-reflection-06-followup-01",
+            "question": "What is the denominator of the 25% estimate?",
+            "question_ko": "유전 기여 25%는 무엇의 비율인가요?",
+            "answer": "Vaupel cites Danish twin research attributing about 25% of variation in adult lifespan to genetic variation among individuals. It concerns differences across people, not 25% of one person's years or a 25% chance of reaching a particular age. The review also notes that genetic influence may matter more at the very oldest ages, so modest influence should not be read as no influence.",
+            "answer_ko": "Vaupel이 인용한 덴마크 쌍둥이 연구에서는 성인 수명 변이의 약 25%가 개인들 사이의 유전적 변이에 기인한다고 추정했습니다. 이는 사람들 사이의 차이에 관한 것이지, 한 사람의 생애 중 25%나 특정 나이까지 살 확률 25%가 아닙니다. 글은 최고령에서는 유전의 영향이 더 클 가능성도 언급하므로, 기여가 제한적이라는 말을 영향이 없다는 뜻으로 읽어서는 안 됩니다.",
+            "evidence_segment_id": "MORT-002"
+          },
+          {
+            "id": "vaupel-2010-reflection-06-followup-02",
+            "question": "Does the remaining 75% mean personal effort?",
+            "question_ko": "그럼 나머지 75%는 개인의 노력인가요?",
+            "answer": "No. {{age_cue}} That family remark cannot separate genetic and environmental contributions, and the 25% estimate does not assign the remainder to willpower or habits. Vaupel discusses interacting conditions such as prosperity, education, housing, and medicine, without settling their relative importance. I would use the scene to question a simple explanation, not to allocate responsibility for someone's health or lifespan.",
+            "answer_ko": "아닙니다. {{age_cue}} 이런 가족의 말로 유전과 환경의 몫을 나눌 수 없고, 25%라는 추정도 나머지를 의지나 습관에 배정하지 않습니다. Vaupel은 번영·교육·주거·의료가 상호작용한다고 설명하며 각각의 상대적 중요성이 밝혀졌다고 하지는 않습니다. 저는 이 장면으로 단순한 설명을 되묻겠으며, 누군가의 건강이나 수명에 책임을 배분하지는 않겠습니다.",
+            "evidence_segment_id": "CAUSES-001"
+          },
+          {
+            "id": "vaupel-2010-reflection-06-followup-03",
+            "question": "Is population longevity the same question as individual differences?",
+            "question_ko": "인구 전체의 장수도 같은 질문인가요?",
+            "answer": "They need to be distinguished. Vaupel separates why a person lives longer than contemporaries from why a population's general level of longevity rises, emphasizing prosperity and medicine for the latter. He also argues that future postponement requires better health before as well as during old age. This is a population-level explanation in the review, not a way to calculate my lifespan from a relative's experience.",
+            "answer_ko": "구분해야 합니다. Vaupel은 어떤 사람이 동시대인보다 오래 사는 이유와 인구 전체의 장수 수준이 높아지는 이유를 나누고, 후자에서 번영과 의료를 강조합니다. 앞으로도 노화를 지연하려면 노년기뿐 아니라 그 전에 건강을 개선하는 일도 필요하다고 봅니다. 이는 글의 인구 수준 설명이지, 가족의 경험으로 제 수명을 계산하는 방법은 아닙니다.",
+            "evidence_segment_id": "CAUSES-002"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "vaupel-2010-reflection-06-example-01",
+            "label": "A grandmother's birthday",
+            "label_ko": "할머니의 생신 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered gathering for my grandmother's ninetieth birthday.",
+                "ko": "할머니의 아흔 번째 생신에 가족이 모였던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "A relative said we would live long too because longevity ran in the family.",
+                "ko": "한 친척은 장수하는 집안이니 우리도 오래 살 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I took our family's longevity as a preview of my own life.",
+                "ko": "가족의 장수가 제 미래를 보여 준다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-06-example-02",
+            "label": "Looking at a family album",
+            "label_ko": "가족사진을 보던 날",
+            "values": {
+              "scene": {
+                "en": "I remembered looking at old family photographs with my father.",
+                "ko": "아버지와 오래된 가족사진을 함께 보던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He said I resembled my grandfather and would probably age as healthily as he did.",
+                "ko": "아버지는 제가 할아버지를 닮았으니 건강하게 나이 들 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed resemblance also meant a similar course of health.",
+                "ko": "외모가 닮으면 건강의 흐름도 비슷하리라 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-06-example-03",
+            "label": "An older relative at work",
+            "label_ko": "고령에도 일하던 친척",
+            "values": {
+              "scene": {
+                "en": "I remembered visiting an older relative who still ran a small shop.",
+                "ko": "나이가 들어서도 작은 가게를 운영하던 친척을 만난 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone said our family's strong constitution meant I would keep working that way too.",
+                "ko": "누군가는 우리 집안이 타고난 몸이 튼튼하니 저도 그처럼 일할 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I pictured my later life following the same course.",
+                "ko": "제 노후도 같은 모습일 것이라고 그려 보았습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-06-example-04",
+            "label": "Talking about earlier generations",
+            "label_ko": "윗세대의 삶을 들으며",
+            "values": {
+              "scene": {
+                "en": "I remembered hearing that several relatives in an earlier generation had died relatively young.",
+                "ko": "윗세대 친척 중 비교적 일찍 돌아가신 분이 여럿이라는 이야기를 들었습니다."
+              },
+              "age_cue": {
+                "en": "A relative said people in our family simply were not meant to live long.",
+                "ko": "한 친척은 우리 집안은 원래 오래 살 팔자가 아니라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought that family history already limited my own future.",
+                "ko": "그 가족력이 제 미래도 미리 정해 놓았다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-06-example-05",
+            "label": "A mother's regular walks",
+            "label_ko": "꾸준히 걷는 어머니",
+            "values": {
+              "scene": {
+                "en": "I remembered talking with my mother about the walks she had enjoyed for years.",
+                "ko": "어머니가 오랫동안 즐겨 온 산책에 관해 이야기하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "She said I would stay healthy as I aged because I had inherited her constitution.",
+                "ko": "어머니는 제가 자신의 체질을 물려받았으니 건강하게 나이 들 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I attributed her health mainly to what our family had inherited.",
+                "ko": "어머니의 건강을 주로 집안에서 물려받은 것과 연결했습니다."
+              }
+            }
+          },
+          {
+            "id": "vaupel-2010-reflection-06-example-06",
+            "label": "Comparing two family branches",
+            "label_ko": "친가와 외가를 비교하며",
+            "values": {
+              "scene": {
+                "en": "I remembered relatives comparing longevity on my mother's and father's sides of the family.",
+                "ko": "친척들이 친가와 외가 중 어느 쪽이 오래 사는지 비교하던 장면이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Someone said my future lifespan would depend on which side I took after.",
+                "ko": "누군가는 제가 어느 쪽을 닮았는지에 따라 수명이 정해질 것이라고 말했습니다."
+              },
+              "prior_view": {
+                "en": "I thought knowing which side I took after would let me predict my future.",
+                "ko": "어느 쪽을 닮았는지 알면 미래도 예상할 수 있다고 생각했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }

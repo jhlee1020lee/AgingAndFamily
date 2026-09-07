@@ -5,6 +5,7 @@ const { spawnSync } = require("child_process");
 const { buildValidationSnapshot, validateBuildArtifacts, validateManifestReadings, sourceHashForPage, validateQuizPayload, validateProfessorPrepJson } = require("./validate_content");
 const { approveReading } = require("./approve_reading");
 const { checkReading, qualityChecks, digitTokens } = require("./check_alignment");
+const { run: checkProfessorPractice } = require("./check_professor_practice");
 
 const ROOT = path.resolve(__dirname, "..");
 const TMP = path.join(ROOT, "tmp");
@@ -21,6 +22,7 @@ function verify(label, callback) {
 }
 
 try {
+  checks += checkProfessorPractice();
   const manifest = readJson(path.join(ROOT, "manifest", "readings.json"));
   const reading = manifest.readings.find((item) => item.slug === "levy-2009") || manifest.readings[0];
   for (const relative of ["scripts", reading.content_dir, `docs/readings/${reading.slug}`, `docs/assets/readings/${reading.slug}`]) {

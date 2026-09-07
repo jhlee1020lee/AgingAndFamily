@@ -141,75 +141,599 @@
     }
   ],
   "reading_response": {
-    "title": "Practice Answering: How Did You Read This Paper?",
-    "instructions": "Connect the central claim, persuasive evidence, limitations, and a follow-up question in your own words. Distinguish timing and relationship type, and present causal explanations or proposed research as interpretations rather than established mechanisms.",
+    "title": "어떤 점이 흥미로웠나요?",
+    "instructions": "말하고 싶은 관점을 고른 뒤, 아래에서 꼬리 질문을 펼쳐보세요.",
     "cards": [
       {
-        "card_id": "kalmijn-reading-01",
-        "title": "A 30-second overall response",
-        "answer_30s": "I read this paper as showing that solidarity and kinkeeping can operate at different stages, rather than requiring a choice between stronger and weaker sibling ties after bereavement. Contact increased more persistently after the first death while a parent remained alive. After the second, an initial contact increase was followed by declining contact and conflict. It made the broader family network and timing central to my interpretation.",
-        "evidence_segment_id": "ABS-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Main claim",
-        "style_basis": "Summarize the abstract through first versus second parental death and short-term versus long-term patterns.",
-        "title_ko": "전반적인 생각을 30초 안에 말해 보세요.",
-        "answer_30s_ko": "저는 이 논문이 사별 후 형제자매 관계가 강해지는지 약해지는지 중 하나를 택하기보다, 결속과 친족관계 유지가 서로 다른 시기에 작동할 수 있음을 보여 준다고 읽었습니다. 부모 한 분이 먼저 사망하고 다른 한 분이 살아 있는 동안에는 접촉 증가가 더 지속적으로 나타났습니다. 남은 부모까지 사망한 뒤에는 처음에 접촉이 늘었다가 이후 접촉과 갈등이 감소했습니다. 이를 통해 더 넓은 가족 관계망과 시점이 제 해석의 중심이 되었습니다."
+        "card_id": "kalmijn-leopold-2019-reflection-01",
+        "entry_type": "reading",
+        "topic": "Different times and different parental losses",
+        "topic_ko": "상실의 순서와 시간",
+        "title": "What interested you about sibling contact after parental death?",
+        "title_ko": "사별 뒤 형제관계에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that sibling contact after parental death did not follow a single direction. After the first parent's death, increased contact persisted while the other parent remained alive. After the second parent's death, the initial increase gave way to a long-term decline below the earlier level. Rather than choosing solidarity or kinkeeping as the sole explanation, I understood them as explaining different parts of the pattern, depending on whether one or both parents had died and how much time had passed.",
+        "answer_30s_ko": "부모 사망 뒤 형제자매의 접촉이 한 방향으로만 변하지 않았다는 점이 흥미로웠습니다. 첫 부모를 잃은 뒤에는 다른 부모가 살아 있는 동안 접촉 증가가 이어졌지만, 두 번째 부모를 잃은 뒤에는 초기 증가가 장기적인 감소로 바뀌어 이전 수준보다 낮아졌습니다. 연대가설과 친족유지가설 중 하나만 고르기보다, 상실의 순서와 경과 시간에 따라 서로 다른 부분을 설명한다고 이해했습니다.",
+        "evidence_segment_id": "SYNTHESIS-001",
+        "response_angle": "distinguishing-first-and-second-parent-loss-and-short-and-long-term-predictions",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-01-followup-01",
+            "question": "How do the solidarity and kinkeeping hypotheses make different predictions?",
+            "question_ko": "두 가설은 무엇을 다르게 예측하나요?",
+            "answer": "The solidarity hypothesis predicts that a shared crisis activates support and increases sibling contact in the short term. When one parent remains alive, supporting that parent can also bring siblings together. The kinkeeping hypothesis focuses on the loss of a parent who helps sustain the family network. After the second parent's death, if nobody fully takes over that role, sibling contact may gradually fall below its earlier level. These explanations concern different processes and times, so an initial increase followed by a later decline can fit both. The study did not directly measure who performed kinkeeping or how the role was transferred, so the observed pattern supports that interpretation without establishing every step of it.",
+            "answer_ko": "연대가설은 공동의 위기에서 지지가 활성화되어 단기적으로 형제자매의 접촉이 늘어난다고 예측합니다. 부모 한 분이 남아 있으면 그분을 지원하는 과정도 형제자매를 연결할 수 있습니다. 친족유지가설은 가족망을 이어 주던 부모의 역할이 사라지는 데 주목합니다. 두 번째 부모 사망 뒤 그 역할이 충분히 이어지지 않으면 접촉이 서서히 이전 수준 아래로 줄 수 있다는 예측입니다. 과정과 시점이 다르므로 초기 증가와 나중 감소가 두 가설에 함께 들어맞을 수 있습니다. 다만 누가 친족관계 유지 역할을 맡고 넘겨받았는지는 직접 측정하지 않아, 관찰된 패턴이 그 설명의 모든 단계를 입증한 것은 아닙니다.",
+            "evidence_segment_id": "KINKEEPING-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-01-followup-02",
+            "question": "How large were the changes, and what counted as the earlier level?",
+            "question_ko": "접촉은 어느 시점에 얼마나 달라졌나요?",
+            "answer": "The paper reports an approximately 17% increase in face-to-face contact in the year of the first parent's death in the model without the surviving-parent mediators. The subsequent decline was not statistically significant, and those models covered only periods when the second parent was still alive. After the second parent's death, the initial rise in phone contact exceeded 20%; the longer-term pattern was declining contact. At seven years, face-to-face contact was about 30% below the predeath reference level, while the paper describes a longer-term phone-contact decline of about 15%. The reference excluded observations one and two years before death, so these are comparisons with an earlier period, not with the immediately preceding year. They are model estimates from four survey waves, not annual measurements of every family.",
+            "answer_ko": "생존 부모와의 관계를 매개변수로 넣기 전 모형에서, 첫 부모 사망 연도의 대면 접촉은 약 17% 늘었습니다. 이후 감소는 통계적으로 유의하지 않았고, 이 분석은 두 번째 부모가 살아 있는 기간에 한정됩니다. 두 번째 부모 사망 뒤 전화 접촉의 초기 증가는 20%를 넘었지만, 장기적인 패턴은 감소였습니다. 7년 뒤 대면 접촉은 사망 전 기준보다 약 30% 낮았고, 전화 접촉의 장기 감소는 약 15%로 보고됐습니다. 사망 전 1~2년 자료를 제외했으므로 바로 전해와의 비교가 아니라 더 이른 시기를 기준으로 한 것입니다. 네 차례 조사로 추정한 모형의 결과이지, 모든 가족을 해마다 측정한 수치는 아닙니다.",
+            "evidence_segment_id": "CONTACT-SECOND-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-01-followup-03",
+            "question": "Do the first and second parent mean the father and mother?",
+            "question_ko": "첫 부모와 두 번째 부모는 누구를 뜻하나요?",
+            "answer": "They describe the order of loss, not a fixed assignment of father first and mother second. The second parent's death leaves neither parent alive. In this sample, the mother was the second parent to die in 75% of cases, but additional analyses found no significant interaction between the second parent's gender and the transition or duration effects on sibling contact. The authors therefore interpreted the pattern in terms of losing the last parent, rather than simply losing the mother. The first-loss models also removed observations after the second parent's death. These are observational comparisons over time, not groups randomly assigned to lose different parents, and the absence of a significant interaction does not establish that mothers' and fathers' roles are identical in every family.",
+            "answer_ko": "아버지가 첫 번째, 어머니가 두 번째라는 고정된 구분이 아니라 사망 순서입니다. 두 번째 부모 사망 뒤에는 살아 계신 부모가 남지 않습니다. 표본에서는 75%가 어머니를 나중에 잃었지만, 추가 분석에서 두 번째 부모의 성별과 사망 직후·경과 시간 효과의 상호작용은 유의하지 않았습니다. 저자들은 그래서 단순히 어머니를 잃은 효과보다 마지막 부모를 잃은 패턴으로 해석했습니다. 첫 부모 분석에서는 두 번째 부모 사망 이후 자료도 제외했습니다. 서로 다른 상실을 무작위로 배정한 집단 비교는 아니며, 유의한 상호작용이 없다고 모든 가족에서 어머니와 아버지의 역할이 같다고 단정할 수는 없습니다.",
+            "evidence_segment_id": "CONFLICT-001"
+          }
+        ]
       },
       {
-        "card_id": "kalmijn-reading-02",
-        "title": "What perspective was most new to you?",
-        "answer_30s": "I found it useful to view siblings as part of a latent kin network, rather than only as friends or rivals. Knowing and loving the same parent can create shared grief and help siblings understand each other's pain. The theory therefore predicts that a relatively dormant tie can become active during loss. I would distinguish this proposed explanation from direct evidence about every sibling's motives.",
-        "evidence_segment_id": "THEORY-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Theoretical insight",
-        "style_basis": "Distinguish the four theoretical perspectives, the latent kin matrix, and shared loss.",
-        "title_ko": "어떤 관점이 가장 새롭게 다가왔나요?",
-        "answer_30s_ko": "형제자매를 친구나 경쟁자로만 보지 않고 잠재적인 친족 관계망의 일부로 보는 것이 유용했습니다. 같은 부모를 알고 사랑했다는 사실은 슬픔을 공유하게 하고 서로의 고통을 이해하도록 도울 수 있습니다. 따라서 이론은 비교적 잠잠하던 관계가 상실을 겪으며 활성화될 수 있다고 예측합니다. 저는 이런 설명의 제안과 모든 형제자매의 동기에 관한 직접적인 근거를 구분하겠습니다."
-      },
-      {
-        "card_id": "kalmijn-reading-03",
-        "title": "Which result was most persuasive?",
-        "answer_30s": "The face-to-face transition coefficient after the first death fell from about .17 to .10 after accounting for the surviving-parent relationship. I saw that as useful support for a family-network interpretation. The indirect association was significant, but a positive association remained after adjustment, so this was partial rather than complete mediation. The coefficient reduction also does not by itself establish the direction of the mechanism.",
+        "card_id": "kalmijn-leopold-2019-reflection-02",
+        "entry_type": "reading",
+        "topic": "Parent ties and sibling contact",
+        "topic_ko": "부모 관계와 형제자매 연락",
+        "title": "What interested you about changes in sibling contact?",
+        "title_ko": "형제자매 연락에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that the study looked beyond the sibling pair to understand why they contacted each other more often. Increased sibling contact after the first parent's death was partly explained by contact and support exchanged with the surviving parent. This explanation was clearer for face-to-face contact, but some increase remained after accounting for the parent relationship. I would therefore look at siblings' contact in the context of their interactions with a parent and the help they give and receive.",
+        "answer_30s_ko": "형제자매가 더 자주 연락하는 이유를 두 사람 사이에서만 찾지 않은 점이 흥미로웠습니다. 부모 중 한 분이 돌아가신 뒤 늘어난 형제자매 연락은 살아 계신 부모와의 접촉·도움 교환으로 일부 설명됐습니다. 대면 접촉에서 그 설명이 더 뚜렷했지만, 부모와의 관계를 고려한 뒤에도 증가분은 남았습니다. 그래서 형제자매 연락을 볼 때 부모와 어떻게 만나고 어떤 도움을 주고받는지도 함께 살피고 싶습니다.",
         "evidence_segment_id": "MEDIATION-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Specific evidence",
-        "style_basis": "Present the mediation coefficients together with the limits of partial mediation.",
-        "title_ko": "어떤 결과가 가장 설득력 있었나요?",
-        "answer_30s_ko": "부모 한 분이 먼저 사망한 뒤의 대면 접촉 전환 계수는 생존 부모와의 관계를 고려하자 약 .17에서 .10으로 낮아졌습니다. 저는 이를 가족 관계망에 주목하는 해석을 뒷받침하는 유용한 근거로 보았습니다. 간접적 관계는 유의했지만 보정 후에도 정적 관계가 남았으므로, 완전매개가 아니라 부분매개였습니다. 계수가 줄었다는 사실만으로 기제의 방향이 입증되는 것도 아닙니다."
+        "response_angle": "sibling-contact-partly-explained-by-ties-to-the-surviving-parent",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-02-followup-01",
+            "question": "How did the study measure the relationship with the parent?",
+            "question_ko": "부모와의 관계는 무엇으로 측정했나요?",
+            "answer": "The two mediators described the respondent's relationship with the surviving parent: face-to-face contact and a standardized support-exchange index. The index combined eight items about giving and receiving practical help, household help, good advice, and emotional support. It therefore measured help in both directions, rather than only care provided by the adult child. Reliability ranged from .71 to .74 across waves. The two mediator measures were correlated at r = .5. For observations when both parents were alive, the researchers used the mean of the parents' values. These are measures of the respondent's parent relationship; they are not a record of how all siblings divided tasks or jointly visited the parent.",
+            "answer_ko": "두 매개변수는 응답자와 생존 부모의 관계를 나타내는 대면 접촉 빈도와 표준화한 도움 교환 지수였습니다. 지수는 실질적 도움, 집안일 도움, 좋은 조언, 정서적 지원을 각각 주고받는 빈도 8개 항목을 합쳤습니다. 성인 자녀가 부모를 돌본 양만이 아니라 양방향 도움을 측정한 것입니다. 조사차수별 신뢰도는 .71~.74였고 두 매개변수의 상관은 r = .5였습니다. 두 부모가 모두 살아 있는 관찰시점에는 두 부모 값의 평균을 사용했습니다. 이는 응답자의 부모 관계를 측정한 값이며, 형제자매 전원이 어떻게 일을 나누거나 함께 방문했는지를 기록한 자료는 아닙니다.",
+            "evidence_segment_id": "COVARIATES-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-02-followup-02",
+            "question": "How much did adding the parent measures change the results?",
+            "question_ko": "부모 변수를 넣으면 결과가 얼마나 달라지나요?",
+            "answer": "For logged face-to-face contact with siblings, the transition coefficient for the first parent's death fell from about 0.17 to 0.10. The authors interpreted this as explaining roughly half of the initial increase, and the mediation test was significant. Of the two parent measures, face-to-face contact had a substantial, significant association with sibling face-to-face contact; the support-index association was not significant. For siblings' phone contact, which also included letters and emails, the transition coefficient fell more modestly, from about 0.16 to 0.12, and this reduction was also significant. Both parent contact and support exchange were significant in that model. These are comparisons of estimated coefficients after adding the parent measures. Some increase remained, so the parent relationship did not explain the entire change.",
+            "answer_ko": "형제자매 대면 접촉의 로그값을 분석한 모형에서 첫 부모 사망의 전환 계수는 약 0.17에서 0.10으로 줄었습니다. 저자들은 처음 증가분의 절반 가까이가 설명된 것으로 해석했고, 매개 검정도 유의했습니다. 부모 관계를 나타내는 두 지표 중 부모와의 대면 접촉은 형제자매 대면 접촉과 상당하고 유의한 관련성이 있었지만, 도움 지수의 관련성은 유의하지 않았습니다. 편지·이메일도 포함한 형제자매 전화 연락에서는 전환 계수가 약 0.16에서 0.12로 비교적 작게 줄었고, 이 감소도 유의했습니다. 이 모형에서는 부모와의 접촉과 도움 교환이 모두 유의했습니다. 이는 부모 변수를 추가했을 때 추정 계수가 달라진 정도입니다. 증가분은 남아 있었으므로 부모와의 관계가 변화 전체를 설명한 것은 아닙니다.",
+            "evidence_segment_id": "MEDIATION-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-02-followup-03",
+            "question": "Does this establish an effect of siblings jointly caring for a parent?",
+            "question_ko": "이것이 공동 돌봄의 효과를 뜻하나요?",
+            "answer": "The authors offer that as an interpretation, not an observed sequence of joint care. They knew the respondent's support exchange with the surviving parent, but lacked the siblings' own reports about their support. They also lacked direct measures identifying kinkeepers or recording their activities before and after parental death. The pattern is consistent with solidarity toward a surviving parent encouraging sibling contact, yet the authors explicitly could not rule out the reverse: increased sibling contact may encourage solidarity with the parent. Statistical mediation therefore supports a possible connection between the two kinds of ties. It does not establish who contacted whom first, whether siblings coordinated care together, or which direction caused the change.",
+            "answer_ko": "그런 경로는 저자들이 제시한 해석이며, 공동 돌봄의 순서를 직접 관찰한 결과는 아닙니다. 연구진은 응답자와 생존 부모의 도움 교환은 알았지만, 형제자매 자신이 부모에게 어떤 도움을 줬는지 보고한 자료는 없었습니다. 사망 전후에 누가 친족유지를 맡고 어떤 활동을 했는지도 직접 측정하지 않았습니다. 결과는 생존 부모와의 연대가 형제자매 연락을 늘린다는 해석과 부합하지만, 저자들은 형제자매 연락 증가가 부모와의 연대를 촉진한다는 역방향도 배제하지 못했습니다. 통계적 매개는 두 관계의 연결 가능성을 뒷받침합니다. 누가 먼저 연락했는지, 형제자매가 함께 돌봄을 조율했는지, 어느 방향이 변화를 일으켰는지까지 확정하지는 않습니다.",
+            "evidence_segment_id": "SYNTHESIS-001"
+          }
+        ]
       },
       {
-        "card_id": "kalmijn-reading-04",
-        "title": "What interpretation requires the most care?",
-        "answer_30s": "I would avoid reading less conflict as an automatic improvement in relationship quality. After the second death, contact and conflict both declined over time. The authors interpret this as siblings fading from one another's everyday lives after losing an integrative family member, rather than becoming steadily more hostile. Equating contact frequency or conflict absence with relationship quality would miss that distinction.",
+        "card_id": "kalmijn-leopold-2019-reflection-03",
+        "entry_type": "reading",
+        "topic": "Contact and conflict as distinct outcomes",
+        "topic_ko": "연락과 갈등의 차이",
+        "title": "What interested you about contact and conflict in this reading?",
+        "title_ko": "연락과 갈등에서 무엇이 흥미로웠나요?",
+        "answer_30s": "I found it interesting that more contact or less conflict does not by itself mean a better sibling relationship. In this study, contact and conflict both declined over time after the second parent's death. The authors interpreted this as sibling ties fading rather than becoming more troubled. That made me want to distinguish contact frequency from the presence of conflict before using either measure to judge whether a relationship is good or bad.",
+        "answer_30s_ko": "연락이 많거나 갈등이 적다는 사실만으로 형제자매 관계가 좋아졌다고 말하기 어렵다는 점이 흥미로웠습니다. 이 연구에서는 두 번째 부모 사망 뒤 시간이 지나면서 연락과 갈등이 함께 줄었습니다. 저자들은 이를 관계가 더 나빠졌다기보다 접촉 자체가 뜸해지는 모습으로 해석했습니다. 그래서 관계의 좋고 나쁨을 한 가지 지표로 정하기 전에 연락 횟수와 갈등 여부를 나누어 봐야겠다고 느꼈습니다.",
         "evidence_segment_id": "DISCUSSION-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Interpreting the findings",
-        "style_basis": "Focus on the discussion's distinction between fading and deteriorating ties.",
-        "title_ko": "어떤 해석에 가장 주의해야 하나요?",
-        "answer_30s_ko": "저는 갈등이 줄었다고 해서 관계의 질이 저절로 좋아졌다고 해석하지 않겠습니다. 남은 부모까지 사망한 뒤에는 시간이 흐르면서 접촉과 갈등이 모두 감소했습니다. 저자들은 이를 형제자매가 점점 더 적대적으로 변하는 것이라기보다, 가족을 통합하던 구성원을 잃은 뒤 서로의 일상에서 멀어져 가는 것으로 해석합니다. 접촉 빈도나 갈등의 부재를 관계의 질과 동일시하면 이 구분을 놓치게 됩니다."
+        "response_angle": "distinguishing-contact-conflict-and-relationship-quality",
+        "style_basis": "reading-grounded-reflection",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-03-followup-01",
+            "question": "How did the study measure contact and conflict?",
+            "question_ko": "연락과 갈등은 각각 어떻게 측정했나요?",
+            "answer": "Contact referred to the past 12 months and had two measures: face-to-face contact and phone contact, with letters and emails included in the latter. The seven frequency categories were converted to approximate annual contact frequencies and then logged. Conflict referred to the past three months and used one question about conflicts, strains, or disagreements. Because conflict was uncommon, the researchers combined 'once or twice' and 'frequently' and compared that category with 'never.' Contact was asked about all siblings outside the respondent's household, while conflict questions covered up to two siblings, randomly selected if there were more. The measures therefore differ in recall period, coding, and which sibling ties they cover; they are not opposite ends of one relationship-quality score.",
+            "answer_ko": "접촉은 지난 12개월의 대면접촉과 전화접촉으로 나눴고, 전화접촉에는 편지와 이메일도 포함했습니다. 7개 빈도 범주를 대략적인 연간 접촉 횟수로 환산한 뒤 로그 변환했습니다. 갈등은 지난 3개월의 충돌·긴장·의견 차이를 한 문항으로 물었습니다. 보고가 드물어 ‘한두 번’과 ‘자주’를 합치고 ‘전혀 없음’과 비교했습니다. 접촉은 동거하지 않는 모든 형제자매를 대상으로 했지만, 갈등은 최대 두 명에 대해 물었으며 형제자매가 더 많으면 무작위로 골랐습니다. 따라서 회상기간, 코딩 방식, 대상 관계가 서로 다르며 한 관계의 질을 양끝에서 측정한 점수가 아닙니다.",
+            "evidence_segment_id": "OUTCOMES-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-03-followup-02",
+            "question": "Was the initial increase in conflict statistically clear?",
+            "question_ko": "갈등이 처음 늘었다는 결과는 확실한가요?",
+            "answer": "The detailed conflict results require a distinction. After the first parent's death, neither the initial change nor the subsequent change in conflict was statistically significant. After the second parent's death, the estimated initial increase was also not significant; the later decline was significant. Both the fixed-effects logit and linear probability models showed that decline. The abstract mentions increased conflict, but the detailed results do not support treating the initial increase as an established finding. Nor does the later decline show that siblings resolved their disagreements: as contact becomes less frequent, there may also be fewer occasions for conflict. The authors therefore interpreted the combined pattern as ties fading.",
+            "answer_ko": "갈등의 상세 결과는 구분해서 읽어야 합니다. 첫 번째 부모 사망 뒤에는 초기 변화도 이후 변화도 통계적으로 유의하지 않았습니다. 두 번째 부모 사망 뒤에도 초기 증가 추정치는 유의하지 않았고, 이후 감소는 유의했습니다. 고정효과 로짓모형과 선형확률모형 모두 이 감소를 보였습니다. 초록에는 갈등 증가가 언급되지만, 상세 결과에 비추어 초기 증가를 확실히 확인된 결과로 말할 수는 없습니다. 이후 감소도 형제자매가 갈등을 해결했다는 증거는 아닙니다. 접촉이 줄면 갈등이 생길 기회도 줄 수 있어서 저자들은 두 지표의 변화를 관계가 뜸해지는 양상으로 해석했습니다.",
+            "evidence_segment_id": "CONFLICT-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-03-followup-03",
+            "question": "What does the fixed-effects design allow us to compare?",
+            "question_ko": "고정효과모형은 무엇을 비교한 건가요?",
+            "answer": "The models relate changes over time within a respondent–sibling pair to changes in the explanatory variables. That helps separate those changes from stable differences between pairs; it is not simply a comparison of different families at one point in time. Contact was analyzed with fixed-effects linear regression. Conflict was analyzed with conditional logit and linear probability models, and the logit analysis included only cases whose conflict outcome changed. Standard errors accounted for multiple sibling pairs within the same family. For the first parent's death, observations after the second parent's death were excluded. This design sharpens the comparison, but it does not randomly assign parental loss or eliminate every unmeasured circumstance changing at the same time.",
+            "answer_ko": "같은 응답자와 형제자매의 쌍에서 시간에 따른 변화를 설명변수의 변화와 연결합니다. 쌍마다 원래 지니고 있던 지속적인 차이와 구분하는 데 도움이 되며, 한 시점에 서로 다른 가족들을 비교한 것과는 다릅니다. 접촉은 고정효과 선형회귀로, 갈등은 조건부 로짓과 선형확률모형으로 분석했습니다. 로짓 분석에는 갈등 여부가 실제로 변한 사례만 포함됩니다. 한 가족의 여러 형제자매 쌍을 분석하므로 표준오차도 가족 단위의 군집을 고려했습니다. 첫 번째 부모 사망 모형에서는 두 번째 부모 사망 이후 관측을 제외했습니다. 비교를 더 정교하게 하는 설계이지만 부모 상실을 무작위로 배정하거나 같은 시기에 변하는 모든 미측정 사정을 제거하는 것은 아닙니다.",
+            "evidence_segment_id": "MODELS-001"
+          }
+        ]
       },
       {
-        "card_id": "kalmijn-reading-05",
-        "title": "Which methodological limitation matters most?",
-        "answer_30s": "The causal ordering of the mediation pattern seems most important to me. Solidarity toward the surviving parent might bring siblings together, but more sibling contact could also encourage that solidarity and support. The authors acknowledge this alternative. I would therefore describe an observed mediation pattern and a plausible interpretation, while leaving its direction unresolved.",
+        "card_id": "kalmijn-leopold-2019-reflection-04",
+        "entry_type": "experience",
+        "topic": "Remembering changes in relatives' contact",
+        "topic_ko": "연락 변화를 돌아보기",
+        "title": "What interested you when recalling relatives' accounts of sibling contact?",
+        "title_ko": "친척의 연락 이야기에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional everyday recollections. Adapt one to something you actually observed or heard from parents or relatives.",
+        "experience_prompt_ko": "일상에서 있을 법한 가상 회상 예시입니다. 부모님이나 친척에게서 실제로 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that contact patterns in the paper differed by the order of parental loss and the time since it happened. I would now ask whether the contact at that time was a temporary change or continued later. I would not assume that one family's experience follows the study's average pattern.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 논문에서 상실의 순서와 경과 시간에 따라 접촉 양상이 달랐던 점이 흥미로웠습니다. 이제는 당시 연락이 일시적인 변화였는지, 이후에도 이어졌는지 나누어 보고 싶습니다. 한 가족의 경험을 연구의 평균 경로와 같다고 보지는 않겠습니다.",
         "evidence_segment_id": "SYNTHESIS-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Causal limitation",
-        "style_basis": "Center the reverse-direction interpretation explicitly acknowledged by the authors.",
-        "title_ko": "어떤 방법론적 한계가 가장 중요한가요?",
-        "answer_30s_ko": "제게는 매개 양상의 인과적 순서가 가장 중요합니다. 살아 계신 부모에 대한 결속이 형제자매를 모이게 할 수도 있지만, 형제자매 간 접촉이 늘면서 그런 결속과 지원이 촉진될 수도 있습니다. 저자들도 이 대안적 설명을 인정합니다. 따라서 저는 관찰된 매개 양상과 가능한 해석을 설명하되, 그 방향은 아직 해결되지 않은 것으로 남기겠습니다."
+        "response_angle": "reconsidering-remembered-family-contact-through-loss-order-and-elapsed-time",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-followup-01",
+            "question": "What would you ask about the timing of that contact?",
+            "question_ko": "그 연락이 언제였는지 왜 다시 묻겠어요?",
+            "answer": "{{age_cue}} I would ask whether the account concerned losing the first or the last surviving parent, how long afterward it was, and what contact had been like earlier. The paper separates the change around the death year from changes as time passes. Its reference also excludes the one and two years before death, because contact during illness or other changes shortly before death might differ from the family's usual pattern. That reminds me to distinguish an earlier routine, the period around the loss, and later years. I cannot infer a long-term trajectory simply from being told that relatives contacted one another more or less at one point.",
+            "answer_ko": "{{age_cue}} 첫 부모를 잃은 이야기인지 마지막 부모를 잃은 이야기인지, 그 뒤 얼마나 지났고 이전에는 어떻게 연락했는지 묻겠습니다. 논문은 사망 연도 무렵의 변화와 시간이 지나며 나타나는 변화를 나눕니다. 또 사망 직전의 질병 등으로 평소와 연락이 달라질 수 있어 사망 전 1~2년을 기준 자료에서 제외했습니다. 저도 예전의 일상적인 연락, 상실 무렵, 그 후 여러 해를 구분해서 들어야겠다고 생각했습니다. 어느 한때 연락이 늘거나 줄었다는 이야기만으로 장기적인 경로까지 알 수는 없습니다.",
+            "evidence_segment_id": "OUTCOMES-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-followup-02",
+            "question": "How would the two hypotheses change your earlier interpretation?",
+            "question_ko": "두 가설로 그때의 생각을 어떻게 바꿀까요?",
+            "answer": "At the time, {{prior_view}} The solidarity hypothesis would lead me to ask whether contact increased as relatives responded to a shared need for support. The kinkeeping hypothesis would lead me to ask whether losing the last parent also changed the occasions and arrangements that had kept siblings connected, and whether someone continued that work. These are questions for understanding the account, not facts I can fill in from the paper. A brief rise in contact does not tell me it will persist, and the theory also allows that another relative might take over kinkeeping. I would therefore avoid fitting every family's story to a predetermined decline.",
+            "answer_ko": "당시에는 {{prior_view}} 연대가설로는 함께 지지가 필요한 상황에 대응하면서 연락이 늘었는지 묻겠습니다. 친족유지가설로는 마지막 부모를 잃은 뒤 형제자매를 이어 주던 만남의 계기나 약속도 달라졌는지, 그 일을 이어 맡은 사람이 있었는지 묻겠습니다. 이는 이야기를 이해하기 위한 질문이지, 논문을 읽었다고 채워 넣을 수 있는 사실은 아닙니다. 잠시 연락이 늘었다고 계속 이어진다고 볼 수 없고, 다른 친척이 관계 유지 역할을 맡을 가능성도 있습니다. 모든 가족 이야기를 미리 정해진 감소 경로에 맞추지는 않겠습니다.",
+            "evidence_segment_id": "KINKEEPING-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-followup-03",
+            "question": "Can that memory establish which explanation is correct?",
+            "question_ko": "그 기억으로 어느 가설이 맞는지 알까요?",
+            "answer": "It can suggest questions, but cannot establish either explanation. The study used fixed-effects models with four waves of Dutch panel data, examining changes within sibling ties over time. Hearing one retrospective account does not reproduce those repeated observations or distinguish all other changes happening to a family. Even the study lacked direct measures of who kept the family connected and how that role changed after parental death. I can use the distinction between short and long term to listen more carefully while keeping uncertainty about the mechanism. Increased contact describes how relatives responded after a loss; it is not an evaluation that the loss itself was beneficial.",
+            "answer_ko": "질문을 떠올릴 수는 있어도 어느 설명이 맞는지 확인할 수는 없습니다. 연구는 네덜란드의 네 차례 패널조사에 고정효과 모형을 적용해 형제자매 관계 안에서의 시간에 따른 변화를 살폈습니다. 회상 한 번을 듣는 것은 그런 반복 관찰과 다르고, 가족에게 함께 일어난 다른 변화도 모두 구분해 주지 않습니다. 연구 자체도 누가 가족관계를 이어 주고 사별 뒤 그 역할이 어떻게 바뀌었는지 직접 측정하지 못했습니다. 단기와 장기를 나누어 이야기를 더 세심하게 듣되, 작동 과정은 열어 두겠습니다. 연락 증가는 상실 이후 가족의 대응 양상이지 상실 자체가 이롭다는 평가는 아닙니다.",
+            "evidence_segment_id": "SYNTHESIS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-01",
+            "label": "More contact in the first year",
+            "label_ko": "그해 늘었던 자매 연락",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother and aunt talking about how often they used to contact each other.",
+                "ko": "어머니와 이모가 예전 연락 빈도를 이야기하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They said contact had increased in the year one of their parents died, while the other was still alive.",
+                "ko": "부모 한 분이 돌아가시고 다른 분은 살아 계시던 해에 연락이 늘었다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that an increase after a loss would be only temporary.",
+                "ko": "상실 뒤 늘어난 연락은 잠깐만 이어질 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-02",
+            "label": "Less contact several years later",
+            "label_ko": "몇 년 뒤 뜸해진 연락",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative saying that contact with their siblings had become less frequent.",
+                "ko": "친척 어른이 형제들과 연락이 예전보다 뜸해졌다고 하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "Several years had passed since their last surviving parent died.",
+                "ko": "마지막으로 살아 계시던 부모님이 돌아가신 지 여러 해가 지난 때였습니다."
+              },
+              "prior_view": {
+                "en": "I thought contact that had increased after a loss would stay at that level.",
+                "ko": "사별 뒤 늘었던 연락은 그 수준으로 계속될 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-03",
+            "label": "Comparing two periods of family life",
+            "label_ko": "부모 생존 여부에 따른 시기",
+            "values": {
+              "scene": {
+                "en": "I remembered my father describing how contact with his siblings had changed over the years.",
+                "ko": "아버지가 형제들과 연락이 세월에 따라 달라졌다고 말씀하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "He distinguished the years with one surviving parent from the years after both had died.",
+                "ko": "부모 한 분이 계시던 때와 두 분 모두 돌아가신 뒤를 나누어 이야기하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had treated losing a parent as the same situation regardless of the order.",
+                "ko": "부모를 잃는 일은 순서와 관계없이 비슷한 상황이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-04",
+            "label": "Frequent contact soon after the second loss",
+            "label_ko": "두 번째 상실 무렵의 연락",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt saying that she had recently been in touch with her siblings more often.",
+                "ko": "이모가 최근에는 형제들과 더 자주 연락한다고 말씀하신 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "At that point, it had not been long since her last surviving parent died.",
+                "ko": "그때는 마지막으로 살아 계시던 부모님이 돌아가신 지 오래되지 않았습니다."
+              },
+              "prior_view": {
+                "en": "I thought frequent contact then meant it would continue that way for years.",
+                "ko": "지금 자주 연락하면 몇 년 뒤에도 계속 그럴 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-05",
+            "label": "Two relatives describing different stages",
+            "label_ko": "서로 다른 시기의 두 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered two older relatives each describing contact with their own siblings.",
+                "ko": "친척 어른 두 분이 각자의 형제들과 연락하는 이야기를 하셨던 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "One still had a living parent, while the other had lost both parents several years earlier.",
+                "ko": "한 분은 부모 한 분이 살아 계셨고, 다른 분은 두 분을 잃은 지 여러 해 됐습니다."
+              },
+              "prior_view": {
+                "en": "I thought comparing how often they contacted siblings then would be enough.",
+                "ko": "당장 연락하는 횟수만 비교해도 충분할 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-04-example-06",
+            "label": "Keeping regular contact over many years",
+            "label_ko": "오래 이어진 형제 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered an older relative describing regular get-togethers with their siblings.",
+                "ko": "친척 어른이 형제들과 정기적으로 만나는 이야기를 들려주셨던 기억이 났습니다."
+              },
+              "age_cue": {
+                "en": "They said these meetings had continued even many years after both parents had died.",
+                "ko": "부모 두 분이 모두 돌아가신 뒤에도 오랫동안 그 만남이 이어졌다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I had thought that every family would meet less often as time passed after both parents died.",
+                "ko": "두 분을 잃고 오래 지나면 어느 집이든 만남이 줄겠다고 여겼습니다."
+              }
+            }
+          }
+        ]
       },
       {
-        "card_id": "kalmijn-reading-06",
-        "title": "What follow-up study would you propose?",
-        "answer_30s": "I would repeatedly ask several family members who organizes gatherings and communication, and who takes over those tasks after a parent dies. This study lacked direct measures of kinkeepers and their activities, as well as siblings' own parental-support reports. Multiple reporters and repeated role measures could help distinguish whether responsibilities disappear or transfer and clarify timing. That is my research proposal, rather than a finding established here.",
-        "evidence_segment_id": "SYNTHESIS-001",
-        "question_type": "리딩 리스폰스",
-        "response_angle": "Future research",
-        "style_basis": "Propose a design that measures the mechanisms the paper could not observe directly.",
-        "title_ko": "어떤 후속 연구를 제안하겠나요?",
-        "answer_30s_ko": "저는 여러 가족 구성원에게 누가 모임과 연락을 주선하는지, 부모가 사망한 뒤 누가 그 일을 이어받는지 반복해서 묻겠습니다. 이 연구에는 친족관계 유지 담당자와 그 활동을 직접 측정한 자료, 형제자매가 직접 보고한 부모 지원 자료가 없었습니다. 여러 사람의 보고와 반복적인 역할 측정은 책임이 사라지는지 다른 사람에게 이전되는지 구분하고 시점을 밝히는 데 도움이 될 수 있습니다. 이는 여기서 입증된 결과가 아니라 제가 제안하는 연구입니다."
+        "card_id": "kalmijn-leopold-2019-reflection-05",
+        "entry_type": "experience",
+        "topic": "Everyday work that connects family members",
+        "topic_ko": "가족의 연락을 이어 주는 일",
+        "title": "What interested you when recalling how relatives coordinated plans?",
+        "title_ko": "가족의 일정 조율에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are fictional examples of everyday memories about relatives coordinating plans. Adapt one to something you experienced, saw, or heard.",
+        "experience_prompt_ko": "친척들이 일정을 조율하는 일상에 관한 가상 회상 예시입니다. 자신이 경험하거나 보고 들은 일에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that this paper examined sibling contact in the context of contact and help exchanged with parents. I would now look at who arranged the time to meet, what help was given or received involving a parent, and whether this also involved contact with other relatives.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문이 형제자매 연락을 부모와의 접촉·도움 교환 속에서 살핀 점이 흥미로웠습니다. 이제는 누가 모일 시간을 맞췄는지, 부모와 어떤 도움을 주고받았는지, 그 과정에 다른 가족과의 연락도 있었는지 함께 살펴보겠습니다.",
+        "evidence_segment_id": "SOLIDARITY-001",
+        "response_angle": "revisiting-family-coordination-as-concrete-work-linking-parent-and-sibling-ties",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-followup-01",
+            "question": "Who was doing the work of connecting relatives in that scene?",
+            "question_ko": "그 장면에서 누가 관계를 이어 주었나요?",
+            "answer": "I would start with this action: {{age_cue}} The paper describes kinkeeping as the activities that sustain family ties, including keeping in touch, providing practical or financial help, and organizing occasions when relatives meet. I would ask who passed on information, checked availability, and brought people into the conversation in this memory. Seeing a plan already arranged does not itself tell me who did that work. These questions help me notice specific contributions to maintaining family contact. Identifying those actions in the scene is my application of the concept; it is not evidence that the study observed this family's process or measured the effect of each action.",
+            "answer_ko": "이 행동부터 살펴보겠습니다. {{age_cue}} 논문은 친족유지를 가족의 유대를 이어 가는 활동으로 설명하며, 정기적인 연락, 실질적·경제적 지원, 친척들이 만나는 자리의 마련 등을 포함합니다. 이 기억에서는 누가 소식을 전하고 가능한 시간을 확인하며 다른 가족을 대화에 참여시켰는지 묻겠습니다. 약속이 이미 잡혀 있다는 사실만으로 그 일을 누가 했는지 알 수는 없습니다. 이렇게 물으면 가족 연락을 유지하는 구체적인 기여를 알아볼 수 있습니다. 장면 속 행동을 찾아보는 것은 개념을 적용한 것이며, 연구가 이 가족의 과정을 관찰하거나 각 행동의 효과를 측정했다는 증거는 아닙니다.",
+            "evidence_segment_id": "KINKEEPING-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-followup-02",
+            "question": "Should we distinguish who gave help and who received it?",
+            "question_ko": "도움을 주고받는 방향도 나눠 봐야 하나요?",
+            "answer": "Yes. I would revisit this earlier view: {{prior_view}} The study's support index combined giving and receiving practical help, household help, advice, and emotional support. In the memory, I would therefore ask both what an adult child did for a parent and what the parent offered in return or on another occasion. I would also ask whether arranging or sharing that help involved contacting a sibling. Those questions do not imply that help must be balanced or that both directions occurred in this particular scene. The study used a standardized index of eight frequency items, so a single observed exchange cannot reproduce that measure or establish how support was distributed across the entire family.",
+            "answer_ko": "네. 먼저 이 생각을 다시 돌아보겠습니다. {{prior_view}} 연구의 도움 지수는 실질적 도움, 집안일 도움, 조언, 정서적 지원을 주고받는 항목을 합쳤습니다. 따라서 이 기억에서도 성인 자녀가 부모에게 무엇을 해 드렸는지와 부모에게 어떤 도움을 받았는지를 함께 묻겠습니다. 그 도움을 마련하거나 나누면서 형제자매와 연락했는지도 살펴보겠습니다. 도움이 반드시 균형을 이뤄야 한다거나 이 장면에 양방향 도움이 모두 있었다는 뜻은 아닙니다. 연구는 빈도에 관한 8개 항목을 표준화한 지수를 썼으므로, 한 번 본 교환으로 그 측정을 재현하거나 가족 전체가 도움을 어떻게 나눴는지 알아낼 수는 없습니다.",
+            "evidence_segment_id": "COVARIATES-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-followup-03",
+            "question": "Does this memory show the same mediation process as the study?",
+            "question_ko": "이 경험도 논문의 매개 경로를 보여 주나요?",
+            "answer": "I would use it to ask about family connections, not to reproduce the study's estimate. This is a memory of everyday coordination, whereas the study examined changes surrounding parental death in the Netherlands. Its interpretation linked sibling contact to relationships with the surviving parent, but it could not rule out sibling contact encouraging solidarity with that parent. It also lacked direct measures of who performed kinkeeping and what they did. I can identify who appeared to coordinate this particular plan and ask how that affected opportunities to communicate. I cannot infer from this memory that the proposed causal direction was established, or apply the study's estimated changes to this family.",
+            "answer_ko": "이 기억은 가족의 연결을 더 자세히 묻는 데 사용하겠습니다. 일상의 일정 조율에 관한 기억이며, 네덜란드에서 부모 사망 전후의 변화를 분석한 연구의 추정치를 재현하는 자료는 아닙니다. 연구는 형제자매 연락과 생존 부모 관계를 연결해 해석했지만, 형제자매 연락이 부모와의 연대를 촉진했을 가능성도 배제하지 못했습니다. 누가 친족유지를 맡고 어떤 일을 했는지도 직접 측정하지 않았습니다. 저는 이 약속을 누가 조율했는지 살피고 연락할 기회와 어떻게 연결됐는지 물을 수 있습니다. 이 기억으로 제안된 인과 방향이 확인됐다고 하거나 연구의 변화 추정치를 이 가족에 대입할 수는 없습니다.",
+            "evidence_segment_id": "SYNTHESIS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-01",
+            "label": "Choosing a day to visit grandmother",
+            "label_ko": "외할머니 방문 날짜 맞추기",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother and her sister arranging when to visit my grandmother.",
+                "ko": "어머니가 외할머니 댁에 갈 날짜를 이모와 맞추시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They called each other to check their availability and settle on a time.",
+                "ko": "두 분은 언제 시간이 나는지 서로 전화하며 방문 시간을 정하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought those calls were simply about choosing a date.",
+                "ko": "그 연락을 단순히 날짜를 정하는 일로만 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-02",
+            "label": "Coordinating shopping help for grandfather",
+            "label_ko": "할아버지 장보기 도움 조율",
+            "values": {
+              "scene": {
+                "en": "I remembered my father discussing with his sister how to help my grandfather with grocery shopping.",
+                "ko": "아버지가 할아버지 장보기를 도와드릴 일을 고모와 의논하시던 모습이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "While deciding who could go on which day, they also asked how each other was doing.",
+                "ko": "누가 어느 날 갈지 정하다가 서로의 근황도 묻고 계셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought dividing up tasks and exchanging personal news were separate matters.",
+                "ko": "필요한 일을 나누는 연락과 안부는 별개라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-03",
+            "label": "Passing on a changed birthday meal time",
+            "label_ko": "생신 식사 시간 다시 알리기",
+            "values": {
+              "scene": {
+                "en": "I remembered my aunt updating relatives about the time for my maternal grandmother's birthday meal.",
+                "ko": "이모가 외할머니 생신 식사 시간을 가족들에게 다시 알리시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "After the time changed, my mother also called her other siblings.",
+                "ko": "시간이 바뀌자 어머니도 다른 형제자매에게 전화를 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought relatives would come together automatically once a gathering had been planned.",
+                "ko": "모임만 정해지면 가족은 저절로 모이는 줄 알았습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-04",
+            "label": "Sharing food received from grandmother",
+            "label_ko": "할머니께 받은 반찬 나누기",
+            "values": {
+              "scene": {
+                "en": "I remembered my father contacting his older brother to share food he had received from my grandmother.",
+                "ko": "아버지가 할머니께 받은 반찬을 나누려고 큰아버지에게 연락하시던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "While arranging when to collect the food, they also made plans for the weekend.",
+                "ko": "두 분은 반찬을 가져갈 시간을 맞추다가 주말 약속도 정하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought parents connected siblings only when the siblings were giving them help.",
+                "ko": "도움을 드릴 때만 부모를 통해 연락이 이어진다고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-05",
+            "label": "Arranging to help with a phone's settings",
+            "label_ko": "휴대전화 설정 함께 봐드리기",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother asking her sister to look at my grandfather's phone settings together.",
+                "ko": "어머니가 이모에게 외할아버지 휴대전화 설정을 함께 봐드리자고 하셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "They asked when each was free and agreed to meet to take a look.",
+                "ko": "두 분은 각자 편한 시간을 묻고 만나서 살펴보기로 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought calls to solve a problem with a device had little to do with family relationships.",
+                "ko": "기기 문제를 해결하는 연락은 관계와 무관하다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-05-example-06",
+            "label": "Planning the next family meal",
+            "label_ko": "다음 가족 식사 약속 잡기",
+            "values": {
+              "scene": {
+                "en": "I remembered hearing my mother and her sister arrange the next family meal after a holiday gathering.",
+                "ko": "명절 뒤 어머니가 이모와 다음 가족 식사를 잡으시던 대화를 들었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother said my grandmother wanted to see everyone and asked which days would work.",
+                "ko": "외할머니가 보고 싶다고 하신 말을 전하며 각자 가능한 날을 물으셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought familiar family gatherings did not require any particular effort to keep happening.",
+                "ko": "가족 모임은 늘 하던 일이어서 따로 애쓸 필요가 없다고 여겼습니다."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "card_id": "kalmijn-leopold-2019-reflection-06",
+        "entry_type": "experience",
+        "topic": "What frequent contact and quiet gatherings mean",
+        "topic_ko": "연락과 조용한 모임",
+        "title": "What interested you when recalling contact among relatives?",
+        "title_ko": "친척들의 연락에서 무엇이 흥미로웠나요?",
+        "experience_prompt": "These are brief fictional examples of everyday observations. Adapt one to a family conversation or gathering you have actually seen or heard.",
+        "experience_prompt_ko": "일상에서 있을 법한 짧은 가상 예시입니다. 실제로 보고 들은 가족의 대화나 모임에 맞게 바꿔 말해도 좋습니다.",
+        "answer_30s": "{{scene}} {{age_cue}} At the time, {{prior_view}} I found it interesting that this study measured contact frequency and conflict separately. I would now ask more about the content of those contacts and each person's views before judging a relationship from frequent contact or few arguments alone.",
+        "answer_30s_ko": "{{scene}} {{age_cue}} 당시에는 {{prior_view}} 이 논문이 연락의 빈도와 갈등을 구분해 측정했다는 점이 흥미로웠습니다. 이제는 연락이 많거나 말다툼이 적다는 사실만으로 관계를 판단하지 않고, 그 연락의 내용과 서로의 생각을 더 들어보겠습니다.",
+        "evidence_segment_id": "OUTCOMES-001",
+        "response_angle": "applying-the-contact-conflict-distinction-to-everyday-observations-without-assuming-bereavement",
+        "style_basis": "reading-grounded-experience-template",
+        "followups": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-followup-01",
+            "question": "What else would you ask about those contacts?",
+            "question_ko": "그 연락에서 무엇을 더 알아보고 싶나요?",
+            "answer": "{{age_cue}} I would ask what the relatives were talking about, whether they felt supported or burdened, and whether there were views they had not expressed. These are questions prompted by the distinction in the reading, not additional variables the study measured in those conversations. The authors note that contact can include both harmonious interaction and ambivalence or tension, and that their conflict measure was basic. Frequent communication may involve enjoyable conversation, practical coordination, or disagreement. A quiet gathering also leaves open whether people felt comfortable, had little to discuss, or held something back. I would ask rather than infer everyone's feelings from the amount of conversation.",
+            "answer_ko": "{{age_cue}} 친척들이 무슨 이야기를 했는지, 도움이나 부담을 느꼈는지, 말하지 못한 의견은 있었는지 더 묻겠습니다. 이는 읽기의 구분을 적용해 떠올린 질문이며, 연구가 그 대화에서 모두 측정한 추가 변수가 아닙니다. 저자들은 접촉에 화목한 교류뿐 아니라 양가감정과 긴장도 담길 수 있고, 갈등 측정은 단순했다고 밝힙니다. 잦은 연락에는 즐거운 대화도 실무적인 조율이나 의견 차이도 섞일 수 있습니다. 조용한 모임 역시 편안했는지, 할 말이 적었는지, 말을 아낀 것인지 열어 두어야 합니다. 대화량만 보고 모두의 마음을 짐작하기보다 직접 물어보겠습니다.",
+            "evidence_segment_id": "SYNTHESIS-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-followup-02",
+            "question": "Whose relationships did the study follow, and how often?",
+            "question_ko": "누구의 관계를 얼마나 자주 조사했나요?",
+            "answer": "The analysis used 3,812 respondents from the Netherlands Kinship Panel Study: 1,211 experienced the death of one or both parents during observation and 2,601 did not. All had at least one living parent at the first wave and a living sibling. Respondents who experienced parental death before age 30 or after age 70 were excluded; those ages refer to the adult child, not the parent. The four waves were 2002–2004, 2006–2007, 2010–2011, and 2014–2015, with a mean interval of 3.62 years. Contact was available for 10,367 unique sibling pairs and conflict for 6,186. The researchers used interview years and the year of parental death to estimate changes around the event; they did not observe each pair every year or collect the whole family's accounts of every sibling relationship.",
+            "answer_ko": "네덜란드 친족패널의 응답자 3,812명을 분석했고, 관찰 중 부모 한 명 이상을 잃은 사람은 1,211명, 그렇지 않은 사람은 2,601명이었습니다. 모두 첫 조사 때 부모가 한 명 이상 생존했고 살아 있는 형제자매가 있었습니다. 부모 사망을 30세 미만이나 70세 초과에 겪은 응답자는 제외했으며, 이는 부모가 아닌 성인 자녀의 나이입니다. 조사 시기는 2002~2004년, 2006~2007년, 2010~2011년, 2014~2015년의 네 차례로 평균 간격은 3.62년입니다. 고유 형제자매 쌍은 접촉 분석 10,367쌍, 갈등 분석 6,186쌍이었습니다. 조사연도와 부모 사망연도로 사건 전후 변화를 추정했으며, 각 쌍을 매년 조사하거나 가족 내 모든 형제자매 관계를 양쪽에서 들은 자료는 아닙니다.",
+            "evidence_segment_id": "SAMPLE-001"
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-followup-03",
+            "question": "Can the study explain what happened in your remembered scene?",
+            "question_ko": "그 연구로 기억 속 관계를 설명해도 될까요?",
+            "answer": "{{prior_view}} I can reconsider that assumption using the distinction between contact and conflict. I am not examining the effects of parental loss in this scene, so I am applying a way of asking about relationships, not claiming that the paper tested this particular situation. Its results concern Dutch families, and the contact reports came from one respondent rather than both people in each sibling pair. The authors also call for richer measures of relationship quality. My observation cannot establish what all of the relatives felt, whether a death-related pattern occurred, or how Korean families generally respond. I would keep the observed scene, the relatives' own accounts, and the study's findings separate.",
+            "answer_ko": "{{prior_view}} 연락과 갈등의 구분을 통해 그 생각을 다시 돌아볼 수는 있습니다. 이 장면에서 부모 상실의 영향을 살핀 것은 아니므로, 관계를 묻는 관점을 적용한 것이지 논문이 이 장면을 직접 검증했다는 뜻은 아닙니다. 연구 결과는 네덜란드 가족에 관한 것이며, 접촉 정보도 형제자매 쌍 양쪽이 아닌 응답자 한 사람의 보고였습니다. 저자들은 관계의 질을 더 풍부하게 측정할 필요도 지적합니다. 제 관찰만으로 친척 모두의 마음이나 사별에 따른 변화가 있었는지, 한국 가족이 보통 어떻게 반응하는지 알 수는 없습니다. 제가 본 장면, 친척 각자의 설명, 논문의 결과를 구분하겠습니다.",
+            "evidence_segment_id": "SYNTHESIS-001"
+          }
+        ],
+        "experience_examples": [
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-01",
+            "label": "Frequent calls before a family gathering",
+            "label_ko": "가족 모임 전 잦아진 통화",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother calling my aunt more often before a family gathering when I was in middle school.",
+                "ko": "중학생 때 가족 모임을 앞두고 어머니와 이모의 통화가 잦아졌던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother and aunt discussed the menu and meeting time, sometimes returning to the same details.",
+                "ko": "두 분은 메뉴와 약속 시간을 의논하며 같은 내용을 여러 번 확인하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that more calls meant the two of them had grown closer.",
+                "ko": "통화가 늘면 두 분 사이가 더 가까워진 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-02",
+            "label": "A disagreement during a call about an outing",
+            "label_ko": "나들이 일정을 조율한 전화",
+            "values": {
+              "scene": {
+                "en": "I remembered my father calling my uncle several times to arrange a family outing when I was in high school.",
+                "ko": "고등학생 때 아버지가 큰아버지와 나들이 일정을 맞추느라 여러 번 통화했던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My father and uncle disagreed about the departure time and then discussed it again the next day.",
+                "ko": "출발 시간을 두고 두 분의 의견이 달라 다음 날 다시 의논하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that disagreeing meant their relationship was becoming worse.",
+                "ko": "의견이 다르면 두 분의 관계도 나빠지는 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-03",
+            "label": "A family chat becoming quieter after an event",
+            "label_ko": "행사 뒤 조용해진 대화방",
+            "values": {
+              "scene": {
+                "en": "I remembered a chat used by my mother and her siblings becoming quieter after a family event when I was at university.",
+                "ko": "대학생 때 가족 행사 뒤 어머니가 형제자매들과 쓰던 대화방이 조용해졌던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother said there were fewer messages to coordinate and fewer disagreements about arrangements.",
+                "ko": "어머니는 조율할 연락도 줄고 준비 문제로 의견이 엇갈리는 일도 줄었다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that fewer disagreements meant their relationship had improved.",
+                "ko": "의견 차이가 줄었으니 사이도 더 좋아졌다고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-04",
+            "label": "A quiet afternoon with relatives",
+            "label_ko": "말수가 적었던 친척 모임",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother and aunts spending a quiet afternoon together during a school break when I was in high school.",
+                "ko": "고등학생 때 방학에 어머니와 이모들이 함께 보낸 조용한 오후가 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother and aunts talked little after lunch, and I did not hear an argument.",
+                "ko": "식사 뒤에는 대화가 많지 않았고 제가 듣는 동안에는 말다툼도 없었습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that an absence of arguments meant everyone felt comfortable with the relationship.",
+                "ko": "말다툼이 없으면 모두 그 관계를 편하게 느낄 것이라고 여겼습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-05",
+            "label": "Fewer visits alongside regular calls",
+            "label_ko": "만남은 줄어도 이어진 전화",
+            "values": {
+              "scene": {
+                "en": "I remembered my mother and aunt meeting less often after my aunt changed jobs when I was in middle school.",
+                "ko": "중학생 때 이모가 직장을 옮긴 뒤 어머니와 이모가 만나는 횟수가 줄었던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My mother said that she and my aunt still called regularly to share how they were doing.",
+                "ko": "어머니는 이모와 전화로는 계속 서로의 일상을 나누고 있다고 하셨습니다."
+              },
+              "prior_view": {
+                "en": "I thought that seeing each other less often meant they had grown distant.",
+                "ko": "자주 만나지 않으면 사이가 멀어진 것이라고 생각했습니다."
+              }
+            }
+          },
+          {
+            "id": "kalmijn-leopold-2019-reflection-06-example-06",
+            "label": "Hearing one relative's account of a conversation",
+            "label_ko": "한 사람이 들려준 통화 이야기",
+            "values": {
+              "scene": {
+                "en": "I remembered my father describing a call with my uncle during a weekend meal when I was at university.",
+                "ko": "대학생 때 주말 식사 중 아버지가 작은아버지와 통화한 이야기를 들려주셨던 일이 떠올랐습니다."
+              },
+              "age_cue": {
+                "en": "My father said they had enjoyed a long conversation, but I had not heard my uncle's account.",
+                "ko": "아버지는 오래 즐겁게 대화했다고 하셨지만 작은아버지의 이야기는 듣지 못했습니다."
+              },
+              "prior_view": {
+                "en": "I assumed that hearing from one of them told me how both had felt about the call.",
+                "ko": "한 분의 설명을 들으면 두 분의 느낌도 알 수 있다고 생각했습니다."
+              }
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  "practice_format": "reflection-followups-v1",
+  "default_tab": "reading-response"
 }
