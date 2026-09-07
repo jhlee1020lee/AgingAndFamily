@@ -2440,16 +2440,6 @@ body[data-reading-layout="reader-v2"] .article-backmatter-heading{
     var(--surface);
 }
 
-.overview-comic-head{
-  align-items:flex-start;
-}
-
-.overview-comic-head h2{
-  margin:.15rem 0 0;
-  font-size:clamp(1.35rem,2.5vw,1.75rem);
-  line-height:1.25;
-}
-
 .overview-comic-swipe-hint{
   display:none;
 }
@@ -4892,28 +4882,12 @@ body[data-reading-layout="reader-v2"] .article-frontmatter p{
     border-radius:14px;
   }
 
-  .overview-comic-head{
-    gap:.65rem;
-  }
-
-  .overview-comic-head h2{
-    font-size:1.25rem;
-  }
-
-  .overview-comic-head .section-kicker{
-    font-size:.66rem;
-  }
-
-  .overview-comic-head .count{
-    flex:0 0 auto;
-  }
-
   .overview-comic-swipe-hint{
     display:flex;
     align-items:center;
     justify-content:flex-end;
     gap:.3rem;
-    margin:-.25rem 0 .65rem;
+    margin:0 0 .65rem;
     color:var(--muted);
     font:650 .75rem var(--display);
   }

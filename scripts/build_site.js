@@ -1019,14 +1019,7 @@ function renderOverviewComic(outputPath,reading){
       </div>
     </li>`;
   }).join("");
-  return `<section class="panel detail-block overview-comic" lang="ko" aria-labelledby="overview-comic-title">
-    <div class="section-head overview-comic-head">
-      <div>
-        <p class="section-kicker">ILLUSTRATED OVERVIEW</p>
-        <h2 id="overview-comic-title">${escapeHtml(comic.title)}</h2>
-      </div>
-      <span class="count">4컷</span>
-    </div>
+  return `<section class="panel detail-block overview-comic" lang="ko" aria-label="${escapeHtml(comic.title)}">
     <p class="overview-comic-swipe-hint" id="overview-comic-swipe-hint">옆으로 넘겨 4컷 보기 <span aria-hidden="true">→</span></p>
     <ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">${panels}</ol>
   </section>`;
