@@ -1027,7 +1027,6 @@ function renderOverviewComic(outputPath,reading){
       </div>
       <span class="count">4컷</span>
     </div>
-    <p class="overview-comic-intro">${escapeHtml(comic.intro)}</p>
     <p class="overview-comic-swipe-hint" id="overview-comic-swipe-hint">옆으로 넘겨 4컷 보기 <span aria-hidden="true">→</span></p>
     <ol class="overview-comic-grid" role="list" tabindex="0" aria-describedby="overview-comic-swipe-hint">${panels}</ol>
   </section>`;

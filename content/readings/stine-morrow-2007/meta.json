@@ -106,7 +106,7 @@
     "quiz_mcq": "approved"
   },
   "validation_status": {
-    "updated_at": "2026-09-07T01:21:58.557Z",
+    "updated_at": "2026-09-07T01:39:08.417Z",
     "require_built_artifacts": false,
     "landing": {
       "status": "approved",
